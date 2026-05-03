@@ -499,12 +499,29 @@ function speakBrowser(text, callbacks) {
   const ua = (navigator.userAgent || '').toLowerCase();
   const isHuawei = /huaweibrowser|hbpc/i.test(ua);
 
-  // 把课文按标点切成若干短句（Chrome TTS 单 utterance 超过 ~100 字符易丢字）
-  const sentences = text
+  // 🔧 预处理：把时间数字转成英文单词（手机 Chrome TTS 对 "7:00" 朗读不稳定）
+  // 例：7:00 → seven o'clock；7:30 → seven thirty
+  const numberWord = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
+  const normalized = text.replace(/(\d{1,2}):(\d{2})/g, (_, h, m) => {
+    const hh = parseInt(h, 10);
+    const mm = parseInt(m, 10);
+    const hword = (hh >= 0 && hh <= 12) ? numberWord[hh] : h;
+    if (mm === 0)  return hword + " o'clock";
+    if (mm === 15) return 'quarter past ' + hword;
+    if (mm === 30) return 'half past ' + hword;
+    if (mm === 45) return 'quarter to ' + hword;
+    if (mm < 10)   return hword + ' oh ' + (numberWord[mm] || mm);
+    if (mm < 21)   return hword + ' ' + (numberWord[mm] || mm);
+    // 21-59
+    return hword + ' ' + m;
+  });
+
+  // 把课文按标点切成若干短句
+  const sentences = normalized
     .split(/(?<=[.!?])\s+/)
     .map(s => s.trim())
     .filter(s => s);
-  if (sentences.length === 0) sentences.push(text);
+  if (sentences.length === 0) sentences.push(normalized);
 
   // 再把超长句子按逗号切
   const utteranceTexts = [];
@@ -554,8 +571,8 @@ function speakBrowser(text, callbacks) {
       }
 
       let started = false;
-      let pendingCount = utteranceTexts.length;
       let hasErrored = false;
+      let hasEnded = false;
 
       // keepAlive：防止 Chrome 长时间朗读时被浏览器暂停
       const keepAliveTimer = setInterval(() => {
@@ -571,17 +588,26 @@ function speakBrowser(text, callbacks) {
 
       const finish = (errMsg) => {
         clearInterval(keepAliveTimer);
-        if (hasErrored) return;
+        if (hasEnded || hasErrored) return;
         if (errMsg) {
           hasErrored = true;
           if (callbacks.onError) callbacks.onError(errMsg);
-        } else if (callbacks.onEnd) {
-          callbacks.onEnd();
+        } else {
+          hasEnded = true;
+          if (callbacks.onEnd) callbacks.onEnd();
         }
       };
 
-      // 串联播放：依次 speak() 入队，最后一个 onend 时触发 callbacks.onEnd
-      utteranceTexts.forEach((t, i) => {
+      // 链式手动触发：一段完全结束后才 speak 下一段（解决手机 Chrome 队列重叠 bug）
+      let idx = 0;
+      const speakOne = () => {
+        if (hasErrored || hasEnded) return;
+        if (idx >= utteranceTexts.length) {
+          finish();
+          return;
+        }
+        const i = idx++;
+        const t = utteranceTexts[i];
         const u = new SpeechSynthesisUtterance(t);
         u.lang = 'en-US';
         u.rate = 0.85;
@@ -596,21 +622,24 @@ function speakBrowser(text, callbacks) {
           }
         };
         u.onend = () => {
-          pendingCount--;
-          if (pendingCount <= 0) finish();
+          // 关键：等 80ms 让手机 Chrome 真正把 speaking 置 false，再启动下一句
+          setTimeout(speakOne, 80);
         };
         u.onerror = (e) => {
           console.error('[课文 TTS] utterance #' + i + ' error:', e && e.error);
-          pendingCount--;
-          if (pendingCount <= 0) {
-            finish(isHuawei
-              ? '华为浏览器语音不稳定，建议换用微信/Chrome'
-              : '朗读失败，请重试');
-          }
+          // 单句出错不终止整体，继续下一句
+          setTimeout(speakOne, 80);
         };
 
-        window.speechSynthesis.speak(u);
-      });
+        try {
+          window.speechSynthesis.speak(u);
+        } catch(e) {
+          console.error('[课文 TTS] speak() 异常:', e);
+          setTimeout(speakOne, 80);
+        }
+      };
+
+      speakOne();
 
       // 4 秒兜底：如果第一段都没开始播
       setTimeout(() => {
