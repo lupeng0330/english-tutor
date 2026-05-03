@@ -1105,72 +1105,102 @@ function showQuiz() {
 }
 
 // 听力题音频播放状态
+let _listeningPlaying = false;
 let _listeningAudio = null;
 
 function playAudioText() {
   const q = state.quizQuestions[state.quizIndex];
   if (!q || !q.audioText) return;
   const hint = document.getElementById('playAudioHint');
+  const setHint = (msg, color) => {
+    if (!hint) return;
+    hint.textContent = msg;
+    hint.className = 'text-xs mt-1 ' + (color || 'text-slate-500');
+  };
 
-  // 停止正在播放的
-  if (_listeningAudio) {
-    try { _listeningAudio.pause(); _listeningAudio.src = ''; } catch(e){}
-    _listeningAudio = null;
+  // 如果正在播，当作停止按钮用
+  if (_listeningPlaying) {
+    _listeningPlaying = false;
+    if (_listeningAudio) {
+      try { _listeningAudio.pause(); _listeningAudio.src = ''; } catch(e){}
+      _listeningAudio = null;
+    }
+    stopSpeak();
+    setHint('⏹ 已停止，点击可重听', 'text-slate-500');
+    return;
   }
+
+  _listeningPlaying = true;
   stopSpeak();
+  setHint('加载中…', 'text-blue-500');
 
-  // 🎯 优先播放预生成 MP3（通过 audioText 在原始题库中查 index）
-  const bank = (window.questionBank && window.questionBank.listening) || [];
-  const origIdx = bank.findIndex(item => item && item.audioText === q.audioText);
-
-  const playMp3 = () => {
-    if (origIdx < 0) return false;
-    const num = String(origIdx + 1).padStart(2, '0');
-    const mp3Url = `audio/listening_${num}.mp3`;
+  // 🎯 优先播放预生成 MP3（通过 q.audioFile 直接定位，不做 findIndex 字符串匹配）
+  const tryMp3 = () => {
+    if (!q.audioFile) return false;
+    const mp3Url = 'audio/' + q.audioFile;
+    console.log('[听力] 尝试播放 MP3:', mp3Url);
     const audio = new Audio(mp3Url);
     _listeningAudio = audio;
     let started = false;
 
     audio.onplaying = () => {
       started = true;
-      if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听';
+      setHint('🔊 正在播放... 可以多次点击重听', 'text-blue-600');
     };
-    audio.onended = () => { _listeningAudio = null; };
-    audio.onerror = () => {
-      console.warn('[听力] MP3 加载失败，降级 TTS:', mp3Url);
+    audio.onended = () => {
+      _listeningPlaying = false;
       _listeningAudio = null;
-      fallback();
+      setHint('✅ 播放完成，点击可重听', 'text-slate-500');
+    };
+    audio.onerror = (e) => {
+      console.warn('[听力] MP3 加载失败，降级 TTS:', mp3Url, e);
+      _listeningAudio = null;
+      fallbackTTS();
     };
 
     audio.play().catch((err) => {
-      console.warn('[听力] audio.play() 失败:', err && err.name);
+      console.warn('[听力] audio.play() 失败:', err && err.name, err && err.message);
       _listeningAudio = null;
-      fallback();
+      fallbackTTS();
     });
 
-    // 5秒兜底
+    // 5 秒还没开始播就降级
     setTimeout(() => {
-      if (!started && _listeningAudio === audio) {
+      if (_listeningPlaying && !started && _listeningAudio === audio) {
+        console.warn('[听力] 5秒未开始，降级 TTS');
         try { audio.pause(); } catch(e){}
         _listeningAudio = null;
-        fallback();
+        fallbackTTS();
       }
     }, 5000);
 
     return true;
   };
 
-  const fallback = () => {
-    // 降级：用 speakBrowser（浏览器内置 TTS，处理过时间数字）
-    if (hint) hint.textContent = '🔊 加载中...';
-    speakBrowser(q.audioText, {
-      onStart: () => { if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听'; },
-      onEnd:   () => {},
-      onError: (why) => { if (hint) hint.textContent = '⚠️ ' + (why || '播放失败'); }
-    });
+  const fallbackTTS = () => {
+    if (!_listeningPlaying) return;
+    setHint('加载中…', 'text-blue-500');
+    setTimeout(() => {
+      if (!_listeningPlaying) return;
+      // 把 W: / M: 转成自然的 Woman: / Man: 让 TTS 好读
+      const cleanText = (q.audioText || '')
+        .replace(/\bW:/g, 'Woman:')
+        .replace(/\bM:/g, 'Man:');
+      speakBrowser(cleanText, {
+        onStart: () => setHint('🔊 正在播放（离线模式）... 可多次点击重听', 'text-blue-600'),
+        onEnd:   () => {
+          _listeningPlaying = false;
+          setHint('✅ 播放完成，点击可重听', 'text-slate-500');
+        },
+        onError: (why) => {
+          _listeningPlaying = false;
+          setHint('⚠️ ' + (why || '播放失败，请重试'), 'text-orange-500');
+        }
+      });
+    }, 200);
   };
 
-  if (!playMp3()) fallback();
+  if (!tryMp3()) fallbackTTS();
 }
 
 function toggleAudioText() {

@@ -201,6 +201,7 @@ window.questionBank = {
       "unit": 1,
       "code": "3A_U1",
       "audioText": "W: Hello, I’m Amy. M: Hi, Amy.",
+      "audioFile": "listening_01.mp3",
       "q": "What’s the girl’s name?",
       "options": [
         "Amy",
@@ -217,6 +218,7 @@ window.questionBank = {
       "unit": 4,
       "code": "3B_U4",
       "audioText": "M: I get up at 7:00.",
+      "audioFile": "listening_02.mp3",
       "q": "When does the boy get up?",
       "options": [
         "At 7:00",
@@ -233,6 +235,7 @@ window.questionBank = {
       "unit": 6,
       "code": "4A_U6",
       "audioText": "W: There is a big playground in our school.",
+      "audioFile": "listening_03.mp3",
       "q": "What’s in the school?",
       "options": [
         "A playground",
@@ -249,6 +252,7 @@ window.questionBank = {
       "unit": 10,
       "code": "4B_U10",
       "audioText": "M: I like bananas. They’re sweet.",
+      "audioFile": "listening_04.mp3",
       "q": "What fruit does the boy like?",
       "options": [
         "Bananas",
@@ -265,6 +269,7 @@ window.questionBank = {
       "unit": 3,
       "code": "5A_U3",
       "audioText": "W: My father is a doctor. He works in a hospital.",
+      "audioFile": "listening_05.mp3",
       "q": "What does the girl’s father do?",
       "options": [
         "Doctor",
@@ -281,6 +286,7 @@ window.questionBank = {
       "unit": 7,
       "code": "5B_U7",
       "audioText": "M: We should plant more trees.",
+      "audioFile": "listening_06.mp3",
       "q": "What should we do?",
       "options": [
         "Plant trees",
@@ -297,6 +303,7 @@ window.questionBank = {
       "unit": 9,
       "code": "6A_U9",
       "audioText": "W: I will go to Beijing this holiday.",
+      "audioFile": "listening_07.mp3",
       "q": "Where will the girl go?",
       "options": [
         "Beijing",
@@ -313,6 +320,7 @@ window.questionBank = {
       "unit": 5,
       "code": "7A_U5",
       "audioText": "M: I usually go to school by bus.",
+      "audioFile": "listening_08.mp3",
       "q": "How does the boy go to school?",
       "options": [
         "By bus",
@@ -329,6 +337,7 @@ window.questionBank = {
       "unit": 2,
       "code": "8A_U2",
       "audioText": "W: The movie is very interesting.",
+      "audioFile": "listening_09.mp3",
       "q": "How is the movie?",
       "options": [
         "Interesting",
@@ -345,6 +354,7 @@ window.questionBank = {
       "unit": 4,
       "code": "9A_U4",
       "audioText": "M: I have learned English for 5 years.",
+      "audioFile": "listening_10.mp3",
       "q": "How long has the boy learned English?",
       "options": [
         "For 5 years",
