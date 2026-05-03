@@ -1104,12 +1104,73 @@ function showQuiz() {
   document.getElementById('quizNextBtn').classList.add('hide');
 }
 
+// 听力题音频播放状态
+let _listeningAudio = null;
+
 function playAudioText() {
   const q = state.quizQuestions[state.quizIndex];
   if (!q || !q.audioText) return;
-  speak(q.audioText);
   const hint = document.getElementById('playAudioHint');
-  if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听';
+
+  // 停止正在播放的
+  if (_listeningAudio) {
+    try { _listeningAudio.pause(); _listeningAudio.src = ''; } catch(e){}
+    _listeningAudio = null;
+  }
+  stopSpeak();
+
+  // 🎯 优先播放预生成 MP3（通过 audioText 在原始题库中查 index）
+  const bank = (window.questionBank && window.questionBank.listening) || [];
+  const origIdx = bank.findIndex(item => item && item.audioText === q.audioText);
+
+  const playMp3 = () => {
+    if (origIdx < 0) return false;
+    const num = String(origIdx + 1).padStart(2, '0');
+    const mp3Url = `audio/listening_${num}.mp3`;
+    const audio = new Audio(mp3Url);
+    _listeningAudio = audio;
+    let started = false;
+
+    audio.onplaying = () => {
+      started = true;
+      if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听';
+    };
+    audio.onended = () => { _listeningAudio = null; };
+    audio.onerror = () => {
+      console.warn('[听力] MP3 加载失败，降级 TTS:', mp3Url);
+      _listeningAudio = null;
+      fallback();
+    };
+
+    audio.play().catch((err) => {
+      console.warn('[听力] audio.play() 失败:', err && err.name);
+      _listeningAudio = null;
+      fallback();
+    });
+
+    // 5秒兜底
+    setTimeout(() => {
+      if (!started && _listeningAudio === audio) {
+        try { audio.pause(); } catch(e){}
+        _listeningAudio = null;
+        fallback();
+      }
+    }, 5000);
+
+    return true;
+  };
+
+  const fallback = () => {
+    // 降级：用 speakBrowser（浏览器内置 TTS，处理过时间数字）
+    if (hint) hint.textContent = '🔊 加载中...';
+    speakBrowser(q.audioText, {
+      onStart: () => { if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听'; },
+      onEnd:   () => {},
+      onError: (why) => { if (hint) hint.textContent = '⚠️ ' + (why || '播放失败'); }
+    });
+  };
+
+  if (!playMp3()) fallback();
 }
 
 function toggleAudioText() {
