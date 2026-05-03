@@ -434,13 +434,105 @@ function playLesson() {
     }
   };
 
+  // 先停掉正在播的任何声音
+  stopSpeak();
+
   setUI('loading', '加载中…', 'text-blue-500');
 
-  speak(text, {
-    onStart:  () => setUI('playing', '🔊 正在播放…', 'text-green-600'),
-    onEnd:    () => setUI('idle',    '✅ 播放完成，点击可重听', 'text-slate-600'),
-    onError:  (why) => setUI('idle', '⚠️ ' + (why || '播放失败，请稍后再试'), 'text-orange-600')
+  // 课文朗读：优先用浏览器原生 TTS（无跨域问题，完整读整段）
+  // 失败才降级有道分段（效果差但作为兜底）
+  speakBrowser(text, {
+    onStart: () => setUI('playing', '🔊 正在朗读…', 'text-green-600'),
+    onEnd:   () => setUI('idle',    '✅ 朗读完成，点击可重听', 'text-slate-600'),
+    onError: (why) => {
+      // 浏览器 TTS 失败：降级到有道分段（已知在华为浏览器不可用，但至少 Chrome 兜底还有）
+      console.warn('[课文朗读] 浏览器 TTS 失败，降级有道:', why);
+      speak(text, {
+        onStart: () => setUI('playing', '🔊 正在朗读（分段模式）…', 'text-green-600'),
+        onEnd:   () => setUI('idle',    '✅ 朗读完成，点击可重听', 'text-slate-600'),
+        onError: (why2) => setUI('idle', '⚠️ ' + (why2 || '播放失败'), 'text-orange-600')
+      });
+    }
   });
+}
+
+// 纯浏览器 TTS 朗读（用于课文等长文本，无跨域问题）
+function speakBrowser(text, callbacks) {
+  callbacks = callbacks || {};
+  if (!('speechSynthesis' in window)) {
+    if (callbacks.onError) callbacks.onError('当前浏览器不支持语音朗读');
+    return;
+  }
+
+  const ua = (navigator.userAgent || '').toLowerCase();
+  const isHuawei = /huaweibrowser|hbpc/i.test(ua);
+
+  const doSpeak = () => {
+    try {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.rate = 0.85;
+      u.pitch = 1.0;
+      u.volume = 1.0;
+
+      // 挑选英语女声（对儿童更友好）
+      const voices = window.speechSynthesis.getVoices();
+      if (voices && voices.length) {
+        const enUS = voices.filter(v => /en[-_]?US/i.test(v.lang));
+        const en   = voices.filter(v => /^en/i.test(v.lang));
+        const candidates = enUS.length ? enUS : en;
+        // 优先选名字含 female/samantha/zira/karen 的
+        const female = candidates.find(v => /female|samantha|zira|karen|ava|allison/i.test(v.name));
+        u.voice = female || candidates[0] || voices[0];
+      }
+
+      let started = false;
+      u.onstart = () => {
+        started = true;
+        if (callbacks.onStart) callbacks.onStart();
+      };
+      u.onend = () => { if (callbacks.onEnd) callbacks.onEnd(); };
+      u.onerror = (e) => {
+        console.error('[课文 TTS] error:', e && e.error);
+        if (callbacks.onError) callbacks.onError(
+          isHuawei ? '华为浏览器语音不稳定，建议换用微信浏览器或 Chrome' : '朗读失败，请重试'
+        );
+      };
+
+      window.speechSynthesis.speak(u);
+
+      // 3 秒没开始播就判失败
+      setTimeout(() => {
+        if (!started) {
+          try { window.speechSynthesis.cancel(); } catch(e){}
+          if (callbacks.onError) callbacks.onError(
+            isHuawei ? '华为浏览器不支持此功能，请用 Chrome 或微信浏览器打开' : '朗读超时，请重试'
+          );
+        }
+      }, 3000);
+    } catch(e) {
+      console.error('[课文 TTS] 异常:', e);
+      if (callbacks.onError) callbacks.onError('朗读出错');
+    }
+  };
+
+  // 安卓浏览器 voices 是异步加载的
+  const voices = window.speechSynthesis.getVoices();
+  if (voices && voices.length > 0) {
+    doSpeak();
+  } else {
+    let triggered = false;
+    const onReady = () => {
+      if (triggered) return;
+      triggered = true;
+      try { window.speechSynthesis.onvoiceschanged = null; } catch(e){}
+      doSpeak();
+    };
+    try { window.speechSynthesis.onvoiceschanged = onReady; } catch(e){}
+    // 1.5 秒兜底：即使没有 voices 也强制尝试
+    setTimeout(onReady, 1500);
+  }
 }
 
 // ==================== 语音播放：双引擎 + 长文本分段 ====================
