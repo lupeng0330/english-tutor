@@ -417,6 +417,9 @@ function playWord() {
   speak(w.word);
 }
 
+// 课文朗读全局状态锁（防止重复点击导致 TTS 队列重叠）
+let _lessonPlaying = false;
+
 function playLesson() {
   const btn = document.getElementById('lessonPlayBtn');
   const status = document.getElementById('lessonPlayStatus');
@@ -434,26 +437,53 @@ function playLesson() {
     }
   };
 
-  // 先停掉正在播的任何声音
+  // 如果正在朗读，当作"停止"按钮用
+  if (_lessonPlaying) {
+    _lessonPlaying = false;
+    stopSpeak();
+    setUI('idle', '⏹ 已停止，点击重新朗读', 'text-slate-600');
+    return;
+  }
+
+  _lessonPlaying = true;
+
+  // 先彻底停掉所有正在播的声音并清空 TTS 队列
   stopSpeak();
 
   setUI('loading', '加载中…', 'text-blue-500');
 
-  // 课文朗读：优先用浏览器原生 TTS（无跨域问题，完整读整段）
-  // 失败才降级有道分段（效果差但作为兜底）
-  speakBrowser(text, {
-    onStart: () => setUI('playing', '🔊 正在朗读…', 'text-green-600'),
-    onEnd:   () => setUI('idle',    '✅ 朗读完成，点击可重听', 'text-slate-600'),
-    onError: (why) => {
-      // 浏览器 TTS 失败：降级到有道分段（已知在华为浏览器不可用，但至少 Chrome 兜底还有）
-      console.warn('[课文朗读] 浏览器 TTS 失败，降级有道:', why);
-      speak(text, {
-        onStart: () => setUI('playing', '🔊 正在朗读（分段模式）…', 'text-green-600'),
-        onEnd:   () => setUI('idle',    '✅ 朗读完成，点击可重听', 'text-slate-600'),
-        onError: (why2) => setUI('idle', '⚠️ ' + (why2 || '播放失败'), 'text-orange-600')
-      });
-    }
-  });
+  // 关键：手机浏览器 cancel() 是异步的，必须等 300ms 让队列真正清空
+  // 否则新的 utterances 会和队列里"卡住"的旧 utterances 混在一起
+  setTimeout(() => {
+    if (!_lessonPlaying) return;  // 用户在延迟期间又点了停止
+
+    speakBrowser(text, {
+      onStart: () => setUI('playing', '🔊 正在朗读…（点击可停止）', 'text-green-600'),
+      onEnd:   () => {
+        _lessonPlaying = false;
+        setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+      },
+      onError: (why) => {
+        console.warn('[课文朗读] 浏览器 TTS 失败，降级有道:', why);
+        // 降级前再次确认没有残留队列
+        stopSpeak();
+        setTimeout(() => {
+          if (!_lessonPlaying) return;
+          speak(text, {
+            onStart: () => setUI('playing', '🔊 正在朗读（分段）…', 'text-green-600'),
+            onEnd:   () => {
+              _lessonPlaying = false;
+              setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+            },
+            onError: (why2) => {
+              _lessonPlaying = false;
+              setUI('idle', '⚠️ ' + (why2 || '播放失败'), 'text-orange-600');
+            }
+          });
+        }, 200);
+      }
+    });
+  }, 300);
 }
 
 // 纯浏览器 TTS 朗读（用于课文等长文本，无跨域问题）
@@ -491,15 +521,36 @@ function speakBrowser(text, callbacks) {
     try {
       window.speechSynthesis.cancel();
 
-      // 挑选英语语音
+      // 挑选英语语音（按音质优先级）
       const voices = window.speechSynthesis.getVoices();
       let chosenVoice = null;
       if (voices && voices.length) {
         const enUS = voices.filter(v => /en[-_]?US/i.test(v.lang));
         const en   = voices.filter(v => /^en/i.test(v.lang));
-        const candidates = enUS.length ? enUS : en;
-        const female = candidates.find(v => /female|samantha|zira|karen|ava|allison/i.test(v.name));
-        chosenVoice = female || candidates[0] || voices[0];
+        const candidates = enUS.length ? enUS : (en.length ? en : voices);
+
+        // 按音质排序优先级（高 → 低）
+        const priority = [
+          /Google.*US.*English/i,       // Chrome: Google US English (最自然)
+          /Microsoft.*Aria.*Natural/i,  // Edge: 神经网络 TTS
+          /Microsoft.*Jenny.*Natural/i,
+          /Microsoft.*Guy.*Natural/i,
+          /Samantha/i,                  // macOS/iOS 默认
+          /Ava/i,                       // macOS 高质量
+          /Allison/i,
+          /Karen/i,
+          /Microsoft.*Aria/i,
+          /Microsoft.*Zira/i,           // Windows 默认（音质一般但稳定）
+          /female/i,
+          /en[-_]?US/i                  // 最后兜底任意 en-US
+        ];
+
+        for (const pattern of priority) {
+          const match = candidates.find(v => pattern.test(v.name));
+          if (match) { chosenVoice = match; break; }
+        }
+        if (!chosenVoice) chosenVoice = candidates[0];
+        console.log('[课文 TTS] 选用语音:', chosenVoice && (chosenVoice.name + ' | ' + chosenVoice.lang));
       }
 
       let started = false;
@@ -624,6 +675,8 @@ function stopSpeak() {
   _currentCallbacks = null;
   _hasEmittedStart = false;
   try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch(e){}
+  // 多 cancel 几次增加清空队列概率（某些手机浏览器 cancel 只清当前一个）
+  try { if ('speechSynthesis' in window) { setTimeout(() => window.speechSynthesis.cancel(), 50); } } catch(e){}
 }
 
 // 把长文本按"短语"切分（每段 <= SEG_MAX 字符，按空格切词组合）
