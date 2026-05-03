@@ -472,29 +472,36 @@ function stopSpeak() {
   try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch(e){}
 }
 
-// 把长文本按句子分段（按 . ! ? 分割，并确保每段不超过 SEG_MAX 字符）
-// 注意：SEG_MAX 越小，华为/跨域对长 URL 的拦截风险越低，但段数越多停顿越明显
+// 把长文本按"短语"切分（每段 <= SEG_MAX 字符，按空格切词组合）
+// 重要：有道 API 对长 URL/复杂文本有反爬拦截，经测试 "hello" 能响 "Look at my bag..." 不响
+// 所以这里把每段严格压到 15 字符以内，每段只包含 1-3 个单词，URL 形态和单个单词几乎一致
 function splitText(text) {
-  const SEG_MAX = 80;  // 保守值，和单词长度接近，兼容性最好
-  // 先按标点分
-  const raw = text.split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(s => s);
+  const SEG_MAX = 15;
+  // 先按句末标点分句
+  const sentences = text.split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(s => s);
   const segs = [];
-  for (const s of raw) {
-    if (s.length <= SEG_MAX) {
-      segs.push(s);
-    } else {
-      // 再按逗号/分号分
-      const parts = s.split(/[,;]\s*/).map(p => p.trim()).filter(p => p);
-      let buf = '';
-      for (const p of parts) {
-        if ((buf + ', ' + p).length > SEG_MAX) {
-          if (buf) segs.push(buf);
-          buf = p;
-        } else {
-          buf = buf ? buf + ', ' + p : p;
+
+  for (const sent of sentences) {
+    // 再按逗号/分号切短语
+    const phrases = sent.split(/[,;]\s*/).map(p => p.trim()).filter(p => p);
+    for (const phrase of phrases) {
+      if (phrase.length <= SEG_MAX) {
+        segs.push(phrase);
+      } else {
+        // 还是太长，按空格切词并累积到 SEG_MAX
+        const words = phrase.split(/\s+/).filter(w => w);
+        let buf = '';
+        for (const w of words) {
+          const next = buf ? buf + ' ' + w : w;
+          if (next.length > SEG_MAX && buf) {
+            segs.push(buf);
+            buf = w;
+          } else {
+            buf = next;
+          }
         }
+        if (buf) segs.push(buf);
       }
-      if (buf) segs.push(buf);
     }
   }
   return segs.length ? segs : [text];
@@ -508,8 +515,8 @@ function speak(text, callbacks) {
 
   const segs = splitText(text);
 
-  // 短句/单词：老路径，保持和单词播放完全一致
-  if (segs.length === 1 && segs[0].length <= 80) {
+  // 单个短片段（通常是单词 / 短词组）：直接走单次请求路径
+  if (segs.length === 1 && segs[0].length <= 15) {
     playYoudao(segs[0],
       () => fallbackWebSpeech(segs[0], _currentCallbacks),
       () => { if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd(); }
@@ -517,7 +524,7 @@ function speak(text, callbacks) {
     return;
   }
 
-  // 长文本：串行播放，每一段都在前一段 onended 的回调里紧接着 play
+  // 多段：串行播放，每一段都在前一段 onended 的回调里紧接着 play
   // 这是 Android/华为浏览器接受的合法链式播放，不会触发"非用户手势"拦截
   playChain(segs, 0);
 }
