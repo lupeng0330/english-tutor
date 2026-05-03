@@ -457,6 +457,14 @@ function stopSpeak() {
     try { _currentAudio.pause(); _currentAudio.src = ''; } catch(e){}
     _currentAudio = null;
   }
+  // 清理预加载队列里剩余的 Audio 对象
+  if (Array.isArray(_playQueue)) {
+    for (const item of _playQueue) {
+      if (item && typeof item.pause === 'function') {
+        try { item.pause(); item.src = ''; } catch(e){}
+      }
+    }
+  }
   _playQueue = [];
   _playingQueue = false;
   _currentCallbacks = null;
@@ -507,30 +515,96 @@ function speak(text, callbacks) {
     return;
   }
 
-  // 长文本分段队列播放
-  _playQueue = splitText(text);
-  _playingQueue = true;
-  playNextInQueue();
+  // ⚠️ 长文本分段播放的关键：
+  // 华为/安卓浏览器要求 audio.play() 必须在"用户手势上下文"中调用。
+  // 如果我们在第1段 onended 后再 new Audio() 并 play()，会被静默拦截！
+  // 解决方案：在用户点击的同步栈里，一次性把所有 Audio 对象创建好（preload=auto），
+  // 前一个播完立刻 play 下一个（Audio 对象已存在、已加载，不算新的播放请求）
+  const segs = splitText(text);
+  playQueuePreloaded(segs);
 }
 
-function playNextInQueue() {
-  if (!_playingQueue || _playQueue.length === 0) {
-    _playingQueue = false;
-    if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
-    return;
-  }
-  const seg = _playQueue.shift();
-  playYoudao(seg, () => {
-    // 这一段失败，改用浏览器TTS补齐整句（一次性读完剩下的）
-    const remaining = [seg, ..._playQueue].join(' ');
-    _playQueue = [];
-    _playingQueue = false;
-    fallbackWebSpeech(remaining, _currentCallbacks);
-  }, () => {
-    // 这一段正常播完，继续下一段（稍等100ms避免太紧）
-    if (_playingQueue) setTimeout(playNextInQueue, 100);
-    else if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
+// 预加载方式播放队列（规避 Android 自动播放策略）
+function playQueuePreloaded(segs) {
+  if (!segs || segs.length === 0) return;
+
+  // 同步创建所有 Audio 对象（关键！必须在用户手势栈里完成）
+  const audios = segs.map(seg => {
+    const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(seg) + '&type=1';
+    const a = new Audio(url);
+    a.preload = 'auto';
+    return a;
   });
+
+  _playQueue = audios;     // 复用变量，存 Audio 对象数组
+  _playingQueue = true;
+
+  let idx = 0;
+  let started = false;
+
+  const playAt = (i) => {
+    if (!_playingQueue || i >= audios.length) {
+      _playingQueue = false;
+      _currentAudio = null;
+      if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
+      return;
+    }
+    const a = audios[i];
+    _currentAudio = a;
+
+    a.onplaying = () => {
+      if (!started) {
+        started = true;
+        if (_currentCallbacks && _currentCallbacks.onStart) _currentCallbacks.onStart();
+      }
+    };
+    a.onended = () => {
+      // 稍微延迟一点再播下一段，更自然
+      setTimeout(() => playAt(i + 1), 120);
+    };
+    a.onerror = () => {
+      console.warn('[有道-队列] 段落' + i + ' 失败:', segs[i].substring(0, 30));
+      // 某一段失败，整体降级用浏览器 TTS 读完剩余
+      const remaining = segs.slice(i).join(' ');
+      _playingQueue = false;
+      _currentAudio = null;
+      fallbackWebSpeech(remaining, _currentCallbacks);
+    };
+
+    const p = a.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch((err) => {
+        console.warn('[有道-队列] play() 被拒段落' + i + ':', err && err.name);
+        // 第一段就被拒 = 彻底没声音，降级浏览器 TTS
+        if (i === 0) {
+          _playingQueue = false;
+          _currentAudio = null;
+          fallbackWebSpeech(segs.join(' '), _currentCallbacks);
+        }
+        // 后续段落被拒：浏览器已不再在用户手势中，跳过 + 尝试下一段
+        else {
+          setTimeout(() => playAt(i + 1), 120);
+        }
+      });
+    }
+  };
+
+  playAt(0);
+
+  // 3秒兜底：如果第一段都没开始播（华为浏览器静默拒绝会走这里）
+  setTimeout(() => {
+    if (!started && _playingQueue) {
+      console.warn('[有道-队列] 3秒未开始，降级 TTS');
+      _playingQueue = false;
+      _currentAudio = null;
+      fallbackWebSpeech(segs.join(' '), _currentCallbacks);
+    }
+  }, 3000);
+}
+
+// 旧的 playNextInQueue 保留兼容（已不再调用，但避免其他地方依赖）
+function playNextInQueue() {
+  // deprecated: 改用 playQueuePreloaded
 }
 
 function playYoudao(text, onFail, onEnd) {
