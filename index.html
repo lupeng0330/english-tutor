@@ -179,8 +179,8 @@
           <h3 class="text-lg font-bold text-slate-800 mb-4">🎙️ 课文朗读 & AI跟读评测</h3>
           <div class="bg-slate-50 rounded-xl p-5 mb-4">
             <div class="flex items-center gap-3 mb-3">
-              <button class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center" onclick="playLesson()">▶</button>
-              <div class="text-sm text-slate-600">点击播放标准发音</div>
+              <button id="lessonPlayBtn" class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg" onclick="playLesson()">▶</button>
+              <div class="text-sm text-slate-600" id="lessonPlayStatus">点击播放标准发音</div>
             </div>
             <p class="text-slate-800 leading-relaxed text-lg" id="lessonText">Hello! I'm Tom. This is my family.</p>
             <p class="text-slate-500 text-sm mt-2" id="lessonTranslation">你好！我是汤姆。这是我的家人。</p>

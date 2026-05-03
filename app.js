@@ -418,7 +418,29 @@ function playWord() {
 }
 
 function playLesson() {
-  speak(state.currentUnit.lesson);
+  const btn = document.getElementById('lessonPlayBtn');
+  const status = document.getElementById('lessonPlayStatus');
+  const text = state.currentUnit && state.currentUnit.lesson;
+  if (!text) return;
+
+  const setUI = (state, msg, color) => {
+    if (status) {
+      status.textContent = msg;
+      status.className = 'text-sm ' + (color || 'text-slate-600');
+    }
+    if (btn) {
+      btn.disabled = (state === 'loading' || state === 'playing');
+      btn.innerHTML = state === 'playing' ? '⏸' : (state === 'loading' ? '…' : '▶');
+    }
+  };
+
+  setUI('loading', '加载中…', 'text-blue-500');
+
+  speak(text, {
+    onStart:  () => setUI('playing', '🔊 正在播放…', 'text-green-600'),
+    onEnd:    () => setUI('idle',    '✅ 播放完成，点击可重听', 'text-slate-600'),
+    onError:  (why) => setUI('idle', '⚠️ ' + (why || '播放失败，请稍后再试'), 'text-orange-600')
+  });
 }
 
 // ==================== 语音播放：双引擎 + 长文本分段 ====================
@@ -427,6 +449,8 @@ function playLesson() {
 let _currentAudio = null;
 let _playQueue = [];    // 待播放的片段队列
 let _playingQueue = false;
+let _currentCallbacks = null;  // 当前播放的回调（onStart/onEnd/onError）
+let _hasEmittedStart = false;
 
 function stopSpeak() {
   if (_currentAudio) {
@@ -435,6 +459,8 @@ function stopSpeak() {
   }
   _playQueue = [];
   _playingQueue = false;
+  _currentCallbacks = null;
+  _hasEmittedStart = false;
   try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch(e){}
 }
 
@@ -464,13 +490,20 @@ function splitText(text) {
   return segs.length ? segs : [text];
 }
 
-function speak(text) {
+function speak(text, callbacks) {
   if (!text) return;
   stopSpeak();
+  _currentCallbacks = callbacks || null;
+  _hasEmittedStart = false;
 
   // 单个短词/短句直接播
   if (text.length <= 150) {
-    playYoudao(text, () => fallbackWebSpeech(text));
+    playYoudao(text,
+      // onFail
+      () => fallbackWebSpeech(text, _currentCallbacks),
+      // onEnd
+      () => { if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd(); }
+    );
     return;
   }
 
@@ -483,6 +516,7 @@ function speak(text) {
 function playNextInQueue() {
   if (!_playingQueue || _playQueue.length === 0) {
     _playingQueue = false;
+    if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
     return;
   }
   const seg = _playQueue.shift();
@@ -491,10 +525,11 @@ function playNextInQueue() {
     const remaining = [seg, ..._playQueue].join(' ');
     _playQueue = [];
     _playingQueue = false;
-    fallbackWebSpeech(remaining);
+    fallbackWebSpeech(remaining, _currentCallbacks);
   }, () => {
     // 这一段正常播完，继续下一段（稍等100ms避免太紧）
     if (_playingQueue) setTimeout(playNextInQueue, 100);
+    else if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
   });
 }
 
@@ -513,6 +548,12 @@ function playYoudao(text, onFail, onEnd) {
   };
 
   audio.onerror = handleFail;
+  audio.onplaying = () => {
+    if (!_hasEmittedStart && _currentCallbacks && _currentCallbacks.onStart) {
+      _hasEmittedStart = true;
+      _currentCallbacks.onStart();
+    }
+  };
   audio.onended = () => {
     _currentAudio = null;
     if (onEnd) onEnd();
@@ -528,23 +569,65 @@ function playYoudao(text, onFail, onEnd) {
   }, 5000);
 }
 
-function fallbackWebSpeech(text) {
+function fallbackWebSpeech(text, callbacks) {
+  callbacks = callbacks || _currentCallbacks;
   if (!('speechSynthesis' in window)) {
-    alert('当前浏览器不支持语音播放，建议换用Chrome或QQ浏览器');
+    console.warn('[浏览器TTS] 不支持 speechSynthesis');
+    if (callbacks && callbacks.onError) callbacks.onError('当前浏览器不支持语音，请换 Chrome/QQ 浏览器');
     return;
   }
-  try {
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'en-US';
-    u.rate = 0.9;
-    const voices = window.speechSynthesis.getVoices();
-    const enVoice = voices.find(v => /en[-_]?US/i.test(v.lang)) ||
-                    voices.find(v => /^en/i.test(v.lang));
-    if (enVoice) u.voice = enVoice;
-    window.speechSynthesis.speak(u);
-  } catch(e) {
-    console.error('[浏览器TTS] 失败:', e);
+
+  const doSpeak = () => {
+    try {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.rate = 0.9;
+      const voices = window.speechSynthesis.getVoices();
+      const enVoice = voices.find(v => /en[-_]?US/i.test(v.lang)) ||
+                      voices.find(v => /^en/i.test(v.lang));
+      if (enVoice) u.voice = enVoice;
+      u.onstart = () => {
+        if (!_hasEmittedStart && callbacks && callbacks.onStart) {
+          _hasEmittedStart = true;
+          callbacks.onStart();
+        }
+      };
+      u.onend = () => { if (callbacks && callbacks.onEnd) callbacks.onEnd(); };
+      u.onerror = (e) => {
+        console.error('[浏览器TTS] utterance error:', e);
+        if (callbacks && callbacks.onError) callbacks.onError('网络不稳定，请重试');
+      };
+      window.speechSynthesis.speak(u);
+
+      // 华为浏览器兜底：2秒没触发 onstart 就认为失败
+      setTimeout(() => {
+        if (!_hasEmittedStart && callbacks && callbacks.onError) {
+          callbacks.onError('当前网络暂不可用，请稍后重试');
+        }
+      }, 2500);
+    } catch(e) {
+      console.error('[浏览器TTS] 失败:', e);
+      if (callbacks && callbacks.onError) callbacks.onError('播放出错，请重试');
+    }
+  };
+
+  // 华为/部分安卓浏览器 voices 是异步加载的，首次调用 getVoices() 可能为空
+  const voices = window.speechSynthesis.getVoices();
+  if (voices && voices.length > 0) {
+    doSpeak();
+  } else {
+    // 等 voices 加载完成再播放
+    let triggered = false;
+    const onReady = () => {
+      if (triggered) return;
+      triggered = true;
+      window.speechSynthesis.onvoiceschanged = null;
+      doSpeak();
+    };
+    window.speechSynthesis.onvoiceschanged = onReady;
+    // 1秒兜底，即使没有 voices 也强制尝试（某些浏览器根本不触发 voiceschanged）
+    setTimeout(onReady, 1000);
   }
 }
 
