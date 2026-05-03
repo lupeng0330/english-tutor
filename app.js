@@ -472,20 +472,22 @@ function stopSpeak() {
   try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch(e){}
 }
 
-// 把长文本按句子分段（按 . ! ? 分割，并确保每段不超过150字符）
+// 把长文本按句子分段（按 . ! ? 分割，并确保每段不超过 SEG_MAX 字符）
+// 注意：SEG_MAX 越小，华为/跨域对长 URL 的拦截风险越低，但段数越多停顿越明显
 function splitText(text) {
+  const SEG_MAX = 80;  // 保守值，和单词长度接近，兼容性最好
   // 先按标点分
   const raw = text.split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(s => s);
   const segs = [];
   for (const s of raw) {
-    if (s.length <= 150) {
+    if (s.length <= SEG_MAX) {
       segs.push(s);
     } else {
-      // 再按逗号分
-      const parts = s.split(/,\s*/).map(p => p.trim()).filter(p => p);
+      // 再按逗号/分号分
+      const parts = s.split(/[,;]\s*/).map(p => p.trim()).filter(p => p);
       let buf = '';
       for (const p of parts) {
-        if ((buf + ', ' + p).length > 150) {
+        if ((buf + ', ' + p).length > SEG_MAX) {
           if (buf) segs.push(buf);
           buf = p;
         } else {
@@ -504,107 +506,45 @@ function speak(text, callbacks) {
   _currentCallbacks = callbacks || null;
   _hasEmittedStart = false;
 
-  // 单个短词/短句直接播
-  if (text.length <= 150) {
-    playYoudao(text,
-      // onFail
-      () => fallbackWebSpeech(text, _currentCallbacks),
-      // onEnd
+  const segs = splitText(text);
+
+  // 短句/单词：老路径，保持和单词播放完全一致
+  if (segs.length === 1 && segs[0].length <= 80) {
+    playYoudao(segs[0],
+      () => fallbackWebSpeech(segs[0], _currentCallbacks),
       () => { if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd(); }
     );
     return;
   }
 
-  // ⚠️ 长文本分段播放的关键：
-  // 华为/安卓浏览器要求 audio.play() 必须在"用户手势上下文"中调用。
-  // 如果我们在第1段 onended 后再 new Audio() 并 play()，会被静默拦截！
-  // 解决方案：在用户点击的同步栈里，一次性把所有 Audio 对象创建好（preload=auto），
-  // 前一个播完立刻 play 下一个（Audio 对象已存在、已加载，不算新的播放请求）
-  const segs = splitText(text);
-  playQueuePreloaded(segs);
+  // 长文本：串行播放，每一段都在前一段 onended 的回调里紧接着 play
+  // 这是 Android/华为浏览器接受的合法链式播放，不会触发"非用户手势"拦截
+  playChain(segs, 0);
 }
 
-// 预加载方式播放队列（规避 Android 自动播放策略）
-function playQueuePreloaded(segs) {
-  if (!segs || segs.length === 0) return;
-
-  // 同步创建所有 Audio 对象（关键！必须在用户手势栈里完成）
-  const audios = segs.map(seg => {
-    const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(seg) + '&type=1';
-    const a = new Audio(url);
-    a.preload = 'auto';
-    return a;
-  });
-
-  _playQueue = audios;     // 复用变量，存 Audio 对象数组
-  _playingQueue = true;
-
-  let idx = 0;
-  let started = false;
-
-  const playAt = (i) => {
-    if (!_playingQueue || i >= audios.length) {
-      _playingQueue = false;
-      _currentAudio = null;
-      if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
-      return;
-    }
-    const a = audios[i];
-    _currentAudio = a;
-
-    a.onplaying = () => {
-      if (!started) {
-        started = true;
-        if (_currentCallbacks && _currentCallbacks.onStart) _currentCallbacks.onStart();
+function playChain(segs, idx) {
+  if (idx >= segs.length) {
+    if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
+    return;
+  }
+  const seg = segs[idx];
+  playYoudao(seg,
+    // onFail: 单段失败，标记失败并降级（只对"第一段都失败"做降级，避免中途切换体验差）
+    () => {
+      if (idx === 0) {
+        // 第一段就失败：整体降级浏览器 TTS
+        fallbackWebSpeech(segs.join(' '), _currentCallbacks);
+      } else {
+        // 中间段失败：跳过继续下一段
+        console.warn('[有道-链] 跳过失败段 #' + idx);
+        playChain(segs, idx + 1);
       }
-    };
-    a.onended = () => {
-      // 稍微延迟一点再播下一段，更自然
-      setTimeout(() => playAt(i + 1), 120);
-    };
-    a.onerror = () => {
-      console.warn('[有道-队列] 段落' + i + ' 失败:', segs[i].substring(0, 30));
-      // 某一段失败，整体降级用浏览器 TTS 读完剩余
-      const remaining = segs.slice(i).join(' ');
-      _playingQueue = false;
-      _currentAudio = null;
-      fallbackWebSpeech(remaining, _currentCallbacks);
-    };
-
-    const p = a.play();
-    if (p && typeof p.catch === 'function') {
-      p.catch((err) => {
-        console.warn('[有道-队列] play() 被拒段落' + i + ':', err && err.name);
-        // 第一段就被拒 = 彻底没声音，降级浏览器 TTS
-        if (i === 0) {
-          _playingQueue = false;
-          _currentAudio = null;
-          fallbackWebSpeech(segs.join(' '), _currentCallbacks);
-        }
-        // 后续段落被拒：浏览器已不再在用户手势中，跳过 + 尝试下一段
-        else {
-          setTimeout(() => playAt(i + 1), 120);
-        }
-      });
+    },
+    // onEnd: 紧接着在这个回调里同步启动下一段（关键：在 audio 事件栈里，不被拦截）
+    () => {
+      playChain(segs, idx + 1);
     }
-  };
-
-  playAt(0);
-
-  // 3秒兜底：如果第一段都没开始播（华为浏览器静默拒绝会走这里）
-  setTimeout(() => {
-    if (!started && _playingQueue) {
-      console.warn('[有道-队列] 3秒未开始，降级 TTS');
-      _playingQueue = false;
-      _currentAudio = null;
-      fallbackWebSpeech(segs.join(' '), _currentCallbacks);
-    }
-  }, 3000);
-}
-
-// 旧的 playNextInQueue 保留兼容（已不再调用，但避免其他地方依赖）
-function playNextInQueue() {
-  // deprecated: 改用 playQueuePreloaded
+  );
 }
 
 function playYoudao(text, onFail, onEnd) {
