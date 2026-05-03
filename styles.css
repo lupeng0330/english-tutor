@@ -1,0 +1,425 @@
+:root {
+  --brand: #3b82f6;
+  --brand-2: #6366f1;
+  --accent: #f59e0b;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+  min-height: 100vh;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(59, 130, 246, 0.15); }
+.nav-item {
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 12px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #64748b;
+}
+.nav-item:hover { background: #eff6ff; color: var(--brand); }
+.nav-item.active {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+.gradient-btn {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.gradient-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4); }
+.gradient-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.word-card { perspective: 1000px; width: 100%; height: 220px; cursor: pointer; }
+.word-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.word-card.flipped .word-card-inner { transform: rotateY(180deg); }
+.word-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.word-front { background: linear-gradient(135deg, #dbeafe, #e0e7ff); color: #1e40af; }
+.word-back { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; transform: rotateY(180deg); }
+.hide { display: none !important; }
+.badge { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.chat-bubble-user {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+.chat-bubble-ai {
+  background: #f1f5f9;
+  color: #1e293b;
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+.record-pulse { animation: pulse 1.5s infinite; }
+@keyframes pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+}
+.grammar-example {
+  background: #f0fdf4;
+  border-left: 4px solid #10b981;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+.unit-card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+}
+.unit-card:hover { border-color: var(--brand); transform: translateY(-2px); }
+.confetti-emoji { animation: bounce 0.6s ease; display: inline-block; }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.3); }
+}
+
+/* ============ 手机端适配 · 深度优化 ============ */
+@media (max-width: 768px) {
+  /* 使用安全区，适配华为Mate70 Pro这类有状态栏/手势区的机型 */
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+    font-size: 15px;
+  }
+
+  /* ---------- 顶部导航栏：紧凑、保持Logo可见 ---------- */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    padding-top: env(safe-area-inset-top);
+  }
+  header .max-w-7xl { padding: 8px 12px !important; }
+  header .flex.items-center.gap-3 > div:first-child {
+    width: 34px; height: 34px; font-size: 16px;
+  }
+  header .font-bold.text-lg { font-size: 15px; line-height: 1.2; }
+  header .text-xs { font-size: 10px; }
+  /* 手机版选择器紧凑化 */
+  #childSelectMobile { padding: 6px 8px; font-size: 12px; max-width: 110px; }
+  /* 头像按钮 */
+  #childAvatar { width: 34px; height: 34px; font-size: 14px; }
+  header .gap-4 { gap: 8px; }
+
+  /* ---------- 主容器：单列 ---------- */
+  .max-w-7xl.mx-auto.px-6.py-6.flex {
+    flex-direction: column;
+    padding: 12px;
+    gap: 0;
+  }
+  main { width: 100%; }
+  .card { border-radius: 14px; }
+
+  /* ---------- 底部Tab栏：更清晰、加安全区 ---------- */
+  aside {
+    width: 100% !important;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.06);
+    padding: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid #e2e8f0;
+  }
+  aside > nav {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 4px 2px !important;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none;
+    gap: 0;
+    background: transparent;
+  }
+  aside .nav-item {
+    flex-direction: column;
+    padding: 6px 2px !important;
+    gap: 2px !important;
+    font-size: 10px;
+    text-align: center;
+    min-width: 0;
+    border-radius: 10px;
+  }
+  aside .nav-item span:first-child { font-size: 22px; line-height: 1; }
+  aside .nav-item span:last-child {
+    font-size: 10px; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  /* 用 data-mb 里的短文字替换长文字 */
+  aside .nav-item span[data-mb] { font-size: 0; }
+  aside .nav-item span[data-mb]::before {
+    content: attr(data-mb);
+    font-size: 10px;
+  }
+  aside .nav-item.active {
+    background: transparent;
+    color: #3b82f6;
+    box-shadow: none;
+    font-weight: 700;
+  }
+  aside .nav-item.active span:first-child {
+    transform: scale(1.15);
+    transition: transform 0.2s;
+  }
+  aside > .card:last-child { display: none; }  /* 隐藏连续学习侧栏 */
+
+  /* ---------- 栅格：统一单列/双列 ---------- */
+  .grid.md\:grid-cols-2 { grid-template-columns: 1fr; gap: 10px; }
+  .grid.md\:grid-cols-3 { grid-template-columns: 1fr; gap: 10px; }
+  .grid.md\:grid-cols-4 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .grid.lg\:grid-cols-2, .grid.lg\:grid-cols-3, .grid.lg\:grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- 首页 ---------- */
+  #page-home .p-6 { padding: 16px; }
+  #page-home .text-2xl { font-size: 20px; }
+  #page-home .grid-cols-2.md\:grid-cols-4 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  #page-home .grid-cols-2.md\:grid-cols-4 .card { padding: 14px 8px; }
+  #page-home .grid-cols-2.md\:grid-cols-4 .text-4xl { font-size: 30px; margin-bottom: 6px; }
+  #page-home .grid-cols-2.md\:grid-cols-4 .font-semibold { font-size: 13px; }
+  #page-home .p-5 { padding: 14px; }
+  #page-home .text-3xl { font-size: 22px; }
+
+  /* 今日任务：两列保持 */
+  #page-home .grid-cols-1.md\:grid-cols-2 { grid-template-columns: 1fr; }
+
+  /* ---------- 课本学习 ---------- */
+  #page-textbook .card.flex { flex-wrap: wrap; gap: 8px; padding: 12px; }
+  #page-textbook .card.flex > div { flex: 1 1 calc(50% - 8px); min-width: 0; }
+  #page-textbook .card.flex select { width: 100%; padding: 10px 12px; font-size: 14px; }
+  .unit-card { padding: 14px; border-radius: 14px; }
+  .unit-card .text-xl { font-size: 18px; }
+
+  /* 单元详情页 */
+  #unitDetailView .p-6 { padding: 16px; }
+  #unitDetailView .text-2xl { font-size: 20px; }
+  #unitDetailView .text-lg { font-size: 15px; }
+
+  /* 单词卡片：宽度铺满 */
+  .word-card {
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .word-card .text-4xl { font-size: 32px; }
+  .word-card .text-3xl { font-size: 24px; }
+  .word-card .text-lg { font-size: 15px; }
+  .max-w-md.mx-auto { max-width: 100%; }
+
+  /* 卡片下方按钮：3等分、大按钮易点 */
+  .word-card ~ .flex {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .word-card ~ .flex button {
+    font-size: 12px; padding: 10px 4px;
+    white-space: nowrap; border-radius: 10px;
+  }
+
+  /* 课文朗读区 */
+  #lessonText { font-size: 16px; line-height: 1.7; }
+  #lessonTranslation { font-size: 13px; }
+  #recordBtn {
+    width: 72px; height: 72px; font-size: 28px;
+    margin: 8px auto;
+  }
+
+  /* ---------- 练习测试 ---------- */
+  #page-practice .card.p-5 { padding: 12px; }
+  #practiceFilterView .flex.flex-wrap {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+  #practiceFilterView > div > div:not(.flex-1) { width: 100%; }
+  #practiceFilterView select { width: 100%; padding: 10px; font-size: 14px; }
+  #practiceFilterView .flex-1 { text-align: left !important; font-size: 12px; }
+
+  /* 练习入口卡片：两列 */
+  #practiceTypeView { grid-template-columns: repeat(2, 1fr) !important; gap: 10px; }
+  #practiceTypeView .card { padding: 16px 12px; }
+  #practiceTypeView .text-5xl { font-size: 36px; margin-bottom: 8px; }
+  #practiceTypeView h3 { font-size: 14px; }
+  #practiceTypeView p { font-size: 11px; line-height: 1.4; }
+  #practiceTypeView .badge { font-size: 10px; padding: 2px 6px; }
+
+  /* 答题卡片：按钮占满、支持换行 */
+  #practiceQuizView .card { padding: 14px; }
+  #quizQuestion {
+    font-size: 16px; line-height: 1.6;
+    word-wrap: break-word; overflow-wrap: break-word;
+  }
+  #quizOptions button {
+    font-size: 14px; padding: 12px;
+    white-space: normal;
+    line-height: 1.5;
+    min-height: 48px;
+  }
+  #quizOptions button > span:first-child {
+    flex-shrink: 0;
+    display: inline-flex !important;
+    align-items: center; justify-content: center;
+  }
+  #quizPassage { font-size: 13px; line-height: 1.7; }
+  #quizAudioText { font-size: 12px; }
+  #quizMeta { font-size: 10px !important; }
+
+  /* 结果页 */
+  #practiceResultView .p-8 { padding: 20px; }
+  #practiceResultView .text-6xl { font-size: 48px; }
+  #practiceResultView .text-5xl { font-size: 40px; }
+  #practiceResultView .grid-cols-3 { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  #practiceResultView .grid-cols-3 .text-2xl { font-size: 20px; }
+  #practiceResultView button { margin: 4px; padding: 10px 18px; font-size: 13px; }
+
+  /* ---------- 语法讲解 ---------- */
+  #page-grammar .grid.lg\:grid-cols-4 { display: block; }
+  #page-grammar .lg\:col-span-1 { margin-bottom: 12px; }
+  #page-grammar #grammarList {
+    display: flex; overflow-x: auto; gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  #page-grammar #grammarList::-webkit-scrollbar { display: none; }
+  #page-grammar #grammarList .grammar-item {
+    flex-shrink: 0; min-width: 160px; padding: 10px 14px !important;
+  }
+  #grammarContent { padding: 16px !important; }
+  #grammarContent h3 { font-size: 18px; }
+
+  /* ---------- AI对话 ---------- */
+  #page-chat {
+    /* 让对话页铺满可视区 */
+    margin: -12px -12px 0 -12px;
+    padding: 0;
+  }
+  #page-chat > .card {
+    border-radius: 0;
+    box-shadow: none;
+    height: calc(100vh - 54px - 68px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    min-height: 500px;
+  }
+  #page-chat .p-4 { padding: 12px; }
+  #chatMessages { padding: 12px; }
+  .chat-bubble-user, .chat-bubble-ai {
+    max-width: 82%; font-size: 14px; line-height: 1.5;
+    padding: 10px 14px;
+  }
+  #page-chat .flex.gap-2.mb-2 {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  #page-chat .flex.gap-2.mb-2::-webkit-scrollbar { display: none; }
+  #page-chat .flex.gap-2.mb-2 button {
+    flex-shrink: 0; font-size: 11px;
+    padding: 4px 10px;
+  }
+  #chatInput { padding: 10px 12px; font-size: 14px; }
+  #page-chat .gradient-btn { padding: 10px 16px; font-size: 13px; }
+
+  /* ---------- 学习报告 ---------- */
+  #page-report .grid-cols-2.md\:grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr); gap: 10px;
+  }
+  #page-report .card.p-4 { padding: 12px; }
+  #page-report .text-2xl { font-size: 19px; }
+  #page-report .card.p-6 { padding: 14px; }
+  #page-report canvas {
+    max-height: 200px !important;
+    width: 100% !important;
+  }
+  #page-report h3 { font-size: 15px; }
+  #unitMastery .text-sm { font-size: 13px; }
+
+  /* ---------- 通用字号 ---------- */
+  h2.text-xl { font-size: 18px; }
+  h3.text-lg { font-size: 15px; }
+  .text-lg { font-size: 15px; }
+  .badge { font-size: 11px; padding: 3px 8px; }
+
+  /* 滚动条美化（iOS风格） */
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 2px; }
+}
+
+/* ============ 超小屏幕 ( < 380 ) ============ */
+@media (max-width: 380px) {
+  header .font-bold.text-lg { font-size: 13px; }
+  header .text-xs { display: none; }
+  aside .nav-item span:first-child { font-size: 20px; }
+  aside .nav-item span:last-child { font-size: 9px; }
+  .word-card .text-4xl { font-size: 28px; }
+  #quizOptions button { font-size: 13px; padding: 10px; }
+}
+
+/* ============ 横屏模式 ============ */
+@media (max-width: 1024px) and (orientation: landscape) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: calc(56px + env(safe-area-inset-bottom));
+  }
+  /* 横屏底部导航降低高度 */
+  aside .nav-item { padding: 4px 2px !important; }
+  aside .nav-item span:first-child { font-size: 18px; }
+  aside .nav-item span:last-child { font-size: 9px; }
+
+  /* 横屏时让卡片网格变回两列，利用空间 */
+  .grid.md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  #practiceTypeView { grid-template-columns: repeat(4, 1fr) !important; }
+  #page-report .grid-cols-2.md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  #page-home .grid-cols-2.md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+  /* 横屏AI对话，不铺满高度 */
+  #page-chat > .card { height: calc(100vh - 120px); min-height: 300px; }
+}

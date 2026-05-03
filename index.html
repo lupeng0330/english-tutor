@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#3b82f6" />
+<meta name="format-detection" content="telephone=no" />
+<title>乐学英语 · 广州教科版同步辅导 (Demo)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- 顶部导航栏 -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white text-xl font-bold">乐</div>
+      <div>
+        <div class="font-bold text-slate-800 text-lg">乐学英语</div>
+        <div class="text-xs text-slate-500">广州教科版同步辅导</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-2 bg-blue-50 rounded-xl px-3 py-2">
+        <span class="text-sm text-slate-600">当前学生：</span>
+        <select id="childSelect" class="bg-transparent font-semibold text-blue-700 outline-none cursor-pointer">
+          <option value="xiaoming">小明（三年级）</option>
+          <option value="xiaohong">小红（六年级）</option>
+          <option value="xiaolei">小磊（初二）</option>
+        </select>
+      </div>
+      <!-- 手机端用简化版 -->
+      <select id="childSelectMobile" class="md:hidden bg-blue-50 rounded-lg px-2 py-1 text-xs font-semibold text-blue-700 outline-none">
+        <option value="xiaoming">小明</option>
+        <option value="xiaohong">小红</option>
+        <option value="xiaolei">小磊</option>
+      </select>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-pink-400 flex items-center justify-center text-white font-bold" id="childAvatar">明</div>
+    </div>
+  </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-6 py-6 flex gap-6">
+  <!-- 侧边栏 -->
+  <aside class="w-56 flex-shrink-0">
+    <nav class="card p-3 sticky top-24">
+      <div class="nav-item active" data-page="home"><span>🏠</span><span data-mb="首页">首页</span></div>
+      <div class="nav-item" data-page="textbook"><span>📖</span><span data-mb="课本">课本学习</span></div>
+      <div class="nav-item" data-page="practice"><span>✏️</span><span data-mb="练习">练习测试</span></div>
+      <div class="nav-item" data-page="grammar"><span>📝</span><span data-mb="语法">语法讲解</span></div>
+      <div class="nav-item" data-page="chat"><span>💬</span><span data-mb="对话">AI对话</span></div>
+      <div class="nav-item" data-page="report"><span>📊</span><span data-mb="报告">学习报告</span></div>
+    </nav>
+    <div class="card p-4 mt-4 bg-gradient-to-br from-orange-50 to-amber-50 border-0">
+      <div class="text-xs text-orange-700 font-semibold mb-1">🔥 连续学习</div>
+      <div class="text-3xl font-bold text-orange-600">7 天</div>
+      <div class="text-xs text-slate-500 mt-1">继续加油！</div>
+    </div>
+  </aside>
+
+  <main class="flex-1 min-w-0">
+
+    <!-- ============ 首页 ============ -->
+    <section id="page-home" class="page">
+      <div class="card p-6 mb-6 bg-gradient-to-r from-blue-500 to-indigo-500 text-white border-0">
+        <h1 class="text-2xl font-bold mb-1" id="welcomeTitle">你好，小明！👋</h1>
+        <p class="opacity-90" id="welcomeSub">今天是新一天的学习，加油哦！广州教科版三年级下册 · Unit 1</p>
+      </div>
+
+      <div class="card p-6 mb-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-bold text-slate-800">📋 今日学习任务</h2>
+          <span class="badge bg-blue-100 text-blue-700">完成 2/4</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div class="flex items-center gap-3 p-3 bg-green-50 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center">✓</div>
+            <div class="flex-1"><div class="font-semibold text-slate-800">单词复习</div><div class="text-xs text-slate-500">已掌握 8/10 个单词</div></div>
+          </div>
+          <div class="flex items-center gap-3 p-3 bg-green-50 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center">✓</div>
+            <div class="flex-1"><div class="font-semibold text-slate-800">课文朗读</div><div class="text-xs text-slate-500">发音评测 92 分</div></div>
+          </div>
+          <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-slate-300 text-white flex items-center justify-center">○</div>
+            <div class="flex-1"><div class="font-semibold text-slate-800">语法练习</div><div class="text-xs text-slate-500">today 的正确用法</div></div>
+          </div>
+          <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-xl">
+            <div class="w-10 h-10 rounded-full bg-slate-300 text-white flex items-center justify-center">○</div>
+            <div class="flex-1"><div class="font-semibold text-slate-800">AI对话练习</div><div class="text-xs text-slate-500">5 分钟日常对话</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div class="card p-5 text-center cursor-pointer" onclick="switchPage('textbook')"><div class="text-4xl mb-2">📚</div><div class="font-semibold text-slate-800">单词学习</div><div class="text-xs text-slate-500 mt-1">卡片+发音</div></div>
+        <div class="card p-5 text-center cursor-pointer" onclick="switchPage('textbook')"><div class="text-4xl mb-2">🎤</div><div class="font-semibold text-slate-800">跟读评测</div><div class="text-xs text-slate-500 mt-1">AI打分</div></div>
+        <div class="card p-5 text-center cursor-pointer" onclick="switchPage('practice')"><div class="text-4xl mb-2">🎯</div><div class="font-semibold text-slate-800">闯关练习</div><div class="text-xs text-slate-500 mt-1">趣味游戏</div></div>
+        <div class="card p-5 text-center cursor-pointer" onclick="switchPage('chat')"><div class="text-4xl mb-2">🤖</div><div class="font-semibold text-slate-800">AI对话</div><div class="text-xs text-slate-500 mt-1">口语练习</div></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="card p-5"><div class="text-sm text-slate-500 mb-1">本周学习时长</div><div class="text-3xl font-bold text-blue-600">3.5 <span class="text-base text-slate-400">小时</span></div><div class="text-xs text-green-600 mt-1">↑ 较上周 +20%</div></div>
+        <div class="card p-5"><div class="text-sm text-slate-500 mb-1">已掌握单词</div><div class="text-3xl font-bold text-indigo-600">156 <span class="text-base text-slate-400">个</span></div><div class="text-xs text-slate-500 mt-1">本周新增 18 个</div></div>
+        <div class="card p-5"><div class="text-sm text-slate-500 mb-1">完成单元</div><div class="text-3xl font-bold text-orange-500">5 <span class="text-base text-slate-400">/ 10</span></div><div class="text-xs text-slate-500 mt-1">进度 50%</div></div>
+      </div>
+    </section>
+
+    <!-- ============ 课本学习 ============ -->
+    <section id="page-textbook" class="page hide">
+      <div class="card p-5 mb-6 flex flex-wrap items-center gap-4">
+        <div>
+          <label class="text-sm text-slate-500 block mb-1">年级</label>
+          <select id="gradeSelect" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
+            <option value="grade3">小学三年级</option>
+            <option value="grade4">小学四年级</option>
+            <option value="grade5">小学五年级</option>
+            <option value="grade6">小学六年级</option>
+            <option value="grade7">初中一年级</option>
+            <option value="grade8">初中二年级</option>
+            <option value="grade9">初中三年级</option>
+          </select>
+        </div>
+        <div>
+          <label class="text-sm text-slate-500 block mb-1">教材版本</label>
+          <select class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
+            <option>广州教科版（下册）</option>
+            <option>广州教科版（上册）</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="unitListView">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">📖 单元列表</h2>
+        <div id="unitList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+
+      <div id="unitDetailView" class="hide">
+        <button onclick="backToUnits()" class="mb-4 text-blue-600 font-semibold flex items-center gap-1">← 返回单元列表</button>
+        <div class="card p-6 mb-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-0">
+          <h2 class="text-2xl font-bold" id="unitDetailTitle">Unit 3</h2>
+          <p class="opacity-90" id="unitDetailSub">主题课文</p>
+        </div>
+
+        <div class="card p-6 mb-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-lg font-bold text-slate-800">📝 单词卡片学习</h3>
+            <div class="text-sm text-slate-500"><span id="wordIndex">1</span> / <span id="wordTotal">10</span></div>
+          </div>
+          <div class="max-w-md mx-auto">
+            <div class="word-card" id="wordCard" onclick="flipCard()">
+              <div class="word-card-inner">
+                <div class="word-face word-front">
+                  <div class="text-4xl font-bold mb-2" id="wordText">apple</div>
+                  <div class="text-lg text-blue-700" id="wordPhonetic">/ˈæpl/</div>
+                  <button class="mt-4 px-4 py-2 bg-white rounded-full shadow text-sm" onclick="event.stopPropagation(); playWord()">🔊 发音</button>
+                  <div class="text-xs text-blue-600 mt-3 opacity-70">点击卡片查看释义</div>
+                </div>
+                <div class="word-face word-back">
+                  <div class="text-3xl font-bold mb-2" id="wordMeaning">苹果</div>
+                  <div class="text-sm text-amber-700 text-center" id="wordExample">I like to eat apples.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between mt-4 gap-2">
+              <button class="flex-1 py-2 bg-slate-100 rounded-xl font-semibold hover:bg-slate-200" onclick="prevWord()">← 上一个</button>
+              <button class="flex-1 py-2 bg-green-100 text-green-700 rounded-xl font-semibold hover:bg-green-200" onclick="markKnown()">✓ 认识</button>
+              <button class="flex-1 py-2 gradient-btn" onclick="nextWord()">下一个 →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6 mb-6">
+          <h3 class="text-lg font-bold text-slate-800 mb-4">🎙️ 课文朗读 & AI跟读评测</h3>
+          <div class="bg-slate-50 rounded-xl p-5 mb-4">
+            <div class="flex items-center gap-3 mb-3">
+              <button class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center" onclick="playLesson()">▶</button>
+              <div class="text-sm text-slate-600">点击播放标准发音</div>
+            </div>
+            <p class="text-slate-800 leading-relaxed text-lg" id="lessonText">Hello! I'm Tom. This is my family.</p>
+            <p class="text-slate-500 text-sm mt-2" id="lessonTranslation">你好！我是汤姆。这是我的家人。</p>
+          </div>
+          <div class="flex flex-col items-center gap-4">
+            <button id="recordBtn" class="w-20 h-20 rounded-full bg-red-500 text-white flex items-center justify-center text-3xl shadow-lg" onclick="toggleRecord()">🎤</button>
+            <div class="text-sm text-slate-600" id="recordHint">点击开始录音跟读</div>
+            <div id="recordResult" class="hide w-full">
+              <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-5">
+                <div class="flex items-center justify-between mb-3">
+                  <span class="font-semibold text-slate-800">🤖 AI评测结果</span>
+                  <span class="text-2xl font-bold text-green-600" id="scoreDisplay">92 分</span>
+                </div>
+                <div class="space-y-2 text-sm">
+                  <div class="flex justify-between"><span class="text-slate-600">发音准确度</span><span class="font-semibold">95%</span></div>
+                  <div class="flex justify-between"><span class="text-slate-600">流利度</span><span class="font-semibold">88%</span></div>
+                  <div class="flex justify-between"><span class="text-slate-600">语调</span><span class="font-semibold">93%</span></div>
+                  <div class="mt-3 p-3 bg-white rounded-lg text-slate-700">💡 整体不错！注意 <span class="text-red-500 font-semibold">"doctor"</span> 的发音 /ˈdɒktə/。</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 练习测试 ============ -->
+    <section id="page-practice" class="page hide">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">✏️ 练习测试</h2>
+
+      <!-- 筛选器 -->
+      <div id="practiceFilterView" class="card p-5 mb-4">
+        <div class="flex flex-wrap items-center gap-4">
+          <div>
+            <label class="text-sm text-slate-500 block mb-1">年级</label>
+            <select id="filterGrade" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
+              <option value="all">全部年级</option>
+              <option value="3">三年级</option>
+              <option value="4">四年级</option>
+              <option value="5">五年级</option>
+              <option value="6">六年级</option>
+              <option value="7">初一</option>
+              <option value="8">初二</option>
+              <option value="9">初三</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm text-slate-500 block mb-1">难度</label>
+            <select id="filterDifficulty" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
+              <option value="0">全部难度</option>
+              <option value="1">★ 基础</option>
+              <option value="2">★★ 中等</option>
+              <option value="3">★★★ 较难</option>
+              <option value="4">★★★★ 挑战</option>
+            </select>
+          </div>
+          <div class="flex-1 text-right text-sm text-slate-600">
+            <span id="filterCount">题库共 41 题，已全部加载 ✓</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="practiceTypeView" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card p-6 cursor-pointer" onclick="startPractice('spelling')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📝</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countSpelling">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">单词拼写</h3>
+          <p class="text-slate-500 text-sm mt-1">根据释义和提示拼写单词</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('listening')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">👂</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countListening">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">听力选择</h3>
+          <p class="text-slate-500 text-sm mt-1">听音频选择正确答案</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('grammar')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🔤</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countGrammar">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">语法练习</h3>
+          <p class="text-slate-500 text-sm mt-1">时态、词性、句型专项训练</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('reading')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📖</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countReading">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">阅读理解</h3>
+          <p class="text-slate-500 text-sm mt-1">短文阅读理解训练</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+      </div>
+
+      <div id="practiceQuizView" class="hide">
+        <div class="card p-6 mb-4">
+          <div class="flex justify-between items-center mb-4 flex-wrap gap-2">
+            <div class="flex items-center gap-2">
+              <span class="badge bg-blue-100 text-blue-700" id="quizType">语法练习</span>
+              <span class="badge bg-purple-100 text-purple-700 text-xs" id="quizMeta">三年级 · ★</span>
+            </div>
+            <span class="text-sm text-slate-500">题目 <span id="quizIndex">1</span> / <span id="quizTotal">5</span></span>
+          </div>
+          <div class="h-2 bg-slate-100 rounded-full overflow-hidden mb-6">
+            <div id="quizProgress" class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: 20%"></div>
+          </div>
+
+          <!-- 听力原文（仅听力题显示） -->
+          <div id="quizAudioBox" class="hide mb-4 p-5 bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl">
+            <div class="flex flex-col items-center gap-3">
+              <button type="button" class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center text-3xl shadow-lg active:scale-95 transition" onclick="playAudioText()">🔊</button>
+              <div class="text-sm font-semibold text-slate-700">👆 点击播放听力</div>
+              <div class="text-xs text-slate-500" id="playAudioHint">播放后才能作答</div>
+              <button type="button" class="text-xs px-3 py-1.5 bg-white rounded-lg text-slate-600 shadow-sm" onclick="toggleAudioText()">显示/隐藏原文</button>
+            </div>
+            <div id="quizAudioText" class="hide text-sm text-slate-700 italic mt-3 p-3 bg-white rounded-lg"></div>
+          </div>
+
+          <!-- 阅读文章（仅阅读题显示） -->
+          <div id="quizPassageBox" class="hide mb-4 p-4 bg-amber-50 rounded-xl">
+            <div class="text-xs text-amber-700 font-semibold mb-2">📄 阅读短文</div>
+            <div id="quizPassage" class="text-sm text-slate-800 leading-relaxed"></div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-slate-800 mb-4" id="quizQuestion">Choose the correct answer:</h3>
+          <div id="quizOptions" class="space-y-2"></div>
+          <div id="quizFeedback" class="hide mt-4 p-4 rounded-xl"></div>
+          <button id="quizNextBtn" class="hide mt-4 gradient-btn w-full" onclick="nextQuiz()">下一题 →</button>
+        </div>
+      </div>
+
+      <div id="practiceResultView" class="hide">
+        <div class="card p-8 text-center">
+          <div class="text-6xl mb-3" id="resultEmoji">🎉</div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">练习完成！</h2>
+          <div class="text-5xl font-bold text-blue-600 my-4"><span id="resultScore">85</span> 分</div>
+          <div class="text-slate-600 mb-6" id="resultMessage">表现不错，继续努力！</div>
+          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto mb-6">
+            <div class="bg-green-50 rounded-xl p-3"><div class="text-2xl font-bold text-green-600" id="resultCorrect">4</div><div class="text-xs text-slate-500">正确</div></div>
+            <div class="bg-red-50 rounded-xl p-3"><div class="text-2xl font-bold text-red-500" id="resultWrong">1</div><div class="text-xs text-slate-500">错误</div></div>
+            <div class="bg-blue-50 rounded-xl p-3"><div class="text-2xl font-bold text-blue-600" id="resultTime">2'30"</div><div class="text-xs text-slate-500">用时</div></div>
+          </div>
+          <button class="gradient-btn px-8" onclick="restartPractice()">再练一次</button>
+          <button class="ml-3 px-8 py-2 rounded-xl bg-slate-100 font-semibold" onclick="backToPracticeList()">返回列表</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 语法 ============ -->
+    <section id="page-grammar" class="page hide">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">📝 语法知识点</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div class="card p-4 lg:col-span-1">
+          <div class="font-bold text-slate-800 mb-3">知识点目录</div>
+          <div id="grammarList" class="space-y-2"></div>
+        </div>
+        <div class="card p-6 lg:col-span-3" id="grammarContent"></div>
+      </div>
+    </section>
+
+    <!-- ============ AI 对话 ============ -->
+    <section id="page-chat" class="page hide">
+      <div class="card flex flex-col h-[70vh]">
+        <div class="p-4 border-b flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl">🤖</div>
+          <div>
+            <div class="font-bold text-slate-800">AI英语口语助手</div>
+            <div class="text-xs text-green-500">● 在线 · 耐心陪练</div>
+          </div>
+        </div>
+        <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-3">
+          <div class="flex gap-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-sm flex-shrink-0">🤖</div>
+            <div class="chat-bubble-ai">Hi! I'm your English buddy. 👋<br>Let's practice English together! 我可以陪你练习口语。<br>Try saying "Hello"!</div>
+          </div>
+        </div>
+        <div class="p-4 border-t">
+          <div class="flex gap-2 mb-2 flex-wrap">
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Hello! How are you?')">👋 打招呼</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Can you teach me new words?')">📚 学单词</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('How is the weather?')">☀️ 聊天气</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Tell me a short story.')">📖 讲故事</button>
+          </div>
+          <div class="flex gap-2">
+            <input id="chatInput" type="text" placeholder="输入中文或英文..." class="flex-1 bg-slate-50 rounded-xl px-4 py-3 outline-none" onkeypress="if(event.key==='Enter') sendChat()" />
+            <button class="w-12 h-12 rounded-xl bg-red-500 text-white" title="语音输入">🎤</button>
+            <button class="gradient-btn" onclick="sendChat()">发送</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 报告 ============ -->
+    <section id="page-report" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">📊 学习报告</h2>
+        <select class="bg-white rounded-lg px-4 py-2 shadow-sm outline-none">
+          <option>本周</option><option>本月</option><option>全部时间</option>
+        </select>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div class="card p-4"><div class="text-xs text-slate-500">总学习时长</div><div class="text-2xl font-bold text-blue-600 mt-1">12.5h</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">练习题数</div><div class="text-2xl font-bold text-indigo-600 mt-1">286</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">平均得分</div><div class="text-2xl font-bold text-green-600 mt-1">87</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">掌握单词</div><div class="text-2xl font-bold text-orange-500 mt-1">156</div></div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div class="card p-6"><h3 class="font-bold text-slate-800 mb-4">📈 每日学习时长 (分钟)</h3><canvas id="studyTimeChart" height="180"></canvas></div>
+        <div class="card p-6"><h3 class="font-bold text-slate-800 mb-4">🎯 练习得分趋势</h3><canvas id="scoreChart" height="180"></canvas></div>
+      </div>
+      <div class="card p-6 mb-6">
+        <h3 class="font-bold text-slate-800 mb-4">📚 各单元单词掌握情况</h3>
+        <div id="unitMastery" class="space-y-3"></div>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-slate-800 mb-4">💡 弱项分析 & 学习建议</h3>
+        <div class="space-y-3">
+          <div class="flex items-start gap-3 p-3 bg-amber-50 rounded-xl"><span class="text-2xl">⚠️</span><div><div class="font-semibold text-amber-800">语法：一般过去时</div><div class="text-sm text-slate-600 mt-1">近期练习正确率 62%，建议复习动词过去式变化规则</div></div></div>
+          <div class="flex items-start gap-3 p-3 bg-amber-50 rounded-xl"><span class="text-2xl">⚠️</span><div><div class="font-semibold text-amber-800">发音：/θ/ 与 /s/ 区分</div><div class="text-sm text-slate-600 mt-1">think / sink 易混淆，建议多做发音对比练习</div></div></div>
+          <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl"><span class="text-2xl">✨</span><div><div class="font-semibold text-green-800">优势：单词记忆</div><div class="text-sm text-slate-600 mt-1">单词拼写正确率达 94%，继续保持！</div></div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="./questionBank.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

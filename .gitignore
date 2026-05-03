@@ -1,0 +1,35 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+.AppleDouble
+.LSOverride
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时文件
+*.tmp
+*.log
+*.bak
+
+# 备份 zip
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Node (如果以后用到)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+
+# 临时二维码页（仅本地调试用）
+qrcode*.html
+_parse_tmp.py

@@ -1,0 +1,934 @@
+// ===================== 教材数据 =====================
+const textbookData = {
+  grade3: {
+    title: '小学三年级下册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 School Things', progress: 60,
+        words: [
+          { word: 'bag', phonetic: '/bæɡ/', meaning: '书包', example: 'This is my bag.' },
+          { word: 'pen', phonetic: '/pen/', meaning: '钢笔', example: 'I have a red pen.' },
+          { word: 'book', phonetic: '/bʊk/', meaning: '书', example: 'This is my book.' },
+          { word: 'pencil', phonetic: '/ˈpensl/', meaning: '铅笔', example: 'Pass me the pencil.' },
+          { word: 'ruler', phonetic: '/ˈruːlə/', meaning: '尺子', example: 'I need a ruler.' }
+        ],
+        lesson: "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much.",
+        lessonCN: "看看我的书包。里面有书、钢笔和铅笔。这是我的书包。我非常喜欢它。"
+      },
+      {
+        id: 'u2', title: 'Unit 2 My Day', progress: 30,
+        words: [
+          { word: 'get up', phonetic: '/ɡet ʌp/', meaning: '起床', example: 'I get up at 7.' },
+          { word: 'breakfast', phonetic: '/ˈbrekfəst/', meaning: '早餐', example: 'I have breakfast at home.' },
+          { word: 'school', phonetic: '/skuːl/', meaning: '学校', example: 'I go to school by bus.' },
+          { word: 'lunch', phonetic: '/lʌntʃ/', meaning: '午餐', example: 'We have lunch at school.' },
+          { word: 'home', phonetic: '/həʊm/', meaning: '家', example: 'I go home at 5.' }
+        ],
+        lesson: "I get up at 7:00. I have breakfast at 7:30. Then I go to school. I have lunch at 12:00. I go home at 5:00.",
+        lessonCN: "我7点起床。我7点半吃早餐。然后我去上学。我12点吃午餐。我5点回家。"
+      }
+    ]
+  },
+  grade4: {
+    title: '小学四年级下册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 My Room', progress: 40,
+        words: [
+          { word: 'room', phonetic: '/ruːm/', meaning: '房间', example: 'This is my room.' },
+          { word: 'bed', phonetic: '/bed/', meaning: '床', example: 'There is a bed in my room.' },
+          { word: 'desk', phonetic: '/desk/', meaning: '书桌', example: 'My desk is near the window.' },
+          { word: 'chair', phonetic: '/tʃeə/', meaning: '椅子', example: 'Sit on the chair.' },
+          { word: 'window', phonetic: '/ˈwɪndəʊ/', meaning: '窗户', example: 'Open the window, please.' }
+        ],
+        lesson: "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much.",
+        lessonCN: "这是我的房间。里面有一张床、一张书桌和一把椅子。书桌旁有一扇窗户。我非常喜欢我的房间。"
+      },
+      {
+        id: 'u2', title: 'Unit 2 Food I Like', progress: 20,
+        words: [
+          { word: 'vegetable', phonetic: '/ˈvedʒtəbl/', meaning: '蔬菜', example: 'I eat vegetables every day.' },
+          { word: 'fruit', phonetic: '/fruːt/', meaning: '水果', example: 'Apples are fruit.' },
+          { word: 'rice', phonetic: '/raɪs/', meaning: '米饭', example: 'We have rice for lunch.' },
+          { word: 'noodles', phonetic: '/ˈnuːdlz/', meaning: '面条', example: 'I like noodles.' }
+        ],
+        lesson: "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food?",
+        lessonCN: "我喜欢蔬菜和水果。它们很健康。我也吃米饭和面条。你最喜欢的食物是什么？"
+      }
+    ]
+  },
+  grade5: {
+    title: '小学五年级下册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 My Dream Job', progress: 50,
+        words: [
+          { word: 'scientist', phonetic: '/ˈsaɪəntɪst/', meaning: '科学家', example: 'I want to be a scientist.' },
+          { word: 'doctor', phonetic: '/ˈdɒktə/', meaning: '医生', example: 'My mom is a doctor.' },
+          { word: 'teacher', phonetic: '/ˈtiːtʃə/', meaning: '老师', example: 'She is a kind teacher.' },
+          { word: 'engineer', phonetic: '/ˌendʒɪˈnɪə/', meaning: '工程师', example: 'He is a computer engineer.' },
+          { word: 'dream', phonetic: '/driːm/', meaning: '梦想', example: 'Follow your dream!' }
+        ],
+        lesson: "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer.",
+        lessonCN: "你长大后想做什么？我想成为一名科学家。我想帮助别人。我哥哥想成为工程师。"
+      },
+      {
+        id: 'u2', title: 'Unit 2 Protect the Earth', progress: 20,
+        words: [
+          { word: 'save', phonetic: '/seɪv/', meaning: '拯救/节约', example: 'Save water, save the Earth.' },
+          { word: 'protect', phonetic: '/prəˈtekt/', meaning: '保护', example: 'Protect our environment.' },
+          { word: 'plant', phonetic: '/plɑːnt/', meaning: '种植', example: 'Plant more trees.' },
+          { word: 'pollution', phonetic: '/pəˈluːʃn/', meaning: '污染', example: 'Air pollution is bad.' }
+        ],
+        lesson: "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers.",
+        lessonCN: "地球是我们的家园。我们应该保护它。我们应该节约用水，多种树。我们不应该污染河流。"
+      }
+    ]
+  },
+  grade6: {
+    title: '小学六年级下册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 How Tall Are You?', progress: 80,
+        words: [
+          { word: 'taller', phonetic: '/ˈtɔːlə/', meaning: '更高', example: 'He is taller than me.' },
+          { word: 'shorter', phonetic: '/ˈʃɔːtə/', meaning: '更矮', example: 'She is shorter than Tom.' },
+          { word: 'younger', phonetic: '/ˈjʌŋɡə/', meaning: '更年轻', example: 'I am younger than him.' },
+          { word: 'heavier', phonetic: '/ˈheviə/', meaning: '更重', example: 'The box is heavier.' },
+          { word: 'bigger', phonetic: '/ˈbɪɡə/', meaning: '更大', example: 'Elephants are bigger.' }
+        ],
+        lesson: "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me.",
+        lessonCN: "迈克，你多高？我165厘米高。我比你高。你哥哥多大了？他12岁。他比我小。"
+      },
+      {
+        id: 'u2', title: 'Unit 2 Last Weekend', progress: 40,
+        words: [
+          { word: 'cleaned', phonetic: '/kliːnd/', meaning: '打扫了', example: 'I cleaned my room.' },
+          { word: 'washed', phonetic: '/wɒʃt/', meaning: '洗了', example: 'She washed the clothes.' },
+          { word: 'watched', phonetic: '/wɒtʃt/', meaning: '看了', example: 'We watched TV.' },
+          { word: 'visited', phonetic: '/ˈvɪzɪtɪd/', meaning: '拜访了', example: 'I visited my grandma.' }
+        ],
+        lesson: "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend.",
+        lessonCN: "你上周末做了什么？我拜访了我的祖父母。我打扫了房间，洗了衣服。那是一个忙碌的周末。"
+      },
+      {
+        id: 'u3', title: 'Unit 3 Polite Words', progress: 10,
+        words: [
+          { word: 'polite', phonetic: '/pəˈlaɪt/', meaning: '礼貌的', example: 'Be polite to others.' },
+          { word: 'thanks', phonetic: '/θæŋks/', meaning: '谢谢', example: 'Thanks for your help.' },
+          { word: 'sorry', phonetic: '/ˈsɒri/', meaning: '对不起', example: "I'm sorry." },
+          { word: 'please', phonetic: '/pliːz/', meaning: '请', example: 'Close the door, please.' }
+        ],
+        lesson: "Being polite is important. We say 'please' when we ask for help. We say 'thank you' when others help us. We say 'sorry' when we make a mistake.",
+        lessonCN: "懂礼貌很重要。请求帮助时我们说\"请\"。他人帮助时我们说\"谢谢\"。犯错时我们说\"对不起\"。"
+      }
+    ]
+  },
+  grade7: {
+    title: '初中一年级下册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 My Diary', progress: 30,
+        words: [
+          { word: 'diary', phonetic: '/ˈdaɪəri/', meaning: '日记', example: 'I keep a diary every day.' },
+          { word: 'weather', phonetic: '/ˈweðə/', meaning: '天气', example: "What's the weather like?" },
+          { word: 'weekend', phonetic: '/ˌwiːkˈend/', meaning: '周末', example: 'Have a nice weekend!' },
+          { word: 'library', phonetic: '/ˈlaɪbrəri/', meaning: '图书馆', example: 'I study in the library.' }
+        ],
+        lesson: "Today is Sunday. The weather is sunny. I went to the library in the morning. I read books there. In the afternoon, I played basketball with my friends.",
+        lessonCN: "今天是星期天。天气晴朗。早上我去了图书馆。我在那里看书。下午我和朋友们打了篮球。"
+      }
+    ]
+  },
+  grade8: {
+    title: '初中二年级下册',
+    units: [
+      {
+        id: 'u1', title: "Unit 1 What's the matter?", progress: 50,
+        words: [
+          { word: 'headache', phonetic: '/ˈhedeɪk/', meaning: '头痛', example: 'I have a headache.' },
+          { word: 'fever', phonetic: '/ˈfiːvə/', meaning: '发烧', example: 'She has a fever.' },
+          { word: 'cough', phonetic: '/kɒf/', meaning: '咳嗽', example: 'Take medicine for your cough.' },
+          { word: 'stomachache', phonetic: '/ˈstʌməkeɪk/', meaning: '胃痛', example: 'He has a stomachache.' },
+          { word: 'medicine', phonetic: '/ˈmedsn/', meaning: '药', example: 'Take the medicine three times a day.' }
+        ],
+        lesson: "What's the matter, Tom? I have a bad cold and a headache. You should drink hot water and take some medicine. Thank you for your advice.",
+        lessonCN: "怎么了，汤姆？我得了重感冒还头疼。你应该喝点热水，吃点药。谢谢你的建议。"
+      },
+      {
+        id: 'u2', title: 'Unit 2 Hobbies', progress: 20,
+        words: [
+          { word: 'reading', phonetic: '/ˈriːdɪŋ/', meaning: '阅读', example: 'Reading is my hobby.' },
+          { word: 'hobby', phonetic: '/ˈhɒbi/', meaning: '爱好', example: 'What is your hobby?' },
+          { word: 'interesting', phonetic: '/ˈɪntrəstɪŋ/', meaning: '有趣的', example: 'The movie is interesting.' },
+          { word: 'exciting', phonetic: '/ɪkˈsaɪtɪŋ/', meaning: '令人兴奋的', example: 'The game is exciting.' }
+        ],
+        lesson: "Reading is a good hobby. It can help you learn many things. You can read at home, in the library or in the park. Reading makes you smart.",
+        lessonCN: "阅读是一个好爱好。它能帮你学到很多东西。你可以在家、图书馆或公园里看书。阅读让你变聪明。"
+      }
+    ]
+  },
+  grade9: {
+    title: '初中三年级全册',
+    units: [
+      {
+        id: 'u1', title: 'Unit 1 Famous Places', progress: 10,
+        words: [
+          { word: 'famous', phonetic: '/ˈfeɪməs/', meaning: '著名的', example: 'The Great Wall is famous.' },
+          { word: 'wonder', phonetic: '/ˈwʌndə/', meaning: '奇观', example: 'It is a wonder of the world.' },
+          { word: 'kilometer', phonetic: '/ˈkɪləˌmiːtə/', meaning: '千米', example: 'It is 1000 kilometers long.' },
+          { word: 'ancient', phonetic: '/ˈeɪnʃənt/', meaning: '古老的', example: 'It is an ancient building.' }
+        ],
+        lesson: "The Great Wall is one of the most famous places in China. It is about 21196 kilometers long. It is a wonder of the world. Many people visit it every year.",
+        lessonCN: "长城是中国最著名的景点之一。它约21196千米长。它是世界奇观。每年许多人参观它。"
+      }
+    ]
+  }
+};
+
+// 语法
+const grammarData = [
+  {
+    id: 'g1', title: '一般现在时 (Simple Present)', level: '小学',
+    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">一般现在时 (Simple Present Tense)</h3>
+      <p class="text-slate-700 mb-3"><b>概念：</b>表示经常性的动作、习惯性的行为或客观事实。</p>
+      <p class="text-slate-700 mb-3"><b>构成：</b>主语 + 动词原形 (第三人称单数时动词加 -s/-es)</p>
+      <div class="grammar-example">
+        <div class="font-semibold">✅ I <b>like</b> apples.（我喜欢苹果。）</div>
+        <div class="font-semibold">✅ She <b>likes</b> apples.（她喜欢苹果。）</div>
+        <div class="text-sm text-slate-600 mt-1">👉 第三人称单数 (he/she/it) 后面动词要加 -s</div>
+      </div>
+      <p class="text-slate-700 mt-3"><b>时间状语：</b>often, usually, always, every day, sometimes</p>`
+  },
+  {
+    id: 'g2', title: '一般过去时 (Simple Past)', level: '小学/初中',
+    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">一般过去时 (Simple Past Tense)</h3>
+      <p class="text-slate-700 mb-3"><b>概念：</b>表示过去某时发生的动作或存在的状态。</p>
+      <p class="text-slate-700 mb-3"><b>构成：</b>主语 + 动词过去式</p>
+      <div class="grammar-example">
+        <div class="font-semibold">✅ I <b>visited</b> my grandma yesterday.</div>
+        <div class="font-semibold">✅ He <b>went</b> to school by bike.</div>
+      </div>
+      <p class="text-slate-700 mt-3"><b>规则动词变化：</b></p>
+      <ul class="list-disc ml-6 text-slate-700">
+        <li>一般情况加 -ed: play → played</li>
+        <li>以 e 结尾加 -d: live → lived</li>
+        <li>辅音字母+y结尾，变 y 为 i 加 -ed: study → studied</li>
+        <li>重读闭音节双写末尾字母加 -ed: stop → stopped</li>
+      </ul>
+      <p class="text-slate-700 mt-3"><b>时间状语：</b>yesterday, last week, ago, just now</p>`
+  },
+  {
+    id: 'g3', title: '形容词比较级 (Comparative)', level: '小学高/初中',
+    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">形容词比较级 (Comparative)</h3>
+      <p class="text-slate-700 mb-3"><b>概念：</b>比较两个人或事物的性质、特征的等级差异。</p>
+      <p class="text-slate-700 mb-3"><b>构成：</b>形容词比较级 + than</p>
+      <div class="grammar-example">
+        <div class="font-semibold">✅ Tom is <b>taller than</b> Jerry.</div>
+        <div class="font-semibold">✅ This book is <b>more interesting than</b> that one.</div>
+      </div>
+      <p class="text-slate-700 mt-3"><b>变化规则：</b></p>
+      <ul class="list-disc ml-6 text-slate-700">
+        <li>单音节+-er: tall → taller</li>
+        <li>以 e 结尾+-r: nice → nicer</li>
+        <li>辅音+y结尾变y为i+-er: happy → happier</li>
+        <li>多音节词前加 more: beautiful → more beautiful</li>
+        <li>不规则: good → better, bad → worse, many → more</li>
+      </ul>`
+  },
+  {
+    id: 'g4', title: '情态动词 should', level: '初中',
+    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">情态动词 should (应该)</h3>
+      <p class="text-slate-700 mb-3"><b>用法：</b>表示建议、劝告，后接动词原形。</p>
+      <div class="grammar-example">
+        <div class="font-semibold">✅ You <b>should</b> drink more water.</div>
+        <div class="font-semibold">✅ You <b>shouldn't</b> eat too much junk food.</div>
+      </div>
+      <p class="text-slate-700 mt-3"><b>疑问句：</b>Should + 主语 + 动词原形?</p>
+      <div class="grammar-example">
+        <div class="font-semibold">✅ Should I see a doctor? Yes, you should.</div>
+      </div>`
+  }
+];
+
+// 练习题（已替换为真实题库：见 questionBank.js，通过 window.questionBank 访问）
+// ===================== 状态 =====================
+let state = {
+  currentPage: 'home',
+  currentGrade: 'grade3',
+  currentUnit: null,
+  currentWordIndex: 0,
+  quizType: 'grammar',
+  quizIndex: 0,
+  quizCorrect: 0,
+  quizQuestions: [], // 当前抽取的题组
+  quizStartTime: 0,
+  isRecording: false,
+  currentChild: 'xiaoming',
+  filterGrade: 'all',
+  filterDifficulty: 0
+};
+
+const childMap = {
+  xiaoming: { name: '小明', grade: 'grade3', gradeText: '三年级', avatar: '明', unit: 'Unit 1', gradeNum: 3 },
+  xiaohong: { name: '小红', grade: 'grade6', gradeText: '六年级', avatar: '红', unit: 'Unit 2', gradeNum: 6 },
+  xiaolei: { name: '小磊', grade: 'grade8', gradeText: '初二', avatar: '磊', unit: 'Unit 1', gradeNum: 8 }
+};
+
+// 年级编号 <-> grade key 映射
+const gradeNumToKey = { 3:'grade3', 4:'grade4', 5:'grade5', 6:'grade6', 7:'grade7', 8:'grade8', 9:'grade9' };
+const gradeKeyToNum = { grade3:3, grade4:4, grade5:5, grade6:6, grade7:7, grade8:8, grade9:9 };
+function gradeText(n){ return ({3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[n] || '未知'; }
+
+// ===================== 导航 =====================
+document.querySelectorAll('.nav-item').forEach(item => {
+  item.addEventListener('click', () => switchPage(item.dataset.page));
+});
+
+function switchPage(page) {
+  state.currentPage = page;
+  document.querySelectorAll('.nav-item').forEach(n => {
+    n.classList.toggle('active', n.dataset.page === page);
+  });
+  document.querySelectorAll('.page').forEach(p => p.classList.add('hide'));
+  document.getElementById('page-' + page).classList.remove('hide');
+
+  if (page === 'textbook') renderUnitList();
+  if (page === 'grammar') renderGrammar();
+  if (page === 'report') setTimeout(renderReport, 100);
+  if (page === 'practice') {
+    // 重置练习视图到初始状态
+    document.getElementById('practiceQuizView').classList.add('hide');
+    document.getElementById('practiceResultView').classList.add('hide');
+    document.getElementById('practiceFilterView').classList.remove('hide');
+    document.getElementById('practiceTypeView').classList.remove('hide');
+    refreshPracticeCounts();
+  }
+}
+
+// ===================== 孩子切换 =====================
+function onChildChange(e) {
+  state.currentChild = e.target.value;
+  const c = childMap[e.target.value];
+  state.currentGrade = c.grade;
+  // 同步两个下拉
+  document.getElementById('childSelect').value = e.target.value;
+  document.getElementById('childSelectMobile').value = e.target.value;
+  document.getElementById('gradeSelect').value = c.grade;
+  document.getElementById('childAvatar').textContent = c.avatar;
+  document.getElementById('welcomeTitle').textContent = `你好，${c.name}！👋`;
+  document.getElementById('welcomeSub').textContent = `今天是新一天的学习，加油哦！广州教科版${c.gradeText} · ${c.unit}`;
+  renderUnitList();
+}
+document.getElementById('childSelect').addEventListener('change', onChildChange);
+document.getElementById('childSelectMobile').addEventListener('change', onChildChange);
+
+document.getElementById('gradeSelect').addEventListener('change', (e) => {
+  state.currentGrade = e.target.value;
+  renderUnitList();
+});
+
+// ===================== 课本 - 单元列表 =====================
+function renderUnitList() {
+  const data = textbookData[state.currentGrade];
+  const container = document.getElementById('unitList');
+  container.innerHTML = data.units.map(u => `
+    <div class="unit-card" onclick="openUnit('${u.id}')">
+      <div class="flex items-start justify-between mb-3">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-400 to-indigo-400 flex items-center justify-center text-white text-xl font-bold">${u.title.split(' ')[1] || 'U'}</div>
+        <span class="badge ${u.progress === 100 ? 'bg-green-100 text-green-700' : u.progress > 0 ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500'}">
+          ${u.progress === 100 ? '已完成' : u.progress > 0 ? '学习中' : '未开始'}
+        </span>
+      </div>
+      <div class="font-bold text-slate-800">${u.title}</div>
+      <div class="text-xs text-slate-500 mt-1">${u.words.length} 个单词</div>
+      <div class="mt-3">
+        <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+          <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: ${u.progress}%"></div>
+        </div>
+        <div class="text-xs text-slate-500 mt-1">进度 ${u.progress}%</div>
+      </div>
+    </div>
+  `).join('');
+  document.getElementById('unitListView').classList.remove('hide');
+  document.getElementById('unitDetailView').classList.add('hide');
+}
+
+function openUnit(unitId) {
+  const unit = textbookData[state.currentGrade].units.find(u => u.id === unitId);
+  state.currentUnit = unit;
+  state.currentWordIndex = 0;
+  document.getElementById('unitDetailTitle').textContent = unit.title;
+  document.getElementById('unitDetailSub').textContent = textbookData[state.currentGrade].title;
+  document.getElementById('wordTotal').textContent = unit.words.length;
+  document.getElementById('lessonText').textContent = unit.lesson;
+  document.getElementById('lessonTranslation').textContent = unit.lessonCN;
+  showWord();
+  document.getElementById('unitListView').classList.add('hide');
+  document.getElementById('unitDetailView').classList.remove('hide');
+  document.getElementById('recordResult').classList.add('hide');
+  document.getElementById('recordHint').textContent = '点击开始录音跟读';
+  document.getElementById('recordBtn').classList.remove('record-pulse');
+}
+
+function backToUnits() {
+  document.getElementById('unitListView').classList.remove('hide');
+  document.getElementById('unitDetailView').classList.add('hide');
+}
+
+// ===================== 单词卡片 =====================
+function showWord() {
+  const w = state.currentUnit.words[state.currentWordIndex];
+  document.getElementById('wordText').textContent = w.word;
+  document.getElementById('wordPhonetic').textContent = w.phonetic;
+  document.getElementById('wordMeaning').textContent = w.meaning;
+  document.getElementById('wordExample').textContent = w.example;
+  document.getElementById('wordIndex').textContent = state.currentWordIndex + 1;
+  document.getElementById('wordCard').classList.remove('flipped');
+}
+
+function flipCard() {
+  document.getElementById('wordCard').classList.toggle('flipped');
+}
+
+function nextWord() {
+  if (state.currentWordIndex < state.currentUnit.words.length - 1) {
+    state.currentWordIndex++;
+    showWord();
+  } else {
+    alert('🎉 本单元单词学习完毕！');
+  }
+}
+
+function prevWord() {
+  if (state.currentWordIndex > 0) {
+    state.currentWordIndex--;
+    showWord();
+  }
+}
+
+function markKnown() {
+  playWord();
+  setTimeout(() => nextWord(), 500);
+}
+
+function playWord() {
+  const w = state.currentUnit.words[state.currentWordIndex];
+  speak(w.word);
+}
+
+function playLesson() {
+  speak(state.currentUnit.lesson);
+}
+
+// ==================== 语音播放：双引擎 + 长文本分段 ====================
+// 有道API对文本长度有限制（约200字符），所以长文本要分段
+
+let _currentAudio = null;
+let _playQueue = [];    // 待播放的片段队列
+let _playingQueue = false;
+
+function stopSpeak() {
+  if (_currentAudio) {
+    try { _currentAudio.pause(); _currentAudio.src = ''; } catch(e){}
+    _currentAudio = null;
+  }
+  _playQueue = [];
+  _playingQueue = false;
+  try { if ('speechSynthesis' in window) window.speechSynthesis.cancel(); } catch(e){}
+}
+
+// 把长文本按句子分段（按 . ! ? 分割，并确保每段不超过150字符）
+function splitText(text) {
+  // 先按标点分
+  const raw = text.split(/(?<=[.!?])\s+/).map(s => s.trim()).filter(s => s);
+  const segs = [];
+  for (const s of raw) {
+    if (s.length <= 150) {
+      segs.push(s);
+    } else {
+      // 再按逗号分
+      const parts = s.split(/,\s*/).map(p => p.trim()).filter(p => p);
+      let buf = '';
+      for (const p of parts) {
+        if ((buf + ', ' + p).length > 150) {
+          if (buf) segs.push(buf);
+          buf = p;
+        } else {
+          buf = buf ? buf + ', ' + p : p;
+        }
+      }
+      if (buf) segs.push(buf);
+    }
+  }
+  return segs.length ? segs : [text];
+}
+
+function speak(text) {
+  if (!text) return;
+  stopSpeak();
+
+  // 单个短词/短句直接播
+  if (text.length <= 150) {
+    playYoudao(text, () => fallbackWebSpeech(text));
+    return;
+  }
+
+  // 长文本分段队列播放
+  _playQueue = splitText(text);
+  _playingQueue = true;
+  playNextInQueue();
+}
+
+function playNextInQueue() {
+  if (!_playingQueue || _playQueue.length === 0) {
+    _playingQueue = false;
+    return;
+  }
+  const seg = _playQueue.shift();
+  playYoudao(seg, () => {
+    // 这一段失败，改用浏览器TTS补齐整句（一次性读完剩下的）
+    const remaining = [seg, ..._playQueue].join(' ');
+    _playQueue = [];
+    _playingQueue = false;
+    fallbackWebSpeech(remaining);
+  }, () => {
+    // 这一段正常播完，继续下一段（稍等100ms避免太紧）
+    if (_playingQueue) setTimeout(playNextInQueue, 100);
+  });
+}
+
+function playYoudao(text, onFail, onEnd) {
+  const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(text) + '&type=1';
+  const audio = new Audio(url);
+  _currentAudio = audio;
+
+  let failed = false;
+  const handleFail = () => {
+    if (failed) return;
+    failed = true;
+    _currentAudio = null;
+    console.warn('[有道] 播放失败，文本:', text.substring(0, 40));
+    if (onFail) onFail();
+  };
+
+  audio.onerror = handleFail;
+  audio.onended = () => {
+    _currentAudio = null;
+    if (onEnd) onEnd();
+  };
+
+  audio.play().catch(handleFail);
+
+  // 5秒还没开始播就判定失败
+  setTimeout(() => {
+    if (_currentAudio === audio && audio.paused && audio.currentTime === 0) {
+      handleFail();
+    }
+  }, 5000);
+}
+
+function fallbackWebSpeech(text) {
+  if (!('speechSynthesis' in window)) {
+    alert('当前浏览器不支持语音播放，建议换用Chrome或QQ浏览器');
+    return;
+  }
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'en-US';
+    u.rate = 0.9;
+    const voices = window.speechSynthesis.getVoices();
+    const enVoice = voices.find(v => /en[-_]?US/i.test(v.lang)) ||
+                    voices.find(v => /^en/i.test(v.lang));
+    if (enVoice) u.voice = enVoice;
+    window.speechSynthesis.speak(u);
+  } catch(e) {
+    console.error('[浏览器TTS] 失败:', e);
+  }
+}
+
+// ===================== 录音模拟 =====================
+function toggleRecord() {
+  const btn = document.getElementById('recordBtn');
+  const hint = document.getElementById('recordHint');
+  const result = document.getElementById('recordResult');
+
+  if (!state.isRecording) {
+    state.isRecording = true;
+    btn.classList.add('record-pulse');
+    btn.textContent = '⏹';
+    hint.textContent = '🔴 录音中... 请大声朗读课文，再次点击停止';
+    result.classList.add('hide');
+  } else {
+    state.isRecording = false;
+    btn.classList.remove('record-pulse');
+    btn.textContent = '🎤';
+    hint.textContent = '✅ 录音完成，AI 正在评测...';
+
+    setTimeout(() => {
+      const score = 85 + Math.floor(Math.random() * 12);
+      document.getElementById('scoreDisplay').textContent = score + ' 分';
+      hint.textContent = '点击麦克风重新录音';
+      result.classList.remove('hide');
+    }, 1500);
+  }
+}
+
+// ===================== 练习（接入真实题库 window.questionBank） =====================
+const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[], reading:[] };
+
+// 按筛选条件筛题
+function filterQuestions(type) {
+  const all = QB()[type] || [];
+  return all.filter(q => {
+    if (state.filterGrade !== 'all' && q.grade !== parseInt(state.filterGrade)) return false;
+    if (state.filterDifficulty > 0 && q.difficulty !== state.filterDifficulty) return false;
+    return true;
+  });
+}
+
+// 刷新练习入口卡片的题数徽章
+function refreshPracticeCounts() {
+  ['spelling','listening','grammar','reading'].forEach(t => {
+    const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
+    if (el) el.textContent = filterQuestions(t).length + ' 题';
+  });
+  // 总题数
+  const total = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+filterQuestions(t).length, 0);
+  const totalAll = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+(QB()[t]||[]).length, 0);
+  const cnt = document.getElementById('filterCount');
+  if (cnt) cnt.textContent = `题库共 ${totalAll} 题，当前筛选 ${total} 题`;
+}
+
+function startPractice(type) {
+  const questions = filterQuestions(type);
+  if (questions.length === 0) {
+    alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
+    return;
+  }
+  // 随机打乱取前10题（或全部）
+  const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, Math.min(10, questions.length));
+  state.quizType = type;
+  state.quizQuestions = shuffled;
+  state.quizIndex = 0;
+  state.quizCorrect = 0;
+  state.quizStartTime = Date.now();
+  const typeLabel = { spelling: '单词拼写', listening: '听力选择', grammar: '语法练习', reading: '阅读理解' };
+  document.getElementById('quizType').textContent = typeLabel[type];
+  document.getElementById('quizTotal').textContent = shuffled.length;
+  document.getElementById('practiceTypeView').classList.add('hide');
+  document.getElementById('practiceFilterView').classList.add('hide');
+  document.getElementById('practiceResultView').classList.add('hide');
+  document.getElementById('practiceQuizView').classList.remove('hide');
+  showQuiz();
+}
+
+function showQuiz() {
+  const q = state.quizQuestions[state.quizIndex];
+  const total = state.quizQuestions.length;
+  document.getElementById('quizIndex').textContent = state.quizIndex + 1;
+  document.getElementById('quizQuestion').textContent = q.q;
+  document.getElementById('quizProgress').style.width = ((state.quizIndex + 1) / total * 100) + '%';
+
+  // 显示年级/难度 badge
+  const metaEl = document.getElementById('quizMeta');
+  const stars = '★'.repeat(q.difficulty || 1);
+  metaEl.textContent = `${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
+
+  // 听力原文
+  const audioBox = document.getElementById('quizAudioBox');
+  const audioText = document.getElementById('quizAudioText');
+  const playHint = document.getElementById('playAudioHint');
+  if (state.quizType === 'listening' && q.audioText) {
+    audioBox.classList.remove('hide');
+    audioText.textContent = q.audioText;
+    audioText.classList.add('hide'); // 默认隐藏原文
+    if (playHint) playHint.textContent = '播放后才能作答';
+    // ⚠️ 不要自动播放！手机浏览器会拦截未经用户授权的语音
+    // 让用户点击按钮触发
+  } else {
+    audioBox.classList.add('hide');
+  }
+
+  // 阅读文章
+  const passageBox = document.getElementById('quizPassageBox');
+  if (state.quizType === 'reading' && q.passage) {
+    passageBox.classList.remove('hide');
+    document.getElementById('quizPassage').textContent = q.passage;
+  } else {
+    passageBox.classList.add('hide');
+  }
+
+  const opts = document.getElementById('quizOptions');
+  opts.innerHTML = q.options.map((opt, i) => `
+    <button onclick="answerQuiz(${i})" class="w-full text-left px-4 py-3 bg-slate-50 rounded-xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 transition">
+      <span class="inline-block w-6 h-6 rounded-full bg-white text-center font-bold mr-2 text-sm">${String.fromCharCode(65 + i)}</span>
+      ${opt}
+    </button>
+  `).join('');
+  document.getElementById('quizFeedback').classList.add('hide');
+  document.getElementById('quizNextBtn').classList.add('hide');
+}
+
+function playAudioText() {
+  const q = state.quizQuestions[state.quizIndex];
+  if (!q || !q.audioText) return;
+  speak(q.audioText);
+  const hint = document.getElementById('playAudioHint');
+  if (hint) hint.textContent = '🔊 正在播放... 可以多次点击重听';
+}
+
+function toggleAudioText() {
+  const el = document.getElementById('quizAudioText');
+  if (el) el.classList.toggle('hide');
+}
+
+function answerQuiz(idx) {
+  const q = state.quizQuestions[state.quizIndex];
+  const btns = document.querySelectorAll('#quizOptions button');
+  btns.forEach(b => b.disabled = true);
+  const fb = document.getElementById('quizFeedback');
+
+  if (idx === q.answer) {
+    state.quizCorrect++;
+    btns[idx].classList.add('bg-green-100', 'border-green-500');
+    fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+    fb.innerHTML = `<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b><div class="text-sm mt-1">${q.explain || ''}</div>`;
+  } else {
+    btns[idx].classList.add('bg-red-100', 'border-red-500');
+    btns[q.answer].classList.add('bg-green-100', 'border-green-500');
+    fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+    fb.innerHTML = `<b>❌ 回答错误</b><div class="text-sm mt-1">正确答案：<b>${q.options[q.answer]}</b></div><div class="text-sm mt-1">${q.explain || ''}</div>`;
+  }
+  fb.classList.remove('hide');
+  document.getElementById('quizNextBtn').classList.remove('hide');
+  document.getElementById('quizNextBtn').textContent =
+    state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
+}
+
+function nextQuiz() {
+  if (state.quizIndex < state.quizQuestions.length - 1) {
+    state.quizIndex++;
+    showQuiz();
+  } else {
+    showQuizResult();
+  }
+}
+
+function showQuizResult() {
+  const total = state.quizQuestions.length;
+  const score = Math.round(state.quizCorrect / total * 100);
+  document.getElementById('resultScore').textContent = score;
+  document.getElementById('resultCorrect').textContent = state.quizCorrect;
+  document.getElementById('resultWrong').textContent = total - state.quizCorrect;
+
+  // 用时
+  const elapsed = Math.round((Date.now() - state.quizStartTime) / 1000);
+  const mm = Math.floor(elapsed / 60), ss = elapsed % 60;
+  document.getElementById('resultTime').textContent = `${mm}'${ss.toString().padStart(2,'0')}"`;
+
+  let emoji, msg;
+  if (score >= 90) { emoji = '🏆'; msg = '太棒了！继续保持这样的水平！'; }
+  else if (score >= 70) { emoji = '🎉'; msg = '表现不错，再加把劲！'; }
+  else if (score >= 60) { emoji = '💪'; msg = '及格了，多做几次练习就能更好！'; }
+  else { emoji = '📚'; msg = '别灰心，回去复习一下再来挑战！'; }
+  document.getElementById('resultEmoji').textContent = emoji;
+  document.getElementById('resultMessage').textContent = msg;
+
+  document.getElementById('practiceQuizView').classList.add('hide');
+  document.getElementById('practiceResultView').classList.remove('hide');
+}
+
+function restartPractice() {
+  startPractice(state.quizType);
+}
+
+function backToPracticeList() {
+  document.getElementById('practiceResultView').classList.add('hide');
+  document.getElementById('practiceQuizView').classList.add('hide');
+  document.getElementById('practiceTypeView').classList.remove('hide');
+  document.getElementById('practiceFilterView').classList.remove('hide');
+  refreshPracticeCounts();
+}
+
+// ===================== 语法 =====================
+function renderGrammar() {
+  const list = document.getElementById('grammarList');
+  list.innerHTML = grammarData.map((g, i) => `
+    <div class="p-3 rounded-xl cursor-pointer hover:bg-blue-50 grammar-item" data-idx="${i}">
+      <div class="font-semibold text-slate-800 text-sm">${g.title}</div>
+      <div class="text-xs text-slate-500 mt-1">${g.level}</div>
+    </div>
+  `).join('');
+  list.querySelectorAll('.grammar-item').forEach(el => {
+    el.addEventListener('click', () => {
+      list.querySelectorAll('.grammar-item').forEach(e => e.classList.remove('bg-blue-100'));
+      el.classList.add('bg-blue-100');
+      document.getElementById('grammarContent').innerHTML = grammarData[el.dataset.idx].content +
+        `<div class="mt-6"><button class="gradient-btn" onclick="switchPage('practice'); setTimeout(()=>startPractice('grammar'),100)">开始本知识点练习 →</button></div>`;
+    });
+  });
+  list.querySelector('.grammar-item').click();
+}
+
+// ===================== AI 对话 =====================
+const aiResponses = {
+  hello: "Hello! Nice to meet you! 你好！很高兴认识你。How are you today? 😊",
+  how: "I'm doing great, thanks for asking! How about you? 我很好，你呢？",
+  weather: "☀️ Today is sunny and warm. It's a perfect day for learning! 今天阳光明媚，很适合学习！",
+  word: "Sure! Let's learn a new word: <b>brilliant</b> /ˈbrɪliənt/ - 聪明的、出色的。Example: You are a brilliant student! ✨",
+  story: "📖 Once upon a time, there was a little rabbit who loved carrots. One day, he met a clever fox... 从前，有一只喜欢胡萝卜的小兔子，一天他遇到了一只聪明的狐狸...",
+  default: [
+    "That's interesting! Tell me more. 真有趣，再告诉我一些！",
+    "Great try! 你说得很好！Keep going!",
+    "I see! Can you say it in English? 你能用英语说说吗？",
+    "Wow, you're doing great! 🌟 Keep practicing!",
+    "Good question! Let me think... 好问题，让我想想..."
+  ]
+};
+
+function sendChat() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  addChatMessage(text, 'user');
+  input.value = '';
+
+  setTimeout(() => {
+    const reply = getAIReply(text);
+    addChatMessage(reply, 'ai');
+    const enOnly = reply.replace(/<[^>]+>/g, '').replace(/[\u4e00-\u9fa5]/g, '').replace(/[。，！？：；、]/g, '').trim();
+    if (enOnly.length > 3) speak(enOnly.substring(0, 120));
+  }, 600);
+}
+
+function quickChat(text) {
+  document.getElementById('chatInput').value = text;
+  sendChat();
+}
+
+function getAIReply(text) {
+  const lower = text.toLowerCase();
+  if (/hello|hi|你好/.test(lower)) return aiResponses.hello;
+  if (/how are you|怎么样/.test(lower)) return aiResponses.how;
+  if (/weather|天气/.test(lower)) return aiResponses.weather;
+  if (/word|单词|teach/.test(lower)) return aiResponses.word;
+  if (/story|故事/.test(lower)) return aiResponses.story;
+  const arr = aiResponses.default;
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function addChatMessage(text, role) {
+  const container = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  if (role === 'user') {
+    div.className = 'flex gap-2 justify-end';
+    div.innerHTML = `<div class="chat-bubble-user">${escapeHtml(text)}</div>
+      <div class="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-pink-400 flex items-center justify-center text-white text-sm flex-shrink-0">我</div>`;
+  } else {
+    div.className = 'flex gap-2';
+    div.innerHTML = `<div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-sm flex-shrink-0">🤖</div>
+      <div class="chat-bubble-ai">${text}</div>`;
+  }
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// ===================== 学习报告 =====================
+let chartsInited = false;
+function renderReport() {
+  const um = document.getElementById('unitMastery');
+  const unitsMock = [
+    { name: 'Unit 1 Food', percent: 95 },
+    { name: 'Unit 2 Colors', percent: 80 },
+    { name: 'Unit 3 My Family', percent: 60 },
+    { name: 'Unit 4 Animals', percent: 30 },
+    { name: 'Unit 5 School', percent: 10 }
+  ];
+  um.innerHTML = unitsMock.map(u => `
+    <div>
+      <div class="flex justify-between text-sm mb-1">
+        <span class="text-slate-700 font-medium">${u.name}</span>
+        <span class="text-slate-500">${u.percent}%</span>
+      </div>
+      <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+        <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: ${u.percent}%"></div>
+      </div>
+    </div>
+  `).join('');
+
+  if (chartsInited) return;
+  chartsInited = true;
+
+  const ctx1 = document.getElementById('studyTimeChart');
+  if (ctx1) {
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+        datasets: [{
+          label: '学习时长(分钟)',
+          data: [35, 42, 28, 55, 40, 65, 50],
+          backgroundColor: 'rgba(59, 130, 246, 0.7)',
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true } }
+      }
+    });
+  }
+
+  const ctx2 = document.getElementById('scoreChart');
+  if (ctx2) {
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['第1次', '第2次', '第3次', '第4次', '第5次', '第6次', '第7次'],
+        datasets: [{
+          label: '得分',
+          data: [75, 78, 82, 80, 85, 88, 92],
+          borderColor: '#6366f1',
+          backgroundColor: 'rgba(99, 102, 241, 0.1)',
+          fill: true,
+          tension: 0.4,
+          pointRadius: 5,
+          pointBackgroundColor: '#6366f1'
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: false, min: 60, max: 100 } }
+      }
+    });
+  }
+}
+
+// ===================== 初始化 =====================
+// 练习筛选器事件
+const fg = document.getElementById('filterGrade');
+const fd = document.getElementById('filterDifficulty');
+if (fg) fg.addEventListener('change', (e) => { state.filterGrade = e.target.value; refreshPracticeCounts(); });
+if (fd) fd.addEventListener('change', (e) => { state.filterDifficulty = parseInt(e.target.value); refreshPracticeCounts(); });
+
+// 预热语音引擎（部分浏览器需要）
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.getVoices();
+}
+
+// 加载后统计题库信息
+if (window.questionBank && window.questionBank.stats) {
+  const s = window.questionBank.stats;
+  console.log(`[乐学英语] 题库加载完成: 单词${s.spelling} · 听力${s.listening} · 语法${s.grammar} · 阅读${s.reading} · 共${s.total}题`);
+}
+
+renderUnitList();
+refreshPracticeCounts();
