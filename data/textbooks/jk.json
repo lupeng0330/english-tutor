@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "id": "jk",
+    "name": "广州教科版",
+    "version": "1.0",
+    "coverage": "小学一年级至初中三年级"
+  },
+  "grades": {
+    "grade1": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 Hello",
+          "words": [
+            { "word": "hello", "phonetic": "/həˈləʊ/", "meaning": "你好", "example": "Hello, I'm Tom." },
+            { "word": "hi", "phonetic": "/haɪ/", "meaning": "嗨", "example": "Hi, Amy!" },
+            { "word": "I", "phonetic": "/aɪ/", "meaning": "我", "example": "I am a boy." },
+            { "word": "you", "phonetic": "/juː/", "meaning": "你", "example": "You are my friend." },
+            { "word": "name", "phonetic": "/neɪm/", "meaning": "名字", "example": "My name is Tom." }
+          ],
+          "lesson": "Hello! I am Tom. What is your name? Hi, Tom. My name is Amy. Nice to meet you!"
+        },
+        {
+          "id": "u2", "title": "Unit 2 Numbers",
+          "words": [
+            { "word": "one", "phonetic": "/wʌn/", "meaning": "一", "example": "One apple please." },
+            { "word": "two", "phonetic": "/tuː/", "meaning": "二", "example": "I have two pens." },
+            { "word": "three", "phonetic": "/θriː/", "meaning": "三", "example": "Three books are here." },
+            { "word": "four", "phonetic": "/fɔː/", "meaning": "四", "example": "Four cats." },
+            { "word": "five", "phonetic": "/faɪv/", "meaning": "五", "example": "Give me five!" }
+          ],
+          "lesson": "Let's count! One, two, three, four, five. I have five fingers on my hand. Can you count with me?"
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Colors",
+          "words": [
+            { "word": "red", "phonetic": "/red/", "meaning": "红色", "example": "A red apple." },
+            { "word": "blue", "phonetic": "/bluː/", "meaning": "蓝色", "example": "The sky is blue." },
+            { "word": "yellow", "phonetic": "/ˈjeləʊ/", "meaning": "黄色", "example": "A yellow banana." },
+            { "word": "green", "phonetic": "/ɡriːn/", "meaning": "绿色", "example": "Grass is green." },
+            { "word": "black", "phonetic": "/blæk/", "meaning": "黑色", "example": "A black cat." }
+          ],
+          "lesson": "Look at the rainbow! I see red, yellow, and blue. I like green. What color do you like? I like black."
+        },
+        {
+          "id": "u2", "title": "Unit 2 My Family",
+          "words": [
+            { "word": "mum", "phonetic": "/mʌm/", "meaning": "妈妈", "example": "This is my mum." },
+            { "word": "dad", "phonetic": "/dæd/", "meaning": "爸爸", "example": "My dad is tall." },
+            { "word": "baby", "phonetic": "/ˈbeɪbi/", "meaning": "婴儿", "example": "A cute baby." },
+            { "word": "love", "phonetic": "/lʌv/", "meaning": "爱", "example": "I love you." },
+            { "word": "family", "phonetic": "/ˈfæməli/", "meaning": "家庭", "example": "My family is happy." }
+          ],
+          "lesson": "This is my family. My mum, my dad and me. I have a baby sister too. I love my family. We are happy together."
+        }
+      ]
+    },
+    "grade2": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 Animals",
+          "words": [
+            { "word": "cat", "phonetic": "/kæt/", "meaning": "猫", "example": "A cute cat." },
+            { "word": "dog", "phonetic": "/dɒɡ/", "meaning": "狗", "example": "My dog is big." },
+            { "word": "bird", "phonetic": "/bɜːd/", "meaning": "鸟", "example": "A bird can fly." },
+            { "word": "fish", "phonetic": "/fɪʃ/", "meaning": "鱼", "example": "Fish swim in water." },
+            { "word": "rabbit", "phonetic": "/ˈræbɪt/", "meaning": "兔子", "example": "The rabbit is white." }
+          ],
+          "lesson": "I have many pets. I have a cat and a dog. I also have fish and a rabbit. My cat is black. My dog is white. They are my good friends."
+        },
+        {
+          "id": "u2", "title": "Unit 2 My Body",
+          "words": [
+            { "word": "head", "phonetic": "/hed/", "meaning": "头", "example": "Touch your head." },
+            { "word": "hand", "phonetic": "/hænd/", "meaning": "手", "example": "Wash your hands." },
+            { "word": "foot", "phonetic": "/fʊt/", "meaning": "脚", "example": "Two feet." },
+            { "word": "eye", "phonetic": "/aɪ/", "meaning": "眼睛", "example": "Open your eyes." },
+            { "word": "ear", "phonetic": "/ɪə/", "meaning": "耳朵", "example": "Listen with your ears." }
+          ],
+          "lesson": "This is my body. I have one head and two hands. I have two feet. I have two eyes and two ears. I use my eyes to see and my ears to listen."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Fruits",
+          "words": [
+            { "word": "apple", "phonetic": "/ˈæpl/", "meaning": "苹果", "example": "A red apple." },
+            { "word": "banana", "phonetic": "/bəˈnɑːnə/", "meaning": "香蕉", "example": "A yellow banana." },
+            { "word": "orange", "phonetic": "/ˈɒrɪndʒ/", "meaning": "橙子", "example": "An orange is sweet." },
+            { "word": "pear", "phonetic": "/peə/", "meaning": "梨", "example": "I like pears." },
+            { "word": "grape", "phonetic": "/ɡreɪp/", "meaning": "葡萄", "example": "Purple grapes." }
+          ],
+          "lesson": "I like fruits. I like apples and bananas. My mum likes oranges. My dad likes grapes. Fruits are sweet and healthy. Do you like fruits?"
+        },
+        {
+          "id": "u2", "title": "Unit 2 Weather",
+          "words": [
+            { "word": "sunny", "phonetic": "/ˈsʌni/", "meaning": "晴朗的", "example": "A sunny day." },
+            { "word": "rainy", "phonetic": "/ˈreɪni/", "meaning": "下雨的", "example": "A rainy day." },
+            { "word": "windy", "phonetic": "/ˈwɪndi/", "meaning": "有风的", "example": "It's windy." },
+            { "word": "hot", "phonetic": "/hɒt/", "meaning": "热的", "example": "Summer is hot." },
+            { "word": "cold", "phonetic": "/kəʊld/", "meaning": "冷的", "example": "Winter is cold." }
+          ],
+          "lesson": "Today is sunny. I am happy. Yesterday was rainy and cold. Tomorrow will be windy. I like sunny days. What's the weather like today?"
+        }
+      ]
+    },
+    "grade3": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 School Things",
+          "words": [
+            { "word": "bag", "phonetic": "/bæɡ/", "meaning": "书包", "example": "This is my bag." },
+            { "word": "pen", "phonetic": "/pen/", "meaning": "钢笔", "example": "I have a red pen." },
+            { "word": "book", "phonetic": "/bʊk/", "meaning": "书", "example": "This is my book." },
+            { "word": "pencil", "phonetic": "/ˈpensl/", "meaning": "铅笔", "example": "Pass me the pencil." },
+            { "word": "ruler", "phonetic": "/ˈruːlə/", "meaning": "尺子", "example": "I need a ruler." }
+          ],
+          "lesson": "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much."
+        },
+        {
+          "id": "u2", "title": "Unit 2 My Classroom",
+          "words": [
+            { "word": "classroom", "phonetic": "/ˈklɑːsruːm/", "meaning": "教室", "example": "Our classroom is big." },
+            { "word": "blackboard", "phonetic": "/ˈblækbɔːd/", "meaning": "黑板", "example": "The teacher writes on the blackboard." },
+            { "word": "door", "phonetic": "/dɔː/", "meaning": "门", "example": "Close the door." },
+            { "word": "window", "phonetic": "/ˈwɪndəʊ/", "meaning": "窗户", "example": "Open the window." },
+            { "word": "teacher", "phonetic": "/ˈtiːtʃə/", "meaning": "老师", "example": "Miss Li is my teacher." }
+          ],
+          "lesson": "This is our classroom. It is big and clean. There is a blackboard and a big window. Our teacher stands in front of the blackboard. I like my classroom."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 My Day",
+          "words": [
+            { "word": "get up", "phonetic": "/ɡet ʌp/", "meaning": "起床", "example": "I get up at 7." },
+            { "word": "breakfast", "phonetic": "/ˈbrekfəst/", "meaning": "早餐", "example": "I have breakfast at home." },
+            { "word": "school", "phonetic": "/skuːl/", "meaning": "学校", "example": "I go to school by bus." },
+            { "word": "lunch", "phonetic": "/lʌntʃ/", "meaning": "午餐", "example": "We have lunch at school." },
+            { "word": "home", "phonetic": "/həʊm/", "meaning": "家", "example": "I go home at 5." }
+          ],
+          "lesson": "I get up at seven o'clock. I have breakfast at seven thirty. Then I go to school. I have lunch at twelve o'clock. I go home at five o'clock."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Hobbies",
+          "words": [
+            { "word": "play", "phonetic": "/pleɪ/", "meaning": "玩", "example": "I play football." },
+            { "word": "read", "phonetic": "/riːd/", "meaning": "阅读", "example": "I read books every day." },
+            { "word": "sing", "phonetic": "/sɪŋ/", "meaning": "唱歌", "example": "She sings very well." },
+            { "word": "dance", "phonetic": "/dɑːns/", "meaning": "跳舞", "example": "Let's dance together." },
+            { "word": "draw", "phonetic": "/drɔː/", "meaning": "画画", "example": "I like to draw pictures." }
+          ],
+          "lesson": "I have many hobbies. I like to play football and read books. My sister likes to sing and dance. My brother likes to draw. What are your hobbies?"
+        }
+      ]
+    },
+    "grade4": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 My Room",
+          "words": [
+            { "word": "room", "phonetic": "/ruːm/", "meaning": "房间", "example": "This is my room." },
+            { "word": "bed", "phonetic": "/bed/", "meaning": "床", "example": "There is a bed in my room." },
+            { "word": "desk", "phonetic": "/desk/", "meaning": "书桌", "example": "My desk is near the window." },
+            { "word": "chair", "phonetic": "/tʃeə/", "meaning": "椅子", "example": "Sit on the chair." },
+            { "word": "window", "phonetic": "/ˈwɪndəʊ/", "meaning": "窗户", "example": "Open the window, please." }
+          ],
+          "lesson": "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Clothes",
+          "words": [
+            { "word": "shirt", "phonetic": "/ʃɜːt/", "meaning": "衬衫", "example": "A blue shirt." },
+            { "word": "dress", "phonetic": "/dres/", "meaning": "连衣裙", "example": "She has a new dress." },
+            { "word": "shoes", "phonetic": "/ʃuːz/", "meaning": "鞋子", "example": "My shoes are white." },
+            { "word": "hat", "phonetic": "/hæt/", "meaning": "帽子", "example": "Put on your hat." },
+            { "word": "coat", "phonetic": "/kəʊt/", "meaning": "外套", "example": "A warm coat." }
+          ],
+          "lesson": "I am wearing a blue shirt and black shoes. My sister is wearing a pink dress. It is cold today, so I wear a coat and a hat. What are you wearing?"
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Food I Like",
+          "words": [
+            { "word": "vegetable", "phonetic": "/ˈvedʒtəbl/", "meaning": "蔬菜", "example": "I eat vegetables every day." },
+            { "word": "fruit", "phonetic": "/fruːt/", "meaning": "水果", "example": "Apples are fruit." },
+            { "word": "rice", "phonetic": "/raɪs/", "meaning": "米饭", "example": "We have rice for lunch." },
+            { "word": "noodles", "phonetic": "/ˈnuːdlz/", "meaning": "面条", "example": "I like noodles." },
+            { "word": "bread", "phonetic": "/bred/", "meaning": "面包", "example": "Bread and milk for breakfast." }
+          ],
+          "lesson": "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food? I also like bread with milk in the morning."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Seasons",
+          "words": [
+            { "word": "spring", "phonetic": "/sprɪŋ/", "meaning": "春天", "example": "Flowers bloom in spring." },
+            { "word": "summer", "phonetic": "/ˈsʌmə/", "meaning": "夏天", "example": "Summer is hot." },
+            { "word": "autumn", "phonetic": "/ˈɔːtəm/", "meaning": "秋天", "example": "Autumn is cool." },
+            { "word": "winter", "phonetic": "/ˈwɪntə/", "meaning": "冬天", "example": "Winter is cold." },
+            { "word": "season", "phonetic": "/ˈsiːzn/", "meaning": "季节", "example": "Four seasons a year." }
+          ],
+          "lesson": "There are four seasons in a year. Spring is warm and colorful. Summer is hot and sunny. Autumn is cool. Winter is cold and snowy. My favorite season is spring."
+        }
+      ]
+    },
+    "grade5": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 My Dream Job",
+          "words": [
+            { "word": "scientist", "phonetic": "/ˈsaɪəntɪst/", "meaning": "科学家", "example": "I want to be a scientist." },
+            { "word": "doctor", "phonetic": "/ˈdɒktə/", "meaning": "医生", "example": "My mom is a doctor." },
+            { "word": "teacher", "phonetic": "/ˈtiːtʃə/", "meaning": "老师", "example": "She is a kind teacher." },
+            { "word": "engineer", "phonetic": "/ˌendʒɪˈnɪə/", "meaning": "工程师", "example": "He is a computer engineer." },
+            { "word": "dream", "phonetic": "/driːm/", "meaning": "梦想", "example": "Follow your dream!" }
+          ],
+          "lesson": "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Travel",
+          "words": [
+            { "word": "travel", "phonetic": "/ˈtrævl/", "meaning": "旅行", "example": "I love to travel." },
+            { "word": "plane", "phonetic": "/pleɪn/", "meaning": "飞机", "example": "Take a plane to Beijing." },
+            { "word": "train", "phonetic": "/treɪn/", "meaning": "火车", "example": "Go by train." },
+            { "word": "visit", "phonetic": "/ˈvɪzɪt/", "meaning": "参观", "example": "Visit the museum." },
+            { "word": "city", "phonetic": "/ˈsɪti/", "meaning": "城市", "example": "Shanghai is a big city." }
+          ],
+          "lesson": "I love to travel. Last summer, I traveled to Beijing by plane. I visited the Great Wall and the Forbidden City. It was a wonderful trip. This winter, I will travel to Shanghai by train."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Protect the Earth",
+          "words": [
+            { "word": "save", "phonetic": "/seɪv/", "meaning": "拯救/节约", "example": "Save water, save the Earth." },
+            { "word": "protect", "phonetic": "/prəˈtekt/", "meaning": "保护", "example": "Protect our environment." },
+            { "word": "plant", "phonetic": "/plɑːnt/", "meaning": "种植", "example": "Plant more trees." },
+            { "word": "pollution", "phonetic": "/pəˈluːʃn/", "meaning": "污染", "example": "Air pollution is bad." },
+            { "word": "recycle", "phonetic": "/ˌriːˈsaɪkl/", "meaning": "回收", "example": "Recycle paper and plastic." }
+          ],
+          "lesson": "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers. Let's recycle paper and plastic to make our planet greener."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Sports",
+          "words": [
+            { "word": "football", "phonetic": "/ˈfʊtbɔːl/", "meaning": "足球", "example": "Play football with friends." },
+            { "word": "basketball", "phonetic": "/ˈbɑːskɪtbɔːl/", "meaning": "篮球", "example": "I love basketball." },
+            { "word": "swimming", "phonetic": "/ˈswɪmɪŋ/", "meaning": "游泳", "example": "Swimming is fun." },
+            { "word": "running", "phonetic": "/ˈrʌnɪŋ/", "meaning": "跑步", "example": "Go running in the morning." },
+            { "word": "exercise", "phonetic": "/ˈeksəsaɪz/", "meaning": "锻炼", "example": "Exercise keeps us healthy." }
+          ],
+          "lesson": "Exercise is important for our health. I play football with my classmates after school. My sister likes swimming. My father goes running every morning. What sports do you like?"
+        }
+      ]
+    },
+    "grade6": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 How Tall Are You?",
+          "words": [
+            { "word": "taller", "phonetic": "/ˈtɔːlə/", "meaning": "更高", "example": "He is taller than me." },
+            { "word": "shorter", "phonetic": "/ˈʃɔːtə/", "meaning": "更矮", "example": "She is shorter than Tom." },
+            { "word": "younger", "phonetic": "/ˈjʌŋɡə/", "meaning": "更年轻", "example": "I am younger than him." },
+            { "word": "heavier", "phonetic": "/ˈheviə/", "meaning": "更重", "example": "The box is heavier." },
+            { "word": "bigger", "phonetic": "/ˈbɪɡə/", "meaning": "更大", "example": "Elephants are bigger." }
+          ],
+          "lesson": "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Last Weekend",
+          "words": [
+            { "word": "cleaned", "phonetic": "/kliːnd/", "meaning": "打扫了", "example": "I cleaned my room." },
+            { "word": "washed", "phonetic": "/wɒʃt/", "meaning": "洗了", "example": "She washed the clothes." },
+            { "word": "watched", "phonetic": "/wɒtʃt/", "meaning": "看了", "example": "We watched TV." },
+            { "word": "visited", "phonetic": "/ˈvɪzɪtɪd/", "meaning": "拜访了", "example": "I visited my grandma." },
+            { "word": "played", "phonetic": "/pleɪd/", "meaning": "玩了", "example": "They played games." }
+          ],
+          "lesson": "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend."
+        },
+        {
+          "id": "u3", "title": "Unit 3 Polite Words",
+          "words": [
+            { "word": "polite", "phonetic": "/pəˈlaɪt/", "meaning": "礼貌的", "example": "Be polite to others." },
+            { "word": "thanks", "phonetic": "/θæŋks/", "meaning": "谢谢", "example": "Thanks for your help." },
+            { "word": "sorry", "phonetic": "/ˈsɒri/", "meaning": "对不起", "example": "I'm sorry." },
+            { "word": "please", "phonetic": "/pliːz/", "meaning": "请", "example": "Close the door, please." },
+            { "word": "excuse", "phonetic": "/ɪkˈskjuːz/", "meaning": "请原谅", "example": "Excuse me." }
+          ],
+          "lesson": "Being polite is important. We say 'please' when we ask for help. We say 'thank you' when others help us. We say 'sorry' when we make a mistake."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Chinese Festivals",
+          "words": [
+            { "word": "festival", "phonetic": "/ˈfestɪvl/", "meaning": "节日", "example": "Spring Festival is fun." },
+            { "word": "lantern", "phonetic": "/ˈlæntən/", "meaning": "灯笼", "example": "Red lanterns." },
+            { "word": "dumpling", "phonetic": "/ˈdʌmplɪŋ/", "meaning": "饺子", "example": "Eat dumplings." },
+            { "word": "moon", "phonetic": "/muːn/", "meaning": "月亮", "example": "The moon is bright." },
+            { "word": "dragon", "phonetic": "/ˈdræɡən/", "meaning": "龙", "example": "Dragon Boat Festival." }
+          ],
+          "lesson": "China has many festivals. Spring Festival is the most important. We eat dumplings and hang red lanterns. Mid-Autumn Festival is also fun. We look at the bright moon and eat mooncakes."
+        },
+        {
+          "id": "u2", "title": "Unit 2 My Future",
+          "words": [
+            { "word": "future", "phonetic": "/ˈfjuːtʃə/", "meaning": "未来", "example": "My future is bright." },
+            { "word": "college", "phonetic": "/ˈkɒlɪdʒ/", "meaning": "大学", "example": "Go to college." },
+            { "word": "study", "phonetic": "/ˈstʌdi/", "meaning": "学习", "example": "Study hard." },
+            { "word": "important", "phonetic": "/ɪmˈpɔːtnt/", "meaning": "重要的", "example": "Health is important." },
+            { "word": "success", "phonetic": "/səkˈses/", "meaning": "成功", "example": "Hard work leads to success." }
+          ],
+          "lesson": "I often think about my future. I want to go to a good college. I will study hard every day. My parents tell me that hard work is important. I believe I can achieve success."
+        }
+      ]
+    },
+    "grade7": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 My Diary",
+          "words": [
+            { "word": "diary", "phonetic": "/ˈdaɪəri/", "meaning": "日记", "example": "I keep a diary every day." },
+            { "word": "weather", "phonetic": "/ˈweðə/", "meaning": "天气", "example": "What's the weather like?" },
+            { "word": "weekend", "phonetic": "/ˌwiːkˈend/", "meaning": "周末", "example": "Have a nice weekend!" },
+            { "word": "library", "phonetic": "/ˈlaɪbrəri/", "meaning": "图书馆", "example": "I study in the library." },
+            { "word": "basketball", "phonetic": "/ˈbɑːskɪtbɔːl/", "meaning": "篮球", "example": "Play basketball." }
+          ],
+          "lesson": "Today is Sunday. The weather is sunny. I went to the library in the morning. I read books there. In the afternoon, I played basketball with my friends."
+        },
+        {
+          "id": "u2", "title": "Unit 2 School Life",
+          "words": [
+            { "word": "subject", "phonetic": "/ˈsʌbdʒɪkt/", "meaning": "学科", "example": "Math is my favorite subject." },
+            { "word": "math", "phonetic": "/mæθ/", "meaning": "数学", "example": "Math is useful." },
+            { "word": "English", "phonetic": "/ˈɪŋɡlɪʃ/", "meaning": "英语", "example": "I learn English." },
+            { "word": "science", "phonetic": "/ˈsaɪəns/", "meaning": "科学", "example": "Science is interesting." },
+            { "word": "history", "phonetic": "/ˈhɪstri/", "meaning": "历史", "example": "Chinese history is long." }
+          ],
+          "lesson": "At school, I have many subjects. I study Chinese, English, math, science and history. My favorite subject is English because I love learning new languages. What is your favorite subject?"
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Environment",
+          "words": [
+            { "word": "environment", "phonetic": "/ɪnˈvaɪrənmənt/", "meaning": "环境", "example": "Protect the environment." },
+            { "word": "garbage", "phonetic": "/ˈɡɑːbɪdʒ/", "meaning": "垃圾", "example": "Throw garbage away." },
+            { "word": "clean", "phonetic": "/kliːn/", "meaning": "清洁的", "example": "A clean room." },
+            { "word": "air", "phonetic": "/eə/", "meaning": "空气", "example": "Fresh air." },
+            { "word": "water", "phonetic": "/ˈwɔːtə/", "meaning": "水", "example": "Save water." }
+          ],
+          "lesson": "Our environment is very important. We need clean air and clean water. We should not throw garbage on the street. Everyone can help to make our city more beautiful."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Technology",
+          "words": [
+            { "word": "computer", "phonetic": "/kəmˈpjuːtə/", "meaning": "电脑", "example": "Use the computer." },
+            { "word": "internet", "phonetic": "/ˈɪntənet/", "meaning": "互联网", "example": "Search on the internet." },
+            { "word": "phone", "phonetic": "/fəʊn/", "meaning": "手机/电话", "example": "Call me on the phone." },
+            { "word": "email", "phonetic": "/ˈiːmeɪl/", "meaning": "电子邮件", "example": "Send an email." },
+            { "word": "online", "phonetic": "/ˌɒnˈlaɪn/", "meaning": "在线", "example": "Shop online." }
+          ],
+          "lesson": "Modern technology has changed our lives. We use computers and phones every day. We can send emails and shop online. The internet connects us to the world. Technology makes our lives easier and more fun."
+        }
+      ]
+    },
+    "grade8": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 What's the matter?",
+          "words": [
+            { "word": "headache", "phonetic": "/ˈhedeɪk/", "meaning": "头痛", "example": "I have a headache." },
+            { "word": "fever", "phonetic": "/ˈfiːvə/", "meaning": "发烧", "example": "She has a fever." },
+            { "word": "cough", "phonetic": "/kɒf/", "meaning": "咳嗽", "example": "Take medicine for your cough." },
+            { "word": "stomachache", "phonetic": "/ˈstʌməkeɪk/", "meaning": "胃痛", "example": "He has a stomachache." },
+            { "word": "medicine", "phonetic": "/ˈmedsn/", "meaning": "药", "example": "Take the medicine three times a day." }
+          ],
+          "lesson": "What's the matter, Tom? I have a bad cold and a headache. You should drink hot water and take some medicine. Thank you for your advice."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Hobbies",
+          "words": [
+            { "word": "hobby", "phonetic": "/ˈhɒbi/", "meaning": "爱好", "example": "Reading is my hobby." },
+            { "word": "interesting", "phonetic": "/ˈɪntrəstɪŋ/", "meaning": "有趣的", "example": "An interesting book." },
+            { "word": "collect", "phonetic": "/kəˈlekt/", "meaning": "收集", "example": "Collect stamps." },
+            { "word": "painting", "phonetic": "/ˈpeɪntɪŋ/", "meaning": "绘画", "example": "A beautiful painting." },
+            { "word": "smart", "phonetic": "/smɑːt/", "meaning": "聪明的", "example": "A smart student." }
+          ],
+          "lesson": "Reading is a good hobby. It can help you learn many things. You can read at home, in the library or in the park. Reading makes you smart."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Volunteering",
+          "words": [
+            { "word": "volunteer", "phonetic": "/ˌvɒlənˈtɪə/", "meaning": "志愿者", "example": "Be a volunteer." },
+            { "word": "help", "phonetic": "/help/", "meaning": "帮助", "example": "Help others." },
+            { "word": "community", "phonetic": "/kəˈmjuːnəti/", "meaning": "社区", "example": "Our community is warm." },
+            { "word": "elderly", "phonetic": "/ˈeldəli/", "meaning": "老年的", "example": "Help the elderly." },
+            { "word": "charity", "phonetic": "/ˈtʃærəti/", "meaning": "慈善", "example": "A charity event." }
+          ],
+          "lesson": "Last Saturday, I worked as a volunteer in my community. We helped clean the park and visited the elderly. It felt good to help others. I learned that volunteering makes our community better and makes us happier."
+        },
+        {
+          "id": "u2", "title": "Unit 2 My Hometown",
+          "words": [
+            { "word": "hometown", "phonetic": "/ˈhəʊmtaʊn/", "meaning": "家乡", "example": "I love my hometown." },
+            { "word": "beautiful", "phonetic": "/ˈbjuːtɪfl/", "meaning": "美丽的", "example": "A beautiful park." },
+            { "word": "modern", "phonetic": "/ˈmɒdn/", "meaning": "现代的", "example": "Modern buildings." },
+            { "word": "traditional", "phonetic": "/trəˈdɪʃənl/", "meaning": "传统的", "example": "Traditional food." },
+            { "word": "delicious", "phonetic": "/dɪˈlɪʃəs/", "meaning": "美味的", "example": "Delicious dumplings." }
+          ],
+          "lesson": "My hometown is Guangzhou. It is a beautiful and modern city. We have tall buildings and old traditional houses. The food is very delicious. I love my hometown very much and I am proud to live here."
+        }
+      ]
+    },
+    "grade9": {
+      "上": [
+        {
+          "id": "u1", "title": "Unit 1 Famous Places",
+          "words": [
+            { "word": "famous", "phonetic": "/ˈfeɪməs/", "meaning": "著名的", "example": "A famous writer." },
+            { "word": "wonder", "phonetic": "/ˈwʌndə/", "meaning": "奇观", "example": "A wonder of the world." },
+            { "word": "ancient", "phonetic": "/ˈeɪnʃənt/", "meaning": "古老的", "example": "An ancient temple." },
+            { "word": "tourist", "phonetic": "/ˈtʊərɪst/", "meaning": "游客", "example": "Many tourists visit here." },
+            { "word": "culture", "phonetic": "/ˈkʌltʃə/", "meaning": "文化", "example": "Chinese culture is amazing." }
+          ],
+          "lesson": "The Great Wall is one of the most famous places in China. It is about 21196 kilometers long. It is a wonder of the world. Many people visit it every year."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Inventions",
+          "words": [
+            { "word": "invent", "phonetic": "/ɪnˈvent/", "meaning": "发明", "example": "Invent a new machine." },
+            { "word": "invention", "phonetic": "/ɪnˈvenʃn/", "meaning": "发明物", "example": "A great invention." },
+            { "word": "useful", "phonetic": "/ˈjuːsfl/", "meaning": "有用的", "example": "A useful tool." },
+            { "word": "change", "phonetic": "/tʃeɪndʒ/", "meaning": "改变", "example": "Change our lives." },
+            { "word": "discover", "phonetic": "/dɪˈskʌvə/", "meaning": "发现", "example": "Discover new things." }
+          ],
+          "lesson": "Inventions have changed our world. The light bulb was invented by Thomas Edison. It changed the way we live. The telephone was invented by Alexander Bell. Today, we enjoy many useful inventions in our daily lives."
+        }
+      ],
+      "下": [
+        {
+          "id": "u1", "title": "Unit 1 Future Plans",
+          "words": [
+            { "word": "plan", "phonetic": "/plæn/", "meaning": "计划", "example": "Make a plan." },
+            { "word": "university", "phonetic": "/ˌjuːnɪˈvɜːsəti/", "meaning": "大学", "example": "Go to university." },
+            { "word": "major", "phonetic": "/ˈmeɪdʒə/", "meaning": "专业", "example": "My major is English." },
+            { "word": "career", "phonetic": "/kəˈrɪə/", "meaning": "职业", "example": "Choose a career." },
+            { "word": "achieve", "phonetic": "/əˈtʃiːv/", "meaning": "实现", "example": "Achieve your goals." }
+          ],
+          "lesson": "In the future, I plan to go to a good university. I want to major in computer science because I love technology. After graduation, I hope to start my own company. I will work hard to achieve my dreams."
+        },
+        {
+          "id": "u2", "title": "Unit 2 Global Issues",
+          "words": [
+            { "word": "global", "phonetic": "/ˈɡləʊbl/", "meaning": "全球的", "example": "Global warming." },
+            { "word": "issue", "phonetic": "/ˈɪʃuː/", "meaning": "问题", "example": "A serious issue." },
+            { "word": "poverty", "phonetic": "/ˈpɒvəti/", "meaning": "贫困", "example": "Fight poverty." },
+            { "word": "education", "phonetic": "/ˌedʒuˈkeɪʃn/", "meaning": "教育", "example": "Education is important." },
+            { "word": "peace", "phonetic": "/piːs/", "meaning": "和平", "example": "World peace." }
+          ],
+          "lesson": "Our world faces many global issues today. Global warming affects our weather. Many children in poor countries need education. We all hope for peace and a better world. Each of us can make a small difference."
+        }
+      ]
+    }
+  }
+}

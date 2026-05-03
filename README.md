@@ -1,118 +1,223 @@
 # 🎓 乐学英语 · English Tutor
 
-> 面向小学3年级到初中3年级学生的英语辅导Web应用，同步广州教科版英语教材。
+> 面向小学一年级到初中三年级（1-9 年级）学生的英语辅导 Web 应用。  
+> 🌐 在线体验：**https://lupeng0330.github.io/english-tutor/**
 
 ## ✨ 主要功能
 
-- 📚 **课本学习**：广州教科版3-9年级教材同步，单词卡片、音标、例句
-- 🎙️ **课文朗读 & AI跟读评测**：真人发音 + 发音打分模拟
-- ✏️ **练习测试**：4大题型（单词拼写/听力选择/语法练习/阅读理解）
-- 🎯 **按年级/难度筛选**：精准匹配孩子当前水平
-- 📝 **语法讲解**：4大核心语法点详解 + 即时练习
-- 💬 **AI英语对话**：陪练口语，多话题可选
-- 📊 **学习报告**：图表展示学习时长、得分趋势、单元掌握情况
-- 👨‍👩‍👧‍👦 **多孩子管理**：家长账户可切换管理多个孩子
-- 📱 **响应式设计**：完美适配手机/平板/电脑
+- 📚 **课本学习**：1-9 年级同步教材，单词卡片（音标/例句），真人级 TTS 课文朗读
+- 🎙️ **课文朗读**：预生成 MP3（Microsoft Edge Neural TTS，真人音质）
+- ✏️ **练习测试**：4 大题型（单词拼写 / 听力选择 / 语法练习 / 阅读理解）
+- 🎧 **男女声听力对话**：对话题中 W/M 自动区分女声/男声，更真实
+- 🔀 **全局学习上下文**：顶部一键切换年级/学期/教材版本，所有模块联动
+- 📝 **语法讲解**：核心语法点详解 + 即时练习
+- 💬 **AI 英语对话**：口语陪练模拟（接入 LLM 后可真实对话）
+- 📊 **学习报告**：图表展示学习时长、得分趋势
+- 📱 **响应式设计**：完美适配手机 / 平板 / 电脑
+
+## 🏗️ 项目结构
+
+```
+english-tutor/
+├── index.html                         # 主页面
+├── styles.css                         # 样式（含移动端深度适配）
+├── app.js                             # 核心交互逻辑
+├── questionBank.js                    # 题库加载器（异步拉取 data/questions/*.json）
+│
+├── data/                              # 📂 数据（JSON，可独立维护）
+│   ├── textbooks/
+│   │   ├── jk.json                    # 广州教科版教材（1-9 年级全学期）
+│   │   ├── rj.json                    # 人教版（待补充）
+│   │   └── wy.json                    # 外研版（待补充）
+│   └── questions/
+│       ├── jk_spelling.json           # 单词拼写题库
+│       ├── jk_listening.json          # 听力题库
+│       ├── jk_grammar.json            # 语法题库
+│       └── jk_reading.json            # 阅读题库
+│
+├── audio/                             # 🎵 所有预生成的 MP3
+│   ├── grade1_u1.mp3 ... grade9_u2.mp3   # 课文朗读
+│   └── listening_*.mp3                # 听力题音频
+│
+├── gen_audio.py                       # 🎙️ 批量生成 MP3 脚本（Edge TTS）
+│
+├── scripts/                           # 🛠️ 工具脚本
+│   ├── import_questions.py            # Excel 模板 → 题库 JSON
+│   ├── make_template.py               # 生成 Excel 导入模板
+│   ├── ai_generate_questions.py       # 基于课文自动生成题目
+│   └── excel_templates/
+│       └── 题库导入模板.xlsx
+│
+├── start-windows.bat / start-mac.command
+└── README.md
+```
 
 ## 🚀 快速启动
 
-### Windows 用户
-双击 `start-windows.bat`
-
-### Mac 用户  
-双击 `start-mac.command`  
-（首次使用可能需要 `chmod +x start-mac.command`）
-
-### 手动启动
+### 本地运行
 ```bash
 # 进入项目目录
 cd english-tutor
 
-# 启动本地服务器（Python 自带，无需安装）
+# Python 自带 HTTP 服务器
 python3 -m http.server 8765
 
-# 浏览器打开
-# http://localhost:8765/index.html
+# 浏览器访问
+# http://localhost:8765/
 ```
 
-### 手机访问（同WiFi局域网）
-```bash
-# 先查本机IP（Mac/Linux）
-ifconfig | grep "inet 192"
+### Windows 一键启动
+双击 `start-windows.bat`
 
-# 或 Windows
-ipconfig | findstr IPv4
+### Mac 一键启动
+双击 `start-mac.command`（首次需要 `chmod +x start-mac.command`）
 
-# 手机浏览器访问
-# http://电脑IP:8765/index.html
-```
-
-## 🛠 技术栈
-
-- **纯静态Web**：HTML5 + CSS3 + 原生 JavaScript
-- **UI框架**：Tailwind CSS (CDN)
-- **图表**：Chart.js
-- **语音引擎**：
-  - 主引擎：有道词典发音API（真人录音，国内稳定）
-  - 备用：浏览器原生 Web Speech API
-- **无需构建、无框架依赖**：直接打开 HTML 即可运行
-
-## 📁 项目结构
-
-```
-english-tutor/
-├── index.html          # 主页面（所有UI结构）
-├── styles.css          # 样式表（含手机响应式）
-├── app.js              # 所有交互逻辑
-├── questionBank.js     # 题库数据（41道真题，3-9年级）
-├── start-windows.bat   # Windows启动脚本
-├── start-mac.command   # Mac启动脚本
-└── README.md
-```
-
-## 📊 题库情况
-
-内置**广州教科版**真题 **41道**，覆盖：
+## 📊 当前题库规模
 
 | 类型 | 题数 | 年级跨度 |
 |------|------|---------|
-| 单词拼写 | 12题 | 3-7年级 |
-| 听力选择 | 10题 | 3-8年级 |
-| 语法练习 | 9题 | 5-9年级 |
-| 阅读理解 | 10题 | 3-9年级 |
+| 单词拼写 | **184 题** | 1-9 年级 |
+| 听力选择 | **30 题** | 1-9 年级 |
+| 语法练习 | **40+ 题** | 1-9 年级 |
+| 阅读理解 | **54 题** | 3-9 年级 |
+| **总计** | **308+ 题** | **1-9 年级全覆盖** |
+
+教材覆盖：**广州教科版 1-9 年级 × 上下册 × 每册 2-3 单元 = 37 个单元**
+
+## 🎨 数据扩展方式
+
+### 方式一：手动编辑 JSON（最灵活）
+
+直接编辑 `data/questions/jk_{type}.json`，按下面格式追加：
+
+**单词拼写** (`jk_spelling.json`)
+```json
+{
+  "grade": 5, "term": "上", "code": "5A_U1",
+  "q": "科学家", "answer": "scientist", "hint": "s________",
+  "difficulty": 2, "explain": "职业：科学家"
+}
+```
+
+**听力选择** (`jk_listening.json`)
+```json
+{
+  "grade": 3, "term": "上", "code": "3A_U1",
+  "audioText": "W: Hello! M: Hi!",    // W:女声, M:男声
+  "audioFile": "listening_01.mp3",    // 手动指定文件名
+  "q": "What did they say?",
+  "options": ["Hi", "Bye", "Hello"], "answer": 0,
+  "difficulty": 1, "explain": "开场问候"
+}
+```
+
+**语法** (`jk_grammar.json`) / **阅读** (`jk_reading.json`) 格式类似。
+
+### 方式二：Excel 模板导入（推荐批量录入）
+
+```bash
+# 1) 生成 Excel 模板
+python scripts/make_template.py
+# → 生成 scripts/excel_templates/题库导入模板.xlsx
+
+# 2) 按模板填空（4 个 sheet 对应 4 种题型）
+
+# 3) 导入：
+python scripts/import_questions.py "我的题库.xlsx"
+
+# 4) 如果有新听力题，生成 MP3：
+python gen_audio.py
+```
+
+### 方式三：AI 自动生成（基于课文）
+
+```bash
+# 基于 data/textbooks/jk.json 的课文，自动生成题目
+python scripts/ai_generate_questions.py
+
+# 限定年级：
+python scripts/ai_generate_questions.py --grade 5
+```
+
+## 🎙️ 音频生成工作流
+
+所有 TTS 音频都是**预先生成**的 MP3（存放在 `audio/` 目录），避免浏览器/网络 TTS 的各种兼容性问题。
+
+```bash
+# 一键生成所有新增的音频（已存在的会跳过）
+python gen_audio.py
+```
+
+**声音分配**：
+- 课文：`en-US-AriaNeural`（女声，更清晰，适合小学生）
+- 听力题：对话中 `W:` 前缀用 Aria 女声、`M:` 前缀用 Guy 男声
+
+**依赖**：`pip install edge-tts`（无需 API Key）
+
+## 🔀 全局学习上下文
+
+顶部 sticky 的"上下文切换条"可以随时调整：
+- **年级**：1-9 年级
+- **学期**：上 / 下
+- **教材版本**：广州教科版 / 人教版（待开发）/ 外研版（待开发）
+
+切换时：
+1. 课本模块自动刷新对应单元
+2. 练习模块的题数徽章按当前学段实时更新
+3. 状态保存到 `localStorage`，下次打开自动恢复
+
+## 🛠 技术栈
+
+- **前端**：HTML5 + Tailwind CSS + 原生 JavaScript (ES6+)
+- **图表**：Chart.js
+- **TTS**：Microsoft Edge Neural TTS（通过 Python 脚本预生成 MP3）
+- **部署**：GitHub Pages（静态托管）
+- **数据**：JSON（无数据库，Git 友好）
 
 ## 🎯 目标用户
 
-- 小学3-6年级学生
-- 初中1-3年级（7-9年级）学生
+- 小学 1-6 年级学生
+- 初中 1-3 年级学生
 - 家长辅助学习使用
-
-## 🔧 开发说明
-
-### 修改教材内容
-编辑 `app.js` 顶部的 `textbookData` 对象。
-
-### 添加题目
-编辑 `questionBank.js`，按现有格式追加即可。
-
-### 修改样式
-编辑 `styles.css`，媒体查询 `@media (max-width: 768px)` 以内的部分是手机样式。
-
-### 添加新功能
-全部逻辑在 `app.js` 里，按模块组织（首页/课本/练习/语法/对话/报告）。
 
 ## 📝 开发进度
 
-- [x] 基础UI框架（6大功能模块）
-- [x] 广州教科版3-9年级教材数据
-- [x] 真实题库导入（41道题）
-- [x] 手机端响应式优化
-- [x] 有道发音 + 浏览器TTS双引擎
-- [ ] NAS/云端部署
-- [ ] 真实AI语音评测（接入腾讯云ASR）
-- [ ] AI对话接入大模型
-- [ ] 多用户账号系统 + 数据持久化
-- [ ] 更多题库（扩展到每年级100+题）
+- [x] UI 框架（6 大功能模块）
+- [x] 1-9 年级教材数据（广州教科版全套）
+- [x] 308+ 题真实题库
+- [x] 预生成 MP3 音频（真人级 Neural TTS）
+- [x] 男女声听力区分
+- [x] 全局学习上下文切换 + localStorage 记忆
+- [x] Excel 批量导入工具
+- [x] 基于课文的 AI 自动生成题目
+- [x] GitHub Pages 自动部署
+- [ ] 人教版 / 外研版教材补充
+- [ ] 真实 AI 语音评测（接入云端 ASR）
+- [ ] AI 对话接入 LLM
+- [ ] 多用户账号 + 学习数据持久化
+- [ ] 智能推题（基于错题本）
+
+## 🔧 开发协作
+
+### 双端开发（PC + Mac）
+```bash
+# PC 开发完推送
+git add . && git commit -m "..." && git push
+
+# Mac 拉取
+git pull
+
+# Mac 首次克隆
+git clone git@github.com:lupeng0330/english-tutor.git
+```
+
+### SSH Key 配置
+```bash
+# 如果还没配置 SSH Key（首次）
+ssh-keygen -t ed25519 -C "your-email@example.com"
+cat ~/.ssh/id_ed25519.pub
+# 把公钥贴到 https://github.com/settings/keys
+```
 
 ## 📄 License
 

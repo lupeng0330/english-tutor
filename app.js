@@ -1,190 +1,44 @@
-// ===================== 教材数据 =====================
-const textbookData = {
-  grade3: {
-    title: '小学三年级下册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 School Things', progress: 60,
-        words: [
-          { word: 'bag', phonetic: '/bæɡ/', meaning: '书包', example: 'This is my bag.' },
-          { word: 'pen', phonetic: '/pen/', meaning: '钢笔', example: 'I have a red pen.' },
-          { word: 'book', phonetic: '/bʊk/', meaning: '书', example: 'This is my book.' },
-          { word: 'pencil', phonetic: '/ˈpensl/', meaning: '铅笔', example: 'Pass me the pencil.' },
-          { word: 'ruler', phonetic: '/ˈruːlə/', meaning: '尺子', example: 'I need a ruler.' }
-        ],
-        lesson: "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much.",
-        lessonCN: "看看我的书包。里面有书、钢笔和铅笔。这是我的书包。我非常喜欢它。"
-      },
-      {
-        id: 'u2', title: 'Unit 2 My Day', progress: 30,
-        words: [
-          { word: 'get up', phonetic: '/ɡet ʌp/', meaning: '起床', example: 'I get up at 7.' },
-          { word: 'breakfast', phonetic: '/ˈbrekfəst/', meaning: '早餐', example: 'I have breakfast at home.' },
-          { word: 'school', phonetic: '/skuːl/', meaning: '学校', example: 'I go to school by bus.' },
-          { word: 'lunch', phonetic: '/lʌntʃ/', meaning: '午餐', example: 'We have lunch at school.' },
-          { word: 'home', phonetic: '/həʊm/', meaning: '家', example: 'I go home at 5.' }
-        ],
-        lesson: "I get up at 7:00. I have breakfast at 7:30. Then I go to school. I have lunch at 12:00. I go home at 5:00.",
-        lessonCN: "我7点起床。我7点半吃早餐。然后我去上学。我12点吃午餐。我5点回家。"
-      }
-    ]
-  },
-  grade4: {
-    title: '小学四年级下册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 My Room', progress: 40,
-        words: [
-          { word: 'room', phonetic: '/ruːm/', meaning: '房间', example: 'This is my room.' },
-          { word: 'bed', phonetic: '/bed/', meaning: '床', example: 'There is a bed in my room.' },
-          { word: 'desk', phonetic: '/desk/', meaning: '书桌', example: 'My desk is near the window.' },
-          { word: 'chair', phonetic: '/tʃeə/', meaning: '椅子', example: 'Sit on the chair.' },
-          { word: 'window', phonetic: '/ˈwɪndəʊ/', meaning: '窗户', example: 'Open the window, please.' }
-        ],
-        lesson: "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much.",
-        lessonCN: "这是我的房间。里面有一张床、一张书桌和一把椅子。书桌旁有一扇窗户。我非常喜欢我的房间。"
-      },
-      {
-        id: 'u2', title: 'Unit 2 Food I Like', progress: 20,
-        words: [
-          { word: 'vegetable', phonetic: '/ˈvedʒtəbl/', meaning: '蔬菜', example: 'I eat vegetables every day.' },
-          { word: 'fruit', phonetic: '/fruːt/', meaning: '水果', example: 'Apples are fruit.' },
-          { word: 'rice', phonetic: '/raɪs/', meaning: '米饭', example: 'We have rice for lunch.' },
-          { word: 'noodles', phonetic: '/ˈnuːdlz/', meaning: '面条', example: 'I like noodles.' }
-        ],
-        lesson: "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food?",
-        lessonCN: "我喜欢蔬菜和水果。它们很健康。我也吃米饭和面条。你最喜欢的食物是什么？"
-      }
-    ]
-  },
-  grade5: {
-    title: '小学五年级下册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 My Dream Job', progress: 50,
-        words: [
-          { word: 'scientist', phonetic: '/ˈsaɪəntɪst/', meaning: '科学家', example: 'I want to be a scientist.' },
-          { word: 'doctor', phonetic: '/ˈdɒktə/', meaning: '医生', example: 'My mom is a doctor.' },
-          { word: 'teacher', phonetic: '/ˈtiːtʃə/', meaning: '老师', example: 'She is a kind teacher.' },
-          { word: 'engineer', phonetic: '/ˌendʒɪˈnɪə/', meaning: '工程师', example: 'He is a computer engineer.' },
-          { word: 'dream', phonetic: '/driːm/', meaning: '梦想', example: 'Follow your dream!' }
-        ],
-        lesson: "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer.",
-        lessonCN: "你长大后想做什么？我想成为一名科学家。我想帮助别人。我哥哥想成为工程师。"
-      },
-      {
-        id: 'u2', title: 'Unit 2 Protect the Earth', progress: 20,
-        words: [
-          { word: 'save', phonetic: '/seɪv/', meaning: '拯救/节约', example: 'Save water, save the Earth.' },
-          { word: 'protect', phonetic: '/prəˈtekt/', meaning: '保护', example: 'Protect our environment.' },
-          { word: 'plant', phonetic: '/plɑːnt/', meaning: '种植', example: 'Plant more trees.' },
-          { word: 'pollution', phonetic: '/pəˈluːʃn/', meaning: '污染', example: 'Air pollution is bad.' }
-        ],
-        lesson: "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers.",
-        lessonCN: "地球是我们的家园。我们应该保护它。我们应该节约用水，多种树。我们不应该污染河流。"
-      }
-    ]
-  },
-  grade6: {
-    title: '小学六年级下册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 How Tall Are You?', progress: 80,
-        words: [
-          { word: 'taller', phonetic: '/ˈtɔːlə/', meaning: '更高', example: 'He is taller than me.' },
-          { word: 'shorter', phonetic: '/ˈʃɔːtə/', meaning: '更矮', example: 'She is shorter than Tom.' },
-          { word: 'younger', phonetic: '/ˈjʌŋɡə/', meaning: '更年轻', example: 'I am younger than him.' },
-          { word: 'heavier', phonetic: '/ˈheviə/', meaning: '更重', example: 'The box is heavier.' },
-          { word: 'bigger', phonetic: '/ˈbɪɡə/', meaning: '更大', example: 'Elephants are bigger.' }
-        ],
-        lesson: "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me.",
-        lessonCN: "迈克，你多高？我165厘米高。我比你高。你哥哥多大了？他12岁。他比我小。"
-      },
-      {
-        id: 'u2', title: 'Unit 2 Last Weekend', progress: 40,
-        words: [
-          { word: 'cleaned', phonetic: '/kliːnd/', meaning: '打扫了', example: 'I cleaned my room.' },
-          { word: 'washed', phonetic: '/wɒʃt/', meaning: '洗了', example: 'She washed the clothes.' },
-          { word: 'watched', phonetic: '/wɒtʃt/', meaning: '看了', example: 'We watched TV.' },
-          { word: 'visited', phonetic: '/ˈvɪzɪtɪd/', meaning: '拜访了', example: 'I visited my grandma.' }
-        ],
-        lesson: "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend.",
-        lessonCN: "你上周末做了什么？我拜访了我的祖父母。我打扫了房间，洗了衣服。那是一个忙碌的周末。"
-      },
-      {
-        id: 'u3', title: 'Unit 3 Polite Words', progress: 10,
-        words: [
-          { word: 'polite', phonetic: '/pəˈlaɪt/', meaning: '礼貌的', example: 'Be polite to others.' },
-          { word: 'thanks', phonetic: '/θæŋks/', meaning: '谢谢', example: 'Thanks for your help.' },
-          { word: 'sorry', phonetic: '/ˈsɒri/', meaning: '对不起', example: "I'm sorry." },
-          { word: 'please', phonetic: '/pliːz/', meaning: '请', example: 'Close the door, please.' }
-        ],
-        lesson: "Being polite is important. We say 'please' when we ask for help. We say 'thank you' when others help us. We say 'sorry' when we make a mistake.",
-        lessonCN: "懂礼貌很重要。请求帮助时我们说\"请\"。他人帮助时我们说\"谢谢\"。犯错时我们说\"对不起\"。"
-      }
-    ]
-  },
-  grade7: {
-    title: '初中一年级下册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 My Diary', progress: 30,
-        words: [
-          { word: 'diary', phonetic: '/ˈdaɪəri/', meaning: '日记', example: 'I keep a diary every day.' },
-          { word: 'weather', phonetic: '/ˈweðə/', meaning: '天气', example: "What's the weather like?" },
-          { word: 'weekend', phonetic: '/ˌwiːkˈend/', meaning: '周末', example: 'Have a nice weekend!' },
-          { word: 'library', phonetic: '/ˈlaɪbrəri/', meaning: '图书馆', example: 'I study in the library.' }
-        ],
-        lesson: "Today is Sunday. The weather is sunny. I went to the library in the morning. I read books there. In the afternoon, I played basketball with my friends.",
-        lessonCN: "今天是星期天。天气晴朗。早上我去了图书馆。我在那里看书。下午我和朋友们打了篮球。"
-      }
-    ]
-  },
-  grade8: {
-    title: '初中二年级下册',
-    units: [
-      {
-        id: 'u1', title: "Unit 1 What's the matter?", progress: 50,
-        words: [
-          { word: 'headache', phonetic: '/ˈhedeɪk/', meaning: '头痛', example: 'I have a headache.' },
-          { word: 'fever', phonetic: '/ˈfiːvə/', meaning: '发烧', example: 'She has a fever.' },
-          { word: 'cough', phonetic: '/kɒf/', meaning: '咳嗽', example: 'Take medicine for your cough.' },
-          { word: 'stomachache', phonetic: '/ˈstʌməkeɪk/', meaning: '胃痛', example: 'He has a stomachache.' },
-          { word: 'medicine', phonetic: '/ˈmedsn/', meaning: '药', example: 'Take the medicine three times a day.' }
-        ],
-        lesson: "What's the matter, Tom? I have a bad cold and a headache. You should drink hot water and take some medicine. Thank you for your advice.",
-        lessonCN: "怎么了，汤姆？我得了重感冒还头疼。你应该喝点热水，吃点药。谢谢你的建议。"
-      },
-      {
-        id: 'u2', title: 'Unit 2 Hobbies', progress: 20,
-        words: [
-          { word: 'reading', phonetic: '/ˈriːdɪŋ/', meaning: '阅读', example: 'Reading is my hobby.' },
-          { word: 'hobby', phonetic: '/ˈhɒbi/', meaning: '爱好', example: 'What is your hobby?' },
-          { word: 'interesting', phonetic: '/ˈɪntrəstɪŋ/', meaning: '有趣的', example: 'The movie is interesting.' },
-          { word: 'exciting', phonetic: '/ɪkˈsaɪtɪŋ/', meaning: '令人兴奋的', example: 'The game is exciting.' }
-        ],
-        lesson: "Reading is a good hobby. It can help you learn many things. You can read at home, in the library or in the park. Reading makes you smart.",
-        lessonCN: "阅读是一个好爱好。它能帮你学到很多东西。你可以在家、图书馆或公园里看书。阅读让你变聪明。"
-      }
-    ]
-  },
-  grade9: {
-    title: '初中三年级全册',
-    units: [
-      {
-        id: 'u1', title: 'Unit 1 Famous Places', progress: 10,
-        words: [
-          { word: 'famous', phonetic: '/ˈfeɪməs/', meaning: '著名的', example: 'The Great Wall is famous.' },
-          { word: 'wonder', phonetic: '/ˈwʌndə/', meaning: '奇观', example: 'It is a wonder of the world.' },
-          { word: 'kilometer', phonetic: '/ˈkɪləˌmiːtə/', meaning: '千米', example: 'It is 1000 kilometers long.' },
-          { word: 'ancient', phonetic: '/ˈeɪnʃənt/', meaning: '古老的', example: 'It is an ancient building.' }
-        ],
-        lesson: "The Great Wall is one of the most famous places in China. It is about 21196 kilometers long. It is a wonder of the world. Many people visit it every year.",
-        lessonCN: "长城是中国最著名的景点之一。它约21196千米长。它是世界奇观。每年许多人参观它。"
-      }
-    ]
+// ===================== 教材数据（改为异步从 data/textbooks/jk.json 加载）=====================
+// 运行时容器：textbookData[grade3].title / units，和原结构保持兼容
+let textbookData = {};
+let _currentTextbookMeta = null;
+
+// 根据 state.ctx 构造教材 JSON 路径（支持未来多教材版本）
+function textbookJsonPath() {
+  const id = state && state.ctx && state.ctx.textbook ? state.ctx.textbook : 'jk';
+  return 'data/textbooks/' + id + '.json';
+}
+
+// 异步加载教材 JSON，转换成原来 textbookData 的结构
+async function loadTextbook() {
+  const url = textbookJsonPath();
+  try {
+    const res = await fetch(url + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    _currentTextbookMeta = data.meta || null;
+
+    // 把 grades.grade3.上/下 结构展平成 textbookData[grade3] = { title, units, term 一起 }
+    const out = {};
+    const term = (state && state.ctx && state.ctx.term) || '上';
+    for (const [gk, terms] of Object.entries(data.grades || {})) {
+      const units = (terms && terms[term]) || [];
+      const gnum = parseInt(String(gk).replace('grade',''), 10);
+      const gradeText = ({1:'小学一年级',2:'小学二年级',3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[gnum] || gk;
+      const termText = term === '上' ? '上册' : '下册';
+      out[gk] = {
+        title: gradeText + termText,
+        units: units
+      };
+    }
+    textbookData = out;
+    console.log('[教材] 已加载', url, '教材版本=' + (data.meta && data.meta.name));
+    return true;
+  } catch(err) {
+    console.error('[教材] 加载失败:', url, err);
+    return false;
   }
-};
+}
 
 // 语法
 const grammarData = [
@@ -1539,12 +1393,33 @@ if ('speechSynthesis' in window) {
   window.speechSynthesis.getVoices();
 }
 
-// 加载后统计题库信息
-if (window.questionBank && window.questionBank.stats) {
-  const s = window.questionBank.stats;
-  console.log(`[乐学英语] 题库加载完成: 单词${s.spelling} · 听力${s.listening} · 语法${s.grammar} · 阅读${s.reading} · 共${s.total}题`);
-}
+// 🆕 启动流程：恢复上下文 → 异步加载教材 JSON + 题库 JSON → 渲染 UI
+(async function bootstrap() {
+  loadCtx();                          // 从 localStorage 读取上次的 ctx
+  await Promise.all([
+    loadTextbook(),                   // 拉取 data/textbooks/{ctx.textbook}.json
+    window.loadQuestionBank(state.ctx.textbook)  // 拉取 4 份题库 JSON
+  ]);
+  applyContextChange();               // 统一渲染（会调用 renderUnitList + refreshPracticeCounts）
+})();
 
-// 🆕 启动：恢复上次学习上下文 → 渲染 UI
-loadCtx();
-applyContextChange();    // 它会内部调用 renderUnitList + refreshPracticeCounts
+// 切换教材或学期时重新加载数据
+// 把 applyContextChange 包装一层：检测 textbook/term 变化时再 load 一次
+const _originalApplyContextChange = applyContextChange;
+let _lastLoadedTextbook = null;
+let _lastLoadedTerm = null;
+applyContextChange = async function() {
+  const tb = state.ctx.textbook;
+  const tm = state.ctx.term;
+  if (tb !== _lastLoadedTextbook) {
+    await loadTextbook();
+    await window.loadQuestionBank(tb);
+    _lastLoadedTextbook = tb;
+    _lastLoadedTerm = tm;
+  } else if (tm !== _lastLoadedTerm) {
+    // 只换学期 → 只需重载教材（题库自带 term 字段，筛选即可）
+    await loadTextbook();
+    _lastLoadedTerm = tm;
+  }
+  _originalApplyContextChange();
+};

@@ -1,0 +1,52 @@
+[
+  { "grade": 1, "term": "上", "code": "1A_U1", "q": "Hello! I ____ Tom.", "options": ["am", "is", "are"], "answer": 0, "explain": "第一人称 I 用 am", "difficulty": 1 },
+  { "grade": 1, "term": "下", "code": "1B_U1", "q": "The apple is ____ (红的).", "options": ["red", "blue", "green"], "answer": 0, "explain": "red=红色", "difficulty": 1 },
+  { "grade": 1, "term": "下", "code": "1B_U2", "q": "____ is my dad.", "options": ["This", "These", "Those"], "answer": 0, "explain": "单数近指 this", "difficulty": 1 },
+
+  { "grade": 2, "term": "上", "code": "2A_U1", "q": "I have ____ cat.", "options": ["a", "an", "the"], "answer": 0, "explain": "cat 以辅音开头用 a", "difficulty": 1 },
+  { "grade": 2, "term": "上", "code": "2A_U2", "q": "I have two ____.", "options": ["hand", "hands", "handes"], "answer": 1, "explain": "复数+s", "difficulty": 1 },
+  { "grade": 2, "term": "下", "code": "2B_U1", "q": "I like ____ (苹果).", "options": ["apple", "apples", "an apple"], "answer": 1, "explain": "泛指喜欢某类东西用复数", "difficulty": 2 },
+  { "grade": 2, "term": "下", "code": "2B_U2", "q": "It ____ hot in summer.", "options": ["am", "is", "are"], "answer": 1, "explain": "It 单数用 is", "difficulty": 1 },
+
+  { "grade": 3, "term": "上", "code": "3A_U1", "q": "There ____ a book on the desk.", "options": ["is", "are", "am"], "answer": 0, "explain": "a book 单数用 is", "difficulty": 1 },
+  { "grade": 3, "term": "上", "code": "3A_U1", "q": "This is ____ bag.", "options": ["I", "me", "my"], "answer": 2, "explain": "形容词性物主代词 my", "difficulty": 1 },
+  { "grade": 3, "term": "上", "code": "3A_U2", "q": "There ____ many students in the classroom.", "options": ["is", "are", "be"], "answer": 1, "explain": "many students 复数用 are", "difficulty": 2 },
+  { "grade": 3, "term": "下", "code": "3B_U1", "q": "I ____ breakfast at 7:30.", "options": ["have", "has", "having"], "answer": 0, "explain": "I 对应动词原形 have", "difficulty": 1 },
+  { "grade": 3, "term": "下", "code": "3B_U1", "q": "He ____ to school every day.", "options": ["go", "goes", "going"], "answer": 1, "explain": "第三人称单数动词+s/es", "difficulty": 2 },
+  { "grade": 3, "term": "下", "code": "3B_U2", "q": "— ____ do you like? — I like dancing.", "options": ["Who", "What", "Where"], "answer": 1, "explain": "询问喜欢什么用 What", "difficulty": 2 },
+
+  { "grade": 4, "term": "上", "code": "4A_U1", "q": "There ____ a bed and two chairs in my room.", "options": ["is", "are", "be"], "answer": 0, "explain": "there be 就近原则，靠近 a bed 用 is", "difficulty": 3 },
+  { "grade": 4, "term": "上", "code": "4A_U2", "q": "She ____ a new dress today.", "options": ["wear", "wears", "is wearing"], "answer": 2, "explain": "今天正在穿，用现在进行时", "difficulty": 3 },
+  { "grade": 4, "term": "下", "code": "4B_U1", "q": "I like ____ and apples.", "options": ["banana", "bananas", "a banana"], "answer": 1, "explain": "表泛指用复数", "difficulty": 2 },
+  { "grade": 4, "term": "下", "code": "4B_U2", "q": "Winter is ____ than autumn.", "options": ["cold", "colder", "coldest"], "answer": 1, "explain": "than 前用比较级", "difficulty": 2 },
+
+  { "grade": 5, "term": "上", "code": "5A_U1", "q": "— ____ is your pen? — It's red.", "options": ["What", "What colour", "How", "Where"], "answer": 1, "explain": "询问颜色用固定搭配 What colour", "difficulty": 2 },
+  { "grade": 5, "term": "上", "code": "5A_U1", "q": "I want ____ a scientist.", "options": ["be", "to be", "being"], "answer": 1, "explain": "want to do sth", "difficulty": 2 },
+  { "grade": 5, "term": "上", "code": "5A_U2", "q": "Last year, I ____ to Beijing.", "options": ["go", "went", "will go"], "answer": 1, "explain": "last year 用过去式 went", "difficulty": 2 },
+  { "grade": 5, "term": "下", "code": "5B_U1", "q": "We should not ____ water.", "options": ["waste", "save", "protect"], "answer": 0, "explain": "waste=浪费，符合语境", "difficulty": 3 },
+  { "grade": 5, "term": "下", "code": "5B_U2", "q": "Swimming ____ fun.", "options": ["is", "are", "am"], "answer": 0, "explain": "动名词作主语视作单数", "difficulty": 3 },
+
+  { "grade": 6, "term": "上", "code": "6A_U1", "q": "He is ____ than his brother.", "options": ["tall", "taller", "tallest"], "answer": 1, "explain": "than 前用比较级 taller", "difficulty": 2 },
+  { "grade": 6, "term": "上", "code": "6A_U1", "q": "She is the ____ student in our class.", "options": ["tall", "taller", "tallest"], "answer": 2, "explain": "the + 最高级", "difficulty": 2 },
+  { "grade": 6, "term": "上", "code": "6A_U2", "q": "Yesterday I ____ my homework.", "options": ["do", "did", "done"], "answer": 1, "explain": "yesterday 用过去式 did", "difficulty": 2 },
+  { "grade": 6, "term": "上", "code": "6A_U3", "q": "We say '____' when others help us.", "options": ["sorry", "thank you", "please"], "answer": 1, "explain": "别人帮忙要说谢谢", "difficulty": 1 },
+  { "grade": 6, "term": "下", "code": "6B_U1", "q": "Spring Festival ____ the most important festival in China.", "options": ["is", "are", "be"], "answer": 0, "explain": "单数主语用 is", "difficulty": 2 },
+  { "grade": 6, "term": "下", "code": "6B_U2", "q": "I ____ study harder next term.", "options": ["am", "will", "was"], "answer": 1, "explain": "next term 将来时用 will", "difficulty": 3 },
+
+  { "grade": 7, "term": "上", "code": "7A_U1", "q": "— ____ is the weather like? — It's sunny.", "options": ["How", "What", "Which"], "answer": 1, "explain": "询问天气用 What is the weather like", "difficulty": 3 },
+  { "grade": 7, "term": "上", "code": "7A_U2", "q": "She is good ____ English.", "options": ["at", "in", "on"], "answer": 0, "explain": "be good at sth=擅长", "difficulty": 3 },
+  { "grade": 7, "term": "下", "code": "7B_U1", "q": "We ____ our environment since 2000.", "options": ["protect", "protected", "have protected"], "answer": 2, "explain": "since 用现在完成时", "difficulty": 4 },
+  { "grade": 7, "term": "下", "code": "7B_U2", "q": "Computers ____ widely used today.", "options": ["is", "are", "be"], "answer": 1, "explain": "Computers 复数用 are", "difficulty": 3 },
+
+  { "grade": 8, "term": "上", "code": "8A_U1", "q": "You'd better ____ some medicine.", "options": ["take", "takes", "taking"], "answer": 0, "explain": "had better do sth", "difficulty": 3 },
+  { "grade": 8, "term": "上", "code": "8A_U1", "q": "I have a headache. I ____ see a doctor.", "options": ["should", "can", "may"], "answer": 0, "explain": "should=应该，表建议", "difficulty": 3 },
+  { "grade": 8, "term": "上", "code": "8A_U2", "q": "Reading makes us ____.", "options": ["smart", "smarter", "smartly"], "answer": 0, "explain": "make sb + 形容词", "difficulty": 3 },
+  { "grade": 8, "term": "下", "code": "8B_U1", "q": "If you help others, you will feel ____.", "options": ["happy", "happily", "happiness"], "answer": 0, "explain": "feel + 形容词", "difficulty": 3 },
+  { "grade": 8, "term": "下", "code": "8B_U2", "q": "The food in my hometown ____ delicious.", "options": ["is", "are", "be"], "answer": 0, "explain": "food 不可数名词用 is", "difficulty": 3 },
+
+  { "grade": 9, "term": "上", "code": "9A_U1", "q": "The Great Wall ____ about 21196 kilometers long.", "options": ["is", "was", "has"], "answer": 0, "explain": "描述客观事实用现在时 is", "difficulty": 3 },
+  { "grade": 9, "term": "上", "code": "9A_U1", "q": "This ancient temple ____ 800 years ago.", "options": ["built", "was built", "is built"], "answer": 1, "explain": "过去式被动语态 was built", "difficulty": 4 },
+  { "grade": 9, "term": "上", "code": "9A_U2", "q": "The light bulb ____ by Edison.", "options": ["invented", "was invented", "invents"], "answer": 1, "explain": "被动语态：由...发明", "difficulty": 4 },
+  { "grade": 9, "term": "下", "code": "9B_U1", "q": "If I ____ hard, I will succeed.", "options": ["work", "worked", "will work"], "answer": 0, "explain": "if 引导的真实条件句，主将从现", "difficulty": 4 },
+  { "grade": 9, "term": "下", "code": "9B_U2", "q": "Education is ____ than money.", "options": ["important", "more important", "most important"], "answer": 1, "explain": "than 前用比较级", "difficulty": 3 }
+]

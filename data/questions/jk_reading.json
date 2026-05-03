@@ -1,0 +1,812 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "passage": "I have a new bag. It is blue. In my bag, there are 3 books, 2 pens and a pencil.",
+    "q": "How many books are in the bag?",
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 1,
+    "explain": "文中明确说有 3 本书",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "passage": "Our classroom is big. There is a blackboard in front. The teacher is Miss Li.",
+    "q": "Who is the teacher?",
+    "options": [
+      "Miss Wang",
+      "Miss Li",
+      "Mr. Chen"
+    ],
+    "answer": 1,
+    "explain": "文中明确提到老师是 Miss Li",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "passage": "Tom gets up at 7. He has breakfast at 7:30. He goes to school at 8.",
+    "q": "When does Tom go to school?",
+    "options": [
+      "At 7:00",
+      "At 7:30",
+      "At 8:00"
+    ],
+    "answer": 2,
+    "explain": "文中说 goes to school at 8",
+    "difficulty": 1
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "passage": "This is my room. There is a bed, a desk and two chairs in it. I study at my desk every night.",
+    "q": "What does the writer do at the desk?",
+    "options": [
+      "Sleep",
+      "Study",
+      "Eat"
+    ],
+    "answer": 1,
+    "explain": "study at my desk=在桌边学习",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "passage": "I like apples and bananas very much. My sister likes oranges. We eat fruit every day because fruit is healthy.",
+    "q": "Why do they eat fruit every day?",
+    "options": [
+      "Fruit is cheap",
+      "Fruit is healthy",
+      "Fruit is sweet"
+    ],
+    "answer": 1,
+    "explain": "because fruit is healthy",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "passage": "There are four seasons in a year. Spring is warm. Summer is hot. Autumn is cool. Winter is cold. I like spring best.",
+    "q": "Which season does the writer like best?",
+    "options": [
+      "Summer",
+      "Spring",
+      "Winter"
+    ],
+    "answer": 1,
+    "explain": "I like spring best",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "passage": "Kate wants to be a doctor when she grows up. She often reads books about medicine. Her mother is also a doctor.",
+    "q": "What does Kate want to be?",
+    "options": [
+      "A teacher",
+      "A doctor",
+      "A scientist"
+    ],
+    "answer": 1,
+    "explain": "wants to be a doctor",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "passage": "Last summer, Jim traveled to Beijing by plane with his family. They visited the Great Wall and the Forbidden City. They had a great time.",
+    "q": "How did Jim travel to Beijing?",
+    "options": [
+      "By plane",
+      "By train",
+      "By car"
+    ],
+    "answer": 0,
+    "explain": "by plane=坐飞机",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "passage": "We should save water to protect our Earth. We can turn off the tap when we brush teeth. We can also plant more trees.",
+    "q": "Which is NOT mentioned in the passage?",
+    "options": [
+      "Saving water",
+      "Planting trees",
+      "Eating vegetables"
+    ],
+    "answer": 2,
+    "explain": "文中没有提到吃蔬菜",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "passage": "Exercise is good for health. Mike plays football after school. His sister swims every weekend. Exercise makes them strong.",
+    "q": "What does Mike do after school?",
+    "options": [
+      "Plays football",
+      "Swims",
+      "Runs"
+    ],
+    "answer": 0,
+    "explain": "Mike plays football after school",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "passage": "Tom is 12 years old. He is 160 cm tall. His brother Jack is 10 and 155 cm tall. Tom is older and taller than Jack.",
+    "q": "Who is shorter?",
+    "options": [
+      "Tom",
+      "Jack",
+      "They are the same"
+    ],
+    "answer": 1,
+    "explain": "Jack 155<Tom 160，所以 Jack 更矮",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "passage": "Last Sunday I went to my grandparents' house. I helped them clean the garden and cook lunch. We had a wonderful day.",
+    "q": "What did the writer do last Sunday?",
+    "options": [
+      "Went to school",
+      "Visited grandparents",
+      "Watched TV"
+    ],
+    "answer": 1,
+    "explain": "went to my grandparents' house",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "passage": "Spring Festival is the most important festival in China. We eat dumplings and hang red lanterns. Children love to get red envelopes with money inside.",
+    "q": "What do children love most during Spring Festival?",
+    "options": [
+      "Dumplings",
+      "Red lanterns",
+      "Red envelopes"
+    ],
+    "answer": 2,
+    "explain": "Children love to get red envelopes",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "My diary Monday: It was a sunny day. I went to the park and played basketball with my friends. We had a great time. I was very tired when I got home.",
+    "q": "What was the weather like?",
+    "options": [
+      "Rainy",
+      "Sunny",
+      "Windy"
+    ],
+    "answer": 1,
+    "explain": "It was a sunny day",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "Lily has many subjects at school. She loves English best because she wants to travel abroad. Math is the most difficult for her.",
+    "q": "Which subject is the most difficult for Lily?",
+    "options": [
+      "English",
+      "Chinese",
+      "Math"
+    ],
+    "answer": 2,
+    "explain": "Math is the most difficult",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "passage": "Our environment is getting worse. Factories pollute the air. People throw garbage everywhere. We must take action now to protect our planet.",
+    "q": "What is the main idea of the passage?",
+    "options": [
+      "We must protect environment",
+      "Factories are bad",
+      "Garbage is everywhere"
+    ],
+    "answer": 0,
+    "explain": "主旨是保护环境",
+    "difficulty": 4
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "passage": "Modern technology has changed our lives. We can shop online, make video calls, and work from home. Life becomes easier thanks to the internet.",
+    "q": "What benefit of technology is NOT mentioned?",
+    "options": [
+      "Online shopping",
+      "Video calls",
+      "Online gaming"
+    ],
+    "answer": 2,
+    "explain": "文中没有提到在线游戏",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "passage": "Jim doesn't feel well today. He has a fever and a cough. His mother takes him to see a doctor. The doctor gives him some medicine and tells him to rest more.",
+    "q": "What does the doctor tell Jim to do?",
+    "options": [
+      "Take medicine and rest",
+      "Go to school",
+      "Eat more food"
+    ],
+    "answer": 0,
+    "explain": "gives medicine + tells him to rest",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "passage": "Many students have different hobbies. Lucy loves reading novels. Ben enjoys collecting stamps. Sam is good at painting. Everyone has their own interests.",
+    "q": "What does Ben like to do?",
+    "options": [
+      "Reading",
+      "Collecting stamps",
+      "Painting"
+    ],
+    "answer": 1,
+    "explain": "Ben enjoys collecting stamps",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "passage": "Last weekend, our class visited the old people's home. We talked with them, sang songs and cleaned the rooms. They were very happy. Volunteering makes us feel proud.",
+    "q": "How did the old people feel?",
+    "options": [
+      "Sad",
+      "Happy",
+      "Bored"
+    ],
+    "answer": 1,
+    "explain": "They were very happy",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "passage": "I come from Guangzhou, a beautiful city in southern China. We have modern buildings and traditional parks. The food here is world-famous. I love my hometown.",
+    "q": "What is famous about Guangzhou?",
+    "options": [
+      "Mountains",
+      "Food",
+      "Snow"
+    ],
+    "answer": 1,
+    "explain": "The food here is world-famous",
+    "difficulty": 3
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "passage": "The Great Wall is one of the seven wonders of the world. It was built over 2000 years ago. Millions of tourists visit it every year to see this amazing ancient structure.",
+    "q": "How long ago was the Great Wall built?",
+    "options": [
+      "500 years",
+      "1000 years",
+      "Over 2000 years"
+    ],
+    "answer": 2,
+    "explain": "built over 2000 years ago",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "passage": "Thomas Edison invented the light bulb in 1879. This invention changed the world. Today, we use electric lights everywhere. Edison's hard work inspires us all.",
+    "q": "When was the light bulb invented?",
+    "options": [
+      "1789",
+      "1879",
+      "1979"
+    ],
+    "answer": 1,
+    "explain": "invented the light bulb in 1879",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "passage": "Many students plan their future during high school. Some want to become doctors to help others. Some want to be engineers to build things. Whatever they choose, hard work is the key to success.",
+    "q": "What is the key to success according to the passage?",
+    "options": [
+      "Good luck",
+      "Rich family",
+      "Hard work"
+    ],
+    "answer": 2,
+    "explain": "hard work is the key to success",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "passage": "Global warming is a serious problem. The Earth is getting hotter. Ice is melting and sea levels are rising. Scientists say we must reduce pollution to save our planet.",
+    "q": "What should we do to save the planet?",
+    "options": [
+      "Travel more",
+      "Reduce pollution",
+      "Build more cities"
+    ],
+    "answer": 1,
+    "explain": "reduce pollution to save our planet",
+    "difficulty": 4
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "passage": "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School Things",
+      "Festivals",
+      "Food"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "整段围绕 'School Things' 展开"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "passage": "This is our classroom. It is big and clean. There is a blackboard and a big window. Our teacher stands in front of the blackboard. I like my classroom.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "My Classroom",
+      "Weather",
+      "Animals"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "整段围绕 'My Classroom' 展开"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "passage": "I get up at seven o'clock. I have breakfast at seven thirty. Then I go to school. I have lunch at twelve o'clock. I go home at five o'clock.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Food",
+      "Animals",
+      "My Day"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "explain": "整段围绕 'My Day' 展开"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "passage": "I have many hobbies. I like to play football and read books. My sister likes to sing and dance. My brother likes to draw. What are your hobbies?",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "Family",
+      "Hobbies"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "explain": "整段围绕 'Hobbies' 展开"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "passage": "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "My Room",
+      "Sports",
+      "Festivals"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "整段围绕 'My Room' 展开"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "passage": "I am wearing a blue shirt and black shoes. My sister is wearing a pink dress. It is cold today, so I wear a coat and a hat. What are you wearing?",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "Clothes",
+      "Festivals"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "explain": "整段围绕 'Clothes' 展开"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "passage": "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food? I also like bread with milk in the morning.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Food I Like",
+      "Animals",
+      "Festivals"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "整段围绕 'Food I Like' 展开"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "passage": "There are four seasons in a year. Spring is warm and colorful. Summer is hot and sunny. Autumn is cool. Winter is cold and snowy. My favorite season is spring.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Seasons",
+      "Weather",
+      "School"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "整段围绕 'Seasons' 展开"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "passage": "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Travel",
+      "My Dream Job",
+      "Family"
+    ],
+    "answer": 1,
+    "difficulty": 2,
+    "explain": "整段围绕 'My Dream Job' 展开"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "passage": "I love to travel. Last summer, I traveled to Beijing by plane. I visited the Great Wall and the Forbidden City. It was a wonderful trip. This winter, I will travel to Shanghai by train.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "School",
+      "Travel"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "explain": "整段围绕 'Travel' 展开"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "passage": "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers. Let's recycle paper and plastic to make our planet greener.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "Travel",
+      "Protect the Earth"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "explain": "整段围绕 'Protect the Earth' 展开"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "passage": "Exercise is important for our health. I play football with my classmates after school. My sister likes swimming. My father goes running every morning. What sports do you like?",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Festivals",
+      "Travel",
+      "Sports"
+    ],
+    "answer": 2,
+    "difficulty": 2,
+    "explain": "整段围绕 'Sports' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "passage": "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Travel",
+      "Festivals",
+      "How Tall Are You?"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'How Tall Are You?' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "passage": "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Family",
+      "Last Weekend",
+      "Festivals"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'Last Weekend' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "passage": "Being polite is important. We say 'please' when we ask for help. We say 'thank you' when others help us. We say 'sorry' when we make a mistake.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Food",
+      "Polite Words",
+      "Animals"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'Polite Words' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "passage": "China has many festivals. Spring Festival is the most important. We eat dumplings and hang red lanterns. Mid-Autumn Festival is also fun. We look at the bright moon and eat mooncakes.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Animals",
+      "Food",
+      "Chinese Festivals"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'Chinese Festivals' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "passage": "I often think about my future. I want to go to a good college. I will study hard every day. My parents tell me that hard work is important. I believe I can achieve success.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Food",
+      "My Future",
+      "Sports"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'My Future' 展开"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Today is Sunday. The weather is sunny. I went to the library in the morning. I read books there. In the afternoon, I played basketball with my friends.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School",
+      "Weather",
+      "My Diary"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'My Diary' 展开"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "At school, I have many subjects. I study Chinese, English, math, science and history. My favorite subject is English because I love learning new languages. What is your favorite subject?",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Family",
+      "School Life",
+      "Animals"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'School Life' 展开"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "passage": "Our environment is very important. We need clean air and clean water. We should not throw garbage on the street. Everyone can help to make our city more beautiful.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School",
+      "Environment",
+      "Weather"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'Environment' 展开"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "passage": "Modern technology has changed our lives. We use computers and phones every day. We can send emails and shop online. The internet connects us to the world. Technology makes our lives easier and more fun.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School",
+      "Animals",
+      "Technology"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'Technology' 展开"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "passage": "What's the matter, Tom? I have a bad cold and a headache. You should drink hot water and take some medicine. Thank you for your advice.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "Sports",
+      "What's the matter?"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'What's the matter?' 展开"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "passage": "Reading is a good hobby. It can help you learn many things. You can read at home, in the library or in the park. Reading makes you smart.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Animals",
+      "Hobbies",
+      "Travel"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'Hobbies' 展开"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "passage": "Last Saturday, I worked as a volunteer in my community. We helped clean the park and visited the elderly. It felt good to help others. I learned that volunteering makes our community better and makes us happier.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School",
+      "Weather",
+      "Volunteering"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'Volunteering' 展开"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "passage": "My hometown is Guangzhou. It is a beautiful and modern city. We have tall buildings and old traditional houses. The food is very delicious. I love my hometown very much and I am proud to live here.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Food",
+      "My Hometown",
+      "Animals"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'My Hometown' 展开"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "passage": "The Great Wall is one of the most famous places in China. It is about 21196 kilometers long. It is a wonder of the world. Many people visit it every year.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "School",
+      "Travel",
+      "Famous Places"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'Famous Places' 展开"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "passage": "Inventions have changed our world. The light bulb was invented by Thomas Edison. It changed the way we live. The telephone was invented by Alexander Bell. Today, we enjoy many useful inventions in our daily lives.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Inventions",
+      "Travel",
+      "Festivals"
+    ],
+    "answer": 0,
+    "difficulty": 3,
+    "explain": "整段围绕 'Inventions' 展开"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "passage": "In the future, I plan to go to a good university. I want to major in computer science because I love technology. After graduation, I hope to start my own company. I will work hard to achieve my dreams.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Animals",
+      "Food",
+      "Future Plans"
+    ],
+    "answer": 2,
+    "difficulty": 3,
+    "explain": "整段围绕 'Future Plans' 展开"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "passage": "Our world faces many global issues today. Global warming affects our weather. Many children in poor countries need education. We all hope for peace and a better world. Each of us can make a small difference.",
+    "q": "What is this passage mainly about?",
+    "options": [
+      "Weather",
+      "Global Issues",
+      "Sports"
+    ],
+    "answer": 1,
+    "difficulty": 3,
+    "explain": "整段围绕 'Global Issues' 展开"
+  }
+]

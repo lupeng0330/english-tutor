@@ -1,0 +1,1842 @@
+[
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "你好",
+    "answer": "hello",
+    "hint": "h___o",
+    "difficulty": 1,
+    "explain": "'你好'对应 hello"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "一",
+    "answer": "one",
+    "hint": "o__",
+    "difficulty": 1,
+    "explain": "数字1的英文"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "三",
+    "answer": "three",
+    "hint": "t____",
+    "difficulty": 1,
+    "explain": "数字3"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "红色",
+    "answer": "red",
+    "hint": "r__",
+    "difficulty": 1,
+    "explain": "颜色：红色"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "蓝色",
+    "answer": "blue",
+    "hint": "bl__",
+    "difficulty": 1,
+    "explain": "颜色：蓝色"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "妈妈",
+    "answer": "mum",
+    "hint": "m_m",
+    "difficulty": 1,
+    "explain": "家庭成员：妈妈"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "猫",
+    "answer": "cat",
+    "hint": "c_t",
+    "difficulty": 1,
+    "explain": "动物：猫"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "狗",
+    "answer": "dog",
+    "hint": "d_g",
+    "difficulty": 1,
+    "explain": "动物：狗"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "手",
+    "answer": "hand",
+    "hint": "h___",
+    "difficulty": 1,
+    "explain": "身体：手"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "苹果",
+    "answer": "apple",
+    "hint": "a____",
+    "difficulty": 1,
+    "explain": "水果：苹果"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "香蕉",
+    "answer": "banana",
+    "hint": "b_____",
+    "difficulty": 2,
+    "explain": "水果：香蕉"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "晴朗的",
+    "answer": "sunny",
+    "hint": "s____",
+    "difficulty": 2,
+    "explain": "天气：晴朗"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "书包",
+    "answer": "bag",
+    "hint": "b_g",
+    "difficulty": 1,
+    "explain": "学习用品：书包"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "铅笔",
+    "answer": "pencil",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "学习用品：铅笔"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "尺子",
+    "answer": "ruler",
+    "hint": "r____",
+    "difficulty": 2,
+    "explain": "学习用品：尺子"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "教室",
+    "answer": "classroom",
+    "hint": "c________",
+    "difficulty": 2,
+    "explain": "学校：教室"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "老师",
+    "answer": "teacher",
+    "hint": "t______",
+    "difficulty": 2,
+    "explain": "学校：老师"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "早餐",
+    "answer": "breakfast",
+    "hint": "b________",
+    "difficulty": 2,
+    "explain": "一日三餐：早餐"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "午餐",
+    "answer": "lunch",
+    "hint": "l____",
+    "difficulty": 1,
+    "explain": "一日三餐：午餐"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "唱歌",
+    "answer": "sing",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "动作：唱歌"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "跳舞",
+    "answer": "dance",
+    "hint": "d____",
+    "difficulty": 1,
+    "explain": "动作：跳舞"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "房间",
+    "answer": "room",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "家居：房间"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "书桌",
+    "answer": "desk",
+    "hint": "d___",
+    "difficulty": 1,
+    "explain": "家具：书桌"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "椅子",
+    "answer": "chair",
+    "hint": "ch___",
+    "difficulty": 2,
+    "explain": "家具：椅子"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "衬衫",
+    "answer": "shirt",
+    "hint": "sh___",
+    "difficulty": 2,
+    "explain": "衣物：衬衫"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "鞋子",
+    "answer": "shoes",
+    "hint": "sh___",
+    "difficulty": 2,
+    "explain": "衣物：鞋子"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "蔬菜",
+    "answer": "vegetable",
+    "hint": "v________",
+    "difficulty": 2,
+    "explain": "食物：蔬菜"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "面条",
+    "answer": "noodles",
+    "hint": "n______",
+    "difficulty": 2,
+    "explain": "食物：面条"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "春天",
+    "answer": "spring",
+    "hint": "sp____",
+    "difficulty": 2,
+    "explain": "季节：春"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "秋天",
+    "answer": "autumn",
+    "hint": "a_____",
+    "difficulty": 3,
+    "explain": "季节：秋"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "科学家",
+    "answer": "scientist",
+    "hint": "s________",
+    "difficulty": 2,
+    "explain": "职业：科学家"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "工程师",
+    "answer": "engineer",
+    "hint": "e_______",
+    "difficulty": 3,
+    "explain": "职业：工程师"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "梦想",
+    "answer": "dream",
+    "hint": "dr___",
+    "difficulty": 2,
+    "explain": "抽象词：梦想"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "旅行",
+    "answer": "travel",
+    "hint": "t_____",
+    "difficulty": 2,
+    "explain": "活动：旅行"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "参观",
+    "answer": "visit",
+    "hint": "v____",
+    "difficulty": 2,
+    "explain": "动作：参观"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "保护",
+    "answer": "protect",
+    "hint": "pr_____",
+    "difficulty": 3,
+    "explain": "动词：保护"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "污染",
+    "answer": "pollution",
+    "hint": "p________",
+    "difficulty": 3,
+    "explain": "名词：污染"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "游泳",
+    "answer": "swimming",
+    "hint": "sw______",
+    "difficulty": 2,
+    "explain": "运动：游泳"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "锻炼",
+    "answer": "exercise",
+    "hint": "e_______",
+    "difficulty": 3,
+    "explain": "名词/动词：锻炼"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "更高",
+    "answer": "taller",
+    "hint": "t_____",
+    "difficulty": 2,
+    "explain": "tall 的比较级"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "更年轻",
+    "answer": "younger",
+    "hint": "y______",
+    "difficulty": 2,
+    "explain": "young 的比较级"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "打扫了",
+    "answer": "cleaned",
+    "hint": "cl_____",
+    "difficulty": 2,
+    "explain": "clean 的过去式"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "拜访了",
+    "answer": "visited",
+    "hint": "v______",
+    "difficulty": 2,
+    "explain": "visit 的过去式"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "礼貌的",
+    "answer": "polite",
+    "hint": "p_____",
+    "difficulty": 3,
+    "explain": "形容词：礼貌的"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "q": "节日",
+    "answer": "festival",
+    "hint": "f_______",
+    "difficulty": 2,
+    "explain": "名词：节日"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "q": "饺子",
+    "answer": "dumpling",
+    "hint": "d_______",
+    "difficulty": 3,
+    "explain": "中国食物：饺子"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "q": "未来",
+    "answer": "future",
+    "hint": "f_____",
+    "difficulty": 2,
+    "explain": "名词：未来"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "q": "重要的",
+    "answer": "important",
+    "hint": "i________",
+    "difficulty": 3,
+    "explain": "形容词：重要的"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "日记",
+    "answer": "diary",
+    "hint": "d____",
+    "difficulty": 2,
+    "explain": "名词：日记"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "图书馆",
+    "answer": "library",
+    "hint": "l______",
+    "difficulty": 2,
+    "explain": "地点：图书馆"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "学科",
+    "answer": "subject",
+    "hint": "s______",
+    "difficulty": 3,
+    "explain": "名词：学科"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "科学",
+    "answer": "science",
+    "hint": "s______",
+    "difficulty": 2,
+    "explain": "学科：科学"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "环境",
+    "answer": "environment",
+    "hint": "e__________",
+    "difficulty": 3,
+    "explain": "名词：环境"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "计算机",
+    "answer": "computer",
+    "hint": "c_______",
+    "difficulty": 2,
+    "explain": "科技：计算机"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "互联网",
+    "answer": "internet",
+    "hint": "i_______",
+    "difficulty": 2,
+    "explain": "科技：互联网"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "头痛",
+    "answer": "headache",
+    "hint": "h_______",
+    "difficulty": 3,
+    "explain": "身体不适：头痛"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "发烧",
+    "answer": "fever",
+    "hint": "f____",
+    "difficulty": 2,
+    "explain": "身体不适：发烧"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "药",
+    "answer": "medicine",
+    "hint": "m_______",
+    "difficulty": 3,
+    "explain": "名词：药"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "爱好",
+    "answer": "hobby",
+    "hint": "h____",
+    "difficulty": 2,
+    "explain": "名词：爱好"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "收集",
+    "answer": "collect",
+    "hint": "c______",
+    "difficulty": 3,
+    "explain": "动词：收集"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "志愿者",
+    "answer": "volunteer",
+    "hint": "v________",
+    "difficulty": 3,
+    "explain": "名词：志愿者"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "社区",
+    "answer": "community",
+    "hint": "c________",
+    "difficulty": 3,
+    "explain": "名词：社区"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "家乡",
+    "answer": "hometown",
+    "hint": "h_______",
+    "difficulty": 2,
+    "explain": "名词：家乡"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "传统的",
+    "answer": "traditional",
+    "hint": "t__________",
+    "difficulty": 3,
+    "explain": "形容词：传统的"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "著名的",
+    "answer": "famous",
+    "hint": "f_____",
+    "difficulty": 3,
+    "explain": "形容词：著名的"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "古老的",
+    "answer": "ancient",
+    "hint": "a______",
+    "difficulty": 3,
+    "explain": "形容词：古老的"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "文化",
+    "answer": "culture",
+    "hint": "c______",
+    "difficulty": 3,
+    "explain": "名词：文化"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "发明",
+    "answer": "invent",
+    "hint": "i_____",
+    "difficulty": 3,
+    "explain": "动词：发明"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "有用的",
+    "answer": "useful",
+    "hint": "u_____",
+    "difficulty": 2,
+    "explain": "形容词：有用的"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "大学",
+    "answer": "university",
+    "hint": "u_________",
+    "difficulty": 3,
+    "explain": "教育：大学"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "实现",
+    "answer": "achieve",
+    "hint": "a______",
+    "difficulty": 4,
+    "explain": "动词：实现"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "全球的",
+    "answer": "global",
+    "hint": "g_____",
+    "difficulty": 3,
+    "explain": "形容词：全球的"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "教育",
+    "answer": "education",
+    "hint": "e________",
+    "difficulty": 3,
+    "explain": "名词：教育"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "和平",
+    "answer": "peace",
+    "hint": "p____",
+    "difficulty": 3,
+    "explain": "名词：和平"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "嗨",
+    "answer": "hi",
+    "hint": "h_",
+    "difficulty": 1,
+    "explain": "'嗨' 的英文是 hi"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "我",
+    "answer": "i",
+    "hint": "I",
+    "difficulty": 1,
+    "explain": "'我' 的英文是 I"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "你",
+    "answer": "you",
+    "hint": "y_u",
+    "difficulty": 1,
+    "explain": "'你' 的英文是 you"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "名字",
+    "answer": "name",
+    "hint": "n__e",
+    "difficulty": 1,
+    "explain": "'名字' 的英文是 name"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "二",
+    "answer": "two",
+    "hint": "t_o",
+    "difficulty": 1,
+    "explain": "'二' 的英文是 two"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "四",
+    "answer": "four",
+    "hint": "f__r",
+    "difficulty": 1,
+    "explain": "'四' 的英文是 four"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "五",
+    "answer": "five",
+    "hint": "f__e",
+    "difficulty": 1,
+    "explain": "'五' 的英文是 five"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "黄色",
+    "answer": "yellow",
+    "hint": "y____w",
+    "difficulty": 1,
+    "explain": "'黄色' 的英文是 yellow"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "绿色",
+    "answer": "green",
+    "hint": "g___n",
+    "difficulty": 1,
+    "explain": "'绿色' 的英文是 green"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "黑色",
+    "answer": "black",
+    "hint": "b___k",
+    "difficulty": 1,
+    "explain": "'黑色' 的英文是 black"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "爸爸",
+    "answer": "dad",
+    "hint": "d_d",
+    "difficulty": 1,
+    "explain": "'爸爸' 的英文是 dad"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "婴儿",
+    "answer": "baby",
+    "hint": "b__y",
+    "difficulty": 1,
+    "explain": "'婴儿' 的英文是 baby"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "爱",
+    "answer": "love",
+    "hint": "l__e",
+    "difficulty": 1,
+    "explain": "'爱' 的英文是 love"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "家庭",
+    "answer": "family",
+    "hint": "f____y",
+    "difficulty": 1,
+    "explain": "'家庭' 的英文是 family"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "鸟",
+    "answer": "bird",
+    "hint": "b__d",
+    "difficulty": 1,
+    "explain": "'鸟' 的英文是 bird"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "鱼",
+    "answer": "fish",
+    "hint": "f__h",
+    "difficulty": 1,
+    "explain": "'鱼' 的英文是 fish"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "兔子",
+    "answer": "rabbit",
+    "hint": "r____t",
+    "difficulty": 1,
+    "explain": "'兔子' 的英文是 rabbit"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "头",
+    "answer": "head",
+    "hint": "h__d",
+    "difficulty": 1,
+    "explain": "'头' 的英文是 head"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "脚",
+    "answer": "foot",
+    "hint": "f__t",
+    "difficulty": 1,
+    "explain": "'脚' 的英文是 foot"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "眼睛",
+    "answer": "eye",
+    "hint": "e_e",
+    "difficulty": 1,
+    "explain": "'眼睛' 的英文是 eye"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "耳朵",
+    "answer": "ear",
+    "hint": "e_r",
+    "difficulty": 1,
+    "explain": "'耳朵' 的英文是 ear"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "橙子",
+    "answer": "orange",
+    "hint": "o____e",
+    "difficulty": 1,
+    "explain": "'橙子' 的英文是 orange"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "梨",
+    "answer": "pear",
+    "hint": "p__r",
+    "difficulty": 1,
+    "explain": "'梨' 的英文是 pear"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "葡萄",
+    "answer": "grape",
+    "hint": "g___e",
+    "difficulty": 1,
+    "explain": "'葡萄' 的英文是 grape"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "下雨的",
+    "answer": "rainy",
+    "hint": "r___y",
+    "difficulty": 1,
+    "explain": "'下雨的' 的英文是 rainy"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "有风的",
+    "answer": "windy",
+    "hint": "w___y",
+    "difficulty": 1,
+    "explain": "'有风的' 的英文是 windy"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "热的",
+    "answer": "hot",
+    "hint": "h_t",
+    "difficulty": 1,
+    "explain": "'热的' 的英文是 hot"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "冷的",
+    "answer": "cold",
+    "hint": "c__d",
+    "difficulty": 1,
+    "explain": "'冷的' 的英文是 cold"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "钢笔",
+    "answer": "pen",
+    "hint": "p_n",
+    "difficulty": 1,
+    "explain": "'钢笔' 的英文是 pen"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "书",
+    "answer": "book",
+    "hint": "b__k",
+    "difficulty": 1,
+    "explain": "'书' 的英文是 book"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "黑板",
+    "answer": "blackboard",
+    "hint": "b________d",
+    "difficulty": 1,
+    "explain": "'黑板' 的英文是 blackboard"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "门",
+    "answer": "door",
+    "hint": "d__r",
+    "difficulty": 1,
+    "explain": "'门' 的英文是 door"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "窗户",
+    "answer": "window",
+    "hint": "w____w",
+    "difficulty": 1,
+    "explain": "'窗户' 的英文是 window"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "起床",
+    "answer": "get up",
+    "hint": "g____p",
+    "difficulty": 1,
+    "explain": "'起床' 的英文是 get up"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "学校",
+    "answer": "school",
+    "hint": "s____l",
+    "difficulty": 1,
+    "explain": "'学校' 的英文是 school"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "家",
+    "answer": "home",
+    "hint": "h__e",
+    "difficulty": 1,
+    "explain": "'家' 的英文是 home"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "玩",
+    "answer": "play",
+    "hint": "p__y",
+    "difficulty": 1,
+    "explain": "'玩' 的英文是 play"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "阅读",
+    "answer": "read",
+    "hint": "r__d",
+    "difficulty": 1,
+    "explain": "'阅读' 的英文是 read"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "画画",
+    "answer": "draw",
+    "hint": "d__w",
+    "difficulty": 1,
+    "explain": "'画画' 的英文是 draw"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "床",
+    "answer": "bed",
+    "hint": "b_d",
+    "difficulty": 2,
+    "explain": "'床' 的英文是 bed"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "窗户",
+    "answer": "window",
+    "hint": "w____w",
+    "difficulty": 2,
+    "explain": "'窗户' 的英文是 window"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "连衣裙",
+    "answer": "dress",
+    "hint": "d___s",
+    "difficulty": 2,
+    "explain": "'连衣裙' 的英文是 dress"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "帽子",
+    "answer": "hat",
+    "hint": "h_t",
+    "difficulty": 2,
+    "explain": "'帽子' 的英文是 hat"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "外套",
+    "answer": "coat",
+    "hint": "c__t",
+    "difficulty": 2,
+    "explain": "'外套' 的英文是 coat"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "水果",
+    "answer": "fruit",
+    "hint": "f___t",
+    "difficulty": 2,
+    "explain": "'水果' 的英文是 fruit"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "米饭",
+    "answer": "rice",
+    "hint": "r__e",
+    "difficulty": 2,
+    "explain": "'米饭' 的英文是 rice"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "面包",
+    "answer": "bread",
+    "hint": "b___d",
+    "difficulty": 2,
+    "explain": "'面包' 的英文是 bread"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "夏天",
+    "answer": "summer",
+    "hint": "s____r",
+    "difficulty": 2,
+    "explain": "'夏天' 的英文是 summer"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "冬天",
+    "answer": "winter",
+    "hint": "w____r",
+    "difficulty": 2,
+    "explain": "'冬天' 的英文是 winter"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "季节",
+    "answer": "season",
+    "hint": "s____n",
+    "difficulty": 2,
+    "explain": "'季节' 的英文是 season"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "医生",
+    "answer": "doctor",
+    "hint": "d____r",
+    "difficulty": 2,
+    "explain": "'医生' 的英文是 doctor"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "飞机",
+    "answer": "plane",
+    "hint": "p___e",
+    "difficulty": 2,
+    "explain": "'飞机' 的英文是 plane"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "火车",
+    "answer": "train",
+    "hint": "t___n",
+    "difficulty": 2,
+    "explain": "'火车' 的英文是 train"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "城市",
+    "answer": "city",
+    "hint": "c__y",
+    "difficulty": 2,
+    "explain": "'城市' 的英文是 city"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "拯救/节约",
+    "answer": "save",
+    "hint": "s__e",
+    "difficulty": 2,
+    "explain": "'拯救/节约' 的英文是 save"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "种植",
+    "answer": "plant",
+    "hint": "p___t",
+    "difficulty": 2,
+    "explain": "'种植' 的英文是 plant"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "回收",
+    "answer": "recycle",
+    "hint": "r_____e",
+    "difficulty": 2,
+    "explain": "'回收' 的英文是 recycle"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "足球",
+    "answer": "football",
+    "hint": "f______l",
+    "difficulty": 2,
+    "explain": "'足球' 的英文是 football"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "篮球",
+    "answer": "basketball",
+    "hint": "b________l",
+    "difficulty": 2,
+    "explain": "'篮球' 的英文是 basketball"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "跑步",
+    "answer": "running",
+    "hint": "r_____g",
+    "difficulty": 2,
+    "explain": "'跑步' 的英文是 running"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "更矮",
+    "answer": "shorter",
+    "hint": "s_____r",
+    "difficulty": 2,
+    "explain": "'更矮' 的英文是 shorter"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "更重",
+    "answer": "heavier",
+    "hint": "h_____r",
+    "difficulty": 2,
+    "explain": "'更重' 的英文是 heavier"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "更大",
+    "answer": "bigger",
+    "hint": "b____r",
+    "difficulty": 2,
+    "explain": "'更大' 的英文是 bigger"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "洗了",
+    "answer": "washed",
+    "hint": "w____d",
+    "difficulty": 2,
+    "explain": "'洗了' 的英文是 washed"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "看了",
+    "answer": "watched",
+    "hint": "w_____d",
+    "difficulty": 2,
+    "explain": "'看了' 的英文是 watched"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "玩了",
+    "answer": "played",
+    "hint": "p____d",
+    "difficulty": 2,
+    "explain": "'玩了' 的英文是 played"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "谢谢",
+    "answer": "thanks",
+    "hint": "t____s",
+    "difficulty": 2,
+    "explain": "'谢谢' 的英文是 thanks"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "对不起",
+    "answer": "sorry",
+    "hint": "s___y",
+    "difficulty": 2,
+    "explain": "'对不起' 的英文是 sorry"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "请",
+    "answer": "please",
+    "hint": "p____e",
+    "difficulty": 2,
+    "explain": "'请' 的英文是 please"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "请原谅",
+    "answer": "excuse",
+    "hint": "e____e",
+    "difficulty": 2,
+    "explain": "'请原谅' 的英文是 excuse"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "q": "灯笼",
+    "answer": "lantern",
+    "hint": "l_____n",
+    "difficulty": 2,
+    "explain": "'灯笼' 的英文是 lantern"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "q": "月亮",
+    "answer": "moon",
+    "hint": "m__n",
+    "difficulty": 2,
+    "explain": "'月亮' 的英文是 moon"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "q": "龙",
+    "answer": "dragon",
+    "hint": "d____n",
+    "difficulty": 2,
+    "explain": "'龙' 的英文是 dragon"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "q": "大学",
+    "answer": "college",
+    "hint": "c_____e",
+    "difficulty": 2,
+    "explain": "'大学' 的英文是 college"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "q": "学习",
+    "answer": "study",
+    "hint": "s___y",
+    "difficulty": 2,
+    "explain": "'学习' 的英文是 study"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "q": "成功",
+    "answer": "success",
+    "hint": "s_____s",
+    "difficulty": 2,
+    "explain": "'成功' 的英文是 success"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "天气",
+    "answer": "weather",
+    "hint": "w_____r",
+    "difficulty": 3,
+    "explain": "'天气' 的英文是 weather"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "周末",
+    "answer": "weekend",
+    "hint": "w_____d",
+    "difficulty": 3,
+    "explain": "'周末' 的英文是 weekend"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "篮球",
+    "answer": "basketball",
+    "hint": "b________l",
+    "difficulty": 3,
+    "explain": "'篮球' 的英文是 basketball"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "数学",
+    "answer": "math",
+    "hint": "m__h",
+    "difficulty": 3,
+    "explain": "'数学' 的英文是 math"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "英语",
+    "answer": "english",
+    "hint": "E_____h",
+    "difficulty": 3,
+    "explain": "'英语' 的英文是 English"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "历史",
+    "answer": "history",
+    "hint": "h_____y",
+    "difficulty": 3,
+    "explain": "'历史' 的英文是 history"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "垃圾",
+    "answer": "garbage",
+    "hint": "g_____e",
+    "difficulty": 3,
+    "explain": "'垃圾' 的英文是 garbage"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "清洁的",
+    "answer": "clean",
+    "hint": "c___n",
+    "difficulty": 3,
+    "explain": "'清洁的' 的英文是 clean"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "空气",
+    "answer": "air",
+    "hint": "a_r",
+    "difficulty": 3,
+    "explain": "'空气' 的英文是 air"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "水",
+    "answer": "water",
+    "hint": "w___r",
+    "difficulty": 3,
+    "explain": "'水' 的英文是 water"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "手机/电话",
+    "answer": "phone",
+    "hint": "p___e",
+    "difficulty": 3,
+    "explain": "'手机/电话' 的英文是 phone"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "电子邮件",
+    "answer": "email",
+    "hint": "e___l",
+    "difficulty": 3,
+    "explain": "'电子邮件' 的英文是 email"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "在线",
+    "answer": "online",
+    "hint": "o____e",
+    "difficulty": 3,
+    "explain": "'在线' 的英文是 online"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "咳嗽",
+    "answer": "cough",
+    "hint": "c___h",
+    "difficulty": 3,
+    "explain": "'咳嗽' 的英文是 cough"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "胃痛",
+    "answer": "stomachache",
+    "hint": "s_________e",
+    "difficulty": 3,
+    "explain": "'胃痛' 的英文是 stomachache"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "有趣的",
+    "answer": "interesting",
+    "hint": "i_________g",
+    "difficulty": 3,
+    "explain": "'有趣的' 的英文是 interesting"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "绘画",
+    "answer": "painting",
+    "hint": "p______g",
+    "difficulty": 3,
+    "explain": "'绘画' 的英文是 painting"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "聪明的",
+    "answer": "smart",
+    "hint": "s___t",
+    "difficulty": 3,
+    "explain": "'聪明的' 的英文是 smart"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "帮助",
+    "answer": "help",
+    "hint": "h__p",
+    "difficulty": 3,
+    "explain": "'帮助' 的英文是 help"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "老年的",
+    "answer": "elderly",
+    "hint": "e_____y",
+    "difficulty": 3,
+    "explain": "'老年的' 的英文是 elderly"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "慈善",
+    "answer": "charity",
+    "hint": "c_____y",
+    "difficulty": 3,
+    "explain": "'慈善' 的英文是 charity"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "美丽的",
+    "answer": "beautiful",
+    "hint": "b_______l",
+    "difficulty": 3,
+    "explain": "'美丽的' 的英文是 beautiful"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "现代的",
+    "answer": "modern",
+    "hint": "m____n",
+    "difficulty": 3,
+    "explain": "'现代的' 的英文是 modern"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "美味的",
+    "answer": "delicious",
+    "hint": "d_______s",
+    "difficulty": 3,
+    "explain": "'美味的' 的英文是 delicious"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "奇观",
+    "answer": "wonder",
+    "hint": "w____r",
+    "difficulty": 3,
+    "explain": "'奇观' 的英文是 wonder"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "游客",
+    "answer": "tourist",
+    "hint": "t_____t",
+    "difficulty": 3,
+    "explain": "'游客' 的英文是 tourist"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "发明物",
+    "answer": "invention",
+    "hint": "i_______n",
+    "difficulty": 3,
+    "explain": "'发明物' 的英文是 invention"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "改变",
+    "answer": "change",
+    "hint": "c____e",
+    "difficulty": 3,
+    "explain": "'改变' 的英文是 change"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "发现",
+    "answer": "discover",
+    "hint": "d______r",
+    "difficulty": 3,
+    "explain": "'发现' 的英文是 discover"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "计划",
+    "answer": "plan",
+    "hint": "p__n",
+    "difficulty": 3,
+    "explain": "'计划' 的英文是 plan"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "专业",
+    "answer": "major",
+    "hint": "m___r",
+    "difficulty": 3,
+    "explain": "'专业' 的英文是 major"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "职业",
+    "answer": "career",
+    "hint": "c____r",
+    "difficulty": 3,
+    "explain": "'职业' 的英文是 career"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "问题",
+    "answer": "issue",
+    "hint": "i___e",
+    "difficulty": 3,
+    "explain": "'问题' 的英文是 issue"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "贫困",
+    "answer": "poverty",
+    "hint": "p_____y",
+    "difficulty": 3,
+    "explain": "'贫困' 的英文是 poverty"
+  }
+]
