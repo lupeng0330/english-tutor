@@ -45,6 +45,38 @@
   </div>
 </header>
 
+<!-- 全局学习上下文切换条（粘性，所有页面可见）-->
+<div id="contextBar" class="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border-b border-blue-100 sticky top-[60px] md:top-[68px] z-40">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center gap-2 md:gap-4 overflow-x-auto">
+    <div class="flex items-center gap-1 text-slate-500 text-xs md:text-sm flex-shrink-0">
+      <span>📚</span><span class="hidden md:inline">当前学习:</span>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <select id="ctxGrade" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="3">三年级</option>
+        <option value="4">四年级</option>
+        <option value="5">五年级</option>
+        <option value="6">六年级</option>
+        <option value="7">初一</option>
+        <option value="8">初二</option>
+        <option value="9">初三</option>
+      </select>
+      <select id="ctxTerm" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="上">上册</option>
+        <option value="下">下册</option>
+      </select>
+      <select id="ctxTextbook" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="jk">广州教科版</option>
+        <option value="rj" disabled>人教版 (待上线)</option>
+        <option value="wy" disabled>外研版 (待上线)</option>
+      </select>
+    </div>
+    <div class="flex-1 text-right text-xs md:text-sm text-slate-600 whitespace-nowrap flex-shrink-0">
+      <span id="ctxSummary">三年级 · 上册 · 广州教科版</span>
+    </div>
+  </div>
+</div>
+
 <div class="max-w-7xl mx-auto px-6 py-6 flex gap-6">
   <!-- 侧边栏 -->
   <aside class="w-56 flex-shrink-0">
@@ -113,26 +145,10 @@
 
     <!-- ============ 课本学习 ============ -->
     <section id="page-textbook" class="page hide">
-      <div class="card p-5 mb-6 flex flex-wrap items-center gap-4">
-        <div>
-          <label class="text-sm text-slate-500 block mb-1">年级</label>
-          <select id="gradeSelect" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
-            <option value="grade3">小学三年级</option>
-            <option value="grade4">小学四年级</option>
-            <option value="grade5">小学五年级</option>
-            <option value="grade6">小学六年级</option>
-            <option value="grade7">初中一年级</option>
-            <option value="grade8">初中二年级</option>
-            <option value="grade9">初中三年级</option>
-          </select>
-        </div>
-        <div>
-          <label class="text-sm text-slate-500 block mb-1">教材版本</label>
-          <select class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
-            <option>广州教科版（下册）</option>
-            <option>广州教科版（上册）</option>
-          </select>
-        </div>
+      <div class="card p-4 mb-4 flex flex-wrap items-center gap-3 text-sm">
+        <span class="text-slate-500">正在学习：</span>
+        <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold" id="textbookCtxBadge">三年级 · 上册 · 广州教科版</span>
+        <span class="text-slate-400 text-xs">（可在顶部切换）</span>
       </div>
 
       <div id="unitListView">
@@ -213,20 +229,15 @@
 
       <!-- 筛选器 -->
       <div id="practiceFilterView" class="card p-5 mb-4">
-        <div class="flex flex-wrap items-center gap-4">
-          <div>
-            <label class="text-sm text-slate-500 block mb-1">年级</label>
-            <select id="filterGrade" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
-              <option value="all">全部年级</option>
-              <option value="3">三年级</option>
-              <option value="4">四年级</option>
-              <option value="5">五年级</option>
-              <option value="6">六年级</option>
-              <option value="7">初一</option>
-              <option value="8">初二</option>
-              <option value="9">初三</option>
-            </select>
+        <div class="flex flex-wrap items-center gap-3 md:gap-4">
+          <div class="flex items-center gap-2">
+            <span class="text-sm text-slate-500">当前学段：</span>
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm" id="practiceCtxBadge">三年级</span>
           </div>
+          <label class="flex items-center gap-2 text-sm text-slate-700 cursor-pointer select-none">
+            <input type="checkbox" id="filterAllGrades" class="w-4 h-4 accent-blue-500">
+            <span>包含全部年级</span>
+          </label>
           <div>
             <label class="text-sm text-slate-500 block mb-1">难度</label>
             <select id="filterDifficulty" class="bg-slate-50 rounded-lg px-4 py-2 outline-none font-semibold">
@@ -237,7 +248,7 @@
               <option value="4">★★★★ 挑战</option>
             </select>
           </div>
-          <div class="flex-1 text-right text-sm text-slate-600">
+          <div class="flex-1 text-right text-sm text-slate-600 min-w-[200px]">
             <span id="filterCount">题库共 41 题，已全部加载 ✓</span>
           </div>
         </div>

@@ -265,9 +265,45 @@ let state = {
   quizStartTime: 0,
   isRecording: false,
   currentChild: 'xiaoming',
-  filterGrade: 'all',
+  // 🆕 全局学习上下文（年级+学期+教材版本）
+  ctx: {
+    grade: 3,          // 3/4/5/6/7/8/9
+    term: '上',        // '上' | '下'
+    textbook: 'jk'     // jk=广州教科版, rj=人教版（待开发）, wy=外研版（待开发）
+  },
+  includeAllGrades: false,  // 练习题"包含全部年级"复选框
   filterDifficulty: 0
 };
+
+// 🆕 学习上下文工具函数
+const TEXTBOOK_NAMES = { jk: '广州教科版', rj: '人教版', wy: '外研版' };
+function ctxSummaryText(ctx) {
+  const g = gradeText(ctx.grade);
+  const t = ctx.term === '上' ? '上册' : '下册';
+  const b = TEXTBOOK_NAMES[ctx.textbook] || ctx.textbook;
+  return `${g} · ${t} · ${b}`;
+}
+function ctxBadgeText(ctx) {
+  const g = ({3:'三年级',4:'四年级',5:'五年级',6:'六年级',7:'初一',8:'初二',9:'初三'})[ctx.grade] || '';
+  const t = ctx.term === '上' ? '上' : '下';
+  return `${g}${t}册`;
+}
+
+// 保存/恢复学习上下文（跨会话记忆）
+function saveCtx() {
+  try {
+    localStorage.setItem('yxyy_ctx', JSON.stringify(state.ctx));
+  } catch(e) {}
+}
+function loadCtx() {
+  try {
+    const raw = localStorage.getItem('yxyy_ctx');
+    if (raw) {
+      const obj = JSON.parse(raw);
+      if (obj && obj.grade) Object.assign(state.ctx, obj);
+    }
+  } catch(e) {}
+}
 
 const childMap = {
   xiaoming: { name: '小明', grade: 'grade3', gradeText: '三年级', avatar: '明', unit: 'Unit 1', gradeNum: 3 },
@@ -311,21 +347,53 @@ function onChildChange(e) {
   state.currentChild = e.target.value;
   const c = childMap[e.target.value];
   state.currentGrade = c.grade;
+  // 同步全局学习上下文
+  state.ctx.grade = c.gradeNum;
   // 同步两个下拉
   document.getElementById('childSelect').value = e.target.value;
   document.getElementById('childSelectMobile').value = e.target.value;
-  document.getElementById('gradeSelect').value = c.grade;
   document.getElementById('childAvatar').textContent = c.avatar;
   document.getElementById('welcomeTitle').textContent = `你好，${c.name}！👋`;
   document.getElementById('welcomeSub').textContent = `今天是新一天的学习，加油哦！广州教科版${c.gradeText} · ${c.unit}`;
-  renderUnitList();
+  applyContextChange();  // 一处同步所有 UI
 }
 document.getElementById('childSelect').addEventListener('change', onChildChange);
 document.getElementById('childSelectMobile').addEventListener('change', onChildChange);
 
-document.getElementById('gradeSelect').addEventListener('change', (e) => {
-  state.currentGrade = e.target.value;
-  renderUnitList();
+// ===================== 🆕 全局学习上下文切换 =====================
+function applyContextChange() {
+  // 1) 同步顶部上下文条的 3 个下拉（UI ← state.ctx）
+  const sel = (id) => document.getElementById(id);
+  if (sel('ctxGrade'))    sel('ctxGrade').value    = String(state.ctx.grade);
+  if (sel('ctxTerm'))     sel('ctxTerm').value     = state.ctx.term;
+  if (sel('ctxTextbook')) sel('ctxTextbook').value = state.ctx.textbook;
+
+  // 2) 更新上下文摘要文字
+  if (sel('ctxSummary'))         sel('ctxSummary').textContent = ctxSummaryText(state.ctx);
+  if (sel('textbookCtxBadge'))   sel('textbookCtxBadge').textContent = ctxSummaryText(state.ctx);
+  if (sel('practiceCtxBadge'))   sel('practiceCtxBadge').textContent = ctxBadgeText(state.ctx) + ' · ' + (TEXTBOOK_NAMES[state.ctx.textbook] || '');
+
+  // 3) 同步 currentGrade（与课本数据结构 grade3..grade9 对齐）
+  state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
+
+  // 4) 联动刷新各模块
+  try { renderUnitList(); } catch(e) {}
+  try { refreshPracticeCounts(); } catch(e) {}
+
+  // 5) 持久化
+  saveCtx();
+}
+
+// 绑定顶部上下文条三个下拉
+['ctxGrade', 'ctxTerm', 'ctxTextbook'].forEach(id => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('change', (e) => {
+    if (id === 'ctxGrade')    state.ctx.grade    = parseInt(e.target.value, 10);
+    if (id === 'ctxTerm')     state.ctx.term     = e.target.value;
+    if (id === 'ctxTextbook') state.ctx.textbook = e.target.value;
+    applyContextChange();
+  });
 });
 
 // ===================== 课本 - 单元列表 =====================
@@ -1015,10 +1083,26 @@ const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[],
 function filterQuestions(type) {
   const all = QB()[type] || [];
   return all.filter(q => {
-    if (state.filterGrade !== 'all' && q.grade !== parseInt(state.filterGrade)) return false;
+    // 年级筛选（除非勾选了"包含全部年级"）
+    if (!state.includeAllGrades && q.grade !== state.ctx.grade) return false;
+    // 学期筛选（题库里 term 可能是"上"/"下"，也可能从 code 的 A/B 判断：A=上, B=下）
+    const qTerm = q.term || inferTermFromCode(q.code);
+    if (qTerm && qTerm !== state.ctx.term) {
+      // 如果题目明确标注了学期且不匹配 → 排除
+      // 但在"包含全部年级"时宽松处理（跨年级时也允许跨学期）
+      if (!state.includeAllGrades) return false;
+    }
     if (state.filterDifficulty > 0 && q.difficulty !== state.filterDifficulty) return false;
     return true;
   });
+}
+
+// 从 code（如 "3A_U1" / "3B_U4"）推断学期：A=上, B=下
+function inferTermFromCode(code) {
+  if (!code) return null;
+  const m = String(code).match(/^\d+([AB])/i);
+  if (!m) return null;
+  return m[1].toUpperCase() === 'A' ? '上' : '下';
 }
 
 // 刷新练习入口卡片的题数徽章
@@ -1027,11 +1111,18 @@ function refreshPracticeCounts() {
     const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
     if (el) el.textContent = filterQuestions(t).length + ' 题';
   });
-  // 总题数
+  // 总题数 + 当前学段提示
   const total = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+filterQuestions(t).length, 0);
   const totalAll = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+(QB()[t]||[]).length, 0);
   const cnt = document.getElementById('filterCount');
-  if (cnt) cnt.textContent = `题库共 ${totalAll} 题，当前筛选 ${total} 题`;
+  if (cnt) {
+    const scope = state.includeAllGrades ? '全部年级' : ctxBadgeText(state.ctx);
+    if (total === 0) {
+      cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}暂无题目</span>，请勾选"包含全部年级"或切换学段`;
+    } else {
+      cnt.textContent = `${scope}共 ${total} 题（题库总计 ${totalAll} 题）`;
+    }
+  }
 }
 
 function startPractice(type) {
@@ -1438,9 +1529,9 @@ function renderReport() {
 
 // ===================== 初始化 =====================
 // 练习筛选器事件
-const fg = document.getElementById('filterGrade');
+const fa = document.getElementById('filterAllGrades');
 const fd = document.getElementById('filterDifficulty');
-if (fg) fg.addEventListener('change', (e) => { state.filterGrade = e.target.value; refreshPracticeCounts(); });
+if (fa) fa.addEventListener('change', (e) => { state.includeAllGrades = e.target.checked; refreshPracticeCounts(); });
 if (fd) fd.addEventListener('change', (e) => { state.filterDifficulty = parseInt(e.target.value); refreshPracticeCounts(); });
 
 // 预热语音引擎（部分浏览器需要）
@@ -1454,5 +1545,6 @@ if (window.questionBank && window.questionBank.stats) {
   console.log(`[乐学英语] 题库加载完成: 单词${s.spelling} · 听力${s.listening} · 语法${s.grammar} · 阅读${s.reading} · 共${s.total}题`);
 }
 
-renderUnitList();
-refreshPracticeCounts();
+// 🆕 启动：恢复上次学习上下文 → 渲染 UI
+loadCtx();
+applyContextChange();    // 它会内部调用 renderUnitList + refreshPracticeCounts
