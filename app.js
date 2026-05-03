@@ -241,7 +241,7 @@ function applyContextChange() {
   saveCtx();
 }
 
-// 切换上下文时重置练习状态
+// 切换上下文时处理练习状态
 function resetPracticeOnContextChange() {
   // 停掉可能正在播放的音频
   try { stopSpeak(); } catch(e) {}
@@ -251,25 +251,67 @@ function resetPracticeOnContextChange() {
   }
   if (typeof _listeningPlaying !== 'undefined') _listeningPlaying = false;
 
-  state.quizQuestions = [];
-  state.quizIndex = 0;
-  state.quizCorrect = 0;
-
-  // 如果当前停留在练习页的"做题"或"结果"视图，切回题型选择视图
   const quizView   = document.getElementById('practiceQuizView');
   const resultView = document.getElementById('practiceResultView');
   const typeView   = document.getElementById('practiceTypeView');
   const filterView = document.getElementById('practiceFilterView');
-  if (quizView && !quizView.classList.contains('hide')) {
-    quizView.classList.add('hide');
-    if (typeView)   typeView.classList.remove('hide');
-    if (filterView) filterView.classList.remove('hide');
+
+  const inQuiz   = quizView   && !quizView.classList.contains('hide');
+  const inResult = resultView && !resultView.classList.contains('hide');
+
+  // 正在答题：用新学段的题库重新抽题，无缝留在当前答题界面
+  if (inQuiz && state.quizType) {
+    const newQs = filterQuestions(state.quizType);
+    if (newQs.length > 0) {
+      const shuffled = [...newQs].sort(() => Math.random() - 0.5).slice(0, Math.min(10, newQs.length));
+      state.quizQuestions = shuffled;
+      state.quizIndex = 0;
+      state.quizCorrect = 0;
+      state.quizStartTime = Date.now();
+      const totalEl = document.getElementById('quizTotal');
+      if (totalEl) totalEl.textContent = shuffled.length;
+      showQuiz();   // 刷新当前题目 UI
+
+      // 显示 toast 提示 2 秒
+      const toast = document.getElementById('quizRefreshToast');
+      const ctxSpan = document.getElementById('quizRefreshCtx');
+      if (toast && ctxSpan) {
+        ctxSpan.textContent = ctxBadgeText(state.ctx) + ' · ' + ({spelling:'单词拼写',listening:'听力选择',grammar:'语法练习',reading:'阅读理解'}[state.quizType] || '');
+        toast.classList.remove('hide');
+        clearTimeout(window._quizToastTimer);
+        window._quizToastTimer = setTimeout(() => toast.classList.add('hide'), 2000);
+      }
+      return;
+    } else {
+      // 新学段下这种题型没题，回到选择页 + 提示
+      state.quizQuestions = [];
+      quizView.classList.add('hide');
+      if (typeView)   typeView.classList.remove('hide');
+      if (filterView) filterView.classList.remove('hide');
+      setTimeout(() => {
+        alert('⚠️ ' + ctxBadgeText(state.ctx) + ' 下暂无"' +
+              ({spelling:'单词拼写',listening:'听力选择',grammar:'语法练习',reading:'阅读理解'}[state.quizType]) +
+              '"题目，请切换到其他学段或勾选"包含全部年级"');
+      }, 100);
+      return;
+    }
   }
-  if (resultView && !resultView.classList.contains('hide')) {
+
+  // 结果页：直接回选择页（做完的结果没意义了）
+  if (inResult) {
+    state.quizQuestions = [];
+    state.quizIndex = 0;
+    state.quizCorrect = 0;
     resultView.classList.add('hide');
     if (typeView)   typeView.classList.remove('hide');
     if (filterView) filterView.classList.remove('hide');
+    return;
   }
+
+  // 非答题状态：清空即可
+  state.quizQuestions = [];
+  state.quizIndex = 0;
+  state.quizCorrect = 0;
 }
 
 // 绑定顶部上下文条三个下拉
