@@ -419,11 +419,14 @@ function playWord() {
 
 // 课文朗读全局状态锁（防止重复点击导致 TTS 队列重叠）
 let _lessonPlaying = false;
+let _lessonAudio = null;
 
 function playLesson() {
   const btn = document.getElementById('lessonPlayBtn');
   const status = document.getElementById('lessonPlayStatus');
   const text = state.currentUnit && state.currentUnit.lesson;
+  const grade = state.currentGrade;
+  const unitId = state.currentUnit && state.currentUnit.id;
   if (!text) return;
 
   const setUI = (state, msg, color) => {
@@ -432,7 +435,7 @@ function playLesson() {
       status.className = 'text-sm ' + (color || 'text-slate-600');
     }
     if (btn) {
-      btn.disabled = (state === 'loading' || state === 'playing');
+      btn.disabled = (state === 'loading');
       btn.innerHTML = state === 'playing' ? '⏸' : (state === 'loading' ? '…' : '▶');
     }
   };
@@ -440,50 +443,79 @@ function playLesson() {
   // 如果正在朗读，当作"停止"按钮用
   if (_lessonPlaying) {
     _lessonPlaying = false;
+    if (_lessonAudio) {
+      try { _lessonAudio.pause(); _lessonAudio.src = ''; } catch(e){}
+      _lessonAudio = null;
+    }
     stopSpeak();
     setUI('idle', '⏹ 已停止，点击重新朗读', 'text-slate-600');
     return;
   }
 
   _lessonPlaying = true;
-
-  // 先彻底停掉所有正在播的声音并清空 TTS 队列
   stopSpeak();
-
   setUI('loading', '加载中…', 'text-blue-500');
 
-  // 关键：手机浏览器 cancel() 是异步的，必须等 300ms 让队列真正清空
-  // 否则新的 utterances 会和队列里"卡住"的旧 utterances 混在一起
-  setTimeout(() => {
-    if (!_lessonPlaying) return;  // 用户在延迟期间又点了停止
+  // 🎯 优先播放预生成的 MP3（100% 稳定 + 真人级音质）
+  if (grade && unitId) {
+    const mp3Url = `audio/${grade}_${unitId}.mp3`;
+    const audio = new Audio(mp3Url);
+    _lessonAudio = audio;
+    let started = false;
 
-    speakBrowser(text, {
-      onStart: () => setUI('playing', '🔊 正在朗读…（点击可停止）', 'text-green-600'),
-      onEnd:   () => {
-        _lessonPlaying = false;
-        setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
-      },
-      onError: (why) => {
-        console.warn('[课文朗读] 浏览器 TTS 失败，降级有道:', why);
-        // 降级前再次确认没有残留队列
-        stopSpeak();
-        setTimeout(() => {
-          if (!_lessonPlaying) return;
-          speak(text, {
-            onStart: () => setUI('playing', '🔊 正在朗读（分段）…', 'text-green-600'),
-            onEnd:   () => {
-              _lessonPlaying = false;
-              setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
-            },
-            onError: (why2) => {
-              _lessonPlaying = false;
-              setUI('idle', '⚠️ ' + (why2 || '播放失败'), 'text-orange-600');
-            }
-          });
-        }, 200);
+    audio.onplaying = () => {
+      if (!started) {
+        started = true;
+        setUI('playing', '🔊 正在朗读…（点击可停止）', 'text-green-600');
       }
+    };
+    audio.onended = () => {
+      _lessonPlaying = false;
+      _lessonAudio = null;
+      setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+    };
+    audio.onerror = () => {
+      console.warn('[课文] MP3 加载失败，降级浏览器 TTS:', mp3Url);
+      _lessonAudio = null;
+      // 降级到浏览器 TTS
+      fallbackTTS();
+    };
+
+    audio.play().catch((err) => {
+      console.warn('[课文] audio.play() 失败:', err && err.name);
+      _lessonAudio = null;
+      fallbackTTS();
     });
-  }, 300);
+
+    // 5 秒 MP3 都没开始播 → 降级
+    setTimeout(() => {
+      if (_lessonPlaying && !started && _lessonAudio === audio) {
+        try { audio.pause(); } catch(e){}
+        _lessonAudio = null;
+        fallbackTTS();
+      }
+    }, 5000);
+  } else {
+    fallbackTTS();
+  }
+
+  function fallbackTTS() {
+    if (!_lessonPlaying) return;
+    setTimeout(() => {
+      if (!_lessonPlaying) return;
+      speakBrowser(text, {
+        onStart: () => setUI('playing', '🔊 正在朗读（离线模式）…', 'text-green-600'),
+        onEnd: () => {
+          _lessonPlaying = false;
+          setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+        },
+        onError: (why) => {
+          _lessonPlaying = false;
+          setUI('idle', '⚠️ ' + (why || '播放失败'), 'text-orange-600');
+        }
+      });
+    }, 200);
+  }
 }
 
 // 纯浏览器 TTS 朗读（用于课文等长文本，无跨域问题）
