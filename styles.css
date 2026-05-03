@@ -423,3 +423,14 @@ body {
   /* 横屏AI对话，不铺满高度 */
   #page-chat > .card { height: calc(100vh - 120px); min-height: 300px; }
 }
+
+
+/* 单元切换器：滑入动画 */
+@keyframes unitSlideIn {
+  from { opacity: 0.4; transform: translateY(4px); }
+  to   { opacity: 1;   transform: translateY(0); }
+}
+.unit-slide-in { animation: unitSlideIn 0.28s ease-out; }
+
+#unitSwipeArea { touch-action: pan-y; }
+#unitPrevBtn, #unitNextBtn { transition: opacity 0.2s, background-color 0.2s; }

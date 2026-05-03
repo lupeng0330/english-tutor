@@ -230,12 +230,46 @@ function applyContextChange() {
   // 3) 同步 currentGrade（与课本数据结构 grade3..grade9 对齐）
   state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
 
-  // 4) 联动刷新各模块
+  // 4) 🆕 重置练习状态：切换学段时正在答题的题目自动作废，回到题型选择页
+  resetPracticeOnContextChange();
+
+  // 5) 联动刷新各模块
   try { renderUnitList(); } catch(e) {}
   try { refreshPracticeCounts(); } catch(e) {}
 
-  // 5) 持久化
+  // 6) 持久化
   saveCtx();
+}
+
+// 切换上下文时重置练习状态
+function resetPracticeOnContextChange() {
+  // 停掉可能正在播放的音频
+  try { stopSpeak(); } catch(e) {}
+  if (typeof _listeningAudio !== 'undefined' && _listeningAudio) {
+    try { _listeningAudio.pause(); _listeningAudio.src = ''; } catch(e){}
+    _listeningAudio = null;
+  }
+  if (typeof _listeningPlaying !== 'undefined') _listeningPlaying = false;
+
+  state.quizQuestions = [];
+  state.quizIndex = 0;
+  state.quizCorrect = 0;
+
+  // 如果当前停留在练习页的"做题"或"结果"视图，切回题型选择视图
+  const quizView   = document.getElementById('practiceQuizView');
+  const resultView = document.getElementById('practiceResultView');
+  const typeView   = document.getElementById('practiceTypeView');
+  const filterView = document.getElementById('practiceFilterView');
+  if (quizView && !quizView.classList.contains('hide')) {
+    quizView.classList.add('hide');
+    if (typeView)   typeView.classList.remove('hide');
+    if (filterView) filterView.classList.remove('hide');
+  }
+  if (resultView && !resultView.classList.contains('hide')) {
+    resultView.classList.add('hide');
+    if (typeView)   typeView.classList.remove('hide');
+    if (filterView) filterView.classList.remove('hide');
+  }
 }
 
 // 绑定顶部上下文条三个下拉
@@ -277,21 +311,138 @@ function renderUnitList() {
 }
 
 function openUnit(unitId) {
-  const unit = textbookData[state.currentGrade].units.find(u => u.id === unitId);
-  state.currentUnit = unit;
-  state.currentWordIndex = 0;
-  document.getElementById('unitDetailTitle').textContent = unit.title;
-  document.getElementById('unitDetailSub').textContent = textbookData[state.currentGrade].title;
-  document.getElementById('wordTotal').textContent = unit.words.length;
-  document.getElementById('lessonText').textContent = unit.lesson;
-  document.getElementById('lessonTranslation').textContent = unit.lessonCN;
-  showWord();
+  const units = textbookData[state.currentGrade] && textbookData[state.currentGrade].units || [];
+  const idx = Math.max(0, units.findIndex(u => u.id === unitId));
+  state.currentUnitIndex = idx;
+  _showUnitAtIndex(idx);
   document.getElementById('unitListView').classList.add('hide');
   document.getElementById('unitDetailView').classList.remove('hide');
-  document.getElementById('recordResult').classList.add('hide');
-  document.getElementById('recordHint').textContent = '点击开始录音跟读';
-  document.getElementById('recordBtn').classList.remove('record-pulse');
+  window.scrollTo(0, 0);
 }
+
+// 单元切换（左右箭头/滑动/键盘）
+function _showUnitAtIndex(idx) {
+  const units = textbookData[state.currentGrade] && textbookData[state.currentGrade].units || [];
+  if (!units.length) return;
+  idx = Math.max(0, Math.min(idx, units.length - 1));
+  state.currentUnitIndex = idx;
+  const unit = units[idx];
+  state.currentUnit = unit;
+  state.currentWordIndex = 0;
+
+  // 更新标题
+  document.getElementById('unitDetailTitle').textContent = unit.title;
+  document.getElementById('unitDetailSub').textContent = textbookData[state.currentGrade].title;
+  const pager = document.getElementById('unitDetailPager');
+  if (pager) pager.textContent = `第 ${idx + 1} / ${units.length} 单元`;
+
+  // 左右按钮可用状态
+  const prev = document.getElementById('unitPrevBtn');
+  const next = document.getElementById('unitNextBtn');
+  if (prev) prev.style.opacity = idx === 0 ? '0.35' : '1';
+  if (next) next.style.opacity = idx === units.length - 1 ? '0.35' : '1';
+
+  // 更新单词+课文
+  document.getElementById('wordTotal').textContent = unit.words.length;
+  document.getElementById('lessonText').textContent = unit.lesson;
+  const cn = unit.lessonCN || '';
+  document.getElementById('lessonTranslation').textContent = cn;
+
+  // 停掉任何正在播放的课文朗读
+  try { stopSpeak(); } catch(e) {}
+  if (typeof _lessonPlaying !== 'undefined') _lessonPlaying = false;
+  if (typeof _lessonAudio !== 'undefined' && _lessonAudio) {
+    try { _lessonAudio.pause(); _lessonAudio.src = ''; } catch(e){}
+    _lessonAudio = null;
+  }
+  // 复位课文朗读按钮
+  const lessonPlayStatus = document.getElementById('lessonPlayStatus');
+  const lessonPlayBtn    = document.getElementById('lessonPlayBtn');
+  if (lessonPlayStatus) {
+    lessonPlayStatus.textContent = '点击播放标准发音';
+    lessonPlayStatus.className   = 'text-sm text-slate-600';
+  }
+  if (lessonPlayBtn) { lessonPlayBtn.disabled = false; lessonPlayBtn.innerHTML = '▶'; }
+
+  // 复位录音 UI
+  const recordResult = document.getElementById('recordResult');
+  const recordHint   = document.getElementById('recordHint');
+  const recordBtn    = document.getElementById('recordBtn');
+  if (recordResult) recordResult.classList.add('hide');
+  if (recordHint)   recordHint.textContent = '点击开始录音跟读';
+  if (recordBtn)    recordBtn.classList.remove('record-pulse');
+
+  showWord();
+
+  // 切换动画（轻微 fade-in）
+  const switcher = document.getElementById('unitSwitcher');
+  if (switcher) {
+    switcher.classList.remove('unit-slide-in');
+    void switcher.offsetWidth;  // trigger reflow
+    switcher.classList.add('unit-slide-in');
+  }
+}
+
+function nextUnit() {
+  const units = textbookData[state.currentGrade] && textbookData[state.currentGrade].units || [];
+  if (state.currentUnitIndex < units.length - 1) _showUnitAtIndex(state.currentUnitIndex + 1);
+}
+function prevUnit() {
+  if (state.currentUnitIndex > 0) _showUnitAtIndex(state.currentUnitIndex - 1);
+}
+
+// 绑定左右按钮 + 触屏滑动 + 键盘左右箭头
+(function setupUnitSwitcher() {
+  const tryBind = () => {
+    const prev = document.getElementById('unitPrevBtn');
+    const next = document.getElementById('unitNextBtn');
+    const area = document.getElementById('unitSwipeArea');
+    if (!prev || !next || !area) { setTimeout(tryBind, 100); return; }
+
+    prev.addEventListener('click', prevUnit);
+    next.addEventListener('click', nextUnit);
+
+    // 触屏滑动
+    let startX = 0, startY = 0, moved = false;
+    area.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX; startY = e.touches[0].clientY; moved = false;
+    }, { passive: true });
+    area.addEventListener('touchmove', (e) => { moved = true; }, { passive: true });
+    area.addEventListener('touchend', (e) => {
+      if (!moved) return;
+      const dx = e.changedTouches[0].clientX - startX;
+      const dy = e.changedTouches[0].clientY - startY;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+        if (dx < 0) nextUnit(); else prevUnit();
+      }
+    });
+
+    // 鼠标拖动（桌面）
+    let mouseDownX = null;
+    area.addEventListener('mousedown', (e) => { mouseDownX = e.clientX; });
+    area.addEventListener('mouseup', (e) => {
+      if (mouseDownX === null) return;
+      const dx = e.clientX - mouseDownX;
+      mouseDownX = null;
+      if (Math.abs(dx) > 60) {
+        if (dx < 0) nextUnit(); else prevUnit();
+      }
+    });
+    area.addEventListener('mouseleave', () => { mouseDownX = null; });
+
+    // 键盘左右方向键（只在单元详情页可见时生效）
+    document.addEventListener('keydown', (e) => {
+      const view = document.getElementById('unitDetailView');
+      if (!view || view.classList.contains('hide')) return;
+      // 如果焦点在输入框里不响应
+      const tag = (document.activeElement && document.activeElement.tagName) || '';
+      if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;
+      if (e.key === 'ArrowRight') { nextUnit(); e.preventDefault(); }
+      else if (e.key === 'ArrowLeft') { prevUnit(); e.preventDefault(); }
+    });
+  };
+  tryBind();
+})();
 
 function backToUnits() {
   document.getElementById('unitListView').classList.remove('hide');
