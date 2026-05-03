@@ -529,29 +529,82 @@ function speak(text, callbacks) {
   playChain(segs, 0);
 }
 
-function playChain(segs, idx) {
+function playChain(segs, idx, preloadedAudio) {
   if (idx >= segs.length) {
     if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd();
     return;
   }
   const seg = segs[idx];
-  playYoudao(seg,
-    // onFail: 单段失败，标记失败并降级（只对"第一段都失败"做降级，避免中途切换体验差）
+
+  // 同步预加载下一段（在当前 audio 事件栈里，避免 Android 自动播放策略拦截）
+  let nextAudio = null;
+  if (idx + 1 < segs.length) {
+    const nextSeg = segs[idx + 1];
+    const nextUrl = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(nextSeg) + '&type=1';
+    nextAudio = new Audio(nextUrl);
+    nextAudio.preload = 'auto';
+    try { nextAudio.load(); } catch(e) {}
+  }
+
+  // 如果有预加载好的 audio，直接用；否则新建
+  playYoudaoWith(seg, preloadedAudio,
+    // onFail
     () => {
       if (idx === 0) {
-        // 第一段就失败：整体降级浏览器 TTS
         fallbackWebSpeech(segs.join(' '), _currentCallbacks);
       } else {
-        // 中间段失败：跳过继续下一段
         console.warn('[有道-链] 跳过失败段 #' + idx);
-        playChain(segs, idx + 1);
+        // 跳过失败段，用预加载的下一段继续
+        setTimeout(() => playChain(segs, idx + 1, nextAudio), 150);
       }
     },
-    // onEnd: 紧接着在这个回调里同步启动下一段（关键：在 audio 事件栈里，不被拦截）
+    // onEnd: 150ms 后播下一段（给浏览器缓冲时间）
     () => {
-      playChain(segs, idx + 1);
+      setTimeout(() => playChain(segs, idx + 1, nextAudio), 150);
     }
   );
+}
+
+// playYoudao 的变体：支持传入已预加载的 Audio 对象
+function playYoudaoWith(text, existingAudio, onFail, onEnd) {
+  let audio;
+  if (existingAudio) {
+    audio = existingAudio;
+  } else {
+    const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(text) + '&type=1';
+    audio = new Audio(url);
+  }
+  _currentAudio = audio;
+
+  let failed = false;
+  const handleFail = () => {
+    if (failed) return;
+    failed = true;
+    _currentAudio = null;
+    console.warn('[有道] 播放失败，文本:', text.substring(0, 40));
+    if (onFail) onFail();
+  };
+
+  audio.onerror = handleFail;
+  audio.onplaying = () => {
+    if (!_hasEmittedStart && _currentCallbacks && _currentCallbacks.onStart) {
+      _hasEmittedStart = true;
+      _currentCallbacks.onStart();
+    }
+  };
+  audio.onended = () => {
+    _currentAudio = null;
+    if (onEnd) onEnd();
+  };
+
+  audio.play().catch(handleFail);
+
+  // 5秒还没开始播就判定失败
+  setTimeout(() => {
+    if (_currentAudio === audio && audio.paused && audio.currentTime === 0) {
+      handleFail();
+    }
+  }, 5000);
 }
 
 function playYoudao(text, onFail, onEnd) {
@@ -592,9 +645,17 @@ function playYoudao(text, onFail, onEnd) {
 
 function fallbackWebSpeech(text, callbacks) {
   callbacks = callbacks || _currentCallbacks;
+
+  // 检测是否华为浏览器（针对性提示）
+  const ua = (navigator.userAgent || '').toLowerCase();
+  const isHuaweiBrowser = /huaweibrowser|hbpc|version\/[\d.]+ .*huawei/i.test(navigator.userAgent || '');
+  const hintMsg = isHuaweiBrowser
+    ? '华为浏览器不支持此功能，请复制链接用 Chrome 或微信浏览器打开'
+    : '语音加载失败，建议换 Chrome/微信浏览器';
+
   if (!('speechSynthesis' in window)) {
     console.warn('[浏览器TTS] 不支持 speechSynthesis');
-    if (callbacks && callbacks.onError) callbacks.onError('当前浏览器不支持语音，请换 Chrome/QQ 浏览器');
+    if (callbacks && callbacks.onError) callbacks.onError(hintMsg);
     return;
   }
 
@@ -617,19 +678,19 @@ function fallbackWebSpeech(text, callbacks) {
       u.onend = () => { if (callbacks && callbacks.onEnd) callbacks.onEnd(); };
       u.onerror = (e) => {
         console.error('[浏览器TTS] utterance error:', e);
-        if (callbacks && callbacks.onError) callbacks.onError('网络不稳定，请重试');
+        if (callbacks && callbacks.onError) callbacks.onError(hintMsg);
       };
       window.speechSynthesis.speak(u);
 
       // 华为浏览器兜底：2秒没触发 onstart 就认为失败
       setTimeout(() => {
         if (!_hasEmittedStart && callbacks && callbacks.onError) {
-          callbacks.onError('当前网络暂不可用，请稍后重试');
+          callbacks.onError(hintMsg);
         }
       }, 2500);
     } catch(e) {
       console.error('[浏览器TTS] 失败:', e);
-      if (callbacks && callbacks.onError) callbacks.onError('播放出错，请重试');
+      if (callbacks && callbacks.onError) callbacks.onError(hintMsg);
     }
   };
 
