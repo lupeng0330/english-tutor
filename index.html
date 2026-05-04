@@ -40,6 +40,13 @@
       <span>📚</span><span class="hidden md:inline">当前学习:</span>
     </div>
     <div class="flex items-center gap-2 flex-shrink-0">
+      <select id="ctxTextbook" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="jk">广州教科版 (3-6年级)</option>
+        <option value="gzk">广州口语 (1-2年级)</option>
+        <option value="hj">广州沪教版 (初中)</option>
+        <option value="rj" disabled>人教版 (待上线)</option>
+        <option value="wy" disabled>外研版 (待上线)</option>
+      </select>
       <select id="ctxGrade" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
         <option value="1">一年级</option>
         <option value="2">二年级</option>
@@ -54,12 +61,6 @@
       <select id="ctxTerm" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
         <option value="上">上册</option>
         <option value="下">下册</option>
-      </select>
-      <select id="ctxTextbook" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
-        <option value="jk">广州教科版</option>
-        <option value="gzk">广州口语 (1-2年级)</option>
-        <option value="rj" disabled>人教版 (待上线)</option>
-        <option value="wy" disabled>外研版 (待上线)</option>
       </select>
     </div>
     <div class="flex-1 text-right text-xs md:text-sm text-slate-600 whitespace-nowrap flex-shrink-0">

@@ -132,7 +132,36 @@ let state = {
 };
 
 // 🆕 学习上下文工具函数
-const TEXTBOOK_NAMES = { jk: '广州教科版', gzk: '广州口语', rj: '人教版', wy: '外研版' };
+const TEXTBOOK_NAMES = { jk: '广州教科版', gzk: '广州口语', hj: '广州沪教版', rj: '人教版', wy: '外研版' };
+// 每个教材覆盖的年级数字（静态白名单，用于顶部下拉过滤）
+const TEXTBOOK_GRADES = {
+  jk:  [3, 4, 5, 6],            // 广州教科版 → 小学 3-6 年级
+  gzk: [1, 2],                  // 广州口语 → 小学 1-2 年级
+  hj:  [7, 8, 9],               // 广州沪教版 → 初中 7-9 年级
+  rj:  [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  wy:  [1, 2, 3, 4, 5, 6, 7, 8, 9],
+};
+const GRADE_LABELS = {
+  1: '一年级', 2: '二年级', 3: '三年级', 4: '四年级', 5: '五年级', 6: '六年级',
+  7: '初一',   8: '初二',   9: '初三'
+};
+// 根据当前教材，重建 #ctxGrade 下拉的 options，并在 state.ctx.grade 不在白名单时自动修正
+function refreshGradeOptionsForTextbook() {
+  const sel = document.getElementById('ctxGrade');
+  if (!sel) return;
+  const tbId   = (state && state.ctx && state.ctx.textbook) || 'jk';
+  const grades = TEXTBOOK_GRADES[tbId] || [1,2,3,4,5,6,7,8,9];
+  // 若当前 ctx.grade 不在白名单 → 自动修正
+  if (!grades.includes(state.ctx.grade)) {
+    state.ctx.grade = grades[0];
+    state.currentGrade = (typeof gradeNumToKey !== 'undefined' && gradeNumToKey[state.ctx.grade]) || ('grade' + state.ctx.grade);
+  }
+  // 重建选项
+  sel.innerHTML = grades.map(n =>
+    `<option value="${n}">${GRADE_LABELS[n] || ('G' + n)}</option>`
+  ).join('');
+  sel.value = String(state.ctx.grade);
+}
 function ctxSummaryText(ctx) {
   const g = gradeText(ctx.grade);
   const t = ctx.term === '上' ? '上册' : '下册';
@@ -979,6 +1008,9 @@ function switchPage(page) {
 
 // ===================== 🆕 全局学习上下文切换 =====================
 function applyContextChange() {
+  // 0) 🆕 根据教材白名单，先过滤 #ctxGrade 的 options（可能顺带自动修正 ctx.grade）
+  try { refreshGradeOptionsForTextbook(); } catch(e) {}
+
   // 1) 同步顶部上下文条的 3 个下拉（UI ← state.ctx）
   const sel = (id) => document.getElementById(id);
   if (sel('ctxGrade'))    sel('ctxGrade').value    = String(state.ctx.grade);
@@ -1106,9 +1138,43 @@ function computeUnitProgress(unit) {
   return { pct, known, total };
 }
 
+// 返回当前教材实际覆盖的年级数字数组（按 textbookData 推断）
+function availableGradesInTextbook() {
+  const out = [];
+  for (const k of Object.keys(textbookData || {})) {
+    const n = parseInt(String(k).replace('grade',''), 10);
+    if (!isNaN(n)) {
+      // 判定是否有实数据：只要其中至少 1 个 unit 有 words 或 lessons 即视为"上线"
+      const units = (textbookData[k] && textbookData[k].units) || [];
+      if (units.length > 0) out.push(n);
+    }
+  }
+  return out.sort((a,b)=>a-b);
+}
+
 function renderUnitList() {
   const data = textbookData[state.currentGrade];
   const container = document.getElementById('unitList');
+  if (!container) return;
+  if (!data || !Array.isArray(data.units) || data.units.length === 0) {
+    // 当前教材没有该年级的数据
+    const tbName = TEXTBOOK_NAMES[state.ctx.textbook] || state.ctx.textbook;
+    const avail = availableGradesInTextbook();
+    const gradeLabels = {1:'一年级',2:'二年级',3:'三年级',4:'四年级',5:'五年级',6:'六年级',7:'初一',8:'初二',9:'初三'};
+    const tip = avail.length > 0
+      ? `当前教材《${tbName}》覆盖：${avail.map(n=>gradeLabels[n]||('G'+n)).join(' · ')}。`
+      : `当前教材《${tbName}》暂未上线内容。`;
+    container.innerHTML = `
+      <div class="col-span-full bg-white rounded-xl p-6 border border-slate-200 text-center">
+        <div class="text-4xl mb-2">📭</div>
+        <div class="text-slate-700 font-semibold mb-1">此学段暂无数据</div>
+        <div class="text-sm text-slate-500 mb-3">${tip}</div>
+        ${avail.length > 0 ? `<button onclick="ctxJumpToGrade(${avail[0]})" class="inline-block px-4 py-1.5 rounded-lg bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600">切到${gradeLabels[avail[0]]||('G'+avail[0])}</button>` : ''}
+      </div>`;
+    document.getElementById('unitListView').classList.remove('hide');
+    document.getElementById('unitDetailView').classList.add('hide');
+    return;
+  }
   container.innerHTML = data.units.map(u => {
     const p = computeUnitProgress(u);
     const pct = p.pct;
@@ -3151,23 +3217,38 @@ if ('speechSynthesis' in window) {
 // 切换教材或学期时重新加载数据
 // 把 applyContextChange 包装一层：检测 textbook/term 变化时再 load 一次
 const _originalApplyContextChange = applyContextChange;
-let _lastLoadedTextbook = null;
-let _lastLoadedTerm = null;
+// 🆕 初始化为 bootstrap 已加载的值，避免第一次调用重复拉取教材
+let _lastLoadedTextbook = (state && state.ctx && state.ctx.textbook) || null;
+let _lastLoadedTerm     = (state && state.ctx && state.ctx.term)     || null;
 applyContextChange = async function() {
   const tb = state.ctx.textbook;
   const tm = state.ctx.term;
   if (tb !== _lastLoadedTextbook) {
-    await loadTextbook();
-    await window.loadQuestionBank(tb);
     _lastLoadedTextbook = tb;
     _lastLoadedTerm = tm;
+    // 🆕 先按静态白名单把年级对齐到该教材覆盖范围（立即反映在下拉），再拉教材 JSON
+    try {
+      const allow = TEXTBOOK_GRADES[tb] || [1,2,3,4,5,6,7,8,9];
+      if (allow.length > 0 && !allow.includes(state.ctx.grade)) {
+        state.ctx.grade = allow[0];
+        state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
+      }
+    } catch(e){}
+    await loadTextbook();
   } else if (tm !== _lastLoadedTerm) {
-    // 只换学期 → 只需重载教材（题库自带 term 字段，筛选即可）
     await loadTextbook();
     _lastLoadedTerm = tm;
   }
   _originalApplyContextChange();
 };
+
+// 供 renderUnitList 里的"切到XX"按钮调用
+function ctxJumpToGrade(n) {
+  state.ctx.grade = parseInt(n, 10);
+  state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
+  applyContextChange();
+}
+window.ctxJumpToGrade = ctxJumpToGrade;
 
 // =============================================================
 // 🔀 不规则动词表 & 练习（数据来自 data/extras/*_irregular_verbs.json）

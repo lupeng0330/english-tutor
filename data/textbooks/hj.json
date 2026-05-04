@@ -1,0 +1,992 @@
+{
+  "meta": {
+    "id": "hj",
+    "name": "广州沪教版",
+    "version": "1.0",
+    "coverage": "初中一年级至初中三年级（沪教牛津版 · 广州 2026 初中专用）",
+    "note_grade7_shang": "沪教牛津版 广州 2026 初中专用 · 7 上 · 4 模块 8 单元 · 每单元 3 篇课文（Reading/Grammar focus/More reading）",
+    "note_placeholders": "7 下 / 8 上 / 8 下 / 9 上 / 9 下 为占位数据，待补充教材内容"
+  },
+  "grades": {
+    "grade7": {
+      "上": [
+        {
+          "id": "u1",
+          "module": "Module 1 Getting to know you",
+          "title": "Unit 1 Making friends",
+          "words": [
+            {
+              "word": "guitar",
+              "phonetic": "/ɡɪˈtɑː(r)/",
+              "pos": "n.",
+              "meaning": "吉他",
+              "example": "I like playing the guitar."
+            },
+            {
+              "word": "honest",
+              "phonetic": "/ˈɒnɪst/",
+              "pos": "adj.",
+              "meaning": "诚实的",
+              "example": "An honest boy never tells lies."
+            },
+            {
+              "word": "patient",
+              "phonetic": "/ˈpeɪʃnt/",
+              "pos": "adj.",
+              "meaning": "有耐心的",
+              "example": "A good teacher is patient with students."
+            },
+            {
+              "word": "confident",
+              "phonetic": "/ˈkɒnfɪdənt/",
+              "pos": "adj.",
+              "meaning": "自信的",
+              "example": "Be confident and speak English loudly."
+            },
+            {
+              "word": "improve",
+              "phonetic": "/ɪmˈpruːv/",
+              "pos": "v.",
+              "meaning": "改进，改善",
+              "example": "I want to improve my English."
+            },
+            {
+              "word": "German",
+              "phonetic": "/ˈdʒɜːmən/",
+              "pos": "adj./n.",
+              "meaning": "德国的；德国人；德语",
+              "example": "She is learning German at school."
+            },
+            {
+              "word": "blog",
+              "phonetic": "/blɒɡ/",
+              "pos": "n.",
+              "meaning": "博客",
+              "example": "He writes a travel blog every week."
+            },
+            {
+              "word": "grammar",
+              "phonetic": "/ˈɡræmə(r)/",
+              "pos": "n.",
+              "meaning": "语法",
+              "example": "English grammar is not too difficult."
+            },
+            {
+              "word": "hobby",
+              "phonetic": "/ˈhɒbi/",
+              "pos": "n.",
+              "meaning": "爱好",
+              "example": "My hobby is reading books."
+            },
+            {
+              "word": "country",
+              "phonetic": "/ˈkʌntri/",
+              "pos": "n.",
+              "meaning": "国家",
+              "example": "China is a beautiful country."
+            },
+            {
+              "word": "age",
+              "phonetic": "/eɪdʒ/",
+              "pos": "n.",
+              "meaning": "年龄",
+              "example": "What is your age?"
+            },
+            {
+              "word": "dream",
+              "phonetic": "/driːm/",
+              "pos": "n./v.",
+              "meaning": "梦想；做梦",
+              "example": "My dream is to be a doctor."
+            },
+            {
+              "word": "Germany",
+              "phonetic": "/ˈdʒɜːməni/",
+              "pos": "n.",
+              "meaning": "德国",
+              "example": "Germany is a country in Europe."
+            },
+            {
+              "word": "mountain",
+              "phonetic": "/ˈmaʊntən/",
+              "pos": "n.",
+              "meaning": "山，山脉",
+              "example": "We climbed the mountain last weekend."
+            },
+            {
+              "word": "elder",
+              "phonetic": "/ˈeldə(r)/",
+              "pos": "adj.",
+              "meaning": "年长的",
+              "example": "My elder sister is a university student."
+            },
+            {
+              "word": "friendly",
+              "phonetic": "/ˈfrendli/",
+              "pos": "adj.",
+              "meaning": "友好的",
+              "example": "The people here are very friendly."
+            },
+            {
+              "word": "engineer",
+              "phonetic": "/ˌendʒɪˈnɪə(r)/",
+              "pos": "n.",
+              "meaning": "工程师",
+              "example": "My father is an engineer."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · My new friends",
+              "en": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. I want to make friends with you. What about you?\n\nHello! My name is Anna. I come from Germany. I can speak German and a little English. I want to improve my English. I am patient and confident. I love hiking in the mountains. My elder brother is an engineer. My dream is to travel around China and meet new friends.",
+              "cn": "嗨！我是李华，13 岁。我住在中国广州。我又高又瘦，留着长发。我诚实友好，喜欢弹吉他和读书。我最喜欢的科目是英语。我想和你交朋友。你呢？\n\n你好！我叫 Anna，来自德国。我会说德语和一点英语，希望提高英语水平。我很有耐心也很自信。我喜欢在山里徒步。我的哥哥是工程师。我的梦想是周游中国，结识新朋友。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Be & Have",
+              "en": "I am Li Hua. I am a student. I am from China.\nShe is Anna. She is from Germany.\nMy brother is an engineer. He is tall and friendly.\nI have long hair. I have a big family.\nAnna has short hair. She has a dream — to visit China.\nWe are classmates. We are good friends.\n\nAre you a student? — Yes, I am.\nIs he from Germany? — No, he isn't. He is from China.\nDo you have any hobbies? — Yes, I do. I like playing the guitar.",
+              "cn": "我是李华，是一名学生，来自中国。\n她是 Anna，来自德国。\n我哥哥是工程师，他高大又友好。\n我留着长发，有一个大家庭。\nAnna 留着短发，她有一个梦想——去中国看看。\n我们是同学，是好朋友。\n\n你是学生吗？——是的，我是。\n他是德国人吗？——不，他是中国人。\n你有什么爱好吗？——有，我喜欢弹吉他。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A blog from Tom",
+              "en": "Welcome to my blog! I'm Tom. I'm 14 years old and I live in London. I have a big family — my parents, my elder sister and I. I am confident and I like making friends online.\n\nMy hobbies are playing football and singing. I am also good at grammar and I often help my classmates with English. My dream is to become a writer one day.\n\nWhat is your name? Where do you live? What are your hobbies? Please write to me. I can't wait to read your story!",
+              "cn": "欢迎来到我的博客！我是 Tom，14 岁，住在伦敦。我家有爸爸妈妈、姐姐和我。我自信开朗，喜欢网上交朋友。\n\n我的爱好是踢足球和唱歌，我的语法也不错，常帮同学学英语。我的梦想是有一天成为一名作家。\n\n你叫什么？住在哪里？有什么爱好？欢迎写信给我，我迫不及待想读你的故事！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "module": "Module 1 Getting to know you",
+          "title": "Unit 2 Daily life",
+          "words": [
+            {
+              "word": "daily",
+              "phonetic": "/ˈdeɪli/",
+              "pos": "adj.",
+              "meaning": "每日的，日常的",
+              "example": "This is my daily routine."
+            },
+            {
+              "word": "article",
+              "phonetic": "/ˈɑːtɪkl/",
+              "pos": "n.",
+              "meaning": "文章",
+              "example": "I read an article about animals."
+            },
+            {
+              "word": "never",
+              "phonetic": "/ˈnevə(r)/",
+              "pos": "adv.",
+              "meaning": "从未，决不",
+              "example": "I never drink coffee in the evening."
+            },
+            {
+              "word": "ride",
+              "phonetic": "/raɪd/",
+              "pos": "v.",
+              "meaning": "骑，驾驶",
+              "example": "I ride a bike to school."
+            },
+            {
+              "word": "seldom",
+              "phonetic": "/ˈseldəm/",
+              "pos": "adv.",
+              "meaning": "很少，不常",
+              "example": "He seldom watches TV on school days."
+            },
+            {
+              "word": "geography",
+              "phonetic": "/dʒiˈɒɡrəfi/",
+              "pos": "n.",
+              "meaning": "地理",
+              "example": "Geography is my favourite subject."
+            },
+            {
+              "word": "break",
+              "phonetic": "/breɪk/",
+              "pos": "n.",
+              "meaning": "休息",
+              "example": "Let's have a short break."
+            },
+            {
+              "word": "bell",
+              "phonetic": "/bel/",
+              "pos": "n.",
+              "meaning": "铃，钟",
+              "example": "The school bell rings at 8 a.m."
+            },
+            {
+              "word": "end",
+              "phonetic": "/end/",
+              "pos": "v.",
+              "meaning": "结束，终止",
+              "example": "School ends at 4:30 p.m."
+            },
+            {
+              "word": "practice",
+              "phonetic": "/ˈpræktɪs/",
+              "pos": "n./v.",
+              "meaning": "练习",
+              "example": "Practice makes perfect."
+            },
+            {
+              "word": "together",
+              "phonetic": "/təˈɡeðə(r)/",
+              "pos": "adv.",
+              "meaning": "在一起",
+              "example": "We play table tennis together."
+            },
+            {
+              "word": "market",
+              "phonetic": "/ˈmɑːkɪt/",
+              "pos": "n.",
+              "meaning": "集市，市场",
+              "example": "Mum goes to the market every morning."
+            },
+            {
+              "word": "usually",
+              "phonetic": "/ˈjuːʒuəli/",
+              "pos": "adv.",
+              "meaning": "通常",
+              "example": "I usually have lunch at school."
+            },
+            {
+              "word": "often",
+              "phonetic": "/ˈɒfn/",
+              "pos": "adv.",
+              "meaning": "经常",
+              "example": "I often play football after school."
+            },
+            {
+              "word": "sometimes",
+              "phonetic": "/ˈsʌmtaɪmz/",
+              "pos": "adv.",
+              "meaning": "有时",
+              "example": "Sometimes I go to the library."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · My school day",
+              "en": "Hello, everyone. I am a junior high school student. I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning — English, Chinese, Maths and Geography. We have a break at 10 a.m. I usually have lunch at school. In the afternoon, we have two more lessons. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+              "cn": "大家好。我是一名初中生。我总是 6:30 起床，步行上学。学校 8 点上课。上午有四节课——英语、语文、数学和地理。上午 10 点休息一会。我通常在学校吃午饭。下午还有两节课，4:30 放学。放学后，我经常和朋友打乒乓球。我从不晚回家，9:30 上床睡觉。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Frequency adverbs",
+              "en": "always  100% → I always get up at 6:30.\nusually 80% → I usually have lunch at school.\noften   60% → I often play football after school.\nsometimes 30% → Sometimes I go to the library.\nseldom  10% → He seldom watches TV on school days.\nnever    0% → I never go home late.\n\nFrequency adverbs come BEFORE most verbs but AFTER the verb \"to be\":\n• I always ride my bike.\n• She is never late for class.\n\nDo you often ride your bike? — Yes, I do. / No, I don't.\nIs she usually at the market in the morning? — Yes, she is.",
+              "cn": "频度副词（强到弱）：always / usually / often / sometimes / seldom / never。\n通常放在实义动词之前，但在 be 动词之后：\n• I always ride my bike.  我总是骑自行车。\n• She is never late for class.  她上课从不迟到。\n你经常骑自行车吗？——是的。/ 不，我不常骑。\n她早上通常在市场吗？——是的。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · My mum's routine",
+              "en": "My mum's day is very busy. She always gets up at 6 a.m. She goes to the market and buys fresh food. At 7 a.m. she makes breakfast for our family. She often reads the daily news on her phone while I eat. After breakfast, she rides her bike to work. She is a teacher, so she teaches four lessons every day. When the last bell rings, she comes home. In the evening, we sometimes read articles and practice English together. My mum never forgets to smile, even when she is tired.",
+              "cn": "我妈妈的一天非常忙碌。她总是早上 6 点起床，去市场买新鲜食物。7 点为全家做早饭。我吃饭时，她常在手机上看每日新闻。饭后，她骑车上班。她是老师，每天上四节课。放学铃响她就回家。晚上我们有时一起读文章、练习英语。即使累，妈妈也从不忘记微笑。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "module": "Module 2 My hometown and my country",
+          "title": "Unit 3 The Earth",
+          "words": [
+            {
+              "word": "Earth",
+              "phonetic": "/ɜːθ/",
+              "pos": "n.",
+              "meaning": "地球",
+              "example": "The Earth is our home."
+            },
+            {
+              "word": "planet",
+              "phonetic": "/ˈplænɪt/",
+              "pos": "n.",
+              "meaning": "行星",
+              "example": "The Earth is a planet."
+            },
+            {
+              "word": "forest",
+              "phonetic": "/ˈfɒrɪst/",
+              "pos": "n.",
+              "meaning": "森林",
+              "example": "There are tall trees in the forest."
+            },
+            {
+              "word": "ocean",
+              "phonetic": "/ˈəʊʃn/",
+              "pos": "n.",
+              "meaning": "海洋",
+              "example": "The Pacific Ocean is huge."
+            },
+            {
+              "word": "ground",
+              "phonetic": "/ɡraʊnd/",
+              "pos": "n.",
+              "meaning": "地面",
+              "example": "Don't throw things on the ground."
+            },
+            {
+              "word": "pollute",
+              "phonetic": "/pəˈluːt/",
+              "pos": "v.",
+              "meaning": "污染",
+              "example": "Cars pollute the air."
+            },
+            {
+              "word": "protect",
+              "phonetic": "/prəˈtekt/",
+              "pos": "v.",
+              "meaning": "保护",
+              "example": "We must protect animals."
+            },
+            {
+              "word": "waste",
+              "phonetic": "/weɪst/",
+              "pos": "n.",
+              "meaning": "废物，垃圾",
+              "example": "Don't waste water."
+            },
+            {
+              "word": "reuse",
+              "phonetic": "/ˌriːˈjuːz/",
+              "pos": "v.",
+              "meaning": "再利用",
+              "example": "We should reuse paper."
+            },
+            {
+              "word": "recycle",
+              "phonetic": "/ˌriːˈsaɪkl/",
+              "pos": "v.",
+              "meaning": "回收利用",
+              "example": "Please recycle plastic bottles."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Our home, the Earth",
+              "en": "The Earth is our home. It is a beautiful planet. There are many forests and oceans on the Earth. There are many animals and plants, too. Animals live in the forests, in the oceans and on the ground. Plants give us fresh air.\n\nBut people pollute the Earth every day. They throw waste on the ground. They pollute the water in the oceans. They cut down trees in the forests. Many animals are in danger.\n\nWe must protect our home. We can reuse old books, reuse plastic bags, and recycle glass and paper. Let's keep the Earth clean and beautiful.",
+              "cn": "地球是我们的家园，是一颗美丽的行星。地球上有许多森林和海洋，还有许多动物和植物。动物生活在森林、海洋和陆地上，植物给我们新鲜空气。\n\n但是人们每天都在污染地球：把垃圾扔在地上，污染海洋，砍伐森林，许多动物因此陷入危险。\n\n我们必须保护家园——可以重复使用旧书和塑料袋，回收玻璃和纸张。让我们保持地球干净美丽。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · There be & prepositions",
+              "en": "There is a forest near my home.\nThere are many animals in the forest.\nThere is an old bridge over the river.\nThere are five tall trees near the school.\n\nThere isn't any waste on the ground.\nThere aren't any big factories in our town.\n\nIs there a park in your city? — Yes, there is.\nAre there any oceans in China? — Yes, there are.\n\nPrepositions of place:\n• The cat is under the table.\n• The book is on the desk.\n• The bank is between the hotel and the shop.\n• My school is near the park.",
+              "cn": "There is/are 句型表示“某处有某物”。\nThere is a forest near my home. 我家附近有片森林。\nThere are many animals in the forest. 森林里有许多动物。\n否定：There isn't / aren't …\n疑问：Is / Are there …?\n方位介词：in / on / under / between / near。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · What can we do at home?",
+              "en": "Every family can help protect the Earth. Here are five easy ways:\n1. Turn off the light when you leave a room.\n2. Turn off the tap when you brush your teeth. Don't waste water.\n3. Don't use too many plastic bags. Reuse your cloth bag every time you go to the market.\n4. Put old paper, glass and plastic into different boxes so workers can recycle them.\n5. Don't throw waste on the ground. Keep our streets clean.\n\nIf everyone does a little, our planet will stay beautiful for our children.",
+              "cn": "每个家庭都能为地球出一份力。以下五个小习惯：\n1. 离开房间随手关灯。\n2. 刷牙时关紧水龙头，不浪费水。\n3. 少用塑料袋，每次去市场重复使用布袋。\n4. 把旧纸、玻璃、塑料分类放入不同箱子，方便回收。\n5. 不乱扔垃圾，保持街道干净。\n\n只要人人出一点力，地球就能为孩子们保持美丽。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "module": "Module 2 My hometown and my country",
+          "title": "Unit 4 Seasons",
+          "words": [
+            {
+              "word": "season",
+              "phonetic": "/ˈsiːzn/",
+              "pos": "n.",
+              "meaning": "季节",
+              "example": "There are four seasons in a year."
+            },
+            {
+              "word": "spring",
+              "phonetic": "/sprɪŋ/",
+              "pos": "n.",
+              "meaning": "春天",
+              "example": "Flowers bloom in spring."
+            },
+            {
+              "word": "summer",
+              "phonetic": "/ˈsʌmə(r)/",
+              "pos": "n.",
+              "meaning": "夏天",
+              "example": "It is very hot in summer."
+            },
+            {
+              "word": "autumn",
+              "phonetic": "/ˈɔːtəm/",
+              "pos": "n.",
+              "meaning": "秋天",
+              "example": "Leaves turn yellow in autumn."
+            },
+            {
+              "word": "winter",
+              "phonetic": "/ˈwɪntə(r)/",
+              "pos": "n.",
+              "meaning": "冬天",
+              "example": "Winter is the coldest season."
+            },
+            {
+              "word": "sunny",
+              "phonetic": "/ˈsʌni/",
+              "pos": "adj.",
+              "meaning": "晴朗的",
+              "example": "It is sunny today."
+            },
+            {
+              "word": "rainy",
+              "phonetic": "/ˈreɪni/",
+              "pos": "adj.",
+              "meaning": "下雨的",
+              "example": "It is a rainy day."
+            },
+            {
+              "word": "windy",
+              "phonetic": "/ˈwɪndi/",
+              "pos": "adj.",
+              "meaning": "有风的",
+              "example": "Fly a kite when it is windy."
+            },
+            {
+              "word": "snowy",
+              "phonetic": "/ˈsnəʊi/",
+              "pos": "adj.",
+              "meaning": "下雪的",
+              "example": "A snowy morning is beautiful."
+            },
+            {
+              "word": "dry",
+              "phonetic": "/draɪ/",
+              "pos": "adj.",
+              "meaning": "干燥的",
+              "example": "Autumn is dry in the north."
+            },
+            {
+              "word": "wet",
+              "phonetic": "/wet/",
+              "pos": "adj.",
+              "meaning": "潮湿的",
+              "example": "The street is wet after the rain."
+            },
+            {
+              "word": "scarf",
+              "phonetic": "/skɑːf/",
+              "pos": "n.",
+              "meaning": "围巾",
+              "example": "Wear a scarf in winter."
+            },
+            {
+              "word": "glove",
+              "phonetic": "/ɡlʌv/",
+              "pos": "n.",
+              "meaning": "手套",
+              "example": "My gloves keep my hands warm."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Four seasons in a year",
+              "en": "There are four seasons in a year: spring, summer, autumn and winter.\n\nIn spring, it is warm and windy. Flowers come out and trees turn green. We can fly kites in the park.\n\nIn summer, it is very hot and sometimes rainy. The days are long. We can swim in the sea or eat ice-cream.\n\nIn autumn, it is cool and dry. Leaves turn yellow and fall to the ground. Farmers are busy picking apples.\n\nIn winter, it is cold and snowy. Everyone wears a scarf and gloves. We can make a snowman and have hot soup at home.\n\nWhich season do you like best?",
+              "cn": "一年有四个季节：春、夏、秋、冬。\n\n春天温暖多风，花儿开放，树木变绿，我们可以在公园放风筝。\n\n夏天炎热，有时下雨，白昼长，我们可以去海里游泳，吃冰淇淋。\n\n秋天凉爽干燥，叶子变黄落地，农民忙着采摘苹果。\n\n冬天又冷又下雪，人人戴围巾、手套，我们可以堆雪人、在家喝热汤。\n\n你最喜欢哪个季节？"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Present continuous",
+              "en": "The present continuous tense describes what is happening now.\nForm: am / is / are + V-ing.\n\n• Look! It is raining outside.\n• The children are flying a kite in the park.\n• I am wearing a warm scarf because it is snowy.\n• We aren't swimming today — it is too cold.\n\nQuestions:\nIs it snowing in Beijing now? — Yes, it is.\nAre you making a snowman? — No, I'm not. I'm drinking hot tea.\n\nCompare:\nI often swim in summer. (habit → simple present)\nLook, I am swimming now! (action in progress)",
+              "cn": "现在进行时描述“此刻正在发生”的动作：am/is/are + V-ing。\n• Look! It is raining outside. 看！外面正下雨。\n• The children are flying a kite. 孩子们正在放风筝。\n否定：am/is/are not + V-ing。\n疑问：Is/Are + 主 + V-ing?\n对比：I often swim. (习惯，一般现在时) / I am swimming now. (现在进行时)"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Seasons in Guangzhou",
+              "en": "Guangzhou is in the south of China. The weather here is different from the north.\n\nSpring in Guangzhou is wet. It often rains and everything feels a little damp. We always carry umbrellas.\n\nSummer is very long and hot. The days are sunny and bright. It is also rainy in the afternoon sometimes.\n\nAutumn is short but very nice. It is cool and dry and the sky is blue.\n\nWinter is warm. It is seldom snowy in Guangzhou. We often wear a light coat instead of thick gloves.\n\nBecause of the mild weather, Guangzhou is called \"the city of flowers\" — you can see flowers all year round!",
+              "cn": "广州在中国南方，气候与北方不同。\n\n春天潮湿，常常下雨，我们总是带伞。\n夏天很长很热，白天阳光灿烂，下午有时有阵雨。\n秋天短暂却宜人，凉爽干燥，天空湛蓝。\n冬天温暖，很少下雪，我们通常只穿薄外套，不用戴厚手套。\n\n因为气候温和，广州被称为“花城”——全年都能看到鲜花！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "module": "Module 3 Space and travel",
+          "title": "Unit 5 Visiting the Moon",
+          "words": [
+            {
+              "word": "Moon",
+              "phonetic": "/muːn/",
+              "pos": "n.",
+              "meaning": "月球，月亮",
+              "example": "The Moon goes around the Earth."
+            },
+            {
+              "word": "space",
+              "phonetic": "/speɪs/",
+              "pos": "n.",
+              "meaning": "太空",
+              "example": "Astronauts work in space."
+            },
+            {
+              "word": "rocket",
+              "phonetic": "/ˈrɒkɪt/",
+              "pos": "n.",
+              "meaning": "火箭",
+              "example": "The rocket flew into the sky."
+            },
+            {
+              "word": "astronaut",
+              "phonetic": "/ˈæstrənɔːt/",
+              "pos": "n.",
+              "meaning": "宇航员",
+              "example": "Yang Liwei is a Chinese astronaut."
+            },
+            {
+              "word": "spacesuit",
+              "phonetic": "/ˈspeɪssuːt/",
+              "pos": "n.",
+              "meaning": "航天服",
+              "example": "A spacesuit protects the astronaut."
+            },
+            {
+              "word": "hotel",
+              "phonetic": "/həʊˈtel/",
+              "pos": "n.",
+              "meaning": "旅馆，酒店",
+              "example": "We stayed in a hotel in Beijing."
+            },
+            {
+              "word": "light",
+              "phonetic": "/laɪt/",
+              "pos": "n./adj.",
+              "meaning": "光；轻的",
+              "example": "A bag full of feathers is light."
+            },
+            {
+              "word": "land",
+              "phonetic": "/lænd/",
+              "pos": "v.",
+              "meaning": "着陆，登陆",
+              "example": "The plane will land at 3 p.m."
+            },
+            {
+              "word": "kilometre",
+              "phonetic": "/ˈkɪləˌmiːtə(r)/",
+              "pos": "n.",
+              "meaning": "千米，公里",
+              "example": "The Moon is about 384,000 kilometres away."
+            },
+            {
+              "word": "weak",
+              "phonetic": "/wiːk/",
+              "pos": "adj.",
+              "meaning": "虚弱的",
+              "example": "After the long trip he felt weak."
+            },
+            {
+              "word": "breathe",
+              "phonetic": "/briːð/",
+              "pos": "v.",
+              "meaning": "呼吸",
+              "example": "Open the window so we can breathe fresh air."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A trip to the Moon",
+              "en": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet on the Moon — there is no sound at all.\n\nThere is no air on the Moon, so we must wear spacesuits to breathe. Our body feels very light there, because the Moon's gravity is weak. We can jump high and far.\n\nWhen we land, we can stay in a space hotel. We can watch the Earth from the window. The Earth looks like a beautiful blue ball.\n\nI hope I can go to the Moon someday and become an astronaut!",
+              "cn": "有一天我们将坐火箭去月球旅行。月球距离地球约 38.4 万公里。月球上非常安静，一点声音也没有。\n\n月球上没有空气，我们必须穿航天服才能呼吸。因为月球引力弱，我们的身体感觉很轻，能跳得又高又远。\n\n着陆后，我们可以住在太空旅馆，通过窗户看地球。地球像一个美丽的蓝色球体。\n\n我希望有一天能登上月球，成为一名宇航员！"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Will & modal verbs",
+              "en": "Future with WILL:\n• I will travel to the Moon one day.\n• Rockets will be faster in 2050.\n• She won't go alone.\nQuestions: Will you be an astronaut? — Yes, I will. / No, I won't.\n\nBE GOING TO (a plan or decided action):\n• We are going to visit a space hotel next week.\n• He is going to read a book about rockets tonight.\n\nModal verbs:\n• CAN = ability → I can see the Earth from here.\n• MUST = necessity / strong rule → We must wear spacesuits on the Moon.\n• SHOULD = advice → You should learn more about science.",
+              "cn": "一般将来时 WILL：表示“将要”。\n• I will travel to the Moon. 我将去月球。\nBE GOING TO：表示“计划”。\n• We are going to visit a space hotel. 我们计划去参观太空旅馆。\n情态动词：\n• CAN 能力 — I can see the Earth.\n• MUST 必须 — We must wear spacesuits.\n• SHOULD 建议 — You should learn science."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Life as an astronaut",
+              "en": "Being an astronaut is hard work. Before a space trip, astronauts must train for many years. They learn how to fly a rocket, how to land safely, and how to fix problems in space.\n\nIn the space station, there is no up or down. Everything floats. Astronauts sleep in sleeping bags tied to the wall. They drink water from special bags and eat food from small packs.\n\nFrom space, the Earth looks very small. Many astronauts say, \"Now I know how important it is to protect our planet.\"\n\nAstronauts are heroes. They show us that with courage and hard work, people can go anywhere — even to the Moon!",
+              "cn": "做宇航员并不轻松。飞上太空前，他们必须训练多年：学习驾驶火箭、安全着陆、处理太空故障。\n\n空间站里没有上下之分，一切都会漂浮。宇航员睡在绑在墙上的睡袋里，用特殊袋子喝水，吃小包装食物。\n\n从太空看，地球非常小。许多宇航员说：“我才知道保护这颗行星有多重要。”\n\n宇航员是英雄，他们告诉我们：凭借勇气和努力，人类能到达任何地方——甚至月球！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "module": "Module 3 Space and travel",
+          "title": "Unit 6 Travelling around Asia",
+          "words": [
+            {
+              "word": "Asia",
+              "phonetic": "/ˈeɪʃə/",
+              "pos": "n.",
+              "meaning": "亚洲",
+              "example": "China is a big country in Asia."
+            },
+            {
+              "word": "capital",
+              "phonetic": "/ˈkæpɪtl/",
+              "pos": "n.",
+              "meaning": "首都，省会",
+              "example": "Beijing is the capital of China."
+            },
+            {
+              "word": "famous",
+              "phonetic": "/ˈfeɪməs/",
+              "pos": "adj.",
+              "meaning": "著名的",
+              "example": "The Great Wall is famous all over the world."
+            },
+            {
+              "word": "tour",
+              "phonetic": "/tʊə(r)/",
+              "pos": "n.",
+              "meaning": "旅行，旅游",
+              "example": "We had a tour of the old city."
+            },
+            {
+              "word": "building",
+              "phonetic": "/ˈbɪldɪŋ/",
+              "pos": "n.",
+              "meaning": "建筑物",
+              "example": "There are many tall buildings in the city."
+            },
+            {
+              "word": "ancient",
+              "phonetic": "/ˈeɪnʃənt/",
+              "pos": "adj.",
+              "meaning": "古老的",
+              "example": "The temple is very ancient."
+            },
+            {
+              "word": "modern",
+              "phonetic": "/ˈmɒdn/",
+              "pos": "adj.",
+              "meaning": "现代的",
+              "example": "Shanghai is a modern city."
+            },
+            {
+              "word": "palace",
+              "phonetic": "/ˈpæləs/",
+              "pos": "n.",
+              "meaning": "宫殿",
+              "example": "The Imperial Palace is in Beijing."
+            },
+            {
+              "word": "tower",
+              "phonetic": "/ˈtaʊə(r)/",
+              "pos": "n.",
+              "meaning": "塔",
+              "example": "Tokyo Tower is a famous tower."
+            },
+            {
+              "word": "bridge",
+              "phonetic": "/brɪdʒ/",
+              "pos": "n.",
+              "meaning": "桥",
+              "example": "The bridge is over the river."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Welcome to Asia",
+              "en": "Asia is a big continent. There are many countries in Asia. Each country has its own language, food and culture.\n\nBeijing is the capital of China. It has many famous places, such as the Great Wall, the Forbidden City and the Summer Palace. Many people visit these ancient buildings every year. They are very beautiful and amazing.\n\nJapan is a country in East Asia. Tokyo is the capital. It is a very modern city with many tall buildings. Tokyo Tower is a famous tower in Tokyo.\n\nThailand is a warm country in Southeast Asia. Bangkok is its capital. You can see many old palaces and eat delicious Thai food.\n\nAsia is a wonderful place for a tour!",
+              "cn": "亚洲是一个巨大的大洲，国家众多，每个国家都有独特的语言、美食和文化。\n\n北京是中国的首都，有长城、故宫、颐和园等名胜古迹。每年吸引众多游客，这些古建筑既美丽又令人惊叹。\n\n日本是东亚国家，首都东京是一座非常现代的城市，高楼林立，东京塔是著名地标。\n\n泰国是东南亚的温暖国家，首都曼谷，有许多古老的宫殿和美味的泰国菜。\n\n亚洲是绝佳的旅行目的地！"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Facts & prepositions",
+              "en": "Simple present for facts:\n• Beijing is the capital of China.\n• The Great Wall stands in the north of China.\n• Asia has many countries.\n\nProper nouns are capitalised:\n• China, Japan, Thailand, Asia\n• the Great Wall, the Forbidden City, Tokyo Tower\n\nPrepositions of place:\n• Bangkok is IN Thailand.\n• The palace is ON the hill.\n• Trains arrive AT the station at 8 a.m.\n• Tourists come FROM all over the world.\n• We travel TO Beijing next month.",
+              "cn": "一般现在时表示客观事实：\n• Beijing is the capital of China. 北京是中国首都。\n专有名词首字母大写：China / Asia / the Great Wall…\n地点介词：in 国家里；on 山上；at 某车站；from 来自；to 去向。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A letter from Xi'an",
+              "en": "Dear Tom,\n\nI am on a tour of Xi'an with my family. Xi'an is an ancient capital of China. More than 1,300 years ago, it was the largest city in the world.\n\nYesterday we visited the Terracotta Army. There are thousands of stone soldiers and horses in three big halls. Each soldier has a different face! It is one of the most famous places in Asia.\n\nToday we walked on the old city wall. From the wall you can see both old buildings and modern towers. Then we crossed a small bridge and ate noodles at a local market.\n\nI can't wait to tell you more stories when I come home.\n\nBest wishes,\nLily",
+              "cn": "亲爱的 Tom：\n\n我和家人正在西安旅行。西安是中国的古都，1300 多年前是世界上最大的城市。\n\n昨天我们参观了兵马俑，三个大厅里有成千上万的石制士兵和战马，每个士兵的面孔都不一样！这是亚洲最著名的地方之一。\n\n今天我们走上了古城墙，从上面能同时看到古建筑和现代塔楼；之后我们过了一座小桥，在当地市场吃了面条。\n\n我迫不及待想回家告诉你更多故事。\n\n祝好，\nLily"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "module": "Module 4 My interests and hobbies",
+          "title": "Unit 7 School clubs",
+          "words": [
+            {
+              "word": "club",
+              "phonetic": "/klʌb/",
+              "pos": "n.",
+              "meaning": "俱乐部，社团",
+              "example": "Our school has many clubs."
+            },
+            {
+              "word": "join",
+              "phonetic": "/dʒɔɪn/",
+              "pos": "v.",
+              "meaning": "加入",
+              "example": "I want to join the Music Club."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "pos": "v./n.",
+              "meaning": "跳舞；舞蹈",
+              "example": "She can dance very well."
+            },
+            {
+              "word": "sing",
+              "phonetic": "/sɪŋ/",
+              "pos": "v.",
+              "meaning": "唱歌",
+              "example": "I love to sing English songs."
+            },
+            {
+              "word": "draw",
+              "phonetic": "/drɔː/",
+              "pos": "v.",
+              "meaning": "画画",
+              "example": "He can draw a horse."
+            },
+            {
+              "word": "chess",
+              "phonetic": "/tʃes/",
+              "pos": "n.",
+              "meaning": "国际象棋",
+              "example": "We play chess after school."
+            },
+            {
+              "word": "piano",
+              "phonetic": "/piˈænəʊ/",
+              "pos": "n.",
+              "meaning": "钢琴",
+              "example": "She plays the piano every day."
+            },
+            {
+              "word": "violin",
+              "phonetic": "/ˌvaɪəˈlɪn/",
+              "pos": "n.",
+              "meaning": "小提琴",
+              "example": "He plays the violin in the orchestra."
+            },
+            {
+              "word": "drum",
+              "phonetic": "/drʌm/",
+              "pos": "n.",
+              "meaning": "鼓",
+              "example": "The little boy plays the drum."
+            },
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "pos": "n.",
+              "meaning": "机器人",
+              "example": "I built a small robot with my team."
+            },
+            {
+              "word": "science",
+              "phonetic": "/ˈsaɪəns/",
+              "pos": "n.",
+              "meaning": "科学",
+              "example": "Science is an interesting subject."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Join a club!",
+              "en": "Our school has many clubs. Every Friday afternoon we can join different clubs. Here are some of the most popular ones.\n\nThe Music Club: If you can sing or dance, come and join us! We learn songs and have small shows every month.\n\nThe Art Club: We draw pictures and paint cartoons. Last week Tom drew a very funny robot.\n\nThe Chess Club: Chess makes you think fast. We play chess and have a school chess game every year.\n\nThe Science Club: We do science experiments. This term we are building robots and learning how they work.\n\nEveryone has a talent. Come and show us yours!",
+              "cn": "我们学校有很多社团。每周五下午可以加入不同的社团。以下是最受欢迎的几个。\n\n音乐社：会唱歌、跳舞的同学，快来加入！我们每月学唱歌曲，还会举办小型演出。\n\n美术社：我们画画、画卡通。上周 Tom 画了一个很搞笑的机器人。\n\n国际象棋社：下棋锻炼思维，每年都有校内比赛。\n\n科学社：做科学实验。本学期我们在做机器人，研究它们的工作原理。\n\n每个人都有才艺，快来展示吧！"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · CAN & play + instruments",
+              "en": "CAN = ability\n• I can sing but I can't dance.\n• She can play the piano very well.\n• Can you draw cartoons? — Yes, I can. / No, I can't.\n\nPLAY + the + instrument (音乐乐器要加 the):\n• play the piano / the violin / the guitar / the drum\n\nPLAY + ball game (球类不加 the):\n• play football / basketball / chess / table tennis\n\nWould you like …? — polite invitation:\n• Would you like to join the Art Club? — Yes, I'd love to.\n• Would you like some tea? — Yes, please. / No, thanks.",
+              "cn": "CAN 表能力：\n• I can sing. 我会唱歌。\n• Can you draw? — Yes, I can. 你会画画吗？\nplay + the + 乐器：play the piano 弹钢琴；play the violin 拉小提琴。\nplay + 球类 / 棋类（不加 the）：play football / chess。\nWould you like …? 礼貌邀请：Would you like to join the club? 你愿意加入社团吗？"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · My Robot Club diary",
+              "en": "Dear diary,\n\nToday was a happy day. I joined the Robot Club after school. Mr Liu, our science teacher, showed us a small walking robot. Its legs moved like a real person!\n\nWe worked in small teams. My team has four members. I am not good at drawing, but I can write computer programs. My friend Sam is great at building, and Lily can draw beautiful plans for us.\n\nWe named our first robot \"Star\". It can turn its head and say \"Hello\". Next week we will teach Star to dance. I think Star is going to be famous at the school show!\n\nI think I have found my favourite hobby.\nGoodnight.",
+              "cn": "亲爱的日记：\n\n今天很开心。放学后我加入了机器人社。我们的科学老师刘老师给我们展示了一只会走路的小机器人，它的腿像真人一样！\n\n我们分成小组，我的小组有四个成员。我画画不好，但我会编程序。朋友 Sam 擅长搭建，Lily 能画漂亮的设计图。\n\n我们给第一个机器人起名“Star（星星）”。它能转头并说“Hello”。下周我们要教 Star 跳舞，我觉得它将在校园演出上大放异彩！\n\n我想我找到了最喜欢的爱好。\n晚安。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "module": "Module 4 My interests and hobbies",
+          "title": "Unit 8 Collecting things",
+          "words": [
+            {
+              "word": "collect",
+              "phonetic": "/kəˈlekt/",
+              "pos": "v.",
+              "meaning": "收集，采集",
+              "example": "I collect beautiful shells."
+            },
+            {
+              "word": "stamp",
+              "phonetic": "/stæmp/",
+              "pos": "n.",
+              "meaning": "邮票",
+              "example": "He has stamps from many countries."
+            },
+            {
+              "word": "coin",
+              "phonetic": "/kɔɪn/",
+              "pos": "n.",
+              "meaning": "硬币",
+              "example": "This is a very old coin."
+            },
+            {
+              "word": "toy",
+              "phonetic": "/tɔɪ/",
+              "pos": "n.",
+              "meaning": "玩具",
+              "example": "The baby loves his new toy."
+            },
+            {
+              "word": "fan",
+              "phonetic": "/fæn/",
+              "pos": "n.",
+              "meaning": "扇子；爱好者",
+              "example": "She bought a paper fan in Hangzhou."
+            },
+            {
+              "word": "valuable",
+              "phonetic": "/ˈvæljuəbl/",
+              "pos": "adj.",
+              "meaning": "贵重的，有价值的",
+              "example": "My grandma's ring is very valuable."
+            },
+            {
+              "word": "expensive",
+              "phonetic": "/ɪkˈspensɪv/",
+              "pos": "adj.",
+              "meaning": "昂贵的",
+              "example": "This bag is too expensive."
+            },
+            {
+              "word": "cheap",
+              "phonetic": "/tʃiːp/",
+              "pos": "adj.",
+              "meaning": "便宜的",
+              "example": "The fruit here is cheap and fresh."
+            },
+            {
+              "word": "collection",
+              "phonetic": "/kəˈlekʃn/",
+              "pos": "n.",
+              "meaning": "收藏品",
+              "example": "Show me your stamp collection."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "pos": "v.",
+              "meaning": "分享",
+              "example": "Please share the cake with us."
+            },
+            {
+              "word": "envelope",
+              "phonetic": "/ˈenvələʊp/",
+              "pos": "n.",
+              "meaning": "信封",
+              "example": "Put the letter in the envelope."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · My hobby is collecting",
+              "en": "Many people have hobbies. My hobby is collecting stamps. I have more than 300 different stamps from different countries. They all come from the envelopes of letters.\n\nSome stamps are expensive. For example, my favourite stamp is from 1980 — it is a small, bright red monkey. It is very valuable. Some stamps are cheap, but they are also beautiful. I keep all my stamps in a big book.\n\nMy grandpa taught me how to take good care of stamps. You should never touch them with dirty hands. You should keep them in a dry, cool place.\n\nI like to share my collection with my friends. Collecting things makes me happy, and it also helps me learn about the world.",
+              "cn": "许多人都有爱好，我的爱好是集邮。我有来自不同国家的 300 多张邮票，它们都来自信件的信封。\n\n有些邮票很贵，比如我最喜欢的是 1980 年的一张小小的红色猴票，很有价值；有些邮票便宜，但也很漂亮。我把所有邮票放在一本大册子里。\n\n爷爷教我如何爱护邮票：不能用脏手触摸，应放在干燥阴凉的地方。\n\n我喜欢和朋友分享收藏。收集东西让我开心，也帮我认识世界。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Plurals & opposites",
+              "en": "Most plurals just add -s:\n• coin → coins, toy → toys, fan → fans\n\nWords ending in -s, -x, -ch, -sh add -es:\n• bus → buses, box → boxes, watch → watches\n\nSome change the vowel or ending:\n• man → men, woman → women, child → children\n• knife → knives, leaf → leaves\n\nOpposite adjectives:\n• expensive ↔ cheap\n• old ↔ new\n• big ↔ small\n• long ↔ short\n\nBasic present perfect (first look):\n• I have collected stamps for five years.\n• She has kept that coin since 2020.",
+              "cn": "大多数名词复数加 -s：coin → coins。\n以 s/x/ch/sh 结尾加 -es：box → boxes。\n特殊：man → men，child → children，leaf → leaves。\n反义词：expensive ↔ cheap，old ↔ new，big ↔ small。\n现在完成时初识：I have collected stamps for five years. 我已经集邮五年了。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A world of collectors",
+              "en": "Around the world, people collect all kinds of things. Many young people collect stickers, small toys or cards from movies. Some adults collect old clocks, old books or old photos. A few rich people collect expensive paintings in big museums.\n\nIn China, many old people love to collect fans. Fans are not only useful in summer, but they also tell stories. A fan from Hangzhou may have a picture of West Lake on it. A fan from Sichuan may show a beautiful panda.\n\nLast year, my aunt showed me her coin collection. The oldest coin is 200 years old! \"Coins carry the story of our country,\" she said.\n\nWhat do you collect? Whatever it is, share your collection and be proud of your hobby!",
+              "cn": "世界各地的人收集各式各样的东西：许多年轻人收藏贴纸、小玩具或电影卡片；有些成年人收集旧钟表、旧书或老照片；少数富人会在大博物馆里收藏昂贵的画作。\n\n在中国，许多老人喜欢收集扇子。扇子不仅夏天有用，还承载故事——杭州扇子可能画着西湖，四川扇子可能有憨态可掬的熊猫。\n\n去年姑姑给我看了她的硬币收藏，最老的一枚有 200 岁！她说：“硬币承载着祖国的故事。”\n\n你收集什么呢？无论是什么，都请分享你的藏品，为自己的爱好感到自豪！"
+            }
+          ]
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 （待补充）",
+          "words": [],
+          "lessons": []
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 （待补充）",
+          "words": [],
+          "lessons": []
+        }
+      ]
+    },
+    "grade8": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 （待补充）",
+          "words": [],
+          "lessons": []
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 （待补充）",
+          "words": [],
+          "lessons": []
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 （待补充）",
+          "words": [],
+          "lessons": []
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 （待补充）",
+          "words": [],
+          "lessons": []
+        }
+      ]
+    },
+    "grade9": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 （待补充）",
+          "words": [],
+          "lessons": []
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 （待补充）",
+          "words": [],
+          "lessons": []
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 （待补充）",
+          "words": [],
+          "lessons": []
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 （待补充）",
+          "words": [],
+          "lessons": []
+        }
+      ]
+    }
+  }
+}

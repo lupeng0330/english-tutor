@@ -81,6 +81,224 @@
             "答句": "Yes, he did."
           }
         ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "问题": "Who is Dr Sun Yatsen?",
+            "答案": "He was a very famous and important person in Chinese history."
+          },
+          {
+            "问题": "What did Dr Sun Yatsen try to do?",
+            "答案": "He tried to free the Chinese people and make their lives better."
+          },
+          {
+            "问题": "Why do the Chinese people love him?",
+            "答案": "Because he loved them and worked for a better life for them."
+          },
+          {
+            "问题": "Name one way people remember him today.",
+            "答案": "Many roads, schools and parks have his name."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Dr Sun Yatsen was a great ___.",
+            "选项": [
+              "A. leader",
+              "B. musician",
+              "C. inventor"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "He tried to ___ the Chinese people.",
+            "选项": [
+              "A. teach",
+              "B. free",
+              "C. change the clothes of"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus · 对话1",
+        "data": [
+          {
+            "问题": "Where is Mum?",
+            "答案": "She is in the kitchen."
+          },
+          {
+            "问题": "Is Mum cooking dinner?",
+            "答案": "No, she is washing the bowls and plates."
+          },
+          {
+            "问题": "Where will the family have dinner?",
+            "答案": "At a restaurant near their school."
+          },
+          {
+            "问题": "What is the restaurant famous for?",
+            "答案": "It is famous for chicken."
+          },
+          {
+            "问题": "Will Dad have dinner with them?",
+            "答案": "Yes, he will."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus · 对话2",
+        "data": [
+          {
+            "问题": "Who is the young man in white in the photo?",
+            "答案": "He is Jim's dad."
+          },
+          {
+            "问题": "What was Dad doing in the photo?",
+            "答案": "He was having a race."
+          },
+          {
+            "问题": "Was Dad good at running?",
+            "答案": "Yes, he was."
+          },
+          {
+            "问题": "Did Dad win the race?",
+            "答案": "Yes, he did."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus · 对话3",
+        "data": [
+          {
+            "问题": "Was Dad a famous sportsman when he was young?",
+            "答案": "Yes, he was."
+          },
+          {
+            "问题": "When did Dad become a PE teacher?",
+            "答案": "When Jim was two years old."
+          },
+          {
+            "问题": "Why did Mum love Dad?",
+            "答案": "Because he was kind and patient."
+          },
+          {
+            "问题": "Does Dad still run fast now?",
+            "答案": "Yes, Mum thinks so."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Language focus · 对话3",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Dad became a PE teacher when Jim was ___.",
+            "选项": [
+              "A. one",
+              "B. two",
+              "C. three"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Mum loved Dad mainly because he was ___.",
+            "选项": [
+              "A. famous",
+              "B. rich",
+              "C. kind and patient"
+            ],
+            "答案": "C"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Rhyme time",
+        "data": [
+          {
+            "问题": "What does the poem say about the night?",
+            "答案": "The night is beautiful."
+          },
+          {
+            "问题": "What is compared to the stars?",
+            "答案": "The eyes of the people."
+          },
+          {
+            "问题": "What feeling does the poem give?",
+            "答案": "It gives a warm and proud feeling about the people."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "扩展阅读 · Helen Keller",
+        "data": [
+          {
+            "问题": "When and where was Helen Keller born?",
+            "答案": "She was born in America in 1880."
+          },
+          {
+            "问题": "What happened to her when she was 19 months old?",
+            "答案": "She fell ill and became deaf and blind."
+          },
+          {
+            "问题": "Who was her teacher?",
+            "答案": "Her teacher was Anne Sullivan."
+          },
+          {
+            "问题": "How did Anne teach Helen?",
+            "答案": "Anne taught her to spell words on her hand."
+          },
+          {
+            "问题": "What did Helen do after she finished university?",
+            "答案": "She travelled around the world and helped others like herself."
+          },
+          {
+            "问题": "What did she show everyone through her life?",
+            "答案": "She showed that disabilities don't stop a person from living a meaningful life."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "扩展阅读 · Helen Keller",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Helen Keller became deaf and blind at the age of ___.",
+            "选项": [
+              "A. 19 months",
+              "B. 19 years",
+              "C. 9 years"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Anne Sullivan taught Helen to ___.",
+            "选项": [
+              "A. sing songs",
+              "B. spell words on her hand",
+              "C. ride a horse"
+            ],
+            "答案": "B"
+          }
+        ]
       }
     ],
     "u6": [
@@ -111,6 +329,142 @@
           {
             "问题": "When was her first Harry Potter book put out?",
             "答案": "It was put out in 1997."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "问题": "What is Deng Jiaxian often called?",
+            "答案": "He is often called the father of Chinese atomic science."
+          },
+          {
+            "问题": "When and where was Deng born?",
+            "答案": "He was born in Anhui Province on June 25, 1924."
+          },
+          {
+            "问题": "What did Deng want to be as a child?",
+            "答案": "He wanted to be a teacher like his father."
+          },
+          {
+            "问题": "What did his father want him to study? Why?",
+            "答案": "His father wanted him to study science to help China become modern."
+          },
+          {
+            "问题": "What did Deng teach after 1945?",
+            "答案": "He taught physics at middle schools and later at Beijing University."
+          },
+          {
+            "问题": "Why was Deng called the 'Baby Doctor'?",
+            "答案": "Because he was the youngest person in his class in the United States."
+          },
+          {
+            "问题": "How long did Deng take to finish his doctor's degree?",
+            "答案": "Only two years, instead of four or more."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Deng Jiaxian was born in ___.",
+            "选项": [
+              "A. 1924",
+              "B. 1948",
+              "C. 1945"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "He went to the United States to study ___.",
+            "选项": [
+              "A. chemistry",
+              "B. physics",
+              "C. literature"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "He was called the 'Baby Doctor' because he was ___.",
+            "选项": [
+              "A. very small",
+              "B. the youngest person in his class",
+              "C. afraid of science"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Project · Make a poster of a famous person",
+        "data": [
+          {
+            "问题": "What should you think about in Step 1?",
+            "答案": "Think of a famous person you like."
+          },
+          {
+            "问题": "What should a poster include?",
+            "答案": "When and where the person was born, what they did, and why they are famous."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "What does Aki want to be?",
+            "答案": "He wants to be famous."
+          },
+          {
+            "问题": "Name one way of becoming famous in the story.",
+            "答案": "Invent something new and useful, like Thomas Edison."
+          },
+          {
+            "问题": "Who is mentioned as a great leader?",
+            "答案": "Sun Yatsen or Abraham Lincoln."
+          },
+          {
+            "问题": "What else does the boy say you must do to be famous?",
+            "答案": "You must work hard and never give up."
+          },
+          {
+            "问题": "What did Aki decide to do first?",
+            "答案": "He decided to take a nap first."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "According to the boy, to be famous you must ___.",
+            "选项": [
+              "A. sleep a lot",
+              "B. work hard and never give up",
+              "C. buy expensive clothes"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Thomas Edison is mentioned because he was a great ___.",
+            "选项": [
+              "A. inventor",
+              "B. singer",
+              "C. doctor"
+            ],
+            "答案": "A"
           }
         ]
       }
@@ -183,6 +537,146 @@
             "答案": "A"
           }
         ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "问题": "What will Ben do if he sees an old lady standing on the bus?",
+            "答案": "He will give her his seat."
+          },
+          {
+            "问题": "What happened to Jiamin on the bus?",
+            "答案": "A young man quickly sat down before Jiamin could offer the seat."
+          },
+          {
+            "问题": "What did the girl do at the supermarket?",
+            "答案": "She tried to push in line."
+          },
+          {
+            "问题": "What is the polite thing to do?",
+            "答案": "Give our seat to people in need and wait for our turn."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the young man on the bus do?",
+            "选项": [
+              "A. Gave his seat to the old lady",
+              "B. Sat down quickly before Jiamin could offer",
+              "C. Helped Jiamin carry her bag"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "If the line is long, you should ___.",
+            "选项": [
+              "A. push in",
+              "B. be patient and wait for your turn",
+              "C. shout at others"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · Look and say",
+        "data": [
+          {
+            "问题": "Give one example of good manners at the library.",
+            "答案": "Keep quiet at the library."
+          },
+          {
+            "问题": "What should you do at the bus stop?",
+            "答案": "Stand in line."
+          },
+          {
+            "问题": "What should you do when the young are in trouble?",
+            "答案": "Help them."
+          },
+          {
+            "问题": "Give one example of bad manners.",
+            "答案": "Talk loudly in public places / waste water / throw things on the ground."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Fun with language · Look and say",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Which is good manners?",
+            "选项": [
+              "A. Talk loudly in the library",
+              "B. Keep quiet at the library",
+              "C. Push in the line"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Which is bad manners?",
+            "选项": [
+              "A. Stand in line at the bus stop",
+              "B. Throw things on the ground",
+              "C. Let old people take the seat"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Rhyme time",
+        "data": [
+          {
+            "问题": "When the child is good, how do the parents feel?",
+            "答案": "They feel glad."
+          },
+          {
+            "问题": "When the child is bad, how do the parents feel?",
+            "答案": "They feel sad."
+          },
+          {
+            "问题": "What will the child always do?",
+            "答案": "The child will always be good."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus · 阅读短文",
+        "data": [
+          {
+            "问题": "What do Chinese people often ask when they meet?",
+            "答案": "They ask 'Where are you going?' or 'Have you had your meal?'"
+          },
+          {
+            "问题": "What do English people often talk about when they meet?",
+            "答案": "They often talk about the weather."
+          },
+          {
+            "问题": "What questions do English people avoid asking?",
+            "答案": "They don't ask about age, salary or the price of their home."
+          },
+          {
+            "问题": "What can't you do in Thailand?",
+            "答案": "You can't touch a child's head."
+          },
+          {
+            "问题": "Why are good manners important?",
+            "答案": "Because they help people get on well with each other."
+          }
+        ]
       }
     ],
     "u8": [
@@ -205,6 +699,124 @@
           {
             "问题": "Do you like Ted? Why?",
             "答案": "Yes, I like him. Because he is polite, kind and always ready to help others."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "问题": "Where did the boy see the magic tree?",
+            "答案": "In the middle of a park."
+          },
+          {
+            "问题": "What did the sign on the tree say?",
+            "答案": "\"I am a magic tree. Say the magic words and you will see.\""
+          },
+          {
+            "问题": "What did the boy finally say when he felt upset?",
+            "答案": "He said 'Please, dear tree!'"
+          },
+          {
+            "问题": "What happened after he said 'Thank you'?",
+            "答案": "The inside of the tree lit up brightly and showed a road."
+          },
+          {
+            "问题": "Where did the road lead?",
+            "答案": "It led to a room full of toys and chocolates."
+          },
+          {
+            "问题": "What are the real 'magic words'?",
+            "答案": "The words 'please' and 'thank you'."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "The boy felt ___ before the door opened.",
+            "选项": [
+              "A. happy",
+              "B. tired and upset",
+              "C. afraid"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "The first magic word in the story is ___.",
+            "选项": [
+              "A. hurry",
+              "B. open",
+              "C. please"
+            ],
+            "答案": "C"
+          },
+          {
+            "题号": 3,
+            "问题": "The main idea of this text is that ___.",
+            "选项": [
+              "A. trees can do magic",
+              "B. 'please' and 'thank you' are the real magic words",
+              "C. parks are full of toys"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "Why was Aki at the boy's house?",
+            "答案": "He was invited for dinner."
+          },
+          {
+            "问题": "What did Aki say when Mum greeted him?",
+            "答案": "He said he was thirsty instead of greeting back."
+          },
+          {
+            "问题": "Why was the boy upset with Aki near the end?",
+            "答案": "Because Aki changed the TV while the boy was watching."
+          },
+          {
+            "问题": "What did Aki not like at dinner?",
+            "答案": "He didn't like fish."
+          },
+          {
+            "问题": "What will they talk about tomorrow?",
+            "答案": "They will talk about good manners."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should Aki have said first when he arrived?",
+            "选项": [
+              "A. 'I'm hungry!'",
+              "B. 'Hello' or 'Thanks for inviting me'",
+              "C. 'What's on TV?'"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Aki's behaviour at the dinner shows he ___.",
+            "选项": [
+              "A. has good manners",
+              "B. needs to learn good manners",
+              "C. is very polite"
+            ],
+            "答案": "B"
           }
         ]
       }
@@ -265,6 +877,82 @@
             "答案": "He will stay there for longer and take more photos."
           }
         ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "问题": "Where will Ben go if he can travel? Why?",
+            "答案": "He will go to South Africa because he loves nature."
+          },
+          {
+            "问题": "What will Janet choose? What does she want to see?",
+            "答案": "She will choose Australia to see the Sydney Opera House and the Harbour Bridge."
+          },
+          {
+            "问题": "Why does Xiaoling want to go to Japan?",
+            "答案": "Because Tokyo is modern and a great place to go shopping."
+          },
+          {
+            "问题": "What does Jiamin want to do in France?",
+            "答案": "He wants to eat French food because Paris is the food capital of the world."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Ben loves nature, so he will visit ___.",
+            "选项": [
+              "A. Japan",
+              "B. France",
+              "C. South Africa"
+            ],
+            "答案": "C"
+          },
+          {
+            "题号": 2,
+            "问题": "Xiaoling wants to buy a ___ in Tokyo.",
+            "选项": [
+              "A. robot",
+              "B. postcard",
+              "C. ticket"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Paris is called the ___ capital of the world.",
+            "选项": [
+              "A. music",
+              "B. food",
+              "C. fashion"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Sing along",
+        "data": [
+          {
+            "问题": "What kind of world is it, according to the song?",
+            "答案": "A world of laughter, tears, hopes and fears."
+          },
+          {
+            "问题": "What does the song repeat?",
+            "答案": "'It's a small world after all.'"
+          },
+          {
+            "问题": "What is the main message of the song?",
+            "答案": "People everywhere share feelings — the world is small and we are connected."
+          }
+        ]
       }
     ],
     "u10": [
@@ -317,6 +1005,830 @@
           {
             "问题": "What will Janet do during her holiday time?",
             "答案": "She will try to travel to some countries near Italy, like France, Switzerland and Austria."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's read · A letter to John",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will Li Hua NOT do in Canada?",
+            "选项": [
+              "A. Speak English every day",
+              "B. Stay with John's family",
+              "C. Go fishing in the waterfall"
+            ],
+            "答案": "C"
+          },
+          {
+            "题号": 2,
+            "问题": "When will Li Hua arrive?",
+            "选项": [
+              "A. May 12th",
+              "B. June 12th",
+              "C. July 12th"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "What is Canada famous for?",
+            "选项": [
+              "A. Tall mountains",
+              "B. Natural beauty — lakes and waterfalls",
+              "C. Big cities only"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "Where are the children going for summer holiday?",
+            "答案": "They are going to America."
+          },
+          {
+            "问题": "What does one girl want to see in Hollywood?",
+            "答案": "She wants to see famous movie stars."
+          },
+          {
+            "问题": "What does one boy want to visit in New York City?",
+            "答案": "He wants to go to the top of the Empire State Building."
+          },
+          {
+            "问题": "What does Aki want to do in America?",
+            "答案": "He wants to visit Disneyland."
+          },
+          {
+            "问题": "How long is the holiday?",
+            "答案": "One month."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Which city is the Empire State Building in?",
+            "选项": [
+              "A. Hollywood",
+              "B. New York City",
+              "C. Los Angeles"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Aki is excited to see the ___ at Disneyland.",
+            "选项": [
+              "A. mountains",
+              "B. movie stars",
+              "C. colourful characters"
+            ],
+            "答案": "C"
+          }
+        ]
+      }
+    ],
+    "u1": [
+      {
+        "kind": "reading_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "问题": "What did Jiamin try to do?",
+            "答案": "She tried to carry all the books."
+          },
+          {
+            "问题": "Why did Janet say Jiamin was like the silly hare?",
+            "答案": "Because Jiamin was in such a hurry."
+          },
+          {
+            "问题": "Who won the race in the old story?",
+            "答案": "The slow but careful tortoise won the race."
+          },
+          {
+            "问题": "Why did the hare lose the race?",
+            "答案": "Because he was too proud and careless."
+          },
+          {
+            "问题": "What lesson did Janet learn from the story?",
+            "答案": "She should be careful and patient."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who was in a hurry carrying the books?",
+            "选项": [
+              "A. Janet",
+              "B. Jiamin",
+              "C. Xiaoling"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "How did the hare feel before the race?",
+            "选项": [
+              "A. Proud and careless",
+              "B. Careful and patient",
+              "C. Sad and tired"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "The saying 'Slow and steady wins the race' means ___.",
+            "选项": [
+              "A. Running fast always wins",
+              "B. Being careful and patient helps you succeed",
+              "C. Tortoises are the best animals"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language",
+        "data": [
+          {
+            "问题": "What does 'in a hurry' mean?",
+            "答案": "It means doing things very quickly."
+          },
+          {
+            "问题": "Write an action that goes with 'phone'.",
+            "答案": "Talk on the phone."
+          },
+          {
+            "问题": "What should you be careful not to do with a knife?",
+            "答案": "Don't cut your finger."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Sing along",
+        "data": [
+          {
+            "问题": "How many fish did the person catch?",
+            "答案": "One fish."
+          },
+          {
+            "问题": "Why did he let the fish go?",
+            "答案": "Because it bit his finger."
+          },
+          {
+            "问题": "Which finger did the fish bite?",
+            "答案": "The little finger on the right."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "What does Kitty like eating?",
+            "答案": "She likes eating fish."
+          },
+          {
+            "问题": "What did Kitty do yesterday morning?",
+            "答案": "She caught a lot of fish."
+          },
+          {
+            "问题": "What did the old bear tell Kitty?",
+            "答案": "He told her that her friends were having fun in his garden."
+          },
+          {
+            "问题": "What did the old bear really do after Kitty left?",
+            "答案": "He ate all the fish up."
+          },
+          {
+            "问题": "What should Kitty learn from this story?",
+            "答案": "She shouldn't believe everyone easily."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the old bear promise to do?",
+            "选项": [
+              "A. Look after the fish",
+              "B. Eat all the fish",
+              "C. Play with Kitty"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Why did Kitty leave the fish?",
+            "选项": [
+              "A. She wanted to play with friends",
+              "B. She was tired",
+              "C. She didn't like fish anymore"
+            ],
+            "答案": "A"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "reading_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "问题": "Where was the farmer working?",
+            "答案": "He was working in the field."
+          },
+          {
+            "问题": "What happened to the hare?",
+            "答案": "It crashed into a tree and died."
+          },
+          {
+            "问题": "What did the farmer do with the hare?",
+            "答案": "He picked it up, took it home and cooked it."
+          },
+          {
+            "问题": "Why did the farmer stop working?",
+            "答案": "Because he thought picking up a hare was easier than farming."
+          },
+          {
+            "问题": "What happened to his vegetables and animals?",
+            "答案": "All his vegetables died and all his animals ran away."
+          },
+          {
+            "问题": "What is the lesson of the story?",
+            "答案": "Don't wait for luck — go for it!"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why did the hare die?",
+            "选项": [
+              "A. The farmer killed it",
+              "B. It crashed into a tree",
+              "C. It was too old"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "From then on, the farmer ___.",
+            "选项": [
+              "A. worked harder in the field",
+              "B. sat in the field waiting for another hare",
+              "C. opened a restaurant"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the main idea?",
+            "选项": [
+              "A. Farming is easy",
+              "B. Don't depend on luck; work hard",
+              "C. Hares are dangerous"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "Why did Aki shout 'Fire'?",
+            "答案": "Because he wanted the boy to come out and play."
+          },
+          {
+            "问题": "What did the villagers do when the boy first cried 'wolf'?",
+            "答案": "They hurried to help the boy."
+          },
+          {
+            "问题": "Why did no one come the last time?",
+            "答案": "Because people didn't believe the boy any more."
+          },
+          {
+            "问题": "What happened to the sheep in the end?",
+            "答案": "The wolf ate all the sheep."
+          },
+          {
+            "问题": "What lesson does the story teach?",
+            "答案": "You must always tell the truth."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "The boy cried 'wolf' because he felt ___.",
+            "选项": [
+              "A. scared",
+              "B. bored",
+              "C. sick"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "Why didn't the villagers help the last time?",
+            "选项": [
+              "A. They were busy",
+              "B. They didn't believe him any more",
+              "C. There was no wolf"
+            ],
+            "答案": "B"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "reading_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "问题": "What two strong body parts does the kangaroo have?",
+            "答案": "It has two strong back legs."
+          },
+          {
+            "问题": "What does a starfish look like?",
+            "答案": "It looks like a star."
+          },
+          {
+            "问题": "Where does the starfish live?",
+            "答案": "It lives in the ocean."
+          },
+          {
+            "问题": "What does the elephant like eating?",
+            "答案": "It likes eating plants."
+          },
+          {
+            "问题": "What is the lion called?",
+            "答案": "It is also called the 'King of the Animals'."
+          },
+          {
+            "问题": "Do tigers live in Africa or Asia?",
+            "答案": "Tigers live in Asia, not Africa."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's talk",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "The kangaroo can ___ very far.",
+            "选项": [
+              "A. run",
+              "B. swim",
+              "C. jump"
+            ],
+            "答案": "C"
+          },
+          {
+            "题号": 2,
+            "问题": "The 'King of the Animals' is the ___.",
+            "选项": [
+              "A. tiger",
+              "B. lion",
+              "C. elephant"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "Which animal has a long nose and big ears?",
+            "选项": [
+              "A. An elephant",
+              "B. A giraffe",
+              "C. A kangaroo"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Rhyme time",
+        "data": [
+          {
+            "问题": "What does the monkey do?",
+            "答案": "It rides on a donkey."
+          },
+          {
+            "问题": "Where does the fox sit?",
+            "答案": "It sits on the box."
+          },
+          {
+            "问题": "What does the parrot eat?",
+            "答案": "It eats a carrot."
+          },
+          {
+            "问题": "What does the tiger jump through?",
+            "答案": "It jumps through the fire."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus",
+        "data": [
+          {
+            "问题": "Where did Billy live?",
+            "答案": "He lived in the forest."
+          },
+          {
+            "问题": "Why did Billy want to build a new house?",
+            "答案": "Because winter was coming and he needed a warm house."
+          },
+          {
+            "问题": "Did Billy think the other birds would help him? Why?",
+            "答案": "No, he thought they didn't like him."
+          },
+          {
+            "问题": "What were the other birds really doing?",
+            "答案": "They were working to help Billy."
+          },
+          {
+            "问题": "How did Billy feel at the end?",
+            "答案": "He was moved and grateful."
+          },
+          {
+            "问题": "What did Billy learn from his friends?",
+            "答案": "He learned not to be alone and to help others too."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Language focus",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why did Billy feel sad at first?",
+            "选项": [
+              "A. Winter was too cold",
+              "B. He thought no one would help him",
+              "C. He lost his home"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "How did the story end?",
+            "选项": [
+              "A. Billy still worked alone",
+              "B. Billy had many friends and often helped them",
+              "C. The birds left Billy"
+            ],
+            "答案": "B"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "reading_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "问题": "Which animals are in danger?",
+            "答案": "Pandas, tigers, whales and many others are in danger."
+          },
+          {
+            "问题": "Why are their homes disappearing?",
+            "答案": "Because people cut down forests and pollute the oceans."
+          },
+          {
+            "问题": "Why do people buy things made from these animals?",
+            "答案": "For medicines, fur coats and even food."
+          },
+          {
+            "问题": "How many earths do we have?",
+            "答案": "We only have one earth."
+          },
+          {
+            "问题": "Can we still save the animals?",
+            "答案": "Yes, if we work together, we can still save them."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Let's read",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "One reason animals are in danger is ___.",
+            "选项": [
+              "A. they don't like their homes",
+              "B. people pollute the oceans and cut down forests",
+              "C. they run away from people"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "What is the writer's main message?",
+            "选项": [
+              "A. We should eat more animals",
+              "B. We should work together to save the animals",
+              "C. Animals should move to cities"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "问题": "How many dangerous animals escaped?",
+            "答案": "Several dangerous animals escaped."
+          },
+          {
+            "问题": "Where was the brown bear?",
+            "答案": "He was in City Park / in the park lake."
+          },
+          {
+            "问题": "What was the lion doing?",
+            "答案": "He was walking towards a lady in a fur coat."
+          },
+          {
+            "问题": "Where was the tiger found?",
+            "答案": "He was walking on a street."
+          },
+          {
+            "问题": "Why did the boy tell Aki not to open the door?",
+            "答案": "Because Aki could be the tiger's dinner."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Story time",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "The brown bear was catching fish because he was ___.",
+            "选项": [
+              "A. hungry",
+              "B. playing",
+              "C. swimming"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Why was the lion walking towards the lady?",
+            "选项": [
+              "A. He wanted to help her",
+              "B. He thought she was his sister (she wore a fur coat)",
+              "C. He was lost"
+            ],
+            "答案": "B"
+          }
+        ]
+      }
+    ],
+    "u11": [
+      {
+        "kind": "reading_qa",
+        "title": "Review · African Safari Brochure",
+        "data": [
+          {
+            "问题": "Where is Kruger National Park?",
+            "答案": "It is in South Africa."
+          },
+          {
+            "问题": "What animals can you see in Kruger National Park?",
+            "答案": "Lions, elephants and giraffes."
+          },
+          {
+            "问题": "What do elephants do in Kruger National Park?",
+            "答案": "They play in the lake."
+          },
+          {
+            "问题": "What do giraffes eat?",
+            "答案": "They eat leaves from tall trees."
+          },
+          {
+            "问题": "Where is Virunga National Park?",
+            "答案": "It is in Congo."
+          },
+          {
+            "问题": "What animals live in Virunga National Park?",
+            "答案": "African gorillas."
+          },
+          {
+            "问题": "Where is Victoria Falls National Park?",
+            "答案": "It is in Zimbabwe."
+          },
+          {
+            "问题": "What is Victoria Falls famous for?",
+            "答案": "It is home to the world's highest waterfall."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Review · African Safari Brochure",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Which park has the world's highest waterfall?",
+            "选项": [
+              "A. Kruger National Park",
+              "B. Virunga National Park",
+              "C. Victoria Falls National Park"
+            ],
+            "答案": "C"
+          },
+          {
+            "题号": 2,
+            "问题": "In Virunga National Park you can see ___.",
+            "选项": [
+              "A. lions",
+              "B. gorillas",
+              "C. giraffes"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "Giraffes eat leaves from ___.",
+            "选项": [
+              "A. tall trees",
+              "B. the ground",
+              "C. the lake"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Review · Fable — The Lion and the Mouse",
+        "data": [
+          {
+            "问题": "What did the lion do when he first caught the mouse?",
+            "答案": "He thought the mouse was too small and let it go."
+          },
+          {
+            "问题": "Why did the lion laugh at the mouse?",
+            "答案": "Because the mouse was so small, the lion didn't believe it could help him."
+          },
+          {
+            "问题": "What happened to the lion later?",
+            "答案": "He was trapped in a hunter's net."
+          },
+          {
+            "问题": "How did the mouse save the lion?",
+            "答案": "The mouse used its teeth to chew through the net and set the lion free."
+          },
+          {
+            "问题": "What is the moral of the story?",
+            "答案": "Even the small and weak can help the great and strong; never look down on anyone."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Review · Fable — The Lion and the Mouse",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "The lion let the mouse go because ___.",
+            "选项": [
+              "A. he was not hungry",
+              "B. he thought the mouse was too small",
+              "C. the mouse begged him"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "The mouse helped the lion by ___.",
+            "选项": [
+              "A. roaring loudly",
+              "B. chewing through the net",
+              "C. calling the hunter"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "The moral tells us ___.",
+            "选项": [
+              "A. never trust a lion",
+              "B. never look down on anyone",
+              "C. always hunt alone"
+            ],
+            "答案": "B"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Review · Nelson Mandela",
+        "data": [
+          {
+            "问题": "When was Nelson Mandela born?",
+            "答案": "He was born on July 18th, 1918."
+          },
+          {
+            "问题": "Where was he born?",
+            "答案": "He was born in Qunu, South Africa."
+          },
+          {
+            "问题": "What did he study?",
+            "答案": "He studied law."
+          },
+          {
+            "问题": "What did he try to do?",
+            "答案": "He tried to change South Africa and free the black people."
+          },
+          {
+            "问题": "How many years was he in prison?",
+            "答案": "He was in prison for 27 years."
+          },
+          {
+            "问题": "What prize did he win in 1993?",
+            "答案": "He won the Nobel Peace Prize."
+          },
+          {
+            "问题": "When did he become president of South Africa?",
+            "答案": "He became president in 1994."
+          },
+          {
+            "问题": "When did he die?",
+            "答案": "He died on December 5th, 2013."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Review · Nelson Mandela",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Nelson Mandela was a lawyer before he became a ___.",
+            "选项": [
+              "A. teacher",
+              "B. leader",
+              "C. musician"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 2,
+            "问题": "He was in prison for ___ years.",
+            "选项": [
+              "A. 17",
+              "B. 27",
+              "C. 37"
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "He won the Nobel Peace Prize in ___.",
+            "选项": [
+              "A. 1918",
+              "B. 1993",
+              "C. 1994"
+            ],
+            "答案": "B"
           }
         ]
       }

@@ -1364,6 +1364,1434 @@
         "cn": "这个假期我要回家乡。",
         "level": 3
       }
+    ],
+    "foolish": [
+      {
+        "en": "That's foolish.",
+        "cn": "这真傻。",
+        "level": 1
+      },
+      {
+        "en": "Don't be foolish.",
+        "cn": "别做傻事。",
+        "level": 2
+      },
+      {
+        "en": "It was foolish of the hare to take a rest.",
+        "cn": "兔子中途休息真是愚蠢。",
+        "level": 3
+      }
+    ],
+    "silly": [
+      {
+        "en": "You are silly.",
+        "cn": "你真傻。",
+        "level": 1
+      },
+      {
+        "en": "Don't be silly!",
+        "cn": "别犯傻了！",
+        "level": 2
+      },
+      {
+        "en": "You are like that silly hare.",
+        "cn": "你就像那只傻兔子一样。",
+        "level": 3
+      }
+    ],
+    "in such a hurry": [
+      {
+        "en": "Why in such a hurry?",
+        "cn": "为什么这么急？",
+        "level": 1
+      },
+      {
+        "en": "I'm in such a hurry today.",
+        "cn": "我今天好匆忙。",
+        "level": 2
+      },
+      {
+        "en": "Why are you in such a hurry, Jiamin?",
+        "cn": "Jiamin，你为什么这么匆忙？",
+        "level": 3
+      }
+    ],
+    "happen (to)": [
+      {
+        "en": "It happens.",
+        "cn": "这种事常有。",
+        "level": 1
+      },
+      {
+        "en": "What happened to you?",
+        "cn": "你怎么了？",
+        "level": 2
+      },
+      {
+        "en": "Something strange happened to the hare.",
+        "cn": "兔子身上发生了一件怪事。",
+        "level": 3
+      }
+    ],
+    "appear": [
+      {
+        "en": "It appeared.",
+        "cn": "它出现了。",
+        "level": 1
+      },
+      {
+        "en": "A rainbow appeared in the sky.",
+        "cn": "天空出现了一道彩虹。",
+        "level": 2
+      },
+      {
+        "en": "The farmer waited for another hare to appear.",
+        "cn": "农夫等着另一只兔子出现。",
+        "level": 3
+      }
+    ],
+    "go for it": [
+      {
+        "en": "Go for it!",
+        "cn": "加油！",
+        "level": 1
+      },
+      {
+        "en": "If you want to win, go for it.",
+        "cn": "要想赢，就去拼。",
+        "level": 2
+      },
+      {
+        "en": "Don't wait for another hare — go for it!",
+        "cn": "别等下一只兔子——加油去做吧！",
+        "level": 3
+      }
+    ],
+    "frog": [
+      {
+        "en": "A frog is green.",
+        "cn": "青蛙是绿色的。",
+        "level": 1
+      },
+      {
+        "en": "Frogs can jump high.",
+        "cn": "青蛙能跳得很高。",
+        "level": 2
+      },
+      {
+        "en": "Is it a frog? No, it's a kangaroo.",
+        "cn": "是青蛙吗？不是，是袋鼠。",
+        "level": 3
+      }
+    ],
+    "kangaroo": [
+      {
+        "en": "A kangaroo is from Australia.",
+        "cn": "袋鼠来自澳大利亚。",
+        "level": 1
+      },
+      {
+        "en": "Kangaroos can jump very far.",
+        "cn": "袋鼠能跳得很远。",
+        "level": 2
+      },
+      {
+        "en": "It has two strong back legs — it's a kangaroo.",
+        "cn": "它有两条强壮的后腿——是袋鼠。",
+        "level": 3
+      }
+    ],
+    "turn": [
+      {
+        "en": "It's my turn.",
+        "cn": "轮到我了。",
+        "level": 1
+      },
+      {
+        "en": "Wait for your turn, please.",
+        "cn": "请等你的那一轮。",
+        "level": 2
+      },
+      {
+        "en": "My turn. This animal looks like a star.",
+        "cn": "轮到我了。这种动物长得像星星。",
+        "level": 3
+      }
+    ],
+    "ocean": [
+      {
+        "en": "The ocean is blue.",
+        "cn": "海洋是蓝色的。",
+        "level": 1
+      },
+      {
+        "en": "Fish live in the ocean.",
+        "cn": "鱼生活在海洋里。",
+        "level": 2
+      },
+      {
+        "en": "It lives in the ocean and looks like a star.",
+        "cn": "它生活在海洋里，长得像星星。",
+        "level": 3
+      }
+    ],
+    "starfish": [
+      {
+        "en": "Look at the starfish.",
+        "cn": "看那只海星。",
+        "level": 1
+      },
+      {
+        "en": "A starfish has five arms.",
+        "cn": "海星有五条触手。",
+        "level": 2
+      },
+      {
+        "en": "Is it a starfish? Yes, it is.",
+        "cn": "是海星吗？是的。",
+        "level": 3
+      }
+    ],
+    "Africa": [
+      {
+        "en": "Lions live in Africa.",
+        "cn": "狮子生活在非洲。",
+        "level": 1
+      },
+      {
+        "en": "There are many animals in Africa.",
+        "cn": "非洲有许多动物。",
+        "level": 2
+      },
+      {
+        "en": "Lions live in Africa, not in Asia.",
+        "cn": "狮子生活在非洲，不在亚洲。",
+        "level": 3
+      }
+    ],
+    "Asia": [
+      {
+        "en": "China is in Asia.",
+        "cn": "中国在亚洲。",
+        "level": 1
+      },
+      {
+        "en": "Tigers live in Asia.",
+        "cn": "老虎生活在亚洲。",
+        "level": 2
+      },
+      {
+        "en": "Tigers live in Asia, not Africa.",
+        "cn": "老虎生活在亚洲，不在非洲。",
+        "level": 3
+      }
+    ],
+    "lion": [
+      {
+        "en": "A lion is strong.",
+        "cn": "狮子很强壮。",
+        "level": 1
+      },
+      {
+        "en": "The lion is called the King of the Animals.",
+        "cn": "狮子被称为“动物之王”。",
+        "level": 2
+      },
+      {
+        "en": "It is also called the \"King of the Animals\" — a lion.",
+        "cn": "它也被称为“动物之王”——狮子。",
+        "level": 3
+      }
+    ],
+    "neck": [
+      {
+        "en": "My neck hurts.",
+        "cn": "我脖子疼。",
+        "level": 1
+      },
+      {
+        "en": "A giraffe has a long neck.",
+        "cn": "长颈鹿有长长的脖子。",
+        "level": 2
+      },
+      {
+        "en": "Its long neck helps it reach the leaves.",
+        "cn": "长脖子让它够到叶子。",
+        "level": 3
+      }
+    ],
+    "leaf": [
+      {
+        "en": "A leaf is green.",
+        "cn": "叶子是绿色的。",
+        "level": 1
+      },
+      {
+        "en": "Leaves fall in autumn.",
+        "cn": "秋天叶子会落下。",
+        "level": 2
+      },
+      {
+        "en": "Giraffes eat leaves from tall trees.",
+        "cn": "长颈鹿吃高高树上的叶子。",
+        "level": 3
+      }
+    ],
+    "sea": [
+      {
+        "en": "I love the sea.",
+        "cn": "我爱大海。",
+        "level": 1
+      },
+      {
+        "en": "The sea is deep and blue.",
+        "cn": "大海又深又蓝。",
+        "level": 2
+      },
+      {
+        "en": "Whales and starfish live in the sea.",
+        "cn": "鲸鱼和海星生活在海里。",
+        "level": 3
+      }
+    ],
+    "be called": [
+      {
+        "en": "He is called Tom.",
+        "cn": "他叫 Tom。",
+        "level": 1
+      },
+      {
+        "en": "This animal is called a panda.",
+        "cn": "这种动物叫熊猫。",
+        "level": 2
+      },
+      {
+        "en": "The lion is called the \"King of the Animals\".",
+        "cn": "狮子被称为“动物之王”。",
+        "level": 3
+      }
+    ],
+    "person": [
+      {
+        "en": "He is a kind person.",
+        "cn": "他是个好心人。",
+        "level": 1
+      },
+      {
+        "en": "Only one person can go in.",
+        "cn": "只有一个人可以进去。",
+        "level": 2
+      },
+      {
+        "en": "Dr Sun Yatsen is a famous person in Chinese history.",
+        "cn": "孙中山是中国历史上有名的人物。",
+        "level": 3
+      }
+    ],
+    "inventor": [
+      {
+        "en": "He is an inventor.",
+        "cn": "他是一位发明家。",
+        "level": 1
+      },
+      {
+        "en": "Edison was a great inventor.",
+        "cn": "爱迪生是伟大的发明家。",
+        "level": 2
+      },
+      {
+        "en": "The inventor of the light bulb was Thomas Edison.",
+        "cn": "电灯泡的发明者是托马斯·爱迪生。",
+        "level": 3
+      }
+    ],
+    "light bulb": [
+      {
+        "en": "Look at the light bulb.",
+        "cn": "看那只灯泡。",
+        "level": 1
+      },
+      {
+        "en": "The light bulb is very bright.",
+        "cn": "这只灯泡很亮。",
+        "level": 2
+      },
+      {
+        "en": "Edison invented the light bulb.",
+        "cn": "爱迪生发明了电灯泡。",
+        "level": 3
+      }
+    ],
+    "bulb": [
+      {
+        "en": "Change the bulb.",
+        "cn": "换个灯泡。",
+        "level": 1
+      },
+      {
+        "en": "The old bulb is broken.",
+        "cn": "旧灯泡坏了。",
+        "level": 2
+      },
+      {
+        "en": "He put a new bulb in the lamp.",
+        "cn": "他给台灯换了一个新灯泡。",
+        "level": 3
+      }
+    ],
+    "movie": [
+      {
+        "en": "I love movies.",
+        "cn": "我爱看电影。",
+        "level": 1
+      },
+      {
+        "en": "We watched a movie last night.",
+        "cn": "昨晚我们看了一部电影。",
+        "level": 2
+      },
+      {
+        "en": "I want to see all the famous movie stars in Hollywood.",
+        "cn": "我想在好莱坞看到所有著名电影明星。",
+        "level": 3
+      }
+    ],
+    "musician": [
+      {
+        "en": "He is a musician.",
+        "cn": "他是一名音乐家。",
+        "level": 1
+      },
+      {
+        "en": "A musician plays music every day.",
+        "cn": "音乐家每天演奏音乐。",
+        "level": 2
+      },
+      {
+        "en": "Mozart was a famous musician.",
+        "cn": "莫扎特是一位著名的音乐家。",
+        "level": 3
+      }
+    ],
+    "university": [
+      {
+        "en": "I go to university.",
+        "cn": "我上大学。",
+        "level": 1
+      },
+      {
+        "en": "Beijing University is very famous.",
+        "cn": "北京大学很有名。",
+        "level": 2
+      },
+      {
+        "en": "Deng Jiaxian went to university in 1941.",
+        "cn": "邓稼先 1941 年进入大学。",
+        "level": 3
+      }
+    ],
+    "invent": [
+      {
+        "en": "Invent something new.",
+        "cn": "发明点新东西。",
+        "level": 1
+      },
+      {
+        "en": "He invented a new toy.",
+        "cn": "他发明了一款新玩具。",
+        "level": 2
+      },
+      {
+        "en": "You can invent something new and useful, like Edison.",
+        "cn": "你可以像爱迪生那样发明新奇有用的东西。",
+        "level": 3
+      }
+    ],
+    "atomic": [
+      {
+        "en": "Atomic power is strong.",
+        "cn": "原子能很强大。",
+        "level": 1
+      },
+      {
+        "en": "Atomic science changed the world.",
+        "cn": "原子科学改变了世界。",
+        "level": 2
+      },
+      {
+        "en": "Deng Jiaxian is often called the father of Chinese atomic science.",
+        "cn": "邓稼先常被称为中国原子科学之父。",
+        "level": 3
+      }
+    ],
+    "province": [
+      {
+        "en": "I live in Guangdong Province.",
+        "cn": "我住在广东省。",
+        "level": 1
+      },
+      {
+        "en": "Anhui is a province in China.",
+        "cn": "安徽是中国的一个省。",
+        "level": 2
+      },
+      {
+        "en": "Deng was born in Anhui Province on June 25, 1924.",
+        "cn": "邓稼先 1924 年 6 月 25 日生于安徽省。",
+        "level": 3
+      }
+    ],
+    "professor": [
+      {
+        "en": "He is a professor.",
+        "cn": "他是位教授。",
+        "level": 1
+      },
+      {
+        "en": "The professor teaches at the university.",
+        "cn": "这位教授在大学教书。",
+        "level": 2
+      },
+      {
+        "en": "His father was a famous professor.",
+        "cn": "他的父亲是一位著名教授。",
+        "level": 3
+      }
+    ],
+    "physics": [
+      {
+        "en": "I like physics.",
+        "cn": "我喜欢物理学。",
+        "level": 1
+      },
+      {
+        "en": "Physics is difficult.",
+        "cn": "物理学很难。",
+        "level": 2
+      },
+      {
+        "en": "He taught physics at Beijing University.",
+        "cn": "他在北京大学教物理学。",
+        "level": 3
+      }
+    ],
+    "the United States": [
+      {
+        "en": "I'm from the United States.",
+        "cn": "我来自美国。",
+        "level": 1
+      },
+      {
+        "en": "Washington is in the United States.",
+        "cn": "华盛顿在美国。",
+        "level": 2
+      },
+      {
+        "en": "In 1948 Deng went to the United States to study physics.",
+        "cn": "1948 年邓稼先赴美攻读物理学。",
+        "level": 3
+      }
+    ],
+    "manners": [
+      {
+        "en": "Have good manners.",
+        "cn": "讲礼貌。",
+        "level": 1
+      },
+      {
+        "en": "Good manners make us popular.",
+        "cn": "好的礼貌让人受欢迎。",
+        "level": 2
+      },
+      {
+        "en": "Manners can be quite different in different countries.",
+        "cn": "不同国家的礼仪差别很大。",
+        "level": 3
+      }
+    ],
+    "seat": [
+      {
+        "en": "Take a seat.",
+        "cn": "请坐。",
+        "level": 1
+      },
+      {
+        "en": "This seat is free.",
+        "cn": "这个座位空着。",
+        "level": 2
+      },
+      {
+        "en": "I'll give my seat to the old lady on the bus.",
+        "cn": "我会把座位让给公交上的那位老太太。",
+        "level": 3
+      }
+    ],
+    "line": [
+      {
+        "en": "Stand in line.",
+        "cn": "站队。",
+        "level": 1
+      },
+      {
+        "en": "The line is very long.",
+        "cn": "队排得很长。",
+        "level": 2
+      },
+      {
+        "en": "I waited in line at the supermarket.",
+        "cn": "我在超市里排了队。",
+        "level": 3
+      }
+    ],
+    "push": [
+      {
+        "en": "Don't push.",
+        "cn": "不要推挤。",
+        "level": 1
+      },
+      {
+        "en": "She pushed the door open.",
+        "cn": "她把门推开。",
+        "level": 2
+      },
+      {
+        "en": "A girl tried to push in the line.",
+        "cn": "一个女孩想插队。",
+        "level": 3
+      }
+    ],
+    "full": [
+      {
+        "en": "I'm full.",
+        "cn": "我吃饱了。",
+        "level": 1
+      },
+      {
+        "en": "The cup is full of water.",
+        "cn": "杯子装满了水。",
+        "level": 2
+      },
+      {
+        "en": "The room was full of toys and chocolates.",
+        "cn": "房间里满是玩具和巧克力。",
+        "level": 3
+      }
+    ],
+    "dish": [
+      {
+        "en": "Wash the dishes.",
+        "cn": "洗碗。",
+        "level": 1
+      },
+      {
+        "en": "Try this new dish!",
+        "cn": "尝尝这道新菜！",
+        "level": 2
+      },
+      {
+        "en": "Mum is washing the bowls and dishes.",
+        "cn": "妈妈在洗碗碟。",
+        "level": 3
+      }
+    ],
+    "laugh": [
+      {
+        "en": "I love to laugh.",
+        "cn": "我爱笑。",
+        "level": 1
+      },
+      {
+        "en": "They laughed together.",
+        "cn": "他们一起笑了。",
+        "level": 2
+      },
+      {
+        "en": "The lion laughed and said, \"You are so small.\"",
+        "cn": "狮子大笑说：“你这么小。”",
+        "level": 3
+      }
+    ],
+    "laugh at": [
+      {
+        "en": "Don't laugh at me.",
+        "cn": "别嘲笑我。",
+        "level": 1
+      },
+      {
+        "en": "It's rude to laugh at others.",
+        "cn": "嘲笑别人很无礼。",
+        "level": 2
+      },
+      {
+        "en": "We should never laugh at people who are different.",
+        "cn": "我们不应嘲笑与自己不同的人。",
+        "level": 3
+      }
+    ],
+    "light up": [
+      {
+        "en": "Light up the room.",
+        "cn": "把房间点亮。",
+        "level": 1
+      },
+      {
+        "en": "Fireworks light up the sky.",
+        "cn": "烟花把天空照亮。",
+        "level": 2
+      },
+      {
+        "en": "The inside of the tree lit up brightly.",
+        "cn": "树的内部明亮地点亮了。",
+        "level": 3
+      }
+    ],
+    "lead": [
+      {
+        "en": "Lead the way.",
+        "cn": "带路。",
+        "level": 1
+      },
+      {
+        "en": "The teacher led us to the garden.",
+        "cn": "老师带我们到花园。",
+        "level": 2
+      },
+      {
+        "en": "The road led to a room full of toys.",
+        "cn": "那条路通向一间满是玩具的房间。",
+        "level": 3
+      }
+    ],
+    "throw": [
+      {
+        "en": "Don't throw it.",
+        "cn": "别扔。",
+        "level": 1
+      },
+      {
+        "en": "He threw the ball to me.",
+        "cn": "他把球扔给我。",
+        "level": 2
+      },
+      {
+        "en": "Don't throw things on the ground.",
+        "cn": "不要把东西扔在地上。",
+        "level": 3
+      }
+    ],
+    "besides": [
+      {
+        "en": "Besides me.",
+        "cn": "除了我。",
+        "level": 1
+      },
+      {
+        "en": "Besides English, I learn French.",
+        "cn": "除了英语，我还学法语。",
+        "level": 2
+      },
+      {
+        "en": "Besides good manners, we also need kindness.",
+        "cn": "除了礼貌，我们也需要善良。",
+        "level": 3
+      }
+    ],
+    "carry on (with)": [
+      {
+        "en": "Carry on!",
+        "cn": "继续！",
+        "level": 1
+      },
+      {
+        "en": "Please carry on with your work.",
+        "cn": "请继续你的工作。",
+        "level": 2
+      },
+      {
+        "en": "The sign said, \"Carry on with your magic.\"",
+        "cn": "告示上写着：“继续你的魔法。”",
+        "level": 3
+      }
+    ],
+    "upset": [
+      {
+        "en": "I am upset.",
+        "cn": "我很难过。",
+        "level": 1
+      },
+      {
+        "en": "Don't be upset.",
+        "cn": "别难过。",
+        "level": 2
+      },
+      {
+        "en": "Tired and upset, the boy cried out.",
+        "cn": "又累又难过，小男孩喊了出来。",
+        "level": 3
+      }
+    ],
+    "sign": [
+      {
+        "en": "Read the sign.",
+        "cn": "看告示。",
+        "level": 1
+      },
+      {
+        "en": "The sign says \"Keep quiet\".",
+        "cn": "告示上写着“保持安静”。",
+        "level": 2
+      },
+      {
+        "en": "There was a tree with a sign on it.",
+        "cn": "有一棵树上挂着告示。",
+        "level": 3
+      }
+    ],
+    "except": [
+      {
+        "en": "All except me.",
+        "cn": "除我之外。",
+        "level": 1
+      },
+      {
+        "en": "Everyone came except Tom.",
+        "cn": "除 Tom 外大家都来了。",
+        "level": 2
+      },
+      {
+        "en": "Inside everything was dark, except for a sign.",
+        "cn": "里面一片漆黑，只剩一块告示。",
+        "level": 3
+      }
+    ],
+    "abroad": [
+      {
+        "en": "Go abroad.",
+        "cn": "出国。",
+        "level": 1
+      },
+      {
+        "en": "My uncle works abroad.",
+        "cn": "我叔叔在国外工作。",
+        "level": 2
+      },
+      {
+        "en": "If I can travel abroad, I will go to France.",
+        "cn": "如果能出国旅游，我会去法国。",
+        "level": 3
+      }
+    ],
+    "South Africa": [
+      {
+        "en": "I love South Africa.",
+        "cn": "我喜欢南非。",
+        "level": 1
+      },
+      {
+        "en": "Lions live in South Africa.",
+        "cn": "狮子生活在南非。",
+        "level": 2
+      },
+      {
+        "en": "In South Africa I can see many beautiful mountains.",
+        "cn": "在南非我可以看到许多美丽的山。",
+        "level": 3
+      }
+    ],
+    "nature": [
+      {
+        "en": "I love nature.",
+        "cn": "我爱大自然。",
+        "level": 1
+      },
+      {
+        "en": "Nature is beautiful.",
+        "cn": "大自然很美。",
+        "level": 2
+      },
+      {
+        "en": "Ben loves nature and wants to see the mountains.",
+        "cn": "Ben 喜欢大自然，想看山。",
+        "level": 3
+      }
+    ],
+    "choose": [
+      {
+        "en": "You choose.",
+        "cn": "你选。",
+        "level": 1
+      },
+      {
+        "en": "She chose a red coat.",
+        "cn": "她挑了一件红外套。",
+        "level": 2
+      },
+      {
+        "en": "Janet will choose Australia for her trip.",
+        "cn": "Janet 会选择去澳大利亚旅行。",
+        "level": 3
+      }
+    ],
+    "Sydney": [
+      {
+        "en": "Sydney is big.",
+        "cn": "悉尼很大。",
+        "level": 1
+      },
+      {
+        "en": "Sydney is in Australia.",
+        "cn": "悉尼在澳大利亚。",
+        "level": 2
+      },
+      {
+        "en": "Daniel came to Sydney last month.",
+        "cn": "Daniel 上个月来到悉尼。",
+        "level": 3
+      }
+    ],
+    "opera": [
+      {
+        "en": "I like opera.",
+        "cn": "我喜欢歌剧。",
+        "level": 1
+      },
+      {
+        "en": "Opera is beautiful music.",
+        "cn": "歌剧是美妙的音乐。",
+        "level": 2
+      },
+      {
+        "en": "She wants to see the Sydney Opera House.",
+        "cn": "她想参观悉尼歌剧院。",
+        "level": 3
+      }
+    ],
+    "Sydney Opera House": [
+      {
+        "en": "Look! The Sydney Opera House.",
+        "cn": "看！悉尼歌剧院。",
+        "level": 1
+      },
+      {
+        "en": "The Sydney Opera House is famous.",
+        "cn": "悉尼歌剧院很有名。",
+        "level": 2
+      },
+      {
+        "en": "I'd like to see the Sydney Opera House one day.",
+        "cn": "有一天我想去看悉尼歌剧院。",
+        "level": 3
+      }
+    ],
+    "harbour": [
+      {
+        "en": "Sydney has a harbour.",
+        "cn": "悉尼有一个港口。",
+        "level": 1
+      },
+      {
+        "en": "Ships stop at the harbour.",
+        "cn": "船停在港口。",
+        "level": 2
+      },
+      {
+        "en": "The Harbour Bridge is near the opera house.",
+        "cn": "海港大桥在歌剧院旁边。",
+        "level": 3
+      }
+    ],
+    "bridge": [
+      {
+        "en": "Cross the bridge.",
+        "cn": "过桥。",
+        "level": 1
+      },
+      {
+        "en": "The bridge is very long.",
+        "cn": "这座桥很长。",
+        "level": 2
+      },
+      {
+        "en": "The Golden Gate Bridge is in San Francisco.",
+        "cn": "金门大桥在旧金山。",
+        "level": 3
+      }
+    ],
+    "Sydney Harbour Bridge": [
+      {
+        "en": "See the Sydney Harbour Bridge.",
+        "cn": "看悉尼海港大桥。",
+        "level": 1
+      },
+      {
+        "en": "The Sydney Harbour Bridge is famous.",
+        "cn": "悉尼海港大桥很有名。",
+        "level": 2
+      },
+      {
+        "en": "Janet wants to see the Sydney Harbour Bridge.",
+        "cn": "Janet 想看悉尼海港大桥。",
+        "level": 3
+      }
+    ],
+    "Japan": [
+      {
+        "en": "Japan is east of China.",
+        "cn": "日本在中国东边。",
+        "level": 1
+      },
+      {
+        "en": "I want to visit Japan.",
+        "cn": "我想去日本。",
+        "level": 2
+      },
+      {
+        "en": "Xiaoling wants to go to Japan to buy a robot.",
+        "cn": "Xiaoling 想去日本买机器人。",
+        "level": 3
+      }
+    ],
+    "Tokyo": [
+      {
+        "en": "Tokyo is modern.",
+        "cn": "东京很现代。",
+        "level": 1
+      },
+      {
+        "en": "Tokyo is the capital of Japan.",
+        "cn": "东京是日本的首都。",
+        "level": 2
+      },
+      {
+        "en": "Tokyo is a great place to go shopping.",
+        "cn": "东京是个购物的好地方。",
+        "level": 3
+      }
+    ],
+    "France": [
+      {
+        "en": "France is beautiful.",
+        "cn": "法国很美。",
+        "level": 1
+      },
+      {
+        "en": "French food is famous.",
+        "cn": "法国菜很有名。",
+        "level": 2
+      },
+      {
+        "en": "Jiamin will go to France for the food.",
+        "cn": "Jiamin 会为美食去法国。",
+        "level": 3
+      }
+    ],
+    "Paris": [
+      {
+        "en": "Paris is the capital of France.",
+        "cn": "巴黎是法国首都。",
+        "level": 1
+      },
+      {
+        "en": "Paris is a romantic city.",
+        "cn": "巴黎是座浪漫的城市。",
+        "level": 2
+      },
+      {
+        "en": "People say that Paris is the food capital of the world.",
+        "cn": "人们说巴黎是世界美食之都。",
+        "level": 3
+      }
+    ],
+    "capital": [
+      {
+        "en": "Beijing is our capital.",
+        "cn": "北京是我们的首都。",
+        "level": 1
+      },
+      {
+        "en": "What is the capital of France?",
+        "cn": "法国的首都是什么？",
+        "level": 2
+      },
+      {
+        "en": "Paris is the food capital of the world.",
+        "cn": "巴黎是世界美食之都。",
+        "level": 3
+      }
+    ],
+    "San Francisco": [
+      {
+        "en": "San Francisco is big.",
+        "cn": "旧金山很大。",
+        "level": 1
+      },
+      {
+        "en": "San Francisco is in America.",
+        "cn": "旧金山在美国。",
+        "level": 2
+      },
+      {
+        "en": "The Golden Gate Bridge is in San Francisco.",
+        "cn": "金门大桥在旧金山。",
+        "level": 3
+      }
+    ],
+    "Golden Gate Bridge": [
+      {
+        "en": "Visit the Golden Gate Bridge.",
+        "cn": "去看金门大桥。",
+        "level": 1
+      },
+      {
+        "en": "The Golden Gate Bridge is red.",
+        "cn": "金门大桥是红色的。",
+        "level": 2
+      },
+      {
+        "en": "The Golden Gate Bridge is in San Francisco, USA.",
+        "cn": "金门大桥在美国旧金山。",
+        "level": 3
+      }
+    ],
+    "tower": [
+      {
+        "en": "Look at the tower.",
+        "cn": "看那座塔。",
+        "level": 1
+      },
+      {
+        "en": "The tower is very tall.",
+        "cn": "这座塔很高。",
+        "level": 2
+      },
+      {
+        "en": "Tower Bridge is in London.",
+        "cn": "塔桥在伦敦。",
+        "level": 3
+      }
+    ],
+    "Tower Bridge": [
+      {
+        "en": "Tower Bridge is in London.",
+        "cn": "塔桥在伦敦。",
+        "level": 1
+      },
+      {
+        "en": "Tower Bridge looks like two towers.",
+        "cn": "塔桥看起来像两座塔。",
+        "level": 2
+      },
+      {
+        "en": "Tourists love taking photos of Tower Bridge.",
+        "cn": "游客们喜欢拍塔桥的照片。",
+        "level": 3
+      }
+    ],
+    "Big Ben": [
+      {
+        "en": "Big Ben is a clock.",
+        "cn": "大本钟是一座钟。",
+        "level": 1
+      },
+      {
+        "en": "Big Ben is in London.",
+        "cn": "大本钟在伦敦。",
+        "level": 2
+      },
+      {
+        "en": "Big Ben tells the time every hour.",
+        "cn": "大本钟每小时报时。",
+        "level": 3
+      }
+    ],
+    "New Zealand": [
+      {
+        "en": "I love New Zealand.",
+        "cn": "我爱新西兰。",
+        "level": 1
+      },
+      {
+        "en": "New Zealand has many sheep.",
+        "cn": "新西兰有很多羊。",
+        "level": 2
+      },
+      {
+        "en": "Kiwis are birds from New Zealand.",
+        "cn": "几维鸟是新西兰的鸟。",
+        "level": 3
+      }
+    ],
+    "Wellington": [
+      {
+        "en": "Wellington is a city.",
+        "cn": "惠灵顿是一座城市。",
+        "level": 1
+      },
+      {
+        "en": "Wellington is the capital of New Zealand.",
+        "cn": "惠灵顿是新西兰的首都。",
+        "level": 2
+      },
+      {
+        "en": "People in Wellington love the sea.",
+        "cn": "惠灵顿的人们喜欢大海。",
+        "level": 3
+      }
+    ],
+    "kiwi": [
+      {
+        "en": "A kiwi is a bird.",
+        "cn": "几维鸟是一种鸟。",
+        "level": 1
+      },
+      {
+        "en": "The kiwi cannot fly.",
+        "cn": "几维鸟不会飞。",
+        "level": 2
+      },
+      {
+        "en": "The kiwi is a national bird of New Zealand.",
+        "cn": "几维鸟是新西兰的国鸟。",
+        "level": 3
+      }
+    ],
+    "Ottawa": [
+      {
+        "en": "Ottawa is a city.",
+        "cn": "渥太华是一座城市。",
+        "level": 1
+      },
+      {
+        "en": "Ottawa is in Canada.",
+        "cn": "渥太华在加拿大。",
+        "level": 2
+      },
+      {
+        "en": "Ottawa is the capital of Canada.",
+        "cn": "渥太华是加拿大首都。",
+        "level": 3
+      }
+    ],
+    "maple": [
+      {
+        "en": "A maple is a tree.",
+        "cn": "枫树是一种树。",
+        "level": 1
+      },
+      {
+        "en": "Maple leaves are red in autumn.",
+        "cn": "秋天枫叶是红色的。",
+        "level": 2
+      },
+      {
+        "en": "The maple leaf is on Canada's flag.",
+        "cn": "枫叶在加拿大国旗上。",
+        "level": 3
+      }
+    ],
+    "flag": [
+      {
+        "en": "Look at the flag.",
+        "cn": "看那面旗。",
+        "level": 1
+      },
+      {
+        "en": "Our flag is red.",
+        "cn": "我们的国旗是红色的。",
+        "level": 2
+      },
+      {
+        "en": "Canada's flag has a maple leaf on it.",
+        "cn": "加拿大国旗上有一片枫叶。",
+        "level": 3
+      }
+    ],
+    "land": [
+      {
+        "en": "The plane lands.",
+        "cn": "飞机着陆。",
+        "level": 1
+      },
+      {
+        "en": "Birds land on the tree.",
+        "cn": "鸟儿落在树上。",
+        "level": 2
+      },
+      {
+        "en": "The plane lands at 1:00 p.m.",
+        "cn": "飞机下午 1 点降落。",
+        "level": 3
+      }
+    ],
+    "Canada": [
+      {
+        "en": "Canada is big.",
+        "cn": "加拿大很大。",
+        "level": 1
+      },
+      {
+        "en": "Canada is in North America.",
+        "cn": "加拿大在北美。",
+        "level": 2
+      },
+      {
+        "en": "John lives in Canada with his family.",
+        "cn": "John 和家人住在加拿大。",
+        "level": 3
+      }
+    ],
+    "natural": [
+      {
+        "en": "It's natural.",
+        "cn": "这很自然。",
+        "level": 1
+      },
+      {
+        "en": "I love natural food.",
+        "cn": "我爱天然食品。",
+        "level": 2
+      },
+      {
+        "en": "Canada is famous for its natural beauty.",
+        "cn": "加拿大以自然美景著名。",
+        "level": 3
+      }
+    ],
+    "beauty": [
+      {
+        "en": "What a beauty!",
+        "cn": "真美！",
+        "level": 1
+      },
+      {
+        "en": "The beauty of the lake is amazing.",
+        "cn": "湖的美令人惊叹。",
+        "level": 2
+      },
+      {
+        "en": "I want to see the natural beauty of Canada.",
+        "cn": "我想欣赏加拿大的自然美景。",
+        "level": 3
+      }
+    ],
+    "waterfall": [
+      {
+        "en": "Look at the waterfall.",
+        "cn": "看那瀑布。",
+        "level": 1
+      },
+      {
+        "en": "The waterfall is very high.",
+        "cn": "瀑布很高。",
+        "level": 2
+      },
+      {
+        "en": "Canada has beautiful lakes and waterfalls.",
+        "cn": "加拿大有美丽的湖泊和瀑布。",
+        "level": 3
+      }
+    ],
+    "Chinatown": [
+      {
+        "en": "Visit Chinatown.",
+        "cn": "逛唐人街。",
+        "level": 1
+      },
+      {
+        "en": "There's a Chinatown in Toronto.",
+        "cn": "多伦多有一条唐人街。",
+        "level": 2
+      },
+      {
+        "en": "I plan to visit Chinatown in Toronto.",
+        "cn": "我打算去多伦多的唐人街。",
+        "level": 3
+      }
+    ],
+    "Toronto": [
+      {
+        "en": "Toronto is a city.",
+        "cn": "多伦多是一座城市。",
+        "level": 1
+      },
+      {
+        "en": "Toronto is in Canada.",
+        "cn": "多伦多在加拿大。",
+        "level": 2
+      },
+      {
+        "en": "Many Chinese people live in Toronto.",
+        "cn": "许多华人住在多伦多。",
+        "level": 3
+      }
+    ],
+    "passport": [
+      {
+        "en": "Here is my passport.",
+        "cn": "这是我的护照。",
+        "level": 1
+      },
+      {
+        "en": "Don't lose your passport.",
+        "cn": "别把护照弄丢了。",
+        "level": 2
+      },
+      {
+        "en": "I finally got my passport last week.",
+        "cn": "我上周终于拿到了护照。",
+        "level": 3
+      }
+    ],
+    "book": [
+      {
+        "en": "Book a room.",
+        "cn": "订一间房。",
+        "level": 1
+      },
+      {
+        "en": "I booked a ticket online.",
+        "cn": "我网上订了一张票。",
+        "level": 2
+      },
+      {
+        "en": "I booked my plane ticket today.",
+        "cn": "我今天订好了飞机票。",
+        "level": 3
+      }
+    ],
+    "ticket": [
+      {
+        "en": "Here is your ticket.",
+        "cn": "这是你的票。",
+        "level": 1
+      },
+      {
+        "en": "The ticket is expensive.",
+        "cn": "这张票很贵。",
+        "level": 2
+      },
+      {
+        "en": "I booked my plane ticket today.",
+        "cn": "我今天订好了飞机票。",
+        "level": 3
+      }
+    ],
+    "airport": [
+      {
+        "en": "Go to the airport.",
+        "cn": "去机场。",
+        "level": 1
+      },
+      {
+        "en": "The airport is very big.",
+        "cn": "机场很大。",
+        "level": 2
+      },
+      {
+        "en": "I will arrive at the airport on June 12th.",
+        "cn": "我将于 6 月 12 日抵达机场。",
+        "level": 3
+      }
     ]
   }
 }
