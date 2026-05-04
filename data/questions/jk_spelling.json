@@ -431,16 +431,6 @@
   },
   {
     "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "q": "礼貌的",
-    "answer": "polite",
-    "hint": "p_____",
-    "difficulty": 3,
-    "explain": "形容词：礼貌的"
-  },
-  {
-    "grade": 6,
     "term": "下",
     "code": "6B_U1",
     "q": "节日",
@@ -1398,46 +1388,6 @@
     "hint": "p____d",
     "difficulty": 2,
     "explain": "'玩了' 的英文是 played"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "q": "谢谢",
-    "answer": "thanks",
-    "hint": "t____s",
-    "difficulty": 2,
-    "explain": "'谢谢' 的英文是 thanks"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "q": "对不起",
-    "answer": "sorry",
-    "hint": "s___y",
-    "difficulty": 2,
-    "explain": "'对不起' 的英文是 sorry"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "q": "请",
-    "answer": "please",
-    "hint": "p____e",
-    "difficulty": 2,
-    "explain": "'请' 的英文是 please"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "q": "请原谅",
-    "answer": "excuse",
-    "hint": "e____e",
-    "difficulty": 2,
-    "explain": "'请原谅' 的英文是 excuse"
   },
   {
     "grade": 6,

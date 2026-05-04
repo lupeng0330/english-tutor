@@ -573,7 +573,9 @@ function playLesson() {
 
   // 🎯 优先播放预生成的 MP3（100% 稳定 + 真人级音质）
   if (grade && unitId) {
-    const mp3Url = `audio/${grade}_${unitId}.mp3`;
+    // 命名规则：audio/grade{N}{A|B}_u{M}.mp3 （A=上册, B=下册）
+    const termAB = (state.ctx && state.ctx.term === '下') ? 'B' : 'A';
+    const mp3Url = `audio/${grade}${termAB}_${unitId}.mp3`;
     const audio = new Audio(mp3Url);
     _lessonAudio = audio;
     let started = false;

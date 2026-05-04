@@ -586,21 +586,6 @@
   },
   {
     "grade": 6,
-    "term": "上",
-    "code": "6A_U3",
-    "passage": "Being polite is important. We say 'please' when we ask for help. We say 'thank you' when others help us. We say 'sorry' when we make a mistake.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Food",
-      "Polite Words",
-      "Animals"
-    ],
-    "answer": 1,
-    "difficulty": 3,
-    "explain": "整段围绕 'Polite Words' 展开"
-  },
-  {
-    "grade": 6,
     "term": "下",
     "code": "6B_U1",
     "passage": "China has many festivals. Spring Festival is the most important. We eat dumplings and hang red lanterns. Mid-Autumn Festival is also fun. We look at the bright moon and eat mooncakes.",

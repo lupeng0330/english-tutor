@@ -118,8 +118,10 @@ async def main():
     for grade_key, terms in textbook['grades'].items():
         # grade_key: grade1, grade2, ...
         for term_name, units in terms.items():
+            # term_name: '上' -> A, '下' -> B（与前端 app.js 命名规则对齐）
+            term_ab = 'A' if term_name == '上' else 'B'
             for u in units:
-                fname = f"{grade_key}_{u['id']}.mp3"
+                fname = f"{grade_key}{term_ab}_{u['id']}.mp3"
                 lesson_tasks.append((fname, u['lesson']))
 
     listening_tasks = []
