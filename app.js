@@ -609,7 +609,7 @@ function goLesson(i) {
     const btn = document.getElementById('lessonPlayBtn');
     const st  = document.getElementById('lessonPlayStatus');
     if (btn) btn.innerHTML = '▶';
-    if (st)  { st.textContent = '点击播放标准发音'; st.className = 'text-sm text-slate-600'; }
+    if (st)  { st.textContent = '点击播放真人朗读'; st.className = 'text-sm text-slate-600'; }
   } catch(e){}
 }
 function prevLesson() { goLesson(state.currentLessonIndex - 1); }
@@ -952,7 +952,7 @@ function _showUnitAtIndex(idx) {
   const lessonPlayStatus = document.getElementById('lessonPlayStatus');
   const lessonPlayBtn    = document.getElementById('lessonPlayBtn');
   if (lessonPlayStatus) {
-    lessonPlayStatus.textContent = '点击播放标准发音';
+    lessonPlayStatus.textContent = '点击播放真人朗读';
     lessonPlayStatus.className   = 'text-sm text-slate-600';
   }
   if (lessonPlayBtn) { lessonPlayBtn.disabled = false; lessonPlayBtn.innerHTML = '▶'; }
@@ -1138,12 +1138,29 @@ function playLesson() {
   stopSpeak();
   setUI('loading', '加载中…', 'text-blue-500');
 
-  // 🎯 优先播放预生成的 MP3（100% 稳定 + 真人级音质）
-  //    多篇课文时 MP3 是整单元合并音，不匹配当前分篇 → 直接走 TTS
-  if (grade && unitId && !multiLesson) {
-    // 命名规则：audio/grade{N}{A|B}_u{M}.mp3 （A=上册, B=下册）
-    const termAB = (state.ctx && state.ctx.term === '下') ? 'B' : 'A';
-    const mp3Url = `audio/${grade}${termAB}_${unitId}.mp3`;
+  // 🎯 候选 MP3 列表（依次尝试）：
+  //   1) 分篇 MP3 audio/{grade}{A|B}_{uid}_L{i}.mp3（新：真人多角色）
+  //   2) 整单元 MP3 audio/{grade}{A|B}_{uid}.mp3（旧：单女声）——仅在单篇课文时尝试
+  //   3) 浏览器 TTS 兜底
+  const termAB = (state.ctx && state.ctx.term === '下') ? 'B' : 'A';
+  const candidates = [];
+  if (grade && unitId) {
+    candidates.push(`audio/${grade}${termAB}_${unitId}_L${_curIdx}.mp3`);
+    if (!multiLesson) {
+      candidates.push(`audio/${grade}${termAB}_${unitId}.mp3`);
+    }
+  }
+
+  if (candidates.length > 0) {
+    tryCandidate(0);
+  } else {
+    fallbackTTS();
+  }
+
+  function tryCandidate(i) {
+    if (!_lessonPlaying) return;
+    if (i >= candidates.length) { fallbackTTS(); return; }
+    const mp3Url = candidates[i];
     const audio = new Audio(mp3Url);
     _lessonAudio = audio;
     let started = false;
@@ -1155,33 +1172,34 @@ function playLesson() {
       }
     };
     audio.onended = () => {
-      _lessonPlaying = false;
-      _lessonAudio = null;
-      setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+      if (_lessonAudio === audio) {
+        _lessonPlaying = false;
+        _lessonAudio = null;
+        setUI('idle', '✅ 朗读完成，点击可重听', 'text-slate-600');
+      }
     };
     audio.onerror = () => {
-      console.warn('[课文] MP3 加载失败，降级浏览器 TTS:', mp3Url);
+      if (_lessonAudio !== audio) return;
+      console.warn('[课文] MP3 加载失败，尝试下一候选:', mp3Url);
       _lessonAudio = null;
-      // 降级到浏览器 TTS
-      fallbackTTS();
+      tryCandidate(i + 1);
     };
 
     audio.play().catch((err) => {
-      console.warn('[课文] audio.play() 失败:', err && err.name);
+      if (_lessonAudio !== audio) return;
+      console.warn('[课文] audio.play() 失败:', err && err.name, mp3Url);
       _lessonAudio = null;
-      fallbackTTS();
+      tryCandidate(i + 1);
     });
 
-    // 5 秒 MP3 都没开始播 → 降级
+    // 5 秒还没开始播 → 尝试下一候选
     setTimeout(() => {
       if (_lessonPlaying && !started && _lessonAudio === audio) {
         try { audio.pause(); } catch(e){}
         _lessonAudio = null;
-        fallbackTTS();
+        tryCandidate(i + 1);
       }
     }, 5000);
-  } else {
-    fallbackTTS();
   }
 
   function fallbackTTS() {

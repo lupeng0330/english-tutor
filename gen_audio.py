@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+⚠️ LEGACY：旧版课文音频生成脚本（整单元一个 MP3、全女声）
+已被 gen_audio_v2.py 替代（分篇 + 角色多音色）。
+保留本脚本仅用于向后兼容（已有 jk.json 里 lesson 单字符串、无 lessons[] 的单元）。
+
+新项目请使用：
+    python gen_audio_v2.py --grade grade6 --term 下
+
 乐学英语 - 音频生成脚本（V3：从 data/*.json 自动读取）
 生成内容：
   1) 课文：data/textbooks/jk.json → audio/{grade}_{unitId}.mp3（全部单女声 Aria）
