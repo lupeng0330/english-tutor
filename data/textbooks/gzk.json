@@ -182,8 +182,32 @@
             { "en": "boy", "cn": "男孩" },
             { "en": "girl", "cn": "女孩" }
           ],
-          "lesson": "P2  Let's Learn — Look, listen and say.\na T-shirt    a dress    a skirt    a shirt\na sweater    socks    shoes    jeans    shorts\n\nP3  Let's Sing — Listen, sing and act.\nMY CLOTHES\nHere is my T-shirt.\nIt's purple.\nHere is my sweater.\nIt is blue.\nHere is my jacket.\nIt's yellow.\nIt is yellow. It is new.\n\nP5  Let's Play — Choose, say and guess.\n— She's wearing a yellow dress and blue shoes. Who's she?\n— Girl 2.",
-          "lessonCN": "第 2 页  一起学 —— 看一看、听一听、说一说\n一件 T 恤衫    一条连衣裙    一条短裙    一件衬衫\n一件毛衣    袜子    鞋子    牛仔裤    短裤\n\n第 3 页  一起唱 —— 听一听、唱一唱、做一做\n《我的衣服》\n这是我的 T 恤衫，\n它是紫色的。\n这是我的毛衣，\n它是蓝色的。\n这是我的夹克衫，\n它是黄色的。\n它是黄色的，是新的。\n\n第 5 页  一起玩 —— 选一选、说一说、猜一猜\n—— 她穿着一条黄色的连衣裙和一双蓝色的鞋子，她是谁？\n—— 2 号女孩。"
+          "lessons": [
+            {
+              "page": "P2",
+              "title": "Let's Learn",
+              "en": "a T-shirt    a dress    a skirt    a shirt\na sweater    socks    shoes    jeans    shorts",
+              "cn": "一件 T 恤衫    一条连衣裙    一条短裙    一件衬衫\n一件毛衣    袜子    鞋子    牛仔裤    短裤"
+            },
+            {
+              "page": "P3",
+              "title": "Let's Sing — MY CLOTHES",
+              "en": "Here is my T-shirt.\nIt's purple.\nHere is my sweater.\nIt is blue.\nHere is my jacket.\nIt's yellow.\nIt is yellow. It is new.",
+              "cn": "这是我的 T 恤衫，\n它是紫色的。\n这是我的毛衣，\n它是蓝色的。\n这是我的夹克衫，\n它是黄色的。\n它是黄色的，是新的。"
+            },
+            {
+              "page": "P4",
+              "title": "Let's Chant — Socks",
+              "en": "Socks purple, socks red,\nSocks yellow on the bed.\n\nSocks, socks, everywhere,\nOn the table, under the chair.\n\nSocks here, socks there,\nSocks, socks, everywhere.",
+              "cn": "紫色的袜子，红色的袜子，\n黄色的袜子在床上。\n\n袜子，袜子，到处都是袜子，\n桌子上，椅子下。\n\n这里有袜子，那里也有袜子，\n袜子，袜子，到处都是。"
+            },
+            {
+              "page": "P5",
+              "title": "Let's Play — Choose, say and guess",
+              "en": "— She's wearing a yellow dress and blue shoes. Who's she?\n— Girl 2.",
+              "cn": "—— 她穿着一条黄色的连衣裙和一双蓝色的鞋子，她是谁？\n—— 2 号女孩。"
+            }
+          ]
         },
         {
           "id": "u2",

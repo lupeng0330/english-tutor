@@ -112,6 +112,7 @@ let state = {
   currentGrade: 'grade3',
   currentUnit: null,
   currentWordIndex: 0,
+  currentLessonIndex: 0, // 🆕 当前单元内课文分篇索引
   quizType: 'grammar',
   quizIndex: 0,
   quizCorrect: 0,
@@ -493,6 +494,167 @@ function flipLesson() {
 }
 window.flipLesson = flipLesson;
 
+// ============ 课文分篇（多篇左右滑动） ============
+// 规整化：把单元里的课文数据统一成 [{page,title,en,cn}, ...]
+function normalizeLessons(unit) {
+  if (!unit) return [];
+  // 新格式：lessons 数组
+  if (Array.isArray(unit.lessons) && unit.lessons.length > 0) {
+    return unit.lessons.filter(l => l && (l.en || '').trim().length > 0);
+  }
+  // 旧格式：lesson/lessonCN 单篇字符串
+  if (typeof unit.lesson === 'string' && unit.lesson.trim().length > 0) {
+    return [{
+      page: '',
+      title: '课文',
+      en: unit.lesson,
+      cn: unit.lessonCN || ''
+    }];
+  }
+  return [];
+}
+
+// 渲染指定索引的课文；lessons 传入避免每次重新 normalize
+function renderLessonAt(idx, lessons) {
+  const list = lessons || normalizeLessons(state.currentUnit);
+  const total = list.length;
+  const textEl = document.getElementById('lessonText');
+  const cnEl   = document.getElementById('lessonTranslation');
+  const nav    = document.getElementById('lessonNav');
+  const dots   = document.getElementById('lessonDots');
+  const titleEl= document.getElementById('lessonPageTitle');
+  const idxEl  = document.getElementById('lessonPageIndex');
+  const prevBtn= document.getElementById('lessonPrevBtn');
+  const nextBtn= document.getElementById('lessonNextBtn');
+  const flipBtn= document.getElementById('lessonFlipBtn');
+  const card   = document.getElementById('lessonFlipCard');
+
+  // 翻转状态重置
+  if (card) card.classList.remove('flipped');
+  const label = document.getElementById('lessonFlipLabel');
+  if (label) label.textContent = '看译文';
+
+  if (total === 0) {
+    if (textEl) textEl.textContent = '📖 本单元课文内容待补充。\n（教材结构已导入，内容请通过课本核对后补到 data/textbooks/*.json）';
+    if (cnEl)   cnEl.textContent   = '（暂无翻译）';
+    if (nav)    nav.classList.add('hide');
+    if (dots)   { dots.classList.add('hide'); dots.innerHTML = ''; }
+    if (flipBtn) flipBtn.style.display = 'none';
+    state.currentLessonIndex = 0;
+    return;
+  }
+
+  // 夹紧 idx
+  if (idx < 0) idx = 0;
+  if (idx >= total) idx = total - 1;
+  state.currentLessonIndex = idx;
+  const cur = list[idx];
+
+  if (textEl) textEl.textContent = cur.en || '';
+  const cnText = (cur.cn || '').trim();
+  if (cnEl)   cnEl.textContent   = cnText || '（暂无翻译）';
+  if (flipBtn) flipBtn.style.display = cnText ? '' : 'none';
+
+  // 导航条：多于 1 篇才显示
+  if (total > 1) {
+    if (nav)  nav.classList.remove('hide');
+    if (dots) dots.classList.remove('hide');
+  } else {
+    if (nav)  nav.classList.add('hide');
+    if (dots) dots.classList.add('hide');
+  }
+
+  // 标题 / 索引
+  const page = (cur.page || '').trim();
+  const tt   = (cur.title || '').trim();
+  if (titleEl) titleEl.textContent = page ? (tt ? page + ' · ' + tt : page) : (tt || ('第 ' + (idx + 1) + ' 篇'));
+  if (idxEl)   idxEl.textContent   = '第 ' + (idx + 1) + ' / ' + total + ' 篇';
+
+  // 箭头可用态
+  if (prevBtn) prevBtn.disabled = (idx === 0);
+  if (nextBtn) nextBtn.disabled = (idx === total - 1);
+
+  // 圆点
+  if (dots) {
+    dots.innerHTML = '';
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('span');
+      d.className = 'dot' + (i === idx ? ' active' : '');
+      d.onclick = (function(j) { return function(e) { e.stopPropagation(); goLesson(j); }; })(i);
+      dots.appendChild(d);
+    }
+  }
+}
+
+function goLesson(i) {
+  const list = normalizeLessons(state.currentUnit);
+  if (i < 0 || i >= list.length || i === state.currentLessonIndex) return;
+  const card = document.getElementById('lessonFlipCard');
+  if (card) {
+    const dir = i > state.currentLessonIndex ? 'slide-left' : 'slide-right';
+    card.classList.remove('slide-left', 'slide-right');
+    // 强制重绘以便动画重放
+    void card.offsetWidth;
+    card.classList.add(dir);
+    setTimeout(() => card.classList.remove(dir), 260);
+  }
+  renderLessonAt(i, list);
+  // 切课文时停止正在播放的朗读
+  try { if (typeof stopSpeak === 'function') stopSpeak(); } catch(e){}
+  try {
+    if (typeof _lessonAudio !== 'undefined' && _lessonAudio) {
+      _lessonAudio.pause(); _lessonAudio.src = ''; _lessonAudio = null;
+    }
+    if (typeof _lessonPlaying !== 'undefined') _lessonPlaying = false;
+    const btn = document.getElementById('lessonPlayBtn');
+    const st  = document.getElementById('lessonPlayStatus');
+    if (btn) btn.innerHTML = '▶';
+    if (st)  { st.textContent = '点击播放标准发音'; st.className = 'text-sm text-slate-600'; }
+  } catch(e){}
+}
+function prevLesson() { goLesson(state.currentLessonIndex - 1); }
+function nextLesson() { goLesson(state.currentLessonIndex + 1); }
+window.prevLesson = prevLesson;
+window.nextLesson = nextLesson;
+window.goLesson   = goLesson;
+
+// 触屏左右滑动切换课文
+(function bindLessonSwipe() {
+  function bind() {
+    const card = document.getElementById('lessonFlipCard');
+    if (!card || card._swipeBound) return;
+    card._swipeBound = true;
+    let sx = 0, sy = 0, moved = false;
+    card.addEventListener('touchstart', function(e) {
+      if (!e.touches || !e.touches[0]) return;
+      sx = e.touches[0].clientX;
+      sy = e.touches[0].clientY;
+      moved = false;
+    }, { passive: true });
+    card.addEventListener('touchmove', function(e) {
+      if (!e.touches || !e.touches[0]) return;
+      const dx = e.touches[0].clientX - sx;
+      const dy = e.touches[0].clientY - sy;
+      if (Math.abs(dx) > 10 && Math.abs(dx) > Math.abs(dy)) moved = true;
+    }, { passive: true });
+    card.addEventListener('touchend', function(e) {
+      if (!e.changedTouches || !e.changedTouches[0]) return;
+      const dx = e.changedTouches[0].clientX - sx;
+      const dy = e.changedTouches[0].clientY - sy;
+      if (moved && Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        // 横向滑动，拦截翻转点击
+        if (dx < 0) nextLesson(); else prevLesson();
+      }
+    }, { passive: true });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bind);
+  } else {
+    bind();
+  }
+})();
+
+
 // 单元学习进度条（按"该单元已掌握单词数 / 单元总词数"显示）
 function updateUnitProgress() {
   if (!state.currentUnit || !state.currentUnit.words) return;
@@ -749,21 +911,16 @@ function _showUnitAtIndex(idx) {
 
   // 更新单词+课文（兼容"占位单元"：没 words/lesson 时显示友好提示）
   const hasWords  = Array.isArray(unit.words)  && unit.words.length > 0;
-  const hasLesson = typeof unit.lesson === 'string' && unit.lesson.trim().length > 0;
+  // 🆕 规整化课文：优先用 lessons[] 多篇，兼容旧的 lesson/lessonCN 单篇
+  const lessonList = normalizeLessons(unit);
+  const hasLesson = lessonList.length > 0;
   document.getElementById('wordTotal').textContent = hasWords ? unit.words.length : 0;
-  document.getElementById('lessonText').textContent = hasLesson
-    ? unit.lesson
-    : '📖 本单元课文内容待补充。\n（教材结构已导入，内容请通过课本核对后补到 data/textbooks/*.json）';
-  const cn = (hasLesson && unit.lessonCN) || '';
-  document.getElementById('lessonTranslation').textContent = cn || '（暂无翻译）';
-  // 切单元时重置翻转状态（永远回到英文面）+ 按钮文字
+
+  // 切单元时重置课文分篇索引
+  state.currentLessonIndex = 0;
+  renderLessonAt(0, lessonList);
+
   try {
-    const card = document.getElementById('lessonFlipCard');
-    if (card) card.classList.remove('flipped');
-    const label = document.getElementById('lessonFlipLabel');
-    if (label) label.textContent = '看译文';
-    const flipBtn = document.getElementById('lessonFlipBtn');
-    if (flipBtn) flipBtn.style.display = cn ? '' : 'none'; // 没翻译就隐藏按钮
     // 单词面空时：显示占位
     const wordText     = document.getElementById('wordText');
     const wordPhonetic = document.getElementById('wordPhonetic');
@@ -943,9 +1100,15 @@ let _lessonAudio = null;
 function playLesson() {
   const btn = document.getElementById('lessonPlayBtn');
   const status = document.getElementById('lessonPlayStatus');
-  const text = state.currentUnit && state.currentUnit.lesson;
+  // 🆕 优先取"当前分篇"的英文；没有分篇再回退到单元 lesson
+  const _lessons = normalizeLessons(state.currentUnit);
+  const _curIdx  = Math.min(state.currentLessonIndex || 0, Math.max(0, _lessons.length - 1));
+  const text = _lessons.length > 0
+    ? (_lessons[_curIdx] && _lessons[_curIdx].en) || ''
+    : (state.currentUnit && state.currentUnit.lesson) || '';
   const grade = state.currentGrade;
   const unitId = state.currentUnit && state.currentUnit.id;
+  const multiLesson = _lessons.length > 1; // 多篇时 MP3 是整单元合并音，不匹配 → 走 TTS
   if (!text) return;
 
   const setUI = (state, msg, color) => {
@@ -976,7 +1139,8 @@ function playLesson() {
   setUI('loading', '加载中…', 'text-blue-500');
 
   // 🎯 优先播放预生成的 MP3（100% 稳定 + 真人级音质）
-  if (grade && unitId) {
+  //    多篇课文时 MP3 是整单元合并音，不匹配当前分篇 → 直接走 TTS
+  if (grade && unitId && !multiLesson) {
     // 命名规则：audio/grade{N}{A|B}_u{M}.mp3 （A=上册, B=下册）
     const termAB = (state.ctx && state.ctx.term === '下') ? 'B' : 'A';
     const mp3Url = `audio/${grade}${termAB}_${unitId}.mp3`;

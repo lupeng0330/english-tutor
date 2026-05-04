@@ -215,14 +215,29 @@
                   🔄 <span id="lessonFlipLabel">看译文</span>
                 </button>
               </div>
+
+              <!-- 课文分篇导航条 -->
+              <div id="lessonNav" class="flex items-center justify-between gap-2 mb-2 hide">
+                <button type="button" id="lessonPrevBtn" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition text-sm" onclick="prevLesson()">←</button>
+                <div class="flex-1 text-center">
+                  <div class="text-sm font-semibold text-slate-700" id="lessonPageTitle">P2 · Let's Learn</div>
+                  <div class="text-xs text-slate-400 mt-0.5" id="lessonPageIndex">第 1 / 4 篇</div>
+                </div>
+                <button type="button" id="lessonNextBtn" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition text-sm" onclick="nextLesson()">→</button>
+              </div>
+
               <!-- 翻转卡片容器：点击也可翻转 -->
               <div class="lesson-flip" id="lessonFlipCard" onclick="flipLesson()">
                 <div class="lesson-flip-inner">
-                  <p class="lesson-face lesson-en text-slate-800 leading-relaxed text-base md:text-lg" id="lessonText">Hello! I'm Tom. This is my family.</p>
-                  <p class="lesson-face lesson-cn text-slate-700 leading-relaxed text-base md:text-lg" id="lessonTranslation">（暂无翻译）</p>
+                  <p class="lesson-face lesson-en text-slate-800 leading-relaxed text-base md:text-lg whitespace-pre-line" id="lessonText">Hello! I'm Tom. This is my family.</p>
+                  <p class="lesson-face lesson-cn text-slate-700 leading-relaxed text-base md:text-lg whitespace-pre-line" id="lessonTranslation">（暂无翻译）</p>
                 </div>
               </div>
-              <div class="text-xs text-slate-400 mt-2 text-center">💡 点击文字或按钮可切换中英文</div>
+
+              <!-- 指示器（圆点） -->
+              <div id="lessonDots" class="flex items-center justify-center gap-1.5 mt-3 hide"></div>
+
+              <div class="text-xs text-slate-400 mt-2 text-center">💡 点击文字切换中英文 · 左右滑动或按箭头切换课文</div>
             </div>
             <div class="flex flex-col items-center gap-3">
               <button id="recordBtn" class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-500 text-white flex items-center justify-center text-2xl md:text-3xl shadow-lg" onclick="toggleRecord()">🎤</button>

@@ -460,6 +460,37 @@ body {
   border-radius: 6px;
 }
 
+/* ============ 课文分篇指示器（圆点） ============ */
+#lessonDots .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #cbd5e1; /* slate-300 */
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#lessonDots .dot.active {
+  background: #3b82f6; /* blue-500 */
+  width: 18px;
+  border-radius: 4px;
+}
+#lessonPrevBtn:disabled,
+#lessonNextBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+/* 翻转卡横向滑动时的过渡（视觉反馈） */
+.lesson-flip.slide-left .lesson-flip-inner { animation: lessonSlideInLeft 0.25s ease; }
+.lesson-flip.slide-right .lesson-flip-inner { animation: lessonSlideInRight 0.25s ease; }
+@keyframes lessonSlideInLeft {
+  from { transform: translateX(30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes lessonSlideInRight {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
 /* ============ 横屏模式 ============ */
 @media (max-width: 1024px) and (orientation: landscape) {
   body {
