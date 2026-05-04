@@ -584,9 +584,10 @@ function renderLessonAt(idx, lessons) {
       dots.appendChild(d);
     }
   }
-}
 
-function goLesson(i) {
+  // 🆕 刷新理解自测
+  try { updateReadingExForCurrentLesson(); } catch(e){}
+}
   const list = normalizeLessons(state.currentUnit);
   if (i < 0 || i >= list.length || i === state.currentLessonIndex) return;
   const card = document.getElementById('lessonFlipCard');
@@ -617,6 +618,249 @@ function nextLesson() { goLesson(state.currentLessonIndex + 1); }
 window.prevLesson = prevLesson;
 window.nextLesson = nextLesson;
 window.goLesson   = goLesson;
+
+// ============ 理解自测（阅读问答 / 选择题） ============
+// extras 数据按教材独立文件加载：data/extras/{textbook}_{grade}_{shang|xia}_exercises.json
+const _exercisesCache = {};
+const _exercisesLoading = {};
+let _readingExState = { uid: null, lessonIdx: -1, items: [], submitted: false };
+
+function _exercisesFileKey(ctx) {
+  const gradeKey = 'grade' + (ctx.grade || 3);
+  const termKey  = ctx.term === '下' ? 'xia' : 'shang';
+  return `${ctx.textbook || 'jk'}_${gradeKey}_${termKey}`;
+}
+function loadExercisesIfNeeded(ctx, onReady) {
+  const key = _exercisesFileKey(ctx);
+  if (_exercisesCache[key] !== undefined) { onReady(_exercisesCache[key]); return; }
+  if (_exercisesLoading[key]) { _exercisesLoading[key].push(onReady); return; }
+  _exercisesLoading[key] = [onReady];
+  fetch(`data/extras/${key}_exercises.json`)
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => {
+      _exercisesCache[key] = data;
+      const cbs = _exercisesLoading[key] || [];
+      delete _exercisesLoading[key];
+      cbs.forEach(cb => { try { cb(data); } catch(e){} });
+    });
+}
+
+// 找到"当前篇课文"应该关联的练习（按 extras.title 与当前 lesson.title 模糊匹配）
+function _findExerciseForLesson(allExs, lesson) {
+  if (!Array.isArray(allExs) || !lesson) return [];
+  const t = (lesson.title || '').toLowerCase();
+  const page = (lesson.page || '').toLowerCase();
+  // 命中规则：extras.title 与 lesson.title / lesson.page 有共同子串
+  const hits = [];
+  for (const ex of allExs) {
+    const exTitle = (ex.title || '').toLowerCase();
+    if (!exTitle) continue;
+    // 精确：任一方包含另一方
+    if (t && (exTitle.indexOf(t) >= 0 || t.indexOf(exTitle) >= 0)) { hits.push(ex); continue; }
+    // 关键词匹配：取 lesson.title / page 里的显著词做 AND
+    const keywords = (t + ' ' + page).split(/[·\-·\s/]+/).filter(k => k.length >= 3);
+    if (keywords.length > 0 && keywords.some(k => exTitle.indexOf(k) >= 0)) {
+      hits.push(ex);
+    }
+  }
+  return hits;
+}
+
+// 规整化 extras 的数据项 → 统一 {type:'text'|'choice', q, a, options?}
+function _normalizeExerciseItems(ex) {
+  const out = [];
+  if (!ex) return out;
+  const kind = ex.kind;
+  const data = ex.data || [];
+  for (const item of data) {
+    if (item['问题'] && item['答案'] !== undefined) {
+      const q = item['问题'];
+      const a = item['答案'];
+      if (Array.isArray(item['选项']) && item['选项'].length > 0) {
+        out.push({ type: 'choice', q, a, options: item['选项'] });
+      } else {
+        out.push({ type: 'text', q, a });
+      }
+    } else if (item['国家/地区'] && item['礼仪']) {
+      // reading_table：阅读信息表，跳过（不是自测题）
+      continue;
+    } else if (item['时态'] && item['问句']) {
+      // grammar_table：语法句对照，也不转成自测题（留给 ④ 时态诊断）
+      continue;
+    }
+  }
+  return out;
+}
+
+function renderReadingEx() {
+  const wrap = document.getElementById('readingExWrap');
+  const list = document.getElementById('readingExList');
+  const badge = document.getElementById('readingExBadge');
+  const result = document.getElementById('readingExResult');
+  const toggle = document.getElementById('readingExToggle');
+  if (!wrap || !list) return;
+
+  const items = _readingExState.items;
+  if (!items || items.length === 0) {
+    wrap.classList.add('hide');
+    return;
+  }
+  wrap.classList.remove('hide');
+  if (toggle) toggle.textContent = '收起';
+  list.style.display = '';
+  if (badge) badge.textContent = `${items.length} 题`;
+  if (result) { result.classList.add('hide'); result.innerHTML = ''; }
+  _readingExState.submitted = false;
+
+  list.innerHTML = '';
+  items.forEach((it, i) => {
+    const row = document.createElement('div');
+    row.className = 'bg-white rounded-lg p-3 border border-indigo-100';
+    const qHtml = `<div class="text-sm font-semibold text-slate-800 mb-2">${i + 1}. ${_escapeHtml(it.q)}</div>`;
+    let inputHtml = '';
+    if (it.type === 'choice') {
+      inputHtml = it.options.map((opt, k) => {
+        const safe = _escapeHtml(opt);
+        return `<label class="flex items-center gap-2 py-1 cursor-pointer">
+          <input type="radio" name="rex_${i}" value="${_escapeHtml(opt.charAt(0))}" class="rex-input">
+          <span class="text-sm text-slate-700">${safe}</span>
+        </label>`;
+      }).join('');
+    } else {
+      inputHtml = `<textarea rows="2" class="rex-input w-full text-sm border border-slate-200 rounded-lg p-2 focus:outline-none focus:border-indigo-400" placeholder="用英文回答…"></textarea>`;
+    }
+    const fb = `<div class="rex-feedback hide mt-2 text-xs"></div>`;
+    row.innerHTML = qHtml + inputHtml + fb;
+    list.appendChild(row);
+  });
+}
+
+function _escapeHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// 简单的文本相似度：把关键词都命中了算对，忽略大小写/标点
+function _answerMatch(userAns, correctAns) {
+  const clean = (s) => String(s || '').toLowerCase()
+    .replace(/[.,!?;:"'\(\)\[\]]/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+  const u = clean(userAns);
+  const c = clean(correctAns);
+  if (!u) return { ok: false, score: 0, hint: '未作答' };
+  if (u === c) return { ok: true, score: 100, hint: '完全正确' };
+  // 关键词覆盖率（取正确答案里长度 >=3 的词）
+  const stop = new Set(['the','and','was','were','are','is','am','has','have','had','for','with','about','that','this','when','where','who','what','how','why','yes','not','her','his','him','its','you','she','they','them','their','our']);
+  const cWords = c.split(' ').filter(w => w.length >= 3 && !stop.has(w));
+  if (cWords.length === 0) return { ok: false, score: 30, hint: '请对照参考答案' };
+  const hits = cWords.filter(w => u.indexOf(w) >= 0).length;
+  const ratio = hits / cWords.length;
+  if (ratio >= 0.7) return { ok: true, score: Math.round(70 + ratio * 30), hint: `命中 ${hits}/${cWords.length} 个关键词` };
+  if (ratio >= 0.4) return { ok: false, score: Math.round(40 + ratio * 50), hint: `部分正确（${hits}/${cWords.length} 关键词）` };
+  return { ok: false, score: Math.round(ratio * 50), hint: `不够完整（${hits}/${cWords.length} 关键词）` };
+}
+
+function submitReadingEx() {
+  const items = _readingExState.items;
+  if (!items || items.length === 0) return;
+  const listEl = document.getElementById('readingExList');
+  if (!listEl) return;
+  let ok = 0;
+  items.forEach((it, i) => {
+    const row = listEl.children[i];
+    if (!row) return;
+    const fb = row.querySelector('.rex-feedback');
+    let user = '';
+    if (it.type === 'choice') {
+      const picked = row.querySelector('input[name="rex_' + i + '"]:checked');
+      user = picked ? picked.value : '';
+      // 选择题：答案是 "A" 或 "A. xxx"，取首字母比对
+      const correctLetter = String(it.a || '').trim().charAt(0).toUpperCase();
+      const userLetter    = user.toUpperCase();
+      const correct = userLetter && userLetter === correctLetter;
+      if (correct) ok++;
+      if (fb) {
+        fb.classList.remove('hide');
+        fb.className = 'rex-feedback mt-2 text-xs ' + (correct ? 'text-green-600' : 'text-red-600');
+        fb.textContent = correct ? '✓ 正确' : ('✗ 正确答案：' + it.a);
+      }
+    } else {
+      const ta = row.querySelector('textarea.rex-input');
+      user = ta ? ta.value : '';
+      const r = _answerMatch(user, it.a);
+      if (r.ok) ok++;
+      if (fb) {
+        fb.classList.remove('hide');
+        fb.className = 'rex-feedback mt-2 text-xs ' + (r.ok ? 'text-green-600' : 'text-orange-600');
+        fb.innerHTML = (r.ok ? '✓ ' : '⚠ ') + r.hint
+          + '<div class="text-slate-500 mt-1">参考答案：' + _escapeHtml(it.a) + '</div>';
+      }
+      // 错题进错题本（复用 recordAnswer）
+      if (!r.ok) {
+        try {
+          const uid = _readingExState.uid;
+          recordAnswer('reading_qa', {
+            id: 'rex_' + uid + '_' + i,
+            q: it.q,
+            correct: it.a,
+            user: user,
+            unit: uid,
+            grade: state.currentGrade,
+            lessonTitle: (normalizeLessons(state.currentUnit)[_readingExState.lessonIdx] || {}).title || ''
+          }, false);
+        } catch(e){}
+      }
+    }
+  });
+  _readingExState.submitted = true;
+  const result = document.getElementById('readingExResult');
+  if (result) {
+    const pct = Math.round(ok / items.length * 100);
+    const color = pct >= 80 ? 'text-green-700' : (pct >= 60 ? 'text-amber-700' : 'text-red-700');
+    result.classList.remove('hide');
+    result.innerHTML = `<div class="${color} font-semibold">🎯 答对 ${ok} / ${items.length}（${pct}%）</div>`;
+  }
+  const badge = document.getElementById('readingExBadge');
+  if (badge) badge.textContent = `${ok} / ${items.length}`;
+}
+
+function resetReadingEx() {
+  renderReadingEx();
+}
+
+function toggleReadingEx() {
+  const list = document.getElementById('readingExList');
+  const toggle = document.getElementById('readingExToggle');
+  if (!list || !toggle) return;
+  const collapsed = list.style.display === 'none';
+  list.style.display = collapsed ? '' : 'none';
+  toggle.textContent = collapsed ? '收起' : '展开';
+}
+
+// 当 renderLessonAt 被调用时，同步刷新理解自测
+function updateReadingExForCurrentLesson() {
+  const wrap = document.getElementById('readingExWrap');
+  if (!wrap) return;
+  const unit = state.currentUnit;
+  if (!unit) { wrap.classList.add('hide'); return; }
+  const lessons = normalizeLessons(unit);
+  const lesson = lessons[state.currentLessonIndex] || null;
+  if (!lesson) { wrap.classList.add('hide'); return; }
+
+  loadExercisesIfNeeded(state.ctx || {}, (data) => {
+    const uid = unit.id;
+    const exs = (data && data.exercises && data.exercises[uid]) || [];
+    const hits = _findExerciseForLesson(exs, lesson);
+    const items = [];
+    for (const ex of hits) items.push(..._normalizeExerciseItems(ex));
+    _readingExState = { uid, lessonIdx: state.currentLessonIndex, items, submitted: false };
+    renderReadingEx();
+  });
+}
+
+window.toggleReadingEx = toggleReadingEx;
+window.submitReadingEx = submitReadingEx;
+window.resetReadingEx  = resetReadingEx;
 
 // 触屏左右滑动切换课文
 (function bindLessonSwipe() {
@@ -719,7 +963,7 @@ function switchPage(page) {
   document.getElementById('page-' + page).classList.remove('hide');
 
   if (page === 'textbook') renderUnitList();
-  if (page === 'grammar') renderGrammar();
+  if (page === 'grammar') { renderGrammar(); try { renderIrregVerbTable(); } catch(e){} }
   if (page === 'report') setTimeout(renderReport, 100);
   if (page === 'practice') {
     // 重置练习视图到初始状态
@@ -920,6 +1164,20 @@ function _showUnitAtIndex(idx) {
   state.currentLessonIndex = 0;
   renderLessonAt(0, lessonList);
 
+  // 🆕 模块徽章（仅当 unit.module 存在）
+  try {
+    const badge = document.getElementById('unitModuleBadge');
+    if (badge) {
+      if (unit.module) {
+        badge.classList.remove('hide');
+        const span = badge.querySelector('span');
+        if (span) span.textContent = '📦 ' + unit.module;
+      } else {
+        badge.classList.add('hide');
+      }
+    }
+  } catch(e){}
+
   try {
     // 单词面空时：显示占位
     const wordText     = document.getElementById('wordText');
@@ -1046,6 +1304,20 @@ function backToUnits() {
 }
 
 // ===================== 单词卡片 =====================
+// 词性徽章配色
+function _posBadgeClass(pos) {
+  const p = String(pos || '').toLowerCase().trim();
+  if (p.startsWith('n'))        return 'bg-blue-100 text-blue-700 border-blue-200';
+  if (p.startsWith('v'))        return 'bg-emerald-100 text-emerald-700 border-emerald-200';
+  if (p.startsWith('adj'))      return 'bg-amber-100 text-amber-700 border-amber-200';
+  if (p.startsWith('adv'))      return 'bg-orange-100 text-orange-700 border-orange-200';
+  if (p.startsWith('prep'))     return 'bg-slate-100 text-slate-700 border-slate-200';
+  if (p.startsWith('pron'))     return 'bg-purple-100 text-purple-700 border-purple-200';
+  if (p.startsWith('conj'))     return 'bg-teal-100 text-teal-700 border-teal-200';
+  if (p.startsWith('interj'))   return 'bg-pink-100 text-pink-700 border-pink-200';
+  if (p.includes('短语') || p.includes('phrase')) return 'bg-rose-100 text-rose-700 border-rose-200';
+  return 'bg-slate-100 text-slate-700 border-slate-200';
+}
 function showWord() {
   if (!state.currentUnit || !Array.isArray(state.currentUnit.words) || state.currentUnit.words.length === 0) {
     return; // 占位单元：已由 _showUnitAtIndex 渲染好"待补充"提示
@@ -1053,9 +1325,25 @@ function showWord() {
   const w = state.currentUnit.words[state.currentWordIndex];
   if (!w) return;
   document.getElementById('wordText').textContent = w.word;
-  document.getElementById('wordPhonetic').textContent = w.phonetic;
-  document.getElementById('wordMeaning').textContent = w.meaning;
-  document.getElementById('wordExample').textContent = w.example;
+  document.getElementById('wordPhonetic').textContent = w.phonetic || '';
+  // 🆕 拆解 meaning：兼容 "[n.] 野兔" / "[短语] xxx" / 纯中文
+  const posEl = document.getElementById('wordPos');
+  let pos = '';
+  let meaningClean = String(w.meaning || '');
+  const m = meaningClean.match(/^\s*\[([^\]]+)\]\s*(.*)$/);
+  if (m) { pos = m[1].trim(); meaningClean = m[2].trim(); }
+  if (posEl) {
+    if (pos) {
+      posEl.classList.remove('hide');
+      posEl.textContent = pos;
+      // 词性 → 颜色
+      posEl.className = 'text-xs font-semibold px-2 py-0.5 rounded-full border ' + _posBadgeClass(pos);
+    } else {
+      posEl.classList.add('hide');
+    }
+  }
+  document.getElementById('wordMeaning').textContent = meaningClean;
+  document.getElementById('wordExample').textContent = w.example || '';
   document.getElementById('wordIndex').textContent = state.currentWordIndex + 1;
   document.getElementById('wordCard').classList.remove('flipped');
   // 🆕 渲染例句阶梯
@@ -2757,3 +3045,223 @@ applyContextChange = async function() {
   }
   _originalApplyContextChange();
 };
+
+// =============================================================
+// 🔀 不规则动词表 & 练习（数据来自 data/extras/*_irregular_verbs.json）
+// =============================================================
+const _irregCache = {};
+let _irregPractice = null;
+
+function _irregFileKey(ctx) {
+  const gradeKey = 'grade' + (ctx.grade || 6);
+  const termKey  = ctx.term === '下' ? 'xia' : 'shang';
+  return `${ctx.textbook || 'jk'}_${gradeKey}_${termKey}`;
+}
+
+function loadIrregVerbs(cb) {
+  const key = _irregFileKey(state.ctx || {});
+  if (_irregCache[key] !== undefined) { cb(_irregCache[key]); return; }
+  fetch(`data/extras/${key}_irregular_verbs.json`)
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => {
+      _irregCache[key] = data;
+      cb(data);
+    });
+}
+
+// 把原形字段清洗成可朗读文本（忽略 /.../ 音标标注）
+function _cleanVerbForm(s) {
+  if (!s) return '';
+  return String(s).replace(/\s*\/[^\/]*\/\s*/g, '').replace(/\s*\(.*?\)\s*/g, ' ').trim();
+}
+
+function renderIrregVerbTable() {
+  const tbl = document.getElementById('irregVerbTable');
+  const sub = document.getElementById('irregVerbSubtitle');
+  if (!tbl) return;
+  const prac = document.getElementById('irregPracticeWrap');
+  if (prac) prac.classList.add('hide');
+  tbl.classList.remove('hide');
+
+  loadIrregVerbs((data) => {
+    const verbs = (data && data.verbs) || [];
+    if (sub) {
+      const gradeLabel = (window.gradeText ? gradeText(state.ctx.grade) : ('grade' + state.ctx.grade))
+        + ' · ' + (state.ctx.term === '下' ? '下册' : '上册');
+      sub.textContent = `${gradeLabel} · 共 ${verbs.length} 条`;
+    }
+    tbl.innerHTML = '';
+    verbs.forEach(v => {
+      const base = v['原形'] || '';
+      const past = v['过去式'] || '';
+      const item = document.createElement('div');
+      item.className = 'bg-white rounded-lg px-2.5 py-1.5 border border-violet-100 flex items-center justify-between gap-1';
+      item.innerHTML = `
+        <span class="font-semibold text-slate-700 truncate">${_escapeHtml(base)}</span>
+        <span class="text-slate-400 text-xs">→</span>
+        <span class="text-pink-700 truncate text-right">${_escapeHtml(past)}</span>
+      `;
+      item.title = base + ' → ' + past;
+      item.style.cursor = 'pointer';
+      item.addEventListener('click', () => {
+        // 点击 → 朗读原形 → 朗读过去式
+        try {
+          const tts = (text, delay) => setTimeout(() => {
+            try { speakBrowser(text, {}); } catch(e) { try { speak(text); } catch(e){} }
+          }, delay);
+          tts(_cleanVerbForm(base), 0);
+          tts(_cleanVerbForm(past), 900);
+        } catch(e) {}
+      });
+      tbl.appendChild(item);
+    });
+  });
+}
+
+function startIrregPractice(mode) {
+  loadIrregVerbs((data) => {
+    const verbs = (data && data.verbs) || [];
+    if (verbs.length === 0) { alert('暂无不规则动词数据'); return; }
+    // 洗牌并取 15 题
+    const arr = verbs.slice().sort(() => Math.random() - 0.5);
+    const qs = arr.slice(0, Math.min(15, arr.length)).map(v => {
+      const base = _cleanVerbForm(v['原形']);
+      const past = _cleanVerbForm(v['过去式']);
+      let dir;
+      if (mode === 'en_to_past') dir = 'en_to_past';
+      else if (mode === 'past_to_en') dir = 'past_to_en';
+      else dir = Math.random() < 0.5 ? 'en_to_past' : 'past_to_en';
+      if (dir === 'en_to_past') {
+        return { prompt: base, answer: past, dirLabel: '请给出过去式' };
+      } else {
+        return { prompt: past, answer: base, dirLabel: '请给出原形' };
+      }
+    });
+    _irregPractice = { items: qs, idx: 0, correct: 0, wrong: 0, hintUsed: 0 };
+    document.getElementById('irregVerbTable').classList.add('hide');
+    document.getElementById('irregPracticeWrap').classList.remove('hide');
+    renderIrregCurrent();
+  });
+}
+
+function renderIrregCurrent() {
+  if (!_irregPractice) return;
+  const p = _irregPractice;
+  const q = p.items[p.idx];
+  if (!q) return;
+  document.getElementById('irregPromptLabel').textContent = q.dirLabel;
+  document.getElementById('irregPromptText').textContent = q.prompt;
+  const input = document.getElementById('irregAnswerInput');
+  input.value = '';
+  input.focus();
+  document.getElementById('irregFeedback').innerHTML = '';
+  document.getElementById('irregFeedback').className = 'mt-3 text-sm text-center';
+  document.getElementById('irregPracticeBadge').textContent = `第 ${p.idx + 1} / ${p.items.length} 题`;
+  document.getElementById('irregProgress').textContent =
+    `✅ ${p.correct}  ✗ ${p.wrong}  · 提示 ${p.hintUsed} 次`;
+  // 朗读 prompt
+  try { speakBrowser(q.prompt, {}); } catch(e) {}
+}
+
+function irregSubmit() {
+  if (!_irregPractice) return;
+  const p = _irregPractice;
+  const q = p.items[p.idx];
+  const input = document.getElementById('irregAnswerInput');
+  const user = (input.value || '').trim();
+  if (!user) return;
+  // 答案里可能有多个合法形式，比如 "smelt (smelled)" → 接受括号内或不带括号
+  const accepted = q.answer.split(/[\/,]|（|\(|）|\)|（|）/)
+    .map(s => s.trim().toLowerCase()).filter(Boolean);
+  // 把参考答案也加进去
+  accepted.push(q.answer.toLowerCase().trim());
+  const ok = accepted.some(a => a && a === user.toLowerCase());
+  const fb = document.getElementById('irregFeedback');
+  if (ok) {
+    p.correct++;
+    fb.className = 'mt-3 text-sm text-center text-green-600 font-semibold';
+    fb.innerHTML = '✓ 正确！';
+    // 朗读答案
+    try { speakBrowser(q.answer, {}); } catch(e){}
+    setTimeout(irregNext, 700);
+  } else {
+    p.wrong++;
+    fb.className = 'mt-3 text-sm text-center text-red-600';
+    fb.innerHTML = `✗ 正确答案：<b>${_escapeHtml(q.answer)}</b>`;
+    try { speakBrowser(q.answer, {}); } catch(e){}
+    // 错题进错题本
+    try {
+      recordAnswer('irreg_verb', {
+        id: 'irreg_' + q.prompt + '_' + q.dirLabel,
+        q: q.dirLabel + ' ' + q.prompt,
+        correct: q.answer,
+        user: user
+      }, false);
+    } catch(e){}
+    setTimeout(irregNext, 1400);
+  }
+}
+
+function irregShowHint() {
+  if (!_irregPractice) return;
+  const p = _irregPractice;
+  const q = p.items[p.idx];
+  p.hintUsed++;
+  const hint = q.answer.charAt(0) + '_'.repeat(Math.max(1, q.answer.length - 1));
+  document.getElementById('irregFeedback').className = 'mt-3 text-sm text-center text-amber-600';
+  document.getElementById('irregFeedback').innerHTML = '💡 首字母：<b>' + _escapeHtml(hint) + '</b>';
+  document.getElementById('irregProgress').textContent =
+    `✅ ${p.correct}  ✗ ${p.wrong}  · 提示 ${p.hintUsed} 次`;
+}
+
+function irregSkip() {
+  if (!_irregPractice) return;
+  const p = _irregPractice;
+  p.wrong++;
+  irregNext();
+}
+
+function irregNext() {
+  if (!_irregPractice) return;
+  const p = _irregPractice;
+  p.idx++;
+  if (p.idx >= p.items.length) {
+    // 结束
+    const pct = Math.round(p.correct / p.items.length * 100);
+    document.getElementById('irregPromptLabel').textContent = '练习完成！';
+    document.getElementById('irregPromptText').textContent = `🎯 ${p.correct} / ${p.items.length}`;
+    document.getElementById('irregAnswerInput').value = '';
+    document.getElementById('irregAnswerInput').disabled = true;
+    document.getElementById('irregFeedback').className = 'mt-3 text-sm text-center text-violet-700 font-semibold';
+    document.getElementById('irregFeedback').innerHTML =
+      `得分 ${pct}% · ✅ ${p.correct} 对 · ✗ ${p.wrong} 错 · 提示 ${p.hintUsed} 次`;
+    document.getElementById('irregProgress').textContent = '';
+    return;
+  }
+  document.getElementById('irregAnswerInput').disabled = false;
+  renderIrregCurrent();
+}
+
+function exitIrregPractice() {
+  _irregPractice = null;
+  document.getElementById('irregPracticeWrap').classList.add('hide');
+  document.getElementById('irregAnswerInput').disabled = false;
+  renderIrregVerbTable();
+}
+
+// 绑定回车提交
+document.addEventListener('DOMContentLoaded', () => {
+  const input = document.getElementById('irregAnswerInput');
+  if (input) {
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); irregSubmit(); }
+    });
+  }
+});
+
+window.startIrregPractice = startIrregPractice;
+window.irregSubmit        = irregSubmit;
+window.irregShowHint      = irregShowHint;
+window.irregSkip          = irregSkip;
+window.exitIrregPractice  = exitIrregPractice;
