@@ -1,0 +1,514 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "audioText": "W: Hello! I'm Li Hua. What's your name? M: Hi, Li Hua. I'm Tom. Nice to meet you!",
+    "audioFile": "hj_listening_g7_01.mp3",
+    "q": "What is the boy's name?",
+    "options": [
+      "Li Hua",
+      "Tom",
+      "Anna"
+    ],
+    "answer": 1,
+    "explain": "男孩自我介绍是 Tom。",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "audioText": "W: Anna, where are you from? M: I'm from Germany. I can speak German and English.",
+    "audioFile": "hj_listening_g7_02.mp3",
+    "q": "Where is Anna from?",
+    "options": [
+      "China",
+      "Germany",
+      "England"
+    ],
+    "answer": 1,
+    "explain": "I'm from Germany.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "audioText": "M: My hobby is playing the guitar. What about you? W: I love reading books.",
+    "audioFile": "hj_listening_g7_03.mp3",
+    "q": "What is the girl's hobby?",
+    "options": [
+      "playing the guitar",
+      "singing",
+      "reading books"
+    ],
+    "answer": 2,
+    "explain": "I love reading books.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "audioText": "W: My elder brother is an engineer. He is very clever. M: Sounds great!",
+    "audioFile": "hj_listening_g7_04.mp3",
+    "q": "What is the woman's brother's job?",
+    "options": [
+      "a doctor",
+      "an engineer",
+      "a teacher"
+    ],
+    "answer": 1,
+    "explain": "elder brother is an engineer.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "audioText": "W: What time do you get up, Tom? M: I always get up at six thirty.",
+    "audioFile": "hj_listening_g7_05.mp3",
+    "q": "What time does Tom get up?",
+    "options": [
+      "6:00",
+      "6:30",
+      "7:00"
+    ],
+    "answer": 1,
+    "explain": "six thirty = 6:30",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "audioText": "W: How do you go to school, Amy? M: I go to school on foot.",
+    "audioFile": "hj_listening_g7_06.mp3",
+    "q": "How does Amy go to school?",
+    "options": [
+      "by bike",
+      "on foot",
+      "by bus"
+    ],
+    "answer": 1,
+    "explain": "on foot",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "audioText": "W: When does school end? M: It ends at four thirty in the afternoon.",
+    "audioFile": "hj_listening_g7_07.mp3",
+    "q": "When does school end?",
+    "options": [
+      "3:30",
+      "4:30",
+      "5:30"
+    ],
+    "answer": 1,
+    "explain": "four thirty p.m.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "audioText": "W: Do you often play table tennis after school? M: Yes, every day with my friends.",
+    "audioFile": "hj_listening_g7_08.mp3",
+    "q": "How often does the boy play table tennis?",
+    "options": [
+      "never",
+      "every day",
+      "once a week"
+    ],
+    "answer": 1,
+    "explain": "every day",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "audioText": "M: The Earth is our home. We must protect it. We can recycle paper and plastic.",
+    "audioFile": "hj_listening_g7_09.mp3",
+    "q": "What does the speaker say about the Earth?",
+    "options": [
+      "It is too old",
+      "We must protect it",
+      "It is not important"
+    ],
+    "answer": 1,
+    "explain": "We must protect it.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "audioText": "W: Don't throw waste on the ground, please. M: Sorry, I will put it in the bin.",
+    "audioFile": "hj_listening_g7_10.mp3",
+    "q": "What will the boy do?",
+    "options": [
+      "throw more waste",
+      "put the waste in the bin",
+      "leave it there"
+    ],
+    "answer": 1,
+    "explain": "put it in the bin",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "audioText": "M: There are many forests and oceans on the Earth. Animals live in them.",
+    "audioFile": "hj_listening_g7_11.mp3",
+    "q": "Where do animals live?",
+    "options": [
+      "only in cities",
+      "in forests and oceans",
+      "on the Moon"
+    ],
+    "answer": 1,
+    "explain": "forests and oceans",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "audioText": "W: We should turn off the tap when we brush our teeth. It saves water.",
+    "audioFile": "hj_listening_g7_12.mp3",
+    "q": "What does the woman suggest?",
+    "options": [
+      "waste water",
+      "save water",
+      "drink more water"
+    ],
+    "answer": 1,
+    "explain": "turn off the tap → save water",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "audioText": "W: Look outside! It's raining. M: Let's stay at home and read books.",
+    "audioFile": "hj_listening_g7_13.mp3",
+    "q": "What is the weather like?",
+    "options": [
+      "sunny",
+      "rainy",
+      "snowy"
+    ],
+    "answer": 1,
+    "explain": "It's raining.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "audioText": "M: I love summer. We can swim in the sea. W: Me too!",
+    "audioFile": "hj_listening_g7_14.mp3",
+    "q": "What does the boy love about summer?",
+    "options": [
+      "flying kites",
+      "swimming",
+      "making a snowman"
+    ],
+    "answer": 1,
+    "explain": "We can swim in the sea.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "audioText": "W: In autumn, leaves turn yellow and fall. I love this season.",
+    "audioFile": "hj_listening_g7_15.mp3",
+    "q": "When do leaves turn yellow?",
+    "options": [
+      "in spring",
+      "in summer",
+      "in autumn"
+    ],
+    "answer": 2,
+    "explain": "In autumn",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "audioText": "M: It's snowing! Let's put on our scarves and gloves.",
+    "audioFile": "hj_listening_g7_16.mp3",
+    "q": "What will they wear?",
+    "options": [
+      "T-shirts",
+      "scarves and gloves",
+      "spacesuits"
+    ],
+    "answer": 1,
+    "explain": "scarves and gloves",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "audioText": "W: One day, we will travel to the Moon by rocket. I can't wait!",
+    "audioFile": "hj_listening_g7_17.mp3",
+    "q": "How will they travel to the Moon?",
+    "options": [
+      "by plane",
+      "by rocket",
+      "by ship"
+    ],
+    "answer": 1,
+    "explain": "by rocket",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "audioText": "M: There is no air on the Moon. We must wear spacesuits to breathe.",
+    "audioFile": "hj_listening_g7_18.mp3",
+    "q": "Why do astronauts wear spacesuits on the Moon?",
+    "options": [
+      "to keep warm",
+      "to breathe",
+      "to look cool"
+    ],
+    "answer": 1,
+    "explain": "No air → must wear spacesuits to breathe.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "audioText": "W: I want to be an astronaut. I love science and space. M: That's a great dream.",
+    "audioFile": "hj_listening_g7_19.mp3",
+    "q": "What does the girl want to be?",
+    "options": [
+      "a teacher",
+      "an astronaut",
+      "a doctor"
+    ],
+    "answer": 1,
+    "explain": "I want to be an astronaut.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "audioText": "M: The Moon is about 384,000 kilometres from the Earth.",
+    "audioFile": "hj_listening_g7_20.mp3",
+    "q": "How far is the Moon from the Earth?",
+    "options": [
+      "38,400 km",
+      "384,000 km",
+      "3,840,000 km"
+    ],
+    "answer": 1,
+    "explain": "384,000 kilometres",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "audioText": "W: Beijing is the capital of China. The Great Wall is there. M: I want to visit it!",
+    "audioFile": "hj_listening_g7_21.mp3",
+    "q": "What is the capital of China?",
+    "options": [
+      "Shanghai",
+      "Beijing",
+      "Guangzhou"
+    ],
+    "answer": 1,
+    "explain": "Beijing is the capital of China.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "audioText": "M: Tokyo is a very modern city in Japan. Tokyo Tower is famous.",
+    "audioFile": "hj_listening_g7_22.mp3",
+    "q": "Where is Tokyo?",
+    "options": [
+      "in China",
+      "in Japan",
+      "in Thailand"
+    ],
+    "answer": 1,
+    "explain": "Tokyo is in Japan.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "audioText": "W: Bangkok has many old palaces and delicious Thai food.",
+    "audioFile": "hj_listening_g7_23.mp3",
+    "q": "What does Bangkok have?",
+    "options": [
+      "modern skyscrapers only",
+      "old palaces and Thai food",
+      "Tokyo Tower"
+    ],
+    "answer": 1,
+    "explain": "old palaces and Thai food",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "audioText": "M: Xi'an is an ancient capital of China. It has the Terracotta Army.",
+    "audioFile": "hj_listening_g7_24.mp3",
+    "q": "What famous site is in Xi'an?",
+    "options": [
+      "the Great Wall",
+      "the Terracotta Army",
+      "Tokyo Tower"
+    ],
+    "answer": 1,
+    "explain": "the Terracotta Army",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "audioText": "W: Every Friday afternoon we can join different clubs. I will join the Music Club.",
+    "audioFile": "hj_listening_g7_25.mp3",
+    "q": "Which club will the girl join?",
+    "options": [
+      "Art Club",
+      "Music Club",
+      "Chess Club"
+    ],
+    "answer": 1,
+    "explain": "I will join the Music Club.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "audioText": "M: I can draw very well. I want to join the Art Club.",
+    "audioFile": "hj_listening_g7_26.mp3",
+    "q": "Which club does the boy want to join?",
+    "options": [
+      "Art Club",
+      "Chess Club",
+      "Robot Club"
+    ],
+    "answer": 0,
+    "explain": "the Art Club",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "audioText": "W: Chess makes you think fast. We have a school chess game every year.",
+    "audioFile": "hj_listening_g7_27.mp3",
+    "q": "How often is the school chess game held?",
+    "options": [
+      "every week",
+      "every month",
+      "every year"
+    ],
+    "answer": 2,
+    "explain": "every year",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "audioText": "M: Our Science Club is building a robot called Star. It can say 'Hello'.",
+    "audioFile": "hj_listening_g7_28.mp3",
+    "q": "What can the robot do?",
+    "options": [
+      "sing songs",
+      "say Hello",
+      "play the piano"
+    ],
+    "answer": 1,
+    "explain": "It can say 'Hello'.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "audioText": "W: My hobby is collecting stamps. I have more than 300 stamps.",
+    "audioFile": "hj_listening_g7_29.mp3",
+    "q": "How many stamps does the girl have?",
+    "options": [
+      "more than 100",
+      "more than 200",
+      "more than 300"
+    ],
+    "answer": 2,
+    "explain": "more than 300 stamps",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "audioText": "M: The 1980 red monkey stamp is very valuable. It is my favourite.",
+    "audioFile": "hj_listening_g7_30.mp3",
+    "q": "Which stamp is the boy's favourite?",
+    "options": [
+      "the 1980 red monkey",
+      "a blue dragon",
+      "an old king"
+    ],
+    "answer": 0,
+    "explain": "1980 red monkey",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "audioText": "W: Grandpa told me: never touch stamps with dirty hands.",
+    "audioFile": "hj_listening_g7_31.mp3",
+    "q": "What did grandpa say?",
+    "options": [
+      "Clean hands before touching",
+      "Wash stamps with water",
+      "Burn old stamps"
+    ],
+    "answer": 0,
+    "explain": "never touch with dirty hands → 保持手干净",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "audioText": "M: I like sharing my collection with my friends. It makes me happy.",
+    "audioFile": "hj_listening_g7_32.mp3",
+    "q": "Why does the boy share his collection?",
+    "options": [
+      "it makes him happy",
+      "it makes him rich",
+      "his teacher asks him to"
+    ],
+    "answer": 0,
+    "explain": "It makes me happy.",
+    "difficulty": 1
+  }
+]

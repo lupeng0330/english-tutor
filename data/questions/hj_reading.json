@@ -1,0 +1,722 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "How old is Li Hua?",
+    "options": [
+      "12",
+      "13",
+      "14"
+    ],
+    "answer": 1,
+    "explain": "I'm 13 years old.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "Where does Li Hua live?",
+    "options": [
+      "Germany",
+      "London",
+      "Guangzhou"
+    ],
+    "answer": 2,
+    "explain": "I live in Guangzhou, China.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "Which word can best describe Li Hua?",
+    "options": [
+      "short",
+      "honest and friendly",
+      "careless"
+    ],
+    "answer": 1,
+    "explain": "I am honest and friendly.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "What is Li Hua's favourite subject?",
+    "options": [
+      "Maths",
+      "English",
+      "Music"
+    ],
+    "answer": 1,
+    "explain": "My favourite subject is English.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "Where does Anna come from?",
+    "options": [
+      "China",
+      "Germany",
+      "Japan"
+    ],
+    "answer": 1,
+    "explain": "Anna comes from Germany.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "passage": "Hi! I'm Li Hua. I'm 13 years old. I live in Guangzhou, China. I am tall and thin. I have long hair. I am honest and friendly. I like playing the guitar and reading books. My favourite subject is English. My new friend Anna comes from Germany. She is patient and confident, and her elder brother is an engineer.",
+    "q": "What is Anna's elder brother's job?",
+    "options": [
+      "a teacher",
+      "an engineer",
+      "a singer"
+    ],
+    "answer": 1,
+    "explain": "her elder brother is an engineer.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "What time does the writer get up?",
+    "options": [
+      "6:00",
+      "6:30",
+      "7:00"
+    ],
+    "answer": 1,
+    "explain": "I always get up at 6:30 a.m.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "How does the writer go to school?",
+    "options": [
+      "by bus",
+      "on foot",
+      "by bike"
+    ],
+    "answer": 1,
+    "explain": "I go to school on foot.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "How many lessons are there in the morning?",
+    "options": [
+      "three",
+      "four",
+      "five"
+    ],
+    "answer": 1,
+    "explain": "We have four lessons in the morning.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "Where does the writer usually have lunch?",
+    "options": [
+      "at home",
+      "at school",
+      "at a restaurant"
+    ],
+    "answer": 1,
+    "explain": "I usually have lunch at school.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "What does the writer do after school?",
+    "options": [
+      "watch TV",
+      "play table tennis",
+      "read newspapers"
+    ],
+    "answer": 1,
+    "explain": "I often play table tennis with my friends.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "passage": "I always get up at 6:30 a.m. I go to school on foot. School starts at 8 a.m. We have four lessons in the morning. We have a break at 10 a.m. I usually have lunch at school. School ends at 4:30 p.m. After school, I often play table tennis with my friends. I never go home late. I go to bed at 9:30 p.m.",
+    "q": "How often does the writer go home late?",
+    "options": [
+      "always",
+      "sometimes",
+      "never"
+    ],
+    "answer": 2,
+    "explain": "I never go home late.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "Where do many animals live according to the passage?",
+    "options": [
+      "in forests and oceans",
+      "only in cities",
+      "only on the Moon"
+    ],
+    "answer": 0,
+    "explain": "forests and oceans on the Earth",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "Which is NOT a way people pollute the Earth?",
+    "options": [
+      "throwing waste",
+      "cutting trees",
+      "planting flowers"
+    ],
+    "answer": 2,
+    "explain": "Planting flowers is good, not polluting.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "What should we do with old books?",
+    "options": [
+      "burn them",
+      "reuse them",
+      "throw them"
+    ],
+    "answer": 1,
+    "explain": "We can reuse old books.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "We should ____ glass and paper.",
+    "options": [
+      "waste",
+      "recycle",
+      "eat"
+    ],
+    "answer": 1,
+    "explain": "recycle glass and paper",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "The main idea of the passage is ____.",
+    "options": [
+      "The Earth is dangerous",
+      "We should protect the Earth",
+      "Animals have too many homes"
+    ],
+    "answer": 1,
+    "explain": "We must protect our home.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "passage": "The Earth is our home. There are many forests and oceans on the Earth. But people pollute the Earth every day. They throw waste on the ground, pollute the oceans and cut down trees. Many animals are in danger. We must protect our home. We can reuse old books and recycle glass and paper.",
+    "q": "'In danger' in the passage means ____.",
+    "options": [
+      "happy",
+      "in trouble / at risk",
+      "quiet"
+    ],
+    "answer": 1,
+    "explain": "in danger = 处于危险中",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "How many seasons are there in a year?",
+    "options": [
+      "three",
+      "four",
+      "five"
+    ],
+    "answer": 1,
+    "explain": "four seasons",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "What can we do in spring?",
+    "options": [
+      "fly kites",
+      "pick apples",
+      "make a snowman"
+    ],
+    "answer": 0,
+    "explain": "We can fly kites.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "What is autumn like?",
+    "options": [
+      "hot and rainy",
+      "cool and dry",
+      "cold and snowy"
+    ],
+    "answer": 1,
+    "explain": "it is cool and dry",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "What do people wear in winter?",
+    "options": [
+      "T-shirt",
+      "scarf and gloves",
+      "swim suit"
+    ],
+    "answer": 1,
+    "explain": "wears a scarf and gloves",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "In which season do leaves turn yellow?",
+    "options": [
+      "spring",
+      "summer",
+      "autumn"
+    ],
+    "answer": 2,
+    "explain": "Leaves turn yellow in autumn.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "passage": "There are four seasons in a year. In spring, it is warm and windy. We can fly kites. In summer, it is hot. We can swim. In autumn, it is cool and dry. Leaves turn yellow. In winter, it is cold and snowy. Everyone wears a scarf and gloves.",
+    "q": "Which season is the hottest?",
+    "options": [
+      "winter",
+      "summer",
+      "spring"
+    ],
+    "answer": 1,
+    "explain": "In summer, it is hot.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "How far is the Moon from the Earth?",
+    "options": [
+      "38,400 km",
+      "384,000 km",
+      "3,840,000 km"
+    ],
+    "answer": 1,
+    "explain": "about 384,000 kilometres",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "Why must we wear spacesuits on the Moon?",
+    "options": [
+      "to look cool",
+      "because there is no air",
+      "to keep warm on Earth"
+    ],
+    "answer": 1,
+    "explain": "there is no air → 必须戴",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "Why does our body feel light on the Moon?",
+    "options": [
+      "the Moon is small",
+      "the gravity is weak",
+      "we eat less food"
+    ],
+    "answer": 1,
+    "explain": "gravity is weak",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "Where can we stay on the Moon?",
+    "options": [
+      "a space hotel",
+      "a big tent",
+      "a cave"
+    ],
+    "answer": 0,
+    "explain": "We can stay in a space hotel.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "What is the Moon like?",
+    "options": [
+      "noisy",
+      "very quiet",
+      "full of rivers"
+    ],
+    "answer": 1,
+    "explain": "It is very quiet.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "passage": "One day, we will travel to the Moon by rocket. The Moon is about 384,000 kilometres from the Earth. It is very quiet. There is no air on the Moon, so we must wear spacesuits to breathe. Our body feels light because the gravity is weak. We can stay in a space hotel and watch the Earth from the window.",
+    "q": "How will we travel to the Moon?",
+    "options": [
+      "by plane",
+      "by rocket",
+      "by bus"
+    ],
+    "answer": 1,
+    "explain": "by rocket",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "What is the capital of China?",
+    "options": [
+      "Tokyo",
+      "Beijing",
+      "Bangkok"
+    ],
+    "answer": 1,
+    "explain": "Beijing is the capital of China.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "Which tower is famous in Tokyo?",
+    "options": [
+      "Tower Bridge",
+      "Tokyo Tower",
+      "Big Ben"
+    ],
+    "answer": 1,
+    "explain": "Tokyo Tower",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "Which city is the capital of Thailand?",
+    "options": [
+      "Beijing",
+      "Tokyo",
+      "Bangkok"
+    ],
+    "answer": 2,
+    "explain": "Bangkok, the capital of Thailand",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "What can you see in Bangkok?",
+    "options": [
+      "many old palaces",
+      "the Great Wall",
+      "Tokyo Tower"
+    ],
+    "answer": 0,
+    "explain": "many old palaces",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "The Great Wall is in ____.",
+    "options": [
+      "Japan",
+      "China",
+      "Thailand"
+    ],
+    "answer": 1,
+    "explain": "Beijing → China",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "passage": "Asia is a big continent. Beijing is the capital of China. It has many famous places, such as the Great Wall and the Forbidden City. Tokyo is the capital of Japan; it is a very modern city with many tall buildings, including Tokyo Tower. Bangkok, the capital of Thailand, has many old palaces and delicious Thai food.",
+    "q": "Which city is described as 'very modern'?",
+    "options": [
+      "Beijing",
+      "Bangkok",
+      "Tokyo"
+    ],
+    "answer": 2,
+    "explain": "Tokyo is a very modern city.",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "When can students join different clubs?",
+    "options": [
+      "Monday morning",
+      "Friday afternoon",
+      "Saturday"
+    ],
+    "answer": 1,
+    "explain": "Every Friday afternoon",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "What do students do in the Music Club?",
+    "options": [
+      "learn songs and have small shows",
+      "play football",
+      "play chess"
+    ],
+    "answer": 0,
+    "explain": "learn songs and have small shows",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "How often does the Chess Club have a school chess game?",
+    "options": [
+      "every week",
+      "every month",
+      "every year"
+    ],
+    "answer": 2,
+    "explain": "every year",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "What is the Science Club doing this term?",
+    "options": [
+      "building robots",
+      "singing songs",
+      "drawing pictures"
+    ],
+    "answer": 0,
+    "explain": "building robots this term",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "What does the writer want you to do?",
+    "options": [
+      "only watch",
+      "join a club and show talent",
+      "leave all clubs"
+    ],
+    "answer": 1,
+    "explain": "Come and join us!",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "passage": "Our school has many clubs. Every Friday afternoon we can join different clubs. In the Music Club we learn songs and have small shows. In the Art Club we draw pictures. Chess Club members play chess and have a school chess game every year. In the Science Club we are building robots this term. Everyone has a talent. Come and join us!",
+    "q": "In the Art Club we ____.",
+    "options": [
+      "draw pictures",
+      "play chess",
+      "build robots"
+    ],
+    "answer": 0,
+    "explain": "we draw pictures",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "What is the writer's hobby?",
+    "options": [
+      "reading",
+      "collecting stamps",
+      "cooking"
+    ],
+    "answer": 1,
+    "explain": "collecting stamps",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "How many stamps does the writer have?",
+    "options": [
+      "more than 100",
+      "more than 200",
+      "more than 300"
+    ],
+    "answer": 2,
+    "explain": "more than 300 stamps",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "Which is the writer's favourite stamp?",
+    "options": [
+      "a 1980 red monkey",
+      "an old king",
+      "a blue dragon"
+    ],
+    "answer": 0,
+    "explain": "1980 red monkey — very valuable",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "Where should we keep stamps?",
+    "options": [
+      "in water",
+      "in a dry, cool place",
+      "under the sun"
+    ],
+    "answer": 1,
+    "explain": "dry and cool",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "We should NOT ____ stamps.",
+    "options": [
+      "share with friends",
+      "touch with dirty hands",
+      "keep dry"
+    ],
+    "answer": 1,
+    "explain": "never touch them with dirty hands",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "passage": "My hobby is collecting stamps. I have more than 300 stamps from different countries. My favourite stamp is a 1980 red monkey — it is very valuable. Some stamps are cheap, but they are also beautiful. Grandpa taught me to keep my stamps dry and cool, and never touch them with dirty hands. I like to share my collection with my friends.",
+    "q": "Who taught the writer to care for stamps?",
+    "options": [
+      "mum",
+      "grandpa",
+      "teacher"
+    ],
+    "answer": 1,
+    "explain": "Grandpa taught me",
+    "difficulty": 1
+  }
+]

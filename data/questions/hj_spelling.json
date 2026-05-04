@@ -1,0 +1,952 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "吉他",
+    "answer": "guitar",
+    "hint": "g____r",
+    "difficulty": 1,
+    "explain": "'吉他' 对应 guitar"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "诚实的",
+    "answer": "honest",
+    "hint": "h____t",
+    "difficulty": 2,
+    "explain": "h 开头，注意 h 不发音"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "有耐心的",
+    "answer": "patient",
+    "hint": "p_____t",
+    "difficulty": 2,
+    "explain": "-tient 结尾，读 /ʃnt/"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "自信的",
+    "answer": "confident",
+    "hint": "c_______t",
+    "difficulty": 3,
+    "explain": "con- 前缀 + -fident"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "改进；改善",
+    "answer": "improve",
+    "hint": "i_____e",
+    "difficulty": 2,
+    "explain": "im- 前缀 + prove"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "博客",
+    "answer": "blog",
+    "hint": "b__g",
+    "difficulty": 1,
+    "explain": "常见网络词 blog"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "语法",
+    "answer": "grammar",
+    "hint": "g_____r",
+    "difficulty": 2,
+    "explain": "gram-mar，两个 m"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "爱好",
+    "answer": "hobby",
+    "hint": "h___y",
+    "difficulty": 1,
+    "explain": "双写 b + y 结尾"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "国家",
+    "answer": "country",
+    "hint": "c_____y",
+    "difficulty": 1,
+    "explain": "coun-try"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "年龄",
+    "answer": "age",
+    "hint": "a_e",
+    "difficulty": 1,
+    "explain": "three-letter word"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "梦想；做梦",
+    "answer": "dream",
+    "hint": "d___m",
+    "difficulty": 1,
+    "explain": "dream / dreamed"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "友好的",
+    "answer": "friendly",
+    "hint": "f______y",
+    "difficulty": 2,
+    "explain": "friend + -ly"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "工程师",
+    "answer": "engineer",
+    "hint": "e______r",
+    "difficulty": 2,
+    "explain": "-eer 结尾，重音在 eer"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "山；山脉",
+    "answer": "mountain",
+    "hint": "m______n",
+    "difficulty": 2,
+    "explain": "mount + ain"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "每日的；日常的",
+    "answer": "daily",
+    "hint": "d___y",
+    "difficulty": 1,
+    "explain": "day → daily"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "文章",
+    "answer": "article",
+    "hint": "a_____e",
+    "difficulty": 2,
+    "explain": "art-i-cle"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "从不",
+    "answer": "never",
+    "hint": "n___r",
+    "difficulty": 1,
+    "explain": "nev-er"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "骑；驾驶",
+    "answer": "ride",
+    "hint": "r__e",
+    "difficulty": 1,
+    "explain": "ride / rode / ridden"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "很少",
+    "answer": "seldom",
+    "hint": "s____m",
+    "difficulty": 2,
+    "explain": "sel-dom"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "地理",
+    "answer": "geography",
+    "hint": "g_______y",
+    "difficulty": 3,
+    "explain": "geo- + graph + -y"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "休息",
+    "answer": "break",
+    "hint": "b___k",
+    "difficulty": 1,
+    "explain": "一词多义；短暂休息"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "铃；钟",
+    "answer": "bell",
+    "hint": "b__l",
+    "difficulty": 1,
+    "explain": "两个 l"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "结束",
+    "answer": "end",
+    "hint": "e_d",
+    "difficulty": 1,
+    "explain": "three-letter word"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "练习",
+    "answer": "practice",
+    "hint": "p______e",
+    "difficulty": 2,
+    "explain": "名词/动词都可"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "一起",
+    "answer": "together",
+    "hint": "t______r",
+    "difficulty": 2,
+    "explain": "to-gether"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "集市；市场",
+    "answer": "market",
+    "hint": "m____t",
+    "difficulty": 1,
+    "explain": "mar-ket"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "通常",
+    "answer": "usually",
+    "hint": "u_____y",
+    "difficulty": 2,
+    "explain": "usual + -ly"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "经常",
+    "answer": "often",
+    "hint": "o___n",
+    "difficulty": 1,
+    "explain": "of-ten，t 可不发音"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "有时",
+    "answer": "sometimes",
+    "hint": "s_______s",
+    "difficulty": 2,
+    "explain": "some + times"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "地球",
+    "answer": "Earth",
+    "hint": "E___h",
+    "difficulty": 1,
+    "explain": "首字母大写，指地球时"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "行星",
+    "answer": "planet",
+    "hint": "p____t",
+    "difficulty": 1,
+    "explain": "plan + et"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "森林",
+    "answer": "forest",
+    "hint": "f____t",
+    "difficulty": 1,
+    "explain": "for + est"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "海洋",
+    "answer": "ocean",
+    "hint": "o___n",
+    "difficulty": 2,
+    "explain": "o-cean，c 读 /ʃ/"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "地面",
+    "answer": "ground",
+    "hint": "g____d",
+    "difficulty": 1,
+    "explain": "groun-d"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "污染",
+    "answer": "pollute",
+    "hint": "p_____e",
+    "difficulty": 2,
+    "explain": "poll + ute"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "保护",
+    "answer": "protect",
+    "hint": "p_____t",
+    "difficulty": 2,
+    "explain": "pro- + tect"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "废物；垃圾",
+    "answer": "waste",
+    "hint": "w___e",
+    "difficulty": 1,
+    "explain": "waste / wasted"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "再利用",
+    "answer": "reuse",
+    "hint": "r___e",
+    "difficulty": 2,
+    "explain": "re- + use"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "回收利用",
+    "answer": "recycle",
+    "hint": "r_____e",
+    "difficulty": 2,
+    "explain": "re- + cycle"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "季节",
+    "answer": "season",
+    "hint": "s____n",
+    "difficulty": 1,
+    "explain": "sea + son"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "春天",
+    "answer": "spring",
+    "hint": "s____g",
+    "difficulty": 1,
+    "explain": "春夏秋冬之首"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "夏天",
+    "answer": "summer",
+    "hint": "s____r",
+    "difficulty": 1,
+    "explain": "double m"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "秋天",
+    "answer": "autumn",
+    "hint": "a____n",
+    "difficulty": 2,
+    "explain": "au-tumn，n 不发音"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "冬天",
+    "answer": "winter",
+    "hint": "w____r",
+    "difficulty": 1,
+    "explain": "win-ter"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "晴朗的",
+    "answer": "sunny",
+    "hint": "s___y",
+    "difficulty": 1,
+    "explain": "sun + ny"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "下雨的",
+    "answer": "rainy",
+    "hint": "r___y",
+    "difficulty": 1,
+    "explain": "rain + y"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "有风的",
+    "answer": "windy",
+    "hint": "w___y",
+    "difficulty": 1,
+    "explain": "wind + y"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "下雪的",
+    "answer": "snowy",
+    "hint": "s___y",
+    "difficulty": 1,
+    "explain": "snow + y"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "干燥的",
+    "answer": "dry",
+    "hint": "d_y",
+    "difficulty": 1,
+    "explain": "three letters, y 结尾"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "潮湿的",
+    "answer": "wet",
+    "hint": "w_t",
+    "difficulty": 1,
+    "explain": "three letters"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "围巾",
+    "answer": "scarf",
+    "hint": "s___f",
+    "difficulty": 2,
+    "explain": "sc 开头，f 结尾"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "手套",
+    "answer": "glove",
+    "hint": "g___e",
+    "difficulty": 1,
+    "explain": "glove + s = gloves"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "月球；月亮",
+    "answer": "Moon",
+    "hint": "M__n",
+    "difficulty": 1,
+    "explain": "指月球时首字母大写"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "太空",
+    "answer": "space",
+    "hint": "s___e",
+    "difficulty": 1,
+    "explain": "space ship"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "火箭",
+    "answer": "rocket",
+    "hint": "r____t",
+    "difficulty": 1,
+    "explain": "rock + et"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "宇航员",
+    "answer": "astronaut",
+    "hint": "a_______t",
+    "difficulty": 3,
+    "explain": "astro- + naut"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "航天服",
+    "answer": "spacesuit",
+    "hint": "s_______t",
+    "difficulty": 3,
+    "explain": "space + suit"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "旅馆；酒店",
+    "answer": "hotel",
+    "hint": "h___l",
+    "difficulty": 1,
+    "explain": "ho-tel，重音在后"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "光；轻的",
+    "answer": "light",
+    "hint": "l___t",
+    "difficulty": 1,
+    "explain": "多义词"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "着陆；登陆",
+    "answer": "land",
+    "hint": "l__d",
+    "difficulty": 1,
+    "explain": "land / landed"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "千米；公里",
+    "answer": "kilometre",
+    "hint": "k_______e",
+    "difficulty": 3,
+    "explain": "kilo + metre (英式拼法)"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "虚弱的",
+    "answer": "weak",
+    "hint": "w__k",
+    "difficulty": 1,
+    "explain": "weak vs week 同音"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "呼吸",
+    "answer": "breathe",
+    "hint": "b_____e",
+    "difficulty": 2,
+    "explain": "动词 breathe，名词 breath"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "亚洲",
+    "answer": "Asia",
+    "hint": "A__a",
+    "difficulty": 1,
+    "explain": "首字母大写"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "首都；省会",
+    "answer": "capital",
+    "hint": "c_____l",
+    "difficulty": 2,
+    "explain": "cap + i + tal"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "著名的",
+    "answer": "famous",
+    "hint": "f____s",
+    "difficulty": 2,
+    "explain": "fame + -ous"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "旅行；旅游",
+    "answer": "tour",
+    "hint": "t__r",
+    "difficulty": 1,
+    "explain": "tour / tourist"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "建筑物",
+    "answer": "building",
+    "hint": "b______g",
+    "difficulty": 1,
+    "explain": "build + ing"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "古老的",
+    "answer": "ancient",
+    "hint": "a_____t",
+    "difficulty": 3,
+    "explain": "an-cient"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "现代的",
+    "answer": "modern",
+    "hint": "m____n",
+    "difficulty": 2,
+    "explain": "mod + ern"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "宫殿",
+    "answer": "palace",
+    "hint": "p____e",
+    "difficulty": 2,
+    "explain": "pal + ace"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "塔",
+    "answer": "tower",
+    "hint": "t___r",
+    "difficulty": 1,
+    "explain": "tow + er"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "桥",
+    "answer": "bridge",
+    "hint": "b____e",
+    "difficulty": 2,
+    "explain": "br + idge"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "俱乐部；社团",
+    "answer": "club",
+    "hint": "c__b",
+    "difficulty": 1,
+    "explain": "four letters"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "加入",
+    "answer": "join",
+    "hint": "j__n",
+    "difficulty": 1,
+    "explain": "join the club"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "跳舞；舞蹈",
+    "answer": "dance",
+    "hint": "d___e",
+    "difficulty": 1,
+    "explain": "dance / danced"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "唱歌",
+    "answer": "sing",
+    "hint": "s__g",
+    "difficulty": 1,
+    "explain": "sing / sang / sung"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "画画",
+    "answer": "draw",
+    "hint": "d__w",
+    "difficulty": 1,
+    "explain": "draw / drew / drawn"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "国际象棋",
+    "answer": "chess",
+    "hint": "c___s",
+    "difficulty": 1,
+    "explain": "double s 结尾"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "钢琴",
+    "answer": "piano",
+    "hint": "p___o",
+    "difficulty": 1,
+    "explain": "play the piano"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "小提琴",
+    "answer": "violin",
+    "hint": "v____n",
+    "difficulty": 2,
+    "explain": "vi-o-lin"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "鼓",
+    "answer": "drum",
+    "hint": "d__m",
+    "difficulty": 1,
+    "explain": "play the drum"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "机器人",
+    "answer": "robot",
+    "hint": "r___t",
+    "difficulty": 1,
+    "explain": "ro-bot"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "科学",
+    "answer": "science",
+    "hint": "s_____e",
+    "difficulty": 2,
+    "explain": "sci + ence"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "收集",
+    "answer": "collect",
+    "hint": "c_____t",
+    "difficulty": 2,
+    "explain": "col- + lect"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "邮票",
+    "answer": "stamp",
+    "hint": "s___p",
+    "difficulty": 1,
+    "explain": "stamps + envelope"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "硬币",
+    "answer": "coin",
+    "hint": "c__n",
+    "difficulty": 1,
+    "explain": "四字母"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "玩具",
+    "answer": "toy",
+    "hint": "t_y",
+    "difficulty": 1,
+    "explain": "toy / toys"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "扇子；爱好者",
+    "answer": "fan",
+    "hint": "f_n",
+    "difficulty": 1,
+    "explain": "three-letter word"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "贵重的",
+    "answer": "valuable",
+    "hint": "v______e",
+    "difficulty": 3,
+    "explain": "value + -able"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "昂贵的",
+    "answer": "expensive",
+    "hint": "e_______e",
+    "difficulty": 2,
+    "explain": "ex- + pensive"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "便宜的",
+    "answer": "cheap",
+    "hint": "c___p",
+    "difficulty": 1,
+    "explain": "与 expensive 相反"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "收藏品",
+    "answer": "collection",
+    "hint": "c________n",
+    "difficulty": 2,
+    "explain": "collect + -ion"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "分享",
+    "answer": "share",
+    "hint": "s___e",
+    "difficulty": 1,
+    "explain": "share with sb"
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "信封",
+    "answer": "envelope",
+    "hint": "e______e",
+    "difficulty": 2,
+    "explain": "en + velope"
+  }
+]

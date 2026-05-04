@@ -1,0 +1,1122 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Hello! I ____ Li Hua. I'm 13 years old.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "第一人称单数 I 用 am",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Anna ____ from Germany.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数 she/he/Anna 用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "My parents ____ engineers.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 2,
+    "explain": "复数主语用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "— ____ you a student? — Yes, I am.",
+    "options": [
+      "Am",
+      "Is",
+      "Are"
+    ],
+    "answer": 2,
+    "explain": "第二人称 you 用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "My brother ____ short hair.",
+    "options": [
+      "have",
+      "has",
+      "is"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数 have 变 has",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "We ____ a big family.",
+    "options": [
+      "have",
+      "has",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "复数主语用 have",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "This is ____ book. ____ name is on it.",
+    "options": [
+      "my; My",
+      "I; I",
+      "me; Me"
+    ],
+    "answer": 0,
+    "explain": "形容词性物主代词 my + My",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Anna loves hiking in the mountains. ____ is very patient.",
+    "options": [
+      "He",
+      "She",
+      "It"
+    ],
+    "answer": 1,
+    "explain": "Anna 是女性，用 She",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "— Where does Anna come ____? — From Germany.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "come from 来自",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Tom is confident. He likes making friends ____.",
+    "options": [
+      "online",
+      "on line",
+      "in line"
+    ],
+    "answer": 0,
+    "explain": "online 一个词，表示'在线'",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "I ____ get up at 6:30 a.m.",
+    "options": [
+      "am",
+      "is",
+      "usually"
+    ],
+    "answer": 2,
+    "explain": "频度副词 usually + 实义动词原形",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "She ____ to school on foot.",
+    "options": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数动词加 -s/-es",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "We ____ four lessons in the morning.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "we 用 have",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "My dad ____ his bike to work every day.",
+    "options": [
+      "ride",
+      "rides",
+      "rided"
+    ],
+    "answer": 1,
+    "explain": "he/she 加 -s，ride → rides",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "She ____ watches TV on school days.",
+    "options": [
+      "seldom",
+      "usually always",
+      "is seldom"
+    ],
+    "answer": 0,
+    "explain": "seldom 位置在实义动词前",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "— Do you often ride your bike? — Yes, I ____.",
+    "options": [
+      "am",
+      "do",
+      "does"
+    ],
+    "answer": 1,
+    "explain": "do 开头的一般疑问句用 do 回答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "School starts ____ 8 a.m.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 2,
+    "explain": "具体时刻用 at",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "Mum is never ____ for class.",
+    "options": [
+      "late",
+      "later",
+      "lately"
+    ],
+    "answer": 0,
+    "explain": "be late 搭配",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "Put the frequency adverbs from high to low:",
+    "options": [
+      "always > usually > often",
+      "often > usually > always",
+      "never > seldom > always"
+    ],
+    "answer": 0,
+    "explain": "always 100%，usually 80%，often 60%",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "I ____ go home late after school.",
+    "options": [
+      "always",
+      "never",
+      "often"
+    ],
+    "answer": 1,
+    "explain": "结合语境：我从不晚回家",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ many forests and oceans on the Earth.",
+    "options": [
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": 1,
+    "explain": "复数名词用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ a bridge over the river.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "单数名词用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "— ____ there any big trees in the forest? — Yes, there are.",
+    "options": [
+      "Is",
+      "Are",
+      "Have"
+    ],
+    "answer": 1,
+    "explain": "trees 复数用 Are",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "The cat is ____ the table.",
+    "options": [
+      "in",
+      "under",
+      "between"
+    ],
+    "answer": 1,
+    "explain": "under 在……下方",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "The bank is ____ the hotel ____ the shop.",
+    "options": [
+      "between; and",
+      "in; on",
+      "at; from"
+    ],
+    "answer": 0,
+    "explain": "between A and B 在两者之间",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "We ____ protect our home.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 1,
+    "explain": "must 表示'必须'（强约束）",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ any waste on the ground.",
+    "options": [
+      "isn't",
+      "not is",
+      "have no"
+    ],
+    "answer": 0,
+    "explain": "不可数名词 waste 用 isn't",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "Please ____ the tap when you brush your teeth.",
+    "options": [
+      "turn off",
+      "turn on",
+      "turn up"
+    ],
+    "answer": 0,
+    "explain": "turn off 关掉",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "People cut ____ trees in the forest.",
+    "options": [
+      "down",
+      "up",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "cut down 砍倒",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "We should ____ old paper.",
+    "options": [
+      "recycle",
+      "pollute",
+      "waste"
+    ],
+    "answer": 0,
+    "explain": "recycle 回收",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Look! It ____ outside.",
+    "options": [
+      "rains",
+      "is raining",
+      "rain"
+    ],
+    "answer": 1,
+    "explain": "Look 提示现在进行时",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "The children ____ a kite now.",
+    "options": [
+      "are flying",
+      "fly",
+      "is flying"
+    ],
+    "answer": 0,
+    "explain": "children 复数，用 are + V-ing",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "I ____ a warm scarf because it is snowy.",
+    "options": [
+      "am wearing",
+      "wear",
+      "wears"
+    ],
+    "answer": 0,
+    "explain": "此刻穿着 → 现在进行时",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "We aren't ____ today — it is too cold.",
+    "options": [
+      "swim",
+      "swimming",
+      "swam"
+    ],
+    "answer": 1,
+    "explain": "aren't 后用 V-ing",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "In spring, it is warm ____ windy.",
+    "options": [
+      "and",
+      "but",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "并列 and",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "In summer, it is ____. We can swim.",
+    "options": [
+      "cold",
+      "cool",
+      "hot"
+    ],
+    "answer": 2,
+    "explain": "夏天热",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Leaves ____ yellow in autumn.",
+    "options": [
+      "turn",
+      "turns",
+      "turning"
+    ],
+    "answer": 0,
+    "explain": "Leaves 复数，动词用原形",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "— Is it snowing in Beijing now? — Yes, ____.",
+    "options": [
+      "it is",
+      "it does",
+      "it's"
+    ],
+    "answer": 0,
+    "explain": "现在进行时的一般疑问回答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Winter is the ____ season of the year.",
+    "options": [
+      "cold",
+      "coldest",
+      "colder"
+    ],
+    "answer": 1,
+    "explain": "最高级 coldest",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "It is ____ in Guangzhou in winter.",
+    "options": [
+      "seldom snowy",
+      "snowy seldom",
+      "never to snow"
+    ],
+    "answer": 0,
+    "explain": "频度副词 seldom 修饰形容词 snowy",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "One day, we ____ travel to the Moon by rocket.",
+    "options": [
+      "will",
+      "are",
+      "did"
+    ],
+    "answer": 0,
+    "explain": "一般将来时 will + 动词原形",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "— ____ you be an astronaut? — Yes, I will.",
+    "options": [
+      "Will",
+      "Are",
+      "Do"
+    ],
+    "answer": 0,
+    "explain": "Will 引导的一般疑问句",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We ____ wear spacesuits on the Moon.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 1,
+    "explain": "必须 → must",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "I ____ see the Earth from the space hotel.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "能够 → can",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "You ____ learn more about science.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 2,
+    "explain": "建议 → should",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "The Moon is about 384,000 kilometres ____ the Earth.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "be far from 距离",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "There ____ no air on the Moon.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "air 不可数，用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We ____ visit a space hotel next week.",
+    "options": [
+      "are going to",
+      "will to",
+      "go to"
+    ],
+    "answer": 0,
+    "explain": "be going to 计划",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We won't go alone. 'won't' = ____",
+    "options": [
+      "will not",
+      "want not",
+      "was not"
+    ],
+    "answer": 0,
+    "explain": "won't = will not",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "On the Moon, our body feels ____ because gravity is weak.",
+    "options": [
+      "heavy",
+      "light",
+      "weak"
+    ],
+    "answer": 1,
+    "explain": "引力弱 → 感觉轻",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Beijing ____ the capital of China.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数事实用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "There ____ many countries in Asia.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 1,
+    "explain": "复数主语用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Bangkok is ____ Thailand.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "国家前用 in",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Trains arrive ____ the station at 8 a.m.",
+    "options": [
+      "on",
+      "at",
+      "in"
+    ],
+    "answer": 1,
+    "explain": "arrive at + 小地方",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Tourists come ____ all over the world.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "come from 来自",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "We travel ____ Beijing next month.",
+    "options": [
+      "to",
+      "at",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "travel to + 目的地",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Tokyo is ____ very modern city.",
+    "options": [
+      "a",
+      "an",
+      "the"
+    ],
+    "answer": 0,
+    "explain": "t 辅音开头的单数可数名词用 a",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "There are many ____ (palace) in Bangkok.",
+    "options": [
+      "palaces",
+      "palacies",
+      "palace"
+    ],
+    "answer": 0,
+    "explain": "palace → palaces",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Xi'an ____ the largest city in the world long ago.",
+    "options": [
+      "was",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "long ago 过去时，was",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Each Terracotta soldier has ____ face.",
+    "options": [
+      "the same",
+      "a different",
+      "any"
+    ],
+    "answer": 1,
+    "explain": "课文信息：各不相同",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "I ____ play the guitar, but I ____ play the piano.",
+    "options": [
+      "can; can't",
+      "can't; can",
+      "do; don't"
+    ],
+    "answer": 0,
+    "explain": "先会后不会",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Can you draw cartoons? — Yes, ____.",
+    "options": [
+      "I can",
+      "I am",
+      "I do"
+    ],
+    "answer": 0,
+    "explain": "can 引导的疑问用 can 答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "She plays ____ piano very well.",
+    "options": [
+      "the",
+      "a",
+      "/"
+    ],
+    "answer": 0,
+    "explain": "play + the + 乐器",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "We play ____ chess after school.",
+    "options": [
+      "the",
+      "a",
+      "/"
+    ],
+    "answer": 2,
+    "explain": "play + 棋类/球类 不加 the",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Would you like ____ the Art Club?",
+    "options": [
+      "to join",
+      "join",
+      "joining"
+    ],
+    "answer": 0,
+    "explain": "would like + to do",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "— Would you like some tea? — ____",
+    "options": [
+      "Yes, please.",
+      "Sure, I would like.",
+      "I am OK."
+    ],
+    "answer": 0,
+    "explain": "礼貌回答常用 Yes, please.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "He is good ____ grammar.",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "be good at",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Every Friday afternoon we ____ join different clubs.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "表示'可以'",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "There are many ____ in our school.",
+    "options": [
+      "clubs",
+      "club",
+      "clubes"
+    ],
+    "answer": 0,
+    "explain": "普通复数加 s",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Would you like to ____ at the school show?",
+    "options": [
+      "play the violin",
+      "play violin",
+      "playing violin"
+    ],
+    "answer": 0,
+    "explain": "play + the + 乐器",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'box' is ____.",
+    "options": [
+      "boxs",
+      "boxes",
+      "box"
+    ],
+    "answer": 1,
+    "explain": "-x 结尾加 -es",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'knife' is ____.",
+    "options": [
+      "knifes",
+      "knives",
+      "knife"
+    ],
+    "answer": 1,
+    "explain": "f/fe 结尾变 -ves",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'child' is ____.",
+    "options": [
+      "childs",
+      "children",
+      "childes"
+    ],
+    "answer": 1,
+    "explain": "特殊变化",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "This bag is too ____; the other one is cheap.",
+    "options": [
+      "cheap",
+      "expensive",
+      "small"
+    ],
+    "answer": 1,
+    "explain": "与 cheap 相反",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "My favourite stamp is very ____.",
+    "options": [
+      "valuable",
+      "expensive quickly",
+      "cheap"
+    ],
+    "answer": 0,
+    "explain": "valuable 贵重的",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "I ____ collected stamps for five years.",
+    "options": [
+      "have",
+      "has",
+      "had"
+    ],
+    "answer": 0,
+    "explain": "现在完成时 have + V-ed",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "She ____ kept that old coin since 2020.",
+    "options": [
+      "has",
+      "have",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "she 用 has",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "I like to share my collection ____ my friends.",
+    "options": [
+      "to",
+      "with",
+      "for"
+    ],
+    "answer": 1,
+    "explain": "share sth with sb",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "All my stamps come from ____ of letters.",
+    "options": [
+      "the envelopes",
+      "the envelope",
+      "envelope"
+    ],
+    "answer": 0,
+    "explain": "可数名词复数 + the",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "Some stamps are ____, but they are also beautiful.",
+    "options": [
+      "cheap",
+      "big",
+      "valuable"
+    ],
+    "answer": 0,
+    "explain": "与 expensive 相反，cheap 便宜的",
+    "difficulty": 1
+  }
+]
