@@ -588,6 +588,8 @@ function renderLessonAt(idx, lessons) {
   // 🆕 刷新理解自测
   try { updateReadingExForCurrentLesson(); } catch(e){}
 }
+
+function goLesson(i) {
   const list = normalizeLessons(state.currentUnit);
   if (i < 0 || i >= list.length || i === state.currentLessonIndex) return;
   const card = document.getElementById('lessonFlipCard');
