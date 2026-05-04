@@ -169,18 +169,18 @@
           "title": "Unit 1 It's a Nice T-shirt",
           "pageRange": "P1-P12",
           "words": [
-            { "en": "T-shirt", "cn": "T 恤衫" },
-            { "en": "dress", "cn": "连衣裙" },
-            { "en": "sweater", "cn": "毛衣" },
-            { "en": "shorts", "cn": "短裤" },
-            { "en": "shoes", "cn": "鞋子" },
-            { "en": "skirt", "cn": "短裙" },
-            { "en": "shirt", "cn": "衬衫" },
-            { "en": "jeans", "cn": "牛仔裤" },
-            { "en": "socks", "cn": "袜子" },
-            { "en": "jacket", "cn": "夹克衫" },
-            { "en": "boy", "cn": "男孩" },
-            { "en": "girl", "cn": "女孩" }
+            { "word": "T-shirt", "phonetic": "/ˈtiː ʃɜːt/", "meaning": "T 恤衫", "example": "Here is my T-shirt. It's purple." },
+            { "word": "dress",   "phonetic": "/dres/",      "meaning": "连衣裙",   "example": "She's wearing a yellow dress." },
+            { "word": "sweater", "phonetic": "/ˈswetə/",    "meaning": "毛衣",     "example": "Here is my sweater. It is blue." },
+            { "word": "shorts",  "phonetic": "/ʃɔːts/",     "meaning": "短裤",     "example": "I like my blue shorts." },
+            { "word": "shoes",   "phonetic": "/ʃuːz/",      "meaning": "鞋子",     "example": "Blue shoes, nice shoes." },
+            { "word": "skirt",   "phonetic": "/skɜːt/",     "meaning": "短裙",     "example": "A red skirt on the bed." },
+            { "word": "shirt",   "phonetic": "/ʃɜːt/",      "meaning": "衬衫",     "example": "Look at the white shirt." },
+            { "word": "jeans",   "phonetic": "/dʒiːnz/",    "meaning": "牛仔裤",   "example": "My jeans are new." },
+            { "word": "socks",   "phonetic": "/sɒks/",      "meaning": "袜子",     "example": "Socks, socks, everywhere." },
+            { "word": "jacket",  "phonetic": "/ˈdʒækɪt/",   "meaning": "夹克衫",   "example": "Here is my jacket. It's yellow." },
+            { "word": "boy",     "phonetic": "/bɔɪ/",       "meaning": "男孩",     "example": "Boy 2 is my friend." },
+            { "word": "girl",    "phonetic": "/ɡɜːl/",      "meaning": "女孩",     "example": "Who's she? — Girl 2." }
           ],
           "lessons": [
             {
