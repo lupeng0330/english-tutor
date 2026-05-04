@@ -1722,20 +1722,21 @@ function renderSpellCells(q) {
   }
 
   // 输入行为：输入后跳下一格；退格回上一格；填满自动判定
+  let _firstFocusDone = false;
   inputs.forEach((inp, k) => {
-    // 🆕 focus 时把输入格滚到屏幕中心，避开手机虚拟键盘
+    // 🆕 focus 时把整个答题区滚到可视区顶端 —— 只在"首次聚焦"做一次，避免字母跳格导致来回滚动
     inp.addEventListener('focus', () => {
       // 立即给 body 加 class（作为 visualViewport 检测的兜底）
       document.body.classList.add('keyboard-open');
+      if (_firstFocusDone) return;
+      _firstFocusDone = true;
+      // 滚到答题卡而不是单个 input，用 instant（无动画）一次到位
       setTimeout(() => {
         try {
-          inp.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          const box = document.getElementById('quizSpellBox');
+          if (box) box.scrollIntoView({ behavior: 'auto', block: 'start' });
         } catch(e) {}
-      }, 150);
-      // 300ms 后再滚一次，因为部分浏览器键盘动画要 200-300ms 才完成
-      setTimeout(() => {
-        try { inp.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch(e) {}
-      }, 450);
+      }, 200);
     });
     inp.addEventListener('blur', () => {
       // 延迟 200ms 移除——如果同时切到另一个 input，它的 focus 会先触发，这里就不误删
@@ -1846,8 +1847,18 @@ function checkSpellFilled(q, inputs, force) {
       + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
   }
   fb.classList.remove('hide');
-  // 自动朗读一下正确答案
-  try { speakWordDirect(q.answer); } catch(e) {}
+  // 🆕 答对时：收起键盘 + 自动朗读一遍正确发音（和小喇叭用同一套"有道MP3主+TTS兜底"逻辑）
+  if (isCorrect) {
+    try {
+      // 让输入框失焦，收起虚拟键盘，让反馈卡充分显示
+      inputs.forEach(i => i.blur && i.blur());
+      document.body.classList.remove('keyboard-open');
+    } catch(e) {}
+    // 稍等 200ms 再播（等键盘收起动画 + 避免播放被 blur 打断）
+    setTimeout(() => {
+      try { speakSpellWord(); } catch(e) { try { speakWordDirect(q.answer); } catch(e2) {} }
+    }, 200);
+  }
 
   document.getElementById('quizNextBtn').classList.remove('hide');
   document.getElementById('quizNextBtn').textContent =
