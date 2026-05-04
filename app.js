@@ -905,20 +905,13 @@ window.resetReadingEx  = resetReadingEx;
 // 单元学习进度条（按"该单元已掌握单词数 / 单元总词数"显示）
 function updateUnitProgress() {
   if (!state.currentUnit || !state.currentUnit.words) return;
-  const words = state.currentUnit.words;
-  const total = words.length;
-  const knownMap = _loadStats().knownWords || {};
-  let knownInUnit = 0;
-  for (const w of words) {
-    if (knownMap[String(w.word).toLowerCase()]) knownInUnit++;
-  }
-  const pct = total > 0 ? Math.round(knownInUnit / total * 100) : 0;
+  const p = computeUnitProgress(state.currentUnit);
   const bar = document.getElementById('unitProgressBar');
   const pctEl = document.getElementById('unitProgressPct');
   const label = document.getElementById('unitProgressLabel');
-  if (bar)   bar.style.width = pct + '%';
-  if (pctEl) pctEl.textContent = pct + '%';
-  if (label) label.textContent = knownInUnit + ' / ' + total + ' 词已掌握';
+  if (bar)   bar.style.width = p.pct + '%';
+  if (pctEl) pctEl.textContent = p.pct + '%';
+  if (label) label.textContent = p.known + ' / ' + p.total + ' 词已掌握';
 }
 
 
@@ -1097,27 +1090,62 @@ function resetPracticeOnContextChange() {
 });
 
 // ===================== 课本 - 单元列表 =====================
+// 计算单元学习进度（0-100 整数），基于 localStorage 的 knownWords
+// 返回 { pct, known, total }
+function computeUnitProgress(unit) {
+  if (!unit || !Array.isArray(unit.words) || unit.words.length === 0) {
+    return { pct: 0, known: 0, total: 0 };
+  }
+  const knownMap = _loadStats().knownWords || {};
+  let known = 0;
+  for (const w of unit.words) {
+    if (knownMap[String(w.word).toLowerCase()]) known++;
+  }
+  const total = unit.words.length;
+  const pct = total > 0 ? Math.round(known / total * 100) : 0;
+  return { pct, known, total };
+}
+
 function renderUnitList() {
   const data = textbookData[state.currentGrade];
   const container = document.getElementById('unitList');
-  container.innerHTML = data.units.map(u => `
+  container.innerHTML = data.units.map(u => {
+    const p = computeUnitProgress(u);
+    const pct = p.pct;
+    // 占位单元（没有 words）：显示 "待补充" 不再算进度
+    const isEmpty = p.total === 0;
+    const badge = isEmpty
+      ? '<span class="badge bg-slate-100 text-slate-500">📦 待补充</span>'
+      : pct === 100
+        ? '<span class="badge bg-green-100 text-green-700">✓ 已完成</span>'
+        : pct > 0
+          ? '<span class="badge bg-amber-100 text-amber-700">学习中 · ' + p.known + '/' + p.total + '</span>'
+          : '<span class="badge bg-slate-100 text-slate-500">未开始</span>';
+    const barStyle = isEmpty ? 'width: 0%' : 'width: ' + pct + '%';
+    const footText = isEmpty
+      ? '内容待补充'
+      : (p.known + ' / ' + p.total + ' 词已掌握 · 进度 ' + pct + '%');
+    // 模块徽章（可选）
+    const moduleTag = u.module
+      ? '<span class="inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-md bg-indigo-50 text-indigo-600 border border-indigo-100 ml-1.5 align-middle">📦 ' + u.module.split(' ').slice(0,2).join(' ') + '</span>'
+      : '';
+    return `
     <div class="unit-card" onclick="openUnit('${u.id}')">
       <div class="flex items-start justify-between mb-3">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-400 to-indigo-400 flex items-center justify-center text-white text-xl font-bold">${u.title.split(' ')[1] || 'U'}</div>
-        <span class="badge ${u.progress === 100 ? 'bg-green-100 text-green-700' : u.progress > 0 ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-500'}">
-          ${u.progress === 100 ? '已完成' : u.progress > 0 ? '学习中' : '未开始'}
-        </span>
+        ${badge}
       </div>
-      <div class="font-bold text-slate-800">${u.title}</div>
-      <div class="text-xs text-slate-500 mt-1">${u.words.length} 个单词</div>
+      <div class="font-bold text-slate-800">${u.title}${moduleTag}</div>
+      <div class="text-xs text-slate-500 mt-1">${(u.words || []).length} 个单词</div>
       <div class="mt-3">
         <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden">
-          <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: ${u.progress}%"></div>
+          <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="${barStyle}"></div>
         </div>
-        <div class="text-xs text-slate-500 mt-1">进度 ${u.progress}%</div>
+        <div class="text-xs text-slate-500 mt-1">${footText}</div>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
   document.getElementById('unitListView').classList.remove('hide');
   document.getElementById('unitDetailView').classList.add('hide');
 }
@@ -1306,6 +1334,8 @@ function prevUnit() {
 })();
 
 function backToUnits() {
+  // 返回时重渲染：这样用户"✓认识"过的单词进度能反映到卡片
+  try { renderUnitList(); } catch(e) {}
   document.getElementById('unitListView').classList.remove('hide');
   document.getElementById('unitDetailView').classList.add('hide');
 }
