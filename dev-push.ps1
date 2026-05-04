@@ -79,7 +79,7 @@ if ($Big -gt 0 -and $Small -gt 0) {
     $newSmall = 1
 }
 
-$versionStr = ('{0}V{1:D2}.{2}' -f $dateStr, $newBig, $newSmall)
+$versionStr = ('{0}V{1:D2}.{2:D2}' -f $dateStr, $newBig, $newSmall)
 
 # ---------- 提交业务改动（不含 version.txt） ----------
 $porc = (git status --porcelain) -split "`n" | Where-Object { $_ -ne '' -and $_ -notmatch '\bversion\.txt$' }
