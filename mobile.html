@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>乐学英语 · 手机预览</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #e5e7eb;
+      overflow: auto;
+    }
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px 12px 24px;
+      gap: 14px;
+    }
+    .bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      background: #1f2937;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .bar b { color: #f3f4f6; font-weight: 600; }
+    .bar a { color: #60a5fa; text-decoration: none; }
+    .bar a:hover { color: #93c5fd; text-decoration: underline; }
+    .sizebtn {
+      background: #374151;
+      color: #e5e7eb;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .sizebtn.active { background: #2563eb; color: #fff; }
+    .phone {
+      position: relative;
+      width: 390px;
+      height: 844px;
+      background: #000;
+      border-radius: 44px;
+      padding: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.5), 0 0 0 2px #374151;
+      transition: width .2s, height .2s;
+    }
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 14px; left: 50%;
+      transform: translateX(-50%);
+      width: 110px; height: 28px;
+      background: #000;
+      border-radius: 18px;
+      z-index: 2;
+    }
+    .screen {
+      width: 100%; height: 100%;
+      border-radius: 32px;
+      overflow: hidden;
+      background: #fff;
+    }
+    iframe {
+      width: 100%; height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar">
+      <b>📱 手机预览</b>
+      <span>·</span>
+      <span id="sizeLabel">iPhone 14 · 390×844</span>
+      <span>·</span>
+      <button class="sizebtn active" data-w="390" data-h="844">iPhone 14</button>
+      <button class="sizebtn" data-w="360" data-h="780">Huawei</button>
+      <button class="sizebtn" data-w="414" data-h="896">iPhone 11 Pro Max</button>
+      <span>·</span>
+      <a href="index.html" target="_blank">在完整窗口打开</a>
+    </div>
+    <div class="phone" id="phone">
+      <div class="screen">
+        <iframe id="ifr" src="index.html?ts=AUTOTS" allow="autoplay; microphone; clipboard-read; clipboard-write"></iframe>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // 给 iframe 的 src 加时间戳，避免缓存（切换机型/刷新时总是最新）
+  const ifr = document.getElementById('ifr');
+  ifr.src = 'index.html?ts=' + Date.now();
+
+  const phone = document.getElementById('phone');
+  const label = document.getElementById('sizeLabel');
+  document.querySelectorAll('.sizebtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const w = btn.dataset.w, h = btn.dataset.h;
+      phone.style.width = w + 'px';
+      phone.style.height = h + 'px';
+      label.textContent = btn.textContent.trim() + ' · ' + w + '×' + h;
+      document.querySelectorAll('.sizebtn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      // 刷新 iframe 以触发响应式重算
+      ifr.src = 'index.html?ts=' + Date.now();
+    });
+  });
+</script>
+</body>
+</html>
