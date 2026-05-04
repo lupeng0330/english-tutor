@@ -1,0 +1,487 @@
+# -*- coding: utf-8 -*-
+"""
+为六年级下册 80 个单词生成"从易到难 3~4 句"的例句数据。
+输出：data/examples/jk_grade6_xia.json
+
+结构：
+{
+  "words": {
+    "win": [
+      { "en": "I win.",                   "cn": "我赢了。",              "level": 1 },
+      { "en": "The boy wins the game.",   "cn": "这个男孩赢了比赛。",    "level": 2 },
+      { "en": "The tortoise won the race.", "cn": "乌龟赢了比赛。",      "level": 3 }
+    ],
+    ...
+  }
+}
+
+为了保证课本契合度：level=3 的例句优先从课本原文（lessons）里摘取。
+level=1 用最基础句型 + 主语 I/he/she/it + 现在时；
+level=2 用短定语 + 现在时/简单过去时；
+level=3 用课本语境 + 过去时/将来时/情态动词。
+"""
+import json
+import os
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT  = os.path.join(ROOT, "data", "examples", "jk_grade6_xia.json")
+
+# 每个单词 3~4 句例句（手工 · 契合教材语境）
+# key 与 jk.json 里 word 字段完全一致（大小写/短语形式保持一致）
+EXAMPLES = {
+    # ---------------- U1 Slow and steady wins the race ----------------
+    "win": [
+        {"en": "I win.",                        "cn": "我赢了。",                  "level": 1},
+        {"en": "Our team wins every match.",    "cn": "我们队场场都赢。",          "level": 2},
+        {"en": "The tortoise won the race.",    "cn": "乌龟赢了比赛。",            "level": 3},
+        {"en": "Slow and steady wins the race.","cn": "慢而稳，才能赢。",          "level": 3},
+    ],
+    "carry": [
+        {"en": "I carry a bag.",                "cn": "我背着一个包。",            "level": 1},
+        {"en": "She carries a heavy box.",      "cn": "她搬着一个重箱子。",        "level": 2},
+        {"en": "He carried the books to the library.", "cn": "他把书搬到了图书馆。", "level": 3},
+    ],
+    "such": [
+        {"en": "It's such a nice day.",         "cn": "真是美好的一天。",          "level": 1},
+        {"en": "Why are you in such a hurry?",  "cn": "你为什么这么匆忙？",        "level": 2},
+        {"en": "I have never seen such a big tree.", "cn": "我从没见过这么大的树。", "level": 3},
+    ],
+    "proud": [
+        {"en": "I am proud.",                   "cn": "我很骄傲。",                "level": 1},
+        {"en": "Mum is proud of me.",           "cn": "妈妈为我感到自豪。",        "level": 2},
+        {"en": "The hare was too proud and lost the race.", "cn": "兔子太骄傲了，输掉了比赛。", "level": 3},
+    ],
+    "careless": [
+        {"en": "Don't be careless.",            "cn": "不要粗心。",                "level": 1},
+        {"en": "A careless boy makes mistakes.","cn": "粗心的男孩会犯错。",        "level": 2},
+        {"en": "He was careless and fell down.","cn": "他太粗心，摔倒了。",        "level": 3},
+    ],
+    "patient": [
+        {"en": "Be patient.",                   "cn": "要有耐心。",                "level": 1},
+        {"en": "A good teacher is patient.",    "cn": "好老师很有耐心。",          "level": 2},
+        {"en": "Be patient, and you will succeed.", "cn": "耐心点，你会成功的。",  "level": 3},
+    ],
+    "sad": [
+        {"en": "I am sad.",                     "cn": "我很难过。",                "level": 1},
+        {"en": "Don't be sad.",                 "cn": "别难过。",                  "level": 2},
+        {"en": "The hare was sad when he lost.", "cn": "兔子输了的时候很伤心。",   "level": 3},
+    ],
+    "steady": [
+        {"en": "Hold it steady.",               "cn": "稳稳地拿住。",              "level": 1},
+        {"en": "The boat is steady.",           "cn": "这艘船很平稳。",            "level": 2},
+        {"en": "Slow and steady wins the race.", "cn": "慢而稳，才能赢。",         "level": 3},
+    ],
+    "race": [
+        {"en": "I like races.",                 "cn": "我喜欢比赛。",              "level": 1},
+        {"en": "They had a race.",              "cn": "他们举行了一场比赛。",      "level": 2},
+        {"en": "Who won the race yesterday?",   "cn": "昨天谁赢得了比赛？",        "level": 3},
+    ],
+    "tortoise": [
+        {"en": "A tortoise is slow.",           "cn": "乌龟走得很慢。",            "level": 1},
+        {"en": "The tortoise is in the garden.", "cn": "乌龟在花园里。",           "level": 2},
+        {"en": "The tortoise walked slowly but never stopped.", "cn": "乌龟走得慢，但从不停。", "level": 3},
+    ],
+    "hare": [
+        {"en": "A hare is fast.",               "cn": "兔子跑得很快。",            "level": 1},
+        {"en": "The hare ran very fast.",       "cn": "兔子跑得非常快。",          "level": 2},
+        {"en": "A hare crashed into the tree and died.", "cn": "一只兔子撞到树上死了。", "level": 3},
+    ],
+
+    # ---------------- U2 Waiting for another hare ----------------
+    "another": [
+        {"en": "I want another one.",           "cn": "我还想要一个。",            "level": 1},
+        {"en": "Give me another apple, please.","cn": "请再给我一个苹果。",        "level": 2},
+        {"en": "He waited for another hare to come.", "cn": "他等着另一只兔子过来。", "level": 3},
+    ],
+    "crash": [
+        {"en": "Don't crash!",                  "cn": "别撞上！",                  "level": 1},
+        {"en": "The car crashed into the wall.","cn": "汽车撞到了墙上。",          "level": 2},
+        {"en": "The hare crashed into a big tree.", "cn": "兔子撞到了一棵大树上。","level": 3},
+    ],
+    "into": [
+        {"en": "Come into the room.",           "cn": "进到房间里来。",            "level": 1},
+        {"en": "He jumped into the pool.",      "cn": "他跳进了游泳池。",          "level": 2},
+        {"en": "The hare crashed into the tree.", "cn": "兔子撞到了那棵树上。",    "level": 3},
+    ],
+    "ground": [
+        {"en": "Sit on the ground.",            "cn": "坐在地上。",                "level": 1},
+        {"en": "Leaves fall to the ground.",    "cn": "叶子落到地上。",            "level": 2},
+        {"en": "The hare lay on the ground.",   "cn": "兔子躺在地上。",            "level": 3},
+    ],
+    "die": [
+        {"en": "Flowers die without water.",    "cn": "没有水花会枯死。",          "level": 1},
+        {"en": "The fish died.",                "cn": "那条鱼死了。",              "level": 2},
+        {"en": "His crops died because he didn't take care of them.", "cn": "因为他不照料，庄稼都死了。", "level": 3},
+    ],
+    "pick up": [
+        {"en": "Pick up your pen.",             "cn": "把你的笔捡起来。",          "level": 1},
+        {"en": "She picked up the book.",       "cn": "她把书捡了起来。",          "level": 2},
+        {"en": "The farmer picked up the hare and took it home.", "cn": "农夫把兔子捡起来带回了家。", "level": 3},
+    ],
+    "easy": [
+        {"en": "It's easy.",                    "cn": "这很容易。",                "level": 1},
+        {"en": "This question is easy.",        "cn": "这道题很简单。",            "level": 2},
+        {"en": "He thought it was easy to get food.", "cn": "他觉得弄到食物很容易。", "level": 3},
+    ],
+    "himself": [
+        {"en": "He did it himself.",            "cn": "他自己做的。",              "level": 1},
+        {"en": "Tom made the cake himself.",    "cn": "Tom 自己做的蛋糕。",        "level": 2},
+        {"en": "The farmer talked to himself under the tree.", "cn": "农夫在树下自言自语。", "level": 3},
+    ],
+    "from then on": [
+        {"en": "From then on, I was happy.",    "cn": "从那时起，我很开心。",      "level": 1},
+        {"en": "From then on, he studied hard.","cn": "从那以后，他努力学习。",    "level": 2},
+        {"en": "From then on, he didn't work in the field.", "cn": "从那以后，他就不在田里干活了。", "level": 3},
+    ],
+    "stop": [
+        {"en": "Stop!",                         "cn": "停！",                      "level": 1},
+        {"en": "The bus stops here.",           "cn": "公共汽车在这里停。",        "level": 2},
+        {"en": "He stopped working in the field.", "cn": "他停止了在田里的劳作。", "level": 3},
+    ],
+
+    # ---------------- U3 What animal is it? ----------------
+    "animal": [
+        {"en": "I like animals.",               "cn": "我喜欢动物。",              "level": 1},
+        {"en": "What animal is it?",            "cn": "这是什么动物？",            "level": 2},
+        {"en": "Many animals live in the forest.", "cn": "许多动物生活在森林里。", "level": 3},
+    ],
+    "endangered": [
+        {"en": "Pandas are endangered.",        "cn": "熊猫是濒危动物。",          "level": 1},
+        {"en": "Many tigers are endangered.",   "cn": "很多老虎濒临灭绝。",        "level": 2},
+        {"en": "We should protect endangered animals.", "cn": "我们应该保护濒危动物。", "level": 3},
+    ],
+    "panda": [
+        {"en": "I love pandas.",                "cn": "我喜欢熊猫。",              "level": 1},
+        {"en": "Pandas are black and white.",   "cn": "熊猫是黑白相间的。",        "level": 2},
+        {"en": "Pandas live in the bamboo forests of China.", "cn": "熊猫生活在中国的竹林里。", "level": 3},
+    ],
+    "elephant": [
+        {"en": "Elephants are big.",            "cn": "大象很大。",                "level": 1},
+        {"en": "The elephant has a long trunk.", "cn": "大象有长长的鼻子。",       "level": 2},
+        {"en": "Elephants are the largest land animals.", "cn": "大象是陆地上最大的动物。", "level": 3},
+    ],
+    "whale": [
+        {"en": "A whale is big.",               "cn": "鲸鱼很大。",                "level": 1},
+        {"en": "Whales live in the sea.",       "cn": "鲸鱼生活在海里。",          "level": 2},
+        {"en": "The blue whale is the largest animal in the world.", "cn": "蓝鲸是世界上最大的动物。", "level": 3},
+    ],
+    "giraffe": [
+        {"en": "A giraffe is tall.",            "cn": "长颈鹿很高。",              "level": 1},
+        {"en": "The giraffe has a long neck.",  "cn": "长颈鹿有长长的脖子。",      "level": 2},
+        {"en": "Giraffes eat leaves from tall trees.", "cn": "长颈鹿吃高高的树上的叶子。", "level": 3},
+    ],
+    "tiger": [
+        {"en": "A tiger is strong.",            "cn": "老虎很强壮。",              "level": 1},
+        {"en": "The tiger is a big cat.",       "cn": "老虎是一种大型猫科动物。",  "level": 2},
+        {"en": "Tigers are in danger and we must protect them.", "cn": "老虎处于危险中，我们必须保护它们。", "level": 3},
+    ],
+    "protect": [
+        {"en": "Protect the birds.",            "cn": "保护鸟类。",                "level": 1},
+        {"en": "We should protect animals.",    "cn": "我们应该保护动物。",        "level": 2},
+        {"en": "We can protect their homes and keep them safe.", "cn": "我们可以保护它们的家园，让它们安全。", "level": 3},
+    ],
+
+    # ---------------- U4 We can save the animals ----------------
+    "save": [
+        {"en": "Save water!",                   "cn": "节约用水！",                "level": 1},
+        {"en": "We can save the animals.",      "cn": "我们可以拯救动物。",        "level": 2},
+        {"en": "Every small action can save endangered animals.", "cn": "每一个小行动都能拯救濒危动物。", "level": 3},
+    ],
+    "in danger": [
+        {"en": "They are in danger.",           "cn": "它们处于危险中。",          "level": 1},
+        {"en": "Many animals are in danger.",   "cn": "许多动物处于危险中。",      "level": 2},
+        {"en": "Pandas are in danger because of pollution.", "cn": "熊猫因污染而处于危险中。", "level": 3},
+    ],
+    "kill": [
+        {"en": "Don't kill!",                   "cn": "不要杀害！",                "level": 1},
+        {"en": "We shouldn't kill animals.",    "cn": "我们不应该杀害动物。",      "level": 2},
+        {"en": "People kill animals for their fur.", "cn": "人们为了皮毛而猎杀动物。", "level": 3},
+    ],
+    "forest": [
+        {"en": "A forest has many trees.",      "cn": "森林里有很多树。",          "level": 1},
+        {"en": "Animals live in the forest.",   "cn": "动物生活在森林里。",        "level": 2},
+        {"en": "People cut down forests and animals lose their homes.", "cn": "人们砍伐森林，动物失去了家园。", "level": 3},
+    ],
+    "river": [
+        {"en": "A river is long.",              "cn": "河很长。",                  "level": 1},
+        {"en": "Fish swim in the river.",       "cn": "鱼在河里游。",              "level": 2},
+        {"en": "Polluted rivers make fish sick.", "cn": "被污染的河水让鱼生病。",  "level": 3},
+    ],
+    "pollute": [
+        {"en": "Don't pollute.",                "cn": "别污染环境。",              "level": 1},
+        {"en": "Cars pollute the air.",         "cn": "汽车污染空气。",            "level": 2},
+        {"en": "Factories polluted the river last year.", "cn": "去年工厂污染了这条河。", "level": 3},
+    ],
+    "clean": [
+        {"en": "Keep clean.",                   "cn": "保持干净。",                "level": 1},
+        {"en": "I clean my room every day.",    "cn": "我每天打扫房间。",          "level": 2},
+        {"en": "We should keep the river clean for the fish.", "cn": "我们应该让河水保持干净，为了鱼儿。", "level": 3},
+    ],
+    "helpful": [
+        {"en": "Be helpful.",                   "cn": "乐于助人。",                "level": 1},
+        {"en": "He is a helpful boy.",          "cn": "他是一个乐于助人的男孩。",  "level": 2},
+        {"en": "Your actions are helpful to the animals.", "cn": "你的行动对动物很有帮助。", "level": 3},
+    ],
+    "disappear": [
+        {"en": "It disappeared.",               "cn": "它消失了。",                "level": 1},
+        {"en": "The sun disappeared in the clouds.", "cn": "太阳消失在云层中。",   "level": 2},
+        {"en": "Many animals disappeared because of pollution.", "cn": "许多动物因污染而消失了。", "level": 3},
+    ],
+    "Earth": [
+        {"en": "We live on Earth.",             "cn": "我们生活在地球上。",        "level": 1},
+        {"en": "The Earth is our home.",        "cn": "地球是我们的家。",          "level": 2},
+        {"en": "We should protect the Earth and all animals.", "cn": "我们应该保护地球和所有动物。", "level": 3},
+    ],
+    "forever": [
+        {"en": "I will love you forever.",      "cn": "我会永远爱你。",            "level": 1},
+        {"en": "Nothing lasts forever.",        "cn": "没有什么能永远存在。",      "level": 2},
+        {"en": "We don't want the animals to disappear forever.", "cn": "我们不希望动物们永远消失。", "level": 3},
+    ],
+    "fur": [
+        {"en": "Cats have fur.",                "cn": "猫身上有毛。",              "level": 1},
+        {"en": "The fur is soft.",              "cn": "这皮毛很柔软。",            "level": 2},
+        {"en": "Some people kill animals for their fur.", "cn": "有些人为了皮毛猎杀动物。", "level": 3},
+    ],
+    "made": [
+        {"en": "I made a cake.",                "cn": "我做了一个蛋糕。",          "level": 1},
+        {"en": "This bag is made of paper.",    "cn": "这个包是纸做的。",          "level": 2},
+        {"en": "Don't buy things made from animal fur.", "cn": "不要买用动物皮毛做的东西。", "level": 3},
+    ],
+    "make from": [
+        {"en": "Make it from paper.",           "cn": "用纸做的。",                "level": 1},
+        {"en": "This bag is made from plastic.","cn": "这个包是用塑料做的。",      "level": 2},
+        {"en": "Coats are sometimes made from animal fur.", "cn": "外套有时是用动物皮毛做的。", "level": 3},
+    ],
+    "only": [
+        {"en": "Only one apple.",               "cn": "只有一个苹果。",            "level": 1},
+        {"en": "I only have two pens.",         "cn": "我只有两支笔。",            "level": 2},
+        {"en": "There are only a few pandas left in the wild.", "cn": "野外只剩下很少的熊猫了。", "level": 3},
+    ],
+
+    # ---------------- U5 Dr Sun Yatsen ----------------
+    "famous": [
+        {"en": "He is famous.",                 "cn": "他很有名。",                "level": 1},
+        {"en": "She is a famous singer.",       "cn": "她是一位著名歌手。",        "level": 2},
+        {"en": "Dr Sun Yatsen is famous all over the world.", "cn": "孙中山先生全世界闻名。", "level": 3},
+    ],
+    "leader": [
+        {"en": "He is our leader.",             "cn": "他是我们的领袖。",          "level": 1},
+        {"en": "A good leader works hard.",     "cn": "好领袖会努力工作。",        "level": 2},
+        {"en": "Dr Sun Yatsen was a great leader of China.", "cn": "孙中山先生是中国伟大的领袖。", "level": 3},
+    ],
+    "born": [
+        {"en": "I was born in May.",            "cn": "我在 5 月出生。",           "level": 1},
+        {"en": "When was he born?",             "cn": "他什么时候出生的？",        "level": 2},
+        {"en": "He was born in 1866 in Guangdong.", "cn": "他 1866 年出生在广东。", "level": 3},
+    ],
+    "history": [
+        {"en": "I like history.",               "cn": "我喜欢历史。",              "level": 1},
+        {"en": "We have history class today.",  "cn": "我们今天有历史课。",        "level": 2},
+        {"en": "Dr Sun Yatsen is important in Chinese history.", "cn": "孙中山先生在中国历史上很重要。", "level": 3},
+    ],
+    "free": [
+        {"en": "I am free today.",              "cn": "我今天有空。",              "level": 1},
+        {"en": "The birds are free in the sky.","cn": "鸟儿在天空中自由飞翔。",    "level": 2},
+        {"en": "He wanted to free the Chinese people.", "cn": "他想解放中国人民。", "level": 3},
+    ],
+    "change": [
+        {"en": "Things change.",                "cn": "事情在变化。",              "level": 1},
+        {"en": "I want to change my room.",     "cn": "我想改造一下我的房间。",    "level": 2},
+        {"en": "He worked hard to change China and help the people.", "cn": "他努力改变中国，帮助人民。", "level": 3},
+    ],
+    "respect": [
+        {"en": "Respect your parents.",         "cn": "尊敬你的父母。",            "level": 1},
+        {"en": "We respect our teachers.",      "cn": "我们尊敬老师。",            "level": 2},
+        {"en": "People respect Dr Sun Yatsen very much.", "cn": "人们非常尊敬孙中山先生。", "level": 3},
+    ],
+    "named after": [
+        {"en": "I'm named after my grandpa.",   "cn": "我的名字是以我爷爷的名字命名的。", "level": 1},
+        {"en": "The park is named after him.",  "cn": "这公园以他的名字命名。",    "level": 2},
+        {"en": "Many streets in China are named after Dr Sun Yatsen.", "cn": "中国很多街道都以孙中山先生命名。", "level": 3},
+    ],
+
+    # ---------------- U6 Early years of Deng Jiaxian ----------------
+    "scientist": [
+        {"en": "I want to be a scientist.",     "cn": "我想成为科学家。",          "level": 1},
+        {"en": "A scientist works in a lab.",   "cn": "科学家在实验室工作。",      "level": 2},
+        {"en": "Deng Jiaxian was a great scientist of China.", "cn": "邓稼先是中国伟大的科学家。", "level": 3},
+    ],
+    "clever": [
+        {"en": "He is clever.",                 "cn": "他很聪明。",                "level": 1},
+        {"en": "A clever boy asks questions.",  "cn": "聪明的男孩会提问。",        "level": 2},
+        {"en": "When he was a child, he was clever and hard-working.", "cn": "他小时候就聪明又勤奋。", "level": 3},
+    ],
+    "thoughtful": [
+        {"en": "She is thoughtful.",            "cn": "她很体贴。",                "level": 1},
+        {"en": "A thoughtful boy thinks a lot.","cn": "爱思考的男孩想得很多。",    "level": 2},
+        {"en": "He was a quiet and thoughtful child.", "cn": "他是一个安静、爱思考的孩子。", "level": 3},
+    ],
+    "contribution": [
+        {"en": "Make a contribution.",          "cn": "做出贡献。",                "level": 1},
+        {"en": "He made a big contribution.",   "cn": "他做出了很大的贡献。",      "level": 2},
+        {"en": "Deng Jiaxian made great contributions to China.", "cn": "邓稼先为中国做出了巨大贡献。", "level": 3},
+    ],
+    "quiet": [
+        {"en": "Be quiet!",                     "cn": "安静！",                    "level": 1},
+        {"en": "He is a quiet boy.",            "cn": "他是一个安静的男孩。",      "level": 2},
+        {"en": "In the library, we should be quiet.", "cn": "在图书馆里，我们应该保持安静。", "level": 3},
+    ],
+    "all one's life": [
+        {"en": "All my life.",                  "cn": "我一生。",                  "level": 1},
+        {"en": "He worked hard all his life.",  "cn": "他一生都在努力工作。",      "level": 2},
+        {"en": "Deng Jiaxian worked for the country all his life.", "cn": "邓稼先一生都在为国家工作。", "level": 3},
+    ],
+
+    # ---------------- U7 It's the polite thing to do ----------------
+    "polite": [
+        {"en": "Be polite.",                    "cn": "要有礼貌。",                "level": 1},
+        {"en": "He is a polite boy.",           "cn": "他是一个有礼貌的男孩。",    "level": 2},
+        {"en": "It's polite to queue up at the bus stop.", "cn": "在公交站排队是礼貌的。", "level": 3},
+    ],
+    "impolite": [
+        {"en": "It's impolite.",                "cn": "这不礼貌。",                "level": 1},
+        {"en": "Pushing in line is impolite.",  "cn": "插队是不礼貌的。",          "level": 2},
+        {"en": "It's impolite to talk loudly in the library.", "cn": "在图书馆里大声说话不礼貌。", "level": 3},
+    ],
+    "manner": [
+        {"en": "Good manners.",                 "cn": "好的礼貌。",                "level": 1},
+        {"en": "We should have good manners.",  "cn": "我们应该有良好的礼仪。",    "level": 2},
+        {"en": "Good manners make life better for everyone.", "cn": "良好的礼仪让每个人生活更美好。", "level": 3},
+    ],
+    "queue": [
+        {"en": "Please queue up.",              "cn": "请排队。",                  "level": 1},
+        {"en": "We queue up at school.",        "cn": "我们在学校排队。",          "level": 2},
+        {"en": "Everyone should queue up when waiting for the bus.", "cn": "每个人等公交时都应该排队。", "level": 3},
+    ],
+    "push in": [
+        {"en": "Don't push in.",                "cn": "不要插队。",                "level": 1},
+        {"en": "Don't push in line.",           "cn": "不要在队伍里插队。",        "level": 2},
+        {"en": "It's not polite to push in when others are waiting.", "cn": "别人排队时插队是不礼貌的。", "level": 3},
+    ],
+    "loudly": [
+        {"en": "Don't talk loudly.",            "cn": "不要大声说话。",            "level": 1},
+        {"en": "He spoke loudly in class.",     "cn": "他在课堂上大声讲话。",      "level": 2},
+        {"en": "We shouldn't talk loudly in the library.", "cn": "我们在图书馆不该大声说话。", "level": 3},
+    ],
+    "quietly": [
+        {"en": "Walk quietly.",                 "cn": "轻轻地走。",                "level": 1},
+        {"en": "Please speak quietly.",         "cn": "请小声说话。",              "level": 2},
+        {"en": "We should speak quietly in the reading room.", "cn": "在阅览室里我们应该小声说话。", "level": 3},
+    ],
+
+    # ---------------- U8 The magic words ----------------
+    "magic": [
+        {"en": "It's magic!",                   "cn": "太神奇了！",                "level": 1},
+        {"en": "I love magic shows.",           "cn": "我喜欢魔术表演。",          "level": 2},
+        {"en": "\"Please\" and \"Thank you\" are magic words.", "cn": "“请”和“谢谢”都是魔法词汇。", "level": 3},
+    ],
+    "please": [
+        {"en": "Please help me.",               "cn": "请帮帮我。",                "level": 1},
+        {"en": "Open the door, please.",        "cn": "请把门打开。",              "level": 2},
+        {"en": "Can you pass me the book, please?", "cn": "请你把那本书递给我好吗？", "level": 3},
+    ],
+    "sorry": [
+        {"en": "Sorry!",                        "cn": "对不起！",                  "level": 1},
+        {"en": "I'm sorry I'm late.",           "cn": "对不起我迟到了。",          "level": 2},
+        {"en": "I'm sorry for pushing in line just now.", "cn": "刚才插队我很抱歉。", "level": 3},
+    ],
+    "excuse me": [
+        {"en": "Excuse me.",                    "cn": "打扰一下。",                "level": 1},
+        {"en": "Excuse me, what time is it?",   "cn": "请问，现在几点？",          "level": 2},
+        {"en": "Excuse me, where is the nearest library?", "cn": "请问，最近的图书馆在哪？", "level": 3},
+    ],
+    "friendly": [
+        {"en": "Be friendly.",                  "cn": "要友好。",                  "level": 1},
+        {"en": "She is friendly to everyone.",  "cn": "她对每个人都很友好。",      "level": 2},
+        {"en": "A friendly smile can make someone's day better.", "cn": "友好的微笑能让别人的一天更美好。", "level": 3},
+    ],
+
+    # ---------------- U9 Where will you go? ----------------
+    "travel": [
+        {"en": "I like to travel.",             "cn": "我喜欢旅行。",              "level": 1},
+        {"en": "We travel by train.",           "cn": "我们乘火车旅行。",          "level": 2},
+        {"en": "I want to travel around the world one day.", "cn": "有一天我想环游世界。", "level": 3},
+    ],
+    "visit": [
+        {"en": "Visit me!",                     "cn": "来看我呀！",                "level": 1},
+        {"en": "I visit my grandma on Sundays.","cn": "我周日去看外婆。",          "level": 2},
+        {"en": "We will visit the Great Wall this summer.", "cn": "今年夏天我们要参观长城。", "level": 3},
+    ],
+    "plane": [
+        {"en": "A plane flies.",                "cn": "飞机在飞。",                "level": 1},
+        {"en": "We go to Beijing by plane.",    "cn": "我们坐飞机去北京。",        "level": 2},
+        {"en": "The plane takes about three hours to fly to Beijing.", "cn": "飞机飞到北京大约需要三小时。", "level": 3},
+    ],
+    "train": [
+        {"en": "A train is long.",              "cn": "火车很长。",                "level": 1},
+        {"en": "I take the train to school.",   "cn": "我坐火车去上学。",          "level": 2},
+        {"en": "I will take a train to Shanghai next week.", "cn": "下周我要坐火车去上海。", "level": 3},
+    ],
+    "holiday": [
+        {"en": "Happy holiday!",                "cn": "假期快乐！",                "level": 1},
+        {"en": "Summer holiday is fun.",        "cn": "暑假很有趣。",              "level": 2},
+        {"en": "Where will you go this summer holiday?", "cn": "今年暑假你要去哪里？", "level": 3},
+    ],
+
+    # ---------------- U10 I can't wait to see you ----------------
+    "can't wait to": [
+        {"en": "I can't wait!",                 "cn": "我等不及了！",              "level": 1},
+        {"en": "I can't wait to open it.",      "cn": "我等不及要打开它。",        "level": 2},
+        {"en": "I can't wait to see my old friends again.", "cn": "我迫不及待想再见到我的老朋友们。", "level": 3},
+    ],
+    "send": [
+        {"en": "Send a card.",                  "cn": "寄一张卡片。",              "level": 1},
+        {"en": "She sent me a gift.",           "cn": "她寄给我一份礼物。",        "level": 2},
+        {"en": "I will send you some photos from my trip.", "cn": "我会把旅行的照片发给你。", "level": 3},
+    ],
+    "email": [
+        {"en": "Send an email.",                "cn": "发一封邮件。",              "level": 1},
+        {"en": "I write emails to my cousin.",  "cn": "我给表哥写邮件。",          "level": 2},
+        {"en": "Please write an email to me when you arrive.", "cn": "你到了请给我发一封邮件。", "level": 3},
+    ],
+    "photo": [
+        {"en": "Look at this photo.",           "cn": "看这张照片。",              "level": 1},
+        {"en": "I took many photos.",           "cn": "我拍了很多照片。",          "level": 2},
+        {"en": "I will take many photos at the Great Wall.", "cn": "我会在长城拍很多照片。", "level": 3},
+    ],
+    "hometown": [
+        {"en": "I love my hometown.",           "cn": "我爱我的家乡。",            "level": 1},
+        {"en": "My hometown is beautiful.",     "cn": "我的家乡很美。",            "level": 2},
+        {"en": "I will go back to my hometown this holiday.", "cn": "这个假期我要回家乡。", "level": 3},
+    ],
+}
+
+
+def main():
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    data = {"words": EXAMPLES}
+    # 统计对照：检查 jk.json 里 grade6.下 的每个单词是否都有例句
+    tb_path = os.path.join(ROOT, "data", "textbooks", "jk.json")
+    with open(tb_path, "r", encoding="utf-8") as f:
+        jk = json.load(f)
+    units = jk["grades"]["grade6"]["下"]
+    all_words = []
+    for u in units:
+        for w in u.get("words", []):
+            all_words.append(w["word"])
+    missing = [w for w in all_words if w not in EXAMPLES]
+    extra   = [w for w in EXAMPLES.keys() if w not in all_words]
+    print("Total words in jk grade6.下:", len(all_words))
+    print("Words with examples       :", len(EXAMPLES))
+    if missing:
+        print("!! Missing examples for   :", missing)
+    if extra:
+        print("?? Extra keys not in jk   :", extra)
+
+    # 按样本数量汇总
+    counts = [len(v) for v in EXAMPLES.values()]
+    print("Examples per word: min={}, max={}, avg={:.2f}".format(
+        min(counts), max(counts), sum(counts) / len(counts)))
+
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print("\nWritten:", OUT)
+
+
+if __name__ == "__main__":
+    main()

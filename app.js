@@ -931,6 +931,9 @@ function _showUnitAtIndex(idx) {
       if (wordPhonetic) wordPhonetic.textContent = '';
       if (wordMeaning)  wordMeaning.textContent  = '本单元单词待补充';
       if (wordExample)  wordExample.textContent  = '请根据课本把 words 数据填入 data/textbooks/' + (state.ctx.textbook || 'jk') + '.json';
+      // 占位单元也隐藏例句区块
+      const exWrap = document.getElementById('wordExamplesWrap');
+      if (exWrap) exWrap.classList.add('hide');
     }
     // 课文朗读按钮：没内容时禁用
     const pb = document.getElementById('lessonPlayBtn');
@@ -1055,7 +1058,105 @@ function showWord() {
   document.getElementById('wordExample').textContent = w.example;
   document.getElementById('wordIndex').textContent = state.currentWordIndex + 1;
   document.getElementById('wordCard').classList.remove('flipped');
+  // 🆕 渲染例句阶梯
+  renderWordExamples(w);
 }
+
+// ============ 例句阶梯：按需懒加载 examples 文件 ============
+// 缓存：textbook id -> { grade_term: { words: { word: [...] } } }
+const _examplesCache = {};
+const _examplesLoading = {};
+
+function _examplesFileKey(ctx) {
+  // 目前仅 jk 教材的 grade6.下 有例句数据，对应 data/examples/jk_grade6_xia.json
+  const gradeKey = 'grade' + (ctx.grade || 3);
+  const termKey  = ctx.term === '下' ? 'xia' : 'shang';
+  return `${ctx.textbook || 'jk'}_${gradeKey}_${termKey}`;
+}
+
+function _examplesFilePath(ctx) {
+  return `data/examples/${_examplesFileKey(ctx)}.json`;
+}
+
+function loadExamplesIfNeeded(ctx, onReady) {
+  const key = _examplesFileKey(ctx);
+  if (_examplesCache[key] !== undefined) { onReady(_examplesCache[key]); return; }
+  if (_examplesLoading[key]) { _examplesLoading[key].push(onReady); return; }
+  _examplesLoading[key] = [onReady];
+  fetch(_examplesFilePath(ctx))
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null)
+    .then(data => {
+      _examplesCache[key] = data; // null 也缓存，避免反复 404
+      const cbs = _examplesLoading[key] || [];
+      delete _examplesLoading[key];
+      cbs.forEach(cb => { try { cb(data); } catch(e){} });
+    });
+}
+
+function renderWordExamples(w) {
+  const wrap = document.getElementById('wordExamplesWrap');
+  const list = document.getElementById('wordExamplesList');
+  const toggle = document.getElementById('wordExamplesToggle');
+  if (!wrap || !list) return;
+
+  // 先尝试用单词自己带的 examples 字段；否则从独立例句文件查找
+  const inlineExamples = Array.isArray(w.examples) ? w.examples : null;
+  const draw = (arr) => {
+    if (!arr || arr.length === 0) {
+      wrap.classList.add('hide');
+      return;
+    }
+    wrap.classList.remove('hide');
+    // 默认展开
+    list.style.display = '';
+    if (toggle) toggle.textContent = '收起';
+    list.innerHTML = '';
+    arr.forEach((ex) => {
+      const lvl = Number(ex.level) || 1;
+      const lvlText = lvl === 1 ? '易' : (lvl === 2 ? '中' : '难');
+      const item = document.createElement('div');
+      item.className = 'example-item';
+      const en = (ex.en || '').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+      const cn = (ex.cn || '').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+      item.innerHTML = `
+        <span class="lvl lv${lvl}">${lvlText}</span>
+        <div class="ex-body">
+          <div class="ex-en">${en}</div>
+          <div class="ex-cn">${cn}</div>
+        </div>
+        <button type="button" class="ex-play" title="朗读例句">🔊</button>
+      `;
+      const btn = item.querySelector('.ex-play');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        try { speakBrowser(ex.en || '', {}); } catch(err) { try { speak(ex.en || ''); } catch(e){} }
+      });
+      list.appendChild(item);
+    });
+  };
+
+  if (inlineExamples) { draw(inlineExamples); return; }
+
+  // 从 examples 文件查
+  loadExamplesIfNeeded(state.ctx || {}, (data) => {
+    // 只有当前 word 没变才渲染（防止快速翻页后渲染错乱）
+    const cur = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
+    if (!cur || cur.word !== w.word) return;
+    const arr = (data && data.words && data.words[w.word]) || null;
+    draw(arr);
+  });
+}
+
+function toggleWordExamples() {
+  const list = document.getElementById('wordExamplesList');
+  const toggle = document.getElementById('wordExamplesToggle');
+  if (!list || !toggle) return;
+  const collapsed = list.style.display === 'none';
+  list.style.display = collapsed ? '' : 'none';
+  toggle.textContent = collapsed ? '收起' : '展开';
+}
+window.toggleWordExamples = toggleWordExamples;
 
 function flipCard() {
   document.getElementById('wordCard').classList.toggle('flipped');
