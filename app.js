@@ -1643,7 +1643,9 @@ function showQuiz() {
   if (realType === 'spelling') {
     // ===== 单词拼写：字母格子填空 =====
     const qEl = document.getElementById('quizQuestion');
-    qEl.innerHTML = '请拼写：<span class="text-blue-600">"' + (q.q || '') + '"</span>';
+    const ansLen = (q.answer || '').length;
+    qEl.innerHTML = '请拼写：<span class="text-blue-600">"' + (q.q || '') + '"</span>'
+                  + '<span class="block text-xs text-slate-400 font-normal mt-1">共 ' + ansLen + ' 个字母</span>';
     qEl.className = 'text-xl sm:text-2xl font-bold text-slate-800 mb-5 text-center';
     opts.innerHTML = '';
     opts.classList.add('hide');
@@ -1674,6 +1676,38 @@ function showQuiz() {
   document.getElementById('quizNextBtn').classList.add('hide');
 }
 
+// 🎲 根据答案长度随机挖空生成 hint（每次调用位置都不同，增加趣味性）
+//    难度自适应：
+//      长度 ≤3  → 挖 1 个（首字母保留、其他任一位）
+//      长度 4-6 → 挖 2-3 个
+//      长度 7-9 → 挖 3-4 个
+//      长度 ≥10 → 挖 4-5 个
+//    规则：至少保留"首字母"作为提示，其他位置从后续字符中随机选 k 个挖掉。
+function generateRandomHint(answer) {
+  const w = String(answer || '').toLowerCase();
+  if (!w) return '';
+  const n = w.length;
+  let k;
+  if      (n <= 3) k = 1;
+  else if (n <= 6) k = 2 + ((Math.random() * 2) | 0);   // 2 or 3
+  else if (n <= 9) k = 3 + ((Math.random() * 2) | 0);   // 3 or 4
+  else             k = 4 + ((Math.random() * 2) | 0);   // 4 or 5
+  k = Math.min(k, n - 1);                               // 至少保留 1 个首字母
+  if (k <= 0) return w;
+  // 从 [1, n-1] 中随机选 k 个位置挖掉（0 位保留首字母）
+  const candidates = [];
+  for (let i = 1; i < n; i++) candidates.push(i);
+  // Fisher-Yates 洗牌
+  for (let i = candidates.length - 1; i > 0; i--) {
+    const j = (Math.random() * (i + 1)) | 0;
+    [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+  }
+  const blanks = new Set(candidates.slice(0, k));
+  let out = '';
+  for (let i = 0; i < n; i++) out += blanks.has(i) ? '_' : w[i];
+  return out;
+}
+
 // 根据 hint（如 "h___o"）生成字母格子：
 // - 字母位：固定显示字母（灰色格子）
 // - 下划线位：空白输入格（蓝色边框 + 下划线）
@@ -1682,8 +1716,10 @@ function renderSpellCells(q) {
   const container = document.getElementById('quizSpellCells');
   if (!container) return;
   const answer = (q.answer || '').toLowerCase();
-  let hint = q.hint || '';
-  // hint 缺失或长度不一致时，按答案长度兜底（首字母给提示，其他全空）
+  // 🎲 每次都动态生成 hint，确保"同一道题每次练习挖的字母位置都不同"
+  //    若题目自带的 hint 想保留为"老师指定"风格，把这行改回：let hint = q.hint || '';
+  let hint = generateRandomHint(answer);
+  // 兜底：若生成失败/长度不符，仍按答案长度首字母提示
   if (!hint || hint.length !== answer.length) {
     hint = answer.charAt(0) + '_'.repeat(Math.max(0, answer.length - 1));
   }
