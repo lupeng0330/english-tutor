@@ -18,7 +18,12 @@
     const results = {};
     for (const t of types) {
       try {
-        const res = await fetch(base + t + '.json?t=' + Date.now());
+        // 🆕 优先走全局 __withVer（附带 ?v= 版本号），否则退回到 ?t= 时间戳
+        const raw = base + t + '.json';
+        const url = (typeof window !== 'undefined' && typeof window.__withVer === 'function')
+          ? window.__withVer(raw)
+          : (raw + '?t=' + Date.now());
+        const res = await fetch(url);
         if (!res.ok) throw new Error('HTTP ' + res.status);
         results[t] = await res.json();
       } catch (err) {

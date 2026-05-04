@@ -11,7 +11,34 @@
 <title>乐学英语 · 广州教科版同步辅导 (Demo)</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<link rel="stylesheet" href="./styles.css">
+<!-- 🆕 缓存破坏：从 URL ?v=xxx 读取版本号；若无则用当日日期（精确到分钟），确保手机端随部署自动刷新 -->
+<script>
+  (function () {
+    var u = new URL(window.location.href);
+    var v = u.searchParams.get('v');
+    if (!v) {
+      // 默认：用"当日日期 + 小时"作为版本，手动推送后只要过了整点就自动破缓存
+      // 如果想强制最新，请手动访问 ?v=随意字符串
+      var d = new Date();
+      v = d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0')
+        + '-' + String(d.getHours()).padStart(2,'0');
+    }
+    window.__APP_VERSION = v;
+    // 动态注入 css / js，确保带上 ?v=
+    var head = document.head;
+    function addLink(href) {
+      var l = document.createElement('link');
+      l.rel = 'stylesheet';
+      l.href = href + (href.indexOf('?')<0 ? '?' : '&') + 'v=' + encodeURIComponent(v);
+      head.appendChild(l);
+    }
+    window.__withVer = function(url){
+      if (!url) return url;
+      return url + (url.indexOf('?')<0 ? '?' : '&') + 'v=' + encodeURIComponent(window.__APP_VERSION || '');
+    };
+    addLink('./styles.css');
+  })();
+</script>
 </head>
 <body>
 
@@ -581,7 +608,26 @@
   </main>
 </div>
 
-<script src="./questionBank.js"></script>
-<script src="./app.js"></script>
+<!-- 🆕 动态注入 questionBank.js / app.js，自带 ?v=版本号，彻底绕过浏览器/CDN 缓存 -->
+<script>
+  (function () {
+    function addScript(src, cb) {
+      var s = document.createElement('script');
+      s.src = window.__withVer ? window.__withVer(src) : src;
+      s.onload = cb || null;
+      document.body.appendChild(s);
+    }
+    addScript('./questionBank.js', function() { addScript('./app.js'); });
+  })();
+</script>
+
+<!-- 🆕 版本号角标（左下角小字，双击隐藏） -->
+<div id="appVersionBadge" style="position:fixed;left:6px;bottom:4px;z-index:9999;font-size:10px;color:#94a3b8;font-family:monospace;opacity:0.55;pointer-events:auto;user-select:none;" ondblclick="this.style.display='none'" title="双击隐藏。传入 ?v=xxx 可强制破缓存"></div>
+<script>
+  (function () {
+    var el = document.getElementById('appVersionBadge');
+    if (el) el.textContent = 'v' + (window.__APP_VERSION || 'dev');
+  })();
+</script>
 </body>
 </html>

@@ -3,6 +3,14 @@
 let textbookData = {};
 let _currentTextbookMeta = null;
 
+// 🆕 统一的资源破缓存工具：优先使用 index.html 注入的 __withVer(url)；否则追加 ?t= 时间戳
+function _bust(url) {
+  if (typeof window !== 'undefined' && typeof window.__withVer === 'function') {
+    return window.__withVer(url);
+  }
+  return url + (url.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now();
+}
+
 // 根据 state.ctx 构造教材 JSON 路径（支持未来多教材版本）
 function textbookJsonPath() {
   const id = state && state.ctx && state.ctx.textbook ? state.ctx.textbook : 'jk';
@@ -667,7 +675,7 @@ function loadExercisesIfNeeded(ctx, onReady) {
   if (_exercisesCache[key] !== undefined) { onReady(_exercisesCache[key]); return; }
   if (_exercisesLoading[key]) { _exercisesLoading[key].push(onReady); return; }
   _exercisesLoading[key] = [onReady];
-  fetch(`data/extras/${key}_exercises.json`)
+  fetch(_bust(`data/extras/${key}_exercises.json`))
     .then(r => r.ok ? r.json() : null)
     .catch(() => null)
     .then(data => {
