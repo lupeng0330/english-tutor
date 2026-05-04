@@ -402,6 +402,29 @@ body {
   #quizOptions button { font-size: 13px; padding: 10px; }
 }
 
+/* ============ 单元详情页 Tab ============ */
+.unit-tab {
+  color: #64748b;
+  border-bottom-color: transparent;
+  transition: color .15s, border-color .15s;
+  background: transparent;
+  font-size: 15px;
+}
+.unit-tab:hover { color: #3b82f6; }
+.unit-tab.active {
+  color: #2563eb;
+  border-bottom-color: #3b82f6;
+}
+@media (max-width: 480px) {
+  .unit-tab { padding: 8px 12px; font-size: 14px; }
+}
+
+/* 首页简化后：欢迎卡的 CTA 按钮在手机上全宽 */
+@media (max-width: 480px) {
+  #page-home .card.bg-gradient-to-br button { width: 100%; padding: 12px; font-size: 15px; }
+  #page-home .card .text-3xl { font-size: 22px; }
+}
+
 /* ============ 横屏模式 ============ */
 @media (max-width: 1024px) and (orientation: landscape) {
   body {
@@ -481,4 +504,37 @@ body {
   #quizSpellBox .spell-cell { width: 32px; height: 44px; font-size: 18px; }
   #quizSpellCells > div:not(.relative) { width: 32px; height: 44px; font-size: 18px; }
   #quizSpellSpeakBtn { width: 64px; height: 64px; font-size: 30px; }
+}
+
+/* ============ 虚拟键盘弹起：隐藏底部 Tab 栏，让输入区充分可见 ============ */
+body.keyboard-open aside {
+  display: none !important;
+}
+body.keyboard-open {
+  padding-bottom: 0 !important;
+}
+/* 拼写题激活时：给字母格容器加底部留白，确保滚动时不被遮挡 */
+#quizSpellBox { scroll-margin-top: 80px; scroll-margin-bottom: 80px; }
+#quizSpellCells > div, #quizSpellCells > input {
+  scroll-margin-top: 100px;
+  scroll-margin-bottom: 100px;
+}
+
+/* ============ 拼写题字母格：长单词时不换行（紧凑模式） ============ */
+#quizSpellCells {
+  /* 超过容器时改为横向滚动而非换行，避免第二排被键盘挡 */
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+#quizSpellCells::-webkit-scrollbar { display: none; }
+#quizSpellCells > div, #quizSpellCells > input { scroll-snap-align: center; flex-shrink: 0; }
+/* 超小屏：字母格更瘦，争取单行容下 8-10 个字母 */
+@media (max-width: 420px) {
+  #quizSpellBox .spell-cell { width: 28px !important; height: 40px !important; font-size: 17px !important; }
+  #quizSpellCells > div:not(.relative) { width: 28px !important; height: 40px !important; font-size: 17px !important; }
 }

@@ -305,6 +305,201 @@ function isPriorityQuestion(type, q) {
 }
 window.__smartpick = { score: _scoreQuestion, pick: pickSmartQuestions };
 
+// ===================== 📊 学习统计（localStorage 真实累计） =====================
+const STATS_KEY = 'yxyy_stats_v1';
+let _stats = null;
+function _loadStats() {
+  if (_stats) return _stats;
+  try {
+    const raw = localStorage.getItem(STATS_KEY);
+    _stats = raw ? JSON.parse(raw) : {};
+  } catch (e) { _stats = {}; }
+  _stats.totalSeconds = _stats.totalSeconds || 0;
+  _stats.knownWords   = _stats.knownWords   || {};
+  _stats.answers      = _stats.answers      || [];
+  _stats.lastActiveDay = _stats.lastActiveDay || '';
+  _stats.streak       = _stats.streak       || 0;
+  _stats.lastUnit     = _stats.lastUnit     || null;
+  return _stats;
+}
+function _saveStats() {
+  try { localStorage.setItem(STATS_KEY, JSON.stringify(_stats || {})); } catch(e) {}
+}
+function _todayStr() {
+  const d = new Date();
+  return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+}
+// 更新连续学习天数：今日第一次调 → streak++（隔天）或 streak=1（中断后重启）
+function _bumpStreak() {
+  const s = _loadStats();
+  const today = _todayStr();
+  if (s.lastActiveDay === today) return; // 今日已记过
+  if (!s.lastActiveDay) {
+    s.streak = 1;
+  } else {
+    // 判断是不是昨天
+    const d = new Date(s.lastActiveDay);
+    d.setDate(d.getDate() + 1);
+    const yest = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+    if (yest === today) s.streak = (s.streak || 0) + 1;
+    else s.streak = 1; // 中断
+  }
+  s.lastActiveDay = today;
+  _saveStats();
+}
+// 标记"已掌握单词"（在课本单词卡点 ✓ 认识 时触发）
+function markWordKnown(word) {
+  if (!word) return;
+  const s = _loadStats();
+  s.knownWords[String(word).toLowerCase()] = Date.now();
+  _saveStats();
+  renderHomeStats();
+}
+// 答题记录（用于本周正确率）
+function recordAnswerStats(isCorrect) {
+  const s = _loadStats();
+  s.answers.push({ at: Date.now(), ok: !!isCorrect });
+  if (s.answers.length > 500) s.answers = s.answers.slice(-500);
+  _saveStats();
+}
+// 记录最近学习的单元（给"继续学习"按钮用）
+function rememberLastUnit(grade, term, unitId, unitTitle, textbook) {
+  const s = _loadStats();
+  s.lastUnit = {
+    grade: grade, term: term, unitId: unitId, unitTitle: unitTitle,
+    textbook: textbook || (state.ctx && state.ctx.textbook) || 'jk',
+    at: Date.now()
+  };
+  _saveStats();
+  renderHomeStats();
+}
+// 页面可见时每 10s +1 个单位（近似学习分钟），隐藏/离开时停止
+(function setupTimeTracker() {
+  let lastTick = 0;
+  function tick() {
+    if (document.visibilityState === 'visible') {
+      const now = Date.now();
+      if (lastTick && (now - lastTick) < 60 * 1000) { // 不超过 1 分钟间隔才累计
+        const s = _loadStats();
+        s.totalSeconds = (s.totalSeconds || 0) + Math.floor((now - lastTick) / 1000);
+        _saveStats();
+      }
+      lastTick = now;
+    } else {
+      lastTick = 0;
+    }
+  }
+  setInterval(tick, 10 * 1000);
+  document.addEventListener('visibilitychange', () => { lastTick = 0; });
+})();
+window.__stats = {
+  get: _loadStats,
+  reset: () => { _stats = {}; _saveStats(); renderHomeStats(); },
+  markWordKnown, recordAnswerStats, rememberLastUnit
+};
+
+// 首页数据看板渲染
+function renderHomeStats() {
+  const s = _loadStats();
+  const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  setText('statTotalTime', Math.floor((s.totalSeconds || 0) / 60));
+  setText('statKnownWords', Object.keys(s.knownWords || {}).length);
+  setText('statStreak', s.streak || 0);
+  setText('headerStreak', s.streak || 0);
+  // 本周正确率（最近 7 天）
+  const weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
+  const recent = (s.answers || []).filter(a => a.at >= weekAgo);
+  if (recent.length === 0) {
+    setText('statAccuracy', '—');
+  } else {
+    const ok = recent.filter(a => a.ok).length;
+    setText('statAccuracy', Math.round(ok / recent.length * 100) + '%');
+  }
+  // 继续学习提示
+  const hint = document.getElementById('homeNextHint');
+  if (hint) {
+    if (s.lastUnit && s.lastUnit.unitTitle) {
+      const gText = ({1:'小学一年级',2:'小学二年级',3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[parseInt(String(s.lastUnit.grade).replace('grade',''),10)] || s.lastUnit.grade;
+      hint.textContent = '接下来：' + gText + ' · ' + (s.lastUnit.term === '下' ? '下册' : '上册') + ' · ' + s.lastUnit.unitTitle;
+    } else {
+      hint.textContent = '接下来：' + ctxSummaryText(state.ctx);
+    }
+  }
+  // 问候语按时间变
+  const greeting = document.getElementById('homeGreeting');
+  if (greeting) {
+    const h = new Date().getHours();
+    greeting.textContent = (h < 5 ? '夜深了，早点休息 🌙' : h < 11 ? 'Good morning ☀️' : h < 14 ? '中午好 🍱' : h < 18 ? 'Good afternoon 📚' : h < 22 ? 'Good evening 🌆' : '晚上好 🌙');
+  }
+}
+
+// 首页"继续学习"按钮：跳到 lastUnit 或当前 ctx 下的第一个单元
+function continueLearning() {
+  const s = _loadStats();
+  if (s.lastUnit) {
+    // 切到相应 ctx
+    const gnum = parseInt(String(s.lastUnit.grade).replace('grade',''), 10);
+    state.ctx.grade = gnum;
+    state.ctx.term  = s.lastUnit.term || '上';
+    if (s.lastUnit.textbook) state.ctx.textbook = s.lastUnit.textbook;
+    saveCtx();
+    applyContextChange();
+    // 延时进入课本页 → 单元详情（等 loadTextbook 完成）
+    setTimeout(() => {
+      switchPage('textbook');
+      setTimeout(() => {
+        const units = (textbookData[s.lastUnit.grade] && textbookData[s.lastUnit.grade].units) || [];
+        const idx = Math.max(0, units.findIndex(u => u.id === s.lastUnit.unitId));
+        if (units.length) _showUnitAtIndex(idx);
+      }, 300);
+    }, 300);
+  } else {
+    switchPage('textbook');
+  }
+}
+window.continueLearning = continueLearning;
+
+// ===================== 🗂 单元详情页 Tab 切换 =====================
+function switchUnitTab(which) {
+  const panels = {
+    words:  document.getElementById('unitTabWords'),
+    lesson: document.getElementById('unitTabLesson')
+  };
+  const tabs = {
+    words:  document.getElementById('tabWords'),
+    lesson: document.getElementById('tabLesson')
+  };
+  Object.keys(panels).forEach(k => {
+    if (panels[k]) panels[k].classList.toggle('hide', k !== which);
+    if (tabs[k])   tabs[k].classList.toggle('active', k === which);
+  });
+  // 单词计数器只在 words Tab 显示
+  const counter = document.getElementById('wordCounter');
+  if (counter) counter.style.display = (which === 'words' ? '' : 'none');
+}
+window.switchUnitTab = switchUnitTab;
+
+// 单元学习进度条（按"该单元已掌握单词数 / 单元总词数"显示）
+function updateUnitProgress() {
+  if (!state.currentUnit || !state.currentUnit.words) return;
+  const words = state.currentUnit.words;
+  const total = words.length;
+  const knownMap = _loadStats().knownWords || {};
+  let knownInUnit = 0;
+  for (const w of words) {
+    if (knownMap[String(w.word).toLowerCase()]) knownInUnit++;
+  }
+  const pct = total > 0 ? Math.round(knownInUnit / total * 100) : 0;
+  const bar = document.getElementById('unitProgressBar');
+  const pctEl = document.getElementById('unitProgressPct');
+  const label = document.getElementById('unitProgressLabel');
+  if (bar)   bar.style.width = pct + '%';
+  if (pctEl) pctEl.textContent = pct + '%';
+  if (label) label.textContent = knownInUnit + ' / ' + total + ' 词已掌握';
+}
+
+
+
 
 
 // 保存/恢复学习上下文（跨会话记忆）
@@ -360,23 +555,10 @@ function switchPage(page) {
   }
 }
 
-// ===================== 孩子切换 =====================
-function onChildChange(e) {
-  state.currentChild = e.target.value;
-  const c = childMap[e.target.value];
-  state.currentGrade = c.grade;
-  // 同步全局学习上下文
-  state.ctx.grade = c.gradeNum;
-  // 同步两个下拉
-  document.getElementById('childSelect').value = e.target.value;
-  document.getElementById('childSelectMobile').value = e.target.value;
-  document.getElementById('childAvatar').textContent = c.avatar;
-  document.getElementById('welcomeTitle').textContent = `你好，${c.name}！👋`;
-  document.getElementById('welcomeSub').textContent = `今天是新一天的学习，加油哦！广州教科版${c.gradeText} · ${c.unit}`;
-  applyContextChange();  // 一处同步所有 UI
-}
-document.getElementById('childSelect').addEventListener('change', onChildChange);
-document.getElementById('childSelectMobile').addEventListener('change', onChildChange);
+// ===================== 孩子切换（已移除：当前单用户 Demo） =====================
+// 如果未来接真实多用户，在此挂上 onChildChange
+// 相关 UI 元素已从 index.html 删除，保留 childMap 结构给未来用
+
 
 // ===================== 🆕 全局学习上下文切换 =====================
 function applyContextChange() {
@@ -388,8 +570,7 @@ function applyContextChange() {
 
   // 2) 更新上下文摘要文字
   if (sel('ctxSummary'))         sel('ctxSummary').textContent = ctxSummaryText(state.ctx);
-  if (sel('textbookCtxBadge'))   sel('textbookCtxBadge').textContent = ctxSummaryText(state.ctx);
-  if (sel('practiceCtxBadge'))   sel('practiceCtxBadge').textContent = ctxBadgeText(state.ctx) + ' · ' + (TEXTBOOK_NAMES[state.ctx.textbook] || '');
+  if (sel('textbookCtxBadge'))   sel('textbookCtxBadge').textContent = '（' + ctxBadgeText(state.ctx) + '）';
 
   // 3) 同步 currentGrade（与课本数据结构 grade3..grade9 对齐）
   state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
@@ -535,6 +716,10 @@ function _showUnitAtIndex(idx) {
   const unit = units[idx];
   state.currentUnit = unit;
   state.currentWordIndex = 0;
+  // 📊 记录最近学习的单元
+  try { rememberLastUnit(state.currentGrade, state.ctx.term, unit.id, unit.title, state.ctx.textbook); } catch(e) {}
+  // 默认切到"单词"Tab + 刷新进度条
+  try { switchUnitTab('words'); updateUnitProgress(); } catch(e) {}
 
   // 更新标题
   document.getElementById('unitDetailTitle').textContent = unit.title;
@@ -687,6 +872,12 @@ function prevWord() {
 }
 
 function markKnown() {
+  // 📊 记录已掌握单词
+  try {
+    const w = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
+    if (w && w.word) markWordKnown(w.word);
+    updateUnitProgress();
+  } catch(e) {}
   playWord();
   setTimeout(() => nextWord(), 500);
 }
@@ -1532,6 +1723,16 @@ function renderSpellCells(q) {
 
   // 输入行为：输入后跳下一格；退格回上一格；填满自动判定
   inputs.forEach((inp, k) => {
+    // 🆕 focus 时把输入格滚到屏幕中心，避开手机虚拟键盘
+    inp.addEventListener('focus', () => {
+      setTimeout(() => {
+        try {
+          inp.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } catch(e) {}
+        // 额外补一点偏移（因为有 sticky header 和底部 tab）
+        try { window.scrollBy({ top: 0, behavior: 'auto' }); } catch(e) {}
+      }, 100);
+    });
     inp.addEventListener('input', (e) => {
       let v = (inp.value || '').toLowerCase().replace(/[^a-z]/g, '').slice(-1);
       inp.value = v;
@@ -1603,6 +1804,7 @@ function checkSpellFilled(q, inputs, force) {
   const isCorrect = (userWord === correct);
   const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  try { recordAnswerStats(isCorrect); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;
     inputs.forEach(i => i.classList.add('!border-green-500', 'bg-green-50', 'text-green-700'));
@@ -1752,6 +1954,7 @@ function answerQuiz(idx) {
   const isCorrect = (idx === q.answer);
   const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  try { recordAnswerStats(isCorrect); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;
     btns[idx].classList.add('bg-green-100', 'border-green-500');
@@ -2081,6 +2284,22 @@ if ('speechSynthesis' in window) {
     window.loadQuestionBank(state.ctx.textbook)  // 拉取 4 份题库 JSON
   ]);
   applyContextChange();               // 统一渲染（会调用 renderUnitList + refreshPracticeCounts）
+  renderHomeStats();                  // 📊 首页数据看板（真实 localStorage 统计）
+})();
+
+// 🆕 全局虚拟键盘检测：弹起时给 body 加 class，让 CSS 自动隐藏底部 tab 栏
+//    使用 visualViewport API（iOS/Android 主流浏览器均支持）
+(function setupKeyboardDetection() {
+  if (!window.visualViewport) return;
+  const vv = window.visualViewport;
+  function check() {
+    // 可视视口高度 vs 布局视口高度差距 > 150px 基本可判定为键盘弹起
+    const diff = window.innerHeight - vv.height;
+    document.body.classList.toggle('keyboard-open', diff > 150);
+  }
+  vv.addEventListener('resize', check);
+  vv.addEventListener('scroll', check);
+  check();
 })();
 
 // 切换教材或学期时重新加载数据
