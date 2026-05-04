@@ -1722,21 +1722,12 @@ function renderSpellCells(q) {
   }
 
   // 输入行为：输入后跳下一格；退格回上一格；填满自动判定
-  let _firstFocusDone = false;
   inputs.forEach((inp, k) => {
-    // 🆕 focus 时把整个答题区滚到可视区顶端 —— 只在"首次聚焦"做一次，避免字母跳格导致来回滚动
+    // 🆕 focus 时只给 body 加 class（让 CSS 负责隐底部 Tab），不做任何 scrollIntoView
+    //    —— 原因：字母格已在答题卡最上方，答题卡本身离 sticky header 很近，不需要滚动；
+    //    scrollIntoView 反而会触发可视区变化 + CSS class 切换双重回流，产生"上下浮动"感
     inp.addEventListener('focus', () => {
-      // 立即给 body 加 class（作为 visualViewport 检测的兜底）
       document.body.classList.add('keyboard-open');
-      if (_firstFocusDone) return;
-      _firstFocusDone = true;
-      // 滚到答题卡而不是单个 input，用 instant（无动画）一次到位
-      setTimeout(() => {
-        try {
-          const box = document.getElementById('quizSpellBox');
-          if (box) box.scrollIntoView({ behavior: 'auto', block: 'start' });
-        } catch(e) {}
-      }, 200);
     });
     inp.addEventListener('blur', () => {
       // 延迟 200ms 移除——如果同时切到另一个 input，它的 focus 会先触发，这里就不误删
@@ -1847,17 +1838,37 @@ function checkSpellFilled(q, inputs, force) {
       + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
   }
   fb.classList.remove('hide');
-  // 🆕 答对时：收起键盘 + 自动朗读一遍正确发音（和小喇叭用同一套"有道MP3主+TTS兜底"逻辑）
+  // 🆕 答对时：同步播放单词发音 —— 必须同步调用 new Audio().play()，否则手机浏览器会拒绝自动播放
   if (isCorrect) {
     try {
-      // 让输入框失焦，收起虚拟键盘，让反馈卡充分显示
-      inputs.forEach(i => i.blur && i.blur());
-      document.body.classList.remove('keyboard-open');
-    } catch(e) {}
-    // 稍等 200ms 再播（等键盘收起动画 + 避免播放被 blur 打断）
+      // ① 立刻发起播放（仍在用户最后一次 input 事件的调用栈里 → 算用户手势）
+      const word = String(q.answer).trim();
+      const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(word) + '&type=1';
+      // 停掉旧音频，避免重叠
+      try {
+        if (typeof _currentAudio !== 'undefined' && _currentAudio) {
+          _currentAudio.pause(); _currentAudio.src = '';
+        }
+      } catch(e) {}
+      const audio = new Audio(url);
+      _currentAudio = audio;
+      audio.onerror = () => {
+        // 有道失败 → 降级 TTS（此时可能已脱离手势上下文但 TTS 限制宽松）
+        try { speakWordDirect(word); } catch(e) {}
+      };
+      audio.onended = () => { if (_currentAudio === audio) _currentAudio = null; };
+      const p = audio.play();
+      if (p && p.catch) p.catch(() => { try { speakWordDirect(word); } catch(e) {} });
+    } catch(e) {
+      try { speakWordDirect(q.answer); } catch(e2) {}
+    }
+    // ② 播放发起后，再收键盘（稍延时避免 blur 事件打断播放链）
     setTimeout(() => {
-      try { speakSpellWord(); } catch(e) { try { speakWordDirect(q.answer); } catch(e2) {} }
-    }, 200);
+      try {
+        inputs.forEach(i => i.blur && i.blur());
+        document.body.classList.remove('keyboard-open');
+      } catch(e) {}
+    }, 50);
   }
 
   document.getElementById('quizNextBtn').classList.remove('hide');

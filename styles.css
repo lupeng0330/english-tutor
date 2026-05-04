@@ -513,22 +513,11 @@ body.keyboard-open aside {
 body.keyboard-open {
   padding-bottom: 0 !important;
 }
-/* 拼写题激活时：给字母格容器加底部留白，确保滚动时不被遮挡 */
-#quizSpellBox { scroll-margin-top: 80px; scroll-margin-bottom: 80px; }
-#quizSpellCells > div, #quizSpellCells > input {
-  scroll-margin-top: 100px;
-  scroll-margin-bottom: 100px;
-}
+/* 注意：故意不隐藏 header 和 #contextBar —— 它们不会遮挡输入区（输入区在页面中部），
+   隐藏它们反而会触发布局抖动，让"输入第一个字母"时页面闪一下 */
 /* 拼写题激活 + 键盘弹起时，给答题卡下方留半屏空间，让字母格可以真滚到屏幕中央 */
 body.keyboard-open #practiceQuizView {
   padding-bottom: 50vh;
-}
-/* 手机隐藏顶部 header + 上下文条，给输入让位（只在键盘弹起时） */
-@media (max-width: 768px) {
-  body.keyboard-open header,
-  body.keyboard-open #contextBar {
-    display: none !important;
-  }
 }
 
 /* ============ 拼写题字母格：长单词时不换行（紧凑模式） ============ */
