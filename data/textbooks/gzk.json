@@ -131,11 +131,12 @@
         },
         {
           "id": "u3",
-          "title": "Unit 3 It's a Nice T-shirt",
+          "title": "Unit 3 （待确认）",
           "words": [],
           "lesson": "",
           "lessonCN": "",
-          "placeholder": true
+          "placeholder": true,
+          "note": "原抓取为 It's a Nice T-shirt，但该主题实为第四册 Unit 1，本单元标题待核对"
         },
         {
           "id": "u4",
@@ -165,11 +166,26 @@
       "下": [
         {
           "id": "u1",
-          "title": "Unit 1 I Go to School by Bus",
-          "words": [],
-          "lesson": "",
-          "lessonCN": "",
-          "placeholder": true
+          "title": "Unit 1 It's a Nice T-shirt",
+          "words": [
+            { "en": "T-shirt", "cn": "T 恤衫" },
+            { "en": "dress", "cn": "连衣裙" },
+            { "en": "shirt", "cn": "衬衫" },
+            { "en": "skirt", "cn": "短裙" },
+            { "en": "jacket", "cn": "夹克衫" },
+            { "en": "sweater", "cn": "毛衣" },
+            { "en": "nice", "cn": "漂亮的" },
+            { "en": "new", "cn": "新的" },
+            { "en": "red", "cn": "红色的" },
+            { "en": "blue", "cn": "蓝色的" },
+            { "en": "yellow", "cn": "黄色的" },
+            { "en": "green", "cn": "绿色的" },
+            { "en": "cake", "cn": "蛋糕" },
+            { "en": "name", "cn": "名字" },
+            { "en": "game", "cn": "游戏" }
+          ],
+          "lesson": "Look and Say\nLook at my T-shirt. It's nice.\nLook at my dress. It's new.\n\nListen and Say\nA: Hi, Andy. Look at my new T-shirt.\nB: Wow, it's nice! I like it.\nA: Look at Lily's dress. It's nice too.\nB: Yes, her dress is beautiful.\n\nStory Time\nAndy has a red T-shirt.\nLily has a yellow dress.\nTom has a blue shirt.\nSue has a green skirt.\nThey all look nice!\n\nPhonics: a_e\ncake  name  game  make\nThe letter a says /eɪ/ in these words.",
+          "lessonCN": "看一看，说一说\n看看我的 T 恤衫，很漂亮。\n看看我的连衣裙，是新的。\n\n听一听，说一说\nA：嗨，Andy。看看我的新 T 恤衫。\nB：哇，真漂亮！我喜欢它。\nA：看看 Lily 的连衣裙，也很漂亮。\nB：是的，她的连衣裙很美。\n\n故事时间\nAndy 有一件红色 T 恤衫。\nLily 有一条黄色连衣裙。\nTom 有一件蓝色衬衫。\nSue 有一条绿色短裙。\n他们看起来都很好看！\n\n自然拼读：a_e\ncake（蛋糕）  name（名字）  game（游戏）  make（做）\n在这些单词里，字母 a 发 /eɪ/ 的音。"
         },
         {
           "id": "u2",
