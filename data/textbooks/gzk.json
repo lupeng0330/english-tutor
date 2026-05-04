@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "id": "gzk",
+    "name": "广州出版社·英语口语",
+    "fullName": "Success with English（广州市教育研究院编）",
+    "version": "2025 复审版",
+    "coverage": "小学一年级、二年级（共 4 册）",
+    "publisher": "广州出版社 / 福建教育出版社",
+    "note": "单元结构按官方目录，教学内容陆续补充中"
+  },
+  "grades": {
+    "grade1": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 Hello, I'm Andy",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 I Have a New Bag",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Count from One to Ten",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 I Like Green",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Here's My Scooter",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I Can Jump",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 I Love My Family",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 Come to My House",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 This Is My Room",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 What Do You See?",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 I Want a Pet",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I Want Ice-cream!",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        }
+      ]
+    },
+    "grade2": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 What Can You Do?",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 What's for Dinner?",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 It's a Nice T-shirt",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 What Time Is It?",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 I'm Skating",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Mum's Washing Up",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 I Go to School by Bus",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 I Want to Be a Teacher",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Please Take Me to the Park",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 My Favourite Day Is Monday",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 It's Sunny Today",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Which Season Do You Like?",
+          "words": [],
+          "lesson": "",
+          "lessonCN": "",
+          "placeholder": true
+        }
+      ]
+    }
+  }
+}

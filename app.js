@@ -130,7 +130,7 @@ let state = {
 };
 
 // 🆕 学习上下文工具函数
-const TEXTBOOK_NAMES = { jk: '广州教科版', rj: '人教版', wy: '外研版' };
+const TEXTBOOK_NAMES = { jk: '广州教科版', gzk: '广州口语', rj: '人教版', wy: '外研版' };
 function ctxSummaryText(ctx) {
   const g = gradeText(ctx.grade);
   const t = ctx.term === '上' ? '上册' : '下册';
@@ -747,10 +747,14 @@ function _showUnitAtIndex(idx) {
   if (prev) prev.style.opacity = idx === 0 ? '0.35' : '1';
   if (next) next.style.opacity = idx === units.length - 1 ? '0.35' : '1';
 
-  // 更新单词+课文
-  document.getElementById('wordTotal').textContent = unit.words.length;
-  document.getElementById('lessonText').textContent = unit.lesson;
-  const cn = unit.lessonCN || '';
+  // 更新单词+课文（兼容"占位单元"：没 words/lesson 时显示友好提示）
+  const hasWords  = Array.isArray(unit.words)  && unit.words.length > 0;
+  const hasLesson = typeof unit.lesson === 'string' && unit.lesson.trim().length > 0;
+  document.getElementById('wordTotal').textContent = hasWords ? unit.words.length : 0;
+  document.getElementById('lessonText').textContent = hasLesson
+    ? unit.lesson
+    : '📖 本单元课文内容待补充。\n（教材结构已导入，内容请通过课本核对后补到 data/textbooks/*.json）';
+  const cn = (hasLesson && unit.lessonCN) || '';
   document.getElementById('lessonTranslation').textContent = cn || '（暂无翻译）';
   // 切单元时重置翻转状态（永远回到英文面）+ 按钮文字
   try {
@@ -760,6 +764,24 @@ function _showUnitAtIndex(idx) {
     if (label) label.textContent = '看译文';
     const flipBtn = document.getElementById('lessonFlipBtn');
     if (flipBtn) flipBtn.style.display = cn ? '' : 'none'; // 没翻译就隐藏按钮
+    // 单词面空时：显示占位
+    const wordText     = document.getElementById('wordText');
+    const wordPhonetic = document.getElementById('wordPhonetic');
+    const wordMeaning  = document.getElementById('wordMeaning');
+    const wordExample  = document.getElementById('wordExample');
+    if (!hasWords) {
+      if (wordText)     wordText.textContent     = '（待补充）';
+      if (wordPhonetic) wordPhonetic.textContent = '';
+      if (wordMeaning)  wordMeaning.textContent  = '本单元单词待补充';
+      if (wordExample)  wordExample.textContent  = '请根据课本把 words 数据填入 data/textbooks/' + (state.ctx.textbook || 'jk') + '.json';
+    }
+    // 课文朗读按钮：没内容时禁用
+    const pb = document.getElementById('lessonPlayBtn');
+    if (pb) {
+      pb.disabled = !hasLesson;
+      pb.style.opacity = hasLesson ? '1' : '0.4';
+      pb.style.cursor  = hasLesson ? 'pointer' : 'not-allowed';
+    }
   } catch(e) {}
 
   // 停掉任何正在播放的课文朗读
@@ -865,7 +887,11 @@ function backToUnits() {
 
 // ===================== 单词卡片 =====================
 function showWord() {
+  if (!state.currentUnit || !Array.isArray(state.currentUnit.words) || state.currentUnit.words.length === 0) {
+    return; // 占位单元：已由 _showUnitAtIndex 渲染好"待补充"提示
+  }
   const w = state.currentUnit.words[state.currentWordIndex];
+  if (!w) return;
   document.getElementById('wordText').textContent = w.word;
   document.getElementById('wordPhonetic').textContent = w.phonetic;
   document.getElementById('wordMeaning').textContent = w.meaning;
@@ -1555,8 +1581,12 @@ function refreshPracticeCounts() {
   const cnt = document.getElementById('filterCount');
   if (cnt) {
     const scope = state.includeAllGrades ? '全部年级' : ctxBadgeText(state.ctx);
-    if (total === 0) {
-      cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}暂无题目</span>，请勾选"包含全部年级"或切换学段`;
+    if (totalAll === 0) {
+      // 整本教材都没题库（如 gzk 占位）→ 友好提示
+      const tbName = TEXTBOOK_NAMES[state.ctx.textbook] || state.ctx.textbook;
+      cnt.innerHTML = `<span class="text-slate-500">📖 《${tbName}》暂未配置题库，可切回<b class="text-blue-600">广州教科版</b>练习</span>`;
+    } else if (total === 0) {
+      cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}暂无题目</span>，请勾选"跨年级刷题"或切换学段`;
     } else {
       cnt.textContent = `${scope}共 ${total} 题（题库总计 ${totalAll} 题）`;
     }
