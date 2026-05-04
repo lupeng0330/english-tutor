@@ -6,7 +6,7 @@
     "version": "2025 复审版",
     "coverage": "小学一年级、二年级（共 4 册）",
     "publisher": "广州出版社 / 福建教育出版社",
-    "note": "单元结构按官方目录，教学内容陆续补充中"
+    "note": "每册 5 个 Unit（第四册目录实测）；其它册单元数待核对"
   },
   "grades": {
     "grade1": {
@@ -189,7 +189,7 @@
         },
         {
           "id": "u2",
-          "title": "Unit 2 I Want to Be a Teacher",
+          "title": "Unit 2 I Go to School by Bus",
           "words": [],
           "lesson": "",
           "lessonCN": "",
@@ -197,7 +197,7 @@
         },
         {
           "id": "u3",
-          "title": "Unit 3 Please Take Me to the Park",
+          "title": "Unit 3 I Want to Be a Teacher",
           "words": [],
           "lesson": "",
           "lessonCN": "",
@@ -205,7 +205,7 @@
         },
         {
           "id": "u4",
-          "title": "Unit 4 My Favourite Day Is Monday",
+          "title": "Unit 4 Please Take Me to the Park",
           "words": [],
           "lesson": "",
           "lessonCN": "",
@@ -213,15 +213,7 @@
         },
         {
           "id": "u5",
-          "title": "Unit 5 It's Sunny Today",
-          "words": [],
-          "lesson": "",
-          "lessonCN": "",
-          "placeholder": true
-        },
-        {
-          "id": "u6",
-          "title": "Unit 6 Which Season Do You Like?",
+          "title": "Unit 5 My Favourite Day Is Monday",
           "words": [],
           "lesson": "",
           "lessonCN": "",
