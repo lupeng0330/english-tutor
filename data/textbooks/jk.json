@@ -4,7 +4,7 @@
     "name": "广州教科版",
     "version": "1.0",
     "coverage": "小学一年级至初中三年级",
-    "note_grade6_xia": "六年级下册已切换为《义务教育教科书 英语（三年级起点）六年级下册》(教育科学出版社, 2013)，5 个模块 10 个单元 · 内容按官方教材整理"
+    "note_grade6_xia": "六年级下册 · 教科版《英语》三年级起点 · 教育科学出版社 (ISBN 978-7-5041-9216-5, 2014)，6 个模块 12 个单元"
   },
   "grades": {
     "grade1": {
@@ -880,696 +880,977 @@
         {
           "id": "u1",
           "title": "Unit 1 Slow and steady wins the race",
-          "topic": "龟兔赛跑与坚持的意义",
-          "grammar": [
-            "一般过去时（规则/不规则动词过去式）",
-            "形容词/副词的用法"
-          ],
+          "module": "Module 1 Stories",
           "words": [
             {
-              "word": "win",
-              "phonetic": "/wɪn/",
-              "meaning": "赢；赢得",
-              "example": "The tortoise won the race."
-            },
-            {
-              "word": "carry",
-              "phonetic": "/ˈkæri/",
-              "meaning": "携带；扛",
-              "example": "He carried the books to the library."
-            },
-            {
-              "word": "such",
-              "phonetic": "/sʌtʃ/",
-              "meaning": "如此；这样的",
-              "example": "Why are you in such a hurry?"
-            },
-            {
-              "word": "proud",
-              "phonetic": "/praʊd/",
-              "meaning": "骄傲的",
-              "example": "The hare was too proud."
-            },
-            {
-              "word": "careless",
-              "phonetic": "/ˈkeələs/",
-              "meaning": "不小心的；粗心的",
-              "example": "He was careless and fell."
-            },
-            {
-              "word": "patient",
-              "phonetic": "/ˈpeɪʃnt/",
-              "meaning": "耐心的",
-              "example": "Be patient, and you will succeed."
-            },
-            {
-              "word": "sad",
-              "phonetic": "/sæd/",
-              "meaning": "悲伤的",
-              "example": "The hare was sad when he lost."
+              "word": "hare",
+              "phonetic": "",
+              "meaning": "[n.] 野兔",
+              "example": ""
             },
             {
               "word": "steady",
-              "phonetic": "/ˈstedi/",
-              "meaning": "平稳的；稳定的",
-              "example": "Slow and steady wins the race."
+              "phonetic": "",
+              "meaning": "[adj.] 稳健的",
+              "example": ""
             },
             {
-              "word": "race",
-              "phonetic": "/reɪs/",
-              "meaning": "比赛；赛跑；参加比赛",
-              "example": "They had a race."
+              "word": "win",
+              "phonetic": "",
+              "meaning": "[v.] 赢，赢得（过去式 won）",
+              "example": ""
             },
             {
-              "word": "tortoise",
-              "phonetic": "/ˈtɔːtəs/",
-              "meaning": "乌龟",
-              "example": "The tortoise is slow but steady."
+              "word": "carry",
+              "phonetic": "",
+              "meaning": "[v.] 携带；扛",
+              "example": ""
             },
             {
-              "word": "hare",
-              "phonetic": "/heə(r)/",
-              "meaning": "野兔",
-              "example": "The hare ran very fast."
+              "word": "foolish",
+              "phonetic": "",
+              "meaning": "[adj.] 愚蠢的",
+              "example": ""
+            },
+            {
+              "word": "silly",
+              "phonetic": "",
+              "meaning": "[adj.] 傻的",
+              "example": ""
+            },
+            {
+              "word": "in such a hurry",
+              "phonetic": "",
+              "meaning": "如此匆忙",
+              "example": ""
+            },
+            {
+              "word": "pick up",
+              "phonetic": "",
+              "meaning": "捡起",
+              "example": ""
+            },
+            {
+              "word": "happen (to)",
+              "phonetic": "",
+              "meaning": "[v.] 发生（于）",
+              "example": ""
+            },
+            {
+              "word": "forever",
+              "phonetic": "",
+              "meaning": "[adv.] 永远",
+              "example": ""
+            },
+            {
+              "word": "disappear",
+              "phonetic": "",
+              "meaning": "[v.] 消失",
+              "example": ""
             }
           ],
           "lessons": [
             {
               "page": "Let's talk",
-              "title": "对话 · Why are you in such a hurry?",
-              "en": "Janet: Why are you in such a hurry?\nJiamin: I'm going to the library. I have to return a book.\nJanet: You are like that silly hare.\nJiamin: Hare? What do you mean?\nXiaoling: You know... the old story about the tortoise and the hare.\nJanet: Yes! One day a tortoise and a hare had a race. The hare was sure he would win, so he took a rest. He was too proud and careless.\nXiaoling: The slow but careful tortoise won the race.\nJiamin: Ahh. I understand now. If I want to do something well, I must be patient and careful. Slow and steady wins the race!",
-              "cn": "Janet：你为什么这么匆忙？\nJiamin：我要去图书馆还一本书。\nJanet：你真像那只傻兔子。\nJiamin：兔子？什么意思？\nXiaoling：你知道的……关于乌龟和兔子的那个老故事。\nJanet：对！从前，乌龟和兔子赛跑。兔子以为自己肯定赢，就停下来休息。它太骄傲又太大意了。\nXiaoling：缓慢但认真的乌龟赢了比赛。\nJiamin：啊，我明白了。如果我想把事情做好，就必须耐心细致。慢而稳，才能赢！"
+              "title": "Let's talk",
+              "en": "Janet: Jiamin, are you OK?\nJiamin: I tried to carry all the books. I didn't want to go back to the classroom again.\nJanet: Why are you in such a hurry? You are like that silly hare.\nJiamin: Hare? What do you mean?\nXiaoling: You know… the old story about the tortoise and the hare.\nJiamin: Yes. One day a tortoise and a hare had a race. The hare was sure he would win so he took a rest. He was too proud and careless. The slow but careful tortoise won the race.\nJanet: Ahh. I understand now. If I want to do something well, I should be careful and patient.\nXiaoling: That's right. Remember, Slow and steady wins the race.",
+              "cn": "Janet：家民，你还好吗？\nJiamin：我试着搬所有的书。我不想再回教室了。\nJanet：你为什么这么匆忙？你就像那只傻兔子。\nJiamin：兔子？你什么意思？\nXiaoling：你知道……那个关于乌龟和兔子的老故事。\nJiamin：是的。一天乌龟和兔子赛跑。兔子确信自己会赢，就休息了。他太骄傲太粗心了。慢但细心的乌龟赢得了比赛。\nJanet：啊。我现在明白了。如果我想把事情做好，我应该细心且有耐心。\nXiaoling：没错。记住，慢而稳，事必成。"
             },
             {
-              "page": "Story",
-              "title": "故事 · The tortoise and the hare",
-              "en": "One day, a tortoise and a hare decided to have a race. The hare thought he was much faster than the tortoise, so he laughed at the tortoise. During the race, the hare ran fast, then stopped to take a nap under a tree. The tortoise walked slowly and steadily, never stopping. When the hare woke up, the tortoise was already near the finish line. The hare ran as fast as he could, but it was too late. The tortoise won the race. The hare learned a lesson: slow and steady wins the race.",
-              "cn": "一天，乌龟和兔子决定赛跑。兔子觉得自己比乌龟快得多，就嘲笑乌龟。比赛中，兔子跑得飞快，然后在树下打起了盹儿。乌龟一步步缓慢而坚定地走着，从不停下。兔子醒来时，乌龟已经快到终点线了。兔子拼命跑，但为时已晚。最后乌龟赢了。兔子得到了一个教训：慢而稳，才能赢。"
+              "page": "Fun with language",
+              "title": "Fun with language",
+              "en": "in a hurry\ncarry a heavy bag\nhave a rest\ntalk on the phone\nride a bike\ncut a finger",
+              "cn": "匆忙\n提重袋子\n休息一下\n电话交谈\n骑自行车\n切到手指"
+            },
+            {
+              "page": "Sing along",
+              "title": "Sing along",
+              "en": "One, two, three, four, five. Once I caught a fish alive.\nSix, seven, eight, nine, ten. Then I let it go again.\nWhy did you let it go? Because it bit my finger so.\nWhich finger did it bite? This little finger on the right.",
+              "cn": "一、二、三、四、五。我曾抓到一条活鱼。\n六、七、八、九、十。然后我又把它放了。\n你为什么放它走？因为它咬了我的手指。\n它咬了哪根手指？右边这根小手指。"
+            },
+            {
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Kitty, the little cat, likes eating fish. She often goes fishing.\nYesterday morning she caught a lot of fish.\nThe old bear loves eating fish, too.\nHe came over and talked with Kitty, \"Your friends are playing in my garden. They are having fun. And they are going to have a picnic on my farm. Go and play with them. I will look after your fish and help you catch more fish here.\"\nKitty was happy. She left for the garden and looked for her friends.\nBut when Kitty left, the old bear ate all the fish up.",
+              "cn": "小猫凯蒂喜欢吃鱼。她经常去钓鱼。\n昨天早上她钓了很多鱼。\n老熊也喜欢吃鱼。\n他走过来和凯蒂聊天：“你的朋友们在我的花园里玩。他们很开心。他们还打算在我的农场野餐。去和他们玩吧。我会照看你的鱼，帮你在这里抓更多的鱼。”\n凯蒂很高兴。她去花园找她的朋友们。\n但当凯蒂离开时，老熊把鱼全吃光了。"
             }
           ]
         },
         {
           "id": "u2",
           "title": "Unit 2 Waiting for another hare",
-          "topic": "守株待兔与不劳而获的危害",
-          "grammar": [
-            "一般过去时",
-            "情态动词should/shouldn't的用法"
-          ],
+          "module": "Module 1 Stories",
           "words": [
             {
-              "word": "another",
-              "phonetic": "/əˈnʌðə(r)/",
-              "meaning": "另一个；再一个",
-              "example": "He waited for another hare."
-            },
-            {
-              "word": "crash",
-              "phonetic": "/kræʃ/",
-              "meaning": "碰撞；撞击",
-              "example": "The hare crashed into the tree."
-            },
-            {
-              "word": "into",
-              "phonetic": "/ˈɪntuː/",
-              "meaning": "到……里面；进入",
-              "example": "The car crashed into the wall."
+              "word": "die",
+              "phonetic": "",
+              "meaning": "[v.] 死",
+              "example": ""
             },
             {
               "word": "ground",
-              "phonetic": "/ɡraʊnd/",
-              "meaning": "地面；土地",
-              "example": "The hare fell to the ground."
+              "phonetic": "",
+              "meaning": "[n.] 地面",
+              "example": ""
             },
             {
-              "word": "die",
-              "phonetic": "/daɪ/",
-              "meaning": "死；死亡",
-              "example": "The hare died."
+              "word": "appear",
+              "phonetic": "",
+              "meaning": "[v.] 出现",
+              "example": ""
             },
             {
-              "word": "pick up",
-              "phonetic": "/pɪk ʌp/",
-              "meaning": "捡起；拾起",
-              "example": "He picked up the hare."
-            },
-            {
-              "word": "easy",
-              "phonetic": "/ˈiːzi/",
-              "meaning": "容易的；简单的",
-              "example": "He thought it was easy to get food."
-            },
-            {
-              "word": "himself",
-              "phonetic": "/hɪmˈself/",
-              "meaning": "他自己",
-              "example": "He did it himself."
-            },
-            {
-              "word": "from then on",
-              "phonetic": "/frəm ðen ɒn/",
-              "meaning": "从那时候起",
-              "example": "From then on, he stopped working."
-            },
-            {
-              "word": "stop",
-              "phonetic": "/stɒp/",
-              "meaning": "停止；停下",
-              "example": "He stopped working in the field."
+              "word": "go for it",
+              "phonetic": "",
+              "meaning": "努力吧；加油",
+              "example": ""
             }
           ],
           "lessons": [
             {
-              "page": "Let's talk",
-              "title": "对话 · What are you reading?",
-              "en": "Tom: What are you reading?\nAmy: I'm reading a story about a farmer.\nTom: What happened to him?\nAmy: One day, a hare crashed into a tree and died. The farmer picked it up and took it home.\nTom: That's easy! Did he get another hare?\nAmy: No. From then on, he didn't work in the field. He waited for another hare to crash into the tree. But no hare came. His crops died.\nTom: Oh! That's a bad idea. He should work hard.\nAmy: Yes. We shouldn't wait for good luck to come. We should work hard for our dreams.",
-              "cn": "Tom：你在看什么？\nAmy：我在看一个关于一个农夫的故事。\nTom：他发生了什么事？\nAmy：有一天，一只兔子撞到了一棵树上死了。农夫把它捡起来带回家。\nTom：那多容易啊！他后来又得到兔子了吗？\nAmy：没有。从那以后，他就不去田里干活了，只等着另一只兔子再撞上那棵树。可是再也没有兔子来。他的庄稼全都死了。\nTom：哎！这可真是个坏主意，他应该努力干活才对。\nAmy：是啊。我们不能光等着好运上门，应该为梦想而努力。"
+              "page": "Let's read",
+              "title": "Let's read",
+              "en": "One day, a farmer was working in the field.\nSuddenly a hare ran very fast and crashed into a tree.\nIt fell to the ground and died.\nThe farmer was happy. He picked up the hare and took it back home.\nHe cooked it and had a delicious meal.\n\"Working in the field every day is hard work. But picking up a hare is so easy,\" he said to himself.\nFrom then on, the farmer stopped working.\nAll day long, he sat in the field and waited for a hare to appear.\nAll his vegetables died. All his animals ran away.\nBut another hare never came, so the farmer had nothing to eat.\nDon't be like the farmer. Don't wait for another hare. Go for it!",
+              "cn": "一天，一个农夫正在田里干活。\n突然，一只野兔飞快地跑过来，撞到了一棵树上。\n它倒在地上死了。\n农夫很高兴。他捡起野兔带回了家。\n他煮了它，美美地吃了一顿。\n“每天在田里干活很辛苦。但捡到一只野兔太容易了，”他自言自语道。\n从那时起，农夫停止了劳作。\n他整天坐在田里等野兔出现。\n他所有的蔬菜都枯死了。他所有的动物都跑掉了。\n但再也没有野兔来，所以农夫没有东西吃。\n不要像那个农夫。不要等待另一只野兔。去努力争取吧！"
             },
             {
-              "page": "Story",
-              "title": "故事 · Waiting for another hare",
-              "en": "Once upon a time, there was a farmer. One day, he was working in the field. Suddenly, a hare ran fast and crashed into a big tree. It died. The farmer picked up the hare and took it home. He was very happy. \"How easy it is to get food!\" he thought. From then on, he stopped working in the field. He sat under the tree every day, waiting for another hare to come. But no hare came again. His crops died because he didn't take care of them. The farmer learned a lesson: good luck won't come again. We must work hard to get what we want.",
-              "cn": "从前有一个农夫。一天，他正在田里干活，突然一只兔子飞快地跑过来，撞到一棵大树上死了。农夫捡起那只兔子带回家，非常高兴：“弄到食物真容易啊！”他想。从那以后，他就不再下田干活，每天坐在那棵树下等下一只兔子。可是再也没有兔子来了。庄稼因为没人照料全都死了。农夫得到了一个教训：好运不会再来，我们必须努力才能得到想要的东西。"
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Aki: Fire, fire… get out of the house!\nAki: Ha-ha-ha. There's no fire. I just wanted you to come out and play.\nBoy: Aki. You mustn't tell lies. Don't you know the story of The Boy Who Cried Wolf?\nBoy: Long ago, a boy was watching his sheep in the field. He felt bored so he cried out \"wolf\".\nThe villagers thought a wolf was eating their animals and they hurried to help.\nThe boy found this very funny so he did it many times.\nThen one day, a wolf really came. The boy cried out for help but this time no one came.\nThe people didn't believe the boy any more and the wolf ate all the sheep.\nBoy: So you see, Aki. You must always tell the truth.",
+              "cn": "Aki：着火了，着火了……快跑出房子！\nAki：哈哈哈。没有火。我只是想让你们出来玩。\nBoy：阿基。你不能说谎。你不知道《狼来了》的故事吗？\nBoy：很久以前，一个男孩在田野里放羊。他觉得无聊，就大喊“狼来了”。\n村民们以为狼在吃他们的牲畜，急忙赶来帮忙。\n男孩觉得这很有趣，于是他做了很多次。\n后来有一天，狼真的来了。男孩大喊救命，但这次没人来。\n人们不再相信这个男孩，狼吃掉了所有的羊。\nBoy：所以你看，阿基。你必须永远说真话。"
             }
           ]
         },
         {
           "id": "u3",
           "title": "Unit 3 What animal is it?",
-          "topic": "动物特征描述与濒危动物识别",
-          "grammar": [
-            "特殊疑问句（What/Which/How）",
-            "形容词比较级/最高级"
-          ],
+          "module": "Module 2 Animals",
           "words": [
             {
-              "word": "animal",
-              "phonetic": "/ˈænɪml/",
-              "meaning": "动物",
-              "example": "It's a big animal."
+              "word": "frog",
+              "phonetic": "",
+              "meaning": "[n.] 青蛙",
+              "example": ""
             },
             {
-              "word": "endangered",
-              "phonetic": "/ɪnˈdeɪndʒəd/",
-              "meaning": "濒危的；濒临灭绝的",
-              "example": "Pandas are endangered animals."
+              "word": "kangaroo",
+              "phonetic": "",
+              "meaning": "[n.] 袋鼠",
+              "example": ""
             },
             {
-              "word": "panda",
-              "phonetic": "/ˈpændə/",
-              "meaning": "熊猫",
-              "example": "The panda lives in bamboo forests."
+              "word": "turn",
+              "phonetic": "",
+              "meaning": "[n.] 轮回；轮到的机会",
+              "example": ""
             },
             {
-              "word": "elephant",
-              "phonetic": "/ˈelɪfənt/",
-              "meaning": "大象",
-              "example": "The elephant has a long trunk."
+              "word": "ocean",
+              "phonetic": "",
+              "meaning": "[n.] 海洋",
+              "example": ""
             },
             {
-              "word": "whale",
-              "phonetic": "/weɪl/",
-              "meaning": "鲸鱼",
-              "example": "The blue whale is the largest animal in the world."
+              "word": "starfish",
+              "phonetic": "",
+              "meaning": "[n.] 海星",
+              "example": ""
             },
             {
-              "word": "giraffe",
-              "phonetic": "/dʒəˈræf/",
-              "meaning": "长颈鹿",
-              "example": "The giraffe has a long neck."
+              "word": "Africa",
+              "phonetic": "",
+              "meaning": "[n.] 非洲",
+              "example": ""
             },
             {
               "word": "tiger",
-              "phonetic": "/ˈtaɪɡə(r)/",
-              "meaning": "老虎",
-              "example": "The tiger is a big cat."
+              "phonetic": "",
+              "meaning": "[n.] 老虎",
+              "example": ""
             },
             {
-              "word": "protect",
-              "phonetic": "/prəˈtekt/",
-              "meaning": "保护；保卫",
-              "example": "We should protect endangered animals."
+              "word": "Asia",
+              "phonetic": "",
+              "meaning": "[n.] 亚洲",
+              "example": ""
+            },
+            {
+              "word": "lion",
+              "phonetic": "",
+              "meaning": "[n.] 狮子",
+              "example": ""
+            },
+            {
+              "word": "elephant",
+              "phonetic": "",
+              "meaning": "[n.] 象",
+              "example": ""
+            },
+            {
+              "word": "giraffe",
+              "phonetic": "",
+              "meaning": "[n.] 长颈鹿",
+              "example": ""
+            },
+            {
+              "word": "neck",
+              "phonetic": "",
+              "meaning": "[n.] 脖子",
+              "example": ""
+            },
+            {
+              "word": "leaf",
+              "phonetic": "",
+              "meaning": "[n.] 树叶（复数 leaves）",
+              "example": ""
+            },
+            {
+              "word": "sea",
+              "phonetic": "",
+              "meaning": "[n.] 海洋",
+              "example": ""
+            },
+            {
+              "word": "make from",
+              "phonetic": "",
+              "meaning": "用……制造",
+              "example": ""
+            },
+            {
+              "word": "be called",
+              "phonetic": "",
+              "meaning": "被称为",
+              "example": ""
             }
           ],
           "lessons": [
             {
               "page": "Let's talk",
-              "title": "对话 · What animal is it?",
-              "en": "Lily: What animal is it?\nMike: It's a panda. It's black and white. It lives in China.\nLily: Is it an endangered animal?\nMike: Yes. Pandas are endangered. There are not many pandas left in the wild.\nLily: What about elephants?\nMike: Elephants are also endangered. They are the largest land animals. They have long trunks.\nLily: How can we help them?\nMike: We can protect their homes and not buy things made from their parts.",
-              "cn": "Lily：这是什么动物？\nMike：是熊猫。它是黑白相间的，生活在中国。\nLily：它是濒危动物吗？\nMike：是的。熊猫是濒危动物，野外剩下的熊猫不多了。\nLily：那大象呢？\nMike：大象也是濒危动物。它们是陆地上最大的动物，有长长的鼻子。\nLily：我们怎样才能帮助它们？\nMike：我们可以保护它们的家园，不买用它们身体部分做成的东西。"
+              "title": "Let's talk",
+              "en": "Jiamin: Let's play a game. Can you guess this animal's name? It has two strong back legs and can jump very far.\nJanet: Hmm... that's difficult. A frog?\nJiamin: No. It's a kangaroo. My turn. This animal looks like a star and it lives in the ocean. What is it?\nBen: Is it a starfish?\nJiamin: Yes, it is. You try, Janet.\nJanet: It's a very large animal. It has a long nose and two big ears. It likes eating plants.\nXiaoling: It's an elephant.\nJanet: Right. It loves eating meat. It is also called the \"King of the Animals\".\nBen: A tiger? / A lion? Tigers live in Asia, not Africa.\nJanet: Yes, a lion.",
+              "cn": "Jiamin：我们来玩个游戏。你能猜出这种动物的名字吗？它有两条强壮的后腿，能跳得很远。\nJanet：嗯……很难。是青蛙吗？\nJiamin：不。是袋鼠。轮到我了。这种动物看起来像星星，生活在海里。是什么？\nBen：是海星吗？\nJiamin：是的。珍妮特，你试试。\nJanet：它是一种非常大的动物。它有一个长鼻子和两只大耳朵。它喜欢吃植物。\nXiaoling：是大象。\nJanet：对。它喜欢吃肉。它也被称为“百兽之王”。\nBen：老虎？/狮子？老虎生活在亚洲，不在非洲。\nJanet：是的，狮子。"
+            },
+            {
+              "page": "Rhyme time",
+              "title": "Rhyme time",
+              "en": "Monkey, monkey, rides on a donkey.\nFox, fox, sits on the box.\nParrot, parrot, eats a carrot.\nMouse, mouse, hides behind the house.\nFrog, frog, sits on a log.\nTiger, tiger, jumps through the fire.",
+              "cn": "猴子，猴子，骑在驴子上。\n狐狸，狐狸，坐在箱子上。\n鹦鹉，鹦鹉，吃着胡萝卜。\n老鼠，老鼠，躲在房子后面。\n青蛙，青蛙，坐在木头上。\n老虎，老虎，跳过火圈。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus",
+              "en": "Billy was a little bird. He lived in the forest. In the forest, there were many birds, too. But Billy didn't work or play with them.\n\"Winter is coming. But I don't have a warm house. I must build a new one. I am not going to build a small one. I'm going to build a big and warm one,\" he said to himself.\n\"But will the other birds help me? I don't think they will, because they don't like me. And they are playing games happily over there.\"\nFeeling sad, Billy started to build his new home alone. Suddenly, a lot of birds came up to him.\n\"We have all come to help you, Billy,\" they said.\nBilly was surprised and said, \"I didn't tell you I would build a house. How did you know?\"\n\"We were not playing. We were working, too. We saw that you were busy. We think that we can do something for you,\" said one of the birds.\nBilly was moved. \"Thank you,\" Billy said. From then on, Billy didn't work or play alone. He had many friends. And he often helped them, too.",
+              "cn": "比利是一只小鸟。他住在森林里。森林里也有很多鸟。但比利不和他们一起干活或玩耍。\n“冬天来了。但我没有温暖的家。我必须建一个新家。我不想建小的。我要建一个又大又暖和的，”他自言自语道。\n“但其他鸟会帮我吗？我不认为他们会，因为他们不喜欢我。他们在那边开心地玩游戏。”\n比利感到难过，开始独自建造新家。突然，很多鸟来到他面前。\n“我们都来帮你了，比利，”他们说。\n比利很惊讶，说：“我没有告诉你们我要建房子。你们怎么知道的？”\n“我们没有在玩。我们也在干活。我们看到你很忙。我们觉得可以为你做点什么，”其中一只鸟说。\n比利被感动了。“谢谢你，”比利说。从那时起，比利不再独自干活或玩耍。他有了很多朋友。他也经常帮助他们。"
             }
           ]
         },
         {
           "id": "u4",
           "title": "Unit 4 We can save the animals",
-          "topic": "动物保护措施与环境保护",
-          "grammar": [
-            "情态动词can的用法",
-            "被动语态初步"
-          ],
+          "module": "Module 2 Animals",
           "words": [
             {
-              "word": "save",
-              "phonetic": "/seɪv/",
-              "meaning": "拯救；节省",
-              "example": "We can save the endangered animals."
-            },
-            {
-              "word": "in danger",
-              "phonetic": "/ɪn ˈdeɪndʒə(r)/",
-              "meaning": "处于危险中",
-              "example": "Many animals are in danger."
-            },
-            {
-              "word": "kill",
-              "phonetic": "/kɪl/",
-              "meaning": "杀死；杀害",
-              "example": "People kill animals for their fur."
-            },
-            {
-              "word": "forest",
-              "phonetic": "/ˈfɒrɪst/",
-              "meaning": "森林",
-              "example": "Many animals live in the forest."
-            },
-            {
-              "word": "river",
-              "phonetic": "/ˈrɪvə(r)/",
-              "meaning": "河流",
-              "example": "Polluted rivers make animals sick."
-            },
-            {
-              "word": "pollute",
-              "phonetic": "/pəˈluːt/",
-              "meaning": "污染；弄脏",
-              "example": "Factories pollute the river."
-            },
-            {
-              "word": "clean",
-              "phonetic": "/kliːn/",
-              "meaning": "干净的；打扫",
-              "example": "We should keep the river clean."
-            },
-            {
-              "word": "helpful",
-              "phonetic": "/ˈhelpfl/",
-              "meaning": "有帮助的；乐于助人的",
-              "example": "Your actions are helpful to the animals."
-            },
-            {
-              "word": "disappear",
-              "phonetic": "/ˌdɪsəˈpɪə(r)/",
-              "meaning": "消失；灭绝",
-              "example": "Many animals disappeared because of pollution."
-            },
-            {
-              "word": "Earth",
-              "phonetic": "/ɜːθ/",
-              "meaning": "地球",
-              "example": "We should protect animals and the Earth."
-            },
-            {
-              "word": "forever",
-              "phonetic": "/fəˈrevə(r)/",
-              "meaning": "永远",
-              "example": "We don't want animals to disappear forever."
+              "word": "panda",
+              "phonetic": "",
+              "meaning": "[n.] 熊猫",
+              "example": ""
             },
             {
               "word": "fur",
-              "phonetic": "/fɜː(r)/",
-              "meaning": "皮毛",
-              "example": "Some people kill animals for their fur."
+              "phonetic": "",
+              "meaning": "[n.] 皮毛",
+              "example": ""
             },
             {
-              "word": "made",
-              "phonetic": "/meɪd/",
-              "meaning": "制造（make的过去式）",
-              "example": "Don't buy things made from animal fur."
-            },
-            {
-              "word": "make from",
-              "phonetic": "/meɪk frəm/",
-              "meaning": "用……制造",
-              "example": "This bag is made from plastic."
-            },
-            {
-              "word": "only",
-              "phonetic": "/ˈəʊnli/",
-              "meaning": "唯一的；仅仅",
-              "example": "There are only a few pandas left."
+              "word": "in danger",
+              "phonetic": "",
+              "meaning": "处于危险中",
+              "example": ""
             }
           ],
           "lessons": [
             {
-              "page": "Let's talk",
-              "title": "对话 · Many animals are in danger. What…",
-              "en": "Tom: Many animals are in danger. What can we do?\nAmy: We can save them. First, we can protect their homes.\nTom: Their homes? Like forests and rivers?\nAmy: Yes. People cut down forests and pollute rivers. So animals lose their homes.\nTom: What else can we do?\nAmy: We can not buy things made from animal parts, like ivory or fur.\nTom: That's right. We can also tell our friends to help.\nAmy: Yes! Every small action can help save the animals.",
-              "cn": "Tom：很多动物都处于危险之中，我们能做点什么？\nAmy：我们可以拯救它们。首先，我们可以保护它们的家园。\nTom：家园？像森林和河流那样的地方？\nAmy：对。人们砍伐森林、污染河流，动物就失去了家园。\nTom：我们还能做什么？\nAmy：我们可以不买象牙、皮毛这些用动物身体部分做成的东西。\nTom：没错。我们还可以告诉朋友们一起帮忙。\nAmy：对！每一个小小的行动都能帮助拯救动物。"
+              "page": "Let's read",
+              "title": "Let's read",
+              "en": "Would you like to live in a world with no pandas, tigers or whales?\nThese and many other animals are in danger.\nIf we don't do something now, they may all disappear forever!\nOne problem is that their homes are disappearing.\nPeople cut down the forests and pollute the oceans, so these animals have no place to live in.\nAlso, many people buy things made from these animals, like medicines, fur coats and even food.\nWe only have one earth!\nIf we work together, we can still save the animals.",
+              "cn": "你想生活在一个没有熊猫、老虎或鲸鱼的世界里吗？\n这些以及许多其他动物都处于濒危状态。\n如果我们现在不采取行动，它们可能会永远消失！\n一个问题是它们的家园正在消失。\n人们砍伐森林，污染海洋，所以这些动物没有地方居住。\n而且，很多人购买由这些动物制成的东西，比如药品、皮草大衣甚至食物。\n我们只有一个地球！\n如果我们携手努力，我们仍然可以拯救这些动物。"
+            },
+            {
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Here is an important news report. Several dangerous animals escaped from the city zoo this morning. Police are now trying to catch the animals before they hurt anyone.\nAki: Gosh!\nOur reporter says the brown bear is in City Park. He is in the park lake. He is catching fish. Hmmm…he must be hungry.\nThe lion is in front of Star Department Store. He's walking towards a lady in a fur coat. …Maybe he thinks she is his sister.\nAki: This is so exciting.\nThe tiger has been found. …He is walking on a street.\nBoy: Aki, look! That's my house on TV. That means…\nAki: I can see the tiger. He looks hungry. I'd better give him some dinner.\nBoy: Aki. Stop! Don't open that door or you will be his dinner.",
+              "cn": "现在播报一则重要新闻。今天早上，几只危险动物从市动物园逃走了。警方正在试图抓捕这些动物，以免它们伤人。\nAki：天哪！\n据记者报道，棕熊在城市公园里。他在公园的湖里抓鱼。嗯……他一定是饿了。\n狮子在星星百货商场前面。他正走向一位穿着皮草大衣的女士。……也许他以为那是他的姐妹。\nAki：这太刺激了。\n老虎已经被发现。……他正在一条街上走着。\nBoy：阿基，看！电视上那是我家。那意味着……\nAki：我能看到老虎。他看起来很饿。我最好给他点吃的。\nBoy：阿基。住手！别开门，不然你会成为他的晚餐。"
             }
           ]
         },
         {
           "id": "u5",
           "title": "Unit 5 Dr Sun Yatsen",
-          "topic": "历史名人孙中山生平与贡献",
-          "grammar": [
-            "一般过去时综合运用",
-            "描述人物生平经历"
-          ],
+          "module": "Module 3 Famous people",
           "words": [
             {
               "word": "famous",
-              "phonetic": "/ˈfeɪməs/",
-              "meaning": "著名的；有名的",
-              "example": "He is a famous leader."
+              "phonetic": "",
+              "meaning": "[adj.] 著名的",
+              "example": ""
             },
             {
-              "word": "leader",
-              "phonetic": "/ˈliːdə(r)/",
-              "meaning": "领袖；领导者",
-              "example": "Dr Sun Yatsen was a great leader."
-            },
-            {
-              "word": "born",
-              "phonetic": "/bɔːn/",
-              "meaning": "出生",
-              "example": "He was born in Guangdong."
+              "word": "person",
+              "phonetic": "",
+              "meaning": "[n.] 人",
+              "example": ""
             },
             {
               "word": "history",
-              "phonetic": "/ˈhɪstri/",
-              "meaning": "历史",
-              "example": "He is important in Chinese history."
+              "phonetic": "",
+              "meaning": "[n.] 历史",
+              "example": ""
             },
             {
-              "word": "free",
-              "phonetic": "/friː/",
-              "meaning": "解放；自由的",
-              "example": "He wanted to free the people."
+              "word": "leader",
+              "phonetic": "",
+              "meaning": "[n.] 领袖",
+              "example": ""
             },
             {
-              "word": "change",
-              "phonetic": "/tʃeɪndʒ/",
-              "meaning": "改变；变化",
-              "example": "He wanted to change China."
+              "word": "inventor",
+              "phonetic": "",
+              "meaning": "[n.] 发明家",
+              "example": ""
             },
             {
-              "word": "respect",
-              "phonetic": "/rɪˈspekt/",
-              "meaning": "尊敬；尊重",
-              "example": "We should respect great people."
+              "word": "light bulb",
+              "phonetic": "",
+              "meaning": "灯泡",
+              "example": ""
             },
             {
-              "word": "named after",
-              "phonetic": "/neɪmd ˈɑːftə(r)/",
-              "meaning": "以……命名",
-              "example": "The park is named after him."
+              "word": "bulb",
+              "phonetic": "",
+              "meaning": "[n.] 灯泡",
+              "example": ""
+            },
+            {
+              "word": "movie",
+              "phonetic": "",
+              "meaning": "[n.] 电影",
+              "example": ""
+            },
+            {
+              "word": "musician",
+              "phonetic": "",
+              "meaning": "[n.] 音乐家",
+              "example": ""
+            },
+            {
+              "word": "scientist",
+              "phonetic": "",
+              "meaning": "[n.] 科学家",
+              "example": ""
+            },
+            {
+              "word": "university",
+              "phonetic": "",
+              "meaning": "[n.] 大学",
+              "example": ""
             }
           ],
           "lessons": [
             {
               "page": "Let's talk",
-              "title": "对话 · Do you know Dr Sun Yatsen?",
-              "en": "Jiamin: Do you know Dr Sun Yatsen?\nXiaoling: Yes, he was a great leader in China.\nJiamin: When was he born?\nXiaoling: He was born in 1866 in Guangdong.\nJiamin: What did he do?\nXiaoling: He loved the Chinese people. He tried to change China and free the people.\nJiamin: He is very famous all over the world.\nXiaoling: Yes, many streets, parks and schools are named after him.",
-              "cn": "Jiamin：你知道孙中山先生吗？\nXiaoling：知道，他是中国伟大的领袖。\nJiamin：他是什么时候出生的？\nXiaoling：他 1866 年出生在广东。\nJiamin：他做了什么？\nXiaoling：他深爱中国人民，努力改变中国，解放人民。\nJiamin：他在全世界都非常有名。\nXiaoling：是的，很多街道、公园和学校都以他的名字命名。"
+              "title": "Let's talk",
+              "en": "Ben: What are you reading, Xiaoling?\nXiaoling: A book about Dr Sun Yatsen.\nBen: Who is he?\nJiamin: He's a very famous and important person in Chinese history.\nBen: Wow! Can you tell me something about him?\nJiamin: Yes. He was a great leader. He tried to free the Chinese people and make their lives better.\nXiaoling: Yes. He loved the Chinese people and the Chinese people love him.\nJiamin: That's right. Today many roads, schools and parks have his name.\nBen: Wow, what a great man!",
+              "cn": "Ben：小玲，你在看什么？\nXiaoling：一本关于孙中山先生的书。\nBen：他是谁？\nJiamin：他是中国历史上非常有名和重要的人物。\nBen：哇！你能告诉我一些关于他的事吗？\nJiamin：好的。他是一位伟大的领袖。他努力解放中国人民，让他们过上更好的生活。\nXiaoling：是的。他爱中国人民，中国人民也爱他。\nJiamin：没错。如今很多道路、学校和公园都以他的名字命名。\nBen：哇，真是个伟人！"
             },
             {
-              "page": "Story",
-              "title": "故事 · Dr Sun Yatsen",
-              "en": "Dr Sun Yatsen was one of the greatest leaders in Chinese history. He was born in 1866 in Cuiheng, Guangdong. He loved the Chinese people very much. At that time, the life of common people was very hard. Dr Sun Yatsen wanted to change China. He worked hard to free the people and build a new China. People respect him very much. Today, many streets, parks and schools are named after him all over China.",
-              "cn": "孙中山先生是中国历史上最伟大的领袖之一。他 1866 年出生在广东翠亨村。他非常热爱中国人民。那时普通百姓生活很苦，孙中山先生想要改变中国。他努力解放人民，建立新中国。人们非常尊敬他。今天，全国各地的许多街道、公园和学校都以他的名字命名。"
+              "page": "Fun with language",
+              "title": "Fun with language · Mozart",
+              "en": "Mozart was a famous musician. He was born in Salzburg, Austria, in 1756. He began to play the piano when he was four. He loved the piano and played it every day. He began to write music when he was five years old. Everyone liked Mozart's music, but he didn't make a lot of money. He was very poor. He became ill and died when he was only 35 years old.",
+              "cn": "莫扎特是一位著名的音乐家。他于1756年出生在奥地利的萨尔茨堡。他四岁时开始弹钢琴，非常热爱钢琴，每天都练习。五岁时，他就开始创作音乐了。所有人都喜欢莫扎特的音乐，但他并没有赚到很多钱，生活很贫穷。后来他生病了，年仅35岁就去世了。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus · 对话1",
+              "en": "Jim: Are you in the kitchen, Mum?\nMum: Yes, I am.\nJim: Are you cooking dinner?\nMum: No, I'm washing the bowls and plates. We're going to have dinner at a restaurant.\nJim: Are we going to have dinner at the restaurant near our school?\nMum: Yes. It's famous for chicken.\nJim: Great! Is Dad going to have dinner with us?\nMum: Yes, he is.",
+              "cn": "Jim：妈妈，你在厨房吗？\nMum：是的。\nJim：你在做晚饭吗？\nMum：不，我在洗碗和盘子。我们要去餐厅吃晚饭。\nJim：我们要去学校附近的餐厅吃饭吗？\nMum：是的。那里以鸡肉闻名。\nJim：太好了！爸爸会和我们一起吃晚饭吗？\nMum：是的。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus · 对话2",
+              "en": "Jim: Look at this photo, Mum. Is this young man in white my dad?\nMum: Yes, it is.\nJim: Is he having a race in the photo?\nMum: Yes. Your father was good at running, you know.\nJim: Did he win this race?\nMum: Yes, he did.",
+              "cn": "Jim：妈妈，看这张照片。这个穿白衣服的年轻人是爸爸吗？\nMum：是的。\nJim：照片里他在赛跑吗？\nMum：是的。你知道，你爸爸以前很擅长跑步。\nJim：他赢了这场比赛吗？\nMum：是的，他赢了。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus · 对话3",
+              "en": "Jim: Was Dad a famous sportsman when he was young?\nMum: Yes, he was. He became a PE teacher when you were two.\nJim: Did you love him because he was famous?\nMum: Yes. But I also loved him because he is kind and patient. Do you want to be a sportsman like him?\nJim: Of course. Does he still run fast now?\nMum: I think so.",
+              "cn": "Jim：爸爸年轻时是著名的运动员吗？\nMum：是的。你两岁时他成为了一名体育老师。\nJim：你是因为他出名才爱他的吗？\nMum：是的。但我也爱他，因为他善良又有耐心。你想像他一样成为运动员吗？\nJim：当然。他现在还跑得快吗？\nMum：我想是的。"
+            },
+            {
+              "page": "Rhyme time",
+              "title": "Rhyme time",
+              "en": "The night is beautiful.\nSo the faces of my people.\nThe stars are beautiful.\nSo the eyes of my people.\nBeautiful, also, is the sun.\nBeautiful, also, are the souls of my people.",
+              "cn": "夜晚是美丽的。\n我的同胞们的脸庞也是。\n星星是美丽的。\n我的同胞们的眼睛也是。\n太阳，同样美丽。\n我的同胞们的灵魂，同样美丽。"
+            },
+            {
+              "page": "扩展阅读",
+              "title": "扩展阅读 · Helen Keller",
+              "en": "Helen Keller was born in America in 1880. When she was 19 months old, she fell ill and became deaf and blind. Her family found her a teacher, Anne Sullivan. Anne taught Helen to spell words on her hand. Helen studied hard. She finished university and travelled around the world to help others like herself. She wrote books, gave lectures and showed everyone that disabilities don't stop a person from living a meaningful life.",
+              "cn": "海伦·凯勒于1880年出生在美国。她19个月大时生病，变得又聋又瞎。她的家人为她找了一位老师，安妮·莎莉文。安妮教海伦在她的手上拼写单词。海伦学习非常努力。她完成了大学学业，周游世界去帮助像她一样的人。她写书、演讲，向大家证明残疾并不能阻止一个人过上有意义的生活。"
             }
           ]
         },
         {
           "id": "u6",
           "title": "Unit 6 Early years of Deng Jiaxian",
-          "topic": "科学家邓稼先少年与生平事迹",
-          "grammar": [
-            "一般过去时描述人物早年经历",
-            "形容词描述人物品质"
-          ],
+          "module": "Module 3 Famous people",
           "words": [
             {
-              "word": "scientist",
-              "phonetic": "/ˈsaɪəntɪst/",
-              "meaning": "科学家",
-              "example": "Deng Jiaxian was a great scientist."
+              "word": "invent",
+              "phonetic": "",
+              "meaning": "[v.] 发明",
+              "example": ""
             },
             {
-              "word": "clever",
-              "phonetic": "/ˈklevə(r)/",
-              "meaning": "聪明的",
-              "example": "He was a clever boy."
+              "word": "atomic",
+              "phonetic": "",
+              "meaning": "[adj.] 原子的",
+              "example": ""
             },
             {
-              "word": "thoughtful",
-              "phonetic": "/ˈθɔːtfl/",
-              "meaning": "善于思考的；体贴的",
-              "example": "He was quiet and thoughtful."
+              "word": "province",
+              "phonetic": "",
+              "meaning": "[n.] 省",
+              "example": ""
             },
             {
-              "word": "contribution",
-              "phonetic": "/ˌkɒntrɪˈbjuːʃn/",
-              "meaning": "贡献",
-              "example": "He made great contributions to China."
+              "word": "professor",
+              "phonetic": "",
+              "meaning": "[n.] 教授",
+              "example": ""
             },
             {
-              "word": "quiet",
-              "phonetic": "/ˈkwaɪət/",
-              "meaning": "安静的",
-              "example": "He was a quiet child."
+              "word": "physics",
+              "phonetic": "",
+              "meaning": "[n.] 物理学",
+              "example": ""
             },
             {
-              "word": "all one's life",
-              "phonetic": "/ɔːl wʌnz laɪf/",
-              "meaning": "一生；一辈子",
-              "example": "He worked for the country all his life."
+              "word": "the United States",
+              "phonetic": "",
+              "meaning": "美利坚合众国",
+              "example": ""
             }
           ],
           "lessons": [
             {
-              "page": "Let's talk",
-              "title": "对话 · Do you know Deng Jiaxian?",
-              "en": "Janet: Do you know Deng Jiaxian?\nBen: Yes, he was a great Chinese scientist.\nJanet: What was he like when he was a child?\nBen: He was very clever and hard-working.\nJanet: Did he study hard at school?\nBen: Yes. He liked reading and learning new things.\nJanet: What did he do later?\nBen: He worked for our country and made great contributions to China.",
-              "cn": "Janet：你知道邓稼先吗？\nBen：知道，他是中国一位伟大的科学家。\nJanet：他小时候是什么样的？\nBen：他非常聪明、勤奋。\nJanet：他在学校努力学习吗？\nBen：是的，他喜欢阅读，喜欢学习新东西。\nJanet：他后来做了什么？\nBen：他为我们国家工作，为中国做出了巨大的贡献。"
+              "page": "Let's read",
+              "title": "Let's read",
+              "en": "Deng Jiaxian(1924-1986) is often called the father of Chinese atomic science. During his life he helped China to become a stronger and safer country.\nDeng was born in Anhui Province on June 25, 1924. As a child he loved to study and wanted to be a teacher like his father, a famous professor. But his dad wanted Deng to study science to help China become a modern country.\nBecause he loved his father and his country, Deng studied hard and went to university. After finishing his university study in 1945, he taught physics at several middle schools and later at Beijing University.\nIn 1948 Deng went to the United States to study for a doctor's degree in physics. This study usually takes four or more years. But the clever young man worked hard and did it in only two years. He was the youngest person in his class, so they called him the \"Baby Doctor\".",
+              "cn": "邓稼先(1924-1986)常被称为中国原子科学之父。在他一生中，他帮助中国成为一个更强大、更安全的国家。\n邓稼先于1924年6月25日出生在安徽省。小时候他热爱学习，想成为像他父亲一样的老师——一位著名的教授。但他的父亲希望邓稼先学习科学，帮助中国成为一个现代化国家。\n因为爱父亲、爱祖国，邓稼先努力学习，考上了大学。1945年大学毕业后，他在几所中学教物理，后来在北京大学任教。\n1948年，邓稼先赴美国攻读物理学博士学位。这个学位通常需要四年或更长时间。但这个聪明的年轻人非常努力，仅用两年就完成了。他是班上最年轻的学生，因此被称为“娃娃博士”。"
             },
             {
-              "page": "Story",
-              "title": "故事 · Early years of Deng Jiaxian",
-              "en": "Deng Jiaxian was a famous great scientist of China. When he was a little boy, he was quiet, clever and thoughtful. He loved reading books very much. He studied very hard at school. He always asked good questions and liked thinking. He loved his country from an early age. Later, he studied science and worked for China all his life. He is a hero in people's hearts.",
-              "cn": "邓稼先是中国著名的大科学家。小时候，他就安静、聪明、爱思考，非常喜欢读书，在学校学习刻苦。他常常提出好问题，喜欢动脑筋。他从小就热爱祖国。后来他学习科学，一生为中国工作，永远活在人们心中。"
+              "page": "Fun with language",
+              "title": "Fun with language · J.K. Rowling",
+              "en": "Joanne Kathleen Rowling was born in Bristol, England, in 1965. She dreamed of being a famous writer when she was a little girl.\nBefore she wrote Harry Potter, she was very poor. She had no job, and a young daughter to take care of. She decided to write the Harry Potter story to make some money. Every day, she sat at a coffee shop writing until the first book was finished. But no one wanted to put out her book. They said girls couldn't write about magic. Then Rowling changed her name from Joanne Kathleen to J.K., so people wouldn't know she was a woman.\nAt last, in 1997, someone agreed to put out the first book and it was a huge success. She then wrote six more Harry Potter books. In just a few years, J.K. Rowling went from a poor young woman to the most-loved and richest writer in the world.",
+              "cn": "乔安妮·凯瑟琳·罗琳1965年出生于英国布里斯托尔。她从小就梦想成为一名著名作家。\n在写《哈利·波特》之前，她非常贫穷，没有工作，还要照顾年幼的女儿。为了赚钱，她决定写《哈利·波特》的故事。她每天都坐在咖啡馆里写作，直到完成第一本书。但当时没人愿意出版她的书，他们说女孩不擅长写魔法题材。于是罗琳把名字改成了J.K.，这样别人就不知道她是女性了。\n最终在1997年，有人同意出版她的第一本书，并且大获成功。之后她又写了另外六本《哈利·波特》系列。短短几年间，J.K.罗琳从一个贫穷的年轻女性，变成了世界上最受喜爱、最富有的作家之一。"
+            },
+            {
+              "page": "Project",
+              "title": "Project · Make a poster of a famous person",
+              "en": "Step 1: Think of a famous person you like.\nStep 2: Find a picture of him / her.\nStep 3: Write an introduction and make a poster.\n\nPoints to include: 出生时间和地点 / 做了什么 / 为什么出名",
+              "cn": "按上面步骤完成一份海报介绍一位名人。"
+            },
+            {
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Aki: I'd love to be famous. I'd love everyone to say I am great.\nBoy: You can invent something new and useful, like Thomas Edison.\nBoy: Well…there are many ways you can get famous if that's what you really want. You can become a great leader and help the people, like Sun Yatsen or Abraham Lincoln.\nBoy: Or you could play wonderful music that makes everyone sing and dance, just like Lady Gaga.\nBoy: Right. But to be famous, you must also work hard and never give up.\nAki: Wow. There are so many ways to become famous.\nAki: Hmmm…hard work? That needs lots of energy. I'd better take a nap first.",
+              "cn": "Aki：我好想出名啊，好想所有人都夸我很厉害。\nBoy：你可以发明一些新颖又有用的东西，就像托马斯·爱迪生那样。\nBoy：嗯……如果你真的想出名，有很多种方式。你可以成为一位伟大的领袖，帮助人民，比如孙中山或亚伯拉罕·林肯。\nBoy：或者你可以演奏超棒的音乐，让所有人都跟着唱歌跳舞，就像Lady Gaga那样。\nBoy：没错。但想要出名，你还必须努力奋斗，永不放弃。\nAki：哇，原来有这么多出名的方式。\nAki：嗯……努力？那要好多精力啊。我还是先睡个午觉吧。"
             }
           ]
         },
         {
           "id": "u7",
           "title": "Unit 7 It's the polite thing to do",
-          "topic": "公共场合礼仪、排队、言行举止",
-          "grammar": [
-            "should / shouldn't 建议句型",
-            "祈使句表礼貌规则"
-          ],
+          "module": "Module 4 Good manners",
           "words": [
             {
-              "word": "polite",
-              "phonetic": "/pəˈlaɪt/",
-              "meaning": "有礼貌的",
-              "example": "It's polite to queue up."
+              "word": "manners",
+              "phonetic": "",
+              "meaning": "[n.] 礼貌",
+              "example": ""
+            },
+            {
+              "word": "seat",
+              "phonetic": "",
+              "meaning": "[n.] 座位",
+              "example": ""
             },
             {
               "word": "impolite",
-              "phonetic": "/ˌɪmpəˈlaɪt/",
-              "meaning": "不礼貌的",
-              "example": "It's impolite to push in line."
+              "phonetic": "",
+              "meaning": "[adj.] 没有礼貌的",
+              "example": ""
             },
             {
-              "word": "manner",
-              "phonetic": "/ˈmænə(r)/",
-              "meaning": "礼貌；举止",
-              "example": "We should have good manners."
+              "word": "line",
+              "phonetic": "",
+              "meaning": "[n.] 队",
+              "example": ""
             },
             {
-              "word": "queue",
-              "phonetic": "/kjuː/",
-              "meaning": "排队；队列",
-              "example": "Please queue up."
+              "word": "push",
+              "phonetic": "",
+              "meaning": "[v.] 推",
+              "example": ""
             },
             {
               "word": "push in",
-              "phonetic": "/pʊʃ ɪn/",
+              "phonetic": "",
               "meaning": "插队",
-              "example": "Don't push in line."
+              "example": ""
             },
             {
-              "word": "loudly",
-              "phonetic": "/ˈlaʊdli/",
-              "meaning": "大声地",
-              "example": "Don't speak loudly."
+              "word": "full",
+              "phonetic": "",
+              "meaning": "[adj.] 满的",
+              "example": ""
             },
             {
-              "word": "quietly",
-              "phonetic": "/ˈkwaɪətli/",
-              "meaning": "安静地",
-              "example": "Please talk quietly."
+              "word": "dish",
+              "phonetic": "",
+              "meaning": "[n.] 盘子；碟子",
+              "example": ""
+            },
+            {
+              "word": "laugh",
+              "phonetic": "",
+              "meaning": "[v.] 大笑",
+              "example": ""
+            },
+            {
+              "word": "laugh at",
+              "phonetic": "",
+              "meaning": "嘲笑",
+              "example": ""
+            },
+            {
+              "word": "light up",
+              "phonetic": "",
+              "meaning": "点亮",
+              "example": ""
+            },
+            {
+              "word": "lead",
+              "phonetic": "",
+              "meaning": "[v.] 指引；引路（过去式 led）",
+              "example": ""
+            },
+            {
+              "word": "throw",
+              "phonetic": "",
+              "meaning": "[v.] 扔；掉（过去式 threw）",
+              "example": ""
+            },
+            {
+              "word": "besides",
+              "phonetic": "",
+              "meaning": "[prep.] 除了……之外（还）",
+              "example": ""
             }
           ],
           "lessons": [
             {
               "page": "Let's talk",
-              "title": "对话 · Look, Jiamin. Don't push in line.",
-              "en": "Xiaoling: Look, Jiamin. Don't push in line.\nJiamin: Sorry. What should I do?\nXiaoling: You should queue up. It's polite.\nJiamin: What other polite things should we do?\nXiaoling: We should speak quietly in the library. We shouldn't talk loudly.\nJiamin: I see. Good manners make our life better.",
-              "cn": "Xiaoling：Jiamin，看，不要插队。\nJiamin：对不起，那我该怎么做？\nXiaoling：你应该排队，这样才礼貌。\nJiamin：我们还应该做哪些礼貌的事？\nXiaoling：在图书馆里我们应该小声说话，不应该大声喧哗。\nJiamin：我懂了。良好的礼仪让生活更美好。"
+              "title": "Let's talk",
+              "en": "Jiamin: Hey, Ben! What will you do if you see an old lady standing on the bus?\nBen: That's easy. If she does not have a seat, I will give her my seat. Why?\nJiamin: Well, today on the bus, I stood up to give my seat to an old lady. But before I could say anything to her, a young man quickly sat down.\nBen: How impolite! We should always give our seat to people in need. It's the polite thing to do.\nXiaoling: That's right. I don't like impolite people. Yesterday, as I waited in line at the supermarket, a girl tried to push in. She didn't even say \"Excuse me\".\nJanet: People should always wait for their turn. If the line is long, don't push in. Be patient!",
+              "cn": "Jiamin：嘿，本！如果你在公交车上看到一位老奶奶站着，你会怎么做？\nBen：很简单。如果她没有座位，我会把座位让给她。怎么了？\nJiamin：嗯，今天在公交车上，我站起来给一个老奶奶让座。但我还没来得及说什么，一个年轻男人就迅速坐下了。\nBen：太不礼貌了！我们应该总是给有需要的人让座。这才是礼貌的做法。\nXiaoling：没错。我不喜欢不礼貌的人。昨天我在超市排队时，一个女孩想插队。她甚至没说“对不起”。\nJanet：人们应该总是按顺序等候。如果队伍很长，不要插队。耐心点！"
+            },
+            {
+              "page": "Fun with language",
+              "title": "Fun with language · Look and say",
+              "en": "✓ Good manners:\nkeep quiet, at the library\nstand in line, at the bus stop\nlet the old people take the seat, on the bus\nhelp the young, when they're in trouble\n\n✗ Bad manners:\ntalk loudly, in the public place\nwaste water\ntalk when others are talking\nthrow things on the ground",
+              "cn": "✓ 好习惯：\n在图书馆保持安静\n在公交站排队等候\n在公交车上给老人让座\n当小朋友遇到困难时帮助他们\n\n✗ 坏习惯：\n在公共场所大声喧哗\n浪费水\n打断别人说话\n随地乱扔垃圾"
+            },
+            {
+              "page": "Fun with language · Read and answer",
+              "title": "Fun with language · Read and answer · Manners around the world",
+              "en": "People from different places greet each other in different ways. In America, people will greet each other with a handshake. But in Japan, instead of a handshake, a person will bow from the waist. The younger you are, the lower you bow. In European countries like Italy, Greece, and Russia, people often greet each other with a kiss.\nIn some countries like Egypt and Iran, people like to stand close to each other when they talk. In other countries, such as China and Korea, people stand far apart when they talk. They feel unhappy if you stand too near.\nAnd when you eat dinner at someone's home in India, it's rude to eat with your left hand. If you don't use your right hand, people will think you hate the food.\nThe world is an interesting place but learning the manners of different countries takes time.",
+              "cn": "不同地方的人有不同的问候方式。在美国，人们见面时会握手。但在日本，人们会弯腰鞠躬，而不是握手。年纪越小，鞠躬的幅度越大。在意大利、希腊和俄罗斯等欧洲国家，人们经常用亲吻来问候对方。\n在埃及和伊朗等国家，人们交谈时喜欢站得很近。而在中国和韩国等国家，人们交谈时会站得比较远。如果你站得太近，他们会感到不舒服。\n在印度，当你在别人家吃饭时，用左手吃饭是不礼貌的。如果你不用右手，人们会认为你讨厌这些食物。\n世界是一个有趣的地方，但学习不同国家的礼仪需要时间。"
+            },
+            {
+              "page": "Rhyme time",
+              "title": "Rhyme time",
+              "en": "Sometimes I am good.\nSometimes I am bad.\nSometimes my parents are glad.\nSometimes my parents are sad.\nWhen I am good, my parents are glad.\nWhen I am bad, my parents are sad.\nI want them to be glad.\nI don't want them to be sad.\nSo I will always be good.\nI will never, never be bad.",
+              "cn": "有时我很乖。\n有时我调皮。\n有时爸妈很开心。\n有时爸妈很伤心。\n我乖的时候，爸妈很开心。\n我调皮的时候，爸妈很伤心。\n我想让他们开心。\n我不想让他们伤心。\n所以我要一直乖乖的。\n我永远、永远不调皮。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus · 阅读短文",
+              "en": "Manners can be quite different in different countries. When you go to a foreign country, you should learn something about its manners first.\nIn China when people meet, they often ask each other \"Where are you going?\" or \"Have you had your meal?\" But in England, people talk about the weather. English people do not ask others about age, salary or the price of their home. When your mouth is full of food, don't talk with others. In Thailand, you can't touch a child's head.\nGood manners make things easier. They can help people to get on well with each other. When you are nice to people, they will be nice to you, too.",
+              "cn": "不同国家的礼仪差异很大。当你去国外时，应该先了解一下当地的礼仪。\n在中国，人们见面时经常会问“你要去哪？”或“吃饭了吗？”。但在英国，人们会聊天气。英国人不会问别人的年龄、工资或房价。嘴里有食物时，不要和别人说话。在泰国，不能摸孩子的头。\n好的礼仪能让事情更顺利，帮助人们友好相处。你对别人友善，别人也会对你友善。"
             }
           ]
         },
         {
           "id": "u8",
           "title": "Unit 8 The magic words",
-          "topic": "日常礼貌用语：请、谢谢、对不起",
-          "grammar": [
-            "礼貌请求句型",
-            "日常交际固定用语"
-          ],
+          "module": "Module 4 Good manners",
           "words": [
             {
-              "word": "magic",
-              "phonetic": "/ˈmædʒɪk/",
-              "meaning": "神奇的；有魔力的",
-              "example": "They are magic words."
+              "word": "carry on (with)",
+              "phonetic": "",
+              "meaning": "继续（过去式 carried）",
+              "example": ""
             },
             {
-              "word": "please",
-              "phonetic": "/pliːz/",
-              "meaning": "请",
-              "example": "Please help me."
+              "word": "upset",
+              "phonetic": "",
+              "meaning": "[adj.] 难过；不安",
+              "example": ""
             },
             {
-              "word": "sorry",
-              "phonetic": "/ˈsɒri/",
-              "meaning": "对不起；抱歉的",
-              "example": "I'm sorry I'm late."
+              "word": "sign",
+              "phonetic": "",
+              "meaning": "[n.] 指示牌",
+              "example": ""
             },
             {
-              "word": "excuse me",
-              "phonetic": "/ɪkˈskjuːz miː/",
-              "meaning": "打扰一下；劳驾",
-              "example": "Excuse me, where is the library?"
-            },
-            {
-              "word": "friendly",
-              "phonetic": "/ˈfrendli/",
-              "meaning": "友好的",
-              "example": "Be friendly to others."
+              "word": "except",
+              "phonetic": "",
+              "meaning": "[conj.] 除了",
+              "example": ""
             }
           ],
           "lessons": [
             {
-              "page": "Let's talk",
-              "title": "对话 · Can you help me pass the book, p…",
-              "en": "Ben: Can you help me pass the book, please?\nTom: Sure. Here you are.\nBen: Thank you so much.\nTom: You're welcome. These are magic words.\nBen: Magic words?\nTom: Yes. \"Please\", \"Thank you\" and \"Sorry\". They make people happy.",
-              "cn": "Ben：可以请你把那本书递给我吗？\nTom：当然可以，给你。\nBen：非常感谢。\nTom：不客气，这些都是魔法词汇。\nBen：魔法词汇？\nTom：对。“请”“谢谢”和“对不起”，它们能让人开心。"
+              "page": "Let's read",
+              "title": "Let's read",
+              "en": "Long ago, a little boy was walking through a park. In the middle of the park there was a tree with a sign on it. The sign said, \"I am a magic tree. Say the magic words and you will see.\"\nThe boy tried to guess the magic words. He tried \"open\", \"hurry\", and many more, but none of them worked.\nTired and upset, the boy cried out, \"This is too difficult. Please, dear tree!\"\nSuddenly, a big door opened at the bottom of the tree. Inside everything was dark, except for a sign. The sign said, \"Carry on with your magic.\"\nThen the boy said, \"Thank you, dear tree!\" With this, the inside of the tree lit up brightly and showed a road. The road led to a room full of toys and chocolates.\nThe little boy brought all his friends to the magic tree, and they had the best party ever. This is why people always say that \"please\" and \"thank you\" are the magic words.",
+              "cn": "很久很久以前，一个小男孩正在公园里散步。公园中间有一棵树，树上挂着一块牌子，上面写着：“我是一棵魔法树。说出魔法咒语，你就能看到奇迹。”\n男孩试着猜魔法咒语。他试了“打开”“快点”，还有好多别的词，但没有一个管用。\n又累又沮丧的男孩喊道：“这太难了。求求你了，亲爱的树！”\n突然，树的底部打开了一扇大门。里面一片漆黑，只有一块牌子，上面写着：“继续用你的魔法。”\n男孩接着说：“谢谢你，亲爱的树！”话音刚落，树里面一下子亮了起来，出现了一条路。这条路通向一个装满玩具和巧克力的房间。\n小男孩把所有朋友都带到了魔法树这儿，他们办了一场有史以来最棒的派对。这就是为什么人们总说，“请”和“谢谢”才是真正的魔法咒语。"
+            },
+            {
+              "page": "Fun with language",
+              "title": "Fun with language · Ted the polite bear",
+              "en": "Ted is a bear with good manners. He is kind and helpful. When he sees others in trouble, he always tries his best to help them.\nTed always wears clean clothes when he goes out. When he meets his friends, he always says hello to them. He shows respect to others.\nTed often says, \"Can I help you, please?\" When he sees the old sheep carrying heavy bags, he often says, \"Can I help you? Can I carry the bags for you?\" When he meets the baby duck at the door, he will say, \"Can I help you? Can I open the door for you?\" When the little chicken can't find her way home, he says, \"Can I help you? Can I take you home?\"",
+              "cn": "泰德是一只有礼貌的小熊。他善良又乐于助人。看到别人遇到困难时，他总会尽力帮忙。\n泰德出门时总是穿着干净的衣服。遇到朋友时，他总会主动问好，尊重别人。\n泰德经常说：“请问，我能帮你吗？”看到老绵羊提着沉重的袋子，他会说：“我能帮你吗？我帮你提袋子吧？”遇到门口的小鸭子，他会说：“我能帮你吗？我帮你开门吧？”小鸡找不到回家的路时，他会说：“我能帮你吗？我送你回家吧？”"
+            },
+            {
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Boy: Hi, Aki. Thanks for coming. I hope you enjoy the dinner.\nAki: Great. I'm so hungry.\nMum: Hello, Aki. Nice to see you again.\nAki: I'm thirsty. What do you have to drink?\nMum: Ahh…just help yourself.\nBoy: Come on, Aki. You sit at the table. I'll help my mum with the food.\nAki: Fish? Yuck! I don't like fish. I want some chicken.\nBoy: Oh…well… I'll see if we have any.\nAki: Never mind. I like potatoes. So I'll just have these.\nAki: Now what's on TV? This is boring.\nBoy: Aki… I was watching that.\nBoy: Oh. Is that the time? You should go home now, Aki. And tomorrow we must talk about good manners.",
+              "cn": "Boy：嗨，阿基，谢谢你来做客。希望你能喜欢这顿晚餐。\nAki：太好了，我快饿死了。\nMum：你好，阿基。很高兴又见到你。\nAki：我渴了，你们这儿有什么喝的？\nMum：啊……你自己拿吧。\nBoy：走吧，阿基。你先去餐桌坐好，我帮妈妈准备饭菜。\nAki：鱼？好难吃！我不喜欢鱼，我要吃鸡肉。\nBoy：哦……那我看看家里有没有。\nAki：算了，我喜欢土豆，那我就吃这些吧。\nAki：现在电视上有什么？这里好无聊啊。\nBoy：阿基……那是我正在看的节目。\nBoy：哦，都这么晚了？阿基，你该回家了。明天我们得好好聊聊什么是礼貌。"
             }
           ]
         },
         {
           "id": "u9",
           "title": "Unit 9 Where will you go?",
-          "topic": "假期旅行计划、地点与出行方式",
-          "grammar": [
-            "一般将来时 will / be going to",
-            "Where/What 将来时特殊疑问句"
-          ],
+          "module": "Module 5 Travel abroad",
           "words": [
             {
-              "word": "travel",
-              "phonetic": "/ˈtrævl/",
-              "meaning": "旅行",
-              "example": "I want to travel in summer holiday."
+              "word": "abroad",
+              "phonetic": "",
+              "meaning": "[adv.] 在国外",
+              "example": ""
             },
             {
-              "word": "visit",
-              "phonetic": "/ˈvɪzɪt/",
-              "meaning": "参观；拜访",
-              "example": "We will visit the Great Wall."
+              "word": "South Africa",
+              "phonetic": "",
+              "meaning": "[n.] 南非",
+              "example": ""
             },
             {
-              "word": "plane",
-              "phonetic": "/pleɪn/",
-              "meaning": "飞机",
-              "example": "We go by plane."
+              "word": "nature",
+              "phonetic": "",
+              "meaning": "[n.] 大自然",
+              "example": ""
             },
             {
-              "word": "train",
-              "phonetic": "/treɪn/",
-              "meaning": "火车",
-              "example": "I will take a train to Shanghai."
+              "word": "choose",
+              "phonetic": "",
+              "meaning": "[v.] 选择（过去式 chose）",
+              "example": ""
             },
             {
-              "word": "holiday",
-              "phonetic": "/ˈhɒlədeɪ/",
-              "meaning": "假期",
-              "example": "We have a long summer holiday."
+              "word": "Sydney",
+              "phonetic": "",
+              "meaning": "[n.] 悉尼",
+              "example": ""
+            },
+            {
+              "word": "opera",
+              "phonetic": "",
+              "meaning": "[n.] 歌剧",
+              "example": ""
+            },
+            {
+              "word": "Sydney Opera House",
+              "phonetic": "",
+              "meaning": "悉尼歌剧院",
+              "example": ""
+            },
+            {
+              "word": "harbour",
+              "phonetic": "",
+              "meaning": "[n.] 海港",
+              "example": ""
+            },
+            {
+              "word": "bridge",
+              "phonetic": "",
+              "meaning": "[n.] 桥",
+              "example": ""
+            },
+            {
+              "word": "Sydney Harbour Bridge",
+              "phonetic": "",
+              "meaning": "悉尼海港大桥",
+              "example": ""
+            },
+            {
+              "word": "Japan",
+              "phonetic": "",
+              "meaning": "[n.] 日本",
+              "example": ""
+            },
+            {
+              "word": "Tokyo",
+              "phonetic": "",
+              "meaning": "[n.] 东京",
+              "example": ""
+            },
+            {
+              "word": "France",
+              "phonetic": "",
+              "meaning": "[n.] 法国",
+              "example": ""
+            },
+            {
+              "word": "Paris",
+              "phonetic": "",
+              "meaning": "[n.] 巴黎",
+              "example": ""
+            },
+            {
+              "word": "capital",
+              "phonetic": "",
+              "meaning": "[n.] 首都",
+              "example": ""
+            },
+            {
+              "word": "San Francisco",
+              "phonetic": "",
+              "meaning": "（美国）旧金山",
+              "example": ""
+            },
+            {
+              "word": "Golden Gate Bridge",
+              "phonetic": "",
+              "meaning": "（美国）金门大桥",
+              "example": ""
+            },
+            {
+              "word": "tower",
+              "phonetic": "",
+              "meaning": "[n.] 塔",
+              "example": ""
+            },
+            {
+              "word": "Tower Bridge",
+              "phonetic": "",
+              "meaning": "塔桥",
+              "example": ""
+            },
+            {
+              "word": "Big Ben",
+              "phonetic": "",
+              "meaning": "大本钟",
+              "example": ""
+            },
+            {
+              "word": "New Zealand",
+              "phonetic": "",
+              "meaning": "[n.] 新西兰",
+              "example": ""
+            },
+            {
+              "word": "Wellington",
+              "phonetic": "",
+              "meaning": "[n.] 惠灵顿",
+              "example": ""
+            },
+            {
+              "word": "kiwi",
+              "phonetic": "",
+              "meaning": "[n.] 几维鸟",
+              "example": ""
+            },
+            {
+              "word": "Ottawa",
+              "phonetic": "",
+              "meaning": "[n.] 渥太华",
+              "example": ""
+            },
+            {
+              "word": "maple",
+              "phonetic": "",
+              "meaning": "[n.] 枫树",
+              "example": ""
+            },
+            {
+              "word": "flag",
+              "phonetic": "",
+              "meaning": "[n.] 旗",
+              "example": ""
+            },
+            {
+              "word": "land",
+              "phonetic": "",
+              "meaning": "[v./n.] 着陆；陆地",
+              "example": ""
             }
           ],
           "lessons": [
             {
               "page": "Let's talk",
-              "title": "对话 · Summer holiday is coming. Where …",
-              "en": "Xiaoling: Summer holiday is coming. Where will you go?\nJanet: I will go to Beijing with my parents.\nXiaoling: How will you go there?\nJanet: We will go by plane. It's fast.\nXiaoling: What will you do there?\nJanet: We will visit the Great Wall and the Summer Palace.",
-              "cn": "Xiaoling：暑假快到了，你要去哪里？\nJanet：我和父母一起去北京。\nXiaoling：你们怎么去？\nJanet：我们坐飞机去，比较快。\nXiaoling：你们在那儿要做什么？\nJanet：我们要去参观长城和颐和园。"
+              "title": "Let's talk",
+              "en": "Ms White: If you can travel to any country in the world, where will you go?\nBen: I think I will go to South Africa. I love nature and in South Africa I can see many beautiful mountains and forests.\nJanet: I will choose Australia. I'd like to see the Sydney Opera House and the Harbour Bridge.\nXiaoling: I want to go to Japan. Tokyo is so modern and it's a great place to go shopping, too. I'd like to buy a robot there.\nMs White: Where will you go, Jiamin?\nJiamin: If I can travel abroad, I will go to France, of course. I love food and people say that Paris is the food capital of the world!",
+              "cn": "Ms White：如果可以去世界上任何一个国家旅行，你想去哪里？\nBen：我想去南非。我喜欢大自然，在南非我能看到很多美丽的山脉和森林。\nJanet：我选澳大利亚。我想去看悉尼歌剧院和海港大桥。\nXiaoling：我想去日本。东京很现代化，也是个购物的好地方。我想在那儿买个机器人。\nMs White：家民，你想去哪里？\nJiamin：如果能出国旅行，我当然要去法国。我喜欢美食，人们说巴黎是世界美食之都！"
+            },
+            {
+              "page": "Fun with language",
+              "title": "Fun with language · Daniel's move to Sydney",
+              "en": "Emma and George live in Sydney. They go to school in the city. There is a new student in their class. His name is Daniel. Daniel used to live in the countryside.\n\"When did you come to Sydney?\" asks Emma.\n\"I came to Sydney last month,\" answers Daniel. \"It's very different from my old home!\"\n\"Tell us about your old home,\" says George.\n\"It was in the country,\" says Daniel. \"We lived in a big house on a farm. Our farm had many sheep and cows. I had two dogs, too. We worked very hard every day. But there was not much rain. We didn't have water for the animals so we moved to the city.\"\n\"Don't worry, Daniel, you'll like living in Sydney,\" say Emma and George.",
+              "cn": "艾玛和乔治住在悉尼，他们在城里上学。班里来了个新同学，叫丹尼尔。丹尼尔以前住在乡下。\n“你是什么时候来悉尼的？”艾玛问。\n“我上个月来的，”丹尼尔回答，“这里和我以前的家很不一样！”\n“给我们讲讲你以前的家吧，”乔治说。\n“以前在乡下，”丹尼尔说，“我们住在农场的一栋大房子里。农场里有很多羊和牛，我还有两只狗。我们每天都很辛苦地干活。但雨很少，没有足够的水给动物喝，所以我们搬到了城里。”\n“别担心，丹尼尔，你会喜欢住在悉尼的，”艾玛和乔治说。"
+            },
+            {
+              "page": "Sing along",
+              "title": "Sing along",
+              "en": "It's a world of laughter,\nAnd a world of tears.\nIt's a world of hopes,\nAnd a world of fears.\nThere's so much that we share,\nThat it's time we're aware.\nIt's a small world after all.\nIt's a small world after all.\nIt's a small world after all.\nIt's a small, small world.",
+              "cn": "这是一个充满欢笑的世界，\n也是一个充满泪水的世界。\n这是一个充满希望的世界，\n也是一个充满恐惧的世界。\n我们共享着这么多东西，\n是时候意识到了：\n这终究是个小小的世界。\n这终究是个小小的世界。\n这终究是个小小的世界。\n一个小小的、小小的世界。"
+            },
+            {
+              "page": "Language focus",
+              "title": "Language focus · Mr Brown's trip to Hawaii",
+              "en": "Mr Brown likes travelling. He often travels with his friends when he has time.\nThey went to Hawaii last month. They stayed there for a week. When they were at the beautiful beach, they swam in the sea, sunbathed, went boating and watched the pretty dances. All of them had a good time. They liked the island very much. They are going to travel there again next time. \"We will stay there for longer and take more photos,\" they say.",
+              "cn": "布朗先生喜欢旅行。他有空的时候，经常和朋友一起去旅行。\n上个月他们去了夏威夷，在那里待了一周。在美丽的海滩上，他们在海里游泳、晒太阳、划船，还观看了精彩的舞蹈表演。所有人都玩得很开心，他们非常喜欢这座岛。下次他们还打算再去一次，说：“我们会待更久，拍更多照片。”"
             }
           ]
         },
         {
           "id": "u10",
           "title": "Unit 10 I can't wait to see you",
-          "topic": "期待见面、写信、邮件、告别",
-          "grammar": [
-            "一般将来时日常应用",
-            "can't wait to 固定句型"
-          ],
+          "module": "Module 5 Travel abroad",
           "words": [
             {
-              "word": "can't wait to",
-              "phonetic": "/kænt weɪt tuː/",
-              "meaning": "迫不及待做某事",
-              "example": "I can't wait to see my friends."
+              "word": "Canada",
+              "phonetic": "",
+              "meaning": "[n.] 加拿大",
+              "example": ""
             },
             {
-              "word": "send",
-              "phonetic": "/send/",
-              "meaning": "发送；寄",
-              "example": "I will send you an email."
+              "word": "natural",
+              "phonetic": "",
+              "meaning": "[adj.] 自然的",
+              "example": ""
             },
             {
-              "word": "email",
-              "phonetic": "/ˈiːmeɪl/",
-              "meaning": "电子邮件；发邮件",
-              "example": "Please write an email to me."
+              "word": "beauty",
+              "phonetic": "",
+              "meaning": "[n.] 美，美丽",
+              "example": ""
             },
             {
-              "word": "photo",
-              "phonetic": "/ˈfəʊtəʊ/",
-              "meaning": "照片",
-              "example": "I will take many photos."
+              "word": "waterfall",
+              "phonetic": "",
+              "meaning": "[n.] 瀑布",
+              "example": ""
             },
             {
-              "word": "hometown",
-              "phonetic": "/ˈhəʊmtaʊn/",
-              "meaning": "家乡；故乡",
-              "example": "I miss my hometown."
+              "word": "Chinatown",
+              "phonetic": "",
+              "meaning": "[n.] 唐人街",
+              "example": ""
+            },
+            {
+              "word": "Toronto",
+              "phonetic": "",
+              "meaning": "[n.] 多伦多",
+              "example": ""
+            },
+            {
+              "word": "passport",
+              "phonetic": "",
+              "meaning": "[n.] 护照",
+              "example": ""
+            },
+            {
+              "word": "book",
+              "phonetic": "",
+              "meaning": "[v.] 订购",
+              "example": ""
+            },
+            {
+              "word": "ticket",
+              "phonetic": "",
+              "meaning": "[n.] 票",
+              "example": ""
+            },
+            {
+              "word": "airport",
+              "phonetic": "",
+              "meaning": "[n.] 飞机场",
+              "example": ""
             }
           ],
           "lessons": [
             {
-              "page": "Let's talk",
-              "title": "对话 · I will go back to my hometown th…",
-              "en": "Jiamin: I will go back to my hometown this holiday.\nBen: That's great! Will you meet your old friends?\nJiamin: Yes. I can't wait to see them.\nBen: Will you write emails to me?\nJiamin: Sure. I will send you some photos too.\nBen: Have a wonderful time!",
-              "cn": "Jiamin：这个假期我要回家乡。\nBen：太好了！你会见到老朋友吗？\nJiamin：会的，我迫不及待想见他们。\nBen：你会给我写邮件吗？\nJiamin：当然会，我还会给你发一些照片。\nBen：祝你玩得开心！"
+              "page": "Let's read",
+              "title": "Let's read · A letter to John",
+              "en": "Hi, John,\nThanks so much for inviting me to visit you in Canada. I can't wait to see you.\nI'm very excited to stay with your family. I can speak English every day and learn more about your country. And I can save money, too. Don't worry, I will buy you a present with that money.\nI know Canada is famous for its natural beauty. I really want to see the beautiful lakes and waterfalls. And I plan to visit Chinatown in Toronto, too.\nI finally got my passport last week and I booked my plane ticket today. I will arrive at the airport next month, on June 12th. The plane lands at 1:00 p.m. I'm so excited!\nSee you then,\nLi Hua",
+              "cn": "你好，John：\n非常感谢你邀请我去加拿大看你，我已经迫不及待想见到你了。\n能住在你家我非常兴奋。我每天都能说英语，还能更多地了解你们的国家，同时也能省钱。别担心，我会用这笔钱给你买个礼物的。\n我知道加拿大以自然风光闻名，我特别想去看看那些美丽的湖泊和瀑布，还计划去多伦多的唐人街逛逛。\n我上周终于拿到了护照，今天也订好了机票。我下个月6月12号到机场，飞机下午1点降落，我超激动！\n到时候见！\n李华"
+            },
+            {
+              "page": "Fun with language",
+              "title": "Fun with language · A postcard from Janet",
+              "en": "Dear Jiamin,\nHow are you? Italy is great. I'm living in Milan. It's in the north of Italy. Milan is famous for its fashion (clothes, hair, etc.). Everyone here is so beautiful.\nThe food here is wonderful, too. I tried pasta, pizza, and gelato. Gelato is Italian ice cream. My Italian friend told me it is quite healthy. But it is very delicious so I don't believe him! We eat a lot of fresh bread here and people always drink red wine with dinner.\nIt is easy to travel from Milan to France, Switzerland and Austria. I will try to travel to some of these countries when it is holiday time!\nBye,\nFrom Janet",
+              "cn": "亲爱的家民：\n你好吗？意大利太棒了。我现在住在米兰，它在意大利北部。米兰以时尚闻名（服装、发型等），这里的每个人都特别漂亮。\n这里的食物也超棒。我尝了意面、披萨和gelato。Gelato就是意大利冰淇淋。我的意大利朋友说它很健康，但它实在太好吃了，我才不信呢！我们在这里吃很多新鲜面包，人们晚餐时总会喝红酒。\n从米兰去法国、瑞士和奥地利都很方便，假期的时候我打算去这些国家里的几个地方旅行！\n再见，\n珍妮特"
+            },
+            {
+              "page": "Story time",
+              "title": "Story time",
+              "en": "Teacher: Are everyone's bags packed? Do you all have your passports and tickets?\nChildren: Yep.\nGirl: One month in America. This is going to be the best summer holiday ever.\nGirl: I'm so excited. I can't wait to go to Hollywood and see all the famous movie stars.\nBoy: I think New York City will be the best. I want to go to the top of the Empire State Building.\nBoy: What about you, Aki? What do you want to do in America?\nAki: I want to visit Disneyland. All the characters are so colourful and interesting.\nBoy: Yes. Maybe you can join, too!",
+              "cn": "Teacher：大家的行李都打包好了吗？护照和机票都带齐了吗？\nChildren：带好了！\nGirl：去美国待一个月，这会是有史以来最棒的暑假！\nGirl：我好激动！迫不及待想去好莱坞，见所有的电影明星。\nBoy：我觉得纽约才是最棒的！我想去帝国大厦的楼顶。\nBoy：阿基，那你呢？你想去美国做什么？\nAki：我想去迪士尼乐园，里面的角色都又多彩又有趣。\nBoy：对呀，说不定你也可以一起去！"
             }
           ]
+        },
+        {
+          "id": "u11",
+          "title": "Unit 11-12 Review Module",
+          "module": "Module 6 Let's look back",
+          "words": [],
+          "lessons": [
+            {
+              "page": "Review",
+              "title": "Review · African Safari Brochure",
+              "en": "Kruger National Park (South Africa): Home to African wildlife\n  - lions hunt for food\n  - elephants play in the lake\n  - giraffes eat leaves from tall trees\n\nVirunga National Park (Congo): Home to African gorillas\n  - gorillas eat, play and take care of their babies\n  - see our close relatives up close\n\nVictoria Falls National Park (Zimbabwe): Home to the world's highest waterfall\n  - hike to see the waterfall\n  - enjoy the \"Valley of Flowers\"\n  - visit Africa's largest cave",
+              "cn": "【Kruger National Park】（South Africa）：Home to African wildlife\n  · 狮子捕猎\n  · 大象在湖里玩耍\n  · 长颈鹿吃高树上的叶子\n\n【Virunga National Park】（Congo）：Home to African gorillas\n  · 大猩猩进食、玩耍、照顾宝宝\n  · 近距离观察人类的\"近亲\"\n\n【Victoria Falls National Park】（Zimbabwe）：Home to the world's highest waterfall\n  · 徒步看瀑布\n  · 欣赏\"花之谷\"\n  · 探访非洲最大的洞穴"
+            },
+            {
+              "page": "Review",
+              "title": "Review · Fable — The Lion and the Mouse",
+              "en": "The Lion and the Mouse\nThe lion caught the mouse, but thought it was too small and let it go.\nThe mouse asked the lion to let it go, and the lion did.\nThe lion laughed and said, \"You are so small. How can you help me?\"\nThe lion was caught in a net. The mouse came and the lion was happy and thanked it.\nThe lion was trapped in a hunter's net.\nThe mouse used its teeth to chew through the net and set the lion free.\n\nMoral: Even the small and weak can help the great and strong. Never look down on anyone.",
+              "cn": "《The Lion and the Mouse》\n狮子抓住了老鼠，但觉得它太小了，放走了它。\n老鼠请求狮子放了它，狮子答应了。\n狮子笑着说：“你这么小，以后能帮我什么？”\n狮子被网困住，老鼠来救它，狮子很高兴，向它道谢。\n狮子被猎人的网困住了。\n老鼠用牙齿咬断网，把狮子救了出来。\n\n寓意：弱小的人也能帮助强大的人，不要小看任何人。"
+            },
+            {
+              "page": "Review",
+              "title": "Review · Nelson Mandela",
+              "en": "Nelson Mandela:\n  - famous leader\n  - born July 18th, 1918, Qunu, South Africa\n  - studied law and was a lawyer\n  - tried to change South Africa and free the black people\n  - was in prison for 27 years\n  - won the Nobel Peace Prize in 1993\n  - became president of South Africa in 1994\n  - died December 5th, 2013",
+              "cn": "Nelson Mandela：\n  · 身份：famous leader\n  · 出生：born July 18th, 1918, Qunu, South Africa\n  · 职业：studied law and was a lawyer\n  · 贡献：tried to change South Africa and free the black people\n  · 经历：was in prison for 27 years\n  · 荣誉：won the Nobel Peace Prize in 1993\n  · 职位：became president of South Africa in 1994\n  · 逝世：died December 5th, 2013"
+            }
+          ],
+          "extras": []
         }
       ]
     },

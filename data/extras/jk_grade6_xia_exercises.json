@@ -1,0 +1,325 @@
+{
+  "exercises": {
+    "u5": [
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · Mozart",
+        "data": [
+          {
+            "问题": "Who was Mozart?",
+            "答案": "He was a famous musician."
+          },
+          {
+            "问题": "When was Mozart born?",
+            "答案": "He was born in 1756."
+          },
+          {
+            "问题": "Where was Mozart born?",
+            "答案": "He was born in Salzburg, Austria."
+          },
+          {
+            "问题": "How old was Mozart when he began to play the piano?",
+            "答案": "He was four (years old)."
+          },
+          {
+            "问题": "How old was Mozart when he began to write music?",
+            "答案": "He was five (years old)."
+          },
+          {
+            "问题": "When did Mozart die?",
+            "答案": "He died when he was only 35 years old."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "时态": "现在进行时",
+            "问句": "Are you in the kitchen, Mum?",
+            "答句": "Yes, I am."
+          },
+          {
+            "时态": "现在进行时",
+            "问句": "Are you cooking dinner?",
+            "答句": "—"
+          },
+          {
+            "时态": "现在进行时",
+            "问句": "Is this young man in white my dad?",
+            "答句": "Yes, it is."
+          },
+          {
+            "时态": "现在进行时",
+            "问句": "Is he having a race in the photo?",
+            "答句": "—"
+          },
+          {
+            "时态": "一般将来时",
+            "问句": "Is Dad going to have dinner with us?",
+            "答句": "Yes, he is."
+          },
+          {
+            "时态": "一般现在时",
+            "问句": "Does he still run fast now?",
+            "答句": "—"
+          },
+          {
+            "时态": "一般过去时",
+            "问句": "Was Dad a famous sportsman when he was young?",
+            "答句": "Yes, he was."
+          },
+          {
+            "时态": "一般过去时",
+            "问句": "Did you love him because he was famous?",
+            "答句": "—"
+          },
+          {
+            "时态": "一般过去时",
+            "问句": "Did he win the race?",
+            "答句": "Yes, he did."
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · J.K. Rowling",
+        "data": [
+          {
+            "问题": "Where and when was J.K. Rowling born?",
+            "答案": "She was born in Bristol, England, in 1965."
+          },
+          {
+            "问题": "What was her dream when she was a little girl?",
+            "答案": "She dreamed of being a famous writer."
+          },
+          {
+            "问题": "Why did she decide to write the Harry Potter story?",
+            "答案": "She wanted to make some money."
+          },
+          {
+            "问题": "Where did she write the first Harry Potter book?",
+            "答案": "She wrote it in a coffee shop."
+          },
+          {
+            "问题": "Why didn't anyone want to put out her book?",
+            "答案": "They said girls couldn't write about magic."
+          },
+          {
+            "问题": "When was her first Harry Potter book put out?",
+            "答案": "It was put out in 1997."
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · Read and answer · Manners around the world",
+        "data": [
+          {
+            "国家/地区": "America",
+            "礼仪": "Greet each other with a handshake."
+          },
+          {
+            "国家/地区": "Japan",
+            "礼仪": "Bow from the waist. The younger you are, the lower you bow."
+          },
+          {
+            "国家/地区": "Italy and Russia",
+            "礼仪": "Greet each other with a kiss."
+          },
+          {
+            "国家/地区": "China and Korea",
+            "礼仪": "Stand far apart when they talk. They feel unhappy if you stand too near."
+          },
+          {
+            "国家/地区": "India",
+            "礼仪": "It's rude to eat with the left hand. You should use your right hand to eat."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Language focus",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Should we know something about different manners?",
+            "选项": [
+              "A. Yes, we should.",
+              "B. No, we shouldn't."
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Should you ask an English woman \"How old are you?\"",
+            "选项": [
+              "A. Yes, you should.",
+              "B. No, you shouldn't."
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 3,
+            "问题": "Must you touch a child's head in Thailand when you want to say hello to him?",
+            "选项": [
+              "A. Yes, you must.",
+              "B. No, you mustn't."
+            ],
+            "答案": "B"
+          },
+          {
+            "题号": 4,
+            "问题": "Will others be nice to you if you are nice to them?",
+            "选项": [
+              "A. Yes, they will.",
+              "B. No, they won't."
+            ],
+            "答案": "A"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · Ted the polite bear",
+        "data": [
+          {
+            "问题": "Why is Ted kind and helpful?",
+            "答案": "Because he has good manners, and he always tries his best to help others in trouble."
+          },
+          {
+            "问题": "What are Ted's good manners?",
+            "答案": "He wears clean clothes when going out. He always says hello to friends. He is polite and always asks \"Can I help you?\" to help others."
+          },
+          {
+            "问题": "Why is everyone nice to Ted?",
+            "答案": "Because Ted is kind, helpful, polite and shows respect to others."
+          },
+          {
+            "问题": "Do you like Ted? Why?",
+            "答案": "Yes, I like him. Because he is polite, kind and always ready to help others."
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · Daniel's move to Sydney",
+        "data": [
+          {
+            "问题": "When did Daniel move to Sydney?",
+            "答案": "He moved to Sydney last month."
+          },
+          {
+            "问题": "Where was Daniel's home before?",
+            "答案": "His home was in the countryside / on a farm in the country."
+          },
+          {
+            "问题": "What pets did Daniel have on the farm?",
+            "答案": "He had two dogs."
+          },
+          {
+            "问题": "Why did Daniel's family leave the farm?",
+            "答案": "Because there was not much rain and they didn't have water for the animals."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Language focus · Mr Brown's trip to Hawaii",
+        "data": [
+          {
+            "问题": "Who does Mr Brown travel with?",
+            "答案": "He travels with his friends."
+          },
+          {
+            "问题": "What are they doing?",
+            "答案": "They are looking at the photos they took in Hawaii."
+          },
+          {
+            "问题": "Where did they travel last month?",
+            "答案": "They travelled to Hawaii."
+          },
+          {
+            "问题": "How long did they stay there?",
+            "答案": "They stayed there for a week."
+          },
+          {
+            "问题": "What did they do in Hawaii?",
+            "答案": "They swam in the sea, sunbathed, went boating and watched the pretty dances."
+          },
+          {
+            "问题": "How did they like the island?",
+            "答案": "They liked the island very much."
+          },
+          {
+            "问题": "What will Mr Brown do next time when he visits Hawaii?",
+            "答案": "He will stay there for longer and take more photos."
+          }
+        ]
+      }
+    ],
+    "u10": [
+      {
+        "kind": "reading_qa",
+        "title": "Let's read · A letter to John",
+        "data": [
+          {
+            "问题": "Where will Li Hua travel to?",
+            "答案": "He will travel to Canada."
+          },
+          {
+            "问题": "Why is he excited about staying with John's family?",
+            "答案": "Because he can speak English every day, learn more about Canada, and save money to buy John a present."
+          },
+          {
+            "问题": "What does he plan to do during this visit?",
+            "答案": "He plans to see the beautiful lakes and waterfalls, and visit Chinatown in Toronto."
+          },
+          {
+            "问题": "When did Li Hua get his passport?",
+            "答案": "He got his passport last week."
+          },
+          {
+            "问题": "When will he arrive?",
+            "答案": "He will arrive at the airport on June 12th next month, at 1:00 p.m."
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Fun with language · A postcard from Janet",
+        "data": [
+          {
+            "问题": "In which part of Italy is Milan?",
+            "答案": "It's in the north of Italy."
+          },
+          {
+            "问题": "What is Milan famous for?",
+            "答案": "It's famous for its fashion (clothes, hair, etc.)."
+          },
+          {
+            "问题": "What food did Janet eat?",
+            "答案": "She ate pasta, pizza, gelato (Italian ice cream), and fresh bread."
+          },
+          {
+            "问题": "Why doesn't Janet believe that Italian ice cream is healthy?",
+            "答案": "Because it is very delicious."
+          },
+          {
+            "问题": "What will Janet do during her holiday time?",
+            "答案": "She will try to travel to some countries near Italy, like France, Switzerland and Austria."
+          }
+        ]
+      }
+    ]
+  }
+}
