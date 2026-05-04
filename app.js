@@ -243,6 +243,69 @@ function clearWrongbook() {
 // 供调试用：把当前本轮错题手动推进错题本（正常流程 answerQuiz 已自动调 recordAnswer）
 window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook };
 
+// ===================== B2 智能推题 =====================
+// 根据错题本给题目打分，加权随机抽取（不放回）；
+// 同一题在题库 + 错题本之间靠 _wbKey 关联。
+// 用户可通过 state.smartPick = false 关闭（走纯随机）。
+function _scoreQuestion(type, q) {
+  const wb = _loadWrongbook();
+  const key = _wbKey(type, q);
+  const rec = wb[key];
+  let score = 1;                 // 基础分
+  let tag = '';
+  if (rec) {
+    score += 3 * (rec.wrongCount || 0);
+    const dt = Date.now() - (rec.lastWrongAt || 0);
+    const DAY = 24 * 3600 * 1000;
+    if (dt <= DAY)          score += 3;           // 24h 内错过 → 强化
+    else if (dt <= 7 * DAY) score += 1.5;         // 一周内错过 → 中等
+    // 再久远就只靠 wrongCount
+    tag = '🔥';
+  }
+  // 难度高一点点的稍微优先（让练习不全是简单题）
+  if (q.difficulty === 3) score += 0.3;
+  return { score, tag };
+}
+
+function pickSmartQuestions(questions, n, type) {
+  if (!questions || !questions.length) return [];
+  if (n >= questions.length) {
+    // 全取的情况下保留 Fisher-Yates 打乱
+    const arr = questions.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = (Math.random() * (i + 1)) | 0;
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+  // 打分（type 由调用方传入，避免 state.quizType 时序问题）
+  const t = type || state.quizType || 'spelling';
+  const scored = questions.map(q => ({ q, score: _scoreQuestion(t, q).score }));
+  // 加权采样不放回（累加权重 → 二分查找）
+  const picked = [];
+  const pool = scored.slice();
+  for (let k = 0; k < n && pool.length > 0; k++) {
+    const total = pool.reduce((s, x) => s + x.score, 0);
+    let r = Math.random() * total;
+    let idx = 0;
+    for (; idx < pool.length; idx++) {
+      r -= pool[idx].score;
+      if (r <= 0) break;
+    }
+    if (idx >= pool.length) idx = pool.length - 1;
+    picked.push(pool[idx].q);
+    pool.splice(idx, 1);
+  }
+  return picked;
+}
+// 辅助：判断一道题当前是否"错题本里的"，用于 UI 上打 🔥 标
+function isPriorityQuestion(type, q) {
+  const wb = _loadWrongbook();
+  return !!wb[_wbKey(type, q)];
+}
+window.__smartpick = { score: _scoreQuestion, pick: pickSmartQuestions };
+
+
 
 // 保存/恢复学习上下文（跨会话记忆）
 function saveCtx() {
@@ -1320,8 +1383,12 @@ function startPractice(type) {
     alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
     return;
   }
-  // 随机打乱取前10题（或全部）
-  const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, Math.min(10, questions.length));
+  // 🧠 B2 智能推题：依据错题本给题目打分，加权随机抽取
+  //   baseScore = 1
+  //   + 3 × wrongCount              （错的次数越多权重越高）
+  //   + recencyBoost(lastWrongAt)    （最近错过的优先）
+  //   + newQuestionBonus             （从未做过的也给点曝光，避免只刷错题）
+  const shuffled = pickSmartQuestions(questions, Math.min(10, questions.length), type);
   state.quizType = type;
   state.quizQuestions = shuffled;
   state.quizIndex = 0;
@@ -1351,7 +1418,9 @@ function showQuiz() {
   const stars = '★'.repeat(q.difficulty || 1);
   const typeLabelShort = { spelling: '拼写', listening: '听力', grammar: '语法', reading: '阅读' };
   const wbPrefix = state.quizType === 'wrongbook' ? (typeLabelShort[realType] || realType) + ' · ' : '';
-  metaEl.textContent = `${wbPrefix}${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
+  // 🔥 智能推题：非错题本模式下，若此题在错题本里 → 打 🔥 标
+  const priorityMark = (state.quizType !== 'wrongbook' && isPriorityQuestion(realType, q)) ? '🔥 ' : '';
+  metaEl.textContent = `${priorityMark}${wbPrefix}${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
 
   // 听力原文
   const audioBox = document.getElementById('quizAudioBox');
