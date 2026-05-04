@@ -479,6 +479,20 @@ function switchUnitTab(which) {
 }
 window.switchUnitTab = switchUnitTab;
 
+// 课文翻转（英文 ↔ 中文）
+function flipLesson() {
+  const card  = document.getElementById('lessonFlipCard');
+  const label = document.getElementById('lessonFlipLabel');
+  if (!card) return;
+  const cn = document.getElementById('lessonTranslation');
+  if (!cn || !cn.textContent || cn.textContent.indexOf('暂无翻译') >= 0) {
+    return; // 没翻译就不翻
+  }
+  card.classList.toggle('flipped');
+  if (label) label.textContent = card.classList.contains('flipped') ? '看原文' : '看译文';
+}
+window.flipLesson = flipLesson;
+
 // 单元学习进度条（按"该单元已掌握单词数 / 单元总词数"显示）
 function updateUnitProgress() {
   if (!state.currentUnit || !state.currentUnit.words) return;
@@ -737,7 +751,16 @@ function _showUnitAtIndex(idx) {
   document.getElementById('wordTotal').textContent = unit.words.length;
   document.getElementById('lessonText').textContent = unit.lesson;
   const cn = unit.lessonCN || '';
-  document.getElementById('lessonTranslation').textContent = cn;
+  document.getElementById('lessonTranslation').textContent = cn || '（暂无翻译）';
+  // 切单元时重置翻转状态（永远回到英文面）+ 按钮文字
+  try {
+    const card = document.getElementById('lessonFlipCard');
+    if (card) card.classList.remove('flipped');
+    const label = document.getElementById('lessonFlipLabel');
+    if (label) label.textContent = '看译文';
+    const flipBtn = document.getElementById('lessonFlipBtn');
+    if (flipBtn) flipBtn.style.display = cn ? '' : 'none'; // 没翻译就隐藏按钮
+  } catch(e) {}
 
   // 停掉任何正在播放的课文朗读
   try { stopSpeak(); } catch(e) {}

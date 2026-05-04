@@ -203,12 +203,25 @@
           <!-- Tab B: 课文朗读 + AI 跟读 -->
           <div id="unitTabLesson" class="unit-tab-panel hide">
             <div class="bg-slate-50 rounded-xl p-4 md:p-5 mb-4">
-              <div class="flex items-center gap-3 mb-3">
-                <button id="lessonPlayBtn" class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg" onclick="playLesson()">▶</button>
-                <div class="text-sm text-slate-600" id="lessonPlayStatus">点击播放标准发音</div>
+              <div class="flex items-center justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <button id="lessonPlayBtn" class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg" onclick="playLesson()">▶</button>
+                  <div class="text-sm text-slate-600" id="lessonPlayStatus">点击播放标准发音</div>
+                </div>
+                <button type="button" id="lessonFlipBtn"
+                        class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition"
+                        onclick="flipLesson()" title="点击切换中英文">
+                  🔄 <span id="lessonFlipLabel">看译文</span>
+                </button>
               </div>
-              <p class="text-slate-800 leading-relaxed text-base md:text-lg" id="lessonText">Hello! I'm Tom. This is my family.</p>
-              <p class="text-slate-500 text-sm mt-2" id="lessonTranslation">（暂无翻译）</p>
+              <!-- 翻转卡片容器：点击也可翻转 -->
+              <div class="lesson-flip" id="lessonFlipCard" onclick="flipLesson()">
+                <div class="lesson-flip-inner">
+                  <p class="lesson-face lesson-en text-slate-800 leading-relaxed text-base md:text-lg" id="lessonText">Hello! I'm Tom. This is my family.</p>
+                  <p class="lesson-face lesson-cn text-slate-700 leading-relaxed text-base md:text-lg" id="lessonTranslation">（暂无翻译）</p>
+                </div>
+              </div>
+              <div class="text-xs text-slate-400 mt-2 text-center">💡 点击文字或按钮可切换中英文</div>
             </div>
             <div class="flex flex-col items-center gap-3">
               <button id="recordBtn" class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-500 text-white flex items-center justify-center text-2xl md:text-3xl shadow-lg" onclick="toggleRecord()">🎤</button>

@@ -425,6 +425,41 @@ body {
   #page-home .card .text-3xl { font-size: 22px; }
 }
 
+/* ============ 课文 3D 翻转卡（英 ↔ 中） ============ */
+.lesson-flip {
+  perspective: 1200px;
+  cursor: pointer;
+  position: relative;
+  min-height: 72px;
+}
+.lesson-flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.55s ease;
+}
+.lesson-flip.flipped .lesson-flip-inner {
+  transform: rotateX(180deg);
+}
+.lesson-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  margin: 0;
+  transition: opacity 0.2s;
+}
+.lesson-en { position: relative; }
+.lesson-cn {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  transform: rotateX(180deg);
+}
+/* 翻转时文字颜色略区分，中文带暖色暗示 */
+.lesson-flip .lesson-cn {
+  color: #7c2d12;
+  background: linear-gradient(transparent, rgba(251, 191, 36, 0.08));
+  border-radius: 6px;
+}
+
 /* ============ 横屏模式 ============ */
 @media (max-width: 1024px) and (orientation: landscape) {
   body {

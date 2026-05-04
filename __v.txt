@@ -1,0 +1,2 @@
+EN: Hello! I am Tom. What is your name? Hi, Tom. My name is Amy. Nice to meet you!
+CN: 您好！我是Tom。您叫什么名字？嗨，汤姆，我叫艾米很高兴认识你！
