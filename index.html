@@ -41,6 +41,8 @@
     </div>
     <div class="flex items-center gap-2 flex-shrink-0">
       <select id="ctxGrade" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="1">一年级</option>
+        <option value="2">二年级</option>
         <option value="3">三年级</option>
         <option value="4">四年级</option>
         <option value="5">五年级</option>
@@ -351,21 +353,21 @@
 
           <!-- 单词拼写填空区（仅拼写题显示） -->
           <div id="quizSpellBox" class="hide">
-            <!-- 发音按钮（大号，居中） -->
-            <div class="flex flex-col items-center gap-2 mb-5">
-              <button type="button" id="quizSpellSpeakBtn"
-                      class="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center text-4xl shadow-lg active:scale-95 transition"
-                      onclick="speakSpellWord()" title="听发音">🔊</button>
-              <div class="text-xs text-slate-500" id="quizSpellSpeakHint">点击听发音</div>
-            </div>
-
-            <!-- 字母格子填空区 -->
+            <!-- 字母格子填空区（放最上，手机键盘弹起时永远保留可视） -->
             <div id="quizSpellCells"
-                 class="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-4 px-2"></div>
+                 class="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-3 px-2"></div>
 
             <!-- 小提示 -->
-            <div class="text-center text-xs text-slate-400 mb-2" id="quizSpellTip">
+            <div class="text-center text-xs text-slate-400 mb-3" id="quizSpellTip">
               ✏️ 在横线上填写缺失的字母，填完自动判定
+            </div>
+
+            <!-- 发音按钮（缩小、放下方） -->
+            <div class="flex items-center justify-center gap-2">
+              <button type="button" id="quizSpellSpeakBtn"
+                      class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl shadow active:scale-95 transition"
+                      onclick="speakSpellWord()" title="听发音">🔊</button>
+              <span class="text-xs text-slate-500" id="quizSpellSpeakHint">点击听发音</span>
             </div>
           </div>
 

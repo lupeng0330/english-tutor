@@ -519,6 +519,17 @@ body.keyboard-open {
   scroll-margin-top: 100px;
   scroll-margin-bottom: 100px;
 }
+/* 拼写题激活 + 键盘弹起时，给答题卡下方留半屏空间，让字母格可以真滚到屏幕中央 */
+body.keyboard-open #practiceQuizView {
+  padding-bottom: 50vh;
+}
+/* 手机隐藏顶部 header + 上下文条，给输入让位（只在键盘弹起时） */
+@media (max-width: 768px) {
+  body.keyboard-open header,
+  body.keyboard-open #contextBar {
+    display: none !important;
+  }
+}
 
 /* ============ 拼写题字母格：长单词时不换行（紧凑模式） ============ */
 #quizSpellCells {

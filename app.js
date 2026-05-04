@@ -138,7 +138,7 @@ function ctxSummaryText(ctx) {
   return `${g} · ${t} · ${b}`;
 }
 function ctxBadgeText(ctx) {
-  const g = ({3:'三年级',4:'四年级',5:'五年级',6:'六年级',7:'初一',8:'初二',9:'初三'})[ctx.grade] || '';
+  const g = ({1:'一年级',2:'二年级',3:'三年级',4:'四年级',5:'五年级',6:'六年级',7:'初一',8:'初二',9:'初三'})[ctx.grade] || '';
   const t = ctx.term === '上' ? '上' : '下';
   return `${g}${t}册`;
 }
@@ -525,7 +525,7 @@ const childMap = {
 };
 
 // 年级编号 <-> grade key 映射
-const gradeNumToKey = { 3:'grade3', 4:'grade4', 5:'grade5', 6:'grade6', 7:'grade7', 8:'grade8', 9:'grade9' };
+const gradeNumToKey = { 1:'grade1', 2:'grade2', 3:'grade3', 4:'grade4', 5:'grade5', 6:'grade6', 7:'grade7', 8:'grade8', 9:'grade9' };
 const gradeKeyToNum = { grade3:3, grade4:4, grade5:5, grade6:6, grade7:7, grade8:8, grade9:9 };
 function gradeText(n){ return ({3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[n] || '未知'; }
 
@@ -1725,13 +1725,26 @@ function renderSpellCells(q) {
   inputs.forEach((inp, k) => {
     // 🆕 focus 时把输入格滚到屏幕中心，避开手机虚拟键盘
     inp.addEventListener('focus', () => {
+      // 立即给 body 加 class（作为 visualViewport 检测的兜底）
+      document.body.classList.add('keyboard-open');
       setTimeout(() => {
         try {
           inp.scrollIntoView({ behavior: 'smooth', block: 'center' });
         } catch(e) {}
-        // 额外补一点偏移（因为有 sticky header 和底部 tab）
-        try { window.scrollBy({ top: 0, behavior: 'auto' }); } catch(e) {}
-      }, 100);
+      }, 150);
+      // 300ms 后再滚一次，因为部分浏览器键盘动画要 200-300ms 才完成
+      setTimeout(() => {
+        try { inp.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch(e) {}
+      }, 450);
+    });
+    inp.addEventListener('blur', () => {
+      // 延迟 200ms 移除——如果同时切到另一个 input，它的 focus 会先触发，这里就不误删
+      setTimeout(() => {
+        const active = document.activeElement;
+        if (!active || !active.classList || !active.classList.contains('spell-cell')) {
+          document.body.classList.remove('keyboard-open');
+        }
+      }, 200);
     });
     inp.addEventListener('input', (e) => {
       let v = (inp.value || '').toLowerCase().replace(/[^a-z]/g, '').slice(-1);
@@ -2018,36 +2031,64 @@ function speakWordDirect(word) {
 }
 
 // 点击小喇叭：朗读当前拼写题的英文单词（可多次点击重听）
+// 策略：优先用有道 dictvoice API 拿 MP3（真人发音，手机 100% 可播）→ 失败降级 Web Speech API
 function speakSpellWord() {
   const q = state.quizQuestions[state.quizIndex];
   if (!q || !q.answer) return;
   const hintEl = document.getElementById('quizSpellSpeakHint');
+  const word = String(q.answer).trim();
+  const setHint = (text, cls) => {
+    if (!hintEl) return;
+    hintEl.textContent = text;
+    hintEl.className = 'text-xs ' + (cls || 'text-slate-500');
+  };
 
-  // iOS Safari / 手机 Chrome 首次调用需要用户手势，这里就是 onclick 回调，同步调用即可
-  const ok = speakWordDirect(q.answer);
-
-  if (hintEl) {
-    if (ok) {
-      hintEl.textContent = '🔊 正在播放…点击可重听';
-      hintEl.className = 'text-xs text-blue-600';
-      // 简单估计时长，结束后改回提示
-      setTimeout(() => {
-        if (!window.speechSynthesis.speaking) {
-          hintEl.textContent = '点击可重听';
-          hintEl.className = 'text-xs text-slate-500';
-        }
-      }, Math.max(1200, q.answer.length * 180));
-    } else {
-      hintEl.textContent = '⚠️ 当前浏览器不支持语音';
-      hintEl.className = 'text-xs text-orange-500';
+  // 先停掉任何在播的老音频
+  try {
+    if (typeof _currentAudio !== 'undefined' && _currentAudio) {
+      _currentAudio.pause(); _currentAudio.src = ''; _currentAudio = null;
     }
-  }
+  } catch(e) {}
+  try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch(e) {}
 
-  // 再朗读一遍（稍慢），加深印象
+  setHint('🔊 加载发音…', 'text-blue-600');
+
+  // 方案 A：有道 API MP3
+  const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(word) + '&type=1';
+  const audio = new Audio(url);
+  _currentAudio = audio;
+  let started = false;
+
+  audio.onplaying = () => {
+    started = true;
+    setHint('🔊 正在播放…点击可重听', 'text-blue-600');
+  };
+  audio.onended = () => {
+    if (_currentAudio === audio) _currentAudio = null;
+    setHint('点击可重听', 'text-slate-500');
+  };
+  audio.onerror = () => {
+    // 方案 B：浏览器 TTS 兜底
+    console.warn('[拼写] 有道 MP3 失败，降级 TTS');
+    const ok = speakWordDirect(word);
+    setHint(ok ? '🔊 正在播放…点击可重听' : '⚠️ 当前浏览器不支持语音', ok ? 'text-blue-600' : 'text-orange-500');
+  };
+
+  audio.play().catch((err) => {
+    console.warn('[拼写] audio.play() 被拒:', err && err.name);
+    const ok = speakWordDirect(word);
+    setHint(ok ? '🔊 正在播放…点击可重听' : '⚠️ 点一下小喇叭才能播放', ok ? 'text-blue-600' : 'text-orange-500');
+  });
+
+  // 3 秒还没播成 → 降级 TTS
   setTimeout(() => {
-    if (!window.speechSynthesis.speaking) return;
-    // 如果第一遍还在播，不打断
-  }, 50);
+    if (!started && _currentAudio === audio) {
+      try { audio.pause(); } catch(e) {}
+      _currentAudio = null;
+      const ok = speakWordDirect(word);
+      if (ok) setHint('🔊 正在播放…点击可重听', 'text-blue-600');
+    }
+  }, 3000);
 }
 
 function nextQuiz() {
