@@ -299,6 +299,21 @@
           <p class="text-slate-500 text-sm mt-1">短文阅读理解训练</p>
           <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
         </div>
+        <div id="practiceCardWrongbook" class="card p-6 cursor-pointer md:col-span-2 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="startPractice('wrongbook')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🩹</div>
+            <span class="badge bg-orange-100 text-orange-700" id="countWrongbook">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">错题本 · 专攻薄弱点</h3>
+          <p class="text-slate-500 text-sm mt-1">只练你答错过的题，连续答对 2 次自动移除</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-orange-600 font-semibold text-sm">开始重练 →</span>
+            <button type="button" class="text-xs px-3 py-1 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100"
+                    onclick="event.stopPropagation(); if(confirm('确定清空错题本？此操作不可撤销。')){ clearWrongbook(); refreshPracticeCounts(); }">
+              🗑 全部清空
+            </button>
+          </div>
+        </div>
       </div>
 
       <div id="practiceQuizView" class="hide">
@@ -376,6 +391,10 @@
           </div>
           <button class="gradient-btn px-8" onclick="restartPractice()">再练一次</button>
           <button class="ml-3 px-8 py-2 rounded-xl bg-slate-100 font-semibold" onclick="backToPracticeList()">返回列表</button>
+          <div id="resultWrongbookHint" class="hide mt-4 text-sm text-slate-600">
+            💡 本次错题已加入错题本，
+            <button type="button" class="text-orange-600 font-semibold underline" onclick="startPractice('wrongbook')">立即去错题本重练 →</button>
+          </div>
         </div>
       </div>
     </section>

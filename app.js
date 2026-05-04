@@ -143,6 +143,107 @@ function ctxBadgeText(ctx) {
   return `${g}${t}册`;
 }
 
+// ===================== 错题本（B3）=====================
+// 存储在 localStorage: { "textbook::type::qid": { type, question, wrongCount, correctStreak, lastWrongAt, lastAnswerAt } }
+// qid 用题库的 code+q 组合产生稳定 hash（题库没 id 字段）
+const WRONGBOOK_STORAGE_KEY = 'yxyy_wrongbook_v1';
+const WRONGBOOK_CORRECT_STREAK_TO_REMOVE = 2;  // 连续答对 N 次自动移出错题本
+let _wrongbook = null;
+
+function _loadWrongbook() {
+  if (_wrongbook) return _wrongbook;
+  try {
+    const raw = localStorage.getItem(WRONGBOOK_STORAGE_KEY);
+    _wrongbook = raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    console.warn('[错题本] 加载失败', e);
+    _wrongbook = {};
+  }
+  return _wrongbook;
+}
+function _saveWrongbook() {
+  try {
+    localStorage.setItem(WRONGBOOK_STORAGE_KEY, JSON.stringify(_wrongbook || {}));
+  } catch (e) {
+    console.warn('[错题本] 保存失败', e);
+  }
+}
+
+// 题目稳定 id：优先 q.id / 否则 code + q 文本的简易 hash
+function _questionId(q) {
+  if (q && q.id) return String(q.id);
+  const raw = String(q.code || '') + '|' + String(q.q || '') + '|' + String(q.answer || '');
+  let h = 0;
+  for (let i = 0; i < raw.length; i++) {
+    h = ((h << 5) - h + raw.charCodeAt(i)) | 0;
+  }
+  return 'h' + (h >>> 0).toString(36);
+}
+function _wbKey(type, q) {
+  const tb = (state && state.ctx && state.ctx.textbook) || 'jk';
+  return tb + '::' + type + '::' + _questionId(q);
+}
+
+// 记录答题结果（对错都要调，用来维护 correctStreak → 自动移除）
+function recordAnswer(type, q, isCorrect) {
+  if (!q) return;
+  const wb = _loadWrongbook();
+  const key = _wbKey(type, q);
+  const now = Date.now();
+  if (isCorrect) {
+    // 答对：若在错题本里，streak++，达到阈值则移除
+    if (wb[key]) {
+      wb[key].correctStreak = (wb[key].correctStreak || 0) + 1;
+      wb[key].lastAnswerAt = now;
+      if (wb[key].correctStreak >= WRONGBOOK_CORRECT_STREAK_TO_REMOVE) {
+        delete wb[key];
+      }
+      _saveWrongbook();
+    }
+    return;
+  }
+  // 答错：新增或累加
+  if (!wb[key]) {
+    wb[key] = {
+      type: type,
+      question: q,
+      wrongCount: 1,
+      correctStreak: 0,
+      firstWrongAt: now,
+      lastWrongAt: now,
+      lastAnswerAt: now
+    };
+  } else {
+    wb[key].wrongCount = (wb[key].wrongCount || 0) + 1;
+    wb[key].correctStreak = 0;
+    wb[key].lastWrongAt = now;
+    wb[key].lastAnswerAt = now;
+    // 快照更新（题库可能被改过）
+    wb[key].question = q;
+    wb[key].type = type;
+  }
+  _saveWrongbook();
+}
+
+// 获取错题本里的题目列表（按上次错时间降序）
+function getWrongQuestions(filter) {
+  const wb = _loadWrongbook();
+  const list = Object.keys(wb).map(k => Object.assign({ _key: k }, wb[k]));
+  const filtered = filter ? list.filter(filter) : list;
+  filtered.sort((a, b) => (b.lastWrongAt || 0) - (a.lastWrongAt || 0));
+  return filtered;
+}
+function getWrongCount() {
+  return Object.keys(_loadWrongbook()).length;
+}
+function clearWrongbook() {
+  _wrongbook = {};
+  _saveWrongbook();
+}
+// 供调试用：把当前本轮错题手动推进错题本（正常流程 answerQuiz 已自动调 recordAnswer）
+window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook };
+
+
 // 保存/恢复学习上下文（跨会话记忆）
 function saveCtx() {
   try {
@@ -1160,6 +1261,17 @@ function refreshPracticeCounts() {
     const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
     if (el) el.textContent = filterQuestions(t).length + ' 题';
   });
+  // 🆕 错题本角标
+  const wbCount = getWrongCount();
+  const wbEl = document.getElementById('countWrongbook');
+  if (wbEl) wbEl.textContent = wbCount + ' 题';
+  const wbCard = document.getElementById('practiceCardWrongbook');
+  if (wbCard) {
+    // 空错题本时给个柔和灰色，避免"0 题"被误点
+    if (wbCount === 0) wbCard.classList.add('opacity-60');
+    else wbCard.classList.remove('opacity-60');
+  }
+
   // 总题数 + 当前学段提示
   const total = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+filterQuestions(t).length, 0);
   const totalAll = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+(QB()[t]||[]).length, 0);
@@ -1175,6 +1287,34 @@ function refreshPracticeCounts() {
 }
 
 function startPractice(type) {
+  // 🆕 错题本模式：混合 4 种题型，从 localStorage 读
+  if (type === 'wrongbook') {
+    const all = getWrongQuestions(); // 已按 lastWrongAt 降序
+    if (all.length === 0) {
+      alert('🎉 错题本是空的，去做几题练习吧！');
+      return;
+    }
+    // 只取本教材版本的错题
+    const currentTb = (state.ctx && state.ctx.textbook) || 'jk';
+    const mine = all.filter(w => String(w._key).startsWith(currentTb + '::'));
+    const list = mine.length ? mine : all;
+    // 最多 10 题
+    const picked = list.slice(0, Math.min(10, list.length));
+    state.quizType = 'wrongbook';
+    state.quizQuestions = picked.map(w => Object.assign({}, w.question, { _wbType: w.type }));
+    state.quizIndex = 0;
+    state.quizCorrect = 0;
+    state.quizStartTime = Date.now();
+    document.getElementById('quizType').textContent = '🩹 错题重练';
+    document.getElementById('quizTotal').textContent = picked.length;
+    document.getElementById('practiceTypeView').classList.add('hide');
+    document.getElementById('practiceFilterView').classList.add('hide');
+    document.getElementById('practiceResultView').classList.add('hide');
+    document.getElementById('practiceQuizView').classList.remove('hide');
+    showQuiz();
+    return;
+  }
+
   const questions = filterQuestions(type);
   if (questions.length === 0) {
     alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
@@ -1203,16 +1343,21 @@ function showQuiz() {
   document.getElementById('quizIndex').textContent = state.quizIndex + 1;
   document.getElementById('quizProgress').style.width = ((state.quizIndex + 1) / total * 100) + '%';
 
+  // 🆕 实际题型：错题本模式下取题目自带的 _wbType；其他模式就是 state.quizType
+  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+
   // 显示年级/难度 badge
   const metaEl = document.getElementById('quizMeta');
   const stars = '★'.repeat(q.difficulty || 1);
-  metaEl.textContent = `${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
+  const typeLabelShort = { spelling: '拼写', listening: '听力', grammar: '语法', reading: '阅读' };
+  const wbPrefix = state.quizType === 'wrongbook' ? (typeLabelShort[realType] || realType) + ' · ' : '';
+  metaEl.textContent = `${wbPrefix}${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
 
   // 听力原文
   const audioBox = document.getElementById('quizAudioBox');
   const audioText = document.getElementById('quizAudioText');
   const playHint = document.getElementById('playAudioHint');
-  if (state.quizType === 'listening' && q.audioText) {
+  if (realType === 'listening' && q.audioText) {
     audioBox.classList.remove('hide');
     audioText.textContent = q.audioText;
     audioText.classList.add('hide'); // 默认隐藏原文
@@ -1225,7 +1370,7 @@ function showQuiz() {
 
   // 阅读文章
   const passageBox = document.getElementById('quizPassageBox');
-  if (state.quizType === 'reading' && q.passage) {
+  if (realType === 'reading' && q.passage) {
     passageBox.classList.remove('hide');
     document.getElementById('quizPassage').textContent = q.passage;
   } else {
@@ -1235,7 +1380,7 @@ function showQuiz() {
   const opts = document.getElementById('quizOptions');
   const spellBox = document.getElementById('quizSpellBox');
 
-  if (state.quizType === 'spelling') {
+  if (realType === 'spelling') {
     // ===== 单词拼写：字母格子填空 =====
     const qEl = document.getElementById('quizQuestion');
     qEl.innerHTML = '请拼写：<span class="text-blue-600">"' + (q.q || '') + '"</span>';
@@ -1386,7 +1531,10 @@ function checkSpellFilled(q, inputs, force) {
   inputs.forEach(i => i.disabled = true);
 
   const fb = document.getElementById('quizFeedback');
-  if (userWord === correct) {
+  const isCorrect = (userWord === correct);
+  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+  try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  if (isCorrect) {
     state.quizCorrect++;
     inputs.forEach(i => i.classList.add('!border-green-500', 'bg-green-50', 'text-green-700'));
     fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
@@ -1532,7 +1680,10 @@ function answerQuiz(idx) {
   btns.forEach(b => b.disabled = true);
   const fb = document.getElementById('quizFeedback');
 
-  if (idx === q.answer) {
+  const isCorrect = (idx === q.answer);
+  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+  try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  if (isCorrect) {
     state.quizCorrect++;
     btns[idx].classList.add('bg-green-100', 'border-green-500');
     fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
@@ -1655,6 +1806,15 @@ function showQuizResult() {
   else { emoji = '📚'; msg = '别灰心，回去复习一下再来挑战！'; }
   document.getElementById('resultEmoji').textContent = emoji;
   document.getElementById('resultMessage').textContent = msg;
+
+  // 🆕 有错题时显示"去错题本重练"提示；错题本模式下不显示
+  const wrongHint = document.getElementById('resultWrongbookHint');
+  if (wrongHint) {
+    const hasWrong = (total - state.quizCorrect) > 0;
+    const inWrongbookMode = state.quizType === 'wrongbook';
+    if (hasWrong && !inWrongbookMode) wrongHint.classList.remove('hide');
+    else wrongHint.classList.add('hide');
+  }
 
   document.getElementById('practiceQuizView').classList.add('hide');
   document.getElementById('practiceResultView').classList.remove('hide');
