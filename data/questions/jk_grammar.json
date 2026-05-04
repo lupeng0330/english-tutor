@@ -351,34 +351,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "Spring Festival ____ the most important festival in China.",
-    "options": [
-      "is",
-      "are",
-      "be"
-    ],
-    "answer": 0,
-    "explain": "单数主语用 is",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "I ____ study harder next term.",
-    "options": [
-      "am",
-      "will",
-      "was"
-    ],
-    "answer": 1,
-    "explain": "next term 将来时用 will",
-    "difficulty": 3
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -573,5 +545,500 @@
     "answer": 1,
     "explain": "than 前用比较级",
     "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G01",
+    "q": "The hare ____ too proud and took a rest.",
+    "options": [
+      "was",
+      "is",
+      "were"
+    ],
+    "answer": 0,
+    "explain": "一般过去时，单数主语用 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G02",
+    "q": "Slow and steady ____ the race.",
+    "options": [
+      "win",
+      "wins",
+      "winning"
+    ],
+    "answer": 1,
+    "explain": "谚语：主语 \"Slow and steady\" 作第三人称单数，动词加 s。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G03",
+    "q": "Jiamin tried to ____ all the books.",
+    "options": [
+      "carries",
+      "carrying",
+      "carry"
+    ],
+    "answer": 2,
+    "explain": "try to + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G01",
+    "q": "A hare crashed into the tree and ____.",
+    "options": [
+      "dies",
+      "died",
+      "dying"
+    ],
+    "answer": 1,
+    "explain": "一般过去时的不规则动词 die → died。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G02",
+    "q": "____ then on, the farmer stopped working.",
+    "options": [
+      "From",
+      "Since",
+      "On"
+    ],
+    "answer": 0,
+    "explain": "固定短语 from then on \"从那时起\"。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G03",
+    "q": "All his vegetables ____ because he stopped working.",
+    "options": [
+      "dies",
+      "died",
+      "are dead"
+    ],
+    "answer": 1,
+    "explain": "一般过去时：vegetables (复数) + died。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G01",
+    "q": "A kangaroo has two strong back legs and ____ jump far.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "\"能够\" 用 can。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G02",
+    "q": "It looks like a star and it ____ in the ocean.",
+    "options": [
+      "live",
+      "lives",
+      "lived"
+    ],
+    "answer": 1,
+    "explain": "一般现在时第三人称单数：it + lives。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G03",
+    "q": "A lion is also ____ the \"King of the Animals\".",
+    "options": [
+      "call",
+      "called",
+      "calling"
+    ],
+    "answer": 1,
+    "explain": "被动结构 be called。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G01",
+    "q": "Many animals are ____ danger.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 1,
+    "explain": "固定短语 in danger。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G02",
+    "q": "If we don't do something, they may ____ disappear.",
+    "options": [
+      "all",
+      "any",
+      "every"
+    ],
+    "answer": 0,
+    "explain": "may all disappear = 可能都消失。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G03",
+    "q": "Don't buy things ____ from animal fur.",
+    "options": [
+      "make",
+      "made",
+      "making"
+    ],
+    "answer": 1,
+    "explain": "过去分词作定语：things made from...。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G01",
+    "q": "When ____ Dr Sun Yatsen born?",
+    "options": [
+      "is",
+      "was",
+      "were"
+    ],
+    "answer": 1,
+    "explain": "\"出生\" 用过去时 was born。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G02",
+    "q": "Today many roads and schools ____ his name.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "主语 roads and schools 复数 + have。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G03",
+    "q": "Helen Keller ____ a famous person in history.",
+    "options": [
+      "is",
+      "was",
+      "were"
+    ],
+    "answer": 1,
+    "explain": "已故人物用过去时 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G01",
+    "q": "Deng Jiaxian ____ born in Anhui in 1924.",
+    "options": [
+      "was",
+      "were",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "单数主语 + was born。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G02",
+    "q": "He ____ a PhD in only two years.",
+    "options": [
+      "get",
+      "gets",
+      "got"
+    ],
+    "answer": 2,
+    "explain": "一般过去时 get → got。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G03",
+    "q": "Mozart began to ____ music when he was five.",
+    "options": [
+      "write",
+      "wrote",
+      "writes"
+    ],
+    "answer": 0,
+    "explain": "begin to + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G01",
+    "q": "We ____ always give our seat to people in need.",
+    "options": [
+      "shouldn't",
+      "should",
+      "mustn't"
+    ],
+    "answer": 1,
+    "explain": "should 表示 \"应该\"。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G02",
+    "q": "Don't ____ in line. It's impolite.",
+    "options": [
+      "push",
+      "pushing",
+      "pushes"
+    ],
+    "answer": 0,
+    "explain": "祈使句否定：Don't + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G03",
+    "q": "You ____ wait for your turn patiently.",
+    "options": [
+      "shouldn't",
+      "should",
+      "can't"
+    ],
+    "answer": 1,
+    "explain": "should 建议语气。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G01",
+    "q": "Can you help me ____ the book, please?",
+    "options": [
+      "pass",
+      "passes",
+      "passing"
+    ],
+    "answer": 0,
+    "explain": "help sb (to) do：后跟动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G02",
+    "q": "\"Please\" and \"Thank you\" ____ magic words.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 1,
+    "explain": "主语并列视为复数，用 are。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G03",
+    "q": "I ____ busy yesterday, so I didn't reply.",
+    "options": [
+      "was",
+      "were",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "一般过去时 I 用 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G01",
+    "q": "Where ____ you go, Ben?",
+    "options": [
+      "do",
+      "will",
+      "are"
+    ],
+    "answer": 1,
+    "explain": "一般将来时 Where will you go?",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G02",
+    "q": "I will ____ to South Africa to see the nature.",
+    "options": [
+      "go",
+      "going",
+      "went"
+    ],
+    "answer": 0,
+    "explain": "will + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G03",
+    "q": "Jiamin ____ France if he can travel abroad.",
+    "options": [
+      "chooses",
+      "will choose",
+      "chose"
+    ],
+    "answer": 1,
+    "explain": "if + 条件，主将从现：主句用 will。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G01",
+    "q": "I can't wait ____ see you!",
+    "options": [
+      "for",
+      "to",
+      "at"
+    ],
+    "answer": 1,
+    "explain": "固定短语 can't wait to do。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G02",
+    "q": "I ____ my passport last week.",
+    "options": [
+      "got",
+      "get",
+      "will get"
+    ],
+    "answer": 0,
+    "explain": "一般过去时 get → got。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G03",
+    "q": "The plane ____ at 1:00 p.m. next month.",
+    "options": [
+      "lands",
+      "landed",
+      "will land"
+    ],
+    "answer": 2,
+    "explain": "将来时 \"下个月\" 用 will + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_G01",
+    "q": "If the mouse ____ small, can it help the lion?",
+    "options": [
+      "is",
+      "was",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "If + 一般现在时：is。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_G02",
+    "q": "Nelson Mandela ____ the Nobel Peace Prize in 1993.",
+    "options": [
+      "win",
+      "won",
+      "wins"
+    ],
+    "answer": 1,
+    "explain": "in 1993 一般过去时 win → won。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_G03",
+    "q": "We should ____ our Earth and protect animals.",
+    "options": [
+      "save",
+      "saves",
+      "saving"
+    ],
+    "answer": 0,
+    "explain": "should + 动词原形。",
+    "difficulty": 2
   }
 ]

@@ -127,7 +127,8 @@ let state = {
     textbook: 'jk'     // jk=广州教科版, rj=人教版（待开发）, wy=外研版（待开发）
   },
   includeAllGrades: false,  // 练习题"包含全部年级"复选框
-  filterDifficulty: 0
+  filterDifficulty: 0,
+  filterUnit: 'all',        // 🆕 单元筛选：'all' 全部单元 / 'current' 跟随课本选中 / 'u1'/'u2'/... 指定单元
 };
 
 // 🆕 学习上下文工具函数
@@ -973,6 +974,7 @@ function switchPage(page) {
     document.getElementById('practiceResultView').classList.add('hide');
     document.getElementById('practiceFilterView').classList.remove('hide');
     document.getElementById('practiceTypeView').classList.remove('hide');
+    try { refreshUnitFilterOptions(); } catch(e){}
     refreshPracticeCounts();
   }
 }
@@ -1002,6 +1004,7 @@ function applyContextChange() {
 
   // 5) 联动刷新各模块
   try { renderUnitList(); } catch(e) {}
+  try { refreshUnitFilterOptions(); } catch(e) {}
   try { refreshPracticeCounts(); } catch(e) {}
 
   // 6) 持久化
@@ -1142,6 +1145,8 @@ function _showUnitAtIndex(idx) {
   try { rememberLastUnit(state.currentGrade, state.ctx.term, unit.id, unit.title, state.ctx.textbook); } catch(e) {}
   // 默认切到"单词"Tab + 刷新进度条
   try { switchUnitTab('words'); updateUnitProgress(); } catch(e) {}
+  // 🆕 通知练习页：如果筛选锁在"当前单元"，同步更新数量
+  try { notifyPracticeUnitChanged(); } catch(e) {}
 
   // 更新标题
   document.getElementById('unitDetailTitle').textContent = unit.title;
@@ -2108,6 +2113,8 @@ const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[],
 // 按筛选条件筛题
 function filterQuestions(type) {
   const all = QB()[type] || [];
+  // 目标单元（仅非"全部单元"且非"跨年级"时生效）
+  const targetUnit = _resolveTargetUnit();
   return all.filter(q => {
     // 年级筛选（除非勾选了"包含全部年级"）
     if (!state.includeAllGrades && q.grade !== state.ctx.grade) return false;
@@ -2119,8 +2126,64 @@ function filterQuestions(type) {
       if (!state.includeAllGrades) return false;
     }
     if (state.filterDifficulty > 0 && q.difficulty !== state.filterDifficulty) return false;
+    // 🆕 单元筛选（仅在非跨年级模式下生效）
+    if (!state.includeAllGrades && targetUnit) {
+      const qUnit = q.unit || _inferUnitFromCode(q.code);
+      if (!qUnit || qUnit !== targetUnit) return false;
+    }
     return true;
   });
+}
+
+// 从 code（如 "6B_U1" / "3A_U10"）推断单元 id（小写形式 u1/u10）
+function _inferUnitFromCode(code) {
+  if (!code) return null;
+  const m = String(code).match(/_U(\d+)/i);
+  if (!m) return null;
+  return 'u' + m[1];
+}
+
+// 根据 state.filterUnit 解析实际目标单元
+function _resolveTargetUnit() {
+  const fu = state.filterUnit || 'all';
+  if (fu === 'all') return null;
+  if (fu === 'current') {
+    // 跟随课本当前选中的单元
+    return (state.currentUnit && state.currentUnit.id) || null;
+  }
+  return fu; // 已是 'u1' 这类形式
+}
+
+// 根据当前年级+学期的教材单元，填充「单元」下拉框
+function refreshUnitFilterOptions() {
+  const sel = document.getElementById('filterUnit');
+  if (!sel) return;
+  const tb = (window.textbookData) || {};
+  const grKey = state.currentGrade;
+  const units = ((tb[grKey] && tb[grKey].units) || []);
+  const prev = state.filterUnit || 'all';
+  // 构造选项
+  let html = '<option value="all">全部单元</option>';
+  html += '<option value="current">📖 当前课本单元</option>';
+  for (const u of units) {
+    // 去掉 "Unit N" 前缀只取标题，避免下拉太长
+    const label = u.title || u.id;
+    const short = label.length > 28 ? label.slice(0, 26) + '…' : label;
+    html += `<option value="${u.id}">${short}</option>`;
+  }
+  sel.innerHTML = html;
+  // 还原选中（如果之前的选项还存在）
+  const stillExists = prev === 'all' || prev === 'current' || units.some(u => u.id === prev);
+  sel.value = stillExists ? prev : 'all';
+  state.filterUnit = sel.value;
+  sel.disabled = !!state.includeAllGrades;
+}
+
+// 课本单元切换时：如果练习筛选设为"当前单元"，则刷新计数
+function notifyPracticeUnitChanged() {
+  if (state.filterUnit === 'current') {
+    refreshPracticeCounts();
+  }
 }
 
 // 从 code（如 "3A_U1" / "3B_U4"）推断学期：A=上, B=下
@@ -2133,9 +2196,22 @@ function inferTermFromCode(code) {
 
 // 刷新练习入口卡片的题数徽章
 function refreshPracticeCounts() {
+  const targetUnit = _resolveTargetUnit();
+  const showUnitTag = !state.includeAllGrades && !!targetUnit;
   ['spelling','listening','grammar','reading'].forEach(t => {
     const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
-    if (el) el.textContent = filterQuestions(t).length + ' 题';
+    if (!el) return;
+    const cur = filterQuestions(t).length;
+    if (showUnitTag) {
+      // 同时计算本册的总数给用户参照
+      const savedUnit = state.filterUnit;
+      state.filterUnit = 'all';
+      const termTotal = filterQuestions(t).length;
+      state.filterUnit = savedUnit;
+      el.textContent = `${cur} / 册 ${termTotal}`;
+    } else {
+      el.textContent = cur + ' 题';
+    }
   });
   // 🆕 错题本角标
   const wbCount = getWrongCount();
@@ -2154,14 +2230,22 @@ function refreshPracticeCounts() {
   const cnt = document.getElementById('filterCount');
   if (cnt) {
     const scope = state.includeAllGrades ? '全部年级' : ctxBadgeText(state.ctx);
+    // 当前单元名（如果有）
+    let unitLabel = '';
+    if (showUnitTag) {
+      const units = (textbookData[state.currentGrade] && textbookData[state.currentGrade].units) || [];
+      const u = units.find(x => x.id === targetUnit);
+      unitLabel = u ? ' · ' + (u.title.length > 22 ? u.title.slice(0, 20) + '…' : u.title) : '';
+    }
     if (totalAll === 0) {
       // 整本教材都没题库（如 gzk 占位）→ 友好提示
       const tbName = TEXTBOOK_NAMES[state.ctx.textbook] || state.ctx.textbook;
       cnt.innerHTML = `<span class="text-slate-500">📖 《${tbName}》暂未配置题库，可切回<b class="text-blue-600">广州教科版</b>练习</span>`;
     } else if (total === 0) {
-      cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}暂无题目</span>，请勾选"跨年级刷题"或切换学段`;
+      const tip = showUnitTag ? '本单元暂无题目，请切换单元或选"全部单元"' : '请勾选"跨年级刷题"或切换学段';
+      cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}${unitLabel}暂无题目</span>，${tip}`;
     } else {
-      cnt.textContent = `${scope}共 ${total} 题（题库总计 ${totalAll} 题）`;
+      cnt.textContent = `${scope}${unitLabel} 共 ${total} 题（题库总计 ${totalAll} 题）`;
     }
   }
 }
@@ -2993,8 +3077,15 @@ function renderReport() {
 // 练习筛选器事件
 const fa = document.getElementById('filterAllGrades');
 const fd = document.getElementById('filterDifficulty');
-if (fa) fa.addEventListener('change', (e) => { state.includeAllGrades = e.target.checked; refreshPracticeCounts(); });
+const fu = document.getElementById('filterUnit');
+if (fa) fa.addEventListener('change', (e) => {
+  state.includeAllGrades = e.target.checked;
+  // 跨年级时单元筛选无意义，禁用下拉
+  if (fu) fu.disabled = state.includeAllGrades;
+  refreshPracticeCounts();
+});
 if (fd) fd.addEventListener('change', (e) => { state.filterDifficulty = parseInt(e.target.value); refreshPracticeCounts(); });
+if (fu) fu.addEventListener('change', (e) => { state.filterUnit = e.target.value; refreshPracticeCounts(); });
 
 // 预热语音引擎（部分浏览器需要）
 if ('speechSynthesis' in window) {

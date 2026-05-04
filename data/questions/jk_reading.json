@@ -180,21 +180,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "passage": "Spring Festival is the most important festival in China. We eat dumplings and hang red lanterns. Children love to get red envelopes with money inside.",
-    "q": "What do children love most during Spring Festival?",
-    "options": [
-      "Dumplings",
-      "Red lanterns",
-      "Red envelopes"
-    ],
-    "answer": 2,
-    "explain": "Children love to get red envelopes",
-    "difficulty": 3
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -585,36 +570,6 @@
     "explain": "整段围绕 'Last Weekend' 展开"
   },
   {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "passage": "China has many festivals. Spring Festival is the most important. We eat dumplings and hang red lanterns. Mid-Autumn Festival is also fun. We look at the bright moon and eat mooncakes.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Animals",
-      "Food",
-      "Chinese Festivals"
-    ],
-    "answer": 2,
-    "difficulty": 3,
-    "explain": "整段围绕 'Chinese Festivals' 展开"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "passage": "I often think about my future. I want to go to a good college. I will study hard every day. My parents tell me that hard work is important. I believe I can achieve success.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Food",
-      "My Future",
-      "Sports"
-    ],
-    "answer": 1,
-    "difficulty": 3,
-    "explain": "整段围绕 'My Future' 展开"
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -793,5 +748,357 @@
     "answer": 1,
     "difficulty": 3,
     "explain": "整段围绕 'Global Issues' 展开"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_R01",
+    "passage": "One day, a tortoise and a hare had a race. The hare was sure he would win, so he took a rest. The slow but careful tortoise won the race.",
+    "q": "Why did the hare lose?",
+    "options": [
+      "He was slow",
+      "He took a rest",
+      "He was tired"
+    ],
+    "answer": 1,
+    "explain": "兔子太骄傲停下休息，所以输了。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_R02",
+    "passage": "Jiamin was in a hurry because he had to return a book to the library. Janet said he was like a silly hare.",
+    "q": "Why was Jiamin in a hurry?",
+    "options": [
+      "He was late for class",
+      "He needed to return a book",
+      "He wanted to win a race"
+    ],
+    "answer": 1,
+    "explain": "Jiamin 赶着去还书。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_R01",
+    "passage": "A farmer picked up a dead hare and took it home. From then on, he stopped working and waited under the tree. But no hare came again, and his crops died.",
+    "q": "What happened to the farmer in the end?",
+    "options": [
+      "He became rich",
+      "He had nothing to eat",
+      "He caught many hares"
+    ],
+    "answer": 1,
+    "explain": "再没兔子来，庄稼死光，他没东西吃。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_R02",
+    "passage": "Aki cried \"Fire\" to trick his friends. The boy told him the story of The Boy Who Cried Wolf and warned him not to tell lies.",
+    "q": "What is the lesson of the story?",
+    "options": [
+      "Always tell the truth",
+      "Never help friends",
+      "Run from wolves"
+    ],
+    "answer": 0,
+    "explain": "寓意：要讲真话。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_R01",
+    "passage": "Pandas live in China. They are black and white. They eat bamboo. Pandas are endangered animals.",
+    "q": "What do pandas eat?",
+    "options": [
+      "Meat",
+      "Bamboo",
+      "Leaves"
+    ],
+    "answer": 1,
+    "explain": "熊猫吃竹子。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_R02",
+    "passage": "Billy the little bird built a new warm house alone. Then all the other birds came to help him. Billy learned he had many friends.",
+    "q": "Why did the birds come to help Billy?",
+    "options": [
+      "Because they liked him and saw he was busy",
+      "Because he paid them",
+      "Because he asked"
+    ],
+    "answer": 0,
+    "explain": "他们看他很忙，愿意帮他。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_R01",
+    "passage": "Many animals are in danger. People cut down forests and pollute rivers. Animals lose their homes. If we work together, we can still save them.",
+    "q": "What is one reason animals are in danger?",
+    "options": [
+      "There are too many of them",
+      "People cut forests and pollute rivers",
+      "The weather is too cold"
+    ],
+    "answer": 1,
+    "explain": "人类砍伐森林、污染河流。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_R02",
+    "passage": "Dangerous animals escaped from the zoo. A brown bear is catching fish in the park lake. A tiger is walking on a street. Police are trying to catch them.",
+    "q": "Where is the brown bear?",
+    "options": [
+      "In a cage",
+      "In the park lake",
+      "On a street"
+    ],
+    "answer": 1,
+    "explain": "棕熊在公园湖里。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_R01",
+    "passage": "Dr Sun Yatsen was born in 1866 in Guangdong. He was a great leader. He loved the Chinese people and tried to free them. Today many roads and schools have his name.",
+    "q": "Where was Dr Sun Yatsen born?",
+    "options": [
+      "Beijing",
+      "Guangdong",
+      "Shanghai"
+    ],
+    "answer": 1,
+    "explain": "他在广东出生。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_R02",
+    "passage": "Mozart was born in Salzburg, Austria, in 1756. He began to play the piano at four and wrote music at five. He was very poor and died at only 35.",
+    "q": "How old was Mozart when he died?",
+    "options": [
+      "35",
+      "45",
+      "55"
+    ],
+    "answer": 0,
+    "explain": "35 岁去世。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_R01",
+    "passage": "Deng Jiaxian was born in Anhui in 1924. He wanted to be a teacher, but his father asked him to study science. He finished his PhD in only two years in the US and was called the \"Baby Doctor\".",
+    "q": "Why was Deng called the \"Baby Doctor\"?",
+    "options": [
+      "He was short",
+      "He was the youngest in his class",
+      "He looked like a baby"
+    ],
+    "answer": 1,
+    "explain": "他是班上最年轻的，所以叫“娃娃博士”。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_R02",
+    "passage": "J.K. Rowling was born in 1965. Before writing Harry Potter, she was poor and had no job. She wrote in a coffee shop every day. Her book came out in 1997 and became a huge success.",
+    "q": "Where did Rowling write the first Harry Potter book?",
+    "options": [
+      "At home",
+      "At school",
+      "In a coffee shop"
+    ],
+    "answer": 2,
+    "explain": "她在咖啡馆写书。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_R01",
+    "passage": "If you see an old lady standing on the bus, you should give her your seat. It is polite. Don't push in line. Wait for your turn.",
+    "q": "What is the polite thing to do on a bus?",
+    "options": [
+      "Push in line",
+      "Talk loudly",
+      "Give your seat to an old lady"
+    ],
+    "answer": 2,
+    "explain": "公交车上礼貌行为 = 给老人让座。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_R02",
+    "passage": "In Japan, people bow from the waist. In Italy, people kiss. In India, it's rude to eat with the left hand. Different countries have different manners.",
+    "q": "How do people in Japan greet each other?",
+    "options": [
+      "By shaking hands",
+      "By bowing",
+      "By kissing"
+    ],
+    "answer": 1,
+    "explain": "日本人以鞠躬问候。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_R01",
+    "passage": "A boy met a magic tree. He tried many words, but only \"please\" and \"thank you\" worked. The tree opened and showed him a room full of toys and chocolate.",
+    "q": "Which words opened the tree?",
+    "options": [
+      "Open and hurry",
+      "Please and thank you",
+      "Sorry and excuse me"
+    ],
+    "answer": 1,
+    "explain": "“请”和“谢谢”是魔法词。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_R02",
+    "passage": "Ted is a polite bear. He wears clean clothes and says hello to friends. He often asks \"Can I help you?\" and carries heavy bags for others.",
+    "q": "What makes Ted a polite bear?",
+    "options": [
+      "He is strong",
+      "He has good manners and helps others",
+      "He is handsome"
+    ],
+    "answer": 1,
+    "explain": "Ted 有礼貌 + 乐于助人。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_R01",
+    "passage": "Daniel used to live in a big farm in the country. His family had sheep, cows and two dogs. But there was not much rain, so they moved to Sydney.",
+    "q": "Why did Daniel's family move to Sydney?",
+    "options": [
+      "For a better school",
+      "Because there was not enough water",
+      "Because of his friends"
+    ],
+    "answer": 1,
+    "explain": "没有足够的雨水和水。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_R02",
+    "passage": "Mr Brown went to Hawaii with his friends last month. They swam, sunbathed, went boating and watched dances. They will go there again and stay longer.",
+    "q": "What did Mr Brown NOT do in Hawaii?",
+    "options": [
+      "Swim",
+      "Ski",
+      "Watch dances"
+    ],
+    "answer": 1,
+    "explain": "夏威夷他们没滑雪。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_R01",
+    "passage": "Li Hua wrote to John. He will travel to Canada next month to visit John’s family. He wants to see lakes and waterfalls, and visit Chinatown in Toronto. His plane lands on June 12th at 1 p.m.",
+    "q": "Where does Li Hua plan to visit in Canada?",
+    "options": [
+      "Only the lakes",
+      "Lakes, waterfalls and Chinatown in Toronto",
+      "Only Toronto"
+    ],
+    "answer": 1,
+    "explain": "湖泊、瀑布和多伦多唐人街都去。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_R02",
+    "passage": "Janet sent a postcard from Milan, Italy. Milan is famous for fashion. She tried pasta, pizza and gelato. She will travel to France, Switzerland and Austria in the holiday.",
+    "q": "What is Milan famous for?",
+    "options": [
+      "Pizza",
+      "Fashion",
+      "Wine"
+    ],
+    "answer": 1,
+    "explain": "米兰以时尚闻名。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_R01",
+    "passage": "The lion caught a small mouse but let it go. Later the lion was trapped in a hunter’s net. The small mouse came and chewed the net, setting the lion free.",
+    "q": "What is the moral of the story?",
+    "options": [
+      "The lion is king",
+      "Never look down on anyone",
+      "Mice are stronger than lions"
+    ],
+    "answer": 1,
+    "explain": "寓意：不要小看弱小的。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_R02",
+    "passage": "Nelson Mandela was born in 1918 in South Africa. He studied law and tried to free black people. He was in prison for 27 years. In 1994 he became president of South Africa.",
+    "q": "When did Mandela become president?",
+    "options": [
+      "1918",
+      "1993",
+      "1994"
+    ],
+    "answer": 2,
+    "explain": "1994 年成为总统。",
+    "difficulty": 2
   }
 ]

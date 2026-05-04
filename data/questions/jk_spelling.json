@@ -430,46 +430,6 @@
     "explain": "visit 的过去式"
   },
   {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "节日",
-    "answer": "festival",
-    "hint": "f_______",
-    "difficulty": 2,
-    "explain": "名词：节日"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "饺子",
-    "answer": "dumpling",
-    "hint": "d_______",
-    "difficulty": 3,
-    "explain": "中国食物：饺子"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "未来",
-    "answer": "future",
-    "hint": "f_____",
-    "difficulty": 2,
-    "explain": "名词：未来"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "重要的",
-    "answer": "important",
-    "hint": "i________",
-    "difficulty": 3,
-    "explain": "形容词：重要的"
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -1390,66 +1350,6 @@
     "explain": "'玩了' 的英文是 played"
   },
   {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "灯笼",
-    "answer": "lantern",
-    "hint": "l_____n",
-    "difficulty": 2,
-    "explain": "'灯笼' 的英文是 lantern"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "月亮",
-    "answer": "moon",
-    "hint": "m__n",
-    "difficulty": 2,
-    "explain": "'月亮' 的英文是 moon"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U1",
-    "q": "龙",
-    "answer": "dragon",
-    "hint": "d____n",
-    "difficulty": 2,
-    "explain": "'龙' 的英文是 dragon"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "大学",
-    "answer": "college",
-    "hint": "c_____e",
-    "difficulty": 2,
-    "explain": "'大学' 的英文是 college"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "学习",
-    "answer": "study",
-    "hint": "s___y",
-    "difficulty": 2,
-    "explain": "'学习' 的英文是 study"
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "code": "6B_U2",
-    "q": "成功",
-    "answer": "success",
-    "hint": "s_____s",
-    "difficulty": 2,
-    "explain": "'成功' 的英文是 success"
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -1788,5 +1688,555 @@
     "hint": "p_____y",
     "difficulty": 3,
     "explain": "'贫困' 的英文是 poverty"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_S01",
+    "q": "野兔",
+    "answer": "hare",
+    "hint": "h___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_S02",
+    "q": "赢；赢得",
+    "answer": "win",
+    "hint": "w__",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_S03",
+    "q": "携带；扛",
+    "answer": "carry",
+    "hint": "c____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_S04",
+    "q": "稳健的",
+    "answer": "steady",
+    "hint": "s_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_S05",
+    "q": "傻的",
+    "answer": "silly",
+    "hint": "s____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_S01",
+    "q": "死",
+    "answer": "die",
+    "hint": "d__",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_S02",
+    "q": "地面",
+    "answer": "ground",
+    "hint": "g_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_S03",
+    "q": "出现",
+    "answer": "appear",
+    "hint": "a_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_S04",
+    "q": "消失；灭绝",
+    "answer": "disappear",
+    "hint": "d________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_S05",
+    "q": "永远",
+    "answer": "forever",
+    "hint": "f______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_S01",
+    "q": "青蛙",
+    "answer": "frog",
+    "hint": "f___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_S02",
+    "q": "袋鼠",
+    "answer": "kangaroo",
+    "hint": "k_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_S03",
+    "q": "海星",
+    "answer": "starfish",
+    "hint": "s_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_S04",
+    "q": "海洋",
+    "answer": "ocean",
+    "hint": "o____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_S05",
+    "q": "大象",
+    "answer": "elephant",
+    "hint": "e_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_S01",
+    "q": "皮毛",
+    "answer": "fur",
+    "hint": "f__",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_S02",
+    "q": "处于危险中",
+    "answer": "in danger",
+    "hint": "in d_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_S03",
+    "q": "森林（填名词）",
+    "answer": "forest",
+    "hint": "f_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_S04",
+    "q": "老虎",
+    "answer": "tiger",
+    "hint": "t____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_S05",
+    "q": "熊猫",
+    "answer": "panda",
+    "hint": "p____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_S01",
+    "q": "著名的",
+    "answer": "famous",
+    "hint": "f_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_S02",
+    "q": "历史",
+    "answer": "history",
+    "hint": "h______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_S03",
+    "q": "领袖",
+    "answer": "leader",
+    "hint": "l_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_S04",
+    "q": "以……命名",
+    "answer": "named after",
+    "hint": "n____ a____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_S05",
+    "q": "音乐家",
+    "answer": "musician",
+    "hint": "m_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_S01",
+    "q": "聪明的",
+    "answer": "clever",
+    "hint": "c_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_S02",
+    "q": "科学家",
+    "answer": "scientist",
+    "hint": "s________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_S03",
+    "q": "教授",
+    "answer": "professor",
+    "hint": "p________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_S04",
+    "q": "贡献",
+    "answer": "contribution",
+    "hint": "c___________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_S05",
+    "q": "大学",
+    "answer": "university",
+    "hint": "u_________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_S01",
+    "q": "礼貌（复数）",
+    "answer": "manners",
+    "hint": "m______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_S02",
+    "q": "座位",
+    "answer": "seat",
+    "hint": "s___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_S03",
+    "q": "队（伍）",
+    "answer": "line",
+    "hint": "l___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_S04",
+    "q": "推",
+    "answer": "push",
+    "hint": "p___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_S05",
+    "q": "没有礼貌的",
+    "answer": "impolite",
+    "hint": "i_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_S01",
+    "q": "神奇的",
+    "answer": "magic",
+    "hint": "m____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_S02",
+    "q": "扔；掉",
+    "answer": "throw",
+    "hint": "t____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_S03",
+    "q": "难过；不安",
+    "answer": "upset",
+    "hint": "u____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_S04",
+    "q": "指引；引路",
+    "answer": "lead",
+    "hint": "l___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_S05",
+    "q": "指示牌",
+    "answer": "sign",
+    "hint": "s___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_S01",
+    "q": "在国外",
+    "answer": "abroad",
+    "hint": "a_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_S02",
+    "q": "大自然",
+    "answer": "nature",
+    "hint": "n_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_S03",
+    "q": "选择",
+    "answer": "choose",
+    "hint": "c_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_S04",
+    "q": "歌剧",
+    "answer": "opera",
+    "hint": "o____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_S05",
+    "q": "首都",
+    "answer": "capital",
+    "hint": "c______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_S01",
+    "q": "护照",
+    "answer": "passport",
+    "hint": "p_______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_S02",
+    "q": "票",
+    "answer": "ticket",
+    "hint": "t_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_S03",
+    "q": "机场",
+    "answer": "airport",
+    "hint": "a______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_S04",
+    "q": "着陆",
+    "answer": "land",
+    "hint": "l___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_S05",
+    "q": "瀑布",
+    "answer": "waterfall",
+    "hint": "w________",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_S01",
+    "q": "保护（动物）",
+    "answer": "protect",
+    "hint": "p______",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_S02",
+    "q": "拯救",
+    "answer": "save",
+    "hint": "s___",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_S03",
+    "q": "地球",
+    "answer": "earth",
+    "hint": "e____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_S04",
+    "q": "旅行",
+    "answer": "travel",
+    "hint": "t_____",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u11",
+    "code": "6B_U11_S05",
+    "q": "家乡",
+    "answer": "hometown",
+    "hint": "h_______",
+    "difficulty": 2
   }
 ]
