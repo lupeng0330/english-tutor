@@ -1234,29 +1234,26 @@ function showQuiz() {
   const spellBox = document.getElementById('quizSpellBox');
 
   if (state.quizType === 'spelling') {
-    // ===== 单词拼写：不渲染选项，改为输入框 =====
-    document.getElementById('quizQuestion').textContent = '请拼写："' + q.q + '"';
+    // ===== 单词拼写：字母格子填空 =====
+    const qEl = document.getElementById('quizQuestion');
+    qEl.innerHTML = '请拼写：<span class="text-blue-600">"' + (q.q || '') + '"</span>';
+    qEl.className = 'text-xl sm:text-2xl font-bold text-slate-800 mb-5 text-center';
     opts.innerHTML = '';
     opts.classList.add('hide');
     if (spellBox) {
       spellBox.classList.remove('hide');
-      const hintEl = document.getElementById('quizSpellHint');
-      if (hintEl) hintEl.textContent = (q.hint || '').split('').join(' ') || '_ '.repeat((q.answer || '').length).trim();
-      const input = document.getElementById('quizSpellInput');
-      if (input) {
-        input.value = '';
-        input.disabled = false;
-        input.classList.remove('border-green-500', 'border-red-500', 'bg-green-50', 'bg-red-50');
-        // 回车提交
-        input.onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSpell(); } };
-        setTimeout(() => input.focus(), 50);
+      renderSpellCells(q);
+      const hintEl = document.getElementById('quizSpellSpeakHint');
+      if (hintEl) {
+        hintEl.textContent = '点击听发音';
+        hintEl.className = 'text-xs text-slate-500';
       }
-      const btn = document.getElementById('quizSpellSubmit');
-      if (btn) { btn.disabled = false; btn.textContent = '提交答案'; }
     }
   } else {
     // ===== 选择题（听力/语法/阅读） =====
-    document.getElementById('quizQuestion').textContent = q.q;
+    const qEl = document.getElementById('quizQuestion');
+    qEl.textContent = q.q;
+    qEl.className = 'text-lg font-semibold text-slate-800 mb-4';
     opts.classList.remove('hide');
     if (spellBox) spellBox.classList.add('hide');
     opts.innerHTML = (q.options || []).map((opt, i) => `
@@ -1268,6 +1265,159 @@ function showQuiz() {
   }
   document.getElementById('quizFeedback').classList.add('hide');
   document.getElementById('quizNextBtn').classList.add('hide');
+}
+
+// 根据 hint（如 "h___o"）生成字母格子：
+// - 字母位：固定显示字母（灰色格子）
+// - 下划线位：空白输入格（蓝色边框 + 下划线）
+// 用户输入时自动跳到下一个空格；删除时自动回到上一个空格。
+function renderSpellCells(q) {
+  const container = document.getElementById('quizSpellCells');
+  if (!container) return;
+  const answer = (q.answer || '').toLowerCase();
+  let hint = q.hint || '';
+  // hint 缺失或长度不一致时，按答案长度兜底（首字母给提示，其他全空）
+  if (!hint || hint.length !== answer.length) {
+    hint = answer.charAt(0) + '_'.repeat(Math.max(0, answer.length - 1));
+  }
+
+  container.innerHTML = '';
+  const inputs = [];
+  for (let i = 0; i < hint.length; i++) {
+    const ch = hint[i];
+    if (ch === '_') {
+      // 空格位：单字母输入
+      const wrap = document.createElement('div');
+      wrap.className = 'relative';
+      const inp = document.createElement('input');
+      inp.type = 'text';
+      inp.maxLength = 1;
+      inp.autocomplete = 'off';
+      inp.autocapitalize = 'off';
+      inp.spellcheck = false;
+      inp.setAttribute('inputmode', 'text');
+      inp.setAttribute('pattern', '[A-Za-z]');
+      inp.dataset.idx = i;
+      inp.className = 'spell-cell w-9 h-12 sm:w-10 sm:h-14 text-center text-xl sm:text-2xl font-bold text-indigo-700 '
+                    + 'bg-white border-b-4 border-indigo-300 rounded-t-md focus:border-blue-500 focus:outline-none '
+                    + 'caret-blue-500';
+      wrap.appendChild(inp);
+      container.appendChild(wrap);
+      inputs.push(inp);
+    } else {
+      // 字母提示位：灰色固定格
+      const box = document.createElement('div');
+      box.className = 'w-9 h-12 sm:w-10 sm:h-14 flex items-center justify-center text-xl sm:text-2xl font-bold '
+                    + 'text-slate-500 bg-slate-100 border-b-4 border-slate-300 rounded-t-md select-none';
+      box.textContent = ch;
+      container.appendChild(box);
+    }
+  }
+
+  // 输入行为：输入后跳下一格；退格回上一格；填满自动判定
+  inputs.forEach((inp, k) => {
+    inp.addEventListener('input', (e) => {
+      let v = (inp.value || '').toLowerCase().replace(/[^a-z]/g, '').slice(-1);
+      inp.value = v;
+      if (v) {
+        if (k + 1 < inputs.length) inputs[k + 1].focus();
+        checkSpellFilled(q, inputs);
+      }
+    });
+    inp.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && !inp.value && k > 0) {
+        inputs[k - 1].focus();
+        inputs[k - 1].value = '';
+        e.preventDefault();
+      } else if (e.key === 'ArrowLeft' && k > 0) {
+        inputs[k - 1].focus(); e.preventDefault();
+      } else if (e.key === 'ArrowRight' && k + 1 < inputs.length) {
+        inputs[k + 1].focus(); e.preventDefault();
+      } else if (e.key === 'Enter') {
+        checkSpellFilled(q, inputs, true);
+      }
+    });
+    // 粘贴整词时分发填入各格
+    inp.addEventListener('paste', (e) => {
+      const text = (e.clipboardData || window.clipboardData).getData('text') || '';
+      const letters = text.toLowerCase().replace(/[^a-z]/g, '').split('');
+      if (!letters.length) return;
+      e.preventDefault();
+      let j = k;
+      for (const L of letters) {
+        if (j >= inputs.length) break;
+        inputs[j].value = L;
+        j++;
+      }
+      if (j < inputs.length) inputs[j].focus();
+      else inputs[inputs.length - 1].blur();
+      checkSpellFilled(q, inputs);
+    });
+  });
+
+  // 自动聚焦第一个空格
+  setTimeout(() => { if (inputs[0]) inputs[0].focus(); }, 80);
+}
+
+// 检查是否所有输入格都已填；如是则判定对错
+function checkSpellFilled(q, inputs, force) {
+  const allFilled = inputs.every(i => i.value && i.value.trim());
+  if (!allFilled && !force) return;
+
+  // 拼出用户答案
+  const cells = document.querySelectorAll('#quizSpellCells > div, #quizSpellCells > input');
+  // 重新按 DOM 顺序拼：固定格取 textContent，输入格取 value
+  const kids = document.getElementById('quizSpellCells').children;
+  let userWord = '';
+  for (const el of kids) {
+    if (el.tagName === 'INPUT') userWord += (el.value || '').toLowerCase();
+    else {
+      // wrap div 内含 input
+      const innerInput = el.querySelector && el.querySelector('input');
+      if (innerInput) userWord += (innerInput.value || '').toLowerCase();
+      else userWord += (el.textContent || '').toLowerCase();
+    }
+  }
+  const correct = (q.answer || '').toLowerCase();
+
+  // 锁定所有输入
+  inputs.forEach(i => i.disabled = true);
+
+  const fb = document.getElementById('quizFeedback');
+  if (userWord === correct) {
+    state.quizCorrect++;
+    inputs.forEach(i => i.classList.add('!border-green-500', 'bg-green-50', 'text-green-700'));
+    fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+    fb.innerHTML = `<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b>`
+      + `<div class="text-sm mt-1">${q.q} = <b>${q.answer}</b></div>`
+      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
+  } else {
+    // 高亮错误的字母
+    let ai = 0;
+    for (let i = 0; i < correct.length; i++) {
+      if (inputs[ai] && inputs[ai].dataset.idx == i) {
+        const expected = correct[i];
+        if ((inputs[ai].value || '').toLowerCase() !== expected) {
+          inputs[ai].classList.add('!border-red-500', 'bg-red-50', 'text-red-700');
+        } else {
+          inputs[ai].classList.add('!border-green-500', 'bg-green-50', 'text-green-700');
+        }
+        ai++;
+      }
+    }
+    fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+    fb.innerHTML = `<b>❌ 回答错误</b>`
+      + `<div class="text-sm mt-1">你的答案：<span class="line-through">${escapeHtml(userWord || '(空)')}</span></div>`
+      + `<div class="text-sm mt-1">正确答案：<b>${q.answer}</b></div>`
+      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
+  }
+  fb.classList.remove('hide');
+  // 自动朗读一下正确答案
+  try { speakWordDirect(q.answer); } catch(e) {}
+
+  document.getElementById('quizNextBtn').classList.remove('hide');
+  document.getElementById('quizNextBtn').textContent =
+    state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
 }
 
 // 听力题音频播放状态
@@ -1398,52 +1548,81 @@ function answerQuiz(idx) {
     state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
 }
 
-// 朗读当前拼写题的英文单词
+// 直接朗读单词（不走长文本拆分管线，专为单词发音设计）
+// 手机浏览器的 speechSynthesis 必须在用户手势回调同步触发才响，
+// 这里保证调用栈足够浅、没有异步延迟。
+let _spellSpeakUnlocked = false;
+function speakWordDirect(word) {
+  if (!word || !('speechSynthesis' in window)) return false;
+  try {
+    // 取消任何在队列里的旧语音
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(String(word));
+    u.lang = 'en-US';
+    u.rate = 0.9;
+    u.pitch = 1.0;
+    u.volume = 1.0;
+
+    // 选个英语语音（同步取，若 voices 还没加载就用默认）
+    try {
+      const voices = window.speechSynthesis.getVoices() || [];
+      if (voices.length) {
+        const priority = [
+          /Google.*US.*English/i,
+          /Microsoft.*Aria.*Natural/i,
+          /Microsoft.*Jenny.*Natural/i,
+          /Samantha/i, /Ava/i, /Karen/i,
+          /Microsoft.*Zira/i, /en[-_]?US/i, /^en/i
+        ];
+        let voice = null;
+        for (const p of priority) {
+          const m = voices.find(v => p.test(v.name) || p.test(v.lang));
+          if (m) { voice = m; break; }
+        }
+        if (voice) u.voice = voice;
+      }
+    } catch(e) {}
+
+    window.speechSynthesis.speak(u);
+    _spellSpeakUnlocked = true;
+    return true;
+  } catch(e) {
+    console.warn('[拼写 TTS] 失败:', e);
+    return false;
+  }
+}
+
+// 点击小喇叭：朗读当前拼写题的英文单词（可多次点击重听）
 function speakSpellWord() {
   const q = state.quizQuestions[state.quizIndex];
   if (!q || !q.answer) return;
-  stopSpeak();
-  // 简单拼读：单词 + 短停顿 + 慢速再读一次
-  speakBrowser(q.answer + '. ' + q.answer, {});
-}
+  const hintEl = document.getElementById('quizSpellSpeakHint');
 
-// 提交拼写答案
-function submitSpell() {
-  const q = state.quizQuestions[state.quizIndex];
-  const input = document.getElementById('quizSpellInput');
-  const btn = document.getElementById('quizSpellSubmit');
-  if (!q || !input) return;
+  // iOS Safari / 手机 Chrome 首次调用需要用户手势，这里就是 onclick 回调，同步调用即可
+  const ok = speakWordDirect(q.answer);
 
-  const user = (input.value || '').trim().toLowerCase();
-  if (!user) { input.focus(); return; }
-  const correct = (q.answer || '').trim().toLowerCase();
-
-  input.disabled = true;
-  if (btn) btn.disabled = true;
-
-  const fb = document.getElementById('quizFeedback');
-  if (user === correct) {
-    state.quizCorrect++;
-    input.classList.add('border-green-500', 'bg-green-50');
-    fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
-    fb.innerHTML = `<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b>`
-      + `<div class="text-sm mt-1">${q.q} = <b>${q.answer}</b></div>`
-      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
-  } else {
-    input.classList.add('border-red-500', 'bg-red-50');
-    fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
-    fb.innerHTML = `<b>❌ 回答错误</b>`
-      + `<div class="text-sm mt-1">你的答案：<span class="line-through">${escapeHtml(input.value || '(空)')}</span></div>`
-      + `<div class="text-sm mt-1">正确答案：<b>${q.answer}</b></div>`
-      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
+  if (hintEl) {
+    if (ok) {
+      hintEl.textContent = '🔊 正在播放…点击可重听';
+      hintEl.className = 'text-xs text-blue-600';
+      // 简单估计时长，结束后改回提示
+      setTimeout(() => {
+        if (!window.speechSynthesis.speaking) {
+          hintEl.textContent = '点击可重听';
+          hintEl.className = 'text-xs text-slate-500';
+        }
+      }, Math.max(1200, q.answer.length * 180));
+    } else {
+      hintEl.textContent = '⚠️ 当前浏览器不支持语音';
+      hintEl.className = 'text-xs text-orange-500';
+    }
   }
-  fb.classList.remove('hide');
-  // 自动朗读一下正确答案，加深印象
-  try { speakBrowser(q.answer, {}); } catch(e) {}
 
-  document.getElementById('quizNextBtn').classList.remove('hide');
-  document.getElementById('quizNextBtn').textContent =
-    state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
+  // 再朗读一遍（稍慢），加深印象
+  setTimeout(() => {
+    if (!window.speechSynthesis.speaking) return;
+    // 如果第一遍还在播，不打断
+  }, 50);
 }
 
 function nextQuiz() {

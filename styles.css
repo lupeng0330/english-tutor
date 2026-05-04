@@ -434,3 +434,51 @@ body {
 
 #unitSwipeArea { touch-action: pan-y; }
 #unitPrevBtn, #unitNextBtn { transition: opacity 0.2s, background-color 0.2s; }
+
+
+/* ============ 单词拼写：字母格子填空 ============ */
+#quizSpellBox .spell-cell {
+  caret-color: #3b82f6;
+  transition: border-color 0.15s, background-color 0.2s, transform 0.1s;
+  /* iOS 去除默认圆角/内阴影 */
+  -webkit-appearance: none;
+  appearance: none;
+}
+#quizSpellBox .spell-cell:focus {
+  border-bottom-color: #3b82f6;
+  background: #eff6ff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 0 rgba(59, 130, 246, 0.25);
+}
+/* 判定后颜色（覆盖 Tailwind 默认优先级） */
+#quizSpellBox .spell-cell.border-green-500,
+#quizSpellBox .spell-cell[class*="!border-green-500"] {
+  border-bottom-color: #22c55e !important;
+  background: #f0fdf4 !important;
+  color: #15803d !important;
+}
+#quizSpellBox .spell-cell.border-red-500,
+#quizSpellBox .spell-cell[class*="!border-red-500"] {
+  border-bottom-color: #ef4444 !important;
+  background: #fef2f2 !important;
+  color: #b91c1c !important;
+  animation: spellShake 0.35s ease-in-out;
+}
+@keyframes spellShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  40% { transform: translateX(3px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+}
+
+/* 发音按钮的"待命 / 播放中" 状态 */
+#quizSpellSpeakBtn { transition: transform 0.15s, box-shadow 0.2s; }
+#quizSpellSpeakBtn:active { transform: scale(0.92); }
+
+/* 小屏幕：字母格略缩小，字号保持清晰 */
+@media (max-width: 380px) {
+  #quizSpellBox .spell-cell { width: 32px; height: 44px; font-size: 18px; }
+  #quizSpellCells > div:not(.relative) { width: 32px; height: 44px; font-size: 18px; }
+  #quizSpellSpeakBtn { width: 64px; height: 64px; font-size: 30px; }
+}
