@@ -34,14 +34,14 @@
       if (urlV) return Promise.resolve(urlV);
     } catch(e){}
 
-    // 2) 否则读 version.txt（由 dev-push.ps1 写入的最新 commit hash）
+    // 2) 否则读 version.txt（由 dev-push.ps1 写入；首行 = 完整版本号字符串）
     //    文件必须每次请求都拿最新；对这一个小文件强制 no-cache
     return fetch('./version.txt?_=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.ok ? r.text() : ''; })
       .then(function(txt){
-        // 文件内容形如 "d1497ae 2026-05-05T01:41:00Z"，只取第一段
-        var first = (txt || '').trim().split(/\s+/)[0];
-        return first || fallbackVersion();
+        // 首行就是完整版本号，如 "20260505V01.01"
+        var firstLine = (txt || '').split(/\r?\n/)[0].trim();
+        return firstLine || fallbackVersion();
       })
       .catch(function(){ return fallbackVersion(); });
   })().then(function(v){
