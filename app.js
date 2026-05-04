@@ -1199,7 +1199,6 @@ function showQuiz() {
   const q = state.quizQuestions[state.quizIndex];
   const total = state.quizQuestions.length;
   document.getElementById('quizIndex').textContent = state.quizIndex + 1;
-  document.getElementById('quizQuestion').textContent = q.q;
   document.getElementById('quizProgress').style.width = ((state.quizIndex + 1) / total * 100) + '%';
 
   // 显示年级/难度 badge
@@ -1232,12 +1231,41 @@ function showQuiz() {
   }
 
   const opts = document.getElementById('quizOptions');
-  opts.innerHTML = q.options.map((opt, i) => `
-    <button onclick="answerQuiz(${i})" class="w-full text-left px-4 py-3 bg-slate-50 rounded-xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 transition">
-      <span class="inline-block w-6 h-6 rounded-full bg-white text-center font-bold mr-2 text-sm">${String.fromCharCode(65 + i)}</span>
-      ${opt}
-    </button>
-  `).join('');
+  const spellBox = document.getElementById('quizSpellBox');
+
+  if (state.quizType === 'spelling') {
+    // ===== 单词拼写：不渲染选项，改为输入框 =====
+    document.getElementById('quizQuestion').textContent = '请拼写："' + q.q + '"';
+    opts.innerHTML = '';
+    opts.classList.add('hide');
+    if (spellBox) {
+      spellBox.classList.remove('hide');
+      const hintEl = document.getElementById('quizSpellHint');
+      if (hintEl) hintEl.textContent = (q.hint || '').split('').join(' ') || '_ '.repeat((q.answer || '').length).trim();
+      const input = document.getElementById('quizSpellInput');
+      if (input) {
+        input.value = '';
+        input.disabled = false;
+        input.classList.remove('border-green-500', 'border-red-500', 'bg-green-50', 'bg-red-50');
+        // 回车提交
+        input.onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); submitSpell(); } };
+        setTimeout(() => input.focus(), 50);
+      }
+      const btn = document.getElementById('quizSpellSubmit');
+      if (btn) { btn.disabled = false; btn.textContent = '提交答案'; }
+    }
+  } else {
+    // ===== 选择题（听力/语法/阅读） =====
+    document.getElementById('quizQuestion').textContent = q.q;
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    opts.innerHTML = (q.options || []).map((opt, i) => `
+      <button onclick="answerQuiz(${i})" class="w-full text-left px-4 py-3 bg-slate-50 rounded-xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 transition">
+        <span class="inline-block w-6 h-6 rounded-full bg-white text-center font-bold mr-2 text-sm">${String.fromCharCode(65 + i)}</span>
+        ${opt}
+      </button>
+    `).join('');
+  }
   document.getElementById('quizFeedback').classList.add('hide');
   document.getElementById('quizNextBtn').classList.add('hide');
 }
@@ -1359,11 +1387,60 @@ function answerQuiz(idx) {
     fb.innerHTML = `<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b><div class="text-sm mt-1">${q.explain || ''}</div>`;
   } else {
     btns[idx].classList.add('bg-red-100', 'border-red-500');
-    btns[q.answer].classList.add('bg-green-100', 'border-green-500');
+    if (btns[q.answer]) btns[q.answer].classList.add('bg-green-100', 'border-green-500');
     fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
-    fb.innerHTML = `<b>❌ 回答错误</b><div class="text-sm mt-1">正确答案：<b>${q.options[q.answer]}</b></div><div class="text-sm mt-1">${q.explain || ''}</div>`;
+    const correctText = (q.options && q.options[q.answer] != null) ? q.options[q.answer] : q.answer;
+    fb.innerHTML = `<b>❌ 回答错误</b><div class="text-sm mt-1">正确答案：<b>${correctText}</b></div><div class="text-sm mt-1">${q.explain || ''}</div>`;
   }
   fb.classList.remove('hide');
+  document.getElementById('quizNextBtn').classList.remove('hide');
+  document.getElementById('quizNextBtn').textContent =
+    state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
+}
+
+// 朗读当前拼写题的英文单词
+function speakSpellWord() {
+  const q = state.quizQuestions[state.quizIndex];
+  if (!q || !q.answer) return;
+  stopSpeak();
+  // 简单拼读：单词 + 短停顿 + 慢速再读一次
+  speakBrowser(q.answer + '. ' + q.answer, {});
+}
+
+// 提交拼写答案
+function submitSpell() {
+  const q = state.quizQuestions[state.quizIndex];
+  const input = document.getElementById('quizSpellInput');
+  const btn = document.getElementById('quizSpellSubmit');
+  if (!q || !input) return;
+
+  const user = (input.value || '').trim().toLowerCase();
+  if (!user) { input.focus(); return; }
+  const correct = (q.answer || '').trim().toLowerCase();
+
+  input.disabled = true;
+  if (btn) btn.disabled = true;
+
+  const fb = document.getElementById('quizFeedback');
+  if (user === correct) {
+    state.quizCorrect++;
+    input.classList.add('border-green-500', 'bg-green-50');
+    fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+    fb.innerHTML = `<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b>`
+      + `<div class="text-sm mt-1">${q.q} = <b>${q.answer}</b></div>`
+      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
+  } else {
+    input.classList.add('border-red-500', 'bg-red-50');
+    fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+    fb.innerHTML = `<b>❌ 回答错误</b>`
+      + `<div class="text-sm mt-1">你的答案：<span class="line-through">${escapeHtml(input.value || '(空)')}</span></div>`
+      + `<div class="text-sm mt-1">正确答案：<b>${q.answer}</b></div>`
+      + (q.explain ? `<div class="text-sm mt-1">${q.explain}</div>` : '');
+  }
+  fb.classList.remove('hide');
+  // 自动朗读一下正确答案，加深印象
+  try { speakBrowser(q.answer, {}); } catch(e) {}
+
   document.getElementById('quizNextBtn').classList.remove('hide');
   document.getElementById('quizNextBtn').textContent =
     state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
