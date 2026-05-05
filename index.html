@@ -668,18 +668,29 @@
   </main>
 </div>
 
-<!-- 🆕 动态注入 questionBank.js / app.js：等 version.txt 拿到真实版本号后再加载，彻底绕过浏览器/CDN 缓存 -->
+<!-- 🆕 动态注入 js 模块 / questionBank.js / app.js：等 version.txt 拿到真实版本号后再加载，彻底绕过浏览器/CDN 缓存 -->
 <script>
   (function () {
-    function addScript(src, cb) {
-      var s = document.createElement('script');
-      s.src = window.__withVer ? window.__withVer(src) : src;
-      s.onload = cb || null;
-      document.body.appendChild(s);
+    function addScript(src) {
+      return new Promise(function(resolve) {
+        var s = document.createElement('script');
+        s.src = window.__withVer ? window.__withVer(src) : src;
+        s.onload = resolve;
+        s.onerror = resolve; // 失败也 resolve，避免阻塞整条链（单个脚本丢失的诊断走 console）
+        document.body.appendChild(s);
+      });
     }
     // 等拿到真实版本号再 load；即便 fetch version.txt 失败，fallback 也会 resolve
     (window.__versionReady || Promise.resolve()).then(function(){
-      addScript('./questionBank.js', function() { addScript('./app.js'); });
+      // 顺序严格：
+      //   1) 基础模块：textbook.js / state.js / player.js （它们彼此无依赖）
+      //   2) 题库加载器：questionBank.js
+      //   3) 主逻辑：app.js（依赖以上全部）
+      addScript('./js/textbook.js')
+        .then(function(){ return addScript('./js/state.js'); })
+        .then(function(){ return addScript('./js/player.js'); })
+        .then(function(){ return addScript('./questionBank.js'); })
+        .then(function(){ return addScript('./app.js'); });
     });
   })();
 </script>
