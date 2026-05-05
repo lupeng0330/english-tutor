@@ -33,3 +33,6 @@ yarn-debug.log*
 # 临时二维码页（仅本地调试用）
 qrcode*.html
 _parse_tmp.py
+
+# 后台进程 stderr 空日志
+*.err
