@@ -543,8 +543,10 @@ function renderHomeStats() {
   const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
 
   // 🆕 顶栏版本号 / 今日分钟 / 累计分钟（由首页顶栏使用）
+  //   完整版本号形如 "20260505V01.08"，页面只展示 "V" 后的短版本号 "01.08"
   const curVer = window.__APP_VERSION || '—';
-  setText('homeVersionTag',  curVer);
+  const shortVer = (curVer.match(/V(\d+\.\d+)/) || [,''])[1] || curVer;
+  setText('homeVersionTag',  shortVer);
   const totalSec = s.totalSeconds || 0;
   const todaySec = s.todaySeconds || 0;
   // 今日分钟：有 todaySeconds 记录则用之，否则保守显示 0（避免跨天数字错乱）

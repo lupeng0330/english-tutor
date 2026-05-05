@@ -131,16 +131,9 @@
 
     <!-- ============ 首页 · 极简版 ============ -->
     <section id="page-home" class="page">
-      <!-- 顶栏：标题 + 版本 + 检查更新 -->
-      <div class="flex items-center justify-between mb-4">
-        <div>
-          <h1 class="text-lg font-bold text-slate-800">📚 乐学英语</h1>
-          <p class="text-xs text-slate-400">v<span id="homeVersionTag">—</span></p>
-        </div>
-        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-blue-200 text-xs text-blue-500 shadow-sm hover:text-blue-700 hover:border-blue-400 hover:shadow transition">
-          <span id="forceUpdateIcon">🔄</span>
-          <span id="forceUpdateLabel">检查更新</span>
-        </button>
+      <!-- 顶栏：简洁标题 -->
+      <div class="mb-4">
+        <h1 class="text-lg font-bold text-slate-800">📚 乐学英语</h1>
       </div>
 
       <!-- 欢迎 + 继续学习 CTA -->
@@ -195,6 +188,15 @@
           <div class="text-3xl md:text-4xl mb-2">📊</div>
           <div class="font-semibold text-slate-800 text-sm md:text-base">学习报告</div>
         </div>
+      </div>
+
+      <!-- 🆕 页脚：版本号 + 检查更新按钮（居中放置） -->
+      <div class="mt-8 mb-4 flex flex-col items-center gap-2 text-slate-400">
+        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs text-slate-500 shadow-sm hover:text-blue-600 hover:border-blue-300 hover:shadow transition">
+          <span id="forceUpdateIcon">🔄</span>
+          <span id="forceUpdateLabel">检查更新</span>
+        </button>
+        <p class="text-xs">v<span id="homeVersionTag">—</span></p>
       </div>
     </section>
 
