@@ -1,0 +1,2130 @@
+{
+  "meta": {
+    "id": "hj",
+    "name": "广州沪教版",
+    "version": "1.0",
+    "coverage": "初中一年级至初中三年级（沪教牛津版 · 广州 2026 初中专用）",
+    "note_structure": "沪教牛津版 · 广州 2026 初中专用 · 每册 4 模块 8 单元 · 每单元 15 词 + 3 篇课文（Reading / Grammar focus / More reading）",
+    "note_progress": "grade7 / grade8 / grade9 共 6 册 × 8 单元 = 48 单元已全部补完（每单元 15 词 + 3 lessons）"
+  },
+  "grades": {
+    "grade8": {
+      "上": [
+        {
+          "id": "u1",
+          "module": "Module 1 Encyclopaedia",
+          "title": "Unit 1 Encyclopaedias",
+          "words": [
+            {
+              "word": "encyclopaedia",
+              "phonetic": "/ɪnˌsaɪkləˈpiːdiə/",
+              "pos": "n.",
+              "meaning": "百科全书",
+              "example": "I looked up the word in an encyclopaedia."
+            },
+            {
+              "word": "volume",
+              "phonetic": "/ˈvɒljuːm/",
+              "pos": "n.",
+              "meaning": "卷，册",
+              "example": "This encyclopaedia has 20 volumes."
+            },
+            {
+              "word": "information",
+              "phonetic": "/ˌɪnfəˈmeɪʃn/",
+              "pos": "n.",
+              "meaning": "信息",
+              "example": "The book gives useful information."
+            },
+            {
+              "word": "subject",
+              "phonetic": "/ˈsʌbdʒɪkt/",
+              "pos": "n.",
+              "meaning": "主题，学科",
+              "example": "History is an interesting subject."
+            },
+            {
+              "word": "knowledge",
+              "phonetic": "/ˈnɒlɪdʒ/",
+              "pos": "n.",
+              "meaning": "知识",
+              "example": "Knowledge is power."
+            },
+            {
+              "word": "search",
+              "phonetic": "/sɜːtʃ/",
+              "pos": "v./n.",
+              "meaning": "搜索",
+              "example": "Search online for more details."
+            },
+            {
+              "word": "article",
+              "phonetic": "/ˈɑːtɪkl/",
+              "pos": "n.",
+              "meaning": "文章",
+              "example": "I read an article on pandas."
+            },
+            {
+              "word": "topic",
+              "phonetic": "/ˈtɒpɪk/",
+              "pos": "n.",
+              "meaning": "话题",
+              "example": "Choose an interesting topic."
+            },
+            {
+              "word": "index",
+              "phonetic": "/ˈɪndeks/",
+              "pos": "n.",
+              "meaning": "索引",
+              "example": "Use the index to find keywords."
+            },
+            {
+              "word": "website",
+              "phonetic": "/ˈwebsaɪt/",
+              "pos": "n.",
+              "meaning": "网站",
+              "example": "Wikipedia is a popular website."
+            },
+            {
+              "word": "detail",
+              "phonetic": "/ˈdiːteɪl/",
+              "pos": "n.",
+              "meaning": "细节",
+              "example": "Please give me more details."
+            },
+            {
+              "word": "quickly",
+              "phonetic": "/ˈkwɪkli/",
+              "pos": "adv.",
+              "meaning": "快速地",
+              "example": "Computers search data quickly."
+            },
+            {
+              "word": "include",
+              "phonetic": "/ɪnˈkluːd/",
+              "pos": "v.",
+              "meaning": "包括",
+              "example": "The book includes 5000 pictures."
+            },
+            {
+              "word": "publish",
+              "phonetic": "/ˈpʌblɪʃ/",
+              "pos": "v.",
+              "meaning": "出版",
+              "example": "The book was published in 2020."
+            },
+            {
+              "word": "expert",
+              "phonetic": "/ˈekspɜːt/",
+              "pos": "n.",
+              "meaning": "专家",
+              "example": "Many experts wrote the articles."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A treasure of knowledge",
+              "en": "Last weekend, my father took me to his old study. On the shelf, there were 20 big books. They were the Children's Encyclopaedia he got when he was a boy.\n\nAn encyclopaedia is a book that tries to tell you about everything — animals, plants, planets, countries, famous people. Each article is short but clear. The books have an index at the end, so we can find any topic in a few seconds.\n\nI opened Volume 5 and read about the moon. I learned that the moon is 384,000 kilometres from the Earth, and there is no air on it. Then I opened Volume 12 and learned about dinosaurs.\n\nAn encyclopaedia is like a small library. I can travel the world and visit the stars without leaving home. It is truly a treasure of knowledge.",
+              "cn": "上周末，爸爸带我去他的老书房。书架上有 20 本大书，是他小时候得到的《儿童百科全书》。\n\n百科全书几乎包罗万象——动物、植物、行星、国家、名人，每一篇文章都简短清晰。书末有索引，几秒就能查到任何主题。\n\n我翻到第 5 卷读月球：月亮距地球 38.4 万公里，上面没有空气。又翻到第 12 卷读恐龙。\n\n百科全书就像一座小图书馆，足不出户就能周游世界、遨游星空，真是知识的宝藏。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · How to ask questions",
+              "en": "Five useful question words: what / who / where / when / why / how.\n\nWhat is an encyclopaedia?\n— It is a book that tells you about many subjects.\n\nWho writes the articles?\n— Many experts from different fields write them.\n\nWhere can we find the word list?\n— We can find it in the index at the end.\n\nWhen was the first encyclopaedia published?\n— About two thousand years ago in ancient Rome.\n\nWhy do students read encyclopaedias?\n— Because they want quick and clear information.\n\nHow do you search for a topic?\n— You look up the key word in the index first.",
+              "cn": "五个常用疑问词：what / who / where / when / why / how。\n\n百科全书是什么？\n——它是介绍各种主题的书。\n\n谁写文章？\n——来自各领域的专家。\n\n词表在哪里？\n——在书末的索引里。\n\n第一本百科全书何时出版？\n——约两千年前在古罗马。\n\n学生为什么读百科全书？\n——因为能快速获得清晰信息。\n\n怎样查主题？\n——先在索引里查关键词。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · From paper to the Internet",
+              "en": "Encyclopaedias have a long history. Two thousand years ago, a Roman writer called Pliny wrote a 37-volume book about everything he knew. It is the oldest encyclopaedia in the world.\n\nIn the 18th century, French scholars worked together for 25 years to publish 28 volumes, bringing knowledge to ordinary people.\n\nToday, we read encyclopaedias on the Internet. Wikipedia was started in 2001 and now has over 6 million articles in English alone. It is free, and anyone can write or correct an article.\n\nBut be careful — not everything on the Internet is true. Always check more than one website. A good reader uses both paper books and online pages, and thinks before believing.",
+              "cn": "百科全书历史悠久。2000 年前，古罗马作家普林尼写下 37 卷涵盖所有他所知事物的巨著，是世界最古老的百科全书。\n\n18 世纪，法国学者合作 25 年出版 28 卷大百科，把知识送到普通人手中。\n\n今天我们在网上读百科全书。维基百科 2001 年创立，英文版已超 600 万条，免费且人人可编辑。\n\n但要当心——网上信息不一定都真实，多查几个网站才靠谱。好的读者既看纸质书也看网页，学会思考后再相信。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "module": "Module 1 Encyclopaedia",
+          "title": "Unit 2 Numbers",
+          "words": [
+            {
+              "word": "number",
+              "phonetic": "/ˈnʌmbə(r)/",
+              "pos": "n.",
+              "meaning": "数字",
+              "example": "Seven is a lucky number in China."
+            },
+            {
+              "word": "count",
+              "phonetic": "/kaʊnt/",
+              "pos": "v.",
+              "meaning": "数数",
+              "example": "Let's count from one to ten."
+            },
+            {
+              "word": "billion",
+              "phonetic": "/ˈbɪljən/",
+              "pos": "num.",
+              "meaning": "十亿",
+              "example": "Over one billion people speak Chinese."
+            },
+            {
+              "word": "million",
+              "phonetic": "/ˈmɪljən/",
+              "pos": "num.",
+              "meaning": "百万",
+              "example": "The city has four million people."
+            },
+            {
+              "word": "thousand",
+              "phonetic": "/ˈθaʊznd/",
+              "pos": "num.",
+              "meaning": "千",
+              "example": "A thousand years is very long."
+            },
+            {
+              "word": "hundred",
+              "phonetic": "/ˈhʌndrəd/",
+              "pos": "num.",
+              "meaning": "百",
+              "example": "There are one hundred students."
+            },
+            {
+              "word": "equal",
+              "phonetic": "/ˈiːkwəl/",
+              "pos": "adj.",
+              "meaning": "相等的",
+              "example": "Two plus two is equal to four."
+            },
+            {
+              "word": "plus",
+              "phonetic": "/plʌs/",
+              "pos": "prep.",
+              "meaning": "加",
+              "example": "Three plus five is eight."
+            },
+            {
+              "word": "minus",
+              "phonetic": "/ˈmaɪnəs/",
+              "pos": "prep.",
+              "meaning": "减",
+              "example": "Ten minus three is seven."
+            },
+            {
+              "word": "multiply",
+              "phonetic": "/ˈmʌltɪplaɪ/",
+              "pos": "v.",
+              "meaning": "乘",
+              "example": "Multiply four by five to get twenty."
+            },
+            {
+              "word": "divide",
+              "phonetic": "/dɪˈvaɪd/",
+              "pos": "v.",
+              "meaning": "除",
+              "example": "Divide ten by two and you get five."
+            },
+            {
+              "word": "math",
+              "phonetic": "/mæθ/",
+              "pos": "n.",
+              "meaning": "数学",
+              "example": "I like math lessons."
+            },
+            {
+              "word": "lucky",
+              "phonetic": "/ˈlʌki/",
+              "pos": "adj.",
+              "meaning": "幸运的",
+              "example": "Eight is a lucky number."
+            },
+            {
+              "word": "ancient",
+              "phonetic": "/ˈeɪnʃənt/",
+              "pos": "adj.",
+              "meaning": "古代的",
+              "example": "Ancient Chinese invented paper."
+            },
+            {
+              "word": "common",
+              "phonetic": "/ˈkɒmən/",
+              "pos": "adj.",
+              "meaning": "常见的",
+              "example": "Li is a common family name."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Numbers in our life",
+              "en": "Numbers are everywhere. They tell the time, the price, the phone number and even the temperature.\n\nThe most common numbers are from zero to nine. With these ten digits we can write any number — from one to a billion and more. The Chinese people began to use the ten-digit system more than 3,000 years ago.\n\nDifferent people like different numbers. In China, eight is a lucky number because it sounds like \"getting rich\". In the West, seven is lucky because there are seven days in a week and seven colours in a rainbow. But 13 is often seen as unlucky, so many buildings have no 13th floor.\n\nWithout numbers, there would be no math, no computers, no smartphones. Learn to love numbers — they make our life easier.",
+              "cn": "数字无处不在：时间、价格、电话号码，甚至气温。\n\n最常见的是 0~9 这十个数字，用它们我们能写出任意的数——从一到十亿乃至更大。中国人早在 3000 多年前就开始使用十进制。\n\n不同文化有不同的幸运数字。在中国，“八”是吉祥数，因谐音“发”；在西方，“七”幸运——一周七天、彩虹七色。但 13 常被视为不吉利，许多大楼没有 13 层。\n\n没有数字就没有数学、没有电脑、没有手机。热爱数字吧，它让生活更简单。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Big numbers in English",
+              "en": "Read these numbers carefully:\n100 — a hundred / one hundred\n1,000 — a thousand / one thousand\n10,000 — ten thousand\n100,000 — one hundred thousand\n1,000,000 — one million\n1,000,000,000 — one billion\n\nMore examples:\n386 — three hundred and eighty-six\n2,500 — two thousand five hundred\n32,000 — thirty-two thousand\n1,400,000 — one point four million\n\nTips:\n- Add \"and\" after \"hundred\" in British English: three hundred AND six.\n- Use singular forms after numbers: two hundred, three million, four billion (no -s).\n- With \"of\", use plural: thousands of people, millions of books.",
+              "cn": "英语大数的读法：\n100 —— a hundred\n1,000 —— a thousand\n10,000 —— ten thousand\n100,000 —— one hundred thousand\n1,000,000 —— one million\n1,000,000,000 —— one billion\n\n更多例子：\n386 —— three hundred and eighty-six\n2,500 —— two thousand five hundred\n32,000 —— thirty-two thousand\n140 万 —— one point four million\n\n小贴士：\n- 英式英语 hundred 后加 and：three hundred AND six。\n- 具体数字后 hundred/million/billion 不加 s。\n- 与 of 连用时加 s：thousands of people, millions of books。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · The story of zero",
+              "en": "Can you imagine numbers without zero? It is hard.\n\nThe ancient Greeks had no zero. They wrote 102 as \"one hundred two\" and could not easily show that the tens place was empty. That made math very slow.\n\nAround 1,500 years ago, Indian scholars invented a small round symbol — 0 — to mean \"nothing\". This small symbol changed the world. With zero, we can write 10, 100, 1,000 quickly and do hard math easily.\n\nAn Arab traveller brought zero to Europe in the 9th century. At first, people didn't trust it. How can nothing be a number? But scientists proved that zero was necessary. Today, zero is the base of all modern math and computer science — computers use only two numbers, 0 and 1.\n\nSometimes the smallest idea is the greatest gift.",
+              "cn": "你能想象没有“零”的数字世界吗？很难。\n\n古希腊人没有零，他们把 102 写作“一百二”，没法清楚表示十位空缺，数学进展缓慢。\n\n约 1500 年前，印度学者发明了一个小圆圈——0——表示“什么也没有”。这个小符号改变了世界：有了零，我们才能快速写出 10、100、1000，也能轻松做复杂运算。\n\n9 世纪阿拉伯旅行者把零带到欧洲。起初人们不信：“无”怎能是数？但科学家证明零不可或缺。如今零是现代数学和计算机科学的基础——计算机只用 0 和 1 两个数。\n\n最小的想法，有时正是最伟大的礼物。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "module": "Module 2 Science and technology",
+          "title": "Unit 3 Computers",
+          "words": [
+            {
+              "word": "computer",
+              "phonetic": "/kəmˈpjuːtə(r)/",
+              "pos": "n.",
+              "meaning": "电脑",
+              "example": "I use a computer every day."
+            },
+            {
+              "word": "keyboard",
+              "phonetic": "/ˈkiːbɔːd/",
+              "pos": "n.",
+              "meaning": "键盘",
+              "example": "Type on the keyboard carefully."
+            },
+            {
+              "word": "screen",
+              "phonetic": "/skriːn/",
+              "pos": "n.",
+              "meaning": "屏幕",
+              "example": "Don't stare at the screen for too long."
+            },
+            {
+              "word": "mouse",
+              "phonetic": "/maʊs/",
+              "pos": "n.",
+              "meaning": "鼠标",
+              "example": "Click the mouse to open the file."
+            },
+            {
+              "word": "file",
+              "phonetic": "/faɪl/",
+              "pos": "n.",
+              "meaning": "文件",
+              "example": "Save your file often."
+            },
+            {
+              "word": "folder",
+              "phonetic": "/ˈfəʊldə(r)/",
+              "pos": "n.",
+              "meaning": "文件夹",
+              "example": "Put your photos in one folder."
+            },
+            {
+              "word": "Internet",
+              "phonetic": "/ˈɪntənet/",
+              "pos": "n.",
+              "meaning": "互联网",
+              "example": "The Internet connects the world."
+            },
+            {
+              "word": "program",
+              "phonetic": "/ˈprəʊɡræm/",
+              "pos": "n.",
+              "meaning": "程序",
+              "example": "This program helps you learn English."
+            },
+            {
+              "word": "download",
+              "phonetic": "/ˌdaʊnˈləʊd/",
+              "pos": "v.",
+              "meaning": "下载",
+              "example": "Download the app from the store."
+            },
+            {
+              "word": "upload",
+              "phonetic": "/ˌʌpˈləʊd/",
+              "pos": "v.",
+              "meaning": "上传",
+              "example": "Upload your photo to the cloud."
+            },
+            {
+              "word": "email",
+              "phonetic": "/ˈiːmeɪl/",
+              "pos": "n.",
+              "meaning": "电子邮件",
+              "example": "Please send me an email."
+            },
+            {
+              "word": "password",
+              "phonetic": "/ˈpɑːswɜːd/",
+              "pos": "n.",
+              "meaning": "密码",
+              "example": "Never share your password."
+            },
+            {
+              "word": "type",
+              "phonetic": "/taɪp/",
+              "pos": "v.",
+              "meaning": "打字",
+              "example": "She types very fast."
+            },
+            {
+              "word": "store",
+              "phonetic": "/stɔː(r)/",
+              "pos": "v.",
+              "meaning": "存储",
+              "example": "Store your data in the cloud."
+            },
+            {
+              "word": "useful",
+              "phonetic": "/ˈjuːsfl/",
+              "pos": "adj.",
+              "meaning": "有用的",
+              "example": "Computers are very useful tools."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · My first computer",
+              "en": "I got my first computer last year for my thirteenth birthday. It was a small laptop, only 1.5 kilograms. I was so excited!\n\nDad showed me how to turn it on. The screen lit up and asked me to set a password. I chose one that I could remember. Then I learned how to use the mouse and keyboard.\n\nOn the first day, I typed a short letter to my grandma. It took me thirty minutes — I could only find one letter at a time! A week later, I could type much faster. I also learned to save my files in different folders: \"homework\", \"music\", \"photos\".\n\nNow I use the computer every day. I write stories, watch English videos, and email my cousin in America. My world has become bigger. But I remember Dad's words: a computer is a tool — don't let it use you.",
+              "cn": "去年 13 岁生日，我得到了人生第一台电脑，是个 1.5 公斤的小笔记本，我激动极了！\n\n爸爸教我开机，屏幕亮了要求设密码——我选了一个容易记的。又学了用鼠标、键盘。\n\n第一天我给奶奶打了一封短信，花了半小时，只能一个字母一个字母找。一周后我打字快多了，还学会把文件放进不同文件夹：“作业”、“音乐”、“照片”。\n\n现在我每天用电脑写故事、看英语视频，还给在美国的表姐发邮件。我的世界变大了。但我记得爸爸的话：电脑是工具，别让它反过来用你。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · How to give instructions",
+              "en": "To give clear instructions, use the imperative form: verb first, no subject.\n\nTurn on the computer.\nOpen the program.\nClick the mouse.\nType your password.\nSave the file.\nClose the window.\nShut down the computer.\n\nTo give a negative instruction, use \"Don't\":\nDon't share your password.\nDon't download strange files.\nDon't use the computer for too long.\n\nTo be polite, add \"please\":\nPlease click here.\nPlease enter your name.\nWould you please save the file?\n\nOrder matters — steps usually follow \"first, then, next, finally\":\nFirst, turn on the computer. Then, enter the password. Next, click the browser. Finally, search for the website.",
+              "cn": "清晰的指令用祈使句——动词开头，不加主语：\n开机。\n打开程序。\n点击鼠标。\n输入密码。\n保存文件。\n关闭窗口。\n关机。\n\n否定用 Don't：\n别分享密码。\n别下载可疑文件。\n别用电脑太久。\n\n礼貌加 please：\n请点击这里。\n请输入姓名。\n能保存下文件吗？\n\n步骤用 first / then / next / finally：\n首先开机 → 然后输密码 → 接下来点浏览器 → 最后搜索网站。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Safe on the Internet",
+              "en": "The Internet is like a huge city. It is full of wonderful places — but also a few dangerous streets. Here are five rules to stay safe:\n\n1) Keep your password secret. Never tell anyone, even your best friend. Change it every few months.\n\n2) Think before you click. A strange email or a free-gift pop-up may carry a virus. If you are not sure, don't click it.\n\n3) Protect your private information. Never write your home address, phone number or school name on public websites.\n\n4) Be kind online. Unkind words hurt people just as much on a screen as in real life.\n\n5) Balance your time. An hour at the computer should be followed by ten minutes of rest. Go outside and look at something green — your eyes will thank you.\n\nThe Internet is a tool. Use it wisely, and it will open a bright and wide world for you.",
+              "cn": "互联网像一座巨大的城市，有美好的景点，也有危险的街道。五条安全守则：\n\n1) 密码保密——永远不告诉任何人（包括好朋友），每隔几个月换一次。\n\n2) 点击前思考——可疑邮件、免费礼物弹窗可能带病毒，没把握就别点。\n\n3) 保护隐私——家庭地址、电话、学校名绝不写在公开网站上。\n\n4) 网络友善——屏幕上的恶语和现实中一样伤人。\n\n5) 控制时间——每用 1 小时休息 10 分钟，看看窗外的绿色，眼睛会感谢你。\n\n互联网只是工具，用得好就能为你打开广阔的世界。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "module": "Module 2 Science and technology",
+          "title": "Unit 4 Inventions",
+          "words": [
+            {
+              "word": "invention",
+              "phonetic": "/ɪnˈvenʃn/",
+              "pos": "n.",
+              "meaning": "发明",
+              "example": "The light bulb was a great invention."
+            },
+            {
+              "word": "inventor",
+              "phonetic": "/ɪnˈventə(r)/",
+              "pos": "n.",
+              "meaning": "发明家",
+              "example": "Edison was a famous inventor."
+            },
+            {
+              "word": "discover",
+              "phonetic": "/dɪˈskʌvə(r)/",
+              "pos": "v.",
+              "meaning": "发现",
+              "example": "Newton discovered gravity."
+            },
+            {
+              "word": "machine",
+              "phonetic": "/məˈʃiːn/",
+              "pos": "n.",
+              "meaning": "机器",
+              "example": "Washing machines save time."
+            },
+            {
+              "word": "engine",
+              "phonetic": "/ˈendʒɪn/",
+              "pos": "n.",
+              "meaning": "发动机",
+              "example": "Steam engines changed the world."
+            },
+            {
+              "word": "steam",
+              "phonetic": "/stiːm/",
+              "pos": "n.",
+              "meaning": "蒸汽",
+              "example": "Steam rose from the pot."
+            },
+            {
+              "word": "modern",
+              "phonetic": "/ˈmɒdn/",
+              "pos": "adj.",
+              "meaning": "现代的",
+              "example": "Modern life is fast."
+            },
+            {
+              "word": "history",
+              "phonetic": "/ˈhɪstri/",
+              "pos": "n.",
+              "meaning": "历史",
+              "example": "History teaches us lessons."
+            },
+            {
+              "word": "century",
+              "phonetic": "/ˈsentʃəri/",
+              "pos": "n.",
+              "meaning": "世纪",
+              "example": "The 21st century is full of change."
+            },
+            {
+              "word": "change",
+              "phonetic": "/tʃeɪndʒ/",
+              "pos": "v./n.",
+              "meaning": "改变",
+              "example": "Inventions change our life."
+            },
+            {
+              "word": "paper",
+              "phonetic": "/ˈpeɪpə(r)/",
+              "pos": "n.",
+              "meaning": "纸",
+              "example": "Paper was invented in China."
+            },
+            {
+              "word": "compass",
+              "phonetic": "/ˈkʌmpəs/",
+              "pos": "n.",
+              "meaning": "指南针",
+              "example": "The compass guides sailors."
+            },
+            {
+              "word": "printing",
+              "phonetic": "/ˈprɪntɪŋ/",
+              "pos": "n.",
+              "meaning": "印刷术",
+              "example": "Printing spread knowledge quickly."
+            },
+            {
+              "word": "gunpowder",
+              "phonetic": "/ˈɡʌnˌpaʊdə(r)/",
+              "pos": "n.",
+              "meaning": "火药",
+              "example": "Gunpowder came from ancient China."
+            },
+            {
+              "word": "useful",
+              "phonetic": "/ˈjuːsfl/",
+              "pos": "adj.",
+              "meaning": "有用的",
+              "example": "A useful tool helps us every day."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Four great inventions",
+              "en": "Do you know the Four Great Inventions of ancient China? They are paper, the compass, printing and gunpowder. Each one changed the world.\n\nPaper was invented in China about two thousand years ago. Before paper, people wrote on bamboo or silk. Bamboo was heavy and silk was expensive. Paper was light and cheap, so knowledge could travel far.\n\nThe compass was another great gift. It uses a magnetic needle that always points north. Sailors could now find their way on the open sea.\n\nPrinting made books cheap and common. Before printing, every book was copied by hand, and only rich people could buy them. After printing, more children could read.\n\nGunpowder was first used in medicine, then in fireworks, and later in warfare.\n\nThese four inventions flew from China to Europe along the Silk Road. They pushed the world into a new age.",
+              "cn": "你知道中国古代四大发明吗？造纸术、指南针、印刷术、火药——每一项都改变了世界。\n\n造纸术约 2000 年前发明于中国。此前人们在竹简或丝绸上书写，竹子沉重、丝绸昂贵；纸又轻又便宜，知识才能传得远。\n\n指南针借助磁针永远指北，水手从此能在大海上辨认方向。\n\n印刷术让书变得便宜普及。此前每本书都靠手抄，只有富人买得起；印刷之后，更多孩子能读书。\n\n火药先用于医药，后用于烟花，再后来用于战争。\n\n这四大发明沿丝绸之路传到欧洲，把世界推向新的时代。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Passive voice with by",
+              "en": "Passive voice: be + past participle. Use \"by\" to show who did the action (the doer).\n\nPaper was invented by the Chinese.\nThe light bulb was invented by Edison.\nHundreds of useful machines were made by this factory.\nAre the books printed by hand? — No, they are printed by machines.\nWhen was the compass invented? — It was invented more than 2,000 years ago.\n\nTenses:\nPresent passive: is / are + pp — The letter is written by hand.\nPast passive: was / were + pp — The letter was written by hand.\nFuture passive: will be + pp — The new computer will be sold next year.\n\nOmit \"by …\" when the doer is unknown or not important:\nThe book was published last year. (we don't need to say \"by who\")",
+              "cn": "被动语态：be + 过去分词；用 by 指出动作发出者。\n\n纸由中国人发明。\n灯泡由爱迪生发明。\n这家工厂生产了数百种有用机器。\n书是手抄的吗？——不，是机器印的。\n指南针何时发明？——两千多年前发明的。\n\n时态：\n一般现在：is/are+pp——这封信是手写的。\n一般过去：was/were+pp——这封信是手写的（过去）。\n一般将来：will be+pp——新电脑明年将出售。\n\n动作发出者不重要时省略 by：\n这本书去年出版。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Invent for the future",
+              "en": "Inventions are not only for grown-ups. Many famous inventors started as children with a question: \"Can I make this better?\"\n\nLouis Braille lost his sight at the age of three. As a student, he designed a special way of writing with small dots. Today, blind people all over the world read books in Braille.\n\nPhilo Farnsworth, a 14-year-old American farm boy, drew his first design of the television on a school blackboard. Twenty years later, his idea became real.\n\nAt your age, you can also invent. You don't need a big lab — a notebook, a pencil and an open mind are enough.\n\nLook around your home. What is slow, heavy or wasteful? Think: how can I make it faster, lighter or cleaner? Share your idea with teachers and friends. Who knows — your invention might one day help millions of people.",
+              "cn": "发明并非大人的专利。许多著名发明家小时候就提出过这样的问题：“我能不能让它更好？”\n\n布莱尔 3 岁失明，上学时设计出由小点组成的盲文，如今全世界盲人都通过它读书。\n\n美国 14 岁农场男孩法恩斯沃斯在学校黑板上画出人类首张电视设计图，20 年后梦想成真。\n\n你在你这个年纪也能发明。不必大实验室——一本笔记本、一支铅笔、一颗好奇心足矣。\n\n环顾家中：什么又慢又重又浪费？想一想：怎样让它更快、更轻、更环保？把想法告诉老师和朋友。谁知道呢——你的发明也许有一天能帮助千百万人。"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "module": "Module 3 Faster, higher, stronger",
+          "title": "Unit 5 Memory",
+          "words": [
+            {
+              "word": "memory",
+              "phonetic": "/ˈmeməri/",
+              "pos": "n.",
+              "meaning": "记忆",
+              "example": "I have a good memory for songs."
+            },
+            {
+              "word": "remember",
+              "phonetic": "/rɪˈmembə(r)/",
+              "pos": "v.",
+              "meaning": "记得",
+              "example": "I remember my first day at school."
+            },
+            {
+              "word": "forget",
+              "phonetic": "/fəˈɡet/",
+              "pos": "v.",
+              "meaning": "忘记",
+              "example": "Don't forget to close the window."
+            },
+            {
+              "word": "mind",
+              "phonetic": "/maɪnd/",
+              "pos": "n.",
+              "meaning": "思想",
+              "example": "An active mind stays young."
+            },
+            {
+              "word": "brain",
+              "phonetic": "/breɪn/",
+              "pos": "n.",
+              "meaning": "大脑",
+              "example": "Sleep helps your brain rest."
+            },
+            {
+              "word": "review",
+              "phonetic": "/rɪˈvjuː/",
+              "pos": "v./n.",
+              "meaning": "复习",
+              "example": "Review your notes before bed."
+            },
+            {
+              "word": "repeat",
+              "phonetic": "/rɪˈpiːt/",
+              "pos": "v.",
+              "meaning": "重复",
+              "example": "Repeat the words three times."
+            },
+            {
+              "word": "method",
+              "phonetic": "/ˈmeθəd/",
+              "pos": "n.",
+              "meaning": "方法",
+              "example": "Find a good method to study."
+            },
+            {
+              "word": "trick",
+              "phonetic": "/trɪk/",
+              "pos": "n.",
+              "meaning": "技巧",
+              "example": "Here is a memory trick."
+            },
+            {
+              "word": "image",
+              "phonetic": "/ˈɪmɪdʒ/",
+              "pos": "n.",
+              "meaning": "图像",
+              "example": "Images help us remember."
+            },
+            {
+              "word": "picture",
+              "phonetic": "/ˈpɪktʃə(r)/",
+              "pos": "n.",
+              "meaning": "图画",
+              "example": "Draw a picture for each word."
+            },
+            {
+              "word": "concentrate",
+              "phonetic": "/ˈkɒnsntreɪt/",
+              "pos": "v.",
+              "meaning": "集中注意力",
+              "example": "Concentrate on your reading."
+            },
+            {
+              "word": "distract",
+              "phonetic": "/dɪˈstrækt/",
+              "pos": "v.",
+              "meaning": "分心",
+              "example": "Phones distract students."
+            },
+            {
+              "word": "quiz",
+              "phonetic": "/kwɪz/",
+              "pos": "n.",
+              "meaning": "小测验",
+              "example": "We have a quiz every Friday."
+            },
+            {
+              "word": "improve",
+              "phonetic": "/ɪmˈpruːv/",
+              "pos": "v.",
+              "meaning": "提高",
+              "example": "Practice improves memory."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · How to remember better",
+              "en": "Have you ever learned a word in the morning and forgotten it by night? Don't worry — it happens to everyone. The good news is that memory is like a muscle. The more you train it, the stronger it grows.\n\nHere are three simple tricks I use:\n\n1) Repeat with space. I review a new word five minutes later, then one hour, one day, and one week. Each time the word goes deeper into my mind.\n\n2) Make a picture. For the word \"elephant\", I imagine a pink elephant riding a bicycle. The crazier the picture, the harder it is to forget.\n\n3) Tell a friend. When I explain a rule to my little brother, I understand it twice as well.\n\nMy English teacher says, \"Your brain is not a warehouse, it is a garden. Water it every day, and the flowers will bloom.\"",
+              "cn": "你是否早上记的单词晚上就忘？别担心——人人如此。好消息是：记忆像肌肉，越练越强。\n\n三个简单小技巧：\n\n1) 间隔重复。学了新词 5 分钟后复习一次，再 1 小时、1 天、1 周后各一次，词就深入脑海。\n\n2) 编画面。记 elephant 时我想象一只粉色大象骑自行车——越夸张越难忘。\n\n3) 讲给别人。我给弟弟讲一条规则时，自己理解会加倍。\n\n英语老师常说：“大脑不是仓库，而是花园，天天浇水，花自然开。”"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Adverbs of degree",
+              "en": "Adverbs of degree tell us \"how much\".\n\nVery / really → strong:\nI am very tired.\nThis book is really interesting.\n\nQuite / pretty → fairly strong (British/American):\nHer memory is quite good.\nThe test was pretty easy.\n\nA bit / a little → small amount:\nI am a bit tired.\nPlease speak a little louder.\n\nToo / enough → opposite idea:\nToo = more than needed: The homework is too difficult.\nEnough = as much as needed (after adjective): I am old enough to read this book.\n\nCompare:\nShe runs fast. (no degree)\nShe runs very fast. (strong degree)\nShe runs a little too fast. (slightly more than needed)",
+              "cn": "程度副词表示“多少”。\n\nvery / really——非常：\n我非常累。\n这本书真有趣。\n\nquite / pretty——相当（英式/美式）：\n她的记忆力相当好。\n考试相当简单。\n\na bit / a little——有点：\n我有点累。\n请说大声一点。\n\ntoo / enough——对比：\ntoo 表“太过”：作业太难了。\nenough 放形容词后表“足够”：我已经长到可以读这书了。\n\n对比：\n她跑得快（无程度）\n她跑得非常快（强）\n她跑得稍微有点太快（比需要的略快）"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Champions of memory",
+              "en": "Every year, people from over thirty countries join the World Memory Championships. They try to memorise names, numbers and cards in a very short time. The winners have amazing skills.\n\nAlex Mullen from the USA can remember a random list of 3,000 numbers in one hour. His secret? He changes numbers into pictures. 12 might be a goldfish, 34 might be a dragon. Then he puts them on a road he knows very well — his street, his school, his living room. When he wants to remember, he just \"walks\" along the road.\n\nScientists tell us that memory champions don't have special brains. They have special methods and strong practice. They train every day, often three or four hours.\n\nYou can borrow their tricks. Next time you learn twenty new words, turn them into funny pictures and put them in a room you know. In a few weeks, the words will come to you easily — just like old friends.",
+              "cn": "每年三十多国选手参加世界记忆大赛，在极短时间内记姓名、数字和扑克。冠军的技艺令人叹服。\n\n美国选手艾历克斯·马伦能在一小时记 3000 个随机数字。秘诀？他把数字变成图像：12 是金鱼、34 是龙，然后把它们沿着自己熟悉的街道、校园、客厅摆放。回忆时就“沿路走一遍”。\n\n科学家说记忆冠军并非大脑特殊，而是方法特殊 + 苦练。他们每天练 3~4 小时。\n\n你也可借鉴：下次记 20 个新词，编成搞笑图像放进熟悉的房间里。几周后，这些词就会像老朋友一样主动来找你。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "module": "Module 3 Faster, higher, stronger",
+          "title": "Unit 6 Ancient stories",
+          "words": [
+            {
+              "word": "ancient",
+              "phonetic": "/ˈeɪnʃənt/",
+              "pos": "adj.",
+              "meaning": "古代的",
+              "example": "Ancient Greeks loved stories."
+            },
+            {
+              "word": "legend",
+              "phonetic": "/ˈledʒənd/",
+              "pos": "n.",
+              "meaning": "传说",
+              "example": "The Monkey King is a Chinese legend."
+            },
+            {
+              "word": "myth",
+              "phonetic": "/mɪθ/",
+              "pos": "n.",
+              "meaning": "神话",
+              "example": "Greek myths are full of gods."
+            },
+            {
+              "word": "hero",
+              "phonetic": "/ˈhɪərəʊ/",
+              "pos": "n.",
+              "meaning": "英雄",
+              "example": "He is a hero of the village."
+            },
+            {
+              "word": "king",
+              "phonetic": "/kɪŋ/",
+              "pos": "n.",
+              "meaning": "国王",
+              "example": "The king ruled wisely."
+            },
+            {
+              "word": "queen",
+              "phonetic": "/kwiːn/",
+              "pos": "n.",
+              "meaning": "王后，女王",
+              "example": "The queen loved her people."
+            },
+            {
+              "word": "battle",
+              "phonetic": "/ˈbætl/",
+              "pos": "n.",
+              "meaning": "战役",
+              "example": "A fierce battle was fought here."
+            },
+            {
+              "word": "dragon",
+              "phonetic": "/ˈdræɡən/",
+              "pos": "n.",
+              "meaning": "龙",
+              "example": "Chinese dragons bring good luck."
+            },
+            {
+              "word": "god",
+              "phonetic": "/ɡɒd/",
+              "pos": "n.",
+              "meaning": "神",
+              "example": "Greek gods lived on Mount Olympus."
+            },
+            {
+              "word": "magic",
+              "phonetic": "/ˈmædʒɪk/",
+              "pos": "n./adj.",
+              "meaning": "魔法",
+              "example": "The monkey uses magic tricks."
+            },
+            {
+              "word": "brave",
+              "phonetic": "/breɪv/",
+              "pos": "adj.",
+              "meaning": "勇敢的",
+              "example": "The brave young man saved the village."
+            },
+            {
+              "word": "clever",
+              "phonetic": "/ˈklevə(r)/",
+              "pos": "adj.",
+              "meaning": "聪明的",
+              "example": "Sun Wukong is a clever monkey."
+            },
+            {
+              "word": "Emperor",
+              "phonetic": "/ˈempərə(r)/",
+              "pos": "n.",
+              "meaning": "皇帝",
+              "example": "The Emperor built a great wall."
+            },
+            {
+              "word": "castle",
+              "phonetic": "/ˈkɑːsl/",
+              "pos": "n.",
+              "meaning": "城堡",
+              "example": "A dark castle stood on the hill."
+            },
+            {
+              "word": "journey",
+              "phonetic": "/ˈdʒɜːni/",
+              "pos": "n.",
+              "meaning": "旅程",
+              "example": "His journey lasted ten years."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · The Monkey King",
+              "en": "Sun Wukong, also called the Monkey King, is one of the most loved heroes in Chinese stories. He was born from a stone on the Flower-Fruit Mountain. From the first day he was brave, clever and full of magic.\n\nSun Wukong learned 72 changes. He could turn himself into a tiger, a fish, or even a small fly. He also had a long gold stick that could grow as tall as the sky or shrink to the size of a needle.\n\nIn the famous story Journey to the West, Sun Wukong goes with the monk Tang Sanzang to bring Buddhist books back from India. The journey takes more than ten years. They meet eighty-one dangers on the way — demons, mountains of fire, and tricky spirits. But with courage and cleverness, Sun Wukong protects his master every time.\n\nWhy do children love Sun Wukong? Because he is not a perfect hero. He is naughty and proud, but he is also loyal and kind. He reminds us that a true hero is brave, clever and faithful to friends.",
+              "cn": "孙悟空，又名美猴王，是中国故事里最受喜爱的英雄之一。他在花果山从石头里蹦出，从第一天起便勇敢、聪明、法力高强。\n\n孙悟空学了 72 变，可化作老虎、鱼，甚至小小苍蝇；他手里的金箍棒能大如天、小如针。\n\n在《西游记》里，他陪唐僧去西天取经，十余年路上遭遇 81 难：妖怪、火焰山、狡诈之灵。凭着勇气和机智，悟空次次护师平安。\n\n为什么孩子们爱孙悟空？因为他不是完美英雄——顽皮又骄傲，却忠诚善良。他让我们明白：真正的英雄勇敢、聪明，对朋友忠诚。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Past perfect tense",
+              "en": "Past perfect: had + past participle. Use it for an action that happened BEFORE another past action.\n\nWhen the soldiers arrived, the Emperor had already left.\nBy the time we got there, the movie had started.\nShe had never seen the sea before she was ten.\n\nCompare with simple past:\nI got home at 7. I had finished my homework at 6.\n(First: finished homework at 6. Then: got home at 7.)\n\nCommon signal words: before, after, by the time, already, just, never ... before, when.\n\nQuestions and negatives:\nHad you met him before? — Yes, I had. / No, I hadn't.\nThey hadn't read the story before the teacher told it.",
+              "cn": "过去完成时：had + 过去分词，表过去某动作之前已发生的事。\n\n士兵到达时，皇帝已经离开了。\n我们到时电影已经开始了。\n她十岁前从没见过大海。\n\n与一般过去时对比：\n我 7 点到家，6 点前就写完了作业。\n（先：6 点前写完。再：7 点到家。）\n\n常用提示词：before / after / by the time / already / just / never … before / when。\n\n疑问和否定：\n之前见过他吗？——见过。/ 没见过。\n老师讲之前他们没读过这个故事。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Stories from Greece",
+              "en": "Far away, in ancient Greece, people also told wonderful stories. Their gods lived on Mount Olympus, a tall snowy mountain.\n\nThe king of the gods was Zeus. He could throw lightning like a spear. His wife Hera protected families. His brother Poseidon ruled the sea, and his daughter Athena taught people wisdom.\n\nOne famous story is about a hero called Odysseus. After winning a ten-year war, he wanted to sail home. But the sea god was angry with him. Storms, one-eyed giants, and a witch made his trip last another ten years! When he finally came home, his wife and son had waited for him for twenty years.\n\nGreek stories teach us lessons: brave people never give up; clever people solve problems; kind people are remembered forever.\n\nChinese stories and Greek stories come from different countries, but they share the same message — be brave, be clever, and be true.",
+              "cn": "遥远的古希腊也有精彩的故事。诸神居于高雪覆盖的奥林匹斯山。\n\n众神之王宙斯能掷闪电如标枪；妻子赫拉守护家庭；弟弟波塞冬掌管大海；女儿雅典娜传授人智慧。\n\n一则著名故事关于英雄奥德修斯：他打赢十年之战后欲返家，但海神愤怒，风暴、独眼巨人、女巫让他又漂泊十年！归家时妻儿已等他 20 年。\n\n希腊故事教我们：勇者从不放弃；智者解决困难；善者被永久铭记。\n\n中国故事与希腊故事来自不同国度，却传递相同的讯息——要勇敢、要聪明、要真诚。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "module": "Module 4 Discovery",
+          "title": "Unit 7 Seasons",
+          "words": [
+            {
+              "word": "season",
+              "phonetic": "/ˈsiːzn/",
+              "pos": "n.",
+              "meaning": "季节",
+              "example": "Autumn is my favourite season."
+            },
+            {
+              "word": "climate",
+              "phonetic": "/ˈklaɪmət/",
+              "pos": "n.",
+              "meaning": "气候",
+              "example": "The climate here is warm."
+            },
+            {
+              "word": "weather",
+              "phonetic": "/ˈweðə(r)/",
+              "pos": "n.",
+              "meaning": "天气",
+              "example": "The weather today is sunny."
+            },
+            {
+              "word": "temperature",
+              "phonetic": "/ˈtemprətʃə(r)/",
+              "pos": "n.",
+              "meaning": "温度",
+              "example": "The temperature is 30°C."
+            },
+            {
+              "word": "thunder",
+              "phonetic": "/ˈθʌndə(r)/",
+              "pos": "n.",
+              "meaning": "雷",
+              "example": "Thunder frightens the dog."
+            },
+            {
+              "word": "storm",
+              "phonetic": "/stɔːm/",
+              "pos": "n.",
+              "meaning": "风暴",
+              "example": "A big storm came at night."
+            },
+            {
+              "word": "typhoon",
+              "phonetic": "/taɪˈfuːn/",
+              "pos": "n.",
+              "meaning": "台风",
+              "example": "Guangzhou has typhoons in summer."
+            },
+            {
+              "word": "fog",
+              "phonetic": "/fɒɡ/",
+              "pos": "n.",
+              "meaning": "雾",
+              "example": "The fog is thick this morning."
+            },
+            {
+              "word": "dry",
+              "phonetic": "/draɪ/",
+              "pos": "adj.",
+              "meaning": "干燥的",
+              "example": "Beijing is dry in winter."
+            },
+            {
+              "word": "wet",
+              "phonetic": "/wet/",
+              "pos": "adj.",
+              "meaning": "潮湿的",
+              "example": "The ground is wet after rain."
+            },
+            {
+              "word": "degree",
+              "phonetic": "/dɪˈɡriː/",
+              "pos": "n.",
+              "meaning": "度",
+              "example": "It is 25 degrees today."
+            },
+            {
+              "word": "northern",
+              "phonetic": "/ˈnɔːðən/",
+              "pos": "adj.",
+              "meaning": "北方的",
+              "example": "Harbin is a northern city."
+            },
+            {
+              "word": "southern",
+              "phonetic": "/ˈsʌðən/",
+              "pos": "adj.",
+              "meaning": "南方的",
+              "example": "Guangzhou is in southern China."
+            },
+            {
+              "word": "forecast",
+              "phonetic": "/ˈfɔːkɑːst/",
+              "pos": "n.",
+              "meaning": "预报",
+              "example": "Listen to the weather forecast."
+            },
+            {
+              "word": "rainfall",
+              "phonetic": "/ˈreɪnfɔːl/",
+              "pos": "n.",
+              "meaning": "降雨量",
+              "example": "Rainfall is heavy in summer."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Two cities, two worlds",
+              "en": "China is a big country, and its weather is very different from north to south. Let's compare two cities — Harbin in the north and Guangzhou in the south.\n\nIn Harbin, winter lasts more than five months. From November to March, the temperature often falls below zero. The rivers freeze, and children skate on the ice. Every January, Harbin holds a famous Ice Festival. Huge buildings made of ice shine like crystal under the lights.\n\nIn Guangzhou, winter is short and mild. Even in January, we seldom see snow. People wear jackets, not heavy coats. But summer is hot and wet. From May to September, storms and typhoons come one after another. When a typhoon arrives, schools close and planes cannot fly.\n\nTwo cities, two worlds. But people in both places find joy. A northern child laughs on the ice, and a southern child jumps in the summer rain.",
+              "cn": "中国幅员辽阔，南北天气差异巨大。以北方哈尔滨和南方广州为例：\n\n哈尔滨冬天长达 5 个多月。11 月到次年 3 月，气温常在零度以下，江河结冰，孩子们在冰上滑行。每年 1 月哈尔滨都举办著名的冰雪节——巨型冰雕在灯光下晶莹剔透。\n\n广州冬天短暂温和，一月也很少下雪，人们穿夹克而非厚棉袄；但夏天炎热潮湿，5~9 月暴雨台风接连而至，台风一来学校停课、飞机停飞。\n\n两座城，两种世界。但两地的人都自得其乐：北方孩子在冰上欢笑，南方孩子在夏雨里跳跃。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Comparatives and superlatives",
+              "en": "Comparative (two things): adj + er / more + adj + than\nWinter in Harbin is colder than in Guangzhou.\nTyphoons are more dangerous than summer rain.\nThis storm is worse than the last one. (bad→worse)\n\nSuperlative (three or more): the + adj + est / the most + adj\nHarbin has the coldest winter in China.\nThis is the most interesting season of the year.\nAugust is the hottest month here.\n\nIrregular forms:\ngood → better → the best\nbad → worse → the worst\nmany/much → more → the most\nlittle → less → the least\nfar → farther → the farthest\n\nUseful patterns:\nas + adj + as: Guangzhou is as big as Shanghai.\nnot as + adj + as: Today is not as hot as yesterday.\nthe + comparative..., the + comparative: The colder, the better.",
+              "cn": "比较级（两者比较）：adj + er 或 more + adj，后接 than。\n哈尔滨冬天比广州冷。\n台风比夏雨更危险。\n这次暴风比上次更糟。(bad→worse)\n\n最高级（三者或以上）：the + adj + est 或 the most + adj。\n哈尔滨冬天是中国最冷的。\n这是一年中最有趣的季节。\n八月是这里最热的月份。\n\n不规则变化：\ngood → better → the best\nbad → worse → the worst\nmany/much → more → the most\nlittle → less → the least\nfar → farther → the farthest\n\n常用句型：\nas + adj + as：广州和上海一样大。\nnot as + adj + as：今天不如昨天热。\nthe + 比较级, the + 比较级：越冷越好。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A warming world",
+              "en": "Our planet is changing. Scientists tell us that the Earth is about one degree warmer today than one hundred years ago. One degree sounds small, but it makes a big difference.\n\nGlaciers at the North and South Poles are melting. Sea levels are rising. Some low islands in the Pacific are already under water.\n\nThe seasons are also changing. Spring comes earlier, winter is shorter, and storms are stronger. Last summer, floods hit many cities in Europe, and heavy fires burned forests in Australia.\n\nWhy is this happening? We are burning too much coal, oil and gas. These fuels release gases that trap the sun's heat.\n\nWhat can we do? Walk or cycle instead of driving. Save electricity at home. Plant trees every spring. Eat less meat. These small actions, if everyone does them, can cool our world again.\n\nWe only have one Earth. Protecting her seasons is protecting ourselves.",
+              "cn": "地球正在改变。科学家告诉我们，如今气温比一百年前高约 1℃。一度听来不多，影响却巨大：\n\n南北极冰川在融化，海平面在上升，太平洋一些低洼岛屿已经被淹。\n\n季节也在变——春天来得更早，冬天更短，风暴更强。去年夏天欧洲多城遭洪水，澳洲大火焚林。\n\n原因？我们烧了太多煤、油、气。这些燃料排出温室气体，困住阳光的热量。\n\n我们能做什么？短途步行或骑车，别开车；节约家里用电；每年春天植树；少吃肉。看似微小，人人坚持，地球就能重新变凉。\n\n只有一个地球。保护它的四季，就是保护我们自己。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "module": "Module 4 Discovery",
+          "title": "Unit 8 English week",
+          "words": [
+            {
+              "word": "English",
+              "phonetic": "/ˈɪŋɡlɪʃ/",
+              "pos": "n./adj.",
+              "meaning": "英语",
+              "example": "English is a world language."
+            },
+            {
+              "word": "speech",
+              "phonetic": "/spiːtʃ/",
+              "pos": "n.",
+              "meaning": "演讲",
+              "example": "She gave a short speech."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "pos": "n.",
+              "meaning": "戏剧",
+              "example": "We performed a play in class."
+            },
+            {
+              "word": "contest",
+              "phonetic": "/ˈkɒntest/",
+              "pos": "n.",
+              "meaning": "比赛",
+              "example": "I won the spelling contest."
+            },
+            {
+              "word": "audience",
+              "phonetic": "/ˈɔːdiəns/",
+              "pos": "n.",
+              "meaning": "观众",
+              "example": "The audience cheered loudly."
+            },
+            {
+              "word": "performance",
+              "phonetic": "/pəˈfɔːməns/",
+              "pos": "n.",
+              "meaning": "表演",
+              "example": "It was a wonderful performance."
+            },
+            {
+              "word": "stage",
+              "phonetic": "/steɪdʒ/",
+              "pos": "n.",
+              "meaning": "舞台",
+              "example": "Don't be nervous on stage."
+            },
+            {
+              "word": "prize",
+              "phonetic": "/praɪz/",
+              "pos": "n.",
+              "meaning": "奖品",
+              "example": "She won the first prize."
+            },
+            {
+              "word": "competition",
+              "phonetic": "/ˌkɒmpəˈtɪʃn/",
+              "pos": "n.",
+              "meaning": "竞赛",
+              "example": "There was a fierce competition."
+            },
+            {
+              "word": "practise",
+              "phonetic": "/ˈpræktɪs/",
+              "pos": "v.",
+              "meaning": "练习",
+              "example": "Practise your lines every day."
+            },
+            {
+              "word": "confident",
+              "phonetic": "/ˈkɒnfɪdənt/",
+              "pos": "adj.",
+              "meaning": "自信的",
+              "example": "Be confident when you speak."
+            },
+            {
+              "word": "nervous",
+              "phonetic": "/ˈnɜːvəs/",
+              "pos": "adj.",
+              "meaning": "紧张的",
+              "example": "I was nervous before the speech."
+            },
+            {
+              "word": "role",
+              "phonetic": "/rəʊl/",
+              "pos": "n.",
+              "meaning": "角色",
+              "example": "What role will you play?"
+            },
+            {
+              "word": "applause",
+              "phonetic": "/əˈplɔːz/",
+              "pos": "n.",
+              "meaning": "掌声",
+              "example": "Loud applause filled the hall."
+            },
+            {
+              "word": "organise",
+              "phonetic": "/ˈɔːɡənaɪz/",
+              "pos": "v.",
+              "meaning": "组织",
+              "example": "The teachers organised the week."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Our English week",
+              "en": "Last week was English Week at our school. Five wonderful days, full of English everywhere!\n\nMonday — Opening ceremony. Our headmaster gave a short welcome speech in English. Every classroom door had a new name: Ocean Room, Star Room, Rainbow Room.\n\nTuesday — Reading day. Students brought their favourite English books to share. I showed my Harry Potter. A boy from Class 3 brought The Little Prince.\n\nWednesday — Speaking contest. Twenty students each gave a three-minute speech. I was number twelve. I was so nervous that my knees shook, but the audience clapped when I finished.\n\nThursday — Play night. Our class performed a short play of The Tortoise and the Hare. I played the tortoise. Everyone laughed and cheered.\n\nFriday — Prize day. My speech won third prize! I took home a book and a shining medal.\n\nEnglish is not only a subject. It is a bridge that connects me to a bigger world.",
+              "cn": "上周是我校英语周，五天活动精彩纷呈！\n\n周一——开幕式。校长致英语欢迎辞，每间教室门上都换了新名字：海洋室、星星室、彩虹室。\n\n周二——阅读日。同学们把最爱的英文书带来分享。我带了《哈利·波特》，三班一个男生带了《小王子》。\n\n周三——演讲比赛。20 名选手每人三分钟。我是 12 号，紧张得膝盖都在抖，结束时观众热烈鼓掌。\n\n周四——话剧之夜。我们班演《龟兔赛跑》，我扮演乌龟，全场欢笑欢呼。\n\n周五——颁奖日。我的演讲得了三等奖！带回家一本书和一枚闪亮奖牌。\n\n英语不止是一门学科，更是连接我和更大世界的桥梁。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Reported speech",
+              "en": "Direct speech uses quotation marks. Reported (indirect) speech changes the tense and pronouns.\n\nDirect: He says, \"I am nervous.\"\nReported: He says (that) he is nervous.\n\nWhen the reporting verb is past, change the tense back one step:\nDirect: She said, \"I am tired.\"\nReported: She said (that) she was tired.\n\nDirect: \"I will help you,\" he said.\nReported: He said he would help me.\n\nDirect: \"I have won the prize,\" she told me.\nReported: She told me she had won the prize.\n\nQuestions in reported speech use statement word order:\nDirect: He asked, \"Where is the stage?\"\nReported: He asked where the stage was.\nDirect: She asked, \"Do you like English?\"\nReported: She asked if/whether I liked English.\n\nPronouns and time words also change:\ntoday → that day, tomorrow → the next day, here → there.",
+              "cn": "直接引语用引号；间接引语要变时态和人称。\n\n直接：他说：“我很紧张。”\n间接：他说他很紧张。\n\n主句若为过去时，从句时态退后一步：\n直接：她说：“我累。”\n间接：她说她累了。\n\n直接：“我会帮你。”他说。\n间接：他说他会帮我。\n\n直接：“我赢了奖。”她告诉我。\n间接：她告诉我她赢了奖。\n\n间接问句用陈述语序：\n直接：他问：“舞台在哪？”\n间接：他问舞台在哪里。\n直接：她问：“你喜欢英语吗？”\n间接：她问我是否喜欢英语（用 if / whether）。\n\n人称和时间状语也要变：\ntoday → that day, tomorrow → the next day, here → there。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Tips for a good speech",
+              "en": "Are you preparing for a speech or a play? Here are five tips from my English teacher:\n\n1) Know your topic. Read a lot about it. The more you know, the more confident you are.\n\n2) Write a simple plan. Start with a story or a question. State your main idea. Give two or three examples. End with a strong sentence the audience will remember.\n\n3) Practise out loud. Stand in front of a mirror. Use your voice, face and hands. Record yourself — listen and improve.\n\n4) Don't be afraid of mistakes. Even famous speakers make small mistakes. Smile and keep going.\n\n5) Look at your audience. Pick three friendly faces — one on the left, one in the middle, one on the right. Look at them in turn while you speak.\n\nA good speech is not only about English, but about your courage. Every time you stand on the stage, you grow a little taller.",
+              "cn": "你在准备演讲或话剧吗？英语老师分享 5 条秘诀：\n\n1) 熟悉主题。多读相关资料，了解越多，越自信。\n\n2) 写简单提纲：用故事或问题开场→说出中心思想→举 2~3 个例子→最后用有力的一句收尾，让观众记住。\n\n3) 大声练习。对着镜子，用语调、表情、手势。录下来听听，不断改进。\n\n4) 别怕出错。名家也会小失误，笑一下继续。\n\n5) 看着观众。挑三张友好的脸——左、中、右各一——轮流注视他们讲话。\n\n好的演讲不仅是英语的展示，更是勇气的考验。每一次站上舞台，你都会长高一点点。"
+            }
+          ]
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "module": "Module 1 Body language",
+          "title": "Unit 1 Helping those in need",
+          "words": [
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "pos": "v./n.",
+              "meaning": "帮助",
+              "example": "We should help those in need."
+            },
+            {
+              "word": "charity",
+              "phonetic": "/ˈtʃærəti/",
+              "pos": "n.",
+              "meaning": "慈善",
+              "example": "The charity supports poor children."
+            },
+            {
+              "word": "donate",
+              "phonetic": "/dəʊˈneɪt/",
+              "pos": "v.",
+              "meaning": "捐赠",
+              "example": "She donated her old books."
+            },
+            {
+              "word": "volunteer",
+              "phonetic": "/ˌvɒlənˈtɪə(r)/",
+              "pos": "n./v.",
+              "meaning": "志愿者",
+              "example": "Many volunteers cleaned the park."
+            },
+            {
+              "word": "community",
+              "phonetic": "/kəˈmjuːnəti/",
+              "pos": "n.",
+              "meaning": "社区",
+              "example": "Our community is friendly."
+            },
+            {
+              "word": "elderly",
+              "phonetic": "/ˈeldəli/",
+              "pos": "adj.",
+              "meaning": "年长的",
+              "example": "We visit the elderly at weekends."
+            },
+            {
+              "word": "disabled",
+              "phonetic": "/dɪsˈeɪbld/",
+              "pos": "adj.",
+              "meaning": "残疾的",
+              "example": "Disabled people need more care."
+            },
+            {
+              "word": "orphan",
+              "phonetic": "/ˈɔːfn/",
+              "pos": "n.",
+              "meaning": "孤儿",
+              "example": "The orphanage cares for orphans."
+            },
+            {
+              "word": "poverty",
+              "phonetic": "/ˈpɒvəti/",
+              "pos": "n.",
+              "meaning": "贫困",
+              "example": "We must fight against poverty."
+            },
+            {
+              "word": "support",
+              "phonetic": "/səˈpɔːt/",
+              "pos": "v./n.",
+              "meaning": "支持",
+              "example": "Let's support each other."
+            },
+            {
+              "word": "kind",
+              "phonetic": "/kaɪnd/",
+              "pos": "adj.",
+              "meaning": "善良的",
+              "example": "A kind word warms the heart."
+            },
+            {
+              "word": "caring",
+              "phonetic": "/ˈkeərɪŋ/",
+              "pos": "adj.",
+              "meaning": "关怀的",
+              "example": "She is a caring nurse."
+            },
+            {
+              "word": "blind",
+              "phonetic": "/blaɪnd/",
+              "pos": "adj.",
+              "meaning": "失明的",
+              "example": "Blind people read with their fingers."
+            },
+            {
+              "word": "deaf",
+              "phonetic": "/def/",
+              "pos": "adj.",
+              "meaning": "耳聋的",
+              "example": "Deaf people use sign language."
+            },
+            {
+              "word": "difference",
+              "phonetic": "/ˈdɪfrəns/",
+              "pos": "n.",
+              "meaning": "影响；差别",
+              "example": "Small actions make a big difference."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A weekend at the Sunshine Home",
+              "en": "Every second Saturday, our school volunteer group visits the Sunshine Home, where twenty elderly people live.\n\nLast weekend I went there for the first time. Grandma Li held my hand with a big smile, and I felt warm at once. We cleaned the windows and swept the floor. My friend Amy played the violin, and everyone clapped. I read a story to Grandpa Wang because his eyes were weak. He said, “Your voice is like my granddaughter's. Thank you, child.”\n\nAt lunch, we made dumplings together. Grandma Li's hands were slow but her smile was bright. When we left, I felt the happiest I had been all month. I learned that helping others is really a gift we give to ourselves.",
+              "cn": "每两周的周六，我校志愿者小组都会去“阳光之家”——住着二十位老人的小楼。\n\n上周末我第一次去。李奶奶握住我的手微笑，我顿时觉得温暖。我们擦窗、扫地，朋友 Amy 拉小提琴，大家鼓掌。我给王爷爷读了故事，他说：“你的声音像我孙女，谢谢你，孩子。”\n\n午饭我们一起包饺子。李奶奶手慢但笑容灿烂。离开时我感到是那个月最快乐的一天。我明白了：助人其实是送给自己的礼物。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Infinitives of purpose",
+              "en": "Use “to + verb” to say WHY you do something.\nWe visit the Sunshine Home to help the elderly.\nShe saved money to buy her mum a gift.\nI came here to learn English.\n\nMore formal: in order to / so as to.\nWe collected old books in order to donate them.\nHe studies hard so as to enter a good school.\n\nNegative: in order not to / so as not to.\nShe walks quietly so as not to wake the baby.\nI took a map in order not to get lost.\n\nNote: “for + verb-ing” is NOT used for purpose.\n✗ I came for learning English.\n✓ I came to learn English.\nBut “for + noun” is fine: I came for English lessons.",
+              "cn": "to + 动词表目的（做某事的原因）。\n我们去“阳光之家”是为了帮助老人。\n她省钱是为了给妈妈买礼物。\n我来这里是为了学英语。\n\n更正式：in order to / so as to。\n我们收旧书以便捐赠。\n他努力学习以便进入好学校。\n\n否定：in order not to / so as not to。\n她走路轻，以免吵醒婴儿。\n我带了地图，以免迷路。\n\n注意：表目的不能用 for + v-ing。\n✗ I came for learning English.\n✓ I came to learn English.\n但 for + 名词可以：I came for English lessons.（来上英语课）"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A long life of giving",
+              "en": "Madam Li is 92, but she still goes to school every day — not to learn, but to teach.\n\nWhen she was young, there was no school in her village. She walked ten kilometres to town to study. At sixteen, she became a teacher and returned to her village. For fifty years she taught hundreds of children.\n\nAfter retirement, she and her husband used their savings to build a small library in the village. It opened at 7 a.m. and closed at 7 p.m. Children could borrow any book for free. Ten years ago her husband passed away. She said, “I must keep the library open. That was our dream.”\n\nToday the library has over 12,000 books. Many village children who grew up reading here now study in universities. Madam Li says, “The greatest gift is to pass a little light to someone else.”",
+              "cn": "李奶奶 92 岁了，但她每天仍去学校——不是去学，而是去教。\n\n年轻时她村里没学校，她每天步行十公里到镇上念书。16 岁当上老师回到村子，教了 50 年书，教过数百个孩子。\n\n退休后，她和丈夫用积蓄在村里建了一座小图书馆，每天清晨 7 点开门、晚上 7 点关门，孩子可免费借任何书。十年前丈夫去世，她说：“这图书馆我必须守下去，那是我们共同的梦。”\n\n如今馆藏超过 1.2 万册，许多从这里读书长大的孩子正在读大学。李奶奶说：“最伟大的礼物，是把一点光亮传给别人。”"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "module": "Module 1 Body language",
+          "title": "Unit 2 Body language",
+          "words": [
+            {
+              "word": "gesture",
+              "phonetic": "/ˈdʒestʃə(r)/",
+              "pos": "n.",
+              "meaning": "手势",
+              "example": "A wave is a friendly gesture."
+            },
+            {
+              "word": "signal",
+              "phonetic": "/ˈsɪɡnəl/",
+              "pos": "n./v.",
+              "meaning": "信号",
+              "example": "A red light is a stop signal."
+            },
+            {
+              "word": "smile",
+              "phonetic": "/smaɪl/",
+              "pos": "n./v.",
+              "meaning": "微笑",
+              "example": "Her smile is sweet."
+            },
+            {
+              "word": "frown",
+              "phonetic": "/fraʊn/",
+              "pos": "v./n.",
+              "meaning": "皱眉",
+              "example": "Don't frown, smile instead."
+            },
+            {
+              "word": "nod",
+              "phonetic": "/nɒd/",
+              "pos": "v.",
+              "meaning": "点头",
+              "example": "She nodded to show yes."
+            },
+            {
+              "word": "shake",
+              "phonetic": "/ʃeɪk/",
+              "pos": "v.",
+              "meaning": "摇动",
+              "example": "Shake your head to say no."
+            },
+            {
+              "word": "wave",
+              "phonetic": "/weɪv/",
+              "pos": "v./n.",
+              "meaning": "挥手",
+              "example": "He waved goodbye."
+            },
+            {
+              "word": "bow",
+              "phonetic": "/baʊ/",
+              "pos": "v.",
+              "meaning": "鞠躬",
+              "example": "Japanese people often bow."
+            },
+            {
+              "word": "hug",
+              "phonetic": "/hʌɡ/",
+              "pos": "n./v.",
+              "meaning": "拥抱",
+              "example": "Mum gave me a big hug."
+            },
+            {
+              "word": "handshake",
+              "phonetic": "/ˈhændʃeɪk/",
+              "pos": "n.",
+              "meaning": "握手",
+              "example": "A handshake is polite in business."
+            },
+            {
+              "word": "express",
+              "phonetic": "/ɪkˈspres/",
+              "pos": "v.",
+              "meaning": "表达",
+              "example": "We express feelings with our bodies."
+            },
+            {
+              "word": "feeling",
+              "phonetic": "/ˈfiːlɪŋ/",
+              "pos": "n.",
+              "meaning": "感受",
+              "example": "Share your feelings."
+            },
+            {
+              "word": "polite",
+              "phonetic": "/pəˈlaɪt/",
+              "pos": "adj.",
+              "meaning": "礼貌的",
+              "example": "A smile is a polite greeting."
+            },
+            {
+              "word": "rude",
+              "phonetic": "/ruːd/",
+              "pos": "adj.",
+              "meaning": "粗鲁的",
+              "example": "Pointing at people is rude."
+            },
+            {
+              "word": "meaning",
+              "phonetic": "/ˈmiːnɪŋ/",
+              "pos": "n.",
+              "meaning": "含义",
+              "example": "A gesture may have different meanings."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · When words are not enough",
+              "en": "Sometimes we do not need to speak — our body speaks for us. When you meet a friend, you smile. When you agree, you nod. When a ball comes at you, you shout “Watch out!” with open hands more than with words. This is body language.\n\nOur face is a small stage. It shows if we are happy, tired, worried or angry. A real smile travels across countries, and even babies understand it.\n\nOur hands are busy actors. We use them to point, to count, to say hello or goodbye. A warm handshake starts a friendship. A gentle pat on the shoulder says, “You did a good job.”\n\nBody language is the first language we ever learn. We use it long before we speak. And even when we grow up, it never stops talking for us.",
+              "cn": "有时我们不必开口，身体就替我们说话。见到朋友时你微笑；同意时你点头；球飞来时你摊开双手喊“小心！”——比开口更有力。这就是肢体语言。\n\n脸是一座小舞台，告诉别人你快乐、疲倦、担忧还是生气。真诚的微笑跨越国界，婴儿也能读懂。\n\n双手是忙碌的演员：指物、点数、打招呼、说再见。热情一握开启新友谊，轻拍肩膀代表“干得好”。\n\n肢体语言是我们最早学会的语言，远早于开口说话。长大后，它也从未停止替我们发声。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Linking words: so / because / but",
+              "en": "Linking words join two ideas into one clear sentence.\n\nbecause — gives the REASON.\nI smiled because I was happy.\nHe was tired because he had worked all day.\n\nso — gives the RESULT.\nI was happy, so I smiled.\nShe was tired, so she went to bed early.\n\nbut — shows a CONTRAST.\nHe nodded, but he did not agree.\nThe room was small but beautiful.\n\nRule: Do NOT use because and so together.\n✗ Because I was tired, so I went home.\n✓ Because I was tired, I went home.\n✓ I was tired, so I went home.",
+              "cn": "连接词把两句合成一句通顺的话。\n\nbecause——表原因：\n我笑因为我开心。\n他累因为他工作一天。\n\nso——表结果：\n我开心，所以我笑。\n她累，所以早早睡了。\n\nbut——表转折：\n他点头，但没同意。\n房间小，但漂亮。\n\n规则：because 和 so 不能同时用。\n✗ 因为我累，所以我回家。\n✓ 因为累，我回家。 / 我累，所以回家。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Gestures around the world",
+              "en": "The same gesture can mean different things in different places.\n\nThumbs up. In China and most Western countries, it means “good” or “well done”. But in some parts of the Middle East and West Africa, it is rude.\n\nNodding. In most countries, it means “yes”. But in Bulgaria and some parts of India, it can mean “no”, and shaking the head means “yes”.\n\nOK sign (thumb and finger in a circle). Americans use it for “great”, but in Brazil and Turkey it is very rude.\n\nPersonal space. Italians and Spaniards stand close and often touch lightly. Japanese and Koreans prefer more space — a small bow is more polite than a hug.\n\nSo, when you visit a new country, learn a few local gestures. A little care saves a lot of trouble and opens many smiling faces.",
+              "cn": "同一手势在不同国家含义差别很大。\n\n翘大拇指——中国和多数西方国家表示“好”、“棒”；但在中东和西非部分地区是粗鲁的。\n\n点头——多数国家表“是”；但在保加利亚和印度某些地方，点头反而表“否”，摇头表“是”。\n\nOK 手势（拇指食指围圈）——美国表“很棒”；但在巴西和土耳其很不礼貌。\n\n个人空间——意大利和西班牙人聊天时常站得很近并轻拍身体；日本和韩国喜欢保持距离——小小的鞠躬比拥抱更得体。\n\n出国前学几条当地手势——小小留心能避开大麻烦，也能赢来无数笑脸。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "module": "Module 2 Science and technology",
+          "title": "Unit 3 Traditional skills",
+          "words": [
+            {
+              "word": "traditional",
+              "phonetic": "/trəˈdɪʃənl/",
+              "pos": "adj.",
+              "meaning": "传统的",
+              "example": "Kite flying is a traditional hobby."
+            },
+            {
+              "word": "skill",
+              "phonetic": "/skɪl/",
+              "pos": "n.",
+              "meaning": "技能",
+              "example": "Paper cutting is an old skill."
+            },
+            {
+              "word": "craft",
+              "phonetic": "/krɑːft/",
+              "pos": "n.",
+              "meaning": "手工艺",
+              "example": "Paper crafts are beautiful."
+            },
+            {
+              "word": "handmade",
+              "phonetic": "/ˌhændˈmeɪd/",
+              "pos": "adj.",
+              "meaning": "手工的",
+              "example": "I love handmade gifts."
+            },
+            {
+              "word": "culture",
+              "phonetic": "/ˈkʌltʃə(r)/",
+              "pos": "n.",
+              "meaning": "文化",
+              "example": "Tea culture is part of Chinese life."
+            },
+            {
+              "word": "heritage",
+              "phonetic": "/ˈherɪtɪdʒ/",
+              "pos": "n.",
+              "meaning": "遗产",
+              "example": "We must protect our cultural heritage."
+            },
+            {
+              "word": "generation",
+              "phonetic": "/ˌdʒenəˈreɪʃn/",
+              "pos": "n.",
+              "meaning": "一代人",
+              "example": "Her family has kept the art for five generations."
+            },
+            {
+              "word": "master",
+              "phonetic": "/ˈmɑːstə(r)/",
+              "pos": "n.",
+              "meaning": "大师",
+              "example": "He is a master of calligraphy."
+            },
+            {
+              "word": "apprentice",
+              "phonetic": "/əˈprentɪs/",
+              "pos": "n.",
+              "meaning": "学徒",
+              "example": "He was an apprentice for ten years."
+            },
+            {
+              "word": "knot",
+              "phonetic": "/nɒt/",
+              "pos": "n.",
+              "meaning": "结",
+              "example": "Chinese knots bring good luck."
+            },
+            {
+              "word": "embroidery",
+              "phonetic": "/ɪmˈbrɔɪdəri/",
+              "pos": "n.",
+              "meaning": "刺绣",
+              "example": "Su embroidery is famous."
+            },
+            {
+              "word": "paper-cutting",
+              "phonetic": "/ˈpeɪpə ˌkʌtɪŋ/",
+              "pos": "n.",
+              "meaning": "剪纸",
+              "example": "Paper-cutting is a folk art."
+            },
+            {
+              "word": "calligraphy",
+              "phonetic": "/kəˈlɪɡrəfi/",
+              "pos": "n.",
+              "meaning": "书法",
+              "example": "Calligraphy needs patience."
+            },
+            {
+              "word": "disappear",
+              "phonetic": "/ˌdɪsəˈpɪə(r)/",
+              "pos": "v.",
+              "meaning": "消失",
+              "example": "Some old skills are disappearing."
+            },
+            {
+              "word": "pass down",
+              "phonetic": "/pɑːs daʊn/",
+              "pos": "phr.",
+              "meaning": "传承",
+              "example": "Old skills are passed down in families."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Grandma's paper-cutting",
+              "en": "My grandma is 78. Her hands are thin and wrinkled, but they can do magic. She is a master of paper-cutting.\n\nShe learned the skill at eight from her mother. At first she only cut simple shapes — a flower, a star, a fish. By fifteen, she could cut a dragon with every scale clear. Every Spring Festival, our neighbours come to ask her for window flowers.\n\nLast winter, Grandma taught me. She gave me a soft red paper and small scissors. “Hold the paper loosely and move the scissors slowly. Feel the paper like a friend,” she said.\n\nMy first rabbit had a broken ear; my second rabbit had three legs. Grandma laughed, but she was patient. By my tenth try, my rabbit looked like a rabbit at last!\n\nGrandma says, “A skill is like a seed. If nobody plants it, it dies.” I am glad I am a small planter now.",
+              "cn": "奶奶 78 岁了，手瘦又布满皱纹，却能变魔术——她是剪纸大师。\n\n她 8 岁跟母亲学艺，起初只会剪花、星、鱼；15 岁能剪出鳞片分明的龙。每逢春节，邻居都来求她剪窗花。\n\n去年冬天奶奶教我。她递给我柔软红纸和小剪刀，说：“纸要捏松、剪要慢，把纸当朋友。”\n\n我剪的第一只兔子耳朵断了，第二只三条腿，奶奶笑着仍耐心指导。第十次时，我的兔子终于像兔子了！\n\n奶奶说：“技艺像种子，没人种下就会死。”我很高兴自己成了一个小小的播种人。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Used to / be used to",
+              "en": "1) used to + verb — a past habit that is NOT true now.\nGrandma used to cut paper every morning.\nI used to be afraid of the dark.\nDid you use to play with paper? — Yes, I did.\n\n2) be used to + verb-ing (or noun) — be familiar with.\nShe is used to getting up early.\nI am used to the cold weather now.\n\n3) be used to + verb — be USED FOR a purpose (passive).\nScissors are used to cut paper.\nKnives are used to cut fruits.\n\nCompare:\nused to cut paper = past habit\nis used to cutting paper = is familiar with cutting\nis used to cut paper = is used for cutting",
+              "cn": "1) used to + 动词原形——过去习惯（现在不再如此）：\n奶奶过去每天早上剪纸。\n我过去怕黑。\n你过去常玩纸吗？——是的。\n\n2) be used to + v-ing（或名词）——习惯于：\n她习惯早起。\n我现在习惯冷天了。\n\n3) be used to + 动词原形——被用来做某事（被动）：\n剪刀被用来剪纸。\n刀被用来切水果。\n\n对比：\nused to cut paper = 过去常剪\nis used to cutting paper = 习惯剪\nis used to cut paper = 被用来剪"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Why save old skills?",
+              "en": "Our country has thousands of traditional skills — embroidery from Suzhou, porcelain from Jingdezhen, kites from Weifang, tea from Hangzhou. Each skill tells a story of the land and its people.\n\nBut today, many are in danger. Young people move to cities to find office jobs. Old masters grow old with no students. When the last master passes away, the skill may disappear forever.\n\nWhy should we save them? First, they are our heritage — our grandparents' wisdom is in every stitch and knot. Second, they bring beauty into daily life; a handmade tea cup feels warm in a way a factory cup never does. Third, they help poor villages — tourists love handmade souvenirs.\n\nToday many schools open “culture clubs” for children to learn old crafts. Young people share short videos of paper-cutting and calligraphy online, with millions of fans. The river of tradition keeps flowing as long as someone, somewhere, keeps it alive.",
+              "cn": "我国有成千上万项传统技艺：苏州刺绣、景德镇瓷器、潍坊风筝、杭州茶艺——每一项都讲述土地与人的故事。\n\n但如今许多技艺濒危：年轻人进城找办公室工作，老师傅无人传承。最后一位大师一旦去世，技艺可能永远失传。\n\n为什么要保护？一、它们是遗产——爷爷奶奶的智慧藏在每一针、每一结里。二、它们让日常生活充满美——手工茶杯的温度，机器杯永远没有。三、它们能帮贫困乡村——游客热衷手工纪念品。\n\n如今许多学校开设“文化社团”让孩子学老手艺；年轻人在网络上分享剪纸、书法短视频，粉丝百万。只要有人在某处让它继续跳动，传统之河就会奔流不息。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "module": "Module 2 Science and technology",
+          "title": "Unit 4 A world of robots",
+          "words": [
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "pos": "n.",
+              "meaning": "机器人",
+              "example": "A small robot cleans my room."
+            },
+            {
+              "word": "AI",
+              "phonetic": "/ˌeɪ ˈaɪ/",
+              "pos": "abbr.",
+              "meaning": "人工智能",
+              "example": "AI can help doctors."
+            },
+            {
+              "word": "intelligent",
+              "phonetic": "/ɪnˈtelɪdʒənt/",
+              "pos": "adj.",
+              "meaning": "智能的",
+              "example": "Robots are intelligent machines."
+            },
+            {
+              "word": "control",
+              "phonetic": "/kənˈtrəʊl/",
+              "pos": "v./n.",
+              "meaning": "控制",
+              "example": "You can control the robot with a phone."
+            },
+            {
+              "word": "program",
+              "phonetic": "/ˈprəʊɡræm/",
+              "pos": "v./n.",
+              "meaning": "编程",
+              "example": "I programed my first robot today."
+            },
+            {
+              "word": "sensor",
+              "phonetic": "/ˈsensə(r)/",
+              "pos": "n.",
+              "meaning": "传感器",
+              "example": "The sensor feels the wall."
+            },
+            {
+              "word": "task",
+              "phonetic": "/tɑːsk/",
+              "pos": "n.",
+              "meaning": "任务",
+              "example": "The robot can do many tasks."
+            },
+            {
+              "word": "factory",
+              "phonetic": "/ˈfæktri/",
+              "pos": "n.",
+              "meaning": "工厂",
+              "example": "Many robots work in car factories."
+            },
+            {
+              "word": "arm",
+              "phonetic": "/ɑːm/",
+              "pos": "n.",
+              "meaning": "手臂",
+              "example": "This robot has six arms."
+            },
+            {
+              "word": "industry",
+              "phonetic": "/ˈɪndəstri/",
+              "pos": "n.",
+              "meaning": "行业",
+              "example": "Robots change the industry."
+            },
+            {
+              "word": "battery",
+              "phonetic": "/ˈbætri/",
+              "pos": "n.",
+              "meaning": "电池",
+              "example": "My robot has a weak battery."
+            },
+            {
+              "word": "human",
+              "phonetic": "/ˈhjuːmən/",
+              "pos": "n./adj.",
+              "meaning": "人类",
+              "example": "Humans and robots can work together."
+            },
+            {
+              "word": "replace",
+              "phonetic": "/rɪˈpleɪs/",
+              "pos": "v.",
+              "meaning": "取代",
+              "example": "Will robots replace teachers?"
+            },
+            {
+              "word": "dream",
+              "phonetic": "/driːm/",
+              "pos": "n.",
+              "meaning": "梦想",
+              "example": "Robots were once a dream."
+            },
+            {
+              "word": "future",
+              "phonetic": "/ˈfjuːtʃə(r)/",
+              "pos": "n.",
+              "meaning": "未来",
+              "example": "The future belongs to creative minds."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · My robot friend",
+              "en": "Last Christmas, my uncle gave me an unusual present — a small white robot called Buddy. Buddy is only 30 centimetres tall but he can do many things.\n\nIn the morning, Buddy wakes me up with a soft song, tells me the weather and reads the news in English. While I brush my teeth, he moves around my bed and picks up dirty socks.\n\nWhen I do homework, Buddy sits quietly on my desk. If I ask a hard math question, his eyes turn blue and he gives a clear answer. Sometimes he even makes a small joke.\n\nBut Buddy is not perfect. He does not like water — one rainy day he ran outside by mistake, and I had to dry him for an hour. He also has a weak battery, so he must rest for two hours every afternoon.\n\nI know Buddy is just a machine, but I enjoy his company. He reminds me that science can be both useful and fun.",
+              "cn": "去年圣诞叔叔送我一个特别礼物——30 厘米高的白色小机器人 Buddy，本领可不小。\n\n早晨 Buddy 用柔和歌曲叫我起床、告诉我天气、用英语读新闻。我刷牙时他绕床把脏袜子拾起。\n\n我写作业时他静静坐在桌上。如果我问难题，他双眼会变蓝给出清晰答案，有时还讲个小笑话。\n\n但 Buddy 并不完美：他怕水——一个雨天跑出去，我给他擦了一小时；电池弱，每天下午得“午睡”两小时。\n\n我知道他只是机器，但我喜欢他的陪伴。他让我明白：科技既有用又好玩。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · First conditional (future if)",
+              "en": "First conditional: if + present simple, will + verb.\nUse it for a real, possible future.\n\nIf I press this button, the robot will sing.\nIf you take care of Buddy, he will stay with you for years.\nIf the battery runs out, the robot won't move.\n\nOrder can be reversed (no comma then):\nThe robot will sing if I press this button.\nBuddy won't move if the battery runs out.\n\nUnless = if ... not:\nUnless you charge it, the robot won't start.\n= If you don't charge it, the robot won't start.\n\nTip: DON'T use will in the if clause.\n✗ If I will press this button...\n✓ If I press this button...",
+              "cn": "第一条件句：if + 一般现在时，主句 will + 动词。\n用于真实可能发生的未来。\n\n我按这个键，机器人就唱歌。\n你好好照顾 Buddy，他会陪你很多年。\n电用完机器人就不动了。\n\n前后可以调换（无逗号）：\nThe robot will sing if I press this button.\nBuddy won't move if the battery runs out.\n\nunless = if ... not：\n除非你充电，机器人不会启动。\n= 如果你不充电，机器人不会启动。\n\n提示：if 从句里绝不用 will。\n✗ If I will press this button...\n✓ If I press this button..."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Robots at work",
+              "en": "Robots are no longer in science-fiction films. They are already working all around us.\n\nIn factories, robot arms build cars, pack milk and sort packages day and night. One car factory in Guangzhou has 900 robot arms working with 200 human workers. In hospitals, small robots help doctors do careful operations, and some deliver medicine from room to room. In restaurants, a robot waiter carries soup from the kitchen to your table. At home, a robot vacuum cleaner sweeps the floor while you watch TV.\n\nBut robots cannot do everything. They cannot comfort a sad friend. They cannot write a poem from the heart. They cannot decide what is right or wrong in hard situations.\n\nThe future is not humans OR robots. It is humans AND robots — each doing what they do best.",
+              "cn": "机器人不再只在科幻片里，它们早已走进我们身边。\n\n工厂里：机械臂昼夜组装汽车、包装牛奶、分拣快件。广州一家汽车厂有 900 台机械臂与 200 名工人协作。医院里：小机器人协助医生做精细手术，一些机器人在病房间送药。餐馆里机器人从厨房端汤到餐桌；家里扫地机器人在你看电视时清洁地板。\n\n但机器人不是万能——安慰伤心朋友、写发自内心的诗、在困境中判断是非，这些仍需要人。\n\n未来不是人 VS 机器人，而是人 + 机器人——各展所长，共创未来。"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "module": "Module 3 Animals or plants in danger",
+          "title": "Unit 5 Save the endangered animals",
+          "words": [
+            {
+              "word": "endangered",
+              "phonetic": "/ɪnˈdeɪndʒəd/",
+              "pos": "adj.",
+              "meaning": "濒危的",
+              "example": "The panda is no longer endangered."
+            },
+            {
+              "word": "extinct",
+              "phonetic": "/ɪkˈstɪŋkt/",
+              "pos": "adj.",
+              "meaning": "灭绝的",
+              "example": "Dinosaurs are extinct."
+            },
+            {
+              "word": "tiger",
+              "phonetic": "/ˈtaɪɡə(r)/",
+              "pos": "n.",
+              "meaning": "老虎",
+              "example": "South China tigers are rare."
+            },
+            {
+              "word": "elephant",
+              "phonetic": "/ˈelɪfənt/",
+              "pos": "n.",
+              "meaning": "大象",
+              "example": "Elephants live in Yunnan."
+            },
+            {
+              "word": "whale",
+              "phonetic": "/weɪl/",
+              "pos": "n.",
+              "meaning": "鲸",
+              "example": "Whales are huge sea animals."
+            },
+            {
+              "word": "habitat",
+              "phonetic": "/ˈhæbɪtæt/",
+              "pos": "n.",
+              "meaning": "栖息地",
+              "example": "Pollution damages habitats."
+            },
+            {
+              "word": "reserve",
+              "phonetic": "/rɪˈzɜːv/",
+              "pos": "n.",
+              "meaning": "保护区",
+              "example": "We visited a panda reserve."
+            },
+            {
+              "word": "hunting",
+              "phonetic": "/ˈhʌntɪŋ/",
+              "pos": "n.",
+              "meaning": "狩猎",
+              "example": "Illegal hunting is a crime."
+            },
+            {
+              "word": "poacher",
+              "phonetic": "/ˈpəʊtʃə(r)/",
+              "pos": "n.",
+              "meaning": "偷猎者",
+              "example": "Poachers threaten wild animals."
+            },
+            {
+              "word": "ivory",
+              "phonetic": "/ˈaɪvəri/",
+              "pos": "n.",
+              "meaning": "象牙",
+              "example": "Don't buy ivory products."
+            },
+            {
+              "word": "research",
+              "phonetic": "/rɪˈsɜːtʃ/",
+              "pos": "n./v.",
+              "meaning": "研究",
+              "example": "Scientists do research on whales."
+            },
+            {
+              "word": "donation",
+              "phonetic": "/dəʊˈneɪʃn/",
+              "pos": "n.",
+              "meaning": "捐款",
+              "example": "Small donations can help a lot."
+            },
+            {
+              "word": "survive",
+              "phonetic": "/səˈvaɪv/",
+              "pos": "v.",
+              "meaning": "生存",
+              "example": "Many animals cannot survive pollution."
+            },
+            {
+              "word": "population",
+              "phonetic": "/ˌpɒpjuˈleɪʃn/",
+              "pos": "n.",
+              "meaning": "数量",
+              "example": "The panda population is growing."
+            },
+            {
+              "word": "awareness",
+              "phonetic": "/əˈweənəs/",
+              "pos": "n.",
+              "meaning": "意识",
+              "example": "Raise awareness of animal protection."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A visit to Sanjiangyuan",
+              "en": "Last summer my family joined a five-day nature trip to Sanjiangyuan in Qinghai — the source of the Yangtze, Yellow and Lancang rivers.\n\nSanjiangyuan is home to many rare animals — snow leopards, Tibetan antelopes, black-necked cranes and brown bears. Because of hunting and climate change, their numbers dropped sharply in the last century.\n\nToday, things are changing. Since 2000, the Chinese government has set up large reserves. Over 3,000 rangers ride horses day and night to protect the animals. The Tibetan antelope population went from 20,000 in the 1990s to over 70,000 today.\n\nOn the third morning, our guide pointed to a hill. Far away, a group of Tibetan antelopes were running in the sunshine. Nobody spoke. We just watched quietly.\n\nAt that moment, I understood: protecting animals is protecting a story that has been going on for millions of years, and must not end on our watch.",
+              "cn": "去年夏天我家参加了青海三江源五日自然之旅——这里是长江、黄河、澜沧江的源头。\n\n三江源是许多珍稀动物的家园：雪豹、藏羚羊、黑颈鹤、棕熊。因过度狩猎和气候变化，上世纪它们数量骤减。\n\n如今情况在好转。自 2000 年起中国政府建立大型保护区，3000 多名巡护员昼夜骑马守护动物。藏羚羊从上世纪 90 年代的 2 万只回升到今天的 7 万多只。\n\n第三天清晨向导指向远处山坡——一群藏羚羊在阳光下奔跑。没人说话，我们静静注视。\n\n那一刻我明白：保护动物就是保护一个已存续了数百万年的故事，这故事不能终结于我们这代人。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Present perfect with since / for",
+              "en": "Present perfect: have/has + past participle. Use it for actions that started in the past and continue to now.\n\nfor + period: for ten years, for a long time.\nI have studied English for six years.\nThe government has protected pandas for many decades.\n\nsince + point in time: since 2000, since Monday, since I was a child.\nShe has lived here since 2010.\nI have loved animals since I was three.\n\nQuestions:\nHow long have you studied English?\n— I have studied it for six years.\n— I have studied it since Grade 3.\n\nNote: use present perfect (not simple past) with for/since in this meaning.\n✗ I studied English for six years. (you stopped)\n✓ I have studied English for six years. (still learning)",
+              "cn": "现在完成时：have/has + 过去分词，表过去开始、延续至今的动作。\n\nfor + 一段时间：for ten years, for a long time。\n我学英语六年了。\n政府保护熊猫数十年了。\n\nsince + 时间点：since 2000, since Monday, since I was a child。\n她自 2010 年住在这里。\n我从三岁起就爱动物。\n\n问句：\n你学英语多久了？\n——六年。\n——从三年级起。\n\n注意：表延续性意义必须用现在完成时，不能用一般过去时。\n✗ I studied English for six years.（停了）\n✓ I have studied English for six years.（仍在学）"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · What kids can do",
+              "en": "You might think saving wildlife is a job for scientists and governments. But children can help too.\n\n1) Learn and share. Read about endangered animals. Tell your family the interesting facts. Knowledge is the first step to action.\n\n2) Never buy products from wild animals. Ivory, tiger bones, rare fur and shark fins — say no to them all. If people stop buying, poachers stop hunting.\n\n3) Support a reserve. Many panda or sea-turtle reserves let children adopt an animal with a small donation. In return, you get photos and stories.\n\n4) Be a green tourist. At a zoo or park, don't feed the animals without permission. Don't shout or throw rubbish. Walk softly, watch quietly.\n\nYour hands are small, but thousands of small hands together can protect a forest. Every kind thought counts.",
+              "cn": "你可能以为保护野生动物是科学家和政府的事，孩子其实也能出力。\n\n1) 学习并分享。多读濒危动物资料，把有趣知识讲给家人。知识是行动的第一步。\n\n2) 绝不购买野生动物制品——象牙、虎骨、稀有皮毛、鱼翅通通说不。买家消失，偷猎者也就消失。\n\n3) 支持保护区。许多熊猫、海龟保护区可用小额捐款“领养”动物，回赠照片和故事。\n\n4) 做绿色游客。在动物园或公园未经许可不喂食；不喧哗、不乱扔垃圾；轻步安静观察。\n\n你的手很小，千双小手合力就能守护一片森林。每一份善念都很重要。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "module": "Module 3 Animals or plants in danger",
+          "title": "Unit 6 Plants",
+          "words": [
+            {
+              "word": "plant",
+              "phonetic": "/plɑːnt/",
+              "pos": "n./v.",
+              "meaning": "植物；种植",
+              "example": "We plant trees every spring."
+            },
+            {
+              "word": "seed",
+              "phonetic": "/siːd/",
+              "pos": "n.",
+              "meaning": "种子",
+              "example": "Plant the seed in good soil."
+            },
+            {
+              "word": "soil",
+              "phonetic": "/sɔɪl/",
+              "pos": "n.",
+              "meaning": "土壤",
+              "example": "Rich soil grows strong plants."
+            },
+            {
+              "word": "sunlight",
+              "phonetic": "/ˈsʌnlaɪt/",
+              "pos": "n.",
+              "meaning": "阳光",
+              "example": "Plants need sunlight to grow."
+            },
+            {
+              "word": "grow",
+              "phonetic": "/ɡrəʊ/",
+              "pos": "v.",
+              "meaning": "生长",
+              "example": "My tomatoes are growing fast."
+            },
+            {
+              "word": "bloom",
+              "phonetic": "/bluːm/",
+              "pos": "v./n.",
+              "meaning": "开花",
+              "example": "The flowers bloom in May."
+            },
+            {
+              "word": "root",
+              "phonetic": "/ruːt/",
+              "pos": "n.",
+              "meaning": "根",
+              "example": "The roots go deep into the soil."
+            },
+            {
+              "word": "stem",
+              "phonetic": "/stem/",
+              "pos": "n.",
+              "meaning": "茎",
+              "example": "A flower has a thin stem."
+            },
+            {
+              "word": "species",
+              "phonetic": "/ˈspiːʃiːz/",
+              "pos": "n.",
+              "meaning": "物种",
+              "example": "China has many plant species."
+            },
+            {
+              "word": "rare",
+              "phonetic": "/reə(r)/",
+              "pos": "adj.",
+              "meaning": "稀有的",
+              "example": "The Ginkgo tree is very rare."
+            },
+            {
+              "word": "botanist",
+              "phonetic": "/ˈbɒtənɪst/",
+              "pos": "n.",
+              "meaning": "植物学家",
+              "example": "Botanists study plants."
+            },
+            {
+              "word": "medicine",
+              "phonetic": "/ˈmedsn/",
+              "pos": "n.",
+              "meaning": "药物",
+              "example": "Many medicines come from plants."
+            },
+            {
+              "word": "garden",
+              "phonetic": "/ˈɡɑːdn/",
+              "pos": "n.",
+              "meaning": "花园",
+              "example": "Our school has a botanical garden."
+            },
+            {
+              "word": "ecosystem",
+              "phonetic": "/ˈiːkəʊˌsɪstəm/",
+              "pos": "n.",
+              "meaning": "生态系统",
+              "example": "Plants keep the ecosystem healthy."
+            },
+            {
+              "word": "oxygen",
+              "phonetic": "/ˈɒksɪdʒən/",
+              "pos": "n.",
+              "meaning": "氧气",
+              "example": "Green plants release oxygen."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A little gardener",
+              "en": "When I was six, my grandfather gave me a small flower pot and a few tomato seeds. That was my first garden.\n\nHe told me three secrets. First, plants need good soil — not too dry and not too wet. Second, plants love sunlight, so put the pot where the morning sun can reach. Third, plants are like children — they need love and patience.\n\nI watered the seeds every day and checked them every hour. On the seventh morning, I saw two tiny green leaves! I shouted so loud that the whole family came running.\n\nThree months later, I had ten shining red tomatoes. Mum made a salad, and we all ate the tomatoes I had grown. It tasted like sunshine.\n\nI am fourteen now. I have a larger garden on our balcony — lettuce, chilli peppers, mint and even a small lemon tree. Plants have taught me that slow is beautiful, kindness grows life, and every seed carries a whole story inside.",
+              "cn": "六岁时爷爷给我一个小花盆和几粒番茄种子——那是我的第一座花园。\n\n他告诉我三个秘诀：一、土要适中——不能太干也不能太湿；二、植物爱阳光，把盆放在能晒到早晨太阳的地方；三、植物像孩子，需要耐心和关爱。\n\n我每天浇水，每小时都去看。第七天早上看到两片嫩绿小叶！我大叫，全家都跑来了。\n\n三个月后，我收获 10 颗红番茄。妈妈做了沙拉，全家一起品尝——尝起来像阳光。\n\n如今我 14 岁，阳台上有更大的花园——生菜、辣椒、薄荷，甚至一棵小柠檬树。植物教了我：慢也是美丽，善意孕育生命，每一粒种子里都藏着一整个故事。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Reflexive pronouns",
+              "en": "Reflexive pronouns end in -self / -selves.\n\nI → myself       We → ourselves\nYou → yourself   You → yourselves\nHe → himself     They → themselves\nShe → herself\nIt → itself\n\nUse 1 — action returns to the doer:\nI watered the plants by myself.\nThe cat washes itself every day.\nWe taught ourselves to cook.\n\nUse 2 — emphasis:\nGrandpa himself showed me the secret.\nThe flowers themselves were very small.\n\nFixed phrases:\nby myself = alone.\nenjoy yourself = have a good time.\nhelp yourself = take what you want.\n\nExamples:\nShe grew the tomatoes by herself.\nEnjoy yourselves at the garden party!\nPlease help yourself to some salad.",
+              "cn": "反身代词以 -self/-selves 结尾。\n\n我 → myself        我们 → ourselves\n你 → yourself      你们 → yourselves\n他 → himself       他们 → themselves\n她 → herself\n它 → itself\n\n用法 1——动作回到自己：\n我独自浇花。\n猫每天自己梳洗。\n我们自学做饭。\n\n用法 2——强调：\n爷爷亲自告诉我秘诀。\n花本身很小。\n\n固定短语：\nby myself = 独自。\nenjoy yourself = 玩得开心。\nhelp yourself = 请自便取用。\n\n例：\n她独自种番茄。\n在花园派对上玩得开心！\n请自便吃点沙拉。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Green doctors",
+              "en": "Plants are our oldest doctors. For thousands of years, people have used plants to cure illnesses.\n\nIn ancient China, Li Shizhen travelled across the country for 27 years and recorded 1,892 kinds of plants, animals and minerals in Bencao Gangmu — a book still studied today.\n\nModern science has proved many plant medicines. The willow tree gives us aspirin. The Pacific yew helps cancer patients. Chinese scientist Tu Youyou found a medicine from a small plant called qinghao. Her medicine has saved millions of lives from malaria. In 2015, she won the Nobel Prize.\n\nBut many plant species are disappearing. A forest may contain a plant that could cure a future illness. If the plant dies before we find it, that hope dies too.\n\nThat is why we must protect rainforests, mountains and even city parks. Every plant is a page in the green book of life. Lose the page, and the story is gone forever.",
+              "cn": "植物是我们最古老的医生。几千年来人们一直用植物治病。\n\n古代中国李时珍跋山涉水 27 年，在《本草纲目》中记录 1892 种植物、动物和矿物——至今仍被医生研读。\n\n现代科学证实许多药物来自植物：柳树给了我们阿司匹林，太平洋紫杉帮助癌症患者。中国科学家屠呦呦从青蒿中发现药物，挽救了数百万疟疾患者的生命，2015 年荣获诺贝尔奖。\n\n但许多植物物种正在消失。一片森林里可能藏着某种植物能治未来的疾病；若植物先于发现而消亡，希望也会跟着消失。\n\n这也是为什么要保护雨林、山地，甚至城市公园。每一株植物都是“绿色生命之书”中的一页。失去一页，故事便永久中断。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "module": "Module 4 The universe",
+          "title": "Unit 7 The moon",
+          "words": [
+            {
+              "word": "moon",
+              "phonetic": "/muːn/",
+              "pos": "n.",
+              "meaning": "月球",
+              "example": "The moon shines at night."
+            },
+            {
+              "word": "Earth",
+              "phonetic": "/ɜːθ/",
+              "pos": "n.",
+              "meaning": "地球",
+              "example": "The Earth is round."
+            },
+            {
+              "word": "orbit",
+              "phonetic": "/ˈɔːbɪt/",
+              "pos": "n./v.",
+              "meaning": "轨道",
+              "example": "The moon orbits the Earth."
+            },
+            {
+              "word": "gravity",
+              "phonetic": "/ˈɡrævəti/",
+              "pos": "n.",
+              "meaning": "引力",
+              "example": "The moon has weak gravity."
+            },
+            {
+              "word": "rocket",
+              "phonetic": "/ˈrɒkɪt/",
+              "pos": "n.",
+              "meaning": "火箭",
+              "example": "A rocket carries astronauts."
+            },
+            {
+              "word": "astronaut",
+              "phonetic": "/ˈæstrənɔːt/",
+              "pos": "n.",
+              "meaning": "宇航员",
+              "example": "The astronaut walked on the moon."
+            },
+            {
+              "word": "spacecraft",
+              "phonetic": "/ˈspeɪskrɑːft/",
+              "pos": "n.",
+              "meaning": "航天器",
+              "example": "China's spacecraft landed on Mars."
+            },
+            {
+              "word": "surface",
+              "phonetic": "/ˈsɜːfɪs/",
+              "pos": "n.",
+              "meaning": "表面",
+              "example": "The moon's surface has craters."
+            },
+            {
+              "word": "crater",
+              "phonetic": "/ˈkreɪtə(r)/",
+              "pos": "n.",
+              "meaning": "陨石坑",
+              "example": "There are huge craters on the moon."
+            },
+            {
+              "word": "dark side",
+              "phonetic": "/dɑːk saɪd/",
+              "pos": "n.",
+              "meaning": "背面",
+              "example": "China landed on the dark side of the moon."
+            },
+            {
+              "word": "launch",
+              "phonetic": "/lɔːntʃ/",
+              "pos": "v.",
+              "meaning": "发射",
+              "example": "The rocket will launch at dawn."
+            },
+            {
+              "word": "explore",
+              "phonetic": "/ɪkˈsplɔː(r)/",
+              "pos": "v.",
+              "meaning": "探索",
+              "example": "Humans love to explore space."
+            },
+            {
+              "word": "mission",
+              "phonetic": "/ˈmɪʃn/",
+              "pos": "n.",
+              "meaning": "任务",
+              "example": "The Chang'e mission brought moon rocks back."
+            },
+            {
+              "word": "Chang'e",
+              "phonetic": "/tʃæŋˈɜː/",
+              "pos": "n.",
+              "meaning": "嫦娥（探测器）",
+              "example": "Chang'e-5 returned to Earth in 2020."
+            },
+            {
+              "word": "dream",
+              "phonetic": "/driːm/",
+              "pos": "n./v.",
+              "meaning": "梦想",
+              "example": "Humans have dreamed of the moon for thousands of years."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A journey to the moon",
+              "en": "For thousands of years, people have looked up at the moon and dreamed. In ancient China there was a lovely story of Chang'e flying to the moon with a small white rabbit. But it was only a story.\n\nEverything changed in 1969. Two American astronauts became the first humans to walk on the moon. Half a century later, in 2020, China's Chang'e-5 landed on the moon, collected 1.7 kilograms of moon rocks and returned safely. In 2024, Chang'e-6 went to the far (dark) side of the moon — the first mission in history to bring back rocks from that mysterious place.\n\nThe moon is 384,000 kilometres from Earth, but the trip takes about four days. There is no air, no rain, no wind and no sound. Daytime surface reaches 127°C; at night it falls to −173°C. An astronaut's suit is like a small spaceship.\n\nFrom dream to footprint, from footprint to rocks in the lab — humans have come a long way. The next step might be Mars.",
+              "cn": "几千年来人们仰望月亮，怀着梦想。古代中国有嫦娥抱玉兔奔月的传说，但那长时间只是故事。\n\n1969 年一切改变——两位美国宇航员成为踏上月球的第一批人类。半世纪后的 2020 年，中国嫦娥五号登月采回 1.7 公斤月壤并安全返航；2024 年嫦娥六号更进一步，前往月球背面，成为人类史上首次从月背取样返回的任务。\n\n月球距地球 38.4 万公里，依然要飞行约 4 天。那里没有空气、雨水、风和声音；白天地表 127℃，夜晚 −173℃。宇航服就像一艘小型飞船。\n\n从梦想到脚印，从脚印到实验室里的月岩——人类一路走来。下一站或许是火星。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Modal verbs of possibility",
+              "en": "Use modal verbs to show how sure you are:\n\nmust + verb → very sure (~95%):\nThe rocket must be ready. The engines are hot.\nHe must be an astronaut; he has the suit.\n\nmay / might + verb → possible (~50%):\nIt may rain tomorrow, so the launch may be delayed.\nThere might be water on the dark side of the moon.\n\ncould + verb → possible (a little less sure):\nWe could reach Mars in twenty years.\nThere could be life on other planets.\n\ncan't + verb → very sure it is NOT:\nThat can't be the moon; it is too small.\nYou can't be a real astronaut — you are only thirteen!\n\nTips:\n- No \"to\" after these modals: must go (✓), must to go (✗).\n- \"must\" for guesses; \"have to\" for obligations.",
+              "cn": "情态动词表达确信程度：\n\nmust——很确定（约 95%）：\n火箭肯定已就绪——发动机发烫了。\n他一定是宇航员，身上有航天服。\n\nmay / might——有可能（约 50%）：\n明天可能下雨，发射也许推迟。\n月球背面可能有水。\n\ncould——可能（比 may 略弱）：\n二十年内也许能登陆火星。\n其他行星上可能有生命。\n\ncan't——很确定“不是”：\n那不可能是月亮，太小了。\n你不可能是真宇航员——才 13 岁！\n\n注意：\n- 情态动词后不加 to：must go（✓），must to go（✗）。\n- must 表猜测；have to 表义务。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Future cities on the moon",
+              "en": "What will life on the moon be like? Scientists are already drawing plans for the first moon bases.\n\nA moon base will probably be built inside a large crater — the crater walls can block dangerous radiation from the Sun. Another good place is a lava tube, a natural tunnel under the surface. Some tubes are so big that a small town could fit inside.\n\nEnergy will come from the Sun. Huge solar panels will catch sunlight. Water may come from ice frozen deep in the moon's south pole. Food will grow inside glass greenhouses. Rice, lettuce and tomatoes have already grown in space stations.\n\nOf course, there are still problems. The moon has only one-sixth of Earth's gravity. After six months the human body becomes weaker. We will need special exercise machines every day.\n\nYou are fourteen today. By the time you are forty, humans may live on the moon. And who knows — you might be one of them.",
+              "cn": "月球上的生活会是什么样？科学家已在为首个月球基地绘制蓝图。\n\n基地可能建在大型陨石坑里——坑壁可挡住危险的太阳辐射；另一个理想地点是月表之下的天然熔岩管道，有些管道大到可容纳一整个小城。\n\n能源来自太阳——巨型光伏板吸收阳光。水可能来自月球南极深处的冰。食物在玻璃温室里种植——稻米、生菜、番茄已在空间站成功生长。\n\n当然挑战重重：月球引力只有地球的六分之一，半年后人体会变弱，每天都需要特殊锻炼器械。\n\n你今年 14 岁，当你 40 岁时，人类也许已在月球生活。——谁知道呢，你或许就是其中之一。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "module": "Module 4 The universe",
+          "title": "Unit 8 A green world",
+          "words": [
+            {
+              "word": "green",
+              "phonetic": "/ɡriːn/",
+              "pos": "adj.",
+              "meaning": "绿色的；环保的",
+              "example": "We live a green life."
+            },
+            {
+              "word": "environment",
+              "phonetic": "/ɪnˈvaɪrənmənt/",
+              "pos": "n.",
+              "meaning": "环境",
+              "example": "Protect the environment."
+            },
+            {
+              "word": "pollution",
+              "phonetic": "/pəˈluːʃn/",
+              "pos": "n.",
+              "meaning": "污染",
+              "example": "Air pollution harms our lungs."
+            },
+            {
+              "word": "climate",
+              "phonetic": "/ˈklaɪmət/",
+              "pos": "n.",
+              "meaning": "气候",
+              "example": "Climate change is a real problem."
+            },
+            {
+              "word": "warming",
+              "phonetic": "/ˈwɔːmɪŋ/",
+              "pos": "n.",
+              "meaning": "变暖",
+              "example": "Global warming is serious."
+            },
+            {
+              "word": "recycle",
+              "phonetic": "/ˌriːˈsaɪkl/",
+              "pos": "v.",
+              "meaning": "回收",
+              "example": "Recycle paper, plastic and glass."
+            },
+            {
+              "word": "reuse",
+              "phonetic": "/ˌriːˈjuːz/",
+              "pos": "v.",
+              "meaning": "重复使用",
+              "example": "Reuse the plastic bags."
+            },
+            {
+              "word": "reduce",
+              "phonetic": "/rɪˈdjuːs/",
+              "pos": "v.",
+              "meaning": "减少",
+              "example": "Reduce plastic waste."
+            },
+            {
+              "word": "plastic",
+              "phonetic": "/ˈplæstɪk/",
+              "pos": "n.",
+              "meaning": "塑料",
+              "example": "Plastic takes 400 years to break down."
+            },
+            {
+              "word": "rubbish",
+              "phonetic": "/ˈrʌbɪʃ/",
+              "pos": "n.",
+              "meaning": "垃圾",
+              "example": "Don't drop rubbish on the ground."
+            },
+            {
+              "word": "sort",
+              "phonetic": "/sɔːt/",
+              "pos": "v.",
+              "meaning": "分类",
+              "example": "Sort your rubbish every day."
+            },
+            {
+              "word": "carbon",
+              "phonetic": "/ˈkɑːbən/",
+              "pos": "n.",
+              "meaning": "碳",
+              "example": "We must reduce carbon emissions."
+            },
+            {
+              "word": "footprint",
+              "phonetic": "/ˈfʊtprɪnt/",
+              "pos": "n.",
+              "meaning": "足迹",
+              "example": "Leave a small carbon footprint."
+            },
+            {
+              "word": "renewable",
+              "phonetic": "/rɪˈnjuːəbl/",
+              "pos": "adj.",
+              "meaning": "可再生的",
+              "example": "Solar is a renewable energy."
+            },
+            {
+              "word": "responsibility",
+              "phonetic": "/rɪˌspɒnsəˈbɪləti/",
+              "pos": "n.",
+              "meaning": "责任",
+              "example": "We share the responsibility to protect Earth."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A green month at our school",
+              "en": "Last month our school held a Green Month. Every class had to find a green idea and put it into action.\n\nOur class chose Zero Plastic Lunch. Instead of disposable boxes, each student brought a glass or metal lunchbox from home, and our own spoons, chopsticks and water bottles. By the end of the first week we had saved over 600 plastic boxes!\n\nClass Three started a paper hospital. They collected old exercise books, pulled out any clean pages, and sewed them into new notebooks. The notebooks were given to a village school in Guangxi.\n\nClass Seven built a green corner on the balcony with mint, basil and small tomato plants. On Wednesday afternoons, everyone could take a leaf home.\n\nMost creative was Class Five — on Saturday they made a second-hand market selling old toys, books and shoes. The money (1,856 yuan) went to an animal reserve in Yunnan.\n\nGreen Month taught us that saving the Earth is not one big act. It is many small ones, done by many small hands, every day.",
+              "cn": "上个月我校举办“绿色之月”，每班须想出一个环保点子并付诸行动。\n\n我们班选了“零塑午餐”：不用一次性餐盒，每人从家带玻璃或金属饭盒、勺子、筷子和水杯。第一周就省下 600 多个塑料盒！\n\n三班办起“纸张医院”：收集旧作业本，抽出干净的页，缝成新笔记本送给广西山区小学。\n\n七班在阳台打造绿色小角，种薄荷、罗勒和小番茄苗。每周三下午大家都能摘一片叶子回家。\n\n最富创意的是五班——周六办跳蚤市场，同学卖旧玩具、旧书、旧鞋，筹得 1856 元全数捐给云南一家动物保护区。\n\n“绿色之月”让我们明白：拯救地球不是一件大事，而是许多双小手天天做的许多小事。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Should / ought to / had better",
+              "en": "Three common ways to give suggestions:\n\n1) should + verb (most common, neutral):\nWe should plant more trees.\nYou shouldn't waste water.\nShould I take a cloth bag? — Yes, you should.\n\n2) ought to + verb (slightly stronger, a moral duty):\nWe ought to protect the Earth.\nPeople ought to respect wildlife.\nNegative: ought not to / oughtn't to.\n\n3) had better + verb (a warning, strong hint):\nYou had better save water, or the bill will be high.\nWe had better leave now; it is getting dark.\nNegative: had better not + verb.\n\nCompare:\nshould = my good advice\nought to = society's expectation\nhad better = a warning, stronger than the other two",
+              "cn": "提建议常用三种结构：\n\n1) should + 动词（最常用，中性）：\n我们应该多种树。\n你不应该浪费水。\n我该带布袋吗？——该。\n\n2) ought to + 动词（稍强，道义上应该）：\n我们应当保护地球。\n人们应当尊重野生动物。\n否定：ought not to / oughtn't to。\n\n3) had better + 动词（警告 / 强烈建议）：\n你最好节约水，不然账单会高。\n我们最好现在走，天要黑了。\n否定：had better not + 动词。\n\n对比：\nshould = 我的好建议\nought to = 社会普遍期望\nhad better = 语气更强的警告"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Small steps, big world",
+              "en": "Climate change sounds huge — forests on fire, ice melting, oceans rising. But the biggest journey starts with a single step. Here are five small steps every student can take:\n\n1) Walk or cycle when the trip is short. A 2-kilometre walk saves about half a kilogram of carbon.\n\n2) Turn off lights, computers and chargers when you leave a room. Don't let them sleep — switch them off.\n\n3) Eat local food. Apples from a nearby orchard travel 20 kilometres; oranges from another country travel 20,000.\n\n4) Sort your rubbish. Paper, metal, plastic and kitchen waste all go to different bins. Proper sorting cuts the rubbish that goes to landfill by half.\n\n5) Plant something — even a mint leaf on your windowsill. Green life cleans the air and makes you smile.\n\nA single person can't save the world. But a single person can change one home. A hundred homes can change a street. A million streets can change a planet.",
+              "cn": "气候变化听来巨大——森林大火、冰川融化、海平面上升。但最长的旅程始于一步。学生可走五小步：\n\n1) 短途步行或骑车。2 公里步行约少排 0.5 公斤碳。\n\n2) 离开房间关灯、关电脑、拔充电器——别让它们“睡觉”，直接关机。\n\n3) 吃本地食物。附近果园的苹果跑 20 公里，进口橙子跑 2 万公里。\n\n4) 垃圾分类。纸、金、塑、厨余各自分箱。分好后送去填埋的垃圾能减少一半。\n\n5) 种点东西——哪怕窗台上一株薄荷。绿色生命净化空气，也让你微笑。\n\n一个人救不了世界，却能改变一个家；百家能改变一条街；百万街道能改变一颗星球。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

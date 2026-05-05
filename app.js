@@ -11,41 +11,113 @@ function _bust(url) {
   return url + (url.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now();
 }
 
+// 🆕 教材 JSON 的分片加载策略
+// ------------------------------------------------------------
+// 背景：hj.json 全量 380KB，切到沪教版时首屏偏慢。按年级拆成
+//      hj_grade7.json / hj_grade8.json / hj_grade9.json 后，
+//      单年级只需 ~110KB（降 70%）。
+//
+// 策略：loadTextbook() 优先拉 {tb}_{grade}.json 分片；若 404 或解析失败，
+//      自动回退到整册 {tb}.json（保证旧部署 / 未拆分教材仍能工作）。
+//
+// 对外行为保持不变：textbookData / _currentTextbookMeta 的结构与原来一致，
+// 只是 textbookData 里只会有"当前年级"那一个 key（原来也是只渲染当前年级，
+// 无副作用）。
+//
+// 🆕 已拆分教材白名单：列入此表的教材会先尝试按年级拉分片
+const TEXTBOOK_SHARDED = { hj: true };
+
+// 教材级缓存：{ tb: { grade: data } } —— 同教材同年级不重复拉取
+const _textbookShardCache = {};
+// 整册兜底缓存：{ tb: data }
+const _textbookFullCache = {};
+
 // 根据 state.ctx 构造教材 JSON 路径（支持未来多教材版本）
 function textbookJsonPath() {
   const id = state && state.ctx && state.ctx.textbook ? state.ctx.textbook : 'jk';
   return 'data/textbooks/' + id + '.json';
 }
 
+// 🆕 拼接分片路径
+function _textbookShardPath(tb, gradeKey) {
+  return 'data/textbooks/' + tb + '_' + gradeKey + '.json';
+}
+
+// 🆕 真正执行 fetch 的内部工具，返回 JSON 或 null（不抛）
+async function _fetchJson(url) {
+  try {
+    const res = await fetch(_bust(url));
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
 // 异步加载教材 JSON，转换成原来 textbookData 的结构
 async function loadTextbook() {
-  const url = textbookJsonPath();
-  try {
-    const res = await fetch(url + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    _currentTextbookMeta = data.meta || null;
+  const tb = (state && state.ctx && state.ctx.textbook) || 'jk';
+  const gradeKey = 'grade' + ((state && state.ctx && state.ctx.grade) || 3);
+  const term = (state && state.ctx && state.ctx.term) || '上';
 
-    // 把 grades.grade3.上/下 结构展平成 textbookData[grade3] = { title, units, term 一起 }
-    const out = {};
-    const term = (state && state.ctx && state.ctx.term) || '上';
-    for (const [gk, terms] of Object.entries(data.grades || {})) {
-      const units = (terms && terms[term]) || [];
-      const gnum = parseInt(String(gk).replace('grade',''), 10);
-      const gradeText = ({1:'小学一年级',2:'小学二年级',3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[gnum] || gk;
-      const termText = term === '上' ? '上册' : '下册';
-      out[gk] = {
-        title: gradeText + termText,
-        units: units
-      };
+  let data = null;
+  let loadedFrom = '';
+
+  // 1) 优先走分片（按年级）
+  if (TEXTBOOK_SHARDED[tb]) {
+    if (_textbookShardCache[tb] && _textbookShardCache[tb][gradeKey]) {
+      data = _textbookShardCache[tb][gradeKey];
+      loadedFrom = 'shard-cache';
+    } else {
+      const shardUrl = _textbookShardPath(tb, gradeKey);
+      data = await _fetchJson(shardUrl);
+      if (data) {
+        if (!_textbookShardCache[tb]) _textbookShardCache[tb] = {};
+        _textbookShardCache[tb][gradeKey] = data;
+        loadedFrom = 'shard:' + shardUrl;
+      }
     }
-    textbookData = out;
-    console.log('[教材] 已加载', url, '教材版本=' + (data.meta && data.meta.name));
-    return true;
-  } catch(err) {
-    console.error('[教材] 加载失败:', url, err);
+  }
+
+  // 2) 分片不可用（未拆 / 404）→ 回退到整册
+  if (!data) {
+    if (_textbookFullCache[tb]) {
+      data = _textbookFullCache[tb];
+      loadedFrom = loadedFrom || 'full-cache';
+    } else {
+      const fullUrl = textbookJsonPath();
+      data = await _fetchJson(fullUrl);
+      if (data) {
+        _textbookFullCache[tb] = data;
+        loadedFrom = loadedFrom ? (loadedFrom + ' (fallback→full)') : ('full:' + fullUrl);
+      }
+    }
+  }
+
+  if (!data) {
+    console.error('[教材] 加载失败: textbook=' + tb + ', grade=' + gradeKey);
     return false;
   }
+
+  _currentTextbookMeta = data.meta || null;
+
+  // 把 grades.grade3.上/下 结构展平成 textbookData[grade3] = { title, units }
+  const out = {};
+  for (const [gk, terms] of Object.entries(data.grades || {})) {
+    const units = (terms && terms[term]) || [];
+    const gnum = parseInt(String(gk).replace('grade',''), 10);
+    const gradeText = ({1:'小学一年级',2:'小学二年级',3:'小学三年级',4:'小学四年级',5:'小学五年级',6:'小学六年级',7:'初中一年级',8:'初中二年级',9:'初中三年级'})[gnum] || gk;
+    const termText = term === '上' ? '上册' : '下册';
+    out[gk] = {
+      title: gradeText + termText,
+      units: units
+    };
+  }
+  textbookData = out;
+  console.log('[教材] 已加载 (' + loadedFrom + ') 教材版本=' + (data.meta && data.meta.name) +
+              ' · 年级=' + gradeKey + ' · 学期=' + term +
+              ' · 单元数=' + ((out[gradeKey] && out[gradeKey].units.length) || 0));
+  return true;
 }
 
 // 语法
@@ -3442,19 +3514,21 @@ if ('speechSynthesis' in window) {
   check();
 })();
 
-// 切换教材或学期时重新加载数据
-// 把 applyContextChange 包装一层：检测 textbook/term 变化时再 load 一次
+// 切换教材 / 学期 / 年级时重新加载数据
+// 把 applyContextChange 包装一层：检测 textbook/term/grade 变化时再 load 一次
+// （🆕 grade 变化也触发：分片教材需要按年级拉新文件；整册教材命中内存缓存，零网络开销）
 const _originalApplyContextChange = applyContextChange;
 // 🆕 初始化为 bootstrap 已加载的值，避免第一次调用重复拉取教材
 let _lastLoadedTextbook = (state && state.ctx && state.ctx.textbook) || null;
 let _lastLoadedTerm     = (state && state.ctx && state.ctx.term)     || null;
+let _lastLoadedGrade    = (state && state.ctx && state.ctx.grade)    || null;
 applyContextChange = async function() {
   const tb = state.ctx.textbook;
   const tm = state.ctx.term;
+  const gr = state.ctx.grade;
+  let needReload = false;
   if (tb !== _lastLoadedTextbook) {
-    _lastLoadedTextbook = tb;
-    _lastLoadedTerm = tm;
-    // 🆕 先按静态白名单把年级对齐到该教材覆盖范围（立即反映在下拉），再拉教材 JSON
+    // 🆕 切教材时，先按静态白名单把年级对齐到该教材覆盖范围（立即反映在下拉），再拉教材 JSON
     try {
       const allow = TEXTBOOK_GRADES[tb] || [1,2,3,4,5,6,7,8,9];
       if (allow.length > 0 && !allow.includes(state.ctx.grade)) {
@@ -3462,10 +3536,17 @@ applyContextChange = async function() {
         state.currentGrade = gradeNumToKey[state.ctx.grade] || state.currentGrade;
       }
     } catch(e){}
-    await loadTextbook();
+    needReload = true;
   } else if (tm !== _lastLoadedTerm) {
+    needReload = true;
+  } else if (gr !== _lastLoadedGrade) {
+    needReload = true;
+  }
+  if (needReload) {
     await loadTextbook();
-    _lastLoadedTerm = tm;
+    _lastLoadedTextbook = state.ctx.textbook;
+    _lastLoadedTerm     = state.ctx.term;
+    _lastLoadedGrade    = state.ctx.grade;
   }
   _originalApplyContextChange();
 };
