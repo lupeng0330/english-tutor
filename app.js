@@ -768,11 +768,26 @@ function renderReadingEx() {
         </label>`;
       }).join('');
     } else {
-      inputHtml = `<textarea rows="2" class="rex-input w-full text-sm border border-slate-200 rounded-lg p-2 focus:outline-none focus:border-indigo-400" placeholder="用英文回答…"></textarea>`;
+      // 🆕 固定最小高度，禁止手动拖拽 resize（手机端误触常见），输入时自动按内容扩展
+      inputHtml = `<textarea rows="2" data-autogrow="1" style="resize:none;overflow:hidden;min-height:56px;" class="rex-input w-full text-sm border border-slate-200 rounded-lg p-2 focus:outline-none focus:border-indigo-400" placeholder="用英文回答…"></textarea>`;
     }
     const fb = `<div class="rex-feedback hide mt-2 text-xs"></div>`;
     row.innerHTML = qHtml + inputHtml + fb;
     list.appendChild(row);
+  });
+
+  // 🆕 为所有带 data-autogrow 的 textarea 绑定"按内容自动扩展高度"
+  //    原理：每次 input 事件都先把 height 归零再赋 scrollHeight，完美贴合内容
+  list.querySelectorAll('textarea[data-autogrow]').forEach((ta) => {
+    const autoGrow = () => {
+      ta.style.height = 'auto';
+      ta.style.height = (ta.scrollHeight + 2) + 'px';
+    };
+    ta.addEventListener('input', autoGrow);
+    // 聚焦时也触发一次，避免"首次输入一个字符看起来没变化"
+    ta.addEventListener('focus', autoGrow);
+    // 初始测算
+    autoGrow();
   });
 }
 
