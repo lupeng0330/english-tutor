@@ -1,0 +1,83 @@
+name: 📦 Auto Version Bump & Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compute next version
+        id: ver
+        run: |
+          python3 << 'EOF'
+          import subprocess, re, datetime, calendar, os
+
+          hash_short = subprocess.check_output(
+              ['git', 'rev-parse', '--short', 'HEAD']).decode().strip()
+          now = datetime.datetime.utcnow()
+          date_str = now.strftime('%Y%m%d')
+          iso_year, iso_week = now.isocalendar()[0], now.isocalendar()[1]
+
+          old_big = old_small = 0
+          old_date = ''
+          try:
+              first = open('version.txt').read().split('\n')[0].strip()
+              m = re.match(r'(\d{8})V(\d+)\.(\d+)', first)
+              if m:
+                  old_date = m.group(1)
+                  old_big  = int(m.group(2))
+                  old_small = int(m.group(3))
+          except:
+              pass
+
+          # 跨周判断：旧日期的 YYYYMMDD 前 6 位与新日期相同则同周
+          if old_date and old_date[:6] == date_str[:6]:
+              new_big, new_small = old_big, old_small + 1
+          else:
+              new_big, new_small = old_big + 1, 1
+
+          new_ver = '{}V{:02d}.{:02d}'.format(date_str, new_big, new_small)
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f'version={new_ver}\n')
+              f.write(f'hash={hash_short}\n')
+              f.write(f'utc={now.isoformat()}Z\n')
+          print(f'computed version={new_ver}')
+          EOF
+
+      - name: Write version.txt
+        run: |
+          echo "${{ steps.ver.outputs.version }} ${{ steps.ver.outputs.hash }} (${{ steps.ver.outputs.utc }})" > version.txt
+          cat version.txt
+
+      - name: Commit version.txt
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add version.txt
+          git commit -m "ci: auto-bump version to ${{ steps.ver.outputs.version }}" || true
+          git push
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: .
+          single-commit: true
+          clean: true
+          clean-exclude: |
+            .git
+            .github
+            scripts

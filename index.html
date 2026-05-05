@@ -161,6 +161,14 @@
         </div>
       </div>
 
+      <!-- 🆕 强制更新按钮（位于统计卡片右上角小角标位置） -->
+      <div class="flex justify-end mb-2 -mt-1">
+        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1 px-2 py-1 rounded-lg bg-white border border-slate-200 text-xs text-slate-400 hover:text-blue-600 hover:border-blue-300 transition">
+          <span id="forceUpdateIcon">🔄</span>
+          <span id="forceUpdateLabel">检查更新</span>
+        </button>
+      </div>
+
       <!-- 三大主入口（精简，不再和侧栏重复；首页用作情境化入口） -->
       <div class="grid grid-cols-3 gap-3">
         <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('textbook')">

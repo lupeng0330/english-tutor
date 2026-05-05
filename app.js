@@ -398,7 +398,51 @@ function markWordKnown(word) {
   renderHomeStats();
 }
 
-// 🆕 标记"阅读自测"一道题的答题状态（提交时调用）
+// 🆕 强制检查更新（绕过所有缓存，读取最新 version.txt 并重载页面）
+//    由首页「检查更新」按钮触发；同时更新左下角角标
+async function forceCheckUpdate() {
+  const btnIcon  = document.getElementById('forceUpdateIcon');
+  const btnLabel = document.getElementById('forceUpdateLabel');
+  if (btnIcon)  btnIcon.textContent  = '⏳';
+  if (btnLabel) btnLabel.textContent = '检查中…';
+  try {
+    // 带 no-store 强制拉最新
+    const r = await fetch('./version.txt?_=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const txt  = (await r.text()).trim();
+    const ver  = txt.split(/\r?\n/)[0];          // 首行即版本号
+    const cur  = (window.__APP_VERSION || '');
+    if (ver !== cur) {
+      // 版本不同 → 弹提示，让用户手动刷新（或直接 reload）
+      if (btnLabel) btnLabel.textContent = '发现新版本';
+      if (btnIcon)  btnIcon.textContent  = '✅';
+      if (confirm(`发现新版本 ${ver}（当前 ${cur}），点击「确定」刷新页面到最新。`)) {
+        // 用最新版本号作为 ?v= 参数 reload，确保所有资源均带新 ?v=
+        const url = new URL(location.href);
+        url.searchParams.set('v', ver);
+        location.href = url.toString();
+      } else {
+        if (btnIcon)  btnIcon.textContent  = '🔄';
+        if (btnLabel) btnLabel.textContent = '检查更新';
+      }
+    } else {
+      if (btnIcon)  btnIcon.textContent  = '✔️';
+      if (btnLabel) btnLabel.textContent = '已是最新';
+      setTimeout(() => {
+        if (btnIcon)  btnIcon.textContent  = '🔄';
+        if (btnLabel) btnLabel.textContent = '检查更新';
+      }, 2000);
+    }
+  } catch(e) {
+    if (btnIcon)  btnIcon.textContent  = '❌';
+    if (btnLabel) btnLabel.textContent = '检查失败';
+    setTimeout(() => {
+      if (btnIcon)  btnIcon.textContent  = '🔄';
+      if (btnLabel) btnLabel.textContent = '检查更新';
+    }, 2500);
+  }
+}
+window.forceCheckUpdate = forceCheckUpdate;
 // ctx 必传：{ textbook, grade, term, uid, lessonIdx, qIdx }
 function markReadingExAnswer(ctx, ok) {
   if (!ctx || !ctx.uid) return;
