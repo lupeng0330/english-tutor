@@ -146,11 +146,28 @@ python scripts/ai_generate_questions.py --grade 5
 ```bash
 # 一键生成所有新增的音频（已存在的会跳过）
 python gen_audio.py
+
+# 分篇 + 多角色（推荐）：教科版 grade6 下
+python gen_audio_v2.py --grade grade6 --term 下
+
+# 沪教牛津版 · 全册课文（每册 24 篇：Reading / Grammar focus / More reading）
+python gen_audio_v2.py --textbook hj --grade grade7 --term 上    # → grade7A_u*_L*.mp3
+python gen_audio_v2.py --textbook hj --grade grade7 --term 下    # → grade7B_u*_L*.mp3
+python gen_audio_v2.py --textbook hj --grade grade8 --term 上    # → grade8A_u*_L*.mp3
+python gen_audio_v2.py --textbook hj --grade grade8 --term 下    # → grade8B_u*_L*.mp3
+python gen_audio_v2.py --textbook hj --grade grade9 --term 上    # → grade9A_u*_L*.mp3
+python gen_audio_v2.py --textbook hj --grade grade9 --term 下    # → grade9B_u*_L*.mp3
+# 合计 6 册 × 24 篇 = 144 个 mp3
+
+# 沪教七上 32 道听力题（W/M 双人对话，自动男女声）
+python gen_hj_listening.py
+# → 生成 audio/hj_listening_g7_01.mp3 ~ audio/hj_listening_g7_32.mp3
 ```
 
 **声音分配**：
-- 课文：`en-US-AriaNeural`（女声，更清晰，适合小学生）
-- 听力题：对话中 `W:` 前缀用 Aria 女声、`M:` 前缀用 Guy 男声
+- 课文（教科版 / 沪教版）：按说话人名字自动分配男女声池，同一角色音色稳定
+- 沪教听力对话：`W:` 前缀 → Jenny 女声、`M:` 前缀 → Guy 男声
+- 教科版听力：`W:` 前缀 Aria 女声、`M:` 前缀 Guy 男声
 
 **依赖**：`pip install edge-tts`（无需 API Key）
 
@@ -184,6 +201,7 @@ python gen_audio.py
 
 - [x] UI 框架（6 大功能模块）
 - [x] 1-9 年级教材数据（广州教科版全套）
+- [x] 沪教牛津版初中全套（7-9 年级 × 上下册 × 8 单元 = 48 单元，每单元 15 词 + 3 篇课文）
 - [x] 308+ 题真实题库
 - [x] 预生成 MP3 音频（真人级 Neural TTS）
 - [x] 男女声听力区分
