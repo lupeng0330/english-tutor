@@ -131,50 +131,54 @@
 
     <!-- ============ 首页 · 极简版 ============ -->
     <section id="page-home" class="page">
+      <!-- 顶栏：标题 + 版本 + 检查更新 -->
+      <div class="flex items-center justify-between mb-4">
+        <div>
+          <h1 class="text-lg font-bold text-slate-800">📚 乐学英语</h1>
+          <p class="text-xs text-slate-400">v<span id="homeVersionTag">—</span></p>
+        </div>
+        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-blue-200 text-xs text-blue-500 shadow-sm hover:text-blue-700 hover:border-blue-400 hover:shadow transition">
+          <span id="forceUpdateIcon">🔄</span>
+          <span id="forceUpdateLabel">检查更新</span>
+        </button>
+      </div>
+
       <!-- 欢迎 + 继续学习 CTA -->
-      <div class="card p-6 md:p-8 mb-6 bg-gradient-to-br from-blue-500 to-indigo-600 text-white border-0">
+      <div class="card p-5 mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 text-white border-0 rounded-2xl shadow">
         <div class="mb-1 text-sm opacity-90" id="homeGreeting">Good morning 👋</div>
-        <h1 class="text-2xl md:text-3xl font-bold mb-4" id="homeTitle">开始今天的英语学习吧</h1>
-        <div class="mb-5 text-sm opacity-90" id="homeNextHint">接下来：三年级 · 上册 · Unit 1 Hello</div>
-        <button onclick="continueLearning()" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-bold text-base shadow-md hover:shadow-lg active:scale-95 transition">
+        <h1 class="text-xl md:text-2xl font-bold mb-3" id="homeTitle">开始今天的英语学习吧</h1>
+        <div class="mb-4 text-sm opacity-90" id="homeNextHint">接下来：三年级 · 上册 · Unit 1 Hello</div>
+        <button onclick="continueLearning()" class="w-full bg-white text-blue-600 py-2.5 rounded-xl font-bold text-base shadow-sm hover:shadow-md active:scale-95 transition">
           ▶ 继续学习
         </button>
       </div>
 
-      <!-- 真实数据看板（localStorage 累计） -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-blue-600"><span id="statTotalTime">0</span></div>
-          <div class="text-xs text-slate-500 mt-1">累计学习 · 分钟</div>
+      <!-- 真实数据看板（2列小卡，PC端4列） -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-blue-600"><span id="statTotalTime">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">累计分钟</div>
         </div>
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-indigo-600"><span id="statKnownWords">0</span></div>
-          <div class="text-xs text-slate-500 mt-1">已掌握单词</div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-indigo-600"><span id="statKnownWords">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">掌握单词</div>
         </div>
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-purple-600"><span id="statReadingOk">0</span></div>
-          <div class="text-xs text-slate-500 mt-1">阅读答对</div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-purple-600"><span id="statReadingOk">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">阅读答对</div>
         </div>
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-purple-500"><span id="statReadingPct">—</span></div>
-          <div class="text-xs text-slate-500 mt-1">阅读正确率</div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-purple-500"><span id="statReadingPct">—</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">阅读正确率</div>
         </div>
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-green-600"><span id="statAccuracy">—</span></div>
-          <div class="text-xs text-slate-500 mt-1">本周正确率</div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-green-600"><span id="statAccuracy">—</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">本周正确</div>
         </div>
-        <div class="card p-4 text-center">
-          <div class="text-2xl md:text-3xl font-bold text-orange-500"><span id="statStreak">0</span></div>
-          <div class="text-xs text-slate-500 mt-1">连续学习 · 天</div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-orange-500"><span id="statStreak">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">连续天数</div>
         </div>
-      </div>
-
-      <!-- 🆕 强制更新按钮（位于统计卡片右上角小角标位置） -->
-      <div class="flex justify-end mb-2 -mt-1">
-        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1 px-2 py-1 rounded-lg bg-white border border-slate-200 text-xs text-slate-400 hover:text-blue-600 hover:border-blue-300 transition">
-          <span id="forceUpdateIcon">🔄</span>
-          <span id="forceUpdateLabel">检查更新</span>
-        </button>
       </div>
 
       <!-- 三大主入口（精简，不再和侧栏重复；首页用作情境化入口） -->

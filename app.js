@@ -380,9 +380,17 @@ function _loadStats() {
     _stats = raw ? JSON.parse(raw) : {};
   } catch (e) { _stats = {}; }
   _stats.totalSeconds = _stats.totalSeconds || 0;
+  _stats.todaySeconds  = _stats.todaySeconds  || 0;
+  // 跨天重置 todaySeconds（每天0点把 todaySeconds 清零，totalSeconds 累计不动）
+  const today = new Date().toISOString().slice(0, 10);
+  if (_stats.lastActiveDay && _stats.lastActiveDay !== today) {
+    // 新的一天：todaySeconds 重置为0（从0开始累加今日）
+    _stats.todaySeconds = 0;
+  }
+  _stats.lastActiveDay = today;
+  // 初始化 knownWords/answers 等
   _stats.knownWords   = _stats.knownWords   || {};
   _stats.answers      = _stats.answers      || [];
-  _stats.lastActiveDay = _stats.lastActiveDay || '';
   _stats.streak       = _stats.streak       || 0;
   _stats.lastUnit     = _stats.lastUnit     || null;
   // 🆕 阅读自测每题状态：key = "<tb>::<grade>::<term>::<uid>::<lessonIdx>::<qIdx>"
@@ -510,7 +518,9 @@ function rememberLastUnit(grade, term, unitId, unitTitle, textbook) {
       const now = Date.now();
       if (lastTick && (now - lastTick) < 60 * 1000) { // 不超过 1 分钟间隔才累计
         const s = _loadStats();
-        s.totalSeconds = (s.totalSeconds || 0) + Math.floor((now - lastTick) / 1000);
+        const delta = Math.floor((now - lastTick) / 1000);
+        s.totalSeconds  = (s.totalSeconds  || 0) + delta;
+        s.todaySeconds  = (s.todaySeconds  || 0) + delta;
         _saveStats();
       }
       lastTick = now;
@@ -531,6 +541,19 @@ window.__stats = {
 function renderHomeStats() {
   const s = _loadStats();
   const setText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+
+  // 🆕 顶栏版本号 / 今日分钟 / 累计分钟（由首页顶栏使用）
+  const curVer = window.__APP_VERSION || '—';
+  setText('homeVersionTag',  curVer);
+  const totalSec = s.totalSeconds || 0;
+  const todaySec = s.todaySeconds || 0;
+  // 今日分钟：有 todaySeconds 记录则用之，否则保守显示 0（避免跨天数字错乱）
+  const todayMin = todaySec > 0 ? Math.floor(todaySec / 60) : 0;
+  setText('homeTodayMinBig', todayMin);
+  setText('homeTodayMin',    todayMin);
+  setText('homeTodayLabel', '今日');
+  setText('homeTotalMin',   Math.floor(totalSec / 60));
+
   setText('statTotalTime', Math.floor((s.totalSeconds || 0) / 60));
   setText('statKnownWords', Object.keys(s.knownWords || {}).length);
   setText('statStreak', s.streak || 0);
