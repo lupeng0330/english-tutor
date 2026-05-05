@@ -152,6 +152,14 @@
           <div class="text-xs text-slate-500 mt-1">已掌握单词</div>
         </div>
         <div class="card p-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold text-purple-600"><span id="statReadingOk">0</span></div>
+          <div class="text-xs text-slate-500 mt-1">阅读答对</div>
+        </div>
+        <div class="card p-4 text-center">
+          <div class="text-2xl md:text-3xl font-bold text-purple-500"><span id="statReadingPct">—</span></div>
+          <div class="text-xs text-slate-500 mt-1">阅读正确率</div>
+        </div>
+        <div class="card p-4 text-center">
           <div class="text-2xl md:text-3xl font-bold text-green-600"><span id="statAccuracy">—</span></div>
           <div class="text-xs text-slate-500 mt-1">本周正确率</div>
         </div>
@@ -210,14 +218,29 @@
 
         <!-- 📖 单元学习卡（单词 / 课文 两 Tab 合并） -->
         <div class="card p-4 md:p-6 mb-6">
-          <!-- 学习进度条 -->
+          <!-- 🆕 学习进度条（词汇蓝 + 阅读紫 双轨） -->
           <div class="mb-3">
             <div class="flex justify-between text-xs text-slate-500 mb-1.5">
-              <span>学习进度 · <span id="unitProgressLabel">0 / 0 词已掌握</span></span>
+              <span id="unitProgressLabel">加载中…</span>
               <span id="unitProgressPct">0%</span>
             </div>
-            <div class="h-1.5 bg-slate-100 rounded-full overflow-hidden">
-              <div id="unitProgressBar" class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 transition-all" style="width:0%"></div>
+            <!-- 双轨进度条 -->
+            <div class="h-2.5 bg-slate-100 rounded-full overflow-hidden flex mb-1">
+              <div id="unitWordBar"    class="h-full bg-gradient-to-r from-blue-500 to-blue-400 transition-all" style="width:0%"></div>
+              <div id="unitReadBar"    class="h-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all" style="width:0%"></div>
+            </div>
+            <!-- 图例 + 详细数据 -->
+            <div class="flex justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1"><span class="inline-block w-2 h-2 rounded-sm bg-blue-500"></span>词汇</span>
+              <span id="unitWordDetail" class="text-blue-500"></span>
+              <span class="mx-2 text-slate-200">|</span>
+              <span class="flex items-center gap-1"><span class="inline-block w-2 h-2 rounded-sm bg-purple-500"></span>阅读</span>
+              <span id="unitReadDetail" class="text-purple-500"></span>
+            </div>
+            <!-- 🆕 阅读答题历史（尝试次数 / 历史最高） -->
+            <div id="unitReadHistory" class="hide mt-2 text-xs text-slate-400 flex gap-4">
+              <span id="unitReadAttempts"></span>
+              <span id="unitReadBest"></span>
             </div>
           </div>
 
@@ -424,6 +447,11 @@
             <span class="badge bg-orange-100 text-orange-700" id="countWrongbook">0 题</span>
           </div>
           <h3 class="font-bold text-lg text-slate-800">错题本 · 专攻薄弱点</h3>
+          <!-- 🆕 错题本子 Tab：全部 / 阅读理解 -->
+          <div class="mt-2 flex gap-2" onclick="event.stopPropagation()">
+            <button id="tabWrongbookAll"    class="px-2 py-0.5 rounded text-xs bg-orange-200 text-orange-800 font-semibold" onclick="switchWrongbookTab('all')">全部</button>
+            <button id="tabWrongbookRead"  class="px-2 py-0.5 rounded text-xs bg-white text-orange-600 border border-orange-200"          onclick="switchWrongbookTab('reading_qa')">阅读理解</button>
+          </div>
           <p class="text-slate-500 text-sm mt-1">只练你答错过的题，连续答对 2 次自动移除</p>
           <div class="mt-3 flex items-center justify-between">
             <span class="text-orange-600 font-semibold text-sm">开始重练 →</span>

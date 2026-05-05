@@ -282,6 +282,32 @@ function clearWrongbook() {
 // 供调试用：把当前本轮错题手动推进错题本（正常流程 answerQuiz 已自动调 recordAnswer）
 window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook };
 
+// 🆕 错题本 Tab 状态（'all' | 'reading_qa'）
+let _wrongbookTabFilter = 'all';
+function switchWrongbookTab(type) {
+  _wrongbookTabFilter = type;
+  ['tabWrongbookAll','tabWrongbookRead'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.className = id === 'tabWrongbook' + type.charAt(0).toUpperCase() + type.slice(1)
+      ? 'px-2 py-0.5 rounded text-xs bg-orange-200 text-orange-800 font-semibold'
+      : 'px-2 py-0.5 rounded text-xs bg-white text-orange-600 border border-orange-200';
+  });
+  // 更新卡片计数（显示当前 Tab 过滤后的题数）
+  const wb = _loadWrongbook();
+  const currentTb = (state.ctx && state.ctx.textbook) || 'jk';
+  let filtered = Object.keys(wb).filter(k => k.startsWith(currentTb + '::'));
+  if (type === 'reading_qa') filtered = filtered.filter(k => (wb[k] && wb[k].type) === 'reading_qa');
+  const countEl = document.getElementById('countWrongbook');
+  if (countEl) countEl.textContent = filtered.length + ' 题';
+  const wbCard = document.getElementById('practiceCardWrongbook');
+  if (wbCard) {
+    if (filtered.length === 0) wbCard.classList.add('opacity-60');
+    else wbCard.classList.remove('opacity-60');
+  }
+}
+window.switchWrongbookTab = switchWrongbookTab;
+
 // ===================== B2 智能推题 =====================
 // 根据错题本给题目打分，加权随机抽取（不放回）；
 // 同一题在题库 + 错题本之间靠 _wbKey 关联。
@@ -444,12 +470,18 @@ async function forceCheckUpdate() {
 }
 window.forceCheckUpdate = forceCheckUpdate;
 // ctx 必传：{ textbook, grade, term, uid, lessonIdx, qIdx }
+// 存储：{ ok: bool（本次）, at: ts, attempts: int（累计尝试次数）}
 function markReadingExAnswer(ctx, ok) {
   if (!ctx || !ctx.uid) return;
   const s = _loadStats();
   const key = [ctx.textbook || 'jk', ctx.grade || 0, ctx.term || '上',
                ctx.uid, ctx.lessonIdx|0, ctx.qIdx|0].join('::');
-  s.readingExDone[key] = { ok: !!ok, at: Date.now() };
+  const prev = s.readingExDone[key] || {};
+  s.readingExDone[key] = {
+    ok:       !!ok,
+    attempts: (prev.attempts || 0) + 1,
+    at:       Date.now(),
+  };
   _saveStats();
 }
 // 答题记录（用于本周正确率）
@@ -503,6 +535,15 @@ function renderHomeStats() {
   setText('statKnownWords', Object.keys(s.knownWords || {}).length);
   setText('statStreak', s.streak || 0);
   setText('headerStreak', s.streak || 0);
+  // 🆕 阅读答题总览（全部尝试、答对）
+  const allRex = s.readingExDone || {};
+  const rexTotal = Object.keys(allRex).length;
+  const rexOk   = Object.values(allRex).filter(v => v && v.ok).length;
+  const setRexText = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+  setRexText('statReadingTotal', rexTotal);
+  setRexText('statReadingOk',   rexOk);
+  setRexText('statReadingPct',  rexTotal > 0 ? Math.round(rexOk / rexTotal * 100) + '%' : '—');
+
   // 本周正确率（最近 7 天）
   const weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
   const recent = (s.answers || []).filter(a => a.at >= weekAgo);
@@ -1027,20 +1068,50 @@ window.resetReadingEx  = resetReadingEx;
 })();
 
 
-// 单元学习进度条（综合"已掌握单词 + 已答阅读题"显示）
+// 单元学习进度条（词汇蓝 + 阅读紫 双轨）
 function updateUnitProgress() {
   if (!state.currentUnit) return;
   const p = computeUnitProgress(state.currentUnit);
-  const bar = document.getElementById('unitProgressBar');
   const pctEl = document.getElementById('unitProgressPct');
   const label = document.getElementById('unitProgressLabel');
-  if (bar)   bar.style.width = p.pct + '%';
+  const wordBar    = document.getElementById('unitWordBar');
+  const readBar    = document.getElementById('unitReadBar');
+  const wordDetail = document.getElementById('unitWordDetail');
+  const readDetail = document.getElementById('unitReadDetail');
+  const readHistEl = document.getElementById('unitReadHistory');
+  const readAttEl  = document.getElementById('unitReadAttempts');
+  const readBestEl = document.getElementById('unitReadBest');
+
+  // 词汇进度（蓝）
+  const wordPct = p.total > 0 ? Math.round(p.known / p.total * 100) : 0;
+  if (wordBar)    wordBar.style.width    = wordPct + '%';
+  if (wordDetail) wordDetail.textContent = p.known + '/' + p.total + ' 词';
+
+  // 阅读进度（紫）—— 分子=答对数，分母=已尝试数
+  const readPct = p.readingAttempted > 0
+    ? Math.round(p.readingOk / p.readingAttempted * 100) : 0;
+  if (readBar)    readBar.style.width    = readPct + '%';
+  if (readDetail) readDetail.textContent = p.readingOk + '/' + p.readingAttempted + ' 题';
+
+  // 综合百分比（PCT 还是原有的：词汇+阅读 / 词数+已尝试数）
   if (pctEl) pctEl.textContent = p.pct + '%';
   if (label) {
     const parts = [];
-    if (p.total > 0) parts.push(p.known + ' / ' + p.total + ' 词已掌握');
-    if (p.readingAttempted > 0) parts.push('阅读 ' + p.readingOk + ' / ' + p.readingAttempted + ' 题');
-    label.textContent = parts.length > 0 ? parts.join(' · ') : '开始学习吧';
+    if (p.total > 0) parts.push('词汇 ' + p.known + '/' + p.total);
+    if (p.readingAttempted > 0) parts.push('阅读 ' + p.readingOk + '/' + p.readingAttempted);
+    label.textContent = parts.length > 0 ? '学习进度 · ' + parts.join(' · ') : '开始学习吧';
+  }
+
+  // 🆕 阅读答题历史（若本单元有尝试过任何阅读题，显示统计）
+  if (p.readingAttempted > 0 && readHistEl) {
+    readHistEl.classList.remove('hide');
+    if (readAttEl) readAttEl.textContent  = '共答题 ' + p.readingAttempted + ' 次';
+    if (readBestEl) {
+      const best = Math.round(p.readingOk / p.readingAttempted * 100);
+      readBestEl.textContent = '历史最高 ' + best + '%';
+    }
+  } else if (readHistEl) {
+    readHistEl.classList.add('hide');
   }
 }
 
@@ -2471,6 +2542,7 @@ function refreshPracticeCounts() {
 
 function startPractice(type) {
   // 🆕 错题本模式：混合 4 种题型，从 localStorage 读
+  // 🆕 错题本模式：支持 Tab 过滤（'all' | 'reading_qa'）
   if (type === 'wrongbook') {
     const all = getWrongQuestions(); // 已按 lastWrongAt 降序
     if (all.length === 0) {
@@ -2479,8 +2551,16 @@ function startPractice(type) {
     }
     // 只取本教材版本的错题
     const currentTb = (state.ctx && state.ctx.textbook) || 'jk';
-    const mine = all.filter(w => String(w._key).startsWith(currentTb + '::'));
-    const list = mine.length ? mine : all;
+    let list = all.filter(w => String(w._key).startsWith(currentTb + '::'));
+    // 🆕 Tab 过滤：如果是「阅读理解」Tab，只取 reading_qa
+    if (_wrongbookTabFilter === 'reading_qa') {
+      list = list.filter(w => (w.type || '') === 'reading_qa');
+    }
+    if (!list.length) {
+      const tabTip = _wrongbookTabFilter === 'reading_qa' ? '阅读理解' : '';
+      alert('🎉 错题本' + tabTip + '是空的，先去做一些练习吧！');
+      return;
+    }
     // 最多 10 题
     const picked = list.slice(0, Math.min(10, list.length));
     state.quizType = 'wrongbook';
