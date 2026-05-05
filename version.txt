@@ -1,2 +1,2 @@
-20260505V01.01
-big=1 small=1 weekKey=2026-W19 hash=4c43b2a at=2026-05-05T13:36:55Z
+20260505V01.02
+big=1 small=2 weekKey=2026-W19 hash=1d34f08 at=2026-05-05T14:51:03Z
