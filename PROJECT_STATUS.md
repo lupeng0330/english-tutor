@@ -1,8 +1,8 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-05-05（PC 端生成）  
-> 对应 Git HEAD：`38b01bc`
+> 最后更新：2026-05-05（PC 端生成，晚间更新技术债收尾）  
+> 对应 Git HEAD：`dde6cdc`
 
 ---
 
@@ -68,7 +68,9 @@ python3 -m http.server 8765
 | **题库（语法）** | 42 题 |
 | **题库（阅读）** | 54 题 |
 | **题库合计** | 311 题（jk）+ 32 题（沪教 g7 听力） |
-| **音频 MP3** | 300+ 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144） |
+| **音频 MP3** | 300+ 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 143；grade9B_u5_L0 缺 1 待补） |
+| **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完 |
+| **前端代码** | `app.js` 2912 行（-23%）+ `js/textbook.js` / `js/state.js` / `js/player.js` 三个抽出模块 |
 
 教材版本占位：`rj`（人教）、`wy`（外研）尚未填充数据。
 
@@ -79,13 +81,21 @@ python3 -m http.server 8765
 ```
 english-tutor/
 ├── index.html              # 主页面。顶部 sticky「学习上下文条」（年级/学期/教材）
+│                           # 🆕 底部动态按序注入 js/*.js → questionBank.js → app.js
 ├── styles.css              # 含移动端深度适配
-├── app.js                  # ★ 核心逻辑：state/上下文切换/渲染/播放/练习
+├── app.js                  # ★ 核心逻辑：渲染 / 单元 / 练习 / 上下文切换包装
 ├── questionBank.js         # ★ 题库异步加载器 window.loadQuestionBank(textbookId)
+│
+├── js/                     # 🆕 从 app.js 抽出的三个独立模块（仍是全局变量风格）
+│   ├── textbook.js         # textbookData / loadTextbook / 分片缓存 / _bust
+│   ├── state.js            # state 对象 / TEXTBOOK_NAMES/GRADES/LABELS / ctxSummaryText
+│   └── player.js           # speakBrowser / speak / stopSpeak / playYoudao 系列
 │
 ├── data/
 │   ├── textbooks/
-│   │   └── jk.json         # 结构: { meta, grades: { grade1: { 上:[...], 下:[...] } } }
+│   │   ├── jk.json              # 结构: { meta, grades: { grade1: { 上:[...], 下:[...] } } }
+│   │   ├── hj.json              # 沪教整册（380KB，作为分片回退兜底）
+│   │   └── hj_grade{7,8,9}.json # 🆕 按年级拆出的分片（108-185KB），loadTextbook 优先走这里
 │   └── questions/
 │       ├── jk_spelling.json   # 单词拼写
 │       ├── jk_listening.json  # 听力（含 audioFile 字段指向 audio/*.mp3）
@@ -94,15 +104,18 @@ english-tutor/
 │
 ├── audio/                  # 预生成 MP3
 │   ├── grade{N}_u{M}.mp3   # 课文朗读（Aria 女声）
-│   └── listening_XX.mp3    # 听力题（W=Aria 女 / M=Guy 男）
+│   ├── listening_XX.mp3    # 听力题（W=Aria 女 / M=Guy 男）
+│   └── .manifest.json      # 🆕 增量校验元数据：{fname: {text_hash, textbook, generated_at}}
 │
-├── gen_audio.py            # 读 JSON 批量生成缺失 MP3（edge-tts）
+├── gen_audio.py            # 旧版单文件音频脚本
+├── gen_audio_v2.py         # 🆕 V2：按篇 + 多音色 + --dry-run / --stale-only 增量
 │
 ├── scripts/
-│   ├── make_template.py         # 生成 Excel 导入模板
-│   ├── import_questions.py      # Excel → JSON 题库
-│   ├── ai_generate_questions.py # 基于课文自动造题
-│   ├── expand_textbook.py       # 扩展教材单元
+│   ├── make_template.py              # 生成 Excel 导入模板
+│   ├── import_questions.py           # Excel → JSON 题库
+│   ├── ai_generate_questions.py      # 基于课文自动造题
+│   ├── expand_textbook.py            # 扩展教材单元
+│   ├── split_textbook_by_grade.py    # 🆕 把教材 JSON 按年级拆成 {tb}_{grade}.json 分片
 │   └── excel_templates/题库导入模板.xlsx
 │
 ├── start-windows.bat / start-mac.command
@@ -312,4 +325,4 @@ python3 -m http.server 8765
 
 ---
 
-_此文档由 PC 端 AI 助手在 2026-05-05 生成，用于 Mac 端 / 未来任意端无缝接续。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
+_此文档由 PC 端 AI 助手在 2026-05-05（晚）更新，记录当天技术债收尾（分片/增量/模块拆分三件套）。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
