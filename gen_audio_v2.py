@@ -12,10 +12,12 @@
 依赖：pip install edge-tts
 
 用法：
-  python gen_audio_v2.py                  # 只处理 grade6.下
-  python gen_audio_v2.py --all            # 处理所有年级所有学期
+  python gen_audio_v2.py                                  # 教科版 grade6.下
+  python gen_audio_v2.py --all                            # 教科版所有年级
   python gen_audio_v2.py --grade grade6 --term 下
-  python gen_audio_v2.py --force          # 已存在也覆盖
+  python gen_audio_v2.py --force                          # 已存在也覆盖
+  python gen_audio_v2.py --textbook hj --grade grade7 --term 上   # 沪教版七上
+  python gen_audio_v2.py --textbook hj --all              # 沪教版所有年级
 """
 import asyncio
 import argparse
@@ -27,8 +29,19 @@ import edge_tts
 
 ROOT     = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR  = os.path.join(ROOT, "audio")
-TEXTBOOK = os.path.join(ROOT, "data", "textbooks", "jk.json")
+TEXTBOOK_DIR = os.path.join(ROOT, "data", "textbooks")
 TMP_DIR  = os.path.join(OUT_DIR, "_tmp")
+
+# 教材 → 文件名前缀 映射
+#   教科版 jk 覆盖 grade1~grade6；沪教版 hj 覆盖 grade7~grade9，
+#   因两者年级不重叠，直接共用 audio/ 目录无前缀也不会撞名：
+#     jk grade6 下 → audio/grade6B_u1_L0.mp3
+#     hj grade7 上 → audio/grade7A_u1_L0.mp3
+#   将来若出现同年级冲突（如 hj 也做 grade6），把对应教材前缀改为 "hj_" 即可。
+TEXTBOOK_PREFIX = {
+    "jk": "",
+    "hj": "",
+}
 
 # 语速（给小学生听稍慢）
 RATE = "-8%"
@@ -291,15 +304,28 @@ def get_lessons(unit):
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--all", action="store_true", help="处理所有年级所有学期")
-    parser.add_argument("--grade", default="grade6", help="年级 key，如 grade6（默认）")
+    parser.add_argument("--grade", default="grade6", help="年级 key，如 grade6/grade7（默认 grade6）")
     parser.add_argument("--term", default="下", help="学期：上/下（默认：下）")
     parser.add_argument("--force", action="store_true", help="已存在也覆盖")
+    parser.add_argument("--textbook", default="jk",
+                        help="教材 ID：jk=广州教科版（默认），hj=沪教牛津版")
     args = parser.parse_args()
 
     if not os.path.exists(OUT_DIR):
         os.makedirs(OUT_DIR)
 
-    with open(TEXTBOOK, "r", encoding="utf-8") as f:
+    tb_id = args.textbook.lower()
+    if tb_id not in TEXTBOOK_PREFIX:
+        print("[error] 未知教材 ID: {}（支持：{}）".format(
+            tb_id, ", ".join(TEXTBOOK_PREFIX.keys())))
+        return
+    textbook_path = os.path.join(TEXTBOOK_DIR, "{}.json".format(tb_id))
+    if not os.path.exists(textbook_path):
+        print("[error] 找不到教材数据文件: {}".format(textbook_path))
+        return
+    prefix = TEXTBOOK_PREFIX[tb_id]
+
+    with open(textbook_path, "r", encoding="utf-8") as f:
         textbook = json.load(f)
 
     if args.all:
@@ -314,10 +340,11 @@ async def main():
     for grade_key, term_name, term_ab, u in iter_target_units(textbook, only_grade, only_term):
         lessons = get_lessons(u)
         for i, (label, en) in enumerate(lessons):
-            fname = "{}{}_{}_L{}.mp3".format(grade_key, term_ab, u["id"], i)
-            seed_salt = "{}|{}".format(grade_key, u["id"])
+            fname = "{}{}{}_{}_L{}.mp3".format(prefix, grade_key, term_ab, u["id"], i)
+            seed_salt = "{}|{}|{}".format(tb_id, grade_key, u["id"])
             tasks.append((fname, en, seed_salt, label))
 
+    print("[info] Textbook: {} ({})".format(tb_id, textbook.get("meta", {}).get("name", "-")))
     print("[info] Rate: {}".format(RATE))
     print("[info] Female pool: {} voices".format(len(FEMALE_VOICES)))
     print("[info] Male   pool: {} voices".format(len(MALE_VOICES)))
