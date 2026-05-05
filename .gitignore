@@ -36,3 +36,7 @@ _parse_tmp.py
 
 # 后台进程 stderr 空日志
 *.err
+
+# edge-tts 生成过程中的临时分片（中途崩溃可能残留）。
+# 注意：audio/.manifest.json 是增量校验元数据，需要被 commit，不要忽略。
+audio/_tmp/

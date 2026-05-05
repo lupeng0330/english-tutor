@@ -1,0 +1,860 @@
+{
+  "grade7A_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.612060Z",
+    "legacy_import": true,
+    "text_hash": "e84945ebc3b9ee949fc1d9c8ed7d6759",
+    "textbook": "hj"
+  },
+  "grade7A_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.612060Z",
+    "legacy_import": true,
+    "text_hash": "7797271cc876ef2ed299cb21170546c6",
+    "textbook": "hj"
+  },
+  "grade7A_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.613059Z",
+    "legacy_import": true,
+    "text_hash": "468f4a54f1b6f674ff04b048a0364e13",
+    "textbook": "hj"
+  },
+  "grade7A_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.613059Z",
+    "legacy_import": true,
+    "text_hash": "bd952cc0704f439089952c8711e9fb28",
+    "textbook": "hj"
+  },
+  "grade7A_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.614056Z",
+    "legacy_import": true,
+    "text_hash": "0aac5f2cd4659b36befaf94d9a96103d",
+    "textbook": "hj"
+  },
+  "grade7A_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.614056Z",
+    "legacy_import": true,
+    "text_hash": "5d5bce2af4c726728aabed90456014a2",
+    "textbook": "hj"
+  },
+  "grade7A_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.614056Z",
+    "legacy_import": true,
+    "text_hash": "7715fd4a73fc63e8bca463780297e47f",
+    "textbook": "hj"
+  },
+  "grade7A_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.614056Z",
+    "legacy_import": true,
+    "text_hash": "eda9ed0cbc37ee97da8439180ca6e3c2",
+    "textbook": "hj"
+  },
+  "grade7A_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.615556Z",
+    "legacy_import": true,
+    "text_hash": "67923fabd9978e0957055dfb5be9930d",
+    "textbook": "hj"
+  },
+  "grade7A_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.615556Z",
+    "legacy_import": true,
+    "text_hash": "588154ff818ed85e751fbb95329e8257",
+    "textbook": "hj"
+  },
+  "grade7A_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.615556Z",
+    "legacy_import": true,
+    "text_hash": "e3d8a4ee349377fba239faed0679c499",
+    "textbook": "hj"
+  },
+  "grade7A_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.616550Z",
+    "legacy_import": true,
+    "text_hash": "b524091aaf6801cfd73ad90189fa16d6",
+    "textbook": "hj"
+  },
+  "grade7A_u5_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.616550Z",
+    "legacy_import": true,
+    "text_hash": "2f6ccb360b8113dc5cf19d97927f7579",
+    "textbook": "hj"
+  },
+  "grade7A_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.616550Z",
+    "legacy_import": true,
+    "text_hash": "8e9ecd26d390e6a04384e8e2f1233161",
+    "textbook": "hj"
+  },
+  "grade7A_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.617556Z",
+    "legacy_import": true,
+    "text_hash": "53d1e59851cc57f89d8adc269094b10c",
+    "textbook": "hj"
+  },
+  "grade7A_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.617556Z",
+    "legacy_import": true,
+    "text_hash": "5ee601d90a4fa26ffd91a6bc834e5e04",
+    "textbook": "hj"
+  },
+  "grade7A_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.617556Z",
+    "legacy_import": true,
+    "text_hash": "ca1a77dbd0cfe4735b53eae6f2a695ea",
+    "textbook": "hj"
+  },
+  "grade7A_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.618551Z",
+    "legacy_import": true,
+    "text_hash": "3ca4b1bdad12ced20eca0ef999f94545",
+    "textbook": "hj"
+  },
+  "grade7A_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.618551Z",
+    "legacy_import": true,
+    "text_hash": "a14b3a20e4822f8bf74c692f4e0dc4dd",
+    "textbook": "hj"
+  },
+  "grade7A_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.618551Z",
+    "legacy_import": true,
+    "text_hash": "1c395ad4667b6350f3dc3a9fe4138d33",
+    "textbook": "hj"
+  },
+  "grade7A_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.618551Z",
+    "legacy_import": true,
+    "text_hash": "523bc6e46ad4e8f5b95213fb617ef496",
+    "textbook": "hj"
+  },
+  "grade7A_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.619557Z",
+    "legacy_import": true,
+    "text_hash": "ef09b2968c0220e936da8504a3501d38",
+    "textbook": "hj"
+  },
+  "grade7A_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.619557Z",
+    "legacy_import": true,
+    "text_hash": "befac5896c7fbb216eec422bd300e6c7",
+    "textbook": "hj"
+  },
+  "grade7A_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.619557Z",
+    "legacy_import": true,
+    "text_hash": "ff4ad1fe00cd988671a2a9eaa4a2c349",
+    "textbook": "hj"
+  },
+  "grade7B_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.619557Z",
+    "legacy_import": true,
+    "text_hash": "94198dc50bf3b73cda66fe14b9d1946e",
+    "textbook": "hj"
+  },
+  "grade7B_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.620552Z",
+    "legacy_import": true,
+    "text_hash": "60275dbfc6ed62c503e73199a839fa6f",
+    "textbook": "hj"
+  },
+  "grade7B_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.620552Z",
+    "legacy_import": true,
+    "text_hash": "52f4b2b49f077d239baf724e3c945981",
+    "textbook": "hj"
+  },
+  "grade7B_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.620552Z",
+    "legacy_import": true,
+    "text_hash": "c9944dbddf66440f76f33bb14033b4ac",
+    "textbook": "hj"
+  },
+  "grade7B_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.620552Z",
+    "legacy_import": true,
+    "text_hash": "460997307ef5d3e8e8bd972d959b608d",
+    "textbook": "hj"
+  },
+  "grade7B_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.621553Z",
+    "legacy_import": true,
+    "text_hash": "182d3b0a2cbfd1ae01d1c6bb864a3a46",
+    "textbook": "hj"
+  },
+  "grade7B_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.621553Z",
+    "legacy_import": true,
+    "text_hash": "54e4c4b1a70c15e2a241cf91f1e3011d",
+    "textbook": "hj"
+  },
+  "grade7B_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.621553Z",
+    "legacy_import": true,
+    "text_hash": "2413ff7fa03e89714aa4c0b6c9ea820c",
+    "textbook": "hj"
+  },
+  "grade7B_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.622561Z",
+    "legacy_import": true,
+    "text_hash": "bd635d9fce85d550c655161823a90f85",
+    "textbook": "hj"
+  },
+  "grade7B_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.622561Z",
+    "legacy_import": true,
+    "text_hash": "27df4806e8d1a4dfef911cf61cacb091",
+    "textbook": "hj"
+  },
+  "grade7B_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.622561Z",
+    "legacy_import": true,
+    "text_hash": "3f47cd36e5ef94c503062b1ecffb1520",
+    "textbook": "hj"
+  },
+  "grade7B_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.622561Z",
+    "legacy_import": true,
+    "text_hash": "7f9c35a2fc79aa09205b8ee12afbbb28",
+    "textbook": "hj"
+  },
+  "grade7B_u5_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.623552Z",
+    "legacy_import": true,
+    "text_hash": "6078669f44d33e73c4b03d92db3bf20b",
+    "textbook": "hj"
+  },
+  "grade7B_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.623552Z",
+    "legacy_import": true,
+    "text_hash": "37d118214215a049d33d81de71656d52",
+    "textbook": "hj"
+  },
+  "grade7B_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.623552Z",
+    "legacy_import": true,
+    "text_hash": "03f11075f7697aabb4adde0681916e9f",
+    "textbook": "hj"
+  },
+  "grade7B_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.623552Z",
+    "legacy_import": true,
+    "text_hash": "1d9688a84e87b9310b73837230229615",
+    "textbook": "hj"
+  },
+  "grade7B_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.624555Z",
+    "legacy_import": true,
+    "text_hash": "4d6c5538d07b43ccd8fc29a93dd37e6f",
+    "textbook": "hj"
+  },
+  "grade7B_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.624555Z",
+    "legacy_import": true,
+    "text_hash": "7289698023bd461b0e91d44ff0709806",
+    "textbook": "hj"
+  },
+  "grade7B_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.624555Z",
+    "legacy_import": true,
+    "text_hash": "d10df8baa838f9294c9196e480eb75d6",
+    "textbook": "hj"
+  },
+  "grade7B_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.624555Z",
+    "legacy_import": true,
+    "text_hash": "a5a765b43eb963530d3bbe74d4a5c605",
+    "textbook": "hj"
+  },
+  "grade7B_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.625554Z",
+    "legacy_import": true,
+    "text_hash": "53831c2d04939a5139a2cb6ffee10037",
+    "textbook": "hj"
+  },
+  "grade7B_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.625554Z",
+    "legacy_import": true,
+    "text_hash": "507dbf100927427f1cd6091028dba2a3",
+    "textbook": "hj"
+  },
+  "grade7B_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.625554Z",
+    "legacy_import": true,
+    "text_hash": "5d5aad7ff0bea2b231a503a9708a14bc",
+    "textbook": "hj"
+  },
+  "grade7B_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.625554Z",
+    "legacy_import": true,
+    "text_hash": "9febbb7373fb703ac8945dd36e6b00aa",
+    "textbook": "hj"
+  },
+  "grade8A_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.626559Z",
+    "legacy_import": true,
+    "text_hash": "9f7dea2a0a1f559b98eeb2bb1a3137d2",
+    "textbook": "hj"
+  },
+  "grade8A_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.626559Z",
+    "legacy_import": true,
+    "text_hash": "9fd5e9811d031e74c9f18da9561285dd",
+    "textbook": "hj"
+  },
+  "grade8A_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.626559Z",
+    "legacy_import": true,
+    "text_hash": "bb40a5d81f43e1bc1c1b8c2adf59fa2c",
+    "textbook": "hj"
+  },
+  "grade8A_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.626559Z",
+    "legacy_import": true,
+    "text_hash": "88d0792a48895e22cca4c33cae7f1eb7",
+    "textbook": "hj"
+  },
+  "grade8A_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.627554Z",
+    "legacy_import": true,
+    "text_hash": "9e26205ba434acfa7b32200fe281632b",
+    "textbook": "hj"
+  },
+  "grade8A_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.628554Z",
+    "legacy_import": true,
+    "text_hash": "9f1bbba19015d2b52c211fcbeaf36451",
+    "textbook": "hj"
+  },
+  "grade8A_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.628554Z",
+    "legacy_import": true,
+    "text_hash": "dc96af950a7868d41addeb4de3b6baec",
+    "textbook": "hj"
+  },
+  "grade8A_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.629750Z",
+    "legacy_import": true,
+    "text_hash": "b8097af3d978d63c348e62dd4d12760d",
+    "textbook": "hj"
+  },
+  "grade8A_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.629750Z",
+    "legacy_import": true,
+    "text_hash": "559009cff31fd12926de2a72c7377f11",
+    "textbook": "hj"
+  },
+  "grade8A_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.630658Z",
+    "legacy_import": true,
+    "text_hash": "e8b90a72b5f5f4d39d1d0663d78beb85",
+    "textbook": "hj"
+  },
+  "grade8A_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.630658Z",
+    "legacy_import": true,
+    "text_hash": "b23641dd5a11a6e98c60ac2ca10c217f",
+    "textbook": "hj"
+  },
+  "grade8A_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.630658Z",
+    "legacy_import": true,
+    "text_hash": "65be353f26c30cd16d2c93354690a3f3",
+    "textbook": "hj"
+  },
+  "grade8A_u5_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.631656Z",
+    "legacy_import": true,
+    "text_hash": "63b63c830de23190f294ee366e799fa6",
+    "textbook": "hj"
+  },
+  "grade8A_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.631656Z",
+    "legacy_import": true,
+    "text_hash": "4fbd227142f90341a6abcf93a2ff4b2b",
+    "textbook": "hj"
+  },
+  "grade8A_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.631656Z",
+    "legacy_import": true,
+    "text_hash": "9ba19b413a7c9670c548e31ff4a61600",
+    "textbook": "hj"
+  },
+  "grade8A_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.632655Z",
+    "legacy_import": true,
+    "text_hash": "fd59ebf6820d080c3716f4668b9eec9e",
+    "textbook": "hj"
+  },
+  "grade8A_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.632655Z",
+    "legacy_import": true,
+    "text_hash": "0b44e7719e7e27952a0719ec748f87b6",
+    "textbook": "hj"
+  },
+  "grade8A_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.632655Z",
+    "legacy_import": true,
+    "text_hash": "2aea52ece680d21b8e6fb536d48ed017",
+    "textbook": "hj"
+  },
+  "grade8A_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.632655Z",
+    "legacy_import": true,
+    "text_hash": "65355ed041a54e1d092b752856d98435",
+    "textbook": "hj"
+  },
+  "grade8A_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.633654Z",
+    "legacy_import": true,
+    "text_hash": "53b6d699cc1fb5b1de0648cea03890bb",
+    "textbook": "hj"
+  },
+  "grade8A_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.633654Z",
+    "legacy_import": true,
+    "text_hash": "cc73583eca3503169dbbb2ced15b60af",
+    "textbook": "hj"
+  },
+  "grade8A_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.633654Z",
+    "legacy_import": true,
+    "text_hash": "fbe2b05ba38d9d3305d2b89f5b2595f8",
+    "textbook": "hj"
+  },
+  "grade8A_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.633654Z",
+    "legacy_import": true,
+    "text_hash": "8637bbb05e97bc81e5cbc70bbb8650b7",
+    "textbook": "hj"
+  },
+  "grade8A_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.634653Z",
+    "legacy_import": true,
+    "text_hash": "17b895f85fc7eac0be702fbff32eba4e",
+    "textbook": "hj"
+  },
+  "grade8B_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.634653Z",
+    "legacy_import": true,
+    "text_hash": "c7a1b626c26496c0999ef1275208dd9c",
+    "textbook": "hj"
+  },
+  "grade8B_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.634653Z",
+    "legacy_import": true,
+    "text_hash": "09da941fd7bd9bd17bf0382666b106f3",
+    "textbook": "hj"
+  },
+  "grade8B_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.635656Z",
+    "legacy_import": true,
+    "text_hash": "934dc46973def817dbdc10d76d6e8b88",
+    "textbook": "hj"
+  },
+  "grade8B_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.635871Z",
+    "legacy_import": true,
+    "text_hash": "c0da902f8bae17d693194ec376d54d0b",
+    "textbook": "hj"
+  },
+  "grade8B_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.635871Z",
+    "legacy_import": true,
+    "text_hash": "757e77b61114163f2ce7683ec55288b5",
+    "textbook": "hj"
+  },
+  "grade8B_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.636383Z",
+    "legacy_import": true,
+    "text_hash": "007d5202526d88061b07a5166f701ce6",
+    "textbook": "hj"
+  },
+  "grade8B_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.636383Z",
+    "legacy_import": true,
+    "text_hash": "122e023c4b8921d9706466fb2e9fd2ce",
+    "textbook": "hj"
+  },
+  "grade8B_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.636893Z",
+    "legacy_import": true,
+    "text_hash": "0bcfda455c9f899d681ef102dd26f9eb",
+    "textbook": "hj"
+  },
+  "grade8B_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.636893Z",
+    "legacy_import": true,
+    "text_hash": "7185263f0bd08d47d7bb9f61935ac156",
+    "textbook": "hj"
+  },
+  "grade8B_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.636893Z",
+    "legacy_import": true,
+    "text_hash": "034ee6dfd80b0c311292f741bc27f2ca",
+    "textbook": "hj"
+  },
+  "grade8B_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.637888Z",
+    "legacy_import": true,
+    "text_hash": "c3f77960d1a0e7d6aadff49443583914",
+    "textbook": "hj"
+  },
+  "grade8B_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.637888Z",
+    "legacy_import": true,
+    "text_hash": "777fe16ab639dcf08888ab5e87b2067f",
+    "textbook": "hj"
+  },
+  "grade8B_u5_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.637888Z",
+    "legacy_import": true,
+    "text_hash": "3bd53fd6821d69bca122603f0c489603",
+    "textbook": "hj"
+  },
+  "grade8B_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.637888Z",
+    "legacy_import": true,
+    "text_hash": "d379690dcf3c91aacdb8ff717570b714",
+    "textbook": "hj"
+  },
+  "grade8B_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.638891Z",
+    "legacy_import": true,
+    "text_hash": "ddaf1f8c6ecdc90dd37751e8bf46fab5",
+    "textbook": "hj"
+  },
+  "grade8B_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.638891Z",
+    "legacy_import": true,
+    "text_hash": "fedf979bbf27349e4d56b2e65b5b39a6",
+    "textbook": "hj"
+  },
+  "grade8B_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.638891Z",
+    "legacy_import": true,
+    "text_hash": "fbf5dae370056af58cf60671791c7a0e",
+    "textbook": "hj"
+  },
+  "grade8B_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.639886Z",
+    "legacy_import": true,
+    "text_hash": "8fb43bcf768b485732d60d8347eb24b6",
+    "textbook": "hj"
+  },
+  "grade8B_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.639886Z",
+    "legacy_import": true,
+    "text_hash": "29386b2ed04faf28bd734ecc0c0eb443",
+    "textbook": "hj"
+  },
+  "grade8B_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.639886Z",
+    "legacy_import": true,
+    "text_hash": "5e8eee54e8f8785e8cb926c1cdc88de0",
+    "textbook": "hj"
+  },
+  "grade8B_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.639886Z",
+    "legacy_import": true,
+    "text_hash": "c6a370000091bad1337cdfaa061b865d",
+    "textbook": "hj"
+  },
+  "grade8B_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.640885Z",
+    "legacy_import": true,
+    "text_hash": "a5a93bd0cdc11c278266e7ac44f5fc0c",
+    "textbook": "hj"
+  },
+  "grade8B_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.640885Z",
+    "legacy_import": true,
+    "text_hash": "879cc5d08f5fc2919f7f07cf105d99e0",
+    "textbook": "hj"
+  },
+  "grade8B_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.640885Z",
+    "legacy_import": true,
+    "text_hash": "16967cef2886ae9c7ea8e0da673cab9a",
+    "textbook": "hj"
+  },
+  "grade9A_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.640885Z",
+    "legacy_import": true,
+    "text_hash": "bbd6523bfa85503a65b871abcc80ca60",
+    "textbook": "hj"
+  },
+  "grade9A_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.641883Z",
+    "legacy_import": true,
+    "text_hash": "ce3eccc21387723cf557fbdff4d3bfe3",
+    "textbook": "hj"
+  },
+  "grade9A_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.641883Z",
+    "legacy_import": true,
+    "text_hash": "e82604b067939749dfa4a2cc64445814",
+    "textbook": "hj"
+  },
+  "grade9A_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.641883Z",
+    "legacy_import": true,
+    "text_hash": "c19dd62a79d49378116d46fbef3f700a",
+    "textbook": "hj"
+  },
+  "grade9A_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "089498a30977f0c213608bfd68fc0f8b",
+    "textbook": "hj"
+  },
+  "grade9A_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "311580a673fafcfacf8a1fedd49e6853",
+    "textbook": "hj"
+  },
+  "grade9A_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "9ededca7718bc8144a28e8d4a65319af",
+    "textbook": "hj"
+  },
+  "grade9A_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "8b8d0c1fc5ce71313507f8303db173d8",
+    "textbook": "hj"
+  },
+  "grade9A_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "fd06f0fb032a35199f76106cf4bb89f6",
+    "textbook": "hj"
+  },
+  "grade9A_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.642883Z",
+    "legacy_import": true,
+    "text_hash": "1035c270d80923a985f0c0383ea452b0",
+    "textbook": "hj"
+  },
+  "grade9A_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.644254Z",
+    "legacy_import": true,
+    "text_hash": "ddf01a70c36e88bb89fd455d56326b5c",
+    "textbook": "hj"
+  },
+  "grade9A_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.644254Z",
+    "legacy_import": true,
+    "text_hash": "5ad9fb9e79d18fde6ccd0da7aa3b0d0c",
+    "textbook": "hj"
+  },
+  "grade9A_u5_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.645248Z",
+    "legacy_import": true,
+    "text_hash": "9efc8132ce21c8ae3a85ef6f7e4cf9aa",
+    "textbook": "hj"
+  },
+  "grade9A_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.645248Z",
+    "legacy_import": true,
+    "text_hash": "64e0ff265f56c1cb4aa89235d8841987",
+    "textbook": "hj"
+  },
+  "grade9A_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.646247Z",
+    "legacy_import": true,
+    "text_hash": "ab1928733dde583e7b81e2efdd383aec",
+    "textbook": "hj"
+  },
+  "grade9A_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.646756Z",
+    "legacy_import": true,
+    "text_hash": "ef288298eba9cddc23077beb59c132eb",
+    "textbook": "hj"
+  },
+  "grade9A_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.646756Z",
+    "legacy_import": true,
+    "text_hash": "700ccf162071d6881e738fd1af4dc3ea",
+    "textbook": "hj"
+  },
+  "grade9A_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.646756Z",
+    "legacy_import": true,
+    "text_hash": "c7c3d675cb2b406dd53400086ead3f6f",
+    "textbook": "hj"
+  },
+  "grade9A_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.647753Z",
+    "legacy_import": true,
+    "text_hash": "54750e341a1cc79998f3f90f2ae27196",
+    "textbook": "hj"
+  },
+  "grade9A_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.647753Z",
+    "legacy_import": true,
+    "text_hash": "6020b2a00339e594c97c998452d4bf74",
+    "textbook": "hj"
+  },
+  "grade9A_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.647753Z",
+    "legacy_import": true,
+    "text_hash": "314af32885e16e89ea92f472532e0476",
+    "textbook": "hj"
+  },
+  "grade9A_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.648773Z",
+    "legacy_import": true,
+    "text_hash": "1d7da5de73c8e723753e4f7866a3365b",
+    "textbook": "hj"
+  },
+  "grade9A_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.648773Z",
+    "legacy_import": true,
+    "text_hash": "729fa116e704564b7a9a0db36bdcfef9",
+    "textbook": "hj"
+  },
+  "grade9A_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.648773Z",
+    "legacy_import": true,
+    "text_hash": "22959d78ec8ddcea145886d7f98f7850",
+    "textbook": "hj"
+  },
+  "grade9B_u1_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.649755Z",
+    "legacy_import": true,
+    "text_hash": "bf07a27fbd503d572120d4155e8881fa",
+    "textbook": "hj"
+  },
+  "grade9B_u1_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.649755Z",
+    "legacy_import": true,
+    "text_hash": "de69f86850ae8b75b901b5f76922fdc7",
+    "textbook": "hj"
+  },
+  "grade9B_u1_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.649755Z",
+    "legacy_import": true,
+    "text_hash": "a595e6f0c5510eaa5a77c1cef224b845",
+    "textbook": "hj"
+  },
+  "grade9B_u2_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.649755Z",
+    "legacy_import": true,
+    "text_hash": "0c7eca8f4b116fd81cd8681b729dbf49",
+    "textbook": "hj"
+  },
+  "grade9B_u2_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.650754Z",
+    "legacy_import": true,
+    "text_hash": "312c58fff44bb5033d56d1777855976c",
+    "textbook": "hj"
+  },
+  "grade9B_u2_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.650754Z",
+    "legacy_import": true,
+    "text_hash": "c4ccdf169d99931447170ec2d6d9dc59",
+    "textbook": "hj"
+  },
+  "grade9B_u3_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.650754Z",
+    "legacy_import": true,
+    "text_hash": "cd9c45419ce17aabc47e78e4f5e01b06",
+    "textbook": "hj"
+  },
+  "grade9B_u3_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.650754Z",
+    "legacy_import": true,
+    "text_hash": "ab5b1c12585cf7c92033da22fa7730d8",
+    "textbook": "hj"
+  },
+  "grade9B_u3_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.651753Z",
+    "legacy_import": true,
+    "text_hash": "2c3d27a170664e72c73570c49651e150",
+    "textbook": "hj"
+  },
+  "grade9B_u4_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.651753Z",
+    "legacy_import": true,
+    "text_hash": "d078982b22ca6c317df8dbd559ab8b79",
+    "textbook": "hj"
+  },
+  "grade9B_u4_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.651753Z",
+    "legacy_import": true,
+    "text_hash": "c9a5537bb0489f94d0530fccc2129a8a",
+    "textbook": "hj"
+  },
+  "grade9B_u4_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.652752Z",
+    "legacy_import": true,
+    "text_hash": "0c27383f34cdf08c0c3f4c218688454d",
+    "textbook": "hj"
+  },
+  "grade9B_u5_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.654750Z",
+    "legacy_import": true,
+    "text_hash": "cdd1a8f4cda4fbf739a955e866499fdc",
+    "textbook": "hj"
+  },
+  "grade9B_u5_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.654750Z",
+    "legacy_import": true,
+    "text_hash": "85afb3786937c181b5a2bbc5261e8953",
+    "textbook": "hj"
+  },
+  "grade9B_u6_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.654750Z",
+    "legacy_import": true,
+    "text_hash": "c81523cd3ccd4b3d670bd7bdb6f8f7df",
+    "textbook": "hj"
+  },
+  "grade9B_u6_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.655750Z",
+    "legacy_import": true,
+    "text_hash": "1582cce07f605138a6203c0eb41191b6",
+    "textbook": "hj"
+  },
+  "grade9B_u6_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.655750Z",
+    "legacy_import": true,
+    "text_hash": "bfc4e167aecc6e1f6d93f6d094f3ff61",
+    "textbook": "hj"
+  },
+  "grade9B_u7_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.655750Z",
+    "legacy_import": true,
+    "text_hash": "a88674352e03259eee029513dacafd84",
+    "textbook": "hj"
+  },
+  "grade9B_u7_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.656748Z",
+    "legacy_import": true,
+    "text_hash": "edd2c69c452be38cff0e826fc89a3b4d",
+    "textbook": "hj"
+  },
+  "grade9B_u7_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.656748Z",
+    "legacy_import": true,
+    "text_hash": "4615b0b8280335a5fdead5f9ab55c79b",
+    "textbook": "hj"
+  },
+  "grade9B_u8_L0.mp3": {
+    "generated_at": "2026-05-05T11:02:18.656748Z",
+    "legacy_import": true,
+    "text_hash": "1aac5bb1f1a07c17ff72a9027af99420",
+    "textbook": "hj"
+  },
+  "grade9B_u8_L1.mp3": {
+    "generated_at": "2026-05-05T11:02:18.656748Z",
+    "legacy_import": true,
+    "text_hash": "9530f15917c586efdc5cbaaf4740e196",
+    "textbook": "hj"
+  },
+  "grade9B_u8_L2.mp3": {
+    "generated_at": "2026-05-05T11:02:18.657747Z",
+    "legacy_import": true,
+    "text_hash": "4bde69df1b1033376d1c5d69df40453e",
+    "textbook": "hj"
+  }
+}

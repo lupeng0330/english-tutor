@@ -1,36 +1,85 @@
 # -*- coding: utf-8 -*-
 """
-乐学英语 · 课文音频生成 V2（分篇 + 角色多音色）
-==============================================
+乐学英语 · 课文音频生成 V2（分篇 + 角色多音色 + 增量校验）
+================================================================
 新特性：
   1. 按 unit.lessons[] 逐篇生成 MP3，文件名：{grade}{A|B}_{uid}_L{i}.mp3
   2. 对话行（"Name: ..."）按角色名自动分配不同男女声，同一说话人音色稳定
   3. 故事段落（非对话）用默认女声
   4. 兼容旧的 unit.lesson 单字符串（生成 1 个 L0 文件）
-  5. 已存在且非空的文件默认跳过，用 --force 强制重生
+  5. 🆕 增量校验：基于 audio/.manifest.json 记录每篇 MP3 的课文文本 hash。
+       - 文本未变 → skip
+       - 文本已变 → 自动重生成（无需 --force）
+       - manifest 里没记录的老文件 → 首次运行回填 hash，不重跑音频
+  6. --force 强制全量重生
+  7. 🆕 --dry-run 只报告"哪些课文变了 / 需要重生成"，不实际跑 TTS
+  8. 🆕 --stale-only 只重跑 hash 不匹配的课文（首次启用后 = 默认增量模式）
 
 依赖：pip install edge-tts
 
 用法：
-  python gen_audio_v2.py                                  # 教科版 grade6.下
-  python gen_audio_v2.py --all                            # 教科版所有年级
+  python gen_audio_v2.py                                  # 教科版 grade6.下（增量）
+  python gen_audio_v2.py --all                            # 教科版所有年级（增量）
   python gen_audio_v2.py --grade grade6 --term 下
   python gen_audio_v2.py --force                          # 已存在也覆盖
+  python gen_audio_v2.py --dry-run --all                  # 只看变更，不真跑
+  python gen_audio_v2.py --stale-only --all               # 只跑 hash 变更的
   python gen_audio_v2.py --textbook hj --grade grade7 --term 上   # 沪教版七上
   python gen_audio_v2.py --textbook hj --all              # 沪教版所有年级
 """
 import asyncio
 import argparse
+import datetime
 import json
 import os
 import re
 import hashlib
-import edge_tts
+try:
+    import edge_tts  # 只在真跑 TTS 时需要，dry-run / 增量检查可缺席
+except ImportError:
+    edge_tts = None
 
 ROOT     = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR  = os.path.join(ROOT, "audio")
 TEXTBOOK_DIR = os.path.join(ROOT, "data", "textbooks")
 TMP_DIR  = os.path.join(OUT_DIR, "_tmp")
+
+# 🆕 增量校验用的 manifest 文件：
+#   { "<mp3_filename>": {
+#       "text_hash": "md5",
+#       "textbook": "jk",
+#       "generated_at": "2026-05-05T..."
+#     }, ... }
+MANIFEST_PATH = os.path.join(OUT_DIR, ".manifest.json")
+
+
+def load_manifest():
+    """读取 manifest。不存在或损坏时返回空 dict。"""
+    if not os.path.exists(MANIFEST_PATH):
+        return {}
+    try:
+        with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        print("[warn] manifest 读取失败，将重建: {}".format(e))
+        return {}
+
+
+def save_manifest(manifest):
+    """原子写：先写 .tmp 再 rename，避免中断时损坏。"""
+    if not os.path.exists(OUT_DIR):
+        os.makedirs(OUT_DIR)
+    tmp = MANIFEST_PATH + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2, sort_keys=True)
+    os.replace(tmp, MANIFEST_PATH)
+
+
+def text_hash(text):
+    """为课文英文文本计算稳定 hash（预处理后）。"""
+    s = preprocess(text or "").strip()
+    return hashlib.md5(s.encode("utf-8")).hexdigest()
 
 # 教材 → 文件名前缀 映射
 #   教科版 jk 覆盖 grade1~grade6；沪教版 hj 覆盖 grade7~grade9，
@@ -194,6 +243,8 @@ class VoiceAllocator:
 
 
 async def tts_to_file(text, voice, fpath, rate=RATE):
+    if edge_tts is None:
+        raise RuntimeError("需要 TTS 但未安装 edge_tts。请：pip install edge-tts")
     communicate = edge_tts.Communicate(text, voice, rate=rate)
     await communicate.save(fpath)
 
@@ -224,18 +275,52 @@ async def tts_with_retry(text, voice, fpath, gender_pool, rate=RATE):
     raise last_err if last_err else RuntimeError("tts empty for: " + text[:40])
 
 
-async def gen_lesson_audio(fpath, en_text, seed_salt, force=False):
+async def gen_lesson_audio(fpath, en_text, seed_salt,
+                           force=False, dry_run=False,
+                           stale_only=False,
+                           expected_hash=None, manifest_entry=None):
     """
     把一篇课文（含对话+叙述）生成一个 MP3。
     内部按说话人分片 TTS，再二进制拼接。
-    """
-    if (not force) and os.path.exists(fpath) and os.path.getsize(fpath) > 1024:
-        return "skip", None
 
-    en_text = preprocess(en_text).strip()
-    parts = split_dialogue(en_text)
+    返回 (status, detail)，status 取值：
+      - "skip-fresh"   : 文件存在 + manifest hash 与当前匹配 → 跳过
+      - "skip-legacy"  : 文件存在但 manifest 无记录 → 跳过并回填 hash
+      - "skip-nofile"  : 文件不存在但 stale_only=True → 跳过（仅检查变更模式）
+      - "dry-stale"    : dry-run 模式下检测到需要重生成
+      - "dry-new"      : dry-run 模式下检测到全新文件待生成
+      - "empty"        : 课文为空
+      - "ok"           : 正常生成完成
+    """
+    file_exists = os.path.exists(fpath) and os.path.getsize(fpath) > 1024
+
+    # 1) 强制模式 / 已确定需要生成 → 跳过所有判断直接往下走
+    if not force:
+        # 2) manifest 有记录 + hash 匹配 → 最理想的 skip
+        if file_exists and manifest_entry and expected_hash \
+                and manifest_entry.get("text_hash") == expected_hash:
+            return "skip-fresh", None
+
+        # 3) 文件存在但 manifest 无记录（老文件 / 首次启用增量）→ 保留音频，只回填 hash
+        if file_exists and not manifest_entry:
+            return "skip-legacy", None
+
+        # 4) stale-only 模式下，对于不存在的新文件也跳过（只关心变更的）
+        if not file_exists and stale_only:
+            return "skip-nofile", None
+
+    # === 到这里说明需要"生成"或"报告要生成" ===
+    en_text_clean = preprocess(en_text).strip()
+    parts = split_dialogue(en_text_clean)
     if not parts:
         return "empty", None
+
+    # dry-run：只报告、不真跑 TTS
+    if dry_run:
+        if file_exists:
+            return "dry-stale", None
+        else:
+            return "dry-new", None
 
     allocator = VoiceAllocator(seed_salt=seed_salt)
 
@@ -306,7 +391,11 @@ async def main():
     parser.add_argument("--all", action="store_true", help="处理所有年级所有学期")
     parser.add_argument("--grade", default="grade6", help="年级 key，如 grade6/grade7（默认 grade6）")
     parser.add_argument("--term", default="下", help="学期：上/下（默认：下）")
-    parser.add_argument("--force", action="store_true", help="已存在也覆盖")
+    parser.add_argument("--force", action="store_true", help="已存在也覆盖（忽略 hash 比对）")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="🆕 只报告哪些文件需要生成/重生成，不实际跑 TTS")
+    parser.add_argument("--stale-only", action="store_true",
+                        help="🆕 只重跑 hash 不匹配的课文（跳过全新待生成的）")
     parser.add_argument("--textbook", default="jk",
                         help="教材 ID：jk=广州教科版（默认），hj=沪教牛津版")
     args = parser.parse_args()
@@ -335,14 +424,19 @@ async def main():
         only_grade = args.grade
         only_term  = args.term
 
-    # 汇总任务
-    tasks = []  # (fname, en, seed_salt, label)
+    # 🆕 加载 manifest（增量校验的核心）
+    manifest = load_manifest()
+    manifest_dirty = False
+
+    # 汇总任务：多附加一个 text_hash 字段
+    tasks = []  # (fname, en, seed_salt, label, expected_hash)
     for grade_key, term_name, term_ab, u in iter_target_units(textbook, only_grade, only_term):
         lessons = get_lessons(u)
         for i, (label, en) in enumerate(lessons):
             fname = "{}{}{}_{}_L{}.mp3".format(prefix, grade_key, term_ab, u["id"], i)
             seed_salt = "{}|{}|{}".format(tb_id, grade_key, u["id"])
-            tasks.append((fname, en, seed_salt, label))
+            expected_hash = text_hash(en)
+            tasks.append((fname, en, seed_salt, label, expected_hash))
 
     print("[info] Textbook: {} ({})".format(tb_id, textbook.get("meta", {}).get("name", "-")))
     print("[info] Rate: {}".format(RATE))
@@ -351,30 +445,86 @@ async def main():
     print("[info] Tasks: {}".format(len(tasks)))
     if only_grade or only_term:
         print("[info] Filter: grade={}, term={}".format(only_grade or "ALL", only_term or "ALL"))
-    print("[info] Force : {}".format(args.force))
+    print("[info] Force     : {}".format(args.force))
+    print("[info] Dry-run   : {}".format(args.dry_run))
+    print("[info] Stale-only: {}".format(args.stale_only))
+    print("[info] Manifest  : {} entries".format(len(manifest)))
     print("")
 
-    ok_count, skip_count, fail_count = 0, 0, 0
-    for i, (fname, en, seed_salt, label) in enumerate(tasks, 1):
+    ok_count = 0
+    skip_fresh = 0     # hash 匹配的跳过
+    skip_legacy = 0    # 老文件补登记
+    skip_nofile = 0    # stale-only 模式下跳过的新文件
+    empty_count = 0
+    fail_count = 0
+    dry_stale = 0      # dry-run 报告需要重生成
+    dry_new = 0        # dry-run 报告全新待生成
+
+    for i, (fname, en, seed_salt, label, expected_hash) in enumerate(tasks, 1):
         fpath = os.path.join(OUT_DIR, fname)
+        manifest_entry = manifest.get(fname)
         try:
-            status, detail = await gen_lesson_audio(fpath, en, seed_salt, force=args.force)
-            if status == "skip":
-                skip_count += 1
-                print("  [{:>3}/{}] skip  {}  ({})".format(i, len(tasks), fname, label))
+            status, detail = await gen_lesson_audio(
+                fpath, en, seed_salt,
+                force=args.force,
+                dry_run=args.dry_run,
+                stale_only=args.stale_only,
+                expected_hash=expected_hash,
+                manifest_entry=manifest_entry,
+            )
+            if status == "skip-fresh":
+                skip_fresh += 1
+                # 静默跳过（量大时刷屏无意义），只在 -v 时可考虑打印
+            elif status == "skip-legacy":
+                skip_legacy += 1
+                if args.dry_run:
+                    # dry-run 不做副作用，只报告
+                    print("  [{:>3}/{}] legacy {}  ({})  首次运行将回填 hash".format(
+                        i, len(tasks), fname, label))
+                else:
+                    # 回填 manifest hash，但不重跑音频
+                    manifest[fname] = {
+                        "text_hash": expected_hash,
+                        "textbook": tb_id,
+                        "generated_at": (manifest_entry or {}).get("generated_at")
+                                        or datetime.datetime.utcnow().isoformat() + "Z",
+                        "legacy_import": True,
+                    }
+                    manifest_dirty = True
+                    print("  [{:>3}/{}] legacy {}  ({})  回填 hash".format(
+                        i, len(tasks), fname, label))
+            elif status == "skip-nofile":
+                skip_nofile += 1
             elif status == "empty":
-                print("  [{:>3}/{}] empty {}  (no content)".format(i, len(tasks), fname))
-            else:
+                empty_count += 1
+                print("  [{:>3}/{}] empty  {}  (no content)".format(i, len(tasks), fname))
+            elif status == "dry-stale":
+                dry_stale += 1
+                old_hash = (manifest_entry or {}).get("text_hash", "-")[:8]
+                print("  [{:>3}/{}] STALE  {}  ({})  hash {}...→{}...".format(
+                    i, len(tasks), fname, label,
+                    old_hash, expected_hash[:8]))
+            elif status == "dry-new":
+                dry_new += 1
+                print("  [{:>3}/{}] NEW    {}  ({})".format(i, len(tasks), fname, label))
+            elif status == "ok":
                 ok_count += 1
                 detail_str = ", ".join(detail or []) if detail else "-"
                 size_kb = os.path.getsize(fpath) // 1024
-                print("  [{:>3}/{}] ok    {}  [{}]  ({} KB)  {}".format(
+                print("  [{:>3}/{}] ok     {}  [{}]  ({} KB)  {}".format(
                     i, len(tasks), fname, label, size_kb, detail_str))
+                # 🆕 写入 manifest
+                manifest[fname] = {
+                    "text_hash": expected_hash,
+                    "textbook": tb_id,
+                    "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+                }
+                manifest_dirty = True
         except Exception as e:
             fail_count += 1
-            print("  [{:>3}/{}] FAIL  {}  ({})  :: {}".format(i, len(tasks), fname, label, e))
+            print("  [{:>3}/{}] FAIL   {}  ({})  :: {}".format(i, len(tasks), fname, label, e))
 
-    # 清理
+    # 清理临时目录
     try:
         if os.path.exists(TMP_DIR):
             for f in os.listdir(TMP_DIR):
@@ -385,9 +535,27 @@ async def main():
     except Exception:
         pass
 
+    # 🆕 回写 manifest
+    if manifest_dirty and not args.dry_run:
+        save_manifest(manifest)
+        print("")
+        print("[info] manifest 已更新: {}".format(MANIFEST_PATH))
+
     print("")
-    print("[done] ok={}, skip={}, fail={}".format(ok_count, skip_count, fail_count))
+    if args.dry_run:
+        print("[dry-run] stale={} (hash 不匹配需重生成), new={} (全新待生成), "
+              "fresh-skip={}, legacy-skip={}, empty={}".format(
+              dry_stale, dry_new, skip_fresh, skip_legacy, empty_count))
+    else:
+        print("[done] ok={}, skip-fresh={}, skip-legacy={}, skip-nofile={}, "
+              "empty={}, fail={}".format(
+              ok_count, skip_fresh, skip_legacy, skip_nofile, empty_count, fail_count))
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    # 兼容 Python 3.6（asyncio.run 是 3.7+ 新增）
+    if hasattr(asyncio, "run"):
+        asyncio.run(main())
+    else:
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(main())
