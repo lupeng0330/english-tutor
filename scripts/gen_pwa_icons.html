@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>乐学英语 · 一键生成 PWA 图标（浏览器 Canvas 版）</title>
+<style>
+  body { font: 14px system-ui,-apple-system,sans-serif; max-width: 640px; margin: 32px auto; padding: 0 16px; color:#334155; }
+  h1 { font-size: 20px; }
+  .row { display:flex; gap:24px; align-items:center; margin:16px 0; }
+  canvas { border:1px solid #e2e8f0; background:#fff; }
+  button { background:#3b82f6; color:#fff; border:0; padding:8px 16px; border-radius:8px; cursor:pointer; }
+  button:disabled { background:#94a3b8; }
+  p.tip { background:#fef3c7; padding:10px 14px; border-radius:8px; }
+</style>
+</head>
+<body>
+<h1>🎨 乐学英语 · 生成 PWA 图标</h1>
+<p class="tip">无需 Python 依赖。此页把仓库根目录的 <code>icon.svg</code> 用浏览器 Canvas 渲染成 192 / 512 两张 PNG，点"下载"保存到项目根目录即可。</p>
+<div class="row">
+  <canvas id="c192" width="192" height="192"></canvas>
+  <button id="dl192" disabled>下载 icon-192.png</button>
+</div>
+<div class="row">
+  <canvas id="c512" width="512" height="512"></canvas>
+  <button id="dl512" disabled>下载 icon-512.png</button>
+</div>
+<p>或者：在命令行装 <code>pip install cairosvg</code> 后运行 <code>py -3 scripts/gen_pwa_icons.py</code>，效果一致。</p>
+
+<script>
+async function drawTo(canvasId, size) {
+  const canvas = document.getElementById(canvasId);
+  const ctx = canvas.getContext('2d');
+  const res = await fetch('../icon.svg');
+  const text = await res.text();
+  const blob = new Blob([text], { type: 'image/svg+xml' });
+  const url = URL.createObjectURL(blob);
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => {
+      ctx.clearRect(0, 0, size, size);
+      ctx.drawImage(img, 0, 0, size, size);
+      URL.revokeObjectURL(url);
+      resolve();
+    };
+    img.onerror = reject;
+    img.src = url;
+  });
+}
+
+function wireDownload(btnId, canvasId, filename) {
+  const btn = document.getElementById(btnId);
+  const canvas = document.getElementById(canvasId);
+  btn.disabled = false;
+  btn.onclick = () => {
+    canvas.toBlob(blob => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = filename;
+      a.click();
+    }, 'image/png');
+  };
+}
+
+(async () => {
+  await drawTo('c192', 192);
+  wireDownload('dl192', 'c192', 'icon-192.png');
+  await drawTo('c512', 512);
+  wireDownload('dl512', 'c512', 'icon-512.png');
+})();
+</script>
+</body>
+</html>

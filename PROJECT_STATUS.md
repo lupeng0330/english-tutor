@@ -1,8 +1,8 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-05-05（PC 端生成，晚间更新技术债收尾）  
-> 对应 Git HEAD：`dde6cdc`
+> 最后更新：2026-05-05 晚（PC 端，状态校准 + 准备启动 PWA 收尾 v01.14）  
+> 对应 Git HEAD：`d91e3d6`
 
 ---
 
@@ -57,20 +57,27 @@ python3 -m http.server 8765
 
 ---
 
-## 3. 当前规模（2026-05-05 核查）
+## 3. 当前规模（2026-05-05 晚核查）
 
 | 类别 | 数量 |
 |---|---|
 | **教材单元（教科版 jk）** | **83** 个（1-5 年级每年级 10 单元、6 年级 9 单元、7-9 年级每年级 8 单元） |
 | **教材单元（沪教版 hj）** | **48** 个（7-9 年级 × 上下册 × 8 单元；每单元 15 词 + 3 篇课文 Reading / Grammar focus / More reading） |
-| **题库（单词拼写）** | 184 题 |
-| **题库（听力选择）** | 31 题（教科版 31 + 沪教 g7 32，实际 g7 暂未纳入 jk 题库计数） |
-| **题库（语法）** | 42 题 |
-| **题库（阅读）** | 54 题 |
-| **题库合计** | 311 题（jk）+ 32 题（沪教 g7 听力） |
-| **音频 MP3** | 300+ 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 143；grade9B_u5_L0 缺 1 待补） |
+| **题库（jk · 单词拼写）** | 224 题 |
+| **题库（jk · 听力选择）** | 52 题 |
+| **题库（jk · 语法）** | 72 题 |
+| **题库（jk · 阅读）** | 72 题 |
+| **题库（jk 合计）** | **420 题** |
+| **题库（hj · 单词拼写）** | 95 题（距每单元 15 词全量 720 题还差 ~625） |
+| **题库（hj · 听力选择）** | 32 题（7 上全量） |
+| **题库（hj · 语法）** | 80 题 |
+| **题库（hj · 阅读）** | 48 题 |
+| **题库（hj 合计）** | **255 题** |
+| **题库总计** | **675 题** |
+| **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
 | **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完 |
 | **前端代码** | `app.js` 2912 行（-23%）+ `js/textbook.js` / `js/state.js` / `js/player.js` 三个抽出模块 |
+| **PWA 雏形** | `manifest.json` + `icon.svg` 已就绪（工作区 untracked），待注入 `index.html` + 补 192/512 PNG + 建 `sw.js` |
 
 教材版本占位：`rj`（人教）、`wy`（外研）尚未填充数据。
 
@@ -163,37 +170,43 @@ window.loadQuestionBank(textbookId)  // 返回 { spelling, listening, grammar, r
 ## 7. 近期进展（Git log 摘要）
 
 ```
-38b01bc 2026-05-05 feat(audio): 沪教版 144 篇课文 MP3 + gen_audio_v2 扩展     [PC]
-5d7a903 2026-05-05 feat(hj): 补齐沪教牛津版 7-9 年级全 48 单元教材内容         [PC]
-627371b 2026-05-05 chore(git): ignore *.err                                  [PC]
-14e061f 2026-05-04 feat(spelling): 字母格子填空+手机发音修复+UI优化            [Mac]
-fd4fc1d 2026-05-04 fix(spelling): 单词拼写题增加英文输入UI                    [Mac]
-ea5f85c 2026-05-04 feat(practice): 答题中切换年级/学期无缝刷新题目             [PC]
-c67c4da 2026-05-03 feat: 切换年级重置练习+单元左右滑+每年级扩4-5单元(+22 MP3) [PC]
-0ae229e 2026-05-03 feat: 重构数据架构 + 308 题 + 1-9 年级全覆盖 + 导入工具    [PC]
-da1fccc 2026-05-03 feat(arch): 全局学习上下文切换（localStorage 记忆）        [PC]
-e40b4d9 2026-05-03 feat(listening): 听力题男女声区分（W→Aria / M→Guy）        [PC]
-942a7bc 2026-05-03 fix(listening): 每题直接写死 audioFile                    [PC]
-1870b5f 2026-05-03 feat(listening): 预生成 10 道听力题 MP3                   [PC]
-4bf5082 2026-05-03 feat(voice): 预生成 13 篇课文 MP3（Edge Neural TTS）      [PC]
+d91e3d6 2026-05-05 docs: 同步 PROJECT_STATUS 至技术债收尾后状态（分片/增量/模块拆分）[PC]
+c66e3e7 2026-05-05 ci: auto-bump version to 20260505V01.13                        [PC]
+dde6cdc 2026-05-05 refactor(js): 拆分 app.js 为 textbook/state/player 三个独立模块  [PC]
+c5fa1fc 2026-05-05 ci: auto-bump version to 20260505V01.12                        [PC]
+f8634b6 2026-05-05 feat(audio): gen_audio_v2 支持 manifest 增量校验                [PC]
+b5dae7f 2026-05-05 perf(data): 沪教版 hj.json 按年级分片懒加载，首屏降 71%          [PC]
+38b01bc 2026-05-05 feat(audio): 沪教版 144 篇课文 MP3 + gen_audio_v2 扩展          [PC]
+5d7a903 2026-05-05 feat(hj): 补齐沪教牛津版 7-9 年级全 48 单元教材内容              [PC]
+627371b 2026-05-05 chore(git): ignore *.err                                      [PC]
+14e061f 2026-05-04 feat(spelling): 字母格子填空+手机发音修复+UI优化                [Mac]
+fd4fc1d 2026-05-04 fix(spelling): 单词拼写题增加英文输入UI                        [Mac]
+ea5f85c 2026-05-04 feat(practice): 答题中切换年级/学期无缝刷新题目                [PC]
+c67c4da 2026-05-03 feat: 切换年级重置练习+单元左右滑+每年级扩4-5单元(+22 MP3)     [PC]
+0ae229e 2026-05-03 feat: 重构数据架构 + 308 题 + 1-9 年级全覆盖 + 导入工具        [PC]
+da1fccc 2026-05-03 feat(arch): 全局学习上下文切换（localStorage 记忆）            [PC]
+e40b4d9 2026-05-03 feat(listening): 听力题男女声区分（W→Aria / M→Guy）            [PC]
+942a7bc 2026-05-03 fix(listening): 每题直接写死 audioFile                        [PC]
+1870b5f 2026-05-03 feat(listening): 预生成 10 道听力题 MP3                       [PC]
+4bf5082 2026-05-03 feat(voice): 预生成 13 篇课文 MP3（Edge Neural TTS）          [PC]
 ... (更早的 voice 调试若干次)
-a4f0da4 2026-05-03 Initial commit                                            [PC]
+a4f0da4 2026-05-03 Initial commit                                                [PC]
 ```
 
 ## 8. 后续版本开发计划（v01.10 → v02.x）
 
-> 当前基线：`v01.09`（2026-05-05），最新 HEAD `38b01bc`。
+> 当前基线：`v01.13`（2026-05-05 晚），最新 HEAD `d91e3d6`。下一次 bump 后为 `v01.14`（PWA 收尾）。
 > 总策略：**先把沪教版练习闭环做完 → 补人教/外研 → 学习闭环（错题本+数据）→ AI 真接入**。
 
 ### 🟡 P0 · 沪教版练习闭环（最近 2-3 周）
 
-> 现状：沪教版 48 单元课文已就位，但只有 g7 32 道听力，**单词拼写/语法/阅读三类题型仍为空**，是用户最先感知的断层。
+> 现状：沪教版 48 单元课文已就位，题库框架已打通（hj 四类文件都在，共 255 题），主要缺口是 AI 造题量仍不够（拼写距离 720 题全量还差 ~625）。
 
-#### v01.10 — 沪教版题库框架打通
-- [ ] 新建 `data/questions/hj_spelling.json` / `hj_listening.json` / `hj_grammar.json` / `hj_reading.json`（空 schema）
-- [ ] `questionBank.js` 让 `loadQuestionBank('hj')` 真正路由到 hj_*.json，徽章数实时显示
-- [ ] 教材切到沪教版时，练习页自动从 hj_*.json 取题
-- [ ] 把现有 g7 32 道听力归位到 `hj_listening.json` 并对齐 schema
+#### v01.10 — 沪教版题库框架打通 ✅ 已完成
+- [x] 新建 `data/questions/hj_spelling.json` / `hj_listening.json` / `hj_grammar.json` / `hj_reading.json`（已有内容：95 / 32 / 80 / 48）
+- [x] `questionBank.js` 按 `textbookId + '_' + type + '.json'` 统一路由到 hj_*.json
+- [x] 教材切到沪教版时，练习页自动从 hj_*.json 取题
+- [x] 原 g7 32 道听力已归位到 `hj_listening.json` 且 schema 对齐
 
 #### v01.11 — 沪教版 AI 自动造题（首批）
 复用 `scripts/ai_generate_questions.py`，针对 hj.json 的 48 单元批量造题：
@@ -246,9 +259,10 @@ a4f0da4 2026-05-03 Initial commit                                            [PC
 - [ ] 其次推：当前学段做题率 < 50% 的单元
 - [ ] 简单加权随机即可，不引入复杂算法栈
 
-#### v01.19 — PWA 离线可用
+#### v01.19 — PWA 离线可用（🆕 提前到 v01.14 做）
 - [ ] `manifest.json` + Service Worker 缓存 `audio/` + `data/`
 - [ ] 安装到桌面 / 主屏，离线也能背单词
+- 备注：`manifest.json` / `icon.svg` 已就位；本轮 v01.14 落地 `index.html` 注入 + 两张 PNG + `sw.js`（SWR for data / cache-first for audio）
 
 #### v01.20 — 多用户本地档案
 - [ ] localStorage 存多个 profile（家里两个孩子分别记录）
@@ -325,4 +339,4 @@ python3 -m http.server 8765
 
 ---
 
-_此文档由 PC 端 AI 助手在 2026-05-05（晚）更新，记录当天技术债收尾（分片/增量/模块拆分三件套）。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
+_此文档由 PC 端 AI 助手在 2026-05-05（晚）校准至磁盘事实（jk 420 题 / hj 255 题 / 音频 303 / HEAD d91e3d6），并启动 v01.14 PWA 收尾。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
