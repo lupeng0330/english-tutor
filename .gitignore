@@ -40,3 +40,8 @@ _parse_tmp.py
 # edge-tts 生成过程中的临时分片（中途崩溃可能残留）。
 # 注意：audio/.manifest.json 是增量校验元数据，需要被 commit，不要忽略。
 audio/_tmp/
+
+# CodeBuddy / Cursor 等 AI IDE 本地状态（plan / 缓存等，不应入仓）
+.codebuddy/
+.cursor/
+
