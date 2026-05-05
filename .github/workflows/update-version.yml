@@ -18,8 +18,29 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Decide whether to bump
+        id: gate
+        run: |
+          # 只在 feat / fix / perf / refactor 类型的提交后 bump 版本
+          # docs / chore / ci / test / style / build 等跳过 bump（仍会部署）
+          # 跳过 GitHub Actions 自己的提交，避免循环
+          MSG=$(git log -1 --pretty=%s)
+          AUTHOR=$(git log -1 --pretty=%an)
+          echo "last commit: $MSG (by $AUTHOR)"
+          if [[ "$AUTHOR" == "GitHub Actions" ]]; then
+            echo "skip: bot commit"
+            echo "should_bump=false" >> $GITHUB_OUTPUT
+          elif [[ "$MSG" =~ ^(feat|fix|perf|refactor)(\(.+\))?!?:[[:space:]] ]]; then
+            echo "bump: functional change"
+            echo "should_bump=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip: non-functional change (docs/chore/ci/test/style/build/etc.)"
+            echo "should_bump=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Compute next version
         id: ver
+        if: steps.gate.outputs.should_bump == 'true'
         run: |
           python3 << 'EOF'
           import subprocess, re, datetime, calendar, os
@@ -58,11 +79,13 @@ jobs:
           EOF
 
       - name: Write version.txt
+        if: steps.gate.outputs.should_bump == 'true'
         run: |
           echo "${{ steps.ver.outputs.version }} ${{ steps.ver.outputs.hash }} (${{ steps.ver.outputs.utc }})" > version.txt
           cat version.txt
 
       - name: Commit version.txt
+        if: steps.gate.outputs.should_bump == 'true'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
