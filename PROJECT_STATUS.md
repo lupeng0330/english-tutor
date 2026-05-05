@@ -340,3 +340,55 @@ python3 -m http.server 8765
 ---
 
 _此文档由 PC 端 AI 助手在 2026-05-05（晚）校准至磁盘事实（jk 420 题 / hj 255 题 / 音频 303 / HEAD d91e3d6），并启动 v01.14 PWA 收尾。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
+
+---
+
+## 10. ⚠️ v01.20 多用户档案首次尝试与回滚复盘（2026-05-05 深夜）
+
+> 给下次接手 v01.20 的 AI 助手看：本次尝试翻车了，已全量回滚到 `fd27ce0`。这里记录症状 / 根因推测 / 教训，避免重蹈覆辙。
+
+### 本次尝试的改动范围（一次性全做完 → 翻车）
+1. 新建 `js/profile.js`：`ProfileManager` 数据层（list / active / create / update / remove / migrateLegacyOnce）
+2. `index.html` addScript 链里注入 `./js/profile.js`
+3. `app.js` 引入 `_pkey(key)` 工具函数（自动给 localStorage key 加 `:profileId` 后缀）
+4. `app.js` 6 个入口换用 `_pkey`：`_loadStats` / `_saveStats` / `_loadWrongbook` / `_saveWrongbook` / `loadCtx` / `saveCtx`
+5. `bootstrap()` 最前面调用 `ProfileManager.migrateLegacyOnce()` 把老 key 搬到 `:default` 后缀
+
+### 翻车症状
+- 本地 `http://localhost:8765/` 首屏**按钮全部失效**（点击无反应）
+- Tailwind 样式大面积失效（class 不生效）、单元列表直接显示在首页（`.hide` 没生效）
+- Console 红错：`Uncaught ReferenceError: continueLearning is not defined at HTMLButtonElement.onclick ((index):148:175)`
+
+### 根因推测（事后复盘，不 100% 确定）
+- `app.js` 磁盘源码中 `function continueLearning()` **确实存在**（501 行）
+- 报 undefined 的唯一可能是 `app.js` 顶层执行中**某一行更早抛了异常**，中断了后续所有 `function xxx()` 定义，导致 501 行的 `continueLearning` 根本没被绑到 window
+- 最可疑的点：**一次性改动太多**，`_pkey` / `bootstrap` migrate / profile.js 注入的时序链里有微妙 bug
+- 清 SW + 硬刷无效 → 排除 Service Worker 缓存因素
+
+### 已做处理
+- 备份了 6 个新建文件到 `.backup_v0120/`（已删除，彻底干净）
+- `git checkout -- .` + `git clean -fd` 把工作区回到 `fd27ce0` 干净状态
+- 页面恢复正常，按钮全部可点
+
+### ⛳ 下次重做 v01.20 的**纪律**（必须遵守）
+
+1. **每步独立 commit，改一步验一步**。不要一次性写完再整体刷浏览器。
+2. 推荐拆分顺序（每步结束都要在浏览器里跑通才能进下一步）：
+   - **Step 1**：只新建 `js/profile.js`，**不接任何地方**。浏览器 Console 里手动 `window.ProfileManager.list()` / `active()` 验证。→ commit
+   - **Step 2**：`index.html` 注入 profile.js（放在 `state.js` 之后、`player.js` 之前）。浏览器刷一次确认页面照常跑、`window.ProfileManager` 可访问。→ commit
+   - **Step 3**：`app.js` 引入 `_pkey` 工具函数 + **只改 wrongbook 一对 key**。刷页面，手动做错一题看错题本还在不在。→ commit
+   - **Step 4**：同样方式只改 stats 一对 key。刷页面，看首页统计是否仍正常。→ commit
+   - **Step 5**：同样方式只改 ctx 一对 key。刷页面，切年级 + 刷新看记忆是否仍正常。→ commit
+   - **Step 6**：`bootstrap()` 加 `migrateLegacyOnce()`。清 localStorage 的 `:default` key 模拟老用户，刷新后看老数据是否自动搬迁。→ commit
+   - **Step 7**：UI 部分（header 切换按钮 + 下拉 + 新建/编辑弹框）。→ 可拆 2-3 个 commit
+3. **每步出问题立刻 `git revert` 那一步**，不要在同一个乱状态里继续调试。
+4. **不要在 `js/profile.js` 的 IIFE 里做任何副作用**（如自动 migrate、自动写 localStorage）。迁移动作必须由 `app.js` 的 `bootstrap()` 在受控时机显式调用。
+5. **预估工期**：按小步提交方式 ~2.5-3 小时；若按本次"一次性全做"方式实际会 >4 小时（含翻车 + 排障 + 回滚 + 重做）。
+
+### 保留的产物
+- 本次 PWA v01.14 已成功上线（`fd27ce0`），`manifest.json` / `sw.js` / `icon-*.png` / `icon.svg` 都在 HEAD 里
+- `scripts/make_pwa_icons_stdlib.py` 是生成 192/512 PNG 的唯一推荐脚本（零依赖，纯 Python stdlib）
+
+---
+
+_2026-05-05 深夜追加：v01.20 尝试失败全量回滚，当前 HEAD 仍为 `fd27ce0`（=线上最后一次稳定 push）。本次 PWA 小收尾只做了文档记录 + 死代码清理，未 push。_

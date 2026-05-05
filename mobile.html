@@ -163,13 +163,16 @@
       </div>
 
       <aside class="qr-panel" id="qrPanel">
-        <h3>📱 手机扫码 · 线上最新版</h3>
+        <h3>📱 手机扫码</h3>
+        <div class="qr-tabs" style="display:flex;gap:6px;width:100%;">
+          <button class="btn qr-mode active" data-mode="lan" style="flex:1;">🏠 局域网（本地代码）</button>
+          <button class="btn qr-mode" data-mode="online" style="flex:1;">📡 线上（GitHub Pages）</button>
+        </div>
         <div class="qr-img"><img id="qrImg" alt="QR code" /></div>
         <div class="qr-url" id="qrUrl">loading...</div>
-        <div class="qr-hint">
+        <div class="qr-hint" id="qrHint">
           用手机相机或微信扫一扫<br>
-          打开 GitHub Pages 线上版本<br>
-          <span style="color:#fbbf24;">⚠️ 首次访问可能需等 1-2 分钟 Pages 部署</span>
+          <span style="color:#fbbf24;">⚠️ 手机必须连同一 Wi-Fi；Windows 防火墙可能弹出"允许访问"授权</span>
         </div>
         <div class="qr-actions">
           <button class="btn" id="copyUrlBtn">📋 复制链接</button>
@@ -183,8 +186,6 @@
   // ============ 基本设置 ============
   // 如果你换了仓库名或用户名，改这里即可
   const GITHUB_PAGES_BASE = 'https://lupeng0330.github.io/english-tutor/';
-  // 带 ?v=xxx 参数可以绕过浏览器缓存；这里用时间戳，扫码时一定拿到最新
-  const onlineUrl = GITHUB_PAGES_BASE + '?v=' + Date.now().toString(36);
 
   // ============ 手机预览 iframe ============
   const ifr = document.getElementById('ifr');
@@ -214,9 +215,55 @@
   const qrPanel = document.getElementById('qrPanel');
   const qrImg   = document.getElementById('qrImg');
   const qrUrlEl = document.getElementById('qrUrl');
-  // api.qrserver.com 免费公共 API，不依赖任何 npm 包
-  qrImg.src = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=6&data=' + encodeURIComponent(onlineUrl);
-  qrUrlEl.textContent = onlineUrl;
+  const qrHintEl= document.getElementById('qrHint');
+
+  // 两种目标：lan（局域网本地代码） / online（GitHub Pages 线上）
+  // 局域网 URL：通过 window.location.hostname 拿当前 PC 的访问地址
+  //   - 如果你用 http://192.168.x.x:8765/mobile.html 打开，hostname 就是那个 IP，直接可用
+  //   - 如果你是 localhost/127.0.0.1 打开，二维码生成的就是 localhost，手机扫不到 → 会显示红色提示
+  const lanHost = window.location.hostname || 'localhost';
+  const lanPort = window.location.port || '8765';
+  const lanUrl  = 'http://' + lanHost + ':' + lanPort + '/index.html?ts=' + Date.now().toString(36);
+  const onlineUrlFresh = GITHUB_PAGES_BASE + '?v=' + Date.now().toString(36);
+
+  let currentMode = 'lan';
+  let currentUrl  = lanUrl;
+
+  function refreshQr() {
+    currentUrl = (currentMode === 'lan') ? lanUrl : onlineUrlFresh;
+    qrImg.src  = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=6&data=' + encodeURIComponent(currentUrl);
+    qrUrlEl.textContent = currentUrl;
+
+    if (currentMode === 'lan') {
+      const isLocalOnly = /^(localhost|127\.0\.0\.1)$/i.test(lanHost);
+      if (isLocalOnly) {
+        qrHintEl.innerHTML =
+          '<span style="color:#ef4444;">⚠️ 当前 URL 是 <b>' + lanHost + '</b>，手机扫码无法访问！</span><br>' +
+          '请改用 <b style="color:#fbbf24;">http://192.168.x.x:8765/mobile.html</b> 打开本页（x.x 换成本机局域网 IP），<br>' +
+          '再扫码即可让手机访问"本地未 push 的代码"。';
+      } else {
+        qrHintEl.innerHTML =
+          '用手机相机或微信扫一扫<br>' +
+          '<span style="color:#34d399;">✅ 手机连同一 Wi-Fi 即可访问本地代码</span><br>' +
+          '<span style="color:#fbbf24;">⚠️ 首次访问可能弹防火墙授权；PWA/ServiceWorker 在 http 非 localhost 下有限制</span>';
+      }
+    } else {
+      qrHintEl.innerHTML =
+        '用手机相机或微信扫一扫<br>' +
+        '打开 GitHub Pages 线上版本<br>' +
+        '<span style="color:#fbbf24;">⚠️ 刚 push 的话需等 1-2 分钟 Pages 部署</span>';
+    }
+  }
+  refreshQr();
+
+  document.querySelectorAll('.qr-mode').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.qr-mode').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.dataset.mode;
+      refreshQr();
+    });
+  });
 
   // 默认显示扫码面板（本地化记忆用户选择）
   const QR_KEY = 'yxyy_mobile_qr_visible';
@@ -230,18 +277,18 @@
 
   document.getElementById('copyUrlBtn').addEventListener('click', async () => {
     try {
-      await navigator.clipboard.writeText(onlineUrl);
+      await navigator.clipboard.writeText(currentUrl);
       const btn = document.getElementById('copyUrlBtn');
       const prev = btn.textContent;
       btn.textContent = '✅ 已复制';
       setTimeout(() => { btn.textContent = prev; }, 1200);
     } catch (e) {
-      prompt('复制这个链接给手机：', onlineUrl);
+      prompt('复制这个链接给手机：', currentUrl);
     }
   });
 
   document.getElementById('openPageBtn').addEventListener('click', () => {
-    window.open(onlineUrl, '_blank');
+    window.open(currentUrl, '_blank');
   });
 </script>
 </body>
