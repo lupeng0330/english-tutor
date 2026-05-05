@@ -359,6 +359,9 @@ function _loadStats() {
   _stats.lastActiveDay = _stats.lastActiveDay || '';
   _stats.streak       = _stats.streak       || 0;
   _stats.lastUnit     = _stats.lastUnit     || null;
+  // 🆕 阅读自测每题状态：key = "<tb>::<grade>::<term>::<uid>::<lessonIdx>::<qIdx>"
+  //                      val = { ok: true|false, at: ts }
+  _stats.readingExDone = _stats.readingExDone || {};
   return _stats;
 }
 function _saveStats() {
@@ -393,6 +396,17 @@ function markWordKnown(word) {
   s.knownWords[String(word).toLowerCase()] = Date.now();
   _saveStats();
   renderHomeStats();
+}
+
+// 🆕 标记"阅读自测"一道题的答题状态（提交时调用）
+// ctx 必传：{ textbook, grade, term, uid, lessonIdx, qIdx }
+function markReadingExAnswer(ctx, ok) {
+  if (!ctx || !ctx.uid) return;
+  const s = _loadStats();
+  const key = [ctx.textbook || 'jk', ctx.grade || 0, ctx.term || '上',
+               ctx.uid, ctx.lessonIdx|0, ctx.qIdx|0].join('::');
+  s.readingExDone[key] = { ok: !!ok, at: Date.now() };
+  _saveStats();
 }
 // 答题记录（用于本周正确率）
 function recordAnswerStats(isCorrect) {
@@ -820,34 +834,44 @@ function submitReadingEx() {
   if (!items || items.length === 0) return;
   const listEl = document.getElementById('readingExList');
   if (!listEl) return;
+  // 🆕 统一的 progress ctx，用于写入 readingExDone
+  const progressCtx = {
+    textbook: (state.ctx && state.ctx.textbook) || 'jk',
+    grade:    state.ctx && state.ctx.grade,
+    term:     state.ctx && state.ctx.term,
+    uid:      _readingExState.uid,
+    lessonIdx: _readingExState.lessonIdx|0,
+  };
   let ok = 0;
   items.forEach((it, i) => {
     const row = listEl.children[i];
     if (!row) return;
     const fb = row.querySelector('.rex-feedback');
     let user = '';
+    let thisOk = false;
     if (it.type === 'choice') {
       const picked = row.querySelector('input[name="rex_' + i + '"]:checked');
       user = picked ? picked.value : '';
       // 选择题：答案是 "A" 或 "A. xxx"，取首字母比对
       const correctLetter = String(it.a || '').trim().charAt(0).toUpperCase();
       const userLetter    = user.toUpperCase();
-      const correct = userLetter && userLetter === correctLetter;
-      if (correct) ok++;
+      thisOk = !!(userLetter && userLetter === correctLetter);
+      if (thisOk) ok++;
       if (fb) {
         fb.classList.remove('hide');
-        fb.className = 'rex-feedback mt-2 text-xs ' + (correct ? 'text-green-600' : 'text-red-600');
-        fb.textContent = correct ? '✓ 正确' : ('✗ 正确答案：' + it.a);
+        fb.className = 'rex-feedback mt-2 text-xs ' + (thisOk ? 'text-green-600' : 'text-red-600');
+        fb.textContent = thisOk ? '✓ 正确' : ('✗ 正确答案：' + it.a);
       }
     } else {
       const ta = row.querySelector('textarea.rex-input');
       user = ta ? ta.value : '';
       const r = _answerMatch(user, it.a);
-      if (r.ok) ok++;
+      thisOk = !!r.ok;
+      if (thisOk) ok++;
       if (fb) {
         fb.classList.remove('hide');
-        fb.className = 'rex-feedback mt-2 text-xs ' + (r.ok ? 'text-green-600' : 'text-orange-600');
-        fb.innerHTML = (r.ok ? '✓ ' : '⚠ ') + r.hint
+        fb.className = 'rex-feedback mt-2 text-xs ' + (thisOk ? 'text-green-600' : 'text-orange-600');
+        fb.innerHTML = (thisOk ? '✓ ' : '⚠ ') + r.hint
           + '<div class="text-slate-500 mt-1">参考答案：' + _escapeHtml(it.a) + '</div>';
       }
       // 错题进错题本（复用 recordAnswer）
@@ -866,6 +890,8 @@ function submitReadingEx() {
         } catch(e){}
       }
     }
+    // 🆕 每题落盘，纳入单元进度统计
+    try { markReadingExAnswer(Object.assign({}, progressCtx, { qIdx: i }), thisOk); } catch(e){}
   });
   _readingExState.submitted = true;
   const result = document.getElementById('readingExResult');
@@ -877,6 +903,9 @@ function submitReadingEx() {
   }
   const badge = document.getElementById('readingExBadge');
   if (badge) badge.textContent = `${ok} / ${items.length}`;
+  // 🆕 阅读自测也算入单元进度，立即刷新当前单元的进度条与首页统计
+  try { updateUnitProgress(); } catch(e){}
+  try { renderHomeStats(); } catch(e){}
 }
 
 function resetReadingEx() {
@@ -954,16 +983,21 @@ window.resetReadingEx  = resetReadingEx;
 })();
 
 
-// 单元学习进度条（按"该单元已掌握单词数 / 单元总词数"显示）
+// 单元学习进度条（综合"已掌握单词 + 已答阅读题"显示）
 function updateUnitProgress() {
-  if (!state.currentUnit || !state.currentUnit.words) return;
+  if (!state.currentUnit) return;
   const p = computeUnitProgress(state.currentUnit);
   const bar = document.getElementById('unitProgressBar');
   const pctEl = document.getElementById('unitProgressPct');
   const label = document.getElementById('unitProgressLabel');
   if (bar)   bar.style.width = p.pct + '%';
   if (pctEl) pctEl.textContent = p.pct + '%';
-  if (label) label.textContent = p.known + ' / ' + p.total + ' 词已掌握';
+  if (label) {
+    const parts = [];
+    if (p.total > 0) parts.push(p.known + ' / ' + p.total + ' 词已掌握');
+    if (p.readingAttempted > 0) parts.push('阅读 ' + p.readingOk + ' / ' + p.readingAttempted + ' 题');
+    label.textContent = parts.length > 0 ? parts.join(' · ') : '开始学习吧';
+  }
 }
 
 
@@ -1145,20 +1179,34 @@ function resetPracticeOnContextChange() {
 });
 
 // ===================== 课本 - 单元列表 =====================
-// 计算单元学习进度（0-100 整数），基于 localStorage 的 knownWords
-// 返回 { pct, known, total }
+// 计算单元学习进度（0-100 整数），综合「单词掌握」+「阅读自测」两部分：
+//   words: unit.words 里在 knownWords 中的数量
+//   reading: readingExDone 里该单元已做过的题数（作为分母）/ 其中答对数（作为分子）
+// 返回 { pct, known, total, readingOk, readingAttempted }
 function computeUnitProgress(unit) {
-  if (!unit || !Array.isArray(unit.words) || unit.words.length === 0) {
-    return { pct: 0, known: 0, total: 0 };
-  }
   const knownMap = _loadStats().knownWords || {};
+  const rexMap   = _loadStats().readingExDone || {};
+  const words = Array.isArray(unit && unit.words) ? unit.words : [];
   let known = 0;
-  for (const w of unit.words) {
-    if (knownMap[String(w.word).toLowerCase()]) known++;
+  for (const w of words) {
+    if (knownMap[String(w && w.word).toLowerCase()]) known++;
   }
-  const total = unit.words.length;
-  const pct = total > 0 ? Math.round(known / total * 100) : 0;
-  return { pct, known, total };
+  // 阅读自测：匹配本教材/年级/学期/本单元的所有记录
+  const tb = (state && state.ctx && state.ctx.textbook) || 'jk';
+  const gr = (state && state.ctx && state.ctx.grade)    || 0;
+  const tm = (state && state.ctx && state.ctx.term)     || '上';
+  const prefix = [tb, gr, tm, unit && unit.id].join('::') + '::';
+  let readingAttempted = 0, readingOk = 0;
+  for (const k in rexMap) {
+    if (!k.startsWith(prefix)) continue;
+    readingAttempted++;
+    if (rexMap[k] && rexMap[k].ok) readingOk++;
+  }
+  const total   = words.length;
+  const numer   = known + readingOk;
+  const denom   = total + readingAttempted;
+  const pct     = denom > 0 ? Math.round(numer / denom * 100) : 0;
+  return { pct, known, total, readingOk, readingAttempted };
 }
 
 // 返回当前教材实际覆盖的年级数字数组（按 textbookData 推断）
@@ -1201,19 +1249,27 @@ function renderUnitList() {
   container.innerHTML = data.units.map(u => {
     const p = computeUnitProgress(u);
     const pct = p.pct;
-    // 占位单元（没有 words）：显示 "待补充" 不再算进度
-    const isEmpty = p.total === 0;
+    // 占位/空单元：没有词 且 没做过阅读题 → "待补充"；否则有任何记录都算进度
+    const isEmpty = p.total === 0 && p.readingAttempted === 0;
     const badge = isEmpty
       ? '<span class="badge bg-slate-100 text-slate-500">📦 待补充</span>'
       : pct === 100
         ? '<span class="badge bg-green-100 text-green-700">✓ 已完成</span>'
         : pct > 0
-          ? '<span class="badge bg-amber-100 text-amber-700">学习中 · ' + p.known + '/' + p.total + '</span>'
+          ? '<span class="badge bg-amber-100 text-amber-700">学习中 · ' + (p.known + p.readingOk) + '/' + (p.total + p.readingAttempted) + '</span>'
           : '<span class="badge bg-slate-100 text-slate-500">未开始</span>';
     const barStyle = isEmpty ? 'width: 0%' : 'width: ' + pct + '%';
-    const footText = isEmpty
-      ? '内容待补充'
-      : (p.known + ' / ' + p.total + ' 词已掌握 · 进度 ' + pct + '%');
+    // 底部文案：词汇 + 阅读题（有做过才显示阅读）
+    let footText;
+    if (isEmpty) {
+      footText = '内容待补充';
+    } else {
+      const parts = [];
+      if (p.total > 0) parts.push(p.known + ' / ' + p.total + ' 词');
+      if (p.readingAttempted > 0) parts.push('阅读 ' + p.readingOk + ' / ' + p.readingAttempted + ' 题');
+      parts.push('进度 ' + pct + '%');
+      footText = parts.join(' · ');
+    }
     // 模块徽章（可选）
     const moduleTag = u.module
       ? '<span class="inline-block text-[10px] font-semibold px-1.5 py-0.5 rounded-md bg-indigo-50 text-indigo-600 border border-indigo-100 ml-1.5 align-middle">📦 ' + u.module.split(' ').slice(0,2).join(' ') + '</span>'
