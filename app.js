@@ -101,7 +101,8 @@ let _wrongbook = null;
 function _loadWrongbook() {
   if (_wrongbook) return _wrongbook;
   try {
-    const raw = localStorage.getItem(WRONGBOOK_STORAGE_KEY);
+    // v01.20：走 _pkey() 加 :profileId 后缀，实现多用户档案数据隔离
+    const raw = localStorage.getItem(_pkey(WRONGBOOK_STORAGE_KEY));
     _wrongbook = raw ? JSON.parse(raw) : {};
   } catch (e) {
     console.warn('[错题本] 加载失败', e);
@@ -111,7 +112,8 @@ function _loadWrongbook() {
 }
 function _saveWrongbook() {
   try {
-    localStorage.setItem(WRONGBOOK_STORAGE_KEY, JSON.stringify(_wrongbook || {}));
+    // v01.20：走 _pkey() 加 :profileId 后缀
+    localStorage.setItem(_pkey(WRONGBOOK_STORAGE_KEY), JSON.stringify(_wrongbook || {}));
   } catch (e) {
     console.warn('[错题本] 保存失败', e);
   }
