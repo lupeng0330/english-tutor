@@ -1058,14 +1058,17 @@ function updateUnitProgress() {
 
 
 // 保存/恢复学习上下文（跨会话记忆）
+// v01.20：把硬编码的 'yxyy_ctx' 改成 _pkey('yxyy_ctx')，按档案隔离；
+// 老数据迁移由 bootstrap() 的 migrateLegacyOnce() 一次性搬到 :default 档案。
+const CTX_KEY = 'yxyy_ctx';
 function saveCtx() {
   try {
-    localStorage.setItem('yxyy_ctx', JSON.stringify(state.ctx));
+    localStorage.setItem(_pkey(CTX_KEY), JSON.stringify(state.ctx));
   } catch(e) {}
 }
 function loadCtx() {
   try {
-    const raw = localStorage.getItem('yxyy_ctx');
+    const raw = localStorage.getItem(_pkey(CTX_KEY));
     if (raw) {
       const obj = JSON.parse(raw);
       if (obj && obj.grade) Object.assign(state.ctx, obj);
@@ -2873,6 +2876,17 @@ if ('speechSynthesis' in window) {
 
 // 🆕 启动流程：恢复上下文 → 异步加载教材 JSON + 题库 JSON → 渲染 UI
 (async function bootstrap() {
+  // v01.20：老数据一次性迁移到 :default 档案。必须在 loadCtx() / 任何 _pkey 调用之前。
+  // - 幂等：第二次启动时直接 return false，不会重复搬
+  // - 防御：try-catch 兜底，失败也不阻塞启动（_pkey 自带 fallback）
+  try {
+    if (window.ProfileManager && typeof window.ProfileManager.migrateLegacyOnce === 'function') {
+      window.ProfileManager.migrateLegacyOnce();
+    }
+  } catch (e) {
+    console.warn('[bootstrap] ProfileManager.migrateLegacyOnce failed', e);
+  }
+
   loadCtx();                          // 从 localStorage 读取上次的 ctx
   await Promise.all([
     loadTextbook(),                   // 拉取 data/textbooks/{ctx.textbook}.json
