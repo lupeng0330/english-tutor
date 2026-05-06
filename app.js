@@ -287,7 +287,8 @@ let _stats = null;
 function _loadStats() {
   if (_stats) return _stats;
   try {
-    const raw = localStorage.getItem(STATS_KEY);
+    // v01.20：走 _pkey() 加 :profileId 后缀，实现多用户档案数据隔离
+    const raw = localStorage.getItem(_pkey(STATS_KEY));
     _stats = raw ? JSON.parse(raw) : {};
   } catch (e) { _stats = {}; }
   _stats.totalSeconds = _stats.totalSeconds || 0;
@@ -310,7 +311,8 @@ function _loadStats() {
   return _stats;
 }
 function _saveStats() {
-  try { localStorage.setItem(STATS_KEY, JSON.stringify(_stats || {})); } catch(e) {}
+  // v01.20：走 _pkey() 加 :profileId 后缀
+  try { localStorage.setItem(_pkey(STATS_KEY), JSON.stringify(_stats || {})); } catch(e) {}
 }
 function _todayStr() {
   const d = new Date();
