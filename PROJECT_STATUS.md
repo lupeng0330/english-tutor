@@ -264,9 +264,9 @@ a4f0da4 2026-05-03 Initial commit                                               
 - [ ] 安装到桌面 / 主屏，离线也能背单词
 - 备注：`manifest.json` / `icon.svg` 已就位；本轮 v01.14 落地 `index.html` 注入 + 两张 PNG + `sw.js`（SWR for data / cache-first for audio）
 
-#### v01.20 — 多用户本地档案
-- [ ] localStorage 存多个 profile（家里两个孩子分别记录）
-- [ ] 顶栏右上角加"切换学习者"
+#### v01.20 — 多用户本地档案 ✅ 已完成（2026-05-07，详见 §11）
+- [x] localStorage 存多个 profile（家里两个孩子分别记录）
+- [x] 顶栏右上角加"切换学习者"
 
 ---
 
@@ -392,3 +392,80 @@ _此文档由 PC 端 AI 助手在 2026-05-05（晚）校准至磁盘事实（jk 
 ---
 
 _2026-05-05 深夜追加：v01.20 尝试失败全量回滚，当前 HEAD 仍为 `fd27ce0`（=线上最后一次稳定 push）。本次 PWA 小收尾只做了文档记录 + 死代码清理，未 push。_
+
+---
+
+## 11. ✅ v01.20 多用户档案 · 重做成功记录（2026-05-07 凌晨）
+
+> 严格按 §10 复盘里的 7 步纪律重做，**全部 7 步逐个 commit + 每步浏览器验证**，最终一次性 push 收尾。无翻车，全功能可用。
+
+### 最终交付的 8 个 commit（在 HEAD 之前）
+
+| 步骤 | commit | 内容 |
+|---|---|---|
+| Step 1 | `e8fe211` | 新建 `js/profile.js`（ProfileManager 数据层 / IIFE 零副作用 / 228 行 / 7 个 API） |
+| Step 2 | `a16c7bc` | `index.html` addScript 链注入 `./js/profile.js`（state.js 之后、player.js 之前） |
+| Step 3 | `f4b1e29` | `app.js` 顶部加 `_pkey(baseKey)` 工具函数（fallback-safe，先不接任何 key） |
+| —— | `8805bcb` | Revert Step 3（误判 SW 兼容问题，立刻 revert） |
+| Step 3' | `6a66ee3` | Reapply Step 3（清 SW + 重启 dev server 后再次确认无问题） |
+| Step 4 | `08ec4b9` | `_loadWrongbook` / `_saveWrongbook` 走 `_pkey(WRONGBOOK_STORAGE_KEY)` |
+| Step 5 | `0100a2f` | `_loadStats` / `_saveStats` 走 `_pkey(STATS_KEY)` |
+| Step 6 | `d858ab0` | `loadCtx` / `saveCtx` 走 `_pkey(CTX_KEY)` + bootstrap 首行加 `migrateLegacyOnce()` |
+| Step 7 | `0890940` | header 加 👤 档案切换按钮 + 下拉面板 + `switchToProfile()` + 新建/重命名/删除（app.js +209 / index.html +20 / styles.css +106） |
+
+### 这次成功的关键改进 vs 上次翻车
+
+1. **小步提交 + 浏览器逐步验证**：每改完一步立刻清 SW 硬刷验证，问题暴露范围极窄
+2. **`_pkey()` fallback 设计**：内置 `try-catch + 退化为原 key`，即使 ProfileManager 异常 app.js 顶层也永不抛
+3. **`profile.js` IIFE 零副作用纪律**：所有写操作必须由调用方显式触发，迁移由 `bootstrap()` 在 `loadCtx()` 之前显式调一次 `migrateLegacyOnce()`
+4. **Step 7 前先用 code-explorer subagent 扫"档案绑定缓存"清单**：避免 `switchToProfile()` 漏清导致跨档案数据串台。最终重置清单：
+   - 必清：`_wrongbook` / `_stats` / `_lastLoadedTextbook` / `_lastLoadedTerm` / `_lastLoadedGrade` / `state.ctx`
+   - 建议清：`_wrongbookTabFilter` / `_readingExState` / `_irregPractice`
+   - 不清（静态数据）：`_textbookShardCache` / `_textbookFullCache` / `_exercisesCache` / `_examplesCache` / `_irregCache` / 题库
+5. **真凶澄清**：上次翻车的"按钮失效 + continueLearning is not defined"经过这次重现 + 排查，确认根因不是代码、是 **dev server 偶尔挂掉时 SW 的 networkFirst 兜底返回旧缓存 / 504**。本次坚持小步走 + 每步硬刷，规避了这个隐性陷阱
+
+### localStorage 数据 schema（v01.20 之后）
+
+```
+yxyy_profiles_v1                   [{id,name,createdAt}, ...]
+yxyy_active_profile_v1             "default" | "p_xxx_yyyy"
+yxyy_migrated_legacy_v1            "1"  ← 一次性迁移完成标记
+
+yxyy_wrongbook_v1                  老数据（保留作 fallback，不删）
+yxyy_stats_v1                      老数据（保留作 fallback，不删）
+yxyy_ctx                           老数据（保留作 fallback，不删）
+
+yxyy_wrongbook_v1:default          默认档案的错题本
+yxyy_stats_v1:default              默认档案的学习统计
+yxyy_ctx:default                   默认档案的学习上下文
+yxyy_wrongbook_v1:p_xxx_yyyy       新建档案"哥哥"的错题本
+yxyy_stats_v1:p_xxx_yyyy           ...
+yxyy_ctx:p_xxx_yyyy                ...
+```
+
+### 公共 API 速查（Console 调试）
+
+```js
+// 数据层
+window.ProfileManager.list()                       // 所有档案
+window.ProfileManager.active()                     // 当前档案 {id,name,createdAt}
+window.ProfileManager.create('哥哥')               // 新建，返回新档案对象
+window.ProfileManager.update(id, {name:'妹妹'})    // 改名
+window.ProfileManager.remove(id)                   // 删除（自动清 3 个数据 key；只剩 1 个时拒绝）
+window.ProfileManager.setActive(id)                // 切档案 ID（不重新加载数据）
+window.ProfileManager.migrateLegacyOnce()          // 老数据迁移（幂等）
+
+// app.js UI 层
+window.switchToProfile(id)                         // 切档案 + 清缓存 + 重渲染（推荐用这个）
+window.openProfilePanel() / closeProfilePanel()
+window.refreshProfileBadge()                       // 手动刷新 header 显示
+
+// 工具
+_pkey('yxyy_stats_v1')                             // 返回 'yxyy_stats_v1:<activeId>'
+```
+
+### ⛳ 给下一个版本的提醒
+
+- **新增任何 localStorage 数据 key**，都必须走 `_pkey()`，并把 base 加进 `js/profile.js` 顶部的 `DATA_KEYS` 常量数组（这样 `remove(id)` 才能清理干净）
+- **新增任何"档案绑定"的内存缓存变量**，都必须在 `switchToProfile()` 里加一行 `_xxx = null`，否则会出现"切档案后看到上一个档案数据残留"的 bug
+- 当前 7 个 ProfileManager API 已覆盖 99% 用例；如需 `import / export / 导出 JSON 备份`，可在 v01.21 扩展，不破坏现有 schema
