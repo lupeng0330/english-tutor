@@ -74,12 +74,24 @@
         <div class="text-xs text-slate-500">小学+初中英语同步辅导</div>
       </div>
     </div>
-    <!-- 🔥 连续学习徽标（真实数据） -->
-    <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200" title="连续学习天数">
-      <span class="text-lg">🔥</span>
-      <span class="text-sm font-bold text-orange-700"><span id="headerStreak">0</span> 天</span>
+    <div class="flex items-center gap-2">
+      <!-- 👤 v01.20 多用户档案切换 -->
+      <button id="profileBadgeBtn" type="button"
+        class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 hover:bg-blue-100 transition"
+        title="切换学习档案">
+        <span class="text-base">👤</span>
+        <span id="profileBadgeName" class="text-sm font-bold text-blue-700 max-w-[6em] truncate">默认档案</span>
+        <span class="text-xs text-blue-500">▾</span>
+      </button>
+      <!-- 🔥 连续学习徽标（真实数据） -->
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200" title="连续学习天数">
+        <span class="text-lg">🔥</span>
+        <span class="text-sm font-bold text-orange-700"><span id="headerStreak">0</span> 天</span>
+      </div>
     </div>
   </div>
+  <!-- 👤 v01.20 档案切换下拉面板（默认隐藏，由 app.js bindProfileUI 控制） -->
+  <div id="profilePanel" class="hide profile-panel"></div>
 </header>
 
 <!-- 全局学习上下文切换条（粘性，所有页面可见）-->

@@ -3175,3 +3175,212 @@ window.irregSubmit        = irregSubmit;
 window.irregShowHint      = irregShowHint;
 window.irregSkip          = irregSkip;
 window.exitIrregPractice  = exitIrregPractice;
+
+// =====================================================================
+// 👤 v01.20 多用户档案 UI 模块
+// ---------------------------------------------------------------------
+// 提供：
+//   - switchToProfile(id) ：切档案 + 清所有"档案绑定"内存缓存 + 重新加载 + 刷新 UI
+//   - openProfilePanel()  ：弹出 header 下方的档案下拉面板（创建/重命名/删除）
+//   - closeProfilePanel() ：关闭面板
+//   - renderProfilePanel(): 渲染面板内容（每次打开都重渲，保证列表最新）
+//   - refreshProfileBadge(): 刷新 header 上"👤 当前档案 ▾"按钮文字
+//   - openCreateProfileModal/openRenameProfileModal: 简单 prompt 弹框
+// 入口绑定：bindProfileUI()（DOMContentLoaded 时调用一次）
+// =====================================================================
+
+/**
+ * 切档案核心：把所有跟"档案绑定"的内存缓存清掉，重读 localStorage，刷新 UI
+ * 实现细节来自 code-explorer subagent 的盘点结论
+ */
+async function switchToProfile(profileId) {
+  if (!profileId) return false;
+  const ok = window.ProfileManager && window.ProfileManager.setActive(profileId);
+  if (!ok) {
+    console.warn('[switchToProfile] setActive 失败:', profileId);
+    return false;
+  }
+
+  // 1) 清"档案绑定"的内存缓存
+  _wrongbook = null;
+  _stats     = null;
+  if (typeof _lastLoadedTextbook !== 'undefined') _lastLoadedTextbook = null;
+  if (typeof _lastLoadedTerm     !== 'undefined') _lastLoadedTerm     = null;
+  if (typeof _lastLoadedGrade    !== 'undefined') _lastLoadedGrade    = null;
+  if (typeof _wrongbookTabFilter !== 'undefined') _wrongbookTabFilter = 'all';
+  if (typeof _readingExState     !== 'undefined') _readingExState = { uid: null, lessonIdx: -1, items: [], submitted: false };
+  if (typeof _irregPractice      !== 'undefined') _irregPractice = null;
+
+  // 2) 复位 state.ctx 默认值（避免旧档案残留多余字段），再 loadCtx 覆盖
+  state.ctx = { grade: 3, term: '上', textbook: 'jk' };
+  loadCtx();
+
+  // 3) 重新加载教材 + 题库（与 bootstrap 末尾一致）
+  try {
+    await Promise.all([
+      loadTextbook(),
+      window.loadQuestionBank(state.ctx.textbook)
+    ]);
+  } catch (e) {
+    console.warn('[switchToProfile] 教材/题库加载失败', e);
+  }
+
+  // 4) 全量刷新 UI
+  try { applyContextChange(); } catch (e) { console.warn(e); }
+  try { renderHomeStats(); }   catch (e) { console.warn(e); }
+
+  // 5) 跳回首页，避免用户停在某个深层页面看到混乱状态
+  try { if (typeof switchPage === 'function') switchPage('home'); } catch (e) {}
+
+  // 6) 刷新 header 档案徽标
+  refreshProfileBadge();
+
+  return true;
+}
+
+/** 刷新 header 上 "👤 当前档案 ▾" 按钮文字 */
+function refreshProfileBadge() {
+  try {
+    const el = document.getElementById('profileBadgeName');
+    if (!el || !window.ProfileManager) return;
+    const a = window.ProfileManager.active();
+    el.textContent = a && a.name ? a.name : '默认档案';
+  } catch (e) {}
+}
+
+/** 渲染档案面板内容（列表 + 操作按钮） */
+function renderProfilePanel() {
+  const panel = document.getElementById('profilePanel');
+  if (!panel || !window.ProfileManager) return;
+  const list   = window.ProfileManager.list();
+  const active = window.ProfileManager.active();
+  const html = [
+    '<div class="profile-panel-title">👤 学习档案</div>',
+    '<div class="profile-panel-list">',
+    ...list.map(p => {
+      const isActive = (p.id === active.id);
+      const safeName = String(p.name || '').replace(/</g, '&lt;');
+      return (
+        '<div class="profile-row' + (isActive ? ' active' : '') + '" data-id="' + p.id + '">' +
+          '<div class="profile-row-main" data-action="switch" data-id="' + p.id + '">' +
+            '<span class="profile-row-tick">' + (isActive ? '✓' : '') + '</span>' +
+            '<span class="profile-row-name">' + safeName + '</span>' +
+          '</div>' +
+          '<div class="profile-row-ops">' +
+            '<button class="profile-op-btn" data-action="rename" data-id="' + p.id + '" title="重命名">✎</button>' +
+            (list.length > 1
+              ? '<button class="profile-op-btn profile-op-del" data-action="delete" data-id="' + p.id + '" title="删除档案及其所有数据">🗑</button>'
+              : '<button class="profile-op-btn" disabled title="至少保留 1 个档案">🗑</button>') +
+          '</div>' +
+        '</div>'
+      );
+    }),
+    '</div>',
+    '<button id="profileCreateBtn" class="profile-create-btn">+ 新建档案</button>',
+    '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>'
+  ].join('');
+  panel.innerHTML = html;
+
+  // 绑定事件（事件委托）
+  panel.querySelectorAll('[data-action]').forEach(el => {
+    el.addEventListener('click', async function (ev) {
+      ev.stopPropagation();
+      const action = el.dataset.action;
+      const id     = el.dataset.id;
+      if (action === 'switch') {
+        if (id === window.ProfileManager.active().id) { closeProfilePanel(); return; }
+        closeProfilePanel();
+        await switchToProfile(id);
+      } else if (action === 'rename') {
+        const cur = window.ProfileManager.list().find(p => p.id === id);
+        const newName = prompt('给档案重命名：', cur ? cur.name : '');
+        if (newName && newName.trim()) {
+          window.ProfileManager.update(id, { name: newName.trim() });
+          renderProfilePanel();
+          if (id === window.ProfileManager.active().id) refreshProfileBadge();
+        }
+      } else if (action === 'delete') {
+        const cur = window.ProfileManager.list().find(p => p.id === id);
+        if (!cur) return;
+        if (!confirm('确定删除档案"' + cur.name + '"？\n该档案的所有学习记录、错题本、统计将一并删除，无法恢复！')) return;
+        const wasActive = (id === window.ProfileManager.active().id);
+        window.ProfileManager.remove(id);
+        if (wasActive) {
+          // 删的是当前档案 → 切到 ProfileManager 自动选定的剩余档案
+          closeProfilePanel();
+          await switchToProfile(window.ProfileManager.active().id);
+        } else {
+          renderProfilePanel();
+        }
+      }
+    });
+  });
+
+  const createBtn = panel.querySelector('#profileCreateBtn');
+  if (createBtn) {
+    createBtn.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      const name = prompt('给新档案起个名字（如：哥哥 / 妹妹 / 爸爸）：', '');
+      if (!name || !name.trim()) return;
+      const prof = window.ProfileManager.create(name.trim());
+      if (prof) {
+        renderProfilePanel();
+        // 不自动切，让用户自己决定是否进入新档案
+      }
+    });
+  }
+}
+
+function openProfilePanel() {
+  const panel = document.getElementById('profilePanel');
+  if (!panel) return;
+  renderProfilePanel();
+  panel.classList.remove('hide');
+  // 点击面板外关闭
+  setTimeout(function () {
+    document.addEventListener('click', _profilePanelOutsideHandler, { once: true });
+  }, 0);
+}
+
+function closeProfilePanel() {
+  const panel = document.getElementById('profilePanel');
+  if (panel) panel.classList.add('hide');
+}
+
+function _profilePanelOutsideHandler(ev) {
+  const panel = document.getElementById('profilePanel');
+  const btn   = document.getElementById('profileBadgeBtn');
+  if (!panel || panel.classList.contains('hide')) return;
+  if (panel.contains(ev.target) || (btn && btn.contains(ev.target))) {
+    // 点在面板/按钮内，重新挂监听
+    document.addEventListener('click', _profilePanelOutsideHandler, { once: true });
+    return;
+  }
+  closeProfilePanel();
+}
+
+/** 入口：DOMContentLoaded 时绑定一次（按钮点击切换面板） */
+function bindProfileUI() {
+  const btn = document.getElementById('profileBadgeBtn');
+  if (!btn) return;
+  btn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    const panel = document.getElementById('profilePanel');
+    if (panel && panel.classList.contains('hide')) openProfilePanel();
+    else closeProfilePanel();
+  });
+  refreshProfileBadge();
+}
+
+// 立即绑定（app.js 是 deferred 加载的，DOM 已就绪；保险起见再监听 DOMContentLoaded）
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bindProfileUI);
+} else {
+  bindProfileUI();
+}
+
+// 暴露到 window，方便 Console 调试和未来扩展
+window.switchToProfile      = switchToProfile;
+window.openProfilePanel     = openProfilePanel;
+window.closeProfilePanel    = closeProfilePanel;
+window.refreshProfileBadge  = refreshProfileBadge;
