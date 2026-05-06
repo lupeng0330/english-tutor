@@ -68,12 +68,12 @@ python3 -m http.server 8765
 | **题库（jk · 语法）** | 72 题 |
 | **题库（jk · 阅读）** | 72 题 |
 | **题库（jk 合计）** | **420 题** |
-| **题库（hj · 单词拼写）** | 95 题（距每单元 15 词全量 720 题还差 ~625） |
+| **题库（hj · 单词拼写）** | **698 题**（v01.11 AI 自动造题，48 单元全覆盖；旧 95 题保留人工 hint，新增 603 题打 `source:"ai_v01_11"` 标签） |
 | **题库（hj · 听力选择）** | 32 题（7 上全量） |
 | **题库（hj · 语法）** | 80 题 |
 | **题库（hj · 阅读）** | 48 题 |
-| **题库（hj 合计）** | **255 题** |
-| **题库总计** | **675 题** |
+| **题库（hj 合计）** | **858 题** |
+| **题库总计** | **1278 题** |
 | **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
 | **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完 |
 | **前端代码** | `app.js` 2912 行（-23%）+ `js/textbook.js` / `js/state.js` / `js/player.js` 三个抽出模块 |
@@ -210,7 +210,7 @@ a4f0da4 2026-05-03 Initial commit                                               
 
 #### v01.11 — 沪教版 AI 自动造题（首批）
 复用 `scripts/ai_generate_questions.py`，针对 hj.json 的 48 单元批量造题：
-- [ ] 单词拼写：每单元 15 词全量出题 → 48 × 15 = **720 题**（按难度分级）
+- [x] 单词拼写：每单元词全量出题 → **698 题**（教材实际 698 词，非 720；7A 部分单元 ≠15 词；详见 §12）
 - [ ] 语法：基于 Grammar focus 课文核心点，每单元 3-5 题 → ~150-240 题
 - [ ] 阅读：基于 Reading + More reading 课文，每单元 1-2 篇问答 → ~96 题
 - [ ] 流程上"AI 草稿 + 人工抽样校对"，每年级抽 3 单元过一遍后再合入
@@ -469,3 +469,94 @@ _pkey('yxyy_stats_v1')                             // 返回 'yxyy_stats_v1:<act
 - **新增任何 localStorage 数据 key**，都必须走 `_pkey()`，并把 base 加进 `js/profile.js` 顶部的 `DATA_KEYS` 常量数组（这样 `remove(id)` 才能清理干净）
 - **新增任何"档案绑定"的内存缓存变量**，都必须在 `switchToProfile()` 里加一行 `_xxx = null`，否则会出现"切档案后看到上一个档案数据残留"的 bug
 - 当前 7 个 ProfileManager API 已覆盖 99% 用例；如需 `import / export / 导出 JSON 备份`，可在 v01.21 扩展，不破坏现有 schema
+
+---
+
+## 12. ✅ v01.11 沪教版 AI 自动造题 · 完成记录（2026-05-07 凌晨）
+
+> 严格按 §10 复盘里的"小步 + 可回滚"纪律执行，**全程零破坏：旧 95 题字节级未动；新增 603 题全部带 `source:"ai_v01_11"` 标签可一键回滚**。
+
+### 关键产出
+
+| 指标 | 数值 |
+|---|---|
+| `data/questions/hj_spelling.json` 题数 | **95 → 698**（+603） |
+| 沪教 48 单元覆盖 | 8/48 → **48/48**（7A_U1 ~ 9B_U8 全覆盖） |
+| 旧题改动 | **0 行 -**（`git diff --stat`：1 file changed, 6633 insertions(+), 0 deletions） |
+| 新题 source 标签 | 603 条全部带 `"source": "ai_v01_11"` |
+| 前端代码改动 | **0 行**（数据驱动，`loadQuestionBank('hj')` 自动读取） |
+| 教材生词总数 N1 | **698**（不是计划中的 720；7A 部分单元词数 ≠15，见下） |
+
+### 7A 单元词数异常清单（教材原始数据，非脚本问题）
+
+| code | 实际词数 | 偏差 |
+|---|---|---|
+| 7A_U1 | 17 | +2 |
+| 7A_U3 | 10 | -5 |
+| 7A_U4 | 13 | -2 |
+| 7A_U5 | 11 | -4 |
+| 7A_U6 | 10 | -5 |
+| 7A_U7 | 11 | -4 |
+| 7A_U8 | 11 | -4 |
+
+> 7B / 8A / 8B / 9A / 9B 共 40 个单元每个严格 15 词。`hj.json` 的 `meta.note_progress` 自述"每单元 15 词"与 7A 实际数据不符，但本次不动教材，按教材实际词数生成题目即可。如后续要把 7A 补齐到 15 词/单元，加完后重跑 `--mode merge-spelling` 因去重生效会自动只补差额，幂等安全。
+
+### 关键决策落地
+
+| 决策 | 落地 |
+|---|---|
+| **scope** = A | 仅做拼写题，未触碰 hj_listening/grammar/reading.json |
+| **ai_mode** = A | 纯本地规则（`gen_spelling_for_unit`），零 API、零网络、零依赖 |
+| **merge_policy** = B | 直接 append 到主题库 hj_spelling.json，新题字段 `source:"ai_v01_11"` |
+| **dedup** = C | `(code, answer.lower())` 二元组去重，旧 95 题完整保留人工 hint/explain |
+
+### 脚本扩展（`scripts/ai_generate_questions.py`）
+
+新增 `--mode merge-spelling` 子命令，**原 `--mode auto` 行为完全不变**（向后兼容）：
+
+```bash
+# Dry-run（看统计不写文件）
+py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj
+
+# 实际写入
+py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --write
+```
+
+输出示例（dry-run）：
+
+```
+[merge-spelling] 教材: hj.json
+  候选总数 = 698
+  已存数   = 95 (主题库当前 95 题)
+  跳过(已存) = 95
+  新增      = 603  [打 source=ai_v01_11]
+  写入后总数 = 698
+```
+
+实现要点：
+
+1. **OCP**：不改 `gen_spelling_for_unit` 函数本体，仅在调用方加 `source` 注入与去重过滤
+2. **字段顺序对齐**：`SPELLING_FIELD_ORDER = [grade, term, code, q, answer, hint, difficulty, explain, source]`，避免 git diff 视觉混乱
+3. **原子写入**：先写 `hj_spelling.json.tmp` 再 `os.replace`，避免中途崩溃留下半截文件
+4. **幂等**：再次执行因去重生效不会产生重复题，可重跑验证
+5. **可回滚**：一行 jq 即可剔除全部新题：
+   ```bash
+   jq 'map(select(.source != "ai_v01_11"))' data/questions/hj_spelling.json > /tmp/x && mv /tmp/x data/questions/hj_spelling.json
+   ```
+
+### 已知遗留 / 给下个版本的提醒
+
+1. **难度统一为 3**：现有 `gen_spelling_for_unit` 规则 `grade>6 → difficulty=3`，导致新增 603 题难度全为 3，与旧 95 题"按词难度梯度标注（1/2/3 混合）"风格不一致。**前端不影响**（仅徽章显示和未来按难度筛题用）。如要校准：v01.11.x 可加一个轻量"按词长 / 词频"的 difficulty 启发式重打分，**只对 `source:"ai_v01_11"` 的题生效**，旧题继续保留人工值。
+2. **explain 模板偏单一**：新增题 explain 是 `"'{中文}' 的英文是 {word}"` 的固定模板，不如旧题人工写的那么精彩（如旧题里的"h 不发音"、"-tient 结尾"等记忆点）。后续可在 v02.0 接 LLM 时只针对 `source:"ai_v01_11"` 的题做 explain 二次润色，仍保留 hint/answer 不动。
+3. **7A 词数异常未修**：见上文清单，纯教材数据问题，本版本不修。如要补，加完词后直接重跑 `--mode merge-spelling --write` 会自动只补差额。
+4. **listening / grammar / reading 仍是 v01.10 状态**（32 / 80 / 48），按 §8 v01.11 子任务表，留给 v01.11.x 或独立版本继续。
+
+### 提交计划（本次会话内将分批 commit）
+
+| 文件 | commit 主题 |
+|---|---|
+| `scripts/ai_generate_questions.py` | `feat(ai): ai_generate_questions 新增 --mode merge-spelling 子命令（去重/source 标签/原子写入）` |
+| `data/questions/hj_spelling.json` | `feat(hj): v01.11 沪教版拼写题全量补齐至 698 题（48 单元全覆盖，旧 95 题字节不变）` |
+| `PROJECT_STATUS.md` | `docs: 同步 v01.11 完成记录（§3 规模 / §8 checkbox / §12 复盘）` |
+
+> 三个 commit 拆开，便于日后单独 revert（例如只想撤题库不撤脚本，或只想撤文档）。
