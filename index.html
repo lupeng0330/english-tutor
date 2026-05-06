@@ -687,11 +687,13 @@
     // 等拿到真实版本号再 load；即便 fetch version.txt 失败，fallback 也会 resolve
     (window.__versionReady || Promise.resolve()).then(function(){
       // 顺序严格：
-      //   1) 基础模块：textbook.js / state.js / player.js （它们彼此无依赖）
+      //   1) 基础模块：textbook.js / state.js / profile.js / player.js （它们彼此无依赖）
+      //      - profile.js 提供 window.ProfileManager（多用户档案数据层，IIFE 零副作用）
       //   2) 题库加载器：questionBank.js
       //   3) 主逻辑：app.js（依赖以上全部）
       addScript('./js/textbook.js')
         .then(function(){ return addScript('./js/state.js'); })
+        .then(function(){ return addScript('./js/profile.js'); })
         .then(function(){ return addScript('./js/player.js'); })
         .then(function(){ return addScript('./questionBank.js'); })
         .then(function(){ return addScript('./app.js'); });
