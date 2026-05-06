@@ -2,6 +2,26 @@
 // TEXTBOOK_SHARDED / _textbookShardCache / _textbookFullCache 已迁移到 js/textbook.js。
 // 此处保留注释以帮助 grep 追溯。
 
+// =====================================================================
+// 🆔 多用户档案 key 命名空间工具（v01.20）
+// ---------------------------------------------------------------------
+// 把基础 key 加上 ":<profileId>" 后缀，让不同档案的数据互相隔离。
+// 设计要点：
+//   1. 严格 try-catch 兜底：即使 ProfileManager 未加载或异常，也退化为原 key，
+//      绝不让 app.js 顶层抛错（吸取上次翻车教训）。
+//   2. 当前 Step 3 仅定义函数、不接入任何 key；接入留给 Step 4-6 一对一对改。
+//   3. 测试入口：浏览器 Console 输入 `_pkey('yxyy_stats_v1')` 应返回带后缀的字符串。
+// =====================================================================
+function _pkey(baseKey) {
+  try {
+    var pid = (window.ProfileManager && window.ProfileManager.active && window.ProfileManager.active().id) || 'default';
+    return baseKey + ':' + pid;
+  } catch (e) {
+    // 任何异常（包括 ProfileManager 还没加载好）都退化为原 key，保证调用点永不崩
+    return baseKey;
+  }
+}
+
 // 语法
 const grammarData = [
   {
