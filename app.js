@@ -228,6 +228,142 @@ function switchWrongbookTab(type) {
 }
 window.switchWrongbookTab = switchWrongbookTab;
 
+// ===================== 错题本独立页渲染（v01.16）=====================
+let _wbPageFilter = 'all';  // 'all' | 'spelling' | 'listening' | 'grammar' | 'reading' | 'reading_qa'
+
+const _WB_TYPE_LABELS = {
+  spelling: '单词拼写',
+  listening: '听力选择',
+  grammar: '语法练习',
+  reading: '阅读理解',
+  reading_qa: '阅读自测',
+  irregular: '不规则动词'
+};
+function _wbTypeLabel(type) {
+  return _WB_TYPE_LABELS[type] || (type || '其他');
+}
+
+// 取一条错题记录的"正确答案"文本（兼容选择题索引 / 拼写串 / 阅读自测 correct 字段）
+function _wbAnswerText(rec) {
+  const q = (rec && rec.question) || {};
+  if (Array.isArray(q.options) && typeof q.answer === 'number') {
+    return q.options[q.answer] != null ? String(q.options[q.answer]) : String(q.answer);
+  }
+  if (q.correct != null) return String(q.correct);
+  if (q.answer != null) return String(q.answer);
+  return '—';
+}
+
+// 相对时间（"刚刚 / N 分钟前 / N 小时前 / N 天前"）
+function _wbTimeAgo(ts) {
+  if (!ts) return '';
+  const diff = Date.now() - ts;
+  const MIN = 60000, HOUR = 3600000, DAY = 86400000;
+  if (diff < MIN) return '刚刚';
+  if (diff < HOUR) return Math.floor(diff / MIN) + ' 分钟前';
+  if (diff < DAY) return Math.floor(diff / HOUR) + ' 小时前';
+  if (diff < 30 * DAY) return Math.floor(diff / DAY) + ' 天前';
+  return new Date(ts).toISOString().slice(0, 10);
+}
+
+// 当前教材范围内的错题数（与一键重练口径一致）
+function _wbCountCurrentTb() {
+  const tb = (state.ctx && state.ctx.textbook) || 'jk';
+  return getWrongQuestions(w => String(w._key).startsWith(tb + '::')).length;
+}
+
+function setWrongbookFilter(f) {
+  _wbPageFilter = f || 'all';
+  renderWrongbookPage();
+}
+window.setWrongbookFilter = setWrongbookFilter;
+
+function toggleWrongbookItem(el) {
+  const item = el && el.closest('.wb-item');
+  if (item) item.classList.toggle('open');
+}
+window.toggleWrongbookItem = toggleWrongbookItem;
+
+function deleteWrongbookItem(key) {
+  if (!confirm('确定从错题本移除这道题？')) return;
+  removeWrongQuestion(key);
+  renderWrongbookPage();
+  try { refreshPracticeCounts(); } catch (e) {}
+  try { renderHomeStats(); } catch (e) {}
+}
+window.deleteWrongbookItem = deleteWrongbookItem;
+
+// 渲染错题本独立页（列表 / 筛选 / 展开详情 / 删除 / 角标）
+function renderWrongbookPage() {
+  const listEl = document.getElementById('wrongbookList');
+  const emptyEl = document.getElementById('wrongbookEmpty');
+  const actionsEl = document.getElementById('wrongbookActions');
+  const badgeEl = document.getElementById('wbTotalBadge');
+  if (!listEl) return;
+
+  const tb = (state.ctx && state.ctx.textbook) || 'jk';
+  // 当前教材全部错题（不受题型筛选影响），用于总数徽标
+  const allOfTb = getWrongQuestions(w => String(w._key).startsWith(tb + '::'));
+  if (badgeEl) badgeEl.textContent = allOfTb.length + ' 题';
+
+  // 题型筛选
+  let list = (_wbPageFilter === 'all')
+    ? allOfTb
+    : allOfTb.filter(w => (w.type || '') === _wbPageFilter);
+
+  // 更新筛选 Tab active 态
+  document.querySelectorAll('#wbFilterTabs .wb-filter-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filter === _wbPageFilter);
+  });
+
+  if (list.length === 0) {
+    listEl.innerHTML = '';
+    if (emptyEl) emptyEl.classList.remove('hide');
+    if (actionsEl) actionsEl.classList.add('hide');
+    return;
+  }
+  if (emptyEl) emptyEl.classList.add('hide');
+  if (actionsEl) actionsEl.classList.remove('hide');
+
+  listEl.innerHTML = list.map(rec => {
+    const q = rec.question || {};
+    const typeLabel = _wbTypeLabel(rec.type);
+    const stem = _escapeHtml(q.q || q.word || '(无题干)');
+    const answer = _escapeHtml(_wbAnswerText(rec));
+    const explain = q.explain ? _escapeHtml(q.explain) : '';
+    const when = _wbTimeAgo(rec.lastWrongAt);
+    const key = _escapeHtml(rec._key);
+    const optionsHtml = (Array.isArray(q.options) && q.options.length)
+      ? '<div class="mt-1 space-y-1">' + q.options.map((o, i) =>
+          '<div class="text-sm ' + (i === q.answer ? 'text-green-700 font-semibold' : 'text-slate-600') + '">'
+          + String.fromCharCode(65 + i) + '. ' + _escapeHtml(String(o)) + (i === q.answer ? ' ✓' : '')
+          + '</div>').join('') + '</div>'
+      : '';
+    return ''
+      + '<div class="wb-item card p-4" data-key="' + key + '">'
+      +   '<div class="flex items-start gap-3">'
+      +     '<div class="flex-1 min-w-0 cursor-pointer" onclick="toggleWrongbookItem(this)">'
+      +       '<div class="flex items-center gap-2 flex-wrap mb-1">'
+      +         '<span class="wb-type-tag">' + typeLabel + '</span>'
+      +         '<span class="text-xs text-red-500">错 ' + (rec.wrongCount || 1) + ' 次</span>'
+      +         (when ? '<span class="text-xs text-slate-400">' + when + '</span>' : '')
+      +         '<span class="wb-toggle-icon text-slate-400 ml-auto">▾</span>'
+      +       '</div>'
+      +       '<div class="text-sm font-semibold text-slate-800">' + stem + '</div>'
+      +     '</div>'
+      +     '<button class="text-slate-300 hover:text-red-500 transition flex-shrink-0" title="移除此题" '
+      +             'onclick="deleteWrongbookItem(\'' + key + '\')">🗑</button>'
+      +   '</div>'
+      +   '<div class="wb-detail mt-3 pt-3 border-t border-slate-100">'
+      +     optionsHtml
+      +     '<div class="mt-2 text-sm"><span class="text-slate-400">正确答案：</span><b class="text-green-700">' + answer + '</b></div>'
+      +     (explain ? '<div class="mt-1 text-sm text-slate-500">💡 ' + explain + '</div>' : '')
+      +   '</div>'
+      + '</div>';
+  }).join('');
+}
+window.renderWrongbookPage = renderWrongbookPage;
+
 // ===================== B2 智能推题 =====================
 // 根据错题本给题目打分，加权随机抽取（不放回）；
 // 同一题在题库 + 错题本之间靠 _wbKey 关联。
@@ -480,6 +616,8 @@ function renderHomeStats() {
 
   setText('statTotalTime', Math.floor((s.totalSeconds || 0) / 60));
   setText('statKnownWords', Object.keys(s.knownWords || {}).length);
+  // 🆕 v01.16：首页错题本入口角标（当前教材范围）
+  try { setText('homeWrongCount', _wbCountCurrentTb() + ' 题'); } catch (e) {}
   setText('statStreak', s.streak || 0);
   setText('headerStreak', s.streak || 0);
   // 🆕 阅读答题总览（全部尝试、答对）
@@ -1112,6 +1250,7 @@ function switchPage(page) {
   if (page === 'textbook') renderUnitList();
   if (page === 'grammar') { renderGrammar(); try { renderIrregVerbTable(); } catch(e){} }
   if (page === 'report') setTimeout(renderReport, 100);
+  if (page === 'wrongbook') { _wbPageFilter = 'all'; renderWrongbookPage(); }
   if (page === 'practice') {
     // 重置练习视图到初始状态
     document.getElementById('practiceQuizView').classList.add('hide');
