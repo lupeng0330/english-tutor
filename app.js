@@ -2940,74 +2940,133 @@ function escapeHtml(s) {
 }
 
 // ===================== 学习报告 =====================
-let chartsInited = false;
-function renderReport() {
-  const um = document.getElementById('unitMastery');
-  const unitsMock = [
-    { name: 'Unit 1 Food', percent: 95 },
-    { name: 'Unit 2 Colors', percent: 80 },
-    { name: 'Unit 3 My Family', percent: 60 },
-    { name: 'Unit 4 Animals', percent: 30 },
-    { name: 'Unit 5 School', percent: 10 }
-  ];
-  um.innerHTML = unitsMock.map(u => `
-    <div>
-      <div class="flex justify-between text-sm mb-1">
-        <span class="text-slate-700 font-medium">${u.name}</span>
-        <span class="text-slate-500">${u.percent}%</span>
-      </div>
-      <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
-        <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: ${u.percent}%"></div>
-      </div>
-    </div>
-  `).join('');
+// ===================== 📊 学习报告（真实数据，v01.17）=====================
+let _studyChart = null;
+let _scoreChart = null;
 
-  if (chartsInited) return;
-  chartsInited = true;
+const _REPORT_TYPES = [
+  { key: 'spelling',  label: '单词拼写' },
+  { key: 'listening', label: '听力选择' },
+  { key: 'grammar',   label: '语法练习' },
+  { key: 'reading',   label: '阅读理解' }
+];
+
+// 最近 7 天的 'YYYY-MM-DD' 数组（含今天）
+function _reportLast7Days() {
+  const out = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    out.push(d.toISOString().slice(0, 10));
+  }
+  return out;
+}
+
+function renderReport() {
+  const s = _loadStats();
+  const answers = Array.isArray(s.answers) ? s.answers : [];
+  const setText = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+
+  // ---- 顶部 4 张统计卡 ----
+  const totalMin = Math.floor((s.totalSeconds || 0) / 60);
+  setText('reportTotalTime', totalMin >= 60 ? (totalMin / 60).toFixed(1) + 'h' : totalMin + ' 分');
+  setText('reportTotalAnswers', answers.length);
+  const okAll = answers.filter(a => a.ok).length;
+  setText('reportAvgScore', answers.length ? Math.round(okAll / answers.length * 100) + '%' : '—');
+  setText('reportKnownWords', Object.keys(s.knownWords || {}).length);
+
+  // ---- 题型正确率分布（复用 unitMastery 容器）----
+  //   旧记录无 type 字段 → 不计入分布（仍计入总题数），向后兼容
+  const dist = _REPORT_TYPES.map(t => {
+    const arr = answers.filter(a => a.type === t.key);
+    const ok = arr.filter(a => a.ok).length;
+    return { label: t.label, key: t.key, count: arr.length, pct: arr.length ? Math.round(ok / arr.length * 100) : null };
+  });
+  // 阅读自测并入（来自 readingExDone）
+  const rexArr = Object.values(s.readingExDone || {});
+  if (rexArr.length) {
+    const rexOk = rexArr.filter(v => v && v.ok).length;
+    dist.push({ label: '阅读自测', key: 'reading_qa', count: rexArr.length, pct: Math.round(rexOk / rexArr.length * 100) });
+  }
+  const um = document.getElementById('unitMastery');
+  if (um) {
+    const withData = dist.filter(d => d.count > 0);
+    if (!withData.length) {
+      um.innerHTML = '<div class="text-sm text-slate-400 text-center py-4">还没有练习记录，去做几道题就能看到分布啦～</div>';
+    } else {
+      um.innerHTML = withData.map(d => {
+        const pct = d.pct == null ? 0 : d.pct;
+        const color = pct >= 80 ? 'from-green-500 to-emerald-500' : (pct >= 60 ? 'from-blue-500 to-indigo-500' : 'from-orange-500 to-red-500');
+        return ''
+          + '<div>'
+          +   '<div class="flex justify-between text-sm mb-1">'
+          +     '<span class="text-slate-700 font-medium">' + d.label + ' <span class="text-xs text-slate-400">(' + d.count + ' 题)</span></span>'
+          +     '<span class="text-slate-500">' + pct + '%</span>'
+          +   '</div>'
+          +   '<div class="h-2 bg-slate-100 rounded-full overflow-hidden">'
+          +     '<div class="h-full bg-gradient-to-r ' + color + '" style="width: ' + pct + '%"></div>'
+          +   '</div>'
+          + '</div>';
+      }).join('');
+    }
+  }
+
+  // ---- 弱项分析（按正确率从低到高，样本 >= 3 才纳入）----
+  const weak = document.getElementById('weakAnalysis');
+  if (weak) {
+    const sampled = dist.filter(d => d.count >= 3 && d.pct != null);
+    if (!sampled.length) {
+      weak.innerHTML = '<div class="flex items-start gap-3 p-3 bg-blue-50 rounded-xl"><span class="text-2xl">📝</span><div><div class="font-semibold text-blue-800">数据积累中</div><div class="text-sm text-slate-600 mt-1">每种题型做满 3 题后，这里会给出针对性的强弱项分析</div></div></div>';
+    } else {
+      const sorted = sampled.slice().sort((a, b) => a.pct - b.pct);
+      const rows = [];
+      sorted.filter(d => d.pct < 80).slice(0, 2).forEach(d => {
+        rows.push('<div class="flex items-start gap-3 p-3 bg-amber-50 rounded-xl"><span class="text-2xl">⚠️</span><div><div class="font-semibold text-amber-800">' + d.label + '</div><div class="text-sm text-slate-600 mt-1">正确率 ' + d.pct + '%（' + d.count + ' 题），建议多练这一类巩固薄弱点</div></div></div>');
+      });
+      const best = sorted[sorted.length - 1];
+      if (best && best.pct >= 80) {
+        rows.push('<div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl"><span class="text-2xl">✨</span><div><div class="font-semibold text-green-800">优势：' + best.label + '</div><div class="text-sm text-slate-600 mt-1">正确率达 ' + best.pct + '%，继续保持！</div></div></div>');
+      }
+      if (!rows.length) {
+        rows.push('<div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl"><span class="text-2xl">🎉</span><div><div class="font-semibold text-green-800">表现优秀</div><div class="text-sm text-slate-600 mt-1">各题型正确率都不错，继续加油！</div></div></div>');
+      }
+      weak.innerHTML = rows.join('');
+    }
+  }
+
+  // ---- 图表：每次进入先 destroy 旧实例再重建，避免重复 new Chart 报错 + 陈旧数据 ----
+  if (typeof Chart === 'undefined') return;  // 离线且未缓存 Chart.js 时优雅降级
+
+  const days = _reportLast7Days();
+  const dayLabels = days.map(d => d.slice(5));  // MM-DD
+  const dailySec = s.dailySeconds || {};
+  const studyMins = days.map(d => Math.round((dailySec[d] || 0) / 60));
 
   const ctx1 = document.getElementById('studyTimeChart');
   if (ctx1) {
-    new Chart(ctx1, {
+    if (_studyChart) { try { _studyChart.destroy(); } catch (e) {} }
+    _studyChart = new Chart(ctx1, {
       type: 'bar',
-      data: {
-        labels: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-        datasets: [{
-          label: '学习时长(分钟)',
-          data: [35, 42, 28, 55, 40, 65, 50],
-          backgroundColor: 'rgba(59, 130, 246, 0.7)',
-          borderRadius: 8
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: true } }
-      }
+      data: { labels: dayLabels, datasets: [{ label: '学习时长(分钟)', data: studyMins, backgroundColor: 'rgba(59,130,246,0.7)', borderRadius: 8 }] },
+      options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
     });
   }
 
+  // 每天正确率（当天无记录 → null，折线在该点断开）
+  const dayAcc = days.map(d => {
+    const arr = answers.filter(a => {
+      try { return new Date(a.at).toISOString().slice(0, 10) === d; } catch (e) { return false; }
+    });
+    if (!arr.length) return null;
+    return Math.round(arr.filter(a => a.ok).length / arr.length * 100);
+  });
   const ctx2 = document.getElementById('scoreChart');
   if (ctx2) {
-    new Chart(ctx2, {
+    if (_scoreChart) { try { _scoreChart.destroy(); } catch (e) {} }
+    _scoreChart = new Chart(ctx2, {
       type: 'line',
-      data: {
-        labels: ['第1次', '第2次', '第3次', '第4次', '第5次', '第6次', '第7次'],
-        datasets: [{
-          label: '得分',
-          data: [75, 78, 82, 80, 85, 88, 92],
-          borderColor: '#6366f1',
-          backgroundColor: 'rgba(99, 102, 241, 0.1)',
-          fill: true,
-          tension: 0.4,
-          pointRadius: 5,
-          pointBackgroundColor: '#6366f1'
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { display: false } },
-        scales: { y: { beginAtZero: false, min: 60, max: 100 } }
-      }
+      data: { labels: dayLabels, datasets: [{ label: '正确率(%)', data: dayAcc, borderColor: '#6366f1', backgroundColor: 'rgba(99,102,241,0.1)', fill: true, tension: 0.4, pointRadius: 5, pointBackgroundColor: '#6366f1', spanGaps: true }] },
+      options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, max: 100 } } }
     });
   }
 }
