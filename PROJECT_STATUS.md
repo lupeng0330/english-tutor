@@ -249,10 +249,12 @@ a4f0da4 2026-05-03 Initial commit                                               
 - [x] 答错的题自动入错题本，按 `教材 + 题型 + 错误次数` 分桶（数据层 v01.20 已就绪）
 - [x] 学习页新增"错题本"独立页入口（首页卡片 + 侧栏），可浏览/筛选/展开看答案解析/单题删除/一键重练
 
-#### v01.17 — 学习数据可视化升级
-- [ ] 每日学习时长热力图（GitHub 风格 53 周方格）
-- [ ] 各教材 / 各题型正确率雷达图
-- [ ] 单词掌握度（基于做题历史的 SRS 间隔重复初版）
+#### v01.17 — 学习数据可视化（真实数据）✅ 已完成（2026-06-23，详见 §14）
+- [x] 报告页接真实统计：顶部 4 卡 + 每日学习时长柱状图 + 每日正确率折线图
+- [x] 各题型正确率分布 + 弱项分析（按正确率排序，样本≥3 才纳入）
+- [x] 扩展数据结构：`answers` 加 `type`、新增 `dailySeconds` 每日时长序列（向后兼容）
+- [x] Chart.js 本地化 + 加入 SW 预缓存，离线报告页图表可用
+- [ ] （后续）单词掌握度 SRS 间隔重复初版 / 时长热力图 / 雷达图 — 留待 v01.18+
 
 #### v01.18 — 智能推题 v1
 - [ ] 优先推：错题本里 < 3 次答对的题
@@ -589,3 +591,32 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - 当前 `stats.answers` 元素仅 `{at, ok}`，**无题型字段**；`stats` 时长只有 `totalSeconds/todaySeconds` 两个标量，**无每日序列** —— v01.17 要按题型分布 + 每日时长趋势，需先扩展数据结构并改答题写入挂钩（拼写 L2340 区 / 选择 `answerQuiz` L2520 区 / `recordAnswerStats`）。
 - `renderReport`（report 页）目前仍全是 mock 数据；Chart.js 走 CDN（index.html `<head>`），离线不可用，v01.17 需本地化并加入 `sw.js` 的 `STATIC_ASSETS`。
 - **version.txt 由 `dev-push.ps1` 自动管理**（ISO 周版本号 + hash + 时间戳），部署时跑脚本即可，勿手改。
+
+---
+
+## 14. ✅ v01.17 数据可视化（真实数据）· 完成记录（2026-06-23）
+
+> P2 学习闭环第二阶段。承接 §13 的提醒，把报告页从 mock 切到真实统计，并扩展数据结构支撑题型分布与每日时长趋势，同时把 Chart.js 本地化保证离线可用。严格按 §10 纪律：3 步逐个 commit，每步 lint + 浏览器加载验证无顶层异常。
+
+### 交付的 3 个 commit
+
+| 步骤 | commit | 内容 |
+|---|---|---|
+| Step 1 | `f755842` | 扩展 `stats` 数据结构：`answers` 元素由 `{at,ok}` → `{at,ok,type}`；`_loadStats` 初始化 `dailySeconds`（每日时长序列）；计时器 IIFE 按天滚动落盘 `dailySeconds`；答题判定挂钩（拼写 + 选择）改传 `recordAnswerStats(isCorrect, realType)`。旧记录缺 `type`/`dailySeconds` 全部容错 |
+| Step 2 | `4a001ad` | Chart.js 4.4.0 本地化到 `js/vendor/chart.umd.min.js`；`index.html` `<head>` 改本地引用；`sw.js` `STATIC_ASSETS` 加入 `chart.umd.min.js`（并补回 v01.20 遗漏的 `js/profile.js`），保证离线报告页图表可用 |
+| Step 3 | `7179a10` | 重写 `renderReport()` 接真实数据：顶部 4 卡（总时长/题数/平均正确率/掌握单词）+ 题型正确率分布（复用 `unitMastery` 容器，含 `reading_qa`）+ 弱项分析（按正确率排序，样本≥3）+ 每日时长柱状图 + 每日正确率折线图；移除 `chartsInited`/`unitsMock`，图表每次进入先 `destroy()` 再重建 |
+| Step 4 | （本次文档） | `PROJECT_STATUS.md` 同步 §8 checkbox + §14 完成记录 |
+
+### 关键实现点
+
+1. **向后兼容只增不改**：`answers` 仅追加 `type` 字段，不动判定逻辑；读取处对旧记录缺 `type` 不计入题型分布（仍计入总题数），缺 `dailySeconds` 用 `|| {}` 容错，零迁移成本。
+2. **图表资源管理**：`_studyChart`/`_scoreChart` 持有实例引用，每次进入报告页先 `destroy()` 旧实例再 `new Chart`，根治"仅初始化一次"的陈旧数据与重复 new 报错，避免 canvas 上下文泄漏。
+3. **离线优雅降级**：`renderReport` 内 `if (typeof Chart === 'undefined') return;` —— 即使 Chart.js 未加载，统计卡/分布/弱项的 DOM 文本仍正常渲染，仅跳过图表。
+4. **题型分布口径**：选择/拼写/听力/语法/阅读走 `answers` 按 `type` 聚合；阅读自测（`reading_qa`）单独并入 `readingExDone`，不回写 `answers` 以免"总题数"重复计数。
+5. **PWA 缓存修复**：顺带补回 `js/profile.js`（v01.20 多用户档案核心，此前漏加预缓存），离线首屏不再缺档案模块。
+
+### 收口状态
+
+- P2 学习闭环两阶段（v01.16 错题本独立页 + v01.17 数据可视化）**全部完成**，共 7 个 commit（`b7d7083`…`7179a10`）。
+- 本地 lint 全绿、`index.html` / `js/vendor/chart.umd.min.js`（205222 B）本地服务器均 200。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，上线时跑脚本即触发 SW 缓存刷新，本次未手改、未 push。
