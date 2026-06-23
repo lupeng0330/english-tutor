@@ -14,7 +14,8 @@
 <link rel="icon" type="image/svg+xml" href="./icon.svg" />
 <title>乐学英语 · 广州教科版同步辅导 (Demo)</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<!-- 🆕 v01.17：Chart.js 本地化（原 CDN），配合 sw.js 预缓存保证离线报告页图表可用 -->
+<script src="./js/vendor/chart.umd.min.js"></script>
 <!-- 🆕 缓存破坏：优先级 URL?v= > version.txt(commit hash) > 当日小时戳。手机/PC 拿到同一版本号，推送后立即更新。 -->
 <script>
   window.__APP_VERSION = 'loading';
