@@ -245,9 +245,9 @@ a4f0da4 2026-05-03 Initial commit                                               
 
 > 现状：刷新即清零，没有"我学到哪儿了"的感知。
 
-#### v01.16 — 错题本（纯前端 localStorage，零成本）
-- [ ] 答错的题自动入错题本，按 `教材 + 题型 + 错误次数` 分桶
-- [ ] 学习页新增"错题本"入口，可重做、可移除
+#### v01.16 — 错题本（纯前端 localStorage，零成本）✅ 已完成（2026-06-23，详见 §13）
+- [x] 答错的题自动入错题本，按 `教材 + 题型 + 错误次数` 分桶（数据层 v01.20 已就绪）
+- [x] 学习页新增"错题本"独立页入口（首页卡片 + 侧栏），可浏览/筛选/展开看答案解析/单题删除/一键重练
 
 #### v01.17 — 学习数据可视化升级
 - [ ] 每日学习时长热力图（GitHub 风格 53 周方格）
@@ -560,3 +560,32 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 | `PROJECT_STATUS.md` | `docs: 同步 v01.11 完成记录（§3 规模 / §8 checkbox / §12 复盘）` |
 
 > 三个 commit 拆开，便于日后单独 revert（例如只想撤题库不撤脚本，或只想撤文档）。
+
+---
+
+## 13. ✅ v01.16 错题本独立页 · 完成记录（2026-06-23）
+
+> P2 学习闭环第一阶段。严格按 §10 纪律小步走：4 步逐个 commit，每步 lint + 浏览器加载验证无顶层异常。错题本数据层 v01.20 已就绪，本次主要补"独立浏览/复习 UI + 单题删除 API"。
+
+### 交付的 4 个 commit
+
+| 步骤 | commit | 内容 |
+|---|---|---|
+| Step 1 | `b7d7083` | `app.js` 错题本区新增 `removeWrongQuestion(_key)` 单题删除 API（复用 `_pkey` 隔离 + 内存缓存，挂到 `window.__wrongbook.remove`） |
+| Step 2 | `1addfef` | 错题本独立页 UI 骨架：侧栏 `data-page="wrongbook"` nav + 首页橙色入口卡片（角标 `homeWrongCount`）+ `<section id="page-wrongbook">` + `styles.css` 错题本样式（`.wb-filter-tab` / `.wb-item` / `.wb-type-tag`） |
+| Step 3 | `cadfc59` | `app.js` 实现 `renderWrongbookPage()`（按当前教材范围列表 + 题型筛选 Tab + 展开看选项/答案/解析 + 单题删除 + 一键重练）；`switchPage` 增 `wrongbook` 分支；`renderHomeStats` 更新首页角标 |
+| Step 4 | （本次文档） | `PROJECT_STATUS.md` 同步 §8 checkbox + §13 完成记录 |
+
+### 关键实现点
+
+1. **复用而非重造**：一键重练直接复用 `startPractice('wrongbook')`；列表数据走现有 `getWrongQuestions(filter)`；角标走 `getWrongQuestions` 计数。
+2. **题型兼容渲染**：`_wbAnswerText(rec)` 统一兼容三种存储结构 —— 选择题（`options[]` + `answer` 索引）、拼写题（`answer` 字符串）、阅读自测（`correct` 字段）。
+3. **范围口径一致**：错题本页 + 首页角标 + 一键重练 全部按 `当前教材(textbook)::` 前缀过滤，口径统一（`_wbCountCurrentTb()`）。
+4. **题型筛选 Tab**：全部 / 单词(spelling) / 听力(listening) / 语法(grammar) / 阅读(reading) / 阅读自测(reading_qa)，状态变量 `_wbPageFilter`。
+5. **多用户隔离**：未新增 localStorage base key（`yxyy_wrongbook_v1` 已在 `DATA_KEYS` 且已走 `_pkey`），无需改 profile.js。
+
+### 给下一阶段（v01.17）的提醒
+
+- 当前 `stats.answers` 元素仅 `{at, ok}`，**无题型字段**；`stats` 时长只有 `totalSeconds/todaySeconds` 两个标量，**无每日序列** —— v01.17 要按题型分布 + 每日时长趋势，需先扩展数据结构并改答题写入挂钩（拼写 L2340 区 / 选择 `answerQuiz` L2520 区 / `recordAnswerStats`）。
+- `renderReport`（report 页）目前仍全是 mock 数据；Chart.js 走 CDN（index.html `<head>`），离线不可用，v01.17 需本地化并加入 `sw.js` 的 `STATIC_ASSETS`。
+- **version.txt 由 `dev-push.ps1` 自动管理**（ISO 周版本号 + hash + 时间戳），部署时跑脚本即可，勿手改。
