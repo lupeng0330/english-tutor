@@ -453,6 +453,8 @@ function _loadStats() {
   // 🆕 阅读自测每题状态：key = "<tb>::<grade>::<term>::<uid>::<lessonIdx>::<qIdx>"
   //                      val = { ok: true|false, at: ts }
   _stats.readingExDone = _stats.readingExDone || {};
+  // 🆕 v01.17：每日学习时长序列 { 'YYYY-MM-DD': seconds }（用于报告页时长趋势）
+  _stats.dailySeconds = _stats.dailySeconds || {};
   return _stats;
 }
 function _saveStats() {
@@ -550,10 +552,13 @@ function markReadingExAnswer(ctx, ok) {
   };
   _saveStats();
 }
-// 答题记录（用于本周正确率）
-function recordAnswerStats(isCorrect) {
+// 答题记录（用于本周正确率 + v01.17 题型分布）
+// type 可选：spelling/listening/grammar/reading/reading_qa；旧记录无 type，读取处需容错
+function recordAnswerStats(isCorrect, type) {
   const s = _loadStats();
-  s.answers.push({ at: Date.now(), ok: !!isCorrect });
+  const rec = { at: Date.now(), ok: !!isCorrect };
+  if (type) rec.type = type;
+  s.answers.push(rec);
   if (s.answers.length > 500) s.answers = s.answers.slice(-500);
   _saveStats();
 }
@@ -579,6 +584,10 @@ function rememberLastUnit(grade, term, unitId, unitTitle, textbook) {
         const delta = Math.floor((now - lastTick) / 1000);
         s.totalSeconds  = (s.totalSeconds  || 0) + delta;
         s.todaySeconds  = (s.todaySeconds  || 0) + delta;
+        // 🆕 v01.17：按天累计到 dailySeconds，供报告页时长趋势图使用
+        s.dailySeconds = s.dailySeconds || {};
+        const _d = new Date().toISOString().slice(0, 10);
+        s.dailySeconds[_d] = (s.dailySeconds[_d] || 0) + delta;
         _saveStats();
       }
       lastTick = now;
@@ -2485,7 +2494,7 @@ function checkSpellFilled(q, inputs, force) {
   const isCorrect = (userWord === correct);
   const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
-  try { recordAnswerStats(isCorrect); _bumpStreak(); } catch(e) {}
+  try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;
     inputs.forEach(i => i.classList.add('!border-green-500', 'bg-green-50', 'text-green-700'));
@@ -2665,7 +2674,7 @@ function answerQuiz(idx) {
   const isCorrect = (idx === q.answer);
   const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
-  try { recordAnswerStats(isCorrect); _bumpStreak(); } catch(e) {}
+  try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;
     btns[idx].classList.add('bg-green-100', 'border-green-500');
