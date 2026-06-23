@@ -190,8 +190,17 @@ function clearWrongbook() {
   _wrongbook = {};
   _saveWrongbook();
 }
+// v01.16：按 _key 删除单条错题（用户手动移除/已掌握/误判）。返回是否删除成功。
+function removeWrongQuestion(key) {
+  if (!key) return false;
+  const wb = _loadWrongbook();
+  if (!wb[key]) return false;
+  delete wb[key];
+  _saveWrongbook();
+  return true;
+}
 // 供调试用：把当前本轮错题手动推进错题本（正常流程 answerQuiz 已自动调 recordAnswer）
-window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook };
+window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook, remove: removeWrongQuestion };
 
 // 🆕 错题本 Tab 状态（'all' | 'reading_qa'）
 let _wrongbookTabFilter = 'all';
