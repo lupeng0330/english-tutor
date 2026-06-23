@@ -139,6 +139,7 @@
       <div class="nav-item" data-page="practice"><span>✏️</span><span data-mb="练习">练习测试</span></div>
       <div class="nav-item" data-page="grammar"><span>📝</span><span data-mb="语法">语法讲解</span></div>
       <div class="nav-item" data-page="chat"><span>💬</span><span data-mb="对话">AI对话</span></div>
+      <div class="nav-item" data-page="wrongbook"><span>🩹</span><span data-mb="错题">错题本</span></div>
       <div class="nav-item" data-page="report"><span>📊</span><span data-mb="报告">学习报告</span></div>
     </nav>
   </aside>
@@ -204,6 +205,16 @@
           <div class="text-3xl md:text-4xl mb-2">📊</div>
           <div class="font-semibold text-slate-800 text-sm md:text-base">学习报告</div>
         </div>
+      </div>
+
+      <!-- 🆕 错题本入口卡片（v01.16） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="switchPage('wrongbook')">
+        <div class="text-3xl md:text-4xl flex-shrink-0">🩹</div>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-slate-800 text-sm md:text-base">错题本 · 专攻薄弱点</div>
+          <div class="text-xs text-slate-500 mt-0.5">逐题回顾答错的题，巩固后自动移除</div>
+        </div>
+        <span class="badge bg-orange-100 text-orange-700 flex-shrink-0" id="homeWrongCount">0 题</span>
       </div>
 
       <!-- 🆕 页脚：版本号 + 检查更新按钮（居中放置） -->
@@ -678,6 +689,45 @@
           <div class="flex items-start gap-3 p-3 bg-amber-50 rounded-xl"><span class="text-2xl">⚠️</span><div><div class="font-semibold text-amber-800">发音：/θ/ 与 /s/ 区分</div><div class="text-sm text-slate-600 mt-1">think / sink 易混淆，建议多做发音对比练习</div></div></div>
           <div class="flex items-start gap-3 p-3 bg-green-50 rounded-xl"><span class="text-2xl">✨</span><div><div class="font-semibold text-green-800">优势：单词记忆</div><div class="text-sm text-slate-600 mt-1">单词拼写正确率达 94%，继续保持！</div></div></div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ 错题本（v01.16 独立页） ============ -->
+    <section id="page-wrongbook" class="page hide">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <h2 class="text-xl font-bold text-slate-800">🩹 错题本 <span class="badge bg-orange-100 text-orange-700 align-middle ml-1" id="wbTotalBadge">0 题</span></h2>
+        <button type="button" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition"
+                onclick="if(confirm('确定清空错题本？此操作不可撤销。')){ clearWrongbook(); renderWrongbookPage(); }">
+          🗑 全部清空
+        </button>
+      </div>
+
+      <!-- 题型筛选 Tab -->
+      <div id="wbFilterTabs" class="flex flex-wrap gap-2 mb-4">
+        <button class="wb-filter-tab" data-filter="all">全部</button>
+        <button class="wb-filter-tab" data-filter="spelling">单词</button>
+        <button class="wb-filter-tab" data-filter="listening">听力</button>
+        <button class="wb-filter-tab" data-filter="grammar">语法</button>
+        <button class="wb-filter-tab" data-filter="reading">阅读</button>
+        <button class="wb-filter-tab" data-filter="reading_qa">阅读自测</button>
+      </div>
+
+      <!-- 错题列表 -->
+      <div id="wrongbookList" class="space-y-3"></div>
+
+      <!-- 空状态 -->
+      <div id="wrongbookEmpty" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">🎉</div>
+        <div class="font-bold text-slate-700 text-lg">错题本是空的</div>
+        <p class="text-slate-500 text-sm mt-2">去练习一下吧，答错的题会自动收进这里方便复习</p>
+        <button onclick="switchPage('practice')" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">去练习 →</button>
+      </div>
+
+      <!-- 底部一键重练 -->
+      <div id="wrongbookActions" class="hide mt-5">
+        <button onclick="startPractice('wrongbook')" class="w-full gradient-btn py-3 rounded-xl font-bold text-white text-base shadow active:scale-95 transition">
+          🔁 一键重练全部错题
+        </button>
       </div>
     </section>
 

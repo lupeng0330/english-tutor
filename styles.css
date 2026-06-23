@@ -69,6 +69,41 @@ body {
 .word-back { background: linear-gradient(135deg, #fef3c7, #fde68a); color: #92400e; transform: rotateY(180deg); }
 .hide { display: none !important; }
 .badge { display: inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+
+/* ============ 错题本独立页（v01.16） ============ */
+.wb-filter-tab {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f97316;
+  background: #fff;
+  border: 1px solid #fed7aa;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.wb-filter-tab:hover { background: #fff7ed; }
+.wb-filter-tab.active {
+  background: linear-gradient(135deg, #f97316, #f59e0b);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+.wb-item { border-left: 4px solid #fb923c; }
+.wb-item .wb-detail { display: none; }
+.wb-item.open .wb-detail { display: block; }
+.wb-item.open .wb-toggle-icon { transform: rotate(180deg); }
+.wb-toggle-icon { transition: transform 0.2s; display: inline-block; }
+.wb-type-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #ffedd5;
+  color: #c2410c;
+}
+
 .chat-bubble-user {
   background: linear-gradient(135deg, #3b82f6, #6366f1);
   color: white;
