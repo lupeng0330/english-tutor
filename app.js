@@ -2339,6 +2339,8 @@ function startPractice(type) {
     state.quizIndex = 0;
     state.quizCorrect = 0;
     state.quizStartTime = Date.now();
+    // 「一键重练」按钮位于错题本独立页，必须先切到练习页，否则点击后用户仍停留在错题本页（看似无反应）
+    switchPage('practice');   // switchPage 内部会重置练习视图（show typeView / hide quizView），下面再切到答题视图
     document.getElementById('quizType').textContent = '🩹 错题重练';
     document.getElementById('quizTotal').textContent = picked.length;
     document.getElementById('practiceTypeView').classList.add('hide');
