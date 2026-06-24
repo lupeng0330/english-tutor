@@ -208,6 +208,16 @@
         </div>
       </div>
 
+      <!-- 🧠 智能推荐练习入口（v01.18） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50" onclick="startSmartPractice()">
+        <div class="text-3xl md:text-4xl flex-shrink-0">🧠</div>
+        <div class="flex-1">
+          <div class="font-bold text-slate-800">智能推荐练习</div>
+          <div class="text-sm text-slate-500">按你的错题、薄弱项和新题，跨题型智能组卷</div>
+        </div>
+        <div class="text-emerald-500 text-xl font-bold">→</div>
+      </div>
+
       <!-- 🆕 错题本入口卡片（v01.16） -->
       <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="switchPage('wrongbook')">
         <div class="text-3xl md:text-4xl flex-shrink-0">🩹</div>
@@ -438,6 +448,18 @@
         </div>
       </div>
 
+      <!-- 🧠 智能推题开关（v01.18，持久化偏好） -->
+      <div class="card p-3 mb-4 flex items-center justify-between">
+        <div>
+          <div class="font-semibold text-slate-700 text-sm">🧠 智能推题</div>
+          <div class="text-xs text-slate-400" id="smartPickHint">按错题/薄弱/新题智能排序出题</div>
+        </div>
+        <button id="smartPickToggle" type="button" onclick="toggleSmartPick()" aria-label="智能推题开关"
+                class="relative w-12 h-7 rounded-full transition bg-emerald-500 flex-shrink-0">
+          <span id="smartPickKnob" class="absolute top-0.5 w-6 h-6 bg-white rounded-full shadow transition-transform" style="transform:translateX(22px)"></span>
+        </button>
+      </div>
+
       <div id="practiceTypeView" class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="card p-6 cursor-pointer" onclick="startPractice('spelling')">
           <div class="flex items-start justify-between">
@@ -502,6 +524,8 @@
         <div id="quizRefreshToast" class="hide mb-3 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm font-semibold text-center shadow-md">
           ✅ 已切换到 <span id="quizRefreshCtx">三年级上</span>，自动加载新题
         </div>
+        <!-- 🧠 本次推题构成摘要（v01.18 智能推题） -->
+        <div id="quizPickSummary" class="hide mb-3 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 text-sm text-slate-700 shadow-sm"></div>
         <div class="card p-6 mb-4">
           <div class="flex justify-between items-center mb-4 flex-wrap gap-2">
             <div class="flex items-center gap-2">
@@ -510,9 +534,11 @@
             </div>
             <span class="text-sm text-slate-500">题目 <span id="quizIndex">1</span> / <span id="quizTotal">5</span></span>
           </div>
-          <div class="h-2 bg-slate-100 rounded-full overflow-hidden mb-6">
+          <div class="h-2 bg-slate-100 rounded-full overflow-hidden mb-3">
             <div id="quizProgress" class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: 20%"></div>
           </div>
+          <!-- 🧠 为什么推这题（v01.18 智能推题可解释提示） -->
+          <div id="quizWhy" class="hide mb-4 text-xs text-slate-500 bg-slate-50 rounded-lg px-3 py-2 border border-slate-100"></div>
 
           <!-- 听力原文（仅听力题显示） -->
           <div id="quizAudioBox" class="hide mb-4 p-5 bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl">

@@ -202,6 +202,64 @@ function removeWrongQuestion(key) {
 // 供调试用：把当前本轮错题手动推进错题本（正常流程 answerQuiz 已自动调 recordAnswer）
 window.__wrongbook = { get: getWrongQuestions, count: getWrongCount, clear: clearWrongbook, remove: removeWrongQuestion };
 
+// ===================== 🎯 题目级掌握度（perItemMastery · v01.18 智能推题） =====================
+// 存储 localStorage: { "<tb>::<type>::<qid>": { seen, correct, wrong, streak, firstAt, lastAt } }
+//   - key 与错题本同构（_wbKey），便于两表关联
+//   - 走 _pkey() 做多用户档案隔离；base key 已注册到 js/profile.js 的 DATA_KEYS
+//   - 答错的细节仍由错题本负责；本表专注「做过几次 / 正确率 / 连对」用于智能推题打分
+const MASTERY_STORAGE_KEY = 'yxyy_mastery_v1';
+let _mastery = null;
+
+function _loadMastery() {
+  if (_mastery) return _mastery;
+  try {
+    const raw = localStorage.getItem(_pkey(MASTERY_STORAGE_KEY));
+    _mastery = raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    console.warn('[掌握度] 加载失败', e);
+    _mastery = {};
+  }
+  return _mastery;
+}
+function _saveMastery() {
+  try {
+    localStorage.setItem(_pkey(MASTERY_STORAGE_KEY), JSON.stringify(_mastery || {}));
+  } catch (e) {
+    console.warn('[掌握度] 保存失败', e);
+  }
+}
+
+// 记录单题作答（对错都调），维护 seen/correct/wrong/streak/时间戳
+function recordMastery(type, q, isCorrect) {
+  if (!q) return;
+  const m = _loadMastery();
+  const key = _wbKey(type, q);
+  const now = Date.now();
+  const rec = m[key] || { seen: 0, correct: 0, wrong: 0, streak: 0, firstAt: now, lastAt: now };
+  rec.seen += 1;
+  if (isCorrect) { rec.correct += 1; rec.streak = (rec.streak || 0) + 1; }
+  else           { rec.wrong   += 1; rec.streak = 0; }
+  rec.lastAt = now;
+  if (!rec.firstAt) rec.firstAt = now;
+  m[key] = rec;
+  _saveMastery();
+}
+
+// 查询单题掌握记录（无记录 → null，表示全新题）
+function _masteryOf(type, q) {
+  return _loadMastery()[_wbKey(type, q)] || null;
+}
+// 掌握度 0~1：历史正确率为主 + 连对加成 + 充分练习微调（无记录视为 0 = 全新题）
+function masteryLevel(rec) {
+  if (!rec || !rec.seen) return 0;
+  const acc = rec.correct / rec.seen;                       // 历史正确率
+  const streakBoost = Math.min(rec.streak || 0, 3) * 0.08;  // 连对最多 +0.24
+  const seenBoost   = rec.seen >= 3 ? 0.06 : 0;             // 练够 3 次微调
+  return Math.max(0, Math.min(1, acc * 0.7 + streakBoost + seenBoost));
+}
+
+window.__mastery = { load: _loadMastery, of: _masteryOf, level: masteryLevel, record: recordMastery };
+
 // 🆕 错题本 Tab 状态（'all' | 'reading_qa'）
 let _wrongbookTabFilter = 'all';
 function switchWrongbookTab(type) {
@@ -364,45 +422,116 @@ function renderWrongbookPage() {
 }
 window.renderWrongbookPage = renderWrongbookPage;
 
-// ===================== B2 智能推题 =====================
-// 根据错题本给题目打分，加权随机抽取（不放回）；
-// 同一题在题库 + 错题本之间靠 _wbKey 关联。
+// ===================== B2 智能推题（v01.18 增强） =====================
+// 给题目打分，按权重随机抽取（不放回）。综合 4 个维度：
+//   1) 错题本：错得越多/越近越优先；错题本里答对 < 3 次（没练熟）再加权
+//   2) 新题曝光：从未做过（掌握度表无记录）的题给曝光，避免只刷错题
+//   3) 掌握度衰减：做过的非错题，掌握越好越少出；正确率低（薄弱）反而优先
+//   4) 单元覆盖率：当前题集里做过题占比 < 50% 的单元（按 q.code）补齐
+// reason 分类：wrong 错题 / new 新题 / weak 薄弱 / review 常规，供 UI 摘要与「为什么推这题」。
 // 用户可通过 state.smartPick = false 关闭（走纯随机）。
-function _scoreQuestion(type, q) {
+function _scoreQuestion(type, q, ctx) {
   const wb = _loadWrongbook();
-  const key = _wbKey(type, q);
-  const rec = wb[key];
+  const rec = wb[_wbKey(type, q)];
+  const mRec = _masteryOf(type, q);
   let score = 1;                 // 基础分
   let tag = '';
+  let reason = 'review';         // review 常规 / wrong 错题 / new 新题 / weak 薄弱
+
+  // 1) 错题本加权
   if (rec) {
     score += 3 * (rec.wrongCount || 0);
     const dt = Date.now() - (rec.lastWrongAt || 0);
     const DAY = 24 * 3600 * 1000;
     if (dt <= DAY)          score += 3;           // 24h 内错过 → 强化
     else if (dt <= 7 * DAY) score += 1.5;         // 一周内错过 → 中等
-    // 再久远就只靠 wrongCount
     tag = '🔥';
+    reason = 'wrong';
+    // 错题本里答对 < 3 次（还没练熟）→ 额外强化，优先消灭
+    const okTimes = mRec ? (mRec.correct || 0) : 0;
+    if (okTimes < 3) score += 2.5;
   }
+
+  // 2) 新题曝光 bonus：从未做过的题给一份曝光
+  if (!mRec || !mRec.seen) {
+    score += 2;
+    if (!rec) { tag = '✨'; reason = 'new'; }
+  } else if (!rec) {
+    // 3) 掌握度衰减：做过的非错题，掌握越好越少出；薄弱（正确率低）反而优先
+    const lvl = masteryLevel(mRec);
+    score -= lvl * 1.5;                            // 满掌握最多 -1.5
+    if (lvl < 0.4) { score += 1.5; tag = '💪'; reason = 'weak'; }
+  }
+
+  // 4) 单元覆盖率 < 50% 加权
+  if (ctx && ctx.unitCoverage) {
+    const cov = ctx.unitCoverage[q.code || ''];
+    if (cov != null && cov < 0.5) score += (0.5 - cov) * 2;   // 最多 +1
+  }
+
   // 难度高一点点的稍微优先（让练习不全是简单题）
   if (q.difficulty === 3) score += 0.3;
-  return { score, tag };
+
+  if (score < 0.2) score = 0.2;   // 保底，避免权重为 0 永远抽不到
+  return { score, tag, reason };
+}
+
+// 计算当前题集每个单元(code)的「做过题占比」，供单元覆盖率加权
+function _unitCoverage(questions, type) {
+  const tot = {}, seen = {};
+  for (const q of questions) {
+    const c = q.code || '';
+    tot[c] = (tot[c] || 0) + 1;
+    if (_masteryOf(type, q)) seen[c] = (seen[c] || 0) + 1;
+  }
+  const cov = {};
+  for (const c in tot) cov[c] = (seen[c] || 0) / tot[c];
+  return cov;
+}
+
+// 统计一批题目的推题构成（错题/新题/薄弱/常规），用于「本次推题构成」摘要
+function _tallyMeta(arr, type, ctx, smart) {
+  const meta = { smart: !!smart, total: arr.length, wrong: 0, new: 0, weak: 0, review: 0 };
+  for (const q of arr) {
+    const reason = _scoreQuestion(type, q, ctx).reason;
+    if (meta[reason] == null) meta.review++;
+    else meta[reason]++;
+  }
+  return meta;
 }
 
 function pickSmartQuestions(questions, n, type) {
-  if (!questions || !questions.length) return [];
-  if (n >= questions.length) {
-    // 全取的情况下保留 Fisher-Yates 打乱
+  if (!questions || !questions.length) { state.lastSmartMeta = null; return []; }
+  const t = type || state.quizType || 'spelling';
+  const smartOn = (state.smartPick !== false);   // 默认开启，可关
+
+  // 开关关闭 → 纯随机（Fisher-Yates 取前 n）
+  if (!smartOn) {
     const arr = questions.slice();
     for (let i = arr.length - 1; i > 0; i--) {
       const j = (Math.random() * (i + 1)) | 0;
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
+    const out = arr.slice(0, Math.min(n, arr.length));
+    state.lastSmartMeta = { smart: false, total: out.length, wrong: 0, new: 0, weak: 0, review: out.length };
+    return out;
+  }
+
+  const ctx = { unitCoverage: _unitCoverage(questions, t) };
+
+  // 全取：仍 Fisher-Yates 打乱，但统计构成
+  if (n >= questions.length) {
+    const arr = questions.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = (Math.random() * (i + 1)) | 0;
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    state.lastSmartMeta = _tallyMeta(arr, t, ctx, true);
     return arr;
   }
-  // 打分（type 由调用方传入，避免 state.quizType 时序问题）
-  const t = type || state.quizType || 'spelling';
-  const scored = questions.map(q => ({ q, score: _scoreQuestion(t, q).score }));
-  // 加权采样不放回（累加权重 → 二分查找）
+
+  // 加权采样不放回（累加权重 → 线性查找）
+  const scored = questions.map(q => ({ q, score: _scoreQuestion(t, q, ctx).score }));
   const picked = [];
   const pool = scored.slice();
   for (let k = 0; k < n && pool.length > 0; k++) {
@@ -417,6 +546,7 @@ function pickSmartQuestions(questions, n, type) {
     picked.push(pool[idx].q);
     pool.splice(idx, 1);
   }
+  state.lastSmartMeta = _tallyMeta(picked, t, ctx, true);
   return picked;
 }
 // 辅助：判断一道题当前是否"错题本里的"，用于 UI 上打 🔥 标
@@ -424,7 +554,7 @@ function isPriorityQuestion(type, q) {
   const wb = _loadWrongbook();
   return !!wb[_wbKey(type, q)];
 }
-window.__smartpick = { score: _scoreQuestion, pick: pickSmartQuestions };
+window.__smartpick = { score: _scoreQuestion, pick: pickSmartQuestions, coverage: _unitCoverage, tally: _tallyMeta };
 
 // ===================== 📊 学习统计（localStorage 真实累计） =====================
 const STATS_KEY = 'yxyy_stats_v1';
@@ -1268,6 +1398,7 @@ function switchPage(page) {
     document.getElementById('practiceTypeView').classList.remove('hide');
     try { refreshUnitFilterOptions(); } catch(e){}
     refreshPracticeCounts();
+    try { _loadSmartPick(); _renderSmartPickToggle(); } catch(e){}   // 同步智能推题开关偏好
   }
 }
 
@@ -2214,6 +2345,8 @@ function startPractice(type) {
     document.getElementById('practiceFilterView').classList.add('hide');
     document.getElementById('practiceResultView').classList.add('hide');
     document.getElementById('practiceQuizView').classList.remove('hide');
+    state.lastSmartMeta = null;   // 错题本模式非智能推题产物，清掉避免误显示上次摘要
+    _renderPickSummary();
     showQuiz();
     return;
   }
@@ -2223,11 +2356,8 @@ function startPractice(type) {
     alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
     return;
   }
-  // 🧠 B2 智能推题：依据错题本给题目打分，加权随机抽取
-  //   baseScore = 1
-  //   + 3 × wrongCount              （错的次数越多权重越高）
-  //   + recencyBoost(lastWrongAt)    （最近错过的优先）
-  //   + newQuestionBonus             （从未做过的也给点曝光，避免只刷错题）
+  // 🧠 v01.18 智能推题：pickSmartQuestions 按 4 维度（错题/新题曝光/掌握衰减/单元覆盖）
+  //   加权抽样，并把本次推题构成写入 state.lastSmartMeta，供下面 _renderPickSummary 展示。
   const shuffled = pickSmartQuestions(questions, Math.min(10, questions.length), type);
   state.quizType = type;
   state.quizQuestions = shuffled;
@@ -2241,8 +2371,103 @@ function startPractice(type) {
   document.getElementById('practiceFilterView').classList.add('hide');
   document.getElementById('practiceResultView').classList.add('hide');
   document.getElementById('practiceQuizView').classList.remove('hide');
+  _renderPickSummary();   // 普通模式：渲染「本次推题构成」摘要
   showQuiz();
 }
+
+// 渲染练习页顶部「本次推题构成」摘要条（仅智能推题且有构成时显示）
+function _renderPickSummary() {
+  const el = document.getElementById('quizPickSummary');
+  if (!el) return;
+  const m = state.lastSmartMeta;
+  if (!m || !m.smart || !m.total) { el.classList.add('hide'); return; }
+  const parts = [];
+  if (m.wrong)  parts.push(`🔥 错题 ${m.wrong}`);
+  if (m.new)    parts.push(`✨ 新题 ${m.new}`);
+  if (m.weak)   parts.push(`💪 薄弱 ${m.weak}`);
+  if (m.review) parts.push(`📚 巩固 ${m.review}`);
+  el.innerHTML = `<span class="font-semibold text-emerald-700">🧠 智能推题</span> · 本次 ${m.total} 题 = ` + parts.join(' · ');
+  el.classList.remove('hide');
+}
+
+// 🧠 智能推荐练习（v01.18）：跨 4 种题型按打分混合组卷，首页一键开练
+function startSmartPractice() {
+  const types = ['spelling', 'listening', 'grammar', 'reading'];
+  const pool = [];
+  for (const t of types) {
+    let qs = [];
+    try { qs = filterQuestions(t) || []; } catch (e) { qs = []; }
+    for (const q of qs) pool.push({ q, t, score: _scoreQuestion(t, q).score });
+  }
+  if (!pool.length) { alert('⚠️ 当前学段下暂无可练习的题目，请先到「练习」调整筛选。'); return; }
+  // 跨题型加权采样不放回，取 10 题
+  const n = Math.min(10, pool.length);
+  const picked = [];
+  const arr = pool.slice();
+  for (let k = 0; k < n && arr.length; k++) {
+    const total = arr.reduce((s, x) => s + x.score, 0);
+    let r = Math.random() * total, idx = 0;
+    for (; idx < arr.length; idx++) { r -= arr[idx].score; if (r <= 0) break; }
+    if (idx >= arr.length) idx = arr.length - 1;
+    const it = arr[idx];
+    picked.push(Object.assign({}, it.q, { _wbType: it.t }));   // 带真实题型，供混合渲染/判定
+    arr.splice(idx, 1);
+  }
+  // 推题构成统计（各题按其真实题型打分的 reason）
+  const meta = { smart: true, total: picked.length, wrong: 0, new: 0, weak: 0, review: 0 };
+  for (const it of picked) {
+    const reason = _scoreQuestion(it._wbType, it).reason;
+    if (meta[reason] == null) meta.review++; else meta[reason]++;
+  }
+  state.lastSmartMeta = meta;
+  state.quizType = 'smart';
+  state.quizQuestions = picked;
+  state.quizIndex = 0;
+  state.quizCorrect = 0;
+  state.quizStartTime = Date.now();
+  switchPage('practice');   // 切到练习页（内部会重置视图，下面再切到答题视图）
+  document.getElementById('quizType').textContent = '🧠 智能推荐';
+  document.getElementById('quizTotal').textContent = picked.length;
+  document.getElementById('practiceTypeView').classList.add('hide');
+  document.getElementById('practiceFilterView').classList.add('hide');
+  document.getElementById('practiceResultView').classList.add('hide');
+  document.getElementById('practiceQuizView').classList.remove('hide');
+  _renderPickSummary();
+  showQuiz();
+}
+window.startSmartPractice = startSmartPractice;
+
+// ===================== 🧠 智能推题开关（v01.18，持久化偏好） =====================
+// 存 localStorage（走 _pkey 多用户隔离）：'1' 开 / '0' 关；默认开启。
+const SMARTPICK_KEY = 'yxyy_smartpick_v1';
+function _loadSmartPick() {
+  try {
+    const raw = localStorage.getItem(_pkey(SMARTPICK_KEY));
+    state.smartPick = (raw === null) ? true : (raw === '1' || raw === 'true');
+  } catch (e) { state.smartPick = true; }
+  return state.smartPick;
+}
+function _saveSmartPick() {
+  try { localStorage.setItem(_pkey(SMARTPICK_KEY), (state.smartPick !== false) ? '1' : '0'); } catch (e) {}
+}
+function setSmartPick(on) {
+  state.smartPick = !!on;
+  _saveSmartPick();
+  _renderSmartPickToggle();
+}
+function toggleSmartPick() { setSmartPick(!(state.smartPick !== false)); }
+// 同步开关 UI（颜色 + 滑块位置 + 文案）
+function _renderSmartPickToggle() {
+  const on = (state.smartPick !== false);
+  const btn = document.getElementById('smartPickToggle');
+  const knob = document.getElementById('smartPickKnob');
+  const hint = document.getElementById('smartPickHint');
+  if (btn)  btn.className = 'relative w-12 h-7 rounded-full transition flex-shrink-0 ' + (on ? 'bg-emerald-500' : 'bg-slate-300');
+  if (knob) knob.style.transform = on ? 'translateX(22px)' : 'translateX(2px)';
+  if (hint) hint.textContent = on ? '按错题/薄弱/新题智能排序出题' : '已关闭：随机出题';
+}
+window.toggleSmartPick = toggleSmartPick;
+window.__smartpick.setEnabled = setSmartPick;
 
 function showQuiz() {
   const q = state.quizQuestions[state.quizIndex];
@@ -2250,17 +2475,36 @@ function showQuiz() {
   document.getElementById('quizIndex').textContent = state.quizIndex + 1;
   document.getElementById('quizProgress').style.width = ((state.quizIndex + 1) / total * 100) + '%';
 
-  // 🆕 实际题型：错题本模式下取题目自带的 _wbType；其他模式就是 state.quizType
-  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+  // 🆕 实际题型：错题本/智能推荐(混合题型)模式取题目自带的 _wbType；普通模式就是 state.quizType
+  const realType = q._wbType || state.quizType;
 
   // 显示年级/难度 badge
   const metaEl = document.getElementById('quizMeta');
   const stars = '★'.repeat(q.difficulty || 1);
   const typeLabelShort = { spelling: '拼写', listening: '听力', grammar: '语法', reading: '阅读' };
-  const wbPrefix = state.quizType === 'wrongbook' ? (typeLabelShort[realType] || realType) + ' · ' : '';
-  // 🔥 智能推题：非错题本模式下，若此题在错题本里 → 打 🔥 标
-  const priorityMark = (state.quizType !== 'wrongbook' && isPriorityQuestion(realType, q)) ? '🔥 ' : '';
-  metaEl.textContent = `${priorityMark}${wbPrefix}${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
+  // 混合题型模式（错题本/智能推荐）显示题型前缀，方便用户辨识当前是哪种题
+  const wbPrefix = (state.quizType === 'wrongbook' || state.quizType === 'smart') ? (typeLabelShort[realType] || realType) + ' · ' : '';
+  // 🧠 v01.18 智能推题：非错题本模式下，按打分 reason 打标（🔥错题/✨新题/💪薄弱）并给出「为什么推这题」
+  let smartMark = '';
+  const whyEl = document.getElementById('quizWhy');
+  if (state.quizType !== 'wrongbook') {
+    const sc = _scoreQuestion(realType, q);     // tag/reason 不依赖 ctx
+    smartMark = sc.tag ? sc.tag + ' ' : '';
+    const WHY = {
+      wrong:  '🔥 错题强化：这道题你之前做错过，再巩固一次',
+      new:    '✨ 新题：还没做过，帮你拓展覆盖面',
+      weak:   '💪 薄弱项：做过但正确率偏低，重点突破',
+      review: '📚 巩固练习：维持熟练度',
+    };
+    if (whyEl) {
+      const txt = WHY[sc.reason] || '';
+      whyEl.textContent = txt;
+      whyEl.classList.toggle('hide', !(state.smartPick !== false && txt));
+    }
+  } else if (whyEl) {
+    whyEl.classList.add('hide');
+  }
+  metaEl.textContent = `${smartMark}${wbPrefix}${gradeText(q.grade)} · ${q.code || ''} · ${stars}`;
 
   // 听力原文
   const audioBox = document.getElementById('quizAudioBox');
@@ -2492,8 +2736,9 @@ function checkSpellFilled(q, inputs, force) {
 
   const fb = document.getElementById('quizFeedback');
   const isCorrect = (userWord === correct);
-  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+  const realType = q._wbType || state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  try { recordMastery(realType, q, isCorrect); } catch(e) { console.warn('[掌握度]', e); }
   try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;
@@ -2672,8 +2917,9 @@ function answerQuiz(idx) {
   const fb = document.getElementById('quizFeedback');
 
   const isCorrect = (idx === q.answer);
-  const realType = (state.quizType === 'wrongbook' && q._wbType) ? q._wbType : state.quizType;
+  const realType = q._wbType || state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
+  try { recordMastery(realType, q, isCorrect); } catch(e) { console.warn('[掌握度]', e); }
   try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
   if (isCorrect) {
     state.quizCorrect++;

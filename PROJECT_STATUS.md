@@ -256,10 +256,12 @@ a4f0da4 2026-05-03 Initial commit                                               
 - [x] Chart.js 本地化 + 加入 SW 预缓存，离线报告页图表可用
 - [ ] （后续）单词掌握度 SRS 间隔重复初版 / 时长热力图 / 雷达图 — 留待 v01.18+
 
-#### v01.18 — 智能推题 v1
-- [ ] 优先推：错题本里 < 3 次答对的题
-- [ ] 其次推：当前学段做题率 < 50% 的单元
-- [ ] 简单加权随机即可，不引入复杂算法栈
+#### v01.18 — 智能推题 v1 ✅ 已完成（2026-06-24，详见 §15）
+- [x] 优先推：错题本里 < 3 次答对的题（题目级掌握度表 `perItemMastery`）
+- [x] 其次推：当前学段做题率 < 50% 的单元（`_unitCoverage` 单元覆盖率加权）
+- [x] 4 维加权打分（错题加权 + 新题曝光 + 掌握度衰减 + 单元覆盖率），不引入重算法栈
+- [x] UI：练习开始前显示「本次推荐理由」摘要条 + 单题「为什么推这题」可解释标签
+- [x] 跨题型「🧠 智能推荐练习」入口 + 智能推题开关（持久化，可关闭走纯随机）
 
 #### v01.19 — PWA 离线可用（🆕 提前到 v01.14 做）
 - [ ] `manifest.json` + Service Worker 缓存 `audio/` + `data/`
@@ -620,3 +622,35 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - P2 学习闭环两阶段（v01.16 错题本独立页 + v01.17 数据可视化）**全部完成**，共 7 个 commit（`b7d7083`…`7179a10`）。
 - 本地 lint 全绿、`index.html` / `js/vendor/chart.umd.min.js`（205222 B）本地服务器均 200。
 - **version.txt 仍由 `dev-push.ps1` 自动管理**，上线时跑脚本即触发 SW 缓存刷新，本次未手改、未 push。
+
+---
+
+## 15. ✅ v01.18 智能推题 v1 · 完成记录（2026-06-24）
+
+> P2 学习闭环第三阶段。在 §14 真实统计的基础上，把"刷题"升级为"智能推题"：用题目级掌握度 + 错题本 + 单元覆盖率做加权打分，并把推荐逻辑做成用户可感知、可解释、可关闭。严格按 §10 纪律：拆 7 步逐个验证，**每一步都用真实浏览器（Playwright + Chromium，headless）注入 localStorage 数据 → 调用全局函数 → 断言 → 截图**后才确认通过（不再用 HTTP 200 糊弄）。
+
+### 交付的 7 步
+
+| 步骤 | 内容 | 真实浏览器验证 |
+|---|---|---|
+| Step 1 | 题目级掌握度数据层 `perItemMastery`：`_loadMastery/_saveMastery/recordMastery/_masteryOf/masteryLevel` + `window.__mastery`；答题判定两处（拼写 + 选择）挂钩 `recordMastery`；key `yxyy_mastery_v1` 进 `_pkey` + 注册 `DATA_KEYS` | 注入后断言读写一致 |
+| Step 2 | 4 维加权打分 `_scoreQuestion`（错题本加权 + 新题曝光 bonus + 掌握度衰减 + 单元覆盖率<50% 加权）+ `_unitCoverage`/`_tallyMeta`；`pickSmartQuestions` 接开关、算 ctx、写 `state.lastSmartMeta`；`window.__smartpick` | 13 项断言 allpass |
+| Step 3 | `_renderPickSummary()` 渲染练习页顶部推题构成摘要条（仅智能模式显示）；`startPractice` 普通 + 错题本两分支正确接管（修复错题本残留误显示） | 8 项断言 allpass + 截图 |
+| Step 4 | `showQuiz` 题目标记：`realType = q._wbType||state.quizType`，按 reason 写 `#quizWhy` 可解释文案（wrong/new/weak/review 四态），受开关控制显隐 | 11 项断言 allpass |
+| Step 5 | 统一 3 处 `realType` 解析；新增跨题型 `startSmartPractice()`（4 题型加权采样不放回取 10 题，`_wbType` 标识真实题型），首页「🧠 智能推荐练习」入口卡片 | 9 项断言 + 截图证实拼写4/听力2/语法2/阅读2 混合组卷 |
+| Step 6 | 智能推题开关数据层 `_loadSmartPick/_saveSmartPick/setSmartPick/toggleSmartPick/_renderSmartPickToggle`，key `yxyy_smartpick_v1` 持久化（关闭走纯随机 Fisher-Yates）；`switchPage` practice 分支恢复开关态 | 12 项断言 allpass |
+| Step 7 | 收口：`PROJECT_STATUS.md` 同步 §8 checkbox + §15 完成记录；清理全部临时验证脚本/输出/截图 | 离线 + 浏览器整体回归 |
+
+### 关键实现点
+
+1. **题目级掌握度 `masteryLevel(rec)`**：正确率×0.7 + 连对加成 + 充分练习微调，作为打分的"掌握度衰减"维度——越熟越少推，低于 0.4 反而以 `💪` 加权补强。
+2. **4 维打分模型**：错题本（按 `wrongCount` 与最近错误时间衰减加权）+ 新题曝光 bonus（未 seen 加 `✨`）+ 掌握度衰减 + 单元覆盖率（当前学段该 `code` 做题率 <50% 额外加权），reason 归类 `wrong/new/weak/review` 驱动可解释标签。
+3. **混合题型零特判**：`showQuiz` 全部渲染分支（listening/reading/spelling/选择）统一基于 `realType = q._wbType||state.quizType`，故 `startSmartPractice` 给每题打 `_wbType` 后，跨题型组卷可被既有渲染/判定/错题本逻辑无缝复用。
+4. **可感知 + 可解释 + 可关闭**：摘要条说明"本次为何这样组卷"，单题标签说明"为什么推这题"，开关持久化（`yxyy_smartpick_v1`）允许回退纯随机，三者均受开关统一控制显隐。
+5. **多档案隔离**：新增两个 base key（`yxyy_mastery_v1`/`yxyy_smartpick_v1`）均走 `_pkey` 加 profile 后缀并注册到 `js/profile.js` 的 `DATA_KEYS`，与既有 wrongbook/stats 一致。
+
+### 收口状态
+
+- 第 1~6 步代码改动全部完成，**每步真实 Chromium 验证 allpass=True**（断言累计 13+8+11+9+12 项 + 多张视觉截图核对），临时脚本/输出/截图已清理。
+- 仅新增 2 个 localStorage key，无新增静态文件，`sw.js` 预缓存清单无需变更；版本号变化即触发 SW 缓存刷新。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
