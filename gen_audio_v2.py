@@ -7,13 +7,19 @@
   2. 对话行（"Name: ..."）按角色名自动分配不同男女声，同一说话人音色稳定
   3. 故事段落（非对话）用默认女声
   4. 兼容旧的 unit.lesson 单字符串（生成 1 个 L0 文件）
-  5. 🆕 增量校验：基于 audio/.manifest.json 记录每篇 MP3 的课文文本 hash。
+  5. 🆕 篇级增量校验：基于 audio/.manifest.json 记录每篇 MP3 的课文文本 hash。
        - 文本未变 → skip
        - 文本已变 → 自动重生成（无需 --force）
        - manifest 里没记录的老文件 → 首次运行回填 hash，不重跑音频
-  6. --force 强制全量重生
-  7. 🆕 --dry-run 只报告"哪些课文变了 / 需要重生成"，不实际跑 TTS
-  8. 🆕 --stale-only 只重跑 hash 不匹配的课文（首次启用后 = 默认增量模式）
+  6. 🆕🆕 句级增量：每篇按"说话人/叙述句"切分，对每句计算
+       hash(句文本 + 分配到的音色 + 语速)，并把单句音频持久化到
+       audio/_sent/{篇base}/{hash}.mp3。重生成一篇时只对 hash 变化的句子
+       重跑 TTS，未变句直接复用缓存，再按顺序二进制拼接成整篇。
+       manifest 里每篇额外记录 sentences:[{idx,hash,speaker,voice}] 拼接顺序。
+       —— 改一个字也只重念那一句，整篇其余句零开销。
+  7. --force 强制全量重生（忽略句缓存，逐句重跑）
+  8. 🆕 --dry-run 只报告"哪些课文变了 / 需要重生成 + 句级 复用/重跑 统计"，不实际跑 TTS
+  9. 🆕 --stale-only 只重跑 hash 不匹配的课文（首次启用后 = 默认增量模式）
 
 依赖：pip install edge-tts
 
@@ -43,12 +49,18 @@ ROOT     = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR  = os.path.join(ROOT, "audio")
 TEXTBOOK_DIR = os.path.join(ROOT, "data", "textbooks")
 TMP_DIR  = os.path.join(OUT_DIR, "_tmp")
+# 🆕 句级增量：持久化的单句音频缓存目录 audio/_sent/{篇base}/{句hash}.mp3
+SENT_DIR = os.path.join(OUT_DIR, "_sent")
 
 # 🆕 增量校验用的 manifest 文件：
 #   { "<mp3_filename>": {
-#       "text_hash": "md5",
+#       "text_hash": "md5",                # 整篇文本 hash（篇级快速 skip）
 #       "textbook": "jk",
-#       "generated_at": "2026-05-05T..."
+#       "generated_at": "2026-05-05T...",
+#       "sentences": [                     # 🆕 句级：拼接顺序 + 每句缓存键
+#         {"idx": 0, "hash": "md5", "speaker": "Tom", "voice": "en-US-GuyNeural"},
+#         ...
+#       ]
 #     }, ... }
 MANIFEST_PATH = os.path.join(OUT_DIR, ".manifest.json")
 
@@ -80,6 +92,41 @@ def text_hash(text):
     """为课文英文文本计算稳定 hash（预处理后）。"""
     s = preprocess(text or "").strip()
     return hashlib.md5(s.encode("utf-8")).hexdigest()
+
+
+def sentence_hash(content, voice, rate=None):
+    """单句缓存键 = md5(句文本 + 音色 + 语速)。
+    音色/语速纳入键：同一句换了说话人音色或全局语速时缓存自然失效，保证正确性。
+    rate 默认在调用时解析为全局 RATE（避免定义期 RATE 尚未声明的顺序问题）。"""
+    if rate is None:
+        rate = RATE
+    raw = "{}|{}|{}".format((content or "").strip(), voice, rate)
+    return hashlib.md5(raw.encode("utf-8")).hexdigest()
+
+
+def sent_cache_path(base, h):
+    """单句音频缓存路径：audio/_sent/{篇base}/{句hash}.mp3"""
+    return os.path.join(SENT_DIR, base, h + ".mp3")
+
+
+def plan_sentences(en_text, seed_salt):
+    """把一篇课文规划成有序句列表（不跑 TTS）：
+    [{idx, speaker, content, voice, hash}, ...]
+    voice 由 VoiceAllocator 按"篇内说话人出现顺序"稳定分配，故须整篇一次性规划。"""
+    en_text_clean = preprocess(en_text).strip()
+    parts = split_dialogue(en_text_clean)
+    allocator = VoiceAllocator(seed_salt=seed_salt)
+    plan = []
+    for i, (speaker, content) in enumerate(parts):
+        voice = allocator.voice_for_speaker(speaker)
+        plan.append({
+            "idx": i,
+            "speaker": speaker,
+            "content": content,
+            "voice": voice,
+            "hash": sentence_hash(content, voice),
+        })
+    return plan
 
 # 教材 → 文件名前缀 映射
 #   教科版 jk 覆盖 grade1~grade6；沪教版 hj 覆盖 grade7~grade9，
@@ -275,28 +322,35 @@ async def tts_with_retry(text, voice, fpath, gender_pool, rate=RATE):
     raise last_err if last_err else RuntimeError("tts empty for: " + text[:40])
 
 
+def _sent_cached(base, h):
+    """该句缓存文件是否已存在且有效（>256B）。"""
+    p = sent_cache_path(base, h)
+    return os.path.exists(p) and os.path.getsize(p) > 256
+
+
 async def gen_lesson_audio(fpath, en_text, seed_salt,
                            force=False, dry_run=False,
                            stale_only=False,
                            expected_hash=None, manifest_entry=None):
     """
     把一篇课文（含对话+叙述）生成一个 MP3。
-    内部按说话人分片 TTS，再二进制拼接。
+    🆕 句级增量：按句切分，仅对"无缓存/已变化"的句子跑 TTS，未变句复用
+    audio/_sent/ 里的缓存，再按顺序二进制拼接成整篇。
 
-    返回 (status, detail)，status 取值：
-      - "skip-fresh"   : 文件存在 + manifest hash 与当前匹配 → 跳过
+    返回 (status, info)，info 为 dict 或 None。status 取值：
+      - "skip-fresh"   : 文件存在 + manifest 整篇 hash 匹配 → 跳过
       - "skip-legacy"  : 文件存在但 manifest 无记录 → 跳过并回填 hash
       - "skip-nofile"  : 文件不存在但 stale_only=True → 跳过（仅检查变更模式）
-      - "dry-stale"    : dry-run 模式下检测到需要重生成
-      - "dry-new"      : dry-run 模式下检测到全新文件待生成
+      - "dry-stale"    : dry-run，已存在但需重生成（info 带句级 reuse/regen 统计）
+      - "dry-new"      : dry-run，全新文件待生成（info 带句级统计）
       - "empty"        : 课文为空
-      - "ok"           : 正常生成完成
+      - "ok"           : 正常生成完成（info 带 detail / sentences / reuse / regen）
     """
     file_exists = os.path.exists(fpath) and os.path.getsize(fpath) > 1024
 
     # 1) 强制模式 / 已确定需要生成 → 跳过所有判断直接往下走
     if not force:
-        # 2) manifest 有记录 + hash 匹配 → 最理想的 skip
+        # 2) manifest 有记录 + hash 匹配 → 最理想的 skip（篇级快速路径，行为不变）
         if file_exists and manifest_entry and expected_hash \
                 and manifest_entry.get("text_hash") == expected_hash:
             return "skip-fresh", None
@@ -310,47 +364,52 @@ async def gen_lesson_audio(fpath, en_text, seed_salt,
             return "skip-nofile", None
 
     # === 到这里说明需要"生成"或"报告要生成" ===
-    en_text_clean = preprocess(en_text).strip()
-    parts = split_dialogue(en_text_clean)
-    if not parts:
+    base = os.path.splitext(os.path.basename(fpath))[0]
+    plan = plan_sentences(en_text, seed_salt)
+    if not plan:
         return "empty", None
+
+    # 标记每句是否命中缓存（--force 时忽略缓存，强制逐句重跑）
+    use_cache = not force
+    for s in plan:
+        s["cached"] = use_cache and _sent_cached(base, s["hash"])
+    reuse = sum(1 for s in plan if s["cached"])
+    regen = len(plan) - reuse
+    info = {"reuse": reuse, "regen": regen, "total": len(plan)}
 
     # dry-run：只报告、不真跑 TTS
     if dry_run:
-        if file_exists:
-            return "dry-stale", None
-        else:
-            return "dry-new", None
+        return ("dry-stale" if file_exists else "dry-new"), info
 
-    allocator = VoiceAllocator(seed_salt=seed_salt)
+    # 真生成：逐句复用/重跑 → 原子写入持久缓存 → 按序拼接
+    sdir = os.path.join(SENT_DIR, base)
+    if not os.path.exists(sdir):
+        os.makedirs(sdir)
 
-    if not os.path.exists(TMP_DIR):
-        os.makedirs(TMP_DIR)
-
-    base = os.path.splitext(os.path.basename(fpath))[0]
-    tmp_files = []
     detail = []
-    for i, (speaker, content) in enumerate(parts):
-        voice = allocator.voice_for_speaker(speaker)
-        # 同性别池，用于失败重试
+    for s in plan:
+        cpath = sent_cache_path(base, s["hash"])
+        if s["cached"]:
+            detail.append("{}=cache".format(s["speaker"] or "narr"))
+            continue
+        voice = s["voice"]
         pool = FEMALE_VOICES if voice in FEMALE_VOICES else MALE_VOICES
-        tmp_path = os.path.join(TMP_DIR, "{}_{}.mp3".format(base, i))
-        actual_voice = await tts_with_retry(content, voice, tmp_path, pool)
-        tmp_files.append(tmp_path)
+        part_tmp = cpath + ".part"
+        actual_voice = await tts_with_retry(s["content"], voice, part_tmp, pool)
+        os.replace(part_tmp, cpath)  # 原子落盘，避免中断留下半截缓存
         short_voice = actual_voice.split("-")[-1].replace("Neural", "")
-        detail.append("{}→{}".format(speaker or "narr", short_voice))
+        detail.append("{}→{}".format(s["speaker"] or "narr", short_voice))
 
-    # 二进制拼接
+    # 按顺序二进制拼接成整篇
     with open(fpath, "wb") as out:
-        for tmp in tmp_files:
-            with open(tmp, "rb") as f:
+        for s in plan:
+            with open(sent_cache_path(base, s["hash"]), "rb") as f:
                 out.write(f.read())
-    # 清临时
-    for tmp in tmp_files:
-        try: os.remove(tmp)
-        except Exception: pass
 
-    return "ok", detail
+    info["detail"] = detail
+    info["sentences"] = [{"idx": s["idx"], "hash": s["hash"],
+                          "speaker": s["speaker"], "voice": s["voice"]} for s in plan]
+    return "ok", info
 
 
 def iter_target_units(textbook, only_grade=None, only_term=None):
@@ -459,12 +518,14 @@ async def main():
     fail_count = 0
     dry_stale = 0      # dry-run 报告需要重生成
     dry_new = 0        # dry-run 报告全新待生成
+    sent_reuse = 0     # 🆕 句级：累计复用句数
+    sent_regen = 0     # 🆕 句级：累计重跑句数
 
     for i, (fname, en, seed_salt, label, expected_hash) in enumerate(tasks, 1):
         fpath = os.path.join(OUT_DIR, fname)
         manifest_entry = manifest.get(fname)
         try:
-            status, detail = await gen_lesson_audio(
+            status, info = await gen_lesson_audio(
                 fpath, en, seed_salt,
                 force=args.force,
                 dry_run=args.dry_run,
@@ -500,24 +561,39 @@ async def main():
                 print("  [{:>3}/{}] empty  {}  (no content)".format(i, len(tasks), fname))
             elif status == "dry-stale":
                 dry_stale += 1
+                sent_reuse += (info or {}).get("reuse", 0)
+                sent_regen += (info or {}).get("regen", 0)
                 old_hash = (manifest_entry or {}).get("text_hash", "-")[:8]
-                print("  [{:>3}/{}] STALE  {}  ({})  hash {}...→{}...".format(
+                print("  [{:>3}/{}] STALE  {}  ({})  hash {}...→{}...  (句 复用{}/重跑{}/共{})".format(
                     i, len(tasks), fname, label,
-                    old_hash, expected_hash[:8]))
+                    old_hash, expected_hash[:8],
+                    (info or {}).get("reuse", 0), (info or {}).get("regen", 0),
+                    (info or {}).get("total", 0)))
             elif status == "dry-new":
                 dry_new += 1
-                print("  [{:>3}/{}] NEW    {}  ({})".format(i, len(tasks), fname, label))
+                sent_reuse += (info or {}).get("reuse", 0)
+                sent_regen += (info or {}).get("regen", 0)
+                print("  [{:>3}/{}] NEW    {}  ({})  (句 复用{}/重跑{}/共{})".format(
+                    i, len(tasks), fname, label,
+                    (info or {}).get("reuse", 0), (info or {}).get("regen", 0),
+                    (info or {}).get("total", 0)))
             elif status == "ok":
                 ok_count += 1
-                detail_str = ", ".join(detail or []) if detail else "-"
+                info = info or {}
+                sent_reuse += info.get("reuse", 0)
+                sent_regen += info.get("regen", 0)
+                detail = info.get("detail") or []
+                detail_str = ", ".join(detail) if detail else "-"
                 size_kb = os.path.getsize(fpath) // 1024
-                print("  [{:>3}/{}] ok     {}  [{}]  ({} KB)  {}".format(
-                    i, len(tasks), fname, label, size_kb, detail_str))
-                # 🆕 写入 manifest
+                print("  [{:>3}/{}] ok     {}  [{}]  ({} KB)  句复用{}/重跑{}  {}".format(
+                    i, len(tasks), fname, label, size_kb,
+                    info.get("reuse", 0), info.get("regen", 0), detail_str))
+                # 🆕 写入 manifest（含句级拼接顺序，供下次增量比对）
                 manifest[fname] = {
                     "text_hash": expected_hash,
                     "textbook": tb_id,
                     "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+                    "sentences": info.get("sentences") or [],
                 }
                 manifest_dirty = True
         except Exception as e:
@@ -546,10 +622,14 @@ async def main():
         print("[dry-run] stale={} (hash 不匹配需重生成), new={} (全新待生成), "
               "fresh-skip={}, legacy-skip={}, empty={}".format(
               dry_stale, dry_new, skip_fresh, skip_legacy, empty_count))
+        print("[dry-run] 句级：将复用 {} 句缓存、重跑 {} 句 TTS（共 {} 句）".format(
+              sent_reuse, sent_regen, sent_reuse + sent_regen))
     else:
         print("[done] ok={}, skip-fresh={}, skip-legacy={}, skip-nofile={}, "
               "empty={}, fail={}".format(
               ok_count, skip_fresh, skip_legacy, skip_nofile, empty_count, fail_count))
+        print("[done] 句级：复用 {} 句缓存、重跑 {} 句 TTS（共 {} 句）".format(
+              sent_reuse, sent_regen, sent_reuse + sent_regen))
 
 
 if __name__ == "__main__":

@@ -75,8 +75,8 @@ python3 -m http.server 8765
 | **题库（hj 合计）** | **858 题** |
 | **题库总计** | **1278 题** |
 | **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
-| **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完 |
-| **前端代码** | `app.js` 2912 行（-23%）+ `js/textbook.js` / `js/state.js` / `js/player.js` 三个抽出模块 |
+| **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完；🆕 句级增量后每篇额外记录 `sentences[]`（拼接顺序 + 句 hash） |
+| **前端代码** | 🆕 `app.js` **577 行**（按功能域拆分后，原 3851 行）+ `js/` 下 **12 个**全局变量风格模块（`textbook`/`state`/`profile`/`player` + 🆕 `core`/`wrongbook`/`mastery`/`smartpick`/`stats`/`home`/`lesson`/`practice`） |
 | **PWA 雏形** | `manifest.json` + `icon.svg` 已就绪（工作区 untracked），待注入 `index.html` + 补 192/512 PNG + 建 `sw.js` |
 
 教材版本占位：`rj`（人教）、`wy`（外研）尚未填充数据。
@@ -90,13 +90,23 @@ english-tutor/
 ├── index.html              # 主页面。顶部 sticky「学习上下文条」（年级/学期/教材）
 │                           # 🆕 底部动态按序注入 js/*.js → questionBank.js → app.js
 ├── styles.css              # 含移动端深度适配
-├── app.js                  # ★ 核心逻辑：渲染 / 单元 / 练习 / 上下文切换包装
+├── app.js                  # ★ 精简入口（577 行）：switchPage / applyContextChange / bootstrap / AI 对话 / Profile UI 绑定 / 初始化编排
 ├── questionBank.js         # ★ 题库异步加载器 window.loadQuestionBank(textbookId)
 │
-├── js/                     # 🆕 从 app.js 抽出的三个独立模块（仍是全局变量风格）
+├── js/                     # 🆕 全局变量风格分片（经典脚本，非 ES Module；index.html 按序注入、sw.js 预缓存）
 │   ├── textbook.js         # textbookData / loadTextbook / 分片缓存 / _bust
 │   ├── state.js            # state 对象 / TEXTBOOK_NAMES/GRADES/LABELS / ctxSummaryText
-│   └── player.js           # speakBrowser / speak / stopSpeak / playYoudao 系列
+│   ├── profile.js          # 多用户档案 ProfileManager / _pkey / DATA_KEYS
+│   ├── player.js           # speakBrowser / speak / stopSpeak / playYoudao 系列
+│   ├── core.js             # 🆕 共享纯工具：_pkey / _escapeHtml / _answerMatch / gradeText
+│   ├── wrongbook.js        # 🆕 错题本数据层 + UI（window.__wrongbook）
+│   ├── mastery.js          # 🆕 题目级掌握度（window.__mastery）
+│   ├── smartpick.js        # 🆕 智能推题打分（window.__smartpick）
+│   ├── stats.js            # 🆕 学习统计 + 计时器 + 版本检查（window.__stats / forceCheckUpdate）
+│   ├── home.js             # 🆕 首页渲染（renderHomeStats / continueLearning）
+│   ├── lesson.js           # 🆕 单元/课文/阅读练习/单词卡/课文播放/滑动手势
+│   └── practice.js         # 🆕 练习答题（filterQuestions / startPractice / showQuiz / startSmartPractice / 不规则动词）
+│   # 加载顺序：textbook→state→profile→player→core→wrongbook→mastery→smartpick→stats→home→lesson→practice→questionBank→app.js
 │
 ├── data/
 │   ├── textbooks/
@@ -112,10 +122,15 @@ english-tutor/
 ├── audio/                  # 预生成 MP3
 │   ├── grade{N}_u{M}.mp3   # 课文朗读（Aria 女声）
 │   ├── listening_XX.mp3    # 听力题（W=Aria 女 / M=Guy 男）
-│   └── .manifest.json      # 🆕 增量校验元数据：{fname: {text_hash, textbook, generated_at}}
+│   ├── _sent/{篇base}/{句hash}.mp3  # 🆕 句级增量：单句音频持久缓存（gitignore，构建用）
+│   └── .manifest.json      # 增量校验元数据：{fname: {text_hash, textbook, generated_at, 🆕 sentences[]}}
 │
 ├── gen_audio.py            # 旧版单文件音频脚本
-├── gen_audio_v2.py         # 🆕 V2：按篇 + 多音色 + --dry-run / --stale-only 增量
+├── gen_audio_v2.py         # 🆕 V2：按篇 + 多音色 + 篇级/🆕句级增量（--dry-run / --stale-only / --force）
+│
+├── tests/                  # 🆕 冒烟测试
+│   ├── smoke.py            # Playwright headless：断言 35 全局函数 + 关键调用无异常
+│   └── README.md           # 运行说明
 │
 ├── scripts/
 │   ├── make_template.py              # 生成 Excel 导入模板
@@ -289,11 +304,11 @@ a4f0da4 2026-05-03 Initial commit                                               
 
 | 项 | 优先级 | 备注 |
 |---|---|---|
-| `data/` 按年级分片懒加载 | 中 | `jk.json` 已偏大，再加两套教材首屏会卡 |
-| `app.js` 拆 ES Module | 中 | 单文件越来越长，按功能域拆 5-6 个文件 |
-| 视觉规范（设计 token） | 低 | 颜色/间距常量化，方便日后做主题切换 |
-| 自动化测试 | 低 | 至少给 `applyContextChange` / `loadQuestionBank` 加冒烟测试 |
-| `gen_audio_v2.py` 增量校验 | 中 | 课文文本改动后能识别"哪句变了，只重生成那句"，省时间 |
+| `data/` 按年级分片懒加载 | 中 | ✅ 已完成（`b5dae7f`，`hj.json` 按年级分片懒加载） |
+| `app.js` 按功能域拆模块 | 中 | ✅ 已完成（2026-06-24，详见 §16）· **方案 A 全局变量风格分片**（非 ES Module，内联 onclick 零改动）：`app.js` 3851→577 行，新增 9 个 `js/*.js` |
+| 视觉规范（设计 token） | 低 | ✅ 已完成（2026-06-24，详见 §16）· `styles.css` `:root` 建立完整 token 体系，硬编码色/圆角/阴影全量 `var()` 化（视觉等值不变） |
+| 自动化测试 | 低 | ✅ 已完成（2026-06-24，详见 §16）· `tests/smoke.py`（Playwright headless）覆盖 35 个全局函数 + `applyContextChange`/`filterQuestions` 等关键调用 |
+| `gen_audio_v2.py` 句级增量 | 中 | ✅ 已完成（2026-06-24，详见 §16）· 句 hash + `audio/_sent/` 持久缓存，改一句只重念那一句 |
 
 ---
 
@@ -653,4 +668,42 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 - 第 1~6 步代码改动全部完成，**每步真实 Chromium 验证 allpass=True**（断言累计 13+8+11+9+12 项 + 多张视觉截图核对），临时脚本/输出/截图已清理。
 - 仅新增 2 个 localStorage key，无新增静态文件，`sw.js` 预缓存清单无需变更；版本号变化即触发 SW 缓存刷新。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
+
+---
+
+## 16. ✅ 技术债清理与框架优化（2026-06-24，纯重构·零行为变更）
+
+> 目标：为后续填充教材/题库内容打好工程基础。**铁律：运行时表现/视觉/交互与现状完全一致**，只动结构不动逻辑。一次性完成 4 项横向技术债（详见 §8 表格已勾选）。
+
+### 16.1 `app.js` 按功能域拆模块（方案 A·全局变量风格）
+
+- **决策**：经典脚本中顶层 `function foo(){}` 自动成为 `window` 属性、顶层 `let/const` 是跨脚本共享的全局词法绑定，因此"剪切函数块到新文件 + 维护加载顺序"即可**零改动迁移**。**明确不采用 ES Module**（避免内联 `onclick` 全量失效的高风险改造）。
+- **结果**：`app.js` 3851 → **577 行**；抽出 8 个新分片（数据算法层 `core/wrongbook/mastery/smartpick/stats` + 渲染交互层 `home/lesson/practice`）。所有原 `window.xxx` 导出随函数迁移，无重复声明。
+- **三同步**：每个分片同时进入 `index.html` 注入链与 `sw.js` 的 `STATIC_ASSETS` 预缓存。加载顺序：`textbook→state→profile→player→core→wrongbook→mastery→smartpick→stats→home→lesson→practice→questionBank→app.js`（被依赖者在前）。
+- **保留在 app.js 入口的关键时序**：`bootstrap` 异步 IIFE 与 `applyContextChange` 的"异步改写"必须留在 app.js 且保持原相对顺序（改写须先于 bootstrap 的 await 回调执行）。
+- **零内容变更验证**：行多重集比对——原 3850 行 == 各分片函数体 3850 行，逐行 [PASS]。
+
+### 16.2 视觉规范 / 设计 token
+
+- `styles.css` `:root` 从 3 个变量扩为**完整 token 体系**：品牌/中性/语义色（成功/警告/危险）、品牌渐变、圆角 `--r-xs…--r-pill/--r-circle`、阴影 `--shadow-card/-hover/-nav/-btn/-warn/-panel`、品牌 alpha。
+- 散落的硬编码颜色/圆角/阴影**全量 `var()` 化**，token 值与原值 **1:1 等值映射**，视觉像素级不变。
+- `mobile.html` 是开发预览工具（iframe 套 index.html，独立深色主题，且不加载 styles.css），与 App 设计语言无关 → **按 §计划"无则跳过"原则不做 token 化**。
+
+### 16.3 自动化冒烟测试
+
+- `tests/smoke.py`（Python Playwright + headless Chromium，**零新增 npm 依赖**）：等 `app.js` 末尾导出就绪 → 断言 **35 个全局函数** + **4 个命名空间对象**（`__wrongbook/__mastery/__smartpick/__stats`）存在 → 安全调用 `renderHomeStats/renderWrongbookPage/applyContextChange` + `filterQuestions('word')` → 监听 `pageerror/console.error` → 首页截图。
+- 拆分后 + token 化后**两轮回归均 [PASS]：0 JS 报错、0 断言失败**，内联 `onclick` 目标（`switchPage/openUnit/answerQuiz/startPractice`）全部在 `window` 上。
+
+### 16.4 `gen_audio_v2.py` 句级增量
+
+- 在原"篇级 hash 增量"之上新增**句级增量**：每篇按说话人/叙述句切分，对每句计算 `hash(句文本 + 分配音色 + 语速)`，单句音频持久化到 `audio/_sent/{篇base}/{句hash}.mp3`。
+- 重生成一篇时只对 hash 变化的句子重跑 TTS，未变句直接复用缓存，再按 `manifest.sentences[]` 顺序二进制拼接。**改一个字也只重念那一句**。
+- **完全向后兼容**：篇级 hash 匹配仍走 `skip-fresh` 快速路径；旧 manifest（legacy_import，无 sentences）行为不变；`--force`（逐句重跑，忽略缓存）/`--dry-run`（报告句级 复用/重跑 统计）/`--stale-only` 语义保留。`audio/_sent/` 已加入 `.gitignore`。
+- **验证**：`--dry-run`（含 `--force`）真实跑通切句/音色分配/句 hash；离线伪造 TTS 自测 8 项 [PASS]——改一句确认 `复用2/重跑1`、`detail=['Tom=cache','Amy→Ana','narr=cache']`。
+
+### 收口状态
+
+- 四项全部完成；**未改任何运行时逻辑**；新增 9 个 `js/*.js` 已同步进 `index.html` 注入链与 `sw.js` 预缓存。
+- 临时验证脚本/输出全部清理；`tests/smoke.py` + `tests/README.md` 作为长期回归资产保留。
 - **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。

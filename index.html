@@ -771,15 +771,26 @@
     }
     // 等拿到真实版本号再 load；即便 fetch version.txt 失败，fallback 也会 resolve
     (window.__versionReady || Promise.resolve()).then(function(){
-      // 顺序严格：
+      // 顺序严格（v01.21 框架优化：app.js 已按功能域拆分）：
       //   1) 基础模块：textbook.js / state.js / profile.js / player.js （它们彼此无依赖）
       //      - profile.js 提供 window.ProfileManager（多用户档案数据层，IIFE 零副作用）
-      //   2) 题库加载器：questionBank.js
-      //   3) 主逻辑：app.js（依赖以上全部）
+      //   2) 功能域分片（被依赖者在前）：
+      //      core → wrongbook → mastery → smartpick → stats → home → lesson → practice
+      //      （均为经典脚本，顶层 function 全局可用；跨域调用在运行时解析）
+      //   3) 题库加载器：questionBank.js
+      //   4) 入口编排：app.js（switchPage/applyContextChange/bootstrap/Profile UI，依赖以上全部）
       addScript('./js/textbook.js')
         .then(function(){ return addScript('./js/state.js'); })
         .then(function(){ return addScript('./js/profile.js'); })
         .then(function(){ return addScript('./js/player.js'); })
+        .then(function(){ return addScript('./js/core.js'); })
+        .then(function(){ return addScript('./js/wrongbook.js'); })
+        .then(function(){ return addScript('./js/mastery.js'); })
+        .then(function(){ return addScript('./js/smartpick.js'); })
+        .then(function(){ return addScript('./js/stats.js'); })
+        .then(function(){ return addScript('./js/home.js'); })
+        .then(function(){ return addScript('./js/lesson.js'); })
+        .then(function(){ return addScript('./js/practice.js'); })
         .then(function(){ return addScript('./questionBank.js'); })
         .then(function(){ return addScript('./app.js'); });
     });
