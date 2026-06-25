@@ -965,7 +965,44 @@ function renderWordExamples(w) {
       const btn = item.querySelector('.ex-play');
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
-        try { speakBrowser(ex.en || '', {}); } catch(err) { try { speak(ex.en || ''); } catch(e){} }
+        const sentence = ex.en || '';
+        if (!sentence) return;
+        // 例句朗读改走有道在线真人音频（与单词朗读一致，手机端可正常出声），
+        // speakBrowser（Web Speech）仅作兜底；并给出播放/失败的按钮态反馈。
+        let done = false;
+        const reset = (mark) => {
+          if (done) return;
+          done = true;
+          btn.disabled = false;
+          btn.classList.remove('playing');
+          btn.textContent = mark || '🔊';
+          if (mark && mark !== '🔊') {
+            setTimeout(() => { if (btn.textContent === mark) btn.textContent = '🔊'; }, 1500);
+          }
+        };
+        btn.disabled = true;
+        btn.classList.add('playing');
+        btn.textContent = '⏳';
+        try {
+          speak(sentence, {
+            onStart: () => { btn.textContent = '🔈'; },
+            onEnd: () => reset('🔊'),
+            onError: () => {
+              // 有道失败再兜底浏览器 TTS
+              try {
+                speakBrowser(sentence, {
+                  onStart: () => { done = false; btn.disabled = true; btn.classList.add('playing'); btn.textContent = '🔈'; },
+                  onEnd: () => reset('🔊'),
+                  onError: () => reset('⚠️')
+                });
+              } catch (e2) { reset('⚠️'); }
+            }
+          });
+        } catch (err) {
+          try {
+            speakBrowser(sentence, { onEnd: () => reset('🔊'), onError: () => reset('⚠️') });
+          } catch (e2) { reset('⚠️'); }
+        }
       });
       list.appendChild(item);
     });

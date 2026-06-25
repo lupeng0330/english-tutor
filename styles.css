@@ -700,6 +700,9 @@ body {
 }
 .example-item .ex-play:hover { background: var(--amber-200); }
 .example-item .ex-play:active { transform: scale(0.92); }
+.example-item .ex-play.playing { background: var(--amber-200); animation: exPlayPulse 1s ease-in-out infinite; }
+.example-item .ex-play:disabled { cursor: default; }
+@keyframes exPlayPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
 
 
 /* ============ 横屏模式 ============ */
