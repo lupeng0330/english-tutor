@@ -546,7 +546,7 @@
               <button type="button" class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center text-3xl shadow-lg active:scale-95 transition" onclick="playAudioText()">🔊</button>
               <div class="text-sm font-semibold text-slate-700">👆 点击播放听力</div>
               <div class="text-xs text-slate-500" id="playAudioHint">播放后才能作答</div>
-              <button type="button" class="text-xs px-3 py-1.5 bg-white rounded-lg text-slate-600 shadow-sm" onclick="toggleAudioText()">显示/隐藏原文</button>
+              <button type="button" id="quizAudioTextToggle" class="text-xs px-3 py-1.5 bg-white rounded-lg text-slate-600 shadow-sm transition" onclick="toggleAudioText()">显示/隐藏原文</button>
             </div>
             <div id="quizAudioText" class="hide text-sm text-slate-700 italic mt-3 p-3 bg-white rounded-lg"></div>
           </div>

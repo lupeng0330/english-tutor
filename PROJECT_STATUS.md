@@ -70,10 +70,10 @@ python3 -m http.server 8765
 | **题库（jk 合计）** | **420 题** |
 | **题库（hj · 单词拼写）** | **698 题**（v01.11 AI 自动造题，48 单元全覆盖；旧 95 题保留人工 hint，新增 603 题打 `source:"ai_v01_11"` 标签） |
 | **题库（hj · 听力选择）** | 32 题（7 上全量） |
-| **题库（hj · 语法）** | 80 题 |
-| **题库（hj · 阅读）** | 48 题 |
-| **题库（hj 合计）** | **858 题** |
-| **题库总计** | **1278 题** |
+| **题库（hj · 语法）** | **480 题**（v01.12 AI 精造，48 单元各 10 题；旧 80 题保留，新增 400 题打 `source:"ai_v01_12"`） |
+| **题库（hj · 阅读）** | **288 题**（v01.12 AI 精造，48 单元各 6 题；旧 48 题保留，新增 240 题打 `source:"ai_v01_12"`） |
+| **题库（hj 合计）** | **1498 题** |
+| **题库总计** | **1918 题** |
 | **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
 | **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完；🆕 句级增量后每篇额外记录 `sentences[]`（拼接顺序 + 句 hash） |
 | **前端代码** | 🆕 `app.js` **577 行**（按功能域拆分后，原 3851 行）+ `js/` 下 **12 个**全局变量风格模块（`textbook`/`state`/`profile`/`player` + 🆕 `core`/`wrongbook`/`mastery`/`smartpick`/`stats`/`home`/`lesson`/`practice`） |
@@ -226,15 +226,15 @@ a4f0da4 2026-05-03 Initial commit                                               
 #### v01.11 — 沪教版 AI 自动造题（首批）
 复用 `scripts/ai_generate_questions.py`，针对 hj.json 的 48 单元批量造题：
 - [x] 单词拼写：每单元词全量出题 → **698 题**（教材实际 698 词，非 720；7A 部分单元 ≠15 词；详见 §12）
-- [ ] 语法：基于 Grammar focus 课文核心点，每单元 3-5 题 → ~150-240 题
-- [ ] 阅读：基于 Reading + More reading 课文，每单元 1-2 篇问答 → ~96 题
-- [ ] 流程上"AI 草稿 + 人工抽样校对"，每年级抽 3 单元过一遍后再合入
+- [x] 语法：基于 Grammar focus 课文核心点，每单元 **10 题** → **480 题**（48 单元全覆盖，详见 §17）
+- [x] 阅读：基于 Reading + More reading 课文，每单元 **6 题** → **288 题**（48 单元全覆盖，详见 §17）
+- [x] AI 精造（非规则生成器），对齐 7A schema/风格，新题打 `source:"ai_v01_12"`；校验脚本 + smoke 回归全绿
 
-#### v01.12 — 沪教版练习体验打磨
-- [ ] 单词拼写支持"按当前单元 / 全册 / 全年级"三档范围筛选
-- [ ] 听力题增加"原文显示开关"（默认隐藏，做完才能看）
-- [ ] 阅读题长文滚动 + 题目悬浮，避免反复滚屏
-- [ ] 练习页徽章统一格式：`沪教 · 7上 · 共 95 题`
+#### v01.12 — 沪教版练习体验打磨 ✅ 已完成（2026-06-25，详见 §17）
+- [x] 单词拼写支持"按当前单元 / 全册 / 全年级"三档范围筛选
+- [x] 听力题增加"原文显示开关"（默认隐藏，做完才能看）
+- [x] 阅读题长文滚动 + 题目悬浮，避免反复滚屏
+- [x] 练习页徽章统一格式：`沪教 · 7上 · 共 95 题`
 
 ---
 
@@ -706,4 +706,52 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 - 四项全部完成；**未改任何运行时逻辑**；新增 9 个 `js/*.js` 已同步进 `index.html` 注入链与 `sw.js` 预缓存。
 - 临时验证脚本/输出全部清理；`tests/smoke.py` + `tests/README.md` 作为长期回归资产保留。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
+
+---
+
+## 17. ✅ v01.11 语法/阅读补齐 + v01.12 练习体验打磨 · 完成记录（2026-06-25）
+
+> P0 沪教版练习闭环收尾。把仅覆盖 7A 的语法/阅读题 **AI 精造补齐到全部 48 单元**，并落地 v01.12 四项练习体验打磨。延续 §10 "小步 + 可回滚 + source 标签" 纪律：旧题字节不动，新增题全部带 `source:"ai_v01_12"`，分册（7B→8A/8B→9A/9B）逐批造题、每批跑校验。
+
+### 17.1 题库补齐（AI 精造，非规则生成器）
+
+| 指标 | 数值 |
+|---|---|
+| `data/questions/hj_grammar.json` | **80 → 480**（+400；40 单元 × 10 题/单元） |
+| `data/questions/hj_reading.json` | **48 → 288**（+240；40 单元 × 6 题/单元） |
+| 沪教 48 单元覆盖（语法/阅读） | 8/48 → **48/48** 全覆盖 |
+| 旧题改动 | **0 行 -**（旧 80 语法 / 48 阅读 字节级未动） |
+| 新题 source 标签 | 全部带 `"source": "ai_v01_12"`（可一键回滚） |
+| 前端代码改动 | **0 行**（数据驱动，`loadQuestionBank('hj')` 自动读取） |
+
+- **造题方式**：逐单元阅读 `data/textbooks/hj_grade{7,8,9}.json` 的 `lessons[]`（Reading / Grammar focus / More reading）+ `words[]`，人工水准编写贴合课文情节与语法点的题目；**不复用** `scripts/ai_generate_questions.py` 的正则规则生成器。
+- **严格对齐 7A schema**：语法 `grade,term,code,q,options,answer,explain,difficulty`；阅读 `grade,term,code,passage,q,options,answer,explain,difficulty`（同一 passage 重复挂在该篇每道小题）；`answer` 为正确选项下标；`difficulty` 用 1/2/3 混合梯度；`code` 形如 `7B_U1`/`9B_U8`。
+- 阅读 passage 用课文忠实精简版，英文 passage 内引文用单引号避免 JSON 转义冲突。
+
+### 17.2 新增工具脚本（纯标准库）
+
+| 脚本 | 用途 |
+|---|---|
+| `scripts/validate_questions.py` | 一次性校验：JSON 可解析 + 字段完整 + options≥2 + answer 下标合法 + code 正则 `^([789])([AB])_U(\d+)$` + difficulty∈{1,2,3} + 48 单元全覆盖与每单元题量（grammar 10 / reading 6）。有 ERROR 退出码 1 |
+| `scripts/append_questions.py` | `append_questions.py <grammar\|reading> <batch.json> [source]`：按 code 去重、自动推断 grade/term、补 source 标签，仅重写文件结尾 `]`（旧题字节不动、原子追加） |
+
+校验结果：`[grammar] 48 单元 / 480 题`、`[reading] 48 单元 / 288 题`，**[PASS] 0 error 0 warning**。
+
+### 17.3 v01.12 练习体验打磨（4 项，复用既有钩子，零回归）
+
+| 项 | 落地位置 | 实现要点 |
+|---|---|---|
+| ① 拼写三档筛选（当前单元/全册/全年级） | `js/practice.js` `refreshUnitFilterOptions` | 复用 `state.filterUnit`(all/current/u*) + `state.includeAllGrades`；"全部单元"标签优化为「📚 本册全部单元」 |
+| ② 听力"原文显示开关"门控 | `js/practice.js` + `index.html` | `showQuiz` 进听力题 `_setAudioTextLocked(true)` + 重置 `state.quizAnswered=false`；`toggleAudioText` 作答前拦截提示"✋ 先作答，作答后才能查看原文哦"；`answerQuiz`/`checkSpellFilled` 判定后 `quizAnswered=true` + 解锁。`#quizAudioTextToggle` 加门控态 |
+| ③ 阅读长文滚动 + 题干悬浮 | `styles.css` | `#quizPassageBox` `max-height:46vh + overflow-y:auto`（移动端 38vh）+ 自定义滚动条；首个子块 `position:sticky` 悬浮 |
+| ④ 练习页徽章统一格式 | `js/state.js` + `js/practice.js` | 新增 `TEXTBOOK_SHORT_NAMES` + `practiceScopeText(ctx,allGrades)`；`refreshPracticeCounts` 输出「沪教 · 7上 · 共 N 题」（全年级时「沪教 · 全年级」） |
+
+### 收口状态
+
+- 题库补齐 + 校验 + v01.12 四项打磨全部完成；**新增题全带 `source` 标签可回滚，旧题字节不动**。
+- `js/state.js` / `js/practice.js` / `styles.css` / `index.html` lint **0 错误**。
+- `tests/smoke.py`（Playwright headless）回归 **[PASS]：0 JS 报错、0 断言失败，35 函数 + 4 命名空间齐全**。
+- 用 code-explorer 子代理产出 v01.12 改点清单 + 钩子复用映射，确认改动最小、不破坏既有内联 `onclick`。
+- ⚠️ **重启数据恢复**：开发途中电脑重启导致 9B 阅读 48 题丢失，已据 grade9.json 真实课文重新造回并入库，最终 reading 288/48 单元完整。
 - **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。

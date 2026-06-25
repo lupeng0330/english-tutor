@@ -681,6 +681,27 @@ body {
 #unitPrevBtn, #unitNextBtn { transition: opacity 0.2s, background-color 0.2s; }
 
 
+/* ============ 阅读题：长文独立滚动 + 标题/题干常驻可视（v01.12） ============ */
+/* 长文超高时框内独立滚动，避免把题干、选项挤出屏幕，减少反复滚屏 */
+#quizPassageBox {
+  max-height: 46vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+#quizPassageBox::-webkit-scrollbar { width: 6px; }
+#quizPassageBox::-webkit-scrollbar-thumb { background: rgba(180,130,40,0.35); border-radius: 3px; }
+/* "📄 阅读短文" 标题在长文滚动时悬浮在框顶 */
+#quizPassageBox > div:first-child {
+  position: sticky;
+  top: 0;
+  background: #fffbeb; /* amber-50，与框背景一致 */
+  padding-top: 2px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  #quizPassageBox { max-height: 38vh; }
+}
+
 /* ============ 单词拼写：字母格子填空 ============ */
 #quizSpellBox .spell-cell {
   caret-color: var(--brand);

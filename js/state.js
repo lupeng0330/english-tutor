@@ -42,6 +42,8 @@ let state = {
 
 // 🆕 学习上下文工具函数
 const TEXTBOOK_NAMES = { jk: '广州教科版', gzk: '广州口语', hj: '广州沪教版', rj: '人教版', wy: '外研版' };
+// 🆕 v01.12：教材短名（练习页徽章用，如「沪教 · 7上 · 共 N 题」）
+const TEXTBOOK_SHORT_NAMES = { jk: '教科', gzk: '口语', hj: '沪教', rj: '人教', wy: '外研' };
 // 每个教材覆盖的年级数字（静态白名单，用于顶部下拉过滤）
 const TEXTBOOK_GRADES = {
   jk:  [3, 4, 5, 6],            // 广州教科版 → 小学 3-6 年级
@@ -81,4 +83,11 @@ function ctxBadgeText(ctx) {
   const g = ({1:'一年级',2:'二年级',3:'三年级',4:'四年级',5:'五年级',6:'六年级',7:'初一',8:'初二',9:'初三'})[ctx.grade] || '';
   const t = ctx.term === '上' ? '上' : '下';
   return `${g}${t}册`;
+}
+// 🆕 v01.12：练习页徽章范围文案，格式如「沪教 · 7上」；跨年级时为「沪教 · 全年级」
+function practiceScopeText(ctx, allGrades) {
+  const short = TEXTBOOK_SHORT_NAMES[ctx.textbook] || TEXTBOOK_NAMES[ctx.textbook] || ctx.textbook;
+  if (allGrades) return `${short} · 全年级`;
+  const t = ctx.term === '上' ? '上' : '下';
+  return `${short} · ${ctx.grade}${t}`;
 }

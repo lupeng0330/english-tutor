@@ -135,7 +135,7 @@ function refreshUnitFilterOptions() {
   const units = ((tb[grKey] && tb[grKey].units) || []);
   const prev = state.filterUnit || 'all';
   // 构造选项
-  let html = '<option value="all">全部单元</option>';
+  let html = '<option value="all">📚 本册全部单元</option>';
   html += '<option value="current">📖 当前课本单元</option>';
   for (const u of units) {
     // 去掉 "Unit N" 前缀只取标题，避免下拉太长
@@ -201,7 +201,7 @@ function refreshPracticeCounts() {
   const totalAll = ['spelling','listening','grammar','reading'].reduce((s,t)=>s+(QB()[t]||[]).length, 0);
   const cnt = document.getElementById('filterCount');
   if (cnt) {
-    const scope = state.includeAllGrades ? '全部年级' : ctxBadgeText(state.ctx);
+    const scope = practiceScopeText(state.ctx, state.includeAllGrades);
     // 当前单元名（如果有）
     let unitLabel = '';
     if (showUnitTag) {
@@ -217,7 +217,7 @@ function refreshPracticeCounts() {
       const tip = showUnitTag ? '本单元暂无题目，请切换单元或选"全部单元"' : '请勾选"跨年级刷题"或切换学段';
       cnt.innerHTML = `<span class="text-orange-500">⚠️ ${scope}${unitLabel}暂无题目</span>，${tip}`;
     } else {
-      cnt.textContent = `${scope}${unitLabel} 共 ${total} 题（题库总计 ${totalAll} 题）`;
+      cnt.textContent = `${scope}${unitLabel} · 共 ${total} 题`;
     }
   }
 }
@@ -355,6 +355,7 @@ window.startSmartPractice = startSmartPractice;
 function showQuiz() {
   const q = state.quizQuestions[state.quizIndex];
   const total = state.quizQuestions.length;
+  state.quizAnswered = false;   // 🆕 v01.12：新题进入，重置"已作答"门控（听力原文锁回去）
   document.getElementById('quizIndex').textContent = state.quizIndex + 1;
   document.getElementById('quizProgress').style.width = ((state.quizIndex + 1) / total * 100) + '%';
 
@@ -398,6 +399,7 @@ function showQuiz() {
     audioText.textContent = q.audioText;
     audioText.classList.add('hide'); // 默认隐藏原文
     if (playHint) playHint.textContent = '播放后才能作答';
+    _setAudioTextLocked(true);   // 🆕 v01.12：作答前锁定"显示原文"，防偷看
     // ⚠️ 不要自动播放！手机浏览器会拦截未经用户授权的语音
     // 让用户点击按钮触发
   } else {
@@ -616,6 +618,7 @@ function checkSpellFilled(q, inputs, force) {
 
   // 锁定所有输入
   inputs.forEach(i => i.disabled = true);
+  state.quizAnswered = true;   // 🆕 v01.12：拼写已作答（保持门控状态一致）
 
   const fb = document.getElementById('quizFeedback');
   const isCorrect = (userWord === correct);
@@ -788,7 +791,28 @@ function playAudioText() {
   if (!tryMp3()) fallbackTTS();
 }
 
+// 🆕 v01.12：锁定/解锁听力"显示原文"按钮（作答前锁、作答后解锁）
+function _setAudioTextLocked(locked) {
+  const btn = document.getElementById('quizAudioTextToggle');
+  const txt = document.getElementById('quizAudioText');
+  if (locked && txt) txt.classList.add('hide');   // 锁定时强制收起原文
+  if (!btn) return;
+  btn.disabled = !!locked;
+  btn.classList.toggle('opacity-50', !!locked);
+  btn.classList.toggle('cursor-not-allowed', !!locked);
+  btn.textContent = locked ? '🔒 作答后看原文' : '显示/隐藏原文';
+}
+
 function toggleAudioText() {
+  // 🆕 v01.12：作答前不允许查看原文（防偷看）
+  if (!state.quizAnswered) {
+    const hint = document.getElementById('playAudioHint');
+    if (hint) {
+      hint.textContent = '✋ 先作答，作答后才能查看原文哦';
+      hint.className = 'text-xs mt-1 text-orange-500';
+    }
+    return;
+  }
   const el = document.getElementById('quizAudioText');
   if (el) el.classList.toggle('hide');
 }
@@ -817,6 +841,8 @@ function answerQuiz(idx) {
     fb.innerHTML = `<b>❌ 回答错误</b><div class="text-sm mt-1">正确答案：<b>${correctText}</b></div><div class="text-sm mt-1">${q.explain || ''}</div>`;
   }
   fb.classList.remove('hide');
+  state.quizAnswered = true;        // 🆕 v01.12：已作答
+  _setAudioTextLocked(false);       // 🆕 v01.12：放开听力原文查看
   document.getElementById('quizNextBtn').classList.remove('hide');
   document.getElementById('quizNextBtn').textContent =
     state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
