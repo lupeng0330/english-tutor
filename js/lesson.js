@@ -348,6 +348,8 @@ function submitReadingEx() {
       if (!r.ok) {
         try {
           const uid = _readingExState.uid;
+          const _lessonIdx = _readingExState.lessonIdx | 0;
+          const _lesson = normalizeLessons(state.currentUnit)[_lessonIdx] || {};
           recordAnswer('reading_qa', {
             id: 'rex_' + uid + '_' + i,
             q: it.q,
@@ -355,7 +357,12 @@ function submitReadingEx() {
             user: user,
             unit: uid,
             grade: state.currentGrade,
-            lessonTitle: (normalizeLessons(state.currentUnit)[_readingExState.lessonIdx] || {}).title || ''
+            lessonIdx: _lessonIdx,
+            lessonTitle: _lesson.title || '',
+            // 🆕 课文原文（用于错题本详情区直接阅读），零网络代价：提交时 unit/lessonIdx 已在内存
+            passage: _lesson.en || '',
+            // 🆕 题块出处标题（如 "Fun with language · Mozart"）
+            blockTitle: _readingExState.blockTitle || ''
           }, false);
         } catch(e){}
       }
@@ -407,7 +414,9 @@ function updateReadingExForCurrentLesson() {
     const hits = _findExerciseForLesson(exs, lesson);
     const items = [];
     for (const ex of hits) items.push(..._normalizeExerciseItems(ex));
-    _readingExState = { uid, lessonIdx: state.currentLessonIndex, items, submitted: false };
+    // 🆕 题块出处标题（取首个命中块的 title，如 "Fun with language · Mozart"），入错题本时一并存档
+    const blockTitle = (hits[0] && hits[0].title) || (lesson && lesson.title) || '';
+    _readingExState = { uid, lessonIdx: state.currentLessonIndex, items, submitted: false, blockTitle };
     renderReadingEx();
   });
 }
@@ -633,6 +642,33 @@ function openUnit(unitId) {
   document.getElementById('unitDetailView').classList.remove('hide');
   window.scrollTo(0, 0);
 }
+
+// 🆕 从错题本「去此单元重读」：切到课本页 → 定位单元 → 切课文 Tab → 跳到指定篇目
+function switchToLesson(unitId, lessonIdx) {
+  if (!unitId) { try { switchPage('textbook'); } catch(e){} return; }
+  const li = Math.max(0, lessonIdx | 0);
+  try { switchPage('textbook'); } catch(e){}
+  // 等课本页渲染就绪后再定位（与 home.js continueLearning 的延时范式一致）
+  setTimeout(() => {
+    try {
+      const units = (textbookData[state.currentGrade] && textbookData[state.currentGrade].units) || [];
+      const idx = units.findIndex(u => u.id === unitId);
+      if (idx < 0) {
+        // 当前 grade 找不到该单元（可能错题来自其它学段）：仅打开课本列表，给出提示
+        alert('该错题对应的课文不在当前所选学段，请先切换到对应年级/学期再来重读～');
+        return;
+      }
+      openUnit(unitId);
+      // 切到「课文」Tab 并跳到对应篇目
+      switchUnitTab('lesson');
+      const lessons = normalizeLessons(state.currentUnit);
+      renderLessonAt(Math.min(li, Math.max(0, lessons.length - 1)), lessons);
+      try { updateReadingExForCurrentLesson(); } catch(e){}
+      window.scrollTo(0, 0);
+    } catch(e){ console.warn('[去此单元]', e); }
+  }, 200);
+}
+window.switchToLesson = switchToLesson;
 
 // 单元切换（左右箭头/滑动/键盘）
 function _showUnitAtIndex(idx) {

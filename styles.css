@@ -110,6 +110,8 @@ body {
   color: #fff;
   box-shadow: var(--shadow-nav);
 }
+/* 桌面侧栏显示完整名称，短名仅移动端底栏使用 */
+.nav-lbl-mb { display: none; }
 .gradient-btn {
   background: var(--brand-gradient);
   color: #fff;
@@ -180,6 +182,59 @@ body {
   font-weight: 600;
   background: var(--warn-100);
   color: var(--warn-ink);
+}
+
+/* 🆕 错题本阅读题：文章原文框 */
+.wb-passage {
+  margin-top: 8px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--amber-100);
+  color: var(--amber-ink-2);
+  border: 1px solid var(--amber-200);
+  font-size: 14px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 320px;
+  overflow-y: auto;
+}
+/* 🆕 出处条（题块标题 / 单元 / 篇目） */
+.wb-source-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+  font-size: 12px;
+  font-weight: 600;
+  background: #eef2ff;       /* indigo-50 */
+  color: #4338ca;            /* indigo-700 */
+}
+/* 🆕 「去此单元重读」按钮 */
+.wb-source-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--warn);
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+.wb-source-link:hover { background: var(--warn-ink); }
+.wb-source-link:active { transform: scale(0.96); }
+/* 🆕 历史数据降级提示条（原文暂未收录） */
+.wb-source-missing {
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #f8fafc;       /* slate-50 */
+  color: var(--warn-ink);
+  font-size: 13px;
+  line-height: 1.6;
 }
 
 .chat-bubble-user {
@@ -278,7 +333,8 @@ body {
   aside > nav {
     position: static !important;
     display: grid !important;
-    grid-template-columns: repeat(6, 1fr);
+    /* 底栏精简为 5 项（首页/课本/练习/错题/报告），稳定单行 */
+    grid-template-columns: repeat(5, 1fr);
     padding: 4px 2px !important;
     border-radius: 0;
     margin: 0;
@@ -286,6 +342,8 @@ body {
     gap: 0;
     background: transparent;
   }
+  /* 语法讲解 / AI对话 移动端不进底栏，改由首页快捷入口进入 */
+  aside .nav-item--deskonly { display: none !important; }
   aside .nav-item {
     flex-direction: column;
     padding: 6px 2px !important;
@@ -295,17 +353,14 @@ body {
     min-width: 0;
     border-radius: var(--r-lg);
   }
-  aside .nav-item span:first-child { font-size: 22px; line-height: 1; }
-  aside .nav-item span:last-child {
+  aside .nav-item .nav-ico { font-size: 22px; line-height: 1; }
+  /* 移动端：隐藏完整名，显示短名（替代旧的 font-size:0 + ::before hack，避免最小字号设置下文字重复） */
+  aside .nav-item .nav-lbl-full { display: none; }
+  aside .nav-item .nav-lbl-mb {
+    display: block;
     font-size: 10px; white-space: nowrap;
     overflow: hidden; text-overflow: ellipsis;
     max-width: 100%;
-  }
-  /* 用 data-mb 里的短文字替换长文字 */
-  aside .nav-item span[data-mb] { font-size: 0; }
-  aside .nav-item span[data-mb]::before {
-    content: attr(data-mb);
-    font-size: 10px;
   }
   aside .nav-item.active {
     background: transparent;
@@ -313,7 +368,7 @@ body {
     box-shadow: none;
     font-weight: 700;
   }
-  aside .nav-item.active span:first-child {
+  aside .nav-item.active .nav-ico {
     transform: scale(1.15);
     transition: transform 0.2s;
   }
@@ -509,8 +564,8 @@ body {
 @media (max-width: 380px) {
   header .font-bold.text-lg { font-size: 13px; }
   header .text-xs { display: none; }
-  aside .nav-item span:first-child { font-size: 20px; }
-  aside .nav-item span:last-child { font-size: 9px; }
+  aside .nav-item .nav-ico { font-size: 20px; }
+  aside .nav-item .nav-lbl-mb { font-size: 9px; }
   .word-card .text-4xl { font-size: 28px; }
   #quizOptions button { font-size: 13px; padding: 10px; }
 }
@@ -656,8 +711,8 @@ body {
   }
   /* 横屏底部导航降低高度 */
   aside .nav-item { padding: 4px 2px !important; }
-  aside .nav-item span:first-child { font-size: 18px; }
-  aside .nav-item span:last-child { font-size: 9px; }
+  aside .nav-item .nav-ico { font-size: 18px; }
+  aside .nav-item .nav-lbl-mb { font-size: 9px; }
 
   /* 横屏时让卡片网格变回两列，利用空间 */
   .grid.md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }

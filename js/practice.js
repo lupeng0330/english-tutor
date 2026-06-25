@@ -408,7 +408,8 @@ function showQuiz() {
 
   // 阅读文章
   const passageBox = document.getElementById('quizPassageBox');
-  if (realType === 'reading' && q.passage) {
+  // 🆕 reading（阅读理解）与 reading_qa（课文自测）错题重练时都展示文章原文
+  if ((realType === 'reading' || realType === 'reading_qa') && q.passage) {
     passageBox.classList.remove('hide');
     document.getElementById('quizPassage').textContent = q.passage;
   } else {

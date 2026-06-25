@@ -135,13 +135,13 @@
   <!-- 侧边栏 -->
   <aside class="w-56 flex-shrink-0">
     <nav class="card p-3 sticky top-24">
-      <div class="nav-item active" data-page="home"><span>🏠</span><span data-mb="首页">首页</span></div>
-      <div class="nav-item" data-page="textbook"><span>📖</span><span data-mb="课本">课本学习</span></div>
-      <div class="nav-item" data-page="practice"><span>✏️</span><span data-mb="练习">练习测试</span></div>
-      <div class="nav-item" data-page="grammar"><span>📝</span><span data-mb="语法">语法讲解</span></div>
-      <div class="nav-item" data-page="chat"><span>💬</span><span data-mb="对话">AI对话</span></div>
-      <div class="nav-item" data-page="wrongbook"><span>🩹</span><span data-mb="错题">错题本</span></div>
-      <div class="nav-item" data-page="report"><span>📊</span><span data-mb="报告">学习报告</span></div>
+      <div class="nav-item active" data-page="home"><span class="nav-ico">🏠</span><span class="nav-lbl-full">首页</span><span class="nav-lbl-mb">首页</span></div>
+      <div class="nav-item" data-page="textbook"><span class="nav-ico">📖</span><span class="nav-lbl-full">课本学习</span><span class="nav-lbl-mb">课本</span></div>
+      <div class="nav-item" data-page="practice"><span class="nav-ico">✏️</span><span class="nav-lbl-full">练习测试</span><span class="nav-lbl-mb">练习</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="grammar"><span class="nav-ico">📝</span><span class="nav-lbl-full">语法讲解</span><span class="nav-lbl-mb">语法</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="chat"><span class="nav-ico">💬</span><span class="nav-lbl-full">AI对话</span><span class="nav-lbl-mb">对话</span></div>
+      <div class="nav-item" data-page="wrongbook"><span class="nav-ico">🩹</span><span class="nav-lbl-full">错题本</span><span class="nav-lbl-mb">错题</span></div>
+      <div class="nav-item" data-page="report"><span class="nav-ico">📊</span><span class="nav-lbl-full">学习报告</span><span class="nav-lbl-mb">报告</span></div>
     </nav>
   </aside>
 
@@ -205,6 +205,18 @@
         <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('report')">
           <div class="text-3xl md:text-4xl mb-2">📊</div>
           <div class="font-semibold text-slate-800 text-sm md:text-base">学习报告</div>
+        </div>
+      </div>
+
+      <!-- 语法 / AI对话 快捷入口：移动端底栏已精简为 5 项，这两项移到首页保证可达（桌面端在侧栏已有，故 md:hidden） -->
+      <div class="grid grid-cols-2 gap-3 mt-3 md:hidden">
+        <div class="card p-4 text-center cursor-pointer" onclick="switchPage('grammar')">
+          <div class="text-3xl mb-2">📝</div>
+          <div class="font-semibold text-slate-800 text-sm">语法讲解</div>
+        </div>
+        <div class="card p-4 text-center cursor-pointer" onclick="switchPage('chat')">
+          <div class="text-3xl mb-2">💬</div>
+          <div class="font-semibold text-slate-800 text-sm">AI对话</div>
         </div>
       </div>
 
@@ -506,7 +518,7 @@
           <!-- 🆕 错题本子 Tab：全部 / 阅读理解 -->
           <div class="mt-2 flex gap-2" onclick="event.stopPropagation()">
             <button id="tabWrongbookAll"    class="px-2 py-0.5 rounded text-xs bg-orange-200 text-orange-800 font-semibold" onclick="switchWrongbookTab('all')">全部</button>
-            <button id="tabWrongbookRead"  class="px-2 py-0.5 rounded text-xs bg-white text-orange-600 border border-orange-200"          onclick="switchWrongbookTab('reading_qa')">阅读理解</button>
+            <button id="tabWrongbookRead"  class="px-2 py-0.5 rounded text-xs bg-white text-orange-600 border border-orange-200"          onclick="switchWrongbookTab('reading_qa')">课文自测</button>
           </div>
           <p class="text-slate-500 text-sm mt-1">只练你答错过的题，连续答对 2 次自动移除</p>
           <div class="mt-3 flex items-center justify-between">
@@ -731,8 +743,8 @@
         <button class="wb-filter-tab" data-filter="spelling" onclick="setWrongbookFilter('spelling')">单词</button>
         <button class="wb-filter-tab" data-filter="listening" onclick="setWrongbookFilter('listening')">听力</button>
         <button class="wb-filter-tab" data-filter="grammar" onclick="setWrongbookFilter('grammar')">语法</button>
-        <button class="wb-filter-tab" data-filter="reading" onclick="setWrongbookFilter('reading')">阅读</button>
-        <button class="wb-filter-tab" data-filter="reading_qa" onclick="setWrongbookFilter('reading_qa')">阅读自测</button>
+        <button class="wb-filter-tab" data-filter="reading" onclick="setWrongbookFilter('reading')">阅读理解</button>
+        <button class="wb-filter-tab" data-filter="reading_qa" onclick="setWrongbookFilter('reading_qa')">课文自测</button>
       </div>
 
       <!-- 错题列表 -->

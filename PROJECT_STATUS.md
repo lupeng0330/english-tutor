@@ -18,6 +18,21 @@
 
 用户是在 **Mac 和 PC 双端轮流开发** 的，请始终走 `git pull --rebase` → 改 → `git commit` → `git push` 的工作流，不要在对方没推送前改同一文件以避免冲突。
 
+### ⭐ 开发规范：每个任务完成后必须提供「电脑端 + 手机端」网页验证
+
+> 用户偏好（2026-06-25 确立）：**每完成一个任务，都要让用户能在电脑上同时验证「电脑网页布局」和「手机布局」**，无需真机。
+
+固定做法：
+
+1. 起本地服务（Python，端口 8765，绑定 `0.0.0.0`）：
+   - 后台启动：`Start-Process python -ArgumentList '-m','http.server','8765' -WindowStyle Hidden`（在项目根目录）。
+2. 打开两个验证入口（用 IDE 内置浏览器 `preview_url`）：
+   - **电脑端**：`http://localhost:8765/index.html`
+   - **手机端（电脑上模拟）**：`http://localhost:8765/mobile.html` —— 这是项目自带的手机模拟器，带手机外壳 + iframe 真实渲染，可切换 iPhone 14(390) / **Huawei(360, 最窄)** / iPhone 11 Pro Max(414) 三种尺寸，是验证移动端排版的首选。
+3. 在回复里明确给出上面两个 URL + 本次改动「该验证哪几点」的清单。
+4. 需要真机验证时，再给局域网 IP 地址（如 `http://10.9.137.65:8765/mobile.html`）+ 扫码提示。
+5. 服务仅用于验证，**不动 `version.txt`、不 push**；部署仍由用户跑 `dev-push.ps1`。
+
 ---
 
 ## 1. 项目一句话简介
@@ -754,4 +769,75 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - `tests/smoke.py`（Playwright headless）回归 **[PASS]：0 JS 报错、0 断言失败，35 函数 + 4 命名空间齐全**。
 - 用 code-explorer 子代理产出 v01.12 改点清单 + 钩子复用映射，确认改动最小、不破坏既有内联 `onclick`。
 - ⚠️ **重启数据恢复**：开发途中电脑重启导致 9B 阅读 48 题丢失，已据 grade9.json 真实课文重新造回并入库，最终 reading 288/48 单元完整。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
+
+---
+
+## 18. ✅ 错题本阅读题「显示文章」优化 + Tab 改名 · 完成记录（2026-06-25）
+
+> 用户反馈：错题集收录的「课文阅读题型」没有显示文章，不好练习。诊断后发现涉及**两类阅读题**，病因不同（见下），按"深度改造（把课文原文带进错题本）"方向落地，并顺手修复 Tab 命名误导。延续 §10 小步纪律：仅追加字段/分支，旧数据兼容降级，零回归。
+
+### 18.1 问题诊断（两类阅读题）
+
+| 类型 | 数据来源 | passage 字段 | 改动前错题本表现 |
+|---|---|---|---|
+| `reading` 阅读理解 | `data/questions/<tb>_reading.json`（jk 72 / hj 288） | ✅ 题库自带 | 详情区**没渲染 passage** |
+| `reading_qa` 课文自测 | `data/extras/<tb>_<grade>_<term>_exercises.json`（`kind:reading_qa` 题块） | ❌ 源数据无 passage，仅 问题/答案/选项 | 入错题本时只存 `id/q/correct/user/unit/grade/lessonTitle`，**连原文都没有** |
+
+### 18.2 落地改动
+
+| 文件 | 改动 |
+|---|---|
+| `js/lesson.js` `updateReadingExForCurrentLesson` | `_readingExState` 增存 `blockTitle`（首个命中题块标题，如 "Fun with language · Mozart"） |
+| `js/lesson.js` `submitReadingEx` | reading_qa 入错题本时用现成 `normalizeLessons(state.currentUnit)[lessonIdx].en` 取课文原文，追加 `passage / lessonIdx / blockTitle` 字段（零网络/异步，提交时数据已在内存） |
+| `js/lesson.js` 新增 `switchToLesson(uid, lessonIdx)` | 「去此单元重读」：切课本页 → `openUnit` 定位单元 → `switchUnitTab('lesson')` → `renderLessonAt` 跳篇目；跨学段找不到单元时 alert 提示 |
+| `js/wrongbook.js` 新增 `_wbPassageHtml(rec)` | 阅读类详情区文章原文 HTML：reading 直接渲染 `q.passage`；reading_qa 渲染「出处条 + 原文框 + 去此单元按钮」；**历史无 passage 数据降级**为「原文暂未收录」提示 + 跳转 |
+| `js/wrongbook.js` `renderWrongbookPage` | `.wb-detail` 详情区在选项前插入 `passageHtml` |
+| `js/wrongbook.js` `_WB_TYPE_LABELS` | `reading_qa` 标签 `阅读自测` → `课文自测`（与入口卡统一） |
+| `js/practice.js` `showQuiz` | passage 显示条件从 `reading` 扩为 `reading \|\| reading_qa`，错题重练 reading_qa 时也显示原文框 |
+| `index.html` | 入口卡子 Tab「阅读理解」→「课文自测」（与内部 `switchWrongbookTab('reading_qa')` 语义自洽，id `tabWrongbookRead` 不变）；独立页筛选 Tab「阅读」→「阅读理解」、「阅读自测」→「课文自测」 |
+| `styles.css` | 新增 `.wb-passage`（琥珀底原文框，max-height 320 + 滚动）/ `.wb-source-tag`（出处胶囊）/ `.wb-source-link`（橙色跳转按钮）/ `.wb-source-missing`（降级提示条） |
+
+### 18.3 历史数据兼容
+
+- 旧版本入库的 reading_qa 错题没有 `passage`/`lessonIdx`/`blockTitle` 字段。
+- `_wbPassageHtml` 检测无 passage 时走降级分支（提示 + 「去此单元重读」按钮按 `q.unit` 跳转），**不抛错、不清空数据**。
+
+### 收口状态
+
+- `js/lesson.js` / `js/wrongbook.js` / `js/practice.js` / `styles.css` / `index.html` lint **0 错误**。
+- **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
+
+---
+
+## 19. ✅ 手机底部导航栏改版（重复名 / 两行 修复）· 完成记录（2026-06-25）
+
+> 用户反馈：手机版底部导航图标「名字重复 + 排版变两行」。诊断为两个独立病因，采用 **B2 方向（底栏精简为 5 项 + 语法/对话移入首页快捷入口）** 落地。
+
+### 19.1 问题诊断
+
+| 现象 | 根因 |
+|---|---|
+| **底栏变两行** | 导航共 7 项，移动端网格却是 `grid-template-columns: repeat(6, 1fr)`，第 7 项（学习报告）被挤到第二行 |
+| **图标名字重复**（如「课本课本学习」「首页首页」） | 旧用 `span[data-mb]{font-size:0}` + `::before content:attr(data-mb)` 把长名换短名；手机/微信内置浏览器若开启「最小字号」无障碍设置，`font-size:0` 失效 → 真实文字与 `::before` 短名同时显示 |
+
+### 19.2 落地改动（B2）
+
+| 文件 | 改动 |
+|---|---|
+| `index.html` 导航 DOM | 每个 `.nav-item` 重构为「`.nav-ico` 图标 + `.nav-lbl-full` 完整名 + `.nav-lbl-mb` 短名」三 span，**彻底移除 `data-mb` hack**；语法/对话两项加 `nav-item--deskonly` 类 |
+| `index.html` 首页 | 新增「语法讲解 / AI对话」快捷入口卡（`grid-cols-2 md:hidden`，仅移动端显示；桌面端侧栏已含这两项，故隐藏避免重复） |
+| `styles.css` 桌面基础 | 新增 `.nav-lbl-mb { display:none }`（桌面只显示完整名） |
+| `styles.css` `@media(max-width:768px)` | 底栏网格 `repeat(6,1fr)` → `repeat(5,1fr)`；`.nav-item--deskonly { display:none }` 移动端隐藏语法/对话；用 `.nav-lbl-full{display:none}` + `.nav-lbl-mb{display:block}` 做长短名切换（替代失效 hack）；图标/选中态选择器由 `span:first-child` 改为 `.nav-ico` |
+| `styles.css` 小屏 380 / 横屏媒体查询 | 同步把 `span:first-child/last-child` 改为 `.nav-ico/.nav-lbl-mb` |
+
+### 19.3 效果
+
+- 移动端底栏稳定 **单行 5 项**：首页 · 课本 · 练习 · 错题 · 报告。
+- 名称切换不再依赖 `font-size:0`，**任何最小字号设置下都不会重复**。
+- 语法讲解 / AI对话 在移动端通过首页快捷入口进入，桌面端仍在侧栏 7 项中；JS 仅依赖 `data-page` + `.active`，结构重构零影响。
+
+### 收口状态
+
+- `index.html` / `styles.css` lint **0 错误**。
 - **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。

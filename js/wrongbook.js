@@ -153,7 +153,7 @@ const _WB_TYPE_LABELS = {
   listening: '听力选择',
   grammar: '语法练习',
   reading: '阅读理解',
-  reading_qa: '阅读自测',
+  reading_qa: '课文自测',
   irregular: '不规则动词'
 };
 function _wbTypeLabel(type) {
@@ -169,6 +169,45 @@ function _wbAnswerText(rec) {
   if (q.correct != null) return String(q.correct);
   if (q.answer != null) return String(q.answer);
   return '—';
+}
+
+// 🆕 阅读类错题详情区的「文章原文」HTML（reading / reading_qa 双分支 + 历史数据降级）
+function _wbPassageHtml(rec) {
+  const type = (rec && rec.type) || '';
+  if (type !== 'reading' && type !== 'reading_qa') return '';
+  const q = (rec && rec.question) || {};
+  const passage = (q.passage != null) ? String(q.passage).trim() : '';
+
+  // 课文自测：先拼一条「出处」条（题块标题 / 单元 / 篇目）
+  let sourceTag = '';
+  if (type === 'reading_qa') {
+    const bits = [];
+    if (q.blockTitle) bits.push(String(q.blockTitle));
+    else if (q.lessonTitle) bits.push(String(q.lessonTitle));
+    const where = bits.length ? ('本题出自：' + _escapeHtml(bits.join(' · '))) : '本题出自课文阅读自测';
+    sourceTag = '<div class="wb-source-tag">📖 ' + where + '</div>';
+  }
+
+  if (passage) {
+    const safe = _escapeHtml(passage);
+    return ''
+      + sourceTag
+      + '<div class="wb-passage">' + safe + '</div>'
+      + ((type === 'reading_qa' && q.unit)
+          ? '<button class="wb-source-link" onclick="switchToLesson(\'' + _escapeHtml(String(q.unit)) + '\',' + (q.lessonIdx | 0) + ')">📚 去此单元重读</button>'
+          : '');
+  }
+
+  // 无原文（历史 reading_qa 错题在旧版本里未存 passage）：降级提示 + 跳转
+  if (type === 'reading_qa') {
+    return ''
+      + sourceTag
+      + '<div class="wb-source-missing">原文暂未收录，点击下方按钮去课本此课重读 👇</div>'
+      + (q.unit
+          ? '<button class="wb-source-link" onclick="switchToLesson(\'' + _escapeHtml(String(q.unit)) + '\',' + (q.lessonIdx | 0) + ')">📚 去此单元重读</button>'
+          : '');
+  }
+  return '';
 }
 
 // 相对时间（"刚刚 / N 分钟前 / N 小时前 / N 天前"）
@@ -250,6 +289,8 @@ function renderWrongbookPage() {
     const explain = q.explain ? _escapeHtml(q.explain) : '';
     const when = _wbTimeAgo(rec.lastWrongAt);
     const key = _escapeHtml(rec._key);
+    // 🆕 阅读类题目：详情区展示文章原文（reading 题来自题库 passage；reading_qa 题来自入错题本时存档的课文原文）
+    const passageHtml = _wbPassageHtml(rec);
     const optionsHtml = (Array.isArray(q.options) && q.options.length)
       ? '<div class="mt-1 space-y-1">' + q.options.map((o, i) =>
           '<div class="text-sm ' + (i === q.answer ? 'text-green-700 font-semibold' : 'text-slate-600') + '">'
@@ -272,6 +313,7 @@ function renderWrongbookPage() {
       +             'onclick="deleteWrongbookItem(\'' + key + '\')">🗑</button>'
       +   '</div>'
       +   '<div class="wb-detail mt-3 pt-3 border-t border-slate-100">'
+      +     passageHtml
       +     optionsHtml
       +     '<div class="mt-2 text-sm"><span class="text-slate-400">正确答案：</span><b class="text-green-700">' + answer + '</b></div>'
       +     (explain ? '<div class="mt-1 text-sm text-slate-500">💡 ' + explain + '</div>' : '')
