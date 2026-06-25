@@ -1,0 +1,1060 @@
+{
+  "version": 2,
+  "scoreSystem": {
+    "total": 120,
+    "auto": 90,
+    "writing": 30,
+    "time": 100
+  },
+  "grades": {
+    "7": {
+      "上": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'My Best Friend' 为题，写一篇不少于60词的短文。内容包括：1. 朋友的外貌和性格；2. 你们的共同爱好；3. 为什么他/她是你最好的朋友。"
+              ],
+              "modelAnswers": [
+                "My best friend is Li Ming. He is tall and thin with short black hair. He is friendly and helpful. We both like playing basketball and reading books. After school, we often play together. He always helps me with my homework. I think he is the best friend because he is kind and honest."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'My Daily Life' 为题，写一篇不少于60词的短文。内容包括：1. 你每天的时间安排；2. 你最喜欢的科目或活动；3. 你对日常生活的感受。"
+              ],
+              "modelAnswers": [
+                "I usually get up at 6:30 in the morning. After breakfast, I go to school by bus. My favourite subject is English because it is interesting. In the afternoon, I play sports with my classmates. I go to bed at 9:30. I enjoy my daily life very much."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      },
+      "下": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'My Best Friend' 为题，写一篇不少于60词的短文。内容包括：1. 朋友的外貌和性格；2. 你们的共同爱好；3. 为什么他/她是你最好的朋友。"
+              ],
+              "modelAnswers": [
+                "My best friend is Li Ming. He is tall and thin with short black hair. He is friendly and helpful. We both like playing basketball and reading books. After school, we often play together. He always helps me with my homework. I think he is the best friend because he is kind and honest."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'My School' 为题，写一篇不少于70词的短文。内容包括：1. 学校的基本情况；2. 你最喜欢的老师和科目；3. 你在学校的感受。"
+              ],
+              "modelAnswers": [
+                "My school is big and beautiful. There are many trees and flowers. My favourite teacher is Miss Wang because she is patient and kind. I like English very much. I have many good friends at school. We study and play together. I love my school."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      }
+    },
+    "8": {
+      "上": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'My Hobby' 为题，写一篇不少于80词的短文。内容包括：1. 你的爱好是什么；2. 你是如何发展这个爱好的；3. 这个爱好给你带来了什么。"
+              ],
+              "modelAnswers": [
+                "My hobby is playing the piano. I started learning it when I was seven years old. At first, it was difficult, but I kept practising every day. Now I can play many beautiful songs. Playing the piano makes me feel relaxed and happy. I also made many friends through music. I will never give up this hobby."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'An Unforgettable Experience' 为题，写一篇不少于80词的短文，描述一次难忘的经历。"
+              ],
+              "modelAnswers": [
+                "Last year, I took part in an English speech competition. I was very nervous at first. But my teacher encouraged me a lot. I practised every evening for two weeks. On the competition day, I did my best and won second prize. It was an unforgettable experience because I learned that hard work pays off."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      },
+      "下": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'My Hobby' 为题，写一篇不少于80词的短文。内容包括：1. 你的爱好是什么；2. 你是如何发展这个爱好的；3. 这个爱好给你带来了什么。"
+              ],
+              "modelAnswers": [
+                "My hobby is playing the piano. I started learning it when I was seven years old. At first, it was difficult, but I kept practising every day. Now I can play many beautiful songs. Playing the piano makes me feel relaxed and happy. I also made many friends through music. I will never give up this hobby."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'Volunteering' 为题，写一篇不少于80词的短文，谈谈你对志愿服务的看法或经历。"
+              ],
+              "modelAnswers": [
+                "Volunteering is a meaningful activity. Last month, I volunteered at a local library. I helped organise books and taught children to read. It was tiring but rewarding. I learned that helping others makes me feel happy. I plan to do more volunteer work in the future."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      }
+    },
+    "9": {
+      "上": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'The Power of Dreams' 为题，写一篇不少于100词的短文。内容包括：1. 你的梦想是什么；2. 你将如何实现它；3. 梦想对你的意义。"
+              ],
+              "modelAnswers": [
+                "Everyone has dreams. My dream is to become a doctor. I want to help sick people and save lives. To achieve this dream, I study very hard at school, especially science subjects. I also read books about medicine in my free time. Dreams give me motivation and direction. I believe that with hard work and determination, my dream will come true one day."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+              ],
+              "modelAnswers": [
+                "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      },
+      "下": {
+        "midterm": {
+          "name": "期中考试",
+          "time": 100,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                4
+              ],
+              "prompts": [
+                "请以 'The Power of Dreams' 为题，写一篇不少于100词的短文。内容包括：1. 你的梦想是什么；2. 你将如何实现它；3. 梦想对你的意义。"
+              ],
+              "modelAnswers": [
+                "Everyone has dreams. My dream is to become a doctor. I want to help sick people and save lives. To achieve this dream, I study very hard at school, especially science subjects. I also read books about medicine in my free time. Dreams give me motivation and direction. I believe that with hard work and determination, my dream will come true one day."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "final": {
+          "name": "期末考试 / 中考模拟",
+          "time": 100,
+          "unitRange": [
+            1,
+            8
+          ],
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 15,
+              "points": 1,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 15,
+              "points": 2,
+              "unitRange": [
+                1,
+                8
+              ]
+            },
+            {
+              "type": "writing",
+              "title": "五、书面表达",
+              "count": 1,
+              "points": 30,
+              "unitRange": [
+                1,
+                8
+              ],
+              "prompts": [
+                "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+              ],
+              "modelAnswers": [
+                "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+              ]
+            }
+          ],
+          "totalPoints": 120,
+          "autoPoints": 90
+        },
+        "unitTest": {
+          "namePattern": "第{n}单元测试",
+          "time": 40,
+          "maxUnit": 8,
+          "cumulative": true,
+          "sections": [
+            {
+              "type": "listening",
+              "title": "一、听力理解",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "grammar",
+              "title": "二、语法选择",
+              "count": 10,
+              "points": 1
+            },
+            {
+              "type": "cloze",
+              "title": "三、完形填空",
+              "count": 5,
+              "points": 2
+            },
+            {
+              "type": "reading",
+              "title": "四、阅读理解",
+              "count": 10,
+              "points": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "typeLabels": {
+    "listening": "听力",
+    "spelling": "拼写",
+    "grammar": "语法",
+    "cloze": "完形",
+    "reading": "阅读",
+    "writing": "写作"
+  },
+  "typeIcons": {
+    "listening": "👂",
+    "spelling": "📝",
+    "grammar": "🔤",
+    "cloze": "📋",
+    "reading": "📖",
+    "writing": "✍️"
+  },
+  "typeOrder": [
+    "listening",
+    "grammar",
+    "cloze",
+    "reading",
+    "writing"
+  ]
+}

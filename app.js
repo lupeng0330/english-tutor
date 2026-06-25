@@ -125,6 +125,7 @@ function switchPage(page) {
   document.getElementById('page-' + page).classList.remove('hide');
 
   if (page === 'textbook') renderUnitList();
+  if (page === 'exam') { try { renderExamPage(); } catch(e) { console.warn(e); } }
   if (page === 'grammar') { renderGrammar(); try { renderIrregVerbTable(); } catch(e){} }
   if (page === 'report') setTimeout(renderReport, 100);
   if (page === 'wrongbook') { _wbPageFilter = 'all'; renderWrongbookPage(); }

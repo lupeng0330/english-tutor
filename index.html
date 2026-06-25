@@ -138,6 +138,7 @@
       <div class="nav-item active" data-page="home"><span class="nav-ico">🏠</span><span class="nav-lbl-full">首页</span><span class="nav-lbl-mb">首页</span></div>
       <div class="nav-item" data-page="textbook"><span class="nav-ico">📖</span><span class="nav-lbl-full">课本学习</span><span class="nav-lbl-mb">课本</span></div>
       <div class="nav-item" data-page="practice"><span class="nav-ico">✏️</span><span class="nav-lbl-full">练习测试</span><span class="nav-lbl-mb">练习</span></div>
+      <div class="nav-item" data-page="exam"><span class="nav-ico">📋</span><span class="nav-lbl-full">模拟考试</span><span class="nav-lbl-mb">考试</span></div>
       <div class="nav-item nav-item--deskonly" data-page="grammar"><span class="nav-ico">📝</span><span class="nav-lbl-full">语法讲解</span><span class="nav-lbl-mb">语法</span></div>
       <div class="nav-item nav-item--deskonly" data-page="chat"><span class="nav-ico">💬</span><span class="nav-lbl-full">AI对话</span><span class="nav-lbl-mb">对话</span></div>
       <div class="nav-item" data-page="wrongbook"><span class="nav-ico">🩹</span><span class="nav-lbl-full">错题本</span><span class="nav-lbl-mb">错题</span></div>
@@ -192,8 +193,8 @@
         </div>
       </div>
 
-      <!-- 三大主入口（精简，不再和侧栏重复；首页用作情境化入口） -->
-      <div class="grid grid-cols-3 gap-3">
+      <!-- 四大主入口 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
         <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('textbook')">
           <div class="text-3xl md:text-4xl mb-2">📖</div>
           <div class="font-semibold text-slate-800 text-sm md:text-base">课本学习</div>
@@ -201,6 +202,11 @@
         <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('practice')">
           <div class="text-3xl md:text-4xl mb-2">✏️</div>
           <div class="font-semibold text-slate-800 text-sm md:text-base">练习测试</div>
+        </div>
+        <div class="card p-4 md:p-5 text-center cursor-pointer border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50" onclick="switchPage('exam')">
+          <div class="text-3xl md:text-4xl mb-2">📋</div>
+          <div class="font-semibold text-slate-800 text-sm md:text-base">模拟考试</div>
+          <div class="text-xs text-blue-500 mt-0.5" id="homeExamHint">真题·模拟·单元测试</div>
         </div>
         <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('report')">
           <div class="text-3xl md:text-4xl mb-2">📊</div>
@@ -618,6 +624,11 @@
       </div>
     </section>
 
+    <!-- ============ 模拟考试 ============ -->
+    <section id="page-exam" class="page hide">
+      <div id="examView"></div>
+    </section>
+
     <!-- ============ 语法 ============ -->
     <section id="page-grammar" class="page hide">
       <h2 class="text-xl font-bold text-slate-800 mb-4">📝 语法知识点</h2>
@@ -804,6 +815,7 @@
         .then(function(){ return addScript('./js/lesson.js'); })
         .then(function(){ return addScript('./js/practice.js'); })
         .then(function(){ return addScript('./questionBank.js'); })
+        .then(function(){ return addScript('./js/exam.js'); })
         .then(function(){ return addScript('./app.js'); });
     });
   })();

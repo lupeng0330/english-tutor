@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-06-25（PC 端，状态校准：PWA v01.19 标记对齐已完成态）  
+> 最后更新：2026-06-25（PC 端，新增：考试模块改造 120 分制 + 单元测试 + 历年真题，详见 §20）  
 > 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
@@ -21,20 +21,33 @@
 
 用户是在 **Mac 和 PC 双端轮流开发** 的，请始终走 `git pull --rebase` → 改 → `git commit` → `git push` 的工作流，不要在对方没推送前改同一文件以避免冲突。
 
-### ⭐ 开发规范：每个任务完成后必须提供「电脑端 + 手机端」网页验证
+### ⭐⭐ 固定开发规范（铁律，每个任务都必须遵守）
 
-> 用户偏好（2026-06-25 确立）：**每完成一个任务，都要让用户能在电脑上同时验证「电脑网页布局」和「手机布局」**，无需真机。
+> 用户偏好（2026-06-25 确立 / 校准）。下面三条是**贯穿所有任务**的硬性流程，不分大小功能一律执行。
 
-固定做法：
+#### 铁律 1 · 每个任务完成后必须提供「电脑端 + 手机端」双验证（无需真机）
 
-1. 起本地服务（Python，端口 8765，绑定 `0.0.0.0`）：
+1. 起本地服务（Python，端口 8765）：
    - 后台启动：`Start-Process python -ArgumentList '-m','http.server','8765' -WindowStyle Hidden`（在项目根目录）。
 2. 打开两个验证入口（用 IDE 内置浏览器 `preview_url`）：
    - **电脑端**：`http://localhost:8765/index.html`
-   - **手机端（电脑上模拟）**：`http://localhost:8765/mobile.html` —— 这是项目自带的手机模拟器，带手机外壳 + iframe 真实渲染，可切换 iPhone 14(390) / **Huawei(360, 最窄)** / iPhone 11 Pro Max(414) 三种尺寸，是验证移动端排版的首选。
+   - **手机端（电脑上模拟）**：`http://localhost:8765/mobile.html` —— 项目自带手机模拟器，带手机外壳 + iframe 真实渲染，可切换 iPhone 14(390) / **Huawei(360, 最窄)** / iPhone 11 Pro Max(414) 三种尺寸，是验证移动端排版的首选。
 3. 在回复里明确给出上面两个 URL + 本次改动「该验证哪几点」的清单。
 4. 需要真机验证时，再给局域网 IP 地址（如 `http://10.9.137.65:8765/mobile.html`）+ 扫码提示。
-5. 服务仅用于验证，**不动 `version.txt`、不 push**；部署仍由用户跑 `dev-push.ps1`。
+
+#### 铁律 2 · 每个任务完成后必须补记本 `PROJECT_STATUS.md`（不能漏！）
+
+> 背景：曾出现「连续几次功能开发都没写入备忘」的断档，导致对端 / 下次接手的 AI 看不到最新进度。**从此每完成一个功能，收尾动作必须包含更新本文档**，否则视为任务未完成。
+
+每次至少更新：
+- **追加一节完成记录**（接着当前最大编号往后排，如 §20、§21…）：写清问题/决策/落地改动/收口状态。
+- 视情况更新 **§3 当前规模**、**§7 近期进展 git log 摘要**、相关版本计划的 **checkbox**。
+- 顶部「最后更新」行同步成本次内容。
+
+#### 铁律 3 · 验证服务不动 `version.txt`、不 push；部署只走 `dev-push.ps1`
+
+- 本地起的服务仅用于验证，**绝不手改 `version.txt`、不擅自 push**。
+- 部署 / 上线由用户确认后跑 `dev-push.ps1`（脚本自动 bump 版本号 + commit + push）；用户明确说"推送"时才执行该脚本。
 
 ---
 
@@ -844,3 +857,50 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 - `index.html` / `styles.css` lint **0 错误**。
 - **version.txt 仍由 `dev-push.ps1` 自动管理**，本次未手改、未 push，待用户确认后再部署上线。
+
+---
+
+## 20. ✅ 考试模块改造：120 分制 + 单元测试 + 历年真题 · 完成记录（2026-06-25）
+
+> 用户三项确认决策落地：①卷面 **120 分 / 100 分钟**；②方案 A（仿真真题，题目取自现有题库，非照搬版权原卷）；③首批真题覆盖广州各区（含增城/从化）+ 清远/深圳/东莞/佛山，初中全年级 + 中考卷。延续 §10 小步纪律：新增数据带稳定 seed 可回滚，旧逻辑统一收敛到一个组卷引擎，零行为残留。
+
+### 20.1 核心改动总览
+
+| 需求 | 落地 |
+|---|---|
+| **总分对齐广州考纲** | 模拟卷（期中/期末/中考模拟）统一 **卷面 120 分 / 100 分钟**：听力 30 + 语法选择 15 + 完形 15 + 阅读 30 + 书面表达 30（参考分）；自动判分 90。新增「按实际抽到题量计分」，题库不足也能达满分 |
+| **月考卷 → 单元测试卷（累积式）** | 删除原 `monthly1/3/4`，改为**第 1~第 8 单元测试**，范围**累积式 [1, N]**（本单元为主 + 复习前面）；纯自动判分（约 50 分 / 40 分钟），点完即出分 |
+| **列表界面精简 + 分区 Tab** | 顶部三分区 **[模拟卷] [单元测试] [历年真题]**（带数量角标）；卡片只保留 标题·时长·满分·自动判分·历史最高·开始，点击即考 |
+| **扩充真题库（方案 A）** | 新增 `data/exams/real_papers/index.json`，**36 份固定真题卷**，覆盖广州天河/越秀/番禺/增城/从化、清远、深圳、东莞、佛山（9 地区）× 初一/初二/初三全年级 + 每地区 1 份中考卷（共 9 份中考） |
+
+### 20.2 文件改动
+
+| 文件 | 改动 |
+|---|---|
+| 🆕 `scripts/gen_exam_papers.py` | 可复用生成器：产出 120 分制 `exam_config.json`（期中/期末 + 单元测试模板）与 `real_papers/index.json`（36 份真题）。日后扩地区/卷数改它再跑一次即可 |
+| ✏️ `data/exams/exam_config.json` | 120 分制 + 单元测试模板（`unitTest.namePattern/maxUnit/cumulative/sections`） |
+| 🆕 `data/exams/real_papers/index.json` | 36 份真题（每份带稳定 `seed` + `region` + `kind`；中考卷 `kind:"zhongkao"`） |
+| ✏️ `js/exam.js` | 见 20.3 引擎重构 |
+| ✏️ `styles.css` | 新增 `.exam-tabs/.exam-tab/.exam-ctxbar/.exam-card2/.exam-region-group` 等分区 Tab 与精简卡片样式（含移动端单列） |
+| ✏️ `index.html` | 首页考试入口提示文案 → 「真题·模拟·单元测试」 |
+
+### 20.3 `js/exam.js` 引擎重构（关键）
+
+1. **统一组卷引擎 `_buildPaper(def)`**：取代原 `_generatePaper(examKey)`，模拟卷 / 单元测试 / 真题三类**共用同一引擎**。
+2. **种子化固定卷**：`def.seed` 存在时用 `_mulberry32(seed)` 驱动 `_sampleRng` 洗牌采样 → **同一份真题每次生成题目一致、可反复对答案**；模拟卷/单元测试无 seed 走 `Math.random`，每次随机。
+3. **按实际题量计分**：`sec.totalPoints = 实际抽到题数 × points`，题库不足时不再分值错乱；汇总 `totalAutoPoints / writingPoints / totalPaperPoints`。
+4. **数据分支**：`_loadRealPapers()` 加载真题；`_getExamsForContext()` 返回 `{sim, unit}`（单元测试按模板展开为第 1~N 单元）；`_getRealPapersForContext()` 按年级过滤真题（含中考卷）。
+5. **三分区列表**：`_examListTab`(sim/unit/real) + `_renderExamList()` + `_examCardHtml()`；真题按 `region` 分组、中考卷打红色「中考」标签。
+6. **`_startExam(examKey, source)`**：按 `source`(config/real) 解析试卷定义后交给 `_buildPaper`。
+
+### 20.4 数据规模（生成校验）
+
+- 真题：**36 份**、**9 地区**、含 **9 份中考卷**、覆盖 **7/8/9 全年级**。
+- 配置：`scoreSystem.total=120 / time=100`。
+- 初中题库走 `hj`（广州沪教版 7-9 年级），grammar 480 / listening 32 / reading 288 / spelling 698，足够支撑 120 分卷的抽题。
+
+### 收口状态
+
+- `js/exam.js` lint **0 错误**；本地服务对两份考试 JSON 解析与关键字段校验全通过。
+- 电脑端 `http://localhost:8765/index.html` + 手机端 `http://localhost:8765/mobile.html` 双端预览已验证（铁律 1）。
+- 本次经用户确认后**执行 `dev-push.ps1` 推送上线**（铁律 3）。
