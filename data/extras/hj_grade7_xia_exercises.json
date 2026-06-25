@@ -1,0 +1,429 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My best friend",
+        "data": [
+          {"问题": "Who is the writer's best friend?", "答案": "Amy."},
+          {"问题": "How long have they known each other?", "答案": "Since childhood."},
+          {"问题": "What kind of person is Amy?", "答案": "She is kind and helpful."},
+          {"问题": "What happened when the writer lost a wallet?", "答案": "Amy gave her/him some money for the bus."},
+          {"问题": "What do true friends do?", "答案": "They share happy times and support each other in difficult times."},
+          {"问题": "Do the writer and Amy often quarrel?", "答案": "No, they seldom quarrel."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My best friend",
+        "data": [
+          {"题号": 1, "问题": "The writer and Amy live in the same ___.", "选项": ["A. school", "B. neighbourhood", "C. city"], "答案": "B"},
+          {"题号": 2, "问题": "Amy listens to the writer ___ when he/she feels sad.", "选项": ["A. angrily", "B. carefully", "C. quietly"], "答案": "B"},
+          {"题号": 3, "问题": "When they quarrel, they ___.", "选项": ["A. stop talking forever", "B. forgive each other quickly", "C. ask teachers for help"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Present perfect tense",
+        "data": [
+          {"问题": "Fill in: I ___ (know) Amy for ten years.", "答案": "have known"},
+          {"问题": "Fill in: She ___ (be) my best friend since childhood.", "答案": "has been"},
+          {"问题": "Answer: Has he finished his homework yet?", "答案": "Yes, he has. / No, he hasn't."},
+          {"问题": "Fill in: They ___ (not visit) their grandma for a long time.", "答案": "haven't visited"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Present perfect tense",
+        "data": [
+          {"题号": 1, "问题": "The present perfect tense is formed with ___.", "选项": ["A. do/does + V-ing", "B. have/has + past participle", "C. will + verb"], "答案": "B"},
+          {"题号": 2, "问题": "Which sentence uses the present perfect tense?", "选项": ["A. I knew her last year.", "B. I am knowing her now.", "C. I have known her since childhood."], "答案": "C"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Friends online",
+        "data": [
+          {"问题": "Whom does the writer chat with online every weekend?", "答案": "His/Her cousin who lives in Beijing."},
+          {"问题": "What do they share online?", "答案": "Photos, music and school stories."},
+          {"问题": "What should you never give to strangers online?", "答案": "Your real address or phone number."},
+          {"问题": "Should you meet an online friend alone?", "答案": "No, you should never meet an online friend alone."},
+          {"问题": "What is still the warmest thing according to the writer?", "答案": "A smile in the classroom."}
+        ]
+      }
+    ],
+
+    "u2": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A trip to London",
+        "data": [
+          {"问题": "When did the family take the trip to London?", "答案": "Last summer."},
+          {"问题": "How long was the flight from Guangzhou to London?", "答案": "Eleven hours."},
+          {"问题": "What museum did they visit?", "答案": "The British Museum."},
+          {"问题": "What did they ride to enjoy the city view?", "答案": "The London Eye."},
+          {"问题": "What food did the writer like in London?", "答案": "Fish and chips."},
+          {"问题": "What was the weather like in London even in summer?", "答案": "It was cool."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A trip to London",
+        "data": [
+          {"题号": 1, "问题": "They stayed in London for ___.", "选项": ["A. three days", "B. a week", "C. a month"], "答案": "B"},
+          {"题号": 2, "问题": "In the British Museum, they saw many ___.", "选项": ["A. old Chinese treasures", "B. famous paintings", "C. dinosaur bones"], "答案": "A"},
+          {"题号": 3, "问题": "The writer wore a ___ every day in London.", "选项": ["A. T-shirt", "B. jacket", "C. hat"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Simple past vs present perfect",
+        "data": [
+          {"问题": "Fill in (simple past): I ___ (visit) London last summer.", "答案": "visited"},
+          {"问题": "Fill in (present perfect): I ___ (be) to London.", "答案": "have been"},
+          {"问题": "Rewrite: She went to Beijing in 2023. → She ___ to Beijing three times.", "答案": "has been"},
+          {"问题": "Answer: Have you ever tried fish and chips?", "答案": "Yes, I have. / No, I haven't."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Simple past vs present perfect",
+        "data": [
+          {"题号": 1, "问题": "Which sentence uses the simple past correctly?", "选项": ["A. I have gone to London last year.", "B. I went to London last year.", "C. I have went to London last year."], "答案": "B"},
+          {"题号": 2, "问题": "'I have just bought a ticket.' means ___.", "选项": ["A. I bought it long ago.", "B. I bought it recently.", "C. I will buy it soon."], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Before you travel",
+        "data": [
+          {"问题": "Why should you book tickets and hotels early?", "答案": "Because tickets are cheaper weeks before the trip."},
+          {"问题": "How long should your passport be valid before travelling?", "答案": "At least six months."},
+          {"问题": "What local words does the article suggest learning?", "答案": "Hello, thank you, and how much."},
+          {"问题": "What three things does the article suggest packing?", "答案": "A jacket, comfortable shoes and a power adapter."},
+          {"问题": "What is the best souvenir according to the passage?", "答案": "Your memory."}
+        ]
+      }
+    ],
+
+    "u3": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A dog called Lucky",
+        "data": [
+          {"问题": "When did the family find the dog?", "答案": "Three years ago."},
+          {"问题": "What was the dog like when they found him?", "答案": "Wet, cold and hungry."},
+          {"问题": "What name did they give the dog?", "答案": "Lucky."},
+          {"问题": "What can Lucky do?", "答案": "He can shake hands, sit and even open the door."},
+          {"问题": "How did Lucky save the writer's little brother?", "答案": "He ran after him and pushed him back from a fast car."},
+          {"问题": "What does the writer believe about animals?", "答案": "Animals have feelings and can be our true friends."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A dog called Lucky",
+        "data": [
+          {"题号": 1, "问题": "Lucky waits by the ___ every afternoon.", "选项": ["A. door", "B. window", "C. gate"], "答案": "B"},
+          {"题号": 2, "问题": "The writer's little brother ran to the street to ___.", "选项": ["A. catch a dog", "B. catch a ball", "C. find his mum"], "答案": "B"},
+          {"题号": 3, "问题": "The best word to describe Lucky is ___.", "选项": ["A. lazy", "B. clever and loyal", "C. shy"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Passive voice",
+        "data": [
+          {"问题": "Rewrite in passive: People protect pandas.", "答案": "Pandas are protected by people."},
+          {"问题": "Fill in: The little dog ___ (find) on the street.", "答案": "was found"},
+          {"问题": "Fill in: Many animals ___ (protect) by law.", "答案": "are protected"},
+          {"问题": "Rewrite: Hunters killed many animals. → Many animals ___ by hunters.", "答案": "were killed"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Passive voice",
+        "data": [
+          {"题号": 1, "问题": "The passive voice uses ___.", "选项": ["A. do/does + V", "B. have/has + past participle", "C. be + past participle"], "答案": "C"},
+          {"题号": 2, "问题": "Choose the passive sentence:", "选项": ["A. Pandas eat bamboo.", "B. Pandas are loved by people.", "C. People love pandas."], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Save the pandas",
+        "data": [
+          {"问题": "How much bamboo does a panda eat every day?", "答案": "About 12 kilograms."},
+          {"问题": "How many wild pandas were there in the 1980s?", "答案": "Only about 1,000."},
+          {"问题": "What caused many pandas to die?", "答案": "Their habitat was cut down and they died of hunger."},
+          {"问题": "What has the Chinese government done to help pandas?", "答案": "Built many panda reserves, planted trees and stopped hunting."},
+          {"问题": "How many wild pandas were there in 2021?", "答案": "Over 1,800."},
+          {"问题": "What does the panda's story show us?", "答案": "That together we can save the future of our animal friends."}
+        ]
+      }
+    ],
+
+    "u4": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Why trees matter",
+        "data": [
+          {"问题": "How long can some trees live?", "答案": "For thousands of years."},
+          {"问题": "What do trees give us?", "答案": "Oxygen and clean air."},
+          {"问题": "What do long roots do for the soil?", "答案": "They keep the soil safe."},
+          {"问题": "What happens if there are no trees?", "答案": "Strong rain can wash away the land and deserts grow bigger."},
+          {"问题": "What do many animals and birds do on trees?", "答案": "Monkeys jump between branches; birds build nests in the leaves."},
+          {"问题": "Why do humans cut down trees?", "答案": "We need wood for paper, chairs and houses."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Why trees matter",
+        "data": [
+          {"题号": 1, "问题": "Trees are the ___ living things on Earth.", "选项": ["A. smallest", "B. oldest and tallest", "C. youngest"], "答案": "B"},
+          {"题号": 2, "问题": "Without trees, ___ can grow bigger.", "选项": ["A. rivers", "B. deserts", "C. forests"], "答案": "B"},
+          {"题号": 3, "问题": "A forest without trees is like a city without ___.", "选项": ["A. people", "B. buildings", "C. parks"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Conditionals (If...)",
+        "data": [
+          {"问题": "Complete (Type 1): If we plant more trees, the air ___ (be) cleaner.", "答案": "will be"},
+          {"问题": "Complete (Type 2): If I ___ (be) a tree, I ___ (live) for a thousand years.", "答案": "were ... would live"},
+          {"问题": "Complete (Type 1): If you ___ (cut) down forests, deserts ___ (grow).", "答案": "cut ... will grow"},
+          {"问题": "Complete (Type 2): If there ___ (be) no trees, many animals ___ (die).", "答案": "were ... would die"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Conditionals (If...)",
+        "data": [
+          {"题号": 1, "问题": "In Type 1 conditionals, what follows 'if'?", "选项": ["A. will + verb", "B. present tense", "C. past tense"], "答案": "B"},
+          {"题号": 2, "问题": "In Type 2 with 'I', we use ___.", "选项": ["A. if I was", "B. if I were", "C. if I am"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · One tree, one life",
+        "data": [
+          {"问题": "When is Tree Planting Day in China?", "答案": "Every March 12th."},
+          {"问题": "How many trees did the school plant last spring?", "答案": "200 trees."},
+          {"问题": "How did students take care of the young trees?", "答案": "They gave them water every week and checked their leaves."},
+          {"问题": "Name two everyday ways to help trees.", "答案": "Use both sides of the paper; recycle old books and boxes; say no to paper napkins; tell family to reduce waste."},
+          {"问题": "What is the main message of this passage?", "答案": "Every small action counts; let's bring more green to our planet."}
+        ]
+      }
+    ],
+
+    "u5": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A day without water",
+        "data": [
+          {"问题": "What day was it when the water stopped?", "答案": "Sunday morning."},
+          {"问题": "Why was there no water?", "答案": "The water pipes were being repaired."},
+          {"问题": "How did the writer brush teeth without running water?", "答案": "Using a small bottle of water."},
+          {"问题": "Where did Mum buy lunch from?", "答案": "A restaurant."},
+          {"问题": "How much did the big bottle of water cost?", "答案": "5 yuan."},
+          {"问题": "When did the water come back?", "答案": "At 8 p.m."},
+          {"问题": "What did the writer finally understand?", "答案": "Every drop of water is precious."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A day without water",
+        "data": [
+          {"题号": 1, "问题": "The writer couldn't ___ without water.", "选项": ["A. watch TV", "B. wash his face or flush the toilet", "C. do homework"], "答案": "B"},
+          {"题号": 2, "问题": "Mum bought noodles because they ___.", "选项": ["A. wanted to eat out", "B. couldn't cook at home", "C. love noodles most"], "答案": "B"},
+          {"题号": 3, "问题": "The writer's feeling when water came back was ___.", "选项": ["A. angry", "B. very happy", "C. sad"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Should / must / mustn't",
+        "data": [
+          {"问题": "Fill in (advice): We ___ turn off the tap when brushing our teeth.", "答案": "should"},
+          {"问题": "Fill in (necessity): We ___ protect our rivers from pollution.", "答案": "must"},
+          {"问题": "Fill in (prohibition): You ___ throw rubbish into the river.", "答案": "mustn't"},
+          {"问题": "What's the difference between 'should' and 'must'?", "答案": "Should is advice; must is necessity/obligation."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Should / must / mustn't",
+        "data": [
+          {"题号": 1, "问题": "'Mustn't' means ___.", "选项": ["A. not necessary", "B. forbidden / not allowed", "C. a good idea"], "答案": "B"},
+          {"题号": 2, "问题": "Which sentence gives advice?", "选项": ["A. You must boil the water.", "B. You should drink more water.", "C. You mustn't waste water."], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Water around the world",
+        "data": [
+          {"问题": "Why is the Earth called the 'Blue Planet'?", "答案": "Because 71% of its surface is water."},
+          {"问题": "What percentage of all water is fresh?", "答案": "Only 3%."},
+          {"问题": "How far do some African children walk for water?", "答案": "5 kilometres every morning."},
+          {"问题": "Name two ways to save water at home.", "答案": "Take showers instead of baths; wash vegetables in a basin; use the washing machine only when full; fix leaking taps."},
+          {"问题": "What is the main message at the end?", "答案": "If everyone saves one drop a day, we can save millions of drops together."}
+        ]
+      }
+    ],
+
+    "u6": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A night without power",
+        "data": [
+          {"问题": "What caused the power to go out?", "答案": "A big storm."},
+          {"问题": "What were they doing when the lights went out?", "答案": "Having dinner."},
+          {"问题": "What did Dad do to bring light?", "答案": "He found some candles and lit them."},
+          {"问题": "What things stopped working without electricity?", "答案": "The TV, the fridge, the computer game, and the phone charger."},
+          {"问题": "What did Mum do during dinner by candlelight?", "答案": "She told old stories."},
+          {"问题": "What did the writer learn from that night?", "答案": "How much modern life needs electricity; family time is more important than screens."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A night without power",
+        "data": [
+          {"题号": 1, "问题": "The power came back at ___.", "选项": ["A. 8 p.m.", "B. midnight", "C. the next morning"], "答案": "B"},
+          {"题号": 2, "问题": "Dad sang songs from his ___.", "选项": ["A. childhood", "B. favourite TV show", "C. school textbook"], "答案": "A"},
+          {"题号": 3, "问题": "The writer thinks ___ is more important than screens.", "选项": ["A. homework", "B. games", "C. family time"], "答案": "C"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Past continuous tense",
+        "data": [
+          {"问题": "Fill in: I ___ (watch) TV when the power went out.", "答案": "was watching"},
+          {"问题": "Fill in: They ___ (have) dinner when the lights came back.", "答案": "were having"},
+          {"问题": "Fill in: While Dad ___ (light) candles, Mum ___ (tell) stories.", "答案": "was lighting ... was telling"},
+          {"问题": "Make a question: you / read / at 9 p.m.?", "答案": "Were you reading at 9 p.m.?"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Past continuous tense",
+        "data": [
+          {"题号": 1, "问题": "The past continuous is formed with ___.", "选项": ["A. did + V-ing", "B. was/were + V-ing", "C. have + V-ing"], "答案": "B"},
+          {"题号": 2, "问题": "Choose the correct sentence:", "选项": ["A. I was doing homework at 8 last night.", "B. I did homework at 8 last night.", "C. I was do homework."], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Clean energy for the future",
+        "data": [
+          {"问题": "Where did most electricity come from for many years?", "答案": "From burning coal."},
+          {"问题": "What is the problem with coal?", "答案": "It pollutes the air and warms our planet."},
+          {"问题": "Name the three types of clean energy mentioned.", "答案": "Solar power, wind power, and water power."},
+          {"问题": "Where is one of the biggest wind farms in the world?", "答案": "In Gansu."},
+          {"问题": "Name two ways students can save energy at home.", "答案": "Switch off lights when leaving a room; unplug chargers when phone is full; use LED bulbs."}
+        ]
+      }
+    ],
+
+    "u7": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My favourite poem",
+        "data": [
+          {"问题": "What is the writer's favourite poem?", "答案": "Quiet Night Thoughts (静夜思) by Li Bai."},
+          {"问题": "How many lines does this poem have?", "答案": "Four lines."},
+          {"问题": "What does the moonlight on the floor look like in the poem?", "答案": "Like frost."},
+          {"问题": "When does the writer remember this poem?", "答案": "When he/she is far from home at summer camp."},
+          {"问题": "Why does the moon make the writer feel better?", "答案": "Because it looks the same in every city, so the family is under the same moon."},
+          {"问题": "What does the writer say about poems?", "答案": "Poems are small, but they carry big dreams."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My favourite poem",
+        "data": [
+          {"题号": 1, "问题": "Li Bai was a great Chinese ___.", "选项": ["A. painter", "B. poet", "C. chef"], "答案": "B"},
+          {"题号": 2, "问题": "Quiet Night Thoughts touches every ___ heart.", "选项": ["A. Chinese", "B. young", "C. world"], "答案": "A"},
+          {"题号": 3, "问题": "The writer likes the poem because it is ___.", "选项": ["A. long and difficult", "B. simple but deep", "C. funny and silly"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Attributive clauses with that / which / who",
+        "data": [
+          {"问题": "Combine: The poet wrote this poem. He is Li Bai. (who)", "答案": "The poet who wrote this poem is Li Bai."},
+          {"问题": "Combine: The poem is beautiful. I like it most. (which)", "答案": "The poem which I like most is beautiful."},
+          {"问题": "Fill in: The girl ___ sits next to me loves poems.", "答案": "who/that"},
+          {"问题": "Fill in: This is the book ___ Mum gave me.", "答案": "that/which"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Attributive clauses with that / which / who",
+        "data": [
+          {"题号": 1, "问题": "'Who' is used to describe ___.", "选项": ["A. people", "B. things", "C. places"], "答案": "A"},
+          {"题号": 2, "问题": "Which can we omit? 'The poem (that) I read was good.'", "选项": ["A. poem", "B. that", "C. was"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Writing your first poem",
+        "data": [
+          {"问题": "What is Step 1 for writing a poem?", "答案": "Choose a feeling or memory."},
+          {"问题": "What should you do in Step 2?", "答案": "Close your eyes and think of images."},
+          {"问题": "How many lines does the student's example poem have?", "答案": "Four lines."},
+          {"问题": "What does the river do in the student's poem?", "答案": "It whispers softly at night."},
+          {"问题": "What does the writer suggest keeping?", "答案": "A small notebook and write one poem every week."}
+        ]
+      }
+    ],
+
+    "u8": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · From a small kitchen to a big stage",
+        "data": [
+          {"问题": "Who is Chef Liu?", "答案": "A famous cook in Guangzhou."},
+          {"问题": "What was cooking for him twenty years ago?", "答案": "Just his hobby."},
+          {"问题": "Who did he love watching cook when he was a boy?", "答案": "His grandmother."},
+          {"问题": "What happened when he first fried an egg?", "答案": "He burned it, but he kept trying."},
+          {"问题": "Where is his restaurant now?", "答案": "In a five-star hotel."},
+          {"问题": "What is Chef Liu's advice?", "答案": "Start from what you love; a hobby today can be your career tomorrow, but you need passion and practice."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · From a small kitchen to a big stage",
+        "data": [
+          {"题号": 1, "问题": "Chef Liu first tried cooking at the age of ___.", "选项": ["A. six", "B. eight", "C. ten"], "答案": "B"},
+          {"题号": 2, "问题": "After high school, he went to a ___.", "选项": ["A. university", "B. cooking school", "C. restaurant"], "答案": "B"},
+          {"题号": 3, "问题": "His restaurant opened ___ after cooking school.", "选项": ["A. one year", "B. five years", "C. ten years"], "答案": "C"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Gerunds and infinitives",
+        "data": [
+          {"问题": "Fill in (gerund): I enjoy ___ (read) poems.", "答案": "reading"},
+          {"问题": "Fill in (infinitive): He wants ___ (be) a chef.", "答案": "to be"},
+          {"问题": "Fill in (gerund): She finished ___ (do) her homework.", "答案": "doing"},
+          {"问题": "What's the difference? 'I stopped to eat' vs 'I stopped eating'.", "答案": "Stopped to eat = stopped in order to eat; stopped eating = gave up eating."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Gerunds and infinitives",
+        "data": [
+          {"题号": 1, "问题": "Which verb is followed by a gerund?", "选项": ["A. want", "B. enjoy", "C. hope"], "答案": "B"},
+          {"题号": 2, "问题": "'I plan ___ a poet.' Choose the correct form.", "选项": ["A. becoming", "B. to become", "C. become"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Find your own path",
+        "data": [
+          {"问题": "What is the first step to find your path?", "答案": "Discover — try many things."},
+          {"问题": "What should you do when something makes your heart beat faster?", "答案": "Focus and spend more time on it."},
+          {"问题": "How can you learn new skills?", "答案": "Read books, watch videos, and ask teachers."},
+          {"问题": "Why is sharing your work important?", "答案": "Feedback helps you grow."},
+          {"问题": "What is the most important thing if your dream changes?", "答案": "Stay curious and keep walking."}
+        ]
+      }
+    ]
+  }
+}

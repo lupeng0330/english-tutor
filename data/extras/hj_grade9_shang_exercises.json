@@ -1,0 +1,329 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A talk about Confucius",
+        "data": [
+          {"问题": "Who is the talk about?", "答案": "Confucius, one of the wisest men in Chinese history."},
+          {"问题": "When did Confucius live?", "答案": "Over 2,500 years ago."},
+          {"问题": "What was Confucius' most important teaching?", "答案": "'Do not do to others what you do not want done to yourself.'"},
+          {"问题": "How did Confucius' ideas spread?", "答案": "Through his students, who wrote down what he said and did."},
+          {"问题": "What can you infer about why Confucius' ideas are still studied today?", "答案": "Because his teachings about kindness, respect and learning are timeless and universal."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A talk about Confucius",
+        "data": [
+          {"题号": 1, "问题": "Confucius lived over ___ years ago.", "选项": ["A. 1,500", "B. 2,500", "C. 3,500"], "答案": "B"},
+          {"题号": 2, "问题": "His famous saying means: treat others as you want to be ___ .", "选项": ["A. ignored", "B. praised", "C. treated"], "答案": "C"},
+          {"题号": 3, "问题": "The author's purpose is to ___.", "选项": ["A. criticise Confucius", "B. introduce Confucius' wisdom and influence", "C. compare Confucius with other thinkers"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Defining relative clauses with who / which / that",
+        "data": [
+          {"问题": "Combine: Confucius is a teacher. He taught kindness. (who)", "答案": "Confucius is a teacher who taught kindness."},
+          {"问题": "Combine: The book is important. It contains his teachings. (which/that)", "答案": "The book which/that contains his teachings is important."},
+          {"问题": "Fill in: The students ___ wrote down his words became teachers.", "答案": "who/that"},
+          {"问题": "What does a defining relative clause do?", "答案": "It tells us which person or thing we are talking about."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Lessons from an old teacher",
+        "data": [
+          {"问题": "Who wrote down what Confucius said?", "答案": "His students."},
+          {"问题": "What is the first lesson mentioned?", "答案": "Keep learning — never think you know enough."},
+          {"问题": "What is the second lesson?", "答案": "Be honest — admit when you don't know something."},
+          {"问题": "What can we infer about Confucius as a teacher?", "答案": "He was humble, wise and believed learning is a lifelong journey."}
+        ]
+      }
+    ],
+
+    "u2": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Thomas Edison never gave up",
+        "data": [
+          {"问题": "What did Edison invent?", "答案": "A useful electric light."},
+          {"问题": "What did Edison say about genius?", "答案": "'Genius is one percent inspiration and ninety-nine percent perspiration.'"},
+          {"问题": "How many times did Edison fail before succeeding?", "答案": "Thousands of times."},
+          {"问题": "What is the author's purpose in telling Edison's story?", "答案": "To show that success comes from hard work and never giving up."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Thomas Edison never gave up",
+        "data": [
+          {"题号": 1, "问题": "Edison believed genius is mostly about ___.", "选项": ["A. talent", "B. hard work", "C. luck"], "答案": "B"},
+          {"题号": 2, "问题": "The main message is that ___.", "选项": ["A. inventions are easy", "B. failure should stop you", "C. persistence leads to success"], "答案": "C"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Relative clauses with whose / where / when",
+        "data": [
+          {"问题": "Complete: Edison, ___ inventions changed the world, never gave up.", "答案": "whose"},
+          {"问题": "Complete: The lab ___ Edison worked is now a museum.", "答案": "where"},
+          {"问题": "Complete: 1879 was the year ___ the light bulb was invented.", "答案": "when"},
+          {"问题": "When do we use 'whose' in a relative clause?", "答案": "To show possession (belongs to someone)."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A woman who changed science",
+        "data": [
+          {"问题": "Who is the passage about?", "答案": "Marie Curie."},
+          {"问题": "What difficulties did she face?", "答案": "Girls could not go to most universities in Poland."},
+          {"问题": "What did she discover?", "答案": "Two new elements — radium and polonium."},
+          {"问题": "What can you infer about Curie's character?", "答案": "She was determined, curious and hardworking against all odds."}
+        ]
+      }
+    ],
+
+    "u3": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A survey on our neighbourhood",
+        "data": [
+          {"问题": "What did the students do last week?", "答案": "A survey on their neighbourhood."},
+          {"问题": "What problems did they find?", "答案": "Too much rubbish, noise pollution, and not enough green space."},
+          {"问题": "What solution did they suggest for rubbish?", "答案": "More recycling bins and regular clean-up days."},
+          {"问题": "What can you infer about the students' attitude?", "答案": "They care about their community and want to make it better."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A survey on our neighbourhood",
+        "data": [
+          {"题号": 1, "问题": "The survey found ___ main problems.", "选项": ["A. two", "B. three", "C. four"], "答案": "B"},
+          {"题号": 2, "问题": "The writer's purpose is to ___.", "选项": ["A. complain about the neighbourhood", "B. report survey results and suggest solutions", "C. move to another city"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · too ... to ... and so ... that ...",
+        "data": [
+          {"问题": "Rewrite using 'too ... to': The rubbish is so much that we cannot clean it.", "答案": "The rubbish is too much to clean."},
+          {"问题": "Rewrite using 'so ... that': The noise was too loud to study.", "答案": "The noise was so loud that we could not study."},
+          {"问题": "Complete: The problem is ___ serious ___ ignore.", "答案": "too ... to"},
+          {"问题": "What's the difference between these two structures?", "答案": "'too ... to' means unable; 'so ... that' states the result."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · One city, three smaller worries",
+        "data": [
+          {"问题": "What are the three smaller worries?", "答案": "Street noise, food waste and old buildings."},
+          {"问题": "Why are these called 'smaller worries'?", "答案": "Because they are often ignored compared to big-city stories."},
+          {"问题": "What is the author's purpose?", "答案": "To draw attention to everyday problems that affect people's quality of life."}
+        ]
+      }
+    ],
+
+    "u4": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Small steps save the planet",
+        "data": [
+          {"问题": "What campaign did the school launch?", "答案": "A month-long campaign called 'Small Steps, Big Planet'."},
+          {"问题": "Why is climate change not a distant problem?", "答案": "Because small actions by everyone can make a real difference."},
+          {"问题": "What did the letter ask each class to do?", "答案": "Choose one green action and do it for a whole month."},
+          {"问题": "What is the author's tone in this letter?", "答案": "Encouraging and hopeful — urging action rather than despair."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Small steps save the planet",
+        "data": [
+          {"题号": 1, "问题": "The campaign is called '___'.", "选项": ["A. Green School", "B. Small Steps, Big Planet", "C. Save Energy"], "答案": "B"},
+          {"题号": 2, "问题": "The letter's main purpose is to ___.", "选项": ["A. scare students", "B. call students to take action", "C. report problems"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The emphatic pattern \"It is ... that / who ...\"",
+        "data": [
+          {"问题": "Emphasise: Small actions make a big difference.", "答案": "It is small actions that make a big difference."},
+          {"问题": "Emphasise: Students started the campaign.", "答案": "It was students who started the campaign."},
+          {"问题": "Emphasise: We need to protect the Earth.", "答案": "It is the Earth that we need to protect."},
+          {"问题": "When do we use this emphatic pattern?", "答案": "To focus attention on one specific part of a sentence."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Three cities, three green answers",
+        "data": [
+          {"问题": "What city uses bikes as the main transport?", "答案": "Copenhagen."},
+          {"问题": "What does Singapore do with its buildings?", "答案": "Covers them with plants (vertical gardens)."},
+          {"问题": "What does the third city do?", "答案": "Uses waste food to produce energy."},
+          {"问题": "What can we infer from these three stories?", "答案": "Innovative green solutions exist; every city can learn from others."}
+        ]
+      }
+    ],
+
+    "u5": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Two films worth watching",
+        "data": [
+          {"问题": "What is the first film about?", "答案": "A young girl who overcomes difficulties to become a dancer."},
+          {"问题": "What is the second film about?", "答案": "A documentary about climate change and its effects."},
+          {"问题": "Why does Jenny recommend both films?", "答案": "One is inspiring, the other is educational."},
+          {"问题": "What can you infer about Jenny's taste in films?", "答案": "She likes films that have a meaningful message."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Two films worth watching",
+        "data": [
+          {"题号": 1, "问题": "The first film is about a girl who becomes a ___.", "选项": ["A. singer", "B. dancer", "C. scientist"], "答案": "B"},
+          {"题号": 2, "问题": "The second film is a ___.", "选项": ["A. comedy", "B. documentary", "C. horror"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The passive voice (simple present and simple past)",
+        "data": [
+          {"问题": "Rewrite in passive: They make many films in Hollywood.", "答案": "Many films are made in Hollywood."},
+          {"问题": "Rewrite in passive: They made the first Chinese film in 1905.", "答案": "The first Chinese film was made in 1905."},
+          {"问题": "Fill in: Every year, film awards ___ (give) to the best actors.", "答案": "are given"},
+          {"问题": "Why do we use passive voice in film reviews?", "答案": "To focus on the film itself rather than who made it."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A hundred years of Chinese film",
+        "data": [
+          {"问题": "When was the first Chinese film made?", "答案": "In 1905."},
+          {"问题": "How long was the first Chinese film?", "答案": "Only about ten minutes."},
+          {"问题": "How has Chinese film changed over 100 years?", "答案": "From short silent films to modern blockbusters with special effects."},
+          {"问题": "What is the author's purpose in this passage?", "答案": "To show the proud history and great progress of Chinese cinema."}
+        ]
+      }
+    ],
+
+    "u6": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A concert to remember",
+        "data": [
+          {"问题": "How did Tina feel after the concert?", "答案": "She had never been to such an amazing concert in her whole life."},
+          {"问题": "What kind of concert was it?", "答案": "A live music concert with lights, dancing and thousands of fans."},
+          {"问题": "Why was the concert 'to remember'?", "答案": "The atmosphere, the music and sharing it with friends made it unforgettable."},
+          {"问题": "What can you infer about live music vs recorded music?", "答案": "Live music creates a shared emotional experience that recordings cannot match."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A concert to remember",
+        "data": [
+          {"题号": 1, "问题": "Tina described the concert as ___.", "选项": ["A. boring", "B. amazing", "C. disappointing"], "答案": "B"},
+          {"题号": 2, "问题": "The main feeling expressed is ___.", "选项": ["A. sadness", "B. excitement and joy", "C. anger"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The passive voice (present perfect)",
+        "data": [
+          {"问题": "Rewrite in present perfect passive: They have sold all the tickets.", "答案": "All the tickets have been sold."},
+          {"问题": "Rewrite: They have invited famous singers.", "答案": "Famous singers have been invited."},
+          {"问题": "Fill in: The concert ___ (hold) in this stadium for 10 years.", "答案": "has been held"},
+          {"问题": "When do we use present perfect passive?", "答案": "When we want to say something has been done up to now, focusing on the result."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · The show changes, the joy stays",
+        "data": [
+          {"问题": "How have ways of having fun changed in 100 years?", "答案": "From street shows and radio to TV, Internet and VR."},
+          {"问题": "What has stayed the same?", "答案": "The human need for joy and shared experiences."},
+          {"问题": "What is the main theme of this passage?", "答案": "Entertainment evolves with technology, but the joy it brings is timeless."}
+        ]
+      }
+    ],
+
+    "u7": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Journey to the deep sea",
+        "data": [
+          {"问题": "How deep is the scene in this passage?", "答案": "10,000 metres below the surface of the Pacific Ocean."},
+          {"问题": "What can be found in the deep sea?", "答案": "Strange creatures, total darkness and extreme pressure."},
+          {"问题": "Why is the deep sea still mostly unknown?", "答案": "Because the pressure is so high and the conditions are extreme."},
+          {"问题": "What is the author's purpose?", "答案": "To spark curiosity about the unexplored parts of our own planet."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Journey to the deep sea",
+        "data": [
+          {"题号": 1, "问题": "The deep sea described is at ___ metres.", "选项": ["A. 1,000", "B. 5,000", "C. 10,000"], "答案": "C"},
+          {"题号": 2, "问题": "The deep sea has extreme ___.", "选项": ["A. heat", "B. pressure", "C. light"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Reported speech (statements and questions)",
+        "data": [
+          {"问题": "Change to reported: 'The sea is mysterious,' the scientist said.", "答案": "The scientist said (that) the sea was mysterious."},
+          {"问题": "Change to reported: 'What lives down there?' she asked.", "答案": "She asked what lived down there."},
+          {"问题": "Change to reported: 'Have you seen the photos?' he asked.", "答案": "He asked if/whether I had seen the photos."},
+          {"问题": "What changes in reported questions?", "答案": "The word order becomes statement order, and the tense goes back."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Looking up, looking down",
+        "data": [
+          {"问题": "What do humans always want to explore?", "答案": "The sky above (space) and the deep sea below."},
+          {"问题": "What does 'small middle layer' refer to?", "答案": "The ground — the thin layer between sky and sea where humans live."},
+          {"问题": "What is the central idea of this passage?", "答案": "Human curiosity drives us to explore both the universe above and the ocean below."}
+        ]
+      }
+    ],
+
+    "u8": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · When AI meets us",
+        "data": [
+          {"问题": "What is Aido?", "答案": "A home robot that looks like a small white box with two kind eyes."},
+          {"问题": "What can Aido do on his first day?", "答案": "Greet Daisy, learn her name, remember her preferences."},
+          {"问题": "How does Daisy feel about Aido?", "答案": "Curious and a little amazed."},
+          {"问题": "What is the author exploring in this passage?", "答案": "The relationship between humans and AI — how technology is becoming part of daily life."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · When AI meets us",
+        "data": [
+          {"题号": 1, "问题": "Aido is described as a ___.", "选项": ["A. big machine", "B. small white box with kind eyes", "C. human friend"], "答案": "B"},
+          {"题号": 2, "问题": "The passage is mainly about ___.", "选项": ["A. how to build robots", "B. human-AI interaction", "C. computer programming"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Modal verbs + have + past participle",
+        "data": [
+          {"问题": "Fill in: He ___ (must / leave) early — his coat is gone.", "答案": "must have left"},
+          {"问题": "Fill in: She ___ (might / forget) the meeting.", "答案": "might have forgotten"},
+          {"问题": "Fill in: You ___ (should / tell) me earlier!", "答案": "should have told"},
+          {"问题": "What does 'must have + past participle' express?", "答案": "A logical conclusion about a past event."}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Five surprises science has given us",
+        "data": [
+          {"问题": "What would people 200 years ago think of today's technology?", "答案": "They would have thought it was magic."},
+          {"问题": "Name two of the five surprises.", "答案": "Smartphones, DNA editing, space stations, the Internet, artificial intelligence."},
+          {"问题": "What is the main message of this passage?", "答案": "Science continuously surprises us — what seems impossible today may be common tomorrow."}
+        ]
+      }
+    ]
+  }
+}

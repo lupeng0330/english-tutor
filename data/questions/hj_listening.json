@@ -510,5 +510,2725 @@
     "answer": 0,
     "explain": "It makes me happy.",
     "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "audioText": "W: How long have you known Amy? M: I have known her since childhood. We are best friends.",
+    "audioFile": "",
+    "q": "How long has the boy known Amy?",
+    "options": [
+      "Since last year",
+      "Since childhood",
+      "For five years"
+    ],
+    "answer": 1,
+    "explain": "I have known her since childhood.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "audioText": "W: I lost my wallet at the market yesterday. M: Don't worry. Here is some money for the bus.",
+    "audioFile": "",
+    "q": "What did the girl lose at the market?",
+    "options": [
+      "Her bag",
+      "Her wallet",
+      "Her phone"
+    ],
+    "answer": 1,
+    "explain": "I lost my wallet.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "audioText": "W: Do you think true friends should share secrets? M: Yes, and they should support each other in difficult times.",
+    "audioFile": "",
+    "q": "What should true friends do according to the boy?",
+    "options": [
+      "Only share happy times",
+      "Support each other in difficult times",
+      "Never keep secrets"
+    ],
+    "answer": 1,
+    "explain": "support each other in difficult times.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "audioText": "W: Is it safe to give your phone number to online friends? M: No, never give your real address or phone number to strangers.",
+    "audioFile": "",
+    "q": "What should you never give to strangers online?",
+    "options": [
+      "Your hobbies",
+      "Your real address or phone number",
+      "Your email"
+    ],
+    "answer": 1,
+    "explain": "never give your real address or phone number.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "audioText": "W: How was your trip to London? M: It was great! The flight took eleven hours from Guangzhou.",
+    "audioFile": "",
+    "q": "How long was the flight from Guangzhou to London?",
+    "options": [
+      "9 hours",
+      "11 hours",
+      "13 hours"
+    ],
+    "answer": 1,
+    "explain": "eleven hours.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "audioText": "W: What did you visit in London? M: We went to the British Museum and saw many old Chinese treasures.",
+    "audioFile": "",
+    "q": "What did they see at the British Museum?",
+    "options": [
+      "Famous paintings",
+      "Old Chinese treasures",
+      "Modern art"
+    ],
+    "answer": 1,
+    "explain": "old Chinese treasures.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "audioText": "W: Did you enjoy the food in London? M: Yes, I loved the fish and chips, but I missed Chinese rice.",
+    "audioFile": "",
+    "q": "What food did the boy miss?",
+    "options": [
+      "Fish and chips",
+      "Chinese rice",
+      "Noodles"
+    ],
+    "answer": 1,
+    "explain": "I missed Chinese rice.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "audioText": "W: What should I pack for a trip abroad? M: Bring a jacket, comfortable shoes and a power adapter. And check your passport!",
+    "audioFile": "",
+    "q": "What three things does the boy suggest packing?",
+    "options": [
+      "A jacket, shoes and adapter",
+      "Food, water and map",
+      "Books, camera and umbrella"
+    ],
+    "answer": 0,
+    "explain": "a jacket, comfortable shoes and a power adapter.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "audioText": "W: What happened to that little dog on the street? M: He was wet, cold and hungry. My dad carried him home.",
+    "audioFile": "",
+    "q": "What was the dog like when they found him?",
+    "options": [
+      "Big and strong",
+      "Wet, cold and hungry",
+      "Clean and happy"
+    ],
+    "answer": 1,
+    "explain": "wet, cold and hungry.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "audioText": "W: Can your dog Lucky open the door? M: Yes! He can shake hands, sit and even open the door.",
+    "audioFile": "",
+    "q": "What can Lucky do?",
+    "options": [
+      "Only sit",
+      "Shake hands, sit and open the door",
+      "Just bark"
+    ],
+    "answer": 1,
+    "explain": "shake hands, sit and even open the door.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "audioText": "W: Pandas are protected by law now. M: Yes, the government has built many panda reserves.",
+    "audioFile": "",
+    "q": "What has the government built for pandas?",
+    "options": [
+      "Zoos",
+      "Panda reserves",
+      "Hotels"
+    ],
+    "answer": 1,
+    "explain": "many panda reserves.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "audioText": "W: How many wild pandas are there now? M: Over 1,800. They are no longer endangered!",
+    "audioFile": "",
+    "q": "How many wild pandas were there in 2021?",
+    "options": [
+      "About 1,000",
+      "Over 1,800",
+      "About 2,500"
+    ],
+    "answer": 1,
+    "explain": "over 1,800.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "audioText": "W: Why are trees so important? M: They give us oxygen and clean the air. Some trees can live for thousands of years.",
+    "audioFile": "",
+    "q": "How long can some trees live?",
+    "options": [
+      "Hundreds of years",
+      "Thousands of years",
+      "Millions of years"
+    ],
+    "answer": 1,
+    "explain": "thousands of years.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "audioText": "W: What will happen if we keep cutting down trees? M: If we keep cutting, deserts will grow bigger and bigger.",
+    "audioFile": "",
+    "q": "What will happen if we keep cutting trees?",
+    "options": [
+      "More flowers will grow",
+      "Deserts will grow bigger",
+      "More rain will fall"
+    ],
+    "answer": 1,
+    "explain": "deserts will grow bigger.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "audioText": "W: When is Tree Planting Day in China? M: Every March 12th. Students plant young trees everywhere.",
+    "audioFile": "",
+    "q": "When is Tree Planting Day?",
+    "options": [
+      "March 8th",
+      "March 12th",
+      "March 20th"
+    ],
+    "answer": 1,
+    "explain": "Every March 12th.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "audioText": "W: How can we help trees every day? M: Use both sides of paper and recycle old books and boxes.",
+    "audioFile": "",
+    "q": "What is one way to help trees every day?",
+    "options": [
+      "Burn more paper",
+      "Use both sides of paper",
+      "Buy more books"
+    ],
+    "answer": 1,
+    "explain": "use both sides of the paper.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "audioText": "W: Why is there no water this morning? M: The water pipes are being repaired. No water until evening.",
+    "audioFile": "",
+    "q": "Why is there no water?",
+    "options": [
+      "It didn't rain",
+      "The pipes are being repaired",
+      "The tap is broken"
+    ],
+    "answer": 1,
+    "explain": "water pipes are being repaired.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "audioText": "W: How did you brush your teeth without running water? M: I used a small bottle of water.",
+    "audioFile": "",
+    "q": "How did the boy brush his teeth?",
+    "options": [
+      "He didn't brush",
+      "He used a small bottle of water",
+      "He went to a friend's house"
+    ],
+    "answer": 1,
+    "explain": "a small bottle of water.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "audioText": "W: How much did the bottle of water cost? M: It cost 5 yuan. Every drop of water is precious now.",
+    "audioFile": "",
+    "q": "How much did the bottle of water cost?",
+    "options": [
+      "3 yuan",
+      "5 yuan",
+      "10 yuan"
+    ],
+    "answer": 1,
+    "explain": "5 yuan.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "audioText": "W: How can we save water at home? M: Take showers instead of baths, and fix leaking taps quickly.",
+    "audioFile": "",
+    "q": "What is one way to save water at home?",
+    "options": [
+      "Take baths instead of showers",
+      "Take showers instead of baths",
+      "Leave taps running"
+    ],
+    "answer": 1,
+    "explain": "take showers instead of baths.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "audioText": "W: What happened last Friday evening? M: There was a big storm and all the lights went out.",
+    "audioFile": "",
+    "q": "What caused the power to go out?",
+    "options": [
+      "A big storm",
+      "A broken wire",
+      "A dead battery"
+    ],
+    "answer": 0,
+    "explain": "a big storm.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "audioText": "W: What did your dad do when the lights went out? M: He found some candles and lit them one by one.",
+    "audioFile": "",
+    "q": "What did Dad do to bring light?",
+    "options": [
+      "Turned on the phone",
+      "Lit candles",
+      "Opened the window"
+    ],
+    "answer": 1,
+    "explain": "lit them one by one.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "audioText": "W: When did the power come back? M: At midnight. I saw many messages from my friends then.",
+    "audioFile": "",
+    "q": "When did the power come back?",
+    "options": [
+      "At 8 p.m.",
+      "At midnight",
+      "The next morning"
+    ],
+    "answer": 1,
+    "explain": "at midnight.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "audioText": "W: Where does clean energy come from? M: Solar power, wind power and water power. They don't pollute the air.",
+    "audioFile": "",
+    "q": "Name one type of clean energy mentioned.",
+    "options": [
+      "Coal",
+      "Nuclear",
+      "Solar power"
+    ],
+    "answer": 2,
+    "explain": "solar power, wind power and water power.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "audioText": "W: Who wrote Quiet Night Thoughts? M: Li Bai, a great Chinese poet. The poem has only four lines.",
+    "audioFile": "",
+    "q": "How many lines does Quiet Night Thoughts have?",
+    "options": [
+      "Four lines",
+      "Six lines",
+      "Eight lines"
+    ],
+    "answer": 0,
+    "explain": "only four lines.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "audioText": "W: What does the moonlight look like in the poem? M: It looks like frost on the floor.",
+    "audioFile": "",
+    "q": "What does the moonlight look like in the poem?",
+    "options": [
+      "Like water",
+      "Like frost",
+      "Like silver"
+    ],
+    "answer": 1,
+    "explain": "looks like frost.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "audioText": "W: Can anyone write a poem? M: Yes! Choose a feeling, think of images, and write three or four short lines.",
+    "audioFile": "",
+    "q": "What is the first step to write a poem?",
+    "options": [
+      "Choose a feeling",
+      "Choose a pen",
+      "Choose a book"
+    ],
+    "answer": 0,
+    "explain": "choose a feeling or memory.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "audioText": "W: What does the river do in the student's poem? M: It whispers softly at night. The moon is round and stars are bright.",
+    "audioFile": "",
+    "q": "What does the river do in the poem?",
+    "options": [
+      "It runs fast",
+      "It whispers softly",
+      "It makes loud noise"
+    ],
+    "answer": 1,
+    "explain": "whispers softly at night.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "audioText": "W: Who is Chef Liu? M: He is a famous cook in Guangzhou. Cooking was just his hobby twenty years ago.",
+    "audioFile": "",
+    "q": "What was cooking for Chef Liu twenty years ago?",
+    "options": [
+      "His career",
+      "Just his hobby",
+      "His school subject"
+    ],
+    "answer": 1,
+    "explain": "just his hobby.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "audioText": "W: When did Chef Liu first try cooking? M: He fried his first egg at the age of eight. He burned it!",
+    "audioFile": "",
+    "q": "What happened when Chef Liu first fried an egg?",
+    "options": [
+      "It was perfect",
+      "He burned it",
+      "He didn't try"
+    ],
+    "answer": 1,
+    "explain": "he burned it.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "audioText": "W: Where is Chef Liu's restaurant now? M: It is in a five-star hotel, and he also teaches young cooks on TV.",
+    "audioFile": "",
+    "q": "Where is Chef Liu's restaurant now?",
+    "options": [
+      "In a small street",
+      "In a five-star hotel",
+      "At home"
+    ],
+    "answer": 1,
+    "explain": "in a five-star hotel.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "audioText": "W: What advice does Chef Liu give? M: Start from what you love. A hobby today can be your career tomorrow. But you need passion and practice.",
+    "audioFile": "",
+    "q": "What does Chef Liu say you need besides passion?",
+    "options": [
+      "Money",
+      "Practice",
+      "Luck"
+    ],
+    "answer": 1,
+    "explain": "passion and practice.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "audioText": "W: What did you learn from the encyclopaedia? M: I learned that the moon is 384,000 kilometres from the Earth, and there's no air on it.",
+    "audioFile": "",
+    "q": "How far is the moon from the Earth?",
+    "options": [
+      "38,400 km",
+      "384,000 km",
+      "3,840,000 km"
+    ],
+    "answer": 1,
+    "explain": "384,000 kilometres.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "audioText": "W: Can you find a topic quickly in an encyclopaedia? M: Yes, use the index at the end of the book.",
+    "audioFile": "",
+    "q": "How can you find a topic quickly in an encyclopaedia?",
+    "options": [
+      "Read every page",
+      "Use the index at the end",
+      "Ask the teacher"
+    ],
+    "answer": 1,
+    "explain": "use the index at the end.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "audioText": "W: Who wrote the oldest encyclopaedia? M: A Roman writer called Pliny, about 2,000 years ago. He wrote 37 volumes.",
+    "audioFile": "",
+    "q": "How many volumes did Pliny write?",
+    "options": [
+      "20 volumes",
+      "28 volumes",
+      "37 volumes"
+    ],
+    "answer": 2,
+    "explain": "37 volumes.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "audioText": "W: Is Wikipedia reliable? M: Not everything on the Internet is true. Always check more than one website before believing.",
+    "audioFile": "",
+    "q": "What should you do before believing online information?",
+    "options": [
+      "Trust everything",
+      "Check more than one website",
+      "Never use the Internet"
+    ],
+    "answer": 1,
+    "explain": "check more than one website.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "audioText": "W: How many basic digits do we have? M: Ten — from zero to nine. With these we can write any number.",
+    "audioFile": "",
+    "q": "How many basic digits are there?",
+    "options": [
+      "Eight",
+      "Nine",
+      "Ten"
+    ],
+    "answer": 2,
+    "explain": "ten, from zero to nine.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "audioText": "W: Where did the ten-digit system come from? M: It came from ancient India, not from Greece or Rome.",
+    "audioFile": "",
+    "q": "Where did the ten-digit number system come from?",
+    "options": [
+      "Greece",
+      "Rome",
+      "India"
+    ],
+    "answer": 2,
+    "explain": "ancient India.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "audioText": "W: Can you say 1,500,000 in English? M: Sure. One million five hundred thousand.",
+    "audioFile": "",
+    "q": "How do you say 1,500,000 in English?",
+    "options": [
+      "One million five hundred",
+      "One million five hundred thousand",
+      "One thousand five hundred"
+    ],
+    "answer": 1,
+    "explain": "one million five hundred thousand.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "audioText": "W: Who invented zero? M: Ancient Indian mathematicians. The Greeks had no zero at all.",
+    "audioFile": "",
+    "q": "Who invented zero?",
+    "options": [
+      "The Greeks",
+      "The Romans",
+      "Ancient Indian mathematicians"
+    ],
+    "answer": 2,
+    "explain": "ancient Indian mathematicians.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "audioText": "W: When did you get your first computer? M: Last year, for my thirteenth birthday. It was a small laptop, only 1.5 kilograms.",
+    "audioFile": "",
+    "q": "How old was the boy when he got the computer?",
+    "options": [
+      "12",
+      "13",
+      "14"
+    ],
+    "answer": 1,
+    "explain": "for my thirteenth birthday.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "audioText": "W: How do you give instructions for using a computer? M: Use the imperative: Turn on the computer. Open the program. Save the file.",
+    "audioFile": "",
+    "q": "What form is used to give instructions?",
+    "options": [
+      "Past tense",
+      "Imperative form",
+      "Future tense"
+    ],
+    "answer": 1,
+    "explain": "imperative — verb first.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "audioText": "W: What is Rule 1 for Internet safety? M: Keep your password secret. Never tell anyone, even your best friend.",
+    "audioFile": "",
+    "q": "Should you tell your best friend your password?",
+    "options": [
+      "Yes, always",
+      "No, never tell anyone",
+      "Only if they ask"
+    ],
+    "answer": 1,
+    "explain": "never tell anyone.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "audioText": "W: How often should you change your password? M: Every few months, to stay safe on the Internet.",
+    "audioFile": "",
+    "q": "How often should you change your password?",
+    "options": [
+      "Once a year",
+      "Every few months",
+      "Never"
+    ],
+    "answer": 1,
+    "explain": "every few months.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "audioText": "W: What are the Four Great Inventions of ancient China? M: Paper, the compass, printing and gunpowder. Each changed the world.",
+    "audioFile": "",
+    "q": "How many great inventions are mentioned?",
+    "options": [
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "answer": 1,
+    "explain": "four.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "audioText": "W: Who invented the light bulb? M: Edison invented it. So we say 'The light bulb was invented by Edison.'",
+    "audioFile": "",
+    "q": "How do we express this in passive voice?",
+    "options": [
+      "Edison invents the light bulb",
+      "The light bulb was invented by Edison",
+      "The light bulb invent by Edison"
+    ],
+    "answer": 1,
+    "explain": "was invented by Edison.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "audioText": "W: Who was Louis Braille? M: A boy who lost his sight at three. He invented a writing system using small dots.",
+    "audioFile": "",
+    "q": "At what age did Braille lose his sight?",
+    "options": [
+      "At age one",
+      "At age three",
+      "At age five"
+    ],
+    "answer": 1,
+    "explain": "at the age of three.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "audioText": "W: What can we learn from young inventors? M: Even young people and those with difficulties can invent great things that change the world.",
+    "audioFile": "",
+    "q": "What does Braille's story teach us?",
+    "options": [
+      "Only adults can invent",
+      "Even young people with difficulties can invent great things",
+      "Inventions are always expensive"
+    ],
+    "answer": 1,
+    "explain": "even young people with difficulties can invent.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "audioText": "W: How can I remember new words better? M: Repeat them after one hour, one day, and one week. It really helps.",
+    "audioFile": "",
+    "q": "When should you review new words?",
+    "options": [
+      "Only once",
+      "After one hour, one day and one week",
+      "After one month"
+    ],
+    "answer": 1,
+    "explain": "one hour, one day and one week.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "audioText": "W: What is the best way to understand something deeply? M: Teach it to someone else. When you explain, you understand it better.",
+    "audioFile": "",
+    "q": "What helps you understand something better?",
+    "options": [
+      "Reading it once",
+      "Teaching someone else",
+      "Ignoring it"
+    ],
+    "answer": 1,
+    "explain": "teach someone else.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "audioText": "W: How strong is your memory? M: The memory is like a muscle — the more you train it, the stronger it grows.",
+    "audioFile": "",
+    "q": "What does the speaker compare memory to?",
+    "options": [
+      "A computer",
+      "A muscle",
+      "A library"
+    ],
+    "answer": 1,
+    "explain": "like a muscle.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "audioText": "W: How many numbers can a memory champion remember? M: Alex Mullen can remember 3,000 random numbers in one hour. Amazing!",
+    "audioFile": "",
+    "q": "How many numbers can Alex Mullen remember in one hour?",
+    "options": [
+      "300",
+      "1,000",
+      "3,000"
+    ],
+    "answer": 2,
+    "explain": "3,000 random numbers.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "audioText": "W: Who is the Monkey King? M: Sun Wukong, a hero born from a stone. He learned 72 changes and used a magic iron bar.",
+    "audioFile": "",
+    "q": "How many changes did Sun Wukong learn?",
+    "options": [
+      "36",
+      "72",
+      "108"
+    ],
+    "answer": 1,
+    "explain": "72 changes.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "audioText": "W: When did the movie start? M: By the time we got to the cinema, the movie had already started.",
+    "audioFile": "",
+    "q": "Did they arrive before or after the movie started?",
+    "options": [
+      "Before it started",
+      "After it had started",
+      "At the same time"
+    ],
+    "answer": 1,
+    "explain": "had already started.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "audioText": "W: Who was the king of the Greek gods? M: Zeus. He lived on Mount Olympus and could throw lightning.",
+    "audioFile": "",
+    "q": "What could Zeus throw?",
+    "options": [
+      "Fire",
+      "Lightning",
+      "Water"
+    ],
+    "answer": 1,
+    "explain": "lightning like a spear.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "audioText": "W: Both Chinese and Greek stories are full of gods and heroes. M: Yes, ancient people used stories to explain the world around them.",
+    "audioFile": "",
+    "q": "Why did ancient people tell stories about gods and heroes?",
+    "options": [
+      "To entertain children",
+      "To explain the world around them",
+      "To make money"
+    ],
+    "answer": 1,
+    "explain": "to explain the world around them.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "audioText": "W: How is the winter in Harbin? M: It lasts more than five months and the temperature often falls below zero.",
+    "audioFile": "",
+    "q": "How long does winter last in Harbin?",
+    "options": [
+      "Three months",
+      "More than five months",
+      "Two months"
+    ],
+    "answer": 1,
+    "explain": "more than five months.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "audioText": "W: Is Guangzhou cold in winter? M: No, winter is warm and mild. It is seldom snowy there.",
+    "audioFile": "",
+    "q": "What is winter like in Guangzhou?",
+    "options": [
+      "Very cold",
+      "Warm and mild",
+      "Long and snowy"
+    ],
+    "answer": 1,
+    "explain": "warm and mild.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "audioText": "W: How much warmer is the Earth than 100 years ago? M: About one degree. It sounds small but makes a big difference.",
+    "audioFile": "",
+    "q": "How much warmer is the Earth than 100 years ago?",
+    "options": [
+      "Half a degree",
+      "About one degree",
+      "Three degrees"
+    ],
+    "answer": 1,
+    "explain": "about one degree.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "audioText": "W: What is happening to glaciers? M: They are melting because of global warming. Sea levels are rising too.",
+    "audioFile": "",
+    "q": "What is happening to sea levels?",
+    "options": [
+      "They are falling",
+      "They are rising",
+      "They stay the same"
+    ],
+    "answer": 1,
+    "explain": "sea levels are rising.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "audioText": "W: How long did English Week last? M: Five wonderful days, full of English everywhere in our school.",
+    "audioFile": "",
+    "q": "How many days did English Week last?",
+    "options": [
+      "Three days",
+      "Five days",
+      "Seven days"
+    ],
+    "answer": 1,
+    "explain": "five wonderful days.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "audioText": "W: 'I am nervous,' she said. M: In reported speech, we say: She said she was nervous.",
+    "audioFile": "",
+    "q": "How do you report 'I am nervous' in the past?",
+    "options": [
+      "She says she is nervous",
+      "She said she was nervous",
+      "She said she is nervous"
+    ],
+    "answer": 1,
+    "explain": "she was nervous — tense goes back.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "audioText": "W: What is the first tip for a good speech? M: Know your topic. Read a lot about it. The more you know, the more confident you are.",
+    "audioFile": "",
+    "q": "What is the first tip for a good speech?",
+    "options": [
+      "Practise loudly",
+      "Know your topic",
+      "Wear nice clothes"
+    ],
+    "answer": 1,
+    "explain": "know your topic.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "audioText": "W: How should you start a speech? M: Start with a story or a question. It catches the audience's attention right away.",
+    "audioFile": "",
+    "q": "How should you start a speech to catch attention?",
+    "options": [
+      "With a joke",
+      "With a story or a question",
+      "With silence"
+    ],
+    "answer": 1,
+    "explain": "with a story or a question.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "audioText": "W: How often do you visit the Sunshine Home? M: Every second Saturday. We help the elderly with cleaning and reading.",
+    "audioFile": "",
+    "q": "How often do the volunteers visit?",
+    "options": [
+      "Every Saturday",
+      "Every second Saturday",
+      "Once a month"
+    ],
+    "answer": 1,
+    "explain": "every second Saturday.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "audioText": "W: Why do you volunteer? M: I come to help the elderly and to bring them joy. Helping others makes me happy too.",
+    "audioFile": "",
+    "q": "Why does the speaker volunteer?",
+    "options": [
+      "To get money",
+      "To help the elderly and bring joy",
+      "To skip school"
+    ],
+    "answer": 1,
+    "explain": "to help the elderly.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "audioText": "W: Who is Madam Li? M: She's 92 and still teaches children. She learned by herself when she was young because there was no school.",
+    "audioFile": "",
+    "q": "How old is Madam Li?",
+    "options": [
+      "82",
+      "92",
+      "72"
+    ],
+    "answer": 1,
+    "explain": "92 years old.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "audioText": "W: What can we learn from volunteers? M: Giving to others brings meaning to life, no matter your age or background.",
+    "audioFile": "",
+    "q": "What does volunteering bring according to the speaker?",
+    "options": [
+      "Money",
+      "Fame",
+      "Meaning to life"
+    ],
+    "answer": 2,
+    "explain": "meaning to life.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "audioText": "W: How do people greet each other without words? M: We smile, nod, or shake hands. Body language speaks louder than words sometimes.",
+    "audioFile": "",
+    "q": "How do people communicate without words?",
+    "options": [
+      "By shouting",
+      "By writing",
+      "Through body language"
+    ],
+    "answer": 2,
+    "explain": "body language.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "audioText": "W: Does thumbs up mean the same everywhere? M: No, in China it means 'good', but in some countries it can be rude.",
+    "audioFile": "",
+    "q": "Does thumbs up mean the same in all countries?",
+    "options": [
+      "Yes, always",
+      "No, it can differ",
+      "It has no meaning"
+    ],
+    "answer": 1,
+    "explain": "can mean different things.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "audioText": "W: Why did you smile at the stranger? M: I smiled because I wanted to be friendly. A smile can break any wall.",
+    "audioFile": "",
+    "q": "Why did the speaker smile?",
+    "options": [
+      "Because he was nervous",
+      "Because he wanted to be friendly",
+      "Because he was told to"
+    ],
+    "answer": 1,
+    "explain": "because I wanted to be friendly.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "audioText": "W: What linkers can join two ideas? M: Use 'because' for reasons, 'so' for results, and 'but' for contrast.",
+    "audioFile": "",
+    "q": "Which linker shows result?",
+    "options": [
+      "because",
+      "so",
+      "but"
+    ],
+    "answer": 1,
+    "explain": "so for results.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "audioText": "W: How old was your grandma when she learned paper-cutting? M: She was eight. Her own grandmother taught her the skill.",
+    "audioFile": "",
+    "q": "At what age did Grandma learn paper-cutting?",
+    "options": [
+      "Six",
+      "Eight",
+      "Ten"
+    ],
+    "answer": 1,
+    "explain": "at eight years old.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "audioText": "W: Do you still cut paper every day? M: I used to, but now I only do it on weekends. I'm used to spending more time with family.",
+    "audioFile": "",
+    "q": "Does the speaker still cut paper every day?",
+    "options": [
+      "Yes, every day",
+      "No, only on weekends now",
+      "Never anymore"
+    ],
+    "answer": 1,
+    "explain": "only on weekends now.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "audioText": "W: Why should we save traditional skills? M: They carry our history and culture. If we don't pass them on, they will disappear.",
+    "audioFile": "",
+    "q": "What will happen if we don't save traditional skills?",
+    "options": [
+      "Nothing",
+      "They will become more popular",
+      "They will disappear"
+    ],
+    "answer": 2,
+    "explain": "they will disappear.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "audioText": "W: What traditional skills do you know? M: Suzhou embroidery, Jingdezhen porcelain, Weifang kites and Hangzhou tea — all famous in China.",
+    "audioFile": "",
+    "q": "Which city is famous for porcelain?",
+    "options": [
+      "Suzhou",
+      "Jingdezhen",
+      "Weifang"
+    ],
+    "answer": 1,
+    "explain": "Jingdezhen porcelain.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "audioText": "W: What can your robot do? M: Buddy can sing, tell jokes, answer questions and even dance. He is like a real friend.",
+    "audioFile": "",
+    "q": "What can Buddy the robot do?",
+    "options": [
+      "Only sing",
+      "Sing, joke, answer and dance",
+      "Only clean"
+    ],
+    "answer": 1,
+    "explain": "sing, tell jokes, answer, dance.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "audioText": "W: What will happen if I press this button? M: If you press the button, the robot will start singing your favourite song.",
+    "audioFile": "",
+    "q": "What will happen if you press the button?",
+    "options": [
+      "The robot will stop",
+      "The robot will sing",
+      "The robot will sleep"
+    ],
+    "answer": 1,
+    "explain": "the robot will sing.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "audioText": "W: Where do robots work nowadays? M: In factories they build cars, in hospitals they help with surgery, and at home they clean floors.",
+    "audioFile": "",
+    "q": "Where do robots help with surgery?",
+    "options": [
+      "In factories",
+      "In hospitals",
+      "At home"
+    ],
+    "answer": 1,
+    "explain": "in hospitals for surgery.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "audioText": "W: Will robots take all our jobs? M: Not all. Robots can do repetitive work, but humans are still needed for creative and caring jobs.",
+    "audioFile": "",
+    "q": "What jobs still need humans according to the speaker?",
+    "options": [
+      "Repetitive work",
+      "Creative and caring jobs",
+      "All factory jobs"
+    ],
+    "answer": 1,
+    "explain": "creative and caring jobs.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "audioText": "W: Where is Sanjiangyuan? M: In Qinghai province. It is the source of three great rivers — the Yangtze, Yellow and Lancang.",
+    "audioFile": "",
+    "q": "How many great rivers start from Sanjiangyuan?",
+    "options": [
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": 1,
+    "explain": "three great rivers.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "audioText": "W: How long has the reserve been there? M: It has been protected since 2005 — that's for over twenty years now.",
+    "audioFile": "",
+    "q": "Since when has the reserve been protected?",
+    "options": [
+      "1995",
+      "2005",
+      "2015"
+    ],
+    "answer": 1,
+    "explain": "since 2005.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "audioText": "W: What endangered animals live in Sanjiangyuan? M: Snow leopards and Tibetan antelopes. They are still rare but their numbers are growing.",
+    "audioFile": "",
+    "q": "Which animals are mentioned as endangered?",
+    "options": [
+      "Pandas and tigers",
+      "Snow leopards and Tibetan antelopes",
+      "Elephants and lions"
+    ],
+    "answer": 1,
+    "explain": "snow leopards and Tibetan antelopes.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "audioText": "W: Can children help save wildlife? M: Yes! Learn about endangered animals, share the knowledge, and don't buy wild animal products.",
+    "audioFile": "",
+    "q": "What is one way children can help wildlife?",
+    "options": [
+      "Hunt animals",
+      "Learn and share knowledge",
+      "Ignore the problem"
+    ],
+    "answer": 1,
+    "explain": "learn about endangered animals.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "audioText": "W: What did your grandfather teach you about gardening? M: Three secrets — plant at the right depth, give enough sunlight, and be patient.",
+    "audioFile": "",
+    "q": "How many gardening secrets did the grandfather teach?",
+    "options": [
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": 1,
+    "explain": "three secrets.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "audioText": "W: Did you plant those flowers yourself? M: Yes, I planted them myself. Gardening is my favourite hobby now.",
+    "audioFile": "",
+    "q": "Who planted the flowers?",
+    "options": [
+      "His mother",
+      "He planted them himself",
+      "A gardener"
+    ],
+    "answer": 1,
+    "explain": "I planted them myself.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "audioText": "W: Can plants really cure illnesses? M: Yes, for thousands of years people have used plants as medicine. Ginger helps colds, mint helps the stomach.",
+    "audioFile": "",
+    "q": "What plant helps with colds?",
+    "options": [
+      "Mint",
+      "Ginger",
+      "Rose"
+    ],
+    "answer": 1,
+    "explain": "ginger for colds.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "audioText": "W: Who was Li Shizhen? M: A great ancient Chinese doctor. He travelled across China to study plants and wrote a famous medical book.",
+    "audioFile": "",
+    "q": "What did Li Shizhen do?",
+    "options": [
+      "He was a farmer",
+      "He studied plants and wrote a medical book",
+      "He built gardens"
+    ],
+    "answer": 1,
+    "explain": "studied plants and wrote a medical book.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "audioText": "W: When did humans first land on the moon? M: In 1969. Neil Armstrong was the first person to walk on the moon.",
+    "audioFile": "",
+    "q": "When did humans first land on the moon?",
+    "options": [
+      "1959",
+      "1969",
+      "1979"
+    ],
+    "answer": 1,
+    "explain": "in 1969.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "audioText": "W: Is there water on the moon? M: No, there is no air, no water and no sound. It is completely silent.",
+    "audioFile": "",
+    "q": "What does the moon have none of?",
+    "options": [
+      "Rocks",
+      "Dust",
+      "Air, water and sound"
+    ],
+    "answer": 2,
+    "explain": "no air, no water and no sound.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "audioText": "W: Will people live on the moon one day? M: It might be possible. Scientists are drawing plans for moon bases underground.",
+    "audioFile": "",
+    "q": "Where might the moon base be built?",
+    "options": [
+      "On the surface",
+      "Underground",
+      "In the sky"
+    ],
+    "answer": 1,
+    "explain": "underground.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "audioText": "W: Why build the moon base underground? M: To protect from radiation and extreme temperatures. The moon's surface is very dangerous.",
+    "audioFile": "",
+    "q": "Why build the moon base underground?",
+    "options": [
+      "For a better view",
+      "To protect from radiation",
+      "Because it's cheaper"
+    ],
+    "answer": 1,
+    "explain": "to protect from radiation.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "audioText": "W: What did your school do for Green Month? M: Each class had a green idea. Our class chose Zero Plastic Lunch.",
+    "audioFile": "",
+    "q": "What idea did the speaker's class choose?",
+    "options": [
+      "Tree planting",
+      "Zero Plastic Lunch",
+      "Saving electricity"
+    ],
+    "answer": 1,
+    "explain": "zero plastic lunch.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "audioText": "W: I always forget my reusable bag. M: You'd better bring one, or you'll have to pay for a plastic bag at the shop.",
+    "audioFile": "",
+    "q": "What will happen if you don't bring a reusable bag?",
+    "options": [
+      "You get a free one",
+      "You'll have to pay",
+      "Nothing happens"
+    ],
+    "answer": 1,
+    "explain": "you'll pay for a plastic bag.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "audioText": "W: Which is stronger — 'should' or 'had better'? M: 'Had better' is stronger. It suggests a warning or negative result if you don't do it.",
+    "audioFile": "",
+    "q": "Which suggestion is stronger?",
+    "options": [
+      "should",
+      "ought to",
+      "had better"
+    ],
+    "answer": 2,
+    "explain": "had better is stronger.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "audioText": "W: Can small steps really change the world? M: Yes! The biggest journey starts with a single step. Use a reusable bottle, walk more, recycle.",
+    "audioFile": "",
+    "q": "What is the first small step suggested?",
+    "options": [
+      "Buy a car",
+      "Use a reusable water bottle",
+      "Throw away bottles"
+    ],
+    "answer": 1,
+    "explain": "use a reusable water bottle.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "audioText": "W: Who was Confucius? M: He was one of the wisest men in Chinese history, who taught kindness and respect over 2,500 years ago.",
+    "audioFile": "",
+    "q": "When did Confucius live?",
+    "options": [
+      "1,500 years ago",
+      "Over 2,500 years ago",
+      "500 years ago"
+    ],
+    "answer": 1,
+    "explain": "over 2,500 years ago.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "audioText": "W: What is Confucius' most famous teaching? M: 'Do not do to others what you do not want done to yourself.'",
+    "audioFile": "",
+    "q": "What is Confucius' golden rule?",
+    "options": [
+      "Work harder",
+      "Treat others as you want to be treated",
+      "Learn from books"
+    ],
+    "answer": 1,
+    "explain": "do not do to others what you don't want done to yourself.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "audioText": "W: The students who wrote down Confucius' words became great teachers. M: Yes, they spread his wisdom across China.",
+    "audioFile": "",
+    "q": "Who spread Confucius' wisdom?",
+    "options": [
+      "Kings",
+      "His students",
+      "Foreigners"
+    ],
+    "answer": 1,
+    "explain": "his students.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "audioText": "W: Confucius never wrote a long book. What we know comes from his students' notes. M: That shows he was a great teacher, not just a writer.",
+    "audioFile": "",
+    "q": "How do we know about Confucius' ideas?",
+    "options": [
+      "From his own books",
+      "From his students' notes",
+      "From TV programmes"
+    ],
+    "answer": 1,
+    "explain": "his students wrote down what he said.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "audioText": "W: What did Edison say about genius? M: 'Genius is one percent inspiration and ninety-nine percent perspiration.'",
+    "audioFile": "",
+    "q": "What percentage did Edison say was hard work?",
+    "options": [
+      "1%",
+      "50%",
+      "99%"
+    ],
+    "answer": 2,
+    "explain": "99% perspiration.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "audioText": "W: How many times did Edison fail? M: Thousands of times, but he never gave up. Each failure taught him something new.",
+    "audioFile": "",
+    "q": "What did Edison do when he failed?",
+    "options": [
+      "He gave up",
+      "He kept trying",
+      "He got angry"
+    ],
+    "answer": 1,
+    "explain": "never gave up.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "audioText": "W: Who was Marie Curie? M: A woman whose curiosity was stronger than any rule. She discovered two new elements.",
+    "audioFile": "",
+    "q": "How many elements did Curie discover?",
+    "options": [
+      "One",
+      "Two",
+      "Three"
+    ],
+    "answer": 1,
+    "explain": "two new elements — radium and polonium.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "audioText": "W: Is the lab where Edison worked still there? M: Yes, it has been turned into a museum. You can visit the place where history was made.",
+    "audioFile": "",
+    "q": "What happened to Edison's lab?",
+    "options": [
+      "It was destroyed",
+      "It became a museum",
+      "It's still in use"
+    ],
+    "answer": 1,
+    "explain": "turned into a museum.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "audioText": "W: What did your survey find? M: Three problems — too much rubbish, noise pollution, and not enough green space.",
+    "audioFile": "",
+    "q": "How many problems did the survey find?",
+    "options": [
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": 1,
+    "explain": "three problems.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "audioText": "W: The noise was so loud that we couldn't study. M: Yes, it was too loud to concentrate on anything.",
+    "audioFile": "",
+    "q": "Why couldn't the students study?",
+    "options": [
+      "Too much homework",
+      "The noise was too loud",
+      "No electricity"
+    ],
+    "answer": 1,
+    "explain": "so loud that we couldn't study.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "audioText": "W: What are the smaller worries in big cities? M: Street noise, food waste and old buildings — problems people often ignore.",
+    "audioFile": "",
+    "q": "What is one 'smaller worry' in big cities?",
+    "options": [
+      "Traffic jams",
+      "Food waste",
+      "Tall buildings"
+    ],
+    "answer": 1,
+    "explain": "food waste.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "audioText": "W: The problem is too serious to ignore any longer. M: Yes, it's so serious that we must act now before it's too late.",
+    "audioFile": "",
+    "q": "What must they do about the problem?",
+    "options": [
+      "Ignore it",
+      "Act now",
+      "Wait for help"
+    ],
+    "answer": 1,
+    "explain": "act now.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "audioText": "W: What is the school campaign about? M: 'Small Steps, Big Planet.' Each class must choose one green action for a whole month.",
+    "audioFile": "",
+    "q": "How long must each class do the green action?",
+    "options": [
+      "One week",
+      "One month",
+      "One year"
+    ],
+    "answer": 1,
+    "explain": "for a whole month.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "audioText": "W: It is small actions that make a big difference. M: Exactly. It was students who started this campaign.",
+    "audioFile": "",
+    "q": "Who started the campaign?",
+    "options": [
+      "Teachers",
+      "Students",
+      "Parents"
+    ],
+    "answer": 1,
+    "explain": "it was students who started.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "audioText": "W: What can cities do to be greener? M: Copenhagen uses bikes, Singapore has vertical gardens, and some cities turn waste into energy.",
+    "audioFile": "",
+    "q": "What does Singapore do to be green?",
+    "options": [
+      "More cars",
+      "Vertical gardens on buildings",
+      "More factories"
+    ],
+    "answer": 1,
+    "explain": "covers buildings with plants.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "audioText": "W: Can one city solve climate change alone? M: No, but every city's experiment teaches the world something new.",
+    "audioFile": "",
+    "q": "What can one city contribute according to the speaker?",
+    "options": [
+      "Nothing",
+      "New ideas for the world",
+      "Money"
+    ],
+    "answer": 1,
+    "explain": "teaches the world something new.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "audioText": "W: What films did you watch? M: One about a dancer and a documentary about climate change. Both were worth watching.",
+    "audioFile": "",
+    "q": "What was the second film about?",
+    "options": [
+      "Dancing",
+      "Climate change",
+      "History"
+    ],
+    "answer": 1,
+    "explain": "documentary about climate change.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "audioText": "W: Where are most films made? M: Many films are made in Hollywood, but great films are also made in China, India and Europe.",
+    "audioFile": "",
+    "q": "Where are 'many films made' according to the speaker?",
+    "options": [
+      "Only Hollywood",
+      "Hollywood, China, India and Europe",
+      "Only China"
+    ],
+    "answer": 1,
+    "explain": "also made in China, India and Europe.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "audioText": "W: When was the first Chinese film made? M: In 1905. It was only about ten minutes long and was shot in a small photo studio.",
+    "audioFile": "",
+    "q": "How long was the first Chinese film?",
+    "options": [
+      "About 10 minutes",
+      "About 60 minutes",
+      "About 90 minutes"
+    ],
+    "answer": 0,
+    "explain": "only about ten minutes.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "audioText": "W: Every year, film awards are given to the best actors. M: Yes, the Oscars have been held since 1929.",
+    "audioFile": "",
+    "q": "Since when have the Oscars been held?",
+    "options": [
+      "1905",
+      "1929",
+      "1950"
+    ],
+    "answer": 1,
+    "explain": "since 1929.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "audioText": "W: How was the concert? M: Amazing! I have never been to such a wonderful concert in my whole life.",
+    "audioFile": "",
+    "q": "How did the speaker feel about the concert?",
+    "options": [
+      "Disappointed",
+      "Amazed",
+      "Bored"
+    ],
+    "answer": 1,
+    "explain": "amazing, never been to such a wonderful concert.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "audioText": "W: Have all the tickets been sold? M: Yes, all tickets have been sold. The concert is completely full.",
+    "audioFile": "",
+    "q": "What happened to the tickets?",
+    "options": [
+      "They are still available",
+      "They have all been sold",
+      "They were free"
+    ],
+    "answer": 1,
+    "explain": "all have been sold.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "audioText": "W: How has entertainment changed? M: From street shows to TV, Internet and VR. The show changes, but the joy stays the same.",
+    "audioFile": "",
+    "q": "What has stayed the same despite changes?",
+    "options": [
+      "The technology",
+      "The joy people feel",
+      "The price"
+    ],
+    "answer": 1,
+    "explain": "the joy stays.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "audioText": "W: The concert has been held in this stadium for ten years. M: It must have become a tradition by now.",
+    "audioFile": "",
+    "q": "How long has the concert been held in the stadium?",
+    "options": [
+      "Five years",
+      "Ten years",
+      "Twenty years"
+    ],
+    "answer": 1,
+    "explain": "for ten years.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "audioText": "W: How deep is the deep sea you explored? M: 10,000 metres below the surface. It's completely dark and the pressure is extreme.",
+    "audioFile": "",
+    "q": "How deep were they?",
+    "options": [
+      "1,000 metres",
+      "5,000 metres",
+      "10,000 metres"
+    ],
+    "answer": 2,
+    "explain": "10,000 metres.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "audioText": "W: 'The sea is mysterious,' the scientist said. M: So he said that the sea was mysterious.",
+    "audioFile": "",
+    "q": "What did the scientist say in reported speech?",
+    "options": [
+      "The sea is mysterious",
+      "The sea was mysterious",
+      "The sea will be mysterious"
+    ],
+    "answer": 1,
+    "explain": "the sea was mysterious.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "audioText": "W: 'What lives down there?' she asked. M: She asked what lived down there. We still don't fully know.",
+    "audioFile": "",
+    "q": "Do we fully know what lives in the deep sea?",
+    "options": [
+      "Yes, completely",
+      "No, still not fully",
+      "We knew long ago"
+    ],
+    "answer": 1,
+    "explain": "still don't fully know.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "audioText": "W: Humans always look up at space and down into the ocean. M: Yes, curiosity drives us to explore both ends of our world.",
+    "audioFile": "",
+    "q": "What drives humans to explore?",
+    "options": [
+      "Money",
+      "Curiosity",
+      "Fear"
+    ],
+    "answer": 1,
+    "explain": "curiosity drives us.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "audioText": "W: What can your robot Aido do? M: He can greet me, learn my name and remember my preferences. AI is getting really smart.",
+    "audioFile": "",
+    "q": "What can Aido remember?",
+    "options": [
+      "Books",
+      "The user's preferences",
+      "Math formulas"
+    ],
+    "answer": 1,
+    "explain": "remember my preferences.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "audioText": "W: He left early — his coat is gone. M: He must have left in a hurry. Perhaps he forgot something important.",
+    "audioFile": "",
+    "q": "What does 'must have left' express?",
+    "options": [
+      "A future plan",
+      "A logical conclusion about the past",
+      "An order"
+    ],
+    "answer": 1,
+    "explain": "logical conclusion about a past event.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "audioText": "W: You should have told me earlier about the meeting! M: I'm sorry. I might have forgotten to send the message.",
+    "audioFile": "",
+    "q": "What does 'should have told' express?",
+    "options": [
+      "A suggestion",
+      "Regret about a past action",
+      "A future plan"
+    ],
+    "answer": 1,
+    "explain": "regret — you didn't tell me but you should have.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "audioText": "W: What would people 200 years ago think of smartphones? M: They would have thought it was magic. Science keeps surprising us.",
+    "audioFile": "",
+    "q": "What would people 200 years ago have thought of smartphones?",
+    "options": [
+      "They would know it",
+      "They would think it was magic",
+      "They wouldn't care"
+    ],
+    "answer": 1,
+    "explain": "would have thought it was magic.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "audioText": "W: What year is Anna's diary from? M: 2049. She lives on Mars, at Station Hope-1. The sky there is a dusty orange-pink.",
+    "audioFile": "",
+    "q": "What colour is the Martian sky?",
+    "options": [
+      "Blue",
+      "Dusty orange-pink",
+      "Dark black"
+    ],
+    "answer": 1,
+    "explain": "dusty orange-pink.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "audioText": "W: What will you be doing at this time tomorrow? M: I will be travelling to Mars! The journey takes about seven months.",
+    "audioFile": "",
+    "q": "What tense is 'will be travelling'?",
+    "options": [
+      "Future simple",
+      "Future continuous",
+      "Present continuous"
+    ],
+    "answer": 1,
+    "explain": "future continuous.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "audioText": "W: Why do we explore Mars? M: It teaches us to live with fewer resources, drives new technology, and gives humanity a backup plan.",
+    "audioFile": "",
+    "q": "How many reasons for Mars exploration are mentioned?",
+    "options": [
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": 1,
+    "explain": "three reasons.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "audioText": "W: Is Mars exploration worth the money? M: Yes, the technology we develop for Mars also helps us solve problems on Earth.",
+    "audioFile": "",
+    "q": "How does Mars technology help Earth?",
+    "options": [
+      "It doesn't",
+      "It solves Earth problems too",
+      "Only for entertainment"
+    ],
+    "answer": 1,
+    "explain": "technology for Mars also helps Earth.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "audioText": "W: At what age did Helen Keller lose her sight and hearing? M: Only 19 months old. But she never gave up on learning.",
+    "audioFile": "",
+    "q": "When did Helen Keller lose her sight and hearing?",
+    "options": [
+      "At birth",
+      "At 19 months",
+      "At 5 years"
+    ],
+    "answer": 1,
+    "explain": "only 19 months old.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "audioText": "W: Who taught Helen to communicate? M: Anne Sullivan, her teacher. By the time she arrived, Helen had already been in darkness for years.",
+    "audioFile": "",
+    "q": "Which tense shows action BEFORE Sullivan arrived?",
+    "options": [
+      "Simple past",
+      "Past perfect",
+      "Present perfect"
+    ],
+    "answer": 1,
+    "explain": "past perfect — had already been.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "audioText": "W: Are great people only famous names in books? M: No, many ordinary heroes live on our own streets — teachers, volunteers, neighbours.",
+    "audioFile": "",
+    "q": "According to the speaker, where can we find great people?",
+    "options": [
+      "Only in history books",
+      "On our own streets",
+      "Only in movies"
+    ],
+    "answer": 1,
+    "explain": "ordinary heroes on our own streets.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "audioText": "W: What was Helen's message to young people? M: The best things in life cannot be seen or touched — they are felt with the heart.",
+    "audioFile": "",
+    "q": "How are the best things in life felt according to Helen?",
+    "options": [
+      "With eyes",
+      "With hands",
+      "With the heart"
+    ],
+    "answer": 2,
+    "explain": "felt with the heart.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "audioText": "W: How long is the journey across Asia? M: Ten days, starting from Beijing and visiting the most amazing places on the largest continent.",
+    "audioFile": "",
+    "q": "How many days is the journey?",
+    "options": [
+      "Seven",
+      "Ten",
+      "Fourteen"
+    ],
+    "answer": 1,
+    "explain": "ten days.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "audioText": "W: Which is more modern, Tokyo or Beijing? M: Tokyo is more modern in technology, but Beijing has more ancient history.",
+    "audioFile": "",
+    "q": "How do you say 'more modern' in the comparative?",
+    "options": [
+      "moderner",
+      "more modern",
+      "most modern"
+    ],
+    "answer": 1,
+    "explain": "more modern — long adjective rule.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "audioText": "W: What four Asian cities did you visit? M: Tokyo, Singapore, Shanghai and Mumbai — each shows a different face of modern Asia.",
+    "audioFile": "",
+    "q": "Which city is NOT mentioned?",
+    "options": [
+      "Tokyo",
+      "Bangkok",
+      "Mumbai"
+    ],
+    "answer": 1,
+    "explain": "Tokyo, Singapore, Shanghai, Mumbai.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "audioText": "W: Asia is the largest continent with both ancient temples and modern wonders. M: That's what makes it the most fascinating place to explore.",
+    "audioFile": "",
+    "q": "What makes Asia fascinating?",
+    "options": [
+      "Only ancient temples",
+      "Only modern cities",
+      "Both ancient temples and modern wonders"
+    ],
+    "answer": 2,
+    "explain": "both ancient and modern.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "audioText": "W: What day is it today? M: World Environment Day. We have three guests from different parts of the world.",
+    "audioFile": "",
+    "q": "What day is being celebrated?",
+    "options": [
+      "Earth Day",
+      "World Environment Day",
+      "Tree Planting Day"
+    ],
+    "answer": 1,
+    "explain": "World Environment Day.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "audioText": "W: If we protect our forests, what will happen? M: If we protect them, the Earth will be healthier for our children.",
+    "audioFile": "",
+    "q": "What type of conditional is this?",
+    "options": [
+      "Type 2 (unreal)",
+      "Type 1 (real future)",
+      "Type 3 (past)"
+    ],
+    "answer": 1,
+    "explain": "Type 1 — real future.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "audioText": "W: Is Bhutan really carbon-negative? M: Yes, it's the only country in the world that absorbs more carbon than it produces.",
+    "audioFile": "",
+    "q": "What is special about Bhutan?",
+    "options": [
+      "It has no cars",
+      "It is carbon-negative",
+      "It has no forests"
+    ],
+    "answer": 1,
+    "explain": "carbon-negative.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "audioText": "W: If every country were carbon-negative, climate change would slow down. M: That's a dream worth fighting for.",
+    "audioFile": "",
+    "q": "What type of conditional is 'If every country were...'?",
+    "options": [
+      "Type 1 (real)",
+      "Type 2 (unreal/hypothetical)",
+      "Type 3 (past)"
+    ],
+    "answer": 1,
+    "explain": "Type 2 — unreal/hypothetical present.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "audioText": "W: Why do people set off firecrackers during Spring Festival? M: To scare away evil spirits and welcome a lucky new year.",
+    "audioFile": "",
+    "q": "Why are firecrackers set off?",
+    "options": [
+      "For fun",
+      "To scare away evil spirits",
+      "To make music"
+    ],
+    "answer": 1,
+    "explain": "scare away evil spirits.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "audioText": "W: How long have you celebrated Spring Festival? M: I have celebrated it since I was born. It's the most important festival for us.",
+    "audioFile": "",
+    "q": "Since when has the speaker celebrated Spring Festival?",
+    "options": [
+      "Since last year",
+      "Since birth",
+      "For five years"
+    ],
+    "answer": 1,
+    "explain": "since I was born.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "audioText": "W: What do dumplings symbolise? M: Wealth and family reunion. That's why we always eat them on New Year's Eve.",
+    "audioFile": "",
+    "q": "What do dumplings symbolise?",
+    "options": [
+      "Health",
+      "Wealth and reunion",
+      "Long life"
+    ],
+    "answer": 1,
+    "explain": "wealth and family reunion.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "audioText": "W: Name four world festivals. M: Songkran in Thailand, Diwali in India, Carnival in Brazil, and Mid-Autumn Festival in China.",
+    "audioFile": "",
+    "q": "Which festival is celebrated in Brazil?",
+    "options": [
+      "Songkran",
+      "Diwali",
+      "Carnival"
+    ],
+    "answer": 2,
+    "explain": "Carnival in Brazil.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "audioText": "W: How was your first week in China, Marco? M: Crazy and wonderful, but also a little confusing. Everything is so different!",
+    "audioFile": "",
+    "q": "How did Marco describe his first week?",
+    "options": [
+      "Boring",
+      "Crazy and wonderful, but confusing",
+      "Terrible"
+    ],
+    "answer": 1,
+    "explain": "crazy and wonderful, but confusing.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "audioText": "W: What does 'When in Rome' mean? M: It means when you visit a new place, follow the local customs and traditions.",
+    "audioFile": "",
+    "q": "What does 'When in Rome' mean?",
+    "options": [
+      "Keep your own customs",
+      "Follow local customs",
+      "Avoid new places"
+    ],
+    "answer": 1,
+    "explain": "follow local customs.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "audioText": "W: She was tired; however, she kept working. M: 'However' shows contrast. 'Therefore' would show result.",
+    "audioFile": "",
+    "q": "What does 'however' show?",
+    "options": [
+      "Result",
+      "Contrast",
+      "Reason"
+    ],
+    "answer": 1,
+    "explain": "contrast.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "audioText": "W: What is the first tip for travellers? M: Observe before you act. Watch how locals behave, and follow their lead.",
+    "audioFile": "",
+    "q": "What is the first tip for travellers?",
+    "options": [
+      "Buy souvenirs",
+      "Observe before you act",
+      "Take many photos"
+    ],
+    "answer": 1,
+    "explain": "observe before you act.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "audioText": "W: Does a poem always have to rhyme? M: No, sometimes it doesn't. Poetry is like painting with words.",
+    "audioFile": "",
+    "q": "What is poetry compared to?",
+    "options": [
+      "Music",
+      "Painting with words",
+      "Mathematics"
+    ],
+    "answer": 1,
+    "explain": "like painting with words — simile.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "audioText": "W: 'Her voice is like music' — is this a simile or metaphor? M: It's a simile because it uses 'like'. A metaphor would say 'Her voice is music.'",
+    "audioFile": "",
+    "q": "Which uses 'like' or 'as' — simile or metaphor?",
+    "options": [
+      "Simile",
+      "Metaphor",
+      "Both"
+    ],
+    "answer": 0,
+    "explain": "simile uses 'like' or 'as'.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "audioText": "W: How old is Chinese poetry? M: More than 3,000 years old. The Tang Dynasty was its golden age.",
+    "audioFile": "",
+    "q": "Which dynasty was the golden age of Chinese poetry?",
+    "options": [
+      "Han",
+      "Tang",
+      "Song"
+    ],
+    "answer": 1,
+    "explain": "Tang Dynasty.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "audioText": "W: Why is Li Bai read worldwide? M: His poems express universal feelings — loneliness, friendship and wonder — that cross all cultures.",
+    "audioFile": "",
+    "q": "Why is Li Bai still popular worldwide?",
+    "options": [
+      "He wrote in English",
+      "His poems express universal feelings",
+      "He travelled a lot"
+    ],
+    "answer": 1,
+    "explain": "universal feelings that cross cultures.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "audioText": "W: Who is the most famous English playwright? M: Shakespeare. His plays explore love, power, jealousy and human nature.",
+    "audioFile": "",
+    "q": "What themes does Shakespeare explore?",
+    "options": [
+      "Science",
+      "Love, power and human nature",
+      "Geography"
+    ],
+    "answer": 1,
+    "explain": "love, power, jealousy and human nature.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "audioText": "W: 'I have never seen such a play,' she said. M: In reported speech: She said she had never seen such a play.",
+    "audioFile": "",
+    "q": "How does 'have never seen' change in reported speech?",
+    "options": [
+      "had never seen",
+      "has never seen",
+      "will never see"
+    ],
+    "answer": 0,
+    "explain": "had never seen — present perfect → past perfect.",
+    "difficulty": 1,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "audioText": "W: Name a book that changed the world. M: The Analects of Confucius and Darwin's Origin of Species — both challenged old ways of thinking.",
+    "audioFile": "",
+    "q": "What do these books have in common?",
+    "options": [
+      "They are novels",
+      "They challenged old ways of thinking",
+      "They are very short"
+    ],
+    "answer": 1,
+    "explain": "challenged old ways of thinking.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "audioText": "W: What power do great books have? M: They can change how we think and shape the course of history. That's why we still read them centuries later.",
+    "audioFile": "",
+    "q": "Why do we still read great books centuries later?",
+    "options": [
+      "They are entertaining",
+      "They change how we think and shape history",
+      "They are short"
+    ],
+    "answer": 1,
+    "explain": "change how we think and shape history.",
+    "difficulty": 2,
+    "source": "ai_v20260625"
   }
 ]

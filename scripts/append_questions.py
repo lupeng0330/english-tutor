@@ -9,10 +9,10 @@ append_questions.py — 把一批手工精造的题目「文本追加」进现�
   - 追加项格式与现有 7A 题完全一致（2 空格缩进，ensure_ascii=False）。
 
 用法：
-    python scripts/append_questions.py <grammar|reading> <batch.json> [source]
+    python scripts/append_questions.py <grammar|reading|listening> <batch.json> [source]
 
 batch.json 为数组，每项至少包含：code, q, options, answer, explain, difficulty
-（reading 还需 passage）。grade/term/source 会自动补齐。
+（reading 还需 passage，listening 还需 audioText）。grade/term/source 会自动补齐。
 """
 
 import json
@@ -28,6 +28,7 @@ TERMS = {"A": "上", "B": "下"}
 FIELD_ORDER = {
     "grammar": ["grade", "term", "code", "q", "options", "answer", "explain", "difficulty", "source"],
     "reading": ["grade", "term", "code", "passage", "q", "options", "answer", "explain", "difficulty", "source"],
+    "listening": ["grade", "term", "code", "audioText", "audioFile", "q", "options", "answer", "explain", "difficulty", "source"],
 }
 
 
@@ -54,6 +55,9 @@ def _build(kind, raw, source):
     }
     if kind == "reading":
         item["passage"] = raw["passage"]
+    if kind == "listening":
+        item["audioText"] = raw["audioText"]
+        item["audioFile"] = raw.get("audioFile", "")
     item["q"] = raw["q"]
     item["options"] = raw["options"]
     item["answer"] = raw["answer"]
@@ -66,13 +70,13 @@ def _build(kind, raw, source):
 
 def main():
     if len(sys.argv) < 3:
-        print("用法: python scripts/append_questions.py <grammar|reading> <batch.json> [source]")
+        print("用法: python scripts/append_questions.py <grammar|reading|listening> <batch.json> [source]")
         return 2
     kind = sys.argv[1]
     batch_path = sys.argv[2]
     source = sys.argv[3] if len(sys.argv) > 3 else "ai_v01_12"
-    if kind not in ("grammar", "reading"):
-        print("kind 必须为 grammar 或 reading")
+    if kind not in ("grammar", "reading", "listening"):
+        print("kind 必须为 grammar、reading 或 listening")
         return 2
 
     target = _target(kind)

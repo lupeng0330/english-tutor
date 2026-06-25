@@ -1,0 +1,408 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A weekend at the Sunshine Home",
+        "data": [
+          {"问题": "Where does the school volunteer group visit?", "答案": "The Sunshine Home, where elderly people live."},
+          {"问题": "How often do they visit?", "答案": "Every second Saturday."},
+          {"问题": "Who lives at the Sunshine Home?", "答案": "Twenty elderly people."},
+          {"问题": "What did the writer do during the visit?", "答案": "Talked with the elderly, helped clean rooms and read newspapers to them."},
+          {"问题": "Why does the writer think volunteering is meaningful?", "答案": "Because helping others brings joy to both sides."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A weekend at the Sunshine Home",
+        "data": [
+          {"题号": 1, "问题": "The volunteer group visits the Sunshine Home ___.", "选项": ["A. every Saturday", "B. every second Saturday", "C. once a month"], "答案": "B"},
+          {"题号": 2, "问题": "The Sunshine Home is for ___ people.", "选项": ["A. young", "B. sick", "C. elderly"], "答案": "C"},
+          {"题号": 3, "问题": "The main purpose of the visit is to ___.", "选项": ["A. have fun", "B. help the elderly", "C. study"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Infinitives of purpose",
+        "data": [
+          {"问题": "Complete: We visit the Sunshine Home ___ (help) the elderly.", "答案": "to help"},
+          {"问题": "Complete: She saved money ___ (buy) her mum a gift.", "答案": "to buy"},
+          {"问题": "Rewrite using 'to': I came home. I wanted to rest.", "答案": "I came home to rest."},
+          {"问题": "What does the infinitive of purpose express?", "答案": "Why you do something (the purpose)."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Infinitives of purpose",
+        "data": [
+          {"题号": 1, "问题": "'She went to the library to study.' — 'to study' shows ___.", "选项": ["A. time", "B. purpose", "C. place"], "答案": "B"},
+          {"题号": 2, "问题": "Choose the correct sentence:", "选项": ["A. He went to the shop for buy milk.", "B. He went to the shop to buy milk.", "C. He went to the shop buying milk."], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A long life of giving",
+        "data": [
+          {"问题": "How old is Madam Li?", "答案": "92 years old."},
+          {"问题": "Why does she go to school every day?", "答案": "Not to learn, but to teach."},
+          {"问题": "What was the situation when she was young?", "答案": "There was no school in her village."},
+          {"问题": "What did she decide to do?", "答案": "Teach children in her village for free."},
+          {"问题": "What can we learn from Madam Li's story?", "答案": "That giving to others brings a meaningful life, no matter your age."}
+        ]
+      }
+    ],
+
+    "u2": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · When words are not enough",
+        "data": [
+          {"问题": "What do we do when we meet a friend?", "答案": "We smile."},
+          {"问题": "What does nodding mean?", "答案": "Agreement."},
+          {"问题": "What do we do when a ball comes at us?", "答案": "We put our hands up to protect our face."},
+          {"问题": "What is body language?", "答案": "Using your body — face, hands, posture — to communicate without words."},
+          {"问题": "Why does the passage say 'our body speaks for us'?", "答案": "Because body language can express feelings even without words."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · When words are not enough",
+        "data": [
+          {"题号": 1, "问题": "Nodding usually means ___.", "选项": ["A. disagreement", "B. agreement", "C. confusion"], "答案": "B"},
+          {"题号": 2, "问题": "Body language communicates without ___.", "选项": ["A. words", "B. feelings", "C. thoughts"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Linking words: so / because / but",
+        "data": [
+          {"问题": "Join: I smiled. I was happy. (because)", "答案": "I smiled because I was happy."},
+          {"问题": "Join: He was tired. He went to bed early. (so)", "答案": "He was tired, so he went to bed early."},
+          {"问题": "Join: She wanted to speak. She was too shy. (but)", "答案": "She wanted to speak, but she was too shy."},
+          {"问题": "What does 'because' express?", "答案": "The reason."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Linking words: so / because / but",
+        "data": [
+          {"题号": 1, "问题": "'So' is used to show ___.", "选项": ["A. reason", "B. result", "C. contrast"], "答案": "B"},
+          {"题号": 2, "问题": "'I was hungry, ___ I ate a sandwich.' Choose the correct linker.", "选项": ["A. because", "B. so", "C. but"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Gestures around the world",
+        "data": [
+          {"问题": "What does thumbs up mean in China and most Western countries?", "答案": "'Good' or 'well done'."},
+          {"问题": "What can the same gesture mean in different places?", "答案": "Different things — a gesture can have opposite meanings."},
+          {"问题": "Why is it important to understand gestures in different cultures?", "答案": "To avoid misunderstandings when travelling or communicating."},
+          {"问题": "What is the main message of this passage?", "答案": "Gestures are not universal; always learn local customs."}
+        ]
+      }
+    ],
+
+    "u3": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Grandma's paper-cutting",
+        "data": [
+          {"问题": "How old is Grandma?", "答案": "78 years old."},
+          {"问题": "What skill is Grandma a master of?", "答案": "Paper-cutting."},
+          {"问题": "When did she learn the skill?", "答案": "At eight years old from her own grandmother."},
+          {"问题": "What can she cut out of paper?", "答案": "Flowers, birds, fish and even stories."},
+          {"问题": "Why does the writer say Grandma's hands 'can do magic'?", "答案": "Because she can create beautiful art from simple paper."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Grandma's paper-cutting",
+        "data": [
+          {"题号": 1, "问题": "Grandma learned paper-cutting at the age of ___.", "选项": ["A. six", "B. eight", "C. ten"], "答案": "B"},
+          {"题号": 2, "问题": "Paper-cutting is a ___.", "选项": ["A. modern skill", "B. traditional skill", "C. computer skill"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Used to / be used to",
+        "data": [
+          {"问题": "Fill in: Grandma ___ (used to) cut paper every morning.", "答案": "used to"},
+          {"问题": "Fill in: I ___ (used to) be afraid of the dark.", "答案": "used to"},
+          {"问题": "Fill in: She ___ (be used to) getting up early now.", "答案": "is used to"},
+          {"问题": "What is the difference between 'used to' and 'be used to'?", "答案": "'Used to' = past habit no longer true; 'be used to' = accustomed to something now."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Used to / be used to",
+        "data": [
+          {"题号": 1, "问题": "'I used to live in Beijing.' means ___ now.", "选项": ["A. I still live there", "B. I don't live there anymore", "C. I will live there"], "答案": "B"},
+          {"题号": 2, "问题": "'She is used to the cold weather.' means she ___ the cold.", "选项": ["A. hates", "B. is accustomed to", "C. will face"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Why save old skills?",
+        "data": [
+          {"问题": "Name three traditional skills mentioned.", "答案": "Embroidery from Suzhou, porcelain from Jingdezhen, kites from Weifang, tea from Hangzhou."},
+          {"问题": "Why are traditional skills in danger?", "答案": "Because fewer young people are learning them."},
+          {"问题": "What do traditional skills carry?", "答案": "The history and culture of a place."},
+          {"问题": "What can we infer about the future of traditional skills?", "答案": "They may disappear if we don't make efforts to protect and pass them on."}
+        ]
+      }
+    ],
+
+    "u4": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My robot friend",
+        "data": [
+          {"问题": "What present did the uncle give the writer?", "答案": "A small white robot called Buddy."},
+          {"问题": "How tall is Buddy?", "答案": "Only 30 centimetres tall."},
+          {"问题": "What can Buddy do?", "答案": "He can sing, tell jokes, answer questions and even dance."},
+          {"问题": "How does the writer feel about Buddy?", "答案": "Buddy is like a real friend."},
+          {"问题": "What does this passage show about robots?", "答案": "Robots can be companions and bring joy to people."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My robot friend",
+        "data": [
+          {"题号": 1, "问题": "Buddy is ___ centimetres tall.", "选项": ["A. 20", "B. 30", "C. 40"], "答案": "B"},
+          {"题号": 2, "问题": "Buddy was a ___ present.", "选项": ["A. birthday", "B. Christmas", "C. New Year"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · First conditional (future if)",
+        "data": [
+          {"问题": "Complete: If I press this button, the robot ___ (sing).", "答案": "will sing"},
+          {"问题": "Complete: If you ___ (take) good care of Buddy, he ___ (work) for years.", "答案": "take ... will work"},
+          {"问题": "Complete: If it ___ (rain) tomorrow, we ___ (stay) home.", "答案": "rains ... will stay"},
+          {"问题": "What kind of condition does the first conditional express?", "答案": "A real, possible future condition."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · First conditional (future if)",
+        "data": [
+          {"题号": 1, "问题": "In first conditional, the 'if' clause uses ___.", "选项": ["A. will + verb", "B. present simple", "C. past simple"], "答案": "B"},
+          {"题号": 2, "问题": "Correct: If she ___ hard, she will pass the exam.", "选项": ["A. will study", "B. studies", "C. studied"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Robots at work",
+        "data": [
+          {"问题": "Where do robot arms work?", "答案": "In factories — they build cars, pack milk and sort packages."},
+          {"问题": "Where else are robots used besides factories?", "答案": "In hospitals for surgery, and in homes as vacuum cleaners."},
+          {"问题": "What is the advantage of robots in factories?", "答案": "They can work 24 hours without getting tired and make fewer mistakes."},
+          {"问题": "What can we infer about robots' future role?", "答案": "Robots will take over more jobs, but humans will still be needed for creative work."}
+        ]
+      }
+    ],
+
+    "u5": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A visit to Sanjiangyuan",
+        "data": [
+          {"问题": "Where did the family go on a nature trip?", "答案": "Sanjiangyuan in Qinghai."},
+          {"问题": "Why is Sanjiangyuan important?", "答案": "It is the source of the Yangtze, Yellow and Lancang rivers."},
+          {"问题": "How long was the trip?", "答案": "Five days."},
+          {"问题": "What did they learn about during the trip?", "答案": "About endangered animals like the snow leopard and Tibetan antelope."},
+          {"问题": "Why must we protect Sanjiangyuan?", "答案": "Because it provides water for millions of people and is home to rare animals."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A visit to Sanjiangyuan",
+        "data": [
+          {"题号": 1, "问题": "Sanjiangyuan is in ___ province.", "选项": ["A. Sichuan", "B. Qinghai", "C. Tibet"], "答案": "B"},
+          {"题号": 2, "问题": "Sanjiangyuan is the source of ___ major rivers.", "选项": ["A. two", "B. three", "C. four"], "答案": "B"},
+          {"题号": 3, "问题": "The snow leopard is a(n) ___ animal.", "选项": ["A. common", "B. endangered", "C. domestic"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Present perfect with since / for",
+        "data": [
+          {"问题": "Fill in (for): They have protected this area ___ ten years.", "答案": "for"},
+          {"问题": "Fill in (since): The reserve has been here ___ 2005.", "答案": "since"},
+          {"问题": "Fill in: I ___ (know) about Sanjiangyuan for a long time.", "答案": "have known"},
+          {"问题": "When do we use 'for' and when do we use 'since'?", "答案": "'For' + period of time; 'since' + starting point in time."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Present perfect with since / for",
+        "data": [
+          {"题号": 1, "问题": "Choose: I have lived here ___ 2010.", "选项": ["A. for", "B. since", "C. in"], "答案": "B"},
+          {"题号": 2, "问题": "Choose: We have studied English ___ five years.", "选项": ["A. for", "B. since", "C. at"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · What kids can do",
+        "data": [
+          {"问题": "According to the passage, who can help save wildlife?", "答案": "Not only scientists and governments — children can help too."},
+          {"问题": "What is the first suggestion for kids?", "答案": "Learn and share — read about endangered animals and tell your friends."},
+          {"问题": "What is another way kids can help?", "答案": "Don't buy products made from wild animals; join a nature club."},
+          {"问题": "What is the overall message?", "答案": "Even small actions by kids can make a difference for wildlife."}
+        ]
+      }
+    ],
+
+    "u6": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A little gardener",
+        "data": [
+          {"问题": "What did the grandfather give the writer at age six?", "答案": "A small flower pot and tomato seeds."},
+          {"问题": "What was the first secret of gardening?", "答案": "Plant the seeds at the right depth and water them gently."},
+          {"问题": "What was the second secret?", "答案": "Give the plants enough sunlight — put them near the window."},
+          {"问题": "What was the third secret?", "答案": "Be patient — plants grow slowly, but they need love every day."},
+          {"问题": "How did the writer feel when the first tomato appeared?", "答案": "So excited and proud."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A little gardener",
+        "data": [
+          {"题号": 1, "问题": "The grandfather taught ___ secrets of gardening.", "选项": ["A. two", "B. three", "C. four"], "答案": "B"},
+          {"题号": 2, "问题": "Plants need ___ to grow well.", "选项": ["A. only water", "B. only sunlight", "C. water, sunlight and patience"], "答案": "C"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Reflexive pronouns",
+        "data": [
+          {"问题": "Fill in: I planted the seeds ___ (myself).", "答案": "myself"},
+          {"问题": "Fill in: The plant grew by ___ (itself).", "答案": "itself"},
+          {"问题": "Fill in: We should take care of the garden ___ (ourselves).", "答案": "ourselves"},
+          {"问题": "Fill in: Grandpa taught ___ (himself) to garden.", "答案": "himself"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Reflexive pronouns",
+        "data": [
+          {"题号": 1, "问题": "The reflexive pronoun for 'I' is ___.", "选项": ["A. yourself", "B. myself", "C. himself"], "答案": "B"},
+          {"题号": 2, "问题": "Choose: She made the dress ___.", "选项": ["A. herself", "B. himself", "C. itself"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Green doctors",
+        "data": [
+          {"问题": "What are plants called in this passage?", "答案": "Green doctors."},
+          {"问题": "Who was Li Shizhen?", "答案": "An ancient Chinese doctor who travelled to study plants and wrote a famous book."},
+          {"问题": "How long have people used plants as medicine?", "答案": "For thousands of years."},
+          {"问题": "Give an example of a plant used for health.", "答案": "Ginger for colds; mint for stomach problems."}
+        ]
+      }
+    ],
+
+    "u7": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A journey to the moon",
+        "data": [
+          {"问题": "What story about the moon did ancient Chinese tell?", "答案": "The story of Chang'e flying to the moon."},
+          {"问题": "When did humans first land on the moon?", "答案": "In 1969."},
+          {"问题": "Who were the first astronauts on the moon?", "答案": "Neil Armstrong and Buzz Aldrin."},
+          {"问题": "What did Armstrong say when he stepped on the moon?", "答案": "'That's one small step for man, one giant leap for mankind.'"},
+          {"问题": "What does the moon have no of?", "答案": "No air, no water and no sound."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A journey to the moon",
+        "data": [
+          {"题号": 1, "问题": "Humans first landed on the moon in ___.", "选项": ["A. 1959", "B. 1969", "C. 1979"], "答案": "B"},
+          {"题号": 2, "问题": "The moon has no ___.", "选项": ["A. rocks", "B. dust", "C. air or water"], "答案": "C"},
+          {"题号": 3, "问题": "The Chinese story about the moon features ___.", "选项": ["A. the Monkey King", "B. Chang'e", "C. Mulan"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Modal verbs of possibility",
+        "data": [
+          {"问题": "Fill in (very sure): The rocket ___ be ready. The engines are hot.", "答案": "must"},
+          {"问题": "Fill in (less sure): He ___ be an astronaut — he knows a lot about space.", "答案": "might/may"},
+          {"问题": "Fill in (not possible): It ___ be easy to live on the moon.", "答案": "can't"},
+          {"问题": "Order from most to least sure: might, must, can't.", "答案": "must (most sure) → might → can't (impossible)"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Modal verbs of possibility",
+        "data": [
+          {"题号": 1, "问题": "'Must' shows ___ certainty.", "选项": ["A. low", "B. high (about 95%)", "C. zero"], "答案": "B"},
+          {"题号": 2, "问题": "'It might rain tomorrow' means the chance is ___.", "选项": ["A. 100%", "B. uncertain but possible", "C. impossible"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Future cities on the moon",
+        "data": [
+          {"问题": "Where will the first moon base probably be built?", "答案": "Inside a lava tube or underground."},
+          {"问题": "Why would the base be built underground?", "答案": "To protect from radiation and extreme temperatures."},
+          {"问题": "What will people grow on the moon?", "答案": "Plants in special greenhouses."},
+          {"问题": "What can we infer about living on the moon?", "答案": "It will be possible but challenging — humans need to bring or create everything."}
+        ]
+      }
+    ],
+
+    "u8": [
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A green month at our school",
+        "data": [
+          {"问题": "What event did the school hold last month?", "答案": "A Green Month."},
+          {"问题": "What did each class have to do?", "答案": "Find a green idea and put it into action."},
+          {"问题": "What idea did the writer's class choose?", "答案": "Zero Plastic Lunch — using reusable containers instead of plastic."},
+          {"问题": "What other ideas did classes try?", "答案": "Planting trees, saving electricity, and collecting waste paper for recycling."},
+          {"问题": "What did the writer learn from Green Month?", "答案": "Small green actions by everyone can make a big difference."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A green month at our school",
+        "data": [
+          {"题号": 1, "问题": "The school held a ___ Month.", "选项": ["A. Sports", "B. Green", "C. Reading"], "答案": "B"},
+          {"题号": 2, "问题": "The writer's class chose ___ Lunch.", "选项": ["A. Zero Plastic", "B. Healthy", "C. Free"], "答案": "A"},
+          {"题号": 3, "问题": "The main message is that ___ can make a big difference.", "选项": ["A. only big companies", "B. small green actions", "C. governments"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Should / ought to / had better",
+        "data": [
+          {"问题": "Fill in (neutral advice): We ___ plant more trees.", "答案": "should"},
+          {"问题": "Fill in (stronger advice): You ___ stop using plastic bags.", "答案": "ought to"},
+          {"问题": "Fill in (warning): You ___ bring a reusable bag, or you'll pay extra.", "答案": "had better"},
+          {"问题": "Which is the strongest — should, ought to, or had better?", "答案": "Had better (implies a warning or negative consequence)."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Should / ought to / had better",
+        "data": [
+          {"题号": 1, "问题": "'Had better' is used for ___.", "选项": ["A. a gentle suggestion", "B. a warning with consequence", "C. a polite request"], "答案": "B"},
+          {"题号": 2, "问题": "'You ___ recycle your old books.' — neutral advice.", "选项": ["A. had better", "B. should", "C. mustn't"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Small steps, big world",
+        "data": [
+          {"问题": "What huge environmental problems does the passage mention?", "答案": "Forests on fire, ice melting, oceans rising."},
+          {"问题": "What is the first small step suggested?", "答案": "Use a reusable water bottle instead of buying plastic ones."},
+          {"问题": "What is the second step?", "答案": "Walk or ride a bike for short trips instead of taking the car."},
+          {"问题": "What is the overall message?", "答案": "The biggest journey starts with a single step — every small green action counts."}
+        ]
+      }
+    ]
+  }
+}
