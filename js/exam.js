@@ -454,16 +454,16 @@ function _examCardHtml(ex) {
   const isReal = ex.source === 'real';
   const icon = isReal ? '📄' : (isUnit ? '📝' : '📋');
 
-  // 历史最高分
+  // 历史最高分（移到右上角显示，分值字符醒目放大）
   const histKey = ex.grade + '_' + ex.term + '_' + ex.key;
   const hist = (_examState.history || []).filter(h => h.examKey === histKey);
-  let bestHtml = '<span class="exam-card2-best">未考</span>';
+  let bestHtml = '<span class="exam-card2-best" title="尚未考过"><span class="exam-card2-best-label">历史最高</span><span class="exam-card2-best-none">未考</span></span>';
   if (hist.length > 0) {
-    const best = Math.max(...hist.map(h => h.autoScore || 0));
-    bestHtml = `<span class="exam-card2-best done">历史最高 ${best} 分</span>`;
+    const best = Math.max(...hist.map(h => (h.totalScore != null ? h.totalScore : (h.autoScore || 0))));
+    bestHtml = `<span class="exam-card2-best done" title="历史最高分"><span class="exam-card2-best-label">🏆 历史最高</span><b class="exam-card2-best-num">${best}</b><span class="exam-card2-best-unit">分</span></span>`;
   }
 
-  // 副标题信息
+  // 副标题信息（满分/自动判分保持原样，不放大）
   let metaHtml;
   if (isUnit) {
     metaHtml = `⏱ ${ex.time}分钟 · 累积单元 1-${ex.unitNo} · 自动判分 ${planned.auto} 分`;
@@ -477,12 +477,11 @@ function _examCardHtml(ex) {
   return `
     <div class="exam-card2" data-key="${ex.key}" data-source="${ex.source}">
       <div class="exam-card2-head">
-        <span class="exam-card2-title">${icon} ${escapeHtml(ex.name)}</span>
-        ${tagHtml}
+        <span class="exam-card2-title">${icon} ${escapeHtml(ex.name)}${tagHtml}</span>
+        ${bestHtml}
       </div>
       <div class="exam-card2-meta">${metaHtml}</div>
       <div class="exam-card2-foot">
-        ${bestHtml}
         <span class="exam-card2-go">开始考试 →</span>
       </div>
     </div>`;
@@ -863,25 +862,73 @@ function _jumpToQuestion(flatIdx) {
 window._switchExamSection = _switchExamSection;
 window._jumpToQuestion = _jumpToQuestion;
 
-/** 播放听力音频（复用 player.js 引擎） */
+// 考试听力播放状态（自包含，不依赖练习模块的 state.quizQuestions）
+let _examListeningAudio = null;
+let _examListeningPlaying = false;
+
+/**
+ * 播放考试听力音频（自包含引擎：优先预生成 MP3，失败回退浏览器 TTS）
+ * ⚠️ 历史 bug：旧实现调用 practice.js 的 playAudioText()，但该函数只读
+ *    state.quizQuestions[state.quizIndex]（练习模块当前题），考试时为空 → 听力无声。
+ *    现改为直接根据考试题目的 audioFile / audioText 播放。
+ */
 function _playExamAudio(qIdx) {
   const paper = _examState.paper;
   if (!paper || _examState.submitted) return;
-  // 找到题目
+
+  // 定位题目
+  let target = null;
   for (const sec of paper.sections) {
     const q = sec.questions.find(qq => qq.index === qIdx);
-    if (q) {
-      if (typeof playAudioText === 'function' && q.audioText) {
-        // 临时设置听力题数据
-        const saved = window._quizAudioData;
-        window._quizAudioData = { audioText: q.audioText, audioFile: q.audioFile };
-        try { playAudioText(); } catch (e) { console.warn(e); }
-        if (saved !== undefined) window._quizAudioData = saved;
-      } else if (q.audioText && typeof speak === 'function') {
-        speak(q.audioText);
-      }
+    if (q) { target = q; break; }
+  }
+  if (!target) return;
+
+  const btn = document.querySelector(`.exam-listen-btn[data-qindex="${qIdx}"]`);
+  const setBtn = (txt) => { if (btn) btn.innerHTML = txt; };
+
+  // 停掉上一段播放
+  if (_examListeningAudio) {
+    try { _examListeningAudio.pause(); } catch (e) {}
+    _examListeningAudio = null;
+  }
+  if (typeof stopSpeak === 'function') { try { stopSpeak(); } catch (e) {} }
+  _examListeningPlaying = true;
+
+  // 浏览器 TTS 兜底
+  const fallbackTTS = () => {
+    if (!_examListeningPlaying) return;
+    const cleanText = (target.audioText || '')
+      .replace(/\bW:/g, 'Woman:')
+      .replace(/\bM:/g, 'Man:');
+    if (!cleanText || typeof speakBrowser !== 'function') {
+      _examListeningPlaying = false;
+      setBtn('🔊 播放');
       return;
     }
+    setBtn('🔊 播放中');
+    speakBrowser(cleanText, {
+      onEnd:   () => { _examListeningPlaying = false; setBtn('🔊 重听'); },
+      onError: () => { _examListeningPlaying = false; setBtn('🔊 播放'); }
+    });
+  };
+
+  setBtn('⏳ 加载中');
+
+  // 优先播放预生成 MP3（与练习模块一致：audio/ + audioFile）
+  if (target.audioFile) {
+    const audio = new Audio('audio/' + target.audioFile);
+    _examListeningAudio = audio;
+    let started = false;
+    audio.onplaying = () => { started = true; setBtn('🔊 播放中'); };
+    audio.onended   = () => { _examListeningPlaying = false; setBtn('🔊 重听'); };
+    audio.onerror   = () => { if (!started) fallbackTTS(); };
+    const p = audio.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(() => { if (!started) fallbackTTS(); });
+    }
+  } else {
+    fallbackTTS();
   }
 }
 
@@ -922,21 +969,159 @@ function _submitExam(autoSubmit) {
 window._submitExam = _submitExam;
 
 
+/**
+ * 作文本地启发式自动评分。
+ * 评分阶梯（按满分 maxPoints 拆分，默认 30）：
+ *   内容(切题) 60% → 切题且字数达标即给满（保底）
+ *   语法       20% → 句首大写、句末标点等无明显错误即给满
+ *   文笔       20% → 词汇丰富、连接词、高级词汇 → 酌情加分，优可满分
+ */
+function _gradeWriting(text, q, maxPoints) {
+  maxPoints = maxPoints || 30;
+  const CMAX = Math.round(maxPoints * 0.6 * 10) / 10; // 内容（切题）保底分
+  const GMAX = Math.round(maxPoints * 0.2 * 10) / 10; // 语法
+  const SMAX = Math.round((maxPoints - CMAX - GMAX) * 10) / 10; // 文笔
+  const comments = [];
+  text = (text || '').trim();
+
+  const words = (text.toLowerCase().match(/[a-z']+/g) || []);
+  const wordCount = words.length;
+
+  if (wordCount < 10) {
+    comments.push('作文内容过少（不足 10 个单词），未能进入评分。');
+    return {
+      score: 0, max: maxPoints,
+      content: 0, grammar: 0, style: 0,
+      contentMax: CMAX, grammarMax: GMAX, styleMax: SMAX,
+      wordCount: wordCount, targetWords: 0, comments: comments
+    };
+  }
+
+  // 目标词数：优先用范文词数，其次从题目提取数字，默认 60
+  let target = 60;
+  const model = (q && q.modelAnswer) || '';
+  const modelWords = (model.toLowerCase().match(/[a-z']+/g) || []);
+  if (modelWords.length >= 20) {
+    target = modelWords.length;
+  } else {
+    const m = ((q && q.prompt) || '').match(/(\d+)\s*(词|字|words?)/i);
+    if (m) target = parseInt(m[1], 10);
+  }
+  if (!target || target < 30) target = 60;
+
+  const userSet = new Set(words);
+
+  // ---- 内容（切题）----
+  const wordRatio = Math.min(1, wordCount / target);
+  const modelKeys = Array.from(new Set(modelWords.filter(w => w.length >= 4)));
+  let hit = 0;
+  for (const k of modelKeys) if (userSet.has(k)) hit++;
+  const kwScore = modelKeys.length > 0 ? hit / modelKeys.length : wordRatio;
+
+  let contentRatio = wordRatio * 0.6 + kwScore * 0.4;
+  if (wordRatio >= 0.7 && kwScore >= 0.25) {
+    contentRatio = 1; // 切题且字数达标 → 内容保底满分
+    comments.push('内容切题、字数达标，内容分给满。');
+  } else if (wordRatio < 0.5) {
+    comments.push('字数偏少（约 ' + wordCount + '/' + target + ' 词），内容分受影响。');
+  } else {
+    comments.push('内容基本切题，可进一步贴合题目要点。');
+  }
+  const content = Math.round(contentRatio * CMAX * 10) / 10;
+
+  // ---- 语法 ----
+  let grammarRatio = 1;
+  const sentences = text.split(/[.!?。！？]+/).map(s => s.trim()).filter(s => s.length > 0);
+  let capOk = 0, capTotal = 0;
+  for (const s of sentences) {
+    const first = s.charAt(0);
+    if (/[a-zA-Z]/.test(first)) {
+      capTotal++;
+      if (first === first.toUpperCase()) capOk++;
+    }
+  }
+  if (capTotal > 0 && capOk / capTotal < 0.6) {
+    grammarRatio -= 0.4;
+    comments.push('部分句子句首未大写，注意大小写规范。');
+  }
+  if (!/[.!?。！？]\s*$/.test(text)) {
+    grammarRatio -= 0.2;
+    comments.push('结尾缺少句末标点。');
+  }
+  if (sentences.length === 0) grammarRatio -= 0.3;
+  if (grammarRatio < 0) grammarRatio = 0;
+  if (grammarRatio >= 1) comments.push('语法与书写规范良好，语法分给满。');
+  const grammar = Math.round(grammarRatio * GMAX * 10) / 10;
+
+  // ---- 文笔 ----
+  let styleRatio = 0;
+  const richness = new Set(words).size / wordCount; // 词汇丰富度
+  styleRatio += Math.min(0.4, richness * 0.6);
+  const connectors = ['because', 'however', 'therefore', 'although', 'moreover', 'besides', 'finally', 'firstly', 'secondly', 'meanwhile', 'while', 'though', 'so', 'then', 'also', 'and', 'but'];
+  let connHit = 0;
+  for (const c of connectors) if (userSet.has(c)) connHit++;
+  styleRatio += Math.min(0.4, connHit * 0.1);
+  const longWords = words.filter(w => w.length >= 7).length;
+  styleRatio += Math.min(0.2, longWords / wordCount * 2);
+  if (styleRatio > 1) styleRatio = 1;
+  if (styleRatio >= 0.8) comments.push('用词丰富、表达流畅，文笔加分。');
+  else comments.push('可尝试使用更多连接词与高级词汇提升文采。');
+  const style = Math.round(styleRatio * SMAX * 10) / 10;
+
+  let score = Math.round((content + grammar + style) * 10) / 10;
+  if (score > maxPoints) score = maxPoints;
+
+  return {
+    score: score, max: maxPoints,
+    content: content, grammar: grammar, style: style,
+    contentMax: CMAX, grammarMax: GMAX, styleMax: SMAX,
+    wordCount: wordCount, targetWords: target, comments: comments
+  };
+}
+window._gradeWriting = _gradeWriting;
+
+
 function _gradeExam() {
   const paper = _examState.paper;
   if (!paper) return;
 
   let totalCorrect = 0;
   let totalAutoPoints = 0;
+  let totalMaxPoints = 0;
+  let writingScore = 0;
+  let maxWritingScore = 0;
+  let writingDetail = null;
   const sectionResults = [];
 
   for (const sec of paper.sections) {
-    let secCorrect = 0;
-    let secPoints = 0;
     const secMaxPoints = sec.totalPoints || 0;
 
+    // 写作：本地启发式自动判分（切题保底 → 语法 → 文笔）
+    if (sec.type === 'writing') {
+      const wq = (sec.questions && sec.questions[0]) || {};
+      const wmax = secMaxPoints || 30;
+      const detail = _gradeWriting(_examState.writingText || '', wq, wmax);
+      writingDetail = detail;
+      writingScore = detail.score;
+      maxWritingScore = wmax;
+      sectionResults.push({
+        type: 'writing',
+        title: sec.title || _typeLabel('writing'),
+        correct: 0,
+        total: 0,
+        points: detail.score,
+        maxPoints: wmax,
+        writing: detail
+      });
+      totalAutoPoints += detail.score;
+      totalMaxPoints += wmax;
+      continue;
+    }
+
+    let secCorrect = 0;
+    let secPoints = 0;
+
     for (const q of sec.questions) {
-      if (sec.type === 'writing') continue; // 写作不自动判分
       const userAnswer = _examState.answers[q.index];
       const isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
       if (isCorrect) {
@@ -975,9 +1160,11 @@ function _gradeExam() {
     });
     totalCorrect += secCorrect;
     totalAutoPoints += secPoints;
+    totalMaxPoints += secMaxPoints;
   }
 
   totalAutoPoints = Math.round(totalAutoPoints * 10) / 10;
+  totalMaxPoints = Math.round(totalMaxPoints * 10) / 10;
 
   // 保存历史
   const result = {
@@ -986,7 +1173,11 @@ function _gradeExam() {
     grade: paper.grade,
     term: paper.term,
     autoScore: totalAutoPoints,
-    maxAutoScore: paper.totalAutoPoints || 0,
+    maxAutoScore: totalMaxPoints,
+    totalScore: totalAutoPoints,
+    writingScore: writingScore,
+    maxWritingScore: maxWritingScore,
+    writingDetail: writingDetail,
     totalCorrect: totalCorrect,
     totalQuestions: paper.totalQuestions,
     sections: sectionResults,
@@ -1055,6 +1246,40 @@ function _renderResult(result) {
     }
   }
 
+  // 作文自动评分卡
+  let writingGradeHtml = '';
+  const wd = result.writingDetail;
+  if (wd) {
+    const wbar = (label, val, mx) => {
+      const p = mx > 0 ? Math.round(val / mx * 100) : 0;
+      const color = p >= 80 ? 'bg-green-500' : p >= 50 ? 'bg-yellow-500' : 'bg-red-500';
+      return `<div class="mb-2">
+        <div class="flex justify-between text-xs mb-1">
+          <span>${label}</span><span class="font-semibold">${val} / ${mx} 分</span>
+        </div>
+        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+          <div class="h-full ${color} rounded-full transition-all" style="width:${p}%"></div>
+        </div>
+      </div>`;
+    };
+    const commentsHtml = (wd.comments || []).map(c => `<li>${escapeHtml(c)}</li>`).join('');
+    writingGradeHtml = `
+      <div class="card p-5 mb-4 exam-writing-grade">
+        <div class="ewg-head">
+          <h3 class="font-bold text-slate-700">✍️ 作文自动评分</h3>
+          <div class="ewg-score">${result.writingScore}<span class="ewg-score-max"> / ${result.maxWritingScore} 分</span></div>
+        </div>
+        <div class="ewg-bars mt-3">
+          ${wbar('📌 内容（切题）', wd.content, wd.contentMax)}
+          ${wbar('📐 语法', wd.grammar, wd.grammarMax)}
+          ${wbar('✒️ 文笔', wd.style, wd.styleMax)}
+        </div>
+        <div class="ewg-meta text-xs text-slate-500 mt-2">字数：${wd.wordCount} 词${wd.targetWords ? `（参考 ${wd.targetWords} 词）` : ''}</div>
+        ${commentsHtml ? `<ul class="ewg-comments text-xs text-slate-600 mt-2">${commentsHtml}</ul>` : ''}
+        <div class="text-[11px] text-slate-400 mt-2">※ 作文为本地启发式评分，仅供参考，请以老师评阅为准。</div>
+      </div>`;
+  }
+
   el.innerHTML = `
     <div class="exam-result-container">
       <h2 class="text-xl font-bold text-slate-800 mb-4">📊 考试成绩报告</h2>
@@ -1076,6 +1301,9 @@ function _renderResult(result) {
         <h3 class="font-bold text-slate-700 mb-3">📈 各题型得分率</h3>
         ${sectionBars}
       </div>
+
+      <!-- 作文自动评分 -->
+      ${writingGradeHtml}
 
       <!-- 写作范文 -->
       ${paper && paper.sections.find(s => s.type === 'writing') ? `

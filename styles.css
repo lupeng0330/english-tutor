@@ -1280,17 +1280,38 @@ body.keyboard-open #practiceQuizView {
   transition: all .18s ease; display: flex; flex-direction: column; gap: 8px;
 }
 .exam-card2:hover { border-color: var(--brand-strong, #2563eb); box-shadow: var(--shadow, 0 4px 16px rgba(0,0,0,.08)); transform: translateY(-2px); }
-.exam-card2-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-.exam-card2-title { font-size: 15px; font-weight: 700; color: var(--text-1, #1e293b); }
+.exam-card2-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.exam-card2-title { font-size: 15px; font-weight: 700; color: var(--text-1, #1e293b); flex: 1; min-width: 0; line-height: 1.35; }
 .exam-card2-tag {
-  font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 6px; flex-shrink: 0;
+  font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 6px;
+  margin-left: 6px; vertical-align: middle; white-space: nowrap;
 }
 .exam-card2-tag.zk { background: #fee2e2; color: #dc2626; }
 .exam-card2-meta { font-size: 12px; color: var(--text-3, #94a3b8); }
-.exam-card2-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 2px; }
-.exam-card2-best { font-size: 12px; color: var(--text-3, #94a3b8); }
-.exam-card2-best.done { color: #ea580c; font-weight: 600; }
+.exam-card2-foot { display: flex; align-items: center; justify-content: flex-end; margin-top: 2px; }
+/* 历史最高分：固定在卡片右上角，胶囊样式，分值字符醒目放大 */
+.exam-card2-best {
+  display: inline-flex; align-items: baseline; gap: 3px;
+  flex-shrink: 0; white-space: nowrap; font-size: 12px; color: var(--text-3, #94a3b8);
+}
+.exam-card2-best-label { font-size: 11px; font-weight: 600; }
+.exam-card2-best-none { font-size: 12px; font-weight: 600; }
+.exam-card2-best.done {
+  color: #ea580c; background: #fff7ed; border: 1px solid #fed7aa;
+  padding: 3px 10px; border-radius: 999px;
+}
+/* 历史最高分的分值数字：醒目放大 */
+.exam-card2-best-num { font-size: 26px; font-weight: 800; line-height: 1; color: #ea580c; margin: 0 2px; }
+.exam-card2-best-unit { font-size: 12px; font-weight: 600; }
 .exam-card2-go { font-size: 13px; font-weight: 600; color: var(--brand-strong, #2563eb); }
+
+/* 作文自动评分卡 */
+.exam-writing-grade { border: 1px solid #fde68a; background: linear-gradient(180deg, #fffdf5, #fff); }
+.exam-writing-grade .ewg-head { display: flex; align-items: center; justify-content: space-between; }
+.exam-writing-grade .ewg-score { font-size: 26px; font-weight: 800; line-height: 1; color: #ea580c; }
+.exam-writing-grade .ewg-score-max { font-size: 13px; font-weight: 600; color: #94a3b8; }
+.exam-writing-grade .ewg-comments { list-style: disc; padding-left: 18px; }
+.exam-writing-grade .ewg-comments li { margin: 2px 0; line-height: 1.5; }
 
 @media (max-width: 768px) {
   .exam-grid-inner { grid-template-columns: 1fr; }
