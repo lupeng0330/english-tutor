@@ -1,12 +1,15 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-05-05 晚（PC 端，状态校准 + 准备启动 PWA 收尾 v01.14）  
-> 对应 Git HEAD：`d91e3d6`
+> 最后更新：2026-06-25（PC 端，状态校准：PWA v01.19 标记对齐已完成态）  
+> 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
 
 ## 0. 给新进来的 AI 助手的一段话
+
+> 📌 最近一次文档状态校准：2026-06-25（PWA v01.19 标记对齐已完成态）
+
 
 你好，我是在 **Windows PC 端** 协作过本项目的助手。用户 `lupeng` 的 CodeBuddy 对话上下文保存在本地 IDE，**无法跨设备同步**，所以我把关键信息整理成这份 `PROJECT_STATUS.md` 推到 GitHub。
 
@@ -92,7 +95,7 @@ python3 -m http.server 8765
 | **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
 | **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完；🆕 句级增量后每篇额外记录 `sentences[]`（拼接顺序 + 句 hash） |
 | **前端代码** | 🆕 `app.js` **577 行**（按功能域拆分后，原 3851 行）+ `js/` 下 **12 个**全局变量风格模块（`textbook`/`state`/`profile`/`player` + 🆕 `core`/`wrongbook`/`mastery`/`smartpick`/`stats`/`home`/`lesson`/`practice`） |
-| **PWA 雏形** | `manifest.json` + `icon.svg` 已就绪（工作区 untracked），待注入 `index.html` + 补 192/512 PNG + 建 `sw.js` |
+| **PWA 雏形** | ✅ 已落地（v01.14）：`manifest.json` 已注入 `index.html`、192/512 PNG 已补齐、`sw.js` 已建并预缓存 `data/` + `audio/`，支持桌面/主屏安装 |
 
 教材版本占位：`rj`（人教）、`wy`（外研）尚未填充数据。
 
@@ -293,10 +296,10 @@ a4f0da4 2026-05-03 Initial commit                                               
 - [x] UI：练习开始前显示「本次推荐理由」摘要条 + 单题「为什么推这题」可解释标签
 - [x] 跨题型「🧠 智能推荐练习」入口 + 智能推题开关（持久化，可关闭走纯随机）
 
-#### v01.19 — PWA 离线可用（🆕 提前到 v01.14 做）
-- [ ] `manifest.json` + Service Worker 缓存 `audio/` + `data/`
-- [ ] 安装到桌面 / 主屏，离线也能背单词
-- 备注：`manifest.json` / `icon.svg` 已就位；本轮 v01.14 落地 `index.html` 注入 + 两张 PNG + `sw.js`（SWR for data / cache-first for audio）
+#### v01.19 — PWA 离线可用 ✅ 已完成（🆕 已在 v01.14 提前落地，见 §10 收尾记录）
+- [x] `manifest.json` + Service Worker 缓存 `audio/` + `data/`
+- [x] 安装到桌面 / 主屏，离线也能背单词
+- 备注：v01.14 已落地 `index.html` 注入 manifest + apple-touch-icon、两张 PNG、`sw.js`（SWR for data / cache-first for audio / version.txt 不拦截 + install 时 skipWaiting + activate 清旧缓存）
 
 #### v01.20 — 多用户本地档案 ✅ 已完成（2026-05-07，详见 §11）
 - [x] localStorage 存多个 profile（家里两个孩子分别记录）
@@ -373,7 +376,7 @@ python3 -m http.server 8765
 
 ---
 
-_此文档由 PC 端 AI 助手在 2026-05-05（晚）校准至磁盘事实（jk 420 题 / hj 255 题 / 音频 303 / HEAD d91e3d6），并启动 v01.14 PWA 收尾。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
+_此文档于 2026-06-25 由 PC 端 AI 助手做状态校准：题量与 PWA 状态以 §3 规模表与各章节完成记录为准（jk 420 题 / hj 1498 题 / 音频 303 / PWA v01.19 已落地）。修改本文件后请务必 `git push`，让对端下次 pull 时看到最新状态。_
 
 ---
 
