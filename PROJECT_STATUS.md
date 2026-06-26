@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-06-26（PC 端，新增：P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；`sw.js` 补缓存 `js/exam.js`）  
+> 最后更新：2026-06-26（PC 端，新增：P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；例句朗读本地 MP3 三级降级 + 播放交互修复 V02.20；`sw.js` 补缓存 `js/exam.js`）  
 > 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
@@ -292,6 +292,19 @@ a4f0da4 2026-05-03 Initial commit                                               
 | 初三下 | 9B | 120（118词条，tradition/culture各去重1） | `hj_grade9_xia.json` | ✅ 已上线（20260626V02.16） |
 
 > 🎉 至此沪教版 6 册例句**全部补全并上线**（7A基准 + 7B/8A/8B/9A/9B 人工精编，每词 3 句易/中/难），前端零改动。任务收尾。
+
+#### v02.20(例句朗读) — 本地 MP3 三级降级 + 播放交互修复（✅ 已上线 20260626V02.20）
+
+> 例句 🔊 朗读改为三级降级：① 本地预生成 `audio/ex_*.mp3`（离线最稳）→ ② 有道在线真人音频 → ③ 浏览器 TTS 兜底；并给 6 册 hj + jk 6下例句数据补 `audioFile` 字段、批量生成 `ex_*.mp3`。
+
+本轮修复的 3 个交互 bug（`js/lesson.js`）：
+
+| # | 现象 | 根因 | 修复 |
+|---|---|---|---|
+| 1 | 连点例句叠音 / 切词后旧句仍在响 | `_stopExampleAudio()` 清 `src=''` 触发 `onerror`→`failLocal`→在线重播 | 停止前先解绑 `onerror/onended/onplaying` 再 pause+清 src |
+| 2 | 切单词卡后例句声音不停 | 重渲染只停本地 MP3，没停在线/TTS | `renderWordExamples()` 开头补 `stopSpeak()` |
+| 3 | 连点多条后前面几条喇叭卡激活、再点不响 | 旧按钮 `reset()` 是局部闭包，停音够不到其 UI，卡 disabled | 全局 `_exampleBtnReset` 引用，切换前先复位上一个按钮 UI |
+
 
 执行约定：
 - **数据格式**沿用 `data/examples/hj_grade7_shang.json`（`{ words: { 单词: [{en, cn, level}] } }`，level=1/2/3 对应易/中/难），落到 `data/examples/hj_gradeX_{shang|xia}.json`，**前端加载逻辑已支持（`loadExamplesIfNeeded`），无需改任何前端代码**。
