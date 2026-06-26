@@ -929,79 +929,603 @@
       "下": [
         {
           "id": "u1",
-          "title": "Unit 1 My Day",
+          "title": "Unit 1 Get up",
           "words": [
             {
               "word": "get up",
               "phonetic": "/ɡet ʌp/",
-              "meaning": "起床",
-              "example": "I get up at 7."
+              "meaning": "[phr.] 起床",
+              "example": "I get up at seven."
+            },
+            {
+              "word": "morning",
+              "phonetic": "/ˈmɔːnɪŋ/",
+              "meaning": "[n.] 早晨",
+              "example": "Good morning, Mum!"
             },
             {
               "word": "breakfast",
               "phonetic": "/ˈbrekfəst/",
-              "meaning": "早餐",
-              "example": "I have breakfast at home."
+              "meaning": "[n.] 早餐",
+              "example": "I have milk for breakfast."
+            },
+            {
+              "word": "wash",
+              "phonetic": "/wɒʃ/",
+              "meaning": "[v.] 洗",
+              "example": "Wash your hands, please."
+            },
+            {
+              "word": "face",
+              "phonetic": "/feɪs/",
+              "meaning": "[n.] 脸",
+              "example": "I wash my face."
+            },
+            {
+              "word": "brush",
+              "phonetic": "/brʌʃ/",
+              "meaning": "[v.] 刷",
+              "example": "Brush your teeth."
+            },
+            {
+              "word": "tooth",
+              "phonetic": "/tuːθ/",
+              "meaning": "[n.] 牙齿（pl. teeth）",
+              "example": "I have a new tooth."
+            },
+            {
+              "word": "ready",
+              "phonetic": "/ˈredi/",
+              "meaning": "[adj.] 准备好的",
+              "example": "I am ready for school."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Time to get up",
+              "en": "Mum: Anna, it's seven o'clock. Get up!\nAnna: OK, Mum. I'm tired.\nMum: Wash your face and brush your teeth.\nAnna: I'm ready. What's for breakfast?\nMum: Milk and bread. Hurry up!",
+              "cn": "妈妈：安娜，七点了。起床！\n安娜：好的，妈妈。我好困。\n妈妈：洗脸刷牙。\n安娜：我准备好了。早餐吃什么？\n妈妈：牛奶和面包。快点！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My morning",
+              "en": "I get up at seven every morning. First I wash my face. Then I brush my teeth. I eat breakfast with my family. We have eggs and milk. At seven thirty, I am ready for school. A new day begins!",
+              "cn": "每天早上我七点起床。我先洗脸，然后刷牙。我和家人一起吃早餐。我们吃鸡蛋和牛奶。七点半，我准备好上学了。新的一天开始啦！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 What a Day!",
+          "words": [
+            {
+              "word": "day",
+              "phonetic": "/deɪ/",
+              "meaning": "[n.] 一天；日子",
+              "example": "Have a nice day!"
+            },
+            {
+              "word": "fun",
+              "phonetic": "/fʌn/",
+              "meaning": "[n.] 乐趣；好玩的",
+              "example": "We have fun at school."
+            },
+            {
+              "word": "happy",
+              "phonetic": "/ˈhæpi/",
+              "meaning": "[adj.] 高兴的",
+              "example": "I am happy today."
+            },
+            {
+              "word": "tired",
+              "phonetic": "/ˈtaɪəd/",
+              "meaning": "[adj.] 累的",
+              "example": "I am tired after sport."
+            },
+            {
+              "word": "busy",
+              "phonetic": "/ˈbɪzi/",
+              "meaning": "[adj.] 忙碌的",
+              "example": "Mum is busy in the kitchen."
             },
             {
               "word": "school",
               "phonetic": "/skuːl/",
-              "meaning": "学校",
+              "meaning": "[n.] 学校",
               "example": "I go to school by bus."
-            },
-            {
-              "word": "lunch",
-              "phonetic": "/lʌntʃ/",
-              "meaning": "午餐",
-              "example": "We have lunch at school."
             },
             {
               "word": "home",
               "phonetic": "/həʊm/",
-              "meaning": "家",
-              "example": "I go home at 5."
+              "meaning": "[n.] 家",
+              "example": "I go home at five."
+            },
+            {
+              "word": "great",
+              "phonetic": "/ɡreɪt/",
+              "meaning": "[adj.] 极好的",
+              "example": "What a great day!"
             }
           ],
-          "lesson": "I get up at seven o'clock. I have breakfast at seven thirty. Then I go to school. I have lunch at twelve o'clock. I go home at five o'clock.",
-          "lessonCN": "我七点钟起床。我七点半吃早饭。然后我去上学。我十二点钟吃午饭。我五点钟回家。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What a day!",
+              "en": "Ben: Hi, Anna! How was your day?\nAnna: Great! We played games at school.\nBen: That sounds fun.\nAnna: Yes, but I am very tired now.\nBen: Go home and have a rest!",
+              "cn": "本：嗨，安娜！今天过得怎么样？\n安娜：好极了！我们在学校玩了游戏。\n本：听起来很有趣。\n安娜：是的，不过我现在好累。\n本：那就回家休息一下吧！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A busy day",
+              "en": "Today is a busy day. In the morning I went to school. I had four lessons. We sang songs and played games. After school I helped Mum at home. At night I read a book in bed. I am tired, but I am very happy. What a great day!",
+              "cn": "今天是忙碌的一天。早上我上学了。我上了四节课。我们唱歌、玩游戏。放学后我在家帮妈妈。晚上我在床上看了一本书。我很累，但是很开心。多么棒的一天啊！"
+            }
+          ]
         },
         {
-          "id": "u2",
-          "title": "Unit 2 Hobbies",
+          "id": "u3",
+          "title": "Unit 3 Plan My Day",
           "words": [
             {
-              "word": "play",
-              "phonetic": "/pleɪ/",
-              "meaning": "玩",
-              "example": "I play football."
+              "word": "plan",
+              "phonetic": "/plæn/",
+              "meaning": "[v./n.] 计划",
+              "example": "Let's plan our day."
             },
             {
-              "word": "read",
-              "phonetic": "/riːd/",
-              "meaning": "阅读",
-              "example": "I read books every day."
+              "word": "time",
+              "phonetic": "/taɪm/",
+              "meaning": "[n.] 时间",
+              "example": "What time is it?"
             },
             {
-              "word": "sing",
-              "phonetic": "/sɪŋ/",
-              "meaning": "唱歌",
-              "example": "She sings very well."
+              "word": "clock",
+              "phonetic": "/klɒk/",
+              "meaning": "[n.] 钟",
+              "example": "The clock says nine."
             },
             {
-              "word": "dance",
-              "phonetic": "/dɑːns/",
-              "meaning": "跳舞",
-              "example": "Let's dance together."
+              "word": "first",
+              "phonetic": "/fɜːst/",
+              "meaning": "[adv.] 首先",
+              "example": "First, wash your hands."
             },
             {
-              "word": "draw",
-              "phonetic": "/drɔː/",
-              "meaning": "画画",
-              "example": "I like to draw pictures."
+              "word": "then",
+              "phonetic": "/ðen/",
+              "meaning": "[adv.] 然后",
+              "example": "Then we have breakfast."
+            },
+            {
+              "word": "next",
+              "phonetic": "/nekst/",
+              "meaning": "[adv.] 接下来",
+              "example": "Next, I read a book."
+            },
+            {
+              "word": "finish",
+              "phonetic": "/ˈfɪnɪʃ/",
+              "meaning": "[v.] 完成",
+              "example": "I finish my homework."
+            },
+            {
+              "word": "homework",
+              "phonetic": "/ˈhəʊmwɜːk/",
+              "meaning": "[n.] 家庭作业",
+              "example": "Do your homework, please."
             }
           ],
-          "lesson": "I have many hobbies. I like to play football and read books. My sister likes to sing and dance. My brother likes to draw. What are your hobbies?",
-          "lessonCN": "我有很多爱好。我喜欢踢足球和看书。我姐姐喜欢唱歌和跳舞。我哥哥喜欢画画。您的爱好是什么？"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "My Saturday plan",
+              "en": "Anna: Look at my plan for Saturday!\nBen: Cool! What will you do first?\nAnna: First I'll read a book. Then I'll play with my dog.\nBen: And next?\nAnna: Next I'll finish my homework. After that, we can play together!",
+              "cn": "安娜：看我周六的计划！\n本：酷！你首先要做什么？\n安娜：我先读书，然后陪我的狗玩。\n本：然后呢？\n安娜：接下来我做完作业。之后我们就可以一起玩了！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A clock on the wall",
+              "en": "There is a big clock on the wall. It tells me the time. At seven, I get up. At eight, I am at school. At twelve, it's time for lunch. At four, school is over. At seven in the evening, I finish my homework. Time goes fast — make a good plan every day!",
+              "cn": "墙上有一只大钟。它告诉我时间。七点起床。八点我在学校。十二点是午餐时间。四点放学。晚上七点我做完作业。时间过得真快——每天都要做个好计划！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Come and Join Us!",
+          "words": [
+            {
+              "word": "come",
+              "phonetic": "/kʌm/",
+              "meaning": "[v.] 来",
+              "example": "Come here, please."
+            },
+            {
+              "word": "join",
+              "phonetic": "/dʒɔɪn/",
+              "meaning": "[v.] 加入",
+              "example": "Come and join us!"
+            },
+            {
+              "word": "game",
+              "phonetic": "/ɡeɪm/",
+              "meaning": "[n.] 游戏",
+              "example": "Let's play a game."
+            },
+            {
+              "word": "party",
+              "phonetic": "/ˈpɑːti/",
+              "meaning": "[n.] 聚会",
+              "example": "I have a party today."
+            },
+            {
+              "word": "together",
+              "phonetic": "/təˈɡeðə(r)/",
+              "meaning": "[adv.] 一起",
+              "example": "We sing together."
+            },
+            {
+              "word": "welcome",
+              "phonetic": "/ˈwelkəm/",
+              "meaning": "[v./adj.] 欢迎",
+              "example": "Welcome to my home!"
+            },
+            {
+              "word": "friend",
+              "phonetic": "/frend/",
+              "meaning": "[n.] 朋友",
+              "example": "He is my friend."
+            },
+            {
+              "word": "sure",
+              "phonetic": "/ʃʊə(r)/",
+              "meaning": "[adv.] 当然",
+              "example": "Sure, I can help."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Come to my party!",
+              "en": "Anna: Ben, I have a party on Sunday. Come and join us!\nBen: Sure! What will we do?\nAnna: We'll play games and sing songs together.\nBen: Sounds great! Can I bring a friend?\nAnna: Of course! Welcome!",
+              "cn": "安娜：本，我周日有个聚会。来加入我们吧！\n本：当然！我们会做什么？\n安娜：我们一起玩游戏、唱歌。\n本：太棒了！我能带个朋友来吗？\n安娜：当然！欢迎！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A happy party",
+              "en": "On Sunday, my friends came to my home. We had a party. We played games and ate cakes. We sang songs together. Ben said, \"Thank you, Anna. I'm so happy today.\" I am happy too. Friends make us smile!",
+              "cn": "周日，我的朋友们来我家了。我们办了个聚会。我们玩游戏、吃蛋糕。我们一起唱歌。本说：\"谢谢你，安娜，我今天好开心。\"我也很开心。朋友让我们露出笑容！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Our Classroom, Our Call",
+          "words": [
+            {
+              "word": "classroom",
+              "phonetic": "/ˈklɑːsruːm/",
+              "meaning": "[n.] 教室",
+              "example": "Our classroom is big."
+            },
+            {
+              "word": "desk",
+              "phonetic": "/desk/",
+              "meaning": "[n.] 课桌",
+              "example": "I sit at my desk."
+            },
+            {
+              "word": "chair",
+              "phonetic": "/tʃeə(r)/",
+              "meaning": "[n.] 椅子",
+              "example": "This is my chair."
+            },
+            {
+              "word": "clean",
+              "phonetic": "/kliːn/",
+              "meaning": "[adj./v.] 干净的；打扫",
+              "example": "Let's clean the room."
+            },
+            {
+              "word": "tidy",
+              "phonetic": "/ˈtaɪdi/",
+              "meaning": "[adj.] 整洁的",
+              "example": "Keep your desk tidy."
+            },
+            {
+              "word": "poster",
+              "phonetic": "/ˈpəʊstə(r)/",
+              "meaning": "[n.] 海报",
+              "example": "Look at this poster."
+            },
+            {
+              "word": "rule",
+              "phonetic": "/ruːl/",
+              "meaning": "[n.] 规则",
+              "example": "We follow the class rules."
+            },
+            {
+              "word": "call",
+              "phonetic": "/kɔːl/",
+              "meaning": "[n./v.] 呼唤；号召",
+              "example": "This is our class call!"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Our classroom",
+              "en": "Ben: Look at our new classroom!\nAnna: Wow, it's so clean and tidy.\nBen: There is a big poster on the wall.\nAnna: It says, \"Be kind, be brave!\" That's our class call.\nBen: I love our classroom!",
+              "cn": "本：看我们的新教室！\n安娜：哇，又干净又整洁。\n本：墙上有一张大海报。\n安娜：上面写着\"善良、勇敢\"，那是我们班的口号。\n本：我喜欢我们的教室！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Our class rules",
+              "en": "Our classroom is small but warm. Each desk and chair has a name on it. We have three class rules: keep clean, keep tidy, and help each other. Our class call is \"One team, one dream!\" We say it loudly every morning. We love our class!",
+              "cn": "我们的教室不大但很温暖。每张课桌椅上都有名字。我们有三条班规：保持干净、保持整洁、互相帮助。我们的班级口号是\"一个团队，一个梦想！\"每天早上我们都大声喊出它。我们爱我们的班级！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I'm on Duty",
+          "words": [
+            {
+              "word": "duty",
+              "phonetic": "/ˈdjuːti/",
+              "meaning": "[n.] 职责；值日",
+              "example": "I'm on duty today."
+            },
+            {
+              "word": "water",
+              "phonetic": "/ˈwɔːtə(r)/",
+              "meaning": "[v./n.] 浇水；水",
+              "example": "I water the plants."
+            },
+            {
+              "word": "plant",
+              "phonetic": "/plɑːnt/",
+              "meaning": "[n.] 植物",
+              "example": "Look at this green plant."
+            },
+            {
+              "word": "wipe",
+              "phonetic": "/waɪp/",
+              "meaning": "[v.] 擦",
+              "example": "Wipe the desk, please."
+            },
+            {
+              "word": "window",
+              "phonetic": "/ˈwɪndəʊ/",
+              "meaning": "[n.] 窗户",
+              "example": "Open the window."
+            },
+            {
+              "word": "sweep",
+              "phonetic": "/swiːp/",
+              "meaning": "[v.] 扫",
+              "example": "Ben sweeps the floor."
+            },
+            {
+              "word": "floor",
+              "phonetic": "/flɔː(r)/",
+              "meaning": "[n.] 地板",
+              "example": "The floor is clean."
+            },
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "[v.] 帮助",
+              "example": "Can I help you?"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "I'm on duty today",
+              "en": "Anna: I'm on duty today. What should I do?\nBen: First, sweep the floor.\nAnna: OK. Then?\nBen: Then wipe the windows and water the plants.\nAnna: Thanks, Ben. I will do my best!",
+              "cn": "安娜：我今天值日。我要做什么？\n本：首先，扫地。\n安娜：好的。然后呢？\n本：然后擦窗户、给植物浇水。\n安娜：谢谢，本，我会尽力做好！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A duty day",
+              "en": "Today is my duty day. After class, I sweep the floor and wipe the desks. Ben helps me clean the windows. The little plants by the window look thirsty, so I water them. Now our classroom is clean and bright. I feel tired but very happy. Helping others is fun!",
+              "cn": "今天是我的值日日。下课后，我扫地、擦课桌。本帮我擦窗户。窗边的小植物看起来口渴了，所以我给它们浇水。现在我们的教室又干净又明亮。我感到很累但很开心。帮助别人真有趣！"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 School Rules",
+          "words": [
+            {
+              "word": "rule",
+              "phonetic": "/ruːl/",
+              "meaning": "[n.] 规则",
+              "example": "Follow the school rules."
+            },
+            {
+              "word": "don't",
+              "phonetic": "/dəʊnt/",
+              "meaning": "[contr.] 不要（do not 缩写）",
+              "example": "Don't run, please."
+            },
+            {
+              "word": "should",
+              "phonetic": "/ʃʊd/",
+              "meaning": "[modal v.] 应该",
+              "example": "You should walk slowly."
+            },
+            {
+              "word": "run",
+              "phonetic": "/rʌn/",
+              "meaning": "[v.] 跑",
+              "example": "Don't run in the hall."
+            },
+            {
+              "word": "shout",
+              "phonetic": "/ʃaʊt/",
+              "meaning": "[v.] 喊；大声叫",
+              "example": "Don't shout in class."
+            },
+            {
+              "word": "walk",
+              "phonetic": "/wɔːk/",
+              "meaning": "[v.] 走",
+              "example": "Walk on the right side."
+            },
+            {
+              "word": "hall",
+              "phonetic": "/hɔːl/",
+              "meaning": "[n.] 走廊；大厅",
+              "example": "The hall is long."
+            },
+            {
+              "word": "safe",
+              "phonetic": "/seɪf/",
+              "meaning": "[adj.] 安全的",
+              "example": "Be safe at school."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Don't run in the hall",
+              "en": "Anna: Ben, don't run in the hall!\nBen: Sorry, Anna. I'm late for class.\nAnna: You should walk, not run. It's safer.\nBen: You're right. Thanks for telling me.\nAnna: We should follow the school rules.",
+              "cn": "安娜：本，不要在走廊里跑！\n本：对不起，安娜。我上课要迟到了。\n安娜：你应该走，不是跑，这样更安全。\n本：你说得对，谢谢提醒。\n安娜：我们应该遵守校规。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Our school rules",
+              "en": "Our school has some easy rules. Don't run in the hall. Don't shout in class. We should walk slowly and speak quietly. We should be kind to friends and listen to teachers. Rules keep us safe and happy. A good school is everyone's home!",
+              "cn": "我们学校有一些简单的规则。不要在走廊里跑。不要在课堂上大喊。我们应该慢慢走，小声说话。我们应该对朋友友好，听老师的话。规则让我们安全又快乐。好学校是大家的家！"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 A Polite Way",
+          "words": [
+            {
+              "word": "polite",
+              "phonetic": "/pəˈlaɪt/",
+              "meaning": "[adj.] 有礼貌的",
+              "example": "Be polite to others."
+            },
+            {
+              "word": "please",
+              "phonetic": "/pliːz/",
+              "meaning": "[adv.] 请",
+              "example": "Please sit down."
+            },
+            {
+              "word": "thanks",
+              "phonetic": "/θæŋks/",
+              "meaning": "[n.] 谢谢",
+              "example": "Thanks a lot!"
+            },
+            {
+              "word": "sorry",
+              "phonetic": "/ˈsɒri/",
+              "meaning": "[adj.] 抱歉",
+              "example": "I'm sorry, Mum."
+            },
+            {
+              "word": "excuse",
+              "phonetic": "/ɪkˈskjuːz/",
+              "meaning": "[v.] 请原谅",
+              "example": "Excuse me, may I come in?"
+            },
+            {
+              "word": "greet",
+              "phonetic": "/ɡriːt/",
+              "meaning": "[v.] 问候",
+              "example": "We greet our teacher."
+            },
+            {
+              "word": "smile",
+              "phonetic": "/smaɪl/",
+              "meaning": "[n./v.] 微笑",
+              "example": "She gives me a smile."
+            },
+            {
+              "word": "kind",
+              "phonetic": "/kaɪnd/",
+              "meaning": "[adj.] 友善的",
+              "example": "He is a kind boy."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "A polite way",
+              "en": "Ben: Excuse me, may I borrow your pen?\nAnna: Sure, here you are.\nBen: Thanks a lot, Anna.\nAnna: You're welcome. \nBen: Sorry, I forgot to greet you this morning.\nAnna: That's OK. A smile makes everyone happy.",
+              "cn": "本：打扰一下，我能借你的笔吗？\n安娜：当然，给你。\n本：非常感谢，安娜。\n安娜：不客气。\n本：抱歉，我今天早上忘了向你问好。\n安娜：没关系。一个微笑能让大家都开心。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Magic words",
+              "en": "\"Please\", \"thanks\", and \"sorry\" are magic words. When we want something, we say \"please\". When others help us, we say \"thanks\". When we make a mistake, we say \"sorry\". A kind smile and a polite word can warm a cold day. Be polite, and you will have many friends!",
+              "cn": "\"请\"、\"谢谢\"和\"对不起\"是魔法词。我们想要东西时说\"请\"。别人帮我们时说\"谢谢\"。我们犯错时说\"对不起\"。一个友善的微笑和一句礼貌的话能温暖寒冷的一天。做个有礼貌的人，你会有很多朋友！"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review Road Helper Day",
+          "words": [
+            {
+              "word": "road",
+              "phonetic": "/rəʊd/",
+              "meaning": "[n.] 路",
+              "example": "Cross the road carefully."
+            },
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "[v.] 帮助",
+              "example": "I help my friend."
+            },
+            {
+              "word": "light",
+              "phonetic": "/laɪt/",
+              "meaning": "[n.] 灯（红/绿灯）",
+              "example": "Wait for the green light."
+            },
+            {
+              "word": "stop",
+              "phonetic": "/stɒp/",
+              "meaning": "[v.] 停",
+              "example": "Stop at the red light!"
+            },
+            {
+              "word": "go",
+              "phonetic": "/ɡəʊ/",
+              "meaning": "[v.] 走",
+              "example": "Green light, you can go."
+            },
+            {
+              "word": "wait",
+              "phonetic": "/weɪt/",
+              "meaning": "[v.] 等",
+              "example": "Wait, please."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Road Helper Day",
+              "en": "Anna: Today is Road Helper Day! I am a little helper.\nBen: What do you do?\nAnna: I help kids cross the road. Red light, stop. Green light, go.\nBen: That's great! Can I join you?\nAnna: Sure! Always be safe on the road.",
+              "cn": "安娜：今天是交通小帮手日！我是小帮手。\n本：你要做什么？\n安娜：我帮小朋友过马路。红灯停，绿灯行。\n本：太棒了！我能加入吗？\n安娜：当然！过马路一定要注意安全。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Be safe on the road",
+              "en": "Every Friday is our Road Helper Day. We stand by the road in front of the school. When the light is red, we tell people, \"Stop and wait.\" When the light is green, we say, \"Now you can go.\" Kids smile and say \"Thanks.\" Being kind and helpful is a great way to start a new day!",
+              "cn": "每周五是我们的交通小帮手日。我们站在学校前面的马路边。红灯时我们告诉大家：\"停下来等等\"。绿灯时我们说：\"现在可以走啦\"。小朋友们微笑着说\"谢谢\"。乐于助人是开启新一天的好方式！"
+            }
+          ]
         }
       ]
     },

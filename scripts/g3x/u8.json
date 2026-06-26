@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 A Polite Way",
+  "words": [
+    { "word": "polite", "phonetic": "/pəˈlaɪt/", "meaning": "[adj.] 有礼貌的", "example": "Be polite to others." },
+    { "word": "please", "phonetic": "/pliːz/", "meaning": "[adv.] 请", "example": "Please sit down." },
+    { "word": "thanks", "phonetic": "/θæŋks/", "meaning": "[n.] 谢谢", "example": "Thanks a lot!" },
+    { "word": "sorry", "phonetic": "/ˈsɒri/", "meaning": "[adj.] 抱歉", "example": "I'm sorry, Mum." },
+    { "word": "excuse", "phonetic": "/ɪkˈskjuːz/", "meaning": "[v.] 请原谅", "example": "Excuse me, may I come in?" },
+    { "word": "greet", "phonetic": "/ɡriːt/", "meaning": "[v.] 问候", "example": "We greet our teacher." },
+    { "word": "smile", "phonetic": "/smaɪl/", "meaning": "[n./v.] 微笑", "example": "She gives me a smile." },
+    { "word": "kind", "phonetic": "/kaɪnd/", "meaning": "[adj.] 友善的", "example": "He is a kind boy." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "A polite way",
+      "en": "Ben: Excuse me, may I borrow your pen?\nAnna: Sure, here you are.\nBen: Thanks a lot, Anna.\nAnna: You're welcome. \nBen: Sorry, I forgot to greet you this morning.\nAnna: That's OK. A smile makes everyone happy.",
+      "cn": "本：打扰一下，我能借你的笔吗？\n安娜：当然，给你。\n本：非常感谢，安娜。\n安娜：不客气。\n本：抱歉，我今天早上忘了向你问好。\n安娜：没关系。一个微笑能让大家都开心。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Magic words",
+      "en": "\"Please\", \"thanks\", and \"sorry\" are magic words. When we want something, we say \"please\". When others help us, we say \"thanks\". When we make a mistake, we say \"sorry\". A kind smile and a polite word can warm a cold day. Be polite, and you will have many friends!",
+      "cn": "\"请\"、\"谢谢\"和\"对不起\"是魔法词。我们想要东西时说\"请\"。别人帮我们时说\"谢谢\"。我们犯错时说\"对不起\"。一个友善的微笑和一句礼貌的话能温暖寒冷的一天。做个有礼貌的人，你会有很多朋友！"
+    }
+  ]
+}

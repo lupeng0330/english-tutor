@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 School Rules",
+  "words": [
+    { "word": "rule", "phonetic": "/ruːl/", "meaning": "[n.] 规则", "example": "Follow the school rules." },
+    { "word": "don't", "phonetic": "/dəʊnt/", "meaning": "[contr.] 不要（do not 缩写）", "example": "Don't run, please." },
+    { "word": "should", "phonetic": "/ʃʊd/", "meaning": "[modal v.] 应该", "example": "You should walk slowly." },
+    { "word": "run", "phonetic": "/rʌn/", "meaning": "[v.] 跑", "example": "Don't run in the hall." },
+    { "word": "shout", "phonetic": "/ʃaʊt/", "meaning": "[v.] 喊；大声叫", "example": "Don't shout in class." },
+    { "word": "walk", "phonetic": "/wɔːk/", "meaning": "[v.] 走", "example": "Walk on the right side." },
+    { "word": "hall", "phonetic": "/hɔːl/", "meaning": "[n.] 走廊；大厅", "example": "The hall is long." },
+    { "word": "safe", "phonetic": "/seɪf/", "meaning": "[adj.] 安全的", "example": "Be safe at school." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Don't run in the hall",
+      "en": "Anna: Ben, don't run in the hall!\nBen: Sorry, Anna. I'm late for class.\nAnna: You should walk, not run. It's safer.\nBen: You're right. Thanks for telling me.\nAnna: We should follow the school rules.",
+      "cn": "安娜：本，不要在走廊里跑！\n本：对不起，安娜。我上课要迟到了。\n安娜：你应该走，不是跑，这样更安全。\n本：你说得对，谢谢提醒。\n安娜：我们应该遵守校规。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Our school rules",
+      "en": "Our school has some easy rules. Don't run in the hall. Don't shout in class. We should walk slowly and speak quietly. We should be kind to friends and listen to teachers. Rules keep us safe and happy. A good school is everyone's home!",
+      "cn": "我们学校有一些简单的规则。不要在走廊里跑。不要在课堂上大喊。我们应该慢慢走，小声说话。我们应该对朋友友好，听老师的话。规则让我们安全又快乐。好学校是大家的家！"
+    }
+  ]
+}

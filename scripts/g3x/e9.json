@@ -1,0 +1,32 @@
+{
+  "road": [
+    { "en": "Cross the road.", "cn": "过马路。", "level": 1 },
+    { "en": "The road is wide.", "cn": "这条路很宽。", "level": 2 },
+    { "en": "Always look both ways before crossing the road.", "cn": "过马路前总要左右看。", "level": 3 }
+  ],
+  "help": [
+    { "en": "Help, please.", "cn": "请帮帮我。", "level": 1 },
+    { "en": "I help the old man cross the road.", "cn": "我帮老爷爷过马路。", "level": 2 },
+    { "en": "It feels good to help others on Road Helper Day.", "cn": "交通小帮手日帮助别人感觉真好。", "level": 3 }
+  ],
+  "light": [
+    { "en": "Red light.", "cn": "红灯。", "level": 1 },
+    { "en": "Wait for the green light.", "cn": "等绿灯。", "level": 2 },
+    { "en": "When the traffic light turns green, we can cross.", "cn": "交通灯变绿时我们就可以过马路了。", "level": 3 }
+  ],
+  "stop": [
+    { "en": "Stop!", "cn": "停！", "level": 1 },
+    { "en": "Stop at the red light.", "cn": "红灯停。", "level": 2 },
+    { "en": "Always stop and look before you cross the road.", "cn": "过马路前一定要停下看看。", "level": 3 }
+  ],
+  "go": [
+    { "en": "Go!", "cn": "走！", "level": 1 },
+    { "en": "Green light, go.", "cn": "绿灯，走。", "level": 2 },
+    { "en": "When the light is green, you can go safely.", "cn": "绿灯亮时你可以安全通过。", "level": 3 }
+  ],
+  "wait": [
+    { "en": "Wait, please.", "cn": "请等一下。", "level": 1 },
+    { "en": "Wait for me at the door.", "cn": "在门口等我。", "level": 2 },
+    { "en": "Please wait for the green light before you cross.", "cn": "请等绿灯亮了再过马路。", "level": 3 }
+  ]
+}

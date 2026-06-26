@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 What a Day!",
+  "words": [
+    { "word": "day", "phonetic": "/deɪ/", "meaning": "[n.] 一天；日子", "example": "Have a nice day!" },
+    { "word": "fun", "phonetic": "/fʌn/", "meaning": "[n.] 乐趣；好玩的", "example": "We have fun at school." },
+    { "word": "happy", "phonetic": "/ˈhæpi/", "meaning": "[adj.] 高兴的", "example": "I am happy today." },
+    { "word": "tired", "phonetic": "/ˈtaɪəd/", "meaning": "[adj.] 累的", "example": "I am tired after sport." },
+    { "word": "busy", "phonetic": "/ˈbɪzi/", "meaning": "[adj.] 忙碌的", "example": "Mum is busy in the kitchen." },
+    { "word": "school", "phonetic": "/skuːl/", "meaning": "[n.] 学校", "example": "I go to school by bus." },
+    { "word": "home", "phonetic": "/həʊm/", "meaning": "[n.] 家", "example": "I go home at five." },
+    { "word": "great", "phonetic": "/ɡreɪt/", "meaning": "[adj.] 极好的", "example": "What a great day!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What a day!",
+      "en": "Ben: Hi, Anna! How was your day?\nAnna: Great! We played games at school.\nBen: That sounds fun.\nAnna: Yes, but I am very tired now.\nBen: Go home and have a rest!",
+      "cn": "本：嗨，安娜！今天过得怎么样？\n安娜：好极了！我们在学校玩了游戏。\n本：听起来很有趣。\n安娜：是的，不过我现在好累。\n本：那就回家休息一下吧！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A busy day",
+      "en": "Today is a busy day. In the morning I went to school. I had four lessons. We sang songs and played games. After school I helped Mum at home. At night I read a book in bed. I am tired, but I am very happy. What a great day!",
+      "cn": "今天是忙碌的一天。早上我上学了。我上了四节课。我们唱歌、玩游戏。放学后我在家帮妈妈。晚上我在床上看了一本书。我很累，但是很开心。多么棒的一天啊！"
+    }
+  ]
+}

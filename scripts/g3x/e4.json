@@ -1,0 +1,42 @@
+{
+  "come": [
+    { "en": "Come here.", "cn": "过来。", "level": 1 },
+    { "en": "Come and play with me.", "cn": "来和我一起玩。", "level": 2 },
+    { "en": "Please come to my party on Sunday.", "cn": "请周日来我的聚会。", "level": 3 }
+  ],
+  "join": [
+    { "en": "Come and join us!", "cn": "来加入我们！", "level": 1 },
+    { "en": "I want to join the music club.", "cn": "我想加入音乐俱乐部。", "level": 2 },
+    { "en": "Many children join the game on the playground.", "cn": "很多孩子在操场上加入游戏。", "level": 3 }
+  ],
+  "game": [
+    { "en": "I like games.", "cn": "我喜欢游戏。", "level": 1 },
+    { "en": "Let's play a game.", "cn": "我们玩个游戏吧。", "level": 2 },
+    { "en": "We play a fun game in the English class.", "cn": "我们在英语课上玩一个有趣的游戏。", "level": 3 }
+  ],
+  "party": [
+    { "en": "Happy party!", "cn": "聚会快乐！", "level": 1 },
+    { "en": "I have a party today.", "cn": "我今天有个聚会。", "level": 2 },
+    { "en": "Mum makes a cake for my birthday party.", "cn": "妈妈为我的生日聚会做了一个蛋糕。", "level": 3 }
+  ],
+  "together": [
+    { "en": "Sing together.", "cn": "一起唱。", "level": 1 },
+    { "en": "We work together.", "cn": "我们一起工作。", "level": 2 },
+    { "en": "We are stronger when we play and learn together.", "cn": "一起玩、一起学，我们才更强大。", "level": 3 }
+  ],
+  "welcome": [
+    { "en": "Welcome!", "cn": "欢迎！", "level": 1 },
+    { "en": "Welcome to my home.", "cn": "欢迎来我家。", "level": 2 },
+    { "en": "The teacher welcomes the new students with a smile.", "cn": "老师微笑着欢迎新同学。", "level": 3 }
+  ],
+  "friend": [
+    { "en": "He is my friend.", "cn": "他是我的朋友。", "level": 1 },
+    { "en": "I have many friends.", "cn": "我有很多朋友。", "level": 2 },
+    { "en": "A true friend helps you when you are in trouble.", "cn": "真正的朋友会在你遇到困难时帮助你。", "level": 3 }
+  ],
+  "sure": [
+    { "en": "Sure!", "cn": "当然！", "level": 1 },
+    { "en": "Sure, I can help.", "cn": "当然，我可以帮忙。", "level": 2 },
+    { "en": "Are you sure you want to come with us?", "cn": "你确定要和我们一起来吗？", "level": 3 }
+  ]
+}

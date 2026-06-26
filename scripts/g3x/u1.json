@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Get up",
+  "words": [
+    { "word": "get up", "phonetic": "/ɡet ʌp/", "meaning": "[phr.] 起床", "example": "I get up at seven." },
+    { "word": "morning", "phonetic": "/ˈmɔːnɪŋ/", "meaning": "[n.] 早晨", "example": "Good morning, Mum!" },
+    { "word": "breakfast", "phonetic": "/ˈbrekfəst/", "meaning": "[n.] 早餐", "example": "I have milk for breakfast." },
+    { "word": "wash", "phonetic": "/wɒʃ/", "meaning": "[v.] 洗", "example": "Wash your hands, please." },
+    { "word": "face", "phonetic": "/feɪs/", "meaning": "[n.] 脸", "example": "I wash my face." },
+    { "word": "brush", "phonetic": "/brʌʃ/", "meaning": "[v.] 刷", "example": "Brush your teeth." },
+    { "word": "tooth", "phonetic": "/tuːθ/", "meaning": "[n.] 牙齿（pl. teeth）", "example": "I have a new tooth." },
+    { "word": "ready", "phonetic": "/ˈredi/", "meaning": "[adj.] 准备好的", "example": "I am ready for school." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Time to get up",
+      "en": "Mum: Anna, it's seven o'clock. Get up!\nAnna: OK, Mum. I'm tired.\nMum: Wash your face and brush your teeth.\nAnna: I'm ready. What's for breakfast?\nMum: Milk and bread. Hurry up!",
+      "cn": "妈妈：安娜，七点了。起床！\n安娜：好的，妈妈。我好困。\n妈妈：洗脸刷牙。\n安娜：我准备好了。早餐吃什么？\n妈妈：牛奶和面包。快点！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My morning",
+      "en": "I get up at seven every morning. First I wash my face. Then I brush my teeth. I eat breakfast with my family. We have eggs and milk. At seven thirty, I am ready for school. A new day begins!",
+      "cn": "每天早上我七点起床。我先洗脸，然后刷牙。我和家人一起吃早餐。我们吃鸡蛋和牛奶。七点半，我准备好上学了。新的一天开始啦！"
+    }
+  ]
+}

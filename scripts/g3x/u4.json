@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 Come and Join Us!",
+  "words": [
+    { "word": "come", "phonetic": "/kʌm/", "meaning": "[v.] 来", "example": "Come here, please." },
+    { "word": "join", "phonetic": "/dʒɔɪn/", "meaning": "[v.] 加入", "example": "Come and join us!" },
+    { "word": "game", "phonetic": "/ɡeɪm/", "meaning": "[n.] 游戏", "example": "Let's play a game." },
+    { "word": "party", "phonetic": "/ˈpɑːti/", "meaning": "[n.] 聚会", "example": "I have a party today." },
+    { "word": "together", "phonetic": "/təˈɡeðə(r)/", "meaning": "[adv.] 一起", "example": "We sing together." },
+    { "word": "welcome", "phonetic": "/ˈwelkəm/", "meaning": "[v./adj.] 欢迎", "example": "Welcome to my home!" },
+    { "word": "friend", "phonetic": "/frend/", "meaning": "[n.] 朋友", "example": "He is my friend." },
+    { "word": "sure", "phonetic": "/ʃʊə(r)/", "meaning": "[adv.] 当然", "example": "Sure, I can help." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Come to my party!",
+      "en": "Anna: Ben, I have a party on Sunday. Come and join us!\nBen: Sure! What will we do?\nAnna: We'll play games and sing songs together.\nBen: Sounds great! Can I bring a friend?\nAnna: Of course! Welcome!",
+      "cn": "安娜：本，我周日有个聚会。来加入我们吧！\n本：当然！我们会做什么？\n安娜：我们一起玩游戏、唱歌。\n本：太棒了！我能带个朋友来吗？\n安娜：当然！欢迎！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A happy party",
+      "en": "On Sunday, my friends came to my home. We had a party. We played games and ate cakes. We sang songs together. Ben said, \"Thank you, Anna. I'm so happy today.\" I am happy too. Friends make us smile!",
+      "cn": "周日，我的朋友们来我家了。我们办了个聚会。我们玩游戏、吃蛋糕。我们一起唱歌。本说：\"谢谢你，安娜，我今天好开心。\"我也很开心。朋友让我们露出笑容！"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "rule": [
+    { "en": "Follow the rules.", "cn": "遵守规则。", "level": 1 },
+    { "en": "We have school rules.", "cn": "我们有校规。", "level": 2 },
+    { "en": "Good rules keep everyone safe and happy.", "cn": "好的规则让每个人都安全又快乐。", "level": 3 }
+  ],
+  "don't": [
+    { "en": "Don't run.", "cn": "不要跑。", "level": 1 },
+    { "en": "Don't shout in class.", "cn": "不要在课堂上喊。", "level": 2 },
+    { "en": "Don't forget to bring your books tomorrow.", "cn": "别忘了明天带上你的书。", "level": 3 }
+  ],
+  "should": [
+    { "en": "You should try.", "cn": "你应该试试。", "level": 1 },
+    { "en": "We should help others.", "cn": "我们应该帮助别人。", "level": 2 },
+    { "en": "You should listen carefully when the teacher speaks.", "cn": "老师讲话时你应该仔细听。", "level": 3 }
+  ],
+  "run": [
+    { "en": "Don't run.", "cn": "不要跑。", "level": 1 },
+    { "en": "He can run very fast.", "cn": "他能跑得很快。", "level": 2 },
+    { "en": "We should not run in the school hall.", "cn": "我们不应在学校走廊里跑。", "level": 3 }
+  ],
+  "shout": [
+    { "en": "Don't shout!", "cn": "不要喊！", "level": 1 },
+    { "en": "Please don't shout at me.", "cn": "请不要对我大喊。", "level": 2 },
+    { "en": "It's not polite to shout in the library.", "cn": "在图书馆里大声喊是不礼貌的。", "level": 3 }
+  ],
+  "walk": [
+    { "en": "Walk slowly.", "cn": "慢慢走。", "level": 1 },
+    { "en": "I walk to school.", "cn": "我走路上学。", "level": 2 },
+    { "en": "Walk on the right side of the hall, please.", "cn": "请靠走廊右侧行走。", "level": 3 }
+  ],
+  "hall": [
+    { "en": "It's a big hall.", "cn": "这是个大走廊。", "level": 1 },
+    { "en": "We walk along the hall.", "cn": "我们沿着走廊走。", "level": 2 },
+    { "en": "There are many posters on the wall of the hall.", "cn": "走廊的墙上有很多海报。", "level": 3 }
+  ],
+  "safe": [
+    { "en": "Be safe.", "cn": "注意安全。", "level": 1 },
+    { "en": "Walking is safer than running.", "cn": "走路比跑步更安全。", "level": 2 },
+    { "en": "Rules help us to stay safe at school.", "cn": "规则帮助我们在学校保持安全。", "level": 3 }
+  ]
+}

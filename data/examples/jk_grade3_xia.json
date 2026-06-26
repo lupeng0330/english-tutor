@@ -1,0 +1,1364 @@
+{
+  "words": {
+    "get up": [
+      {
+        "en": "Get up!",
+        "cn": "起床！",
+        "level": 1,
+        "audioFile": "ex_be598c68a6.mp3"
+      },
+      {
+        "en": "I get up at seven.",
+        "cn": "我七点起床。",
+        "level": 2,
+        "audioFile": "ex_9f7d2dc763.mp3"
+      },
+      {
+        "en": "On Sunday, I get up a little later.",
+        "cn": "周日我起得稍微晚一点。",
+        "level": 3,
+        "audioFile": "ex_d37b639865.mp3"
+      }
+    ],
+    "morning": [
+      {
+        "en": "Good morning!",
+        "cn": "早上好！",
+        "level": 1,
+        "audioFile": "ex_d56bf970b2.mp3"
+      },
+      {
+        "en": "I have milk every morning.",
+        "cn": "我每天早上喝牛奶。",
+        "level": 2,
+        "audioFile": "ex_224bd708e0.mp3"
+      },
+      {
+        "en": "In the morning, the sun is bright and warm.",
+        "cn": "早晨阳光明亮又温暖。",
+        "level": 3,
+        "audioFile": "ex_f5726e6128.mp3"
+      }
+    ],
+    "breakfast": [
+      {
+        "en": "Eat breakfast.",
+        "cn": "吃早餐。",
+        "level": 1,
+        "audioFile": "ex_04fb8cf7ef.mp3"
+      },
+      {
+        "en": "I have eggs for breakfast.",
+        "cn": "我早餐吃鸡蛋。",
+        "level": 2,
+        "audioFile": "ex_3643572d3f.mp3"
+      },
+      {
+        "en": "A good breakfast gives us energy for the day.",
+        "cn": "好的早餐让我们一天都有精神。",
+        "level": 3,
+        "audioFile": "ex_31f7f840b9.mp3"
+      }
+    ],
+    "wash": [
+      {
+        "en": "Wash your hands.",
+        "cn": "洗手。",
+        "level": 1,
+        "audioFile": "ex_ecdef109e1.mp3"
+      },
+      {
+        "en": "I wash my face in the morning.",
+        "cn": "我早上洗脸。",
+        "level": 2,
+        "audioFile": "ex_a2ff3afae7.mp3"
+      },
+      {
+        "en": "Please wash the apples before you eat them.",
+        "cn": "吃苹果前请先把它们洗干净。",
+        "level": 3,
+        "audioFile": "ex_e58e7ad030.mp3"
+      }
+    ],
+    "face": [
+      {
+        "en": "This is my face.",
+        "cn": "这是我的脸。",
+        "level": 1,
+        "audioFile": "ex_3535895981.mp3"
+      },
+      {
+        "en": "Wash your face, please.",
+        "cn": "请洗脸。",
+        "level": 2,
+        "audioFile": "ex_fc20f8ccbc.mp3"
+      },
+      {
+        "en": "She has a big smile on her face.",
+        "cn": "她脸上挂着大大的笑容。",
+        "level": 3,
+        "audioFile": "ex_ffcc98ee78.mp3"
+      }
+    ],
+    "brush": [
+      {
+        "en": "Brush your teeth.",
+        "cn": "刷牙。",
+        "level": 1,
+        "audioFile": "ex_dde5048eee.mp3"
+      },
+      {
+        "en": "I brush my teeth twice a day.",
+        "cn": "我一天刷两次牙。",
+        "level": 2,
+        "audioFile": "ex_8ff559c097.mp3"
+      },
+      {
+        "en": "Don't forget to brush your teeth before bed.",
+        "cn": "睡前别忘了刷牙。",
+        "level": 3,
+        "audioFile": "ex_6d0e33e4c0.mp3"
+      }
+    ],
+    "tooth": [
+      {
+        "en": "Look, a new tooth!",
+        "cn": "看，一颗新牙！",
+        "level": 1,
+        "audioFile": "ex_9ffd7e7e9f.mp3"
+      },
+      {
+        "en": "I have a tooth ache.",
+        "cn": "我牙疼。",
+        "level": 2,
+        "audioFile": "ex_62b38f2082.mp3"
+      },
+      {
+        "en": "Brush your teeth carefully every morning and night.",
+        "cn": "每天早晚要仔细刷牙。",
+        "level": 3,
+        "audioFile": "ex_02d81471f7.mp3"
+      }
+    ],
+    "ready": [
+      {
+        "en": "I am ready.",
+        "cn": "我准备好了。",
+        "level": 1,
+        "audioFile": "ex_2d46ac5a94.mp3"
+      },
+      {
+        "en": "Are you ready for school?",
+        "cn": "你准备好上学了吗？",
+        "level": 2,
+        "audioFile": "ex_f1b8042362.mp3"
+      },
+      {
+        "en": "When breakfast is ready, Mum calls us to the table.",
+        "cn": "早餐准备好时，妈妈叫我们到桌前。",
+        "level": 3,
+        "audioFile": "ex_e9485679da.mp3"
+      }
+    ],
+    "day": [
+      {
+        "en": "Have a nice day!",
+        "cn": "祝你今天愉快！",
+        "level": 1,
+        "audioFile": "ex_ef90836d41.mp3"
+      },
+      {
+        "en": "What day is it today?",
+        "cn": "今天星期几？",
+        "level": 2,
+        "audioFile": "ex_8a24d261c6.mp3"
+      },
+      {
+        "en": "Every day brings a new chance to learn.",
+        "cn": "每一天都带来学习的新机会。",
+        "level": 3,
+        "audioFile": "ex_eb995a4643.mp3"
+      }
+    ],
+    "fun": [
+      {
+        "en": "It's fun.",
+        "cn": "好玩。",
+        "level": 1,
+        "audioFile": "ex_c777daa8fe.mp3"
+      },
+      {
+        "en": "We have fun together.",
+        "cn": "我们一起玩得很开心。",
+        "level": 2,
+        "audioFile": "ex_235f1f321d.mp3"
+      },
+      {
+        "en": "Learning English can be a lot of fun.",
+        "cn": "学英语可以非常有趣。",
+        "level": 3,
+        "audioFile": "ex_de9a1f27ae.mp3"
+      }
+    ],
+    "happy": [
+      {
+        "en": "I am happy.",
+        "cn": "我很开心。",
+        "level": 1,
+        "audioFile": "ex_2b1814c97b.mp3"
+      },
+      {
+        "en": "Mum is happy when I help her.",
+        "cn": "我帮妈妈时她很开心。",
+        "level": 2,
+        "audioFile": "ex_a4585424d3.mp3"
+      },
+      {
+        "en": "A small smile can make people very happy.",
+        "cn": "一个小小的微笑能让人非常快乐。",
+        "level": 3,
+        "audioFile": "ex_2ed149d182.mp3"
+      }
+    ],
+    "tired": [
+      {
+        "en": "I am tired.",
+        "cn": "我累了。",
+        "level": 1,
+        "audioFile": "ex_a232bc9155.mp3"
+      },
+      {
+        "en": "He is tired after running.",
+        "cn": "他跑步后很累。",
+        "level": 2,
+        "audioFile": "ex_b0f695f430.mp3"
+      },
+      {
+        "en": "I'm tired but happy after a long school day.",
+        "cn": "上完一整天课，我又累又开心。",
+        "level": 3,
+        "audioFile": "ex_f5bc52a904.mp3"
+      }
+    ],
+    "busy": [
+      {
+        "en": "I am busy.",
+        "cn": "我很忙。",
+        "level": 1,
+        "audioFile": "ex_e94fcee9e1.mp3"
+      },
+      {
+        "en": "Dad is busy at work.",
+        "cn": "爸爸工作很忙。",
+        "level": 2,
+        "audioFile": "ex_530e8b9f67.mp3"
+      },
+      {
+        "en": "Mum is too busy to play with me today.",
+        "cn": "妈妈今天太忙，没空陪我玩。",
+        "level": 3,
+        "audioFile": "ex_58c75963f1.mp3"
+      }
+    ],
+    "school": [
+      {
+        "en": "I love school.",
+        "cn": "我爱学校。",
+        "level": 1,
+        "audioFile": "ex_206f5ebc70.mp3"
+      },
+      {
+        "en": "Our school is big and clean.",
+        "cn": "我们学校又大又干净。",
+        "level": 2,
+        "audioFile": "ex_71f9de3b16.mp3"
+      },
+      {
+        "en": "I walk to school with my friends every morning.",
+        "cn": "我每天早上和朋友们走路去上学。",
+        "level": 3,
+        "audioFile": "ex_0895439275.mp3"
+      }
+    ],
+    "home": [
+      {
+        "en": "I go home.",
+        "cn": "我回家。",
+        "level": 1,
+        "audioFile": "ex_a98628e827.mp3"
+      },
+      {
+        "en": "Home is sweet.",
+        "cn": "家很温馨。",
+        "level": 2,
+        "audioFile": "ex_ca5e32b006.mp3"
+      },
+      {
+        "en": "After a long day, it's nice to be home.",
+        "cn": "忙碌一天后回到家真好。",
+        "level": 3,
+        "audioFile": "ex_c19af410fc.mp3"
+      }
+    ],
+    "great": [
+      {
+        "en": "Great!",
+        "cn": "太好了！",
+        "level": 1,
+        "audioFile": "ex_73bc3b5a9a.mp3"
+      },
+      {
+        "en": "What a great day!",
+        "cn": "多么棒的一天！",
+        "level": 2,
+        "audioFile": "ex_001438af87.mp3"
+      },
+      {
+        "en": "Working together makes us a great team.",
+        "cn": "齐心协力让我们成为一个很棒的团队。",
+        "level": 3,
+        "audioFile": "ex_03dc145a5c.mp3"
+      }
+    ],
+    "plan": [
+      {
+        "en": "Make a plan.",
+        "cn": "做个计划。",
+        "level": 1,
+        "audioFile": "ex_60251b3531.mp3"
+      },
+      {
+        "en": "Let's plan our weekend.",
+        "cn": "我们来计划周末吧。",
+        "level": 2,
+        "audioFile": "ex_6a37864545.mp3"
+      },
+      {
+        "en": "A good plan helps us use time well.",
+        "cn": "好的计划能帮我们用好时间。",
+        "level": 3,
+        "audioFile": "ex_4bbe98cc44.mp3"
+      }
+    ],
+    "time": [
+      {
+        "en": "What time is it?",
+        "cn": "几点了？",
+        "level": 1,
+        "audioFile": "ex_67e07d17d4.mp3"
+      },
+      {
+        "en": "It's time for class.",
+        "cn": "上课时间到了。",
+        "level": 2,
+        "audioFile": "ex_280cc1beac.mp3"
+      },
+      {
+        "en": "Time goes fast when we are having fun.",
+        "cn": "玩得开心的时候时间过得真快。",
+        "level": 3,
+        "audioFile": "ex_544a01a441.mp3"
+      }
+    ],
+    "clock": [
+      {
+        "en": "This is a clock.",
+        "cn": "这是一只钟。",
+        "level": 1,
+        "audioFile": "ex_a108b97721.mp3"
+      },
+      {
+        "en": "The clock says nine.",
+        "cn": "钟显示九点。",
+        "level": 2,
+        "audioFile": "ex_ed16a7d48f.mp3"
+      },
+      {
+        "en": "The clock on the wall ticks all day.",
+        "cn": "墙上的钟一整天都在滴答响。",
+        "level": 3,
+        "audioFile": "ex_7cb6bd7f8e.mp3"
+      }
+    ],
+    "first": [
+      {
+        "en": "I am first.",
+        "cn": "我是第一。",
+        "level": 1,
+        "audioFile": "ex_a120962611.mp3"
+      },
+      {
+        "en": "First, wash your hands.",
+        "cn": "首先，洗手。",
+        "level": 2,
+        "audioFile": "ex_42e0079734.mp3"
+      },
+      {
+        "en": "First, we read the story, then we answer the questions.",
+        "cn": "首先我们读故事，然后回答问题。",
+        "level": 3,
+        "audioFile": "ex_9b62309fef.mp3"
+      }
+    ],
+    "then": [
+      {
+        "en": "Then I sleep.",
+        "cn": "然后我睡觉。",
+        "level": 1,
+        "audioFile": "ex_d2579767a5.mp3"
+      },
+      {
+        "en": "I had lunch, then I played.",
+        "cn": "我吃了午饭，然后玩了。",
+        "level": 2,
+        "audioFile": "ex_586b00b4a7.mp3"
+      },
+      {
+        "en": "First I do my homework, then I watch TV for a while.",
+        "cn": "我先做作业，然后看一会儿电视。",
+        "level": 3,
+        "audioFile": "ex_a9f0aa4a6f.mp3"
+      }
+    ],
+    "next": [
+      {
+        "en": "Next, please.",
+        "cn": "下一个，请。",
+        "level": 1,
+        "audioFile": "ex_1491f6e10c.mp3"
+      },
+      {
+        "en": "What's next on the plan?",
+        "cn": "计划里下一个是什么？",
+        "level": 2,
+        "audioFile": "ex_9499f86978.mp3"
+      },
+      {
+        "en": "Next, we will sing a song together.",
+        "cn": "接下来，我们一起唱首歌。",
+        "level": 3,
+        "audioFile": "ex_7752b9cd06.mp3"
+      }
+    ],
+    "finish": [
+      {
+        "en": "I finish my work.",
+        "cn": "我做完作业。",
+        "level": 1,
+        "audioFile": "ex_939d700fb1.mp3"
+      },
+      {
+        "en": "Finish your milk, please.",
+        "cn": "请把牛奶喝完。",
+        "level": 2,
+        "audioFile": "ex_f39648f321.mp3"
+      },
+      {
+        "en": "I finish my homework before dinner every day.",
+        "cn": "我每天晚饭前完成作业。",
+        "level": 3,
+        "audioFile": "ex_625432cce6.mp3"
+      }
+    ],
+    "homework": [
+      {
+        "en": "Do your homework.",
+        "cn": "做作业。",
+        "level": 1,
+        "audioFile": "ex_0442e36db5.mp3"
+      },
+      {
+        "en": "I have homework today.",
+        "cn": "我今天有作业。",
+        "level": 2,
+        "audioFile": "ex_3efbac8dba.mp3"
+      },
+      {
+        "en": "After I finish my homework, I can play games.",
+        "cn": "我做完作业后就可以玩游戏。",
+        "level": 3,
+        "audioFile": "ex_2089c21207.mp3"
+      }
+    ],
+    "come": [
+      {
+        "en": "Come here.",
+        "cn": "过来。",
+        "level": 1,
+        "audioFile": "ex_359452344b.mp3"
+      },
+      {
+        "en": "Come and play with me.",
+        "cn": "来和我一起玩。",
+        "level": 2,
+        "audioFile": "ex_d1fa704375.mp3"
+      },
+      {
+        "en": "Please come to my party on Sunday.",
+        "cn": "请周日来我的聚会。",
+        "level": 3,
+        "audioFile": "ex_b09d1895ad.mp3"
+      }
+    ],
+    "join": [
+      {
+        "en": "Come and join us!",
+        "cn": "来加入我们！",
+        "level": 1,
+        "audioFile": "ex_4bcdb1973d.mp3"
+      },
+      {
+        "en": "I want to join the music club.",
+        "cn": "我想加入音乐俱乐部。",
+        "level": 2,
+        "audioFile": "ex_f599a67daa.mp3"
+      },
+      {
+        "en": "Many children join the game on the playground.",
+        "cn": "很多孩子在操场上加入游戏。",
+        "level": 3,
+        "audioFile": "ex_a4703a1e37.mp3"
+      }
+    ],
+    "game": [
+      {
+        "en": "I like games.",
+        "cn": "我喜欢游戏。",
+        "level": 1,
+        "audioFile": "ex_7ececa4075.mp3"
+      },
+      {
+        "en": "Let's play a game.",
+        "cn": "我们玩个游戏吧。",
+        "level": 2,
+        "audioFile": "ex_a71384e2c7.mp3"
+      },
+      {
+        "en": "We play a fun game in the English class.",
+        "cn": "我们在英语课上玩一个有趣的游戏。",
+        "level": 3,
+        "audioFile": "ex_f36a3f5165.mp3"
+      }
+    ],
+    "party": [
+      {
+        "en": "Happy party!",
+        "cn": "聚会快乐！",
+        "level": 1,
+        "audioFile": "ex_ea14061a16.mp3"
+      },
+      {
+        "en": "I have a party today.",
+        "cn": "我今天有个聚会。",
+        "level": 2,
+        "audioFile": "ex_7366e01437.mp3"
+      },
+      {
+        "en": "Mum makes a cake for my birthday party.",
+        "cn": "妈妈为我的生日聚会做了一个蛋糕。",
+        "level": 3,
+        "audioFile": "ex_6b28706932.mp3"
+      }
+    ],
+    "together": [
+      {
+        "en": "Sing together.",
+        "cn": "一起唱。",
+        "level": 1,
+        "audioFile": "ex_b95e0d1c0e.mp3"
+      },
+      {
+        "en": "We work together.",
+        "cn": "我们一起工作。",
+        "level": 2,
+        "audioFile": "ex_80e780d678.mp3"
+      },
+      {
+        "en": "We are stronger when we play and learn together.",
+        "cn": "一起玩、一起学，我们才更强大。",
+        "level": 3,
+        "audioFile": "ex_850b5a17d6.mp3"
+      }
+    ],
+    "welcome": [
+      {
+        "en": "Welcome!",
+        "cn": "欢迎！",
+        "level": 1,
+        "audioFile": "ex_9a843f2067.mp3"
+      },
+      {
+        "en": "Welcome to my home.",
+        "cn": "欢迎来我家。",
+        "level": 2,
+        "audioFile": "ex_393247438a.mp3"
+      },
+      {
+        "en": "The teacher welcomes the new students with a smile.",
+        "cn": "老师微笑着欢迎新同学。",
+        "level": 3,
+        "audioFile": "ex_9ded4fde0f.mp3"
+      }
+    ],
+    "friend": [
+      {
+        "en": "He is my friend.",
+        "cn": "他是我的朋友。",
+        "level": 1,
+        "audioFile": "ex_4227d7fa29.mp3"
+      },
+      {
+        "en": "I have many friends.",
+        "cn": "我有很多朋友。",
+        "level": 2,
+        "audioFile": "ex_48d75994a6.mp3"
+      },
+      {
+        "en": "A true friend helps you when you are in trouble.",
+        "cn": "真正的朋友会在你遇到困难时帮助你。",
+        "level": 3,
+        "audioFile": "ex_7296411640.mp3"
+      }
+    ],
+    "sure": [
+      {
+        "en": "Sure!",
+        "cn": "当然！",
+        "level": 1,
+        "audioFile": "ex_8721149f3d.mp3"
+      },
+      {
+        "en": "Sure, I can help.",
+        "cn": "当然，我可以帮忙。",
+        "level": 2,
+        "audioFile": "ex_8b26a4f813.mp3"
+      },
+      {
+        "en": "Are you sure you want to come with us?",
+        "cn": "你确定要和我们一起来吗？",
+        "level": 3,
+        "audioFile": "ex_643cfdabcd.mp3"
+      }
+    ],
+    "classroom": [
+      {
+        "en": "This is our classroom.",
+        "cn": "这是我们的教室。",
+        "level": 1,
+        "audioFile": "ex_bf9016e337.mp3"
+      },
+      {
+        "en": "Our classroom is bright and clean.",
+        "cn": "我们的教室明亮又干净。",
+        "level": 2,
+        "audioFile": "ex_812b815db9.mp3"
+      },
+      {
+        "en": "There are many posters on the walls of our classroom.",
+        "cn": "我们教室的墙上有许多海报。",
+        "level": 3,
+        "audioFile": "ex_11da73e538.mp3"
+      }
+    ],
+    "desk": [
+      {
+        "en": "This is my desk.",
+        "cn": "这是我的课桌。",
+        "level": 1,
+        "audioFile": "ex_24a884aa00.mp3"
+      },
+      {
+        "en": "I have a book on my desk.",
+        "cn": "我课桌上有一本书。",
+        "level": 2,
+        "audioFile": "ex_ae17c0249b.mp3"
+      },
+      {
+        "en": "Please keep your desk clean and tidy.",
+        "cn": "请保持你的课桌干净整洁。",
+        "level": 3,
+        "audioFile": "ex_1991f0e29b.mp3"
+      }
+    ],
+    "chair": [
+      {
+        "en": "Sit on the chair.",
+        "cn": "坐在椅子上。",
+        "level": 1,
+        "audioFile": "ex_fbde70abcb.mp3"
+      },
+      {
+        "en": "This chair is too small.",
+        "cn": "这把椅子太小了。",
+        "level": 2,
+        "audioFile": "ex_1030335489.mp3"
+      },
+      {
+        "en": "Each student has a desk and a chair in our class.",
+        "cn": "我们班每个学生都有一张课桌和一把椅子。",
+        "level": 3,
+        "audioFile": "ex_96d8113014.mp3"
+      }
+    ],
+    "clean": [
+      {
+        "en": "Be clean.",
+        "cn": "要干净。",
+        "level": 1,
+        "audioFile": "ex_6abbcd03e0.mp3"
+      },
+      {
+        "en": "I clean my desk every day.",
+        "cn": "我每天打扫我的课桌。",
+        "level": 2,
+        "audioFile": "ex_614b4fd730.mp3"
+      },
+      {
+        "en": "We work together to keep our classroom clean.",
+        "cn": "我们一起努力保持教室干净。",
+        "level": 3,
+        "audioFile": "ex_cc0ee3f0d6.mp3"
+      }
+    ],
+    "tidy": [
+      {
+        "en": "Be tidy.",
+        "cn": "要整洁。",
+        "level": 1,
+        "audioFile": "ex_f3c70d246a.mp3"
+      },
+      {
+        "en": "Your room is very tidy.",
+        "cn": "你的房间很整洁。",
+        "level": 2,
+        "audioFile": "ex_2ebc26a518.mp3"
+      },
+      {
+        "en": "A tidy desk helps me study better.",
+        "cn": "整洁的课桌让我学得更好。",
+        "level": 3,
+        "audioFile": "ex_7178118f54.mp3"
+      }
+    ],
+    "poster": [
+      {
+        "en": "Look at this poster.",
+        "cn": "看这张海报。",
+        "level": 1,
+        "audioFile": "ex_9e91b2e3c5.mp3"
+      },
+      {
+        "en": "I have a new poster.",
+        "cn": "我有一张新海报。",
+        "level": 2,
+        "audioFile": "ex_3b0d0cae79.mp3"
+      },
+      {
+        "en": "The poster on the wall shows our class rules.",
+        "cn": "墙上的海报展示了我们的班规。",
+        "level": 3,
+        "audioFile": "ex_43a4f3e083.mp3"
+      }
+    ],
+    "rule": [
+      {
+        "en": "Follow the rules.",
+        "cn": "遵守规则。",
+        "level": 1,
+        "audioFile": "ex_3771671d4f.mp3"
+      },
+      {
+        "en": "We have school rules.",
+        "cn": "我们有校规。",
+        "level": 2,
+        "audioFile": "ex_3159cfc705.mp3"
+      },
+      {
+        "en": "Good rules keep everyone safe and happy.",
+        "cn": "好的规则让每个人都安全又快乐。",
+        "level": 3,
+        "audioFile": "ex_d6e73eea29.mp3"
+      }
+    ],
+    "call": [
+      {
+        "en": "Hear our call!",
+        "cn": "听我们的呼喊！",
+        "level": 1,
+        "audioFile": "ex_180e60526c.mp3"
+      },
+      {
+        "en": "Our class call is loud.",
+        "cn": "我们的班级口号很响亮。",
+        "level": 2,
+        "audioFile": "ex_93da3fe79b.mp3"
+      },
+      {
+        "en": "We shout our class call together every morning.",
+        "cn": "我们每天早上一起喊出班级口号。",
+        "level": 3,
+        "audioFile": "ex_c0d662a41c.mp3"
+      }
+    ],
+    "duty": [
+      {
+        "en": "It's my duty.",
+        "cn": "这是我的职责。",
+        "level": 1,
+        "audioFile": "ex_9494579cdf.mp3"
+      },
+      {
+        "en": "I'm on duty today.",
+        "cn": "我今天值日。",
+        "level": 2,
+        "audioFile": "ex_9b07dee23b.mp3"
+      },
+      {
+        "en": "It's our duty to keep the classroom clean.",
+        "cn": "保持教室干净是我们的职责。",
+        "level": 3,
+        "audioFile": "ex_68d2c299ad.mp3"
+      }
+    ],
+    "water": [
+      {
+        "en": "Drink water.",
+        "cn": "喝水。",
+        "level": 1,
+        "audioFile": "ex_82ac3af832.mp3"
+      },
+      {
+        "en": "I water the plants.",
+        "cn": "我给植物浇水。",
+        "level": 2,
+        "audioFile": "ex_4c64fa7abc.mp3"
+      },
+      {
+        "en": "Don't forget to water the flowers every day.",
+        "cn": "不要忘了每天给花浇水。",
+        "level": 3,
+        "audioFile": "ex_c4a230ac94.mp3"
+      }
+    ],
+    "plant": [
+      {
+        "en": "A green plant.",
+        "cn": "一棵绿色的植物。",
+        "level": 1,
+        "audioFile": "ex_a91df546ef.mp3"
+      },
+      {
+        "en": "I have a small plant.",
+        "cn": "我有一棵小植物。",
+        "level": 2,
+        "audioFile": "ex_ad57072984.mp3"
+      },
+      {
+        "en": "Plants need water and sunlight to grow.",
+        "cn": "植物需要水和阳光才能生长。",
+        "level": 3,
+        "audioFile": "ex_59e88b5fe3.mp3"
+      }
+    ],
+    "wipe": [
+      {
+        "en": "Wipe the desk.",
+        "cn": "擦课桌。",
+        "level": 1,
+        "audioFile": "ex_4d8fd9cc7c.mp3"
+      },
+      {
+        "en": "Please wipe your hands.",
+        "cn": "请把手擦干。",
+        "level": 2,
+        "audioFile": "ex_14c6c6b748.mp3"
+      },
+      {
+        "en": "I wipe the windows until they shine.",
+        "cn": "我把窗户擦得闪闪发亮。",
+        "level": 3,
+        "audioFile": "ex_3e4ba37ce1.mp3"
+      }
+    ],
+    "window": [
+      {
+        "en": "Open the window.",
+        "cn": "开窗。",
+        "level": 1,
+        "audioFile": "ex_c21855e347.mp3"
+      },
+      {
+        "en": "Look out of the window.",
+        "cn": "看窗外。",
+        "level": 2,
+        "audioFile": "ex_a7b0a8423f.mp3"
+      },
+      {
+        "en": "The bird is singing outside the window.",
+        "cn": "鸟儿在窗外唱歌。",
+        "level": 3,
+        "audioFile": "ex_0944e4d7cd.mp3"
+      }
+    ],
+    "sweep": [
+      {
+        "en": "Sweep the floor.",
+        "cn": "扫地。",
+        "level": 1,
+        "audioFile": "ex_3d0f6e1df5.mp3"
+      },
+      {
+        "en": "Ben sweeps the room.",
+        "cn": "本打扫房间。",
+        "level": 2,
+        "audioFile": "ex_1cbf0dea76.mp3"
+      },
+      {
+        "en": "We sweep the classroom after class every day.",
+        "cn": "我们每天下课后扫教室。",
+        "level": 3,
+        "audioFile": "ex_4ae91b3ee7.mp3"
+      }
+    ],
+    "floor": [
+      {
+        "en": "The floor is wet.",
+        "cn": "地板是湿的。",
+        "level": 1,
+        "audioFile": "ex_a3ccbf19b9.mp3"
+      },
+      {
+        "en": "Don't run on the wet floor.",
+        "cn": "不要在湿地板上跑。",
+        "level": 2,
+        "audioFile": "ex_6601bb6b03.mp3"
+      },
+      {
+        "en": "We sit on the floor to read stories together.",
+        "cn": "我们坐在地板上一起读故事。",
+        "level": 3,
+        "audioFile": "ex_16aa6def1f.mp3"
+      }
+    ],
+    "help": [
+      {
+        "en": "Help, please.",
+        "cn": "请帮帮我。",
+        "level": 1,
+        "audioFile": "ex_43a463d45c.mp3"
+      },
+      {
+        "en": "I help the old man cross the road.",
+        "cn": "我帮老爷爷过马路。",
+        "level": 2,
+        "audioFile": "ex_e88e76682d.mp3"
+      },
+      {
+        "en": "It feels good to help others on Road Helper Day.",
+        "cn": "交通小帮手日帮助别人感觉真好。",
+        "level": 3,
+        "audioFile": "ex_86dfcd10c3.mp3"
+      }
+    ],
+    "don't": [
+      {
+        "en": "Don't run.",
+        "cn": "不要跑。",
+        "level": 1,
+        "audioFile": "ex_eafc34530c.mp3"
+      },
+      {
+        "en": "Don't shout in class.",
+        "cn": "不要在课堂上喊。",
+        "level": 2,
+        "audioFile": "ex_d4b336613f.mp3"
+      },
+      {
+        "en": "Don't forget to bring your books tomorrow.",
+        "cn": "别忘了明天带上你的书。",
+        "level": 3,
+        "audioFile": "ex_a1503f94d0.mp3"
+      }
+    ],
+    "should": [
+      {
+        "en": "You should try.",
+        "cn": "你应该试试。",
+        "level": 1,
+        "audioFile": "ex_a9d05fc4f6.mp3"
+      },
+      {
+        "en": "We should help others.",
+        "cn": "我们应该帮助别人。",
+        "level": 2,
+        "audioFile": "ex_85aed6d8ee.mp3"
+      },
+      {
+        "en": "You should listen carefully when the teacher speaks.",
+        "cn": "老师讲话时你应该仔细听。",
+        "level": 3,
+        "audioFile": "ex_b9fbdd82d1.mp3"
+      }
+    ],
+    "run": [
+      {
+        "en": "Don't run.",
+        "cn": "不要跑。",
+        "level": 1,
+        "audioFile": "ex_eafc34530c.mp3"
+      },
+      {
+        "en": "He can run very fast.",
+        "cn": "他能跑得很快。",
+        "level": 2,
+        "audioFile": "ex_258974abdb.mp3"
+      },
+      {
+        "en": "We should not run in the school hall.",
+        "cn": "我们不应在学校走廊里跑。",
+        "level": 3,
+        "audioFile": "ex_4eac53f60e.mp3"
+      }
+    ],
+    "shout": [
+      {
+        "en": "Don't shout!",
+        "cn": "不要喊！",
+        "level": 1,
+        "audioFile": "ex_645a3cff4c.mp3"
+      },
+      {
+        "en": "Please don't shout at me.",
+        "cn": "请不要对我大喊。",
+        "level": 2,
+        "audioFile": "ex_d5a81df0b5.mp3"
+      },
+      {
+        "en": "It's not polite to shout in the library.",
+        "cn": "在图书馆里大声喊是不礼貌的。",
+        "level": 3,
+        "audioFile": "ex_043c9049d1.mp3"
+      }
+    ],
+    "walk": [
+      {
+        "en": "Walk slowly.",
+        "cn": "慢慢走。",
+        "level": 1,
+        "audioFile": "ex_6c302a6525.mp3"
+      },
+      {
+        "en": "I walk to school.",
+        "cn": "我走路上学。",
+        "level": 2,
+        "audioFile": "ex_9ab10b5f1c.mp3"
+      },
+      {
+        "en": "Walk on the right side of the hall, please.",
+        "cn": "请靠走廊右侧行走。",
+        "level": 3,
+        "audioFile": "ex_f81575719e.mp3"
+      }
+    ],
+    "hall": [
+      {
+        "en": "It's a big hall.",
+        "cn": "这是个大走廊。",
+        "level": 1,
+        "audioFile": "ex_a4a60de5d5.mp3"
+      },
+      {
+        "en": "We walk along the hall.",
+        "cn": "我们沿着走廊走。",
+        "level": 2,
+        "audioFile": "ex_73440845f6.mp3"
+      },
+      {
+        "en": "There are many posters on the wall of the hall.",
+        "cn": "走廊的墙上有很多海报。",
+        "level": 3,
+        "audioFile": "ex_7ae4031e86.mp3"
+      }
+    ],
+    "safe": [
+      {
+        "en": "Be safe.",
+        "cn": "注意安全。",
+        "level": 1,
+        "audioFile": "ex_4320f0bd1c.mp3"
+      },
+      {
+        "en": "Walking is safer than running.",
+        "cn": "走路比跑步更安全。",
+        "level": 2,
+        "audioFile": "ex_eb1eddca7c.mp3"
+      },
+      {
+        "en": "Rules help us to stay safe at school.",
+        "cn": "规则帮助我们在学校保持安全。",
+        "level": 3,
+        "audioFile": "ex_4432f80a47.mp3"
+      }
+    ],
+    "polite": [
+      {
+        "en": "Be polite.",
+        "cn": "有礼貌。",
+        "level": 1,
+        "audioFile": "ex_a770400e90.mp3"
+      },
+      {
+        "en": "She is a polite girl.",
+        "cn": "她是个有礼貌的女孩。",
+        "level": 2,
+        "audioFile": "ex_33899ab850.mp3"
+      },
+      {
+        "en": "A polite child is loved by everyone.",
+        "cn": "有礼貌的孩子人人喜爱。",
+        "level": 3,
+        "audioFile": "ex_ad275e7601.mp3"
+      }
+    ],
+    "please": [
+      {
+        "en": "Please.",
+        "cn": "请。",
+        "level": 1,
+        "audioFile": "ex_257598df73.mp3"
+      },
+      {
+        "en": "Please open the door.",
+        "cn": "请把门打开。",
+        "level": 2,
+        "audioFile": "ex_93a5be400a.mp3"
+      },
+      {
+        "en": "Could you please pass me the salt?",
+        "cn": "请你把盐递给我好吗？",
+        "level": 3,
+        "audioFile": "ex_da3ca89778.mp3"
+      }
+    ],
+    "thanks": [
+      {
+        "en": "Thanks!",
+        "cn": "谢谢！",
+        "level": 1,
+        "audioFile": "ex_38f5c24717.mp3"
+      },
+      {
+        "en": "Thanks a lot, Ben.",
+        "cn": "非常感谢，本。",
+        "level": 2,
+        "audioFile": "ex_10ac9607b9.mp3"
+      },
+      {
+        "en": "Many thanks for helping me with my homework.",
+        "cn": "非常感谢你帮我做作业。",
+        "level": 3,
+        "audioFile": "ex_9ce5c431df.mp3"
+      }
+    ],
+    "sorry": [
+      {
+        "en": "Sorry!",
+        "cn": "对不起！",
+        "level": 1,
+        "audioFile": "ex_a705295eff.mp3"
+      },
+      {
+        "en": "I'm sorry I'm late.",
+        "cn": "对不起我迟到了。",
+        "level": 2,
+        "audioFile": "ex_ad50a445b1.mp3"
+      },
+      {
+        "en": "I'm sorry for breaking your pencil.",
+        "cn": "对不起，我把你的铅笔弄断了。",
+        "level": 3,
+        "audioFile": "ex_4c118a6670.mp3"
+      }
+    ],
+    "excuse": [
+      {
+        "en": "Excuse me.",
+        "cn": "打扰一下。",
+        "level": 1,
+        "audioFile": "ex_a9aa920b12.mp3"
+      },
+      {
+        "en": "Excuse me, may I come in?",
+        "cn": "打扰了，我可以进来吗？",
+        "level": 2,
+        "audioFile": "ex_b26bb1043f.mp3"
+      },
+      {
+        "en": "Excuse me, where is the school library?",
+        "cn": "请问，学校图书馆在哪里？",
+        "level": 3,
+        "audioFile": "ex_134c461e07.mp3"
+      }
+    ],
+    "greet": [
+      {
+        "en": "Greet your friend.",
+        "cn": "问候你的朋友。",
+        "level": 1,
+        "audioFile": "ex_f4eb79c34e.mp3"
+      },
+      {
+        "en": "We greet our teacher every morning.",
+        "cn": "我们每天早上向老师问好。",
+        "level": 2,
+        "audioFile": "ex_75b5bfe964.mp3"
+      },
+      {
+        "en": "It's nice to greet people with a warm smile.",
+        "cn": "用温暖的微笑问候别人真好。",
+        "level": 3,
+        "audioFile": "ex_16ac84a776.mp3"
+      }
+    ],
+    "smile": [
+      {
+        "en": "A big smile.",
+        "cn": "一个大大的微笑。",
+        "level": 1,
+        "audioFile": "ex_e59e72c78e.mp3"
+      },
+      {
+        "en": "She gives me a smile.",
+        "cn": "她给了我一个微笑。",
+        "level": 2,
+        "audioFile": "ex_470041133e.mp3"
+      },
+      {
+        "en": "A friendly smile can make someone's day better.",
+        "cn": "一个友好的微笑能让别人的一天更美好。",
+        "level": 3,
+        "audioFile": "ex_41d8f6f749.mp3"
+      }
+    ],
+    "kind": [
+      {
+        "en": "Be kind.",
+        "cn": "要友善。",
+        "level": 1,
+        "audioFile": "ex_aad4c51eae.mp3"
+      },
+      {
+        "en": "He is kind to animals.",
+        "cn": "他对动物很友善。",
+        "level": 2,
+        "audioFile": "ex_db243b07b8.mp3"
+      },
+      {
+        "en": "Kind words and kind smiles cost nothing.",
+        "cn": "友善的话语和微笑不花一分钱。",
+        "level": 3,
+        "audioFile": "ex_28c0f7752f.mp3"
+      }
+    ],
+    "road": [
+      {
+        "en": "Cross the road.",
+        "cn": "过马路。",
+        "level": 1,
+        "audioFile": "ex_da58739c0e.mp3"
+      },
+      {
+        "en": "The road is wide.",
+        "cn": "这条路很宽。",
+        "level": 2,
+        "audioFile": "ex_e405299623.mp3"
+      },
+      {
+        "en": "Always look both ways before crossing the road.",
+        "cn": "过马路前总要左右看。",
+        "level": 3,
+        "audioFile": "ex_7e90d9edce.mp3"
+      }
+    ],
+    "light": [
+      {
+        "en": "Red light.",
+        "cn": "红灯。",
+        "level": 1,
+        "audioFile": "ex_58ae6e406a.mp3"
+      },
+      {
+        "en": "Wait for the green light.",
+        "cn": "等绿灯。",
+        "level": 2,
+        "audioFile": "ex_e291ffd9f9.mp3"
+      },
+      {
+        "en": "When the traffic light turns green, we can cross.",
+        "cn": "交通灯变绿时我们就可以过马路了。",
+        "level": 3,
+        "audioFile": "ex_784cb8eca5.mp3"
+      }
+    ],
+    "stop": [
+      {
+        "en": "Stop!",
+        "cn": "停！",
+        "level": 1,
+        "audioFile": "ex_b05b30a770.mp3"
+      },
+      {
+        "en": "Stop at the red light.",
+        "cn": "红灯停。",
+        "level": 2,
+        "audioFile": "ex_4f295070fa.mp3"
+      },
+      {
+        "en": "Always stop and look before you cross the road.",
+        "cn": "过马路前一定要停下看看。",
+        "level": 3,
+        "audioFile": "ex_ecdc2c2e41.mp3"
+      }
+    ],
+    "go": [
+      {
+        "en": "Go!",
+        "cn": "走！",
+        "level": 1,
+        "audioFile": "ex_1fb103afe9.mp3"
+      },
+      {
+        "en": "Green light, go.",
+        "cn": "绿灯，走。",
+        "level": 2,
+        "audioFile": "ex_4e7ab53edf.mp3"
+      },
+      {
+        "en": "When the light is green, you can go safely.",
+        "cn": "绿灯亮时你可以安全通过。",
+        "level": 3,
+        "audioFile": "ex_c5c8688c5a.mp3"
+      }
+    ],
+    "wait": [
+      {
+        "en": "Wait, please.",
+        "cn": "请等一下。",
+        "level": 1,
+        "audioFile": "ex_b50691e194.mp3"
+      },
+      {
+        "en": "Wait for me at the door.",
+        "cn": "在门口等我。",
+        "level": 2,
+        "audioFile": "ex_ce6807d93f.mp3"
+      },
+      {
+        "en": "Please wait for the green light before you cross.",
+        "cn": "请等绿灯亮了再过马路。",
+        "level": 3,
+        "audioFile": "ex_c3ae7e016c.mp3"
+      }
+    ]
+  }
+}

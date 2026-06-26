@@ -1,0 +1,42 @@
+{
+  "day": [
+    { "en": "Have a nice day!", "cn": "祝你今天愉快！", "level": 1 },
+    { "en": "What day is it today?", "cn": "今天星期几？", "level": 2 },
+    { "en": "Every day brings a new chance to learn.", "cn": "每一天都带来学习的新机会。", "level": 3 }
+  ],
+  "fun": [
+    { "en": "It's fun.", "cn": "好玩。", "level": 1 },
+    { "en": "We have fun together.", "cn": "我们一起玩得很开心。", "level": 2 },
+    { "en": "Learning English can be a lot of fun.", "cn": "学英语可以非常有趣。", "level": 3 }
+  ],
+  "happy": [
+    { "en": "I am happy.", "cn": "我很开心。", "level": 1 },
+    { "en": "Mum is happy when I help her.", "cn": "我帮妈妈时她很开心。", "level": 2 },
+    { "en": "A small smile can make people very happy.", "cn": "一个小小的微笑能让人非常快乐。", "level": 3 }
+  ],
+  "tired": [
+    { "en": "I am tired.", "cn": "我累了。", "level": 1 },
+    { "en": "He is tired after running.", "cn": "他跑步后很累。", "level": 2 },
+    { "en": "I'm tired but happy after a long school day.", "cn": "上完一整天课，我又累又开心。", "level": 3 }
+  ],
+  "busy": [
+    { "en": "I am busy.", "cn": "我很忙。", "level": 1 },
+    { "en": "Dad is busy at work.", "cn": "爸爸工作很忙。", "level": 2 },
+    { "en": "Mum is too busy to play with me today.", "cn": "妈妈今天太忙，没空陪我玩。", "level": 3 }
+  ],
+  "school": [
+    { "en": "I love school.", "cn": "我爱学校。", "level": 1 },
+    { "en": "Our school is big and clean.", "cn": "我们学校又大又干净。", "level": 2 },
+    { "en": "I walk to school with my friends every morning.", "cn": "我每天早上和朋友们走路去上学。", "level": 3 }
+  ],
+  "home": [
+    { "en": "I go home.", "cn": "我回家。", "level": 1 },
+    { "en": "Home is sweet.", "cn": "家很温馨。", "level": 2 },
+    { "en": "After a long day, it's nice to be home.", "cn": "忙碌一天后回到家真好。", "level": 3 }
+  ],
+  "great": [
+    { "en": "Great!", "cn": "太好了！", "level": 1 },
+    { "en": "What a great day!", "cn": "多么棒的一天！", "level": 2 },
+    { "en": "Working together makes us a great team.", "cn": "齐心协力让我们成为一个很棒的团队。", "level": 3 }
+  ]
+}

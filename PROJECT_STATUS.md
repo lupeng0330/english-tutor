@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-06-26（PC 端，新增：**铁律 5** 决策项必须用选项清单收集（§0）+ **jk 剩余 7 册补齐开发宪法** `JK_REMAINING_7_VOLUMES_PLAN.md` + 脚本模板化 `scripts/_jk_volume_lib.py` + 通用校验 `scripts/_verify_volume.py`；**P1-4 jk 教科版 3 上全量内容补齐**：9 单元真实教材数据 + 70 词卡 + 18 篇课文 + 210 例句 + 208 个 ex_*.mp3 §22；P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；例句朗读本地 MP3 三级降级 + 播放交互修复 V02.20；P0-3 小学考试配置 + 无配置学段友好引导 V02.21；`sw.js` 补缓存 `js/exam.js`）  
+> 最后更新：2026-06-26（PC 端，新增：**P1-4 批次 1 · jk 教科版 3 下全量补齐** 9 单元 / 70 词卡 / 18 课文 / 204 例句 / 193 新 ex_*.mp3 §24；**铁律 5** 决策项必须用选项清单收集（§0）+ **jk 剩余 7 册补齐开发宪法** `JK_REMAINING_7_VOLUMES_PLAN.md` + 脚本模板化 `scripts/_jk_volume_lib.py` + 通用校验 `scripts/_verify_volume.py`；P1-4 批次 0 · jk 3 上 §22；P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；例句朗读本地 MP3 三级降级 + 播放交互修复 V02.20；P0-3 小学考试配置 + 无配置学段友好引导 V02.21；`sw.js` 补缓存 `js/exam.js`）  
 > 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
@@ -1164,5 +1164,58 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ `_jk_volume_lib.py` + `_verify_volume.py` 全绿回归（3 上 6 项全 PASS）
 - ✅ `JK_REMAINING_7_VOLUMES_PLAN.md` 开发宪法定稿
 - ✅ §0 铁律 5 已写入；本章上线后任何决策项必须用 `ask_followup_question` 选项清单收集
-- ⏳ 待用户给"开工"信号后，按宪法启动**批次 1（3 下）**：先产出 `JK_G3_XIA_DATASET.md` 给用户勾选词表 → 走 19 步 → 上线
+- ✅ 批次 1（3 下）已落地，见 §24
+
+---
+
+## 24. ✅ jk 教科版 3 下全量内容补齐 · 批次 1 完成记录（2026-06-26）
+
+> 7 册补齐宪法启动后的第 1 册，**完整复用模板化共享库 + 通用校验**，11 步流水线一气呵成。
+
+### 24.1 决策（铁律 5 · 选项清单一次收齐）
+
+| Q | 选项 | 已选 |
+|---|---|---|
+| Q1 单元结构 | 8 + Review Road Helper Day（草案） | ✅ 符合，按草案走 |
+| Q2 词表 | 70 词草案 | ✅ 全部接受 |
+| Q3 课文风格 | Get started 对话 + Reading Room 短文 | ✅ 沿用 3 上 |
+| Q4 节奏 | 一口气推到上线 | ✅ 立刻开工 |
+
+### 24.2 关键产出
+
+| 项 | 值 |
+|---|---|
+| jk.json grade3.下 | 9 单元 / **70 词条**（含 2 跨 Review 复用：rule/help）/ 18 课文（每单元 2 篇） |
+| jk_grade3_xia.json | **68 独立词** × 3 句 = **204 例句**（全含 audioFile） |
+| audio/ex_*.mp3 | **193 新生成 + 10 复用既有 hash**（与 hj/jk 3上/jk 6下 跨册命中） |
+| 备份 | `jk.json.bak.20260626_215043`（自动） |
+| `scripts/g3x/` | 9 个 u*.json + 9 个 e*.json + 2 个薄入口（共享库模式） |
+
+### 24.3 流水线性能（新基线，供后续 6 册参考）
+
+| 阶段 | 实际耗时 |
+|---|---|
+| 单元草稿 9 个 u*.json | 一次写入（~10 分钟） |
+| dry-run + --write 导入 jk.json | < 5 秒 |
+| 例句草稿 9 个 e*.json | 一次写入（~12 分钟） |
+| merge → jk_grade3_xia.json | < 1 秒 |
+| 音频 3 批（80+80+33） | 约 12 分钟（edge-tts） |
+| verify 6 项校验 | < 1 秒 |
+| **单册净流水线耗时** | **约 30-35 分钟** |
+
+> 比开发宪法预估的 ~2 小时**快了 4 倍**，证明共享库 + verify 模板化的提效效果。
+
+### 24.4 关键工程实践
+
+1. **共享库回归 + audioFile 保留 bug 修复**已在 3 上回归验证生效；3 下首次实战，merge 末尾 [preserve] 行虽未出现（因 jk_grade3_xia.json 是首次创建），但批 2/3 之间 audioFile 字段层层叠加保留正确。
+2. **跨册 hash 去重收益显著**：3 下 204 句中 **10 句**与既有 hj/jk 6下/jk 3上 复用，节约 10 次 TTS 调用。
+3. **跨单元复用词（rule/help）零特判**：jk.json 允许同词在不同单元出现，merge 用后者覆盖前者的例句，前端按 `word` 键查找，体验一致。
+4. **decision-by-options 模式（铁律 5）**实战首次落地：4 个问题一次问完，零追问、零模糊。
+
+### 24.5 收口状态
+
+- ✅ verify 6 项全 PASS（jk.json 9 单元/字段完整/例句对齐/audioFile/level/MP3 落盘）
+- ✅ 双端预览 `http://localhost:8765/index.html` + `mobile.html` 数据 200
+- ✅ JK_REMAINING_7_VOLUMES_PLAN.md §7 进度表 3 下行打勾
+- ⏳ 待 `dev-push.ps1` 上线（紧接本章节提交）
 

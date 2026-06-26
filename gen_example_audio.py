@@ -50,6 +50,7 @@ EX_FILES = [
     "hj_grade9_xia.json",
     "jk_grade6_xia.json",
     "jk_grade3_shang.json",
+    "jk_grade3_xia.json",
 ]
 
 

@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review Road Helper Day",
+  "words": [
+    { "word": "road", "phonetic": "/rəʊd/", "meaning": "[n.] 路", "example": "Cross the road carefully." },
+    { "word": "help", "phonetic": "/help/", "meaning": "[v.] 帮助", "example": "I help my friend." },
+    { "word": "light", "phonetic": "/laɪt/", "meaning": "[n.] 灯（红/绿灯）", "example": "Wait for the green light." },
+    { "word": "stop", "phonetic": "/stɒp/", "meaning": "[v.] 停", "example": "Stop at the red light!" },
+    { "word": "go", "phonetic": "/ɡəʊ/", "meaning": "[v.] 走", "example": "Green light, you can go." },
+    { "word": "wait", "phonetic": "/weɪt/", "meaning": "[v.] 等", "example": "Wait, please." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Road Helper Day",
+      "en": "Anna: Today is Road Helper Day! I am a little helper.\nBen: What do you do?\nAnna: I help kids cross the road. Red light, stop. Green light, go.\nBen: That's great! Can I join you?\nAnna: Sure! Always be safe on the road.",
+      "cn": "安娜：今天是交通小帮手日！我是小帮手。\n本：你要做什么？\n安娜：我帮小朋友过马路。红灯停，绿灯行。\n本：太棒了！我能加入吗？\n安娜：当然！过马路一定要注意安全。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Be safe on the road",
+      "en": "Every Friday is our Road Helper Day. We stand by the road in front of the school. When the light is red, we tell people, \"Stop and wait.\" When the light is green, we say, \"Now you can go.\" Kids smile and say \"Thanks.\" Being kind and helpful is a great way to start a new day!",
+      "cn": "每周五是我们的交通小帮手日。我们站在学校前面的马路边。红灯时我们告诉大家：\"停下来等等\"。绿灯时我们说：\"现在可以走啦\"。小朋友们微笑着说\"谢谢\"。乐于助人是开启新一天的好方式！"
+    }
+  ]
+}
