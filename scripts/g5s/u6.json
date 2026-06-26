@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 Festivals Around the World",
+  "words": [
+    { "word": "festival", "phonetic": "/ˈfestɪvl/", "meaning": "[n.] 节日", "example": "Festivals are fun." },
+    { "word": "world", "phonetic": "/wɜːld/", "meaning": "[n.] 世界", "example": "Around the world." },
+    { "word": "Halloween", "phonetic": "/ˌhæləˈwiːn/", "meaning": "[n.] 万圣节", "example": "Halloween is in October." },
+    { "word": "Thanksgiving", "phonetic": "/ˌθæŋksˈɡɪvɪŋ/", "meaning": "[n.] 感恩节", "example": "Thanksgiving is fun." },
+    { "word": "Mid-Autumn", "phonetic": "/ˌmɪd ˈɔːtəm/", "meaning": "[n.] 中秋", "example": "Mid-Autumn Festival." },
+    { "word": "moon cake", "phonetic": "/muːn keɪk/", "meaning": "[n.] 月饼", "example": "I eat moon cakes." },
+    { "word": "tradition", "phonetic": "/trəˈdɪʃn/", "meaning": "[n.] 传统", "example": "It's a tradition." },
+    { "word": "celebrate", "phonetic": "/ˈselɪbreɪt/", "meaning": "[v.] 庆祝", "example": "We celebrate together." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Festivals we love",
+      "en": "Anna: Ben, what festivals do you celebrate?\nBen: I love Spring Festival and Mid-Autumn. We eat moon cakes.\nAnna: In the West, kids celebrate Halloween — they wear masks.\nBen: My pen pal in the US loves Thanksgiving.\nAnna: Festivals show different traditions around the world.",
+      "cn": "安娜：本，你过哪些节？\n本：我喜欢春节和中秋节，吃月饼。\n安娜：西方孩子过万圣节，戴面具。\n本：我美国笔友最爱感恩节。\n安娜：节日展示了世界各地的不同传统。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "One world, many festivals",
+      "en": "Festivals are different around the world. In China, families gather for Spring Festival and Mid-Autumn Festival. In the United States, people enjoy Thanksgiving dinner with turkey. In Mexico, children break colourful piñatas at parties. Each tradition is special. Festivals remind us that we are one big family on this planet.",
+      "cn": "世界各地的节日各不相同。在中国，家人一起过春节和中秋。在美国，人们享用感恩节火鸡晚餐。在墨西哥，孩子们在派对上敲彩色皮纳塔。每个传统都很特别。节日提醒我们：地球上的我们是一个大家庭。"
+    }
+  ]
+}

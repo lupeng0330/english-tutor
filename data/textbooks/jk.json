@@ -1533,157 +1533,1205 @@
       "上": [
         {
           "id": "u1",
-          "title": "Unit 1 My Room",
+          "title": "Unit 1 Come on In!",
           "words": [
             {
-              "word": "room",
-              "phonetic": "/ruːm/",
-              "meaning": "房间",
-              "example": "This is my room."
+              "word": "welcome",
+              "phonetic": "/ˈwelkəm/",
+              "meaning": "[v./adj.] 欢迎",
+              "example": "Welcome to my home!"
+            },
+            {
+              "word": "come in",
+              "phonetic": "/kʌm ɪn/",
+              "meaning": "[phr.] 进来",
+              "example": "Please come in."
+            },
+            {
+              "word": "house",
+              "phonetic": "/haʊs/",
+              "meaning": "[n.] 房子",
+              "example": "This is my house."
+            },
+            {
+              "word": "living room",
+              "phonetic": "/ˈlɪvɪŋ ruːm/",
+              "meaning": "[n.] 客厅",
+              "example": "We watch TV in the living room."
+            },
+            {
+              "word": "kitchen",
+              "phonetic": "/ˈkɪtʃɪn/",
+              "meaning": "[n.] 厨房",
+              "example": "Mum is in the kitchen."
+            },
+            {
+              "word": "bedroom",
+              "phonetic": "/ˈbedruːm/",
+              "meaning": "[n.] 卧室",
+              "example": "My bedroom is small."
+            },
+            {
+              "word": "sofa",
+              "phonetic": "/ˈsəʊfə/",
+              "meaning": "[n.] 沙发",
+              "example": "Sit on the sofa."
+            },
+            {
+              "word": "beautiful",
+              "phonetic": "/ˈbjuːtɪfl/",
+              "meaning": "[adj.] 漂亮的",
+              "example": "What a beautiful room!"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Welcome to my home",
+              "en": "Anna: Hi, Ben! Welcome to my home.\nBen: Wow, what a beautiful house!\nAnna: Come in, please. This is our living room.\nBen: It's so big! Is that the kitchen?\nAnna: Yes. Let me show you my bedroom upstairs.",
+              "cn": "安娜：嗨，本！欢迎来我家。\n本：哇，多漂亮的房子！\n安娜：请进。这是我们的客厅。\n本：好大啊！那是厨房吗？\n安娜：是的。我带你看看楼上的卧室。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My new home",
+              "en": "I have a new home. It is small but very beautiful. There is a soft sofa in the living room. The kitchen is white and clean. My bedroom has a small bed and a desk. I like to read books here. Welcome to my home — come in and have a look!",
+              "cn": "我有一个新家。它不大但很漂亮。客厅里有一张柔软的沙发。厨房又白又干净。我的卧室里有一张小床和一张书桌。我喜欢在这里看书。欢迎来我家——快进来看看吧！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 My Family",
+          "words": [
+            {
+              "word": "family",
+              "phonetic": "/ˈfæməli/",
+              "meaning": "[n.] 家庭",
+              "example": "I love my family."
+            },
+            {
+              "word": "father",
+              "phonetic": "/ˈfɑːðə(r)/",
+              "meaning": "[n.] 父亲",
+              "example": "My father is tall."
+            },
+            {
+              "word": "mother",
+              "phonetic": "/ˈmʌðə(r)/",
+              "meaning": "[n.] 母亲",
+              "example": "My mother is kind."
+            },
+            {
+              "word": "brother",
+              "phonetic": "/ˈbrʌðə(r)/",
+              "meaning": "[n.] 兄弟",
+              "example": "I have one brother."
+            },
+            {
+              "word": "sister",
+              "phonetic": "/ˈsɪstə(r)/",
+              "meaning": "[n.] 姐妹",
+              "example": "My sister is six."
+            },
+            {
+              "word": "grandpa",
+              "phonetic": "/ˈɡrænpɑː/",
+              "meaning": "[n.] 爷爷",
+              "example": "Grandpa likes tea."
+            },
+            {
+              "word": "grandma",
+              "phonetic": "/ˈɡrænmɑː/",
+              "meaning": "[n.] 奶奶",
+              "example": "Grandma cooks well."
+            },
+            {
+              "word": "love",
+              "phonetic": "/lʌv/",
+              "meaning": "[v./n.] 爱",
+              "example": "I love my mum."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Meet my family",
+              "en": "Anna: Look, Ben. This is my family photo.\nBen: Who is the man with glasses?\nAnna: He's my father. The kind lady is my mother.\nBen: And the little boy?\nAnna: That's my brother. Grandpa and Grandma live with us, too.",
+              "cn": "安娜：看，本。这是我的家庭照。\n本：戴眼镜的男人是谁？\n安娜：他是我父亲，旁边温柔的女士是我母亲。\n本：那小男孩呢？\n安娜：是我弟弟。爷爷奶奶也和我们住在一起。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A loving family",
+              "en": "There are six people in my family. My father is a doctor. My mother is a teacher. I have one brother and one sister. Grandpa and Grandma live with us, too. After dinner, we sit together and talk. We love each other very much. A loving family is the best gift!",
+              "cn": "我家有六口人。爸爸是医生。妈妈是老师。我有一个弟弟和一个妹妹。爷爷奶奶也和我们住在一起。晚饭后我们一起聊天。我们彼此非常相爱。有爱的家庭就是最棒的礼物！"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Around the House",
+          "words": [
+            {
+              "word": "study",
+              "phonetic": "/ˈstʌdi/",
+              "meaning": "[n.] 书房；学习",
+              "example": "Dad is in the study."
+            },
+            {
+              "word": "bathroom",
+              "phonetic": "/ˈbɑːθruːm/",
+              "meaning": "[n.] 浴室",
+              "example": "Wash your hands in the bathroom."
+            },
+            {
+              "word": "table",
+              "phonetic": "/ˈteɪbl/",
+              "meaning": "[n.] 桌子",
+              "example": "Put the cup on the table."
+            },
+            {
+              "word": "lamp",
+              "phonetic": "/læmp/",
+              "meaning": "[n.] 灯",
+              "example": "I read with a lamp."
             },
             {
               "word": "bed",
               "phonetic": "/bed/",
-              "meaning": "床",
-              "example": "There is a bed in my room."
+              "meaning": "[n.] 床",
+              "example": "My bed is soft."
             },
             {
-              "word": "desk",
-              "phonetic": "/desk/",
-              "meaning": "书桌",
-              "example": "My desk is near the window."
+              "word": "door",
+              "phonetic": "/dɔː(r)/",
+              "meaning": "[n.] 门",
+              "example": "Open the door, please."
             },
             {
-              "word": "chair",
-              "phonetic": "/tʃeə/",
-              "meaning": "椅子",
-              "example": "Sit on the chair."
+              "word": "garden",
+              "phonetic": "/ˈɡɑːdn/",
+              "meaning": "[n.] 花园",
+              "example": "Roses grow in the garden."
             },
             {
-              "word": "window",
-              "phonetic": "/ˈwɪndəʊ/",
-              "meaning": "窗户",
-              "example": "Open the window, please."
+              "word": "upstairs",
+              "phonetic": "/ˌʌpˈsteəz/",
+              "meaning": "[adv.] 在楼上",
+              "example": "Go upstairs to sleep."
             }
           ],
-          "lesson": "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much.",
-          "lessonCN": "这是我的房间。里面有一张床、一张桌子和一把椅子。桌子附近有一扇窗户。我非常喜欢我的房间。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Show me your house",
+              "en": "Ben: Anna, can you show me your house?\nAnna: Sure! This is the kitchen, and that is the study.\nBen: Where is your bedroom?\nAnna: It's upstairs. Come and see.\nBen: Wow, you have a small garden too!",
+              "cn": "本：安娜，能带我参观你家吗？\n安娜：当然！这是厨房，那是书房。\n本：你的卧室在哪？\n安娜：在楼上。来看看吧。\n本：哇，你还有个小花园！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My favourite room",
+              "en": "My favourite room is my bedroom. It is upstairs near the bathroom. There is a small bed, a desk and a lamp. I do my homework at the desk. At night, my lamp is bright and warm. I read storybooks in bed until Mum says, \"Time to sleep!\"",
+              "cn": "我最喜欢的房间是卧室。它在楼上，挨着浴室。屋里有一张小床、一张书桌和一盏灯。我在桌前做作业。夜里灯光又亮又温暖。我在床上看故事书，直到妈妈说\"该睡觉啦！\""
+            }
+          ]
         },
         {
-          "id": "u2",
-          "title": "Unit 2 Clothes",
+          "id": "u4",
+          "title": "Unit 4 What Do You Do?",
           "words": [
             {
-              "word": "shirt",
-              "phonetic": "/ʃɜːt/",
-              "meaning": "衬衫",
-              "example": "A blue shirt."
+              "word": "do",
+              "phonetic": "/duː/",
+              "meaning": "[v.] 做",
+              "example": "What do you do at school?"
             },
             {
-              "word": "dress",
-              "phonetic": "/dres/",
-              "meaning": "连衣裙",
-              "example": "She has a new dress."
+              "word": "read",
+              "phonetic": "/riːd/",
+              "meaning": "[v.] 读",
+              "example": "I read a book."
             },
             {
-              "word": "shoes",
-              "phonetic": "/ʃuːz/",
-              "meaning": "鞋子",
-              "example": "My shoes are white."
+              "word": "write",
+              "phonetic": "/raɪt/",
+              "meaning": "[v.] 写",
+              "example": "Write your name here."
             },
             {
-              "word": "hat",
-              "phonetic": "/hæt/",
-              "meaning": "帽子",
-              "example": "Put on your hat."
+              "word": "study",
+              "phonetic": "/ˈstʌdi/",
+              "meaning": "[v.] 学习",
+              "example": "I study English."
             },
             {
-              "word": "coat",
-              "phonetic": "/kəʊt/",
-              "meaning": "外套",
-              "example": "A warm coat."
+              "word": "draw",
+              "phonetic": "/drɔː/",
+              "meaning": "[v.] 画画",
+              "example": "I can draw a cat."
+            },
+            {
+              "word": "watch",
+              "phonetic": "/wɒtʃ/",
+              "meaning": "[v.] 看（电视/比赛）",
+              "example": "We watch TV at night."
+            },
+            {
+              "word": "TV",
+              "phonetic": "/ˌtiːˈviː/",
+              "meaning": "[n.] 电视",
+              "example": "Turn off the TV."
+            },
+            {
+              "word": "every day",
+              "phonetic": "/ˈevri deɪ/",
+              "meaning": "[phr.] 每天",
+              "example": "I read every day."
             }
           ],
-          "lesson": "I am wearing a blue shirt and black shoes. My sister is wearing a pink dress. It is cold today, so I wear a coat and a hat. What are you wearing?",
-          "lessonCN": "我穿着蓝色衬衫和黑色鞋子。我妹妹穿着粉红色的连衣裙。今天天气很冷，所以我穿着外套和帽子。你穿的是什么？"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What do you do at home?",
+              "en": "Ben: Anna, what do you do at home?\nAnna: I read books and draw pictures.\nBen: Do you watch TV?\nAnna: Yes, but only on weekends.\nBen: I write a diary every day. It's fun!",
+              "cn": "本：安娜，你在家做什么？\n安娜：我看书、画画。\n本：你看电视吗？\n安娜：看，但只在周末。\n本：我每天写日记，很有趣！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My daily things",
+              "en": "Every day I do many things. In the morning, I go to school and study with my friends. After school, I do my homework at the study desk. Then I read a story or draw a picture. After dinner, I watch a short TV show with my family. A full day, a happy day!",
+              "cn": "我每天做很多事。早上我去上学，和朋友一起学习。放学后我在书桌前做作业。然后看一个故事或画一幅画。晚饭后和家人一起看会儿电视。充实的一天，快乐的一天！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 My Hobbies",
+          "words": [
+            {
+              "word": "hobby",
+              "phonetic": "/ˈhɒbi/",
+              "meaning": "[n.] 爱好",
+              "example": "My hobby is reading."
+            },
+            {
+              "word": "music",
+              "phonetic": "/ˈmjuːzɪk/",
+              "meaning": "[n.] 音乐",
+              "example": "I love music."
+            },
+            {
+              "word": "piano",
+              "phonetic": "/piˈænəʊ/",
+              "meaning": "[n.] 钢琴",
+              "example": "She plays the piano."
+            },
+            {
+              "word": "guitar",
+              "phonetic": "/ɡɪˈtɑː(r)/",
+              "meaning": "[n.] 吉他",
+              "example": "Dad plays the guitar."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "meaning": "[v./n.] 跳舞",
+              "example": "I can dance well."
+            },
+            {
+              "word": "swim",
+              "phonetic": "/swɪm/",
+              "meaning": "[v.] 游泳",
+              "example": "I swim in summer."
+            },
+            {
+              "word": "cook",
+              "phonetic": "/kʊk/",
+              "meaning": "[v.] 做饭",
+              "example": "Mum cooks at home."
+            },
+            {
+              "word": "favourite",
+              "phonetic": "/ˈfeɪvərɪt/",
+              "meaning": "[adj.] 最喜爱的",
+              "example": "Music is my favourite."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What's your hobby?",
+              "en": "Anna: Ben, what's your hobby?\nBen: My hobby is music. I play the piano.\nAnna: Cool! I love dance. I can also swim.\nBen: My sister can cook many things — that's her hobby.\nAnna: Hobbies make us happy!",
+              "cn": "安娜：本，你的爱好是什么？\n本：我的爱好是音乐，我弹钢琴。\n安娜：酷！我喜欢跳舞，还会游泳。\n本：我姐姐会做很多菜，那是她的爱好。\n安娜：爱好让我们快乐！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Hobbies in my class",
+              "en": "Everyone in my class has a hobby. Tom plays the guitar. Lily likes to dance. Ben plays the piano very well. Anna loves swimming. I like cooking with Mum at weekends. My favourite hobby is reading storybooks. A hobby is like a good friend — it stays with you for life!",
+              "cn": "我们班每个同学都有爱好。汤姆弹吉他。莉莉喜欢跳舞。本钢琴弹得很好。安娜喜欢游泳。周末我喜欢和妈妈一起做饭。我最爱的爱好是看故事书。爱好就像好朋友，一辈子陪着你！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Animals Around Us",
+          "words": [
+            {
+              "word": "animal",
+              "phonetic": "/ˈænɪml/",
+              "meaning": "[n.] 动物",
+              "example": "I love animals."
+            },
+            {
+              "word": "dog",
+              "phonetic": "/dɒɡ/",
+              "meaning": "[n.] 狗",
+              "example": "My dog is brown."
+            },
+            {
+              "word": "cat",
+              "phonetic": "/kæt/",
+              "meaning": "[n.] 猫",
+              "example": "The cat is on the chair."
+            },
+            {
+              "word": "bird",
+              "phonetic": "/bɜːd/",
+              "meaning": "[n.] 鸟",
+              "example": "Birds can fly."
+            },
+            {
+              "word": "fish",
+              "phonetic": "/fɪʃ/",
+              "meaning": "[n.] 鱼",
+              "example": "Fish live in water."
+            },
+            {
+              "word": "rabbit",
+              "phonetic": "/ˈræbɪt/",
+              "meaning": "[n.] 兔子",
+              "example": "Rabbits eat carrots."
+            },
+            {
+              "word": "panda",
+              "phonetic": "/ˈpændə/",
+              "meaning": "[n.] 熊猫",
+              "example": "Pandas are from China."
+            },
+            {
+              "word": "zoo",
+              "phonetic": "/zuː/",
+              "meaning": "[n.] 动物园",
+              "example": "Let's go to the zoo."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "At the zoo",
+              "en": "Ben: Anna, look at the pandas! They're so cute.\nAnna: I love their black and white fur.\nBen: There are many animals here — birds, rabbits and even a tiger.\nAnna: My favourite is the little fish in the pond.\nBen: The zoo is full of fun!",
+              "cn": "本：安娜，看那些熊猫！它们好可爱。\n安娜：我喜欢它们黑白相间的毛。\n本：这里好多动物——鸟、兔子，还有老虎呢。\n安娜：我最喜欢池塘里的小鱼。\n本：动物园真有趣！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My favourite animal",
+              "en": "My favourite animal is the panda. Pandas live in the mountains of China. They are black and white. They eat bamboo all day. Pandas look slow but they can climb trees very fast. I want to see a real panda one day. Animals are our friends — let's protect them!",
+              "cn": "我最喜欢的动物是熊猫。熊猫生活在中国的山里。它们黑白相间。它们整天吃竹子。熊猫看起来慢，但它们能很快爬上树。有一天我想看到真正的熊猫。动物是我们的朋友——让我们保护它们！"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 Our Weekend",
+          "words": [
+            {
+              "word": "weekend",
+              "phonetic": "/ˌwiːkˈend/",
+              "meaning": "[n.] 周末",
+              "example": "Have a nice weekend!"
+            },
+            {
+              "word": "Saturday",
+              "phonetic": "/ˈsætədeɪ/",
+              "meaning": "[n.] 星期六",
+              "example": "We play on Saturday."
+            },
+            {
+              "word": "Sunday",
+              "phonetic": "/ˈsʌndeɪ/",
+              "meaning": "[n.] 星期天",
+              "example": "I rest on Sunday."
+            },
+            {
+              "word": "park",
+              "phonetic": "/pɑːk/",
+              "meaning": "[n.] 公园",
+              "example": "Let's go to the park."
+            },
+            {
+              "word": "shop",
+              "phonetic": "/ʃɒp/",
+              "meaning": "[v./n.] 购物；商店",
+              "example": "Mum shops on Saturday."
+            },
+            {
+              "word": "movie",
+              "phonetic": "/ˈmuːvi/",
+              "meaning": "[n.] 电影",
+              "example": "We see a movie."
+            },
+            {
+              "word": "picnic",
+              "phonetic": "/ˈpɪknɪk/",
+              "meaning": "[n.] 野餐",
+              "example": "We have a picnic."
+            },
+            {
+              "word": "fun",
+              "phonetic": "/fʌn/",
+              "meaning": "[n.] 乐趣",
+              "example": "Weekends are fun."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Plans for the weekend",
+              "en": "Ben: What will you do this weekend, Anna?\nAnna: On Saturday, my family will have a picnic in the park.\nBen: Sounds great! What about Sunday?\nAnna: Mum and I will shop in the morning, then see a movie.\nBen: Have a happy weekend!",
+              "cn": "本：安娜，这周末你要做什么？\n安娜：周六我们一家要去公园野餐。\n本：好棒！周日呢？\n安娜：上午我和妈妈购物，然后去看电影。\n本：周末愉快！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My happy weekend",
+              "en": "I love weekends. On Saturday, I usually visit the park with my family. We bring sandwiches and have a picnic on the grass. On Sunday morning, I do my homework. In the afternoon, my friends and I see a fun movie. Weekends are short, but they are full of fun and love!",
+              "cn": "我喜欢周末。周六我通常和家人去公园。我们带上三明治，在草地上野餐。周日上午做作业。下午和朋友看部有趣的电影。周末很短，但充满了快乐和爱！"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 Festivals We Love",
+          "words": [
+            {
+              "word": "festival",
+              "phonetic": "/ˈfestɪvl/",
+              "meaning": "[n.] 节日",
+              "example": "I love festivals."
+            },
+            {
+              "word": "Christmas",
+              "phonetic": "/ˈkrɪsməs/",
+              "meaning": "[n.] 圣诞节",
+              "example": "Merry Christmas!"
+            },
+            {
+              "word": "Spring Festival",
+              "phonetic": "/sprɪŋ ˈfestɪvl/",
+              "meaning": "[n.] 春节",
+              "example": "We love Spring Festival."
+            },
+            {
+              "word": "gift",
+              "phonetic": "/ɡɪft/",
+              "meaning": "[n.] 礼物",
+              "example": "Here is a gift for you."
+            },
+            {
+              "word": "tree",
+              "phonetic": "/triː/",
+              "meaning": "[n.] 树（圣诞树）",
+              "example": "Look at the Christmas tree."
+            },
+            {
+              "word": "card",
+              "phonetic": "/kɑːd/",
+              "meaning": "[n.] 卡片",
+              "example": "I send a card to her."
+            },
+            {
+              "word": "dinner",
+              "phonetic": "/ˈdɪnə(r)/",
+              "meaning": "[n.] 晚餐；正餐",
+              "example": "We have a big dinner."
+            },
+            {
+              "word": "happy",
+              "phonetic": "/ˈhæpi/",
+              "meaning": "[adj.] 高兴的",
+              "example": "I am very happy today."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "A merry Christmas",
+              "en": "Ben: Merry Christmas, Anna!\nAnna: Merry Christmas, Ben! Look at our Christmas tree.\nBen: Wow, so many gifts under it!\nAnna: I made a card for Mum and Dad.\nBen: How sweet! Let's enjoy the big dinner tonight.",
+              "cn": "本：圣诞快乐，安娜！\n安娜：圣诞快乐，本！看我们的圣诞树。\n本：哇，树下好多礼物！\n安娜：我给爸妈做了张卡片。\n本：好暖心！我们今晚好好享受这顿大餐吧。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Festivals in my family",
+              "en": "My family loves festivals. At Spring Festival, we eat dumplings and visit our grandparents. We get red envelopes — that's so much fun. At Christmas, we put up a tree and sing songs. We make cards for friends. Festivals bring our family closer. They make every year warm and bright!",
+              "cn": "我家喜欢节日。春节时我们吃饺子，去看爷爷奶奶。我们收到红包——很有趣。圣诞节时我们装饰圣诞树、唱歌。我们为朋友做卡片。节日让我们一家更亲近。它们让每一年都温暖又明亮！"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review Happy New Year!",
+          "words": [
+            {
+              "word": "new",
+              "phonetic": "/njuː/",
+              "meaning": "[adj.] 新的",
+              "example": "A new year is coming!"
+            },
+            {
+              "word": "year",
+              "phonetic": "/jɪə(r)/",
+              "meaning": "[n.] 年",
+              "example": "Happy New Year!"
+            },
+            {
+              "word": "wish",
+              "phonetic": "/wɪʃ/",
+              "meaning": "[v./n.] 祝愿",
+              "example": "Best wishes to you."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "meaning": "[v.] 分享",
+              "example": "Share with your friend."
+            },
+            {
+              "word": "thank",
+              "phonetic": "/θæŋk/",
+              "meaning": "[v.] 感谢",
+              "example": "Thank you, Mum."
+            },
+            {
+              "word": "smile",
+              "phonetic": "/smaɪl/",
+              "meaning": "[v./n.] 微笑",
+              "example": "Give me a smile."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Happy New Year!",
+              "en": "Ben: Happy New Year, Anna!\nAnna: Happy New Year, Ben! Best wishes to you and your family.\nBen: Thank you. What are your wishes this year?\nAnna: I wish to learn more English and make new friends.\nBen: Me too! Let's share a smile and start the new year together.",
+              "cn": "本：新年快乐，安娜！\n安娜：新年快乐，本！祝你和家人一切顺利。\n本：谢谢。你今年的愿望是什么？\n安娜：我希望学更多英语、交新朋友。\n本：我也是！让我们带着笑容一起开启新年。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A new year, new me",
+              "en": "A new year has come! I have many new wishes. I wish to study hard and read more storybooks. I wish to help Mum at home and share with my friends. Most of all, I wish my family and all my friends a year full of smiles. Happy New Year, everyone!",
+              "cn": "新的一年到了！我有很多新愿望。我希望努力学习、多读故事书。希望在家帮妈妈、和朋友们分享。最重要的，我祝家人和所有朋友新的一年充满微笑。大家新年快乐！"
+            }
+          ]
         }
       ],
       "下": [
         {
           "id": "u1",
-          "title": "Unit 1 Food I Like",
+          "title": "Unit 1 Spring Is Here",
           "words": [
             {
-              "word": "vegetable",
-              "phonetic": "/ˈvedʒtəbl/",
-              "meaning": "蔬菜",
-              "example": "I eat vegetables every day."
+              "word": "spring",
+              "phonetic": "/sprɪŋ/",
+              "meaning": "[n.] 春天",
+              "example": "Spring is here."
             },
             {
-              "word": "fruit",
-              "phonetic": "/fruːt/",
-              "meaning": "水果",
-              "example": "Apples are fruit."
+              "word": "warm",
+              "phonetic": "/wɔːm/",
+              "meaning": "[adj.] 温暖的",
+              "example": "It's warm today."
+            },
+            {
+              "word": "flower",
+              "phonetic": "/ˈflaʊə(r)/",
+              "meaning": "[n.] 花",
+              "example": "I see a flower."
+            },
+            {
+              "word": "grass",
+              "phonetic": "/ɡrɑːs/",
+              "meaning": "[n.] 草",
+              "example": "The grass is green."
+            },
+            {
+              "word": "tree",
+              "phonetic": "/triː/",
+              "meaning": "[n.] 树",
+              "example": "A bird is in the tree."
+            },
+            {
+              "word": "wind",
+              "phonetic": "/wɪnd/",
+              "meaning": "[n.] 风",
+              "example": "The wind is soft."
+            },
+            {
+              "word": "rain",
+              "phonetic": "/reɪn/",
+              "meaning": "[n./v.] 雨；下雨",
+              "example": "It rains a lot."
+            },
+            {
+              "word": "kite",
+              "phonetic": "/kaɪt/",
+              "meaning": "[n.] 风筝",
+              "example": "Let's fly a kite."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Spring is here",
+              "en": "Anna: Ben, look! The trees are green again.\nBen: Yes! Spring is here. It's so warm.\nAnna: Many flowers are blooming on the grass.\nBen: Let's fly a kite in the wind.\nAnna: Great idea! I love spring.",
+              "cn": "安娜：本，看！树又绿了。\n本：是的！春天来了，好暖和。\n安娜：草地上开了很多花。\n本：我们去放风筝吧。\n安娜：好主意！我爱春天。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A warm day",
+              "en": "It is a warm spring day. The sun is bright and the wind is soft. Pink and yellow flowers grow on the green grass. Birds sing in the tall trees. After a short rain, a small rainbow appears in the sky. Spring is the most lovely time of the year.",
+              "cn": "这是一个温暖的春日。阳光明媚，微风轻柔。粉色和黄色的花开在绿草上。鸟儿在高树上唱歌。一阵小雨后，天上出现了一道小彩虹。春天是一年中最美的时节。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 My Clothes",
+          "words": [
+            {
+              "word": "clothes",
+              "phonetic": "/kləʊðz/",
+              "meaning": "[n.] 衣服",
+              "example": "These are my clothes."
+            },
+            {
+              "word": "shirt",
+              "phonetic": "/ʃɜːt/",
+              "meaning": "[n.] 衬衫",
+              "example": "I wear a white shirt."
+            },
+            {
+              "word": "T-shirt",
+              "phonetic": "/ˈtiːʃɜːt/",
+              "meaning": "[n.] T 恤",
+              "example": "My T-shirt is blue."
+            },
+            {
+              "word": "skirt",
+              "phonetic": "/skɜːt/",
+              "meaning": "[n.] 裙子",
+              "example": "Lily wears a pink skirt."
+            },
+            {
+              "word": "trousers",
+              "phonetic": "/ˈtraʊzəz/",
+              "meaning": "[n.] 裤子",
+              "example": "His trousers are black."
+            },
+            {
+              "word": "shoes",
+              "phonetic": "/ʃuːz/",
+              "meaning": "[n.] 鞋",
+              "example": "My shoes are new."
+            },
+            {
+              "word": "hat",
+              "phonetic": "/hæt/",
+              "meaning": "[n.] 帽子",
+              "example": "I have a sun hat."
+            },
+            {
+              "word": "wear",
+              "phonetic": "/weə(r)/",
+              "meaning": "[v.] 穿；戴",
+              "example": "Wear your coat."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What do I wear?",
+              "en": "Anna: What will you wear to the party, Ben?\nBen: I'll wear a white shirt and blue trousers.\nAnna: Cool! I want to wear my pink skirt.\nBen: Don't forget your hat — the sun is strong.\nAnna: OK! Let's go.",
+              "cn": "安娜：本，你穿什么去聚会？\n本：白衬衫蓝裤子。\n安娜：酷！我想穿粉色裙子。\n本：别忘戴帽子，太阳大。\n安娜：好，走吧！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My favourite clothes",
+              "en": "I have many clothes in my closet. I wear T-shirts and shorts in summer. In spring, I like a light shirt and a pair of jeans. New shoes are always exciting. On rainy days, Mum tells me to wear my yellow boots. Clothes keep us warm and make us smile.",
+              "cn": "我衣柜里有很多衣服。夏天我穿 T 恤和短裤。春天我喜欢穿轻便衬衫和牛仔裤。新鞋总是让人兴奋。下雨天妈妈让我穿黄色雨靴。衣服让我们温暖，也让我们开心。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Let's Go Shopping",
+          "words": [
+            {
+              "word": "shopping",
+              "phonetic": "/ˈʃɒpɪŋ/",
+              "meaning": "[n.] 购物",
+              "example": "I love shopping."
+            },
+            {
+              "word": "buy",
+              "phonetic": "/baɪ/",
+              "meaning": "[v.] 买",
+              "example": "I buy a book."
+            },
+            {
+              "word": "store",
+              "phonetic": "/stɔː(r)/",
+              "meaning": "[n.] 商店",
+              "example": "Go to the store."
+            },
+            {
+              "word": "money",
+              "phonetic": "/ˈmʌni/",
+              "meaning": "[n.] 钱",
+              "example": "I have some money."
+            },
+            {
+              "word": "price",
+              "phonetic": "/praɪs/",
+              "meaning": "[n.] 价格",
+              "example": "What's the price?"
+            },
+            {
+              "word": "cheap",
+              "phonetic": "/tʃiːp/",
+              "meaning": "[adj.] 便宜的",
+              "example": "This bag is cheap."
+            },
+            {
+              "word": "expensive",
+              "phonetic": "/ɪkˈspensɪv/",
+              "meaning": "[adj.] 昂贵的",
+              "example": "This pen is expensive."
+            },
+            {
+              "word": "yuan",
+              "phonetic": "/juːˈɑːn/",
+              "meaning": "[n.] 元（人民币）",
+              "example": "It costs ten yuan."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "How much is it?",
+              "en": "Anna: Mum, look at this red T-shirt. It's so nice.\nMum: How much is it?\nAnna: It's only twenty yuan. Quite cheap!\nMum: OK, we can buy it. Look, that one is fifty yuan — too expensive.\nAnna: Let's pay and go.",
+              "cn": "安娜：妈妈，看这件红 T 恤，真好看。\n妈妈：多少钱？\n安娜：才二十元，很便宜！\n妈妈：好，我们买。看那件五十元，太贵了。\n安娜：付钱走吧。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Shopping with Mum",
+              "en": "On Saturday, Mum and I went to a big store. We needed some new clothes. We saw many shirts and shoes. The blue T-shirt was only twenty yuan, but the white shoes cost two hundred yuan. We bought a few cheap things and saved some money. Shopping with Mum is always fun.",
+              "cn": "周六我和妈妈去了一家大商店。我们要买些新衣服。看到了很多衬衫和鞋子。蓝 T 恤才 20 元，但白鞋要 200 元。我们买了几样便宜的，省了一些钱。和妈妈购物总是很开心。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Numbers and Prices",
+          "words": [
+            {
+              "word": "number",
+              "phonetic": "/ˈnʌmbə(r)/",
+              "meaning": "[n.] 数字",
+              "example": "Read the number."
+            },
+            {
+              "word": "twenty",
+              "phonetic": "/ˈtwenti/",
+              "meaning": "[num.] 二十",
+              "example": "I have twenty cards."
+            },
+            {
+              "word": "thirty",
+              "phonetic": "/ˈθɜːti/",
+              "meaning": "[num.] 三十",
+              "example": "Thirty boys are here."
+            },
+            {
+              "word": "fifty",
+              "phonetic": "/ˈfɪfti/",
+              "meaning": "[num.] 五十",
+              "example": "Fifty yuan, please."
+            },
+            {
+              "word": "hundred",
+              "phonetic": "/ˈhʌndrəd/",
+              "meaning": "[num.] 一百",
+              "example": "One hundred years."
+            },
+            {
+              "word": "how much",
+              "phonetic": "/haʊ mʌtʃ/",
+              "meaning": "[phr.] 多少（钱）",
+              "example": "How much is it?"
+            },
+            {
+              "word": "count",
+              "phonetic": "/kaʊnt/",
+              "meaning": "[v.] 数；计算",
+              "example": "Count from one to ten."
+            },
+            {
+              "word": "total",
+              "phonetic": "/ˈtəʊtl/",
+              "meaning": "[n.] 总数",
+              "example": "What's the total?"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "How much in total?",
+              "en": "Anna: I want to buy a book and a pen.\nShopkeeper: The book is thirty yuan, the pen is twenty yuan.\nAnna: How much in total?\nShopkeeper: Fifty yuan, please.\nAnna: Here you are. Thank you.",
+              "cn": "安娜：我想买一本书和一支笔。\n店主：书 30 元，笔 20 元。\n安娜：一共多少钱？\n店主：50 元。\n安娜：给您。谢谢。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Count and pay",
+              "en": "Numbers help us in many ways. We count money, count days, and count the steps we walk. At the store, we add up the prices to know the total. Twenty plus thirty makes fifty. A hundred yuan can buy quite a few things. Learn the numbers, and you can pay by yourself!",
+              "cn": "数字在很多方面帮助我们。我们数钱、数日子、数走过的步数。在商店里，我们把价格加起来算出总数。20 加 30 等于 50。一百块钱能买不少东西。学会数字，你就能自己付钱了！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 What's Your Favourite Food?",
+          "words": [
+            {
+              "word": "food",
+              "phonetic": "/fuːd/",
+              "meaning": "[n.] 食物",
+              "example": "I love food."
             },
             {
               "word": "rice",
               "phonetic": "/raɪs/",
-              "meaning": "米饭",
-              "example": "We have rice for lunch."
+              "meaning": "[n.] 米饭",
+              "example": "I eat rice every day."
             },
             {
-              "word": "noodles",
-              "phonetic": "/ˈnuːdlz/",
-              "meaning": "面条",
+              "word": "noodle",
+              "phonetic": "/ˈnuːdl/",
+              "meaning": "[n.] 面条",
               "example": "I like noodles."
             },
             {
               "word": "bread",
               "phonetic": "/bred/",
-              "meaning": "面包",
-              "example": "Bread and milk for breakfast."
+              "meaning": "[n.] 面包",
+              "example": "Have some bread."
+            },
+            {
+              "word": "meat",
+              "phonetic": "/miːt/",
+              "meaning": "[n.] 肉",
+              "example": "Meat is tasty."
+            },
+            {
+              "word": "vegetable",
+              "phonetic": "/ˈvedʒtəbl/",
+              "meaning": "[n.] 蔬菜",
+              "example": "Eat your vegetables."
+            },
+            {
+              "word": "tasty",
+              "phonetic": "/ˈteɪsti/",
+              "meaning": "[adj.] 美味的",
+              "example": "The cake is tasty."
+            },
+            {
+              "word": "sweet",
+              "phonetic": "/swiːt/",
+              "meaning": "[adj.] 甜的",
+              "example": "Honey is very sweet."
             }
           ],
-          "lesson": "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food? I also like bread with milk in the morning.",
-          "lessonCN": "我喜欢蔬菜和水果。它们很健康。我也有米饭和面条。您最喜欢的食物是什么？我也喜欢早上的牛奶面包。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What's your favourite?",
+              "en": "Ben: What's your favourite food, Anna?\nAnna: I love noodles and dumplings.\nBen: I prefer rice and meat.\nAnna: Vegetables are also important. Mum says they make us strong.\nBen: True! Let's eat more healthy food.",
+              "cn": "本：安娜，你最爱什么吃的？\n安娜：我喜欢面条和饺子。\n本：我更喜欢米饭和肉。\n安娜：蔬菜也很重要，妈妈说能让我们强壮。\n本：对！我们要多吃健康食物。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A tasty meal",
+              "en": "My grandma is a great cook. She makes tasty rice, soft noodles, and warm bread. Her vegetable soup is famous in our family. After a meal, she gives us a small sweet — fruit or cake. Eating together with family makes every meal more delicious.",
+              "cn": "我奶奶做菜很厉害。她做香喷喷的米饭、软软的面条和暖暖的面包。她做的蔬菜汤在我们家很有名。饭后她还会给我们点小甜品——水果或蛋糕。和家人一起吃饭让每顿饭更美味。"
+            }
+          ]
         },
         {
-          "id": "u2",
-          "title": "Unit 2 Seasons",
+          "id": "u6",
+          "title": "Unit 6 In the Kitchen",
           "words": [
+            {
+              "word": "cook",
+              "phonetic": "/kʊk/",
+              "meaning": "[v.] 烹饪",
+              "example": "Mum cooks for us."
+            },
+            {
+              "word": "egg",
+              "phonetic": "/eɡ/",
+              "meaning": "[n.] 鸡蛋",
+              "example": "I eat one egg."
+            },
+            {
+              "word": "milk",
+              "phonetic": "/mɪlk/",
+              "meaning": "[n.] 牛奶",
+              "example": "Drink some milk."
+            },
+            {
+              "word": "fruit",
+              "phonetic": "/fruːt/",
+              "meaning": "[n.] 水果",
+              "example": "Apples are fruit."
+            },
+            {
+              "word": "knife",
+              "phonetic": "/naɪf/",
+              "meaning": "[n.] 刀",
+              "example": "Use the knife carefully."
+            },
+            {
+              "word": "fork",
+              "phonetic": "/fɔːk/",
+              "meaning": "[n.] 叉子",
+              "example": "Hold the fork."
+            },
+            {
+              "word": "spoon",
+              "phonetic": "/spuːn/",
+              "meaning": "[n.] 勺子",
+              "example": "Eat with a spoon."
+            },
+            {
+              "word": "wash",
+              "phonetic": "/wɒʃ/",
+              "meaning": "[v.] 洗",
+              "example": "Wash the vegetables."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Help Mum cook",
+              "en": "Mum: Anna, will you help me in the kitchen?\nAnna: Sure, Mum. What can I do?\nMum: Please wash the fruit and break two eggs.\nAnna: OK. Where is the spoon?\nMum: Beside the knife and fork. Thanks, dear!",
+              "cn": "妈妈：安娜，能在厨房帮我吗？\n安娜：好的，妈妈。我能做什么？\n妈妈：请洗一下水果，再打两个鸡蛋。\n安娜：好。勺子在哪？\n妈妈：在刀叉旁边。谢谢宝贝！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A small chef",
+              "en": "Today I am a small chef. First, I wash my hands and put on an apron. Then I break two eggs into a bowl and add some milk. Mum lets me cut the bread with a small knife. The kitchen smells warm and sweet. Cooking is a wonderful skill to learn!",
+              "cn": "今天我是小厨师。首先洗手戴围裙。然后打两个鸡蛋到碗里加点牛奶。妈妈让我用小刀切面包。厨房闻起来又暖又香。烹饪是一项很棒的技能！"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 Healthy Habits",
+          "words": [
+            {
+              "word": "healthy",
+              "phonetic": "/ˈhelθi/",
+              "meaning": "[adj.] 健康的",
+              "example": "Eat healthy food."
+            },
+            {
+              "word": "habit",
+              "phonetic": "/ˈhæbɪt/",
+              "meaning": "[n.] 习惯",
+              "example": "A good habit."
+            },
+            {
+              "word": "exercise",
+              "phonetic": "/ˈeksəsaɪz/",
+              "meaning": "[v./n.] 锻炼",
+              "example": "Exercise every day."
+            },
+            {
+              "word": "sleep",
+              "phonetic": "/sliːp/",
+              "meaning": "[v./n.] 睡觉",
+              "example": "I sleep well."
+            },
+            {
+              "word": "water",
+              "phonetic": "/ˈwɔːtə(r)/",
+              "meaning": "[n.] 水",
+              "example": "Drink more water."
+            },
+            {
+              "word": "sweet",
+              "phonetic": "/swiːt/",
+              "meaning": "[n.] 糖果",
+              "example": "Don't eat too many sweets."
+            },
+            {
+              "word": "fresh",
+              "phonetic": "/freʃ/",
+              "meaning": "[adj.] 新鲜的",
+              "example": "Fresh fruit is good."
+            },
+            {
+              "word": "strong",
+              "phonetic": "/strɒŋ/",
+              "meaning": "[adj.] 强壮的",
+              "example": "He is strong."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Good habits",
+              "en": "Ben: Anna, why are you so strong?\nAnna: I have healthy habits. I exercise every morning.\nBen: What else do you do?\nAnna: I eat fresh fruit, drink lots of water and sleep early.\nBen: I should learn from you!",
+              "cn": "本：安娜，你怎么这么强壮？\n安娜：我有健康习惯。每天早晨锻炼。\n本：还有呢？\n安娜：吃新鲜水果，多喝水，早睡。\n本：我得向你学习！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A healthy day",
+              "en": "A healthy day starts with a good breakfast. We should drink water and eat fresh fruit. Sweets are tasty but we shouldn't eat too many. After school, ride a bike or play sports. At night, sleep early so we can wake up fresh. Good habits make us strong and happy.",
+              "cn": "健康的一天从好早餐开始。我们应该喝水、吃新鲜水果。糖果好吃但不能吃太多。放学后骑车或运动。晚上早睡，第二天才有精神。好习惯让我们强壮又快乐。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 Let's Have a Picnic",
+          "words": [
+            {
+              "word": "picnic",
+              "phonetic": "/ˈpɪknɪk/",
+              "meaning": "[n.] 野餐",
+              "example": "Let's have a picnic."
+            },
+            {
+              "word": "basket",
+              "phonetic": "/ˈbɑːskɪt/",
+              "meaning": "[n.] 篮子",
+              "example": "Bring the basket."
+            },
+            {
+              "word": "sandwich",
+              "phonetic": "/ˈsænwɪtʃ/",
+              "meaning": "[n.] 三明治",
+              "example": "I eat a sandwich."
+            },
+            {
+              "word": "juice",
+              "phonetic": "/dʒuːs/",
+              "meaning": "[n.] 果汁",
+              "example": "Apple juice is sweet."
+            },
+            {
+              "word": "lake",
+              "phonetic": "/leɪk/",
+              "meaning": "[n.] 湖",
+              "example": "The lake is big."
+            },
+            {
+              "word": "sunny",
+              "phonetic": "/ˈsʌni/",
+              "meaning": "[adj.] 阳光明媚的",
+              "example": "It's a sunny day."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "meaning": "[v.] 分享",
+              "example": "Share with me."
+            },
+            {
+              "word": "enjoy",
+              "phonetic": "/ɪnˈdʒɔɪ/",
+              "meaning": "[v.] 享受",
+              "example": "Enjoy your meal!"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "By the lake",
+              "en": "Anna: It's a sunny Saturday! Let's have a picnic.\nBen: Great! I'll bring sandwiches and juice.\nAnna: I have a big basket. We can sit by the lake.\nBen: Let's invite Tom and Lily to share with us.\nAnna: Yes, the more, the merrier!",
+              "cn": "安娜：阳光明媚的周六，我们去野餐吧！\n本：好！我带三明治和果汁。\n安娜：我有个大篮子，我们可以坐在湖边。\n本：叫上汤姆和莉莉一起。\n安娜：好，人越多越热闹！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Picnic by the lake",
+              "en": "Last Sunday we had a wonderful picnic by the lake. The sun was warm and the water was blue. We put a big mat on the grass and opened our baskets. There were sandwiches, fruit, juice and cookies. We shared everything and laughed a lot. A picnic with friends is the best part of spring.",
+              "cn": "上周日我们在湖边野餐，玩得很开心。阳光暖暖，湖水蓝蓝。我们在草地上铺好大垫子，打开篮子。里面有三明治、水果、果汁和饼干。我们彼此分享，笑个不停。和朋友野餐是春天最棒的事。"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review A Lovely Spring",
+          "words": [
+            {
+              "word": "lovely",
+              "phonetic": "/ˈlʌvli/",
+              "meaning": "[adj.] 可爱的；美好的",
+              "example": "What a lovely day!"
+            },
+            {
+              "word": "remember",
+              "phonetic": "/rɪˈmembə(r)/",
+              "meaning": "[v.] 记得",
+              "example": "Remember to smile."
+            },
+            {
+              "word": "diary",
+              "phonetic": "/ˈdaɪəri/",
+              "meaning": "[n.] 日记",
+              "example": "I write a diary."
+            },
+            {
+              "word": "friend",
+              "phonetic": "/frend/",
+              "meaning": "[n.] 朋友",
+              "example": "He is my best friend."
+            },
+            {
+              "word": "thank",
+              "phonetic": "/θæŋk/",
+              "meaning": "[v.] 感谢",
+              "example": "Thank you!"
+            },
             {
               "word": "spring",
               "phonetic": "/sprɪŋ/",
-              "meaning": "春天",
-              "example": "Flowers bloom in spring."
-            },
-            {
-              "word": "summer",
-              "phonetic": "/ˈsʌmə/",
-              "meaning": "夏天",
-              "example": "Summer is hot."
-            },
-            {
-              "word": "autumn",
-              "phonetic": "/ˈɔːtəm/",
-              "meaning": "秋天",
-              "example": "Autumn is cool."
-            },
-            {
-              "word": "winter",
-              "phonetic": "/ˈwɪntə/",
-              "meaning": "冬天",
-              "example": "Winter is cold."
-            },
-            {
-              "word": "season",
-              "phonetic": "/ˈsiːzn/",
-              "meaning": "季节",
-              "example": "Four seasons a year."
+              "meaning": "[n.] 春天",
+              "example": "I love spring."
             }
           ],
-          "lesson": "There are four seasons in a year. Spring is warm and colorful. Summer is hot and sunny. Autumn is cool. Winter is cold and snowy. My favorite season is spring.",
-          "lessonCN": "一年有四个季节。春天温暖多彩。夏天炎热阳光充足。秋天很凉爽，冬天又冷又下雪。我最喜欢的季节是春天。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "A lovely spring",
+              "en": "Anna: This spring is so lovely. We did so many fun things!\nBen: We flew kites, had a picnic and went shopping.\nAnna: I want to write all of this in my diary.\nBen: Don't forget to thank our friends.\nAnna: Sure. Friends make every season better.",
+              "cn": "安娜：今年春天太美好了，我们做了好多有趣的事！\n本：放风筝、野餐、购物。\n安娜：我要把这些都写到日记里。\n本：别忘了谢谢朋友们。\n安娜：当然，有朋友每个季节都更美好。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My spring diary",
+              "en": "Spring is almost over. In my diary I wrote about every weekend. We flew kites in the park, learned to cook with Mum, and had a picnic by the lake. I remember the warm sun, the green grass and my friends' smiles. Thank you, lovely spring — I will miss you.",
+              "cn": "春天快结束了。日记里写满了每个周末。我们去公园放风筝、和妈妈学做饭、在湖边野餐。我记得暖暖的太阳、绿绿的草和朋友们的笑容。谢谢你，美好的春天——我会想你。"
+            }
+          ]
         }
       ]
     },
@@ -1691,157 +2739,1205 @@
       "上": [
         {
           "id": "u1",
-          "title": "Unit 1 My Dream Job",
+          "title": "Unit 1 A New School Year",
           "words": [
             {
-              "word": "scientist",
-              "phonetic": "/ˈsaɪəntɪst/",
-              "meaning": "科学家",
-              "example": "I want to be a scientist."
+              "word": "new",
+              "phonetic": "/njuː/",
+              "meaning": "[adj.] 新的",
+              "example": "A new school year."
             },
             {
-              "word": "doctor",
-              "phonetic": "/ˈdɒktə/",
-              "meaning": "医生",
-              "example": "My mom is a doctor."
+              "word": "term",
+              "phonetic": "/tɜːm/",
+              "meaning": "[n.] 学期",
+              "example": "This term is fun."
             },
             {
-              "word": "teacher",
-              "phonetic": "/ˈtiːtʃə/",
-              "meaning": "老师",
-              "example": "She is a kind teacher."
+              "word": "classmate",
+              "phonetic": "/ˈklɑːsmeɪt/",
+              "meaning": "[n.] 同学",
+              "example": "He is my classmate."
             },
             {
-              "word": "engineer",
-              "phonetic": "/ˌendʒɪˈnɪə/",
-              "meaning": "工程师",
-              "example": "He is a computer engineer."
+              "word": "introduce",
+              "phonetic": "/ˌɪntrəˈdjuːs/",
+              "meaning": "[v.] 介绍",
+              "example": "Introduce yourself."
             },
             {
-              "word": "dream",
-              "phonetic": "/driːm/",
-              "meaning": "梦想",
-              "example": "Follow your dream!"
+              "word": "hope",
+              "phonetic": "/həʊp/",
+              "meaning": "[v./n.] 希望",
+              "example": "I hope to learn a lot."
+            },
+            {
+              "word": "grade",
+              "phonetic": "/ɡreɪd/",
+              "meaning": "[n.] 年级",
+              "example": "I am in Grade 5."
+            },
+            {
+              "word": "schedule",
+              "phonetic": "/ˈʃedjuːl/",
+              "meaning": "[n.] 课程表",
+              "example": "Look at the schedule."
+            },
+            {
+              "word": "exciting",
+              "phonetic": "/ɪkˈsaɪtɪŋ/",
+              "meaning": "[adj.] 令人兴奋的",
+              "example": "An exciting day!"
             }
           ],
-          "lesson": "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer.",
-          "lessonCN": "你长大后想成为什么样的人？我想成为一名科学家。我想帮助别人。我哥哥想成为一名工程师。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Welcome back",
+              "en": "Ben: Anna, welcome back! How was your summer?\nAnna: Great! I'm so excited for the new school year.\nBen: We are in Grade 5 now. New classmates, new teachers!\nAnna: Let's introduce ourselves to the new students.\nBen: Sure. I hope this term will be exciting.",
+              "cn": "本：安娜，欢迎回来！暑假怎么样？\n安娜：很棒！我对新学年好激动。\n本：我们现在五年级了，新同学新老师！\n安娜：我们去给新同学介绍自己吧。\n本：好。希望这学期会很精彩。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My fifth-grade plan",
+              "en": "I am in Grade 5 this year. The new schedule on the wall has many subjects: English, Maths, music and PE. I hope to make new friends and learn many new things. My biggest hope is to read fifty English books before the term ends. A new year, a new me!",
+              "cn": "今年我五年级。墙上的新课表有很多课：英语、数学、音乐、体育。我希望交新朋友，学很多新东西。我最大的愿望是这学期结束前读完五十本英文书。新的一年，新的我！"
+            }
+          ]
         },
         {
           "id": "u2",
-          "title": "Unit 2 Travel",
+          "title": "Unit 2 My Subjects",
           "words": [
             {
-              "word": "travel",
-              "phonetic": "/ˈtrævl/",
-              "meaning": "旅行",
-              "example": "I love to travel."
+              "word": "subject",
+              "phonetic": "/ˈsʌbdʒɪkt/",
+              "meaning": "[n.] 科目",
+              "example": "Maths is my subject."
             },
             {
-              "word": "plane",
-              "phonetic": "/pleɪn/",
-              "meaning": "飞机",
-              "example": "Take a plane to Beijing."
+              "word": "English",
+              "phonetic": "/ˈɪŋɡlɪʃ/",
+              "meaning": "[n.] 英语",
+              "example": "I love English."
             },
             {
-              "word": "train",
-              "phonetic": "/treɪn/",
-              "meaning": "火车",
-              "example": "Go by train."
+              "word": "Maths",
+              "phonetic": "/mæθs/",
+              "meaning": "[n.] 数学",
+              "example": "Maths is fun."
             },
             {
-              "word": "visit",
-              "phonetic": "/ˈvɪzɪt/",
-              "meaning": "参观",
-              "example": "Visit the museum."
+              "word": "science",
+              "phonetic": "/ˈsaɪəns/",
+              "meaning": "[n.] 科学",
+              "example": "Science is cool."
             },
             {
-              "word": "city",
-              "phonetic": "/ˈsɪti/",
-              "meaning": "城市",
-              "example": "Shanghai is a big city."
+              "word": "PE",
+              "phonetic": "/ˌpiː ˈiː/",
+              "meaning": "[n.] 体育课",
+              "example": "We have PE on Tuesday."
+            },
+            {
+              "word": "art",
+              "phonetic": "/ɑːt/",
+              "meaning": "[n.] 美术",
+              "example": "Art class is fun."
+            },
+            {
+              "word": "difficult",
+              "phonetic": "/ˈdɪfɪkəlt/",
+              "meaning": "[adj.] 困难的",
+              "example": "Maths is difficult."
+            },
+            {
+              "word": "easy",
+              "phonetic": "/ˈiːzi/",
+              "meaning": "[adj.] 容易的",
+              "example": "English is easy for me."
             }
           ],
-          "lesson": "I love to travel. Last summer, I traveled to Beijing by plane. I visited the Great Wall and the Forbidden City. It was a wonderful trip. This winter, I will travel to Shanghai by train.",
-          "lessonCN": "我喜欢旅行。去年夏天，我乘飞机去了北京。我参观了长城和紫禁城。这是一次美妙的旅程。今年冬天，我将乘火车去上海。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What's your favourite?",
+              "en": "Ben: Anna, what's your favourite subject?\nAnna: I love English and art. They are easy for me.\nBen: I like science and PE. Maths is a little difficult.\nAnna: Don't worry. We can study together.\nBen: Thanks, Anna. You are a great friend!",
+              "cn": "本：安娜，你最喜欢什么科目？\n安娜：英语和美术，对我很容易。\n本：我喜欢科学和体育。数学有点难。\n安娜：别担心，我们一起学。\n本：谢谢安娜，你真好！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Subjects in Grade 5",
+              "en": "Grade 5 has many subjects. English helps us talk with people from other countries. Maths trains our minds to think. Science shows us how the world works. Art and music make us creative. PE keeps our bodies strong. Every subject is a small door to a bigger world.",
+              "cn": "五年级有很多科目。英语帮我们与外国人交流。数学训练我们思考。科学让我们了解世界如何运作。美术和音乐让我们更有创造力。体育让我们身体强壮。每门课都是通往更大世界的一扇小门。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 My Talents",
+          "words": [
+            {
+              "word": "talent",
+              "phonetic": "/ˈtælənt/",
+              "meaning": "[n.] 才能",
+              "example": "She has a talent."
+            },
+            {
+              "word": "sing",
+              "phonetic": "/sɪŋ/",
+              "meaning": "[v.] 唱歌",
+              "example": "I can sing well."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "meaning": "[v.] 跳舞",
+              "example": "She dances on stage."
+            },
+            {
+              "word": "draw",
+              "phonetic": "/drɔː/",
+              "meaning": "[v.] 画画",
+              "example": "He can draw a horse."
+            },
+            {
+              "word": "speak",
+              "phonetic": "/spiːk/",
+              "meaning": "[v.] 说",
+              "example": "I speak two languages."
+            },
+            {
+              "word": "story",
+              "phonetic": "/ˈstɔːri/",
+              "meaning": "[n.] 故事",
+              "example": "Tell me a story."
+            },
+            {
+              "word": "stage",
+              "phonetic": "/steɪdʒ/",
+              "meaning": "[n.] 舞台",
+              "example": "He stands on the stage."
+            },
+            {
+              "word": "proud",
+              "phonetic": "/praʊd/",
+              "meaning": "[adj.] 自豪的",
+              "example": "Mum is proud of me."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Show your talent",
+              "en": "Ben: Anna, what's your talent?\nAnna: I can sing songs in English. What about you?\nBen: I can speak three languages and tell stories.\nAnna: Wow, cool! Let's show our talents on the school stage.\nBen: Yes! I'm sure our parents will be proud.",
+              "cn": "本：安娜，你有什么才艺？\n安娜：我会用英语唱歌，你呢？\n本：我会说三种语言，还会讲故事。\n安娜：哇酷！我们去学校舞台上展示吧。\n本：好！爸妈一定会自豪的。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Everyone has a talent",
+              "en": "Everyone has at least one talent. Some children sing or dance well. Others can draw beautiful pictures. My friend Tom can speak in front of three hundred people without fear. My classmate Lily writes funny stories. Find your talent, share it on the stage, and your family will be proud of you.",
+              "cn": "每个人都有至少一项才能。有的孩子唱歌跳舞好。有的能画漂亮的画。我的朋友汤姆能在三百人面前演讲不害怕。同学莉莉能写有趣的故事。找到你的才能，登上舞台展示，家人会为你骄傲。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 In the Library",
+          "words": [
+            {
+              "word": "library",
+              "phonetic": "/ˈlaɪbrəri/",
+              "meaning": "[n.] 图书馆",
+              "example": "Go to the library."
+            },
+            {
+              "word": "borrow",
+              "phonetic": "/ˈbɒrəʊ/",
+              "meaning": "[v.] 借入",
+              "example": "I borrow books."
+            },
+            {
+              "word": "return",
+              "phonetic": "/rɪˈtɜːn/",
+              "meaning": "[v.] 归还",
+              "example": "Return the book."
+            },
+            {
+              "word": "quiet",
+              "phonetic": "/ˈkwaɪət/",
+              "meaning": "[adj.] 安静的",
+              "example": "Be quiet here."
+            },
+            {
+              "word": "shelf",
+              "phonetic": "/ʃelf/",
+              "meaning": "[n.] 书架",
+              "example": "Books are on the shelf."
+            },
+            {
+              "word": "magazine",
+              "phonetic": "/ˌmæɡəˈziːn/",
+              "meaning": "[n.] 杂志",
+              "example": "I read a magazine."
+            },
+            {
+              "word": "card",
+              "phonetic": "/kɑːd/",
+              "meaning": "[n.] 借书卡",
+              "example": "Show your library card."
+            },
+            {
+              "word": "page",
+              "phonetic": "/peɪdʒ/",
+              "meaning": "[n.] 页",
+              "example": "Turn to page ten."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "At the library",
+              "en": "Anna: Ben, I want to borrow a story book. Where is it?\nBen: It's on the shelf by the window. Show your card.\nAnna: Thanks. The library is so quiet.\nBen: Remember to return it within two weeks.\nAnna: Sure, I'll read a few pages every night.",
+              "cn": "安娜：本，我想借一本故事书，在哪里？\n本：在窗边的书架上。出示借书卡。\n安娜：谢谢，图书馆好安静。\n本：记得两周内还。\n安娜：好，每天晚上看几页。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "The school library",
+              "en": "Our school library has thousands of books and magazines. Students can borrow up to three books with their library card. The library is always quiet — we should not shout or run. Mrs Lee, the librarian, is very kind. She helps us find the right book in just a minute. The library is the heart of our school.",
+              "cn": "我们学校的图书馆有上千本书和杂志。学生凭借书卡最多借三本。图书馆总是很安静——我们不能喊叫或奔跑。李老师是图书管理员，非常和蔼，一分钟就能帮我们找到合适的书。图书馆是学校的心脏。"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Sports Day",
+          "words": [
+            {
+              "word": "sport",
+              "phonetic": "/spɔːt/",
+              "meaning": "[n.] 运动",
+              "example": "I love sport."
+            },
+            {
+              "word": "race",
+              "phonetic": "/reɪs/",
+              "meaning": "[n.] 比赛",
+              "example": "Run the race."
+            },
+            {
+              "word": "team",
+              "phonetic": "/tiːm/",
+              "meaning": "[n.] 队",
+              "example": "We are one team."
+            },
+            {
+              "word": "win",
+              "phonetic": "/wɪn/",
+              "meaning": "[v.] 赢",
+              "example": "We will win!"
+            },
+            {
+              "word": "lose",
+              "phonetic": "/luːz/",
+              "meaning": "[v.] 输",
+              "example": "Don't be sad to lose."
+            },
+            {
+              "word": "jump",
+              "phonetic": "/dʒʌmp/",
+              "meaning": "[v.] 跳",
+              "example": "Jump high!"
+            },
+            {
+              "word": "throw",
+              "phonetic": "/θrəʊ/",
+              "meaning": "[v.] 扔",
+              "example": "Throw the ball."
+            },
+            {
+              "word": "cheer",
+              "phonetic": "/tʃɪə(r)/",
+              "meaning": "[v.] 加油",
+              "example": "Cheer for our team!"
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Cheer for our team",
+              "en": "Ben: Anna, today is our Sports Day. Are you ready?\nAnna: Yes! I'll run the 100-meter race.\nBen: Cool! I'll join the long jump.\nAnna: Whether we win or lose, let's cheer for our team!\nBen: Right! Together we are strong.",
+              "cn": "本：安娜，今天是运动会，你准备好了吗？\n安娜：好了！我跑 100 米。\n本：酷！我参加跳远。\n安娜：不管输赢，我们都为队加油！\n本：对！团结就是力量。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A wonderful Sports Day",
+              "en": "Today was our school's Sports Day. The playground was full of cheering students. I joined the relay race and helped my team win second place. Ben threw a small ball very far. Even when some friends lost, they smiled and tried again. Sports teach us teamwork and never giving up.",
+              "cn": "今天是学校运动会。操场上同学们都在加油。我参加接力赛，帮队伍拿到第二名。本扔小球扔得很远。即使有同学输了，他们也笑着再试。运动教会我们团队合作，永不放弃。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Festivals Around the World",
+          "words": [
+            {
+              "word": "festival",
+              "phonetic": "/ˈfestɪvl/",
+              "meaning": "[n.] 节日",
+              "example": "Festivals are fun."
+            },
+            {
+              "word": "world",
+              "phonetic": "/wɜːld/",
+              "meaning": "[n.] 世界",
+              "example": "Around the world."
+            },
+            {
+              "word": "Halloween",
+              "phonetic": "/ˌhæləˈwiːn/",
+              "meaning": "[n.] 万圣节",
+              "example": "Halloween is in October."
+            },
+            {
+              "word": "Thanksgiving",
+              "phonetic": "/ˌθæŋksˈɡɪvɪŋ/",
+              "meaning": "[n.] 感恩节",
+              "example": "Thanksgiving is fun."
+            },
+            {
+              "word": "Mid-Autumn",
+              "phonetic": "/ˌmɪd ˈɔːtəm/",
+              "meaning": "[n.] 中秋",
+              "example": "Mid-Autumn Festival."
+            },
+            {
+              "word": "moon cake",
+              "phonetic": "/muːn keɪk/",
+              "meaning": "[n.] 月饼",
+              "example": "I eat moon cakes."
+            },
+            {
+              "word": "tradition",
+              "phonetic": "/trəˈdɪʃn/",
+              "meaning": "[n.] 传统",
+              "example": "It's a tradition."
+            },
+            {
+              "word": "celebrate",
+              "phonetic": "/ˈselɪbreɪt/",
+              "meaning": "[v.] 庆祝",
+              "example": "We celebrate together."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Festivals we love",
+              "en": "Anna: Ben, what festivals do you celebrate?\nBen: I love Spring Festival and Mid-Autumn. We eat moon cakes.\nAnna: In the West, kids celebrate Halloween — they wear masks.\nBen: My pen pal in the US loves Thanksgiving.\nAnna: Festivals show different traditions around the world.",
+              "cn": "安娜：本，你过哪些节？\n本：我喜欢春节和中秋节，吃月饼。\n安娜：西方孩子过万圣节，戴面具。\n本：我美国笔友最爱感恩节。\n安娜：节日展示了世界各地的不同传统。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "One world, many festivals",
+              "en": "Festivals are different around the world. In China, families gather for Spring Festival and Mid-Autumn Festival. In the United States, people enjoy Thanksgiving dinner with turkey. In Mexico, children break colourful piñatas at parties. Each tradition is special. Festivals remind us that we are one big family on this planet.",
+              "cn": "世界各地的节日各不相同。在中国，家人一起过春节和中秋。在美国，人们享用感恩节火鸡晚餐。在墨西哥，孩子们在派对上敲彩色皮纳塔。每个传统都很特别。节日提醒我们：地球上的我们是一个大家庭。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 My Hobby Club",
+          "words": [
+            {
+              "word": "club",
+              "phonetic": "/klʌb/",
+              "meaning": "[n.] 俱乐部",
+              "example": "Join the music club."
+            },
+            {
+              "word": "join",
+              "phonetic": "/dʒɔɪn/",
+              "meaning": "[v.] 加入",
+              "example": "I join the dance club."
+            },
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "meaning": "[n.] 机器人",
+              "example": "We build robots."
+            },
+            {
+              "word": "chess",
+              "phonetic": "/tʃes/",
+              "meaning": "[n.] 国际象棋",
+              "example": "He plays chess well."
+            },
+            {
+              "word": "photo",
+              "phonetic": "/ˈfəʊtəʊ/",
+              "meaning": "[n.] 照片",
+              "example": "Take a photo."
+            },
+            {
+              "word": "drama",
+              "phonetic": "/ˈdrɑːmə/",
+              "meaning": "[n.] 戏剧",
+              "example": "We have a drama club."
+            },
+            {
+              "word": "meet",
+              "phonetic": "/miːt/",
+              "meaning": "[v.] 集合；见面",
+              "example": "We meet on Friday."
+            },
+            {
+              "word": "interest",
+              "phonetic": "/ˈɪntrəst/",
+              "meaning": "[n.] 兴趣",
+              "example": "Find your interest."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Which club?",
+              "en": "Ben: Anna, which school club will you join this year?\nAnna: I want to join the photo club. I love taking pictures.\nBen: I'll join the robot club. We will build a small robot.\nAnna: My sister joined the chess club last year.\nBen: Clubs help us find our true interests.",
+              "cn": "本：安娜，今年你想加入哪个社团？\n安娜：摄影社，我喜欢拍照。\n本：我加机器人社，我们要造小机器人。\n安娜：我姐姐去年加了国际象棋社。\n本：社团帮我们找到真正的兴趣。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Our school clubs",
+              "en": "Our school has many wonderful clubs. The drama club meets every Tuesday after school. The photo club takes a class trip every month to capture city life. The robot club builds small machines that move and talk. The chess club teaches careful thinking. Find a club you love and meet new friends — clubs make school life rich and colourful.",
+              "cn": "我们学校有很多社团。戏剧社每周二放学后活动。摄影社每月外出一次，记录城市生活。机器人社制作能动会说话的小机器。国际象棋社教我们仔细思考。找到喜欢的社团，结识新朋友——社团让校园生活丰富多彩。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 Helping Hands",
+          "words": [
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "[v.] 帮助",
+              "example": "I help my friend."
+            },
+            {
+              "word": "volunteer",
+              "phonetic": "/ˌvɒlənˈtɪə(r)/",
+              "meaning": "[n./v.] 志愿者",
+              "example": "She is a volunteer."
+            },
+            {
+              "word": "elderly",
+              "phonetic": "/ˈeldəli/",
+              "meaning": "[adj.] 年长的",
+              "example": "Help elderly people."
+            },
+            {
+              "word": "kind",
+              "phonetic": "/kaɪnd/",
+              "meaning": "[adj.] 友善的",
+              "example": "Be kind to others."
+            },
+            {
+              "word": "smile",
+              "phonetic": "/smaɪl/",
+              "meaning": "[n./v.] 微笑",
+              "example": "Give a smile."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "meaning": "[v.] 分享",
+              "example": "Share with friends."
+            },
+            {
+              "word": "neighbour",
+              "phonetic": "/ˈneɪbə(r)/",
+              "meaning": "[n.] 邻居",
+              "example": "Help your neighbours."
+            },
+            {
+              "word": "warm",
+              "phonetic": "/wɔːm/",
+              "meaning": "[adj.] 温暖的",
+              "example": "A warm heart."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "A helping hand",
+              "en": "Anna: Ben, the elderly man next door looks sad today.\nBen: Let's help him. We can carry his bags.\nAnna: Good idea. A small kind act makes the world warmer.\nBen: My mum says, \"A smile is the shortest helping hand.\"\nAnna: True! Let's be kind volunteers in our neighbourhood.",
+              "cn": "安娜：本，隔壁老爷爷今天看上去很难过。\n本：我们去帮他，可以提袋子。\n安娜：好。一件小小善举让世界更温暖。\n本：妈妈说\"微笑是最短的援手\"。\n安娜：对！我们做社区的好志愿者吧。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Small acts, big love",
+              "en": "Last weekend, our class volunteered at the city park. We picked up rubbish, planted flowers, and helped elderly people walk to the bus stop. Some kids shared bread and warm drinks with strangers. A grandma even taught us how to fold paper birds. Small acts of kindness can build a great world. Be a helping hand every day!",
+              "cn": "上周末我们班在城市公园做志愿者。我们捡垃圾、种花、扶老人到公交站。有同学把面包和热饮分给陌生人。一位奶奶还教我们叠纸鸟。小小的善举能建设大世界。每天都做一只援手吧！"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review Show Time",
+          "words": [
+            {
+              "word": "show",
+              "phonetic": "/ʃəʊ/",
+              "meaning": "[n./v.] 表演；展示",
+              "example": "A big show!"
+            },
+            {
+              "word": "prepare",
+              "phonetic": "/prɪˈpeə(r)/",
+              "meaning": "[v.] 准备",
+              "example": "Prepare for the show."
+            },
+            {
+              "word": "act",
+              "phonetic": "/ækt/",
+              "meaning": "[v.] 演",
+              "example": "She acts on stage."
+            },
+            {
+              "word": "audience",
+              "phonetic": "/ˈɔːdiəns/",
+              "meaning": "[n.] 观众",
+              "example": "The audience cheers."
+            },
+            {
+              "word": "clap",
+              "phonetic": "/klæp/",
+              "meaning": "[v.] 鼓掌",
+              "example": "Everyone claps."
+            },
+            {
+              "word": "remember",
+              "phonetic": "/rɪˈmembə(r)/",
+              "meaning": "[v.] 记得",
+              "example": "Remember this day."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Time to shine",
+              "en": "Anna: Ben, our school show is tomorrow! Are you ready?\nBen: Yes, I've prepared for weeks. I'll sing and act.\nAnna: I'll join the drama club piece.\nBen: The audience will love it. Don't forget to smile!\nAnna: We'll remember this show for a long time.",
+              "cn": "安娜：本，明天就学校汇演了！你准备好了吗？\n本：好了，我准备好几周了，要唱要演。\n安娜：我加戏剧社的节目。\n本：观众一定喜欢，别忘了笑。\n安娜：这场演出我们会记很久。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A show to remember",
+              "en": "Last Friday our school had a big Show Time. Each class prepared one act. We sang songs in English, danced to popular music, and even put on a short play about friendship. When the audience clapped after our performance, my heart jumped with joy. I will remember this show for many years. A new school year, a great new start!",
+              "cn": "上周五我们学校举办了大型汇演。每个班准备一个节目。我们唱英文歌、跳流行舞，甚至演了一出关于友谊的小话剧。表演结束观众鼓掌时，我心里乐开了花。这场演出我会记很多年。新学年，新开始！"
+            }
+          ]
         }
       ],
       "下": [
         {
           "id": "u1",
-          "title": "Unit 1 Protect the Earth",
+          "title": "Unit 1 Trip Plans",
           "words": [
             {
-              "word": "save",
-              "phonetic": "/seɪv/",
-              "meaning": "拯救/节约",
-              "example": "Save water, save the Earth."
+              "word": "trip",
+              "phonetic": "/trɪp/",
+              "meaning": "[n.] 旅行",
+              "example": "A short trip."
             },
             {
-              "word": "protect",
-              "phonetic": "/prəˈtekt/",
-              "meaning": "保护",
-              "example": "Protect our environment."
+              "word": "plan",
+              "phonetic": "/plæn/",
+              "meaning": "[v./n.] 计划",
+              "example": "Plan a trip."
             },
             {
-              "word": "plant",
-              "phonetic": "/plɑːnt/",
-              "meaning": "种植",
-              "example": "Plant more trees."
+              "word": "summer",
+              "phonetic": "/ˈsʌmə(r)/",
+              "meaning": "[n.] 夏天",
+              "example": "Summer is hot."
             },
             {
-              "word": "pollution",
-              "phonetic": "/pəˈluːʃn/",
-              "meaning": "污染",
-              "example": "Air pollution is bad."
+              "word": "holiday",
+              "phonetic": "/ˈhɒlədeɪ/",
+              "meaning": "[n.] 假期",
+              "example": "Happy holiday!"
             },
             {
-              "word": "recycle",
-              "phonetic": "/ˌriːˈsaɪkl/",
-              "meaning": "回收",
-              "example": "Recycle paper and plastic."
+              "word": "beach",
+              "phonetic": "/biːtʃ/",
+              "meaning": "[n.] 海滩",
+              "example": "I love the beach."
+            },
+            {
+              "word": "mountain",
+              "phonetic": "/ˈmaʊntən/",
+              "meaning": "[n.] 山",
+              "example": "Climb the mountain."
+            },
+            {
+              "word": "discuss",
+              "phonetic": "/dɪˈskʌs/",
+              "meaning": "[v.] 讨论",
+              "example": "Let's discuss it."
+            },
+            {
+              "word": "idea",
+              "phonetic": "/aɪˈdɪə/",
+              "meaning": "[n.] 主意",
+              "example": "A great idea!"
             }
           ],
-          "lesson": "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers. Let's recycle paper and plastic to make our planet greener.",
-          "lessonCN": "地球是我们的家园。我们应该保护它。我们应该节约用水，种更多的树。我们不应该污染河流。让我们回收纸张和塑料，让地球更环保。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Where shall we go?",
+              "en": "Ben: Anna, summer holiday is coming! Where shall we go?\nAnna: How about the beach? We can swim and play in the sand.\nBen: Or we can climb the mountain — the view is amazing.\nAnna: Let's discuss with our parents tonight.\nBen: Great idea! I love planning a trip.",
+              "cn": "本：安娜，暑假快到了！我们去哪儿？\n安娜：去海滩吧？可以游泳玩沙。\n本：或者爬山——风景超美。\n安娜：晚上和爸妈商量一下。\n本：好主意！我喜欢计划旅行。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Making a plan",
+              "en": "Planning a trip is part of the fun. First, we choose a place — the beach, a mountain, or a busy city. Then we pack clothes, water and snacks. We also write down the things we want to see. A good plan gives us more time to enjoy. After all, the best trips begin with a good idea!",
+              "cn": "计划旅行也是乐趣的一部分。首先选地方——海滩、山或繁华城市。然后打包衣服、水和零食。再写下想看的东西。好计划让我们有更多时间享受。毕竟最好的旅行始于一个好主意！"
+            }
+          ]
         },
         {
           "id": "u2",
-          "title": "Unit 2 Sports",
+          "title": "Unit 2 How Do We Travel?",
           "words": [
             {
-              "word": "football",
-              "phonetic": "/ˈfʊtbɔːl/",
-              "meaning": "足球",
-              "example": "Play football with friends."
+              "word": "travel",
+              "phonetic": "/ˈtrævl/",
+              "meaning": "[v./n.] 旅行",
+              "example": "I love to travel."
             },
             {
-              "word": "basketball",
-              "phonetic": "/ˈbɑːskɪtbɔːl/",
-              "meaning": "篮球",
-              "example": "I love basketball."
+              "word": "train",
+              "phonetic": "/treɪn/",
+              "meaning": "[n.] 火车",
+              "example": "Take the train."
             },
             {
-              "word": "swimming",
-              "phonetic": "/ˈswɪmɪŋ/",
-              "meaning": "游泳",
-              "example": "Swimming is fun."
+              "word": "plane",
+              "phonetic": "/pleɪn/",
+              "meaning": "[n.] 飞机",
+              "example": "A fast plane."
             },
             {
-              "word": "running",
-              "phonetic": "/ˈrʌnɪŋ/",
-              "meaning": "跑步",
-              "example": "Go running in the morning."
+              "word": "bus",
+              "phonetic": "/bʌs/",
+              "meaning": "[n.] 公共汽车",
+              "example": "Catch the bus."
             },
             {
-              "word": "exercise",
-              "phonetic": "/ˈeksəsaɪz/",
-              "meaning": "锻炼",
-              "example": "Exercise keeps us healthy."
+              "word": "subway",
+              "phonetic": "/ˈsʌbweɪ/",
+              "meaning": "[n.] 地铁",
+              "example": "Take the subway."
+            },
+            {
+              "word": "bike",
+              "phonetic": "/baɪk/",
+              "meaning": "[n.] 自行车",
+              "example": "Ride a bike."
+            },
+            {
+              "word": "ticket",
+              "phonetic": "/ˈtɪkɪt/",
+              "meaning": "[n.] 票",
+              "example": "Buy a ticket."
+            },
+            {
+              "word": "fast",
+              "phonetic": "/fɑːst/",
+              "meaning": "[adj.] 快的",
+              "example": "It's fast."
             }
           ],
-          "lesson": "Exercise is important for our health. I play football with my classmates after school. My sister likes swimming. My father goes running every morning. What sports do you like?",
-          "lessonCN": "锻炼对我们的健康很重要。放学后我和同学一起踢足球。我姐姐喜欢游泳。我父亲每天早上都跑步。您喜欢什么运动？"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "By plane or by train?",
+              "en": "Ben: Anna, how shall we go to Beijing?\nAnna: By plane is fast, but the train is more interesting.\nBen: I agree. We can see the fields and rivers from the train window.\nAnna: Tickets are also cheaper.\nBen: Then let's buy two train tickets tomorrow.",
+              "cn": "本：安娜，我们怎么去北京？\n安娜：坐飞机快，但火车更有趣。\n本：同意，火车窗外能看到田野和河流。\n安娜：车票也更便宜。\n本：那明天买两张火车票。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Ways to travel",
+              "en": "There are many ways to travel. Planes are the fastest. Trains take longer but show us beautiful scenery. In a city, we use the subway and the bus. For short trips around the neighbourhood, a bike is perfect. Each way has its own fun. The best part of travel is the journey itself.",
+              "cn": "出行方式有很多。飞机最快。火车较慢但能看到美丽风景。在城市里我们坐地铁和公交。短距离骑自行车正好。每种方式都有乐趣。旅行最棒的部分是旅程本身。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Asking the Way",
+          "words": [
+            {
+              "word": "way",
+              "phonetic": "/weɪ/",
+              "meaning": "[n.] 路；方向",
+              "example": "Show me the way."
+            },
+            {
+              "word": "turn",
+              "phonetic": "/tɜːn/",
+              "meaning": "[v.] 转弯",
+              "example": "Turn left."
+            },
+            {
+              "word": "left",
+              "phonetic": "/left/",
+              "meaning": "[adj./adv.] 左",
+              "example": "On the left."
+            },
+            {
+              "word": "right",
+              "phonetic": "/raɪt/",
+              "meaning": "[adj./adv.] 右",
+              "example": "On the right."
+            },
+            {
+              "word": "straight",
+              "phonetic": "/streɪt/",
+              "meaning": "[adv.] 直；笔直地",
+              "example": "Go straight."
+            },
+            {
+              "word": "crossroads",
+              "phonetic": "/ˈkrɒsrəʊdz/",
+              "meaning": "[n.] 十字路口",
+              "example": "Wait at the crossroads."
+            },
+            {
+              "word": "map",
+              "phonetic": "/mæp/",
+              "meaning": "[n.] 地图",
+              "example": "Read the map."
+            },
+            {
+              "word": "lost",
+              "phonetic": "/lɒst/",
+              "meaning": "[adj.] 迷路的",
+              "example": "We got lost."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Excuse me, where is...?",
+              "en": "Tourist: Excuse me, can you show me the way to the museum?\nAnna: Sure. Go straight for two blocks, then turn left at the crossroads.\nTourist: Is it on the right?\nAnna: Yes, you can't miss it. There is a big sign.\nTourist: Thank you so much!",
+              "cn": "游客：打扰一下，请问博物馆怎么走？\n安娜：直走两个街区，到十字路口左转。\n游客：在右边吗？\n安娜：对，错不了，有个大招牌。\n游客：太感谢了！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Reading the map",
+              "en": "When we travel, knowing how to ask the way is very useful. We can also read a map on our phone. If you turn left and then right, you may reach the small park. If you go straight, you may find the train station. Even if you get lost, kind people will help you find the way. Don't be afraid to ask!",
+              "cn": "旅行时会问路非常有用。也可以看手机地图。先左转再右转可能到小公园。一直直走能到火车站。即使迷路，好心人会帮你找路。别怕开口问！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Tourist Spots",
+          "words": [
+            {
+              "word": "tourist",
+              "phonetic": "/ˈtʊərɪst/",
+              "meaning": "[n.] 游客",
+              "example": "Many tourists come here."
+            },
+            {
+              "word": "spot",
+              "phonetic": "/spɒt/",
+              "meaning": "[n.] 地点",
+              "example": "A famous spot."
+            },
+            {
+              "word": "city",
+              "phonetic": "/ˈsɪti/",
+              "meaning": "[n.] 城市",
+              "example": "A big city."
+            },
+            {
+              "word": "country",
+              "phonetic": "/ˈkʌntri/",
+              "meaning": "[n.] 国家",
+              "example": "Visit another country."
+            },
+            {
+              "word": "Great Wall",
+              "phonetic": "/ɡreɪt wɔːl/",
+              "meaning": "[n.] 长城",
+              "example": "The Great Wall is amazing."
+            },
+            {
+              "word": "park",
+              "phonetic": "/pɑːk/",
+              "meaning": "[n.] 公园",
+              "example": "A theme park."
+            },
+            {
+              "word": "museum",
+              "phonetic": "/mjuˈziːəm/",
+              "meaning": "[n.] 博物馆",
+              "example": "Visit the museum."
+            },
+            {
+              "word": "famous",
+              "phonetic": "/ˈfeɪməs/",
+              "meaning": "[adj.] 著名的",
+              "example": "A famous place."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Where will you go?",
+              "en": "Ben: Anna, which tourist spot do you want to see most?\nAnna: I want to visit the Great Wall and the Forbidden City.\nBen: Cool! I want to see a science museum in Shanghai.\nAnna: There are so many famous spots in our country.\nBen: A trip is the best way to learn about a city.",
+              "cn": "本：安娜，你最想去哪个景点？\n安娜：长城和故宫。\n本：酷！我想去上海的科技馆。\n安娜：我们国家有那么多名胜。\n本：旅行是了解一座城市最好的方式。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Famous spots in China",
+              "en": "China has many famous tourist spots. The Great Wall is over two thousand years old. The Forbidden City in Beijing has more than nine thousand rooms. In Xi'an, you can see the amazing Terracotta Army. In Shanghai, the modern science museum surprises every visitor. Every city has its own special place — go and explore them all!",
+              "cn": "中国有很多著名景点。长城已有两千多年历史。北京故宫有九千多间房。在西安能看到神奇的兵马俑。上海现代科技馆让每个游客惊叹。每座城市都有自己的特别之处——去探索吧！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Buying Souvenirs",
+          "words": [
+            {
+              "word": "souvenir",
+              "phonetic": "/ˌsuːvəˈnɪə(r)/",
+              "meaning": "[n.] 纪念品",
+              "example": "Buy a souvenir."
+            },
+            {
+              "word": "shop",
+              "phonetic": "/ʃɒp/",
+              "meaning": "[n./v.] 商店；购物",
+              "example": "Go shopping."
+            },
+            {
+              "word": "gift",
+              "phonetic": "/ɡɪft/",
+              "meaning": "[n.] 礼物",
+              "example": "A small gift."
+            },
+            {
+              "word": "size",
+              "phonetic": "/saɪz/",
+              "meaning": "[n.] 尺寸",
+              "example": "What size?"
+            },
+            {
+              "word": "colour",
+              "phonetic": "/ˈkʌlə(r)/",
+              "meaning": "[n.] 颜色",
+              "example": "Your favourite colour."
+            },
+            {
+              "word": "try on",
+              "phonetic": "/traɪ ɒn/",
+              "meaning": "[phr.] 试穿",
+              "example": "Try on this hat."
+            },
+            {
+              "word": "pay",
+              "phonetic": "/peɪ/",
+              "meaning": "[v.] 付钱",
+              "example": "Pay for it."
+            },
+            {
+              "word": "receipt",
+              "phonetic": "/rɪˈsiːt/",
+              "meaning": "[n.] 收据",
+              "example": "Keep the receipt."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "At the gift shop",
+              "en": "Anna: This silk scarf is so beautiful! What colour do you prefer?\nBen: I'll take the red one. May I try on this hat too?\nShopkeeper: Sure. The size looks perfect.\nBen: How much is everything?\nShopkeeper: Two hundred yuan. Here is your receipt.",
+              "cn": "安娜：这条丝巾真漂亮！你喜欢什么颜色？\n本：我要红色。也可以试戴这顶帽子吗？\n店主：当然，尺寸正好。\n本：一共多少钱？\n店主：两百元，这是您的收据。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A good souvenir",
+              "en": "A souvenir is a small gift that helps us remember a trip. When I went to Hangzhou, I bought a paper fan with a flower picture. When Dad went to Yunnan, he brought back a small silver hat for me. Choose a souvenir you really like — its size, colour and meaning all matter. Years later, it will still remind you of a happy day.",
+              "cn": "纪念品是帮我们记住旅行的小礼物。我去杭州买了一把画花的纸扇。爸爸从云南带回一顶小银帽给我。挑你真正喜欢的纪念品——尺寸、颜色、意义都重要。多年后它仍能让你想起开心的日子。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Postcards from a Trip",
+          "words": [
+            {
+              "word": "postcard",
+              "phonetic": "/ˈpəʊstkɑːd/",
+              "meaning": "[n.] 明信片",
+              "example": "Send a postcard."
+            },
+            {
+              "word": "send",
+              "phonetic": "/send/",
+              "meaning": "[v.] 寄送",
+              "example": "Send a letter."
+            },
+            {
+              "word": "write",
+              "phonetic": "/raɪt/",
+              "meaning": "[v.] 写",
+              "example": "Write a card."
+            },
+            {
+              "word": "address",
+              "phonetic": "/əˈdres/",
+              "meaning": "[n.] 地址",
+              "example": "What's your address?"
+            },
+            {
+              "word": "stamp",
+              "phonetic": "/stæmp/",
+              "meaning": "[n.] 邮票",
+              "example": "Put on a stamp."
+            },
+            {
+              "word": "miss",
+              "phonetic": "/mɪs/",
+              "meaning": "[v.] 想念",
+              "example": "I miss you."
+            },
+            {
+              "word": "weather",
+              "phonetic": "/ˈweðə(r)/",
+              "meaning": "[n.] 天气",
+              "example": "Nice weather."
+            },
+            {
+              "word": "wish",
+              "phonetic": "/wɪʃ/",
+              "meaning": "[v./n.] 祝愿",
+              "example": "Best wishes."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "A postcard from Beijing",
+              "en": "Anna: Look, Ben! I got a postcard from Beijing.\nBen: Wow, who sent it?\nAnna: My cousin Tom. He says the weather is sunny and the food is great.\nBen: There is a pretty stamp on it.\nAnna: I'll write back tonight and send my best wishes.",
+              "cn": "安娜：本，看！我收到一张北京的明信片。\n本：哇，谁寄的？\n安娜：表哥汤姆。他说那里晴天，吃得也好。\n本：上面贴了张漂亮的邮票。\n安娜：今晚我回信，送上祝福。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Greetings from afar",
+              "en": "When we travel, we can send postcards to friends and family. Write the address clearly, stick on a stamp, and drop the card into a mailbox. People love to see new pictures, hear about the weather, and read your wishes. A small postcard can travel thousands of kilometres and tell others, \"I miss you and I'm thinking of you.\"",
+              "cn": "旅行时可以给亲友寄明信片。写清地址，贴上邮票，投进邮筒。人们喜欢看新照片、了解天气、读你的祝福。小小明信片能跨越数千公里，告诉别人\"我想你\"。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 Different Cultures",
+          "words": [
+            {
+              "word": "culture",
+              "phonetic": "/ˈkʌltʃə(r)/",
+              "meaning": "[n.] 文化",
+              "example": "Chinese culture."
+            },
+            {
+              "word": "language",
+              "phonetic": "/ˈlæŋɡwɪdʒ/",
+              "meaning": "[n.] 语言",
+              "example": "Learn a language."
+            },
+            {
+              "word": "country",
+              "phonetic": "/ˈkʌntri/",
+              "meaning": "[n.] 国家",
+              "example": "Visit a new country."
+            },
+            {
+              "word": "food",
+              "phonetic": "/fuːd/",
+              "meaning": "[n.] 食物",
+              "example": "Different food."
+            },
+            {
+              "word": "chopsticks",
+              "phonetic": "/ˈtʃɒpstɪks/",
+              "meaning": "[n.] 筷子",
+              "example": "Use chopsticks."
+            },
+            {
+              "word": "respect",
+              "phonetic": "/rɪˈspekt/",
+              "meaning": "[v./n.] 尊重",
+              "example": "Respect others."
+            },
+            {
+              "word": "amazing",
+              "phonetic": "/əˈmeɪzɪŋ/",
+              "meaning": "[adj.] 惊人的",
+              "example": "An amazing story."
+            },
+            {
+              "word": "learn",
+              "phonetic": "/lɜːn/",
+              "meaning": "[v.] 学习",
+              "example": "Learn from each other."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Different but lovely",
+              "en": "Anna: Ben, I met a foreign student today. She speaks three languages!\nBen: Amazing! What country is she from?\nAnna: From Japan. She uses chopsticks like us.\nBen: Different cultures have so much in common.\nAnna: Right! We can learn from each other and respect different ways.",
+              "cn": "安娜：本，我今天遇见一个留学生，她会说三种语言！\n本：太厉害了！她哪国人？\n安娜：日本，她也用筷子。\n本：不同文化有很多相通之处。\n安娜：对！我们可以彼此学习、尊重差异。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "One world, many cultures",
+              "en": "Our world has thousands of cultures. People speak different languages, eat different food, and celebrate different festivals. In China, we use chopsticks. In Italy, people eat pasta with a fork. Each culture is amazing in its own way. Travel and read books, then you'll understand and respect different cultures. The world becomes much bigger.",
+              "cn": "我们的世界有成千上万种文化。人们说不同语言、吃不同食物、过不同节日。中国人用筷子，意大利人用叉子吃面。每种文化都有独特之美。旅行、读书，让你理解并尊重不同文化，世界从此变大了。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 Safe Travels",
+          "words": [
+            {
+              "word": "safe",
+              "phonetic": "/seɪf/",
+              "meaning": "[adj.] 安全的",
+              "example": "Have a safe trip."
+            },
+            {
+              "word": "danger",
+              "phonetic": "/ˈdeɪndʒə(r)/",
+              "meaning": "[n.] 危险",
+              "example": "Stay away from danger."
+            },
+            {
+              "word": "warning",
+              "phonetic": "/ˈwɔːnɪŋ/",
+              "meaning": "[n.] 警告",
+              "example": "A warning sign."
+            },
+            {
+              "word": "rule",
+              "phonetic": "/ruːl/",
+              "meaning": "[n.] 规则",
+              "example": "Follow the rules."
+            },
+            {
+              "word": "follow",
+              "phonetic": "/ˈfɒləʊ/",
+              "meaning": "[v.] 遵守；跟随",
+              "example": "Follow your teacher."
+            },
+            {
+              "word": "careful",
+              "phonetic": "/ˈkeəfl/",
+              "meaning": "[adj.] 小心的",
+              "example": "Be careful."
+            },
+            {
+              "word": "phone",
+              "phonetic": "/fəʊn/",
+              "meaning": "[n.] 电话",
+              "example": "Call on the phone."
+            },
+            {
+              "word": "remember",
+              "phonetic": "/rɪˈmembə(r)/",
+              "meaning": "[v.] 记得",
+              "example": "Remember the number."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Be safe on the trip",
+              "en": "Mum: Anna, you and Ben will travel alone next week. Be safe!\nAnna: Don't worry, Mum. We'll follow all the rules.\nMum: Remember the family phone number. Stay away from danger.\nAnna: I'll be careful. We'll also watch for warning signs.\nBen: Yes! Safety first.",
+              "cn": "妈妈：安娜，下周你和本要单独旅行，注意安全！\n安娜：放心妈妈，我们会遵守规则。\n妈妈：记住家里电话，远离危险。\n安娜：我会小心，会留意警示牌。\n本：对，安全第一。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Safety on the road",
+              "en": "Travel is fun, but safety always comes first. Always cross the road with the green light. Don't talk to strangers. Carry a small bag with water, a map and a phone. Read warning signs at scenic spots and follow the rules. Remember a family phone number — call right away if you get lost. A safe trip is a happy trip!",
+              "cn": "旅行有趣，但安全第一。绿灯过马路。不和陌生人说话。带小包装水、地图、电话。看景区警示牌、守规则。记住家人电话——迷路马上打。安全的旅行才是快乐的旅行！"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review My Journey",
+          "words": [
+            {
+              "word": "journey",
+              "phonetic": "/ˈdʒɜːni/",
+              "meaning": "[n.] 旅程",
+              "example": "A long journey."
+            },
+            {
+              "word": "memory",
+              "phonetic": "/ˈmeməri/",
+              "meaning": "[n.] 回忆",
+              "example": "Sweet memories."
+            },
+            {
+              "word": "diary",
+              "phonetic": "/ˈdaɪəri/",
+              "meaning": "[n.] 日记",
+              "example": "Write a diary."
+            },
+            {
+              "word": "wonderful",
+              "phonetic": "/ˈwʌndəfl/",
+              "meaning": "[adj.] 极好的",
+              "example": "A wonderful time."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "meaning": "[v.] 分享",
+              "example": "Share the photos."
+            },
+            {
+              "word": "thank",
+              "phonetic": "/θæŋk/",
+              "meaning": "[v.] 感谢",
+              "example": "Thank you all."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Telling my story",
+              "en": "Anna: Ben, this summer journey was wonderful!\nBen: Yes. The mountain, the beach, and the city — what fun memories!\nAnna: I wrote everything in my diary.\nBen: Let's share the photos with the class.\nAnna: Thank you, Ben, for travelling with me.",
+              "cn": "安娜：本，这个夏天的旅程太棒了！\n本：是的，山、海滩、城市——多么美好的回忆！\n安娜：我都写到日记里了。\n本：我们和班里同学分享照片吧。\n安娜：谢谢你，本，陪我一起旅行。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My summer journey",
+              "en": "My summer journey was full of wonderful moments. We climbed mountains, swam in the sea, and made friends with kids from another city. I learned to ask the way in English and pay for souvenirs by myself. My diary has fifty pages of stories now. I will share them with my classmates. A journey is the best teacher, and thank you, summer!",
+              "cn": "我的夏日旅程满是精彩瞬间。我们爬山、游海、与外地小伙伴交朋友。我学会用英语问路、自己付钱买纪念品。日记已经写了五十页故事。我要和同学分享。旅行是最好的老师，谢谢你，夏天！"
+            }
+          ]
         }
       ]
     },
@@ -1849,79 +3945,603 @@
       "上": [
         {
           "id": "u1",
-          "title": "Unit 1 How Tall Are You?",
+          "title": "Unit 1 Welcome to Junior",
           "words": [
             {
-              "word": "taller",
-              "phonetic": "/ˈtɔːlə/",
-              "meaning": "更高",
-              "example": "He is taller than me."
+              "word": "junior",
+              "phonetic": "/ˈdʒuːniə(r)/",
+              "meaning": "[adj./n.] 初级的；初中",
+              "example": "Junior high school."
             },
             {
-              "word": "shorter",
-              "phonetic": "/ˈʃɔːtə/",
-              "meaning": "更矮",
-              "example": "She is shorter than Tom."
+              "word": "graduate",
+              "phonetic": "/ˈɡrædʒueɪt/",
+              "meaning": "[v.] 毕业",
+              "example": "We will graduate."
             },
             {
-              "word": "younger",
-              "phonetic": "/ˈjʌŋɡə/",
-              "meaning": "更年轻",
-              "example": "I am younger than him."
+              "word": "primary",
+              "phonetic": "/ˈpraɪməri/",
+              "meaning": "[adj.] 小学的",
+              "example": "Primary school."
             },
             {
-              "word": "heavier",
-              "phonetic": "/ˈheviə/",
-              "meaning": "更重",
-              "example": "The box is heavier."
+              "word": "memory",
+              "phonetic": "/ˈmeməri/",
+              "meaning": "[n.] 回忆",
+              "example": "Sweet memories."
             },
             {
-              "word": "bigger",
-              "phonetic": "/ˈbɪɡə/",
-              "meaning": "更大",
-              "example": "Elephants are bigger."
+              "word": "future",
+              "phonetic": "/ˈfjuːtʃə(r)/",
+              "meaning": "[n.] 未来",
+              "example": "Bright future."
+            },
+            {
+              "word": "challenge",
+              "phonetic": "/ˈtʃælɪndʒ/",
+              "meaning": "[n.] 挑战",
+              "example": "A new challenge."
+            },
+            {
+              "word": "ready",
+              "phonetic": "/ˈredi/",
+              "meaning": "[adj.] 准备好的",
+              "example": "I am ready."
+            },
+            {
+              "word": "confident",
+              "phonetic": "/ˈkɒnfɪdənt/",
+              "meaning": "[adj.] 自信的",
+              "example": "Be confident!"
             }
           ],
-          "lesson": "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me.",
-          "lessonCN": "你有多高，迈克？我身高165厘米。我比你高。你弟弟多大了？他12岁，比我小。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Goodbye, primary school",
+              "en": "Anna: Ben, soon we'll graduate from primary school.\nBen: I know. Six years pass so fast. So many memories!\nAnna: Junior high will bring new challenges.\nBen: But I feel confident — we have great teachers and friends.\nAnna: Yes, the future looks bright!",
+              "cn": "安娜：本，我们快小学毕业了。\n本：是啊，六年过得真快，那么多回忆！\n安娜：初中会有新挑战。\n本：但我很自信——我们有好老师和好朋友。\n安娜：是的，未来很光明！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Ready for junior",
+              "en": "Six years in primary school will soon end. We learned to read English, do Maths, and care for each other. Junior high will bring more subjects and harder tests. But we are ready. With good study habits and a strong heart, every challenge is a chance to grow. Goodbye primary, hello junior — welcome, future!",
+              "cn": "小学六年即将结束。我们学会了读英语、做数学、彼此关心。初中将带来更多科目和更难的考试。但我们准备好了。带着良好的学习习惯和坚强的心，每个挑战都是成长的机会。再见小学，你好初中——欢迎，未来！"
+            }
+          ]
         },
         {
           "id": "u2",
-          "title": "Unit 2 Last Weekend",
+          "title": "Unit 2 Dream Jobs",
           "words": [
             {
-              "word": "cleaned",
-              "phonetic": "/kliːnd/",
-              "meaning": "打扫了",
-              "example": "I cleaned my room."
+              "word": "dream",
+              "phonetic": "/driːm/",
+              "meaning": "[n./v.] 梦想",
+              "example": "Follow your dream."
             },
             {
-              "word": "washed",
-              "phonetic": "/wɒʃt/",
-              "meaning": "洗了",
-              "example": "She washed the clothes."
+              "word": "job",
+              "phonetic": "/dʒɒb/",
+              "meaning": "[n.] 工作",
+              "example": "A good job."
             },
             {
-              "word": "watched",
-              "phonetic": "/wɒtʃt/",
-              "meaning": "看了",
-              "example": "We watched TV."
+              "word": "doctor",
+              "phonetic": "/ˈdɒktə(r)/",
+              "meaning": "[n.] 医生",
+              "example": "A kind doctor."
             },
             {
-              "word": "visited",
-              "phonetic": "/ˈvɪzɪtɪd/",
-              "meaning": "拜访了",
-              "example": "I visited my grandma."
+              "word": "teacher",
+              "phonetic": "/ˈtiːtʃə(r)/",
+              "meaning": "[n.] 教师",
+              "example": "A great teacher."
             },
             {
-              "word": "played",
-              "phonetic": "/pleɪd/",
-              "meaning": "玩了",
-              "example": "They played games."
+              "word": "engineer",
+              "phonetic": "/ˌendʒɪˈnɪə(r)/",
+              "meaning": "[n.] 工程师",
+              "example": "An engineer builds bridges."
+            },
+            {
+              "word": "scientist",
+              "phonetic": "/ˈsaɪəntɪst/",
+              "meaning": "[n.] 科学家",
+              "example": "A famous scientist."
+            },
+            {
+              "word": "writer",
+              "phonetic": "/ˈraɪtə(r)/",
+              "meaning": "[n.] 作家",
+              "example": "A young writer."
+            },
+            {
+              "word": "work hard",
+              "phonetic": "/wɜːk hɑːd/",
+              "meaning": "[phr.] 努力工作",
+              "example": "Work hard for it."
             }
           ],
-          "lesson": "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend.",
-          "lessonCN": "你上周末做了什么？我去看望了我的祖父母。我打扫了房间，洗了衣服。这是一个繁忙的周末。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "What's your dream?",
+              "en": "Anna: Ben, what's your dream job?\nBen: I want to be a doctor and help people.\nAnna: Cool! I want to be a writer and tell good stories.\nBen: My brother wants to be an engineer.\nAnna: As long as we work hard, every dream can come true.",
+              "cn": "安娜：本，你梦想做什么？\n本：当医生，帮助别人。\n安娜：酷！我想当作家，讲好故事。\n本：我哥想当工程师。\n安娜：只要努力，梦想都能成真。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Dreams shape our future",
+              "en": "Every child has a dream job. Some children dream of being doctors and saving lives. Others want to be teachers, sharing knowledge with the young. Engineers build bridges and roads. Scientists explore the secrets of the universe. Writers tell stories that touch our hearts. Whatever your dream is, work hard, and one day it will come true.",
+              "cn": "每个孩子都有梦想职业。有的想当医生救人。有的想当老师传道授业。工程师建桥修路。科学家探索宇宙奥秘。作家用故事打动人心。无论你的梦想是什么，努力下去，总有一天会成真。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Heroes Around Us",
+          "words": [
+            {
+              "word": "hero",
+              "phonetic": "/ˈhɪərəʊ/",
+              "meaning": "[n.] 英雄",
+              "example": "He is my hero."
+            },
+            {
+              "word": "brave",
+              "phonetic": "/breɪv/",
+              "meaning": "[adj.] 勇敢的",
+              "example": "Be brave!"
+            },
+            {
+              "word": "save",
+              "phonetic": "/seɪv/",
+              "meaning": "[v.] 拯救",
+              "example": "Save lives."
+            },
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "[v.] 帮助",
+              "example": "Help others."
+            },
+            {
+              "word": "fire",
+              "phonetic": "/ˈfaɪə(r)/",
+              "meaning": "[n.] 火",
+              "example": "Put out the fire."
+            },
+            {
+              "word": "fighter",
+              "phonetic": "/ˈfaɪtə(r)/",
+              "meaning": "[n.] 战士；消防员",
+              "example": "A firefighter."
+            },
+            {
+              "word": "police",
+              "phonetic": "/pəˈliːs/",
+              "meaning": "[n.] 警察",
+              "example": "Call the police."
+            },
+            {
+              "word": "great",
+              "phonetic": "/ɡreɪt/",
+              "meaning": "[adj.] 伟大的",
+              "example": "A great hero."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "My hero",
+              "en": "Anna: Ben, who is your hero?\nBen: My hero is my grandpa. He saved a child from a fire when he was young.\nAnna: Wow, so brave!\nBen: Heroes are not only in films. Police, firefighters and doctors are heroes too.\nAnna: Right. Even kind classmates can be small heroes.",
+              "cn": "安娜：本，谁是你的英雄？\n本：我爷爷。他年轻时从火场救过一个孩子。\n安娜：哇，好勇敢！\n本：英雄不只在电影里。警察、消防员、医生都是英雄。\n安娜：对，连善良的同学也是小小英雄。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Heroes around us",
+              "en": "Real heroes are all around us. A firefighter runs into a burning building to save a stranger. A teacher works late to help slow learners. A doctor stays awake all night to care for a patient. A kid shares his lunch with a hungry friend. Heroes do brave and kind things, big or small. We can all be heroes in our own way.",
+              "cn": "真正的英雄就在我们身边。消防员冲进火场救陌生人。老师加班辅导学习吃力的孩子。医生彻夜守护病人。小朋友把午饭分给挨饿的伙伴。英雄做勇敢善良的事，无论大小。我们都能用自己的方式成为英雄。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Sports for Life",
+          "words": [
+            {
+              "word": "sport",
+              "phonetic": "/spɔːt/",
+              "meaning": "[n.] 运动",
+              "example": "Sport is fun."
+            },
+            {
+              "word": "football",
+              "phonetic": "/ˈfʊtbɔːl/",
+              "meaning": "[n.] 足球",
+              "example": "Play football."
+            },
+            {
+              "word": "basketball",
+              "phonetic": "/ˈbɑːskɪtbɔːl/",
+              "meaning": "[n.] 篮球",
+              "example": "He likes basketball."
+            },
+            {
+              "word": "swimming",
+              "phonetic": "/ˈswɪmɪŋ/",
+              "meaning": "[n.] 游泳",
+              "example": "Swimming is healthy."
+            },
+            {
+              "word": "running",
+              "phonetic": "/ˈrʌnɪŋ/",
+              "meaning": "[n.] 跑步",
+              "example": "Running every day."
+            },
+            {
+              "word": "match",
+              "phonetic": "/mætʃ/",
+              "meaning": "[n.] 比赛",
+              "example": "A football match."
+            },
+            {
+              "word": "champion",
+              "phonetic": "/ˈtʃæmpiən/",
+              "meaning": "[n.] 冠军",
+              "example": "She is a champion."
+            },
+            {
+              "word": "energy",
+              "phonetic": "/ˈenədʒi/",
+              "meaning": "[n.] 能量",
+              "example": "Full of energy."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Match day",
+              "en": "Anna: Ben, are you ready for the football match today?\nBen: Of course! Our team has practised for two weeks.\nAnna: I'll cheer for you. Last year you were the champion.\nBen: Sport gives me energy and friends.\nAnna: I love running too. Let's keep doing sports for life.",
+              "cn": "安娜：本，今天足球比赛准备好了吗？\n本：当然！我们队练了两周。\n安娜：我给你加油，你去年是冠军呢。\n本：运动让我有活力，有朋友。\n安娜：我也爱跑步，一辈子坚持运动！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Sports for life",
+              "en": "Sport is more than a game. Football and basketball teach us teamwork. Swimming and running build a strong body. Win or lose, every match makes us better. Champions are not born — they practise every day. Start a sport early and you'll stay healthy, full of energy, and friends, for your whole life.",
+              "cn": "运动不只是游戏。足球篮球教我们团队精神。游泳跑步强健体魄。无论输赢，每场比赛都让我们更好。冠军不是天生的——他们每天练。早开始一项运动，你一辈子都会健康、有活力、有朋友。"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 You Are What You Eat",
+          "words": [
+            {
+              "word": "eat",
+              "phonetic": "/iːt/",
+              "meaning": "[v.] 吃",
+              "example": "Eat slowly."
+            },
+            {
+              "word": "healthy",
+              "phonetic": "/ˈhelθi/",
+              "meaning": "[adj.] 健康的",
+              "example": "Healthy food."
+            },
+            {
+              "word": "vegetable",
+              "phonetic": "/ˈvedʒtəbl/",
+              "meaning": "[n.] 蔬菜",
+              "example": "Eat more vegetables."
+            },
+            {
+              "word": "junk food",
+              "phonetic": "/dʒʌŋk fuːd/",
+              "meaning": "[n.] 垃圾食品",
+              "example": "Avoid junk food."
+            },
+            {
+              "word": "vitamin",
+              "phonetic": "/ˈvɪtəmɪn/",
+              "meaning": "[n.] 维生素",
+              "example": "Vitamin C."
+            },
+            {
+              "word": "fat",
+              "phonetic": "/fæt/",
+              "meaning": "[n./adj.] 脂肪；胖的",
+              "example": "Too much fat."
+            },
+            {
+              "word": "energy",
+              "phonetic": "/ˈenədʒi/",
+              "meaning": "[n.] 能量",
+              "example": "Food gives us energy."
+            },
+            {
+              "word": "balance",
+              "phonetic": "/ˈbæləns/",
+              "meaning": "[n./v.] 平衡",
+              "example": "Balance your diet."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "You are what you eat",
+              "en": "Mum: Anna, eat more vegetables. They have vitamins.\nAnna: Mum, can I have some chips too?\nMum: A little junk food is OK, but too much fat is bad.\nAnna: I know. Healthy food gives me energy.\nMum: Right. Balance is the key.",
+              "cn": "妈妈：安娜，多吃蔬菜，有维生素。\n安娜：妈，我能吃点薯片吗？\n妈妈：偶尔可以，但太多脂肪不好。\n安娜：知道，健康食物让我有活力。\n妈妈：对，平衡是关键。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Balance your plate",
+              "en": "Doctors say, \"You are what you eat.\" If we eat too much junk food, we get tired and weak. Fresh vegetables, fruit, milk and meat give us vitamins, calcium and energy. A balanced plate has different colours — green, red, yellow, brown. Cook some, eat some raw. Drink water, not just sweet drinks. A good diet is the first step to a strong life.",
+              "cn": "医生说\"你吃什么就成什么\"。垃圾食品吃多就会无力。新鲜蔬菜、水果、牛奶和肉提供维生素、钙和能量。平衡的餐盘有不同颜色——绿、红、黄、棕。有些煮，有些生吃。多喝水，少喝甜饮。好的饮食是强健生活的第一步。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Save Our Earth",
+          "words": [
+            {
+              "word": "Earth",
+              "phonetic": "/ɜːθ/",
+              "meaning": "[n.] 地球",
+              "example": "Protect the Earth."
+            },
+            {
+              "word": "pollution",
+              "phonetic": "/pəˈluːʃn/",
+              "meaning": "[n.] 污染",
+              "example": "Air pollution."
+            },
+            {
+              "word": "recycle",
+              "phonetic": "/ˌriːˈsaɪkl/",
+              "meaning": "[v.] 回收利用",
+              "example": "Recycle paper."
+            },
+            {
+              "word": "plastic",
+              "phonetic": "/ˈplæstɪk/",
+              "meaning": "[n.] 塑料",
+              "example": "Plastic bag."
+            },
+            {
+              "word": "tree",
+              "phonetic": "/triː/",
+              "meaning": "[n.] 树",
+              "example": "Plant a tree."
+            },
+            {
+              "word": "river",
+              "phonetic": "/ˈrɪvə(r)/",
+              "meaning": "[n.] 河流",
+              "example": "Keep the river clean."
+            },
+            {
+              "word": "protect",
+              "phonetic": "/prəˈtekt/",
+              "meaning": "[v.] 保护",
+              "example": "Protect animals."
+            },
+            {
+              "word": "save",
+              "phonetic": "/seɪv/",
+              "meaning": "[v.] 节约；拯救",
+              "example": "Save water."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Save our Earth",
+              "en": "Anna: Ben, pollution is so bad now. We must do something.\nBen: Let's start small — recycle paper, plastic and glass.\nAnna: We can plant a tree on Earth Day.\nBen: And save water at home. The river near us is too dirty.\nAnna: Right. Every small action protects our Earth.",
+              "cn": "安娜：本，污染太严重了，得做点什么。\n本：从小事做起——回收纸、塑料、玻璃。\n安娜：地球日我们种棵树。\n本：在家节约用水。我们附近的河太脏了。\n安娜：对，每件小事都在保护地球。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Our only home",
+              "en": "Earth is our only home. Air and river pollution hurt people, animals and plants. Plastic stays in the soil for hundreds of years. We must recycle, save water, and turn off lights when leaving a room. Plant a tree every spring. Choose a bike instead of a car for short trips. A clean Earth needs the help of every person, every day.",
+              "cn": "地球是我们唯一的家。空气和河流污染伤害人、动物和植物。塑料在土里几百年不分解。我们要回收、节水、出门关灯。每年春天种棵树。短途骑车不开车。干净的地球需要每个人每天的努力。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "title": "Unit 7 Amazing Inventions",
+          "words": [
+            {
+              "word": "invention",
+              "phonetic": "/ɪnˈvenʃn/",
+              "meaning": "[n.] 发明",
+              "example": "A great invention."
+            },
+            {
+              "word": "invent",
+              "phonetic": "/ɪnˈvent/",
+              "meaning": "[v.] 发明",
+              "example": "Who invented it?"
+            },
+            {
+              "word": "phone",
+              "phonetic": "/fəʊn/",
+              "meaning": "[n.] 电话",
+              "example": "A smart phone."
+            },
+            {
+              "word": "computer",
+              "phonetic": "/kəmˈpjuːtə(r)/",
+              "meaning": "[n.] 电脑",
+              "example": "Use a computer."
+            },
+            {
+              "word": "internet",
+              "phonetic": "/ˈɪntənet/",
+              "meaning": "[n.] 互联网",
+              "example": "The internet is fast."
+            },
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "meaning": "[n.] 机器人",
+              "example": "A helpful robot."
+            },
+            {
+              "word": "change",
+              "phonetic": "/tʃeɪndʒ/",
+              "meaning": "[v./n.] 改变",
+              "example": "Inventions change life."
+            },
+            {
+              "word": "future",
+              "phonetic": "/ˈfjuːtʃə(r)/",
+              "meaning": "[n.] 未来",
+              "example": "Future inventions."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Amazing inventions",
+              "en": "Ben: Anna, what invention do you love most?\nAnna: The phone, because I can talk to Grandma far away.\nBen: I love the internet — I can learn anything online.\nAnna: Robots can help in hospitals and homes too.\nBen: Inventions really change our lives. The future will be amazing!",
+              "cn": "本：安娜，你最爱什么发明？\n安娜：电话，能和远方奶奶说话。\n本：我爱互联网，能在线学任何东西。\n安娜：机器人也能帮助医院和家庭。\n本：发明真的改变生活。未来会更精彩！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Inventions that changed the world",
+              "en": "Some inventions changed the world forever. Paper helped knowledge travel far. The light bulb turned dark nights bright. The computer and the internet brought people from across the world together. Today, robots help doctors do small surgery. Tomorrow, maybe cars will drive themselves to school. Inventors keep dreaming, and the world keeps growing.",
+              "cn": "有些发明永远改变了世界。纸让知识传得远。电灯泡照亮黑夜。电脑和互联网把世界各地的人连在一起。今天机器人帮医生做小手术。明天也许汽车自己开去学校。发明家不断梦想，世界不断成长。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 Friendship Forever",
+          "words": [
+            {
+              "word": "friendship",
+              "phonetic": "/ˈfrendʃɪp/",
+              "meaning": "[n.] 友谊",
+              "example": "Long friendship."
+            },
+            {
+              "word": "trust",
+              "phonetic": "/trʌst/",
+              "meaning": "[v./n.] 信任",
+              "example": "I trust you."
+            },
+            {
+              "word": "kind",
+              "phonetic": "/kaɪnd/",
+              "meaning": "[adj.] 友善的",
+              "example": "Be kind."
+            },
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "[v.] 帮助",
+              "example": "Help each other."
+            },
+            {
+              "word": "share",
+              "phonetic": "/ʃeə(r)/",
+              "meaning": "[v.] 分享",
+              "example": "Share happiness."
+            },
+            {
+              "word": "forgive",
+              "phonetic": "/fəˈɡɪv/",
+              "meaning": "[v.] 原谅",
+              "example": "Forgive a friend."
+            },
+            {
+              "word": "miss",
+              "phonetic": "/mɪs/",
+              "meaning": "[v.] 想念",
+              "example": "I miss you."
+            },
+            {
+              "word": "forever",
+              "phonetic": "/fərˈevə(r)/",
+              "meaning": "[adv.] 永远",
+              "example": "Friends forever."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Friends forever",
+              "en": "Anna: Ben, we've been friends for six years. I'll miss you in junior high.\nBen: Don't worry — true friendship lasts forever.\nAnna: We can still share stories on the phone.\nBen: We help each other and forgive each other.\nAnna: Yes, trust and kindness keep our friendship strong.",
+              "cn": "安娜：本，我们做了六年朋友，上初中我会想你。\n本：别担心，真正的友谊永远长存。\n安娜：我们可以电话分享故事。\n本：我们互相帮助，互相原谅。\n安娜：对，信任和善良让友谊牢固。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "What makes a true friend",
+              "en": "What makes a true friend? First, trust — we tell our secrets to a friend we trust. Second, kindness — a friend smiles and listens. Third, help — a friend stands beside us when we are sad. Finally, forgiveness — friends sometimes make mistakes, but they say sorry and move on. True friendship lasts through the years, and even far apart, two hearts stay close.",
+              "cn": "什么是真朋友？第一是信任——把秘密告诉信任的朋友。第二是善良——朋友会微笑会倾听。第三是帮助——伤心时朋友陪在身边。最后是原谅——朋友会犯错，但能道歉、向前看。真正的友谊跨越岁月，即使相隔遥远，两颗心也紧紧相连。"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review Bright Future",
+          "words": [
+            {
+              "word": "future",
+              "phonetic": "/ˈfjuːtʃə(r)/",
+              "meaning": "[n.] 未来",
+              "example": "Bright future."
+            },
+            {
+              "word": "bright",
+              "phonetic": "/braɪt/",
+              "meaning": "[adj.] 明亮的；光明的",
+              "example": "A bright sky."
+            },
+            {
+              "word": "goal",
+              "phonetic": "/ɡəʊl/",
+              "meaning": "[n.] 目标",
+              "example": "Set a goal."
+            },
+            {
+              "word": "believe",
+              "phonetic": "/bɪˈliːv/",
+              "meaning": "[v.] 相信",
+              "example": "Believe in yourself."
+            },
+            {
+              "word": "thank",
+              "phonetic": "/θæŋk/",
+              "meaning": "[v.] 感谢",
+              "example": "Thank everyone."
+            },
+            {
+              "word": "goodbye",
+              "phonetic": "/ˌɡʊdˈbaɪ/",
+              "meaning": "[int.] 再见",
+              "example": "Goodbye, friends."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Goodbye and hello",
+              "en": "Anna: Ben, six years are over. It's time to say goodbye.\nBen: Goodbye to primary, hello to junior!\nAnna: Let's set a goal: read 20 English books this summer.\nBen: I believe we can do it.\nAnna: Thank you, friends and teachers. The future is bright!",
+              "cn": "安娜：本，六年结束了，要说再见了。\n本：再见小学，你好初中！\n安娜：定个目标：暑假读 20 本英文书。\n本：我相信我们能做到。\n安娜：谢谢朋友和老师，未来一片光明！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A bright future",
+              "en": "Today we say goodbye to primary school. Six years gave us knowledge, courage and good friends. Believe in yourself — set goals, work hard, and treat people with kindness. Thank our parents, teachers and classmates for the love and support. A new chapter begins in junior high. The future is bright when we walk towards it with a smile.",
+              "cn": "今天我们告别小学。六年给了我们知识、勇气和好朋友。相信自己——立目标，努力，善待他人。感谢父母、老师和同学的关爱与支持。新的篇章在初中开启。带着微笑走向未来，未来必定光明！"
+            }
+          ]
         }
       ],
       "下": [

@@ -1,0 +1,42 @@
+{
+  "hobby": [
+    { "en": "My hobby.", "cn": "我的爱好。", "level": 1 },
+    { "en": "My hobby is reading.", "cn": "我的爱好是读书。", "level": 2 },
+    { "en": "What's your hobby — singing, dancing, or something else?", "cn": "你的爱好是什么——唱歌、跳舞，还是别的？", "level": 3 }
+  ],
+  "music": [
+    { "en": "I love music.", "cn": "我喜欢音乐。", "level": 1 },
+    { "en": "Music makes me happy.", "cn": "音乐让我开心。", "level": 2 },
+    { "en": "Music class is the best part of my school day.", "cn": "音乐课是我一天里最好的部分。", "level": 3 }
+  ],
+  "piano": [
+    { "en": "Play the piano.", "cn": "弹钢琴。", "level": 1 },
+    { "en": "She plays the piano well.", "cn": "她钢琴弹得很好。", "level": 2 },
+    { "en": "I have been learning the piano for three years.", "cn": "我学钢琴三年了。", "level": 3 }
+  ],
+  "guitar": [
+    { "en": "Play the guitar.", "cn": "弹吉他。", "level": 1 },
+    { "en": "Dad has a new guitar.", "cn": "爸爸有把新吉他。", "level": 2 },
+    { "en": "My brother plays the guitar and sings on the stage.", "cn": "我哥哥在舞台上弹吉他唱歌。", "level": 3 }
+  ],
+  "dance": [
+    { "en": "Let's dance!", "cn": "我们跳舞吧！", "level": 1 },
+    { "en": "I can dance well.", "cn": "我跳舞跳得好。", "level": 2 },
+    { "en": "Lily dances on the stage every Friday afternoon.", "cn": "莉莉每周五下午都在舞台上跳舞。", "level": 3 }
+  ],
+  "swim": [
+    { "en": "I can swim.", "cn": "我会游泳。", "level": 1 },
+    { "en": "We swim in summer.", "cn": "夏天我们去游泳。", "level": 2 },
+    { "en": "Dad teaches me to swim in the pool on Sundays.", "cn": "周日爸爸在泳池里教我游泳。", "level": 3 }
+  ],
+  "cook": [
+    { "en": "Mum cooks.", "cn": "妈妈做饭。", "level": 1 },
+    { "en": "I help Mum cook dinner.", "cn": "我帮妈妈做晚餐。", "level": 2 },
+    { "en": "Grandma can cook over twenty kinds of dishes.", "cn": "奶奶能做二十多道菜。", "level": 3 }
+  ],
+  "favourite": [
+    { "en": "My favourite.", "cn": "我的最爱。", "level": 1 },
+    { "en": "Red is my favourite colour.", "cn": "红色是我最喜欢的颜色。", "level": 2 },
+    { "en": "Reading is my favourite way to spend a rainy day.", "cn": "读书是我度过雨天最喜欢的方式。", "level": 3 }
+  ]
+}

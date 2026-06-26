@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Trip Plans",
+  "words": [
+    { "word": "trip", "phonetic": "/trɪp/", "meaning": "[n.] 旅行", "example": "A short trip." },
+    { "word": "plan", "phonetic": "/plæn/", "meaning": "[v./n.] 计划", "example": "Plan a trip." },
+    { "word": "summer", "phonetic": "/ˈsʌmə(r)/", "meaning": "[n.] 夏天", "example": "Summer is hot." },
+    { "word": "holiday", "phonetic": "/ˈhɒlədeɪ/", "meaning": "[n.] 假期", "example": "Happy holiday!" },
+    { "word": "beach", "phonetic": "/biːtʃ/", "meaning": "[n.] 海滩", "example": "I love the beach." },
+    { "word": "mountain", "phonetic": "/ˈmaʊntən/", "meaning": "[n.] 山", "example": "Climb the mountain." },
+    { "word": "discuss", "phonetic": "/dɪˈskʌs/", "meaning": "[v.] 讨论", "example": "Let's discuss it." },
+    { "word": "idea", "phonetic": "/aɪˈdɪə/", "meaning": "[n.] 主意", "example": "A great idea!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Where shall we go?",
+      "en": "Ben: Anna, summer holiday is coming! Where shall we go?\nAnna: How about the beach? We can swim and play in the sand.\nBen: Or we can climb the mountain — the view is amazing.\nAnna: Let's discuss with our parents tonight.\nBen: Great idea! I love planning a trip.",
+      "cn": "本：安娜，暑假快到了！我们去哪儿？\n安娜：去海滩吧？可以游泳玩沙。\n本：或者爬山——风景超美。\n安娜：晚上和爸妈商量一下。\n本：好主意！我喜欢计划旅行。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Making a plan",
+      "en": "Planning a trip is part of the fun. First, we choose a place — the beach, a mountain, or a busy city. Then we pack clothes, water and snacks. We also write down the things we want to see. A good plan gives us more time to enjoy. After all, the best trips begin with a good idea!",
+      "cn": "计划旅行也是乐趣的一部分。首先选地方——海滩、山或繁华城市。然后打包衣服、水和零食。再写下想看的东西。好计划让我们有更多时间享受。毕竟最好的旅行始于一个好主意！"
+    }
+  ]
+}

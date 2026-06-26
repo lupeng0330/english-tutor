@@ -1,0 +1,42 @@
+{
+  "culture": [
+    { "en": "Chinese culture.", "cn": "中国文化。", "level": 1 },
+    { "en": "Learn a new culture.", "cn": "学一种新文化。", "level": 2 },
+    { "en": "Travel helps us understand different cultures.", "cn": "旅行帮助我们理解不同文化。", "level": 3 }
+  ],
+  "language": [
+    { "en": "A language.", "cn": "一种语言。", "level": 1 },
+    { "en": "Learn a language.", "cn": "学一种语言。", "level": 2 },
+    { "en": "She can speak four languages fluently.", "cn": "她能流利说四种语言。", "level": 3 }
+  ],
+  "country": [
+    { "en": "Each country.", "cn": "每个国家。", "level": 1 },
+    { "en": "Visit a new country.", "cn": "去一个新国家。", "level": 2 },
+    { "en": "Every country has its own unique customs.", "cn": "每个国家都有独特习俗。", "level": 3 }
+  ],
+  "food": [
+    { "en": "Different food.", "cn": "不同食物。", "level": 1 },
+    { "en": "Italian food.", "cn": "意大利食物。", "level": 2 },
+    { "en": "I love trying different food from around the world.", "cn": "我喜欢尝试世界各地的食物。", "level": 3 }
+  ],
+  "chopsticks": [
+    { "en": "Use chopsticks.", "cn": "用筷子。", "level": 1 },
+    { "en": "Hold the chopsticks.", "cn": "拿筷子。", "level": 2 },
+    { "en": "Learning to use chopsticks takes a little practice.", "cn": "学会用筷子要点练习。", "level": 3 }
+  ],
+  "respect": [
+    { "en": "Respect.", "cn": "尊重。", "level": 1 },
+    { "en": "Respect others.", "cn": "尊重他人。", "level": 2 },
+    { "en": "We should respect cultures that are different from ours.", "cn": "我们应当尊重与我们不同的文化。", "level": 3 }
+  ],
+  "amazing": [
+    { "en": "Amazing!", "cn": "太棒了！", "level": 1 },
+    { "en": "An amazing show.", "cn": "一场精彩的演出。", "level": 2 },
+    { "en": "The view from the mountain top is truly amazing.", "cn": "山顶的风景真的令人惊叹。", "level": 3 }
+  ],
+  "learn": [
+    { "en": "Learn well.", "cn": "好好学。", "level": 1 },
+    { "en": "Learn from others.", "cn": "向他人学习。", "level": 2 },
+    { "en": "We can learn so much by listening to people from other places.", "cn": "倾听来自其他地方的人，我们能学到很多。", "level": 3 }
+  ]
+}

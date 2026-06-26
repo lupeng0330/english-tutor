@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 Dream Jobs",
+  "words": [
+    { "word": "dream", "phonetic": "/driːm/", "meaning": "[n./v.] 梦想", "example": "Follow your dream." },
+    { "word": "job", "phonetic": "/dʒɒb/", "meaning": "[n.] 工作", "example": "A good job." },
+    { "word": "doctor", "phonetic": "/ˈdɒktə(r)/", "meaning": "[n.] 医生", "example": "A kind doctor." },
+    { "word": "teacher", "phonetic": "/ˈtiːtʃə(r)/", "meaning": "[n.] 教师", "example": "A great teacher." },
+    { "word": "engineer", "phonetic": "/ˌendʒɪˈnɪə(r)/", "meaning": "[n.] 工程师", "example": "An engineer builds bridges." },
+    { "word": "scientist", "phonetic": "/ˈsaɪəntɪst/", "meaning": "[n.] 科学家", "example": "A famous scientist." },
+    { "word": "writer", "phonetic": "/ˈraɪtə(r)/", "meaning": "[n.] 作家", "example": "A young writer." },
+    { "word": "work hard", "phonetic": "/wɜːk hɑːd/", "meaning": "[phr.] 努力工作", "example": "Work hard for it." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What's your dream?",
+      "en": "Anna: Ben, what's your dream job?\nBen: I want to be a doctor and help people.\nAnna: Cool! I want to be a writer and tell good stories.\nBen: My brother wants to be an engineer.\nAnna: As long as we work hard, every dream can come true.",
+      "cn": "安娜：本，你梦想做什么？\n本：当医生，帮助别人。\n安娜：酷！我想当作家，讲好故事。\n本：我哥想当工程师。\n安娜：只要努力，梦想都能成真。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Dreams shape our future",
+      "en": "Every child has a dream job. Some children dream of being doctors and saving lives. Others want to be teachers, sharing knowledge with the young. Engineers build bridges and roads. Scientists explore the secrets of the universe. Writers tell stories that touch our hearts. Whatever your dream is, work hard, and one day it will come true.",
+      "cn": "每个孩子都有梦想职业。有的想当医生救人。有的想当老师传道授业。工程师建桥修路。科学家探索宇宙奥秘。作家用故事打动人心。无论你的梦想是什么，努力下去，总有一天会成真。"
+    }
+  ]
+}

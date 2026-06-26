@@ -1,0 +1,42 @@
+{
+  "eat": [
+    { "en": "Eat slowly.", "cn": "慢点吃。", "level": 1 },
+    { "en": "I eat fruit.", "cn": "我吃水果。", "level": 2 },
+    { "en": "We should eat a variety of foods every day.", "cn": "我们每天应当吃多种食物。", "level": 3 }
+  ],
+  "healthy": [
+    { "en": "Be healthy.", "cn": "要健康。", "level": 1 },
+    { "en": "Healthy food.", "cn": "健康食物。", "level": 2 },
+    { "en": "A healthy lifestyle includes good food and exercise.", "cn": "健康的生活方式包括好食物和运动。", "level": 3 }
+  ],
+  "vegetable": [
+    { "en": "Eat vegetables.", "cn": "吃蔬菜。", "level": 1 },
+    { "en": "Fresh vegetables.", "cn": "新鲜蔬菜。", "level": 2 },
+    { "en": "Green vegetables are full of vitamins and minerals.", "cn": "绿色蔬菜富含维生素和矿物质。", "level": 3 }
+  ],
+  "junk food": [
+    { "en": "Junk food.", "cn": "垃圾食品。", "level": 1 },
+    { "en": "Less junk food.", "cn": "少吃垃圾食品。", "level": 2 },
+    { "en": "Too much junk food makes us feel tired and weak.", "cn": "垃圾食品吃太多让人疲惫无力。", "level": 3 }
+  ],
+  "vitamin": [
+    { "en": "Vitamins.", "cn": "维生素。", "level": 1 },
+    { "en": "Vitamin C.", "cn": "维生素 C。", "level": 2 },
+    { "en": "Oranges and lemons are rich in vitamin C.", "cn": "橘子和柠檬富含维生素 C。", "level": 3 }
+  ],
+  "fat": [
+    { "en": "Less fat.", "cn": "少油。", "level": 1 },
+    { "en": "Too much fat.", "cn": "脂肪太多。", "level": 2 },
+    { "en": "Try to avoid food with too much sugar and fat.", "cn": "尽量少吃糖和脂肪太多的食物。", "level": 3 }
+  ],
+  "energy": [
+    { "en": "Need energy.", "cn": "需要能量。", "level": 1 },
+    { "en": "Food gives us energy.", "cn": "食物给我们能量。", "level": 2 },
+    { "en": "Whole grains give us long-lasting energy.", "cn": "全谷物给我们持久的能量。", "level": 3 }
+  ],
+  "balance": [
+    { "en": "Balance.", "cn": "平衡。", "level": 1 },
+    { "en": "Balance your diet.", "cn": "饮食要均衡。", "level": 2 },
+    { "en": "Balance work, rest and play to stay happy.", "cn": "平衡工作、休息和娱乐才能开心。", "level": 3 }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "new": [
+    { "en": "A new year.", "cn": "新年。", "level": 1 },
+    { "en": "I have a new bag.", "cn": "我有一个新书包。", "level": 2 },
+    { "en": "A new year brings new dreams and new chances.", "cn": "新的一年带来新的梦想和机会。", "level": 3 }
+  ],
+  "year": [
+    { "en": "Happy New Year!", "cn": "新年快乐！", "level": 1 },
+    { "en": "I am nine years old.", "cn": "我九岁。", "level": 2 },
+    { "en": "Each year I grow a little taller and a little smarter.", "cn": "每一年我都长高一点、变聪明一点。", "level": 3 }
+  ],
+  "wish": [
+    { "en": "Best wishes!", "cn": "祝福你！", "level": 1 },
+    { "en": "I wish you happy.", "cn": "祝你开心。", "level": 2 },
+    { "en": "We wish our teacher a happy and healthy year ahead.", "cn": "我们祝老师新的一年快乐健康。", "level": 3 }
+  ],
+  "share": [
+    { "en": "Share, please.", "cn": "请分享。", "level": 1 },
+    { "en": "Share with your friend.", "cn": "和朋友分享。", "level": 2 },
+    { "en": "We share our gifts and stories with each other.", "cn": "我们彼此分享礼物和故事。", "level": 3 }
+  ],
+  "thank": [
+    { "en": "Thank you!", "cn": "谢谢你！", "level": 1 },
+    { "en": "Thank you, Mum.", "cn": "谢谢妈妈。", "level": 2 },
+    { "en": "I want to thank everyone for helping me this year.", "cn": "我想感谢今年所有帮过我的人。", "level": 3 }
+  ],
+  "smile": [
+    { "en": "A big smile.", "cn": "一个大大的微笑。", "level": 1 },
+    { "en": "Give me a smile.", "cn": "给我一个微笑。", "level": 2 },
+    { "en": "Let's start the new year with a warm smile.", "cn": "让我们用温暖的微笑开启新的一年。", "level": 3 }
+  ]
+}

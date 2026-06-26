@@ -1,0 +1,42 @@
+{
+  "food": [
+    { "en": "Good food.", "cn": "好食物。", "level": 1 },
+    { "en": "I love Chinese food.", "cn": "我爱中餐。", "level": 2 },
+    { "en": "Different countries have very different traditional food.", "cn": "不同国家有非常不同的传统食物。", "level": 3 }
+  ],
+  "rice": [
+    { "en": "White rice.", "cn": "白米饭。", "level": 1 },
+    { "en": "We eat rice every day.", "cn": "我们每天吃米饭。", "level": 2 },
+    { "en": "A bowl of rice with vegetables makes a simple lunch.", "cn": "一碗米饭配蔬菜就是简单的午餐。", "level": 3 }
+  ],
+  "noodle": [
+    { "en": "Noodles!", "cn": "面条！", "level": 1 },
+    { "en": "I like noodles.", "cn": "我喜欢面条。", "level": 2 },
+    { "en": "On my birthday, Mum always cooks long noodles for me.", "cn": "我生日时妈妈总给我做长面条。", "level": 3 }
+  ],
+  "bread": [
+    { "en": "Fresh bread.", "cn": "新鲜面包。", "level": 1 },
+    { "en": "Have some bread.", "cn": "吃点面包。", "level": 2 },
+    { "en": "I eat a piece of bread and an egg every morning.", "cn": "我每天早上吃一片面包和一个鸡蛋。", "level": 3 }
+  ],
+  "meat": [
+    { "en": "Tasty meat.", "cn": "美味的肉。", "level": 1 },
+    { "en": "I eat meat at dinner.", "cn": "我晚餐吃肉。", "level": 2 },
+    { "en": "We should not eat too much meat — vegetables are also important.", "cn": "我们不该吃太多肉——蔬菜也很重要。", "level": 3 }
+  ],
+  "vegetable": [
+    { "en": "Eat vegetables.", "cn": "吃蔬菜。", "level": 1 },
+    { "en": "Vegetables are good.", "cn": "蔬菜好。", "level": 2 },
+    { "en": "Fresh vegetables help us grow strong and healthy.", "cn": "新鲜蔬菜帮我们茁壮健康。", "level": 3 }
+  ],
+  "tasty": [
+    { "en": "It's tasty.", "cn": "好吃。", "level": 1 },
+    { "en": "The cake is tasty.", "cn": "蛋糕好吃。", "level": 2 },
+    { "en": "Grandma's dumplings are the tastiest food in the world.", "cn": "奶奶的饺子是世上最好吃的食物。", "level": 3 }
+  ],
+  "sweet": [
+    { "en": "Sweet candy.", "cn": "甜糖果。", "level": 1 },
+    { "en": "Honey is sweet.", "cn": "蜂蜜很甜。", "level": 2 },
+    { "en": "These cherries are so sweet and juicy.", "cn": "这些樱桃又甜又多汁。", "level": 3 }
+  ]
+}

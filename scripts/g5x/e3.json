@@ -1,0 +1,42 @@
+{
+  "way": [
+    { "en": "The way.", "cn": "路。", "level": 1 },
+    { "en": "Show me the way.", "cn": "告诉我路。", "level": 2 },
+    { "en": "Can you tell me the way to the train station, please?", "cn": "请问去火车站的路怎么走？", "level": 3 }
+  ],
+  "turn": [
+    { "en": "Turn left.", "cn": "左转。", "level": 1 },
+    { "en": "Turn at the corner.", "cn": "在拐角转弯。", "level": 2 },
+    { "en": "Turn right at the second crossroads.", "cn": "第二个十字路口右转。", "level": 3 }
+  ],
+  "left": [
+    { "en": "On the left.", "cn": "在左边。", "level": 1 },
+    { "en": "Turn left here.", "cn": "在这里左转。", "level": 2 },
+    { "en": "The bookstore is on the left, next to the bank.", "cn": "书店在左边，挨着银行。", "level": 3 }
+  ],
+  "right": [
+    { "en": "On the right.", "cn": "在右边。", "level": 1 },
+    { "en": "Walk to the right.", "cn": "向右走。", "level": 2 },
+    { "en": "After the bridge, the museum is on the right side.", "cn": "过桥后博物馆就在右边。", "level": 3 }
+  ],
+  "straight": [
+    { "en": "Go straight.", "cn": "直走。", "level": 1 },
+    { "en": "Go straight ahead.", "cn": "一直往前。", "level": 2 },
+    { "en": "Walk straight for five minutes and you'll see the park.", "cn": "直走五分钟就能看到公园。", "level": 3 }
+  ],
+  "crossroads": [
+    { "en": "At the crossroads.", "cn": "在十字路口。", "level": 1 },
+    { "en": "Wait at the crossroads.", "cn": "在十字路口等。", "level": 2 },
+    { "en": "There is a hospital at the next crossroads.", "cn": "下个十字路口有家医院。", "level": 3 }
+  ],
+  "map": [
+    { "en": "A map.", "cn": "一张地图。", "level": 1 },
+    { "en": "Read the map.", "cn": "看地图。", "level": 2 },
+    { "en": "I use my phone map when I travel to a new city.", "cn": "去新城市我用手机地图。", "level": 3 }
+  ],
+  "lost": [
+    { "en": "I'm lost!", "cn": "我迷路了！", "level": 1 },
+    { "en": "We got lost.", "cn": "我们迷路了。", "level": 2 },
+    { "en": "If you get lost, ask a police officer for help.", "cn": "迷路了就找警察叔叔。", "level": 3 }
+  ]
+}

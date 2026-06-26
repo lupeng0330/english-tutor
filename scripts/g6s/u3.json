@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Heroes Around Us",
+  "words": [
+    { "word": "hero", "phonetic": "/ˈhɪərəʊ/", "meaning": "[n.] 英雄", "example": "He is my hero." },
+    { "word": "brave", "phonetic": "/breɪv/", "meaning": "[adj.] 勇敢的", "example": "Be brave!" },
+    { "word": "save", "phonetic": "/seɪv/", "meaning": "[v.] 拯救", "example": "Save lives." },
+    { "word": "help", "phonetic": "/help/", "meaning": "[v.] 帮助", "example": "Help others." },
+    { "word": "fire", "phonetic": "/ˈfaɪə(r)/", "meaning": "[n.] 火", "example": "Put out the fire." },
+    { "word": "fighter", "phonetic": "/ˈfaɪtə(r)/", "meaning": "[n.] 战士；消防员", "example": "A firefighter." },
+    { "word": "police", "phonetic": "/pəˈliːs/", "meaning": "[n.] 警察", "example": "Call the police." },
+    { "word": "great", "phonetic": "/ɡreɪt/", "meaning": "[adj.] 伟大的", "example": "A great hero." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "My hero",
+      "en": "Anna: Ben, who is your hero?\nBen: My hero is my grandpa. He saved a child from a fire when he was young.\nAnna: Wow, so brave!\nBen: Heroes are not only in films. Police, firefighters and doctors are heroes too.\nAnna: Right. Even kind classmates can be small heroes.",
+      "cn": "安娜：本，谁是你的英雄？\n本：我爷爷。他年轻时从火场救过一个孩子。\n安娜：哇，好勇敢！\n本：英雄不只在电影里。警察、消防员、医生都是英雄。\n安娜：对，连善良的同学也是小小英雄。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Heroes around us",
+      "en": "Real heroes are all around us. A firefighter runs into a burning building to save a stranger. A teacher works late to help slow learners. A doctor stays awake all night to care for a patient. A kid shares his lunch with a hungry friend. Heroes do brave and kind things, big or small. We can all be heroes in our own way.",
+      "cn": "真正的英雄就在我们身边。消防员冲进火场救陌生人。老师加班辅导学习吃力的孩子。医生彻夜守护病人。小朋友把午饭分给挨饿的伙伴。英雄做勇敢善良的事，无论大小。我们都能用自己的方式成为英雄。"
+    }
+  ]
+}

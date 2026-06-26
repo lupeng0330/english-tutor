@@ -1,0 +1,42 @@
+{
+  "study": [
+    { "en": "Dad's study.", "cn": "爸爸的书房。", "level": 1 },
+    { "en": "There is a desk in the study.", "cn": "书房里有一张桌子。", "level": 2 },
+    { "en": "Dad reads in the study after dinner every night.", "cn": "爸爸每天晚饭后在书房看书。", "level": 3 }
+  ],
+  "bathroom": [
+    { "en": "The bathroom.", "cn": "浴室。", "level": 1 },
+    { "en": "Wash your hands in the bathroom.", "cn": "在浴室洗手。", "level": 2 },
+    { "en": "Our bathroom is small but very clean.", "cn": "我们的浴室不大但很干净。", "level": 3 }
+  ],
+  "table": [
+    { "en": "A round table.", "cn": "一张圆桌。", "level": 1 },
+    { "en": "Put the cup on the table.", "cn": "把杯子放在桌上。", "level": 2 },
+    { "en": "We eat dinner around the table every night.", "cn": "我们每天晚上围着桌子吃饭。", "level": 3 }
+  ],
+  "lamp": [
+    { "en": "A small lamp.", "cn": "一盏小灯。", "level": 1 },
+    { "en": "I read with a lamp.", "cn": "我用灯看书。", "level": 2 },
+    { "en": "The lamp on my desk makes the room bright.", "cn": "我桌上的灯让房间变亮。", "level": 3 }
+  ],
+  "bed": [
+    { "en": "A big bed.", "cn": "一张大床。", "level": 1 },
+    { "en": "I jump on the bed.", "cn": "我在床上跳。", "level": 2 },
+    { "en": "My bed is so soft that I fall asleep in minutes.", "cn": "我的床很软，几分钟就睡着了。", "level": 3 }
+  ],
+  "door": [
+    { "en": "Close the door.", "cn": "关门。", "level": 1 },
+    { "en": "Open the door, please.", "cn": "请把门打开。", "level": 2 },
+    { "en": "Someone is knocking at the door — please go and open it.", "cn": "有人在敲门——请去开一下。", "level": 3 }
+  ],
+  "garden": [
+    { "en": "A small garden.", "cn": "一个小花园。", "level": 1 },
+    { "en": "Flowers grow in the garden.", "cn": "花在花园里开。", "level": 2 },
+    { "en": "Grandpa grows many vegetables in the garden behind our house.", "cn": "爷爷在我们家屋后的花园里种了很多蔬菜。", "level": 3 }
+  ],
+  "upstairs": [
+    { "en": "Go upstairs.", "cn": "上楼。", "level": 1 },
+    { "en": "My bedroom is upstairs.", "cn": "我卧室在楼上。", "level": 2 },
+    { "en": "Run upstairs and bring me my book, please.", "cn": "请跑到楼上把我的书拿下来。", "level": 3 }
+  ]
+}

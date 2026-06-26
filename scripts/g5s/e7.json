@@ -1,0 +1,42 @@
+{
+  "club": [
+    { "en": "A club.", "cn": "俱乐部。", "level": 1 },
+    { "en": "Join the music club.", "cn": "加入音乐俱乐部。", "level": 2 },
+    { "en": "Our school has more than ten different clubs.", "cn": "我们学校有十多个不同的社团。", "level": 3 }
+  ],
+  "join": [
+    { "en": "Join us!", "cn": "加入我们！", "level": 1 },
+    { "en": "I join the dance club.", "cn": "我加入舞蹈社。", "level": 2 },
+    { "en": "Why don't you join the science club this term?", "cn": "你为什么不这学期加科学社？", "level": 3 }
+  ],
+  "robot": [
+    { "en": "A robot.", "cn": "一个机器人。", "level": 1 },
+    { "en": "I have a small robot.", "cn": "我有个小机器人。", "level": 2 },
+    { "en": "Our team built a robot that can walk and dance.", "cn": "我们队造了一个会走会跳的机器人。", "level": 3 }
+  ],
+  "chess": [
+    { "en": "Chess.", "cn": "国际象棋。", "level": 1 },
+    { "en": "We play chess.", "cn": "我们下棋。", "level": 2 },
+    { "en": "Chess teaches us to think two steps ahead.", "cn": "象棋教我们多想两步。", "level": 3 }
+  ],
+  "photo": [
+    { "en": "A photo.", "cn": "一张照片。", "level": 1 },
+    { "en": "Take a photo.", "cn": "拍张照。", "level": 2 },
+    { "en": "I take photos of every season in the school garden.", "cn": "我在校园里拍下每个季节的照片。", "level": 3 }
+  ],
+  "drama": [
+    { "en": "Drama!", "cn": "戏剧！", "level": 1 },
+    { "en": "We have a drama club.", "cn": "我们有戏剧社。", "level": 2 },
+    { "en": "The drama club is putting on a play next month.", "cn": "戏剧社下个月要演一出戏。", "level": 3 }
+  ],
+  "meet": [
+    { "en": "We meet.", "cn": "我们见面。", "level": 1 },
+    { "en": "We meet on Friday.", "cn": "我们周五碰面。", "level": 2 },
+    { "en": "The chess club members meet in Room 5 after school.", "cn": "国际象棋社成员放学后在 5 号教室集合。", "level": 3 }
+  ],
+  "interest": [
+    { "en": "My interest.", "cn": "我的兴趣。", "level": 1 },
+    { "en": "Find your interest.", "cn": "找到你的兴趣。", "level": 2 },
+    { "en": "A real interest can grow into a lifelong hobby.", "cn": "真正的兴趣能变成一辈子的爱好。", "level": 3 }
+  ]
+}

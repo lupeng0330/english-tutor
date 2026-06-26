@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 Postcards from a Trip",
+  "words": [
+    { "word": "postcard", "phonetic": "/ˈpəʊstkɑːd/", "meaning": "[n.] 明信片", "example": "Send a postcard." },
+    { "word": "send", "phonetic": "/send/", "meaning": "[v.] 寄送", "example": "Send a letter." },
+    { "word": "write", "phonetic": "/raɪt/", "meaning": "[v.] 写", "example": "Write a card." },
+    { "word": "address", "phonetic": "/əˈdres/", "meaning": "[n.] 地址", "example": "What's your address?" },
+    { "word": "stamp", "phonetic": "/stæmp/", "meaning": "[n.] 邮票", "example": "Put on a stamp." },
+    { "word": "miss", "phonetic": "/mɪs/", "meaning": "[v.] 想念", "example": "I miss you." },
+    { "word": "weather", "phonetic": "/ˈweðə(r)/", "meaning": "[n.] 天气", "example": "Nice weather." },
+    { "word": "wish", "phonetic": "/wɪʃ/", "meaning": "[v./n.] 祝愿", "example": "Best wishes." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "A postcard from Beijing",
+      "en": "Anna: Look, Ben! I got a postcard from Beijing.\nBen: Wow, who sent it?\nAnna: My cousin Tom. He says the weather is sunny and the food is great.\nBen: There is a pretty stamp on it.\nAnna: I'll write back tonight and send my best wishes.",
+      "cn": "安娜：本，看！我收到一张北京的明信片。\n本：哇，谁寄的？\n安娜：表哥汤姆。他说那里晴天，吃得也好。\n本：上面贴了张漂亮的邮票。\n安娜：今晚我回信，送上祝福。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Greetings from afar",
+      "en": "When we travel, we can send postcards to friends and family. Write the address clearly, stick on a stamp, and drop the card into a mailbox. People love to see new pictures, hear about the weather, and read your wishes. A small postcard can travel thousands of kilometres and tell others, \"I miss you and I'm thinking of you.\"",
+      "cn": "旅行时可以给亲友寄明信片。写清地址，贴上邮票，投进邮筒。人们喜欢看新照片、了解天气、读你的祝福。小小明信片能跨越数千公里，告诉别人\"我想你\"。"
+    }
+  ]
+}

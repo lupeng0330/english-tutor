@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 In the Library",
+  "words": [
+    { "word": "library", "phonetic": "/ˈlaɪbrəri/", "meaning": "[n.] 图书馆", "example": "Go to the library." },
+    { "word": "borrow", "phonetic": "/ˈbɒrəʊ/", "meaning": "[v.] 借入", "example": "I borrow books." },
+    { "word": "return", "phonetic": "/rɪˈtɜːn/", "meaning": "[v.] 归还", "example": "Return the book." },
+    { "word": "quiet", "phonetic": "/ˈkwaɪət/", "meaning": "[adj.] 安静的", "example": "Be quiet here." },
+    { "word": "shelf", "phonetic": "/ʃelf/", "meaning": "[n.] 书架", "example": "Books are on the shelf." },
+    { "word": "magazine", "phonetic": "/ˌmæɡəˈziːn/", "meaning": "[n.] 杂志", "example": "I read a magazine." },
+    { "word": "card", "phonetic": "/kɑːd/", "meaning": "[n.] 借书卡", "example": "Show your library card." },
+    { "word": "page", "phonetic": "/peɪdʒ/", "meaning": "[n.] 页", "example": "Turn to page ten." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "At the library",
+      "en": "Anna: Ben, I want to borrow a story book. Where is it?\nBen: It's on the shelf by the window. Show your card.\nAnna: Thanks. The library is so quiet.\nBen: Remember to return it within two weeks.\nAnna: Sure, I'll read a few pages every night.",
+      "cn": "安娜：本，我想借一本故事书，在哪里？\n本：在窗边的书架上。出示借书卡。\n安娜：谢谢，图书馆好安静。\n本：记得两周内还。\n安娜：好，每天晚上看几页。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "The school library",
+      "en": "Our school library has thousands of books and magazines. Students can borrow up to three books with their library card. The library is always quiet — we should not shout or run. Mrs Lee, the librarian, is very kind. She helps us find the right book in just a minute. The library is the heart of our school.",
+      "cn": "我们学校的图书馆有上千本书和杂志。学生凭借书卡最多借三本。图书馆总是很安静——我们不能喊叫或奔跑。李老师是图书管理员，非常和蔼，一分钟就能帮我们找到合适的书。图书馆是学校的心脏。"
+    }
+  ]
+}

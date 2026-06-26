@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 My Clothes",
+  "words": [
+    { "word": "clothes", "phonetic": "/kləʊðz/", "meaning": "[n.] 衣服", "example": "These are my clothes." },
+    { "word": "shirt", "phonetic": "/ʃɜːt/", "meaning": "[n.] 衬衫", "example": "I wear a white shirt." },
+    { "word": "T-shirt", "phonetic": "/ˈtiːʃɜːt/", "meaning": "[n.] T 恤", "example": "My T-shirt is blue." },
+    { "word": "skirt", "phonetic": "/skɜːt/", "meaning": "[n.] 裙子", "example": "Lily wears a pink skirt." },
+    { "word": "trousers", "phonetic": "/ˈtraʊzəz/", "meaning": "[n.] 裤子", "example": "His trousers are black." },
+    { "word": "shoes", "phonetic": "/ʃuːz/", "meaning": "[n.] 鞋", "example": "My shoes are new." },
+    { "word": "hat", "phonetic": "/hæt/", "meaning": "[n.] 帽子", "example": "I have a sun hat." },
+    { "word": "wear", "phonetic": "/weə(r)/", "meaning": "[v.] 穿；戴", "example": "Wear your coat." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What do I wear?",
+      "en": "Anna: What will you wear to the party, Ben?\nBen: I'll wear a white shirt and blue trousers.\nAnna: Cool! I want to wear my pink skirt.\nBen: Don't forget your hat — the sun is strong.\nAnna: OK! Let's go.",
+      "cn": "安娜：本，你穿什么去聚会？\n本：白衬衫蓝裤子。\n安娜：酷！我想穿粉色裙子。\n本：别忘戴帽子，太阳大。\n安娜：好，走吧！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My favourite clothes",
+      "en": "I have many clothes in my closet. I wear T-shirts and shorts in summer. In spring, I like a light shirt and a pair of jeans. New shoes are always exciting. On rainy days, Mum tells me to wear my yellow boots. Clothes keep us warm and make us smile.",
+      "cn": "我衣柜里有很多衣服。夏天我穿 T 恤和短裤。春天我喜欢穿轻便衬衫和牛仔裤。新鞋总是让人兴奋。下雨天妈妈让我穿黄色雨靴。衣服让我们温暖，也让我们开心。"
+    }
+  ]
+}

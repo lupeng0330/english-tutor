@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 You Are What You Eat",
+  "words": [
+    { "word": "eat", "phonetic": "/iːt/", "meaning": "[v.] 吃", "example": "Eat slowly." },
+    { "word": "healthy", "phonetic": "/ˈhelθi/", "meaning": "[adj.] 健康的", "example": "Healthy food." },
+    { "word": "vegetable", "phonetic": "/ˈvedʒtəbl/", "meaning": "[n.] 蔬菜", "example": "Eat more vegetables." },
+    { "word": "junk food", "phonetic": "/dʒʌŋk fuːd/", "meaning": "[n.] 垃圾食品", "example": "Avoid junk food." },
+    { "word": "vitamin", "phonetic": "/ˈvɪtəmɪn/", "meaning": "[n.] 维生素", "example": "Vitamin C." },
+    { "word": "fat", "phonetic": "/fæt/", "meaning": "[n./adj.] 脂肪；胖的", "example": "Too much fat." },
+    { "word": "energy", "phonetic": "/ˈenədʒi/", "meaning": "[n.] 能量", "example": "Food gives us energy." },
+    { "word": "balance", "phonetic": "/ˈbæləns/", "meaning": "[n./v.] 平衡", "example": "Balance your diet." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "You are what you eat",
+      "en": "Mum: Anna, eat more vegetables. They have vitamins.\nAnna: Mum, can I have some chips too?\nMum: A little junk food is OK, but too much fat is bad.\nAnna: I know. Healthy food gives me energy.\nMum: Right. Balance is the key.",
+      "cn": "妈妈：安娜，多吃蔬菜，有维生素。\n安娜：妈，我能吃点薯片吗？\n妈妈：偶尔可以，但太多脂肪不好。\n安娜：知道，健康食物让我有活力。\n妈妈：对，平衡是关键。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Balance your plate",
+      "en": "Doctors say, \"You are what you eat.\" If we eat too much junk food, we get tired and weak. Fresh vegetables, fruit, milk and meat give us vitamins, calcium and energy. A balanced plate has different colours — green, red, yellow, brown. Cook some, eat some raw. Drink water, not just sweet drinks. A good diet is the first step to a strong life.",
+      "cn": "医生说\"你吃什么就成什么\"。垃圾食品吃多就会无力。新鲜蔬菜、水果、牛奶和肉提供维生素、钙和能量。平衡的餐盘有不同颜色——绿、红、黄、棕。有些煮，有些生吃。多喝水，少喝甜饮。好的饮食是强健生活的第一步。"
+    }
+  ]
+}

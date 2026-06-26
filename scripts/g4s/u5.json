@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 My Hobbies",
+  "words": [
+    { "word": "hobby", "phonetic": "/ˈhɒbi/", "meaning": "[n.] 爱好", "example": "My hobby is reading." },
+    { "word": "music", "phonetic": "/ˈmjuːzɪk/", "meaning": "[n.] 音乐", "example": "I love music." },
+    { "word": "piano", "phonetic": "/piˈænəʊ/", "meaning": "[n.] 钢琴", "example": "She plays the piano." },
+    { "word": "guitar", "phonetic": "/ɡɪˈtɑː(r)/", "meaning": "[n.] 吉他", "example": "Dad plays the guitar." },
+    { "word": "dance", "phonetic": "/dɑːns/", "meaning": "[v./n.] 跳舞", "example": "I can dance well." },
+    { "word": "swim", "phonetic": "/swɪm/", "meaning": "[v.] 游泳", "example": "I swim in summer." },
+    { "word": "cook", "phonetic": "/kʊk/", "meaning": "[v.] 做饭", "example": "Mum cooks at home." },
+    { "word": "favourite", "phonetic": "/ˈfeɪvərɪt/", "meaning": "[adj.] 最喜爱的", "example": "Music is my favourite." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What's your hobby?",
+      "en": "Anna: Ben, what's your hobby?\nBen: My hobby is music. I play the piano.\nAnna: Cool! I love dance. I can also swim.\nBen: My sister can cook many things — that's her hobby.\nAnna: Hobbies make us happy!",
+      "cn": "安娜：本，你的爱好是什么？\n本：我的爱好是音乐，我弹钢琴。\n安娜：酷！我喜欢跳舞，还会游泳。\n本：我姐姐会做很多菜，那是她的爱好。\n安娜：爱好让我们快乐！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Hobbies in my class",
+      "en": "Everyone in my class has a hobby. Tom plays the guitar. Lily likes to dance. Ben plays the piano very well. Anna loves swimming. I like cooking with Mum at weekends. My favourite hobby is reading storybooks. A hobby is like a good friend — it stays with you for life!",
+      "cn": "我们班每个同学都有爱好。汤姆弹吉他。莉莉喜欢跳舞。本钢琴弹得很好。安娜喜欢游泳。周末我喜欢和妈妈一起做饭。我最爱的爱好是看故事书。爱好就像好朋友，一辈子陪着你！"
+    }
+  ]
+}

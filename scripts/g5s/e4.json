@@ -1,0 +1,42 @@
+{
+  "library": [
+    { "en": "The library.", "cn": "图书馆。", "level": 1 },
+    { "en": "Go to the library.", "cn": "去图书馆。", "level": 2 },
+    { "en": "Our school library has over ten thousand books.", "cn": "我们学校图书馆有一万多本书。", "level": 3 }
+  ],
+  "borrow": [
+    { "en": "Borrow a book.", "cn": "借一本书。", "level": 1 },
+    { "en": "I borrow two books.", "cn": "我借两本书。", "level": 2 },
+    { "en": "Students may borrow up to four books at a time.", "cn": "学生一次可借四本书。", "level": 3 }
+  ],
+  "return": [
+    { "en": "Return the book.", "cn": "还书。", "level": 1 },
+    { "en": "Please return it soon.", "cn": "请快点还。", "level": 2 },
+    { "en": "Don't forget to return the book within two weeks.", "cn": "别忘了两周内还书。", "level": 3 }
+  ],
+  "quiet": [
+    { "en": "Be quiet.", "cn": "安静。", "level": 1 },
+    { "en": "The library is quiet.", "cn": "图书馆很安静。", "level": 2 },
+    { "en": "We must stay quiet so others can read.", "cn": "我们要保持安静，让别人能看书。", "level": 3 }
+  ],
+  "shelf": [
+    { "en": "A shelf.", "cn": "一个书架。", "level": 1 },
+    { "en": "Books on the shelf.", "cn": "书架上的书。", "level": 2 },
+    { "en": "Story books are on the top shelf by the window.", "cn": "故事书在窗边最顶层书架上。", "level": 3 }
+  ],
+  "magazine": [
+    { "en": "A magazine.", "cn": "一本杂志。", "level": 1 },
+    { "en": "I read a magazine.", "cn": "我看杂志。", "level": 2 },
+    { "en": "There is a science magazine for children every month.", "cn": "每月都有一本儿童科学杂志。", "level": 3 }
+  ],
+  "card": [
+    { "en": "A library card.", "cn": "一张借书卡。", "level": 1 },
+    { "en": "Show your card.", "cn": "出示借书卡。", "level": 2 },
+    { "en": "Bring your library card with you every time.", "cn": "每次都要带借书卡。", "level": 3 }
+  ],
+  "page": [
+    { "en": "A new page.", "cn": "新的一页。", "level": 1 },
+    { "en": "Turn to page ten.", "cn": "翻到第十页。", "level": 2 },
+    { "en": "I read about twenty pages of the storybook each night.", "cn": "我每晚读故事书大约二十页。", "level": 3 }
+  ]
+}

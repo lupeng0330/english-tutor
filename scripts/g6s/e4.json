@@ -1,0 +1,42 @@
+{
+  "sport": [
+    { "en": "I love sport.", "cn": "我爱运动。", "level": 1 },
+    { "en": "Sport is fun.", "cn": "运动有趣。", "level": 2 },
+    { "en": "Doing sport regularly makes us healthier and happier.", "cn": "经常运动让我们更健康快乐。", "level": 3 }
+  ],
+  "football": [
+    { "en": "Play football.", "cn": "踢足球。", "level": 1 },
+    { "en": "Football is popular.", "cn": "足球很流行。", "level": 2 },
+    { "en": "He has played football since he was four years old.", "cn": "他从四岁就开始踢足球。", "level": 3 }
+  ],
+  "basketball": [
+    { "en": "Play basketball.", "cn": "打篮球。", "level": 1 },
+    { "en": "Basketball is fast.", "cn": "篮球节奏快。", "level": 2 },
+    { "en": "Our basketball team practises every Tuesday and Thursday.", "cn": "我们篮球队每周二周四训练。", "level": 3 }
+  ],
+  "swimming": [
+    { "en": "Swimming.", "cn": "游泳。", "level": 1 },
+    { "en": "I love swimming.", "cn": "我爱游泳。", "level": 2 },
+    { "en": "Swimming is one of the best whole-body exercises.", "cn": "游泳是最好的全身运动之一。", "level": 3 }
+  ],
+  "running": [
+    { "en": "Running.", "cn": "跑步。", "level": 1 },
+    { "en": "Running is healthy.", "cn": "跑步健康。", "level": 2 },
+    { "en": "I go running for thirty minutes every morning.", "cn": "我每天早上跑步三十分钟。", "level": 3 }
+  ],
+  "match": [
+    { "en": "A match.", "cn": "一场比赛。", "level": 1 },
+    { "en": "We have a match.", "cn": "我们有场比赛。", "level": 2 },
+    { "en": "Our team won the match three goals to one.", "cn": "我们队 3 比 1 赢得了比赛。", "level": 3 }
+  ],
+  "champion": [
+    { "en": "A champion.", "cn": "一位冠军。", "level": 1 },
+    { "en": "He is a champion.", "cn": "他是冠军。", "level": 2 },
+    { "en": "She became the youngest champion in school history.", "cn": "她成为学校历史上最年轻的冠军。", "level": 3 }
+  ],
+  "energy": [
+    { "en": "Lots of energy.", "cn": "充满活力。", "level": 1 },
+    { "en": "Sport gives me energy.", "cn": "运动给我活力。", "level": 2 },
+    { "en": "Eating well gives us the energy to play hard.", "cn": "吃得好让我们有能量去尽情运动。", "level": 3 }
+  ]
+}

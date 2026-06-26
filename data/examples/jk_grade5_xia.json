@@ -1,0 +1,1384 @@
+{
+  "words": {
+    "trip": [
+      {
+        "en": "A short trip.",
+        "cn": "一次短途旅行。",
+        "level": 1,
+        "audioFile": "ex_5d623bc3c4.mp3"
+      },
+      {
+        "en": "Have a nice trip!",
+        "cn": "旅途愉快！",
+        "level": 2,
+        "audioFile": "ex_cc67edbe59.mp3"
+      },
+      {
+        "en": "Our family is planning a trip to the seaside this summer.",
+        "cn": "我们家计划今年夏天去海边旅行。",
+        "level": 3,
+        "audioFile": "ex_3347a716a9.mp3"
+      }
+    ],
+    "plan": [
+      {
+        "en": "A trip plan.",
+        "cn": "旅行计划。",
+        "level": 1,
+        "audioFile": "ex_b5f9a243d4.mp3"
+      },
+      {
+        "en": "Plan our weekend.",
+        "cn": "计划周末。",
+        "level": 2,
+        "audioFile": "ex_0ede000ced.mp3"
+      },
+      {
+        "en": "Let's sit down and plan the whole holiday together.",
+        "cn": "我们坐下来一起计划整个假期。",
+        "level": 3,
+        "audioFile": "ex_233e0eccb2.mp3"
+      }
+    ],
+    "summer": [
+      {
+        "en": "Summer is here.",
+        "cn": "夏天到了。",
+        "level": 1,
+        "audioFile": "ex_9322cb3a4a.mp3"
+      },
+      {
+        "en": "I love summer.",
+        "cn": "我喜欢夏天。",
+        "level": 2,
+        "audioFile": "ex_c41f81d292.mp3"
+      },
+      {
+        "en": "Summer is the best time to enjoy ice cream and swimming.",
+        "cn": "夏天最适合吃冰淇淋和游泳。",
+        "level": 3,
+        "audioFile": "ex_fe212d2504.mp3"
+      }
+    ],
+    "holiday": [
+      {
+        "en": "Happy holiday!",
+        "cn": "假期愉快！",
+        "level": 1,
+        "audioFile": "ex_f43f602d2d.mp3"
+      },
+      {
+        "en": "Summer holiday is long.",
+        "cn": "暑假很长。",
+        "level": 2,
+        "audioFile": "ex_6280d6f3cf.mp3"
+      },
+      {
+        "en": "I'm going to read ten books during the holiday.",
+        "cn": "我打算假期里读十本书。",
+        "level": 3,
+        "audioFile": "ex_556704c98b.mp3"
+      }
+    ],
+    "beach": [
+      {
+        "en": "At the beach.",
+        "cn": "在海滩。",
+        "level": 1,
+        "audioFile": "ex_577f6d1220.mp3"
+      },
+      {
+        "en": "I love the beach.",
+        "cn": "我爱海滩。",
+        "level": 2,
+        "audioFile": "ex_1c9ac6e792.mp3"
+      },
+      {
+        "en": "We built a sand castle on the beach last summer.",
+        "cn": "去年夏天我们在海滩上堆了一座沙堡。",
+        "level": 3,
+        "audioFile": "ex_2aaeca506b.mp3"
+      }
+    ],
+    "mountain": [
+      {
+        "en": "A big mountain.",
+        "cn": "一座大山。",
+        "level": 1,
+        "audioFile": "ex_173e3e3370.mp3"
+      },
+      {
+        "en": "Climb the mountain.",
+        "cn": "爬山。",
+        "level": 2,
+        "audioFile": "ex_fcc2511bd2.mp3"
+      },
+      {
+        "en": "From the top of the mountain we saw the whole city.",
+        "cn": "从山顶我们看到了整座城市。",
+        "level": 3,
+        "audioFile": "ex_47d3a034c8.mp3"
+      }
+    ],
+    "discuss": [
+      {
+        "en": "Let's discuss.",
+        "cn": "我们讨论一下。",
+        "level": 1,
+        "audioFile": "ex_eaec436678.mp3"
+      },
+      {
+        "en": "We discuss the plan.",
+        "cn": "我们讨论计划。",
+        "level": 2,
+        "audioFile": "ex_7dee11e636.mp3"
+      },
+      {
+        "en": "Tonight we'll discuss our trip with Mum and Dad.",
+        "cn": "今晚我们和爸妈讨论旅行。",
+        "level": 3,
+        "audioFile": "ex_c1a3f7233f.mp3"
+      }
+    ],
+    "idea": [
+      {
+        "en": "Good idea!",
+        "cn": "好主意！",
+        "level": 1,
+        "audioFile": "ex_ca700cfd10.mp3"
+      },
+      {
+        "en": "I have an idea.",
+        "cn": "我有个主意。",
+        "level": 2,
+        "audioFile": "ex_3553d514ed.mp3"
+      },
+      {
+        "en": "Sharing ideas with friends makes plans better.",
+        "cn": "和朋友分享主意能让计划更好。",
+        "level": 3,
+        "audioFile": "ex_100a392c38.mp3"
+      }
+    ],
+    "travel": [
+      {
+        "en": "I travel.",
+        "cn": "我旅行。",
+        "level": 1,
+        "audioFile": "ex_53734cc66b.mp3"
+      },
+      {
+        "en": "We travel by train.",
+        "cn": "我们坐火车旅行。",
+        "level": 2,
+        "audioFile": "ex_08c6a0e674.mp3"
+      },
+      {
+        "en": "Travel opens our eyes and our minds.",
+        "cn": "旅行让我们眼界和思维都开阔。",
+        "level": 3,
+        "audioFile": "ex_fa3f4c0883.mp3"
+      }
+    ],
+    "train": [
+      {
+        "en": "A fast train.",
+        "cn": "一列快车。",
+        "level": 1,
+        "audioFile": "ex_d2833fd32f.mp3"
+      },
+      {
+        "en": "Take the train.",
+        "cn": "坐火车。",
+        "level": 2,
+        "audioFile": "ex_f902270abe.mp3"
+      },
+      {
+        "en": "The high-speed train can travel 300 kilometres in an hour.",
+        "cn": "高铁一小时能跑 300 公里。",
+        "level": 3,
+        "audioFile": "ex_f81a3e36dd.mp3"
+      }
+    ],
+    "plane": [
+      {
+        "en": "A plane.",
+        "cn": "一架飞机。",
+        "level": 1,
+        "audioFile": "ex_9dd536068c.mp3"
+      },
+      {
+        "en": "Fly by plane.",
+        "cn": "坐飞机。",
+        "level": 2,
+        "audioFile": "ex_68029533b9.mp3"
+      },
+      {
+        "en": "The plane to Beijing takes about three hours.",
+        "cn": "去北京的飞机大约三个小时。",
+        "level": 3,
+        "audioFile": "ex_a1be37ba7f.mp3"
+      }
+    ],
+    "bus": [
+      {
+        "en": "Take the bus.",
+        "cn": "乘公交。",
+        "level": 1,
+        "audioFile": "ex_16ef4eca4d.mp3"
+      },
+      {
+        "en": "The bus is full.",
+        "cn": "公交满了。",
+        "level": 2,
+        "audioFile": "ex_27d40fd0db.mp3"
+      },
+      {
+        "en": "I take bus number 12 to school every morning.",
+        "cn": "我每天早上坐 12 路公交去上学。",
+        "level": 3,
+        "audioFile": "ex_c912f00ace.mp3"
+      }
+    ],
+    "subway": [
+      {
+        "en": "The subway.",
+        "cn": "地铁。",
+        "level": 1,
+        "audioFile": "ex_f9a9cfeff3.mp3"
+      },
+      {
+        "en": "Take the subway.",
+        "cn": "乘地铁。",
+        "level": 2,
+        "audioFile": "ex_d2c72e94dc.mp3"
+      },
+      {
+        "en": "The subway is faster than the bus during rush hour.",
+        "cn": "高峰期地铁比公交快。",
+        "level": 3,
+        "audioFile": "ex_1ac499a9b5.mp3"
+      }
+    ],
+    "bike": [
+      {
+        "en": "Ride a bike.",
+        "cn": "骑自行车。",
+        "level": 1,
+        "audioFile": "ex_45fe9d4147.mp3"
+      },
+      {
+        "en": "I have a new bike.",
+        "cn": "我有辆新自行车。",
+        "level": 2,
+        "audioFile": "ex_2d80830bc9.mp3"
+      },
+      {
+        "en": "On weekends we ride bikes around the lake.",
+        "cn": "周末我们绕着湖骑车。",
+        "level": 3,
+        "audioFile": "ex_7aff643ae2.mp3"
+      }
+    ],
+    "ticket": [
+      {
+        "en": "A train ticket.",
+        "cn": "一张火车票。",
+        "level": 1,
+        "audioFile": "ex_f42099d943.mp3"
+      },
+      {
+        "en": "Buy two tickets.",
+        "cn": "买两张票。",
+        "level": 2,
+        "audioFile": "ex_d1a0cbe681.mp3"
+      },
+      {
+        "en": "Tickets for the holiday train sell out very quickly.",
+        "cn": "假期火车票卖得很快。",
+        "level": 3,
+        "audioFile": "ex_9cba8c429d.mp3"
+      }
+    ],
+    "fast": [
+      {
+        "en": "Very fast.",
+        "cn": "很快。",
+        "level": 1,
+        "audioFile": "ex_c3124de058.mp3"
+      },
+      {
+        "en": "The plane is fast.",
+        "cn": "飞机很快。",
+        "level": 2,
+        "audioFile": "ex_1fd55b7fb2.mp3"
+      },
+      {
+        "en": "He runs as fast as the wind.",
+        "cn": "他跑得快如风。",
+        "level": 3,
+        "audioFile": "ex_3838488789.mp3"
+      }
+    ],
+    "way": [
+      {
+        "en": "The way.",
+        "cn": "路。",
+        "level": 1,
+        "audioFile": "ex_f5f306cbb8.mp3"
+      },
+      {
+        "en": "Show me the way.",
+        "cn": "告诉我路。",
+        "level": 2,
+        "audioFile": "ex_500e70d0dd.mp3"
+      },
+      {
+        "en": "Can you tell me the way to the train station, please?",
+        "cn": "请问去火车站的路怎么走？",
+        "level": 3,
+        "audioFile": "ex_780142d392.mp3"
+      }
+    ],
+    "turn": [
+      {
+        "en": "Turn left.",
+        "cn": "左转。",
+        "level": 1,
+        "audioFile": "ex_214975c935.mp3"
+      },
+      {
+        "en": "Turn at the corner.",
+        "cn": "在拐角转弯。",
+        "level": 2,
+        "audioFile": "ex_9edd38001d.mp3"
+      },
+      {
+        "en": "Turn right at the second crossroads.",
+        "cn": "第二个十字路口右转。",
+        "level": 3,
+        "audioFile": "ex_4d20ba1076.mp3"
+      }
+    ],
+    "left": [
+      {
+        "en": "On the left.",
+        "cn": "在左边。",
+        "level": 1,
+        "audioFile": "ex_e93f8060b7.mp3"
+      },
+      {
+        "en": "Turn left here.",
+        "cn": "在这里左转。",
+        "level": 2,
+        "audioFile": "ex_56b00756e0.mp3"
+      },
+      {
+        "en": "The bookstore is on the left, next to the bank.",
+        "cn": "书店在左边，挨着银行。",
+        "level": 3,
+        "audioFile": "ex_143d577c88.mp3"
+      }
+    ],
+    "right": [
+      {
+        "en": "On the right.",
+        "cn": "在右边。",
+        "level": 1,
+        "audioFile": "ex_112d1db60e.mp3"
+      },
+      {
+        "en": "Walk to the right.",
+        "cn": "向右走。",
+        "level": 2,
+        "audioFile": "ex_3414f5e080.mp3"
+      },
+      {
+        "en": "After the bridge, the museum is on the right side.",
+        "cn": "过桥后博物馆就在右边。",
+        "level": 3,
+        "audioFile": "ex_986ff959d7.mp3"
+      }
+    ],
+    "straight": [
+      {
+        "en": "Go straight.",
+        "cn": "直走。",
+        "level": 1,
+        "audioFile": "ex_0a9993d67e.mp3"
+      },
+      {
+        "en": "Go straight ahead.",
+        "cn": "一直往前。",
+        "level": 2,
+        "audioFile": "ex_b083bfbd52.mp3"
+      },
+      {
+        "en": "Walk straight for five minutes and you'll see the park.",
+        "cn": "直走五分钟就能看到公园。",
+        "level": 3,
+        "audioFile": "ex_9fec77c11b.mp3"
+      }
+    ],
+    "crossroads": [
+      {
+        "en": "At the crossroads.",
+        "cn": "在十字路口。",
+        "level": 1,
+        "audioFile": "ex_bf4ccab9a7.mp3"
+      },
+      {
+        "en": "Wait at the crossroads.",
+        "cn": "在十字路口等。",
+        "level": 2,
+        "audioFile": "ex_28362911c0.mp3"
+      },
+      {
+        "en": "There is a hospital at the next crossroads.",
+        "cn": "下个十字路口有家医院。",
+        "level": 3,
+        "audioFile": "ex_e771215b3a.mp3"
+      }
+    ],
+    "map": [
+      {
+        "en": "A map.",
+        "cn": "一张地图。",
+        "level": 1,
+        "audioFile": "ex_abe1c73f10.mp3"
+      },
+      {
+        "en": "Read the map.",
+        "cn": "看地图。",
+        "level": 2,
+        "audioFile": "ex_f9a775c59c.mp3"
+      },
+      {
+        "en": "I use my phone map when I travel to a new city.",
+        "cn": "去新城市我用手机地图。",
+        "level": 3,
+        "audioFile": "ex_4887d9e1a1.mp3"
+      }
+    ],
+    "lost": [
+      {
+        "en": "I'm lost!",
+        "cn": "我迷路了！",
+        "level": 1,
+        "audioFile": "ex_ef8b1fd6b3.mp3"
+      },
+      {
+        "en": "We got lost.",
+        "cn": "我们迷路了。",
+        "level": 2,
+        "audioFile": "ex_082dfb6f0d.mp3"
+      },
+      {
+        "en": "If you get lost, ask a police officer for help.",
+        "cn": "迷路了就找警察叔叔。",
+        "level": 3,
+        "audioFile": "ex_b363d8e6d7.mp3"
+      }
+    ],
+    "tourist": [
+      {
+        "en": "A tourist.",
+        "cn": "游客。",
+        "level": 1,
+        "audioFile": "ex_78b7bd8c51.mp3"
+      },
+      {
+        "en": "Many tourists come.",
+        "cn": "很多游客来。",
+        "level": 2,
+        "audioFile": "ex_10879c3c66.mp3"
+      },
+      {
+        "en": "Tourists from around the world visit the Great Wall.",
+        "cn": "世界各地的游客都来参观长城。",
+        "level": 3,
+        "audioFile": "ex_cec5086415.mp3"
+      }
+    ],
+    "spot": [
+      {
+        "en": "A nice spot.",
+        "cn": "一个好地方。",
+        "level": 1,
+        "audioFile": "ex_f24ecd95e7.mp3"
+      },
+      {
+        "en": "A famous spot.",
+        "cn": "一个著名景点。",
+        "level": 2,
+        "audioFile": "ex_51eb47681a.mp3"
+      },
+      {
+        "en": "The lake is a popular spot for taking photos.",
+        "cn": "这个湖是拍照的热门地点。",
+        "level": 3,
+        "audioFile": "ex_f665421137.mp3"
+      }
+    ],
+    "city": [
+      {
+        "en": "A big city.",
+        "cn": "一座大城市。",
+        "level": 1,
+        "audioFile": "ex_1820eceee4.mp3"
+      },
+      {
+        "en": "I live in a city.",
+        "cn": "我住在城市。",
+        "level": 2,
+        "audioFile": "ex_763e1a0766.mp3"
+      },
+      {
+        "en": "Beijing is one of the most beautiful cities in China.",
+        "cn": "北京是中国最美的城市之一。",
+        "level": 3,
+        "audioFile": "ex_e86bf72bfc.mp3"
+      }
+    ],
+    "country": [
+      {
+        "en": "Each country.",
+        "cn": "每个国家。",
+        "level": 1,
+        "audioFile": "ex_14ce42213b.mp3"
+      },
+      {
+        "en": "Visit a new country.",
+        "cn": "去一个新国家。",
+        "level": 2,
+        "audioFile": "ex_70d5db27b8.mp3"
+      },
+      {
+        "en": "Every country has its own unique customs.",
+        "cn": "每个国家都有独特习俗。",
+        "level": 3,
+        "audioFile": "ex_1da30c52d3.mp3"
+      }
+    ],
+    "Great Wall": [
+      {
+        "en": "The Great Wall.",
+        "cn": "长城。",
+        "level": 1,
+        "audioFile": "ex_2dbe42e5db.mp3"
+      },
+      {
+        "en": "Climb the Great Wall.",
+        "cn": "爬长城。",
+        "level": 2,
+        "audioFile": "ex_c72bf5a301.mp3"
+      },
+      {
+        "en": "The Great Wall is over two thousand years old.",
+        "cn": "长城已经两千多年历史。",
+        "level": 3,
+        "audioFile": "ex_265071fd76.mp3"
+      }
+    ],
+    "park": [
+      {
+        "en": "A park.",
+        "cn": "公园。",
+        "level": 1,
+        "audioFile": "ex_8bb1f14aa0.mp3"
+      },
+      {
+        "en": "A theme park.",
+        "cn": "一个主题公园。",
+        "level": 2,
+        "audioFile": "ex_24696daee5.mp3"
+      },
+      {
+        "en": "The new theme park has many exciting rides.",
+        "cn": "新主题公园有许多刺激的游乐项目。",
+        "level": 3,
+        "audioFile": "ex_a3cf3e6870.mp3"
+      }
+    ],
+    "museum": [
+      {
+        "en": "A museum.",
+        "cn": "一座博物馆。",
+        "level": 1,
+        "audioFile": "ex_33258da1e3.mp3"
+      },
+      {
+        "en": "Visit the museum.",
+        "cn": "参观博物馆。",
+        "level": 2,
+        "audioFile": "ex_7a5c780172.mp3"
+      },
+      {
+        "en": "The science museum has interactive exhibits for kids.",
+        "cn": "科技馆有适合孩子的互动展品。",
+        "level": 3,
+        "audioFile": "ex_b94bf8be4c.mp3"
+      }
+    ],
+    "famous": [
+      {
+        "en": "It's famous.",
+        "cn": "它很有名。",
+        "level": 1,
+        "audioFile": "ex_49d58d77ee.mp3"
+      },
+      {
+        "en": "A famous place.",
+        "cn": "一个著名地方。",
+        "level": 2,
+        "audioFile": "ex_656315622c.mp3"
+      },
+      {
+        "en": "She is famous for her amazing English songs.",
+        "cn": "她因精彩的英文歌而闻名。",
+        "level": 3,
+        "audioFile": "ex_46bc0e2dae.mp3"
+      }
+    ],
+    "souvenir": [
+      {
+        "en": "A souvenir.",
+        "cn": "纪念品。",
+        "level": 1,
+        "audioFile": "ex_4b3d5ae8e0.mp3"
+      },
+      {
+        "en": "Buy a souvenir.",
+        "cn": "买个纪念品。",
+        "level": 2,
+        "audioFile": "ex_7788532f24.mp3"
+      },
+      {
+        "en": "I keep souvenirs from every city I visit.",
+        "cn": "我留下每个去过城市的纪念品。",
+        "level": 3,
+        "audioFile": "ex_6a275a3530.mp3"
+      }
+    ],
+    "shop": [
+      {
+        "en": "A small shop.",
+        "cn": "一家小店。",
+        "level": 1,
+        "audioFile": "ex_49163139ae.mp3"
+      },
+      {
+        "en": "Go to the gift shop.",
+        "cn": "去礼品店。",
+        "level": 2,
+        "audioFile": "ex_e7bb9cfc21.mp3"
+      },
+      {
+        "en": "The shop near the museum sells many beautiful gifts.",
+        "cn": "博物馆附近的店卖很多漂亮礼物。",
+        "level": 3,
+        "audioFile": "ex_03854a4ee7.mp3"
+      }
+    ],
+    "gift": [
+      {
+        "en": "A nice gift.",
+        "cn": "一份好礼物。",
+        "level": 1,
+        "audioFile": "ex_cf7a220a35.mp3"
+      },
+      {
+        "en": "A gift for Mum.",
+        "cn": "送妈妈的礼物。",
+        "level": 2,
+        "audioFile": "ex_e4cce3d32d.mp3"
+      },
+      {
+        "en": "I picked a small handmade gift for my best friend.",
+        "cn": "我给好朋友挑了一份手工小礼物。",
+        "level": 3,
+        "audioFile": "ex_b7b7401e76.mp3"
+      }
+    ],
+    "size": [
+      {
+        "en": "The right size.",
+        "cn": "合适的尺寸。",
+        "level": 1,
+        "audioFile": "ex_877de0e737.mp3"
+      },
+      {
+        "en": "What size?",
+        "cn": "什么码？",
+        "level": 2,
+        "audioFile": "ex_582070494c.mp3"
+      },
+      {
+        "en": "These shoes are not the right size for me.",
+        "cn": "这双鞋码数不合适。",
+        "level": 3,
+        "audioFile": "ex_2ba2c0e009.mp3"
+      }
+    ],
+    "colour": [
+      {
+        "en": "What colour?",
+        "cn": "什么颜色？",
+        "level": 1,
+        "audioFile": "ex_db6f3b9762.mp3"
+      },
+      {
+        "en": "Blue is my colour.",
+        "cn": "蓝色是我的颜色。",
+        "level": 2,
+        "audioFile": "ex_82a00444ab.mp3"
+      },
+      {
+        "en": "Which colour scarf do you like better, red or green?",
+        "cn": "你更喜欢哪条围巾，红色还是绿色？",
+        "level": 3,
+        "audioFile": "ex_85961f0245.mp3"
+      }
+    ],
+    "try on": [
+      {
+        "en": "Try it on.",
+        "cn": "试一下。",
+        "level": 1,
+        "audioFile": "ex_5286a75a6e.mp3"
+      },
+      {
+        "en": "Try on this hat.",
+        "cn": "试戴这顶帽子。",
+        "level": 2,
+        "audioFile": "ex_63dfd85113.mp3"
+      },
+      {
+        "en": "Can I try on this jacket in a smaller size?",
+        "cn": "我能试一下这件小一号的夹克吗？",
+        "level": 3,
+        "audioFile": "ex_461a2678ed.mp3"
+      }
+    ],
+    "pay": [
+      {
+        "en": "Pay for it.",
+        "cn": "付钱。",
+        "level": 1,
+        "audioFile": "ex_bd5412bfe3.mp3"
+      },
+      {
+        "en": "I'll pay now.",
+        "cn": "我现在付。",
+        "level": 2,
+        "audioFile": "ex_f0adf2af85.mp3"
+      },
+      {
+        "en": "You can pay with cash or by phone here.",
+        "cn": "这里可以付现金或手机支付。",
+        "level": 3,
+        "audioFile": "ex_cff328b330.mp3"
+      }
+    ],
+    "receipt": [
+      {
+        "en": "A receipt.",
+        "cn": "一张收据。",
+        "level": 1,
+        "audioFile": "ex_954e8f5bbd.mp3"
+      },
+      {
+        "en": "Keep the receipt.",
+        "cn": "留着收据。",
+        "level": 2,
+        "audioFile": "ex_b1f78de5b5.mp3"
+      },
+      {
+        "en": "Always keep the receipt in case you need to return things.",
+        "cn": "留好收据以防退货。",
+        "level": 3,
+        "audioFile": "ex_e07b00d69e.mp3"
+      }
+    ],
+    "postcard": [
+      {
+        "en": "A postcard.",
+        "cn": "一张明信片。",
+        "level": 1,
+        "audioFile": "ex_6fe10f0771.mp3"
+      },
+      {
+        "en": "Send a postcard.",
+        "cn": "寄明信片。",
+        "level": 2,
+        "audioFile": "ex_78b239ca00.mp3"
+      },
+      {
+        "en": "I collected ten postcards from different cities.",
+        "cn": "我收集了十张不同城市的明信片。",
+        "level": 3,
+        "audioFile": "ex_2407db5d33.mp3"
+      }
+    ],
+    "send": [
+      {
+        "en": "Send it.",
+        "cn": "寄出去。",
+        "level": 1,
+        "audioFile": "ex_b7b641e06c.mp3"
+      },
+      {
+        "en": "Send me a card.",
+        "cn": "给我寄张卡。",
+        "level": 2,
+        "audioFile": "ex_16f065152a.mp3"
+      },
+      {
+        "en": "I sent a long letter to my grandma last week.",
+        "cn": "上周我给奶奶寄了一封长信。",
+        "level": 3,
+        "audioFile": "ex_f93ed92054.mp3"
+      }
+    ],
+    "write": [
+      {
+        "en": "Write soon.",
+        "cn": "尽快写。",
+        "level": 1,
+        "audioFile": "ex_1c3f9fbe42.mp3"
+      },
+      {
+        "en": "Write the address.",
+        "cn": "写地址。",
+        "level": 2,
+        "audioFile": "ex_13ee0ad107.mp3"
+      },
+      {
+        "en": "Don't forget to write the name and address clearly.",
+        "cn": "别忘把名字地址写清楚。",
+        "level": 3,
+        "audioFile": "ex_61c2856182.mp3"
+      }
+    ],
+    "address": [
+      {
+        "en": "My address.",
+        "cn": "我的地址。",
+        "level": 1,
+        "audioFile": "ex_6ed73fa02d.mp3"
+      },
+      {
+        "en": "What's your address?",
+        "cn": "你地址是？",
+        "level": 2,
+        "audioFile": "ex_e1ee70f8bd.mp3"
+      },
+      {
+        "en": "Please write your home address on this card.",
+        "cn": "请把家庭地址写在这张卡片上。",
+        "level": 3,
+        "audioFile": "ex_f6ebc2bf96.mp3"
+      }
+    ],
+    "stamp": [
+      {
+        "en": "A stamp.",
+        "cn": "一张邮票。",
+        "level": 1,
+        "audioFile": "ex_5a83790f6c.mp3"
+      },
+      {
+        "en": "Put on a stamp.",
+        "cn": "贴邮票。",
+        "level": 2,
+        "audioFile": "ex_6487f08614.mp3"
+      },
+      {
+        "en": "I collect stamps from many different countries.",
+        "cn": "我收集很多国家的邮票。",
+        "level": 3,
+        "audioFile": "ex_7c0fdffe3c.mp3"
+      }
+    ],
+    "miss": [
+      {
+        "en": "I miss you.",
+        "cn": "我想你。",
+        "level": 1,
+        "audioFile": "ex_e961d2b53a.mp3"
+      },
+      {
+        "en": "I miss my friends.",
+        "cn": "我想念我的朋友们。",
+        "level": 2,
+        "audioFile": "ex_d34de9fce4.mp3"
+      },
+      {
+        "en": "I really miss my hometown when I'm far away.",
+        "cn": "远在他乡时我特别想念家乡。",
+        "level": 3,
+        "audioFile": "ex_6fbb46998c.mp3"
+      }
+    ],
+    "weather": [
+      {
+        "en": "Nice weather.",
+        "cn": "好天气。",
+        "level": 1,
+        "audioFile": "ex_26188e1a46.mp3"
+      },
+      {
+        "en": "What's the weather?",
+        "cn": "天气怎么样？",
+        "level": 2,
+        "audioFile": "ex_916ac61505.mp3"
+      },
+      {
+        "en": "The weather here changes every few hours.",
+        "cn": "这里的天气几小时就变一次。",
+        "level": 3,
+        "audioFile": "ex_8cb8d3fc6c.mp3"
+      }
+    ],
+    "wish": [
+      {
+        "en": "Best wishes.",
+        "cn": "祝福。",
+        "level": 1,
+        "audioFile": "ex_302f8670ea.mp3"
+      },
+      {
+        "en": "I wish you happy.",
+        "cn": "祝你开心。",
+        "level": 2,
+        "audioFile": "ex_7993bfdcb2.mp3"
+      },
+      {
+        "en": "Send my warmest wishes to everyone at home.",
+        "cn": "请把我最真挚的祝福带给家里每个人。",
+        "level": 3,
+        "audioFile": "ex_df241e8688.mp3"
+      }
+    ],
+    "culture": [
+      {
+        "en": "Chinese culture.",
+        "cn": "中国文化。",
+        "level": 1,
+        "audioFile": "ex_5284aef454.mp3"
+      },
+      {
+        "en": "Learn a new culture.",
+        "cn": "学一种新文化。",
+        "level": 2,
+        "audioFile": "ex_3920a006cb.mp3"
+      },
+      {
+        "en": "Travel helps us understand different cultures.",
+        "cn": "旅行帮助我们理解不同文化。",
+        "level": 3,
+        "audioFile": "ex_368da9560c.mp3"
+      }
+    ],
+    "language": [
+      {
+        "en": "A language.",
+        "cn": "一种语言。",
+        "level": 1,
+        "audioFile": "ex_b192d2c9ee.mp3"
+      },
+      {
+        "en": "Learn a language.",
+        "cn": "学一种语言。",
+        "level": 2,
+        "audioFile": "ex_d9f792bcaf.mp3"
+      },
+      {
+        "en": "She can speak four languages fluently.",
+        "cn": "她能流利说四种语言。",
+        "level": 3,
+        "audioFile": "ex_6e7edc89b2.mp3"
+      }
+    ],
+    "food": [
+      {
+        "en": "Different food.",
+        "cn": "不同食物。",
+        "level": 1,
+        "audioFile": "ex_f407b6396b.mp3"
+      },
+      {
+        "en": "Italian food.",
+        "cn": "意大利食物。",
+        "level": 2,
+        "audioFile": "ex_7db48502ef.mp3"
+      },
+      {
+        "en": "I love trying different food from around the world.",
+        "cn": "我喜欢尝试世界各地的食物。",
+        "level": 3,
+        "audioFile": "ex_2822b1b98e.mp3"
+      }
+    ],
+    "chopsticks": [
+      {
+        "en": "Use chopsticks.",
+        "cn": "用筷子。",
+        "level": 1,
+        "audioFile": "ex_d4605d0fc7.mp3"
+      },
+      {
+        "en": "Hold the chopsticks.",
+        "cn": "拿筷子。",
+        "level": 2,
+        "audioFile": "ex_02f9b318c0.mp3"
+      },
+      {
+        "en": "Learning to use chopsticks takes a little practice.",
+        "cn": "学会用筷子要点练习。",
+        "level": 3,
+        "audioFile": "ex_86a008a9f0.mp3"
+      }
+    ],
+    "respect": [
+      {
+        "en": "Respect.",
+        "cn": "尊重。",
+        "level": 1,
+        "audioFile": "ex_e0725a398c.mp3"
+      },
+      {
+        "en": "Respect others.",
+        "cn": "尊重他人。",
+        "level": 2,
+        "audioFile": "ex_53e2e95395.mp3"
+      },
+      {
+        "en": "We should respect cultures that are different from ours.",
+        "cn": "我们应当尊重与我们不同的文化。",
+        "level": 3,
+        "audioFile": "ex_af92313823.mp3"
+      }
+    ],
+    "amazing": [
+      {
+        "en": "Amazing!",
+        "cn": "太棒了！",
+        "level": 1,
+        "audioFile": "ex_f7a72198b8.mp3"
+      },
+      {
+        "en": "An amazing show.",
+        "cn": "一场精彩的演出。",
+        "level": 2,
+        "audioFile": "ex_a20b36278b.mp3"
+      },
+      {
+        "en": "The view from the mountain top is truly amazing.",
+        "cn": "山顶的风景真的令人惊叹。",
+        "level": 3,
+        "audioFile": "ex_1779466181.mp3"
+      }
+    ],
+    "learn": [
+      {
+        "en": "Learn well.",
+        "cn": "好好学。",
+        "level": 1,
+        "audioFile": "ex_f9e41e23de.mp3"
+      },
+      {
+        "en": "Learn from others.",
+        "cn": "向他人学习。",
+        "level": 2,
+        "audioFile": "ex_f453e771cc.mp3"
+      },
+      {
+        "en": "We can learn so much by listening to people from other places.",
+        "cn": "倾听来自其他地方的人，我们能学到很多。",
+        "level": 3,
+        "audioFile": "ex_60b856f4b3.mp3"
+      }
+    ],
+    "safe": [
+      {
+        "en": "Stay safe.",
+        "cn": "注意安全。",
+        "level": 1,
+        "audioFile": "ex_1584551c8e.mp3"
+      },
+      {
+        "en": "Be safe on the road.",
+        "cn": "路上注意安全。",
+        "level": 2,
+        "audioFile": "ex_d51402b824.mp3"
+      },
+      {
+        "en": "Make sure your bag is in a safe place when travelling.",
+        "cn": "旅行时确保包放在安全的地方。",
+        "level": 3,
+        "audioFile": "ex_a4e53876bb.mp3"
+      }
+    ],
+    "danger": [
+      {
+        "en": "Danger!",
+        "cn": "危险！",
+        "level": 1,
+        "audioFile": "ex_a304be197e.mp3"
+      },
+      {
+        "en": "Stay away from danger.",
+        "cn": "远离危险。",
+        "level": 2,
+        "audioFile": "ex_479afb1375.mp3"
+      },
+      {
+        "en": "Swimming in deep water alone is very dangerous.",
+        "cn": "独自在深水中游泳非常危险。",
+        "level": 3,
+        "audioFile": "ex_6b81da256c.mp3"
+      }
+    ],
+    "warning": [
+      {
+        "en": "A warning.",
+        "cn": "一个警告。",
+        "level": 1,
+        "audioFile": "ex_fe783b132b.mp3"
+      },
+      {
+        "en": "Read the warning sign.",
+        "cn": "读警示牌。",
+        "level": 2,
+        "audioFile": "ex_2ef4ce25a6.mp3"
+      },
+      {
+        "en": "The warning sign says \"No swimming\" by this part of the lake.",
+        "cn": "湖这一段的警示牌写着\"禁止游泳\"。",
+        "level": 3,
+        "audioFile": "ex_c9f06cc99f.mp3"
+      }
+    ],
+    "rule": [
+      {
+        "en": "Follow the rules.",
+        "cn": "守规则。",
+        "level": 1,
+        "audioFile": "ex_3771671d4f.mp3"
+      },
+      {
+        "en": "The park has rules.",
+        "cn": "公园有规定。",
+        "level": 2,
+        "audioFile": "ex_9a166edeb4.mp3"
+      },
+      {
+        "en": "We should follow the rules of every place we visit.",
+        "cn": "我们应当遵守每个游览地点的规则。",
+        "level": 3,
+        "audioFile": "ex_608bce71ba.mp3"
+      }
+    ],
+    "follow": [
+      {
+        "en": "Follow me.",
+        "cn": "跟我来。",
+        "level": 1,
+        "audioFile": "ex_5a7399f546.mp3"
+      },
+      {
+        "en": "Follow your teacher.",
+        "cn": "跟着老师。",
+        "level": 2,
+        "audioFile": "ex_b3cae51f16.mp3"
+      },
+      {
+        "en": "Always follow the safety rules on a school trip.",
+        "cn": "学校旅行一定要遵守安全规则。",
+        "level": 3,
+        "audioFile": "ex_653f0394f7.mp3"
+      }
+    ],
+    "careful": [
+      {
+        "en": "Be careful!",
+        "cn": "小心！",
+        "level": 1,
+        "audioFile": "ex_f81b25cf8f.mp3"
+      },
+      {
+        "en": "Be careful with money.",
+        "cn": "看好你的钱。",
+        "level": 2,
+        "audioFile": "ex_8e1c6c1228.mp3"
+      },
+      {
+        "en": "Be very careful when you cross a busy road.",
+        "cn": "过繁忙的马路时要非常小心。",
+        "level": 3,
+        "audioFile": "ex_21a45bc743.mp3"
+      }
+    ],
+    "phone": [
+      {
+        "en": "A phone.",
+        "cn": "一部电话。",
+        "level": 1,
+        "audioFile": "ex_ecae4c9da6.mp3"
+      },
+      {
+        "en": "Call on the phone.",
+        "cn": "打电话。",
+        "level": 2,
+        "audioFile": "ex_0e4d8af302.mp3"
+      },
+      {
+        "en": "Bring a phone in case of emergencies.",
+        "cn": "带上手机以备紧急情况。",
+        "level": 3,
+        "audioFile": "ex_50317fac1f.mp3"
+      }
+    ],
+    "remember": [
+      {
+        "en": "Remember it.",
+        "cn": "记住它。",
+        "level": 1,
+        "audioFile": "ex_e17fe2175b.mp3"
+      },
+      {
+        "en": "Remember the number.",
+        "cn": "记住号码。",
+        "level": 2,
+        "audioFile": "ex_0dbffb48ef.mp3"
+      },
+      {
+        "en": "Remember Mum's phone number by heart, just in case.",
+        "cn": "把妈妈的电话号码背下来，以防万一。",
+        "level": 3,
+        "audioFile": "ex_9c63eff3f2.mp3"
+      }
+    ],
+    "journey": [
+      {
+        "en": "A long journey.",
+        "cn": "一段长旅程。",
+        "level": 1,
+        "audioFile": "ex_80ae4ee3d7.mp3"
+      },
+      {
+        "en": "Our journey begins.",
+        "cn": "旅程开始。",
+        "level": 2,
+        "audioFile": "ex_c21a221381.mp3"
+      },
+      {
+        "en": "Life is a journey full of surprises and lessons.",
+        "cn": "人生是一段充满惊喜与教训的旅程。",
+        "level": 3,
+        "audioFile": "ex_700b99ea2a.mp3"
+      }
+    ],
+    "memory": [
+      {
+        "en": "Sweet memory.",
+        "cn": "甜蜜回忆。",
+        "level": 1,
+        "audioFile": "ex_c87b8f9931.mp3"
+      },
+      {
+        "en": "Happy memories.",
+        "cn": "快乐的回忆。",
+        "level": 2,
+        "audioFile": "ex_9a1bcfbba7.mp3"
+      },
+      {
+        "en": "I have wonderful memories of last summer's beach trip.",
+        "cn": "去年夏天的海滩之旅给我留下了美好的回忆。",
+        "level": 3,
+        "audioFile": "ex_d465ceb844.mp3"
+      }
+    ],
+    "diary": [
+      {
+        "en": "My diary.",
+        "cn": "我的日记。",
+        "level": 1,
+        "audioFile": "ex_daf282d215.mp3"
+      },
+      {
+        "en": "Write a diary.",
+        "cn": "写日记。",
+        "level": 2,
+        "audioFile": "ex_0a208b9387.mp3"
+      },
+      {
+        "en": "I have kept a daily diary for three years now.",
+        "cn": "我已经坚持写日记三年了。",
+        "level": 3,
+        "audioFile": "ex_ec2e7be651.mp3"
+      }
+    ],
+    "wonderful": [
+      {
+        "en": "Wonderful!",
+        "cn": "太棒了！",
+        "level": 1,
+        "audioFile": "ex_8bfeaeb640.mp3"
+      },
+      {
+        "en": "A wonderful day.",
+        "cn": "美好的一天。",
+        "level": 2,
+        "audioFile": "ex_318cb4b960.mp3"
+      },
+      {
+        "en": "We had a wonderful time at the science museum.",
+        "cn": "我们在科技馆度过了美妙的时光。",
+        "level": 3,
+        "audioFile": "ex_d2b70df573.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Share it.",
+        "cn": "分享一下。",
+        "level": 1,
+        "audioFile": "ex_792c0c4c0d.mp3"
+      },
+      {
+        "en": "Share the photos.",
+        "cn": "分享照片。",
+        "level": 2,
+        "audioFile": "ex_ca9a5d9550.mp3"
+      },
+      {
+        "en": "I'll share my travel stories with the whole class.",
+        "cn": "我会把旅行故事分享给全班。",
+        "level": 3,
+        "audioFile": "ex_b33ff54e2a.mp3"
+      }
+    ],
+    "thank": [
+      {
+        "en": "Thanks!",
+        "cn": "谢谢！",
+        "level": 1,
+        "audioFile": "ex_38f5c24717.mp3"
+      },
+      {
+        "en": "Thank you all.",
+        "cn": "谢谢大家。",
+        "level": 2,
+        "audioFile": "ex_db58600822.mp3"
+      },
+      {
+        "en": "Thank you for travelling with me this whole journey.",
+        "cn": "谢谢一路陪我旅行。",
+        "level": 3,
+        "audioFile": "ex_5f5b4198e0.mp3"
+      }
+    ]
+  }
+}

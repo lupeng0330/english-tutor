@@ -1,0 +1,42 @@
+{
+  "healthy": [
+    { "en": "Be healthy.", "cn": "要健康。", "level": 1 },
+    { "en": "Apples are healthy.", "cn": "苹果有益健康。", "level": 2 },
+    { "en": "Healthy food and exercise make a happy life.", "cn": "健康饮食和锻炼让生活快乐。", "level": 3 }
+  ],
+  "habit": [
+    { "en": "A good habit.", "cn": "一个好习惯。", "level": 1 },
+    { "en": "I have good habits.", "cn": "我有好习惯。", "level": 2 },
+    { "en": "Reading before bed is a wonderful daily habit.", "cn": "睡前阅读是个很棒的日常习惯。", "level": 3 }
+  ],
+  "exercise": [
+    { "en": "Do exercise.", "cn": "做运动。", "level": 1 },
+    { "en": "I exercise every day.", "cn": "我每天锻炼。", "level": 2 },
+    { "en": "A little exercise in the morning gives me energy all day.", "cn": "早上稍微运动一下，我一整天都有精神。", "level": 3 }
+  ],
+  "sleep": [
+    { "en": "Sleep well.", "cn": "睡好。", "level": 1 },
+    { "en": "I sleep at nine.", "cn": "我九点睡。", "level": 2 },
+    { "en": "Children should sleep at least nine hours every night.", "cn": "孩子每晚至少应睡九小时。", "level": 3 }
+  ],
+  "water": [
+    { "en": "Drink water.", "cn": "喝水。", "level": 1 },
+    { "en": "Water is healthy.", "cn": "水有益健康。", "level": 2 },
+    { "en": "Try to drink eight glasses of water a day.", "cn": "尽量每天喝八杯水。", "level": 3 }
+  ],
+  "sweet": [
+    { "en": "Tasty sweets.", "cn": "好吃的糖果。", "level": 1 },
+    { "en": "Don't eat too many sweets.", "cn": "别吃太多糖。", "level": 2 },
+    { "en": "Too many sweets are not good for your teeth.", "cn": "糖吃太多对牙齿不好。", "level": 3 }
+  ],
+  "fresh": [
+    { "en": "Fresh air.", "cn": "新鲜空气。", "level": 1 },
+    { "en": "Fresh fruit is good.", "cn": "新鲜水果好。", "level": 2 },
+    { "en": "Open the window and breathe in the fresh morning air.", "cn": "打开窗，呼吸清新的早晨空气。", "level": 3 }
+  ],
+  "strong": [
+    { "en": "He is strong.", "cn": "他很强壮。", "level": 1 },
+    { "en": "Milk makes us strong.", "cn": "牛奶让我们强壮。", "level": 2 },
+    { "en": "Daily exercise makes our muscles strong and healthy.", "cn": "每天锻炼让肌肉强壮健康。", "level": 3 }
+  ]
+}

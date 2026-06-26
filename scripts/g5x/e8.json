@@ -1,0 +1,42 @@
+{
+  "safe": [
+    { "en": "Stay safe.", "cn": "注意安全。", "level": 1 },
+    { "en": "Be safe on the road.", "cn": "路上注意安全。", "level": 2 },
+    { "en": "Make sure your bag is in a safe place when travelling.", "cn": "旅行时确保包放在安全的地方。", "level": 3 }
+  ],
+  "danger": [
+    { "en": "Danger!", "cn": "危险！", "level": 1 },
+    { "en": "Stay away from danger.", "cn": "远离危险。", "level": 2 },
+    { "en": "Swimming in deep water alone is very dangerous.", "cn": "独自在深水中游泳非常危险。", "level": 3 }
+  ],
+  "warning": [
+    { "en": "A warning.", "cn": "一个警告。", "level": 1 },
+    { "en": "Read the warning sign.", "cn": "读警示牌。", "level": 2 },
+    { "en": "The warning sign says \"No swimming\" by this part of the lake.", "cn": "湖这一段的警示牌写着\"禁止游泳\"。", "level": 3 }
+  ],
+  "rule": [
+    { "en": "Follow the rules.", "cn": "守规则。", "level": 1 },
+    { "en": "The park has rules.", "cn": "公园有规定。", "level": 2 },
+    { "en": "We should follow the rules of every place we visit.", "cn": "我们应当遵守每个游览地点的规则。", "level": 3 }
+  ],
+  "follow": [
+    { "en": "Follow me.", "cn": "跟我来。", "level": 1 },
+    { "en": "Follow your teacher.", "cn": "跟着老师。", "level": 2 },
+    { "en": "Always follow the safety rules on a school trip.", "cn": "学校旅行一定要遵守安全规则。", "level": 3 }
+  ],
+  "careful": [
+    { "en": "Be careful!", "cn": "小心！", "level": 1 },
+    { "en": "Be careful with money.", "cn": "看好你的钱。", "level": 2 },
+    { "en": "Be very careful when you cross a busy road.", "cn": "过繁忙的马路时要非常小心。", "level": 3 }
+  ],
+  "phone": [
+    { "en": "A phone.", "cn": "一部电话。", "level": 1 },
+    { "en": "Call on the phone.", "cn": "打电话。", "level": 2 },
+    { "en": "Bring a phone in case of emergencies.", "cn": "带上手机以备紧急情况。", "level": 3 }
+  ],
+  "remember": [
+    { "en": "Remember it.", "cn": "记住它。", "level": 1 },
+    { "en": "Remember the number.", "cn": "记住号码。", "level": 2 },
+    { "en": "Remember Mum's phone number by heart, just in case.", "cn": "把妈妈的电话号码背下来，以防万一。", "level": 3 }
+  ]
+}

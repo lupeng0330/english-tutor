@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review My Journey",
+  "words": [
+    { "word": "journey", "phonetic": "/ˈdʒɜːni/", "meaning": "[n.] 旅程", "example": "A long journey." },
+    { "word": "memory", "phonetic": "/ˈmeməri/", "meaning": "[n.] 回忆", "example": "Sweet memories." },
+    { "word": "diary", "phonetic": "/ˈdaɪəri/", "meaning": "[n.] 日记", "example": "Write a diary." },
+    { "word": "wonderful", "phonetic": "/ˈwʌndəfl/", "meaning": "[adj.] 极好的", "example": "A wonderful time." },
+    { "word": "share", "phonetic": "/ʃeə(r)/", "meaning": "[v.] 分享", "example": "Share the photos." },
+    { "word": "thank", "phonetic": "/θæŋk/", "meaning": "[v.] 感谢", "example": "Thank you all." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Telling my story",
+      "en": "Anna: Ben, this summer journey was wonderful!\nBen: Yes. The mountain, the beach, and the city — what fun memories!\nAnna: I wrote everything in my diary.\nBen: Let's share the photos with the class.\nAnna: Thank you, Ben, for travelling with me.",
+      "cn": "安娜：本，这个夏天的旅程太棒了！\n本：是的，山、海滩、城市——多么美好的回忆！\n安娜：我都写到日记里了。\n本：我们和班里同学分享照片吧。\n安娜：谢谢你，本，陪我一起旅行。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My summer journey",
+      "en": "My summer journey was full of wonderful moments. We climbed mountains, swam in the sea, and made friends with kids from another city. I learned to ask the way in English and pay for souvenirs by myself. My diary has fifty pages of stories now. I will share them with my classmates. A journey is the best teacher, and thank you, summer!",
+      "cn": "我的夏日旅程满是精彩瞬间。我们爬山、游海、与外地小伙伴交朋友。我学会用英语问路、自己付钱买纪念品。日记已经写了五十页故事。我要和同学分享。旅行是最好的老师，谢谢你，夏天！"
+    }
+  ]
+}

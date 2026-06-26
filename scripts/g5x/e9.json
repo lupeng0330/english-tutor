@@ -1,0 +1,32 @@
+{
+  "journey": [
+    { "en": "A long journey.", "cn": "一段长旅程。", "level": 1 },
+    { "en": "Our journey begins.", "cn": "旅程开始。", "level": 2 },
+    { "en": "Life is a journey full of surprises and lessons.", "cn": "人生是一段充满惊喜与教训的旅程。", "level": 3 }
+  ],
+  "memory": [
+    { "en": "Sweet memory.", "cn": "甜蜜回忆。", "level": 1 },
+    { "en": "Happy memories.", "cn": "快乐的回忆。", "level": 2 },
+    { "en": "I have wonderful memories of last summer's beach trip.", "cn": "去年夏天的海滩之旅给我留下了美好的回忆。", "level": 3 }
+  ],
+  "diary": [
+    { "en": "My diary.", "cn": "我的日记。", "level": 1 },
+    { "en": "Write a diary.", "cn": "写日记。", "level": 2 },
+    { "en": "I have kept a daily diary for three years now.", "cn": "我已经坚持写日记三年了。", "level": 3 }
+  ],
+  "wonderful": [
+    { "en": "Wonderful!", "cn": "太棒了！", "level": 1 },
+    { "en": "A wonderful day.", "cn": "美好的一天。", "level": 2 },
+    { "en": "We had a wonderful time at the science museum.", "cn": "我们在科技馆度过了美妙的时光。", "level": 3 }
+  ],
+  "share": [
+    { "en": "Share it.", "cn": "分享一下。", "level": 1 },
+    { "en": "Share the photos.", "cn": "分享照片。", "level": 2 },
+    { "en": "I'll share my travel stories with the whole class.", "cn": "我会把旅行故事分享给全班。", "level": 3 }
+  ],
+  "thank": [
+    { "en": "Thanks!", "cn": "谢谢！", "level": 1 },
+    { "en": "Thank you all.", "cn": "谢谢大家。", "level": 2 },
+    { "en": "Thank you for travelling with me this whole journey.", "cn": "谢谢一路陪我旅行。", "level": 3 }
+  ]
+}

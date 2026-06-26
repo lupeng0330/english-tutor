@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 Helping Hands",
+  "words": [
+    { "word": "help", "phonetic": "/help/", "meaning": "[v.] 帮助", "example": "I help my friend." },
+    { "word": "volunteer", "phonetic": "/ˌvɒlənˈtɪə(r)/", "meaning": "[n./v.] 志愿者", "example": "She is a volunteer." },
+    { "word": "elderly", "phonetic": "/ˈeldəli/", "meaning": "[adj.] 年长的", "example": "Help elderly people." },
+    { "word": "kind", "phonetic": "/kaɪnd/", "meaning": "[adj.] 友善的", "example": "Be kind to others." },
+    { "word": "smile", "phonetic": "/smaɪl/", "meaning": "[n./v.] 微笑", "example": "Give a smile." },
+    { "word": "share", "phonetic": "/ʃeə(r)/", "meaning": "[v.] 分享", "example": "Share with friends." },
+    { "word": "neighbour", "phonetic": "/ˈneɪbə(r)/", "meaning": "[n.] 邻居", "example": "Help your neighbours." },
+    { "word": "warm", "phonetic": "/wɔːm/", "meaning": "[adj.] 温暖的", "example": "A warm heart." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "A helping hand",
+      "en": "Anna: Ben, the elderly man next door looks sad today.\nBen: Let's help him. We can carry his bags.\nAnna: Good idea. A small kind act makes the world warmer.\nBen: My mum says, \"A smile is the shortest helping hand.\"\nAnna: True! Let's be kind volunteers in our neighbourhood.",
+      "cn": "安娜：本，隔壁老爷爷今天看上去很难过。\n本：我们去帮他，可以提袋子。\n安娜：好。一件小小善举让世界更温暖。\n本：妈妈说\"微笑是最短的援手\"。\n安娜：对！我们做社区的好志愿者吧。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Small acts, big love",
+      "en": "Last weekend, our class volunteered at the city park. We picked up rubbish, planted flowers, and helped elderly people walk to the bus stop. Some kids shared bread and warm drinks with strangers. A grandma even taught us how to fold paper birds. Small acts of kindness can build a great world. Be a helping hand every day!",
+      "cn": "上周末我们班在城市公园做志愿者。我们捡垃圾、种花、扶老人到公交站。有同学把面包和热饮分给陌生人。一位奶奶还教我们叠纸鸟。小小的善举能建设大世界。每天都做一只援手吧！"
+    }
+  ]
+}

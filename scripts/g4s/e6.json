@@ -1,0 +1,42 @@
+{
+  "animal": [
+    { "en": "An animal.", "cn": "一只动物。", "level": 1 },
+    { "en": "I love animals.", "cn": "我喜欢动物。", "level": 2 },
+    { "en": "Many wild animals live in the forest near our city.", "cn": "我们城市附近的森林里有很多野生动物。", "level": 3 }
+  ],
+  "dog": [
+    { "en": "A big dog.", "cn": "一只大狗。", "level": 1 },
+    { "en": "My dog is brown.", "cn": "我的狗是棕色的。", "level": 2 },
+    { "en": "My dog runs to me as soon as I get home.", "cn": "我一回家小狗就向我跑来。", "level": 3 }
+  ],
+  "cat": [
+    { "en": "A black cat.", "cn": "一只黑猫。", "level": 1 },
+    { "en": "The cat is on the chair.", "cn": "猫在椅子上。", "level": 2 },
+    { "en": "Our cat sleeps in the sun by the window every afternoon.", "cn": "我们的猫每天下午都在窗边的阳光里睡觉。", "level": 3 }
+  ],
+  "bird": [
+    { "en": "A little bird.", "cn": "一只小鸟。", "level": 1 },
+    { "en": "Birds can fly.", "cn": "鸟会飞。", "level": 2 },
+    { "en": "Many birds sing in the tree outside my window.", "cn": "很多鸟在我窗外的树上唱歌。", "level": 3 }
+  ],
+  "fish": [
+    { "en": "A small fish.", "cn": "一条小鱼。", "level": 1 },
+    { "en": "Fish live in water.", "cn": "鱼生活在水里。", "level": 2 },
+    { "en": "We have three goldfish in a big glass bowl.", "cn": "我们在一个大玻璃缸里养了三条金鱼。", "level": 3 }
+  ],
+  "rabbit": [
+    { "en": "A cute rabbit.", "cn": "一只可爱的兔子。", "level": 1 },
+    { "en": "Rabbits eat carrots.", "cn": "兔子吃胡萝卜。", "level": 2 },
+    { "en": "The little rabbit hops happily on the green grass.", "cn": "小兔子在绿草地上欢快地蹦跳。", "level": 3 }
+  ],
+  "panda": [
+    { "en": "A panda.", "cn": "一只熊猫。", "level": 1 },
+    { "en": "Pandas are from China.", "cn": "熊猫来自中国。", "level": 2 },
+    { "en": "Pandas eat bamboo and sleep most of the day.", "cn": "熊猫吃竹子，一天大部分时间都在睡觉。", "level": 3 }
+  ],
+  "zoo": [
+    { "en": "The zoo.", "cn": "动物园。", "level": 1 },
+    { "en": "Let's go to the zoo.", "cn": "我们去动物园吧。", "level": 2 },
+    { "en": "Last Sunday we saw many animals at the zoo.", "cn": "上个周日我们在动物园看了很多动物。", "level": 3 }
+  ]
+}

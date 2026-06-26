@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 Festivals We Love",
+  "words": [
+    { "word": "festival", "phonetic": "/ˈfestɪvl/", "meaning": "[n.] 节日", "example": "I love festivals." },
+    { "word": "Christmas", "phonetic": "/ˈkrɪsməs/", "meaning": "[n.] 圣诞节", "example": "Merry Christmas!" },
+    { "word": "Spring Festival", "phonetic": "/sprɪŋ ˈfestɪvl/", "meaning": "[n.] 春节", "example": "We love Spring Festival." },
+    { "word": "gift", "phonetic": "/ɡɪft/", "meaning": "[n.] 礼物", "example": "Here is a gift for you." },
+    { "word": "tree", "phonetic": "/triː/", "meaning": "[n.] 树（圣诞树）", "example": "Look at the Christmas tree." },
+    { "word": "card", "phonetic": "/kɑːd/", "meaning": "[n.] 卡片", "example": "I send a card to her." },
+    { "word": "dinner", "phonetic": "/ˈdɪnə(r)/", "meaning": "[n.] 晚餐；正餐", "example": "We have a big dinner." },
+    { "word": "happy", "phonetic": "/ˈhæpi/", "meaning": "[adj.] 高兴的", "example": "I am very happy today." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "A merry Christmas",
+      "en": "Ben: Merry Christmas, Anna!\nAnna: Merry Christmas, Ben! Look at our Christmas tree.\nBen: Wow, so many gifts under it!\nAnna: I made a card for Mum and Dad.\nBen: How sweet! Let's enjoy the big dinner tonight.",
+      "cn": "本：圣诞快乐，安娜！\n安娜：圣诞快乐，本！看我们的圣诞树。\n本：哇，树下好多礼物！\n安娜：我给爸妈做了张卡片。\n本：好暖心！我们今晚好好享受这顿大餐吧。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Festivals in my family",
+      "en": "My family loves festivals. At Spring Festival, we eat dumplings and visit our grandparents. We get red envelopes — that's so much fun. At Christmas, we put up a tree and sing songs. We make cards for friends. Festivals bring our family closer. They make every year warm and bright!",
+      "cn": "我家喜欢节日。春节时我们吃饺子，去看爷爷奶奶。我们收到红包——很有趣。圣诞节时我们装饰圣诞树、唱歌。我们为朋友做卡片。节日让我们一家更亲近。它们让每一年都温暖又明亮！"
+    }
+  ]
+}

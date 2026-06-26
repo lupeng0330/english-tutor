@@ -1,0 +1,1384 @@
+{
+  "words": {
+    "welcome": [
+      {
+        "en": "Welcome!",
+        "cn": "欢迎！",
+        "level": 1,
+        "audioFile": "ex_9a843f2067.mp3"
+      },
+      {
+        "en": "Welcome to my home.",
+        "cn": "欢迎来我家。",
+        "level": 2,
+        "audioFile": "ex_393247438a.mp3"
+      },
+      {
+        "en": "Welcome to our school — we are very happy to see you.",
+        "cn": "欢迎来我们学校——见到你我们非常开心。",
+        "level": 3,
+        "audioFile": "ex_0a511a2246.mp3"
+      }
+    ],
+    "come in": [
+      {
+        "en": "Come in.",
+        "cn": "进来。",
+        "level": 1,
+        "audioFile": "ex_6c029027da.mp3"
+      },
+      {
+        "en": "Please come in.",
+        "cn": "请进。",
+        "level": 2,
+        "audioFile": "ex_b9dd752030.mp3"
+      },
+      {
+        "en": "Come in and sit down by the warm fire.",
+        "cn": "进来吧，坐到暖暖的炉火旁。",
+        "level": 3,
+        "audioFile": "ex_337c266706.mp3"
+      }
+    ],
+    "house": [
+      {
+        "en": "A new house.",
+        "cn": "一栋新房子。",
+        "level": 1,
+        "audioFile": "ex_0ed78c67bf.mp3"
+      },
+      {
+        "en": "This is my house.",
+        "cn": "这是我的房子。",
+        "level": 2,
+        "audioFile": "ex_6009484180.mp3"
+      },
+      {
+        "en": "Their house is at the end of the street.",
+        "cn": "他们的房子在街道的尽头。",
+        "level": 3,
+        "audioFile": "ex_3fa0690309.mp3"
+      }
+    ],
+    "living room": [
+      {
+        "en": "Our living room.",
+        "cn": "我们的客厅。",
+        "level": 1,
+        "audioFile": "ex_97af5b15e8.mp3"
+      },
+      {
+        "en": "The TV is in the living room.",
+        "cn": "电视在客厅里。",
+        "level": 2,
+        "audioFile": "ex_4e0162fcd7.mp3"
+      },
+      {
+        "en": "We watch movies together in the living room every Saturday.",
+        "cn": "我们每周六在客厅一起看电影。",
+        "level": 3,
+        "audioFile": "ex_4cd3911e00.mp3"
+      }
+    ],
+    "kitchen": [
+      {
+        "en": "It's the kitchen.",
+        "cn": "这是厨房。",
+        "level": 1,
+        "audioFile": "ex_2b490ad364.mp3"
+      },
+      {
+        "en": "Mum is cooking in the kitchen.",
+        "cn": "妈妈在厨房做饭。",
+        "level": 2,
+        "audioFile": "ex_76fd9ed4b0.mp3"
+      },
+      {
+        "en": "The kitchen smells nice when Mum is baking bread.",
+        "cn": "妈妈烤面包时，厨房闻起来香喷喷的。",
+        "level": 3,
+        "audioFile": "ex_64d9e96eb0.mp3"
+      }
+    ],
+    "bedroom": [
+      {
+        "en": "My bedroom.",
+        "cn": "我的卧室。",
+        "level": 1,
+        "audioFile": "ex_9555fcbffc.mp3"
+      },
+      {
+        "en": "My bedroom is small.",
+        "cn": "我的卧室不大。",
+        "level": 2,
+        "audioFile": "ex_2728ca3949.mp3"
+      },
+      {
+        "en": "I keep my bedroom tidy with all the toys on the shelf.",
+        "cn": "我把卧室收拾整齐，所有玩具都放在架子上。",
+        "level": 3,
+        "audioFile": "ex_d591e21523.mp3"
+      }
+    ],
+    "sofa": [
+      {
+        "en": "A soft sofa.",
+        "cn": "一张软沙发。",
+        "level": 1,
+        "audioFile": "ex_3b24302548.mp3"
+      },
+      {
+        "en": "Sit on the sofa.",
+        "cn": "坐在沙发上。",
+        "level": 2,
+        "audioFile": "ex_23b097cb71.mp3"
+      },
+      {
+        "en": "The cat is sleeping happily on the sofa.",
+        "cn": "猫咪正在沙发上开心地睡觉。",
+        "level": 3,
+        "audioFile": "ex_73ee92b596.mp3"
+      }
+    ],
+    "beautiful": [
+      {
+        "en": "Beautiful!",
+        "cn": "真美！",
+        "level": 1,
+        "audioFile": "ex_1b9663d300.mp3"
+      },
+      {
+        "en": "She has a beautiful smile.",
+        "cn": "她笑容很美。",
+        "level": 2,
+        "audioFile": "ex_97afbe31bf.mp3"
+      },
+      {
+        "en": "The garden is full of beautiful flowers in spring.",
+        "cn": "春天花园里开满了美丽的花。",
+        "level": 3,
+        "audioFile": "ex_efbc9c5394.mp3"
+      }
+    ],
+    "family": [
+      {
+        "en": "My family.",
+        "cn": "我的家庭。",
+        "level": 1,
+        "audioFile": "ex_706a32492b.mp3"
+      },
+      {
+        "en": "I love my family.",
+        "cn": "我爱我的家庭。",
+        "level": 2,
+        "audioFile": "ex_02c5061798.mp3"
+      },
+      {
+        "en": "There are five people in my family — Mum, Dad, my brother and me, plus a dog.",
+        "cn": "我家有五口人——妈妈、爸爸、弟弟、我，还有一只狗。",
+        "level": 3,
+        "audioFile": "ex_c4836e1173.mp3"
+      }
+    ],
+    "father": [
+      {
+        "en": "My father.",
+        "cn": "我的父亲。",
+        "level": 1,
+        "audioFile": "ex_02a4242d77.mp3"
+      },
+      {
+        "en": "My father is tall.",
+        "cn": "我父亲个子高。",
+        "level": 2,
+        "audioFile": "ex_4b98e272a2.mp3"
+      },
+      {
+        "en": "My father works as a doctor at the city hospital.",
+        "cn": "我父亲在市医院做医生。",
+        "level": 3,
+        "audioFile": "ex_aaeb61f1e8.mp3"
+      }
+    ],
+    "mother": [
+      {
+        "en": "My mother.",
+        "cn": "我的母亲。",
+        "level": 1,
+        "audioFile": "ex_889ab37b94.mp3"
+      },
+      {
+        "en": "My mother is kind.",
+        "cn": "我母亲很善良。",
+        "level": 2,
+        "audioFile": "ex_1782284cf8.mp3"
+      },
+      {
+        "en": "My mother always smiles even when she is very busy.",
+        "cn": "我母亲就算很忙也总是笑着。",
+        "level": 3,
+        "audioFile": "ex_b67c5bde1a.mp3"
+      }
+    ],
+    "brother": [
+      {
+        "en": "My brother.",
+        "cn": "我的兄弟。",
+        "level": 1,
+        "audioFile": "ex_86ea085692.mp3"
+      },
+      {
+        "en": "My brother is six.",
+        "cn": "我弟弟六岁。",
+        "level": 2,
+        "audioFile": "ex_90d6e25734.mp3"
+      },
+      {
+        "en": "My older brother teaches me how to ride a bike.",
+        "cn": "我哥哥教我骑自行车。",
+        "level": 3,
+        "audioFile": "ex_e9cb0b9520.mp3"
+      }
+    ],
+    "sister": [
+      {
+        "en": "My sister.",
+        "cn": "我的姐妹。",
+        "level": 1,
+        "audioFile": "ex_15f2faf11e.mp3"
+      },
+      {
+        "en": "My sister can sing.",
+        "cn": "我姐姐会唱歌。",
+        "level": 2,
+        "audioFile": "ex_8f0898f73f.mp3"
+      },
+      {
+        "en": "My little sister and I share the same bedroom.",
+        "cn": "我和小妹妹住同一间卧室。",
+        "level": 3,
+        "audioFile": "ex_7618000a4e.mp3"
+      }
+    ],
+    "grandpa": [
+      {
+        "en": "Hi, Grandpa!",
+        "cn": "嗨，爷爷！",
+        "level": 1,
+        "audioFile": "ex_5c5a379ad6.mp3"
+      },
+      {
+        "en": "Grandpa likes tea.",
+        "cn": "爷爷喜欢喝茶。",
+        "level": 2,
+        "audioFile": "ex_bfb68de96c.mp3"
+      },
+      {
+        "en": "Grandpa tells me old stories every evening.",
+        "cn": "爷爷每天晚上给我讲老故事。",
+        "level": 3,
+        "audioFile": "ex_e8f956f987.mp3"
+      }
+    ],
+    "grandma": [
+      {
+        "en": "Hi, Grandma!",
+        "cn": "嗨，奶奶！",
+        "level": 1,
+        "audioFile": "ex_6107dbabf5.mp3"
+      },
+      {
+        "en": "Grandma cooks well.",
+        "cn": "奶奶做饭好吃。",
+        "level": 2,
+        "audioFile": "ex_241ec5e1f3.mp3"
+      },
+      {
+        "en": "Grandma always makes my favourite dumplings on weekends.",
+        "cn": "奶奶周末总会做我最爱吃的饺子。",
+        "level": 3,
+        "audioFile": "ex_53a5026fb8.mp3"
+      }
+    ],
+    "love": [
+      {
+        "en": "I love you.",
+        "cn": "我爱你。",
+        "level": 1,
+        "audioFile": "ex_6a0f33ca35.mp3"
+      },
+      {
+        "en": "I love my family.",
+        "cn": "我爱我的家。",
+        "level": 2,
+        "audioFile": "ex_02c5061798.mp3"
+      },
+      {
+        "en": "Love makes our family strong and happy.",
+        "cn": "爱让我们的家庭坚强又快乐。",
+        "level": 3,
+        "audioFile": "ex_615d1a4314.mp3"
+      }
+    ],
+    "study": [
+      {
+        "en": "I study hard.",
+        "cn": "我努力学习。",
+        "level": 1,
+        "audioFile": "ex_7e82dfa177.mp3"
+      },
+      {
+        "en": "We study English at school.",
+        "cn": "我们在学校学英语。",
+        "level": 2,
+        "audioFile": "ex_adb8dafdb3.mp3"
+      },
+      {
+        "en": "If you study a little every day, you will be great.",
+        "cn": "如果你每天学一点，你会很棒。",
+        "level": 3,
+        "audioFile": "ex_70da9c881f.mp3"
+      }
+    ],
+    "bathroom": [
+      {
+        "en": "The bathroom.",
+        "cn": "浴室。",
+        "level": 1,
+        "audioFile": "ex_c779a8431c.mp3"
+      },
+      {
+        "en": "Wash your hands in the bathroom.",
+        "cn": "在浴室洗手。",
+        "level": 2,
+        "audioFile": "ex_6ef70416c6.mp3"
+      },
+      {
+        "en": "Our bathroom is small but very clean.",
+        "cn": "我们的浴室不大但很干净。",
+        "level": 3,
+        "audioFile": "ex_674128038d.mp3"
+      }
+    ],
+    "table": [
+      {
+        "en": "A round table.",
+        "cn": "一张圆桌。",
+        "level": 1,
+        "audioFile": "ex_e0dba58965.mp3"
+      },
+      {
+        "en": "Put the cup on the table.",
+        "cn": "把杯子放在桌上。",
+        "level": 2,
+        "audioFile": "ex_cc5ef65197.mp3"
+      },
+      {
+        "en": "We eat dinner around the table every night.",
+        "cn": "我们每天晚上围着桌子吃饭。",
+        "level": 3,
+        "audioFile": "ex_ff6801afc9.mp3"
+      }
+    ],
+    "lamp": [
+      {
+        "en": "A small lamp.",
+        "cn": "一盏小灯。",
+        "level": 1,
+        "audioFile": "ex_2c6413d70d.mp3"
+      },
+      {
+        "en": "I read with a lamp.",
+        "cn": "我用灯看书。",
+        "level": 2,
+        "audioFile": "ex_81c1b814f3.mp3"
+      },
+      {
+        "en": "The lamp on my desk makes the room bright.",
+        "cn": "我桌上的灯让房间变亮。",
+        "level": 3,
+        "audioFile": "ex_e8a28ecdf9.mp3"
+      }
+    ],
+    "bed": [
+      {
+        "en": "A big bed.",
+        "cn": "一张大床。",
+        "level": 1,
+        "audioFile": "ex_b049bd367f.mp3"
+      },
+      {
+        "en": "I jump on the bed.",
+        "cn": "我在床上跳。",
+        "level": 2,
+        "audioFile": "ex_f6bd35a08c.mp3"
+      },
+      {
+        "en": "My bed is so soft that I fall asleep in minutes.",
+        "cn": "我的床很软，几分钟就睡着了。",
+        "level": 3,
+        "audioFile": "ex_14f5492584.mp3"
+      }
+    ],
+    "door": [
+      {
+        "en": "Close the door.",
+        "cn": "关门。",
+        "level": 1,
+        "audioFile": "ex_fdddaf6680.mp3"
+      },
+      {
+        "en": "Open the door, please.",
+        "cn": "请把门打开。",
+        "level": 2,
+        "audioFile": "ex_274e9c16ce.mp3"
+      },
+      {
+        "en": "Someone is knocking at the door — please go and open it.",
+        "cn": "有人在敲门——请去开一下。",
+        "level": 3,
+        "audioFile": "ex_357664e1ef.mp3"
+      }
+    ],
+    "garden": [
+      {
+        "en": "A small garden.",
+        "cn": "一个小花园。",
+        "level": 1,
+        "audioFile": "ex_0059317664.mp3"
+      },
+      {
+        "en": "Flowers grow in the garden.",
+        "cn": "花在花园里开。",
+        "level": 2,
+        "audioFile": "ex_5db7a3b899.mp3"
+      },
+      {
+        "en": "Grandpa grows many vegetables in the garden behind our house.",
+        "cn": "爷爷在我们家屋后的花园里种了很多蔬菜。",
+        "level": 3,
+        "audioFile": "ex_113d42a4f6.mp3"
+      }
+    ],
+    "upstairs": [
+      {
+        "en": "Go upstairs.",
+        "cn": "上楼。",
+        "level": 1,
+        "audioFile": "ex_f3ea4d0b0e.mp3"
+      },
+      {
+        "en": "My bedroom is upstairs.",
+        "cn": "我卧室在楼上。",
+        "level": 2,
+        "audioFile": "ex_edbee9ce8f.mp3"
+      },
+      {
+        "en": "Run upstairs and bring me my book, please.",
+        "cn": "请跑到楼上把我的书拿下来。",
+        "level": 3,
+        "audioFile": "ex_f14c951dc6.mp3"
+      }
+    ],
+    "do": [
+      {
+        "en": "What do you do?",
+        "cn": "你做什么？",
+        "level": 1,
+        "audioFile": "ex_ecd337ba07.mp3"
+      },
+      {
+        "en": "I do my homework.",
+        "cn": "我做作业。",
+        "level": 2,
+        "audioFile": "ex_144786b503.mp3"
+      },
+      {
+        "en": "We do many fun things together at school every day.",
+        "cn": "我们每天在学校一起做很多有趣的事。",
+        "level": 3,
+        "audioFile": "ex_1d25b8fa3c.mp3"
+      }
+    ],
+    "read": [
+      {
+        "en": "I read a book.",
+        "cn": "我看书。",
+        "level": 1,
+        "audioFile": "ex_d99c51b4f8.mp3"
+      },
+      {
+        "en": "She reads English every day.",
+        "cn": "她每天读英语。",
+        "level": 2,
+        "audioFile": "ex_154ed3fb85.mp3"
+      },
+      {
+        "en": "I read storybooks for half an hour before bed.",
+        "cn": "睡前我看故事书半小时。",
+        "level": 3,
+        "audioFile": "ex_fea44b4a52.mp3"
+      }
+    ],
+    "write": [
+      {
+        "en": "Write here.",
+        "cn": "在这里写。",
+        "level": 1,
+        "audioFile": "ex_40fdff0617.mp3"
+      },
+      {
+        "en": "Write your name, please.",
+        "cn": "请写你的名字。",
+        "level": 2,
+        "audioFile": "ex_8ede5e83d0.mp3"
+      },
+      {
+        "en": "I write a letter to my grandma every month.",
+        "cn": "我每月给奶奶写一封信。",
+        "level": 3,
+        "audioFile": "ex_7c9634db5f.mp3"
+      }
+    ],
+    "draw": [
+      {
+        "en": "I draw a cat.",
+        "cn": "我画一只猫。",
+        "level": 1,
+        "audioFile": "ex_e3010e72f5.mp3"
+      },
+      {
+        "en": "She likes to draw.",
+        "cn": "她喜欢画画。",
+        "level": 2,
+        "audioFile": "ex_e8826810c6.mp3"
+      },
+      {
+        "en": "He can draw the school in just a few minutes.",
+        "cn": "他几分钟就能画出学校。",
+        "level": 3,
+        "audioFile": "ex_340faa8362.mp3"
+      }
+    ],
+    "watch": [
+      {
+        "en": "I watch TV.",
+        "cn": "我看电视。",
+        "level": 1,
+        "audioFile": "ex_57c4390543.mp3"
+      },
+      {
+        "en": "We watch the football match.",
+        "cn": "我们看足球比赛。",
+        "level": 2,
+        "audioFile": "ex_bcf4cbe768.mp3"
+      },
+      {
+        "en": "On Friday night we watch a movie at home.",
+        "cn": "周五晚我们在家看电影。",
+        "level": 3,
+        "audioFile": "ex_949c58a164.mp3"
+      }
+    ],
+    "TV": [
+      {
+        "en": "Turn on the TV.",
+        "cn": "打开电视。",
+        "level": 1,
+        "audioFile": "ex_d3372606f2.mp3"
+      },
+      {
+        "en": "I watch TV after dinner.",
+        "cn": "我晚饭后看电视。",
+        "level": 2,
+        "audioFile": "ex_a6fa1ce54f.mp3"
+      },
+      {
+        "en": "Don't watch too much TV — it's not good for your eyes.",
+        "cn": "不要看太久电视，对眼睛不好。",
+        "level": 3,
+        "audioFile": "ex_dfa371417f.mp3"
+      }
+    ],
+    "every day": [
+      {
+        "en": "I read every day.",
+        "cn": "我每天看书。",
+        "level": 1,
+        "audioFile": "ex_3dbedb1575.mp3"
+      },
+      {
+        "en": "I drink milk every day.",
+        "cn": "我每天喝牛奶。",
+        "level": 2,
+        "audioFile": "ex_00a4d22e9a.mp3"
+      },
+      {
+        "en": "I practise the piano for thirty minutes every day.",
+        "cn": "我每天练琴三十分钟。",
+        "level": 3,
+        "audioFile": "ex_ae3ffe5e21.mp3"
+      }
+    ],
+    "hobby": [
+      {
+        "en": "My hobby.",
+        "cn": "我的爱好。",
+        "level": 1,
+        "audioFile": "ex_59fe061799.mp3"
+      },
+      {
+        "en": "My hobby is reading.",
+        "cn": "我的爱好是读书。",
+        "level": 2,
+        "audioFile": "ex_090a20764a.mp3"
+      },
+      {
+        "en": "What's your hobby — singing, dancing, or something else?",
+        "cn": "你的爱好是什么——唱歌、跳舞，还是别的？",
+        "level": 3,
+        "audioFile": "ex_9a01863469.mp3"
+      }
+    ],
+    "music": [
+      {
+        "en": "I love music.",
+        "cn": "我喜欢音乐。",
+        "level": 1,
+        "audioFile": "ex_5b5a26dcd1.mp3"
+      },
+      {
+        "en": "Music makes me happy.",
+        "cn": "音乐让我开心。",
+        "level": 2,
+        "audioFile": "ex_11fb32f508.mp3"
+      },
+      {
+        "en": "Music class is the best part of my school day.",
+        "cn": "音乐课是我一天里最好的部分。",
+        "level": 3,
+        "audioFile": "ex_6ef450e309.mp3"
+      }
+    ],
+    "piano": [
+      {
+        "en": "Play the piano.",
+        "cn": "弹钢琴。",
+        "level": 1,
+        "audioFile": "ex_56becee70e.mp3"
+      },
+      {
+        "en": "She plays the piano well.",
+        "cn": "她钢琴弹得很好。",
+        "level": 2,
+        "audioFile": "ex_b3454e10e6.mp3"
+      },
+      {
+        "en": "I have been learning the piano for three years.",
+        "cn": "我学钢琴三年了。",
+        "level": 3,
+        "audioFile": "ex_0d866c54bd.mp3"
+      }
+    ],
+    "guitar": [
+      {
+        "en": "Play the guitar.",
+        "cn": "弹吉他。",
+        "level": 1,
+        "audioFile": "ex_d935d9a68b.mp3"
+      },
+      {
+        "en": "Dad has a new guitar.",
+        "cn": "爸爸有把新吉他。",
+        "level": 2,
+        "audioFile": "ex_d9498840b9.mp3"
+      },
+      {
+        "en": "My brother plays the guitar and sings on the stage.",
+        "cn": "我哥哥在舞台上弹吉他唱歌。",
+        "level": 3,
+        "audioFile": "ex_c0827e08b5.mp3"
+      }
+    ],
+    "dance": [
+      {
+        "en": "Let's dance!",
+        "cn": "我们跳舞吧！",
+        "level": 1,
+        "audioFile": "ex_1bdabd250c.mp3"
+      },
+      {
+        "en": "I can dance well.",
+        "cn": "我跳舞跳得好。",
+        "level": 2,
+        "audioFile": "ex_8f7d67aec6.mp3"
+      },
+      {
+        "en": "Lily dances on the stage every Friday afternoon.",
+        "cn": "莉莉每周五下午都在舞台上跳舞。",
+        "level": 3,
+        "audioFile": "ex_38be46ad57.mp3"
+      }
+    ],
+    "swim": [
+      {
+        "en": "I can swim.",
+        "cn": "我会游泳。",
+        "level": 1,
+        "audioFile": "ex_e809265158.mp3"
+      },
+      {
+        "en": "We swim in summer.",
+        "cn": "夏天我们去游泳。",
+        "level": 2,
+        "audioFile": "ex_c70eb349af.mp3"
+      },
+      {
+        "en": "Dad teaches me to swim in the pool on Sundays.",
+        "cn": "周日爸爸在泳池里教我游泳。",
+        "level": 3,
+        "audioFile": "ex_14ab8c323b.mp3"
+      }
+    ],
+    "cook": [
+      {
+        "en": "Mum cooks.",
+        "cn": "妈妈做饭。",
+        "level": 1,
+        "audioFile": "ex_a03d16cabf.mp3"
+      },
+      {
+        "en": "I help Mum cook dinner.",
+        "cn": "我帮妈妈做晚餐。",
+        "level": 2,
+        "audioFile": "ex_82f420adcb.mp3"
+      },
+      {
+        "en": "Grandma can cook over twenty kinds of dishes.",
+        "cn": "奶奶能做二十多道菜。",
+        "level": 3,
+        "audioFile": "ex_93b50fbd94.mp3"
+      }
+    ],
+    "favourite": [
+      {
+        "en": "My favourite.",
+        "cn": "我的最爱。",
+        "level": 1,
+        "audioFile": "ex_b55c35bbf8.mp3"
+      },
+      {
+        "en": "Red is my favourite colour.",
+        "cn": "红色是我最喜欢的颜色。",
+        "level": 2,
+        "audioFile": "ex_d97e35671c.mp3"
+      },
+      {
+        "en": "Reading is my favourite way to spend a rainy day.",
+        "cn": "读书是我度过雨天最喜欢的方式。",
+        "level": 3,
+        "audioFile": "ex_20f0645feb.mp3"
+      }
+    ],
+    "animal": [
+      {
+        "en": "An animal.",
+        "cn": "一只动物。",
+        "level": 1,
+        "audioFile": "ex_220694447e.mp3"
+      },
+      {
+        "en": "I love animals.",
+        "cn": "我喜欢动物。",
+        "level": 2,
+        "audioFile": "ex_546f1650ea.mp3"
+      },
+      {
+        "en": "Many wild animals live in the forest near our city.",
+        "cn": "我们城市附近的森林里有很多野生动物。",
+        "level": 3,
+        "audioFile": "ex_5c108c1520.mp3"
+      }
+    ],
+    "dog": [
+      {
+        "en": "A big dog.",
+        "cn": "一只大狗。",
+        "level": 1,
+        "audioFile": "ex_5cf1ffb0dd.mp3"
+      },
+      {
+        "en": "My dog is brown.",
+        "cn": "我的狗是棕色的。",
+        "level": 2,
+        "audioFile": "ex_67f8be584f.mp3"
+      },
+      {
+        "en": "My dog runs to me as soon as I get home.",
+        "cn": "我一回家小狗就向我跑来。",
+        "level": 3,
+        "audioFile": "ex_0e84fe9ab8.mp3"
+      }
+    ],
+    "cat": [
+      {
+        "en": "A black cat.",
+        "cn": "一只黑猫。",
+        "level": 1,
+        "audioFile": "ex_d8852cd29c.mp3"
+      },
+      {
+        "en": "The cat is on the chair.",
+        "cn": "猫在椅子上。",
+        "level": 2,
+        "audioFile": "ex_2d09721ac6.mp3"
+      },
+      {
+        "en": "Our cat sleeps in the sun by the window every afternoon.",
+        "cn": "我们的猫每天下午都在窗边的阳光里睡觉。",
+        "level": 3,
+        "audioFile": "ex_dcc2a36dd0.mp3"
+      }
+    ],
+    "bird": [
+      {
+        "en": "A little bird.",
+        "cn": "一只小鸟。",
+        "level": 1,
+        "audioFile": "ex_6123e5b39a.mp3"
+      },
+      {
+        "en": "Birds can fly.",
+        "cn": "鸟会飞。",
+        "level": 2,
+        "audioFile": "ex_394fdc99a4.mp3"
+      },
+      {
+        "en": "Many birds sing in the tree outside my window.",
+        "cn": "很多鸟在我窗外的树上唱歌。",
+        "level": 3,
+        "audioFile": "ex_3b8edfbade.mp3"
+      }
+    ],
+    "fish": [
+      {
+        "en": "A small fish.",
+        "cn": "一条小鱼。",
+        "level": 1,
+        "audioFile": "ex_435e948e93.mp3"
+      },
+      {
+        "en": "Fish live in water.",
+        "cn": "鱼生活在水里。",
+        "level": 2,
+        "audioFile": "ex_913a384dc0.mp3"
+      },
+      {
+        "en": "We have three goldfish in a big glass bowl.",
+        "cn": "我们在一个大玻璃缸里养了三条金鱼。",
+        "level": 3,
+        "audioFile": "ex_39ef45e800.mp3"
+      }
+    ],
+    "rabbit": [
+      {
+        "en": "A cute rabbit.",
+        "cn": "一只可爱的兔子。",
+        "level": 1,
+        "audioFile": "ex_91f3fe42b7.mp3"
+      },
+      {
+        "en": "Rabbits eat carrots.",
+        "cn": "兔子吃胡萝卜。",
+        "level": 2,
+        "audioFile": "ex_fe5aa42098.mp3"
+      },
+      {
+        "en": "The little rabbit hops happily on the green grass.",
+        "cn": "小兔子在绿草地上欢快地蹦跳。",
+        "level": 3,
+        "audioFile": "ex_18fc82efd4.mp3"
+      }
+    ],
+    "panda": [
+      {
+        "en": "A panda.",
+        "cn": "一只熊猫。",
+        "level": 1,
+        "audioFile": "ex_1d5fed9da1.mp3"
+      },
+      {
+        "en": "Pandas are from China.",
+        "cn": "熊猫来自中国。",
+        "level": 2,
+        "audioFile": "ex_216b5ca0a1.mp3"
+      },
+      {
+        "en": "Pandas eat bamboo and sleep most of the day.",
+        "cn": "熊猫吃竹子，一天大部分时间都在睡觉。",
+        "level": 3,
+        "audioFile": "ex_d9ca6f33f5.mp3"
+      }
+    ],
+    "zoo": [
+      {
+        "en": "The zoo.",
+        "cn": "动物园。",
+        "level": 1,
+        "audioFile": "ex_fed1ea9994.mp3"
+      },
+      {
+        "en": "Let's go to the zoo.",
+        "cn": "我们去动物园吧。",
+        "level": 2,
+        "audioFile": "ex_8c53a75fc8.mp3"
+      },
+      {
+        "en": "Last Sunday we saw many animals at the zoo.",
+        "cn": "上个周日我们在动物园看了很多动物。",
+        "level": 3,
+        "audioFile": "ex_42060f2a27.mp3"
+      }
+    ],
+    "weekend": [
+      {
+        "en": "Have a nice weekend!",
+        "cn": "周末愉快！",
+        "level": 1,
+        "audioFile": "ex_c7dfc3c189.mp3"
+      },
+      {
+        "en": "I rest on the weekend.",
+        "cn": "我周末休息。",
+        "level": 2,
+        "audioFile": "ex_c6403aa79c.mp3"
+      },
+      {
+        "en": "Our family always goes for a walk together on the weekend.",
+        "cn": "我们一家周末总是一起散步。",
+        "level": 3,
+        "audioFile": "ex_1bbedf1d54.mp3"
+      }
+    ],
+    "Saturday": [
+      {
+        "en": "It's Saturday.",
+        "cn": "今天是星期六。",
+        "level": 1,
+        "audioFile": "ex_4fc2e106aa.mp3"
+      },
+      {
+        "en": "We play on Saturday.",
+        "cn": "我们星期六玩。",
+        "level": 2,
+        "audioFile": "ex_411f03dfb3.mp3"
+      },
+      {
+        "en": "Every Saturday morning I have a piano lesson.",
+        "cn": "每周六上午我有钢琴课。",
+        "level": 3,
+        "audioFile": "ex_be169db03b.mp3"
+      }
+    ],
+    "Sunday": [
+      {
+        "en": "It's Sunday.",
+        "cn": "今天是星期天。",
+        "level": 1,
+        "audioFile": "ex_aa98d4ade6.mp3"
+      },
+      {
+        "en": "I rest on Sunday.",
+        "cn": "我周日休息。",
+        "level": 2,
+        "audioFile": "ex_92fa699601.mp3"
+      },
+      {
+        "en": "On Sunday afternoon we visit Grandma and Grandpa.",
+        "cn": "周日下午我们去看爷爷奶奶。",
+        "level": 3,
+        "audioFile": "ex_1a4d547271.mp3"
+      }
+    ],
+    "park": [
+      {
+        "en": "Go to the park.",
+        "cn": "去公园。",
+        "level": 1,
+        "audioFile": "ex_1baf5d0e08.mp3"
+      },
+      {
+        "en": "The park is big.",
+        "cn": "公园很大。",
+        "level": 2,
+        "audioFile": "ex_42a4a00d6f.mp3"
+      },
+      {
+        "en": "In the park there are tall trees and a small lake.",
+        "cn": "公园里有高高的树和一个小湖。",
+        "level": 3,
+        "audioFile": "ex_5ad9a672e5.mp3"
+      }
+    ],
+    "shop": [
+      {
+        "en": "Mum shops.",
+        "cn": "妈妈购物。",
+        "level": 1,
+        "audioFile": "ex_28aa6b860b.mp3"
+      },
+      {
+        "en": "We shop on Saturday.",
+        "cn": "我们周六购物。",
+        "level": 2,
+        "audioFile": "ex_2290991981.mp3"
+      },
+      {
+        "en": "Mum and I shop for fruit at the market every Sunday.",
+        "cn": "每周日我和妈妈去市场买水果。",
+        "level": 3,
+        "audioFile": "ex_bf28544db4.mp3"
+      }
+    ],
+    "movie": [
+      {
+        "en": "A good movie.",
+        "cn": "一部好电影。",
+        "level": 1,
+        "audioFile": "ex_792affade2.mp3"
+      },
+      {
+        "en": "We see a movie.",
+        "cn": "我们看电影。",
+        "level": 2,
+        "audioFile": "ex_b0ba421102.mp3"
+      },
+      {
+        "en": "The new movie about space is really exciting.",
+        "cn": "那部关于太空的新电影真精彩。",
+        "level": 3,
+        "audioFile": "ex_65e5ffe49b.mp3"
+      }
+    ],
+    "picnic": [
+      {
+        "en": "A picnic.",
+        "cn": "野餐。",
+        "level": 1,
+        "audioFile": "ex_714eca63d2.mp3"
+      },
+      {
+        "en": "We have a picnic.",
+        "cn": "我们野餐。",
+        "level": 2,
+        "audioFile": "ex_e8dcbb21ec.mp3"
+      },
+      {
+        "en": "We had a picnic by the lake last Saturday afternoon.",
+        "cn": "上周六下午我们在湖边野餐。",
+        "level": 3,
+        "audioFile": "ex_51ae78911b.mp3"
+      }
+    ],
+    "fun": [
+      {
+        "en": "It's fun.",
+        "cn": "好玩。",
+        "level": 1,
+        "audioFile": "ex_c777daa8fe.mp3"
+      },
+      {
+        "en": "We have fun together.",
+        "cn": "我们一起玩得开心。",
+        "level": 2,
+        "audioFile": "ex_235f1f321d.mp3"
+      },
+      {
+        "en": "Spending time with friends and family is great fun.",
+        "cn": "和朋友家人在一起最开心了。",
+        "level": 3,
+        "audioFile": "ex_38c2504e9a.mp3"
+      }
+    ],
+    "festival": [
+      {
+        "en": "A festival.",
+        "cn": "一个节日。",
+        "level": 1,
+        "audioFile": "ex_4b14e91f70.mp3"
+      },
+      {
+        "en": "I love festivals.",
+        "cn": "我喜欢节日。",
+        "level": 2,
+        "audioFile": "ex_8bb1c395e1.mp3"
+      },
+      {
+        "en": "Festivals bring our family together every year.",
+        "cn": "节日每年把我们家人聚在一起。",
+        "level": 3,
+        "audioFile": "ex_6f05996a2c.mp3"
+      }
+    ],
+    "Christmas": [
+      {
+        "en": "Merry Christmas!",
+        "cn": "圣诞快乐！",
+        "level": 1,
+        "audioFile": "ex_4757e749b5.mp3"
+      },
+      {
+        "en": "Christmas is in December.",
+        "cn": "圣诞节在十二月。",
+        "level": 2,
+        "audioFile": "ex_4901c379b8.mp3"
+      },
+      {
+        "en": "On Christmas morning, children open gifts under the tree.",
+        "cn": "圣诞节早上，孩子们在树下拆礼物。",
+        "level": 3,
+        "audioFile": "ex_0626e87c81.mp3"
+      }
+    ],
+    "Spring Festival": [
+      {
+        "en": "Spring Festival.",
+        "cn": "春节。",
+        "level": 1,
+        "audioFile": "ex_9459d4c7f8.mp3"
+      },
+      {
+        "en": "We eat dumplings at Spring Festival.",
+        "cn": "我们春节吃饺子。",
+        "level": 2,
+        "audioFile": "ex_5dd45248c8.mp3"
+      },
+      {
+        "en": "At Spring Festival, we visit our relatives and get red envelopes.",
+        "cn": "春节时我们走亲戚、收红包。",
+        "level": 3,
+        "audioFile": "ex_e994e82c1d.mp3"
+      }
+    ],
+    "gift": [
+      {
+        "en": "A gift.",
+        "cn": "一份礼物。",
+        "level": 1,
+        "audioFile": "ex_0a0838e77b.mp3"
+      },
+      {
+        "en": "Here is a gift for you.",
+        "cn": "这是给你的礼物。",
+        "level": 2,
+        "audioFile": "ex_e24e6e35fc.mp3"
+      },
+      {
+        "en": "Mum loves the small gift I made for her birthday.",
+        "cn": "妈妈很喜欢我为她生日做的小礼物。",
+        "level": 3,
+        "audioFile": "ex_28b305d2d8.mp3"
+      }
+    ],
+    "tree": [
+      {
+        "en": "A big tree.",
+        "cn": "一棵大树。",
+        "level": 1,
+        "audioFile": "ex_e8324895bd.mp3"
+      },
+      {
+        "en": "Look at the Christmas tree!",
+        "cn": "看圣诞树！",
+        "level": 2,
+        "audioFile": "ex_1a9932a302.mp3"
+      },
+      {
+        "en": "We put colourful lights on the Christmas tree every year.",
+        "cn": "我们每年在圣诞树上挂彩灯。",
+        "level": 3,
+        "audioFile": "ex_b882f748d6.mp3"
+      }
+    ],
+    "card": [
+      {
+        "en": "A card.",
+        "cn": "一张卡片。",
+        "level": 1,
+        "audioFile": "ex_34f58d0516.mp3"
+      },
+      {
+        "en": "I send a card to her.",
+        "cn": "我寄一张卡片给她。",
+        "level": 2,
+        "audioFile": "ex_5fbb8c2298.mp3"
+      },
+      {
+        "en": "My friend made a beautiful card for me on my birthday.",
+        "cn": "我朋友在我生日时给我做了张漂亮的卡片。",
+        "level": 3,
+        "audioFile": "ex_4fc983c619.mp3"
+      }
+    ],
+    "dinner": [
+      {
+        "en": "Time for dinner.",
+        "cn": "吃晚饭啦。",
+        "level": 1,
+        "audioFile": "ex_33bde6449f.mp3"
+      },
+      {
+        "en": "We have a big dinner.",
+        "cn": "我们吃一顿大餐。",
+        "level": 2,
+        "audioFile": "ex_817d3b7bf2.mp3"
+      },
+      {
+        "en": "On Christmas Eve we have a big dinner with all the family.",
+        "cn": "平安夜我们和所有家人一起吃大餐。",
+        "level": 3,
+        "audioFile": "ex_3c9b01e051.mp3"
+      }
+    ],
+    "happy": [
+      {
+        "en": "I am happy.",
+        "cn": "我很开心。",
+        "level": 1,
+        "audioFile": "ex_2b1814c97b.mp3"
+      },
+      {
+        "en": "Happy birthday!",
+        "cn": "生日快乐！",
+        "level": 2,
+        "audioFile": "ex_ae1e2f44f5.mp3"
+      },
+      {
+        "en": "Festivals make every member of our family very happy.",
+        "cn": "节日让我们家每个人都很开心。",
+        "level": 3,
+        "audioFile": "ex_6410df9707.mp3"
+      }
+    ],
+    "new": [
+      {
+        "en": "A new year.",
+        "cn": "新年。",
+        "level": 1,
+        "audioFile": "ex_710bae00b7.mp3"
+      },
+      {
+        "en": "I have a new bag.",
+        "cn": "我有一个新书包。",
+        "level": 2,
+        "audioFile": "ex_ad599fc141.mp3"
+      },
+      {
+        "en": "A new year brings new dreams and new chances.",
+        "cn": "新的一年带来新的梦想和机会。",
+        "level": 3,
+        "audioFile": "ex_66a3e42ff9.mp3"
+      }
+    ],
+    "year": [
+      {
+        "en": "Happy New Year!",
+        "cn": "新年快乐！",
+        "level": 1,
+        "audioFile": "ex_917d5ff63c.mp3"
+      },
+      {
+        "en": "I am nine years old.",
+        "cn": "我九岁。",
+        "level": 2,
+        "audioFile": "ex_b3f70e972f.mp3"
+      },
+      {
+        "en": "Each year I grow a little taller and a little smarter.",
+        "cn": "每一年我都长高一点、变聪明一点。",
+        "level": 3,
+        "audioFile": "ex_bd796d7b36.mp3"
+      }
+    ],
+    "wish": [
+      {
+        "en": "Best wishes!",
+        "cn": "祝福你！",
+        "level": 1,
+        "audioFile": "ex_c053ccd3ed.mp3"
+      },
+      {
+        "en": "I wish you happy.",
+        "cn": "祝你开心。",
+        "level": 2,
+        "audioFile": "ex_7993bfdcb2.mp3"
+      },
+      {
+        "en": "We wish our teacher a happy and healthy year ahead.",
+        "cn": "我们祝老师新的一年快乐健康。",
+        "level": 3,
+        "audioFile": "ex_df7bd447b1.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Share, please.",
+        "cn": "请分享。",
+        "level": 1,
+        "audioFile": "ex_9e7f2eb8ad.mp3"
+      },
+      {
+        "en": "Share with your friend.",
+        "cn": "和朋友分享。",
+        "level": 2,
+        "audioFile": "ex_7bbad2687d.mp3"
+      },
+      {
+        "en": "We share our gifts and stories with each other.",
+        "cn": "我们彼此分享礼物和故事。",
+        "level": 3,
+        "audioFile": "ex_c66fdefc1d.mp3"
+      }
+    ],
+    "thank": [
+      {
+        "en": "Thank you!",
+        "cn": "谢谢你！",
+        "level": 1,
+        "audioFile": "ex_498cd895eb.mp3"
+      },
+      {
+        "en": "Thank you, Mum.",
+        "cn": "谢谢妈妈。",
+        "level": 2,
+        "audioFile": "ex_bbb5e7ed92.mp3"
+      },
+      {
+        "en": "I want to thank everyone for helping me this year.",
+        "cn": "我想感谢今年所有帮过我的人。",
+        "level": 3,
+        "audioFile": "ex_7176480fa9.mp3"
+      }
+    ],
+    "smile": [
+      {
+        "en": "A big smile.",
+        "cn": "一个大大的微笑。",
+        "level": 1,
+        "audioFile": "ex_e59e72c78e.mp3"
+      },
+      {
+        "en": "Give me a smile.",
+        "cn": "给我一个微笑。",
+        "level": 2,
+        "audioFile": "ex_1e5a00a8e6.mp3"
+      },
+      {
+        "en": "Let's start the new year with a warm smile.",
+        "cn": "让我们用温暖的微笑开启新的一年。",
+        "level": 3,
+        "audioFile": "ex_640b4ef053.mp3"
+      }
+    ]
+  }
+}

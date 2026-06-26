@@ -1,0 +1,1404 @@
+{
+  "words": {
+    "new": [
+      {
+        "en": "A new year.",
+        "cn": "新一年。",
+        "level": 1,
+        "audioFile": "ex_710bae00b7.mp3"
+      },
+      {
+        "en": "I have a new bag.",
+        "cn": "我有个新书包。",
+        "level": 2,
+        "audioFile": "ex_ad599fc141.mp3"
+      },
+      {
+        "en": "Starting a new school year always feels exciting.",
+        "cn": "开始新学年总是让人激动。",
+        "level": 3,
+        "audioFile": "ex_3928fcc7d5.mp3"
+      }
+    ],
+    "term": [
+      {
+        "en": "A new term.",
+        "cn": "新学期。",
+        "level": 1,
+        "audioFile": "ex_fa610ed313.mp3"
+      },
+      {
+        "en": "This term is busy.",
+        "cn": "这学期很忙。",
+        "level": 2,
+        "audioFile": "ex_b46002f010.mp3"
+      },
+      {
+        "en": "We have many group projects this term.",
+        "cn": "这学期我们有很多小组项目。",
+        "level": 3,
+        "audioFile": "ex_139c044111.mp3"
+      }
+    ],
+    "classmate": [
+      {
+        "en": "My classmate.",
+        "cn": "我的同学。",
+        "level": 1,
+        "audioFile": "ex_3ed0c0ee4c.mp3"
+      },
+      {
+        "en": "He sits next to me.",
+        "cn": "他坐我旁边。",
+        "level": 2,
+        "audioFile": "ex_15ef763b0e.mp3"
+      },
+      {
+        "en": "I have made three new classmates this week.",
+        "cn": "这周我交了三个新同学。",
+        "level": 3,
+        "audioFile": "ex_210c1bab64.mp3"
+      }
+    ],
+    "introduce": [
+      {
+        "en": "Introduce yourself.",
+        "cn": "做个自我介绍。",
+        "level": 1,
+        "audioFile": "ex_ead4292fda.mp3"
+      },
+      {
+        "en": "Let me introduce my friend.",
+        "cn": "我介绍下我朋友。",
+        "level": 2,
+        "audioFile": "ex_b9c58a959a.mp3"
+      },
+      {
+        "en": "Please introduce yourself to the class with a smile.",
+        "cn": "请微笑着向全班做自我介绍。",
+        "level": 3,
+        "audioFile": "ex_091c2b5052.mp3"
+      }
+    ],
+    "hope": [
+      {
+        "en": "I hope so.",
+        "cn": "我希望如此。",
+        "level": 1,
+        "audioFile": "ex_a63ce35754.mp3"
+      },
+      {
+        "en": "I hope to learn a lot.",
+        "cn": "我希望学到很多。",
+        "level": 2,
+        "audioFile": "ex_801b1b07e0.mp3"
+      },
+      {
+        "en": "I hope my classmates and I become close friends.",
+        "cn": "希望我和同学们成为亲密的朋友。",
+        "level": 3,
+        "audioFile": "ex_6ec5becf7d.mp3"
+      }
+    ],
+    "grade": [
+      {
+        "en": "Grade five.",
+        "cn": "五年级。",
+        "level": 1,
+        "audioFile": "ex_722a8db417.mp3"
+      },
+      {
+        "en": "I am in Grade 5.",
+        "cn": "我五年级。",
+        "level": 2,
+        "audioFile": "ex_416f19797f.mp3"
+      },
+      {
+        "en": "Students in Grade 5 study many new subjects.",
+        "cn": "五年级的学生要学很多新科目。",
+        "level": 3,
+        "audioFile": "ex_e4ff8189a9.mp3"
+      }
+    ],
+    "schedule": [
+      {
+        "en": "The schedule.",
+        "cn": "课程表。",
+        "level": 1,
+        "audioFile": "ex_87ccf2b474.mp3"
+      },
+      {
+        "en": "Look at the schedule.",
+        "cn": "看课程表。",
+        "level": 2,
+        "audioFile": "ex_0328975292.mp3"
+      },
+      {
+        "en": "Our new schedule has English class every morning.",
+        "cn": "新课表每天早上都有英语课。",
+        "level": 3,
+        "audioFile": "ex_5e66450cd4.mp3"
+      }
+    ],
+    "exciting": [
+      {
+        "en": "How exciting!",
+        "cn": "好激动！",
+        "level": 1,
+        "audioFile": "ex_c496c1bbee.mp3"
+      },
+      {
+        "en": "It's an exciting day.",
+        "cn": "这是激动人心的一天。",
+        "level": 2,
+        "audioFile": "ex_07f5f8646f.mp3"
+      },
+      {
+        "en": "Starting Grade 5 is the most exciting moment of the year.",
+        "cn": "升入五年级是一年中最激动的时刻。",
+        "level": 3,
+        "audioFile": "ex_0a4a0f44ea.mp3"
+      }
+    ],
+    "subject": [
+      {
+        "en": "My subject.",
+        "cn": "我的科目。",
+        "level": 1,
+        "audioFile": "ex_dd6f7af45b.mp3"
+      },
+      {
+        "en": "Maths is my subject.",
+        "cn": "数学是我的科目。",
+        "level": 2,
+        "audioFile": "ex_85e738afa5.mp3"
+      },
+      {
+        "en": "Which subject do you find the most interesting?",
+        "cn": "你觉得哪门科目最有趣？",
+        "level": 3,
+        "audioFile": "ex_4255a2188d.mp3"
+      }
+    ],
+    "English": [
+      {
+        "en": "I love English.",
+        "cn": "我爱英语。",
+        "level": 1,
+        "audioFile": "ex_2006624c89.mp3"
+      },
+      {
+        "en": "English class is fun.",
+        "cn": "英语课有趣。",
+        "level": 2,
+        "audioFile": "ex_a71ef10070.mp3"
+      },
+      {
+        "en": "English helps me read stories from many countries.",
+        "cn": "英语帮我读很多国家的故事。",
+        "level": 3,
+        "audioFile": "ex_6967cd32e9.mp3"
+      }
+    ],
+    "Maths": [
+      {
+        "en": "Maths!",
+        "cn": "数学！",
+        "level": 1,
+        "audioFile": "ex_d75e21db1a.mp3"
+      },
+      {
+        "en": "Maths is useful.",
+        "cn": "数学有用。",
+        "level": 2,
+        "audioFile": "ex_274e27a2d7.mp3"
+      },
+      {
+        "en": "I use Maths every time I help Mum count money.",
+        "cn": "我每次帮妈妈算钱都用到数学。",
+        "level": 3,
+        "audioFile": "ex_3936cf6005.mp3"
+      }
+    ],
+    "science": [
+      {
+        "en": "Cool science!",
+        "cn": "酷酷的科学！",
+        "level": 1,
+        "audioFile": "ex_0b40c78730.mp3"
+      },
+      {
+        "en": "Science is fun.",
+        "cn": "科学有趣。",
+        "level": 2,
+        "audioFile": "ex_d271db5fd2.mp3"
+      },
+      {
+        "en": "In science class we did an experiment with water and oil.",
+        "cn": "科学课上我们做了水和油的实验。",
+        "level": 3,
+        "audioFile": "ex_a7b5d51917.mp3"
+      }
+    ],
+    "PE": [
+      {
+        "en": "PE class.",
+        "cn": "体育课。",
+        "level": 1,
+        "audioFile": "ex_435e83acd4.mp3"
+      },
+      {
+        "en": "We have PE today.",
+        "cn": "我们今天有体育课。",
+        "level": 2,
+        "audioFile": "ex_8e9092c252.mp3"
+      },
+      {
+        "en": "PE class makes me healthy and full of energy.",
+        "cn": "体育课让我健康有活力。",
+        "level": 3,
+        "audioFile": "ex_d3472ade15.mp3"
+      }
+    ],
+    "art": [
+      {
+        "en": "Art class.",
+        "cn": "美术课。",
+        "level": 1,
+        "audioFile": "ex_6b465832c5.mp3"
+      },
+      {
+        "en": "I love art.",
+        "cn": "我喜欢美术。",
+        "level": 2,
+        "audioFile": "ex_b7f48db86d.mp3"
+      },
+      {
+        "en": "In art class we painted spring flowers on big paper.",
+        "cn": "美术课我们在大纸上画了春天的花。",
+        "level": 3,
+        "audioFile": "ex_00d2581ed6.mp3"
+      }
+    ],
+    "difficult": [
+      {
+        "en": "It's difficult.",
+        "cn": "好难。",
+        "level": 1,
+        "audioFile": "ex_c0d4cfd2f5.mp3"
+      },
+      {
+        "en": "Maths is difficult.",
+        "cn": "数学有点难。",
+        "level": 2,
+        "audioFile": "ex_900a191a9f.mp3"
+      },
+      {
+        "en": "Today's homework is more difficult than yesterday's.",
+        "cn": "今天作业比昨天难一些。",
+        "level": 3,
+        "audioFile": "ex_0e91bb7880.mp3"
+      }
+    ],
+    "easy": [
+      {
+        "en": "It's easy.",
+        "cn": "好简单。",
+        "level": 1,
+        "audioFile": "ex_a86ded3ba5.mp3"
+      },
+      {
+        "en": "English is easy for me.",
+        "cn": "英语对我很简单。",
+        "level": 2,
+        "audioFile": "ex_71e1adb0f9.mp3"
+      },
+      {
+        "en": "This puzzle is not as easy as it looks.",
+        "cn": "这个谜题不像看起来那么简单。",
+        "level": 3,
+        "audioFile": "ex_ca356386e6.mp3"
+      }
+    ],
+    "talent": [
+      {
+        "en": "Her talent.",
+        "cn": "她的才能。",
+        "level": 1,
+        "audioFile": "ex_1b2da9291a.mp3"
+      },
+      {
+        "en": "She has a great talent.",
+        "cn": "她有很棒的才能。",
+        "level": 2,
+        "audioFile": "ex_94e5a266b3.mp3"
+      },
+      {
+        "en": "Everyone has at least one hidden talent.",
+        "cn": "每个人都至少有一项隐藏才能。",
+        "level": 3,
+        "audioFile": "ex_30b0eb27dc.mp3"
+      }
+    ],
+    "sing": [
+      {
+        "en": "I sing.",
+        "cn": "我唱歌。",
+        "level": 1,
+        "audioFile": "ex_02553ad621.mp3"
+      },
+      {
+        "en": "I can sing songs.",
+        "cn": "我会唱歌。",
+        "level": 2,
+        "audioFile": "ex_72f6ec6da1.mp3"
+      },
+      {
+        "en": "She can sing high notes very clearly.",
+        "cn": "她能把高音唱得非常清亮。",
+        "level": 3,
+        "audioFile": "ex_9108cf7dd4.mp3"
+      }
+    ],
+    "dance": [
+      {
+        "en": "I dance.",
+        "cn": "我跳舞。",
+        "level": 1,
+        "audioFile": "ex_6d68ca25ce.mp3"
+      },
+      {
+        "en": "She dances well.",
+        "cn": "她跳得很好。",
+        "level": 2,
+        "audioFile": "ex_ab1e029d74.mp3"
+      },
+      {
+        "en": "He dances on the stage every Friday night.",
+        "cn": "他每周五晚在舞台上跳舞。",
+        "level": 3,
+        "audioFile": "ex_ad97311175.mp3"
+      }
+    ],
+    "draw": [
+      {
+        "en": "I draw.",
+        "cn": "我画画。",
+        "level": 1,
+        "audioFile": "ex_0f1ad0bad1.mp3"
+      },
+      {
+        "en": "I draw a cat.",
+        "cn": "我画一只猫。",
+        "level": 2,
+        "audioFile": "ex_e3010e72f5.mp3"
+      },
+      {
+        "en": "He can draw a horse in less than a minute.",
+        "cn": "他不到一分钟就能画出一匹马。",
+        "level": 3,
+        "audioFile": "ex_b108bc0dc8.mp3"
+      }
+    ],
+    "speak": [
+      {
+        "en": "I speak.",
+        "cn": "我说。",
+        "level": 1,
+        "audioFile": "ex_70a68422c3.mp3"
+      },
+      {
+        "en": "I speak English.",
+        "cn": "我说英语。",
+        "level": 2,
+        "audioFile": "ex_8b7a394825.mp3"
+      },
+      {
+        "en": "My friend can speak three languages fluently.",
+        "cn": "我朋友能流利说三种语言。",
+        "level": 3,
+        "audioFile": "ex_6f35a164bd.mp3"
+      }
+    ],
+    "story": [
+      {
+        "en": "A story.",
+        "cn": "一个故事。",
+        "level": 1,
+        "audioFile": "ex_3d0f1554f4.mp3"
+      },
+      {
+        "en": "Tell me a story.",
+        "cn": "讲个故事。",
+        "level": 2,
+        "audioFile": "ex_e77551fff0.mp3"
+      },
+      {
+        "en": "Grandma always tells the funniest bedtime stories.",
+        "cn": "奶奶总能讲最有趣的睡前故事。",
+        "level": 3,
+        "audioFile": "ex_655430b7bb.mp3"
+      }
+    ],
+    "stage": [
+      {
+        "en": "On the stage.",
+        "cn": "在舞台上。",
+        "level": 1,
+        "audioFile": "ex_f0a9865bae.mp3"
+      },
+      {
+        "en": "She sings on the stage.",
+        "cn": "她在舞台上唱歌。",
+        "level": 2,
+        "audioFile": "ex_7664ba658c.mp3"
+      },
+      {
+        "en": "Stepping onto the stage made my heart beat fast.",
+        "cn": "走上舞台让我心跳加速。",
+        "level": 3,
+        "audioFile": "ex_eb066218df.mp3"
+      }
+    ],
+    "proud": [
+      {
+        "en": "I'm proud!",
+        "cn": "我自豪！",
+        "level": 1,
+        "audioFile": "ex_a46980c828.mp3"
+      },
+      {
+        "en": "Mum is proud of me.",
+        "cn": "妈妈为我骄傲。",
+        "level": 2,
+        "audioFile": "ex_af7c243614.mp3"
+      },
+      {
+        "en": "I'm proud of my classmates for their great show.",
+        "cn": "我为同学们出色的表演感到骄傲。",
+        "level": 3,
+        "audioFile": "ex_311db57cc5.mp3"
+      }
+    ],
+    "library": [
+      {
+        "en": "The library.",
+        "cn": "图书馆。",
+        "level": 1,
+        "audioFile": "ex_8f30f09730.mp3"
+      },
+      {
+        "en": "Go to the library.",
+        "cn": "去图书馆。",
+        "level": 2,
+        "audioFile": "ex_5fa16ef471.mp3"
+      },
+      {
+        "en": "Our school library has over ten thousand books.",
+        "cn": "我们学校图书馆有一万多本书。",
+        "level": 3,
+        "audioFile": "ex_c00ff7e8cf.mp3"
+      }
+    ],
+    "borrow": [
+      {
+        "en": "Borrow a book.",
+        "cn": "借一本书。",
+        "level": 1,
+        "audioFile": "ex_39db6c9d62.mp3"
+      },
+      {
+        "en": "I borrow two books.",
+        "cn": "我借两本书。",
+        "level": 2,
+        "audioFile": "ex_04c66e7697.mp3"
+      },
+      {
+        "en": "Students may borrow up to four books at a time.",
+        "cn": "学生一次可借四本书。",
+        "level": 3,
+        "audioFile": "ex_20e407be51.mp3"
+      }
+    ],
+    "return": [
+      {
+        "en": "Return the book.",
+        "cn": "还书。",
+        "level": 1,
+        "audioFile": "ex_b7303c8d9a.mp3"
+      },
+      {
+        "en": "Please return it soon.",
+        "cn": "请快点还。",
+        "level": 2,
+        "audioFile": "ex_623ea5a5eb.mp3"
+      },
+      {
+        "en": "Don't forget to return the book within two weeks.",
+        "cn": "别忘了两周内还书。",
+        "level": 3,
+        "audioFile": "ex_6dcc8567ca.mp3"
+      }
+    ],
+    "quiet": [
+      {
+        "en": "Be quiet.",
+        "cn": "安静。",
+        "level": 1,
+        "audioFile": "ex_96d99600e6.mp3"
+      },
+      {
+        "en": "The library is quiet.",
+        "cn": "图书馆很安静。",
+        "level": 2,
+        "audioFile": "ex_a083c8ba73.mp3"
+      },
+      {
+        "en": "We must stay quiet so others can read.",
+        "cn": "我们要保持安静，让别人能看书。",
+        "level": 3,
+        "audioFile": "ex_3d7033bef8.mp3"
+      }
+    ],
+    "shelf": [
+      {
+        "en": "A shelf.",
+        "cn": "一个书架。",
+        "level": 1,
+        "audioFile": "ex_7e43b277ee.mp3"
+      },
+      {
+        "en": "Books on the shelf.",
+        "cn": "书架上的书。",
+        "level": 2,
+        "audioFile": "ex_8816486cf7.mp3"
+      },
+      {
+        "en": "Story books are on the top shelf by the window.",
+        "cn": "故事书在窗边最顶层书架上。",
+        "level": 3,
+        "audioFile": "ex_b267547291.mp3"
+      }
+    ],
+    "magazine": [
+      {
+        "en": "A magazine.",
+        "cn": "一本杂志。",
+        "level": 1,
+        "audioFile": "ex_c1c1b7f027.mp3"
+      },
+      {
+        "en": "I read a magazine.",
+        "cn": "我看杂志。",
+        "level": 2,
+        "audioFile": "ex_c0a8b4d109.mp3"
+      },
+      {
+        "en": "There is a science magazine for children every month.",
+        "cn": "每月都有一本儿童科学杂志。",
+        "level": 3,
+        "audioFile": "ex_ab929be157.mp3"
+      }
+    ],
+    "card": [
+      {
+        "en": "A library card.",
+        "cn": "一张借书卡。",
+        "level": 1,
+        "audioFile": "ex_2e402691e6.mp3"
+      },
+      {
+        "en": "Show your card.",
+        "cn": "出示借书卡。",
+        "level": 2,
+        "audioFile": "ex_bba8ce756d.mp3"
+      },
+      {
+        "en": "Bring your library card with you every time.",
+        "cn": "每次都要带借书卡。",
+        "level": 3,
+        "audioFile": "ex_2c0e6c2dc6.mp3"
+      }
+    ],
+    "page": [
+      {
+        "en": "A new page.",
+        "cn": "新的一页。",
+        "level": 1,
+        "audioFile": "ex_c169a5b06e.mp3"
+      },
+      {
+        "en": "Turn to page ten.",
+        "cn": "翻到第十页。",
+        "level": 2,
+        "audioFile": "ex_2d1a4c5061.mp3"
+      },
+      {
+        "en": "I read about twenty pages of the storybook each night.",
+        "cn": "我每晚读故事书大约二十页。",
+        "level": 3,
+        "audioFile": "ex_b3e5a93e51.mp3"
+      }
+    ],
+    "sport": [
+      {
+        "en": "A sport.",
+        "cn": "一项运动。",
+        "level": 1,
+        "audioFile": "ex_6b9c3e1ee7.mp3"
+      },
+      {
+        "en": "Football is a sport.",
+        "cn": "足球是运动。",
+        "level": 2,
+        "audioFile": "ex_575de7a88d.mp3"
+      },
+      {
+        "en": "Doing sports is good for our body and mind.",
+        "cn": "运动对身心都好。",
+        "level": 3,
+        "audioFile": "ex_f6183a02fe.mp3"
+      }
+    ],
+    "race": [
+      {
+        "en": "A race.",
+        "cn": "一场比赛。",
+        "level": 1,
+        "audioFile": "ex_3ccc638dbb.mp3"
+      },
+      {
+        "en": "Run the race.",
+        "cn": "跑这场比赛。",
+        "level": 2,
+        "audioFile": "ex_07465236e7.mp3"
+      },
+      {
+        "en": "Tom won first place in the hundred-meter race.",
+        "cn": "汤姆百米赛跑得了第一。",
+        "level": 3,
+        "audioFile": "ex_b0b1eec7e5.mp3"
+      }
+    ],
+    "team": [
+      {
+        "en": "A team.",
+        "cn": "一个队。",
+        "level": 1,
+        "audioFile": "ex_706b80446c.mp3"
+      },
+      {
+        "en": "We are a team.",
+        "cn": "我们是一队。",
+        "level": 2,
+        "audioFile": "ex_f38c87939b.mp3"
+      },
+      {
+        "en": "Our team works together and helps each other win.",
+        "cn": "我们队合作互助才能赢。",
+        "level": 3,
+        "audioFile": "ex_d7dbf9af9a.mp3"
+      }
+    ],
+    "win": [
+      {
+        "en": "We win!",
+        "cn": "我们赢了！",
+        "level": 1,
+        "audioFile": "ex_d32024ec02.mp3"
+      },
+      {
+        "en": "I want to win.",
+        "cn": "我想赢。",
+        "level": 2,
+        "audioFile": "ex_9e623b69aa.mp3"
+      },
+      {
+        "en": "If we practise harder, we will win the next match.",
+        "cn": "再努力训练，下场比赛我们会赢。",
+        "level": 3,
+        "audioFile": "ex_7b940435a4.mp3"
+      }
+    ],
+    "lose": [
+      {
+        "en": "Don't lose hope.",
+        "cn": "别失去希望。",
+        "level": 1,
+        "audioFile": "ex_582f61098d.mp3"
+      },
+      {
+        "en": "We lost the game.",
+        "cn": "我们输了。",
+        "level": 2,
+        "audioFile": "ex_d7295c4552.mp3"
+      },
+      {
+        "en": "Even when you lose, you still learn something important.",
+        "cn": "就算输了，你也学到了重要的东西。",
+        "level": 3,
+        "audioFile": "ex_5022dfdc3f.mp3"
+      }
+    ],
+    "jump": [
+      {
+        "en": "Jump high!",
+        "cn": "跳高！",
+        "level": 1,
+        "audioFile": "ex_ecfd8c5350.mp3"
+      },
+      {
+        "en": "I can jump far.",
+        "cn": "我跳得远。",
+        "level": 2,
+        "audioFile": "ex_6af0b3dd69.mp3"
+      },
+      {
+        "en": "He jumped over two meters in the long jump.",
+        "cn": "他跳远跳过了两米。",
+        "level": 3,
+        "audioFile": "ex_0f9833c654.mp3"
+      }
+    ],
+    "throw": [
+      {
+        "en": "Throw it.",
+        "cn": "扔过来。",
+        "level": 1,
+        "audioFile": "ex_474be486e0.mp3"
+      },
+      {
+        "en": "Throw the ball.",
+        "cn": "扔球。",
+        "level": 2,
+        "audioFile": "ex_859646a241.mp3"
+      },
+      {
+        "en": "He threw the small ball more than thirty meters.",
+        "cn": "他把小球扔出三十多米。",
+        "level": 3,
+        "audioFile": "ex_b27c2a0e0d.mp3"
+      }
+    ],
+    "cheer": [
+      {
+        "en": "Cheer!",
+        "cn": "加油！",
+        "level": 1,
+        "audioFile": "ex_16d71076cb.mp3"
+      },
+      {
+        "en": "Cheer for our team.",
+        "cn": "为我们队加油。",
+        "level": 2,
+        "audioFile": "ex_cb0130c71d.mp3"
+      },
+      {
+        "en": "All the parents cheered loudly from the side of the field.",
+        "cn": "所有家长在场边大声加油。",
+        "level": 3,
+        "audioFile": "ex_768cbbdbb9.mp3"
+      }
+    ],
+    "festival": [
+      {
+        "en": "A festival.",
+        "cn": "一个节日。",
+        "level": 1,
+        "audioFile": "ex_4b14e91f70.mp3"
+      },
+      {
+        "en": "I love festivals.",
+        "cn": "我喜欢节日。",
+        "level": 2,
+        "audioFile": "ex_8bb1c395e1.mp3"
+      },
+      {
+        "en": "Festivals bring different cultures together.",
+        "cn": "节日让不同文化聚到一起。",
+        "level": 3,
+        "audioFile": "ex_d1ca4d3a96.mp3"
+      }
+    ],
+    "world": [
+      {
+        "en": "The world.",
+        "cn": "世界。",
+        "level": 1,
+        "audioFile": "ex_30092aa26e.mp3"
+      },
+      {
+        "en": "Around the world.",
+        "cn": "全世界。",
+        "level": 2,
+        "audioFile": "ex_7cd610f1e0.mp3"
+      },
+      {
+        "en": "People around the world celebrate the New Year in different ways.",
+        "cn": "世界各地的人用不同方式过新年。",
+        "level": 3,
+        "audioFile": "ex_402d03d3d3.mp3"
+      }
+    ],
+    "Halloween": [
+      {
+        "en": "Happy Halloween!",
+        "cn": "万圣节快乐！",
+        "level": 1,
+        "audioFile": "ex_db218dc216.mp3"
+      },
+      {
+        "en": "Halloween is in October.",
+        "cn": "万圣节在十月。",
+        "level": 2,
+        "audioFile": "ex_04a8754ba2.mp3"
+      },
+      {
+        "en": "On Halloween, children dress up and ask for sweets.",
+        "cn": "万圣节孩子化装去要糖果。",
+        "level": 3,
+        "audioFile": "ex_04c3b0d9b6.mp3"
+      }
+    ],
+    "Thanksgiving": [
+      {
+        "en": "Thanksgiving Day.",
+        "cn": "感恩节。",
+        "level": 1,
+        "audioFile": "ex_18d1cbdde4.mp3"
+      },
+      {
+        "en": "We say thanks today.",
+        "cn": "今天我们道谢。",
+        "level": 2,
+        "audioFile": "ex_2d993fe366.mp3"
+      },
+      {
+        "en": "Families gather for a big turkey dinner on Thanksgiving.",
+        "cn": "感恩节家人聚在一起吃火鸡大餐。",
+        "level": 3,
+        "audioFile": "ex_0aa87173d1.mp3"
+      }
+    ],
+    "Mid-Autumn": [
+      {
+        "en": "Mid-Autumn.",
+        "cn": "中秋。",
+        "level": 1,
+        "audioFile": "ex_a27f19f28d.mp3"
+      },
+      {
+        "en": "Happy Mid-Autumn Festival.",
+        "cn": "中秋节快乐。",
+        "level": 2,
+        "audioFile": "ex_e32bf027b7.mp3"
+      },
+      {
+        "en": "On Mid-Autumn night, we look at the round bright moon.",
+        "cn": "中秋夜我们抬头看圆圆的明月。",
+        "level": 3,
+        "audioFile": "ex_2ebe80573d.mp3"
+      }
+    ],
+    "moon cake": [
+      {
+        "en": "Moon cake.",
+        "cn": "月饼。",
+        "level": 1,
+        "audioFile": "ex_5aff627282.mp3"
+      },
+      {
+        "en": "I eat a moon cake.",
+        "cn": "我吃月饼。",
+        "level": 2,
+        "audioFile": "ex_f520840df7.mp3"
+      },
+      {
+        "en": "Grandma makes moon cakes with red bean filling.",
+        "cn": "奶奶做红豆馅月饼。",
+        "level": 3,
+        "audioFile": "ex_7e27c5bb10.mp3"
+      }
+    ],
+    "tradition": [
+      {
+        "en": "A tradition.",
+        "cn": "传统。",
+        "level": 1,
+        "audioFile": "ex_f4754a6d44.mp3"
+      },
+      {
+        "en": "It's our tradition.",
+        "cn": "这是我们的传统。",
+        "level": 2,
+        "audioFile": "ex_d4e3915ded.mp3"
+      },
+      {
+        "en": "Eating dumplings is an important tradition at Spring Festival.",
+        "cn": "春节吃饺子是重要的传统。",
+        "level": 3,
+        "audioFile": "ex_c849750322.mp3"
+      }
+    ],
+    "celebrate": [
+      {
+        "en": "Let's celebrate!",
+        "cn": "庆祝一下！",
+        "level": 1,
+        "audioFile": "ex_56500f23d0.mp3"
+      },
+      {
+        "en": "We celebrate her birthday.",
+        "cn": "我们庆祝她生日。",
+        "level": 2,
+        "audioFile": "ex_7318cf984b.mp3"
+      },
+      {
+        "en": "Different countries celebrate the same festival in different ways.",
+        "cn": "不同国家用不同方式庆祝同一个节日。",
+        "level": 3,
+        "audioFile": "ex_e5a8ad4c90.mp3"
+      }
+    ],
+    "club": [
+      {
+        "en": "A club.",
+        "cn": "俱乐部。",
+        "level": 1,
+        "audioFile": "ex_8bca121a4e.mp3"
+      },
+      {
+        "en": "Join the music club.",
+        "cn": "加入音乐俱乐部。",
+        "level": 2,
+        "audioFile": "ex_8e1288032c.mp3"
+      },
+      {
+        "en": "Our school has more than ten different clubs.",
+        "cn": "我们学校有十多个不同的社团。",
+        "level": 3,
+        "audioFile": "ex_745bfef6b5.mp3"
+      }
+    ],
+    "join": [
+      {
+        "en": "Join us!",
+        "cn": "加入我们！",
+        "level": 1,
+        "audioFile": "ex_814fd45dff.mp3"
+      },
+      {
+        "en": "I join the dance club.",
+        "cn": "我加入舞蹈社。",
+        "level": 2,
+        "audioFile": "ex_028d833fe7.mp3"
+      },
+      {
+        "en": "Why don't you join the science club this term?",
+        "cn": "你为什么不这学期加科学社？",
+        "level": 3,
+        "audioFile": "ex_b567d1aa5a.mp3"
+      }
+    ],
+    "robot": [
+      {
+        "en": "A robot.",
+        "cn": "一个机器人。",
+        "level": 1,
+        "audioFile": "ex_34587852cb.mp3"
+      },
+      {
+        "en": "I have a small robot.",
+        "cn": "我有个小机器人。",
+        "level": 2,
+        "audioFile": "ex_2b9b717c3f.mp3"
+      },
+      {
+        "en": "Our team built a robot that can walk and dance.",
+        "cn": "我们队造了一个会走会跳的机器人。",
+        "level": 3,
+        "audioFile": "ex_33dae1bbbe.mp3"
+      }
+    ],
+    "chess": [
+      {
+        "en": "Chess.",
+        "cn": "国际象棋。",
+        "level": 1,
+        "audioFile": "ex_0a217c71f2.mp3"
+      },
+      {
+        "en": "We play chess.",
+        "cn": "我们下棋。",
+        "level": 2,
+        "audioFile": "ex_914ca2d042.mp3"
+      },
+      {
+        "en": "Chess teaches us to think two steps ahead.",
+        "cn": "象棋教我们多想两步。",
+        "level": 3,
+        "audioFile": "ex_241d81bdb0.mp3"
+      }
+    ],
+    "photo": [
+      {
+        "en": "A photo.",
+        "cn": "一张照片。",
+        "level": 1,
+        "audioFile": "ex_7188eb2c94.mp3"
+      },
+      {
+        "en": "Take a photo.",
+        "cn": "拍张照。",
+        "level": 2,
+        "audioFile": "ex_b857058721.mp3"
+      },
+      {
+        "en": "I take photos of every season in the school garden.",
+        "cn": "我在校园里拍下每个季节的照片。",
+        "level": 3,
+        "audioFile": "ex_bf94528db3.mp3"
+      }
+    ],
+    "drama": [
+      {
+        "en": "Drama!",
+        "cn": "戏剧！",
+        "level": 1,
+        "audioFile": "ex_74fac7d4fb.mp3"
+      },
+      {
+        "en": "We have a drama club.",
+        "cn": "我们有戏剧社。",
+        "level": 2,
+        "audioFile": "ex_bec555bcd0.mp3"
+      },
+      {
+        "en": "The drama club is putting on a play next month.",
+        "cn": "戏剧社下个月要演一出戏。",
+        "level": 3,
+        "audioFile": "ex_3daf926b87.mp3"
+      }
+    ],
+    "meet": [
+      {
+        "en": "We meet.",
+        "cn": "我们见面。",
+        "level": 1,
+        "audioFile": "ex_b35ae3ed71.mp3"
+      },
+      {
+        "en": "We meet on Friday.",
+        "cn": "我们周五碰面。",
+        "level": 2,
+        "audioFile": "ex_38aea648bc.mp3"
+      },
+      {
+        "en": "The chess club members meet in Room 5 after school.",
+        "cn": "国际象棋社成员放学后在 5 号教室集合。",
+        "level": 3,
+        "audioFile": "ex_51c9bf595a.mp3"
+      }
+    ],
+    "interest": [
+      {
+        "en": "My interest.",
+        "cn": "我的兴趣。",
+        "level": 1,
+        "audioFile": "ex_5fe7a698e3.mp3"
+      },
+      {
+        "en": "Find your interest.",
+        "cn": "找到你的兴趣。",
+        "level": 2,
+        "audioFile": "ex_f07c0b27ac.mp3"
+      },
+      {
+        "en": "A real interest can grow into a lifelong hobby.",
+        "cn": "真正的兴趣能变成一辈子的爱好。",
+        "level": 3,
+        "audioFile": "ex_ce09d79b44.mp3"
+      }
+    ],
+    "help": [
+      {
+        "en": "Help, please.",
+        "cn": "请帮帮我。",
+        "level": 1,
+        "audioFile": "ex_43a463d45c.mp3"
+      },
+      {
+        "en": "I help my neighbour.",
+        "cn": "我帮邻居。",
+        "level": 2,
+        "audioFile": "ex_3ccf52efcd.mp3"
+      },
+      {
+        "en": "Helping others is the best way to feel happy.",
+        "cn": "帮助别人是让自己开心的最好方式。",
+        "level": 3,
+        "audioFile": "ex_72110580d2.mp3"
+      }
+    ],
+    "volunteer": [
+      {
+        "en": "A volunteer.",
+        "cn": "一位志愿者。",
+        "level": 1,
+        "audioFile": "ex_c5ec5eee8e.mp3"
+      },
+      {
+        "en": "She is a volunteer.",
+        "cn": "她是志愿者。",
+        "level": 2,
+        "audioFile": "ex_5c0a123a06.mp3"
+      },
+      {
+        "en": "Many volunteers worked at the park last weekend.",
+        "cn": "上周末很多志愿者在公园工作。",
+        "level": 3,
+        "audioFile": "ex_276b4f1b17.mp3"
+      }
+    ],
+    "elderly": [
+      {
+        "en": "Elderly people.",
+        "cn": "老人。",
+        "level": 1,
+        "audioFile": "ex_e39a44d9c5.mp3"
+      },
+      {
+        "en": "Help the elderly.",
+        "cn": "帮老人。",
+        "level": 2,
+        "audioFile": "ex_3ac21a670d.mp3"
+      },
+      {
+        "en": "Many elderly people live near our school.",
+        "cn": "学校附近住着很多老人。",
+        "level": 3,
+        "audioFile": "ex_8e361719d9.mp3"
+      }
+    ],
+    "kind": [
+      {
+        "en": "Be kind.",
+        "cn": "要友善。",
+        "level": 1,
+        "audioFile": "ex_aad4c51eae.mp3"
+      },
+      {
+        "en": "She is a kind girl.",
+        "cn": "她是个友善的女孩。",
+        "level": 2,
+        "audioFile": "ex_01b2077a4b.mp3"
+      },
+      {
+        "en": "Kind words can make someone's whole day brighter.",
+        "cn": "友善的话能让别人一天都明亮。",
+        "level": 3,
+        "audioFile": "ex_0ed5921111.mp3"
+      }
+    ],
+    "smile": [
+      {
+        "en": "Smile!",
+        "cn": "微笑！",
+        "level": 1,
+        "audioFile": "ex_b04f3cd401.mp3"
+      },
+      {
+        "en": "Give me a smile.",
+        "cn": "给我一个微笑。",
+        "level": 2,
+        "audioFile": "ex_1e5a00a8e6.mp3"
+      },
+      {
+        "en": "A simple smile is the shortest helping hand.",
+        "cn": "一个简单的微笑就是最短的援手。",
+        "level": 3,
+        "audioFile": "ex_1ce78a572e.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Share!",
+        "cn": "分享！",
+        "level": 1,
+        "audioFile": "ex_c539421d0c.mp3"
+      },
+      {
+        "en": "Share with me.",
+        "cn": "和我分享。",
+        "level": 2,
+        "audioFile": "ex_4c923b2126.mp3"
+      },
+      {
+        "en": "We share our food and stories with the elderly.",
+        "cn": "我们把食物和故事分享给老人。",
+        "level": 3,
+        "audioFile": "ex_f645e782b8.mp3"
+      }
+    ],
+    "neighbour": [
+      {
+        "en": "My neighbour.",
+        "cn": "我的邻居。",
+        "level": 1,
+        "audioFile": "ex_8cee0f063a.mp3"
+      },
+      {
+        "en": "Help your neighbours.",
+        "cn": "帮邻居。",
+        "level": 2,
+        "audioFile": "ex_df77188eb4.mp3"
+      },
+      {
+        "en": "Our neighbours are kind and often share fresh vegetables.",
+        "cn": "我们的邻居很好，常给我们送新鲜蔬菜。",
+        "level": 3,
+        "audioFile": "ex_625349ad00.mp3"
+      }
+    ],
+    "warm": [
+      {
+        "en": "Warm heart.",
+        "cn": "温暖的心。",
+        "level": 1,
+        "audioFile": "ex_7f006ea24f.mp3"
+      },
+      {
+        "en": "A warm hug.",
+        "cn": "一个温暖的拥抱。",
+        "level": 2,
+        "audioFile": "ex_3ce54f153b.mp3"
+      },
+      {
+        "en": "Small acts of kindness make the world a warmer place.",
+        "cn": "小小善举让世界更温暖。",
+        "level": 3,
+        "audioFile": "ex_d8e99f4f10.mp3"
+      }
+    ],
+    "show": [
+      {
+        "en": "A big show!",
+        "cn": "一场大表演！",
+        "level": 1,
+        "audioFile": "ex_4e902fc1bd.mp3"
+      },
+      {
+        "en": "We have a show today.",
+        "cn": "今天有表演。",
+        "level": 2,
+        "audioFile": "ex_0b24bab0b5.mp3"
+      },
+      {
+        "en": "The school show happens once at the end of every term.",
+        "cn": "学校汇演每学期末举行一次。",
+        "level": 3,
+        "audioFile": "ex_477684bd7e.mp3"
+      }
+    ],
+    "prepare": [
+      {
+        "en": "Prepare!",
+        "cn": "准备！",
+        "level": 1,
+        "audioFile": "ex_8fed8deb94.mp3"
+      },
+      {
+        "en": "Prepare for the show.",
+        "cn": "为演出做准备。",
+        "level": 2,
+        "audioFile": "ex_0bd15bd47e.mp3"
+      },
+      {
+        "en": "We have been preparing for this show for three weeks.",
+        "cn": "我们为这次演出准备了三周。",
+        "level": 3,
+        "audioFile": "ex_a118f7d2ea.mp3"
+      }
+    ],
+    "act": [
+      {
+        "en": "Act it out.",
+        "cn": "演出来。",
+        "level": 1,
+        "audioFile": "ex_9049a48b1f.mp3"
+      },
+      {
+        "en": "She acts on stage.",
+        "cn": "她在舞台演。",
+        "level": 2,
+        "audioFile": "ex_6b900beca5.mp3"
+      },
+      {
+        "en": "He acts as the kind king in our school play.",
+        "cn": "他在校园剧中扮演善良的国王。",
+        "level": 3,
+        "audioFile": "ex_2a52aef887.mp3"
+      }
+    ],
+    "audience": [
+      {
+        "en": "The audience.",
+        "cn": "观众。",
+        "level": 1,
+        "audioFile": "ex_c39763be59.mp3"
+      },
+      {
+        "en": "The audience claps.",
+        "cn": "观众鼓掌。",
+        "level": 2,
+        "audioFile": "ex_30bf0306df.mp3"
+      },
+      {
+        "en": "The audience filled every seat in the school hall.",
+        "cn": "观众坐满了学校礼堂的每个座位。",
+        "level": 3,
+        "audioFile": "ex_1cc78643ed.mp3"
+      }
+    ],
+    "clap": [
+      {
+        "en": "Clap!",
+        "cn": "鼓掌！",
+        "level": 1,
+        "audioFile": "ex_a7c8cd6f71.mp3"
+      },
+      {
+        "en": "Everyone claps.",
+        "cn": "大家都鼓掌。",
+        "level": 2,
+        "audioFile": "ex_971088c718.mp3"
+      },
+      {
+        "en": "Parents stood up and clapped for a long time.",
+        "cn": "家长们站起来鼓了很久的掌。",
+        "level": 3,
+        "audioFile": "ex_cc3d87de79.mp3"
+      }
+    ],
+    "remember": [
+      {
+        "en": "Remember!",
+        "cn": "记住！",
+        "level": 1,
+        "audioFile": "ex_24f4f1ebfe.mp3"
+      },
+      {
+        "en": "I remember this day.",
+        "cn": "我记得这天。",
+        "level": 2,
+        "audioFile": "ex_58b0547744.mp3"
+      },
+      {
+        "en": "I will remember this school show for many years.",
+        "cn": "这场校园汇演我会记很多年。",
+        "level": 3,
+        "audioFile": "ex_bff00f76a8.mp3"
+      }
+    ]
+  }
+}

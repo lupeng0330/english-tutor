@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 Our Weekend",
+  "words": [
+    { "word": "weekend", "phonetic": "/ˌwiːkˈend/", "meaning": "[n.] 周末", "example": "Have a nice weekend!" },
+    { "word": "Saturday", "phonetic": "/ˈsætədeɪ/", "meaning": "[n.] 星期六", "example": "We play on Saturday." },
+    { "word": "Sunday", "phonetic": "/ˈsʌndeɪ/", "meaning": "[n.] 星期天", "example": "I rest on Sunday." },
+    { "word": "park", "phonetic": "/pɑːk/", "meaning": "[n.] 公园", "example": "Let's go to the park." },
+    { "word": "shop", "phonetic": "/ʃɒp/", "meaning": "[v./n.] 购物；商店", "example": "Mum shops on Saturday." },
+    { "word": "movie", "phonetic": "/ˈmuːvi/", "meaning": "[n.] 电影", "example": "We see a movie." },
+    { "word": "picnic", "phonetic": "/ˈpɪknɪk/", "meaning": "[n.] 野餐", "example": "We have a picnic." },
+    { "word": "fun", "phonetic": "/fʌn/", "meaning": "[n.] 乐趣", "example": "Weekends are fun." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Plans for the weekend",
+      "en": "Ben: What will you do this weekend, Anna?\nAnna: On Saturday, my family will have a picnic in the park.\nBen: Sounds great! What about Sunday?\nAnna: Mum and I will shop in the morning, then see a movie.\nBen: Have a happy weekend!",
+      "cn": "本：安娜，这周末你要做什么？\n安娜：周六我们一家要去公园野餐。\n本：好棒！周日呢？\n安娜：上午我和妈妈购物，然后去看电影。\n本：周末愉快！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My happy weekend",
+      "en": "I love weekends. On Saturday, I usually visit the park with my family. We bring sandwiches and have a picnic on the grass. On Sunday morning, I do my homework. In the afternoon, my friends and I see a fun movie. Weekends are short, but they are full of fun and love!",
+      "cn": "我喜欢周末。周六我通常和家人去公园。我们带上三明治，在草地上野餐。周日上午做作业。下午和朋友看部有趣的电影。周末很短，但充满了快乐和爱！"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 Different Cultures",
+  "words": [
+    { "word": "culture", "phonetic": "/ˈkʌltʃə(r)/", "meaning": "[n.] 文化", "example": "Chinese culture." },
+    { "word": "language", "phonetic": "/ˈlæŋɡwɪdʒ/", "meaning": "[n.] 语言", "example": "Learn a language." },
+    { "word": "country", "phonetic": "/ˈkʌntri/", "meaning": "[n.] 国家", "example": "Visit a new country." },
+    { "word": "food", "phonetic": "/fuːd/", "meaning": "[n.] 食物", "example": "Different food." },
+    { "word": "chopsticks", "phonetic": "/ˈtʃɒpstɪks/", "meaning": "[n.] 筷子", "example": "Use chopsticks." },
+    { "word": "respect", "phonetic": "/rɪˈspekt/", "meaning": "[v./n.] 尊重", "example": "Respect others." },
+    { "word": "amazing", "phonetic": "/əˈmeɪzɪŋ/", "meaning": "[adj.] 惊人的", "example": "An amazing story." },
+    { "word": "learn", "phonetic": "/lɜːn/", "meaning": "[v.] 学习", "example": "Learn from each other." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Different but lovely",
+      "en": "Anna: Ben, I met a foreign student today. She speaks three languages!\nBen: Amazing! What country is she from?\nAnna: From Japan. She uses chopsticks like us.\nBen: Different cultures have so much in common.\nAnna: Right! We can learn from each other and respect different ways.",
+      "cn": "安娜：本，我今天遇见一个留学生，她会说三种语言！\n本：太厉害了！她哪国人？\n安娜：日本，她也用筷子。\n本：不同文化有很多相通之处。\n安娜：对！我们可以彼此学习、尊重差异。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "One world, many cultures",
+      "en": "Our world has thousands of cultures. People speak different languages, eat different food, and celebrate different festivals. In China, we use chopsticks. In Italy, people eat pasta with a fork. Each culture is amazing in its own way. Travel and read books, then you'll understand and respect different cultures. The world becomes much bigger.",
+      "cn": "我们的世界有成千上万种文化。人们说不同语言、吃不同食物、过不同节日。中国人用筷子，意大利人用叉子吃面。每种文化都有独特之美。旅行、读书，让你理解并尊重不同文化，世界从此变大了。"
+    }
+  ]
+}

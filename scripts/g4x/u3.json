@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Let's Go Shopping",
+  "words": [
+    { "word": "shopping", "phonetic": "/ˈʃɒpɪŋ/", "meaning": "[n.] 购物", "example": "I love shopping." },
+    { "word": "buy", "phonetic": "/baɪ/", "meaning": "[v.] 买", "example": "I buy a book." },
+    { "word": "store", "phonetic": "/stɔː(r)/", "meaning": "[n.] 商店", "example": "Go to the store." },
+    { "word": "money", "phonetic": "/ˈmʌni/", "meaning": "[n.] 钱", "example": "I have some money." },
+    { "word": "price", "phonetic": "/praɪs/", "meaning": "[n.] 价格", "example": "What's the price?" },
+    { "word": "cheap", "phonetic": "/tʃiːp/", "meaning": "[adj.] 便宜的", "example": "This bag is cheap." },
+    { "word": "expensive", "phonetic": "/ɪkˈspensɪv/", "meaning": "[adj.] 昂贵的", "example": "This pen is expensive." },
+    { "word": "yuan", "phonetic": "/juːˈɑːn/", "meaning": "[n.] 元（人民币）", "example": "It costs ten yuan." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "How much is it?",
+      "en": "Anna: Mum, look at this red T-shirt. It's so nice.\nMum: How much is it?\nAnna: It's only twenty yuan. Quite cheap!\nMum: OK, we can buy it. Look, that one is fifty yuan — too expensive.\nAnna: Let's pay and go.",
+      "cn": "安娜：妈妈，看这件红 T 恤，真好看。\n妈妈：多少钱？\n安娜：才二十元，很便宜！\n妈妈：好，我们买。看那件五十元，太贵了。\n安娜：付钱走吧。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Shopping with Mum",
+      "en": "On Saturday, Mum and I went to a big store. We needed some new clothes. We saw many shirts and shoes. The blue T-shirt was only twenty yuan, but the white shoes cost two hundred yuan. We bought a few cheap things and saved some money. Shopping with Mum is always fun.",
+      "cn": "周六我和妈妈去了一家大商店。我们要买些新衣服。看到了很多衬衫和鞋子。蓝 T 恤才 20 元，但白鞋要 200 元。我们买了几样便宜的，省了一些钱。和妈妈购物总是很开心。"
+    }
+  ]
+}

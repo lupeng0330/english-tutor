@@ -1,0 +1,42 @@
+{
+  "help": [
+    { "en": "Help, please.", "cn": "请帮帮我。", "level": 1 },
+    { "en": "I help my neighbour.", "cn": "我帮邻居。", "level": 2 },
+    { "en": "Helping others is the best way to feel happy.", "cn": "帮助别人是让自己开心的最好方式。", "level": 3 }
+  ],
+  "volunteer": [
+    { "en": "A volunteer.", "cn": "一位志愿者。", "level": 1 },
+    { "en": "She is a volunteer.", "cn": "她是志愿者。", "level": 2 },
+    { "en": "Many volunteers worked at the park last weekend.", "cn": "上周末很多志愿者在公园工作。", "level": 3 }
+  ],
+  "elderly": [
+    { "en": "Elderly people.", "cn": "老人。", "level": 1 },
+    { "en": "Help the elderly.", "cn": "帮老人。", "level": 2 },
+    { "en": "Many elderly people live near our school.", "cn": "学校附近住着很多老人。", "level": 3 }
+  ],
+  "kind": [
+    { "en": "Be kind.", "cn": "要友善。", "level": 1 },
+    { "en": "She is a kind girl.", "cn": "她是个友善的女孩。", "level": 2 },
+    { "en": "Kind words can make someone's whole day brighter.", "cn": "友善的话能让别人一天都明亮。", "level": 3 }
+  ],
+  "smile": [
+    { "en": "Smile!", "cn": "微笑！", "level": 1 },
+    { "en": "Give me a smile.", "cn": "给我一个微笑。", "level": 2 },
+    { "en": "A simple smile is the shortest helping hand.", "cn": "一个简单的微笑就是最短的援手。", "level": 3 }
+  ],
+  "share": [
+    { "en": "Share!", "cn": "分享！", "level": 1 },
+    { "en": "Share with me.", "cn": "和我分享。", "level": 2 },
+    { "en": "We share our food and stories with the elderly.", "cn": "我们把食物和故事分享给老人。", "level": 3 }
+  ],
+  "neighbour": [
+    { "en": "My neighbour.", "cn": "我的邻居。", "level": 1 },
+    { "en": "Help your neighbours.", "cn": "帮邻居。", "level": 2 },
+    { "en": "Our neighbours are kind and often share fresh vegetables.", "cn": "我们的邻居很好，常给我们送新鲜蔬菜。", "level": 3 }
+  ],
+  "warm": [
+    { "en": "Warm heart.", "cn": "温暖的心。", "level": 1 },
+    { "en": "A warm hug.", "cn": "一个温暖的拥抱。", "level": 2 },
+    { "en": "Small acts of kindness make the world a warmer place.", "cn": "小小善举让世界更温暖。", "level": 3 }
+  ]
+}

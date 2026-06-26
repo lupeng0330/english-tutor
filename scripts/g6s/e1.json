@@ -1,0 +1,42 @@
+{
+  "junior": [
+    { "en": "Junior high.", "cn": "初中。", "level": 1 },
+    { "en": "We start junior next year.", "cn": "明年我们上初中。", "level": 2 },
+    { "en": "Junior high school will bring many new subjects.", "cn": "初中会有许多新科目。", "level": 3 }
+  ],
+  "graduate": [
+    { "en": "Graduate soon.", "cn": "快毕业了。", "level": 1 },
+    { "en": "We will graduate in June.", "cn": "我们六月毕业。", "level": 2 },
+    { "en": "After we graduate, we'll go to different junior high schools.", "cn": "毕业后我们会去不同的初中。", "level": 3 }
+  ],
+  "primary": [
+    { "en": "Primary school.", "cn": "小学。", "level": 1 },
+    { "en": "I love my primary school.", "cn": "我爱我的小学。", "level": 2 },
+    { "en": "Six years of primary school taught me many things.", "cn": "六年小学教会我很多事。", "level": 3 }
+  ],
+  "memory": [
+    { "en": "Sweet memory.", "cn": "甜蜜回忆。", "level": 1 },
+    { "en": "Happy memories.", "cn": "快乐的回忆。", "level": 2 },
+    { "en": "I'll keep the wonderful memories of primary school forever.", "cn": "我会永远珍藏小学的美好回忆。", "level": 3 }
+  ],
+  "future": [
+    { "en": "The future.", "cn": "未来。", "level": 1 },
+    { "en": "A bright future.", "cn": "光明的未来。", "level": 2 },
+    { "en": "I look forward to the future with hope and courage.", "cn": "我带着希望和勇气期待未来。", "level": 3 }
+  ],
+  "challenge": [
+    { "en": "A challenge.", "cn": "一个挑战。", "level": 1 },
+    { "en": "Face the challenge.", "cn": "面对挑战。", "level": 2 },
+    { "en": "Every challenge is a chance to grow stronger.", "cn": "每个挑战都是变强的机会。", "level": 3 }
+  ],
+  "ready": [
+    { "en": "I'm ready.", "cn": "我准备好了。", "level": 1 },
+    { "en": "Are you ready?", "cn": "你准备好了吗？", "level": 2 },
+    { "en": "We are all ready for the new chapter ahead.", "cn": "我们都为接下来的新篇章准备好了。", "level": 3 }
+  ],
+  "confident": [
+    { "en": "Be confident.", "cn": "要自信。", "level": 1 },
+    { "en": "I feel confident.", "cn": "我有信心。", "level": 2 },
+    { "en": "Walk into junior high with a confident smile.", "cn": "带着自信的微笑走进初中。", "level": 3 }
+  ]
+}

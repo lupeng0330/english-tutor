@@ -1,0 +1,42 @@
+{
+  "travel": [
+    { "en": "I travel.", "cn": "我旅行。", "level": 1 },
+    { "en": "We travel by train.", "cn": "我们坐火车旅行。", "level": 2 },
+    { "en": "Travel opens our eyes and our minds.", "cn": "旅行让我们眼界和思维都开阔。", "level": 3 }
+  ],
+  "train": [
+    { "en": "A fast train.", "cn": "一列快车。", "level": 1 },
+    { "en": "Take the train.", "cn": "坐火车。", "level": 2 },
+    { "en": "The high-speed train can travel 300 kilometres in an hour.", "cn": "高铁一小时能跑 300 公里。", "level": 3 }
+  ],
+  "plane": [
+    { "en": "A plane.", "cn": "一架飞机。", "level": 1 },
+    { "en": "Fly by plane.", "cn": "坐飞机。", "level": 2 },
+    { "en": "The plane to Beijing takes about three hours.", "cn": "去北京的飞机大约三个小时。", "level": 3 }
+  ],
+  "bus": [
+    { "en": "Take the bus.", "cn": "乘公交。", "level": 1 },
+    { "en": "The bus is full.", "cn": "公交满了。", "level": 2 },
+    { "en": "I take bus number 12 to school every morning.", "cn": "我每天早上坐 12 路公交去上学。", "level": 3 }
+  ],
+  "subway": [
+    { "en": "The subway.", "cn": "地铁。", "level": 1 },
+    { "en": "Take the subway.", "cn": "乘地铁。", "level": 2 },
+    { "en": "The subway is faster than the bus during rush hour.", "cn": "高峰期地铁比公交快。", "level": 3 }
+  ],
+  "bike": [
+    { "en": "Ride a bike.", "cn": "骑自行车。", "level": 1 },
+    { "en": "I have a new bike.", "cn": "我有辆新自行车。", "level": 2 },
+    { "en": "On weekends we ride bikes around the lake.", "cn": "周末我们绕着湖骑车。", "level": 3 }
+  ],
+  "ticket": [
+    { "en": "A train ticket.", "cn": "一张火车票。", "level": 1 },
+    { "en": "Buy two tickets.", "cn": "买两张票。", "level": 2 },
+    { "en": "Tickets for the holiday train sell out very quickly.", "cn": "假期火车票卖得很快。", "level": 3 }
+  ],
+  "fast": [
+    { "en": "Very fast.", "cn": "很快。", "level": 1 },
+    { "en": "The plane is fast.", "cn": "飞机很快。", "level": 2 },
+    { "en": "He runs as fast as the wind.", "cn": "他跑得快如风。", "level": 3 }
+  ]
+}

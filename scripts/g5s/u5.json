@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 Sports Day",
+  "words": [
+    { "word": "sport", "phonetic": "/spɔːt/", "meaning": "[n.] 运动", "example": "I love sport." },
+    { "word": "race", "phonetic": "/reɪs/", "meaning": "[n.] 比赛", "example": "Run the race." },
+    { "word": "team", "phonetic": "/tiːm/", "meaning": "[n.] 队", "example": "We are one team." },
+    { "word": "win", "phonetic": "/wɪn/", "meaning": "[v.] 赢", "example": "We will win!" },
+    { "word": "lose", "phonetic": "/luːz/", "meaning": "[v.] 输", "example": "Don't be sad to lose." },
+    { "word": "jump", "phonetic": "/dʒʌmp/", "meaning": "[v.] 跳", "example": "Jump high!" },
+    { "word": "throw", "phonetic": "/θrəʊ/", "meaning": "[v.] 扔", "example": "Throw the ball." },
+    { "word": "cheer", "phonetic": "/tʃɪə(r)/", "meaning": "[v.] 加油", "example": "Cheer for our team!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Cheer for our team",
+      "en": "Ben: Anna, today is our Sports Day. Are you ready?\nAnna: Yes! I'll run the 100-meter race.\nBen: Cool! I'll join the long jump.\nAnna: Whether we win or lose, let's cheer for our team!\nBen: Right! Together we are strong.",
+      "cn": "本：安娜，今天是运动会，你准备好了吗？\n安娜：好了！我跑 100 米。\n本：酷！我参加跳远。\n安娜：不管输赢，我们都为队加油！\n本：对！团结就是力量。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A wonderful Sports Day",
+      "en": "Today was our school's Sports Day. The playground was full of cheering students. I joined the relay race and helped my team win second place. Ben threw a small ball very far. Even when some friends lost, they smiled and tried again. Sports teach us teamwork and never giving up.",
+      "cn": "今天是学校运动会。操场上同学们都在加油。我参加接力赛，帮队伍拿到第二名。本扔小球扔得很远。即使有同学输了，他们也笑着再试。运动教会我们团队合作，永不放弃。"
+    }
+  ]
+}
