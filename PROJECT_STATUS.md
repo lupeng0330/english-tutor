@@ -1081,7 +1081,7 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ audio/ex_*.mp3：210 条例句对应 MP3 全部落盘（208 新生成 + 2 复用既有 hash），文件存在性校验 missing=0
 - ✅ 前端零改动；`tests/smoke.py` 未触发新增风险面
 - ✅ `gen_example_audio.py` 新增 `--only` / `--limit` 参数无副作用，沪教 6 册 + jk 6 下回归默认行为不变
-- ⏳ 待用户确认后跑 `dev-push.ps1` 上线（铁律 3 / 4）
+- ✅ **已上线** `20260626V02.22`（HEAD `811814c`，2026-06-26 21:21；`dev-push.ps1` 自动 bump + 双 commit + push origin main）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260626V02.22>
 
 ### 22.5 给下次接手"jk 例句继续补"的提醒
 
