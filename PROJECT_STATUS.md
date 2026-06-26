@@ -1217,5 +1217,5 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ verify 6 项全 PASS（jk.json 9 单元/字段完整/例句对齐/audioFile/level/MP3 落盘）
 - ✅ 双端预览 `http://localhost:8765/index.html` + `mobile.html` 数据 200
 - ✅ JK_REMAINING_7_VOLUMES_PLAN.md §7 进度表 3 下行打勾
-- ⏳ 待 `dev-push.ps1` 上线（紧接本章节提交）
+- ✅ **已上线** `20260626V02.25`（HEAD `46aa720`，2026-06-26）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260626V02.25>
 
