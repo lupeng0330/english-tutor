@@ -1,599 +1,2384 @@
 {
   "words": {
     "friendship": [
-      {"en": "A true friendship.", "cn": "真正的友谊。", "level": 1},
-      {"en": "Our friendship is very important to me.", "cn": "我们的友谊对我很重要。", "level": 2},
-      {"en": "A good friendship is built on trust and care.", "cn": "美好的友谊建立在信任和关心之上。", "level": 3}
+      {
+        "en": "A true friendship.",
+        "cn": "真正的友谊。",
+        "level": 1,
+        "audioFile": "ex_8b77e74ead.mp3"
+      },
+      {
+        "en": "Our friendship is very important to me.",
+        "cn": "我们的友谊对我很重要。",
+        "level": 2,
+        "audioFile": "ex_01f0404c79.mp3"
+      },
+      {
+        "en": "A good friendship is built on trust and care.",
+        "cn": "美好的友谊建立在信任和关心之上。",
+        "level": 3,
+        "audioFile": "ex_498c700999.mp3"
+      }
     ],
     "trust": [
-      {"en": "I trust you.", "cn": "我信任你。", "level": 1},
-      {"en": "Good friends always trust each other.", "cn": "好朋友总是彼此信任。", "level": 2},
-      {"en": "Without trust, a friendship cannot last long.", "cn": "没有信任，友谊无法长久。", "level": 3}
+      {
+        "en": "I trust you.",
+        "cn": "我信任你。",
+        "level": 1,
+        "audioFile": "ex_a20c2fea29.mp3"
+      },
+      {
+        "en": "Good friends always trust each other.",
+        "cn": "好朋友总是彼此信任。",
+        "level": 2,
+        "audioFile": "ex_252829c26f.mp3"
+      },
+      {
+        "en": "Without trust, a friendship cannot last long.",
+        "cn": "没有信任，友谊无法长久。",
+        "level": 3,
+        "audioFile": "ex_da9d1d19e8.mp3"
+      }
     ],
     "share": [
-      {"en": "Share with me.", "cn": "和我分享。", "level": 1},
-      {"en": "I like to share my food with friends.", "cn": "我喜欢和朋友分享食物。", "level": 2},
-      {"en": "Good friends share their joys and worries with each other.", "cn": "好朋友彼此分享快乐和烦恼。", "level": 3}
+      {
+        "en": "Share with me.",
+        "cn": "和我分享。",
+        "level": 1,
+        "audioFile": "ex_4c923b2126.mp3"
+      },
+      {
+        "en": "I like to share my food with friends.",
+        "cn": "我喜欢和朋友分享食物。",
+        "level": 2,
+        "audioFile": "ex_e703fa3fc0.mp3"
+      },
+      {
+        "en": "Good friends share their joys and worries with each other.",
+        "cn": "好朋友彼此分享快乐和烦恼。",
+        "level": 3,
+        "audioFile": "ex_163b4ba379.mp3"
+      }
     ],
     "secret": [
-      {"en": "A small secret.", "cn": "一个小秘密。", "level": 1},
-      {"en": "Can you keep a secret?", "cn": "你能保守秘密吗？", "level": 2},
-      {"en": "A real friend will never tell your secrets to others.", "cn": "真正的朋友绝不会把你的秘密告诉别人。", "level": 3}
+      {
+        "en": "A small secret.",
+        "cn": "一个小秘密。",
+        "level": 1,
+        "audioFile": "ex_ff01a209fa.mp3"
+      },
+      {
+        "en": "Can you keep a secret?",
+        "cn": "你能保守秘密吗？",
+        "level": 2,
+        "audioFile": "ex_3d44a0a964.mp3"
+      },
+      {
+        "en": "A real friend will never tell your secrets to others.",
+        "cn": "真正的朋友绝不会把你的秘密告诉别人。",
+        "level": 3,
+        "audioFile": "ex_97432b3f37.mp3"
+      }
     ],
     "kind": [
-      {"en": "Be kind.", "cn": "要善良。", "level": 1},
-      {"en": "She is kind to everyone.", "cn": "她对每个人都很善良。", "level": 2},
-      {"en": "A kind person is always ready to help others.", "cn": "善良的人总是乐于帮助别人。", "level": 3}
+      {
+        "en": "Be kind.",
+        "cn": "要善良。",
+        "level": 1,
+        "audioFile": "ex_aad4c51eae.mp3"
+      },
+      {
+        "en": "She is kind to everyone.",
+        "cn": "她对每个人都很善良。",
+        "level": 2,
+        "audioFile": "ex_96827c62ef.mp3"
+      },
+      {
+        "en": "A kind person is always ready to help others.",
+        "cn": "善良的人总是乐于帮助别人。",
+        "level": 3,
+        "audioFile": "ex_28cb3937db.mp3"
+      }
     ],
     "helpful": [
-      {"en": "Very helpful.", "cn": "很有帮助。", "level": 1},
-      {"en": "My partner is helpful and friendly.", "cn": "我的搭档乐于助人又友好。", "level": 2},
-      {"en": "A helpful classmate often helps others with their lessons.", "cn": "乐于助人的同学常帮助别人学习功课。", "level": 3}
+      {
+        "en": "Very helpful.",
+        "cn": "很有帮助。",
+        "level": 1,
+        "audioFile": "ex_2d37dc2dd4.mp3"
+      },
+      {
+        "en": "My partner is helpful and friendly.",
+        "cn": "我的搭档乐于助人又友好。",
+        "level": 2,
+        "audioFile": "ex_a1e8a0ba39.mp3"
+      },
+      {
+        "en": "A helpful classmate often helps others with their lessons.",
+        "cn": "乐于助人的同学常帮助别人学习功课。",
+        "level": 3,
+        "audioFile": "ex_6a2288eea6.mp3"
+      }
     ],
     "quarrel": [
-      {"en": "Don't quarrel.", "cn": "别争吵。", "level": 1},
-      {"en": "We sometimes quarrel over small things.", "cn": "我们有时会为小事争吵。", "level": 2},
-      {"en": "Good friends may quarrel, but they soon forgive each other.", "cn": "好朋友也会争吵，但很快就会原谅彼此。", "level": 3}
+      {
+        "en": "Don't quarrel.",
+        "cn": "别争吵。",
+        "level": 1,
+        "audioFile": "ex_5e4173af04.mp3"
+      },
+      {
+        "en": "We sometimes quarrel over small things.",
+        "cn": "我们有时会为小事争吵。",
+        "level": 2,
+        "audioFile": "ex_46a7b613ac.mp3"
+      },
+      {
+        "en": "Good friends may quarrel, but they soon forgive each other.",
+        "cn": "好朋友也会争吵，但很快就会原谅彼此。",
+        "level": 3,
+        "audioFile": "ex_f568a33001.mp3"
+      }
     ],
     "forgive": [
-      {"en": "Please forgive me.", "cn": "请原谅我。", "level": 1},
-      {"en": "It is not easy to forgive a friend.", "cn": "原谅朋友并不容易。", "level": 2},
-      {"en": "Learning to forgive makes our friendship stronger.", "cn": "学会原谅会让我们的友谊更牢固。", "level": 3}
+      {
+        "en": "Please forgive me.",
+        "cn": "请原谅我。",
+        "level": 1,
+        "audioFile": "ex_dd8e3fb5c0.mp3"
+      },
+      {
+        "en": "It is not easy to forgive a friend.",
+        "cn": "原谅朋友并不容易。",
+        "level": 2,
+        "audioFile": "ex_911c11b2b3.mp3"
+      },
+      {
+        "en": "Learning to forgive makes our friendship stronger.",
+        "cn": "学会原谅会让我们的友谊更牢固。",
+        "level": 3,
+        "audioFile": "ex_156bfe6ddd.mp3"
+      }
     ],
     "support": [
-      {"en": "I support you.", "cn": "我支持你。", "level": 1},
-      {"en": "My friends always support me.", "cn": "我的朋友们总是支持我。", "level": 2},
-      {"en": "True friends support each other in hard times.", "cn": "真正的朋友在困难时彼此支持。", "level": 3}
+      {
+        "en": "I support you.",
+        "cn": "我支持你。",
+        "level": 1,
+        "audioFile": "ex_d3c4c75f88.mp3"
+      },
+      {
+        "en": "My friends always support me.",
+        "cn": "我的朋友们总是支持我。",
+        "level": 2,
+        "audioFile": "ex_6b2bcd2f14.mp3"
+      },
+      {
+        "en": "True friends support each other in hard times.",
+        "cn": "真正的朋友在困难时彼此支持。",
+        "level": 3,
+        "audioFile": "ex_35680ff903.mp3"
+      }
     ],
     "promise": [
-      {"en": "Make a promise.", "cn": "许下承诺。", "level": 1},
-      {"en": "You must keep your promise.", "cn": "你必须遵守承诺。", "level": 2},
-      {"en": "A friend who keeps every promise can be trusted.", "cn": "信守每一个承诺的朋友值得信任。", "level": 3}
+      {
+        "en": "Make a promise.",
+        "cn": "许下承诺。",
+        "level": 1,
+        "audioFile": "ex_fa7f4a2c01.mp3"
+      },
+      {
+        "en": "You must keep your promise.",
+        "cn": "你必须遵守承诺。",
+        "level": 2,
+        "audioFile": "ex_a67e64e6a1.mp3"
+      },
+      {
+        "en": "A friend who keeps every promise can be trusted.",
+        "cn": "信守每一个承诺的朋友值得信任。",
+        "level": 3,
+        "audioFile": "ex_49c4afc5dd.mp3"
+      }
     ],
     "childhood": [
-      {"en": "My childhood.", "cn": "我的童年。", "level": 1},
-      {"en": "We have been friends since childhood.", "cn": "我们从童年起就是朋友。", "level": 2},
-      {"en": "My childhood friend and I still share many happy memories.", "cn": "我和童年的朋友至今仍共享许多快乐的回忆。", "level": 3}
+      {
+        "en": "My childhood.",
+        "cn": "我的童年。",
+        "level": 1,
+        "audioFile": "ex_fdb9ce75dc.mp3"
+      },
+      {
+        "en": "We have been friends since childhood.",
+        "cn": "我们从童年起就是朋友。",
+        "level": 2,
+        "audioFile": "ex_5e8c8486f4.mp3"
+      },
+      {
+        "en": "My childhood friend and I still share many happy memories.",
+        "cn": "我和童年的朋友至今仍共享许多快乐的回忆。",
+        "level": 3,
+        "audioFile": "ex_cae9f05ba9.mp3"
+      }
     ],
     "partner": [
-      {"en": "My partner.", "cn": "我的搭档。", "level": 1},
-      {"en": "He is my partner in the game.", "cn": "他是我游戏里的搭档。", "level": 2},
-      {"en": "A good partner works together with you and never gives up.", "cn": "好搭档会与你合作，从不放弃。", "level": 3}
+      {
+        "en": "My partner.",
+        "cn": "我的搭档。",
+        "level": 1,
+        "audioFile": "ex_858a3594bc.mp3"
+      },
+      {
+        "en": "He is my partner in the game.",
+        "cn": "他是我游戏里的搭档。",
+        "level": 2,
+        "audioFile": "ex_00cd1f0665.mp3"
+      },
+      {
+        "en": "A good partner works together with you and never gives up.",
+        "cn": "好搭档会与你合作，从不放弃。",
+        "level": 3,
+        "audioFile": "ex_ad5c6a5dea.mp3"
+      }
     ],
     "neighbour": [
-      {"en": "My neighbour.", "cn": "我的邻居。", "level": 1},
-      {"en": "Our neighbour is very kind to us.", "cn": "我们的邻居对我们很好。", "level": 2},
-      {"en": "A friendly neighbour often helps us when we are in need.", "cn": "友善的邻居常在我们需要时伸出援手。", "level": 3}
+      {
+        "en": "My neighbour.",
+        "cn": "我的邻居。",
+        "level": 1,
+        "audioFile": "ex_8cee0f063a.mp3"
+      },
+      {
+        "en": "Our neighbour is very kind to us.",
+        "cn": "我们的邻居对我们很好。",
+        "level": 2,
+        "audioFile": "ex_e8840d3608.mp3"
+      },
+      {
+        "en": "A friendly neighbour often helps us when we are in need.",
+        "cn": "友善的邻居常在我们需要时伸出援手。",
+        "level": 3,
+        "audioFile": "ex_7015dc2f2c.mp3"
+      }
     ],
     "online": [
-      {"en": "Make friends online.", "cn": "在网上交朋友。", "level": 1},
-      {"en": "I often chat with my friends online.", "cn": "我常和朋友在网上聊天。", "level": 2},
-      {"en": "We should be careful when we make friends online.", "cn": "我们在网上交朋友时应当小心。", "level": 3}
+      {
+        "en": "Make friends online.",
+        "cn": "在网上交朋友。",
+        "level": 1,
+        "audioFile": "ex_e03f8c3b88.mp3"
+      },
+      {
+        "en": "I often chat with my friends online.",
+        "cn": "我常和朋友在网上聊天。",
+        "level": 2,
+        "audioFile": "ex_5b23833d6d.mp3"
+      },
+      {
+        "en": "We should be careful when we make friends online.",
+        "cn": "我们在网上交朋友时应当小心。",
+        "level": 3,
+        "audioFile": "ex_fcf3c6628f.mp3"
+      }
     ],
     "carefully": [
-      {"en": "Listen carefully.", "cn": "仔细听。", "level": 1},
-      {"en": "Please read the letter carefully.", "cn": "请仔细读这封信。", "level": 2},
-      {"en": "A good friend listens carefully to your problems.", "cn": "好朋友会仔细倾听你的烦恼。", "level": 3}
+      {
+        "en": "Listen carefully.",
+        "cn": "仔细听。",
+        "level": 1,
+        "audioFile": "ex_b1cfad85e1.mp3"
+      },
+      {
+        "en": "Please read the letter carefully.",
+        "cn": "请仔细读这封信。",
+        "level": 2,
+        "audioFile": "ex_1d277fc95b.mp3"
+      },
+      {
+        "en": "A good friend listens carefully to your problems.",
+        "cn": "好朋友会仔细倾听你的烦恼。",
+        "level": 3,
+        "audioFile": "ex_f80c116ce5.mp3"
+      }
     ],
     "travel": [
-      {"en": "I love to travel.", "cn": "我喜欢旅行。", "level": 1},
-      {"en": "We will travel to Beijing this summer.", "cn": "今年夏天我们要去北京旅行。", "level": 2},
-      {"en": "Travelling around the world helps us learn new cultures.", "cn": "环游世界能帮助我们了解新文化。", "level": 3}
+      {
+        "en": "I love to travel.",
+        "cn": "我喜欢旅行。",
+        "level": 1,
+        "audioFile": "ex_7c2c089687.mp3"
+      },
+      {
+        "en": "We will travel to Beijing this summer.",
+        "cn": "今年夏天我们要去北京旅行。",
+        "level": 2,
+        "audioFile": "ex_1e6e0569ff.mp3"
+      },
+      {
+        "en": "Travelling around the world helps us learn new cultures.",
+        "cn": "环游世界能帮助我们了解新文化。",
+        "level": 3,
+        "audioFile": "ex_b19a3be37a.mp3"
+      }
     ],
     "abroad": [
-      {"en": "Go abroad.", "cn": "出国。", "level": 1},
-      {"en": "My uncle works abroad.", "cn": "我叔叔在国外工作。", "level": 2},
-      {"en": "Many students hope to study abroad in the future.", "cn": "许多学生希望将来出国留学。", "level": 3}
+      {
+        "en": "Go abroad.",
+        "cn": "出国。",
+        "level": 1,
+        "audioFile": "ex_6c7aecf0cc.mp3"
+      },
+      {
+        "en": "My uncle works abroad.",
+        "cn": "我叔叔在国外工作。",
+        "level": 2,
+        "audioFile": "ex_d534c3e48e.mp3"
+      },
+      {
+        "en": "Many students hope to study abroad in the future.",
+        "cn": "许多学生希望将来出国留学。",
+        "level": 3,
+        "audioFile": "ex_fe4236a6d1.mp3"
+      }
     ],
     "passport": [
-      {"en": "My passport.", "cn": "我的护照。", "level": 1},
-      {"en": "Don't forget your passport.", "cn": "别忘了带护照。", "level": 2},
-      {"en": "You need a passport to travel to a foreign country.", "cn": "去外国旅行需要护照。", "level": 3}
+      {
+        "en": "My passport.",
+        "cn": "我的护照。",
+        "level": 1,
+        "audioFile": "ex_929ddac413.mp3"
+      },
+      {
+        "en": "Don't forget your passport.",
+        "cn": "别忘了带护照。",
+        "level": 2,
+        "audioFile": "ex_fc87644ba9.mp3"
+      },
+      {
+        "en": "You need a passport to travel to a foreign country.",
+        "cn": "去外国旅行需要护照。",
+        "level": 3,
+        "audioFile": "ex_ab6adc4347.mp3"
+      }
     ],
     "ticket": [
-      {"en": "A bus ticket.", "cn": "一张公交车票。", "level": 1},
-      {"en": "I bought two tickets for the show.", "cn": "我买了两张演出的票。", "level": 2},
-      {"en": "We booked our flight tickets online last week.", "cn": "上周我们在网上订了机票。", "level": 3}
+      {
+        "en": "A bus ticket.",
+        "cn": "一张公交车票。",
+        "level": 1,
+        "audioFile": "ex_a775ccbd15.mp3"
+      },
+      {
+        "en": "I bought two tickets for the show.",
+        "cn": "我买了两张演出的票。",
+        "level": 2,
+        "audioFile": "ex_b7c24dfb79.mp3"
+      },
+      {
+        "en": "We booked our flight tickets online last week.",
+        "cn": "上周我们在网上订了机票。",
+        "level": 3,
+        "audioFile": "ex_132284a99a.mp3"
+      }
     ],
     "suitcase": [
-      {"en": "A big suitcase.", "cn": "一个大手提箱。", "level": 1},
-      {"en": "She packed her suitcase for the trip.", "cn": "她为旅行收拾好了手提箱。", "level": 2},
-      {"en": "I put my clothes and souvenirs in the suitcase.", "cn": "我把衣服和纪念品放进手提箱。", "level": 3}
+      {
+        "en": "A big suitcase.",
+        "cn": "一个大手提箱。",
+        "level": 1,
+        "audioFile": "ex_b16065ee8d.mp3"
+      },
+      {
+        "en": "She packed her suitcase for the trip.",
+        "cn": "她为旅行收拾好了手提箱。",
+        "level": 2,
+        "audioFile": "ex_dc6e81fb32.mp3"
+      },
+      {
+        "en": "I put my clothes and souvenirs in the suitcase.",
+        "cn": "我把衣服和纪念品放进手提箱。",
+        "level": 3,
+        "audioFile": "ex_29f2deb9f9.mp3"
+      }
     ],
     "airport": [
-      {"en": "At the airport.", "cn": "在机场。", "level": 1},
-      {"en": "We arrived at the airport early.", "cn": "我们很早就到了机场。", "level": 2},
-      {"en": "The airport was full of travellers from many countries.", "cn": "机场里挤满了来自许多国家的旅客。", "level": 3}
+      {
+        "en": "At the airport.",
+        "cn": "在机场。",
+        "level": 1,
+        "audioFile": "ex_154cf16f79.mp3"
+      },
+      {
+        "en": "We arrived at the airport early.",
+        "cn": "我们很早就到了机场。",
+        "level": 2,
+        "audioFile": "ex_a74c29e03c.mp3"
+      },
+      {
+        "en": "The airport was full of travellers from many countries.",
+        "cn": "机场里挤满了来自许多国家的旅客。",
+        "level": 3,
+        "audioFile": "ex_af2cbe23a2.mp3"
+      }
     ],
     "flight": [
-      {"en": "A long flight.", "cn": "一段长途飞行。", "level": 1},
-      {"en": "Our flight leaves at nine.", "cn": "我们的航班九点起飞。", "level": 2},
-      {"en": "The flight to London takes about eleven hours.", "cn": "飞往伦敦的航班大约需要十一个小时。", "level": 3}
+      {
+        "en": "A long flight.",
+        "cn": "一段长途飞行。",
+        "level": 1,
+        "audioFile": "ex_6e4add06a6.mp3"
+      },
+      {
+        "en": "Our flight leaves at nine.",
+        "cn": "我们的航班九点起飞。",
+        "level": 2,
+        "audioFile": "ex_ad106a89de.mp3"
+      },
+      {
+        "en": "The flight to London takes about eleven hours.",
+        "cn": "飞往伦敦的航班大约需要十一个小时。",
+        "level": 3,
+        "audioFile": "ex_95f0f7912d.mp3"
+      }
     ],
     "tour": [
-      {"en": "A city tour.", "cn": "城市观光。", "level": 1},
-      {"en": "We took a tour of the old town.", "cn": "我们游览了老城区。", "level": 2},
-      {"en": "Our school tour to the museum was really exciting.", "cn": "我们学校去博物馆的参观非常令人兴奋。", "level": 3}
+      {
+        "en": "A city tour.",
+        "cn": "城市观光。",
+        "level": 1,
+        "audioFile": "ex_f85649ee9e.mp3"
+      },
+      {
+        "en": "We took a tour of the old town.",
+        "cn": "我们游览了老城区。",
+        "level": 2,
+        "audioFile": "ex_06b40574c6.mp3"
+      },
+      {
+        "en": "Our school tour to the museum was really exciting.",
+        "cn": "我们学校去博物馆的参观非常令人兴奋。",
+        "level": 3,
+        "audioFile": "ex_94402d9ab2.mp3"
+      }
     ],
     "foreign": [
-      {"en": "A foreign country.", "cn": "一个外国。", "level": 1},
-      {"en": "I want to learn a foreign language.", "cn": "我想学一门外语。", "level": 2},
-      {"en": "Travelling lets us meet people from many foreign countries.", "cn": "旅行让我们结识来自许多国家的人。", "level": 3}
+      {
+        "en": "A foreign country.",
+        "cn": "一个外国。",
+        "level": 1,
+        "audioFile": "ex_3f0d20a6b8.mp3"
+      },
+      {
+        "en": "I want to learn a foreign language.",
+        "cn": "我想学一门外语。",
+        "level": 2,
+        "audioFile": "ex_6cf78edcdb.mp3"
+      },
+      {
+        "en": "Travelling lets us meet people from many foreign countries.",
+        "cn": "旅行让我们结识来自许多国家的人。",
+        "level": 3,
+        "audioFile": "ex_039524640b.mp3"
+      }
     ],
     "culture": [
-      {"en": "Chinese culture.", "cn": "中国文化。", "level": 1},
-      {"en": "Every country has its own culture.", "cn": "每个国家都有自己的文化。", "level": 2},
-      {"en": "Travelling abroad helps us understand different cultures.", "cn": "出国旅行帮助我们理解不同的文化。", "level": 3}
+      {
+        "en": "Chinese culture.",
+        "cn": "中国文化。",
+        "level": 1,
+        "audioFile": "ex_5284aef454.mp3"
+      },
+      {
+        "en": "Every country has its own culture.",
+        "cn": "每个国家都有自己的文化。",
+        "level": 2,
+        "audioFile": "ex_eb2d11b51f.mp3"
+      },
+      {
+        "en": "Travelling abroad helps us understand different cultures.",
+        "cn": "出国旅行帮助我们理解不同的文化。",
+        "level": 3,
+        "audioFile": "ex_90ea2977d9.mp3"
+      }
     ],
     "souvenir": [
-      {"en": "A small souvenir.", "cn": "一件小纪念品。", "level": 1},
-      {"en": "I bought a souvenir for my mother.", "cn": "我给妈妈买了一件纪念品。", "level": 2},
-      {"en": "We collected souvenirs from every city we visited.", "cn": "我们在去过的每个城市都收集了纪念品。", "level": 3}
+      {
+        "en": "A small souvenir.",
+        "cn": "一件小纪念品。",
+        "level": 1,
+        "audioFile": "ex_6e74b04266.mp3"
+      },
+      {
+        "en": "I bought a souvenir for my mother.",
+        "cn": "我给妈妈买了一件纪念品。",
+        "level": 2,
+        "audioFile": "ex_eae15dbc16.mp3"
+      },
+      {
+        "en": "We collected souvenirs from every city we visited.",
+        "cn": "我们在去过的每个城市都收集了纪念品。",
+        "level": 3,
+        "audioFile": "ex_7db880c5f1.mp3"
+      }
     ],
     "museum": [
-      {"en": "A history museum.", "cn": "一座历史博物馆。", "level": 1},
-      {"en": "We visited the museum yesterday.", "cn": "我们昨天参观了博物馆。", "level": 2},
-      {"en": "The museum shows the long history of this old city.", "cn": "博物馆展示了这座古城悠久的历史。", "level": 3}
+      {
+        "en": "A history museum.",
+        "cn": "一座历史博物馆。",
+        "level": 1,
+        "audioFile": "ex_f12f8861bb.mp3"
+      },
+      {
+        "en": "We visited the museum yesterday.",
+        "cn": "我们昨天参观了博物馆。",
+        "level": 2,
+        "audioFile": "ex_ee733a953e.mp3"
+      },
+      {
+        "en": "The museum shows the long history of this old city.",
+        "cn": "博物馆展示了这座古城悠久的历史。",
+        "level": 3,
+        "audioFile": "ex_9552d3d667.mp3"
+      }
     ],
     "delicious": [
-      {"en": "Very delicious.", "cn": "很美味。", "level": 1},
-      {"en": "The food here is delicious.", "cn": "这里的食物很美味。", "level": 2},
-      {"en": "We tasted many delicious foreign dishes on our trip.", "cn": "旅途中我们品尝了许多美味的外国菜肴。", "level": 3}
+      {
+        "en": "Very delicious.",
+        "cn": "很美味。",
+        "level": 1,
+        "audioFile": "ex_b8222e6056.mp3"
+      },
+      {
+        "en": "The food here is delicious.",
+        "cn": "这里的食物很美味。",
+        "level": 2,
+        "audioFile": "ex_71e17582de.mp3"
+      },
+      {
+        "en": "We tasted many delicious foreign dishes on our trip.",
+        "cn": "旅途中我们品尝了许多美味的外国菜肴。",
+        "level": 3,
+        "audioFile": "ex_9236531c06.mp3"
+      }
     ],
     "language": [
-      {"en": "A new language.", "cn": "一门新语言。", "level": 1},
-      {"en": "English is a useful language.", "cn": "英语是一门有用的语言。", "level": 2},
-      {"en": "Learning a foreign language helps us travel more easily.", "cn": "学习一门外语让我们旅行更方便。", "level": 3}
+      {
+        "en": "A new language.",
+        "cn": "一门新语言。",
+        "level": 1,
+        "audioFile": "ex_4adc4236fd.mp3"
+      },
+      {
+        "en": "English is a useful language.",
+        "cn": "英语是一门有用的语言。",
+        "level": 2,
+        "audioFile": "ex_de5458751e.mp3"
+      },
+      {
+        "en": "Learning a foreign language helps us travel more easily.",
+        "cn": "学习一门外语让我们旅行更方便。",
+        "level": 3,
+        "audioFile": "ex_8aa8d0d705.mp3"
+      }
     ],
     "experience": [
-      {"en": "A good experience.", "cn": "一次好经历。", "level": 1},
-      {"en": "Travelling is a wonderful experience.", "cn": "旅行是一段美好的经历。", "level": 2},
-      {"en": "The trip gave me an experience I will never forget.", "cn": "这次旅行给了我一段难忘的经历。", "level": 3}
+      {
+        "en": "A good experience.",
+        "cn": "一次好经历。",
+        "level": 1,
+        "audioFile": "ex_d1a32b749e.mp3"
+      },
+      {
+        "en": "Travelling is a wonderful experience.",
+        "cn": "旅行是一段美好的经历。",
+        "level": 2,
+        "audioFile": "ex_8c93b513c1.mp3"
+      },
+      {
+        "en": "The trip gave me an experience I will never forget.",
+        "cn": "这次旅行给了我一段难忘的经历。",
+        "level": 3,
+        "audioFile": "ex_ee74861c9d.mp3"
+      }
     ],
     "animal": [
-      {"en": "A wild animal.", "cn": "一只野生动物。", "level": 1},
-      {"en": "Animals are our friends.", "cn": "动物是我们的朋友。", "level": 2},
-      {"en": "We should protect wild animals and their homes.", "cn": "我们应当保护野生动物和它们的家园。", "level": 3}
+      {
+        "en": "A wild animal.",
+        "cn": "一只野生动物。",
+        "level": 1,
+        "audioFile": "ex_070959ec41.mp3"
+      },
+      {
+        "en": "Animals are our friends.",
+        "cn": "动物是我们的朋友。",
+        "level": 2,
+        "audioFile": "ex_871d7f4dc3.mp3"
+      },
+      {
+        "en": "We should protect wild animals and their homes.",
+        "cn": "我们应当保护野生动物和它们的家园。",
+        "level": 3,
+        "audioFile": "ex_7aac3cc6bc.mp3"
+      }
     ],
     "wild": [
-      {"en": "Wild animals.", "cn": "野生动物。", "level": 1},
-      {"en": "Many wild animals live in the forest.", "cn": "许多野生动物生活在森林里。", "level": 2},
-      {"en": "Wild animals need a safe place to live freely.", "cn": "野生动物需要一个能自由生活的安全之地。", "level": 3}
+      {
+        "en": "Wild animals.",
+        "cn": "野生动物。",
+        "level": 1,
+        "audioFile": "ex_210a35d2ee.mp3"
+      },
+      {
+        "en": "Many wild animals live in the forest.",
+        "cn": "许多野生动物生活在森林里。",
+        "level": 2,
+        "audioFile": "ex_c914ec1687.mp3"
+      },
+      {
+        "en": "Wild animals need a safe place to live freely.",
+        "cn": "野生动物需要一个能自由生活的安全之地。",
+        "level": 3,
+        "audioFile": "ex_2f7df7db4f.mp3"
+      }
     ],
     "protect": [
-      {"en": "Protect animals.", "cn": "保护动物。", "level": 1},
-      {"en": "We must protect endangered animals.", "cn": "我们必须保护濒危动物。", "level": 2},
-      {"en": "It is everyone's duty to protect wild animals from hunters.", "cn": "保护野生动物免受猎人伤害是每个人的责任。", "level": 3}
+      {
+        "en": "Protect animals.",
+        "cn": "保护动物。",
+        "level": 1,
+        "audioFile": "ex_748306dee5.mp3"
+      },
+      {
+        "en": "We must protect endangered animals.",
+        "cn": "我们必须保护濒危动物。",
+        "level": 2,
+        "audioFile": "ex_7096ff6c65.mp3"
+      },
+      {
+        "en": "It is everyone's duty to protect wild animals from hunters.",
+        "cn": "保护野生动物免受猎人伤害是每个人的责任。",
+        "level": 3,
+        "audioFile": "ex_45ad11630b.mp3"
+      }
     ],
     "endangered": [
-      {"en": "Endangered animals.", "cn": "濒危动物。", "level": 1},
-      {"en": "The panda is an endangered species.", "cn": "熊猫是濒危物种。", "level": 2},
-      {"en": "Many endangered species may become extinct without our help.", "cn": "没有我们的帮助，许多濒危物种可能会灭绝。", "level": 3}
+      {
+        "en": "Endangered animals.",
+        "cn": "濒危动物。",
+        "level": 1,
+        "audioFile": "ex_1a2ed7f229.mp3"
+      },
+      {
+        "en": "The panda is an endangered species.",
+        "cn": "熊猫是濒危物种。",
+        "level": 2,
+        "audioFile": "ex_8d4081bbe6.mp3"
+      },
+      {
+        "en": "Many endangered species may become extinct without our help.",
+        "cn": "没有我们的帮助，许多濒危物种可能会灭绝。",
+        "level": 3,
+        "audioFile": "ex_636f1380cc.mp3"
+      }
     ],
     "hunter": [
-      {"en": "A wild hunter.", "cn": "一个野外猎人。", "level": 1},
-      {"en": "Hunters kill many animals every year.", "cn": "猎人每年杀死许多动物。", "level": 2},
-      {"en": "We must stop hunters from killing endangered animals.", "cn": "我们必须阻止猎人猎杀濒危动物。", "level": 3}
+      {
+        "en": "A wild hunter.",
+        "cn": "一个野外猎人。",
+        "level": 1,
+        "audioFile": "ex_636ec3c65b.mp3"
+      },
+      {
+        "en": "Hunters kill many animals every year.",
+        "cn": "猎人每年杀死许多动物。",
+        "level": 2,
+        "audioFile": "ex_89cfc6519a.mp3"
+      },
+      {
+        "en": "We must stop hunters from killing endangered animals.",
+        "cn": "我们必须阻止猎人猎杀濒危动物。",
+        "level": 3,
+        "audioFile": "ex_4f8434de0f.mp3"
+      }
     ],
     "forest": [
-      {"en": "A big forest.", "cn": "一片大森林。", "level": 1},
-      {"en": "Many animals live in the forest.", "cn": "许多动物生活在森林里。", "level": 2},
-      {"en": "The forest is the home of countless wild animals.", "cn": "森林是无数野生动物的家园。", "level": 3}
+      {
+        "en": "A big forest.",
+        "cn": "一片大森林。",
+        "level": 1,
+        "audioFile": "ex_ba3f8e241a.mp3"
+      },
+      {
+        "en": "Many animals live in the forest.",
+        "cn": "许多动物生活在森林里。",
+        "level": 2,
+        "audioFile": "ex_de5591cef1.mp3"
+      },
+      {
+        "en": "The forest is the home of countless wild animals.",
+        "cn": "森林是无数野生动物的家园。",
+        "level": 3,
+        "audioFile": "ex_3bef5f5ebb.mp3"
+      }
     ],
     "habitat": [
-      {"en": "A natural habitat.", "cn": "一个自然栖息地。", "level": 1},
-      {"en": "The forest is their habitat.", "cn": "森林是它们的栖息地。", "level": 2},
-      {"en": "When we cut down trees, we destroy animals' habitats.", "cn": "当我们砍树时，就破坏了动物的栖息地。", "level": 3}
+      {
+        "en": "A natural habitat.",
+        "cn": "一个自然栖息地。",
+        "level": 1,
+        "audioFile": "ex_fa4f5e2c43.mp3"
+      },
+      {
+        "en": "The forest is their habitat.",
+        "cn": "森林是它们的栖息地。",
+        "level": 2,
+        "audioFile": "ex_d913c07cf9.mp3"
+      },
+      {
+        "en": "When we cut down trees, we destroy animals' habitats.",
+        "cn": "当我们砍树时，就破坏了动物的栖息地。",
+        "level": 3,
+        "audioFile": "ex_c2b2ed9fa3.mp3"
+      }
     ],
     "species": [
-      {"en": "A rare species.", "cn": "一个稀有物种。", "level": 1},
-      {"en": "There are many species of birds here.", "cn": "这里有许多种鸟类。", "level": 2},
-      {"en": "Some species of animals are in danger of dying out.", "cn": "有些动物物种正面临灭绝的危险。", "level": 3}
+      {
+        "en": "A rare species.",
+        "cn": "一个稀有物种。",
+        "level": 1,
+        "audioFile": "ex_1342412614.mp3"
+      },
+      {
+        "en": "There are many species of birds here.",
+        "cn": "这里有许多种鸟类。",
+        "level": 2,
+        "audioFile": "ex_39a6089e9d.mp3"
+      },
+      {
+        "en": "Some species of animals are in danger of dying out.",
+        "cn": "有些动物物种正面临灭绝的危险。",
+        "level": 3,
+        "audioFile": "ex_7b6b36c978.mp3"
+      }
     ],
     "extinct": [
-      {"en": "Become extinct.", "cn": "灭绝。", "level": 1},
-      {"en": "Many animals have become extinct.", "cn": "许多动物已经灭绝。", "level": 2},
-      {"en": "If we do nothing, these animals will soon be extinct.", "cn": "如果我们不采取行动，这些动物很快就会灭绝。", "level": 3}
+      {
+        "en": "Become extinct.",
+        "cn": "灭绝。",
+        "level": 1,
+        "audioFile": "ex_06c0a6f787.mp3"
+      },
+      {
+        "en": "Many animals have become extinct.",
+        "cn": "许多动物已经灭绝。",
+        "level": 2,
+        "audioFile": "ex_8264b67699.mp3"
+      },
+      {
+        "en": "If we do nothing, these animals will soon be extinct.",
+        "cn": "如果我们不采取行动，这些动物很快就会灭绝。",
+        "level": 3,
+        "audioFile": "ex_4543bf573b.mp3"
+      }
     ],
     "kindness": [
-      {"en": "Show kindness.", "cn": "表现善意。", "level": 1},
-      {"en": "Animals can feel our kindness.", "cn": "动物能感受到我们的善意。", "level": 2},
-      {"en": "We should treat all animals with love and kindness.", "cn": "我们应当用爱与善意对待所有动物。", "level": 3}
+      {
+        "en": "Show kindness.",
+        "cn": "表现善意。",
+        "level": 1,
+        "audioFile": "ex_916836ed89.mp3"
+      },
+      {
+        "en": "Animals can feel our kindness.",
+        "cn": "动物能感受到我们的善意。",
+        "level": 2,
+        "audioFile": "ex_a72f128c33.mp3"
+      },
+      {
+        "en": "We should treat all animals with love and kindness.",
+        "cn": "我们应当用爱与善意对待所有动物。",
+        "level": 3,
+        "audioFile": "ex_ec0918bc0d.mp3"
+      }
     ],
     "care": [
-      {"en": "Take care.", "cn": "当心。", "level": 1},
-      {"en": "We should care for animals.", "cn": "我们应该关心动物。", "level": 2},
-      {"en": "Taking good care of pets teaches us to be responsible.", "cn": "悉心照料宠物教会我们要有责任心。", "level": 3}
+      {
+        "en": "Take care.",
+        "cn": "当心。",
+        "level": 1,
+        "audioFile": "ex_e08b572034.mp3"
+      },
+      {
+        "en": "We should care for animals.",
+        "cn": "我们应该关心动物。",
+        "level": 2,
+        "audioFile": "ex_e0b3694097.mp3"
+      },
+      {
+        "en": "Taking good care of pets teaches us to be responsible.",
+        "cn": "悉心照料宠物教会我们要有责任心。",
+        "level": 3,
+        "audioFile": "ex_73260ecec6.mp3"
+      }
     ],
     "zoo": [
-      {"en": "Go to the zoo.", "cn": "去动物园。", "level": 1},
-      {"en": "We saw many animals at the zoo.", "cn": "我们在动物园看到许多动物。", "level": 2},
-      {"en": "A good zoo helps protect endangered animals and teaches people.", "cn": "好的动物园能帮助保护濒危动物并教育人们。", "level": 3}
+      {
+        "en": "Go to the zoo.",
+        "cn": "去动物园。",
+        "level": 1,
+        "audioFile": "ex_17842ac9b9.mp3"
+      },
+      {
+        "en": "We saw many animals at the zoo.",
+        "cn": "我们在动物园看到许多动物。",
+        "level": 2,
+        "audioFile": "ex_bf15ca1e43.mp3"
+      },
+      {
+        "en": "A good zoo helps protect endangered animals and teaches people.",
+        "cn": "好的动物园能帮助保护濒危动物并教育人们。",
+        "level": 3,
+        "audioFile": "ex_4e09abda8c.mp3"
+      }
     ],
     "clever": [
-      {"en": "A clever dog.", "cn": "一只聪明的狗。", "level": 1},
-      {"en": "Dolphins are very clever animals.", "cn": "海豚是非常聪明的动物。", "level": 2},
-      {"en": "Some clever animals can even use simple tools.", "cn": "有些聪明的动物甚至会使用简单的工具。", "level": 3}
+      {
+        "en": "A clever dog.",
+        "cn": "一只聪明的狗。",
+        "level": 1,
+        "audioFile": "ex_ab027d60d4.mp3"
+      },
+      {
+        "en": "Dolphins are very clever animals.",
+        "cn": "海豚是非常聪明的动物。",
+        "level": 2,
+        "audioFile": "ex_b6941cdaa3.mp3"
+      },
+      {
+        "en": "Some clever animals can even use simple tools.",
+        "cn": "有些聪明的动物甚至会使用简单的工具。",
+        "level": 3,
+        "audioFile": "ex_d2f0baa35a.mp3"
+      }
     ],
     "loyal": [
-      {"en": "A loyal dog.", "cn": "一只忠诚的狗。", "level": 1},
-      {"en": "Dogs are loyal to their owners.", "cn": "狗对主人很忠诚。", "level": 2},
-      {"en": "A loyal pet will always stay by your side.", "cn": "忠诚的宠物会一直陪在你身边。", "level": 3}
+      {
+        "en": "A loyal dog.",
+        "cn": "一只忠诚的狗。",
+        "level": 1,
+        "audioFile": "ex_b57a51ed50.mp3"
+      },
+      {
+        "en": "Dogs are loyal to their owners.",
+        "cn": "狗对主人很忠诚。",
+        "level": 2,
+        "audioFile": "ex_d842078095.mp3"
+      },
+      {
+        "en": "A loyal pet will always stay by your side.",
+        "cn": "忠诚的宠物会一直陪在你身边。",
+        "level": 3,
+        "audioFile": "ex_72cf4c0ff9.mp3"
+      }
     ],
     "peaceful": [
-      {"en": "A peaceful place.", "cn": "一个平静的地方。", "level": 1},
-      {"en": "The forest is quiet and peaceful.", "cn": "森林安静又平和。", "level": 2},
-      {"en": "Wild animals live a peaceful life in the deep forest.", "cn": "野生动物在密林深处过着平静的生活。", "level": 3}
+      {
+        "en": "A peaceful place.",
+        "cn": "一个平静的地方。",
+        "level": 1,
+        "audioFile": "ex_b8701122a6.mp3"
+      },
+      {
+        "en": "The forest is quiet and peaceful.",
+        "cn": "森林安静又平和。",
+        "level": 2,
+        "audioFile": "ex_8003be0f05.mp3"
+      },
+      {
+        "en": "Wild animals live a peaceful life in the deep forest.",
+        "cn": "野生动物在密林深处过着平静的生活。",
+        "level": 3,
+        "audioFile": "ex_d04ec41923.mp3"
+      }
     ],
     "tree": [
-      {"en": "A tall tree.", "cn": "一棵高大的树。", "level": 1},
-      {"en": "There are many trees in the park.", "cn": "公园里有许多树。", "level": 2},
-      {"en": "Trees give us oxygen and make the air clean.", "cn": "树木为我们提供氧气，让空气清新。", "level": 3}
+      {
+        "en": "A tall tree.",
+        "cn": "一棵高大的树。",
+        "level": 1,
+        "audioFile": "ex_99d782c93c.mp3"
+      },
+      {
+        "en": "There are many trees in the park.",
+        "cn": "公园里有许多树。",
+        "level": 2,
+        "audioFile": "ex_0d46b50bfb.mp3"
+      },
+      {
+        "en": "Trees give us oxygen and make the air clean.",
+        "cn": "树木为我们提供氧气，让空气清新。",
+        "level": 3,
+        "audioFile": "ex_1ea3ee073d.mp3"
+      }
     ],
     "plant": [
-      {"en": "Plant a tree.", "cn": "种一棵树。", "level": 1},
-      {"en": "We plant trees every spring.", "cn": "我们每年春天种树。", "level": 2},
-      {"en": "If everyone plants a tree, our city will be greener.", "cn": "如果人人都种一棵树，我们的城市会更绿。", "level": 3}
+      {
+        "en": "Plant a tree.",
+        "cn": "种一棵树。",
+        "level": 1,
+        "audioFile": "ex_884ff0914a.mp3"
+      },
+      {
+        "en": "We plant trees every spring.",
+        "cn": "我们每年春天种树。",
+        "level": 2,
+        "audioFile": "ex_d6bad58929.mp3"
+      },
+      {
+        "en": "If everyone plants a tree, our city will be greener.",
+        "cn": "如果人人都种一棵树，我们的城市会更绿。",
+        "level": 3,
+        "audioFile": "ex_bc4eeae938.mp3"
+      }
     ],
     "cut down": [
-      {"en": "Cut down trees.", "cn": "砍树。", "level": 1},
-      {"en": "People cut down too many trees.", "cn": "人们砍了太多树。", "level": 2},
-      {"en": "We should not cut down trees in the forest.", "cn": "我们不应该砍伐森林里的树木。", "level": 3}
+      {
+        "en": "Cut down trees.",
+        "cn": "砍树。",
+        "level": 1,
+        "audioFile": "ex_5857cacef4.mp3"
+      },
+      {
+        "en": "People cut down too many trees.",
+        "cn": "人们砍了太多树。",
+        "level": 2,
+        "audioFile": "ex_e17b75b32a.mp3"
+      },
+      {
+        "en": "We should not cut down trees in the forest.",
+        "cn": "我们不应该砍伐森林里的树木。",
+        "level": 3,
+        "audioFile": "ex_0fcd2e47a4.mp3"
+      }
     ],
     "oxygen": [
-      {"en": "We need oxygen.", "cn": "我们需要氧气。", "level": 1},
-      {"en": "Trees give off oxygen.", "cn": "树木释放氧气。", "level": 2},
-      {"en": "Without trees, there would be less oxygen in the air.", "cn": "没有树木，空气中的氧气就会减少。", "level": 3}
+      {
+        "en": "We need oxygen.",
+        "cn": "我们需要氧气。",
+        "level": 1,
+        "audioFile": "ex_1aaedb032e.mp3"
+      },
+      {
+        "en": "Trees give off oxygen.",
+        "cn": "树木释放氧气。",
+        "level": 2,
+        "audioFile": "ex_1771b44428.mp3"
+      },
+      {
+        "en": "Without trees, there would be less oxygen in the air.",
+        "cn": "没有树木，空气中的氧气就会减少。",
+        "level": 3,
+        "audioFile": "ex_2efc58ac79.mp3"
+      }
     ],
     "environment": [
-      {"en": "A clean environment.", "cn": "干净的环境。", "level": 1},
-      {"en": "We must protect the environment.", "cn": "我们必须保护环境。", "level": 2},
-      {"en": "Planting trees is a good way to protect our environment.", "cn": "植树是保护环境的好办法。", "level": 3}
+      {
+        "en": "A clean environment.",
+        "cn": "干净的环境。",
+        "level": 1,
+        "audioFile": "ex_608e4c54e9.mp3"
+      },
+      {
+        "en": "We must protect the environment.",
+        "cn": "我们必须保护环境。",
+        "level": 2,
+        "audioFile": "ex_1116c335bf.mp3"
+      },
+      {
+        "en": "Planting trees is a good way to protect our environment.",
+        "cn": "植树是保护环境的好办法。",
+        "level": 3,
+        "audioFile": "ex_bb4af498fd.mp3"
+      }
     ],
     "pollution": [
-      {"en": "Air pollution.", "cn": "空气污染。", "level": 1},
-      {"en": "Pollution is bad for our health.", "cn": "污染对我们的健康有害。", "level": 2},
-      {"en": "Trees can help reduce the pollution in big cities.", "cn": "树木能帮助减少大城市的污染。", "level": 3}
+      {
+        "en": "Air pollution.",
+        "cn": "空气污染。",
+        "level": 1,
+        "audioFile": "ex_2998c463ec.mp3"
+      },
+      {
+        "en": "Pollution is bad for our health.",
+        "cn": "污染对我们的健康有害。",
+        "level": 2,
+        "audioFile": "ex_291ace949a.mp3"
+      },
+      {
+        "en": "Trees can help reduce the pollution in big cities.",
+        "cn": "树木能帮助减少大城市的污染。",
+        "level": 3,
+        "audioFile": "ex_66c2dce006.mp3"
+      }
     ],
     "desert": [
-      {"en": "A dry desert.", "cn": "一片干燥的沙漠。", "level": 1},
-      {"en": "Few plants grow in the desert.", "cn": "沙漠里几乎没有植物生长。", "level": 2},
-      {"en": "When trees are cut down, land may turn into desert.", "cn": "树木被砍光后，土地可能会变成沙漠。", "level": 3}
+      {
+        "en": "A dry desert.",
+        "cn": "一片干燥的沙漠。",
+        "level": 1,
+        "audioFile": "ex_753d9c25f0.mp3"
+      },
+      {
+        "en": "Few plants grow in the desert.",
+        "cn": "沙漠里几乎没有植物生长。",
+        "level": 2,
+        "audioFile": "ex_b4a5dc9d6d.mp3"
+      },
+      {
+        "en": "When trees are cut down, land may turn into desert.",
+        "cn": "树木被砍光后，土地可能会变成沙漠。",
+        "level": 3,
+        "audioFile": "ex_3a588acf86.mp3"
+      }
     ],
     "shade": [
-      {"en": "In the shade.", "cn": "在阴凉处。", "level": 1},
-      {"en": "We sat in the shade of a tree.", "cn": "我们坐在树荫下。", "level": 2},
-      {"en": "On hot days, big trees give us cool shade.", "cn": "炎热的日子里，大树为我们提供凉爽的阴凉。", "level": 3}
+      {
+        "en": "In the shade.",
+        "cn": "在阴凉处。",
+        "level": 1,
+        "audioFile": "ex_eb91c13b17.mp3"
+      },
+      {
+        "en": "We sat in the shade of a tree.",
+        "cn": "我们坐在树荫下。",
+        "level": 2,
+        "audioFile": "ex_9cb33f7666.mp3"
+      },
+      {
+        "en": "On hot days, big trees give us cool shade.",
+        "cn": "炎热的日子里，大树为我们提供凉爽的阴凉。",
+        "level": 3,
+        "audioFile": "ex_74f6b56c59.mp3"
+      }
     ],
     "root": [
-      {"en": "The tree's root.", "cn": "树根。", "level": 1},
-      {"en": "The roots grow deep into the soil.", "cn": "树根深深扎进土壤里。", "level": 2},
-      {"en": "Strong roots help the tree stand in the wind.", "cn": "强壮的根帮助树在风中站稳。", "level": 3}
+      {
+        "en": "The tree's root.",
+        "cn": "树根。",
+        "level": 1,
+        "audioFile": "ex_9620206f11.mp3"
+      },
+      {
+        "en": "The roots grow deep into the soil.",
+        "cn": "树根深深扎进土壤里。",
+        "level": 2,
+        "audioFile": "ex_e049353ac0.mp3"
+      },
+      {
+        "en": "Strong roots help the tree stand in the wind.",
+        "cn": "强壮的根帮助树在风中站稳。",
+        "level": 3,
+        "audioFile": "ex_1834bb8961.mp3"
+      }
     ],
     "leaf": [
-      {"en": "A green leaf.", "cn": "一片绿叶。", "level": 1},
-      {"en": "The leaves turn yellow in autumn.", "cn": "秋天树叶变黄。", "level": 2},
-      {"en": "Leaves take in sunlight and make food for the tree.", "cn": "叶子吸收阳光，为树制造养分。", "level": 3}
+      {
+        "en": "A green leaf.",
+        "cn": "一片绿叶。",
+        "level": 1,
+        "audioFile": "ex_e3c49819c3.mp3"
+      },
+      {
+        "en": "The leaves turn yellow in autumn.",
+        "cn": "秋天树叶变黄。",
+        "level": 2,
+        "audioFile": "ex_8c374e217b.mp3"
+      },
+      {
+        "en": "Leaves take in sunlight and make food for the tree.",
+        "cn": "叶子吸收阳光，为树制造养分。",
+        "level": 3,
+        "audioFile": "ex_cb8b792b26.mp3"
+      }
     ],
     "branch": [
-      {"en": "A tree branch.", "cn": "一根树枝。", "level": 1},
-      {"en": "Birds sit on the branch.", "cn": "鸟儿停在树枝上。", "level": 2},
-      {"en": "The old tree has many thick branches and green leaves.", "cn": "这棵老树有许多粗壮的树枝和绿叶。", "level": 3}
+      {
+        "en": "A tree branch.",
+        "cn": "一根树枝。",
+        "level": 1,
+        "audioFile": "ex_d90fdb67c4.mp3"
+      },
+      {
+        "en": "Birds sit on the branch.",
+        "cn": "鸟儿停在树枝上。",
+        "level": 2,
+        "audioFile": "ex_f73c5d5c17.mp3"
+      },
+      {
+        "en": "The old tree has many thick branches and green leaves.",
+        "cn": "这棵老树有许多粗壮的树枝和绿叶。",
+        "level": 3,
+        "audioFile": "ex_c16a205ce3.mp3"
+      }
     ],
     "paper": [
-      {"en": "A piece of paper.", "cn": "一张纸。", "level": 1},
-      {"en": "Paper is made from trees.", "cn": "纸是用树木制成的。", "level": 2},
-      {"en": "We should save paper to protect the trees.", "cn": "我们应该节约用纸来保护树木。", "level": 3}
+      {
+        "en": "A piece of paper.",
+        "cn": "一张纸。",
+        "level": 1,
+        "audioFile": "ex_ab0fd9f4be.mp3"
+      },
+      {
+        "en": "Paper is made from trees.",
+        "cn": "纸是用树木制成的。",
+        "level": 2,
+        "audioFile": "ex_66371f6066.mp3"
+      },
+      {
+        "en": "We should save paper to protect the trees.",
+        "cn": "我们应该节约用纸来保护树木。",
+        "level": 3,
+        "audioFile": "ex_2536252c93.mp3"
+      }
     ],
     "recycle": [
-      {"en": "Recycle paper.", "cn": "回收纸张。", "level": 1},
-      {"en": "We should recycle old paper.", "cn": "我们应该回收旧纸。", "level": 2},
-      {"en": "Recycling paper helps save many trees every year.", "cn": "回收纸张每年能帮助挽救许多树木。", "level": 3}
+      {
+        "en": "Recycle paper.",
+        "cn": "回收纸张。",
+        "level": 1,
+        "audioFile": "ex_22cea87d2c.mp3"
+      },
+      {
+        "en": "We should recycle old paper.",
+        "cn": "我们应该回收旧纸。",
+        "level": 2,
+        "audioFile": "ex_ce6e1eaa4c.mp3"
+      },
+      {
+        "en": "Recycling paper helps save many trees every year.",
+        "cn": "回收纸张每年能帮助挽救许多树木。",
+        "level": 3,
+        "audioFile": "ex_60040810ca.mp3"
+      }
     ],
     "reduce": [
-      {"en": "Reduce waste.", "cn": "减少浪费。", "level": 1},
-      {"en": "We should reduce the use of paper.", "cn": "我们应该减少用纸。", "level": 2},
-      {"en": "Reducing pollution can make our environment healthier.", "cn": "减少污染能让我们的环境更健康。", "level": 3}
+      {
+        "en": "Reduce waste.",
+        "cn": "减少浪费。",
+        "level": 1,
+        "audioFile": "ex_c26810bcbd.mp3"
+      },
+      {
+        "en": "We should reduce the use of paper.",
+        "cn": "我们应该减少用纸。",
+        "level": 2,
+        "audioFile": "ex_d1593a2227.mp3"
+      },
+      {
+        "en": "Reducing pollution can make our environment healthier.",
+        "cn": "减少污染能让我们的环境更健康。",
+        "level": 3,
+        "audioFile": "ex_3661067b1e.mp3"
+      }
     ],
     "action": [
-      {"en": "Take action.", "cn": "采取行动。", "level": 1},
-      {"en": "It's time to take action now.", "cn": "现在是采取行动的时候了。", "level": 2},
-      {"en": "We should take action to save the trees and the earth.", "cn": "我们应当采取行动拯救树木和地球。", "level": 3}
+      {
+        "en": "Take action.",
+        "cn": "采取行动。",
+        "level": 1,
+        "audioFile": "ex_849697787d.mp3"
+      },
+      {
+        "en": "It's time to take action now.",
+        "cn": "现在是采取行动的时候了。",
+        "level": 2,
+        "audioFile": "ex_61cf348c9d.mp3"
+      },
+      {
+        "en": "We should take action to save the trees and the earth.",
+        "cn": "我们应当采取行动拯救树木和地球。",
+        "level": 3,
+        "audioFile": "ex_53bb207987.mp3"
+      }
     ],
     "water": [
-      {"en": "Clean water.", "cn": "干净的水。", "level": 1},
-      {"en": "We can't live without water.", "cn": "我们离不开水。", "level": 2},
-      {"en": "We should save every drop of water in our daily life.", "cn": "我们应当在日常生活中节约每一滴水。", "level": 3}
+      {
+        "en": "Clean water.",
+        "cn": "干净的水。",
+        "level": 1,
+        "audioFile": "ex_6ca4f30760.mp3"
+      },
+      {
+        "en": "We can't live without water.",
+        "cn": "我们离不开水。",
+        "level": 2,
+        "audioFile": "ex_04f00602da.mp3"
+      },
+      {
+        "en": "We should save every drop of water in our daily life.",
+        "cn": "我们应当在日常生活中节约每一滴水。",
+        "level": 3,
+        "audioFile": "ex_b940ca0cc5.mp3"
+      }
     ],
     "waste": [
-      {"en": "Don't waste water.", "cn": "别浪费水。", "level": 1},
-      {"en": "It is wrong to waste food.", "cn": "浪费食物是不对的。", "level": 2},
-      {"en": "We waste a lot of water if we leave the tap running.", "cn": "如果让水龙头一直开着，我们会浪费很多水。", "level": 3}
+      {
+        "en": "Don't waste water.",
+        "cn": "别浪费水。",
+        "level": 1,
+        "audioFile": "ex_2beb619ce8.mp3"
+      },
+      {
+        "en": "It is wrong to waste food.",
+        "cn": "浪费食物是不对的。",
+        "level": 2,
+        "audioFile": "ex_8843ba4f7f.mp3"
+      },
+      {
+        "en": "We waste a lot of water if we leave the tap running.",
+        "cn": "如果让水龙头一直开着，我们会浪费很多水。",
+        "level": 3,
+        "audioFile": "ex_62e809a310.mp3"
+      }
     ],
     "save": [
-      {"en": "Save water.", "cn": "节约用水。", "level": 1},
-      {"en": "We must save water every day.", "cn": "我们必须每天节约用水。", "level": 2},
-      {"en": "Saving water today means a better life tomorrow.", "cn": "今天节约用水意味着明天更美好的生活。", "level": 3}
+      {
+        "en": "Save water.",
+        "cn": "节约用水。",
+        "level": 1,
+        "audioFile": "ex_4ed3f15345.mp3"
+      },
+      {
+        "en": "We must save water every day.",
+        "cn": "我们必须每天节约用水。",
+        "level": 2,
+        "audioFile": "ex_c3bf659a73.mp3"
+      },
+      {
+        "en": "Saving water today means a better life tomorrow.",
+        "cn": "今天节约用水意味着明天更美好的生活。",
+        "level": 3,
+        "audioFile": "ex_cbb4ddefb8.mp3"
+      }
     ],
     "river": [
-      {"en": "A long river.", "cn": "一条长河。", "level": 1},
-      {"en": "The river flows through the city.", "cn": "这条河流经城市。", "level": 2},
-      {"en": "We should keep the river clean and free of rubbish.", "cn": "我们应当保持河流清洁、没有垃圾。", "level": 3}
+      {
+        "en": "A long river.",
+        "cn": "一条长河。",
+        "level": 1,
+        "audioFile": "ex_d8fa885b16.mp3"
+      },
+      {
+        "en": "The river flows through the city.",
+        "cn": "这条河流经城市。",
+        "level": 2,
+        "audioFile": "ex_a3e72a2a94.mp3"
+      },
+      {
+        "en": "We should keep the river clean and free of rubbish.",
+        "cn": "我们应当保持河流清洁、没有垃圾。",
+        "level": 3,
+        "audioFile": "ex_5df5aef629.mp3"
+      }
     ],
     "ocean": [
-      {"en": "The deep ocean.", "cn": "深海。", "level": 1},
-      {"en": "The ocean is full of fish.", "cn": "海洋里满是鱼。", "level": 2},
-      {"en": "The ocean covers most of the earth's surface.", "cn": "海洋覆盖了地球的大部分表面。", "level": 3}
+      {
+        "en": "The deep ocean.",
+        "cn": "深海。",
+        "level": 1,
+        "audioFile": "ex_a2ac82e016.mp3"
+      },
+      {
+        "en": "The ocean is full of fish.",
+        "cn": "海洋里满是鱼。",
+        "level": 2,
+        "audioFile": "ex_32d3c38c6f.mp3"
+      },
+      {
+        "en": "The ocean covers most of the earth's surface.",
+        "cn": "海洋覆盖了地球的大部分表面。",
+        "level": 3,
+        "audioFile": "ex_6277f6bbcd.mp3"
+      }
     ],
     "lake": [
-      {"en": "A big lake.", "cn": "一个大湖。", "level": 1},
-      {"en": "We went boating on the lake.", "cn": "我们在湖上划船。", "level": 2},
-      {"en": "The water in this lake is clear and pure.", "cn": "这个湖里的水清澈又纯净。", "level": 3}
+      {
+        "en": "A big lake.",
+        "cn": "一个大湖。",
+        "level": 1,
+        "audioFile": "ex_d5934681c9.mp3"
+      },
+      {
+        "en": "We went boating on the lake.",
+        "cn": "我们在湖上划船。",
+        "level": 2,
+        "audioFile": "ex_a9b683636e.mp3"
+      },
+      {
+        "en": "The water in this lake is clear and pure.",
+        "cn": "这个湖里的水清澈又纯净。",
+        "level": 3,
+        "audioFile": "ex_3935ec07f7.mp3"
+      }
     ],
     "pure": [
-      {"en": "Pure water.", "cn": "纯净水。", "level": 1},
-      {"en": "The water in the mountain is pure.", "cn": "山里的水很纯净。", "level": 2},
-      {"en": "We need pure water that is safe to drink.", "cn": "我们需要可以安全饮用的纯净水。", "level": 3}
+      {
+        "en": "Pure water.",
+        "cn": "纯净水。",
+        "level": 1,
+        "audioFile": "ex_dca554f5b6.mp3"
+      },
+      {
+        "en": "The water in the mountain is pure.",
+        "cn": "山里的水很纯净。",
+        "level": 2,
+        "audioFile": "ex_7a56ab3749.mp3"
+      },
+      {
+        "en": "We need pure water that is safe to drink.",
+        "cn": "我们需要可以安全饮用的纯净水。",
+        "level": 3,
+        "audioFile": "ex_9dbbf22de0.mp3"
+      }
     ],
     "polluted": [
-      {"en": "Polluted water.", "cn": "被污染的水。", "level": 1},
-      {"en": "The river is badly polluted.", "cn": "这条河被严重污染了。", "level": 2},
-      {"en": "We cannot drink polluted water, for it is bad for us.", "cn": "我们不能喝被污染的水，因为它对我们有害。", "level": 3}
+      {
+        "en": "Polluted water.",
+        "cn": "被污染的水。",
+        "level": 1,
+        "audioFile": "ex_4abf731020.mp3"
+      },
+      {
+        "en": "The river is badly polluted.",
+        "cn": "这条河被严重污染了。",
+        "level": 2,
+        "audioFile": "ex_a49b1875e8.mp3"
+      },
+      {
+        "en": "We cannot drink polluted water, for it is bad for us.",
+        "cn": "我们不能喝被污染的水，因为它对我们有害。",
+        "level": 3,
+        "audioFile": "ex_efc41df16f.mp3"
+      }
     ],
     "drop": [
-      {"en": "A drop of water.", "cn": "一滴水。", "level": 1},
-      {"en": "Every drop of water is precious.", "cn": "每一滴水都很珍贵。", "level": 2},
-      {"en": "Don't let a single drop of water be wasted.", "cn": "别让一滴水被浪费。", "level": 3}
+      {
+        "en": "A drop of water.",
+        "cn": "一滴水。",
+        "level": 1,
+        "audioFile": "ex_7f1a6cd4a5.mp3"
+      },
+      {
+        "en": "Every drop of water is precious.",
+        "cn": "每一滴水都很珍贵。",
+        "level": 2,
+        "audioFile": "ex_2c76eb7c49.mp3"
+      },
+      {
+        "en": "Don't let a single drop of water be wasted.",
+        "cn": "别让一滴水被浪费。",
+        "level": 3,
+        "audioFile": "ex_5d13eff5c0.mp3"
+      }
     ],
     "tap": [
-      {"en": "Turn off the tap.", "cn": "关上水龙头。", "level": 1},
-      {"en": "Please don't leave the tap on.", "cn": "请别让水龙头一直开着。", "level": 2},
-      {"en": "Turning off the tap while brushing your teeth saves water.", "cn": "刷牙时关掉水龙头能节约用水。", "level": 3}
+      {
+        "en": "Turn off the tap.",
+        "cn": "关上水龙头。",
+        "level": 1,
+        "audioFile": "ex_194a0efde6.mp3"
+      },
+      {
+        "en": "Please don't leave the tap on.",
+        "cn": "请别让水龙头一直开着。",
+        "level": 2,
+        "audioFile": "ex_62c60eefe0.mp3"
+      },
+      {
+        "en": "Turning off the tap while brushing your teeth saves water.",
+        "cn": "刷牙时关掉水龙头能节约用水。",
+        "level": 3,
+        "audioFile": "ex_5e802ef648.mp3"
+      }
     ],
     "shortage": [
-      {"en": "Water shortage.", "cn": "水短缺。", "level": 1},
-      {"en": "Many places have a water shortage.", "cn": "许多地方都缺水。", "level": 2},
-      {"en": "A water shortage can be a serious problem in dry areas.", "cn": "在干旱地区，缺水可能是个严重的问题。", "level": 3}
+      {
+        "en": "Water shortage.",
+        "cn": "水短缺。",
+        "level": 1,
+        "audioFile": "ex_c64dba5fc3.mp3"
+      },
+      {
+        "en": "Many places have a water shortage.",
+        "cn": "许多地方都缺水。",
+        "level": 2,
+        "audioFile": "ex_a3f2687f61.mp3"
+      },
+      {
+        "en": "A water shortage can be a serious problem in dry areas.",
+        "cn": "在干旱地区，缺水可能是个严重的问题。",
+        "level": 3,
+        "audioFile": "ex_c6f58ea6b8.mp3"
+      }
     ],
     "boil": [
-      {"en": "Boil the water.", "cn": "把水烧开。", "level": 1},
-      {"en": "We boil water before drinking it.", "cn": "我们喝水前先把水烧开。", "level": 2},
-      {"en": "Boiling water can kill the germs in it.", "cn": "烧开水能杀死水里的细菌。", "level": 3}
+      {
+        "en": "Boil the water.",
+        "cn": "把水烧开。",
+        "level": 1,
+        "audioFile": "ex_11c4bb1356.mp3"
+      },
+      {
+        "en": "We boil water before drinking it.",
+        "cn": "我们喝水前先把水烧开。",
+        "level": 2,
+        "audioFile": "ex_772a7f96e6.mp3"
+      },
+      {
+        "en": "Boiling water can kill the germs in it.",
+        "cn": "烧开水能杀死水里的细菌。",
+        "level": 3,
+        "audioFile": "ex_d3b12d6804.mp3"
+      }
     ],
     "pipe": [
-      {"en": "A water pipe.", "cn": "一根水管。", "level": 1},
-      {"en": "The water pipe is broken.", "cn": "水管坏了。", "level": 2},
-      {"en": "Water flows to our homes through long pipes.", "cn": "水通过长长的水管流到我们家里。", "level": 3}
+      {
+        "en": "A water pipe.",
+        "cn": "一根水管。",
+        "level": 1,
+        "audioFile": "ex_d12af9111c.mp3"
+      },
+      {
+        "en": "The water pipe is broken.",
+        "cn": "水管坏了。",
+        "level": 2,
+        "audioFile": "ex_303cc3ba93.mp3"
+      },
+      {
+        "en": "Water flows to our homes through long pipes.",
+        "cn": "水通过长长的水管流到我们家里。",
+        "level": 3,
+        "audioFile": "ex_23ffee451e.mp3"
+      }
     ],
     "fountain": [
-      {"en": "A small fountain.", "cn": "一个小喷泉。", "level": 1},
-      {"en": "There is a fountain in the square.", "cn": "广场上有一个喷泉。", "level": 2},
-      {"en": "The beautiful fountain shoots water high into the air.", "cn": "美丽的喷泉把水高高喷向空中。", "level": 3}
+      {
+        "en": "A small fountain.",
+        "cn": "一个小喷泉。",
+        "level": 1,
+        "audioFile": "ex_022c757b37.mp3"
+      },
+      {
+        "en": "There is a fountain in the square.",
+        "cn": "广场上有一个喷泉。",
+        "level": 2,
+        "audioFile": "ex_0ec3dca24e.mp3"
+      },
+      {
+        "en": "The beautiful fountain shoots water high into the air.",
+        "cn": "美丽的喷泉把水高高喷向空中。",
+        "level": 3,
+        "audioFile": "ex_a85b84aa7b.mp3"
+      }
     ],
     "necessary": [
-      {"en": "Water is necessary.", "cn": "水是必需的。", "level": 1},
-      {"en": "It is necessary to save water.", "cn": "节约用水是必要的。", "level": 2},
-      {"en": "Clean water is necessary for all living things.", "cn": "干净的水对所有生物都是必需的。", "level": 3}
+      {
+        "en": "Water is necessary.",
+        "cn": "水是必需的。",
+        "level": 1,
+        "audioFile": "ex_64ac6ce6b9.mp3"
+      },
+      {
+        "en": "It is necessary to save water.",
+        "cn": "节约用水是必要的。",
+        "level": 2,
+        "audioFile": "ex_2f8183e87f.mp3"
+      },
+      {
+        "en": "Clean water is necessary for all living things.",
+        "cn": "干净的水对所有生物都是必需的。",
+        "level": 3,
+        "audioFile": "ex_32534ba6d6.mp3"
+      }
     ],
     "electricity": [
-      {"en": "Save electricity.", "cn": "节约用电。", "level": 1},
-      {"en": "We use electricity every day.", "cn": "我们每天都用电。", "level": 2},
-      {"en": "Modern life would be hard without electricity.", "cn": "没有电，现代生活会很艰难。", "level": 3}
+      {
+        "en": "Save electricity.",
+        "cn": "节约用电。",
+        "level": 1,
+        "audioFile": "ex_9063512746.mp3"
+      },
+      {
+        "en": "We use electricity every day.",
+        "cn": "我们每天都用电。",
+        "level": 2,
+        "audioFile": "ex_e6e29bd8bc.mp3"
+      },
+      {
+        "en": "Modern life would be hard without electricity.",
+        "cn": "没有电，现代生活会很艰难。",
+        "level": 3,
+        "audioFile": "ex_08471cef73.mp3"
+      }
     ],
     "power": [
-      {"en": "Solar power.", "cn": "太阳能。", "level": 1},
-      {"en": "The machine needs power to run.", "cn": "这台机器需要动力来运转。", "level": 2},
-      {"en": "Wind power is a clean way to make electricity.", "cn": "风力是一种清洁的发电方式。", "level": 3}
+      {
+        "en": "Solar power.",
+        "cn": "太阳能。",
+        "level": 1,
+        "audioFile": "ex_19ff5bc9cd.mp3"
+      },
+      {
+        "en": "The machine needs power to run.",
+        "cn": "这台机器需要动力来运转。",
+        "level": 2,
+        "audioFile": "ex_32d0f51d5e.mp3"
+      },
+      {
+        "en": "Wind power is a clean way to make electricity.",
+        "cn": "风力是一种清洁的发电方式。",
+        "level": 3,
+        "audioFile": "ex_27ffd0f0b4.mp3"
+      }
     ],
     "switch": [
-      {"en": "The light switch.", "cn": "电灯开关。", "level": 1},
-      {"en": "Please turn off the switch.", "cn": "请关掉开关。", "level": 2},
-      {"en": "Remember to turn off the switch to save electricity.", "cn": "记得关掉开关以节约用电。", "level": 3}
+      {
+        "en": "The light switch.",
+        "cn": "电灯开关。",
+        "level": 1,
+        "audioFile": "ex_d53557ad56.mp3"
+      },
+      {
+        "en": "Please turn off the switch.",
+        "cn": "请关掉开关。",
+        "level": 2,
+        "audioFile": "ex_366c89e1b3.mp3"
+      },
+      {
+        "en": "Remember to turn off the switch to save electricity.",
+        "cn": "记得关掉开关以节约用电。",
+        "level": 3,
+        "audioFile": "ex_36ee27edc9.mp3"
+      }
     ],
     "battery": [
-      {"en": "A new battery.", "cn": "一节新电池。", "level": 1},
-      {"en": "My phone battery is dead.", "cn": "我手机电池没电了。", "level": 2},
-      {"en": "This battery can store power for many hours.", "cn": "这块电池能储电好几个小时。", "level": 3}
+      {
+        "en": "A new battery.",
+        "cn": "一节新电池。",
+        "level": 1,
+        "audioFile": "ex_5bc770b1f0.mp3"
+      },
+      {
+        "en": "My phone battery is dead.",
+        "cn": "我手机电池没电了。",
+        "level": 2,
+        "audioFile": "ex_cb93d3711c.mp3"
+      },
+      {
+        "en": "This battery can store power for many hours.",
+        "cn": "这块电池能储电好几个小时。",
+        "level": 3,
+        "audioFile": "ex_9c43eb7185.mp3"
+      }
     ],
     "charge": [
-      {"en": "Charge the phone.", "cn": "给手机充电。", "level": 1},
-      {"en": "I need to charge my phone.", "cn": "我需要给手机充电。", "level": 2},
-      {"en": "Please charge the battery before the long trip.", "cn": "长途旅行前请把电池充满电。", "level": 3}
+      {
+        "en": "Charge the phone.",
+        "cn": "给手机充电。",
+        "level": 1,
+        "audioFile": "ex_8162b8b9c9.mp3"
+      },
+      {
+        "en": "I need to charge my phone.",
+        "cn": "我需要给手机充电。",
+        "level": 2,
+        "audioFile": "ex_a564305f31.mp3"
+      },
+      {
+        "en": "Please charge the battery before the long trip.",
+        "cn": "长途旅行前请把电池充满电。",
+        "level": 3,
+        "audioFile": "ex_0be9476ae8.mp3"
+      }
     ],
     "solar": [
-      {"en": "Solar energy.", "cn": "太阳能。", "level": 1},
-      {"en": "Solar panels use sunlight.", "cn": "太阳能板利用阳光。", "level": 2},
-      {"en": "Solar power is clean and good for the environment.", "cn": "太阳能清洁又有益于环境。", "level": 3}
+      {
+        "en": "Solar energy.",
+        "cn": "太阳能。",
+        "level": 1,
+        "audioFile": "ex_e34a8e2a5b.mp3"
+      },
+      {
+        "en": "Solar panels use sunlight.",
+        "cn": "太阳能板利用阳光。",
+        "level": 2,
+        "audioFile": "ex_d184fbda8c.mp3"
+      },
+      {
+        "en": "Solar power is clean and good for the environment.",
+        "cn": "太阳能清洁又有益于环境。",
+        "level": 3,
+        "audioFile": "ex_2fe1a36f55.mp3"
+      }
     ],
     "wind": [
-      {"en": "A strong wind.", "cn": "一阵大风。", "level": 1},
-      {"en": "The wind turns the machine.", "cn": "风带动机器转动。", "level": 2},
-      {"en": "Wind energy can be turned into electricity.", "cn": "风能可以转化为电力。", "level": 3}
+      {
+        "en": "A strong wind.",
+        "cn": "一阵大风。",
+        "level": 1,
+        "audioFile": "ex_2ee07d9971.mp3"
+      },
+      {
+        "en": "The wind turns the machine.",
+        "cn": "风带动机器转动。",
+        "level": 2,
+        "audioFile": "ex_9adaaaf194.mp3"
+      },
+      {
+        "en": "Wind energy can be turned into electricity.",
+        "cn": "风能可以转化为电力。",
+        "level": 3,
+        "audioFile": "ex_977b494464.mp3"
+      }
     ],
     "energy": [
-      {"en": "Clean energy.", "cn": "清洁能源。", "level": 1},
-      {"en": "We should save energy at home.", "cn": "我们应当在家节约能源。", "level": 2},
-      {"en": "Solar and wind energy are good for the future.", "cn": "太阳能和风能对未来有益。", "level": 3}
+      {
+        "en": "Clean energy.",
+        "cn": "清洁能源。",
+        "level": 1,
+        "audioFile": "ex_594b570957.mp3"
+      },
+      {
+        "en": "We should save energy at home.",
+        "cn": "我们应当在家节约能源。",
+        "level": 2,
+        "audioFile": "ex_7fa9f7c9bb.mp3"
+      },
+      {
+        "en": "Solar and wind energy are good for the future.",
+        "cn": "太阳能和风能对未来有益。",
+        "level": 3,
+        "audioFile": "ex_0189fb9c65.mp3"
+      }
     ],
     "dangerous": [
-      {"en": "Very dangerous.", "cn": "很危险。", "level": 1},
-      {"en": "Electricity can be dangerous.", "cn": "电可能很危险。", "level": 2},
-      {"en": "It is dangerous to touch wires with wet hands.", "cn": "用湿手碰电线很危险。", "level": 3}
+      {
+        "en": "Very dangerous.",
+        "cn": "很危险。",
+        "level": 1,
+        "audioFile": "ex_13106c3d27.mp3"
+      },
+      {
+        "en": "Electricity can be dangerous.",
+        "cn": "电可能很危险。",
+        "level": 2,
+        "audioFile": "ex_d14e82158a.mp3"
+      },
+      {
+        "en": "It is dangerous to touch wires with wet hands.",
+        "cn": "用湿手碰电线很危险。",
+        "level": 3,
+        "audioFile": "ex_7a75bbfe5a.mp3"
+      }
     ],
     "wire": [
-      {"en": "An electric wire.", "cn": "一根电线。", "level": 1},
-      {"en": "Don't touch the broken wire.", "cn": "别碰断了的电线。", "level": 2},
-      {"en": "Electricity travels to our homes through these wires.", "cn": "电通过这些电线传送到我们家里。", "level": 3}
+      {
+        "en": "An electric wire.",
+        "cn": "一根电线。",
+        "level": 1,
+        "audioFile": "ex_1148a89513.mp3"
+      },
+      {
+        "en": "Don't touch the broken wire.",
+        "cn": "别碰断了的电线。",
+        "level": 2,
+        "audioFile": "ex_9868e50eaf.mp3"
+      },
+      {
+        "en": "Electricity travels to our homes through these wires.",
+        "cn": "电通过这些电线传送到我们家里。",
+        "level": 3,
+        "audioFile": "ex_05f1f9babb.mp3"
+      }
     ],
     "bulb": [
-      {"en": "A light bulb.", "cn": "一个灯泡。", "level": 1},
-      {"en": "The bulb is too bright.", "cn": "这个灯泡太亮了。", "level": 2},
-      {"en": "An energy-saving bulb uses less electricity.", "cn": "节能灯泡用电更少。", "level": 3}
+      {
+        "en": "A light bulb.",
+        "cn": "一个灯泡。",
+        "level": 1,
+        "audioFile": "ex_d8dc4ba926.mp3"
+      },
+      {
+        "en": "The bulb is too bright.",
+        "cn": "这个灯泡太亮了。",
+        "level": 2,
+        "audioFile": "ex_b8c73a0efa.mp3"
+      },
+      {
+        "en": "An energy-saving bulb uses less electricity.",
+        "cn": "节能灯泡用电更少。",
+        "level": 3,
+        "audioFile": "ex_3ee0c31a15.mp3"
+      }
     ],
     "fan": [
-      {"en": "An electric fan.", "cn": "一台电风扇。", "level": 1},
-      {"en": "Please turn on the fan.", "cn": "请打开风扇。", "level": 2},
-      {"en": "The fan runs on electricity to keep us cool.", "cn": "风扇靠电运转，让我们凉爽。", "level": 3}
+      {
+        "en": "An electric fan.",
+        "cn": "一台电风扇。",
+        "level": 1,
+        "audioFile": "ex_d0d4e73093.mp3"
+      },
+      {
+        "en": "Please turn on the fan.",
+        "cn": "请打开风扇。",
+        "level": 2,
+        "audioFile": "ex_632edd8431.mp3"
+      },
+      {
+        "en": "The fan runs on electricity to keep us cool.",
+        "cn": "风扇靠电运转，让我们凉爽。",
+        "level": 3,
+        "audioFile": "ex_cc7feb62f1.mp3"
+      }
     ],
     "machine": [
-      {"en": "A new machine.", "cn": "一台新机器。", "level": 1},
-      {"en": "This machine works by electricity.", "cn": "这台机器靠电运转。", "level": 2},
-      {"en": "Modern machines make our daily life much easier.", "cn": "现代机器让我们的日常生活轻松许多。", "level": 3}
+      {
+        "en": "A new machine.",
+        "cn": "一台新机器。",
+        "level": 1,
+        "audioFile": "ex_fc448f350b.mp3"
+      },
+      {
+        "en": "This machine works by electricity.",
+        "cn": "这台机器靠电运转。",
+        "level": 2,
+        "audioFile": "ex_7eccfac143.mp3"
+      },
+      {
+        "en": "Modern machines make our daily life much easier.",
+        "cn": "现代机器让我们的日常生活轻松许多。",
+        "level": 3,
+        "audioFile": "ex_bf720de9ce.mp3"
+      }
     ],
     "invent": [
-      {"en": "Invent a machine.", "cn": "发明一台机器。", "level": 1},
-      {"en": "Edison invented the light bulb.", "cn": "爱迪生发明了电灯泡。", "level": 2},
-      {"en": "People invent new machines to make life better.", "cn": "人们发明新机器来让生活更美好。", "level": 3}
+      {
+        "en": "Invent a machine.",
+        "cn": "发明一台机器。",
+        "level": 1,
+        "audioFile": "ex_db04be8ec1.mp3"
+      },
+      {
+        "en": "Edison invented the light bulb.",
+        "cn": "爱迪生发明了电灯泡。",
+        "level": 2,
+        "audioFile": "ex_3d4781648a.mp3"
+      },
+      {
+        "en": "People invent new machines to make life better.",
+        "cn": "人们发明新机器来让生活更美好。",
+        "level": 3,
+        "audioFile": "ex_e52b560b4a.mp3"
+      }
     ],
     "modern": [
-      {"en": "Modern life.", "cn": "现代生活。", "level": 1},
-      {"en": "We live in a modern city.", "cn": "我们住在一座现代化的城市。", "level": 2},
-      {"en": "Modern machines use electricity to save our time.", "cn": "现代机器用电来节省我们的时间。", "level": 3}
+      {
+        "en": "Modern life.",
+        "cn": "现代生活。",
+        "level": 1,
+        "audioFile": "ex_10ceb35641.mp3"
+      },
+      {
+        "en": "We live in a modern city.",
+        "cn": "我们住在一座现代化的城市。",
+        "level": 2,
+        "audioFile": "ex_0969fce166.mp3"
+      },
+      {
+        "en": "Modern machines use electricity to save our time.",
+        "cn": "现代机器用电来节省我们的时间。",
+        "level": 3,
+        "audioFile": "ex_28e6302ba0.mp3"
+      }
     ],
     "poem": [
-      {"en": "A short poem.", "cn": "一首短诗。", "level": 1},
-      {"en": "I wrote a poem about spring.", "cn": "我写了一首关于春天的诗。", "level": 2},
-      {"en": "This beautiful poem expresses the poet's deep feelings.", "cn": "这首优美的诗表达了诗人深厚的情感。", "level": 3}
+      {
+        "en": "A short poem.",
+        "cn": "一首短诗。",
+        "level": 1,
+        "audioFile": "ex_0818be38b2.mp3"
+      },
+      {
+        "en": "I wrote a poem about spring.",
+        "cn": "我写了一首关于春天的诗。",
+        "level": 2,
+        "audioFile": "ex_e49e79f486.mp3"
+      },
+      {
+        "en": "This beautiful poem expresses the poet's deep feelings.",
+        "cn": "这首优美的诗表达了诗人深厚的情感。",
+        "level": 3,
+        "audioFile": "ex_bafce185b8.mp3"
+      }
     ],
     "poet": [
-      {"en": "A famous poet.", "cn": "一位著名诗人。", "level": 1},
-      {"en": "Li Bai is a great poet.", "cn": "李白是一位伟大的诗人。", "level": 2},
-      {"en": "The poet uses simple words to express deep feelings.", "cn": "诗人用简单的词语表达深刻的情感。", "level": 3}
+      {
+        "en": "A famous poet.",
+        "cn": "一位著名诗人。",
+        "level": 1,
+        "audioFile": "ex_2924cb2083.mp3"
+      },
+      {
+        "en": "Li Bai is a great poet.",
+        "cn": "李白是一位伟大的诗人。",
+        "level": 2,
+        "audioFile": "ex_82cb456346.mp3"
+      },
+      {
+        "en": "The poet uses simple words to express deep feelings.",
+        "cn": "诗人用简单的词语表达深刻的情感。",
+        "level": 3,
+        "audioFile": "ex_632e3a9920.mp3"
+      }
     ],
     "rhyme": [
-      {"en": "A nice rhyme.", "cn": "一段好听的韵脚。", "level": 1},
-      {"en": "These two lines rhyme.", "cn": "这两行押韵。", "level": 2},
-      {"en": "The rhyme makes the poem sound beautiful.", "cn": "押韵让这首诗听起来很优美。", "level": 3}
+      {
+        "en": "A nice rhyme.",
+        "cn": "一段好听的韵脚。",
+        "level": 1,
+        "audioFile": "ex_62d203335a.mp3"
+      },
+      {
+        "en": "These two lines rhyme.",
+        "cn": "这两行押韵。",
+        "level": 2,
+        "audioFile": "ex_d1e96a3f97.mp3"
+      },
+      {
+        "en": "The rhyme makes the poem sound beautiful.",
+        "cn": "押韵让这首诗听起来很优美。",
+        "level": 3,
+        "audioFile": "ex_eb1803536d.mp3"
+      }
     ],
     "line": [
-      {"en": "The first line.", "cn": "第一行。", "level": 1},
-      {"en": "Read the first line of the poem.", "cn": "读这首诗的第一行。", "level": 2},
-      {"en": "Each line of the poem paints a lovely picture.", "cn": "这首诗的每一行都描绘出一幅可爱的画面。", "level": 3}
+      {
+        "en": "The first line.",
+        "cn": "第一行。",
+        "level": 1,
+        "audioFile": "ex_e92781f0d9.mp3"
+      },
+      {
+        "en": "Read the first line of the poem.",
+        "cn": "读这首诗的第一行。",
+        "level": 2,
+        "audioFile": "ex_6fd863ca82.mp3"
+      },
+      {
+        "en": "Each line of the poem paints a lovely picture.",
+        "cn": "这首诗的每一行都描绘出一幅可爱的画面。",
+        "level": 3,
+        "audioFile": "ex_b035c77680.mp3"
+      }
     ],
     "verse": [
-      {"en": "A short verse.", "cn": "一小节诗。", "level": 1},
-      {"en": "The poem has four verses.", "cn": "这首诗有四节。", "level": 2},
-      {"en": "Each verse of the poem tells a small story.", "cn": "这首诗的每一节都讲述一个小故事。", "level": 3}
+      {
+        "en": "A short verse.",
+        "cn": "一小节诗。",
+        "level": 1,
+        "audioFile": "ex_e9fd2b33ff.mp3"
+      },
+      {
+        "en": "The poem has four verses.",
+        "cn": "这首诗有四节。",
+        "level": 2,
+        "audioFile": "ex_91d20aedaf.mp3"
+      },
+      {
+        "en": "Each verse of the poem tells a small story.",
+        "cn": "这首诗的每一节都讲述一个小故事。",
+        "level": 3,
+        "audioFile": "ex_c63e69e685.mp3"
+      }
     ],
     "beautiful": [
-      {"en": "A beautiful poem.", "cn": "一首优美的诗。", "level": 1},
-      {"en": "The moon looks beautiful tonight.", "cn": "今晚的月亮很美。", "level": 2},
-      {"en": "The poet describes the beautiful world around us.", "cn": "诗人描绘出我们周围这个美丽的世界。", "level": 3}
+      {
+        "en": "A beautiful poem.",
+        "cn": "一首优美的诗。",
+        "level": 1,
+        "audioFile": "ex_46ce244834.mp3"
+      },
+      {
+        "en": "The moon looks beautiful tonight.",
+        "cn": "今晚的月亮很美。",
+        "level": 2,
+        "audioFile": "ex_6e7b7c1902.mp3"
+      },
+      {
+        "en": "The poet describes the beautiful world around us.",
+        "cn": "诗人描绘出我们周围这个美丽的世界。",
+        "level": 3,
+        "audioFile": "ex_de15fbb802.mp3"
+      }
     ],
     "simple": [
-      {"en": "A simple word.", "cn": "一个简单的词。", "level": 1},
-      {"en": "This poem is short and simple.", "cn": "这首诗短小又简单。", "level": 2},
-      {"en": "Simple words can also express deep feelings.", "cn": "简单的词语也能表达深刻的情感。", "level": 3}
+      {
+        "en": "A simple word.",
+        "cn": "一个简单的词。",
+        "level": 1,
+        "audioFile": "ex_7545393e04.mp3"
+      },
+      {
+        "en": "This poem is short and simple.",
+        "cn": "这首诗短小又简单。",
+        "level": 2,
+        "audioFile": "ex_c3faf0ab38.mp3"
+      },
+      {
+        "en": "Simple words can also express deep feelings.",
+        "cn": "简单的词语也能表达深刻的情感。",
+        "level": 3,
+        "audioFile": "ex_c0893dc8fd.mp3"
+      }
     ],
     "moon": [
-      {"en": "A bright moon.", "cn": "一轮明月。", "level": 1},
-      {"en": "The moon is round tonight.", "cn": "今晚月亮很圆。", "level": 2},
-      {"en": "Many poets write about the moon in their poems.", "cn": "许多诗人在诗中描写月亮。", "level": 3}
+      {
+        "en": "A bright moon.",
+        "cn": "一轮明月。",
+        "level": 1,
+        "audioFile": "ex_aadaa5b6f7.mp3"
+      },
+      {
+        "en": "The moon is round tonight.",
+        "cn": "今晚月亮很圆。",
+        "level": 2,
+        "audioFile": "ex_1eccd16a93.mp3"
+      },
+      {
+        "en": "Many poets write about the moon in their poems.",
+        "cn": "许多诗人在诗中描写月亮。",
+        "level": 3,
+        "audioFile": "ex_00a3edc3e1.mp3"
+      }
     ],
     "dream": [
-      {"en": "A sweet dream.", "cn": "一个美梦。", "level": 1},
-      {"en": "My dream is to be a teacher.", "cn": "我的梦想是当一名老师。", "level": 2},
-      {"en": "If you work hard, your dream will come true one day.", "cn": "如果你努力，总有一天梦想会实现。", "level": 3}
+      {
+        "en": "A sweet dream.",
+        "cn": "一个美梦。",
+        "level": 1,
+        "audioFile": "ex_aa2198f697.mp3"
+      },
+      {
+        "en": "My dream is to be a teacher.",
+        "cn": "我的梦想是当一名老师。",
+        "level": 2,
+        "audioFile": "ex_afe289421b.mp3"
+      },
+      {
+        "en": "If you work hard, your dream will come true one day.",
+        "cn": "如果你努力，总有一天梦想会实现。",
+        "level": 3,
+        "audioFile": "ex_46d86665f8.mp3"
+      }
     ],
     "silent": [
-      {"en": "Be silent.", "cn": "保持安静。", "level": 1},
-      {"en": "The night is quiet and silent.", "cn": "夜晚安静无声。", "level": 2},
-      {"en": "In the silent night, the poet thinks of his home.", "cn": "在寂静的夜里，诗人思念着家乡。", "level": 3}
+      {
+        "en": "Be silent.",
+        "cn": "保持安静。",
+        "level": 1,
+        "audioFile": "ex_5a51aab48c.mp3"
+      },
+      {
+        "en": "The night is quiet and silent.",
+        "cn": "夜晚安静无声。",
+        "level": 2,
+        "audioFile": "ex_b84cef0d41.mp3"
+      },
+      {
+        "en": "In the silent night, the poet thinks of his home.",
+        "cn": "在寂静的夜里，诗人思念着家乡。",
+        "level": 3,
+        "audioFile": "ex_757307f1d1.mp3"
+      }
     ],
     "whisper": [
-      {"en": "A soft whisper.", "cn": "一声轻语。", "level": 1},
-      {"en": "She spoke in a whisper.", "cn": "她低声说话。", "level": 2},
-      {"en": "The wind seems to whisper a song through the trees.", "cn": "风仿佛在树间低声吟唱。", "level": 3}
+      {
+        "en": "A soft whisper.",
+        "cn": "一声轻语。",
+        "level": 1,
+        "audioFile": "ex_d0c74d4a00.mp3"
+      },
+      {
+        "en": "She spoke in a whisper.",
+        "cn": "她低声说话。",
+        "level": 2,
+        "audioFile": "ex_37c51f4804.mp3"
+      },
+      {
+        "en": "The wind seems to whisper a song through the trees.",
+        "cn": "风仿佛在树间低声吟唱。",
+        "level": 3,
+        "audioFile": "ex_f7a68049d0.mp3"
+      }
     ],
     "express": [
-      {"en": "Express your feelings.", "cn": "表达你的感情。", "level": 1},
-      {"en": "A poem can express our feelings.", "cn": "诗可以表达我们的情感。", "level": 2},
-      {"en": "The poet expresses his love for nature in this poem.", "cn": "诗人在这首诗中表达了他对自然的热爱。", "level": 3}
+      {
+        "en": "Express your feelings.",
+        "cn": "表达你的感情。",
+        "level": 1,
+        "audioFile": "ex_012ae78a47.mp3"
+      },
+      {
+        "en": "A poem can express our feelings.",
+        "cn": "诗可以表达我们的情感。",
+        "level": 2,
+        "audioFile": "ex_d199b32110.mp3"
+      },
+      {
+        "en": "The poet expresses his love for nature in this poem.",
+        "cn": "诗人在这首诗中表达了他对自然的热爱。",
+        "level": 3,
+        "audioFile": "ex_89a9c64521.mp3"
+      }
     ],
     "feeling": [
-      {"en": "A happy feeling.", "cn": "一种快乐的感觉。", "level": 1},
-      {"en": "The poem gives me a warm feeling.", "cn": "这首诗给我温暖的感觉。", "level": 2},
-      {"en": "Good poems often share the writer's true feelings.", "cn": "好诗常常传达作者真实的情感。", "level": 3}
+      {
+        "en": "A happy feeling.",
+        "cn": "一种快乐的感觉。",
+        "level": 1,
+        "audioFile": "ex_ce92b3dcf3.mp3"
+      },
+      {
+        "en": "The poem gives me a warm feeling.",
+        "cn": "这首诗给我温暖的感觉。",
+        "level": 2,
+        "audioFile": "ex_96182a5cfb.mp3"
+      },
+      {
+        "en": "Good poems often share the writer's true feelings.",
+        "cn": "好诗常常传达作者真实的情感。",
+        "level": 3,
+        "audioFile": "ex_74657d325d.mp3"
+      }
     ],
     "love": [
-      {"en": "I love poems.", "cn": "我喜爱诗歌。", "level": 1},
-      {"en": "The poem is full of love.", "cn": "这首诗充满了爱。", "level": 2},
-      {"en": "The poet writes about the love between family members.", "cn": "诗人写下了家人之间的爱。", "level": 3}
+      {
+        "en": "I love poems.",
+        "cn": "我喜爱诗歌。",
+        "level": 1,
+        "audioFile": "ex_fd8fd84dac.mp3"
+      },
+      {
+        "en": "The poem is full of love.",
+        "cn": "这首诗充满了爱。",
+        "level": 2,
+        "audioFile": "ex_2fea757832.mp3"
+      },
+      {
+        "en": "The poet writes about the love between family members.",
+        "cn": "诗人写下了家人之间的爱。",
+        "level": 3,
+        "audioFile": "ex_db547f2ca9.mp3"
+      }
     ],
     "memory": [
-      {"en": "A happy memory.", "cn": "一段美好的回忆。", "level": 1},
-      {"en": "This poem brings back old memories.", "cn": "这首诗勾起了往日的回忆。", "level": 2},
-      {"en": "The poem keeps the sweet memories of his childhood.", "cn": "这首诗留住了他童年的美好回忆。", "level": 3}
+      {
+        "en": "A happy memory.",
+        "cn": "一段美好的回忆。",
+        "level": 1,
+        "audioFile": "ex_7c6481a786.mp3"
+      },
+      {
+        "en": "This poem brings back old memories.",
+        "cn": "这首诗勾起了往日的回忆。",
+        "level": 2,
+        "audioFile": "ex_8bf3ffb5fc.mp3"
+      },
+      {
+        "en": "The poem keeps the sweet memories of his childhood.",
+        "cn": "这首诗留住了他童年的美好回忆。",
+        "level": 3,
+        "audioFile": "ex_a4bd8eef1a.mp3"
+      }
     ],
     "hobby": [
-      {"en": "My hobby.", "cn": "我的爱好。", "level": 1},
-      {"en": "My hobby is taking photos.", "cn": "我的爱好是拍照。", "level": 2},
-      {"en": "A hobby can grow into a wonderful career one day.", "cn": "爱好有一天可能发展成美好的职业。", "level": 3}
+      {
+        "en": "My hobby.",
+        "cn": "我的爱好。",
+        "level": 1,
+        "audioFile": "ex_59fe061799.mp3"
+      },
+      {
+        "en": "My hobby is taking photos.",
+        "cn": "我的爱好是拍照。",
+        "level": 2,
+        "audioFile": "ex_fab73ec0af.mp3"
+      },
+      {
+        "en": "A hobby can grow into a wonderful career one day.",
+        "cn": "爱好有一天可能发展成美好的职业。",
+        "level": 3,
+        "audioFile": "ex_4f9127cb3e.mp3"
+      }
     ],
     "career": [
-      {"en": "A good career.", "cn": "一份好职业。", "level": 1},
-      {"en": "She has a successful career.", "cn": "她事业有成。", "level": 2},
-      {"en": "Many people turn their hobby into a career.", "cn": "许多人把爱好变成了职业。", "level": 3}
+      {
+        "en": "A good career.",
+        "cn": "一份好职业。",
+        "level": 1,
+        "audioFile": "ex_246e14cdf3.mp3"
+      },
+      {
+        "en": "She has a successful career.",
+        "cn": "她事业有成。",
+        "level": 2,
+        "audioFile": "ex_36786ad6c9.mp3"
+      },
+      {
+        "en": "Many people turn their hobby into a career.",
+        "cn": "许多人把爱好变成了职业。",
+        "level": 3,
+        "audioFile": "ex_6172f26ae1.mp3"
+      }
     ],
     "interest": [
-      {"en": "My interest.", "cn": "我的兴趣。", "level": 1},
-      {"en": "Music is my main interest.", "cn": "音乐是我主要的兴趣。", "level": 2},
-      {"en": "Following your interest can lead to a happy career.", "cn": "追随你的兴趣能带来快乐的职业。", "level": 3}
+      {
+        "en": "My interest.",
+        "cn": "我的兴趣。",
+        "level": 1,
+        "audioFile": "ex_5fe7a698e3.mp3"
+      },
+      {
+        "en": "Music is my main interest.",
+        "cn": "音乐是我主要的兴趣。",
+        "level": 2,
+        "audioFile": "ex_8d8bf6c2e5.mp3"
+      },
+      {
+        "en": "Following your interest can lead to a happy career.",
+        "cn": "追随你的兴趣能带来快乐的职业。",
+        "level": 3,
+        "audioFile": "ex_a79ddd1481.mp3"
+      }
     ],
     "skill": [
-      {"en": "A new skill.", "cn": "一项新技能。", "level": 1},
-      {"en": "Cooking is a useful skill.", "cn": "烹饪是一项有用的技能。", "level": 2},
-      {"en": "With practice, you can master many useful skills.", "cn": "通过练习，你能掌握许多有用的技能。", "level": 3}
+      {
+        "en": "A new skill.",
+        "cn": "一项新技能。",
+        "level": 1,
+        "audioFile": "ex_f1ea987308.mp3"
+      },
+      {
+        "en": "Cooking is a useful skill.",
+        "cn": "烹饪是一项有用的技能。",
+        "level": 2,
+        "audioFile": "ex_83351b07ca.mp3"
+      },
+      {
+        "en": "With practice, you can master many useful skills.",
+        "cn": "通过练习，你能掌握许多有用的技能。",
+        "level": 3,
+        "audioFile": "ex_c25662be8f.mp3"
+      }
     ],
     "practice": [
-      {"en": "Practice every day.", "cn": "每天练习。", "level": 1},
-      {"en": "I practice the piano after school.", "cn": "我放学后练钢琴。", "level": 2},
-      {"en": "Practice makes perfect, so never stop trying.", "cn": "熟能生巧，所以永不停止尝试。", "level": 3}
+      {
+        "en": "Practice every day.",
+        "cn": "每天练习。",
+        "level": 1,
+        "audioFile": "ex_71664c4c11.mp3"
+      },
+      {
+        "en": "I practice the piano after school.",
+        "cn": "我放学后练钢琴。",
+        "level": 2,
+        "audioFile": "ex_010590a4d4.mp3"
+      },
+      {
+        "en": "Practice makes perfect, so never stop trying.",
+        "cn": "熟能生巧，所以永不停止尝试。",
+        "level": 3,
+        "audioFile": "ex_fee96c2438.mp3"
+      }
     ],
     "success": [
-      {"en": "Great success.", "cn": "巨大的成功。", "level": 1},
-      {"en": "Hard work brings success.", "cn": "努力带来成功。", "level": 2},
-      {"en": "Success comes to those who never give up their dreams.", "cn": "成功属于那些从不放弃梦想的人。", "level": 3}
+      {
+        "en": "Great success.",
+        "cn": "巨大的成功。",
+        "level": 1,
+        "audioFile": "ex_7a54cf37c5.mp3"
+      },
+      {
+        "en": "Hard work brings success.",
+        "cn": "努力带来成功。",
+        "level": 2,
+        "audioFile": "ex_ee6e7741db.mp3"
+      },
+      {
+        "en": "Success comes to those who never give up their dreams.",
+        "cn": "成功属于那些从不放弃梦想的人。",
+        "level": 3,
+        "audioFile": "ex_e56edfcca8.mp3"
+      }
     ],
     "future": [
-      {"en": "In the future.", "cn": "在未来。", "level": 1},
-      {"en": "I want to be a doctor in the future.", "cn": "我将来想当医生。", "level": 2},
-      {"en": "Work hard now and you will have a bright future.", "cn": "现在努力，你就会有光明的未来。", "level": 3}
+      {
+        "en": "In the future.",
+        "cn": "在未来。",
+        "level": 1,
+        "audioFile": "ex_1ab4a2befe.mp3"
+      },
+      {
+        "en": "I want to be a doctor in the future.",
+        "cn": "我将来想当医生。",
+        "level": 2,
+        "audioFile": "ex_a7b6262263.mp3"
+      },
+      {
+        "en": "Work hard now and you will have a bright future.",
+        "cn": "现在努力，你就会有光明的未来。",
+        "level": 3,
+        "audioFile": "ex_7c29c51708.mp3"
+      }
     ],
     "chef": [
-      {"en": "A famous chef.", "cn": "一位著名厨师。", "level": 1},
-      {"en": "The chef cooks delicious food.", "cn": "这位厨师做的菜很美味。", "level": 2},
-      {"en": "He dreams of becoming a great chef one day.", "cn": "他梦想有一天成为一名出色的厨师。", "level": 3}
+      {
+        "en": "A famous chef.",
+        "cn": "一位著名厨师。",
+        "level": 1,
+        "audioFile": "ex_261ea3a7af.mp3"
+      },
+      {
+        "en": "The chef cooks delicious food.",
+        "cn": "这位厨师做的菜很美味。",
+        "level": 2,
+        "audioFile": "ex_c8358679eb.mp3"
+      },
+      {
+        "en": "He dreams of becoming a great chef one day.",
+        "cn": "他梦想有一天成为一名出色的厨师。",
+        "level": 3,
+        "audioFile": "ex_d2a36fa4ee.mp3"
+      }
     ],
     "designer": [
-      {"en": "A clothes designer.", "cn": "一位服装设计师。", "level": 1},
-      {"en": "She is a famous designer.", "cn": "她是一位著名的设计师。", "level": 2},
-      {"en": "A good designer needs both skill and imagination.", "cn": "好的设计师既需要技能又需要想象力。", "level": 3}
+      {
+        "en": "A clothes designer.",
+        "cn": "一位服装设计师。",
+        "level": 1,
+        "audioFile": "ex_6f4fc7629f.mp3"
+      },
+      {
+        "en": "She is a famous designer.",
+        "cn": "她是一位著名的设计师。",
+        "level": 2,
+        "audioFile": "ex_b613a17ee4.mp3"
+      },
+      {
+        "en": "A good designer needs both skill and imagination.",
+        "cn": "好的设计师既需要技能又需要想象力。",
+        "level": 3,
+        "audioFile": "ex_140093b34e.mp3"
+      }
     ],
     "photographer": [
-      {"en": "A young photographer.", "cn": "一位年轻摄影师。", "level": 1},
-      {"en": "The photographer took many photos.", "cn": "这位摄影师拍了许多照片。", "level": 2},
-      {"en": "Her hobby for photos made her a great photographer.", "cn": "对照片的爱好让她成为出色的摄影师。", "level": 3}
+      {
+        "en": "A young photographer.",
+        "cn": "一位年轻摄影师。",
+        "level": 1,
+        "audioFile": "ex_b936c42c66.mp3"
+      },
+      {
+        "en": "The photographer took many photos.",
+        "cn": "这位摄影师拍了许多照片。",
+        "level": 2,
+        "audioFile": "ex_8e06291a31.mp3"
+      },
+      {
+        "en": "Her hobby for photos made her a great photographer.",
+        "cn": "对照片的爱好让她成为出色的摄影师。",
+        "level": 3,
+        "audioFile": "ex_f427a774f9.mp3"
+      }
     ],
     "engineer": [
-      {"en": "An engineer.", "cn": "一名工程师。", "level": 1},
-      {"en": "My father is an engineer.", "cn": "我爸爸是一名工程师。", "level": 2},
-      {"en": "He studies hard to become a computer engineer.", "cn": "他努力学习，想成为一名计算机工程师。", "level": 3}
+      {
+        "en": "An engineer.",
+        "cn": "一名工程师。",
+        "level": 1,
+        "audioFile": "ex_5a35cedf6b.mp3"
+      },
+      {
+        "en": "My father is an engineer.",
+        "cn": "我爸爸是一名工程师。",
+        "level": 2,
+        "audioFile": "ex_cdd8a4927e.mp3"
+      },
+      {
+        "en": "He studies hard to become a computer engineer.",
+        "cn": "他努力学习，想成为一名计算机工程师。",
+        "level": 3,
+        "audioFile": "ex_8304edba5d.mp3"
+      }
     ],
     "teacher": [
-      {"en": "A kind teacher.", "cn": "一位和蔼的老师。", "level": 1},
-      {"en": "My teacher is very patient.", "cn": "我的老师很有耐心。", "level": 2},
-      {"en": "A good teacher helps students follow their dreams.", "cn": "好老师帮助学生追逐梦想。", "level": 3}
+      {
+        "en": "A kind teacher.",
+        "cn": "一位和蔼的老师。",
+        "level": 1,
+        "audioFile": "ex_b698e7569e.mp3"
+      },
+      {
+        "en": "My teacher is very patient.",
+        "cn": "我的老师很有耐心。",
+        "level": 2,
+        "audioFile": "ex_b99d981578.mp3"
+      },
+      {
+        "en": "A good teacher helps students follow their dreams.",
+        "cn": "好老师帮助学生追逐梦想。",
+        "level": 3,
+        "audioFile": "ex_b21f52372b.mp3"
+      }
     ],
     "creative": [
-      {"en": "A creative idea.", "cn": "一个有创意的想法。", "level": 1},
-      {"en": "She is a creative girl.", "cn": "她是个有创造力的女孩。", "level": 2},
-      {"en": "Creative people often find new ways to solve problems.", "cn": "有创造力的人常能找到解决问题的新方法。", "level": 3}
+      {
+        "en": "A creative idea.",
+        "cn": "一个有创意的想法。",
+        "level": 1,
+        "audioFile": "ex_a247ed16fc.mp3"
+      },
+      {
+        "en": "She is a creative girl.",
+        "cn": "她是个有创造力的女孩。",
+        "level": 2,
+        "audioFile": "ex_acbefdd59d.mp3"
+      },
+      {
+        "en": "Creative people often find new ways to solve problems.",
+        "cn": "有创造力的人常能找到解决问题的新方法。",
+        "level": 3,
+        "audioFile": "ex_80b5bddf76.mp3"
+      }
     ],
     "passion": [
-      {"en": "A great passion.", "cn": "极大的热情。", "level": 1},
-      {"en": "He has a passion for music.", "cn": "他对音乐充满热情。", "level": 2},
-      {"en": "With passion for your work, you will never feel tired.", "cn": "对工作充满热情，你就永远不会觉得累。", "level": 3}
+      {
+        "en": "A great passion.",
+        "cn": "极大的热情。",
+        "level": 1,
+        "audioFile": "ex_921fdd9631.mp3"
+      },
+      {
+        "en": "He has a passion for music.",
+        "cn": "他对音乐充满热情。",
+        "level": 2,
+        "audioFile": "ex_f38a17e14c.mp3"
+      },
+      {
+        "en": "With passion for your work, you will never feel tired.",
+        "cn": "对工作充满热情，你就永远不会觉得累。",
+        "level": 3,
+        "audioFile": "ex_1d466a1c20.mp3"
+      }
     ]
   }
 }

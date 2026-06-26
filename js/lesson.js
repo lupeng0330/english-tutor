@@ -901,6 +901,35 @@ function showWord() {
 // 缓存：textbook id -> { grade_term: { words: { word: [...] } } }
 const _examplesCache = {};
 const _examplesLoading = {};
+// 当前正在播放的例句本地 MP3（用于点其它例句/切词时停掉，避免叠音）
+let _exampleAudio = null;
+// 当前正处于"播放中"的例句按钮的复位函数。
+// 点新例句/切词时，光停音频还不够——旧按钮的 done/disabled/图标是局部闭包，
+// 停音够不到它，会卡在 ⏳/🔈 且 disabled（再点无反应）。这里全局记一个引用，
+// 切换前先把上一个按钮 UI 复位。
+let _exampleBtnReset = null;
+function _resetExampleBtn() {
+  if (_exampleBtnReset) {
+    const fn = _exampleBtnReset;
+    _exampleBtnReset = null;
+    try { fn(); } catch (e) {}
+  }
+}
+function _stopExampleAudio() {
+  if (_exampleAudio) {
+    try {
+      // 关键：先解绑事件回调再清空 src。
+      // 否则 src='' 会触发 onerror → failLocal → playOnlineThenTTS，
+      // 导致"被停掉"的例句又用有道在线重播一遍（叠音 / 切词后仍在响的根因）。
+      _exampleAudio.onerror = null;
+      _exampleAudio.onended = null;
+      _exampleAudio.onplaying = null;
+      _exampleAudio.pause();
+      _exampleAudio.src = '';
+    } catch (e) {}
+    _exampleAudio = null;
+  }
+}
 
 function _examplesFileKey(ctx) {
   // 目前仅 jk 教材的 grade6.下 有例句数据，对应 data/examples/jk_grade6_xia.json
@@ -934,6 +963,12 @@ function renderWordExamples(w) {
   const list = document.getElementById('wordExamplesList');
   const toggle = document.getElementById('wordExamplesToggle');
   if (!wrap || !list) return;
+  // 切词重渲染前，停掉上一条例句音频，避免旧句继续响。
+  // 注意：例句可能正走「有道在线/浏览器 TTS」，光停本地 MP3 不够，
+  // 必须连 stopSpeak() 一起停，否则切单词卡后旧例句仍在出声。
+  try { stopSpeak(); } catch (e) {}
+  _stopExampleAudio();
+  _resetExampleBtn();
 
   // 先尝试用单词自己带的 examples 字段；否则从独立例句文件查找
   const inlineExamples = Array.isArray(w.examples) ? w.examples : null;
@@ -967,12 +1002,15 @@ function renderWordExamples(w) {
         e.stopPropagation();
         const sentence = ex.en || '';
         if (!sentence) return;
-        // 例句朗读改走有道在线真人音频（与单词朗读一致，手机端可正常出声），
-        // speakBrowser（Web Speech）仅作兜底；并给出播放/失败的按钮态反馈。
+        // 例句朗读三级降级（与听力题一致，手机端可靠出声）：
+        //   ① 本地预生成 MP3（audio/ex_xxx.mp3，离线 + 单文件，最稳）
+        //   ② 有道在线真人音频（speak）
+        //   ③ 浏览器 TTS（speakBrowser，兜底）
         let done = false;
         const reset = (mark) => {
           if (done) return;
           done = true;
+          if (_exampleBtnReset === reset) _exampleBtnReset = null;
           btn.disabled = false;
           btn.classList.remove('playing');
           btn.textContent = mark || '🔊';
@@ -980,28 +1018,67 @@ function renderWordExamples(w) {
             setTimeout(() => { if (btn.textContent === mark) btn.textContent = '🔊'; }, 1500);
           }
         };
+
+        // 关键：先把上一个还在"播放中"的例句按钮 UI 复位，
+        // 否则旧按钮卡在 ⏳/🔈 且 disabled，再点无反应（连点多条后前面几条点不响的根因）。
+        _resetExampleBtn();
+
         btn.disabled = true;
         btn.classList.add('playing');
         btn.textContent = '⏳';
-        try {
-          speak(sentence, {
-            onStart: () => { btn.textContent = '🔈'; },
-            onEnd: () => reset('🔊'),
-            onError: () => {
-              // 有道失败再兜底浏览器 TTS
-              try {
-                speakBrowser(sentence, {
-                  onStart: () => { done = false; btn.disabled = true; btn.classList.add('playing'); btn.textContent = '🔈'; },
-                  onEnd: () => reset('🔊'),
-                  onError: () => reset('⚠️')
-                });
-              } catch (e2) { reset('⚠️'); }
-            }
-          });
-        } catch (err) {
+        _exampleBtnReset = reset;   // 记录当前激活按钮的复位函数
+
+        // 停掉任何正在播放的音频，避免叠音
+        try { stopSpeak(); } catch (e) {}
+        _stopExampleAudio();
+
+        // ②③：有道在线 → 浏览器 TTS
+        const playOnlineThenTTS = () => {
           try {
-            speakBrowser(sentence, { onEnd: () => reset('🔊'), onError: () => reset('⚠️') });
-          } catch (e2) { reset('⚠️'); }
+            speak(sentence, {
+              onStart: () => { btn.textContent = '🔈'; },
+              onEnd: () => reset('🔊'),
+              onError: () => {
+                try {
+                  speakBrowser(sentence, {
+                    onStart: () => { done = false; btn.disabled = true; btn.classList.add('playing'); btn.textContent = '🔈'; },
+                    onEnd: () => reset('🔊'),
+                    onError: () => reset('⚠️')
+                  });
+                } catch (e2) { reset('⚠️'); }
+              }
+            });
+          } catch (err) {
+            try {
+              speakBrowser(sentence, { onEnd: () => reset('🔊'), onError: () => reset('⚠️') });
+            } catch (e2) { reset('⚠️'); }
+          }
+        };
+
+        // ①：本地 MP3 优先（命中即播，离线可用）
+        const audioFile = ex.audioFile;
+        if (audioFile) {
+          const audio = new Audio('audio/' + audioFile);
+          _exampleAudio = audio;
+          let localFailed = false;
+          const failLocal = () => {
+            if (localFailed) return;
+            localFailed = true;
+            if (_exampleAudio === audio) _exampleAudio = null;
+            playOnlineThenTTS();   // 本地失败 → 退到在线
+          };
+          audio.onplaying = () => { if (!done) btn.textContent = '🔈'; };
+          audio.onended = () => { if (_exampleAudio === audio) _exampleAudio = null; reset('🔊'); };
+          audio.onerror = failLocal;
+          audio.play().catch(failLocal);
+          // 5 秒还没开始播 → 判定本地失败，降级在线
+          setTimeout(() => {
+            if (!localFailed && _exampleAudio === audio && audio.paused && audio.currentTime === 0) {
+              failLocal();
+            }
+          }, 5000);
+        } else {
+          playOnlineThenTTS();
         }
       });
       list.appendChild(item);

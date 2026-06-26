@@ -4,2793 +4,3286 @@
       {
         "en": "I win.",
         "cn": "我赢了。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_cfefe96026.mp3"
       },
       {
         "en": "Our team wins every match.",
         "cn": "我们队场场都赢。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_8829eaa54b.mp3"
       },
       {
         "en": "The tortoise won the race.",
         "cn": "乌龟赢了比赛。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_961bb91dd5.mp3"
       },
       {
         "en": "Slow and steady wins the race.",
         "cn": "慢而稳，才能赢。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_36514028a5.mp3"
       }
     ],
     "carry": [
       {
         "en": "I carry a bag.",
         "cn": "我背着一个包。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a2c83a1503.mp3"
       },
       {
         "en": "She carries a heavy box.",
         "cn": "她搬着一个重箱子。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_f22615065f.mp3"
       },
       {
         "en": "He carried the books to the library.",
         "cn": "他把书搬到了图书馆。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_5d5a866ed1.mp3"
       }
     ],
     "such": [
       {
         "en": "It's such a nice day.",
         "cn": "真是美好的一天。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_df97e2e264.mp3"
       },
       {
         "en": "Why are you in such a hurry?",
         "cn": "你为什么这么匆忙？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_91ddc679b9.mp3"
       },
       {
         "en": "I have never seen such a big tree.",
         "cn": "我从没见过这么大的树。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b0c5358c83.mp3"
       }
     ],
     "proud": [
       {
         "en": "I am proud.",
         "cn": "我很骄傲。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d996c2906e.mp3"
       },
       {
         "en": "Mum is proud of me.",
         "cn": "妈妈为我感到自豪。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_af7c243614.mp3"
       },
       {
         "en": "The hare was too proud and lost the race.",
         "cn": "兔子太骄傲了，输掉了比赛。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e42a718d5a.mp3"
       }
     ],
     "careless": [
       {
         "en": "Don't be careless.",
         "cn": "不要粗心。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d7cfb21867.mp3"
       },
       {
         "en": "A careless boy makes mistakes.",
         "cn": "粗心的男孩会犯错。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_2a84a507fe.mp3"
       },
       {
         "en": "He was careless and fell down.",
         "cn": "他太粗心，摔倒了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_59fb86da63.mp3"
       }
     ],
     "patient": [
       {
         "en": "Be patient.",
         "cn": "要有耐心。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_dd6ccf74ef.mp3"
       },
       {
         "en": "A good teacher is patient.",
         "cn": "好老师很有耐心。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_a79ab3a357.mp3"
       },
       {
         "en": "Be patient, and you will succeed.",
         "cn": "耐心点，你会成功的。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_4061c6515b.mp3"
       }
     ],
     "sad": [
       {
         "en": "I am sad.",
         "cn": "我很难过。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_394a595828.mp3"
       },
       {
         "en": "Don't be sad.",
         "cn": "别难过。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5e8155e20b.mp3"
       },
       {
         "en": "The hare was sad when he lost.",
         "cn": "兔子输了的时候很伤心。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_17cf0b5244.mp3"
       }
     ],
     "steady": [
       {
         "en": "Hold it steady.",
         "cn": "稳稳地拿住。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_400748d2e4.mp3"
       },
       {
         "en": "The boat is steady.",
         "cn": "这艘船很平稳。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_fc7d98c7a7.mp3"
       },
       {
         "en": "Slow and steady wins the race.",
         "cn": "慢而稳，才能赢。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_36514028a5.mp3"
       }
     ],
     "race": [
       {
         "en": "I like races.",
         "cn": "我喜欢比赛。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2ab4a5ffe3.mp3"
       },
       {
         "en": "They had a race.",
         "cn": "他们举行了一场比赛。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_93c8373901.mp3"
       },
       {
         "en": "Who won the race yesterday?",
         "cn": "昨天谁赢得了比赛？",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3eeb22e05f.mp3"
       }
     ],
     "tortoise": [
       {
         "en": "A tortoise is slow.",
         "cn": "乌龟走得很慢。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_da4f49cbb9.mp3"
       },
       {
         "en": "The tortoise is in the garden.",
         "cn": "乌龟在花园里。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_79dace0d31.mp3"
       },
       {
         "en": "The tortoise walked slowly but never stopped.",
         "cn": "乌龟走得慢，但从不停。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_ca52e11857.mp3"
       }
     ],
     "hare": [
       {
         "en": "A hare is fast.",
         "cn": "兔子跑得很快。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_1ad9836f97.mp3"
       },
       {
         "en": "The hare ran very fast.",
         "cn": "兔子跑得非常快。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6108fb7e57.mp3"
       },
       {
         "en": "A hare crashed into the tree and died.",
         "cn": "一只兔子撞到树上死了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_817763936d.mp3"
       }
     ],
     "another": [
       {
         "en": "I want another one.",
         "cn": "我还想要一个。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_610edb2b03.mp3"
       },
       {
         "en": "Give me another apple, please.",
         "cn": "请再给我一个苹果。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_25eb3cdd86.mp3"
       },
       {
         "en": "He waited for another hare to come.",
         "cn": "他等着另一只兔子过来。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2851c5e3a3.mp3"
       }
     ],
     "crash": [
       {
         "en": "Don't crash!",
         "cn": "别撞上！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_17aaca9a75.mp3"
       },
       {
         "en": "The car crashed into the wall.",
         "cn": "汽车撞到了墙上。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9d52fa7082.mp3"
       },
       {
         "en": "The hare crashed into a big tree.",
         "cn": "兔子撞到了一棵大树上。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d6d884d895.mp3"
       }
     ],
     "into": [
       {
         "en": "Come into the room.",
         "cn": "进到房间里来。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_928f267d2b.mp3"
       },
       {
         "en": "He jumped into the pool.",
         "cn": "他跳进了游泳池。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_77d8a11c62.mp3"
       },
       {
         "en": "The hare crashed into the tree.",
         "cn": "兔子撞到了那棵树上。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_5cf43267cb.mp3"
       }
     ],
     "ground": [
       {
         "en": "Sit on the ground.",
         "cn": "坐在地上。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_8e63e391c5.mp3"
       },
       {
         "en": "Leaves fall to the ground.",
         "cn": "叶子落到地上。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_473533fa06.mp3"
       },
       {
         "en": "The hare lay on the ground.",
         "cn": "兔子躺在地上。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_bc3ab6e951.mp3"
       }
     ],
     "die": [
       {
         "en": "Flowers die without water.",
         "cn": "没有水花会枯死。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b6470af903.mp3"
       },
       {
         "en": "The fish died.",
         "cn": "那条鱼死了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_a221c4bf5f.mp3"
       },
       {
         "en": "His crops died because he didn't take care of them.",
         "cn": "因为他不照料，庄稼都死了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_42745822ca.mp3"
       }
     ],
     "pick up": [
       {
         "en": "Pick up your pen.",
         "cn": "把你的笔捡起来。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_183a3f7d84.mp3"
       },
       {
         "en": "She picked up the book.",
         "cn": "她把书捡了起来。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_64f8a2d0be.mp3"
       },
       {
         "en": "The farmer picked up the hare and took it home.",
         "cn": "农夫把兔子捡起来带回了家。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_c01d718487.mp3"
       }
     ],
     "easy": [
       {
         "en": "It's easy.",
         "cn": "这很容易。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a86ded3ba5.mp3"
       },
       {
         "en": "This question is easy.",
         "cn": "这道题很简单。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6ca22d5004.mp3"
       },
       {
         "en": "He thought it was easy to get food.",
         "cn": "他觉得弄到食物很容易。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_4c9f702ac6.mp3"
       }
     ],
     "himself": [
       {
         "en": "He did it himself.",
         "cn": "他自己做的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2d7dae3c47.mp3"
       },
       {
         "en": "Tom made the cake himself.",
         "cn": "Tom 自己做的蛋糕。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_982e292a67.mp3"
       },
       {
         "en": "The farmer talked to himself under the tree.",
         "cn": "农夫在树下自言自语。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_045b2653a5.mp3"
       }
     ],
     "from then on": [
       {
         "en": "From then on, I was happy.",
         "cn": "从那时起，我很开心。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a977d6dade.mp3"
       },
       {
         "en": "From then on, he studied hard.",
         "cn": "从那以后，他努力学习。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5f8170d7fb.mp3"
       },
       {
         "en": "From then on, he didn't work in the field.",
         "cn": "从那以后，他就不在田里干活了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_de4fdf28aa.mp3"
       }
     ],
     "stop": [
       {
         "en": "Stop!",
         "cn": "停！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b05b30a770.mp3"
       },
       {
         "en": "The bus stops here.",
         "cn": "公共汽车在这里停。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_18ee7f9ddd.mp3"
       },
       {
         "en": "He stopped working in the field.",
         "cn": "他停止了在田里的劳作。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7091b75546.mp3"
       }
     ],
     "animal": [
       {
         "en": "I like animals.",
         "cn": "我喜欢动物。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_274472f45e.mp3"
       },
       {
         "en": "What animal is it?",
         "cn": "这是什么动物？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e5c83612aa.mp3"
       },
       {
         "en": "Many animals live in the forest.",
         "cn": "许多动物生活在森林里。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_de5591cef1.mp3"
       }
     ],
     "endangered": [
       {
         "en": "Pandas are endangered.",
         "cn": "熊猫是濒危动物。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_767e6d6238.mp3"
       },
       {
         "en": "Many tigers are endangered.",
         "cn": "很多老虎濒临灭绝。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_3f0812246f.mp3"
       },
       {
         "en": "We should protect endangered animals.",
         "cn": "我们应该保护濒危动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9b024dca8c.mp3"
       }
     ],
     "panda": [
       {
         "en": "I love pandas.",
         "cn": "我喜欢熊猫。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_20c06d76e2.mp3"
       },
       {
         "en": "Pandas are black and white.",
         "cn": "熊猫是黑白相间的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7fa81a6d21.mp3"
       },
       {
         "en": "Pandas live in the bamboo forests of China.",
         "cn": "熊猫生活在中国的竹林里。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e56f43f90a.mp3"
       }
     ],
     "elephant": [
       {
         "en": "Elephants are big.",
         "cn": "大象很大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_8a6df793f2.mp3"
       },
       {
         "en": "The elephant has a long trunk.",
         "cn": "大象有长长的鼻子。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6ce797bf3d.mp3"
       },
       {
         "en": "Elephants are the largest land animals.",
         "cn": "大象是陆地上最大的动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e23d53ff9c.mp3"
       }
     ],
     "whale": [
       {
         "en": "A whale is big.",
         "cn": "鲸鱼很大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d77de4fb1e.mp3"
       },
       {
         "en": "Whales live in the sea.",
         "cn": "鲸鱼生活在海里。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ce903d73b5.mp3"
       },
       {
         "en": "The blue whale is the largest animal in the world.",
         "cn": "蓝鲸是世界上最大的动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b2a71a511b.mp3"
       }
     ],
     "giraffe": [
       {
         "en": "A giraffe is tall.",
         "cn": "长颈鹿很高。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_98414424ff.mp3"
       },
       {
         "en": "The giraffe has a long neck.",
         "cn": "长颈鹿有长长的脖子。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b04ab797ed.mp3"
       },
       {
         "en": "Giraffes eat leaves from tall trees.",
         "cn": "长颈鹿吃高高的树上的叶子。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_27e8fa7209.mp3"
       }
     ],
     "tiger": [
       {
         "en": "A tiger is strong.",
         "cn": "老虎很强壮。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_416df9c3bc.mp3"
       },
       {
         "en": "The tiger is a big cat.",
         "cn": "老虎是一种大型猫科动物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_a8723714b2.mp3"
       },
       {
         "en": "Tigers are in danger and we must protect them.",
         "cn": "老虎处于危险中，我们必须保护它们。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_dca1e6f708.mp3"
       }
     ],
     "protect": [
       {
         "en": "Protect the birds.",
         "cn": "保护鸟类。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_5efd902fba.mp3"
       },
       {
         "en": "We should protect animals.",
         "cn": "我们应该保护动物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_fc79ac929a.mp3"
       },
       {
         "en": "We can protect their homes and keep them safe.",
         "cn": "我们可以保护它们的家园，让它们安全。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_dc4f218da9.mp3"
       }
     ],
     "save": [
       {
         "en": "Save water!",
         "cn": "节约用水！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_29afa59107.mp3"
       },
       {
         "en": "We can save the animals.",
         "cn": "我们可以拯救动物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_f29ea2045a.mp3"
       },
       {
         "en": "Every small action can save endangered animals.",
         "cn": "每一个小行动都能拯救濒危动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3cccf5232d.mp3"
       }
     ],
     "in danger": [
       {
         "en": "They are in danger.",
         "cn": "它们处于危险中。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_71f04a9779.mp3"
       },
       {
         "en": "Many animals are in danger.",
         "cn": "许多动物处于危险中。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9c32b00d32.mp3"
       },
       {
         "en": "Pandas are in danger because of pollution.",
         "cn": "熊猫因污染而处于危险中。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d6fd9de8bc.mp3"
       }
     ],
     "kill": [
       {
         "en": "Don't kill!",
         "cn": "不要杀害！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_52e410f0bf.mp3"
       },
       {
         "en": "We shouldn't kill animals.",
         "cn": "我们不应该杀害动物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_c7989f62f1.mp3"
       },
       {
         "en": "People kill animals for their fur.",
         "cn": "人们为了皮毛而猎杀动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_edf28bc893.mp3"
       }
     ],
     "forest": [
       {
         "en": "A forest has many trees.",
         "cn": "森林里有很多树。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_8410a367cf.mp3"
       },
       {
         "en": "Animals live in the forest.",
         "cn": "动物生活在森林里。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_8884cdddb5.mp3"
       },
       {
         "en": "People cut down forests and animals lose their homes.",
         "cn": "人们砍伐森林，动物失去了家园。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_bfb35117d6.mp3"
       }
     ],
     "river": [
       {
         "en": "A river is long.",
         "cn": "河很长。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_81443c9bd6.mp3"
       },
       {
         "en": "Fish swim in the river.",
         "cn": "鱼在河里游。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d820d8c44d.mp3"
       },
       {
         "en": "Polluted rivers make fish sick.",
         "cn": "被污染的河水让鱼生病。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_63f4eb5a6b.mp3"
       }
     ],
     "pollute": [
       {
         "en": "Don't pollute.",
         "cn": "别污染环境。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a659a8581d.mp3"
       },
       {
         "en": "Cars pollute the air.",
         "cn": "汽车污染空气。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d7e178cc16.mp3"
       },
       {
         "en": "Factories polluted the river last year.",
         "cn": "去年工厂污染了这条河。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_6a72e9014a.mp3"
       }
     ],
     "clean": [
       {
         "en": "Keep clean.",
         "cn": "保持干净。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b285657600.mp3"
       },
       {
         "en": "I clean my room every day.",
         "cn": "我每天打扫房间。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_eaa04fed72.mp3"
       },
       {
         "en": "We should keep the river clean for the fish.",
         "cn": "我们应该让河水保持干净，为了鱼儿。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0ccc0ef4ad.mp3"
       }
     ],
     "helpful": [
       {
         "en": "Be helpful.",
         "cn": "乐于助人。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_64f6aad761.mp3"
       },
       {
         "en": "He is a helpful boy.",
         "cn": "他是一个乐于助人的男孩。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7e03c34f7c.mp3"
       },
       {
         "en": "Your actions are helpful to the animals.",
         "cn": "你的行动对动物很有帮助。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0eccf5d50e.mp3"
       }
     ],
     "disappear": [
       {
         "en": "It disappeared.",
         "cn": "它消失了。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_af0be3fa2c.mp3"
       },
       {
         "en": "The sun disappeared in the clouds.",
         "cn": "太阳消失在云层中。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b4e3e956da.mp3"
       },
       {
         "en": "Many animals disappeared because of pollution.",
         "cn": "许多动物因污染而消失了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_70065c26e9.mp3"
       }
     ],
     "Earth": [
       {
         "en": "We live on Earth.",
         "cn": "我们生活在地球上。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_776f60c8e2.mp3"
       },
       {
         "en": "The Earth is our home.",
         "cn": "地球是我们的家。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_dcd02b7dcc.mp3"
       },
       {
         "en": "We should protect the Earth and all animals.",
         "cn": "我们应该保护地球和所有动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7b553a7c9f.mp3"
       }
     ],
     "forever": [
       {
         "en": "I will love you forever.",
         "cn": "我会永远爱你。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_69a047b606.mp3"
       },
       {
         "en": "Nothing lasts forever.",
         "cn": "没有什么能永远存在。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_a63316ce2d.mp3"
       },
       {
         "en": "We don't want the animals to disappear forever.",
         "cn": "我们不希望动物们永远消失。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_42f7bbf1a4.mp3"
       }
     ],
     "fur": [
       {
         "en": "Cats have fur.",
         "cn": "猫身上有毛。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_3d811de630.mp3"
       },
       {
         "en": "The fur is soft.",
         "cn": "这皮毛很柔软。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_62b5e92ca5.mp3"
       },
       {
         "en": "Some people kill animals for their fur.",
         "cn": "有些人为了皮毛猎杀动物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_86850b5ab1.mp3"
       }
     ],
     "made": [
       {
         "en": "I made a cake.",
         "cn": "我做了一个蛋糕。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9722c23622.mp3"
       },
       {
         "en": "This bag is made of paper.",
         "cn": "这个包是纸做的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b3685e7e20.mp3"
       },
       {
         "en": "Don't buy things made from animal fur.",
         "cn": "不要买用动物皮毛做的东西。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f5e3b0b086.mp3"
       }
     ],
     "make from": [
       {
         "en": "Make it from paper.",
         "cn": "用纸做的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9f473d0260.mp3"
       },
       {
         "en": "This bag is made from plastic.",
         "cn": "这个包是用塑料做的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_0531284481.mp3"
       },
       {
         "en": "Coats are sometimes made from animal fur.",
         "cn": "外套有时是用动物皮毛做的。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b474fc8e72.mp3"
       }
     ],
     "only": [
       {
         "en": "Only one apple.",
         "cn": "只有一个苹果。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2c84cf9852.mp3"
       },
       {
         "en": "I only have two pens.",
         "cn": "我只有两支笔。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6476935d26.mp3"
       },
       {
         "en": "There are only a few pandas left in the wild.",
         "cn": "野外只剩下很少的熊猫了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_55b852fa2c.mp3"
       }
     ],
     "famous": [
       {
         "en": "He is famous.",
         "cn": "他很有名。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a680f1c436.mp3"
       },
       {
         "en": "She is a famous singer.",
         "cn": "她是一位著名歌手。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d49bce7164.mp3"
       },
       {
         "en": "Dr Sun Yatsen is famous all over the world.",
         "cn": "孙中山先生全世界闻名。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_5d37b3a521.mp3"
       }
     ],
     "leader": [
       {
         "en": "He is our leader.",
         "cn": "他是我们的领袖。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_29d5bcf6ff.mp3"
       },
       {
         "en": "A good leader works hard.",
         "cn": "好领袖会努力工作。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e6221be1cc.mp3"
       },
       {
         "en": "Dr Sun Yatsen was a great leader of China.",
         "cn": "孙中山先生是中国伟大的领袖。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_525cdc62b2.mp3"
       }
     ],
     "born": [
       {
         "en": "I was born in May.",
         "cn": "我在 5 月出生。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_10b5783d2e.mp3"
       },
       {
         "en": "When was he born?",
         "cn": "他什么时候出生的？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_27e876284f.mp3"
       },
       {
         "en": "He was born in 1866 in Guangdong.",
         "cn": "他 1866 年出生在广东。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_10b0196f1e.mp3"
       }
     ],
     "history": [
       {
         "en": "I like history.",
         "cn": "我喜欢历史。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_54ccd66a6b.mp3"
       },
       {
         "en": "We have history class today.",
         "cn": "我们今天有历史课。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d3ca6cbe4f.mp3"
       },
       {
         "en": "Dr Sun Yatsen is important in Chinese history.",
         "cn": "孙中山先生在中国历史上很重要。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e81b4f30a2.mp3"
       }
     ],
     "free": [
       {
         "en": "I am free today.",
         "cn": "我今天有空。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_689919e05f.mp3"
       },
       {
         "en": "The birds are free in the sky.",
         "cn": "鸟儿在天空中自由飞翔。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_c1b1258714.mp3"
       },
       {
         "en": "He wanted to free the Chinese people.",
         "cn": "他想解放中国人民。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_c3d60bfbb0.mp3"
       }
     ],
     "change": [
       {
         "en": "Things change.",
         "cn": "事情在变化。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6f645010a7.mp3"
       },
       {
         "en": "I want to change my room.",
         "cn": "我想改造一下我的房间。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5c88bd049e.mp3"
       },
       {
         "en": "He worked hard to change China and help the people.",
         "cn": "他努力改变中国，帮助人民。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7464f5fb59.mp3"
       }
     ],
     "respect": [
       {
         "en": "Respect your parents.",
         "cn": "尊敬你的父母。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_661726bb56.mp3"
       },
       {
         "en": "We respect our teachers.",
         "cn": "我们尊敬老师。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_8ca3a92535.mp3"
       },
       {
         "en": "People respect Dr Sun Yatsen very much.",
         "cn": "人们非常尊敬孙中山先生。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f165aa2810.mp3"
       }
     ],
     "named after": [
       {
         "en": "I'm named after my grandpa.",
         "cn": "我的名字是以我爷爷的名字命名的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_945ae34d35.mp3"
       },
       {
         "en": "The park is named after him.",
         "cn": "这公园以他的名字命名。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_166697e09b.mp3"
       },
       {
         "en": "Many streets in China are named after Dr Sun Yatsen.",
         "cn": "中国很多街道都以孙中山先生命名。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_bd72c75d9d.mp3"
       }
     ],
     "scientist": [
       {
         "en": "I want to be a scientist.",
         "cn": "我想成为科学家。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2ac1ca3bcc.mp3"
       },
       {
         "en": "A scientist works in a lab.",
         "cn": "科学家在实验室工作。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9319404cf4.mp3"
       },
       {
         "en": "Deng Jiaxian was a great scientist of China.",
         "cn": "邓稼先是中国伟大的科学家。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_4318aa77fa.mp3"
       }
     ],
     "clever": [
       {
         "en": "He is clever.",
         "cn": "他很聪明。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_cc2409c50f.mp3"
       },
       {
         "en": "A clever boy asks questions.",
         "cn": "聪明的男孩会提问。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d2a2815c39.mp3"
       },
       {
         "en": "When he was a child, he was clever and hard-working.",
         "cn": "他小时候就聪明又勤奋。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_47b85f1345.mp3"
       }
     ],
     "thoughtful": [
       {
         "en": "She is thoughtful.",
         "cn": "她很体贴。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_08d746f447.mp3"
       },
       {
         "en": "A thoughtful boy thinks a lot.",
         "cn": "爱思考的男孩想得很多。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_c6950e0592.mp3"
       },
       {
         "en": "He was a quiet and thoughtful child.",
         "cn": "他是一个安静、爱思考的孩子。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_a0deeee960.mp3"
       }
     ],
     "contribution": [
       {
         "en": "Make a contribution.",
         "cn": "做出贡献。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9b053d89ca.mp3"
       },
       {
         "en": "He made a big contribution.",
         "cn": "他做出了很大的贡献。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_58eef56469.mp3"
       },
       {
         "en": "Deng Jiaxian made great contributions to China.",
         "cn": "邓稼先为中国做出了巨大贡献。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e18dc4b495.mp3"
       }
     ],
     "quiet": [
       {
         "en": "Be quiet!",
         "cn": "安静！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_31da6937d3.mp3"
       },
       {
         "en": "He is a quiet boy.",
         "cn": "他是一个安静的男孩。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_39b8603908.mp3"
       },
       {
         "en": "In the library, we should be quiet.",
         "cn": "在图书馆里，我们应该保持安静。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d646272c87.mp3"
       }
     ],
     "all one's life": [
       {
         "en": "All my life.",
         "cn": "我一生。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_3f67f14dd0.mp3"
       },
       {
         "en": "He worked hard all his life.",
         "cn": "他一生都在努力工作。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ba4d7cb0d2.mp3"
       },
       {
         "en": "Deng Jiaxian worked for the country all his life.",
         "cn": "邓稼先一生都在为国家工作。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9c3534f960.mp3"
       }
     ],
     "polite": [
       {
         "en": "Be polite.",
         "cn": "要有礼貌。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a770400e90.mp3"
       },
       {
         "en": "He is a polite boy.",
         "cn": "他是一个有礼貌的男孩。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_dd63e1e561.mp3"
       },
       {
         "en": "It's polite to queue up at the bus stop.",
         "cn": "在公交站排队是礼貌的。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d83928b4f6.mp3"
       }
     ],
     "impolite": [
       {
         "en": "It's impolite.",
         "cn": "这不礼貌。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_0047ad9bfe.mp3"
       },
       {
         "en": "Pushing in line is impolite.",
         "cn": "插队是不礼貌的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5ef7a01dbf.mp3"
       },
       {
         "en": "It's impolite to talk loudly in the library.",
         "cn": "在图书馆里大声说话不礼貌。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3ae468dbda.mp3"
       }
     ],
     "manner": [
       {
         "en": "Good manners.",
         "cn": "好的礼貌。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7f95271457.mp3"
       },
       {
         "en": "We should have good manners.",
         "cn": "我们应该有良好的礼仪。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9d0579e6f6.mp3"
       },
       {
         "en": "Good manners make life better for everyone.",
         "cn": "良好的礼仪让每个人生活更美好。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_74455ac417.mp3"
       }
     ],
     "queue": [
       {
         "en": "Please queue up.",
         "cn": "请排队。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_8ce62050d7.mp3"
       },
       {
         "en": "We queue up at school.",
         "cn": "我们在学校排队。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d778546df0.mp3"
       },
       {
         "en": "Everyone should queue up when waiting for the bus.",
         "cn": "每个人等公交时都应该排队。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_1d4ec58207.mp3"
       }
     ],
     "push in": [
       {
         "en": "Don't push in.",
         "cn": "不要插队。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_40a9cbcd56.mp3"
       },
       {
         "en": "Don't push in line.",
         "cn": "不要在队伍里插队。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e587547a6f.mp3"
       },
       {
         "en": "It's not polite to push in when others are waiting.",
         "cn": "别人排队时插队是不礼貌的。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f777feeb5d.mp3"
       }
     ],
     "loudly": [
       {
         "en": "Don't talk loudly.",
         "cn": "不要大声说话。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_c210787727.mp3"
       },
       {
         "en": "He spoke loudly in class.",
         "cn": "他在课堂上大声讲话。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_681dd85e1e.mp3"
       },
       {
         "en": "We shouldn't talk loudly in the library.",
         "cn": "我们在图书馆不该大声说话。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_ffc6e3be58.mp3"
       }
     ],
     "quietly": [
       {
         "en": "Walk quietly.",
         "cn": "轻轻地走。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_80376de892.mp3"
       },
       {
         "en": "Please speak quietly.",
         "cn": "请小声说话。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e7d7b2bb9c.mp3"
       },
       {
         "en": "We should speak quietly in the reading room.",
         "cn": "在阅览室里我们应该小声说话。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7f9662bb86.mp3"
       }
     ],
     "magic": [
       {
         "en": "It's magic!",
         "cn": "太神奇了！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a98b66a2b1.mp3"
       },
       {
         "en": "I love magic shows.",
         "cn": "我喜欢魔术表演。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d09fd27179.mp3"
       },
       {
         "en": "\"Please\" and \"Thank you\" are magic words.",
         "cn": "“请”和“谢谢”都是魔法词汇。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7ad26db02b.mp3"
       }
     ],
     "please": [
       {
         "en": "Please help me.",
         "cn": "请帮帮我。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_e9d82f239a.mp3"
       },
       {
         "en": "Open the door, please.",
         "cn": "请把门打开。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_274e9c16ce.mp3"
       },
       {
         "en": "Can you pass me the book, please?",
         "cn": "请你把那本书递给我好吗？",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0aedb5a884.mp3"
       }
     ],
     "sorry": [
       {
         "en": "Sorry!",
         "cn": "对不起！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a705295eff.mp3"
       },
       {
         "en": "I'm sorry I'm late.",
         "cn": "对不起我迟到了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ad50a445b1.mp3"
       },
       {
         "en": "I'm sorry for pushing in line just now.",
         "cn": "刚才插队我很抱歉。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_a8189529f5.mp3"
       }
     ],
     "excuse me": [
       {
         "en": "Excuse me.",
         "cn": "打扰一下。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a9aa920b12.mp3"
       },
       {
         "en": "Excuse me, what time is it?",
         "cn": "请问，现在几点？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b643023a15.mp3"
       },
       {
         "en": "Excuse me, where is the nearest library?",
         "cn": "请问，最近的图书馆在哪？",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_33f030dcfa.mp3"
       }
     ],
     "friendly": [
       {
         "en": "Be friendly.",
         "cn": "要友好。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_c25770d10e.mp3"
       },
       {
         "en": "She is friendly to everyone.",
         "cn": "她对每个人都很友好。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e2a24ad417.mp3"
       },
       {
         "en": "A friendly smile can make someone's day better.",
         "cn": "友好的微笑能让别人的一天更美好。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_41d8f6f749.mp3"
       }
     ],
     "travel": [
       {
         "en": "I like to travel.",
         "cn": "我喜欢旅行。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_5b938200c5.mp3"
       },
       {
         "en": "We travel by train.",
         "cn": "我们乘火车旅行。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_08c6a0e674.mp3"
       },
       {
         "en": "I want to travel around the world one day.",
         "cn": "有一天我想环游世界。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_4b7c13e108.mp3"
       }
     ],
     "visit": [
       {
         "en": "Visit me!",
         "cn": "来看我呀！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d4cec81459.mp3"
       },
       {
         "en": "I visit my grandma on Sundays.",
         "cn": "我周日去看外婆。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d2d5868cc1.mp3"
       },
       {
         "en": "We will visit the Great Wall this summer.",
         "cn": "今年夏天我们要参观长城。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_984e0f9a80.mp3"
       }
     ],
     "plane": [
       {
         "en": "A plane flies.",
         "cn": "飞机在飞。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7cea48e5d2.mp3"
       },
       {
         "en": "We go to Beijing by plane.",
         "cn": "我们坐飞机去北京。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6a436148f3.mp3"
       },
       {
         "en": "The plane takes about three hours to fly to Beijing.",
         "cn": "飞机飞到北京大约需要三小时。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_229cd18e4b.mp3"
       }
     ],
     "train": [
       {
         "en": "A train is long.",
         "cn": "火车很长。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6594c16952.mp3"
       },
       {
         "en": "I take the train to school.",
         "cn": "我坐火车去上学。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_c3dba87e5d.mp3"
       },
       {
         "en": "I will take a train to Shanghai next week.",
         "cn": "下周我要坐火车去上海。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b837073a08.mp3"
       }
     ],
     "holiday": [
       {
         "en": "Happy holiday!",
         "cn": "假期快乐！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_f43f602d2d.mp3"
       },
       {
         "en": "Summer holiday is fun.",
         "cn": "暑假很有趣。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e5625a11af.mp3"
       },
       {
         "en": "Where will you go this summer holiday?",
         "cn": "今年暑假你要去哪里？",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e245ec3683.mp3"
       }
     ],
     "can't wait to": [
       {
         "en": "I can't wait!",
         "cn": "我等不及了！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_bdf590b7d4.mp3"
       },
       {
         "en": "I can't wait to open it.",
         "cn": "我等不及要打开它。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_f105cd7f41.mp3"
       },
       {
         "en": "I can't wait to see my old friends again.",
         "cn": "我迫不及待想再见到我的老朋友们。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_53d0347440.mp3"
       }
     ],
     "send": [
       {
         "en": "Send a card.",
         "cn": "寄一张卡片。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_1d770723de.mp3"
       },
       {
         "en": "She sent me a gift.",
         "cn": "她寄给我一份礼物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6c17e9dcee.mp3"
       },
       {
         "en": "I will send you some photos from my trip.",
         "cn": "我会把旅行的照片发给你。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_56c3f6d8d4.mp3"
       }
     ],
     "email": [
       {
         "en": "Send an email.",
         "cn": "发一封邮件。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_912157afbd.mp3"
       },
       {
         "en": "I write emails to my cousin.",
         "cn": "我给表哥写邮件。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b0a0309e2f.mp3"
       },
       {
         "en": "Please write an email to me when you arrive.",
         "cn": "你到了请给我发一封邮件。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_a31550504c.mp3"
       }
     ],
     "photo": [
       {
         "en": "Look at this photo.",
         "cn": "看这张照片。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b8bb41d19a.mp3"
       },
       {
         "en": "I took many photos.",
         "cn": "我拍了很多照片。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e94f7366d6.mp3"
       },
       {
         "en": "I will take many photos at the Great Wall.",
         "cn": "我会在长城拍很多照片。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0bee40d300.mp3"
       }
     ],
     "hometown": [
       {
         "en": "I love my hometown.",
         "cn": "我爱我的家乡。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_842648086a.mp3"
       },
       {
         "en": "My hometown is beautiful.",
         "cn": "我的家乡很美。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_78069b05da.mp3"
       },
       {
         "en": "I will go back to my hometown this holiday.",
         "cn": "这个假期我要回家乡。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d7ed337d98.mp3"
       }
     ],
     "foolish": [
       {
         "en": "That's foolish.",
         "cn": "这真傻。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_27e5c5b7ad.mp3"
       },
       {
         "en": "Don't be foolish.",
         "cn": "别做傻事。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_cb1a7c3bd8.mp3"
       },
       {
         "en": "It was foolish of the hare to take a rest.",
         "cn": "兔子中途休息真是愚蠢。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_324974468f.mp3"
       }
     ],
     "silly": [
       {
         "en": "You are silly.",
         "cn": "你真傻。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_5dd5b1af72.mp3"
       },
       {
         "en": "Don't be silly!",
         "cn": "别犯傻了！",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_21be5db7e9.mp3"
       },
       {
         "en": "You are like that silly hare.",
         "cn": "你就像那只傻兔子一样。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_bcbe30d42d.mp3"
       }
     ],
     "in such a hurry": [
       {
         "en": "Why in such a hurry?",
         "cn": "为什么这么急？",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_752c4e2b83.mp3"
       },
       {
         "en": "I'm in such a hurry today.",
         "cn": "我今天好匆忙。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d03d659477.mp3"
       },
       {
         "en": "Why are you in such a hurry, Jiamin?",
         "cn": "Jiamin，你为什么这么匆忙？",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_ed3433ff9a.mp3"
       }
     ],
     "happen (to)": [
       {
         "en": "It happens.",
         "cn": "这种事常有。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2d41ab6f36.mp3"
       },
       {
         "en": "What happened to you?",
         "cn": "你怎么了？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5321ae343f.mp3"
       },
       {
         "en": "Something strange happened to the hare.",
         "cn": "兔子身上发生了一件怪事。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_36b696e740.mp3"
       }
     ],
     "appear": [
       {
         "en": "It appeared.",
         "cn": "它出现了。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6ee5da286a.mp3"
       },
       {
         "en": "A rainbow appeared in the sky.",
         "cn": "天空出现了一道彩虹。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7a5ba40ef4.mp3"
       },
       {
         "en": "The farmer waited for another hare to appear.",
         "cn": "农夫等着另一只兔子出现。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9bf9407f00.mp3"
       }
     ],
     "go for it": [
       {
         "en": "Go for it!",
         "cn": "加油！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_92cc6c5b69.mp3"
       },
       {
         "en": "If you want to win, go for it.",
         "cn": "要想赢，就去拼。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_feeae68490.mp3"
       },
       {
         "en": "Don't wait for another hare — go for it!",
         "cn": "别等下一只兔子——加油去做吧！",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d59a5f4537.mp3"
       }
     ],
     "frog": [
       {
         "en": "A frog is green.",
         "cn": "青蛙是绿色的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_4d41e35ed9.mp3"
       },
       {
         "en": "Frogs can jump high.",
         "cn": "青蛙能跳得很高。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_1fb0173e31.mp3"
       },
       {
         "en": "Is it a frog? No, it's a kangaroo.",
         "cn": "是青蛙吗？不是，是袋鼠。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_8cf54d4809.mp3"
       }
     ],
     "kangaroo": [
       {
         "en": "A kangaroo is from Australia.",
         "cn": "袋鼠来自澳大利亚。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_137e180f5a.mp3"
       },
       {
         "en": "Kangaroos can jump very far.",
         "cn": "袋鼠能跳得很远。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_0adf64cfb0.mp3"
       },
       {
         "en": "It has two strong back legs — it's a kangaroo.",
         "cn": "它有两条强壮的后腿——是袋鼠。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_66de2490b5.mp3"
       }
     ],
     "turn": [
       {
         "en": "It's my turn.",
         "cn": "轮到我了。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_82ca42177e.mp3"
       },
       {
         "en": "Wait for your turn, please.",
         "cn": "请等你的那一轮。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_aabf9997cc.mp3"
       },
       {
         "en": "My turn. This animal looks like a star.",
         "cn": "轮到我了。这种动物长得像星星。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_021002685d.mp3"
       }
     ],
     "ocean": [
       {
         "en": "The ocean is blue.",
         "cn": "海洋是蓝色的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_f6039b680a.mp3"
       },
       {
         "en": "Fish live in the ocean.",
         "cn": "鱼生活在海洋里。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_88a95c06c3.mp3"
       },
       {
         "en": "It lives in the ocean and looks like a star.",
         "cn": "它生活在海洋里，长得像星星。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0645d8d943.mp3"
       }
     ],
     "starfish": [
       {
         "en": "Look at the starfish.",
         "cn": "看那只海星。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9d8d8f3c0f.mp3"
       },
       {
         "en": "A starfish has five arms.",
         "cn": "海星有五条触手。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b73ba83a23.mp3"
       },
       {
         "en": "Is it a starfish? Yes, it is.",
         "cn": "是海星吗？是的。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_fdfaf5f50d.mp3"
       }
     ],
     "Africa": [
       {
         "en": "Lions live in Africa.",
         "cn": "狮子生活在非洲。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7f3b9cdf31.mp3"
       },
       {
         "en": "There are many animals in Africa.",
         "cn": "非洲有许多动物。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5901ebb662.mp3"
       },
       {
         "en": "Lions live in Africa, not in Asia.",
         "cn": "狮子生活在非洲，不在亚洲。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_17ddcd76a6.mp3"
       }
     ],
     "Asia": [
       {
         "en": "China is in Asia.",
         "cn": "中国在亚洲。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_5d7b4e5e8e.mp3"
       },
       {
         "en": "Tigers live in Asia.",
         "cn": "老虎生活在亚洲。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_bdbcc98aa0.mp3"
       },
       {
         "en": "Tigers live in Asia, not Africa.",
         "cn": "老虎生活在亚洲，不在非洲。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_61163e9ee6.mp3"
       }
     ],
     "lion": [
       {
         "en": "A lion is strong.",
         "cn": "狮子很强壮。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_0a48345931.mp3"
       },
       {
         "en": "The lion is called the King of the Animals.",
         "cn": "狮子被称为“动物之王”。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ad64f38b05.mp3"
       },
       {
         "en": "It is also called the \"King of the Animals\" — a lion.",
         "cn": "它也被称为“动物之王”——狮子。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_df31a4dfd0.mp3"
       }
     ],
     "neck": [
       {
         "en": "My neck hurts.",
         "cn": "我脖子疼。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2fa4fa88eb.mp3"
       },
       {
         "en": "A giraffe has a long neck.",
         "cn": "长颈鹿有长长的脖子。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_46504aa2ed.mp3"
       },
       {
         "en": "Its long neck helps it reach the leaves.",
         "cn": "长脖子让它够到叶子。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_fe640030f2.mp3"
       }
     ],
     "leaf": [
       {
         "en": "A leaf is green.",
         "cn": "叶子是绿色的。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_73d502c79a.mp3"
       },
       {
         "en": "Leaves fall in autumn.",
         "cn": "秋天叶子会落下。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_4ce1f015a2.mp3"
       },
       {
         "en": "Giraffes eat leaves from tall trees.",
         "cn": "长颈鹿吃高高树上的叶子。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_27e8fa7209.mp3"
       }
     ],
     "sea": [
       {
         "en": "I love the sea.",
         "cn": "我爱大海。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_e7c0298ac8.mp3"
       },
       {
         "en": "The sea is deep and blue.",
         "cn": "大海又深又蓝。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_123c9128ef.mp3"
       },
       {
         "en": "Whales and starfish live in the sea.",
         "cn": "鲸鱼和海星生活在海里。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d77505cd94.mp3"
       }
     ],
     "be called": [
       {
         "en": "He is called Tom.",
         "cn": "他叫 Tom。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_27979802a0.mp3"
       },
       {
         "en": "This animal is called a panda.",
         "cn": "这种动物叫熊猫。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_06eda561e7.mp3"
       },
       {
         "en": "The lion is called the \"King of the Animals\".",
         "cn": "狮子被称为“动物之王”。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2f9bcc9733.mp3"
       }
     ],
     "person": [
       {
         "en": "He is a kind person.",
         "cn": "他是个好心人。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d27f1c5511.mp3"
       },
       {
         "en": "Only one person can go in.",
         "cn": "只有一个人可以进去。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_03555d1b17.mp3"
       },
       {
         "en": "Dr Sun Yatsen is a famous person in Chinese history.",
         "cn": "孙中山是中国历史上有名的人物。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_c19e416d4e.mp3"
       }
     ],
     "inventor": [
       {
         "en": "He is an inventor.",
         "cn": "他是一位发明家。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_92738eb1bb.mp3"
       },
       {
         "en": "Edison was a great inventor.",
         "cn": "爱迪生是伟大的发明家。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_4a25743f45.mp3"
       },
       {
         "en": "The inventor of the light bulb was Thomas Edison.",
         "cn": "电灯泡的发明者是托马斯·爱迪生。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_5372bcf587.mp3"
       }
     ],
     "light bulb": [
       {
         "en": "Look at the light bulb.",
         "cn": "看那只灯泡。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_19d452bfdf.mp3"
       },
       {
         "en": "The light bulb is very bright.",
         "cn": "这只灯泡很亮。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_71b1b1a0c0.mp3"
       },
       {
         "en": "Edison invented the light bulb.",
         "cn": "爱迪生发明了电灯泡。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3d4781648a.mp3"
       }
     ],
     "bulb": [
       {
         "en": "Change the bulb.",
         "cn": "换个灯泡。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_1703664bb7.mp3"
       },
       {
         "en": "The old bulb is broken.",
         "cn": "旧灯泡坏了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_11f8652277.mp3"
       },
       {
         "en": "He put a new bulb in the lamp.",
         "cn": "他给台灯换了一个新灯泡。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_04be89b9db.mp3"
       }
     ],
     "movie": [
       {
         "en": "I love movies.",
         "cn": "我爱看电影。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d800f94d03.mp3"
       },
       {
         "en": "We watched a movie last night.",
         "cn": "昨晚我们看了一部电影。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b4a0e560da.mp3"
       },
       {
         "en": "I want to see all the famous movie stars in Hollywood.",
         "cn": "我想在好莱坞看到所有著名电影明星。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e0aa6cb2ac.mp3"
       }
     ],
     "musician": [
       {
         "en": "He is a musician.",
         "cn": "他是一名音乐家。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_bc4d73d25b.mp3"
       },
       {
         "en": "A musician plays music every day.",
         "cn": "音乐家每天演奏音乐。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e92fc07bf4.mp3"
       },
       {
         "en": "Mozart was a famous musician.",
         "cn": "莫扎特是一位著名的音乐家。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_37455ae8a5.mp3"
       }
     ],
     "university": [
       {
         "en": "I go to university.",
         "cn": "我上大学。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9f61b81b76.mp3"
       },
       {
         "en": "Beijing University is very famous.",
         "cn": "北京大学很有名。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_6b83b21060.mp3"
       },
       {
         "en": "Deng Jiaxian went to university in 1941.",
         "cn": "邓稼先 1941 年进入大学。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_1cd6581610.mp3"
       }
     ],
     "invent": [
       {
         "en": "Invent something new.",
         "cn": "发明点新东西。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_c15743bb85.mp3"
       },
       {
         "en": "He invented a new toy.",
         "cn": "他发明了一款新玩具。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_0c8043c72b.mp3"
       },
       {
         "en": "You can invent something new and useful, like Edison.",
         "cn": "你可以像爱迪生那样发明新奇有用的东西。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3891611c9d.mp3"
       }
     ],
     "atomic": [
       {
         "en": "Atomic power is strong.",
         "cn": "原子能很强大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_edc48ac4f6.mp3"
       },
       {
         "en": "Atomic science changed the world.",
         "cn": "原子科学改变了世界。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7a5f75c181.mp3"
       },
       {
         "en": "Deng Jiaxian is often called the father of Chinese atomic science.",
         "cn": "邓稼先常被称为中国原子科学之父。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_89f33f52f3.mp3"
       }
     ],
     "province": [
       {
         "en": "I live in Guangdong Province.",
         "cn": "我住在广东省。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_35f38edf63.mp3"
       },
       {
         "en": "Anhui is a province in China.",
         "cn": "安徽是中国的一个省。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_058706c678.mp3"
       },
       {
         "en": "Deng was born in Anhui Province on June 25, 1924.",
         "cn": "邓稼先 1924 年 6 月 25 日生于安徽省。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_afce2ef53b.mp3"
       }
     ],
     "professor": [
       {
         "en": "He is a professor.",
         "cn": "他是位教授。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_519d373e84.mp3"
       },
       {
         "en": "The professor teaches at the university.",
         "cn": "这位教授在大学教书。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_52db6ba686.mp3"
       },
       {
         "en": "His father was a famous professor.",
         "cn": "他的父亲是一位著名教授。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7860feaadf.mp3"
       }
     ],
     "physics": [
       {
         "en": "I like physics.",
         "cn": "我喜欢物理学。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_908f2e7236.mp3"
       },
       {
         "en": "Physics is difficult.",
         "cn": "物理学很难。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b0401d571e.mp3"
       },
       {
         "en": "He taught physics at Beijing University.",
         "cn": "他在北京大学教物理学。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_720c610320.mp3"
       }
     ],
     "the United States": [
       {
         "en": "I'm from the United States.",
         "cn": "我来自美国。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_bbbfc49c41.mp3"
       },
       {
         "en": "Washington is in the United States.",
         "cn": "华盛顿在美国。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_8ba6e6dc98.mp3"
       },
       {
         "en": "In 1948 Deng went to the United States to study physics.",
         "cn": "1948 年邓稼先赴美攻读物理学。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_8c8dfa6978.mp3"
       }
     ],
     "manners": [
       {
         "en": "Have good manners.",
         "cn": "讲礼貌。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7e8b7ef9ce.mp3"
       },
       {
         "en": "Good manners make us popular.",
         "cn": "好的礼貌让人受欢迎。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ff0f145e62.mp3"
       },
       {
         "en": "Manners can be quite different in different countries.",
         "cn": "不同国家的礼仪差别很大。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d3550fcddd.mp3"
       }
     ],
     "seat": [
       {
         "en": "Take a seat.",
         "cn": "请坐。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_20d9f5c7dd.mp3"
       },
       {
         "en": "This seat is free.",
         "cn": "这个座位空着。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b14d8b5169.mp3"
       },
       {
         "en": "I'll give my seat to the old lady on the bus.",
         "cn": "我会把座位让给公交上的那位老太太。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_fb2ffa885c.mp3"
       }
     ],
     "line": [
       {
         "en": "Stand in line.",
         "cn": "站队。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b903c5c840.mp3"
       },
       {
         "en": "The line is very long.",
         "cn": "队排得很长。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_2ef325b5ba.mp3"
       },
       {
         "en": "I waited in line at the supermarket.",
         "cn": "我在超市里排了队。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2d496005fd.mp3"
       }
     ],
     "push": [
       {
         "en": "Don't push.",
         "cn": "不要推挤。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_f9bd78c42f.mp3"
       },
       {
         "en": "She pushed the door open.",
         "cn": "她把门推开。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_e3df24b047.mp3"
       },
       {
         "en": "A girl tried to push in the line.",
         "cn": "一个女孩想插队。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e516094da3.mp3"
       }
     ],
     "full": [
       {
         "en": "I'm full.",
         "cn": "我吃饱了。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_de757da423.mp3"
       },
       {
         "en": "The cup is full of water.",
         "cn": "杯子装满了水。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_69b12ce924.mp3"
       },
       {
         "en": "The room was full of toys and chocolates.",
         "cn": "房间里满是玩具和巧克力。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_6ff99ffb2e.mp3"
       }
     ],
     "dish": [
       {
         "en": "Wash the dishes.",
         "cn": "洗碗。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_81cb3df26c.mp3"
       },
       {
         "en": "Try this new dish!",
         "cn": "尝尝这道新菜！",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7130fe07cb.mp3"
       },
       {
         "en": "Mum is washing the bowls and dishes.",
         "cn": "妈妈在洗碗碟。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b4e4991de1.mp3"
       }
     ],
     "laugh": [
       {
         "en": "I love to laugh.",
         "cn": "我爱笑。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_c5090ef38d.mp3"
       },
       {
         "en": "They laughed together.",
         "cn": "他们一起笑了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_4eae3748bb.mp3"
       },
       {
         "en": "The lion laughed and said, \"You are so small.\"",
         "cn": "狮子大笑说：“你这么小。”",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3ef0487bf4.mp3"
       }
     ],
     "laugh at": [
       {
         "en": "Don't laugh at me.",
         "cn": "别嘲笑我。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_4d4141333c.mp3"
       },
       {
         "en": "It's rude to laugh at others.",
         "cn": "嘲笑别人很无礼。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_3aeb0181b9.mp3"
       },
       {
         "en": "We should never laugh at people who are different.",
         "cn": "我们不应嘲笑与自己不同的人。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_cc169a9e16.mp3"
       }
     ],
     "light up": [
       {
         "en": "Light up the room.",
         "cn": "把房间点亮。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9a553e304e.mp3"
       },
       {
         "en": "Fireworks light up the sky.",
         "cn": "烟花把天空照亮。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_95c480a8d8.mp3"
       },
       {
         "en": "The inside of the tree lit up brightly.",
         "cn": "树的内部明亮地点亮了。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_a7062458f2.mp3"
       }
     ],
     "lead": [
       {
         "en": "Lead the way.",
         "cn": "带路。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d112024c66.mp3"
       },
       {
         "en": "The teacher led us to the garden.",
         "cn": "老师带我们到花园。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_60a92e26d1.mp3"
       },
       {
         "en": "The road led to a room full of toys.",
         "cn": "那条路通向一间满是玩具的房间。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b1e4393eb2.mp3"
       }
     ],
     "throw": [
       {
         "en": "Don't throw it.",
         "cn": "别扔。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a5b92d85a2.mp3"
       },
       {
         "en": "He threw the ball to me.",
         "cn": "他把球扔给我。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_1c89a67499.mp3"
       },
       {
         "en": "Don't throw things on the ground.",
         "cn": "不要把东西扔在地上。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_54c63812ab.mp3"
       }
     ],
     "besides": [
       {
         "en": "Besides me.",
         "cn": "除了我。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_b151fe10fe.mp3"
       },
       {
         "en": "Besides English, I learn French.",
         "cn": "除了英语，我还学法语。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ede8249177.mp3"
       },
       {
         "en": "Besides good manners, we also need kindness.",
         "cn": "除了礼貌，我们也需要善良。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f10caa28f8.mp3"
       }
     ],
     "carry on (with)": [
       {
         "en": "Carry on!",
         "cn": "继续！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_90df7cdbe7.mp3"
       },
       {
         "en": "Please carry on with your work.",
         "cn": "请继续你的工作。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_2183f9e99e.mp3"
       },
       {
         "en": "The sign said, \"Carry on with your magic.\"",
         "cn": "告示上写着：“继续你的魔法。”",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_a561d91a8e.mp3"
       }
     ],
     "upset": [
       {
         "en": "I am upset.",
         "cn": "我很难过。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6e91c2c30c.mp3"
       },
       {
         "en": "Don't be upset.",
         "cn": "别难过。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_2014a0befa.mp3"
       },
       {
         "en": "Tired and upset, the boy cried out.",
         "cn": "又累又难过，小男孩喊了出来。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_77ad3e810d.mp3"
       }
     ],
     "sign": [
       {
         "en": "Read the sign.",
         "cn": "看告示。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_31cacb1973.mp3"
       },
       {
         "en": "The sign says \"Keep quiet\".",
         "cn": "告示上写着“保持安静”。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9d05bee523.mp3"
       },
       {
         "en": "There was a tree with a sign on it.",
         "cn": "有一棵树上挂着告示。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_4a744747c2.mp3"
       }
     ],
     "except": [
       {
         "en": "All except me.",
         "cn": "除我之外。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_fa9495068e.mp3"
       },
       {
         "en": "Everyone came except Tom.",
         "cn": "除 Tom 外大家都来了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7b362a510f.mp3"
       },
       {
         "en": "Inside everything was dark, except for a sign.",
         "cn": "里面一片漆黑，只剩一块告示。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_cd7d17cbb8.mp3"
       }
     ],
     "abroad": [
       {
         "en": "Go abroad.",
         "cn": "出国。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6c7aecf0cc.mp3"
       },
       {
         "en": "My uncle works abroad.",
         "cn": "我叔叔在国外工作。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_d534c3e48e.mp3"
       },
       {
         "en": "If I can travel abroad, I will go to France.",
         "cn": "如果能出国旅游，我会去法国。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_5b7046994a.mp3"
       }
     ],
     "South Africa": [
       {
         "en": "I love South Africa.",
         "cn": "我喜欢南非。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_160458263a.mp3"
       },
       {
         "en": "Lions live in South Africa.",
         "cn": "狮子生活在南非。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7ca8355f36.mp3"
       },
       {
         "en": "In South Africa I can see many beautiful mountains.",
         "cn": "在南非我可以看到许多美丽的山。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f65a5de2cc.mp3"
       }
     ],
     "nature": [
       {
         "en": "I love nature.",
         "cn": "我爱大自然。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7207ce4171.mp3"
       },
       {
         "en": "Nature is beautiful.",
         "cn": "大自然很美。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_793bf40f37.mp3"
       },
       {
         "en": "Ben loves nature and wants to see the mountains.",
         "cn": "Ben 喜欢大自然，想看山。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_6432efabb2.mp3"
       }
     ],
     "choose": [
       {
         "en": "You choose.",
         "cn": "你选。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7af7f85a82.mp3"
       },
       {
         "en": "She chose a red coat.",
         "cn": "她挑了一件红外套。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_b5fde82faa.mp3"
       },
       {
         "en": "Janet will choose Australia for her trip.",
         "cn": "Janet 会选择去澳大利亚旅行。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_3012bc149b.mp3"
       }
     ],
     "Sydney": [
       {
         "en": "Sydney is big.",
         "cn": "悉尼很大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_5dcd901d51.mp3"
       },
       {
         "en": "Sydney is in Australia.",
         "cn": "悉尼在澳大利亚。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_a63b7deee6.mp3"
       },
       {
         "en": "Daniel came to Sydney last month.",
         "cn": "Daniel 上个月来到悉尼。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d21e9e7f61.mp3"
       }
     ],
     "opera": [
       {
         "en": "I like opera.",
         "cn": "我喜欢歌剧。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_65af3c1193.mp3"
       },
       {
         "en": "Opera is beautiful music.",
         "cn": "歌剧是美妙的音乐。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_37e61e4ac7.mp3"
       },
       {
         "en": "She wants to see the Sydney Opera House.",
         "cn": "她想参观悉尼歌剧院。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_420177280f.mp3"
       }
     ],
     "Sydney Opera House": [
       {
         "en": "Look! The Sydney Opera House.",
         "cn": "看！悉尼歌剧院。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a618c7dde3.mp3"
       },
       {
         "en": "The Sydney Opera House is famous.",
         "cn": "悉尼歌剧院很有名。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9500473215.mp3"
       },
       {
         "en": "I'd like to see the Sydney Opera House one day.",
         "cn": "有一天我想去看悉尼歌剧院。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f3cff6ea58.mp3"
       }
     ],
     "harbour": [
       {
         "en": "Sydney has a harbour.",
         "cn": "悉尼有一个港口。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7e4d457af6.mp3"
       },
       {
         "en": "Ships stop at the harbour.",
         "cn": "船停在港口。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ccd70e38be.mp3"
       },
       {
         "en": "The Harbour Bridge is near the opera house.",
         "cn": "海港大桥在歌剧院旁边。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2c5d3c376c.mp3"
       }
     ],
     "bridge": [
       {
         "en": "Cross the bridge.",
         "cn": "过桥。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_2289f84e91.mp3"
       },
       {
         "en": "The bridge is very long.",
         "cn": "这座桥很长。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_c5081bd502.mp3"
       },
       {
         "en": "The Golden Gate Bridge is in San Francisco.",
         "cn": "金门大桥在旧金山。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_27b9889a91.mp3"
       }
     ],
     "Sydney Harbour Bridge": [
       {
         "en": "See the Sydney Harbour Bridge.",
         "cn": "看悉尼海港大桥。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_0acac2a66a.mp3"
       },
       {
         "en": "The Sydney Harbour Bridge is famous.",
         "cn": "悉尼海港大桥很有名。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_9271f07231.mp3"
       },
       {
         "en": "Janet wants to see the Sydney Harbour Bridge.",
         "cn": "Janet 想看悉尼海港大桥。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9afd0681d5.mp3"
       }
     ],
     "Japan": [
       {
         "en": "Japan is east of China.",
         "cn": "日本在中国东边。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6be0370739.mp3"
       },
       {
         "en": "I want to visit Japan.",
         "cn": "我想去日本。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ebb03f1788.mp3"
       },
       {
         "en": "Xiaoling wants to go to Japan to buy a robot.",
         "cn": "Xiaoling 想去日本买机器人。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_598da978fa.mp3"
       }
     ],
     "Tokyo": [
       {
         "en": "Tokyo is modern.",
         "cn": "东京很现代。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d574e2b5be.mp3"
       },
       {
         "en": "Tokyo is the capital of Japan.",
         "cn": "东京是日本的首都。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_142de91aad.mp3"
       },
       {
         "en": "Tokyo is a great place to go shopping.",
         "cn": "东京是个购物的好地方。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_98aa32c260.mp3"
       }
     ],
     "France": [
       {
         "en": "France is beautiful.",
         "cn": "法国很美。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_4fc13cf119.mp3"
       },
       {
         "en": "French food is famous.",
         "cn": "法国菜很有名。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_7c02f4c002.mp3"
       },
       {
         "en": "Jiamin will go to France for the food.",
         "cn": "Jiamin 会为美食去法国。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_18c633d330.mp3"
       }
     ],
     "Paris": [
       {
         "en": "Paris is the capital of France.",
         "cn": "巴黎是法国首都。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_7ee7038e49.mp3"
       },
       {
         "en": "Paris is a romantic city.",
         "cn": "巴黎是座浪漫的城市。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_88805c04b3.mp3"
       },
       {
         "en": "People say that Paris is the food capital of the world.",
         "cn": "人们说巴黎是世界美食之都。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_eb944f5450.mp3"
       }
     ],
     "capital": [
       {
         "en": "Beijing is our capital.",
         "cn": "北京是我们的首都。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_053cfec993.mp3"
       },
       {
         "en": "What is the capital of France?",
         "cn": "法国的首都是什么？",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_cb0b4aaf80.mp3"
       },
       {
         "en": "Paris is the food capital of the world.",
         "cn": "巴黎是世界美食之都。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_7f52378b30.mp3"
       }
     ],
     "San Francisco": [
       {
         "en": "San Francisco is big.",
         "cn": "旧金山很大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_83b78073d2.mp3"
       },
       {
         "en": "San Francisco is in America.",
         "cn": "旧金山在美国。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_ea09b82ab5.mp3"
       },
       {
         "en": "The Golden Gate Bridge is in San Francisco.",
         "cn": "金门大桥在旧金山。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_27b9889a91.mp3"
       }
     ],
     "Golden Gate Bridge": [
       {
         "en": "Visit the Golden Gate Bridge.",
         "cn": "去看金门大桥。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_43bcc08b94.mp3"
       },
       {
         "en": "The Golden Gate Bridge is red.",
         "cn": "金门大桥是红色的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_85ee695cb6.mp3"
       },
       {
         "en": "The Golden Gate Bridge is in San Francisco, USA.",
         "cn": "金门大桥在美国旧金山。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_6a48b31f0a.mp3"
       }
     ],
     "tower": [
       {
         "en": "Look at the tower.",
         "cn": "看那座塔。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_438251d81c.mp3"
       },
       {
         "en": "The tower is very tall.",
         "cn": "这座塔很高。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_72d6e30af4.mp3"
       },
       {
         "en": "Tower Bridge is in London.",
         "cn": "塔桥在伦敦。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9cef265dbe.mp3"
       }
     ],
     "Tower Bridge": [
       {
         "en": "Tower Bridge is in London.",
         "cn": "塔桥在伦敦。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_9cef265dbe.mp3"
       },
       {
         "en": "Tower Bridge looks like two towers.",
         "cn": "塔桥看起来像两座塔。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5ae17d492e.mp3"
       },
       {
         "en": "Tourists love taking photos of Tower Bridge.",
         "cn": "游客们喜欢拍塔桥的照片。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f6040aa45b.mp3"
       }
     ],
     "Big Ben": [
       {
         "en": "Big Ben is a clock.",
         "cn": "大本钟是一座钟。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_198701194b.mp3"
       },
       {
         "en": "Big Ben is in London.",
         "cn": "大本钟在伦敦。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_58f80bc11e.mp3"
       },
       {
         "en": "Big Ben tells the time every hour.",
         "cn": "大本钟每小时报时。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2dadbbfa08.mp3"
       }
     ],
     "New Zealand": [
       {
         "en": "I love New Zealand.",
         "cn": "我爱新西兰。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d3b963a8f3.mp3"
       },
       {
         "en": "New Zealand has many sheep.",
         "cn": "新西兰有很多羊。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_3e1b88df1b.mp3"
       },
       {
         "en": "Kiwis are birds from New Zealand.",
         "cn": "几维鸟是新西兰的鸟。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_9578f29e7d.mp3"
       }
     ],
     "Wellington": [
       {
         "en": "Wellington is a city.",
         "cn": "惠灵顿是一座城市。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_1cca5f67d5.mp3"
       },
       {
         "en": "Wellington is the capital of New Zealand.",
         "cn": "惠灵顿是新西兰的首都。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_462a05e626.mp3"
       },
       {
         "en": "People in Wellington love the sea.",
         "cn": "惠灵顿的人们喜欢大海。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_1055529b66.mp3"
       }
     ],
     "kiwi": [
       {
         "en": "A kiwi is a bird.",
         "cn": "几维鸟是一种鸟。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_bd2810d760.mp3"
       },
       {
         "en": "The kiwi cannot fly.",
         "cn": "几维鸟不会飞。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_31deefd9d9.mp3"
       },
       {
         "en": "The kiwi is a national bird of New Zealand.",
         "cn": "几维鸟是新西兰的国鸟。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_75f554fb30.mp3"
       }
     ],
     "Ottawa": [
       {
         "en": "Ottawa is a city.",
         "cn": "渥太华是一座城市。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6e3517dc25.mp3"
       },
       {
         "en": "Ottawa is in Canada.",
         "cn": "渥太华在加拿大。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_3d3d4f0bc3.mp3"
       },
       {
         "en": "Ottawa is the capital of Canada.",
         "cn": "渥太华是加拿大首都。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_e54b9bbfb0.mp3"
       }
     ],
     "maple": [
       {
         "en": "A maple is a tree.",
         "cn": "枫树是一种树。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_167b738f17.mp3"
       },
       {
         "en": "Maple leaves are red in autumn.",
         "cn": "秋天枫叶是红色的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_4d4947e478.mp3"
       },
       {
         "en": "The maple leaf is on Canada's flag.",
         "cn": "枫叶在加拿大国旗上。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_2419a8532d.mp3"
       }
     ],
     "flag": [
       {
         "en": "Look at the flag.",
         "cn": "看那面旗。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_6f9046a2c0.mp3"
       },
       {
         "en": "Our flag is red.",
         "cn": "我们的国旗是红色的。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_be3527a179.mp3"
       },
       {
         "en": "Canada's flag has a maple leaf on it.",
         "cn": "加拿大国旗上有一片枫叶。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_8accc78945.mp3"
       }
     ],
     "land": [
       {
         "en": "The plane lands.",
         "cn": "飞机着陆。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_c9fb5b5519.mp3"
       },
       {
         "en": "Birds land on the tree.",
         "cn": "鸟儿落在树上。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_875d795c1c.mp3"
       },
       {
         "en": "The plane lands at 1:00 p.m.",
         "cn": "飞机下午 1 点降落。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_c23266c982.mp3"
       }
     ],
     "Canada": [
       {
         "en": "Canada is big.",
         "cn": "加拿大很大。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_03808f8443.mp3"
       },
       {
         "en": "Canada is in North America.",
         "cn": "加拿大在北美。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_14679623d6.mp3"
       },
       {
         "en": "John lives in Canada with his family.",
         "cn": "John 和家人住在加拿大。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_d4c47ae61f.mp3"
       }
     ],
     "natural": [
       {
         "en": "It's natural.",
         "cn": "这很自然。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d91f165d13.mp3"
       },
       {
         "en": "I love natural food.",
         "cn": "我爱天然食品。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_045662a712.mp3"
       },
       {
         "en": "Canada is famous for its natural beauty.",
         "cn": "加拿大以自然美景著名。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_42c05d17ed.mp3"
       }
     ],
     "beauty": [
       {
         "en": "What a beauty!",
         "cn": "真美！",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_4effc20d46.mp3"
       },
       {
         "en": "The beauty of the lake is amazing.",
         "cn": "湖的美令人惊叹。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_1afef996b6.mp3"
       },
       {
         "en": "I want to see the natural beauty of Canada.",
         "cn": "我想欣赏加拿大的自然美景。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_b4cf50c341.mp3"
       }
     ],
     "waterfall": [
       {
         "en": "Look at the waterfall.",
         "cn": "看那瀑布。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_207e9fe53a.mp3"
       },
       {
         "en": "The waterfall is very high.",
         "cn": "瀑布很高。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_30c12d0ef4.mp3"
       },
       {
         "en": "Canada has beautiful lakes and waterfalls.",
         "cn": "加拿大有美丽的湖泊和瀑布。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_dd3c99aba9.mp3"
       }
     ],
     "Chinatown": [
       {
         "en": "Visit Chinatown.",
         "cn": "逛唐人街。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_84bfdf041c.mp3"
       },
       {
         "en": "There's a Chinatown in Toronto.",
         "cn": "多伦多有一条唐人街。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_70dd8c5c1c.mp3"
       },
       {
         "en": "I plan to visit Chinatown in Toronto.",
         "cn": "我打算去多伦多的唐人街。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0e1e3adf1f.mp3"
       }
     ],
     "Toronto": [
       {
         "en": "Toronto is a city.",
         "cn": "多伦多是一座城市。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_eb881ef4b6.mp3"
       },
       {
         "en": "Toronto is in Canada.",
         "cn": "多伦多在加拿大。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_92c18330fe.mp3"
       },
       {
         "en": "Many Chinese people live in Toronto.",
         "cn": "许多华人住在多伦多。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_6580296971.mp3"
       }
     ],
     "passport": [
       {
         "en": "Here is my passport.",
         "cn": "这是我的护照。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_d58ddeb9ec.mp3"
       },
       {
         "en": "Don't lose your passport.",
         "cn": "别把护照弄丢了。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_5b340cf198.mp3"
       },
       {
         "en": "I finally got my passport last week.",
         "cn": "我上周终于拿到了护照。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_f13565af13.mp3"
       }
     ],
     "book": [
       {
         "en": "Book a room.",
         "cn": "订一间房。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_a55e7cc16f.mp3"
       },
       {
         "en": "I booked a ticket online.",
         "cn": "我网上订了一张票。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_250144c156.mp3"
       },
       {
         "en": "I booked my plane ticket today.",
         "cn": "我今天订好了飞机票。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0215cc162b.mp3"
       }
     ],
     "ticket": [
       {
         "en": "Here is your ticket.",
         "cn": "这是你的票。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_40355cc953.mp3"
       },
       {
         "en": "The ticket is expensive.",
         "cn": "这张票很贵。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_93f21496a1.mp3"
       },
       {
         "en": "I booked my plane ticket today.",
         "cn": "我今天订好了飞机票。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_0215cc162b.mp3"
       }
     ],
     "airport": [
       {
         "en": "Go to the airport.",
         "cn": "去机场。",
-        "level": 1
+        "level": 1,
+        "audioFile": "ex_01ecf3e2c7.mp3"
       },
       {
         "en": "The airport is very big.",
         "cn": "机场很大。",
-        "level": 2
+        "level": 2,
+        "audioFile": "ex_72ec20d692.mp3"
       },
       {
         "en": "I will arrive at the airport on June 12th.",
         "cn": "我将于 6 月 12 日抵达机场。",
-        "level": 3
+        "level": 3,
+        "audioFile": "ex_bb334f24dc.mp3"
       }
     ]
   }
