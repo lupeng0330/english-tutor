@@ -1,0 +1,594 @@
+{
+  "words": {
+    "encyclopaedia": [
+      {"en": "A big encyclopaedia.", "cn": "一本大百科全书。", "level": 1},
+      {"en": "I look up animals in the encyclopaedia.", "cn": "我在百科全书里查动物。", "level": 2},
+      {"en": "An encyclopaedia gives us knowledge about almost everything.", "cn": "百科全书几乎能给我们各种知识。", "level": 3}
+    ],
+    "volume": [
+      {"en": "The first volume.", "cn": "第一卷。", "level": 1},
+      {"en": "This encyclopaedia has ten volumes.", "cn": "这套百科全书有十卷。", "level": 2},
+      {"en": "Each volume of the set covers a different subject.", "cn": "这套书的每一卷涵盖不同的主题。", "level": 3}
+    ],
+    "information": [
+      {"en": "Useful information.", "cn": "有用的信息。", "level": 1},
+      {"en": "I found a lot of information online.", "cn": "我在网上找到了很多信息。", "level": 2},
+      {"en": "We can search the website for more information about it.", "cn": "我们可以在网站上搜索更多相关信息。", "level": 3}
+    ],
+    "subject": [
+      {"en": "My favourite subject.", "cn": "我最喜欢的学科。", "level": 1},
+      {"en": "History is an interesting subject.", "cn": "历史是一门有趣的学科。", "level": 2},
+      {"en": "The article covers a difficult subject in simple words.", "cn": "这篇文章用简单的语言讲解了一个难懂的主题。", "level": 3}
+    ],
+    "knowledge": [
+      {"en": "Useful knowledge.", "cn": "有用的知识。", "level": 1},
+      {"en": "Books give us a lot of knowledge.", "cn": "书籍给我们许多知识。", "level": 2},
+      {"en": "We get knowledge about the world from encyclopaedias.", "cn": "我们从百科全书中获得关于世界的知识。", "level": 3}
+    ],
+    "search": [
+      {"en": "Search online.", "cn": "在线搜索。", "level": 1},
+      {"en": "I search the Internet for answers.", "cn": "我在网上搜索答案。", "level": 2},
+      {"en": "You can search for the topic by typing key words.", "cn": "你可以通过输入关键词来搜索这个话题。", "level": 3}
+    ],
+    "article": [
+      {"en": "A short article.", "cn": "一篇短文。", "level": 1},
+      {"en": "I read an article about animals.", "cn": "我读了一篇关于动物的文章。", "level": 2},
+      {"en": "This article gives detailed information on the topic.", "cn": "这篇文章对该话题给出了详细的信息。", "level": 3}
+    ],
+    "topic": [
+      {"en": "A new topic.", "cn": "一个新话题。", "level": 1},
+      {"en": "We talked about an interesting topic.", "cn": "我们谈论了一个有趣的话题。", "level": 2},
+      {"en": "Each article on the website focuses on one topic.", "cn": "网站上每篇文章都聚焦一个话题。", "level": 3}
+    ],
+    "index": [
+      {"en": "Check the index.", "cn": "查目录索引。", "level": 1},
+      {"en": "Use the index to find the page.", "cn": "用索引找到页码。", "level": 2},
+      {"en": "The index at the back helps you find topics quickly.", "cn": "书后的索引能帮你快速找到话题。", "level": 3}
+    ],
+    "website": [
+      {"en": "A useful website.", "cn": "一个有用的网站。", "level": 1},
+      {"en": "I often visit this website.", "cn": "我常访问这个网站。", "level": 2},
+      {"en": "This website includes articles on many different subjects.", "cn": "这个网站收录了许多不同学科的文章。", "level": 3}
+    ],
+    "detail": [
+      {"en": "Every detail.", "cn": "每个细节。", "level": 1},
+      {"en": "Please tell me the details.", "cn": "请把细节告诉我。", "level": 2},
+      {"en": "The encyclopaedia explains the topic in great detail.", "cn": "百科全书非常详细地解释了这个话题。", "level": 3}
+    ],
+    "quickly": [
+      {"en": "Run quickly.", "cn": "快速地跑。", "level": 1},
+      {"en": "I can find the word quickly.", "cn": "我能很快找到这个词。", "level": 2},
+      {"en": "A good index helps us find information quickly.", "cn": "好的索引能帮我们快速找到信息。", "level": 3}
+    ],
+    "include": [
+      {"en": "Include everyone.", "cn": "包括每个人。", "level": 1},
+      {"en": "The book includes many pictures.", "cn": "这本书包含许多图片。", "level": 2},
+      {"en": "The encyclopaedia includes articles on history and science.", "cn": "这套百科全书收录了历史和科学方面的文章。", "level": 3}
+    ],
+    "publish": [
+      {"en": "Publish a book.", "cn": "出版一本书。", "level": 1},
+      {"en": "They publish a new volume every year.", "cn": "他们每年出版一卷新书。", "level": 2},
+      {"en": "This encyclopaedia was first published a hundred years ago.", "cn": "这套百科全书于一百年前首次出版。", "level": 3}
+    ],
+    "expert": [
+      {"en": "A science expert.", "cn": "一位科学专家。", "level": 1},
+      {"en": "He is an expert on animals.", "cn": "他是研究动物的专家。", "level": 2},
+      {"en": "The articles are written by experts in each subject.", "cn": "这些文章由各学科的专家撰写。", "level": 3}
+    ],
+    "number": [
+      {"en": "A big number.", "cn": "一个大数字。", "level": 1},
+      {"en": "Please write down the number.", "cn": "请把数字写下来。", "level": 2},
+      {"en": "We use numbers to count things every day.", "cn": "我们每天用数字来数东西。", "level": 3}
+    ],
+    "count": [
+      {"en": "Count to ten.", "cn": "数到十。", "level": 1},
+      {"en": "The baby can count to twenty.", "cn": "这个宝宝能数到二十。", "level": 2},
+      {"en": "Let's count the number of students in the class.", "cn": "我们来数一数班里的学生人数。", "level": 3}
+    ],
+    "billion": [
+      {"en": "One billion.", "cn": "十亿。", "level": 1},
+      {"en": "China has over one billion people.", "cn": "中国有十亿多人口。", "level": 2},
+      {"en": "There are billions of stars in the night sky.", "cn": "夜空中有数十亿颗星星。", "level": 3}
+    ],
+    "million": [
+      {"en": "One million.", "cn": "一百万。", "level": 1},
+      {"en": "The city has two million people.", "cn": "这座城市有两百万人。", "level": 2},
+      {"en": "Millions of people use the Internet every day.", "cn": "每天有数百万人使用互联网。", "level": 3}
+    ],
+    "thousand": [
+      {"en": "A thousand books.", "cn": "一千本书。", "level": 1},
+      {"en": "There are a thousand seats here.", "cn": "这里有一千个座位。", "level": 2},
+      {"en": "The library keeps thousands of old books.", "cn": "这座图书馆藏有数千本旧书。", "level": 3}
+    ],
+    "hundred": [
+      {"en": "One hundred.", "cn": "一百。", "level": 1},
+      {"en": "There are a hundred pages.", "cn": "有一百页。", "level": 2},
+      {"en": "Hundreds of years ago, people had no computers.", "cn": "几百年前，人们没有电脑。", "level": 3}
+    ],
+    "equal": [
+      {"en": "Equal numbers.", "cn": "相等的数。", "level": 1},
+      {"en": "Two plus two is equal to four.", "cn": "二加二等于四。", "level": 2},
+      {"en": "Everyone should have equal chances to learn.", "cn": "每个人都应有平等的学习机会。", "level": 3}
+    ],
+    "plus": [
+      {"en": "Two plus three.", "cn": "二加三。", "level": 1},
+      {"en": "Five plus five is ten.", "cn": "五加五等于十。", "level": 2},
+      {"en": "If you add three plus four, you get seven.", "cn": "三加四，你就得到七。", "level": 3}
+    ],
+    "minus": [
+      {"en": "Ten minus two.", "cn": "十减二。", "level": 1},
+      {"en": "Eight minus three is five.", "cn": "八减三等于五。", "level": 2},
+      {"en": "When you do minus, the number gets smaller.", "cn": "做减法时，数字会变小。", "level": 3}
+    ],
+    "multiply": [
+      {"en": "Multiply by two.", "cn": "乘以二。", "level": 1},
+      {"en": "Multiply three by four to get twelve.", "cn": "三乘四得十二。", "level": 2},
+      {"en": "We multiply numbers to make adding faster.", "cn": "我们用乘法让加法更快。", "level": 3}
+    ],
+    "divide": [
+      {"en": "Divide by two.", "cn": "除以二。", "level": 1},
+      {"en": "Divide ten by five to get two.", "cn": "十除以五得二。", "level": 2},
+      {"en": "Let's divide the cake equally among us.", "cn": "我们把蛋糕平均分给大家。", "level": 3}
+    ],
+    "math": [
+      {"en": "I like math.", "cn": "我喜欢数学。", "level": 1},
+      {"en": "Math is about numbers.", "cn": "数学是关于数字的。", "level": 2},
+      {"en": "Math helps us solve problems in daily life.", "cn": "数学帮我们解决日常生活中的问题。", "level": 3}
+    ],
+    "lucky": [
+      {"en": "A lucky number.", "cn": "一个幸运数字。", "level": 1},
+      {"en": "Eight is a lucky number in China.", "cn": "在中国，八是个幸运数字。", "level": 2},
+      {"en": "Many people think some numbers are lucky.", "cn": "许多人认为有些数字是幸运的。", "level": 3}
+    ],
+    "ancient": [
+      {"en": "Ancient times.", "cn": "古代。", "level": 1},
+      {"en": "Ancient people used stones to count.", "cn": "古人用石头来计数。", "level": 2},
+      {"en": "This ancient story has been told for thousands of years.", "cn": "这个古老的故事已流传了数千年。", "level": 3}
+    ],
+    "common": [
+      {"en": "A common name.", "cn": "一个常见的名字。", "level": 1},
+      {"en": "This is a common word in English.", "cn": "这是英语里一个常见的词。", "level": 2},
+      {"en": "It is common to use numbers in our daily life.", "cn": "在日常生活中使用数字是很常见的。", "level": 3}
+    ],
+    "computer": [
+      {"en": "A new computer.", "cn": "一台新电脑。", "level": 1},
+      {"en": "I do my homework on the computer.", "cn": "我在电脑上做作业。", "level": 2},
+      {"en": "Computers help us search and store lots of information.", "cn": "电脑帮我们搜索和存储大量信息。", "level": 3}
+    ],
+    "keyboard": [
+      {"en": "A black keyboard.", "cn": "一个黑色键盘。", "level": 1},
+      {"en": "I type on the keyboard.", "cn": "我在键盘上打字。", "level": 2},
+      {"en": "Learning to use the keyboard helps you type quickly.", "cn": "学会用键盘能帮你快速打字。", "level": 3}
+    ],
+    "screen": [
+      {"en": "A big screen.", "cn": "一块大屏幕。", "level": 1},
+      {"en": "The words are on the screen.", "cn": "字在屏幕上。", "level": 2},
+      {"en": "Looking at the screen too long is bad for your eyes.", "cn": "看屏幕太久对眼睛不好。", "level": 3}
+    ],
+    "mouse": [
+      {"en": "A computer mouse.", "cn": "一个电脑鼠标。", "level": 1},
+      {"en": "Click the file with the mouse.", "cn": "用鼠标点击文件。", "level": 2},
+      {"en": "Move the mouse to open the folder on the screen.", "cn": "移动鼠标打开屏幕上的文件夹。", "level": 3}
+    ],
+    "file": [
+      {"en": "Open the file.", "cn": "打开文件。", "level": 1},
+      {"en": "I saved the file on my computer.", "cn": "我把文件存在电脑上。", "level": 2},
+      {"en": "Remember to keep your important files in a safe folder.", "cn": "记得把重要文件放在安全的文件夹里。", "level": 3}
+    ],
+    "folder": [
+      {"en": "A new folder.", "cn": "一个新文件夹。", "level": 1},
+      {"en": "Put the file in this folder.", "cn": "把文件放进这个文件夹。", "level": 2},
+      {"en": "I keep all my photos in one folder on the computer.", "cn": "我把所有照片放在电脑的一个文件夹里。", "level": 3}
+    ],
+    "Internet": [
+      {"en": "Use the Internet.", "cn": "使用互联网。", "level": 1},
+      {"en": "I find news on the Internet.", "cn": "我在互联网上看新闻。", "level": 2},
+      {"en": "The Internet connects people all over the world.", "cn": "互联网把全世界的人连接起来。", "level": 3}
+    ],
+    "program": [
+      {"en": "A useful program.", "cn": "一个有用的程序。", "level": 1},
+      {"en": "I downloaded a new program.", "cn": "我下载了一个新程序。", "level": 2},
+      {"en": "This program helps us draw pictures on the computer.", "cn": "这个程序帮我们在电脑上画图。", "level": 3}
+    ],
+    "download": [
+      {"en": "Download a song.", "cn": "下载一首歌。", "level": 1},
+      {"en": "I download films from the Internet.", "cn": "我从网上下载电影。", "level": 2},
+      {"en": "You can download the file and open it later.", "cn": "你可以把文件下载下来稍后打开。", "level": 3}
+    ],
+    "upload": [
+      {"en": "Upload a photo.", "cn": "上传一张照片。", "level": 1},
+      {"en": "She uploaded her homework online.", "cn": "她把作业上传到了网上。", "level": 2},
+      {"en": "Please upload the file to the website before Friday.", "cn": "请在周五前把文件上传到网站。", "level": 3}
+    ],
+    "email": [
+      {"en": "Send an email.", "cn": "发一封电子邮件。", "level": 1},
+      {"en": "I got an email from my friend.", "cn": "我收到朋友的一封电子邮件。", "level": 2},
+      {"en": "You can send the file to me by email.", "cn": "你可以通过电子邮件把文件发给我。", "level": 3}
+    ],
+    "password": [
+      {"en": "A secret password.", "cn": "一个秘密密码。", "level": 1},
+      {"en": "Don't tell anyone your password.", "cn": "别把密码告诉任何人。", "level": 2},
+      {"en": "You need a password to open your email.", "cn": "你需要密码才能打开邮箱。", "level": 3}
+    ],
+    "type": [
+      {"en": "Type a word.", "cn": "打一个字。", "level": 1},
+      {"en": "I can type very fast.", "cn": "我打字很快。", "level": 2},
+      {"en": "Type the key words to search for the topic.", "cn": "输入关键词来搜索这个话题。", "level": 3}
+    ],
+    "store": [
+      {"en": "Store the file.", "cn": "存储文件。", "level": 1},
+      {"en": "Computers can store lots of data.", "cn": "电脑能存储大量数据。", "level": 2},
+      {"en": "We store our photos and files on the computer.", "cn": "我们把照片和文件存在电脑上。", "level": 3}
+    ],
+    "useful": [
+      {"en": "Very useful.", "cn": "很有用。", "level": 1},
+      {"en": "The computer is a useful tool.", "cn": "电脑是个有用的工具。", "level": 2},
+      {"en": "The Internet is useful for finding information.", "cn": "互联网对查找信息很有用。", "level": 3}
+    ],
+    "invention": [
+      {"en": "A great invention.", "cn": "一项伟大的发明。", "level": 1},
+      {"en": "The phone is a useful invention.", "cn": "电话是一项有用的发明。", "level": 2},
+      {"en": "The computer is one of the greatest inventions in history.", "cn": "电脑是历史上最伟大的发明之一。", "level": 3}
+    ],
+    "inventor": [
+      {"en": "A famous inventor.", "cn": "一位著名发明家。", "level": 1},
+      {"en": "Edison was a great inventor.", "cn": "爱迪生是一位伟大的发明家。", "level": 2},
+      {"en": "The inventor spent years making his new machine.", "cn": "这位发明家花了多年制造他的新机器。", "level": 3}
+    ],
+    "discover": [
+      {"en": "Discover something new.", "cn": "发现新事物。", "level": 1},
+      {"en": "Scientists discover new things every year.", "cn": "科学家每年都有新发现。", "level": 2},
+      {"en": "People discovered how to make paper long ago.", "cn": "人们很久以前就发现了造纸的方法。", "level": 3}
+    ],
+    "machine": [
+      {"en": "A washing machine.", "cn": "一台洗衣机。", "level": 1},
+      {"en": "This machine can make shoes.", "cn": "这台机器能制鞋。", "level": 2},
+      {"en": "The steam engine changed the way machines work.", "cn": "蒸汽机改变了机器的运转方式。", "level": 3}
+    ],
+    "engine": [
+      {"en": "A steam engine.", "cn": "一台蒸汽机。", "level": 1},
+      {"en": "The car has a powerful engine.", "cn": "这辆车有强劲的发动机。", "level": 2},
+      {"en": "The steam engine was an important invention in history.", "cn": "蒸汽机是历史上一项重要的发明。", "level": 3}
+    ],
+    "steam": [
+      {"en": "Hot steam.", "cn": "热蒸汽。", "level": 1},
+      {"en": "Steam comes from boiling water.", "cn": "蒸汽来自沸水。", "level": 2},
+      {"en": "Early trains were driven by steam power.", "cn": "早期的火车靠蒸汽动力驱动。", "level": 3}
+    ],
+    "modern": [
+      {"en": "Modern life.", "cn": "现代生活。", "level": 1},
+      {"en": "Modern machines are very fast.", "cn": "现代机器非常快。", "level": 2},
+      {"en": "Many modern inventions make our life easier.", "cn": "许多现代发明让我们的生活更轻松。", "level": 3}
+    ],
+    "history": [
+      {"en": "Chinese history.", "cn": "中国历史。", "level": 1},
+      {"en": "I like reading about history.", "cn": "我喜欢读历史。", "level": 2},
+      {"en": "Many great inventions changed the course of history.", "cn": "许多伟大的发明改变了历史的进程。", "level": 3}
+    ],
+    "century": [
+      {"en": "The 21st century.", "cn": "21世纪。", "level": 1},
+      {"en": "The car was invented in the 19th century.", "cn": "汽车发明于19世纪。", "level": 2},
+      {"en": "Over the centuries, machines have become much smarter.", "cn": "几个世纪以来，机器变得聪明多了。", "level": 3}
+    ],
+    "change": [
+      {"en": "A big change.", "cn": "一个大变化。", "level": 1},
+      {"en": "Computers changed our lives.", "cn": "电脑改变了我们的生活。", "level": 2},
+      {"en": "New inventions can change the way we live and work.", "cn": "新发明能改变我们生活和工作的方式。", "level": 3}
+    ],
+    "paper": [
+      {"en": "A piece of paper.", "cn": "一张纸。", "level": 1},
+      {"en": "The Chinese invented paper.", "cn": "中国人发明了纸。", "level": 2},
+      {"en": "Paper was one of the great inventions of ancient China.", "cn": "纸是中国古代的伟大发明之一。", "level": 3}
+    ],
+    "compass": [
+      {"en": "An old compass.", "cn": "一个古老的指南针。", "level": 1},
+      {"en": "A compass shows us the way.", "cn": "指南针为我们指路。", "level": 2},
+      {"en": "The compass helped sailors find their way at sea.", "cn": "指南针帮助水手在海上辨明方向。", "level": 3}
+    ],
+    "printing": [
+      {"en": "Printing skills.", "cn": "印刷技术。", "level": 1},
+      {"en": "Printing helps make many books.", "cn": "印刷术有助于制作许多书。", "level": 2},
+      {"en": "Printing made it easy to share knowledge with everyone.", "cn": "印刷术让知识能轻松地与所有人分享。", "level": 3}
+    ],
+    "gunpowder": [
+      {"en": "Ancient gunpowder.", "cn": "古代火药。", "level": 1},
+      {"en": "Gunpowder was invented in China.", "cn": "火药是在中国发明的。", "level": 2},
+      {"en": "Gunpowder is one of the four great inventions of China.", "cn": "火药是中国四大发明之一。", "level": 3}
+    ],
+    "memory": [
+      {"en": "A good memory.", "cn": "好记性。", "level": 1},
+      {"en": "She has a very good memory.", "cn": "她记性很好。", "level": 2},
+      {"en": "We can train our memory with the right methods.", "cn": "我们能用正确的方法训练记忆力。", "level": 3}
+    ],
+    "remember": [
+      {"en": "Remember the word.", "cn": "记住这个词。", "level": 1},
+      {"en": "I can't remember his name.", "cn": "我记不起他的名字。", "level": 2},
+      {"en": "Repeating new words often helps us remember them.", "cn": "经常重复生词有助于我们记住它们。", "level": 3}
+    ],
+    "forget": [
+      {"en": "Don't forget.", "cn": "别忘了。", "level": 1},
+      {"en": "I always forget my password.", "cn": "我总是忘记密码。", "level": 2},
+      {"en": "If you don't review, you will forget what you learn.", "cn": "如果不复习，你会忘记所学的内容。", "level": 3}
+    ],
+    "mind": [
+      {"en": "An open mind.", "cn": "开放的头脑。", "level": 1},
+      {"en": "Keep the picture in your mind.", "cn": "把这幅画记在脑海里。", "level": 2},
+      {"en": "A calm mind helps you remember things better.", "cn": "平静的头脑能帮你更好地记住事物。", "level": 3}
+    ],
+    "brain": [
+      {"en": "The human brain.", "cn": "人的大脑。", "level": 1},
+      {"en": "Our brain stores memories.", "cn": "我们的大脑储存记忆。", "level": 2},
+      {"en": "Doing puzzles is a good exercise for the brain.", "cn": "做谜题是很好的大脑锻炼。", "level": 3}
+    ],
+    "review": [
+      {"en": "Review the lesson.", "cn": "复习功课。", "level": 1},
+      {"en": "I review my notes every evening.", "cn": "我每晚复习笔记。", "level": 2},
+      {"en": "If you review often, you will not forget the words.", "cn": "如果经常复习，你就不会忘记单词。", "level": 3}
+    ],
+    "repeat": [
+      {"en": "Repeat after me.", "cn": "跟我重复。", "level": 1},
+      {"en": "Please repeat the new word.", "cn": "请重复这个生词。", "level": 2},
+      {"en": "Repeating the words many times helps you remember them.", "cn": "多次重复单词能帮你记住它们。", "level": 3}
+    ],
+    "method": [
+      {"en": "A good method.", "cn": "一个好方法。", "level": 1},
+      {"en": "This is a useful study method.", "cn": "这是个有用的学习方法。", "level": 2},
+      {"en": "A good method can improve your memory a lot.", "cn": "好的方法能大大提高你的记忆力。", "level": 3}
+    ],
+    "trick": [
+      {"en": "A clever trick.", "cn": "一个聪明的技巧。", "level": 1},
+      {"en": "I know a trick to remember words.", "cn": "我有一个记单词的技巧。", "level": 2},
+      {"en": "Using pictures is a good trick for remembering words.", "cn": "用图像是记单词的好技巧。", "level": 3}
+    ],
+    "image": [
+      {"en": "A clear image.", "cn": "一幅清晰的图像。", "level": 1},
+      {"en": "I keep an image of it in my mind.", "cn": "我把它的图像记在脑海里。", "level": 2},
+      {"en": "Turning words into images makes them easier to remember.", "cn": "把单词变成图像会让它们更易记住。", "level": 3}
+    ],
+    "picture": [
+      {"en": "A nice picture.", "cn": "一幅漂亮的画。", "level": 1},
+      {"en": "Draw a picture of the word.", "cn": "为这个词画一幅画。", "level": 2},
+      {"en": "Linking a word to a picture helps your memory.", "cn": "把单词和图画联系起来有助于记忆。", "level": 3}
+    ],
+    "concentrate": [
+      {"en": "Concentrate now.", "cn": "现在专心。", "level": 1},
+      {"en": "I can't concentrate in a noisy room.", "cn": "在吵闹的房间里我无法集中注意力。", "level": 2},
+      {"en": "When you concentrate, you remember things more easily.", "cn": "当你专心时，记东西会更容易。", "level": 3}
+    ],
+    "distract": [
+      {"en": "Don't distract me.", "cn": "别让我分心。", "level": 1},
+      {"en": "Noise can distract students.", "cn": "噪音会让学生分心。", "level": 2},
+      {"en": "Turn off your phone so it won't distract you.", "cn": "关掉手机，免得它让你分心。", "level": 3}
+    ],
+    "quiz": [
+      {"en": "A short quiz.", "cn": "一个小测验。", "level": 1},
+      {"en": "We had a quiz today.", "cn": "我们今天有个小测验。", "level": 2},
+      {"en": "A quiz helps you check how much you remember.", "cn": "小测验能帮你检查记住了多少。", "level": 3}
+    ],
+    "improve": [
+      {"en": "Improve your memory.", "cn": "提高记忆力。", "level": 1},
+      {"en": "I want to improve my English.", "cn": "我想提高我的英语。", "level": 2},
+      {"en": "Good methods can help you improve your memory.", "cn": "好的方法能帮你提高记忆力。", "level": 3}
+    ],
+    "legend": [
+      {"en": "An old legend.", "cn": "一个古老的传说。", "level": 1},
+      {"en": "This is a famous Chinese legend.", "cn": "这是一个著名的中国传说。", "level": 2},
+      {"en": "The legend tells of a brave hero and a dragon.", "cn": "这个传说讲述了一位勇敢英雄和一条龙。", "level": 3}
+    ],
+    "myth": [
+      {"en": "A Greek myth.", "cn": "一个希腊神话。", "level": 1},
+      {"en": "I love reading myths.", "cn": "我喜欢读神话。", "level": 2},
+      {"en": "Ancient myths often explain how the world began.", "cn": "古代神话常解释世界是如何起源的。", "level": 3}
+    ],
+    "hero": [
+      {"en": "A great hero.", "cn": "一位伟大的英雄。", "level": 1},
+      {"en": "The hero saved the village.", "cn": "英雄拯救了村庄。", "level": 2},
+      {"en": "In the legend, the brave hero fought the dragon.", "cn": "在传说中，勇敢的英雄与龙搏斗。", "level": 3}
+    ],
+    "king": [
+      {"en": "A great king.", "cn": "一位伟大的国王。", "level": 1},
+      {"en": "The king lived in a castle.", "cn": "国王住在城堡里。", "level": 2},
+      {"en": "The wise king ruled the country for many years.", "cn": "这位睿智的国王统治这个国家许多年。", "level": 3}
+    ],
+    "queen": [
+      {"en": "A kind queen.", "cn": "一位善良的王后。", "level": 1},
+      {"en": "The queen wore a beautiful dress.", "cn": "王后穿着一条漂亮的裙子。", "level": 2},
+      {"en": "The king and queen lived happily in the castle.", "cn": "国王和王后在城堡里幸福地生活。", "level": 3}
+    ],
+    "battle": [
+      {"en": "A big battle.", "cn": "一场大战。", "level": 1},
+      {"en": "The soldiers won the battle.", "cn": "士兵们赢得了战役。", "level": 2},
+      {"en": "The hero showed great courage in the battle.", "cn": "英雄在战斗中表现出极大的勇气。", "level": 3}
+    ],
+    "dragon": [
+      {"en": "A big dragon.", "cn": "一条大龙。", "level": 1},
+      {"en": "The dragon lived in the mountain.", "cn": "龙住在山里。", "level": 2},
+      {"en": "In Chinese legends, the dragon is a symbol of power.", "cn": "在中国传说里，龙是力量的象征。", "level": 3}
+    ],
+    "god": [
+      {"en": "A powerful god.", "cn": "一位强大的神。", "level": 1},
+      {"en": "People prayed to the god for rain.", "cn": "人们向神祈求降雨。", "level": 2},
+      {"en": "In the myth, the god created the sun and the moon.", "cn": "在神话中，神创造了太阳和月亮。", "level": 3}
+    ],
+    "magic": [
+      {"en": "Black magic.", "cn": "黑魔法。", "level": 1},
+      {"en": "The story is full of magic.", "cn": "这个故事充满魔法。", "level": 2},
+      {"en": "The old man used magic to help the poor hero.", "cn": "老人用魔法帮助了贫穷的英雄。", "level": 3}
+    ],
+    "brave": [
+      {"en": "A brave boy.", "cn": "一个勇敢的男孩。", "level": 1},
+      {"en": "The hero is very brave.", "cn": "这位英雄很勇敢。", "level": 2},
+      {"en": "The brave knight was not afraid of the dragon.", "cn": "勇敢的骑士不怕那条龙。", "level": 3}
+    ],
+    "clever": [
+      {"en": "A clever girl.", "cn": "一个聪明的女孩。", "level": 1},
+      {"en": "The clever boy solved the problem.", "cn": "聪明的男孩解决了问题。", "level": 2},
+      {"en": "The clever hero used a trick to beat the giant.", "cn": "聪明的英雄用计谋打败了巨人。", "level": 3}
+    ],
+    "Emperor": [
+      {"en": "The great Emperor.", "cn": "伟大的皇帝。", "level": 1},
+      {"en": "The Emperor lived in the palace.", "cn": "皇帝住在宫殿里。", "level": 2},
+      {"en": "The ancient Emperor ruled over a huge country.", "cn": "这位古代皇帝统治着一个庞大的国家。", "level": 3}
+    ],
+    "castle": [
+      {"en": "An old castle.", "cn": "一座古老的城堡。", "level": 1},
+      {"en": "The king lives in a big castle.", "cn": "国王住在一座大城堡里。", "level": 2},
+      {"en": "The castle on the hill is hundreds of years old.", "cn": "山上的城堡有几百年的历史了。", "level": 3}
+    ],
+    "journey": [
+      {"en": "A long journey.", "cn": "一段长途旅程。", "level": 1},
+      {"en": "They began a dangerous journey.", "cn": "他们开始了一段危险的旅程。", "level": 2},
+      {"en": "The hero set out on a long journey to save the queen.", "cn": "英雄踏上漫长的旅程去拯救王后。", "level": 3}
+    ],
+    "season": [
+      {"en": "My favourite season.", "cn": "我最喜欢的季节。", "level": 1},
+      {"en": "There are four seasons in a year.", "cn": "一年有四个季节。", "level": 2},
+      {"en": "Each season has its own kind of weather.", "cn": "每个季节都有自己特有的天气。", "level": 3}
+    ],
+    "climate": [
+      {"en": "A warm climate.", "cn": "温暖的气候。", "level": 1},
+      {"en": "The climate here is mild.", "cn": "这里的气候温和。", "level": 2},
+      {"en": "Southern cities have a warmer climate than northern ones.", "cn": "南方城市比北方城市气候更暖和。", "level": 3}
+    ],
+    "weather": [
+      {"en": "Sunny weather.", "cn": "晴朗的天气。", "level": 1},
+      {"en": "The weather is fine today.", "cn": "今天天气很好。", "level": 2},
+      {"en": "The weather forecast says it will rain tomorrow.", "cn": "天气预报说明天会下雨。", "level": 3}
+    ],
+    "temperature": [
+      {"en": "High temperature.", "cn": "高温。", "level": 1},
+      {"en": "The temperature is 30 degrees.", "cn": "温度是30度。", "level": 2},
+      {"en": "In summer the temperature can be very high.", "cn": "夏天温度可能非常高。", "level": 3}
+    ],
+    "thunder": [
+      {"en": "Loud thunder.", "cn": "响亮的雷声。", "level": 1},
+      {"en": "I heard thunder last night.", "cn": "昨晚我听到了雷声。", "level": 2},
+      {"en": "Thunder and lightning often come with a summer storm.", "cn": "雷电常伴随夏季的暴风雨而来。", "level": 3}
+    ],
+    "storm": [
+      {"en": "A big storm.", "cn": "一场大风暴。", "level": 1},
+      {"en": "A storm is coming.", "cn": "暴风雨要来了。", "level": 2},
+      {"en": "The storm brought heavy rain and strong winds.", "cn": "暴风雨带来了大雨和强风。", "level": 3}
+    ],
+    "typhoon": [
+      {"en": "A strong typhoon.", "cn": "一场强台风。", "level": 1},
+      {"en": "The typhoon hit the city.", "cn": "台风袭击了这座城市。", "level": 2},
+      {"en": "A typhoon often brings heavy rain in late summer.", "cn": "台风常在夏末带来暴雨。", "level": 3}
+    ],
+    "fog": [
+      {"en": "Thick fog.", "cn": "浓雾。", "level": 1},
+      {"en": "There is fog this morning.", "cn": "今天早上有雾。", "level": 2},
+      {"en": "Drivers must be careful in the heavy fog.", "cn": "司机在浓雾中必须小心。", "level": 3}
+    ],
+    "dry": [
+      {"en": "Dry weather.", "cn": "干燥的天气。", "level": 1},
+      {"en": "The land is very dry.", "cn": "土地很干燥。", "level": 2},
+      {"en": "The northern part of the country is hot and dry.", "cn": "这个国家的北部又热又干。", "level": 3}
+    ],
+    "wet": [
+      {"en": "Wet clothes.", "cn": "湿衣服。", "level": 1},
+      {"en": "The ground is wet after rain.", "cn": "雨后地面是湿的。", "level": 2},
+      {"en": "The weather is wet and rainy in this season.", "cn": "这个季节天气潮湿多雨。", "level": 3}
+    ],
+    "degree": [
+      {"en": "Ten degrees.", "cn": "十度。", "level": 1},
+      {"en": "It is 25 degrees today.", "cn": "今天是25度。", "level": 2},
+      {"en": "The temperature dropped below zero degrees at night.", "cn": "夜间温度降到了零度以下。", "level": 3}
+    ],
+    "northern": [
+      {"en": "Northern China.", "cn": "中国北方。", "level": 1},
+      {"en": "Winter is cold in northern cities.", "cn": "北方城市的冬天很冷。", "level": 2},
+      {"en": "The northern part of the country has long, cold winters.", "cn": "这个国家的北部冬季漫长而寒冷。", "level": 3}
+    ],
+    "southern": [
+      {"en": "Southern China.", "cn": "中国南方。", "level": 1},
+      {"en": "Summer is hot in southern cities.", "cn": "南方城市的夏天很热。", "level": 2},
+      {"en": "Southern areas usually have more rainfall than northern ones.", "cn": "南方地区的降雨通常比北方多。", "level": 3}
+    ],
+    "forecast": [
+      {"en": "The weather forecast.", "cn": "天气预报。", "level": 1},
+      {"en": "I watch the forecast every night.", "cn": "我每晚看天气预报。", "level": 2},
+      {"en": "The forecast says a typhoon will come this weekend.", "cn": "预报说这个周末会有台风。", "level": 3}
+    ],
+    "rainfall": [
+      {"en": "Heavy rainfall.", "cn": "大降雨。", "level": 1},
+      {"en": "There is little rainfall in the desert.", "cn": "沙漠里降雨很少。", "level": 2},
+      {"en": "The rainfall in summer is much heavier than in winter.", "cn": "夏季的降雨量比冬季大得多。", "level": 3}
+    ],
+    "English": [
+      {"en": "Speak English.", "cn": "说英语。", "level": 1},
+      {"en": "I study English every day.", "cn": "我每天学英语。", "level": 2},
+      {"en": "We take part in many activities during English week.", "cn": "在英语周里我们参加许多活动。", "level": 3}
+    ],
+    "speech": [
+      {"en": "A short speech.", "cn": "一段简短的演讲。", "level": 1},
+      {"en": "He gave a speech in English.", "cn": "他用英语作了演讲。", "level": 2},
+      {"en": "She practised her speech many times before the contest.", "cn": "比赛前她把演讲练习了许多次。", "level": 3}
+    ],
+    "play": [
+      {"en": "A school play.", "cn": "一场校园戏剧。", "level": 1},
+      {"en": "We put on a play in English.", "cn": "我们用英语演了一出戏。", "level": 2},
+      {"en": "The students acted in an English play on the stage.", "cn": "学生们在舞台上表演了一出英语戏剧。", "level": 3}
+    ],
+    "contest": [
+      {"en": "A speech contest.", "cn": "一场演讲比赛。", "level": 1},
+      {"en": "I won the singing contest.", "cn": "我赢得了歌唱比赛。", "level": 2},
+      {"en": "Many students took part in the English speech contest.", "cn": "许多学生参加了英语演讲比赛。", "level": 3}
+    ],
+    "audience": [
+      {"en": "A big audience.", "cn": "众多观众。", "level": 1},
+      {"en": "The audience clapped loudly.", "cn": "观众大声鼓掌。", "level": 2},
+      {"en": "The audience enjoyed the wonderful performance very much.", "cn": "观众非常喜欢这场精彩的表演。", "level": 3}
+    ],
+    "performance": [
+      {"en": "A great performance.", "cn": "一场精彩的表演。", "level": 1},
+      {"en": "Their performance was wonderful.", "cn": "他们的表演很精彩。", "level": 2},
+      {"en": "The whole audience clapped after the performance.", "cn": "表演结束后全场观众都鼓掌了。", "level": 3}
+    ],
+    "stage": [
+      {"en": "On the stage.", "cn": "在舞台上。", "level": 1},
+      {"en": "She sang on the stage.", "cn": "她在舞台上唱歌。", "level": 2},
+      {"en": "The actors walked onto the stage to loud applause.", "cn": "演员们在热烈的掌声中走上舞台。", "level": 3}
+    ],
+    "prize": [
+      {"en": "First prize.", "cn": "一等奖。", "level": 1},
+      {"en": "She won a prize in the contest.", "cn": "她在比赛中获奖。", "level": 2},
+      {"en": "The best speaker got the first prize in the contest.", "cn": "最佳演讲者获得了比赛的一等奖。", "level": 3}
+    ],
+    "competition": [
+      {"en": "A writing competition.", "cn": "一场写作竞赛。", "level": 1},
+      {"en": "We joined the English competition.", "cn": "我们参加了英语竞赛。", "level": 2},
+      {"en": "The competition gave students a chance to show their skills.", "cn": "竞赛给了学生展示才能的机会。", "level": 3}
+    ],
+    "practise": [
+      {"en": "Practise English.", "cn": "练习英语。", "level": 1},
+      {"en": "I practise speaking every day.", "cn": "我每天练习口语。", "level": 2},
+      {"en": "She practised her play many times to do it well.", "cn": "为了演好，她把戏练习了许多次。", "level": 3}
+    ],
+    "confident": [
+      {"en": "Be confident.", "cn": "要自信。", "level": 1},
+      {"en": "She is confident on the stage.", "cn": "她在舞台上很自信。", "level": 2},
+      {"en": "With enough practice, you will feel more confident.", "cn": "充分练习后，你会感到更自信。", "level": 3}
+    ],
+    "nervous": [
+      {"en": "Feel nervous.", "cn": "感到紧张。", "level": 1},
+      {"en": "I was nervous before the speech.", "cn": "演讲前我很紧张。", "level": 2},
+      {"en": "Don't be nervous; just speak slowly and clearly.", "cn": "别紧张，慢慢地、清楚地说就好。", "level": 3}
+    ],
+    "role": [
+      {"en": "A main role.", "cn": "一个主角。", "level": 1},
+      {"en": "She played the role of a queen.", "cn": "她扮演了王后这个角色。", "level": 2},
+      {"en": "He played an important role in the school play.", "cn": "他在校园戏剧中扮演了一个重要角色。", "level": 3}
+    ],
+    "applause": [
+      {"en": "Loud applause.", "cn": "热烈的掌声。", "level": 1},
+      {"en": "The singer got lots of applause.", "cn": "歌手得到了很多掌声。", "level": 2},
+      {"en": "The performance ended with warm applause from the audience.", "cn": "表演在观众热烈的掌声中结束。", "level": 3}
+    ],
+    "organise": [
+      {"en": "Organise a party.", "cn": "组织一场聚会。", "level": 1},
+      {"en": "The teachers organise English week.", "cn": "老师们组织英语周。", "level": 2},
+      {"en": "Our class organised a wonderful English speech contest.", "cn": "我们班组织了一场精彩的英语演讲比赛。", "level": 3}
+    ]
+  }
+}
