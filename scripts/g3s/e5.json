@@ -1,0 +1,42 @@
+{
+  "password": [
+    { "en": "I have a password.", "cn": "我有一个密码。", "level": 1 },
+    { "en": "Please type your password.", "cn": "请输入你的密码。", "level": 2 },
+    { "en": "A good password is hard to guess.", "cn": "一个好的密码很难被猜到。", "level": 3 }
+  ],
+  "number": [
+    { "en": "Five is a number.", "cn": "五是一个数字。", "level": 1 },
+    { "en": "What is your phone number?", "cn": "你的电话号码是多少？", "level": 2 },
+    { "en": "Please remember the number for your password.", "cn": "请记住你密码里的数字。", "level": 3 }
+  ],
+  "set": [
+    { "en": "Set the time.", "cn": "设置时间。", "level": 1 },
+    { "en": "I set my password today.", "cn": "我今天设置了密码。", "level": 2 },
+    { "en": "Please set a safe password for your account.", "cn": "请为你的账户设置一个安全的密码。", "level": 3 }
+  ],
+  "secret": [
+    { "en": "It is a secret.", "cn": "这是一个秘密。", "level": 1 },
+    { "en": "Don't tell anyone my secret.", "cn": "不要把我的秘密告诉别人。", "level": 2 },
+    { "en": "Your password is a secret, so keep it safe.", "cn": "你的密码是个秘密，要保管好。", "level": 3 }
+  ],
+  "safe": [
+    { "en": "I am safe.", "cn": "我安全。", "level": 1 },
+    { "en": "Keep your password safe.", "cn": "把你的密码保管好。", "level": 2 },
+    { "en": "A long password is safer than a short one.", "cn": "长密码比短密码更安全。", "level": 3 }
+  ],
+  "remember": [
+    { "en": "I remember you.", "cn": "我记得你。", "level": 1 },
+    { "en": "Remember to bring your book.", "cn": "记得带上你的书。", "level": 2 },
+    { "en": "Please remember your password — don't write it down.", "cn": "请记住密码，不要写下来。", "level": 3 }
+  ],
+  "type": [
+    { "en": "I can type.", "cn": "我会打字。", "level": 1 },
+    { "en": "Type your name here, please.", "cn": "请在这里输入你的名字。", "level": 2 },
+    { "en": "She can type very fast on the keyboard.", "cn": "她在键盘上能打字很快。", "level": 3 }
+  ],
+  "ten": [
+    { "en": "I am ten.", "cn": "我十岁。", "level": 1 },
+    { "en": "There are ten boys in the room.", "cn": "房间里有十个男孩。", "level": 2 },
+    { "en": "Please count from one to ten in English.", "cn": "请用英语从 1 数到 10。", "level": 3 }
+  ]
+}

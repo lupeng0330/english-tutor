@@ -1,0 +1,42 @@
+{
+  "English": [
+    { "en": "I speak English.", "cn": "我说英语。", "level": 1 },
+    { "en": "English is fun for me.", "cn": "对我来说英语很有趣。", "level": 2 },
+    { "en": "Many children learn English at school.", "cn": "很多孩子在学校学英语。", "level": 3 }
+  ],
+  "Chinese": [
+    { "en": "I am Chinese.", "cn": "我是中国人。", "level": 1 },
+    { "en": "We learn Chinese every day.", "cn": "我们每天学中文。", "level": 2 },
+    { "en": "Chinese and English have different letters.", "cn": "中文和英语的字符不同。", "level": 3 }
+  ],
+  "word": [
+    { "en": "\"Book\" is a word.", "cn": "\"Book\" 是一个单词。", "level": 1 },
+    { "en": "I know many English words.", "cn": "我认识很多英语单词。", "level": 2 },
+    { "en": "Please read the new words after me.", "cn": "请跟我读新单词。", "level": 3 }
+  ],
+  "say": [
+    { "en": "Say hello to her.", "cn": "向她问好。", "level": 1 },
+    { "en": "How do you say \"猫\" in English?", "cn": "\"猫\" 用英语怎么说？", "level": 2 },
+    { "en": "Please say it again, more slowly.", "cn": "请再说一遍，慢一点。", "level": 3 }
+  ],
+  "mean": [
+    { "en": "What does it mean?", "cn": "这是什么意思？", "level": 1 },
+    { "en": "\"Cat\" means 猫.", "cn": "\"Cat\" 的意思是猫。", "level": 2 },
+    { "en": "I don't know what this word means.", "cn": "我不知道这个单词的意思。", "level": 3 }
+  ],
+  "same": [
+    { "en": "We are the same age.", "cn": "我们一样大。", "level": 1 },
+    { "en": "Our bags are the same.", "cn": "我们的书包是一样的。", "level": 2 },
+    { "en": "These two words have the same meaning.", "cn": "这两个单词意思相同。", "level": 3 }
+  ],
+  "different": [
+    { "en": "We are different.", "cn": "我们不一样。", "level": 1 },
+    { "en": "I have a different idea.", "cn": "我有一个不同的想法。", "level": 2 },
+    { "en": "English and Chinese are very different languages.", "cn": "英语和汉语是两种很不同的语言。", "level": 3 }
+  ],
+  "read": [
+    { "en": "I can read.", "cn": "我会读。", "level": 1 },
+    { "en": "She likes to read books.", "cn": "她喜欢读书。", "level": 2 },
+    { "en": "Please read the story to the class.", "cn": "请把这个故事读给同学们听。", "level": 3 }
+  ]
+}

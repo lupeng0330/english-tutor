@@ -49,6 +49,7 @@ EX_FILES = [
     "hj_grade9_shang.json",
     "hj_grade9_xia.json",
     "jk_grade6_xia.json",
+    "jk_grade3_shang.json",
 ]
 
 
@@ -86,7 +87,11 @@ async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--force", action="store_true", help="已存在的 MP3 也覆盖重生成")
     parser.add_argument("--dry-run", action="store_true", help="只统计，不真跑 TTS / 不写回 JSON")
+    parser.add_argument("--only", default="", help="只处理某些 examples 文件名（逗号分隔，如 jk_grade3_shang.json）")
+    parser.add_argument("--limit", type=int, default=0, help="单次最多生成多少条新 MP3（0=无限制），便于分批")
     args = parser.parse_args()
+
+    only_set = set(s.strip() for s in args.only.split(",") if s.strip())
 
     if not os.path.exists(OUT_DIR):
         os.makedirs(OUT_DIR)
@@ -105,6 +110,8 @@ async def main():
     field_written = 0   # 回写 audioFile 字段的例句条数
 
     for fname in EX_FILES:
+        if only_set and fname not in only_set:
+            continue
         fpath = os.path.join(EX_DIR, fname)
         if not os.path.exists(fpath):
             print("[warn] 缺失文件，跳过: {}".format(fname))
@@ -147,7 +154,7 @@ async def main():
                 status = await gen_one(mp3_path, en, force=args.force)
                 if status == "ok":
                     ok_count += 1
-                    if ok_count % 50 == 0:
+                    if ok_count % 20 == 0:
                         print("  [{}] generated {} new, skip {} ...".format(
                             fname, ok_count, skip_count))
                 elif status == "skip":
@@ -158,6 +165,23 @@ async def main():
             except Exception as e:
                 fail_count += 1
                 print("  [FAIL] {} :: {} :: {}".format(audio_file, en[:40], e))
+
+            # 限额：达到 limit 则提前结束本次运行（已生成的 audioFile 已记录在 dirty 里）
+            if args.limit and ok_count >= args.limit:
+                print("  [limit] 已生成 {} 条达到上限，提前结束本次运行".format(ok_count))
+                break
+        else:
+            # 内层循环正常结束才继续下一个文件
+            pass
+        # 若提前 break（达到 limit），写完当前文件 dirty 后跳出
+        if args.limit and ok_count >= args.limit:
+            if dirty and not args.dry_run:
+                tmp = fpath + ".tmp"
+                with open(tmp, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+                os.replace(tmp, fpath)
+                print("[info] {}  (中途保存) 例句 {} 条，已回写 audioFile".format(fname, file_ex))
+            break
 
         # 原子写回 JSON
         if dirty and not args.dry_run:

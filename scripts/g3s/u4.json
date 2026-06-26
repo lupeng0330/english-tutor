@@ -1,0 +1,29 @@
+{
+  "id": "u4",
+  "title": "Unit 4 Colour a Keyboard",
+  "module": "",
+  "words": [
+    { "word": "colour", "phonetic": "/ˈkʌlə(r)/", "meaning": "[n./v.] 颜色；上色", "example": "Colour the box red." },
+    { "word": "red", "phonetic": "/red/", "meaning": "[adj.] 红色的", "example": "This key is red." },
+    { "word": "blue", "phonetic": "/bluː/", "meaning": "[adj.] 蓝色的", "example": "The sky is blue." },
+    { "word": "yellow", "phonetic": "/ˈjeləʊ/", "meaning": "[adj.] 黄色的", "example": "I like the yellow key." },
+    { "word": "green", "phonetic": "/ɡriːn/", "meaning": "[adj.] 绿色的", "example": "Colour the leaf green." },
+    { "word": "keyboard", "phonetic": "/ˈkiːbɔːd/", "meaning": "[n.] 键盘", "example": "This is a new keyboard." },
+    { "word": "key", "phonetic": "/kiː/", "meaning": "[n.] 按键", "example": "Press the key, please." },
+    { "word": "click", "phonetic": "/klɪk/", "meaning": "[v.] 点击", "example": "Click the green key." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Colour the keys",
+      "en": "Teacher: Let's colour the keyboard today.\nMike: What colour is this key?\nTeacher: Colour it red, please.\nMike: And this one?\nTeacher: That key is blue. Now click the green key.\nMike: A red, blue, yellow and green keyboard. So nice!",
+      "cn": "老师：今天我们来给键盘上色。\n迈克：这个按键是什么颜色？\n老师：请把它涂成红色。\n迈克：这个呢？\n老师：那个键是蓝色的。现在点击绿色的键。\n迈克：一个红、蓝、黄、绿的键盘。真漂亮！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A colourful keyboard",
+      "en": "I have a keyboard with many keys.\nI colour the keys in four colours.\nThis key is red. That key is blue.\nHere is a yellow key, and there is a green one.\nI click the keys and type my name. What fun!",
+      "cn": "我有一个有很多按键的键盘。\n我把按键涂成四种颜色。\n这个键是红色的。那个键是蓝色的。\n这里有一个黄色的键，那里有一个绿色的。\n我点击按键，打出我的名字。多有趣呀！"
+    }
+  ]
+}

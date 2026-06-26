@@ -1,0 +1,29 @@
+{
+  "id": "u7",
+  "title": "Unit 7 Be a Good Listener",
+  "module": "",
+  "words": [
+    { "word": "listen", "phonetic": "/ˈlɪsn/", "meaning": "[v.] 听", "example": "Listen to the teacher." },
+    { "word": "listener", "phonetic": "/ˈlɪsnə(r)/", "meaning": "[n.] 倾听者", "example": "Be a good listener." },
+    { "word": "hear", "phonetic": "/hɪə(r)/", "meaning": "[v.] 听见", "example": "I can hear a bird." },
+    { "word": "ear", "phonetic": "/ɪə(r)/", "meaning": "[n.] 耳朵", "example": "We hear with our ears." },
+    { "word": "quiet", "phonetic": "/ˈkwaɪət/", "meaning": "[adj.] 安静的", "example": "Please be quiet." },
+    { "word": "good", "phonetic": "/ɡʊd/", "meaning": "[adj.] 好的", "example": "She is a good girl." },
+    { "word": "careful", "phonetic": "/ˈkeəfl/", "meaning": "[adj.] 仔细的", "example": "Be a careful listener." },
+    { "word": "please", "phonetic": "/pliːz/", "meaning": "[adv.] 请", "example": "Listen to me, please." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Listen well",
+      "en": "Teacher: Class, please be quiet.\nJack: Sorry. I will listen now.\nTeacher: Use your ears. Be a careful listener.\nJack: I can hear you well now.\nTeacher: Good! A good listener learns a lot.\nJack: I want to be a good listener every day.",
+      "cn": "老师：同学们，请安静。\n杰克：对不起。我现在就听。\n老师：用你的耳朵。做一个仔细的倾听者。\n杰克：我现在能听清楚您了。\n老师：很好！好的倾听者学到很多。\n杰克：我想每天都做个好的倾听者。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A good listener",
+      "en": "A good listener is quiet and careful.\nWe listen with our ears, not our mouths.\nWhen a friend talks, we hear every word.\nWe say \"please\" and we wait for our turn.\nBe a good listener, and you have more friends!",
+      "cn": "好的倾听者安静又仔细。\n我们用耳朵听，而不是用嘴。\n当朋友说话时，我们听清每一个字。\n我们说\"请\"，并等待轮到自己。\n做一个好的倾听者，你会有更多朋友！"
+    }
+  ]
+}

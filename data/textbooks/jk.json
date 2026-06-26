@@ -327,79 +327,603 @@
       "上": [
         {
           "id": "u1",
-          "title": "Unit 1 School Things",
+          "title": "Unit 1 Letters in Our Life",
           "words": [
             {
-              "word": "bag",
-              "phonetic": "/bæɡ/",
-              "meaning": "书包",
-              "example": "This is my bag."
+              "word": "letter",
+              "phonetic": "/ˈletə(r)/",
+              "meaning": "[n.] 字母；信",
+              "example": "A is the first letter."
+            },
+            {
+              "word": "big letter",
+              "phonetic": "/bɪɡ ˈletə(r)/",
+              "meaning": "[n.] 大写字母",
+              "example": "A big letter starts a name."
+            },
+            {
+              "word": "small letter",
+              "phonetic": "/smɔːl ˈletə(r)/",
+              "meaning": "[n.] 小写字母",
+              "example": "Write a small letter here."
+            },
+            {
+              "word": "alphabet",
+              "phonetic": "/ˈælfəbet/",
+              "meaning": "[n.] 字母表",
+              "example": "The alphabet has 26 letters."
+            },
+            {
+              "word": "sign",
+              "phonetic": "/saɪn/",
+              "meaning": "[n.] 标志；招牌",
+              "example": "I can read the bus sign."
+            },
+            {
+              "word": "bus",
+              "phonetic": "/bʌs/",
+              "meaning": "[n.] 公共汽车",
+              "example": "The bus is at the stop."
+            },
+            {
+              "word": "name",
+              "phonetic": "/neɪm/",
+              "meaning": "[n.] 名字",
+              "example": "My name is Anna."
+            },
+            {
+              "word": "life",
+              "phonetic": "/laɪf/",
+              "meaning": "[n.] 生活",
+              "example": "Letters are in our daily life."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Letters around us",
+              "en": "Anna: Look! There are letters on the sign.\nBen: Yes! I can see a big letter B and a small letter s.\nAnna: This is the bus sign. B-U-S, bus!\nBen: Letters are everywhere in our life.\nAnna: Let's find more letters on the way to school.",
+              "cn": "安娜：看！招牌上有字母。\n本：是的！我看到一个大写字母 B 和一个小写字母 s。\n安娜：这是公交车标志。B-U-S，bus！\n本：字母在我们生活中无处不在。\n安娜：我们去上学的路上再找找更多字母吧。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "The ABC song",
+              "en": "We have 26 letters in the alphabet.\nSome letters are big, and some are small.\nWe see them on signs, on a bus, and in books.\nWe use letters to write our names.\nLetters help us read the world. How nice!",
+              "cn": "字母表里有 26 个字母。\n有些字母是大写的，有些是小写的。\n我们在招牌上、公交车上、书里看到它们。\n我们用字母写自己的名字。\n字母帮助我们读懂世界。多棒呀！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 English and Chinese",
+          "words": [
+            {
+              "word": "English",
+              "phonetic": "/ˈɪŋɡlɪʃ/",
+              "meaning": "[n.] 英语",
+              "example": "I can speak English."
+            },
+            {
+              "word": "Chinese",
+              "phonetic": "/ˌtʃaɪˈniːz/",
+              "meaning": "[n.] 汉语；中文",
+              "example": "Chinese is my first language."
+            },
+            {
+              "word": "word",
+              "phonetic": "/wɜːd/",
+              "meaning": "[n.] 单词",
+              "example": "This word is new to me."
+            },
+            {
+              "word": "say",
+              "phonetic": "/seɪ/",
+              "meaning": "[v.] 说",
+              "example": "How do you say this?"
+            },
+            {
+              "word": "mean",
+              "phonetic": "/miːn/",
+              "meaning": "[v.] 意思是",
+              "example": "What does it mean?"
+            },
+            {
+              "word": "same",
+              "phonetic": "/seɪm/",
+              "meaning": "[adj.] 相同的",
+              "example": "They have the same meaning."
+            },
+            {
+              "word": "different",
+              "phonetic": "/ˈdɪfrənt/",
+              "meaning": "[adj.] 不同的",
+              "example": "The two words are different."
+            },
+            {
+              "word": "read",
+              "phonetic": "/riːd/",
+              "meaning": "[v.] 读",
+              "example": "I can read this word."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Two languages",
+              "en": "Mr Lin: We have English and Chinese in class.\nLily: How do you say \"book\" in Chinese?\nMr Lin: We say \"shu\". It means the same thing.\nLily: English and Chinese words can be different, but they can mean the same!\nMr Lin: Right. Let's read them together.",
+              "cn": "林老师：课堂上我们有英语和汉语。\n莉莉：\"book\" 用汉语怎么说？\n林老师：我们说\"书\"。它的意思是一样的。\n莉莉：英语和汉语的单词可以不同，但意思可以相同！\n林老师：对。我们一起来读吧。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Same and different",
+              "en": "English and Chinese are two languages.\nThe words look different, but some things are the same.\nWe say \"hello\" in English. We say \"ni hao\" in Chinese.\nThey mean the same: a friendly hello!\nIt is fun to read and say words in two languages.",
+              "cn": "英语和汉语是两种语言。\n单词看起来不同，但有些东西是相同的。\n我们用英语说 \"hello\"。我们用汉语说\"你好\"。\n它们意思相同：一句友好的问候！\n用两种语言读和说单词很有趣。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Who's Who?",
+          "words": [
+            {
+              "word": "who",
+              "phonetic": "/huː/",
+              "meaning": "[pron.] 谁",
+              "example": "Who is he?"
+            },
+            {
+              "word": "he",
+              "phonetic": "/hiː/",
+              "meaning": "[pron.] 他",
+              "example": "He is my friend."
+            },
+            {
+              "word": "she",
+              "phonetic": "/ʃiː/",
+              "meaning": "[pron.] 她",
+              "example": "She is a teacher."
+            },
+            {
+              "word": "friend",
+              "phonetic": "/frend/",
+              "meaning": "[n.] 朋友",
+              "example": "You are my good friend."
+            },
+            {
+              "word": "teacher",
+              "phonetic": "/ˈtiːtʃə(r)/",
+              "meaning": "[n.] 老师",
+              "example": "Our teacher is kind."
+            },
+            {
+              "word": "classmate",
+              "phonetic": "/ˈklɑːsmeɪt/",
+              "meaning": "[n.] 同学",
+              "example": "Tom is my classmate."
+            },
+            {
+              "word": "boy",
+              "phonetic": "/bɔɪ/",
+              "meaning": "[n.] 男孩",
+              "example": "The boy is tall."
+            },
+            {
+              "word": "girl",
+              "phonetic": "/ɡɜːl/",
+              "meaning": "[n.] 女孩",
+              "example": "The girl can sing."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Who is he?",
+              "en": "Kate: Look at the photo. Who is he?\nSam: He is my friend, Tom. He is a boy in Class 2.\nKate: And who is she?\nSam: She is my classmate, Lily.\nKate: Is she your teacher?\nSam: No, she isn't. Our teacher is Miss Wang.",
+              "cn": "凯特：看这张照片。他是谁？\n山姆：他是我的朋友汤姆。他是二班的一个男孩。\n凯特：那她是谁？\n山姆：她是我的同学莉莉。\n凯特：她是你的老师吗？\n山姆：不，她不是。我们的老师是王老师。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My friends",
+              "en": "I have many friends at school.\nHe is Tom. He is a happy boy.\nShe is Lily. She is a kind girl.\nMiss Wang is our teacher. We all like her.\nA friend, a classmate, a teacher — they make my school day warm.",
+              "cn": "我在学校有很多朋友。\n他是汤姆。他是个快乐的男孩。\n她是莉莉。她是个善良的女孩。\n王老师是我们的老师。我们都喜欢她。\n一个朋友、一个同学、一位老师——他们让我的校园生活很温暖。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Colour a Keyboard",
+          "words": [
+            {
+              "word": "colour",
+              "phonetic": "/ˈkʌlə(r)/",
+              "meaning": "[n./v.] 颜色；上色",
+              "example": "Colour the box red."
+            },
+            {
+              "word": "red",
+              "phonetic": "/red/",
+              "meaning": "[adj.] 红色的",
+              "example": "This key is red."
+            },
+            {
+              "word": "blue",
+              "phonetic": "/bluː/",
+              "meaning": "[adj.] 蓝色的",
+              "example": "The sky is blue."
+            },
+            {
+              "word": "yellow",
+              "phonetic": "/ˈjeləʊ/",
+              "meaning": "[adj.] 黄色的",
+              "example": "I like the yellow key."
+            },
+            {
+              "word": "green",
+              "phonetic": "/ɡriːn/",
+              "meaning": "[adj.] 绿色的",
+              "example": "Colour the leaf green."
+            },
+            {
+              "word": "keyboard",
+              "phonetic": "/ˈkiːbɔːd/",
+              "meaning": "[n.] 键盘",
+              "example": "This is a new keyboard."
+            },
+            {
+              "word": "key",
+              "phonetic": "/kiː/",
+              "meaning": "[n.] 按键",
+              "example": "Press the key, please."
+            },
+            {
+              "word": "click",
+              "phonetic": "/klɪk/",
+              "meaning": "[v.] 点击",
+              "example": "Click the green key."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Colour the keys",
+              "en": "Teacher: Let's colour the keyboard today.\nMike: What colour is this key?\nTeacher: Colour it red, please.\nMike: And this one?\nTeacher: That key is blue. Now click the green key.\nMike: A red, blue, yellow and green keyboard. So nice!",
+              "cn": "老师：今天我们来给键盘上色。\n迈克：这个按键是什么颜色？\n老师：请把它涂成红色。\n迈克：这个呢？\n老师：那个键是蓝色的。现在点击绿色的键。\n迈克：一个红、蓝、黄、绿的键盘。真漂亮！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A colourful keyboard",
+              "en": "I have a keyboard with many keys.\nI colour the keys in four colours.\nThis key is red. That key is blue.\nHere is a yellow key, and there is a green one.\nI click the keys and type my name. What fun!",
+              "cn": "我有一个有很多按键的键盘。\n我把按键涂成四种颜色。\n这个键是红色的。那个键是蓝色的。\n这里有一个黄色的键，那里有一个绿色的。\n我点击按键，打出我的名字。多有趣呀！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Set a Password",
+          "words": [
+            {
+              "word": "password",
+              "phonetic": "/ˈpɑːswɜːd/",
+              "meaning": "[n.] 密码",
+              "example": "Keep your password safe."
+            },
+            {
+              "word": "number",
+              "phonetic": "/ˈnʌmbə(r)/",
+              "meaning": "[n.] 数字；号码",
+              "example": "Pick a number from 1 to 10."
+            },
+            {
+              "word": "set",
+              "phonetic": "/set/",
+              "meaning": "[v.] 设置",
+              "example": "Let's set a password."
+            },
+            {
+              "word": "secret",
+              "phonetic": "/ˈsiːkrət/",
+              "meaning": "[n./adj.] 秘密（的）",
+              "example": "A password is a secret."
+            },
+            {
+              "word": "safe",
+              "phonetic": "/seɪf/",
+              "meaning": "[adj.] 安全的",
+              "example": "Your number is safe."
+            },
+            {
+              "word": "remember",
+              "phonetic": "/rɪˈmembə(r)/",
+              "meaning": "[v.] 记住",
+              "example": "Remember your password."
+            },
+            {
+              "word": "type",
+              "phonetic": "/taɪp/",
+              "meaning": "[v.] 输入；打字",
+              "example": "Type the numbers here."
+            },
+            {
+              "word": "ten",
+              "phonetic": "/ten/",
+              "meaning": "[num.] 十",
+              "example": "I count to ten."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Set a password",
+              "en": "Dad: Let's set a password for the tablet.\nEmma: How many numbers do we need?\nDad: Pick four numbers, from one to ten.\nEmma: My secret password is ready!\nDad: Good. Remember it, and keep it safe.\nEmma: I'll type it carefully every time.",
+              "cn": "爸爸：我们来给平板设个密码吧。\n艾玛：我们需要几个数字？\n爸爸：选四个数字，从一到十。\n艾玛：我的秘密密码好啦！\n爸爸：很好。记住它，并且保管好。\n艾玛：我每次都会小心地输入。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Keep it secret",
+              "en": "A password is a special secret.\nIt is made of numbers, like 2, 5, 8, 0.\nWe type the password to keep things safe.\nDon't tell your password to others.\nRemember it well, and you are safe!",
+              "cn": "密码是一个特别的秘密。\n它由数字组成，比如 2、5、8、0。\n我们输入密码来保证东西安全。\n不要把你的密码告诉别人。\n好好记住它，你就安全啦！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I Can Draw",
+          "words": [
+            {
+              "word": "draw",
+              "phonetic": "/drɔː/",
+              "meaning": "[v.] 画",
+              "example": "I can draw a cat."
+            },
+            {
+              "word": "can",
+              "phonetic": "/kæn/",
+              "meaning": "[modal] 能；会",
+              "example": "I can draw well."
+            },
+            {
+              "word": "picture",
+              "phonetic": "/ˈpɪktʃə(r)/",
+              "meaning": "[n.] 图画",
+              "example": "This picture is nice."
+            },
+            {
+              "word": "line",
+              "phonetic": "/laɪn/",
+              "meaning": "[n.] 线",
+              "example": "Draw a long line."
+            },
+            {
+              "word": "circle",
+              "phonetic": "/ˈsɜːkl/",
+              "meaning": "[n.] 圆",
+              "example": "Draw a circle for the sun."
+            },
+            {
+              "word": "paint",
+              "phonetic": "/peɪnt/",
+              "meaning": "[v.] 用颜料画",
+              "example": "I paint the sky blue."
             },
             {
               "word": "pen",
               "phonetic": "/pen/",
-              "meaning": "钢笔",
-              "example": "I have a red pen."
+              "meaning": "[n.] 笔",
+              "example": "I draw with a pen."
             },
             {
-              "word": "book",
-              "phonetic": "/bʊk/",
-              "meaning": "书",
-              "example": "This is my book."
-            },
-            {
-              "word": "pencil",
-              "phonetic": "/ˈpensl/",
-              "meaning": "铅笔",
-              "example": "Pass me the pencil."
-            },
-            {
-              "word": "ruler",
-              "phonetic": "/ˈruːlə/",
-              "meaning": "尺子",
-              "example": "I need a ruler."
+              "word": "nice",
+              "phonetic": "/naɪs/",
+              "meaning": "[adj.] 漂亮的；好的",
+              "example": "What a nice picture!"
             }
           ],
-          "lesson": "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much.",
-          "lessonCN": "看看我的包。里面有书、钢笔和铅笔。这是我的书包。我非常喜欢它。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "I can draw",
+              "en": "Lucy: Look, I can draw a picture!\nPeter: What can you draw?\nLucy: I can draw a circle for the sun and a line for the road.\nPeter: Can you paint it?\nLucy: Yes, I can. I paint the sun yellow.\nPeter: Wow, it's a nice picture!",
+              "cn": "露西：看，我会画画！\n彼得：你会画什么？\n露西：我能画一个圆作太阳，画一条线作马路。\n彼得：你能涂色吗？\n露西：能。我把太阳涂成黄色。\n彼得：哇，这是一幅漂亮的画！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "My picture",
+              "en": "I like to draw with my pen.\nFirst, I draw a circle. It is the sun.\nThen I draw two lines. They are the road.\nI paint the picture with red and green.\nNow my picture is ready. It is so nice!",
+              "cn": "我喜欢用我的笔画画。\n首先，我画一个圆。它是太阳。\n然后我画两条线。它们是马路。\n我用红色和绿色给画上色。\n现在我的画好啦。它真漂亮！"
+            }
+          ]
         },
         {
-          "id": "u2",
-          "title": "Unit 2 My Classroom",
+          "id": "u7",
+          "title": "Unit 7 Be a Good Listener",
           "words": [
             {
-              "word": "classroom",
-              "phonetic": "/ˈklɑːsruːm/",
-              "meaning": "教室",
-              "example": "Our classroom is big."
+              "word": "listen",
+              "phonetic": "/ˈlɪsn/",
+              "meaning": "[v.] 听",
+              "example": "Listen to the teacher."
             },
             {
-              "word": "blackboard",
-              "phonetic": "/ˈblækbɔːd/",
-              "meaning": "黑板",
-              "example": "The teacher writes on the blackboard."
+              "word": "listener",
+              "phonetic": "/ˈlɪsnə(r)/",
+              "meaning": "[n.] 倾听者",
+              "example": "Be a good listener."
             },
             {
-              "word": "door",
-              "phonetic": "/dɔː/",
-              "meaning": "门",
-              "example": "Close the door."
+              "word": "hear",
+              "phonetic": "/hɪə(r)/",
+              "meaning": "[v.] 听见",
+              "example": "I can hear a bird."
             },
             {
-              "word": "window",
-              "phonetic": "/ˈwɪndəʊ/",
-              "meaning": "窗户",
-              "example": "Open the window."
+              "word": "ear",
+              "phonetic": "/ɪə(r)/",
+              "meaning": "[n.] 耳朵",
+              "example": "We hear with our ears."
             },
             {
-              "word": "teacher",
-              "phonetic": "/ˈtiːtʃə/",
-              "meaning": "老师",
-              "example": "Miss Li is my teacher."
+              "word": "quiet",
+              "phonetic": "/ˈkwaɪət/",
+              "meaning": "[adj.] 安静的",
+              "example": "Please be quiet."
+            },
+            {
+              "word": "good",
+              "phonetic": "/ɡʊd/",
+              "meaning": "[adj.] 好的",
+              "example": "She is a good girl."
+            },
+            {
+              "word": "careful",
+              "phonetic": "/ˈkeəfl/",
+              "meaning": "[adj.] 仔细的",
+              "example": "Be a careful listener."
+            },
+            {
+              "word": "please",
+              "phonetic": "/pliːz/",
+              "meaning": "[adv.] 请",
+              "example": "Listen to me, please."
             }
           ],
-          "lesson": "This is our classroom. It is big and clean. There is a blackboard and a big window. Our teacher stands in front of the blackboard. I like my classroom.",
-          "lessonCN": "这是我们的教室。它又大又干净。有一块黑板和一扇大窗户。我们的老师站在黑板前。我喜欢我的教室。"
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Listen well",
+              "en": "Teacher: Class, please be quiet.\nJack: Sorry. I will listen now.\nTeacher: Use your ears. Be a careful listener.\nJack: I can hear you well now.\nTeacher: Good! A good listener learns a lot.\nJack: I want to be a good listener every day.",
+              "cn": "老师：同学们，请安静。\n杰克：对不起。我现在就听。\n老师：用你的耳朵。做一个仔细的倾听者。\n杰克：我现在能听清楚您了。\n老师：很好！好的倾听者学到很多。\n杰克：我想每天都做个好的倾听者。"
+            },
+            {
+              "page": "Reading Room",
+              "title": "A good listener",
+              "en": "A good listener is quiet and careful.\nWe listen with our ears, not our mouths.\nWhen a friend talks, we hear every word.\nWe say \"please\" and we wait for our turn.\nBe a good listener, and you have more friends!",
+              "cn": "好的倾听者安静又仔细。\n我们用耳朵听，而不是用嘴。\n当朋友说话时，我们听清每一个字。\n我们说\"请\"，并等待轮到自己。\n做一个好的倾听者，你会有更多朋友！"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "title": "Unit 8 It's Time to Exercise!",
+          "words": [
+            {
+              "word": "exercise",
+              "phonetic": "/ˈeksəsaɪz/",
+              "meaning": "[n./v.] 锻炼",
+              "example": "Let's exercise now."
+            },
+            {
+              "word": "time",
+              "phonetic": "/taɪm/",
+              "meaning": "[n.] 时间",
+              "example": "It's time to run."
+            },
+            {
+              "word": "run",
+              "phonetic": "/rʌn/",
+              "meaning": "[v.] 跑",
+              "example": "I run in the park."
+            },
+            {
+              "word": "jump",
+              "phonetic": "/dʒʌmp/",
+              "meaning": "[v.] 跳",
+              "example": "Can you jump high?"
+            },
+            {
+              "word": "swim",
+              "phonetic": "/swɪm/",
+              "meaning": "[v.] 游泳",
+              "example": "We swim in summer."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "meaning": "[v.] 玩；做（运动）",
+              "example": "Let's play ball."
+            },
+            {
+              "word": "sport",
+              "phonetic": "/spɔːt/",
+              "meaning": "[n.] 运动",
+              "example": "My sport is running."
+            },
+            {
+              "word": "healthy",
+              "phonetic": "/ˈhelθi/",
+              "meaning": "[adj.] 健康的",
+              "example": "Exercise keeps us healthy."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Time to exercise",
+              "en": "Coach: It's time to exercise, everyone!\nNina: What can we do today?\nCoach: We can run, jump and play ball.\nNina: Can we swim too?\nCoach: Yes, on Friday. Sport makes us healthy.\nNina: I love exercise. Let's start!",
+              "cn": "教练：大家，该锻炼啦！\n妮娜：我们今天能做什么？\n教练：我们可以跑步、跳跃和打球。\n妮娜：我们也能游泳吗？\n教练：能，周五。运动让我们健康。\n妮娜：我爱锻炼。我们开始吧！"
+            },
+            {
+              "page": "Reading Room",
+              "title": "Let's be healthy",
+              "en": "Exercise is good for us every day.\nIn the morning, I run and jump.\nIn summer, I like to swim.\nAfter school, my friends and I play ball.\nWe do sports and stay healthy and happy!",
+              "cn": "锻炼每天都对我们有好处。\n早上，我跑步和跳跃。\n夏天，我喜欢游泳。\n放学后，我和朋友们打球。\n我们做运动，保持健康和快乐！"
+            }
+          ]
+        },
+        {
+          "id": "u9",
+          "title": "Review A Music Show",
+          "words": [
+            {
+              "word": "music",
+              "phonetic": "/ˈmjuːzɪk/",
+              "meaning": "[n.] 音乐",
+              "example": "I like music."
+            },
+            {
+              "word": "show",
+              "phonetic": "/ʃəʊ/",
+              "meaning": "[n./v.] 表演；展示",
+              "example": "Let's put on a show."
+            },
+            {
+              "word": "sing",
+              "phonetic": "/sɪŋ/",
+              "meaning": "[v.] 唱",
+              "example": "We sing a song."
+            },
+            {
+              "word": "song",
+              "phonetic": "/sɒŋ/",
+              "meaning": "[n.] 歌曲",
+              "example": "This song is nice."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "meaning": "[v./n.] 跳舞",
+              "example": "She can dance well."
+            },
+            {
+              "word": "stage",
+              "phonetic": "/steɪdʒ/",
+              "meaning": "[n.] 舞台",
+              "example": "We stand on the stage."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Get started",
+              "title": "Our music show",
+              "en": "Miss Wang: Let's have a music show on the stage.\nTom: I can sing an English song.\nLily: I can dance with my friends.\nMiss Wang: Who can read the letters and numbers?\nTom: I can! A, B, C and one, two, three!\nLily: What a happy music show!",
+              "cn": "王老师：我们在舞台上办一场音乐表演吧。\n汤姆：我能唱一首英文歌。\n莉莉：我能和朋友们一起跳舞。\n王老师：谁能读字母和数字？\n汤姆：我能！A、B、C 和一、二、三！\n莉莉：多快乐的音乐表演呀！"
+            },
+            {
+              "page": "Wonderland",
+              "title": "We can do it!",
+              "en": "This term we learned so much.\nWe know letters, words, colours and numbers.\nWe can draw, listen, exercise and play.\nNow we sing and dance in our music show.\nGood friends, good music — what a nice show!",
+              "cn": "这个学期我们学了好多。\n我们认识字母、单词、颜色和数字。\n我们会画画、倾听、锻炼和玩耍。\n现在我们在音乐表演里又唱又跳。\n好朋友、好音乐——多棒的一场表演！"
+            }
+          ]
         }
       ],
       "下": [

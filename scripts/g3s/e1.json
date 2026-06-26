@@ -1,0 +1,42 @@
+{
+  "letter": [
+    { "en": "A is a letter.", "cn": "A 是一个字母。", "level": 1 },
+    { "en": "Write the letter B on the paper.", "cn": "在纸上写字母 B。", "level": 2 },
+    { "en": "There are 26 letters in English.", "cn": "英语里有 26 个字母。", "level": 3 }
+  ],
+  "big letter": [
+    { "en": "A is a big letter.", "cn": "A 是一个大写字母。", "level": 1 },
+    { "en": "My name starts with a big letter.", "cn": "我的名字以大写字母开头。", "level": 2 },
+    { "en": "Please use a big letter for the first word.", "cn": "请把第一个单词的首字母大写。", "level": 3 }
+  ],
+  "small letter": [
+    { "en": "This is a small letter.", "cn": "这是一个小写字母。", "level": 1 },
+    { "en": "Write a small letter b here.", "cn": "在这里写小写字母 b。", "level": 2 },
+    { "en": "Most letters in a word are small letters.", "cn": "单词里大多数字母都是小写。", "level": 3 }
+  ],
+  "alphabet": [
+    { "en": "I know the alphabet.", "cn": "我会字母表。", "level": 1 },
+    { "en": "Let's sing the alphabet song.", "cn": "我们来唱字母歌。", "level": 2 },
+    { "en": "The alphabet has 26 letters from A to Z.", "cn": "字母表共有 26 个字母，从 A 到 Z。", "level": 3 }
+  ],
+  "sign": [
+    { "en": "Look at the sign.", "cn": "看那个标志。", "level": 1 },
+    { "en": "The sign says \"Stop\".", "cn": "标志上写着 \"Stop\"。", "level": 2 },
+    { "en": "I can read the bus sign on the street.", "cn": "我能读懂街上的公交车标志。", "level": 3 }
+  ],
+  "bus": [
+    { "en": "I go to school by bus.", "cn": "我坐公共汽车上学。", "level": 1 },
+    { "en": "The bus is yellow.", "cn": "那辆公共汽车是黄色的。", "level": 2 },
+    { "en": "We are waiting for the bus at the stop.", "cn": "我们在车站等公共汽车。", "level": 3 }
+  ],
+  "name": [
+    { "en": "My name is Anna.", "cn": "我的名字叫安娜。", "level": 1 },
+    { "en": "What is your name?", "cn": "你叫什么名字？", "level": 2 },
+    { "en": "Please write your name with a big letter.", "cn": "请用大写字母写你的名字。", "level": 3 }
+  ],
+  "life": [
+    { "en": "I love my life.", "cn": "我爱我的生活。", "level": 1 },
+    { "en": "Letters help us in daily life.", "cn": "字母在日常生活中帮助我们。", "level": 2 },
+    { "en": "We see letters everywhere in our life.", "cn": "我们在生活中到处都能看到字母。", "level": 3 }
+  ]
+}

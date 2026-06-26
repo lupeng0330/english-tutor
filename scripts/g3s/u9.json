@@ -1,0 +1,27 @@
+{
+  "id": "u9",
+  "title": "Review A Music Show",
+  "module": "",
+  "words": [
+    { "word": "music", "phonetic": "/ˈmjuːzɪk/", "meaning": "[n.] 音乐", "example": "I like music." },
+    { "word": "show", "phonetic": "/ʃəʊ/", "meaning": "[n./v.] 表演；展示", "example": "Let's put on a show." },
+    { "word": "sing", "phonetic": "/sɪŋ/", "meaning": "[v.] 唱", "example": "We sing a song." },
+    { "word": "song", "phonetic": "/sɒŋ/", "meaning": "[n.] 歌曲", "example": "This song is nice." },
+    { "word": "dance", "phonetic": "/dɑːns/", "meaning": "[v./n.] 跳舞", "example": "She can dance well." },
+    { "word": "stage", "phonetic": "/steɪdʒ/", "meaning": "[n.] 舞台", "example": "We stand on the stage." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Our music show",
+      "en": "Miss Wang: Let's have a music show on the stage.\nTom: I can sing an English song.\nLily: I can dance with my friends.\nMiss Wang: Who can read the letters and numbers?\nTom: I can! A, B, C and one, two, three!\nLily: What a happy music show!",
+      "cn": "王老师：我们在舞台上办一场音乐表演吧。\n汤姆：我能唱一首英文歌。\n莉莉：我能和朋友们一起跳舞。\n王老师：谁能读字母和数字？\n汤姆：我能！A、B、C 和一、二、三！\n莉莉：多快乐的音乐表演呀！"
+    },
+    {
+      "page": "Wonderland",
+      "title": "We can do it!",
+      "en": "This term we learned so much.\nWe know letters, words, colours and numbers.\nWe can draw, listen, exercise and play.\nNow we sing and dance in our music show.\nGood friends, good music \u2014 what a nice show!",
+      "cn": "这个学期我们学了好多。\n我们认识字母、单词、颜色和数字。\n我们会画画、倾听、锻炼和玩耍。\n现在我们在音乐表演里又唱又跳。\n好朋友、好音乐——多棒的一场表演！"
+    }
+  ]
+}

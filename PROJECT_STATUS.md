@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-06-26（PC 端，新增：P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；例句朗读本地 MP3 三级降级 + 播放交互修复 V02.20；P0-3 小学考试配置 + 无配置学段友好引导 V02.21；`sw.js` 补缓存 `js/exam.js`）  
+> 最后更新：2026-06-26（PC 端，新增：**P1-4 jk 教科版 3 上全量内容补齐**：9 单元真实教材数据 + 70 词卡 + 18 篇课文 + 210 例句 + 208 个 ex_*.mp3 §22；P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；例句朗读本地 MP3 三级降级 + 播放交互修复 V02.20；P0-3 小学考试配置 + 无配置学段友好引导 V02.21；`sw.js` 补缓存 `js/exam.js`）  
 > 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
@@ -99,7 +99,7 @@ python3 -m http.server 8765
 
 | 类别 | 数量 |
 |---|---|
-| **教材单元（教科版 jk）** | **83** 个（1-5 年级每年级 10 单元、6 年级 9 单元、7-9 年级每年级 8 单元） |
+| **教材单元（教科版 jk）** | 🆕 **3 上**已替换为新版教科版 9 单元真实数据（Letters in Our Life ~ Review · A Music Show，70 词 + 18 课文，详见 §22）；其余 1-2/4-5 年级与 6 上仍为旧 2 单元占位、6 下 11 单元真实、3-9 年级实际单元详见 `data/textbooks/jk.json` |
 | **教材单元（沪教版 hj）** | **48** 个（7-9 年级 × 上下册 × 8 单元；每单元 15 词 + 3 篇课文 Reading / Grammar focus / More reading） |
 | **题库（jk · 单词拼写）** | 224 题 |
 | **题库（jk · 听力选择）** | 52 题 |
@@ -112,7 +112,7 @@ python3 -m http.server 8765
 | **题库（hj · 阅读）** | **288 题**（v01.12 AI 精造，48 单元各 6 题；旧 48 题保留，新增 240 题打 `source:"ai_v01_12"`） |
 | **题库（hj 合计）** | **1498 题** |
 | **题库总计** | **1918 题** |
-| **音频 MP3** | 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54；grade9B_u5_L0 已补齐） |
+| **音频 MP3** | 教材/听力类 303 个（教科版课文 42 + 教科版听力 31 + 沪教听力 32 + 沪教课文 144 + 杂项 54）；🆕 P0-1 沪教听力补全 160 个（§21.6）；🆕 例句朗读 `ex_*.mp3` 共 2697 个（沪教 6 册 + jk 6下 + 🆕 **jk 3上 208 新增 §22**） |
 | **音频增量元数据** | `audio/.manifest.json`：143 条 hash 记录，下次跑 `gen_audio_v2.py` 零改动时 0.53 秒扫完；🆕 句级增量后每篇额外记录 `sentences[]`（拼接顺序 + 句 hash） |
 | **前端代码** | 🆕 `app.js` **577 行**（按功能域拆分后，原 3851 行）+ `js/` 下 **12 个**全局变量风格模块（`textbook`/`state`/`profile`/`player` + 🆕 `core`/`wrongbook`/`mastery`/`smartpick`/`stats`/`home`/`lesson`/`practice`） |
 | **PWA 雏形** | ✅ 已落地（v01.14）：`manifest.json` 已注入 `index.html`、192/512 PNG 已补齐、`sw.js` 已建并预缓存 `data/` + `audio/`，支持桌面/主屏安装 |
@@ -1003,6 +1003,8 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 **P1 · 内容填充**
 4. **jk 例句补全**：教科版 3-6 年级各学期例句（当前仅 6 下 1 册），对齐 hj 人工精编模式。
+   - ✅ **3 上**已完成（2026-06-26，详见 §22）：替换旧 2 个占位单元为 9 单元真实教材（Letters in Our Life ~ Review Music Show）+ 70 词卡 + 18 课文 + 210 例句 + 208 个 ex_*.mp3。
+   - ⏳ 余下 3 下 / 4 上下 / 5 上下 / 6 上 共 7 册待补。
 5. **gzk（广州口语 1-2 年级）内容**：填充 22 个占位单元的课文 + 词表 + 题库。
 6. **完形填空独立题库**（可选）：建 `*_cloze.json` 替代借题包装。
 
@@ -1031,3 +1033,61 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
   3. `hj_listening.json` 192 条 `audioFile` 全部非空，磁盘 192 个 `hj_listening_*.mp3` 全覆盖。
 - **生成统计**：ok=160, skip=32（已有 g7 上）, fail=0；新写入 audioFile 160 条。
 - **验证**：双端预览，沪教版练习/考试听力题播放 MP3（不再走 TTS fallback）。经用户确认后 `dev-push.ps1` 上线（铁律 3 / 4）。
+
+---
+
+## 22. ✅ P1-4 jk 教科版 3 上全量内容补齐 · 完成记录（2026-06-26）
+
+> 用户反馈"上一次任务卡住很久"，本次重启该需求时**严格按"颗粒度极小子任务"拆分推进**（19 项 todo），每项独立 1-3 分钟可完成、可中断续跑、可单独回滚，最终零卡顿一次通过。
+
+### 22.1 背景与缺口
+
+| 项 | 修复前 | 修复后 |
+|---|---|---|
+| `data/textbooks/jk.json` grade3.上 | 仅 2 个旧版**占位单元**（School Things / My Classroom）·每单元 5 词·无 lessons 数组·与真实教材完全不符 | **9 个**新版教科版真实单元（Unit 1 ~ Review）· 共 **70 词 + 18 篇课文** |
+| `data/examples/jk_grade3_shang.json` | **不存在** | 70 词 × 3 句易/中/难 = **210 句**例句 |
+| `audio/ex_*.mp3`（3 上例句） | 0 | **208 个新生成 + 1 复用既有**（hash 全局去重） |
+
+教材数据来源：基于 `JK_G3_SHANG_DATASET.md` 已确认的单元结构 + 词表，由 `scripts/g3s/u1.json ~ u9.json` 9 份独立草稿提供（每份含 `words + lessons`，单文件易于审阅与回滚）。
+
+### 22.2 颗粒化执行（19 步 todo · 全过）
+
+| 阶段 | 步骤 | 关键动作 / 产出 |
+|---|---|---|
+| 准备 | prep-1 | `scripts/g3s/_verify.py` 校验 9 单元 70 词 18 课文字段完整 [PASS] |
+| 准备 | prep-2 | 写 `scripts/g3s/import_textbook.py`（含 --write/dry-run 双模式 + 自动 .bak 备份 + 原子写入） |
+| 准备 | prep-3 | 执行 --write 写入 jk.json（备份 `jk.json.bak.20260626_202214`），`_verify_jk.py` 复核 9/9 单元词数课文数全对齐 [PASS] |
+| 例句 | ex-u1 ~ ex-u9 | 9 个独立 e*.json 手工精编（**单步只动 1 单元**，单步规模 ≤24 句）；每词三档 level=1/2/3 全覆盖 |
+| 合并 | merge | `scripts/g3s/merge_examples.py` 合并到 `data/examples/jk_grade3_shang.json` · missing/extra 词为空 [PASS]（70/210） |
+| 音频 | audio-script | 扩展 `gen_example_audio.py`：① `EX_FILES` 加入 `jk_grade3_shang.json`；② 新增 `--only`（按文件过滤）/ `--limit`（单次最多生成 N 条新 MP3，到点自动保存并退出）防卡死开关 |
+| 音频 | audio-u1-3 | `--limit 72` 第一批 ok=72/fail=0 |
+| 音频 | audio-u4-6 | `--limit 72` 第二批 ok=72/fail=0（skip=72 既有 hash 跳过） |
+| 音频 | audio-u7-9 | 无限额跑完 ok=64/skip=145/fail=0（含 1 句 hash 与既有教材音频复用） |
+| 验证 | verify | 起 `python -m http.server 8765`；`jk_grade3_shang.json`/`jk.json`/抽样 `ex_8ba75aa675.mp3` HTTP 全 200；双端 `index.html` + `mobile.html` 预览人工抽查通过（铁律 1） |
+| 收尾 | docs | 更新本文档：顶部最后更新行、§3 规模行 jk 教材/音频条目、§21.4 P1 任务4 状态、新增本章 §22 |
+
+### 22.3 关键工程实践
+
+1. **"颗粒极小 + 可断点"双保险**：例句按单元一文件一文件写、音频按 72/72/剩余三批限额跑，任意一批失败/中断都可重跑续生成（脚本 hash 去重 + 增量跳过零浪费）。
+2. **原子写入 + 自动备份**：教材导入用 `jk.json.tmp → os.replace` + 时间戳 `.bak` 双保险，回滚 1 条 `mv` 即可。
+3. **复用 > 重写**：音频生成不写新脚本，仅给既有 `gen_example_audio.py` 加 `--only`/`--limit` 两个无副作用开关；既有沪教 6 册 + jk 6 下例句行为完全不受影响。
+4. **数据 schema 对齐既有规范**：例句结构 `{words: {word: [{en, cn, level, audioFile}]}}` 与 `jk_grade6_xia.json`/`hj_grade*.json` 完全一致，前端 `loadExamplesIfNeeded` 零改动即可加载。
+5. **字段顺序与旧 grade3.上 对齐**：`id/title/words/lessons` + 词字段 `word/phonetic/meaning/example`，避免 git diff 视觉污染。
+
+### 22.4 收口状态
+
+- ✅ jk.json grade3.上：9 单元 / 70 词 / 18 课文，备份 `data/textbooks/jk.json.bak.20260626_202214`
+- ✅ jk_grade3_shang.json：70 词 / 210 例句 / 210 条 `audioFile` 字段
+- ✅ audio/ex_*.mp3：210 条例句对应 MP3 全部落盘（208 新生成 + 2 复用既有 hash），文件存在性校验 missing=0
+- ✅ 前端零改动；`tests/smoke.py` 未触发新增风险面
+- ✅ `gen_example_audio.py` 新增 `--only` / `--limit` 参数无副作用，沪教 6 册 + jk 6 下回归默认行为不变
+- ⏳ 待用户确认后跑 `dev-push.ps1` 上线（铁律 3 / 4）
+
+### 22.5 给下次接手"jk 例句继续补"的提醒
+
+后续 7 册（3 下 / 4 上下 / 5 上下 / 6 上）可完全照搬本次流程：
+
+1. 在 `scripts/g3s/` 同级建 `g3x/`、`g4s/`、`g4x/` ... 每个目录下放 `u*.json` 单元草稿 + 复用 `import_textbook.py`（仅改路径常量）+ `merge_examples.py`。
+2. 音频：直接 `python gen_example_audio.py --only jk_grade{N}_{shang|xia}.json --limit 80`（边跑边断、零卡死）。
+3. 单步规模建议：例句单元粒度（每步 8-12 词），音频单批 ≤80 句。**永远不要尝试一次完成全 7 册** —— 这是本次重启该需求时翻车的根因之一。
+

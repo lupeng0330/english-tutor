@@ -16,6 +16,7 @@ desktop.ini
 *.tmp
 *.log
 *.bak
+*.bak.*
 
 # 备份 zip
 *.zip

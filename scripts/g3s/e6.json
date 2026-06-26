@@ -1,0 +1,42 @@
+{
+  "draw": [
+    { "en": "I can draw.", "cn": "我会画画。", "level": 1 },
+    { "en": "Let's draw a cat together.", "cn": "我们一起画一只猫吧。", "level": 2 },
+    { "en": "She likes to draw pictures of her family.", "cn": "她喜欢画家人的画像。", "level": 3 }
+  ],
+  "can": [
+    { "en": "I can sing.", "cn": "我会唱歌。", "level": 1 },
+    { "en": "Can you swim?", "cn": "你会游泳吗？", "level": 2 },
+    { "en": "My little sister can draw a beautiful flower.", "cn": "我妹妹能画一朵漂亮的花。", "level": 3 }
+  ],
+  "picture": [
+    { "en": "It is a picture.", "cn": "这是一幅画。", "level": 1 },
+    { "en": "I have a picture of my dog.", "cn": "我有一张我家狗狗的照片。", "level": 2 },
+    { "en": "Look at the picture on the wall — it's lovely.", "cn": "看墙上那幅画，真漂亮。", "level": 3 }
+  ],
+  "line": [
+    { "en": "Draw a line.", "cn": "画一条线。", "level": 1 },
+    { "en": "There is a red line on the paper.", "cn": "纸上有一条红线。", "level": 2 },
+    { "en": "Please stand in a line, boys and girls.", "cn": "同学们，请站成一队。", "level": 3 }
+  ],
+  "circle": [
+    { "en": "Draw a circle.", "cn": "画一个圆。", "level": 1 },
+    { "en": "The sun looks like a circle.", "cn": "太阳看起来像一个圆。", "level": 2 },
+    { "en": "Please sit in a circle on the floor.", "cn": "请大家围成一圈坐在地上。", "level": 3 }
+  ],
+  "paint": [
+    { "en": "I can paint.", "cn": "我会用颜料画画。", "level": 1 },
+    { "en": "She paints the wall blue.", "cn": "她把墙刷成蓝色。", "level": 2 },
+    { "en": "We paint a big picture for our teacher.", "cn": "我们给老师画一幅大画。", "level": 3 }
+  ],
+  "pen": [
+    { "en": "This is a pen.", "cn": "这是一支笔。", "level": 1 },
+    { "en": "I have a new blue pen.", "cn": "我有一支新的蓝色钢笔。", "level": 2 },
+    { "en": "Please write your name with this pen.", "cn": "请用这支笔写你的名字。", "level": 3 }
+  ],
+  "nice": [
+    { "en": "Nice to meet you.", "cn": "见到你很高兴。", "level": 1 },
+    { "en": "What a nice picture!", "cn": "多漂亮的一幅画啊！", "level": 2 },
+    { "en": "Your drawing is really nice, well done!", "cn": "你画得真漂亮，干得好！", "level": 3 }
+  ]
+}

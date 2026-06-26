@@ -1,0 +1,1404 @@
+{
+  "words": {
+    "letter": [
+      {
+        "en": "A is a letter.",
+        "cn": "A 是一个字母。",
+        "level": 1,
+        "audioFile": "ex_8ba75aa675.mp3"
+      },
+      {
+        "en": "Write the letter B on the paper.",
+        "cn": "在纸上写字母 B。",
+        "level": 2,
+        "audioFile": "ex_4fb98c39b0.mp3"
+      },
+      {
+        "en": "There are 26 letters in English.",
+        "cn": "英语里有 26 个字母。",
+        "level": 3,
+        "audioFile": "ex_070a96d02b.mp3"
+      }
+    ],
+    "big letter": [
+      {
+        "en": "A is a big letter.",
+        "cn": "A 是一个大写字母。",
+        "level": 1,
+        "audioFile": "ex_4ae8993576.mp3"
+      },
+      {
+        "en": "My name starts with a big letter.",
+        "cn": "我的名字以大写字母开头。",
+        "level": 2,
+        "audioFile": "ex_a6da48e2f0.mp3"
+      },
+      {
+        "en": "Please use a big letter for the first word.",
+        "cn": "请把第一个单词的首字母大写。",
+        "level": 3,
+        "audioFile": "ex_2ba1712bef.mp3"
+      }
+    ],
+    "small letter": [
+      {
+        "en": "This is a small letter.",
+        "cn": "这是一个小写字母。",
+        "level": 1,
+        "audioFile": "ex_8cb80ab88a.mp3"
+      },
+      {
+        "en": "Write a small letter b here.",
+        "cn": "在这里写小写字母 b。",
+        "level": 2,
+        "audioFile": "ex_399e6816f5.mp3"
+      },
+      {
+        "en": "Most letters in a word are small letters.",
+        "cn": "单词里大多数字母都是小写。",
+        "level": 3,
+        "audioFile": "ex_4a8b1d2932.mp3"
+      }
+    ],
+    "alphabet": [
+      {
+        "en": "I know the alphabet.",
+        "cn": "我会字母表。",
+        "level": 1,
+        "audioFile": "ex_f8528c531d.mp3"
+      },
+      {
+        "en": "Let's sing the alphabet song.",
+        "cn": "我们来唱字母歌。",
+        "level": 2,
+        "audioFile": "ex_fb1ce005ec.mp3"
+      },
+      {
+        "en": "The alphabet has 26 letters from A to Z.",
+        "cn": "字母表共有 26 个字母，从 A 到 Z。",
+        "level": 3,
+        "audioFile": "ex_d5894e5845.mp3"
+      }
+    ],
+    "sign": [
+      {
+        "en": "Look at the sign.",
+        "cn": "看那个标志。",
+        "level": 1,
+        "audioFile": "ex_816555775f.mp3"
+      },
+      {
+        "en": "The sign says \"Stop\".",
+        "cn": "标志上写着 \"Stop\"。",
+        "level": 2,
+        "audioFile": "ex_da3c0f9b82.mp3"
+      },
+      {
+        "en": "I can read the bus sign on the street.",
+        "cn": "我能读懂街上的公交车标志。",
+        "level": 3,
+        "audioFile": "ex_3d00d0442e.mp3"
+      }
+    ],
+    "bus": [
+      {
+        "en": "I go to school by bus.",
+        "cn": "我坐公共汽车上学。",
+        "level": 1,
+        "audioFile": "ex_95f45bf165.mp3"
+      },
+      {
+        "en": "The bus is yellow.",
+        "cn": "那辆公共汽车是黄色的。",
+        "level": 2,
+        "audioFile": "ex_9b1936be32.mp3"
+      },
+      {
+        "en": "We are waiting for the bus at the stop.",
+        "cn": "我们在车站等公共汽车。",
+        "level": 3,
+        "audioFile": "ex_8de727e6b5.mp3"
+      }
+    ],
+    "name": [
+      {
+        "en": "My name is Anna.",
+        "cn": "我的名字叫安娜。",
+        "level": 1,
+        "audioFile": "ex_47cde315d5.mp3"
+      },
+      {
+        "en": "What is your name?",
+        "cn": "你叫什么名字？",
+        "level": 2,
+        "audioFile": "ex_f6429fe0f1.mp3"
+      },
+      {
+        "en": "Please write your name with a big letter.",
+        "cn": "请用大写字母写你的名字。",
+        "level": 3,
+        "audioFile": "ex_2d43c21187.mp3"
+      }
+    ],
+    "life": [
+      {
+        "en": "I love my life.",
+        "cn": "我爱我的生活。",
+        "level": 1,
+        "audioFile": "ex_1db568764e.mp3"
+      },
+      {
+        "en": "Letters help us in daily life.",
+        "cn": "字母在日常生活中帮助我们。",
+        "level": 2,
+        "audioFile": "ex_755206fd9c.mp3"
+      },
+      {
+        "en": "We see letters everywhere in our life.",
+        "cn": "我们在生活中到处都能看到字母。",
+        "level": 3,
+        "audioFile": "ex_5743c45344.mp3"
+      }
+    ],
+    "English": [
+      {
+        "en": "I speak English.",
+        "cn": "我说英语。",
+        "level": 1,
+        "audioFile": "ex_8b7a394825.mp3"
+      },
+      {
+        "en": "English is fun for me.",
+        "cn": "对我来说英语很有趣。",
+        "level": 2,
+        "audioFile": "ex_7c9bdbac18.mp3"
+      },
+      {
+        "en": "Many children learn English at school.",
+        "cn": "很多孩子在学校学英语。",
+        "level": 3,
+        "audioFile": "ex_fa7b95ce61.mp3"
+      }
+    ],
+    "Chinese": [
+      {
+        "en": "I am Chinese.",
+        "cn": "我是中国人。",
+        "level": 1,
+        "audioFile": "ex_67a81632e5.mp3"
+      },
+      {
+        "en": "We learn Chinese every day.",
+        "cn": "我们每天学中文。",
+        "level": 2,
+        "audioFile": "ex_f293578730.mp3"
+      },
+      {
+        "en": "Chinese and English have different letters.",
+        "cn": "中文和英语的字符不同。",
+        "level": 3,
+        "audioFile": "ex_5e598dd83c.mp3"
+      }
+    ],
+    "word": [
+      {
+        "en": "\"Book\" is a word.",
+        "cn": "\"Book\" 是一个单词。",
+        "level": 1,
+        "audioFile": "ex_5a6aff26b8.mp3"
+      },
+      {
+        "en": "I know many English words.",
+        "cn": "我认识很多英语单词。",
+        "level": 2,
+        "audioFile": "ex_7e99658b49.mp3"
+      },
+      {
+        "en": "Please read the new words after me.",
+        "cn": "请跟我读新单词。",
+        "level": 3,
+        "audioFile": "ex_e0213b3669.mp3"
+      }
+    ],
+    "say": [
+      {
+        "en": "Say hello to her.",
+        "cn": "向她问好。",
+        "level": 1,
+        "audioFile": "ex_7d0b57adcc.mp3"
+      },
+      {
+        "en": "How do you say \"猫\" in English?",
+        "cn": "\"猫\" 用英语怎么说？",
+        "level": 2,
+        "audioFile": "ex_4716ecadef.mp3"
+      },
+      {
+        "en": "Please say it again, more slowly.",
+        "cn": "请再说一遍，慢一点。",
+        "level": 3,
+        "audioFile": "ex_0ba9c7b971.mp3"
+      }
+    ],
+    "mean": [
+      {
+        "en": "What does it mean?",
+        "cn": "这是什么意思？",
+        "level": 1,
+        "audioFile": "ex_713791e49c.mp3"
+      },
+      {
+        "en": "\"Cat\" means 猫.",
+        "cn": "\"Cat\" 的意思是猫。",
+        "level": 2,
+        "audioFile": "ex_dd2277f6b6.mp3"
+      },
+      {
+        "en": "I don't know what this word means.",
+        "cn": "我不知道这个单词的意思。",
+        "level": 3,
+        "audioFile": "ex_4bab2850a1.mp3"
+      }
+    ],
+    "same": [
+      {
+        "en": "We are the same age.",
+        "cn": "我们一样大。",
+        "level": 1,
+        "audioFile": "ex_3b8602848c.mp3"
+      },
+      {
+        "en": "Our bags are the same.",
+        "cn": "我们的书包是一样的。",
+        "level": 2,
+        "audioFile": "ex_0a2668e888.mp3"
+      },
+      {
+        "en": "These two words have the same meaning.",
+        "cn": "这两个单词意思相同。",
+        "level": 3,
+        "audioFile": "ex_0c1113c6eb.mp3"
+      }
+    ],
+    "different": [
+      {
+        "en": "We are different.",
+        "cn": "我们不一样。",
+        "level": 1,
+        "audioFile": "ex_cbb9e28a84.mp3"
+      },
+      {
+        "en": "I have a different idea.",
+        "cn": "我有一个不同的想法。",
+        "level": 2,
+        "audioFile": "ex_3c8a0bc895.mp3"
+      },
+      {
+        "en": "English and Chinese are very different languages.",
+        "cn": "英语和汉语是两种很不同的语言。",
+        "level": 3,
+        "audioFile": "ex_5169bcc550.mp3"
+      }
+    ],
+    "read": [
+      {
+        "en": "I can read.",
+        "cn": "我会读。",
+        "level": 1,
+        "audioFile": "ex_3e24032f96.mp3"
+      },
+      {
+        "en": "She likes to read books.",
+        "cn": "她喜欢读书。",
+        "level": 2,
+        "audioFile": "ex_f33ba82781.mp3"
+      },
+      {
+        "en": "Please read the story to the class.",
+        "cn": "请把这个故事读给同学们听。",
+        "level": 3,
+        "audioFile": "ex_2520f4ab22.mp3"
+      }
+    ],
+    "who": [
+      {
+        "en": "Who is he?",
+        "cn": "他是谁？",
+        "level": 1,
+        "audioFile": "ex_6e04300264.mp3"
+      },
+      {
+        "en": "Who is your teacher?",
+        "cn": "你的老师是谁？",
+        "level": 2,
+        "audioFile": "ex_5fb8e2bf06.mp3"
+      },
+      {
+        "en": "Do you know who that boy is?",
+        "cn": "你知道那个男孩是谁吗？",
+        "level": 3,
+        "audioFile": "ex_c04c94a9b6.mp3"
+      }
+    ],
+    "he": [
+      {
+        "en": "He is my dad.",
+        "cn": "他是我爸爸。",
+        "level": 1,
+        "audioFile": "ex_b3336bc58c.mp3"
+      },
+      {
+        "en": "He likes to play football.",
+        "cn": "他喜欢踢足球。",
+        "level": 2,
+        "audioFile": "ex_f1c81d4c2e.mp3"
+      },
+      {
+        "en": "He is a good friend of mine.",
+        "cn": "他是我的好朋友。",
+        "level": 3,
+        "audioFile": "ex_913e266024.mp3"
+      }
+    ],
+    "she": [
+      {
+        "en": "She is my mum.",
+        "cn": "她是我妈妈。",
+        "level": 1,
+        "audioFile": "ex_46f79afb15.mp3"
+      },
+      {
+        "en": "She can sing very well.",
+        "cn": "她唱歌很好听。",
+        "level": 2,
+        "audioFile": "ex_344023dccf.mp3"
+      },
+      {
+        "en": "She is the new English teacher.",
+        "cn": "她是新来的英语老师。",
+        "level": 3,
+        "audioFile": "ex_7eefb78049.mp3"
+      }
+    ],
+    "friend": [
+      {
+        "en": "He is my friend.",
+        "cn": "他是我的朋友。",
+        "level": 1,
+        "audioFile": "ex_4227d7fa29.mp3"
+      },
+      {
+        "en": "I have many friends at school.",
+        "cn": "我在学校有很多朋友。",
+        "level": 2,
+        "audioFile": "ex_9e6fd6bfad.mp3"
+      },
+      {
+        "en": "A good friend is hard to find.",
+        "cn": "好朋友是难得的。",
+        "level": 3,
+        "audioFile": "ex_b3db875568.mp3"
+      }
+    ],
+    "teacher": [
+      {
+        "en": "Miss Li is my teacher.",
+        "cn": "李老师是我的老师。",
+        "level": 1,
+        "audioFile": "ex_7ea580254d.mp3"
+      },
+      {
+        "en": "Our teacher is very kind.",
+        "cn": "我们的老师非常和善。",
+        "level": 2,
+        "audioFile": "ex_5d3d1dea88.mp3"
+      },
+      {
+        "en": "The English teacher tells us a funny story.",
+        "cn": "英语老师给我们讲了一个有趣的故事。",
+        "level": 3,
+        "audioFile": "ex_fff4f302eb.mp3"
+      }
+    ],
+    "classmate": [
+      {
+        "en": "Tom is my classmate.",
+        "cn": "汤姆是我的同学。",
+        "level": 1,
+        "audioFile": "ex_df37a92bf2.mp3"
+      },
+      {
+        "en": "My classmate sits next to me.",
+        "cn": "我的同学坐在我旁边。",
+        "level": 2,
+        "audioFile": "ex_da29893d9f.mp3"
+      },
+      {
+        "en": "All my classmates are very friendly.",
+        "cn": "我所有的同学都很友好。",
+        "level": 3,
+        "audioFile": "ex_27bf12f76a.mp3"
+      }
+    ],
+    "boy": [
+      {
+        "en": "He is a boy.",
+        "cn": "他是一个男孩。",
+        "level": 1,
+        "audioFile": "ex_4f7e088771.mp3"
+      },
+      {
+        "en": "The boy in red is my brother.",
+        "cn": "穿红衣服的男孩是我弟弟。",
+        "level": 2,
+        "audioFile": "ex_6e2aa88ba5.mp3"
+      },
+      {
+        "en": "That boy can play the piano very well.",
+        "cn": "那个男孩钢琴弹得很好。",
+        "level": 3,
+        "audioFile": "ex_d13daa9d69.mp3"
+      }
+    ],
+    "girl": [
+      {
+        "en": "She is a girl.",
+        "cn": "她是一个女孩。",
+        "level": 1,
+        "audioFile": "ex_d30f472202.mp3"
+      },
+      {
+        "en": "The girl with long hair is Lily.",
+        "cn": "长头发的女孩是莉莉。",
+        "level": 2,
+        "audioFile": "ex_c4f4e70906.mp3"
+      },
+      {
+        "en": "Every girl in our class likes to dance.",
+        "cn": "我们班的每个女孩都喜欢跳舞。",
+        "level": 3,
+        "audioFile": "ex_7124d0778c.mp3"
+      }
+    ],
+    "colour": [
+      {
+        "en": "Red is a colour.",
+        "cn": "红色是一种颜色。",
+        "level": 1,
+        "audioFile": "ex_9eb248ad10.mp3"
+      },
+      {
+        "en": "What colour is your bag?",
+        "cn": "你的书包是什么颜色？",
+        "level": 2,
+        "audioFile": "ex_6b6e208e81.mp3"
+      },
+      {
+        "en": "I like to colour pictures with my friends.",
+        "cn": "我喜欢和朋友们一起给图画上色。",
+        "level": 3,
+        "audioFile": "ex_f335d7453c.mp3"
+      }
+    ],
+    "red": [
+      {
+        "en": "The apple is red.",
+        "cn": "苹果是红色的。",
+        "level": 1,
+        "audioFile": "ex_2e82767a38.mp3"
+      },
+      {
+        "en": "I have a red pen.",
+        "cn": "我有一支红色的笔。",
+        "level": 2,
+        "audioFile": "ex_16993f20d9.mp3"
+      },
+      {
+        "en": "She is wearing a beautiful red dress.",
+        "cn": "她穿着一条漂亮的红色裙子。",
+        "level": 3,
+        "audioFile": "ex_63eba80025.mp3"
+      }
+    ],
+    "blue": [
+      {
+        "en": "The sky is blue.",
+        "cn": "天空是蓝色的。",
+        "level": 1,
+        "audioFile": "ex_e599128380.mp3"
+      },
+      {
+        "en": "I want a blue keyboard.",
+        "cn": "我想要一个蓝色的键盘。",
+        "level": 2,
+        "audioFile": "ex_ee1c0ae21a.mp3"
+      },
+      {
+        "en": "The sea looks blue under the sun.",
+        "cn": "在阳光下大海看起来是蓝色的。",
+        "level": 3,
+        "audioFile": "ex_bc1c19263b.mp3"
+      }
+    ],
+    "yellow": [
+      {
+        "en": "The sun is yellow.",
+        "cn": "太阳是黄色的。",
+        "level": 1,
+        "audioFile": "ex_d6439b9854.mp3"
+      },
+      {
+        "en": "I have a yellow pencil.",
+        "cn": "我有一支黄色的铅笔。",
+        "level": 2,
+        "audioFile": "ex_d9570770af.mp3"
+      },
+      {
+        "en": "School buses are usually yellow.",
+        "cn": "校车通常是黄色的。",
+        "level": 3,
+        "audioFile": "ex_8c76ded5cc.mp3"
+      }
+    ],
+    "green": [
+      {
+        "en": "The grass is green.",
+        "cn": "草是绿色的。",
+        "level": 1,
+        "audioFile": "ex_9b09144c40.mp3"
+      },
+      {
+        "en": "My favourite colour is green.",
+        "cn": "我最喜欢的颜色是绿色。",
+        "level": 2,
+        "audioFile": "ex_68b34fc4dd.mp3"
+      },
+      {
+        "en": "We can cross the road when the light is green.",
+        "cn": "绿灯时我们可以过马路。",
+        "level": 3,
+        "audioFile": "ex_1cb467bdfb.mp3"
+      }
+    ],
+    "keyboard": [
+      {
+        "en": "This is a keyboard.",
+        "cn": "这是一个键盘。",
+        "level": 1,
+        "audioFile": "ex_b58a53b7b2.mp3"
+      },
+      {
+        "en": "The keyboard has many keys.",
+        "cn": "键盘上有很多按键。",
+        "level": 2,
+        "audioFile": "ex_c5834624b6.mp3"
+      },
+      {
+        "en": "I type on the keyboard to write a story.",
+        "cn": "我用键盘打字写故事。",
+        "level": 3,
+        "audioFile": "ex_83db420a7f.mp3"
+      }
+    ],
+    "key": [
+      {
+        "en": "Press this key.",
+        "cn": "按这个键。",
+        "level": 1,
+        "audioFile": "ex_8e635c674c.mp3"
+      },
+      {
+        "en": "The big key on the right is Enter.",
+        "cn": "右边那个大键是回车键。",
+        "level": 2,
+        "audioFile": "ex_84fb341164.mp3"
+      },
+      {
+        "en": "Don't press the wrong key on the keyboard.",
+        "cn": "不要按错键盘上的键。",
+        "level": 3,
+        "audioFile": "ex_593666d18d.mp3"
+      }
+    ],
+    "click": [
+      {
+        "en": "Click here.",
+        "cn": "点这里。",
+        "level": 1,
+        "audioFile": "ex_7c4077a6f0.mp3"
+      },
+      {
+        "en": "Click the red button to start.",
+        "cn": "点击红色按钮开始。",
+        "level": 2,
+        "audioFile": "ex_ddb419a793.mp3"
+      },
+      {
+        "en": "Please click the picture to see it bigger.",
+        "cn": "请点击图片把它放大。",
+        "level": 3,
+        "audioFile": "ex_33bd82accd.mp3"
+      }
+    ],
+    "password": [
+      {
+        "en": "I have a password.",
+        "cn": "我有一个密码。",
+        "level": 1,
+        "audioFile": "ex_c3fdad2b4c.mp3"
+      },
+      {
+        "en": "Please type your password.",
+        "cn": "请输入你的密码。",
+        "level": 2,
+        "audioFile": "ex_3d63299f90.mp3"
+      },
+      {
+        "en": "A good password is hard to guess.",
+        "cn": "一个好的密码很难被猜到。",
+        "level": 3,
+        "audioFile": "ex_8e3a6f47c8.mp3"
+      }
+    ],
+    "number": [
+      {
+        "en": "Five is a number.",
+        "cn": "五是一个数字。",
+        "level": 1,
+        "audioFile": "ex_6956aad106.mp3"
+      },
+      {
+        "en": "What is your phone number?",
+        "cn": "你的电话号码是多少？",
+        "level": 2,
+        "audioFile": "ex_bb5a84e5f5.mp3"
+      },
+      {
+        "en": "Please remember the number for your password.",
+        "cn": "请记住你密码里的数字。",
+        "level": 3,
+        "audioFile": "ex_c94d4660bc.mp3"
+      }
+    ],
+    "set": [
+      {
+        "en": "Set the time.",
+        "cn": "设置时间。",
+        "level": 1,
+        "audioFile": "ex_1709dfd120.mp3"
+      },
+      {
+        "en": "I set my password today.",
+        "cn": "我今天设置了密码。",
+        "level": 2,
+        "audioFile": "ex_58ba9e1f71.mp3"
+      },
+      {
+        "en": "Please set a safe password for your account.",
+        "cn": "请为你的账户设置一个安全的密码。",
+        "level": 3,
+        "audioFile": "ex_7a7909a206.mp3"
+      }
+    ],
+    "secret": [
+      {
+        "en": "It is a secret.",
+        "cn": "这是一个秘密。",
+        "level": 1,
+        "audioFile": "ex_9859aaab06.mp3"
+      },
+      {
+        "en": "Don't tell anyone my secret.",
+        "cn": "不要把我的秘密告诉别人。",
+        "level": 2,
+        "audioFile": "ex_5aa935ea16.mp3"
+      },
+      {
+        "en": "Your password is a secret, so keep it safe.",
+        "cn": "你的密码是个秘密，要保管好。",
+        "level": 3,
+        "audioFile": "ex_362f01abc0.mp3"
+      }
+    ],
+    "safe": [
+      {
+        "en": "I am safe.",
+        "cn": "我安全。",
+        "level": 1,
+        "audioFile": "ex_58b3a2b03f.mp3"
+      },
+      {
+        "en": "Keep your password safe.",
+        "cn": "把你的密码保管好。",
+        "level": 2,
+        "audioFile": "ex_46fa7c5b46.mp3"
+      },
+      {
+        "en": "A long password is safer than a short one.",
+        "cn": "长密码比短密码更安全。",
+        "level": 3,
+        "audioFile": "ex_5a2fd361d9.mp3"
+      }
+    ],
+    "remember": [
+      {
+        "en": "I remember you.",
+        "cn": "我记得你。",
+        "level": 1,
+        "audioFile": "ex_eeb88f11ba.mp3"
+      },
+      {
+        "en": "Remember to bring your book.",
+        "cn": "记得带上你的书。",
+        "level": 2,
+        "audioFile": "ex_87cbf373c6.mp3"
+      },
+      {
+        "en": "Please remember your password — don't write it down.",
+        "cn": "请记住密码，不要写下来。",
+        "level": 3,
+        "audioFile": "ex_20ffb3df90.mp3"
+      }
+    ],
+    "type": [
+      {
+        "en": "I can type.",
+        "cn": "我会打字。",
+        "level": 1,
+        "audioFile": "ex_36fbb8b2e0.mp3"
+      },
+      {
+        "en": "Type your name here, please.",
+        "cn": "请在这里输入你的名字。",
+        "level": 2,
+        "audioFile": "ex_b2e22e5424.mp3"
+      },
+      {
+        "en": "She can type very fast on the keyboard.",
+        "cn": "她在键盘上能打字很快。",
+        "level": 3,
+        "audioFile": "ex_5b106afc4b.mp3"
+      }
+    ],
+    "ten": [
+      {
+        "en": "I am ten.",
+        "cn": "我十岁。",
+        "level": 1,
+        "audioFile": "ex_8a8f144d51.mp3"
+      },
+      {
+        "en": "There are ten boys in the room.",
+        "cn": "房间里有十个男孩。",
+        "level": 2,
+        "audioFile": "ex_4c1141d21e.mp3"
+      },
+      {
+        "en": "Please count from one to ten in English.",
+        "cn": "请用英语从 1 数到 10。",
+        "level": 3,
+        "audioFile": "ex_b9357acaa5.mp3"
+      }
+    ],
+    "draw": [
+      {
+        "en": "I can draw.",
+        "cn": "我会画画。",
+        "level": 1,
+        "audioFile": "ex_fd0f3f927e.mp3"
+      },
+      {
+        "en": "Let's draw a cat together.",
+        "cn": "我们一起画一只猫吧。",
+        "level": 2,
+        "audioFile": "ex_1bbff35ab2.mp3"
+      },
+      {
+        "en": "She likes to draw pictures of her family.",
+        "cn": "她喜欢画家人的画像。",
+        "level": 3,
+        "audioFile": "ex_9fee3bbcaa.mp3"
+      }
+    ],
+    "can": [
+      {
+        "en": "I can sing.",
+        "cn": "我会唱歌。",
+        "level": 1,
+        "audioFile": "ex_58e7face77.mp3"
+      },
+      {
+        "en": "Can you swim?",
+        "cn": "你会游泳吗？",
+        "level": 2,
+        "audioFile": "ex_aeeb9dce33.mp3"
+      },
+      {
+        "en": "My little sister can draw a beautiful flower.",
+        "cn": "我妹妹能画一朵漂亮的花。",
+        "level": 3,
+        "audioFile": "ex_dc5685cce7.mp3"
+      }
+    ],
+    "picture": [
+      {
+        "en": "It is a picture.",
+        "cn": "这是一幅画。",
+        "level": 1,
+        "audioFile": "ex_7bfcbbd4fe.mp3"
+      },
+      {
+        "en": "I have a picture of my dog.",
+        "cn": "我有一张我家狗狗的照片。",
+        "level": 2,
+        "audioFile": "ex_66a6bdd9f8.mp3"
+      },
+      {
+        "en": "Look at the picture on the wall — it's lovely.",
+        "cn": "看墙上那幅画，真漂亮。",
+        "level": 3,
+        "audioFile": "ex_0c67ff7424.mp3"
+      }
+    ],
+    "line": [
+      {
+        "en": "Draw a line.",
+        "cn": "画一条线。",
+        "level": 1,
+        "audioFile": "ex_e69fd4cd3d.mp3"
+      },
+      {
+        "en": "There is a red line on the paper.",
+        "cn": "纸上有一条红线。",
+        "level": 2,
+        "audioFile": "ex_20e1693e26.mp3"
+      },
+      {
+        "en": "Please stand in a line, boys and girls.",
+        "cn": "同学们，请站成一队。",
+        "level": 3,
+        "audioFile": "ex_8cf444fad0.mp3"
+      }
+    ],
+    "circle": [
+      {
+        "en": "Draw a circle.",
+        "cn": "画一个圆。",
+        "level": 1,
+        "audioFile": "ex_75bfd6efee.mp3"
+      },
+      {
+        "en": "The sun looks like a circle.",
+        "cn": "太阳看起来像一个圆。",
+        "level": 2,
+        "audioFile": "ex_4769990561.mp3"
+      },
+      {
+        "en": "Please sit in a circle on the floor.",
+        "cn": "请大家围成一圈坐在地上。",
+        "level": 3,
+        "audioFile": "ex_2e285e8942.mp3"
+      }
+    ],
+    "paint": [
+      {
+        "en": "I can paint.",
+        "cn": "我会用颜料画画。",
+        "level": 1,
+        "audioFile": "ex_46dc10902b.mp3"
+      },
+      {
+        "en": "She paints the wall blue.",
+        "cn": "她把墙刷成蓝色。",
+        "level": 2,
+        "audioFile": "ex_abba7e7304.mp3"
+      },
+      {
+        "en": "We paint a big picture for our teacher.",
+        "cn": "我们给老师画一幅大画。",
+        "level": 3,
+        "audioFile": "ex_65bc67488c.mp3"
+      }
+    ],
+    "pen": [
+      {
+        "en": "This is a pen.",
+        "cn": "这是一支笔。",
+        "level": 1,
+        "audioFile": "ex_26df8d1ff2.mp3"
+      },
+      {
+        "en": "I have a new blue pen.",
+        "cn": "我有一支新的蓝色钢笔。",
+        "level": 2,
+        "audioFile": "ex_7fb8577779.mp3"
+      },
+      {
+        "en": "Please write your name with this pen.",
+        "cn": "请用这支笔写你的名字。",
+        "level": 3,
+        "audioFile": "ex_c4bf1a2126.mp3"
+      }
+    ],
+    "nice": [
+      {
+        "en": "Nice to meet you.",
+        "cn": "见到你很高兴。",
+        "level": 1,
+        "audioFile": "ex_67bd7ea9f2.mp3"
+      },
+      {
+        "en": "What a nice picture!",
+        "cn": "多漂亮的一幅画啊！",
+        "level": 2,
+        "audioFile": "ex_44d4deaf8c.mp3"
+      },
+      {
+        "en": "Your drawing is really nice, well done!",
+        "cn": "你画得真漂亮，干得好！",
+        "level": 3,
+        "audioFile": "ex_2c4d11733b.mp3"
+      }
+    ],
+    "listen": [
+      {
+        "en": "Listen to me.",
+        "cn": "听我说。",
+        "level": 1,
+        "audioFile": "ex_23d0825426.mp3"
+      },
+      {
+        "en": "Please listen to the teacher.",
+        "cn": "请听老师讲。",
+        "level": 2,
+        "audioFile": "ex_97f24e3596.mp3"
+      },
+      {
+        "en": "I love to listen to music in the evening.",
+        "cn": "我喜欢在晚上听音乐。",
+        "level": 3,
+        "audioFile": "ex_0e31917855.mp3"
+      }
+    ],
+    "listener": [
+      {
+        "en": "Be a good listener.",
+        "cn": "做个好的倾听者。",
+        "level": 1,
+        "audioFile": "ex_d12c7919cb.mp3"
+      },
+      {
+        "en": "My friend is a great listener.",
+        "cn": "我的朋友是个很好的倾听者。",
+        "level": 2,
+        "audioFile": "ex_759ef500b1.mp3"
+      },
+      {
+        "en": "A good listener never breaks in when others speak.",
+        "cn": "好的倾听者从不打断别人说话。",
+        "level": 3,
+        "audioFile": "ex_a97fbc783c.mp3"
+      }
+    ],
+    "hear": [
+      {
+        "en": "I can hear you.",
+        "cn": "我能听见你。",
+        "level": 1,
+        "audioFile": "ex_329155a200.mp3"
+      },
+      {
+        "en": "Do you hear the bird singing?",
+        "cn": "你听到鸟在唱歌吗？",
+        "level": 2,
+        "audioFile": "ex_b26c286acb.mp3"
+      },
+      {
+        "en": "I can hear the rain on the window at night.",
+        "cn": "夜里我能听到雨打窗户的声音。",
+        "level": 3,
+        "audioFile": "ex_7258db4631.mp3"
+      }
+    ],
+    "ear": [
+      {
+        "en": "This is my ear.",
+        "cn": "这是我的耳朵。",
+        "level": 1,
+        "audioFile": "ex_d342006075.mp3"
+      },
+      {
+        "en": "We have two ears to listen.",
+        "cn": "我们有两只耳朵来听。",
+        "level": 2,
+        "audioFile": "ex_d649da00bb.mp3"
+      },
+      {
+        "en": "Cover your ears when the noise is too loud.",
+        "cn": "噪音太大时请捂住耳朵。",
+        "level": 3,
+        "audioFile": "ex_fa7a29f844.mp3"
+      }
+    ],
+    "quiet": [
+      {
+        "en": "Be quiet, please.",
+        "cn": "请安静。",
+        "level": 1,
+        "audioFile": "ex_a01f998d44.mp3"
+      },
+      {
+        "en": "The library is very quiet.",
+        "cn": "图书馆里很安静。",
+        "level": 2,
+        "audioFile": "ex_25fcb65075.mp3"
+      },
+      {
+        "en": "Please keep quiet when the teacher is talking.",
+        "cn": "老师讲话时请保持安静。",
+        "level": 3,
+        "audioFile": "ex_a6dc1b149a.mp3"
+      }
+    ],
+    "good": [
+      {
+        "en": "Good job!",
+        "cn": "干得好！",
+        "level": 1,
+        "audioFile": "ex_ba926318fd.mp3"
+      },
+      {
+        "en": "He is a good boy.",
+        "cn": "他是个好男孩。",
+        "level": 2,
+        "audioFile": "ex_81c0fe5284.mp3"
+      },
+      {
+        "en": "It is good to listen carefully in class.",
+        "cn": "上课认真听讲是好的。",
+        "level": 3,
+        "audioFile": "ex_59907a369d.mp3"
+      }
+    ],
+    "careful": [
+      {
+        "en": "Be careful!",
+        "cn": "小心！",
+        "level": 1,
+        "audioFile": "ex_f81b25cf8f.mp3"
+      },
+      {
+        "en": "Please be careful with the glass.",
+        "cn": "请小心拿玻璃。",
+        "level": 2,
+        "audioFile": "ex_a28d75f066.mp3"
+      },
+      {
+        "en": "A careful listener can hear every word.",
+        "cn": "仔细的听众能听清每一个词。",
+        "level": 3,
+        "audioFile": "ex_edf30719d1.mp3"
+      }
+    ],
+    "please": [
+      {
+        "en": "Please sit down.",
+        "cn": "请坐。",
+        "level": 1,
+        "audioFile": "ex_7b1237248e.mp3"
+      },
+      {
+        "en": "Please pass me the book.",
+        "cn": "请把书递给我。",
+        "level": 2,
+        "audioFile": "ex_2e50a9a948.mp3"
+      },
+      {
+        "en": "Please listen to me first, then ask questions.",
+        "cn": "请先听我说，再提问题。",
+        "level": 3,
+        "audioFile": "ex_f3b2bbd0c3.mp3"
+      }
+    ],
+    "exercise": [
+      {
+        "en": "Do exercise every day.",
+        "cn": "每天锻炼。",
+        "level": 1,
+        "audioFile": "ex_07966c9b10.mp3"
+      },
+      {
+        "en": "Exercise makes us strong.",
+        "cn": "锻炼让我们强壮。",
+        "level": 2,
+        "audioFile": "ex_7bd80534da.mp3"
+      },
+      {
+        "en": "It's time to exercise, let's go to the playground.",
+        "cn": "该锻炼了，我们去操场吧。",
+        "level": 3,
+        "audioFile": "ex_e5f9fa2dd9.mp3"
+      }
+    ],
+    "time": [
+      {
+        "en": "What time is it?",
+        "cn": "几点了？",
+        "level": 1,
+        "audioFile": "ex_67e07d17d4.mp3"
+      },
+      {
+        "en": "It's time for class.",
+        "cn": "上课时间到了。",
+        "level": 2,
+        "audioFile": "ex_280cc1beac.mp3"
+      },
+      {
+        "en": "I don't have much time to play after school.",
+        "cn": "放学后我没有多少时间玩。",
+        "level": 3,
+        "audioFile": "ex_815b1c87d5.mp3"
+      }
+    ],
+    "run": [
+      {
+        "en": "I can run fast.",
+        "cn": "我跑得很快。",
+        "level": 1,
+        "audioFile": "ex_5808518082.mp3"
+      },
+      {
+        "en": "Let's run in the park.",
+        "cn": "我们去公园跑步吧。",
+        "level": 2,
+        "audioFile": "ex_084aa40279.mp3"
+      },
+      {
+        "en": "He can run faster than any boy in our class.",
+        "cn": "他比我们班任何男孩都跑得快。",
+        "level": 3,
+        "audioFile": "ex_a791c44191.mp3"
+      }
+    ],
+    "jump": [
+      {
+        "en": "Jump up high!",
+        "cn": "高高跳起来！",
+        "level": 1,
+        "audioFile": "ex_f2503813d8.mp3"
+      },
+      {
+        "en": "She can jump very high.",
+        "cn": "她能跳得很高。",
+        "level": 2,
+        "audioFile": "ex_755666e17d.mp3"
+      },
+      {
+        "en": "The little frog jumps into the green pond.",
+        "cn": "小青蛙跳进了绿色的池塘。",
+        "level": 3,
+        "audioFile": "ex_8092205a18.mp3"
+      }
+    ],
+    "swim": [
+      {
+        "en": "I can swim.",
+        "cn": "我会游泳。",
+        "level": 1,
+        "audioFile": "ex_e809265158.mp3"
+      },
+      {
+        "en": "We swim in the pool in summer.",
+        "cn": "夏天我们在游泳池游泳。",
+        "level": 2,
+        "audioFile": "ex_d788c0d2b0.mp3"
+      },
+      {
+        "en": "Fish swim happily in the clear river.",
+        "cn": "鱼儿在清澈的小河里欢快地游。",
+        "level": 3,
+        "audioFile": "ex_3beab7f113.mp3"
+      }
+    ],
+    "play": [
+      {
+        "en": "Let's play!",
+        "cn": "我们玩吧！",
+        "level": 1,
+        "audioFile": "ex_56bfe45d6d.mp3"
+      },
+      {
+        "en": "I play football after school.",
+        "cn": "我放学后踢足球。",
+        "level": 2,
+        "audioFile": "ex_216208e1fc.mp3"
+      },
+      {
+        "en": "The children play games together in the playground.",
+        "cn": "孩子们一起在操场上玩游戏。",
+        "level": 3,
+        "audioFile": "ex_3983c47850.mp3"
+      }
+    ],
+    "sport": [
+      {
+        "en": "I like sport.",
+        "cn": "我喜欢运动。",
+        "level": 1,
+        "audioFile": "ex_01d92a6d95.mp3"
+      },
+      {
+        "en": "Football is my favourite sport.",
+        "cn": "足球是我最喜欢的运动。",
+        "level": 2,
+        "audioFile": "ex_7ab0d8ed3a.mp3"
+      },
+      {
+        "en": "Sport is good for our body and mind.",
+        "cn": "运动对我们的身体和精神都好。",
+        "level": 3,
+        "audioFile": "ex_da1e1a69e0.mp3"
+      }
+    ],
+    "healthy": [
+      {
+        "en": "I am healthy.",
+        "cn": "我很健康。",
+        "level": 1,
+        "audioFile": "ex_781ea46e37.mp3"
+      },
+      {
+        "en": "Apples keep us healthy.",
+        "cn": "苹果让我们保持健康。",
+        "level": 2,
+        "audioFile": "ex_4407e05662.mp3"
+      },
+      {
+        "en": "Sport and good food make us healthy and happy.",
+        "cn": "运动和好的食物让我们健康又快乐。",
+        "level": 3,
+        "audioFile": "ex_382df32580.mp3"
+      }
+    ],
+    "music": [
+      {
+        "en": "I like music.",
+        "cn": "我喜欢音乐。",
+        "level": 1,
+        "audioFile": "ex_5eb047f13f.mp3"
+      },
+      {
+        "en": "Music makes me happy.",
+        "cn": "音乐让我开心。",
+        "level": 2,
+        "audioFile": "ex_11fb32f508.mp3"
+      },
+      {
+        "en": "We listen to music at the music show.",
+        "cn": "我们在音乐表演上听音乐。",
+        "level": 3,
+        "audioFile": "ex_535d10ba87.mp3"
+      }
+    ],
+    "show": [
+      {
+        "en": "It is a show.",
+        "cn": "这是一场表演。",
+        "level": 1,
+        "audioFile": "ex_af8eb5a8b1.mp3"
+      },
+      {
+        "en": "We will have a music show.",
+        "cn": "我们要举办一场音乐表演。",
+        "level": 2,
+        "audioFile": "ex_d6a6f4e1c3.mp3"
+      },
+      {
+        "en": "The students put on a wonderful show for parents.",
+        "cn": "学生们为家长们献上一场精彩的表演。",
+        "level": 3,
+        "audioFile": "ex_8cbd248244.mp3"
+      }
+    ],
+    "sing": [
+      {
+        "en": "I can sing.",
+        "cn": "我会唱歌。",
+        "level": 1,
+        "audioFile": "ex_58e7face77.mp3"
+      },
+      {
+        "en": "Let's sing the ABC song.",
+        "cn": "我们一起唱字母歌吧。",
+        "level": 2,
+        "audioFile": "ex_895ecc5574.mp3"
+      },
+      {
+        "en": "She likes to sing English songs on the stage.",
+        "cn": "她喜欢在舞台上唱英语歌。",
+        "level": 3,
+        "audioFile": "ex_e622b352f3.mp3"
+      }
+    ],
+    "song": [
+      {
+        "en": "This is a song.",
+        "cn": "这是一首歌。",
+        "level": 1,
+        "audioFile": "ex_66a2cdf67c.mp3"
+      },
+      {
+        "en": "I know many English songs.",
+        "cn": "我会很多英语歌。",
+        "level": 2,
+        "audioFile": "ex_d4419fe89a.mp3"
+      },
+      {
+        "en": "My favourite song is about a happy little bird.",
+        "cn": "我最喜欢的歌是关于一只快乐的小鸟。",
+        "level": 3,
+        "audioFile": "ex_70db2b6083.mp3"
+      }
+    ],
+    "dance": [
+      {
+        "en": "Let's dance!",
+        "cn": "我们跳舞吧！",
+        "level": 1,
+        "audioFile": "ex_1bdabd250c.mp3"
+      },
+      {
+        "en": "She can dance very well.",
+        "cn": "她跳舞跳得很好。",
+        "level": 2,
+        "audioFile": "ex_2bad21f127.mp3"
+      },
+      {
+        "en": "The girls dance to the music on the stage.",
+        "cn": "女孩们在舞台上随着音乐跳舞。",
+        "level": 3,
+        "audioFile": "ex_75c50146d2.mp3"
+      }
+    ],
+    "stage": [
+      {
+        "en": "Look at the stage.",
+        "cn": "看舞台。",
+        "level": 1,
+        "audioFile": "ex_e6adb83363.mp3"
+      },
+      {
+        "en": "Many children stand on the stage.",
+        "cn": "许多孩子站在舞台上。",
+        "level": 2,
+        "audioFile": "ex_add36bbe3e.mp3"
+      },
+      {
+        "en": "He sings a beautiful song on the big stage.",
+        "cn": "他在大舞台上唱了一首美丽的歌。",
+        "level": 3,
+        "audioFile": "ex_2f300cbade.mp3"
+      }
+    ]
+  }
+}

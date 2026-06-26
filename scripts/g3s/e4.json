@@ -1,0 +1,42 @@
+{
+  "colour": [
+    { "en": "Red is a colour.", "cn": "红色是一种颜色。", "level": 1 },
+    { "en": "What colour is your bag?", "cn": "你的书包是什么颜色？", "level": 2 },
+    { "en": "I like to colour pictures with my friends.", "cn": "我喜欢和朋友们一起给图画上色。", "level": 3 }
+  ],
+  "red": [
+    { "en": "The apple is red.", "cn": "苹果是红色的。", "level": 1 },
+    { "en": "I have a red pen.", "cn": "我有一支红色的笔。", "level": 2 },
+    { "en": "She is wearing a beautiful red dress.", "cn": "她穿着一条漂亮的红色裙子。", "level": 3 }
+  ],
+  "blue": [
+    { "en": "The sky is blue.", "cn": "天空是蓝色的。", "level": 1 },
+    { "en": "I want a blue keyboard.", "cn": "我想要一个蓝色的键盘。", "level": 2 },
+    { "en": "The sea looks blue under the sun.", "cn": "在阳光下大海看起来是蓝色的。", "level": 3 }
+  ],
+  "yellow": [
+    { "en": "The sun is yellow.", "cn": "太阳是黄色的。", "level": 1 },
+    { "en": "I have a yellow pencil.", "cn": "我有一支黄色的铅笔。", "level": 2 },
+    { "en": "School buses are usually yellow.", "cn": "校车通常是黄色的。", "level": 3 }
+  ],
+  "green": [
+    { "en": "The grass is green.", "cn": "草是绿色的。", "level": 1 },
+    { "en": "My favourite colour is green.", "cn": "我最喜欢的颜色是绿色。", "level": 2 },
+    { "en": "We can cross the road when the light is green.", "cn": "绿灯时我们可以过马路。", "level": 3 }
+  ],
+  "keyboard": [
+    { "en": "This is a keyboard.", "cn": "这是一个键盘。", "level": 1 },
+    { "en": "The keyboard has many keys.", "cn": "键盘上有很多按键。", "level": 2 },
+    { "en": "I type on the keyboard to write a story.", "cn": "我用键盘打字写故事。", "level": 3 }
+  ],
+  "key": [
+    { "en": "Press this key.", "cn": "按这个键。", "level": 1 },
+    { "en": "The big key on the right is Enter.", "cn": "右边那个大键是回车键。", "level": 2 },
+    { "en": "Don't press the wrong key on the keyboard.", "cn": "不要按错键盘上的键。", "level": 3 }
+  ],
+  "click": [
+    { "en": "Click here.", "cn": "点这里。", "level": 1 },
+    { "en": "Click the red button to start.", "cn": "点击红色按钮开始。", "level": 2 },
+    { "en": "Please click the picture to see it bigger.", "cn": "请点击图片把它放大。", "level": 3 }
+  ]
+}

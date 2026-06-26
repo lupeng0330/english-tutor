@@ -1,0 +1,42 @@
+{
+  "exercise": [
+    { "en": "Do exercise every day.", "cn": "每天锻炼。", "level": 1 },
+    { "en": "Exercise makes us strong.", "cn": "锻炼让我们强壮。", "level": 2 },
+    { "en": "It's time to exercise, let's go to the playground.", "cn": "该锻炼了，我们去操场吧。", "level": 3 }
+  ],
+  "time": [
+    { "en": "What time is it?", "cn": "几点了？", "level": 1 },
+    { "en": "It's time for class.", "cn": "上课时间到了。", "level": 2 },
+    { "en": "I don't have much time to play after school.", "cn": "放学后我没有多少时间玩。", "level": 3 }
+  ],
+  "run": [
+    { "en": "I can run fast.", "cn": "我跑得很快。", "level": 1 },
+    { "en": "Let's run in the park.", "cn": "我们去公园跑步吧。", "level": 2 },
+    { "en": "He can run faster than any boy in our class.", "cn": "他比我们班任何男孩都跑得快。", "level": 3 }
+  ],
+  "jump": [
+    { "en": "Jump up high!", "cn": "高高跳起来！", "level": 1 },
+    { "en": "She can jump very high.", "cn": "她能跳得很高。", "level": 2 },
+    { "en": "The little frog jumps into the green pond.", "cn": "小青蛙跳进了绿色的池塘。", "level": 3 }
+  ],
+  "swim": [
+    { "en": "I can swim.", "cn": "我会游泳。", "level": 1 },
+    { "en": "We swim in the pool in summer.", "cn": "夏天我们在游泳池游泳。", "level": 2 },
+    { "en": "Fish swim happily in the clear river.", "cn": "鱼儿在清澈的小河里欢快地游。", "level": 3 }
+  ],
+  "play": [
+    { "en": "Let's play!", "cn": "我们玩吧！", "level": 1 },
+    { "en": "I play football after school.", "cn": "我放学后踢足球。", "level": 2 },
+    { "en": "The children play games together in the playground.", "cn": "孩子们一起在操场上玩游戏。", "level": 3 }
+  ],
+  "sport": [
+    { "en": "I like sport.", "cn": "我喜欢运动。", "level": 1 },
+    { "en": "Football is my favourite sport.", "cn": "足球是我最喜欢的运动。", "level": 2 },
+    { "en": "Sport is good for our body and mind.", "cn": "运动对我们的身体和精神都好。", "level": 3 }
+  ],
+  "healthy": [
+    { "en": "I am healthy.", "cn": "我很健康。", "level": 1 },
+    { "en": "Apples keep us healthy.", "cn": "苹果让我们保持健康。", "level": 2 },
+    { "en": "Sport and good food make us healthy and happy.", "cn": "运动和好的食物让我们健康又快乐。", "level": 3 }
+  ]
+}

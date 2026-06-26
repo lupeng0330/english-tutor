@@ -1,0 +1,42 @@
+{
+  "who": [
+    { "en": "Who is he?", "cn": "他是谁？", "level": 1 },
+    { "en": "Who is your teacher?", "cn": "你的老师是谁？", "level": 2 },
+    { "en": "Do you know who that boy is?", "cn": "你知道那个男孩是谁吗？", "level": 3 }
+  ],
+  "he": [
+    { "en": "He is my dad.", "cn": "他是我爸爸。", "level": 1 },
+    { "en": "He likes to play football.", "cn": "他喜欢踢足球。", "level": 2 },
+    { "en": "He is a good friend of mine.", "cn": "他是我的好朋友。", "level": 3 }
+  ],
+  "she": [
+    { "en": "She is my mum.", "cn": "她是我妈妈。", "level": 1 },
+    { "en": "She can sing very well.", "cn": "她唱歌很好听。", "level": 2 },
+    { "en": "She is the new English teacher.", "cn": "她是新来的英语老师。", "level": 3 }
+  ],
+  "friend": [
+    { "en": "He is my friend.", "cn": "他是我的朋友。", "level": 1 },
+    { "en": "I have many friends at school.", "cn": "我在学校有很多朋友。", "level": 2 },
+    { "en": "A good friend is hard to find.", "cn": "好朋友是难得的。", "level": 3 }
+  ],
+  "teacher": [
+    { "en": "Miss Li is my teacher.", "cn": "李老师是我的老师。", "level": 1 },
+    { "en": "Our teacher is very kind.", "cn": "我们的老师非常和善。", "level": 2 },
+    { "en": "The English teacher tells us a funny story.", "cn": "英语老师给我们讲了一个有趣的故事。", "level": 3 }
+  ],
+  "classmate": [
+    { "en": "Tom is my classmate.", "cn": "汤姆是我的同学。", "level": 1 },
+    { "en": "My classmate sits next to me.", "cn": "我的同学坐在我旁边。", "level": 2 },
+    { "en": "All my classmates are very friendly.", "cn": "我所有的同学都很友好。", "level": 3 }
+  ],
+  "boy": [
+    { "en": "He is a boy.", "cn": "他是一个男孩。", "level": 1 },
+    { "en": "The boy in red is my brother.", "cn": "穿红衣服的男孩是我弟弟。", "level": 2 },
+    { "en": "That boy can play the piano very well.", "cn": "那个男孩钢琴弹得很好。", "level": 3 }
+  ],
+  "girl": [
+    { "en": "She is a girl.", "cn": "她是一个女孩。", "level": 1 },
+    { "en": "The girl with long hair is Lily.", "cn": "长头发的女孩是莉莉。", "level": 2 },
+    { "en": "Every girl in our class likes to dance.", "cn": "我们班的每个女孩都喜欢跳舞。", "level": 3 }
+  ]
+}
