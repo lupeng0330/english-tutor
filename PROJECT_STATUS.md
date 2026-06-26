@@ -280,9 +280,11 @@ a4f0da4 2026-05-03 Initial commit                                               
 | 初一上 | 7A | 98 | `hj_grade7_shang.json` | ✅ 已有（基准样例） |
 | 初一下 | 7B | 120（119词条，dream去重） | `hj_grade7_xia.json` | ✅ 已上线（20260625V02.13） |
 | 初二上 | 8A | 120（118词条，ancient/useful各去重1） | `hj_grade8_shang.json` | ✅ 已上线（20260626V02.14） |
-| 初二下 | 8B | 120（119词条，dream去重） | `hj_grade8_xia.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
-| 初三上 | 9A | 120 | `hj_grade9_shang.json` | ❌ 待补 |
-| 初三下 | 9B | 120 | `hj_grade9_xia.json` | ❌ 待补 |
+| 初二下 | 8B | 120（119词条，dream去重） | `hj_grade8_xia.json` | ✅ 已上线（20260626V02.15） |
+| 初三上 | 9A | 120（118词条，audience/species各去重1） | `hj_grade9_shang.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
+| 初三下 | 9B | 120（118词条，tradition/culture各去重1） | `hj_grade9_xia.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
+
+> 🎉 至此沪教版 6 册例句**全部补全**（7A基准 + 7B/8A/8B/9A/9B 人工精编），9A/9B 待验收后上线。
 
 执行约定：
 - **数据格式**沿用 `data/examples/hj_grade7_shang.json`（`{ words: { 单词: [{en, cn, level}] } }`，level=1/2/3 对应易/中/难），落到 `data/examples/hj_gradeX_{shang|xia}.json`，**前端加载逻辑已支持（`loadExamplesIfNeeded`），无需改任何前端代码**。
