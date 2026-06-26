@@ -1269,6 +1269,29 @@ body.keyboard-open #practiceQuizView {
 }
 .exam-empty { text-align: center; color: var(--text-3, #94a3b8); padding: 48px 0; }
 
+/* --- 考试列表：无配置学段友好引导 --- */
+.exam-guide {
+  text-align: center;
+  padding: 36px 20px;
+  background: linear-gradient(180deg, #f8fafc, #fff);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: var(--r-lg, 14px);
+}
+.exam-guide-icon { font-size: 44px; line-height: 1; margin-bottom: 10px; }
+.exam-guide-title { font-size: 16px; font-weight: 700; color: var(--text-1, #1e293b); margin-bottom: 8px; }
+.exam-guide-desc { font-size: 13px; color: var(--text-2, #475569); line-height: 1.7; margin-bottom: 18px; }
+.exam-guide-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.exam-guide-btn {
+  padding: 9px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;
+  border: 1px solid var(--border, #e2e8f0); background: #fff; color: var(--text-2, #475569);
+  cursor: pointer; transition: all .15s;
+}
+.exam-guide-btn:hover { border-color: var(--brand-strong, #2563eb); color: var(--brand-strong, #2563eb); }
+.exam-guide-btn.primary {
+  background: var(--brand-strong, #2563eb); color: #fff; border-color: var(--brand-strong, #2563eb);
+}
+.exam-guide-btn.primary:hover { filter: brightness(1.05); color: #fff; }
+
 /* --- 历年真题：地区分组 --- */
 .exam-region-group { margin-bottom: 18px; }
 .exam-region-title {

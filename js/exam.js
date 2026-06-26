@@ -359,6 +359,40 @@ let renderExamPage = async function() {
   const exams = _getExamsForContext();      // { sim, unit }
   const realPapers = _getRealPapersForContext();
 
+  // 该学段完全没有任何考试配置（如小学未开放学段 / gzk / 占位教材）：
+  // 给出友好引导，而不是只甩一句"暂无配置"的近空白页。
+  const hasConfig = !!(_examConfig && _examConfig.grades
+    && _examConfig.grades[String(state.ctx.grade)]
+    && _examConfig.grades[String(state.ctx.grade)][state.ctx.term]);
+  const totalAvailable = exams.sim.length + exams.unit.length + realPapers.length;
+  if (!hasConfig && totalAvailable === 0) {
+    el.innerHTML = `
+      <h2 class="text-xl font-bold text-slate-800 mb-3">📋 模拟考试</h2>
+      <div class="exam-ctxbar">
+        <span class="font-semibold">📚 ${gText}${tText} · ${TEXTBOOK_NAMES[state.ctx.textbook] || state.ctx.textbook}</span>
+      </div>
+      <div class="exam-guide">
+        <div class="exam-guide-icon">🧩</div>
+        <div class="exam-guide-title">该学段的模拟考试正在筹备中</div>
+        <div class="exam-guide-desc">
+          当前「${gText}${tText}」暂未开放整卷考试。<br>
+          你可以先用下面的方式继续学习，掌握后再来挑战考试～
+        </div>
+        <div class="exam-guide-actions">
+          <button class="exam-guide-btn primary" data-go="practice">✏️ 去专项练习</button>
+          <button class="exam-guide-btn" data-go="textbook">📖 背单词 / 看课文</button>
+        </div>
+      </div>
+      <div id="examHistoryWrap" class="mt-6"></div>
+    `;
+    const goPractice = el.querySelector('[data-go="practice"]');
+    const goTextbook = el.querySelector('[data-go="textbook"]');
+    if (goPractice) goPractice.addEventListener('click', () => { try { switchPage('practice'); } catch (e) {} });
+    if (goTextbook) goTextbook.addEventListener('click', () => { try { switchPage('textbook'); } catch (e) {} });
+    _renderHistory();
+    return;
+  }
+
   const tabs = [
     { id: 'sim',  label: '模拟卷',  count: exams.sim.length },
     { id: 'unit', label: '单元测试', count: exams.unit.length },
