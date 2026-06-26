@@ -278,9 +278,9 @@ a4f0da4 2026-05-03 Initial commit                                               
 | 册 | code | 词数 | 例句文件 | 状态 |
 |---|---|---|---|---|
 | 初一上 | 7A | 98 | `hj_grade7_shang.json` | ✅ 已有（基准样例） |
-| 初一下 | 7B | 120（119词条，dream去重） | `hj_grade7_xia.json` | ✅ 已补（2026-06-25，8单元×3句易/中/难，待验收） |
-| 初二上 | 8A | 120（118词条，ancient/useful各去重1） | `hj_grade8_shang.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
-| 初二下 | 8B | 120 | `hj_grade8_xia.json` | ❌ 待补 |
+| 初一下 | 7B | 120（119词条，dream去重） | `hj_grade7_xia.json` | ✅ 已上线（20260625V02.13） |
+| 初二上 | 8A | 120（118词条，ancient/useful各去重1） | `hj_grade8_shang.json` | ✅ 已上线（20260626V02.14） |
+| 初二下 | 8B | 120（119词条，dream去重） | `hj_grade8_xia.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
 | 初三上 | 9A | 120 | `hj_grade9_shang.json` | ❌ 待补 |
 | 初三下 | 9B | 120 | `hj_grade9_xia.json` | ❌ 待补 |
 
