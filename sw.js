@@ -40,6 +40,7 @@ const STATIC_ASSETS = [
   './js/home.js',
   './js/lesson.js',
   './js/practice.js',
+  './js/exam.js',
   './js/vendor/chart.umd.min.js',
   './manifest.json',
   './icon.svg',
