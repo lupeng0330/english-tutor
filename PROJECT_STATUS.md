@@ -267,7 +267,7 @@ a4f0da4 2026-05-03 Initial commit                                               
 - [x] 阅读题长文滚动 + 题目悬浮，避免反复滚屏
 - [x] 练习页徽章统一格式：`沪教 · 7上 · 共 95 题`
 
-#### v01.13(例句) — 沪教版单词例句补全（🚧 进行中：7B 已完成，待验收后推进 8A/8B/9A/9B）
+#### v01.13(例句) — 沪教版单词例句补全（✅ 已完成：6 册 7A/7B/8A/8B/9A/9B 全部上线，截至 20260626V02.16）
 
 > 用户反馈：单词卡「例句阶梯」目前**只有沪教版初一上册（7A）有**，其余册全空。  
 > 根因（已查实）：例句数据来自单词自带 `examples` 字段或独立文件 `data/examples/{教材}_{年级}_{学期}.json`；当前 `data/examples/` 下仅 `hj_grade7_shang.json`（沪教 7A）与 `jk_grade6_xia.json` 两份，沪教其余 5 册无例句文件 → 例句区为空。  
@@ -281,10 +281,10 @@ a4f0da4 2026-05-03 Initial commit                                               
 | 初一下 | 7B | 120（119词条，dream去重） | `hj_grade7_xia.json` | ✅ 已上线（20260625V02.13） |
 | 初二上 | 8A | 120（118词条，ancient/useful各去重1） | `hj_grade8_shang.json` | ✅ 已上线（20260626V02.14） |
 | 初二下 | 8B | 120（119词条，dream去重） | `hj_grade8_xia.json` | ✅ 已上线（20260626V02.15） |
-| 初三上 | 9A | 120（118词条，audience/species各去重1） | `hj_grade9_shang.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
-| 初三下 | 9B | 120（118词条，tradition/culture各去重1） | `hj_grade9_xia.json` | ✅ 已补（2026-06-26，8单元×3句易/中/难，待验收） |
+| 初三上 | 9A | 120（118词条，audience/species各去重1） | `hj_grade9_shang.json` | ✅ 已上线（20260626V02.16） |
+| 初三下 | 9B | 120（118词条，tradition/culture各去重1） | `hj_grade9_xia.json` | ✅ 已上线（20260626V02.16） |
 
-> 🎉 至此沪教版 6 册例句**全部补全**（7A基准 + 7B/8A/8B/9A/9B 人工精编），9A/9B 待验收后上线。
+> 🎉 至此沪教版 6 册例句**全部补全并上线**（7A基准 + 7B/8A/8B/9A/9B 人工精编，每词 3 句易/中/难），前端零改动。任务收尾。
 
 执行约定：
 - **数据格式**沿用 `data/examples/hj_grade7_shang.json`（`{ words: { 单词: [{en, cn, level}] } }`，level=1/2/3 对应易/中/难），落到 `data/examples/hj_gradeX_{shang|xia}.json`，**前端加载逻辑已支持（`loadExamplesIfNeeded`），无需改任何前端代码**。
