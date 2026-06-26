@@ -132,19 +132,49 @@ async def main():
             if s.isdigit():
                 only_set.add(int(s))
 
+    # ---- 预扫描：从已有 audioFile 中提取每年级已用到的最大编号 ----
+    grade_counter = {}  # grade -> next available number
+    for q in questions:
+        af = (q.get("audioFile") or "").strip()
+        if not af:
+            continue
+        # 解析 "hj_listening_g{grade}_{num}.mp3"
+        m = re.match(r"^hj_listening_g(\d+)_(\d+)\.mp3$", af)
+        if m:
+            g = int(m.group(1))
+            n = int(m.group(2))
+            if g not in grade_counter or n > grade_counter[g]:
+                grade_counter[g] = n
+    # 每年级计数器从 max+1 开始（若该年级无已有文件则从 1 开始）
+    grade_next = {}
+    for g in sorted(set(q.get("grade", 7) for q in questions)):
+        grade_next[g] = (grade_counter.get(g, 0)) + 1
+    # ----------------------------------------------------------------
+
+    dirty = False  # 是否有题目需要写回 JSON
+
     print("[info] Rate: {}".format(RATE))
     print("[info] Female: {}  Male: {}".format(FEMALE_VOICE, MALE_VOICE))
     print("[info] Tasks: {}".format(len(questions)))
     print("[info] Force : {}".format(args.force))
+    print("[info] Grade counters: {}".format(
+        ", ".join("g{}={}".format(g, grade_next[g]) for g in sorted(grade_next))))
     if only_set:
         print("[info] Only  : {}".format(sorted(only_set)))
     print("")
 
-    ok_count, skip_count, fail_count = 0, 0, 0
+    ok_count, skip_count, fail_count, new_count = 0, 0, 0, 0
     for idx, q in enumerate(questions, 1):
         if only_set and idx not in only_set:
             continue
-        audio_file = q.get("audioFile") or "hj_listening_g7_{:02d}.mp3".format(idx)
+        existing_af = (q.get("audioFile") or "").strip()
+        if existing_af:
+            audio_file = existing_af
+        else:
+            g = q.get("grade", 7)
+            num = grade_next.get(g, 1)
+            audio_file = "hj_listening_g{}_{:02d}.mp3".format(g, num)
+            grade_next[g] = num + 1
         audio_text = q.get("audioText") or ""
         fpath = os.path.join(OUT_DIR, audio_file)
 
@@ -159,11 +189,26 @@ async def main():
                 ok_count += 1
                 size_kb = os.path.getsize(fpath) // 1024
                 detail_str = ", ".join(detail or [])
-                print("  [{:>2}/{}] ok    {}  ({} KB)  {}".format(
-                    idx, len(questions), audio_file, size_kb, detail_str))
+                tag = ""
+                if not existing_af:
+                    q["audioFile"] = audio_file
+                    dirty = True
+                    new_count += 1
+                    tag = " *new"
+                print("  [{:>2}/{}] ok    {}  ({} KB)  {}{}".format(
+                    idx, len(questions), audio_file, size_kb, detail_str, tag))
         except Exception as e:
             fail_count += 1
             print("  [{:>2}/{}] FAIL  {}  :: {}".format(idx, len(questions), audio_file, e))
+
+    # 写回 JSON（仅当有新生成的文件名需要写入）
+    if dirty:
+        tmp_path = LISTENING + ".tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
+            json.dump(questions, f, ensure_ascii=False, indent=2)
+        os.replace(tmp_path, LISTENING)
+        print("")
+        print("[info] 已更新 {} 条 audioFile 至 {}".format(new_count, os.path.basename(LISTENING)))
 
     # 清临时目录
     try:
@@ -177,7 +222,7 @@ async def main():
         pass
 
     print("")
-    print("[done] ok={}, skip={}, fail={}".format(ok_count, skip_count, fail_count))
+    print("[done] ok={}, new={}, skip={}, fail={}".format(ok_count, new_count, skip_count, fail_count))
 
 
 if __name__ == "__main__":

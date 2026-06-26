@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：2026-06-26（PC 端，新增：全量测试报告 + 待开发任务清单 §21；沪教版 6 册例句全部上线 V02.16；`sw.js` 补缓存 `js/exam.js`）  
+> 最后更新：2026-06-26（PC 端，新增：P0-1 听力 MP3 全量补全 160 个 §21.6；全量测试报告 §21；沪教版 6 册例句 V02.16；`sw.js` 补缓存 `js/exam.js`）  
 > 对应 Git HEAD：以各章节完成记录为准（不臆造 hash）
 
 ---
@@ -977,14 +977,14 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 | 单词例句 | **仅 6下 1 册** | **6 册全 ✅** | jk 1-6 年级其余学期全缺 |
 | 完形填空独立题库 | 0 | 0 | 现由 grammar 借题，无独立 cloze 库 |
 
-- **听力音频缺口（实测）**：`hj_listening` 192 题中**仅 g7 的 32 题有真人 MP3**（`hj_listening_g7_01~32.mp3`），其余 **160 题 `audioFile` 为空**，只能走浏览器 TTS（数字/时间易缺字）；`jk_listening` 52 题同样无 MP3。
+- **听力音频缺口（实测）**：~~`hj_listening` 192 题中仅 g7 的 32 题有真人 MP3~~ → ✅ **已补全**（见 §21.6）；`jk_listening` 52 题经核实**全部已有 MP3**（此前误判为无，实际 `audioFile` 非空且文件存在）。
 - **教材覆盖**：✅ jk（3-6 年级）、hj（7-9 年级）数据完整；❌ **gzk（广州口语 1-2 年级）22 个单元全是 `placeholder:true` 空壳**；❌ **rj（人教）、wy（外研）无任何数据**，下拉框 `disabled`。
 - **考试配置缺口**：`exam_config.json` 仅含 7/8/9 年级，真题 36 份全为初中；**小学（jk 3-6、gzk 1-2）进考试页三 Tab 全 0**。
 
 ### 21.4 待开发任务清单（按优先级）
 
 **P0 · 影响体验的硬缺口**
-1. **听力 MP3 补全**：hj 160 题 + jk 52 题缺真人音频（用 `gen_audio_v2.py` 按 `audioText` 生成并回填 `audioFile`）。
+1. ~~**听力 MP3 补全**~~ → ✅ **已完成上线 V02.19**（见 §21.6）：hj 160 题 MP3 全量生成 + `audioFile` 回填 JSON；jk 52 题核实无需补。
 2. ~~`sw.js` 补缓存 `./js/exam.js`~~ —— ✅ **本次已修复**（见 21.5）。
 3. **小学考试配置**：为 jk 3-6 年级补 `exam_config.json`，或对无配置学段给出友好引导而非空白。
 
@@ -1007,3 +1007,14 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - **问题**：`sw.js` 的 `STATIC_ASSETS` 预缓存清单遗漏 `./js/exam.js`，离线场景下考试模块脚本可能拿不到。
 - **修复**：在 `./js/practice.js` 之后补入 `'./js/exam.js'`，与 `index.html` 注入链对齐（现 12 个 js 模块全覆盖）。
 - **验证**：lint 0 错误；双端预览通过。经用户确认后随本节文档一并 `dev-push.ps1` 上线（铁律 3 / 4）。
+
+### 21.6 听力 MP3 全量补全（P0-1 · 2026-06-26 V02.19）
+
+- **问题**：`hj_listening.json` 192 题中仅 g7 上 32 题有 MP3，其余 g7下/g8/g9 共 160 题 `audioFile` 为空，播放走浏览器 TTS 兜底。
+- **核实**：`jk_listening` 52 题全部已有 MP3（§21 初版误判，实际 `audioFile` 非空且文件存在），无需处理。
+- **修复内容**：
+  1. 修复 `gen_hj_listening.py`：① 预扫描已有 `audioFile` 确定每年级计数器起点；② fallback 命名由硬编码 `g7` 改为按 `q["grade"]` 动态生成 `hj_listening_g{grade}_{编号}.mp3`；③ 生成成功后自动将 `audioFile` 原子写回 JSON。
+  2. 运行脚本生成 160 个 MP3：g7下 32 个（33-64）、g8上 32 个（01-32）、g8下 32 个（33-64）、g9上 32 个（01-32）、g9下 32 个（33-64）。
+  3. `hj_listening.json` 192 条 `audioFile` 全部非空，磁盘 192 个 `hj_listening_*.mp3` 全覆盖。
+- **生成统计**：ok=160, skip=32（已有 g7 上）, fail=0；新写入 audioFile 160 条。
+- **验证**：双端预览，沪教版练习/考试听力题播放 MP3（不再走 TTS fallback）。经用户确认后 `dev-push.ps1` 上线（铁律 3 / 4）。
