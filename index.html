@@ -238,6 +238,16 @@
         <div class="text-emerald-500 text-xl font-bold">→</div>
       </div>
 
+      <!-- 🆕 今日复习入口卡片（v02.x · 单词记忆曲线 SRS） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-sky-200 bg-gradient-to-br from-sky-50 to-cyan-50" onclick="switchPage('review')">
+        <div class="text-3xl md:text-4xl flex-shrink-0">📅</div>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-slate-800 text-sm md:text-base">今日复习 · 记忆曲线</div>
+          <div class="text-xs text-slate-500 mt-0.5">按遗忘规律重现到期单词，越记越牢</div>
+        </div>
+        <span class="badge bg-sky-100 text-sky-700 flex-shrink-0" id="homeReviewCount">0 词</span>
+      </div>
+
       <!-- 🆕 错题本入口卡片（v01.16） -->
       <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="switchPage('wrongbook')">
         <div class="text-3xl md:text-4xl flex-shrink-0">🩹</div>
@@ -340,10 +350,15 @@
                   </div>
                 </div>
               </div>
-              <div class="flex justify-between mt-4 gap-2">
-                <button class="flex-1 py-2 bg-slate-100 rounded-xl font-semibold hover:bg-slate-200" onclick="prevWord()">← 上一个</button>
-                <button class="flex-1 py-2 bg-green-100 text-green-700 rounded-xl font-semibold hover:bg-green-200" onclick="markKnown()">✓ 认识</button>
-                <button class="flex-1 py-2 gradient-btn" onclick="nextWord()">下一个 →</button>
+              <!-- 主操作：不认识 / 认识（醒目大按钮） -->
+              <div class="grid grid-cols-2 gap-2.5 mt-4">
+                <button class="py-2.5 bg-rose-100 text-rose-700 rounded-xl font-semibold hover:bg-rose-200 active:scale-95 transition" onclick="markUnknown()">✗ 不认识</button>
+                <button class="py-2.5 bg-green-100 text-green-700 rounded-xl font-semibold hover:bg-green-200 active:scale-95 transition" onclick="markKnown()">✓ 认识</button>
+              </div>
+              <!-- 导航：上一个 / 下一个 -->
+              <div class="grid grid-cols-2 gap-2.5 mt-2.5">
+                <button class="py-2 bg-slate-100 text-slate-600 rounded-xl font-medium hover:bg-slate-200 active:scale-95 transition" onclick="prevWord()">← 上一个</button>
+                <button class="py-2 gradient-btn rounded-xl font-medium active:scale-95 transition" onclick="nextWord()">下一个 →</button>
               </div>
 
               <!-- 🆕 例句阶梯（从易到难 3~4 句） -->
@@ -779,6 +794,50 @@
       </div>
     </section>
 
+    <!-- ============ 今日复习（单词记忆曲线 SRS） ============ -->
+    <section id="page-review" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">📅 今日复习</h2>
+        <button onclick="exitReview()" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition">← 返回</button>
+      </div>
+
+      <!-- 空状态：今日无到期 -->
+      <div id="reviewEmpty" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">🎉</div>
+        <div class="font-bold text-slate-700 text-lg">今天没有要复习的单词</div>
+        <p class="text-slate-500 text-sm mt-2">在课本单词卡点「✓ 认识 / ✗ 不认识」，系统会按遗忘规律安排复习</p>
+        <button onclick="switchPage('textbook')" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">去背单词 →</button>
+      </div>
+
+      <!-- 完成态 -->
+      <div id="reviewDoneView" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">✅</div>
+        <div class="font-bold text-slate-700 text-lg">复习完成！</div>
+        <p class="text-slate-500 text-sm mt-2">本次复习 <span id="reviewDoneCount" class="font-bold text-sky-600">0</span> 个单词，继续保持～</p>
+        <button onclick="exitReview()" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">返回首页</button>
+      </div>
+
+      <!-- 复习卡 -->
+      <div id="reviewCardWrap" class="hide max-w-md mx-auto">
+        <div class="text-center text-xs text-slate-400 mb-2"><span id="reviewProgress">0 / 0</span></div>
+        <div class="card p-8 text-center">
+          <div class="text-4xl font-bold text-slate-800 mb-1" id="reviewWord">word</div>
+          <div class="text-lg text-blue-700 mb-3" id="reviewPhonetic"></div>
+          <button class="px-4 py-2 bg-white border border-slate-200 rounded-full shadow text-sm" onclick="reviewPlay()">🔊 发音</button>
+          <!-- 释义（默认遮住，先回忆） -->
+          <div id="reviewBack" class="hide mt-5 pt-4 border-t border-slate-100">
+            <div class="text-2xl font-bold text-slate-800 mb-2" id="reviewMeaning"></div>
+            <div class="text-sm text-amber-700" id="reviewExample"></div>
+          </div>
+        </div>
+        <button id="reviewRevealBtn" onclick="reviewReveal()" class="w-full mt-4 gradient-btn py-3 rounded-xl font-bold text-white text-base active:scale-95 transition">想好了，看释义 👀</button>
+        <div id="reviewAssess" class="hide grid grid-cols-2 gap-3 mt-4">
+          <button onclick="reviewAssess(false)" class="py-3 bg-rose-100 text-rose-700 rounded-xl font-bold hover:bg-rose-200 active:scale-95 transition">✗ 没记住</button>
+          <button onclick="reviewAssess(true)" class="py-3 bg-green-100 text-green-700 rounded-xl font-bold hover:bg-green-200 active:scale-95 transition">✓ 记住了</button>
+        </div>
+      </div>
+    </section>
+
   </main>
 </div>
 
@@ -813,6 +872,7 @@
         .then(function(){ return addScript('./js/mastery.js'); })
         .then(function(){ return addScript('./js/smartpick.js'); })
         .then(function(){ return addScript('./js/stats.js'); })
+        .then(function(){ return addScript('./js/srs.js'); })
         .then(function(){ return addScript('./js/home.js'); })
         .then(function(){ return addScript('./js/lesson.js'); })
         .then(function(){ return addScript('./js/practice.js'); })

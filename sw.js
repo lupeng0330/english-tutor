@@ -38,6 +38,7 @@ const STATIC_ASSETS = [
   './js/mastery.js',
   './js/smartpick.js',
   './js/stats.js',
+  './js/srs.js',
   './js/home.js',
   './js/lesson.js',
   './js/practice.js',

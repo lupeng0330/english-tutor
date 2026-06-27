@@ -1130,11 +1130,19 @@ function prevWord() {
 // 点"认识"后的"待翻页"令牌：连点时取消上一次未触发的前进，避免一次跳多个词
 let _pendingKnownAdvance = null;
 
-function markKnown() {
-  // 📊 记录已掌握单词
+// ✓ 认识：标记已掌握 + SRS 升档（间隔拉长）+ 读完提顿翻页
+function markKnown() { _markWordAndAdvance(true); }
+// ✗ 不认识：SRS 回第 1 档（明天再现）+ 读完提顿翻页（不计入"已掌握"）
+function markUnknown() { _markWordAndAdvance(false); }
+
+function _markWordAndAdvance(known) {
+  const w = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
+  // 📊 记录掌握度 + SRS 记忆曲线
   try {
-    const w = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
-    if (w && w.word) markWordKnown(w.word);
+    if (w && w.word) {
+      if (known) markWordKnown(w.word);
+      if (typeof srsRecord === 'function') srsRecord(w, known);
+    }
     updateUnitProgress();
   } catch(e) {}
 
@@ -1145,7 +1153,6 @@ function markKnown() {
     _pendingKnownAdvance = null;
   }
 
-  const w = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
   if (!w || !w.word) { nextWord(); return; }
 
   // 关键体验优化：先把当前单词读完整，"提顿"一下，再切下一个

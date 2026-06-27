@@ -29,6 +29,8 @@ function renderHomeStats() {
   setText('statKnownWords', Object.keys(s.knownWords || {}).length);
   // 🆕 v01.16：首页错题本入口角标（当前教材范围）
   try { setText('homeWrongCount', _wbCountCurrentTb() + ' 题'); } catch (e) {}
+  // 🆕 今日复习角标（单词记忆曲线 SRS）
+  try { if (typeof srsDueCount === 'function') setText('homeReviewCount', srsDueCount() + ' 词'); } catch (e) {}
   setText('statStreak', s.streak || 0);
   setText('headerStreak', s.streak || 0);
   // 🆕 阅读答题总览（全部尝试、答对）

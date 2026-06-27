@@ -129,6 +129,7 @@ function switchPage(page) {
   if (page === 'grammar') { renderGrammar(); try { renderIrregVerbTable(); } catch(e){} }
   if (page === 'report') setTimeout(renderReport, 100);
   if (page === 'wrongbook') { _wbPageFilter = 'all'; renderWrongbookPage(); }
+  if (page === 'review') { try { renderReviewPage(); } catch(e) { console.warn(e); } }
   if (page === 'practice') {
     // 重置练习视图到初始状态
     document.getElementById('practiceQuizView').classList.add('hide');
@@ -405,6 +406,7 @@ async function switchToProfile(profileId) {
   // 1) 清"档案绑定"的内存缓存
   _wrongbook = null;
   _stats     = null;
+  if (typeof srsReset === 'function') srsReset();   // 🆕 SRS 记忆曲线缓存随档案切换复位
   if (typeof _lastLoadedTextbook !== 'undefined') _lastLoadedTextbook = null;
   if (typeof _lastLoadedTerm     !== 'undefined') _lastLoadedTerm     = null;
   if (typeof _lastLoadedGrade    !== 'undefined') _lastLoadedGrade    = null;

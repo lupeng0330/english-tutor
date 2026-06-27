@@ -150,6 +150,46 @@ body {
 .hide { display: none !important; }
 .badge { display: inline-block; padding: 4px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 600; }
 
+/* ============ 单词卡操作区（方案B：侧翼翻页圆钮 + 主操作双按钮）============ */
+.word-card-stage { position: relative; }
+.word-nav-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 38px; height: 38px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--r-circle);
+  font-size: 18px; font-weight: 700; line-height: 1;
+  color: var(--text-3);
+  background: rgba(255,255,255,0.82);
+  border: 1px solid var(--line-2);
+  box-shadow: 0 2px 8px rgba(15,23,42,0.10);
+  -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: color .18s, border-color .18s, background .18s, transform .12s;
+  z-index: 6;
+}
+.word-nav-arrow:hover { color: var(--brand); border-color: var(--brand); background:#fff; }
+.word-nav-arrow:active { transform: translateY(-50%) scale(0.9); }
+.word-nav-prev { left: 8px; }
+.word-nav-next { right: 8px; }
+@media (min-width: 768px) {
+  .word-nav-arrow { width: 44px; height: 44px; font-size: 20px; }
+  .word-nav-prev { left: -60px; }
+  .word-nav-next { right: -60px; }
+}
+.word-act-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+.word-act {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 13px 0; border-radius: var(--r-xl);
+  font-weight: 600; font-size: 16px; border: 1px solid transparent;
+  cursor: pointer; transition: background .18s, transform .12s;
+}
+.word-act:active { transform: scale(0.96); }
+.word-act-unknown { background: var(--danger-100); color: var(--danger-ink); }
+.word-act-unknown:hover { background: #fecaca; }
+.word-act-known { background: var(--success-100); color: var(--success-ink); }
+.word-act-known:hover { background: #bbf7d0; }
+
+
 /* ============ 错题本独立页（v01.16） ============ */
 .wb-filter-tab {
   padding: 6px 14px;
