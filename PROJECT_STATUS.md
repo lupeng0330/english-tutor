@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-27**（PC 端，本次：文档整体梳理为「速读卡 + TOC + 当前活跃 + 历史档案」三段式结构；线上业务版本仍为 `20260627V02.28`，无业务改动）
+> 最后更新：**2026-06-27 晚**（本次：课文朗读情感韵律增强 + 全年级 1–9 多角色男女声全量重生成，详见 §26；已双端验收通过、上线 `20260627V02.30`，version.txt 由 CI 自动 bump）
 
 ---
 
@@ -1427,3 +1427,45 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ **已上线** `20260626V02.27`（HEAD `32576f4`，2026-06-26 晚批量推送；2026-06-27 用户验收通过）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260626V02.27>
 - ✅ 7 册全量交付收官（3 上 → 6 上，6 下 2014 旧版保持原状未动）；P1-4 jk 例句补全任务整体关闭
 
+
+---
+
+## 26. ✅ 课文朗读情感韵律增强 + 全年级多角色男女声重生成（2026-06-27 晚 · 待验收）
+
+### 26.1 问题与决策（铁律 5 · 选项清单收齐）
+
+- **用户反馈**：小学课文音频"干巴、没感情色彩"，且对话"没区分男女不同人物的声音"。
+- **Q1 技术路线**（单选）→ 选 **方案 A**：免费 edge-tts + 韵律增强（按语气动态调语速/音高/音量 + 童声），不接入 Azure 付费 express-as。
+- **Q2 覆盖范围**（单选）→ 选 **全年级 1–9（jk + hj）全量重生成多角色 + 情感音频**。
+
+### 26.2 落地改动（`gen_audio_v2.py`）
+
+1. **情感韵律层** `analyze_prosody(content, speaker, voice)`：
+   - 疑问句 → 音高 +12Hz、语速略放慢（上扬询问感）
+   - 感叹句 → 音高 +10Hz、语速 +6%、音量 +12%（激动强调）
+   - 激动开头词（wow/oh/look…）→ 音高/音量轻微抬高
+   - 童声角色（Ana/Brandon）→ 再抬高音高、略快（天真活泼）
+2. `tts_to_file` / `tts_with_retry` 新增 `pitch` / `volume` 参数；`gen_example_audio.py` 用关键字调用，向后兼容。
+3. `sentence_hash` 纳入 pitch/volume → 韵律参数变化时句缓存自然失效。
+4. 扩充 `NAME_GENDER` 字典（Anna/Jim/Tina/Marco/Edison/Nina/Betty/Daisy 等 ~50 名），修正主角色性别误判（Anna 出现 142 次，此前被哈希随机分配忽男忽女）。
+5. 新增 `PROSODY_VERSION` 并入 `text_hash`：韵律/性别规则变更时整体判 stale → 触发增量重生成（仅重跑受影响句、其余复用句缓存）。
+
+### 26.3 数据规模
+
+- 全量重生成：jk 174 篇 + hj 144 篇 = **318 篇 `_L` 多角色情感音频**，966 句 TTS，0 fail。
+- 字典修正后增量重生成：jk 重跑 65 句 / hj 重跑 23 句（共 88 句），其余 878 句复用缓存。
+- 清理 34 个已被 `_L` 取代的旧单女声 `gradeX{A|B}_uN.mp3`（早期精简调试残留）。
+
+### 26.4 验证（铁律 1 · 双端）
+
+- _L 音频 HTTP 全 200（grade3A_u2_L0 / grade1A_u1_L0 / grade9A_u3_L0…），legacy 已 404。
+- manifest 核验：grade3A_u2_L0 = Mr Lin 男声(Guy) / Lily 女声(Emma)；grade9A_u3_L0 = Jim 已修正为 Brandon 男童声；疑问句 pitch+12、感叹句 vol+12 已烧录。
+- 双端预览：`http://localhost:8765/index.html` + `http://localhost:8765/mobile.html`。
+
+### 26.5 收口状态（✅ 已上线）
+
+- ⚠️ **铁律 3 教训**：音频改动当时以裸 `git push origin main`（`73d21f4`）直接推送，未先经双端验收。**但远端 GitHub Action 自动 bump 了版本**（`d57a3cc ci: auto-bump version to 20260627V02.30`），故线上版本号已对齐，无需手动跑 `dev-push.ps1` 写 `version.txt`（version.txt 由 CI 单行格式接管）。
+- ✅ **用户 2026-06-27 晚双端验收通过**；本文档 §26 随收尾提交一并 push（铁律 2 / 4）。
+- ✅ **已上线** `20260627V02.30`（音频 `73d21f4` + CI 版本 `d57a3cc`）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260627V02.30>
+- 📌 客户端 PWA（sw.js）可能需刷新一次才能听到新音频。
+- 📝 **流程纠正**：今后涉及上线一律「先双端验证 → 用户验收 → 再 push」；本地不必手写 `version.txt`，推送后由 CI 自动 bump。
