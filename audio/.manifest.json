@@ -1,6 +1,6 @@
 {
   "grade1A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.131690Z",
+    "generated_at": "2026-06-27T13:58:43.405407Z",
     "sentences": [
       {
         "hash": "1170c9da1ec672ce6837f4fa43093269",
@@ -12,11 +12,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "5ad6168bb71481a9e8378171787c1fb2",
+    "text_hash": "40c85737d65c393e928bdd91d779f3a4",
     "textbook": "jk"
   },
   "grade1A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.132148Z",
+    "generated_at": "2026-06-27T13:58:43.405838Z",
     "sentences": [
       {
         "hash": "238c72c95332f86468799ad51dd39af9",
@@ -28,11 +28,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "133c60a5a6772b4f8d54cb94f7d8ece4",
+    "text_hash": "9012fb2b1b1ecbcef5a36d95c0049972",
     "textbook": "jk"
   },
   "grade1B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.132538Z",
+    "generated_at": "2026-06-27T13:58:43.406520Z",
     "sentences": [
       {
         "hash": "b4c900b86a9d62d3080a1aa73a20b6f9",
@@ -44,11 +44,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "ff35c7b55d1614db90d3e8a03e5e5cdd",
+    "text_hash": "231c37fe16a153fce03bf4dc18662b76",
     "textbook": "jk"
   },
   "grade1B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.133223Z",
+    "generated_at": "2026-06-27T13:58:43.407348Z",
     "sentences": [
       {
         "hash": "b6dd519fcbbfc3a7a564c17d6a08fd79",
@@ -60,11 +60,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5d7113e8fe046d60215e0ce3e2a307a5",
+    "text_hash": "09e13c7376f6d817ceb1c2a6bb39455d",
     "textbook": "jk"
   },
   "grade2A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.134258Z",
+    "generated_at": "2026-06-27T13:58:43.408137Z",
     "sentences": [
       {
         "hash": "de6c74b037e560748c3d9170d052ff27",
@@ -76,11 +76,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d2a7dafa9c104ef2f88fa84e3c1c5137",
+    "text_hash": "83b56c5a8acd8eaf52736be1ab36d69f",
     "textbook": "jk"
   },
   "grade2A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.134948Z",
+    "generated_at": "2026-06-27T13:58:43.408586Z",
     "sentences": [
       {
         "hash": "b2545971e7acd6eb3a62464fcf25ae1b",
@@ -92,11 +92,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0e090f8969a266a01257e71a5924af53",
+    "text_hash": "8e7b9080d52a6b53f45864928e4a4abd",
     "textbook": "jk"
   },
   "grade2B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.135271Z",
+    "generated_at": "2026-06-27T13:58:43.409002Z",
     "sentences": [
       {
         "hash": "6250044dcefb3b78c909d6cad3dbfda3",
@@ -108,11 +108,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f05e1cd1bfbadfb9c4a6782ff68fdc6f",
+    "text_hash": "534a47a23ddd9dca06d98779e2cae359",
     "textbook": "jk"
   },
   "grade2B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.135589Z",
+    "generated_at": "2026-06-27T13:58:43.409716Z",
     "sentences": [
       {
         "hash": "87c17df03cc603604a2ebf157d50bc42",
@@ -124,11 +124,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f53fdee2b15237b7e9d52434c96e2ac3",
+    "text_hash": "004fae74de17b79f0d9effb0647054e0",
     "textbook": "jk"
   },
   "grade3A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.136641Z",
+    "generated_at": "2026-06-27T13:58:43.410700Z",
     "sentences": [
       {
         "hash": "0f3d64691f257b10926f24a676f7b01b",
@@ -176,11 +176,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "9a0fbf15a56713e5df9925cc5e6ad434",
+    "text_hash": "c2af202477e5d6317ce5c819697e4157",
     "textbook": "jk"
   },
   "grade3A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.137662Z",
+    "generated_at": "2026-06-27T13:58:43.411020Z",
     "sentences": [
       {
         "hash": "e3ebf91a829f615a8a289b61e6683d09",
@@ -192,11 +192,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "828778dca70448cdb26bf4e26faab9bf",
+    "text_hash": "a963cab67b7bc1674cb7a63a77d0290e",
     "textbook": "jk"
   },
   "grade3A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.139913Z",
+    "generated_at": "2026-06-27T13:58:43.412735Z",
     "sentences": [
       {
         "hash": "892c9f4c3ca475212312141dde40adc0",
@@ -244,11 +244,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "bdc858131f861a27cc6c711ef441f149",
+    "text_hash": "3b58814a080728c73fa4515ae7a4fa52",
     "textbook": "jk"
   },
   "grade3A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.140867Z",
+    "generated_at": "2026-06-27T13:58:43.413465Z",
     "sentences": [
       {
         "hash": "c18163d6f683b5aca03c8bfa568a578a",
@@ -278,11 +278,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "14947d83bb7c2193deb5452365f6fc17",
+    "text_hash": "c3e91444fb443e2b7ef87efb128cf977",
     "textbook": "jk"
   },
   "grade3A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.142293Z",
+    "generated_at": "2026-06-27T13:58:43.414504Z",
     "sentences": [
       {
         "hash": "e806e936caada5b0f915389eeb73c3c0",
@@ -339,11 +339,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "798c2987c791f6bd7bdfa4767a387477",
+    "text_hash": "22f90338e1c6be0d687a3da4d3885dfb",
     "textbook": "jk"
   },
   "grade3A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.142666Z",
+    "generated_at": "2026-06-27T13:58:43.415252Z",
     "sentences": [
       {
         "hash": "b38c5af9cbcb869ff6eb1a741c675230",
@@ -355,11 +355,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "30b1d19b06311370adaf880100ed8984",
+    "text_hash": "d550bf617a36c1422b75bfc5d2a02270",
     "textbook": "jk"
   },
   "grade3A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.144116Z",
+    "generated_at": "2026-06-27T13:58:43.416545Z",
     "sentences": [
       {
         "hash": "8e97b1a0f35a5decc07cdc2168112828",
@@ -416,11 +416,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "6d36b460f34963b266c02ea921ef25c5",
+    "text_hash": "8250fd5f005bead72f42a29eb642d7d2",
     "textbook": "jk"
   },
   "grade3A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.144439Z",
+    "generated_at": "2026-06-27T13:58:43.416937Z",
     "sentences": [
       {
         "hash": "45e4c086d63991a96170f930feb1a5c7",
@@ -432,11 +432,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "7874fdb1f4aa87caa0743e622d841475",
+    "text_hash": "936e324a6aff5b92bba114f968500393",
     "textbook": "jk"
   },
   "grade3A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.146443Z",
+    "generated_at": "2026-06-27T13:58:43.418290Z",
     "sentences": [
       {
         "hash": "551e554cabc506a982617d76e2c32248",
@@ -493,11 +493,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "20ad4f395ed6473b6ba864ee65c4af39",
+    "text_hash": "087c6d901468981c5a58597f87ab2f32",
     "textbook": "jk"
   },
   "grade3A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.146836Z",
+    "generated_at": "2026-06-27T13:58:43.418734Z",
     "sentences": [
       {
         "hash": "9f2e2b8abc74c1117bd3ee054ac8663c",
@@ -509,11 +509,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "06f107b6a7a3a6780c021743a580aa81",
+    "text_hash": "097048029af96f27e87fb660c9e0a948",
     "textbook": "jk"
   },
   "grade3A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.148798Z",
+    "generated_at": "2026-06-27T13:58:43.420033Z",
     "sentences": [
       {
         "hash": "e6b399a14c4d95b13d7230a754be9ea6",
@@ -570,11 +570,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d53e137c8a265f4507b7636443f3b2e9",
+    "text_hash": "8c36edba5ba51a9f6092056d515c1e65",
     "textbook": "jk"
   },
   "grade3A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.149441Z",
+    "generated_at": "2026-06-27T13:58:43.420406Z",
     "sentences": [
       {
         "hash": "cc097c6a718e85eefdace8a493bef6c8",
@@ -586,11 +586,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "6a93b6d78d3adb120e363f4a87aa6ae2",
+    "text_hash": "e3a5d9c8d007fe511306780628645f1d",
     "textbook": "jk"
   },
   "grade3A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:51.151377Z",
+    "generated_at": "2026-06-27T13:58:43.421839Z",
     "sentences": [
       {
         "hash": "20b293aa2e209479ae3a88fb59e8d9d8",
@@ -647,11 +647,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6e6c85f1f03055451d2c732cd6545766",
+    "text_hash": "adbb88783c83f6a8cec02791fe53ce3e",
     "textbook": "jk"
   },
   "grade3A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:51.151919Z",
+    "generated_at": "2026-06-27T13:58:43.422142Z",
     "sentences": [
       {
         "hash": "a93f5645ce9d7348cdd405972e9244a3",
@@ -663,72 +663,72 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "168bf9af64580f155c5e76558f4b3071",
+    "text_hash": "6da61570cde2d926963ba2d6e498079a",
     "textbook": "jk"
   },
   "grade3A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:52.916564Z",
+    "generated_at": "2026-06-27T13:58:48.181565Z",
     "sentences": [
       {
-        "hash": "868d65642b2f1e8c8863e11d472373f8",
+        "hash": "a59f5aa545340240db67ed8b93ea6587",
         "idx": 0,
         "pitch": "+10Hz",
         "rate": "-2%",
         "speaker": "Coach",
-        "voice": "en-US-GuyNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+12%"
       },
       {
-        "hash": "14c55e9bae168622e477cae025bb8336",
+        "hash": "f0b3253731339b8594537b0de10b18e3",
         "idx": 1,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Nina",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-JennyNeural",
         "volume": "+0%"
       },
       {
-        "hash": "2561ccbda318658960333896e7dd3d0d",
+        "hash": "1cfcfdd736cf078f3fa7b4bb58826ef1",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Coach",
-        "voice": "en-US-GuyNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "ee93d5175bb6f27841d3d964a2dd2ee6",
+        "hash": "6ea39deaaf7433591adb5cbbaeee26dc",
         "idx": 3,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Nina",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-JennyNeural",
         "volume": "+0%"
       },
       {
-        "hash": "166d89894f04dc0dc7854ed5dc9adb4a",
+        "hash": "73c685657af512e5d2a3c074d0d3bc90",
         "idx": 4,
         "pitch": "+6Hz",
         "rate": "-8%",
         "speaker": "Coach",
-        "voice": "en-US-GuyNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+6%"
       },
       {
-        "hash": "24d7d6bb9f9408e586c30c179660a126",
+        "hash": "89e6c56d086a9ff58a2bdca002bd860c",
         "idx": 5,
         "pitch": "+10Hz",
         "rate": "-2%",
         "speaker": "Nina",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-JennyNeural",
         "volume": "+12%"
       }
     ],
-    "text_hash": "abf92dfeb162ce6f08e66f5054b8ac7b",
+    "text_hash": "fccef72a68d68e5fca3695696c8f4824",
     "textbook": "jk"
   },
   "grade3A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:52.918280Z",
+    "generated_at": "2026-06-27T13:58:48.182804Z",
     "sentences": [
       {
         "hash": "7e5f8f52c453d0e63325a3e43f167ec2",
@@ -740,11 +740,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "e7679e95114f3047b3baf7d9adaee7eb",
+    "text_hash": "5d91fab3aa9502bac54c2f74a23fa887",
     "textbook": "jk"
   },
   "grade3A_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:52.920729Z",
+    "generated_at": "2026-06-27T13:58:48.185390Z",
     "sentences": [
       {
         "hash": "c9a5e2d6bffca55f7148c9d7af8b6f71",
@@ -801,11 +801,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "2a35cbe2b104f2de7ef316ed25235fe4",
+    "text_hash": "35e7e68507d72c4e526b7e6aaf21cfa9",
     "textbook": "jk"
   },
   "grade3A_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:52.922234Z",
+    "generated_at": "2026-06-27T13:58:48.186233Z",
     "sentences": [
       {
         "hash": "8bd27de8ff2faf7963bc5fe91c33af97",
@@ -817,11 +817,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "5066b8e1460780c381cd043511e16b16",
+    "text_hash": "3624e6ecf3d3a12e3a182c79e61e38c7",
     "textbook": "jk"
   },
   "grade3B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:52.924133Z",
+    "generated_at": "2026-06-27T13:58:48.187974Z",
     "sentences": [
       {
         "hash": "648b0c7595ff25dfe5fd68508b626349",
@@ -869,11 +869,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "996c5968e21533ba6d616340b4ad04d5",
+    "text_hash": "7fb61d7890144bf58c7b067727365292",
     "textbook": "jk"
   },
   "grade3B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:52.924686Z",
+    "generated_at": "2026-06-27T13:58:48.188833Z",
     "sentences": [
       {
         "hash": "a3eceac4859062c299f292c3e806cdab",
@@ -885,11 +885,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "269558212dab70503a0bec8e469ed9f6",
+    "text_hash": "05dd04210d919db7bbd1f682d7e381e0",
     "textbook": "jk"
   },
   "grade3B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:52.928479Z",
+    "generated_at": "2026-06-27T13:58:48.190764Z",
     "sentences": [
       {
         "hash": "1b4bfac0f516a0a2743b67999c1e2eb0",
@@ -937,11 +937,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "54a0d6fb996ee78d93debd74f22e2db7",
+    "text_hash": "bc9e9973b445b147eda6e7c626097e8c",
     "textbook": "jk"
   },
   "grade3B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:52.929347Z",
+    "generated_at": "2026-06-27T13:58:48.191468Z",
     "sentences": [
       {
         "hash": "5b7cd7cc14134b1d7721c90be2aa385f",
@@ -953,11 +953,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d0124e404bd63e1e98b3700db21386f7",
+    "text_hash": "e4cb77276b9e768658d54294853ec994",
     "textbook": "jk"
   },
   "grade3B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:52.931868Z",
+    "generated_at": "2026-06-27T13:58:48.193309Z",
     "sentences": [
       {
         "hash": "374030e033b72357508e1b0e0843727e",
@@ -1005,11 +1005,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "5f58c650eb7cc506b2c6c0c93b9c464a",
+    "text_hash": "45651d9331e223fa542575f106e51aa9",
     "textbook": "jk"
   },
   "grade3B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:52.932484Z",
+    "generated_at": "2026-06-27T13:58:48.193871Z",
     "sentences": [
       {
         "hash": "58802c17660e24f7e7cb286c6808352d",
@@ -1021,11 +1021,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "ab16326ac197a36e099f866f42c8f4c7",
+    "text_hash": "c3363b6bd0c152a8ece3e5aafad2e8e1",
     "textbook": "jk"
   },
   "grade3B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:54.519952Z",
+    "generated_at": "2026-06-27T13:58:48.195214Z",
     "sentences": [
       {
         "hash": "913ad74fb24e38f8750e555c66c74675",
@@ -1073,11 +1073,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "397a28fd91e8271821d047279d3bab56",
+    "text_hash": "faed86276d26fe74c8f3194a50156e62",
     "textbook": "jk"
   },
   "grade3B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:54.521452Z",
+    "generated_at": "2026-06-27T13:58:48.195939Z",
     "sentences": [
       {
         "hash": "2596ae9fc044750c9d0304bbc459f88b",
@@ -1089,11 +1089,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "22d5856c5cc68f5d2e5df705b131d345",
+    "text_hash": "b8388ee84fe06f207b191618c47ab182",
     "textbook": "jk"
   },
   "grade3B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:55.761646Z",
+    "generated_at": "2026-06-27T13:58:48.197311Z",
     "sentences": [
       {
         "hash": "1cb9d67edcefdc5b0529e09b7917a439",
@@ -1141,11 +1141,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "e7549c222231cb40c4f060d278d6d4b7",
+    "text_hash": "319135287175c1546e8ec6590aa52d87",
     "textbook": "jk"
   },
   "grade3B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:55.762885Z",
+    "generated_at": "2026-06-27T13:58:48.197727Z",
     "sentences": [
       {
         "hash": "48ab88f1a1e5bca50d41d77a7c582dff",
@@ -1157,11 +1157,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "e2ee7b4e12a0dd6340e2aff8263c9381",
+    "text_hash": "acad52bcd201334535bbc37cf69c1db8",
     "textbook": "jk"
   },
   "grade3B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:55.765408Z",
+    "generated_at": "2026-06-27T13:58:48.198973Z",
     "sentences": [
       {
         "hash": "b02d857a0f86aee7121575b84ead84fc",
@@ -1209,11 +1209,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "203a3731075fa392b28928089018155b",
+    "text_hash": "bba1baa7544317cc327861aa97ebb9dd",
     "textbook": "jk"
   },
   "grade3B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:55.766408Z",
+    "generated_at": "2026-06-27T13:58:48.199552Z",
     "sentences": [
       {
         "hash": "83c4908e86c3c07aae7d83a2a862b666",
@@ -1225,11 +1225,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "f48e050ae5a80e715626895fb234e7bf",
+    "text_hash": "a6e5251ff6f5d272e8208c61469f9bf6",
     "textbook": "jk"
   },
   "grade3B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:55.768367Z",
+    "generated_at": "2026-06-27T13:58:48.201076Z",
     "sentences": [
       {
         "hash": "4f1a1fb2398b4dc367fed975ca668316",
@@ -1277,11 +1277,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c2e3b41e888ad39d1ee4ff6746c23d84",
+    "text_hash": "aa78475c0007e2f9eee8b950948b6252",
     "textbook": "jk"
   },
   "grade3B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:55.769265Z",
+    "generated_at": "2026-06-27T13:58:48.201559Z",
     "sentences": [
       {
         "hash": "4b9ced13e0ccf1a847f37cc0b8bc3b2d",
@@ -1293,11 +1293,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "0bf736735cb71ed166a1722ade983719",
+    "text_hash": "6f3ba9b57c345502765e2b507f0a4411",
     "textbook": "jk"
   },
   "grade3B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:12:55.771184Z",
+    "generated_at": "2026-06-27T13:58:48.203123Z",
     "sentences": [
       {
         "hash": "8eee32386261639605924711bcb8894e",
@@ -1354,11 +1354,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7c12570667e7c7b693b1172dec8b8bd5",
+    "text_hash": "a699330d77e3194b6c59290c2f14ef96",
     "textbook": "jk"
   },
   "grade3B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:12:55.772070Z",
+    "generated_at": "2026-06-27T13:58:48.203592Z",
     "sentences": [
       {
         "hash": "cff5001645f4205666d34a1210877056",
@@ -1370,11 +1370,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "a8d271b6339c609cf32323b43ca0aa60",
+    "text_hash": "725cd53be78d742fd7973aa3e8e74bf0",
     "textbook": "jk"
   },
   "grade3B_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:02.190357Z",
+    "generated_at": "2026-06-27T13:58:48.204909Z",
     "sentences": [
       {
         "hash": "d16867ddadd134bfa25bb69da777ccfc",
@@ -1422,11 +1422,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8044134b19962fe25e3800766e348d82",
+    "text_hash": "114b0e57574e4a75e840dd26c246c751",
     "textbook": "jk"
   },
   "grade3B_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:02.191349Z",
+    "generated_at": "2026-06-27T13:58:48.205580Z",
     "sentences": [
       {
         "hash": "a7e9db3a3cfb9058e575fa36a4b27cbf",
@@ -1438,11 +1438,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "401a35654cf2fa04998ebbe9b682868c",
+    "text_hash": "f9d8b306b1e3bfe44df9970a323d3773",
     "textbook": "jk"
   },
   "grade4A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:04.351824Z",
+    "generated_at": "2026-06-27T13:58:48.206736Z",
     "sentences": [
       {
         "hash": "9bdad528f1b3d9e7196a9de52ef22d71",
@@ -1490,11 +1490,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "3ac14cfa835e19a6c49789788a878cf3",
+    "text_hash": "7882a62e82d111e47bd54a22456d1f19",
     "textbook": "jk"
   },
   "grade4A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:04.352774Z",
+    "generated_at": "2026-06-27T13:58:48.207495Z",
     "sentences": [
       {
         "hash": "cfbbef2ce933e2411c4bf0f860d2633b",
@@ -1506,11 +1506,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "84035dfbd945741ba38f3733bd2a1bc0",
+    "text_hash": "2c0fc31455225e0078fe5fc4280bcb85",
     "textbook": "jk"
   },
   "grade4A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:06.660127Z",
+    "generated_at": "2026-06-27T13:58:48.208816Z",
     "sentences": [
       {
         "hash": "dc142428942e5e1d9a629872ee0cef49",
@@ -1558,11 +1558,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "99f18d22be41ff04a7490a912c69c3d3",
+    "text_hash": "9845afe118f9cea037f5328dcea65dd7",
     "textbook": "jk"
   },
   "grade4A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:06.661077Z",
+    "generated_at": "2026-06-27T13:58:48.209596Z",
     "sentences": [
       {
         "hash": "14d944acde542256cbb7acb9a83ae0ea",
@@ -1574,11 +1574,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "2805263ee0a2ec458f978d3de4aeea8e",
+    "text_hash": "f864c1e303f71fd147ffe0e1bca2f62f",
     "textbook": "jk"
   },
   "grade4A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:06.663384Z",
+    "generated_at": "2026-06-27T13:58:48.210878Z",
     "sentences": [
       {
         "hash": "be36a265c07ac0225b7d2aabdcd77a60",
@@ -1626,11 +1626,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "a17e4045cd5c6d49b6c63acffeaeab79",
+    "text_hash": "88d895b86cc22dda92b63bfb5fab740b",
     "textbook": "jk"
   },
   "grade4A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:06.664685Z",
+    "generated_at": "2026-06-27T13:58:48.211297Z",
     "sentences": [
       {
         "hash": "41007ab654d8badb488d47f3b0cb999e",
@@ -1642,11 +1642,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "3287fe551d714fb64d83653a3e515e46",
+    "text_hash": "f82031f4f474a73c13490b030deaaa9b",
     "textbook": "jk"
   },
   "grade4A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:06.666619Z",
+    "generated_at": "2026-06-27T13:58:48.212814Z",
     "sentences": [
       {
         "hash": "b48769914ddf44f62c9e2e2574451cff",
@@ -1694,11 +1694,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "5aaa1eb1fb2642a4ace781fd6d7075c7",
+    "text_hash": "782a840297dfbb63bb115d7b7e301bfe",
     "textbook": "jk"
   },
   "grade4A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:06.667126Z",
+    "generated_at": "2026-06-27T13:58:48.213212Z",
     "sentences": [
       {
         "hash": "ad08e8e9539a593985adbbe57af686ef",
@@ -1710,11 +1710,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "b04de75e2d435326e9f358d473f2bb70",
+    "text_hash": "9306d9e0522c7f926c695d8feb963133",
     "textbook": "jk"
   },
   "grade4A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:08.793981Z",
+    "generated_at": "2026-06-27T13:58:48.214670Z",
     "sentences": [
       {
         "hash": "86008c462c7922e9a07fc9a304655520",
@@ -1762,11 +1762,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "015a66de97782387622cdf7e737abeb3",
+    "text_hash": "25c989eb4df9479cd0aebfbdacb052b5",
     "textbook": "jk"
   },
   "grade4A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:08.795226Z",
+    "generated_at": "2026-06-27T13:58:48.215256Z",
     "sentences": [
       {
         "hash": "697adfc905252c36df8567b9c0a298ba",
@@ -1778,11 +1778,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "41703211b311b3c4e9ffebf8fb0c6328",
+    "text_hash": "9cff05c43ce2c214749d48de4b817bf4",
     "textbook": "jk"
   },
   "grade4A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:08.799237Z",
+    "generated_at": "2026-06-27T13:58:48.216573Z",
     "sentences": [
       {
         "hash": "feccfef6fda0413ce9ccc21f1e931c62",
@@ -1830,11 +1830,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "2f3aefb5d6fd978423dc071a644981ec",
+    "text_hash": "09be32deb3f9ee5c3377b0dbd9c35c75",
     "textbook": "jk"
   },
   "grade4A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:08.800530Z",
+    "generated_at": "2026-06-27T13:58:48.217057Z",
     "sentences": [
       {
         "hash": "270fca6d267353dfcf610e6fbe72922b",
@@ -1846,11 +1846,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "6e6fab26a7553ef90efef90aeb929488",
+    "text_hash": "b9105c97fccd6b612af664bdb3799cce",
     "textbook": "jk"
   },
   "grade4A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:08.803074Z",
+    "generated_at": "2026-06-27T13:58:48.218431Z",
     "sentences": [
       {
         "hash": "0ad35f8bef12ed129a90802917d60ae4",
@@ -1898,11 +1898,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "56e1289c589a3838a84fc4302896b6f4",
+    "text_hash": "c474926f6984365194abee9f9e3cf7fc",
     "textbook": "jk"
   },
   "grade4A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:08.804067Z",
+    "generated_at": "2026-06-27T13:58:48.222413Z",
     "sentences": [
       {
         "hash": "ea5fda510b749d37919eaac09acaade9",
@@ -1914,11 +1914,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "9447c503542bc8a1526f042ce84ffa70",
+    "text_hash": "54d0b68b0cbb0096ff1d673294e2ce46",
     "textbook": "jk"
   },
   "grade4A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:10.243585Z",
+    "generated_at": "2026-06-27T13:58:48.224166Z",
     "sentences": [
       {
         "hash": "49a2858d1666c344c576603ff8983a79",
@@ -1966,11 +1966,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "fdb404d99661eef3e80c6ea2f924520e",
+    "text_hash": "98791165cb62909ea77638d518b8bba7",
     "textbook": "jk"
   },
   "grade4A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:10.244732Z",
+    "generated_at": "2026-06-27T13:58:48.224748Z",
     "sentences": [
       {
         "hash": "0104e96754f045ee3e2a410537d157d5",
@@ -1982,11 +1982,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "c78e142291605c26758c6992db00b0fd",
+    "text_hash": "aa721be992bcbc111b1f5d5fa999ff04",
     "textbook": "jk"
   },
   "grade4A_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:10.247248Z",
+    "generated_at": "2026-06-27T13:58:48.227354Z",
     "sentences": [
       {
         "hash": "cb4fd617405c9b9ef9309cc7406e70b8",
@@ -2034,11 +2034,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "629b27e1073e3479da3f9cb82060ca53",
+    "text_hash": "180a48bfa16124f34193083019133abb",
     "textbook": "jk"
   },
   "grade4A_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:10.247891Z",
+    "generated_at": "2026-06-27T13:58:48.227731Z",
     "sentences": [
       {
         "hash": "8f480d587a278c7d45f7d6fd9ff6d3b7",
@@ -2050,11 +2050,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "5f9c2ec7c37c1b8fd08cc7e79598c48d",
+    "text_hash": "0f3d404abdba24c7be60a3fce29809f8",
     "textbook": "jk"
   },
   "grade4B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:12.424579Z",
+    "generated_at": "2026-06-27T13:58:48.228850Z",
     "sentences": [
       {
         "hash": "ffd160a2981102fbf288c96f1b0238cb",
@@ -2102,11 +2102,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "ef5ab074999b96a97ae7761fcfe034df",
+    "text_hash": "58b202e1250490042d6a891afb4c1cdc",
     "textbook": "jk"
   },
   "grade4B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:12.425375Z",
+    "generated_at": "2026-06-27T13:58:48.229685Z",
     "sentences": [
       {
         "hash": "21001b1200267f9ab25da4d0db736e16",
@@ -2118,11 +2118,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "fe3feba2005a63dde5d61b849cf9ee42",
+    "text_hash": "ad312ca9cb58a76d907bec7a35d86704",
     "textbook": "jk"
   },
   "grade4B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:14.603890Z",
+    "generated_at": "2026-06-27T13:58:48.230722Z",
     "sentences": [
       {
         "hash": "40e0142b412c13a8fe0d7939a1ce92b8",
@@ -2170,11 +2170,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f4f82010c99d717c9ab8f460252c551e",
+    "text_hash": "5fb8c3efde6c5cc0f430e3955d8e5416",
     "textbook": "jk"
   },
   "grade4B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:14.604764Z",
+    "generated_at": "2026-06-27T13:58:48.231395Z",
     "sentences": [
       {
         "hash": "e6a915920780c2120c1fa4105513d08f",
@@ -2186,11 +2186,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8fb90c231cab585a3fdcde90dc1a08f9",
+    "text_hash": "6219d4163309e4ca891bca01145b73e2",
     "textbook": "jk"
   },
   "grade4B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:14.607089Z",
+    "generated_at": "2026-06-27T13:58:48.232553Z",
     "sentences": [
       {
         "hash": "32410de067b45dd9dcd7018a5b0b3286",
@@ -2238,11 +2238,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "a4ef3b3f0b93f0cab9c1d96143cbd257",
+    "text_hash": "8685f0af37faa1f464864289aa8b5b3b",
     "textbook": "jk"
   },
   "grade4B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:14.608328Z",
+    "generated_at": "2026-06-27T13:58:48.233373Z",
     "sentences": [
       {
         "hash": "e39decbd0edb458172f211050ccf4a35",
@@ -2254,11 +2254,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0dc6d501ecf9ac631884615b89246864",
+    "text_hash": "f215e909a28e9af2efb681a752a2c0ca",
     "textbook": "jk"
   },
   "grade4B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:14.610231Z",
+    "generated_at": "2026-06-27T13:58:49.588958Z",
     "sentences": [
       {
         "hash": "7b68dae8ae2bab7e28bf52ef1e76f4fb",
@@ -2270,12 +2270,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "d9c8d975348a8a933b0058c20fd0e21c",
+        "hash": "357c8cc62d6197b261a78604876aaae6",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Shopkeeper",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -2288,12 +2288,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "5c0de93b7708f9f0740eb8680d121b37",
+        "hash": "f443dee66fae13d2b4fe8d5f9c74d508",
         "idx": 3,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Shopkeeper",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -2306,11 +2306,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1ef405cd16bee6a829b95d5c58715ad5",
+    "text_hash": "e2c3c86c51d6ed903484b1c4f879c4a8",
     "textbook": "jk"
   },
   "grade4B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:14.611461Z",
+    "generated_at": "2026-06-27T13:58:49.589608Z",
     "sentences": [
       {
         "hash": "f21b696d22860c6eeb4dcd56a1df7d4d",
@@ -2322,11 +2322,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "8a89d5fd4d50114258952c8199284c9d",
+    "text_hash": "122de245612247c5da8023c730fe4567",
     "textbook": "jk"
   },
   "grade4B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:16.155046Z",
+    "generated_at": "2026-06-27T13:58:49.591433Z",
     "sentences": [
       {
         "hash": "52424c0b3c825427183662fac2af30b7",
@@ -2374,11 +2374,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "66833134dd383d76adc1dffe6dd5b009",
+    "text_hash": "ef469be0fb8af1d1492579535de9a445",
     "textbook": "jk"
   },
   "grade4B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:16.155900Z",
+    "generated_at": "2026-06-27T13:58:49.592485Z",
     "sentences": [
       {
         "hash": "95b70303d54b503c05957164fc8d1e68",
@@ -2390,11 +2390,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2c75dc5abd96d827ac8e2af7582792c6",
+    "text_hash": "5aa0da67ef28c9a0a18bebc6b28292b7",
     "textbook": "jk"
   },
   "grade4B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:16.157862Z",
+    "generated_at": "2026-06-27T13:58:49.594212Z",
     "sentences": [
       {
         "hash": "82c6af183afade1f21dce4c98cf269c1",
@@ -2442,11 +2442,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "859d78e94fcf2a2560b61c828e1dfb3b",
+    "text_hash": "ece2cdd04453943e5cf09ffe883633ef",
     "textbook": "jk"
   },
   "grade4B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:16.158979Z",
+    "generated_at": "2026-06-27T13:58:49.594745Z",
     "sentences": [
       {
         "hash": "4fb222d59db07b69b84369b552917b86",
@@ -2458,11 +2458,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "ae77a3cba112a062b573c5d1821737cd",
+    "text_hash": "b9afecf9389725f73e74b70d573e9146",
     "textbook": "jk"
   },
   "grade4B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:16.161020Z",
+    "generated_at": "2026-06-27T13:58:49.596410Z",
     "sentences": [
       {
         "hash": "731ec276bcddfd428e60062a7dbbcda7",
@@ -2510,11 +2510,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "7ec31565c4bb9bf529cd7115b3df017c",
+    "text_hash": "1f0906136aef431382fadac7e8c3cbe8",
     "textbook": "jk"
   },
   "grade4B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:16.162456Z",
+    "generated_at": "2026-06-27T13:58:49.597109Z",
     "sentences": [
       {
         "hash": "a19df3fda1224ab55db5290efffe734b",
@@ -2526,11 +2526,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "107e29b111d0cb9c8a8609101d980eea",
+    "text_hash": "569f6c52a037537e0290fd30d6b742e1",
     "textbook": "jk"
   },
   "grade4B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:18.365982Z",
+    "generated_at": "2026-06-27T13:58:49.598775Z",
     "sentences": [
       {
         "hash": "36b0decda547e4b9e723350d162891c4",
@@ -2578,11 +2578,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "21efe0e971dc650a1bafa0133da71421",
+    "text_hash": "b557541690690c4dcbc854bb8e52b119",
     "textbook": "jk"
   },
   "grade4B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:18.366951Z",
+    "generated_at": "2026-06-27T13:58:49.599401Z",
     "sentences": [
       {
         "hash": "7145ed1c2163fb5c7150414c81f4bdb0",
@@ -2594,11 +2594,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "568750c0167e39546b91120e583bd8a8",
+    "text_hash": "dd6057c90414903ffbf4cc82232dd6fb",
     "textbook": "jk"
   },
   "grade4B_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:18.369254Z",
+    "generated_at": "2026-06-27T13:58:49.601143Z",
     "sentences": [
       {
         "hash": "4a948a49f09ef10183346379f5bac067",
@@ -2646,11 +2646,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1a48bcdeed8a3f68380f13f880bcd4ce",
+    "text_hash": "435e9bdc5e0b9e43981bfabdc6a7c180",
     "textbook": "jk"
   },
   "grade4B_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:18.370052Z",
+    "generated_at": "2026-06-27T13:58:49.602278Z",
     "sentences": [
       {
         "hash": "496da75995d08f923cc3e1ceca5d9ea1",
@@ -2662,11 +2662,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6c211db4a9a1ebd60d9a8fb1e14b5de8",
+    "text_hash": "cb4a22f15d318fc61a8c84efc8279998",
     "textbook": "jk"
   },
   "grade5A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:18.372375Z",
+    "generated_at": "2026-06-27T13:58:49.604377Z",
     "sentences": [
       {
         "hash": "5e0fee6dd8931cfd4816d62da70a6fb1",
@@ -2714,11 +2714,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "557e6967fc53d240c255252d7cac2566",
+    "text_hash": "0b475f5262beca9ecfdad1197403f983",
     "textbook": "jk"
   },
   "grade5A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:18.373426Z",
+    "generated_at": "2026-06-27T13:58:49.605022Z",
     "sentences": [
       {
         "hash": "ca423466d4bab1c9f20014523e88985b",
@@ -2730,11 +2730,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "47471c082c5f2e05e4905db65fbc7d5a",
+    "text_hash": "0203d16b57b7f972fed0be9c4d18399d",
     "textbook": "jk"
   },
   "grade5A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:19.912994Z",
+    "generated_at": "2026-06-27T13:58:49.606769Z",
     "sentences": [
       {
         "hash": "7e4e3b4ffcb624dd39b30c844f6cd2c8",
@@ -2782,11 +2782,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "4612f96d002b4ddac5551830d0ebaea9",
+    "text_hash": "1248977d48b3bd823ce3058875a33585",
     "textbook": "jk"
   },
   "grade5A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:19.913780Z",
+    "generated_at": "2026-06-27T13:58:49.607655Z",
     "sentences": [
       {
         "hash": "b6a5f9f43f539528d0299e13dfb13626",
@@ -2798,11 +2798,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "daac049b865e48427dacb6d325000516",
+    "text_hash": "8de67606075ff5faeee0a032b80d3052",
     "textbook": "jk"
   },
   "grade5A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:19.915616Z",
+    "generated_at": "2026-06-27T13:58:49.608759Z",
     "sentences": [
       {
         "hash": "c0a3e6a9d0bdae4a80ad5f7ca4bcfa2b",
@@ -2850,11 +2850,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "a089e5e082551a7535636300cfde2b8f",
+    "text_hash": "052b0b4d3eeda7a061d8b2521ae46569",
     "textbook": "jk"
   },
   "grade5A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:19.916097Z",
+    "generated_at": "2026-06-27T13:58:49.609200Z",
     "sentences": [
       {
         "hash": "9ef77c7906f5ec1a3806a28acd1798f9",
@@ -2866,11 +2866,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b8a358187167226d4321562eceb2a9cd",
+    "text_hash": "485e529b27a792482d43b52d204f7d35",
     "textbook": "jk"
   },
   "grade5A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:19.918327Z",
+    "generated_at": "2026-06-27T13:58:49.610772Z",
     "sentences": [
       {
         "hash": "f7cb4ac7baa49d079bab96c90e0eadc6",
@@ -2918,11 +2918,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e0eb035a2ebd64bb5d908be345f56a45",
+    "text_hash": "da86cbdd41e8e2eaa25254ba7ca70a5a",
     "textbook": "jk"
   },
   "grade5A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:19.918894Z",
+    "generated_at": "2026-06-27T13:58:49.611230Z",
     "sentences": [
       {
         "hash": "ca779a834573ae3c0e405c51f42a49ed",
@@ -2934,11 +2934,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2b9e7950afd788be8439b2dc4b620ce7",
+    "text_hash": "b7d7280a745b9c9cfa3e6646e81fc4f0",
     "textbook": "jk"
   },
   "grade5A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:22.744392Z",
+    "generated_at": "2026-06-27T13:58:49.612445Z",
     "sentences": [
       {
         "hash": "ed0c78e50aea30ad5ac65111fafd0795",
@@ -2986,11 +2986,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b1c54ef75460bbed39f82db5963db523",
+    "text_hash": "10b70e3cc05f63fca99675e09a1c9894",
     "textbook": "jk"
   },
   "grade5A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:22.745792Z",
+    "generated_at": "2026-06-27T13:58:49.613003Z",
     "sentences": [
       {
         "hash": "88884df1615c2ab15a3691f6358d2cc4",
@@ -3002,11 +3002,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "81fe8aaf60b7e2271d336d8a94cbb649",
+    "text_hash": "80818479c28e2bf8a4d961bfc36984aa",
     "textbook": "jk"
   },
   "grade5A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:22.748294Z",
+    "generated_at": "2026-06-27T13:58:49.614349Z",
     "sentences": [
       {
         "hash": "b8e0cae0c1713a94d4268c1059007118",
@@ -3054,11 +3054,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "24210413c303ebcecb74fbef3db672d0",
+    "text_hash": "996f3e78cdf8e55903c3cf886a51067f",
     "textbook": "jk"
   },
   "grade5A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:22.748930Z",
+    "generated_at": "2026-06-27T13:58:49.617354Z",
     "sentences": [
       {
         "hash": "f29e189fb974d7868797eebb2576ead0",
@@ -3070,11 +3070,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "637f0c2bbfdd95cddce7b5609c7555aa",
+    "text_hash": "7775eb14c8fb32c2ae293d079bb6fecd",
     "textbook": "jk"
   },
   "grade5A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:22.751204Z",
+    "generated_at": "2026-06-27T13:58:49.618563Z",
     "sentences": [
       {
         "hash": "08c2758957e2c347ec60f681eeff8b47",
@@ -3122,11 +3122,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5962d9dad3a3e5adc722dc789971a3aa",
+    "text_hash": "de7146f7f3be856301015c95e0a0ac7a",
     "textbook": "jk"
   },
   "grade5A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:22.752402Z",
+    "generated_at": "2026-06-27T13:58:49.619158Z",
     "sentences": [
       {
         "hash": "db2c96ef6c8f05a49c1d91752512e59b",
@@ -3138,11 +3138,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f1bdabdab6e95b1bb27bd1ccb3beb1e0",
+    "text_hash": "6963af4cdb79683a3563122a51e40047",
     "textbook": "jk"
   },
   "grade5A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:22.755349Z",
+    "generated_at": "2026-06-27T13:58:49.620752Z",
     "sentences": [
       {
         "hash": "a7d8d5c5098d80474150a6a4804f99df",
@@ -3190,11 +3190,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "a7a2b1fb80de3c98c7bd1b57eb7577b1",
+    "text_hash": "fe5721aa95619133ad6b77a131356f42",
     "textbook": "jk"
   },
   "grade5A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:22.756056Z",
+    "generated_at": "2026-06-27T13:58:49.621491Z",
     "sentences": [
       {
         "hash": "83704925d201a0f9e1c4fd7cccbbc14f",
@@ -3206,11 +3206,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "3c4b9d5e7e19e73dffb7b3fde54311c1",
+    "text_hash": "154426a95ca527db2dd6403efe655bbf",
     "textbook": "jk"
   },
   "grade5A_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:24.443261Z",
+    "generated_at": "2026-06-27T13:58:49.622576Z",
     "sentences": [
       {
         "hash": "d7d1758ec754cfcc50a3da69e12dd150",
@@ -3258,11 +3258,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "59befdac2dc6e520f62f2aafe83b28c9",
+    "text_hash": "8581f3bf79be9247fbb042fd1044ed94",
     "textbook": "jk"
   },
   "grade5A_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:24.444084Z",
+    "generated_at": "2026-06-27T13:58:49.623036Z",
     "sentences": [
       {
         "hash": "bd50dcef2d052a4b84acbc60b5d8f5b5",
@@ -3274,11 +3274,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "6e4aff5cd473b33fd1be61142dc87b69",
+    "text_hash": "959c7571676bfc21ff1a289d0d0ff0d2",
     "textbook": "jk"
   },
   "grade5B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:24.446338Z",
+    "generated_at": "2026-06-27T13:58:49.624124Z",
     "sentences": [
       {
         "hash": "6b54504db79701ae14c70a280623561f",
@@ -3326,11 +3326,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "09c73805d78f721632e21aab3eb85347",
+    "text_hash": "a1b1f6459cc2d4c7eae78e80c23dd28a",
     "textbook": "jk"
   },
   "grade5B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:24.447414Z",
+    "generated_at": "2026-06-27T13:58:49.625249Z",
     "sentences": [
       {
         "hash": "3bf07815862bf5468f7e74011697d3d8",
@@ -3342,11 +3342,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "7cbabf356b480fcbfc8c4cf5c6af1f38",
+    "text_hash": "0df59cfbc2eb54d311448241cb9ad79d",
     "textbook": "jk"
   },
   "grade5B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:25.616076Z",
+    "generated_at": "2026-06-27T13:58:49.626476Z",
     "sentences": [
       {
         "hash": "a6b5cf39276293acbe8537967e23f5f3",
@@ -3394,11 +3394,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0ce578c59ab1413d1cebb8747d99d9b9",
+    "text_hash": "e274ae45979296d4777e6fe8a5563a88",
     "textbook": "jk"
   },
   "grade5B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:25.617740Z",
+    "generated_at": "2026-06-27T13:58:49.627359Z",
     "sentences": [
       {
         "hash": "83b759d17c926f0b6111561bc3aad862",
@@ -3410,11 +3410,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "73e67866778ff1698a4824c00b3cffec",
+    "text_hash": "3cb15826786a8706f12d46a9b8b7820a",
     "textbook": "jk"
   },
   "grade5B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:25.619954Z",
+    "generated_at": "2026-06-27T13:58:49.628327Z",
     "sentences": [
       {
         "hash": "18aecdbc7cc4dc3bcbd970ebbccd0f49",
@@ -3462,11 +3462,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "0c800aeb3e95bc0c40c86f19c6e1e555",
+    "text_hash": "f35408de5f083591f926d30d958ac4c5",
     "textbook": "jk"
   },
   "grade5B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:25.620724Z",
+    "generated_at": "2026-06-27T13:58:49.628793Z",
     "sentences": [
       {
         "hash": "4ece8e4f2ea5caa53a5d4ca1985a27fe",
@@ -3478,11 +3478,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d10d52eb51643936846e5e6bedf91995",
+    "text_hash": "0c55ecf563cde4be45a5f1853f3b32f7",
     "textbook": "jk"
   },
   "grade5B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:25.623379Z",
+    "generated_at": "2026-06-27T13:58:49.630223Z",
     "sentences": [
       {
         "hash": "ba1a9bc5fde95b9d7e7d2cebe2c828a0",
@@ -3530,11 +3530,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "41a30bc35a84cada34440f2af712d316",
+    "text_hash": "3e61336b39b055ecf46793076049505b",
     "textbook": "jk"
   },
   "grade5B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:25.624352Z",
+    "generated_at": "2026-06-27T13:58:49.630627Z",
     "sentences": [
       {
         "hash": "159c45c840f7d4e7c91178a65f5e4d31",
@@ -3546,11 +3546,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "dffbd06d89483d2e3234c618818fa8ee",
+    "text_hash": "24d3bedcdef0bc7badd38fadc1fdcebc",
     "textbook": "jk"
   },
   "grade5B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:28.304792Z",
+    "generated_at": "2026-06-27T13:58:51.497808Z",
     "sentences": [
       {
         "hash": "8e2ee52e87067cf8ecc56b21fb9ed087",
@@ -3571,12 +3571,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "049ae692ba6520867a8d5e53ce7829a8",
+        "hash": "c99b29fe9cdd4c012f3ae63c68536934",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Shopkeeper",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -3589,20 +3589,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "6248c062cb1de53fb339ed122cb38e04",
+        "hash": "4ed094869d1351b70e463a53f9375d35",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Shopkeeper",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "2ff43587a4a6ea17a52c7751f2ba9373",
+    "text_hash": "7001e227445e90174d9674dd609e2030",
     "textbook": "jk"
   },
   "grade5B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:28.305671Z",
+    "generated_at": "2026-06-27T13:58:51.498704Z",
     "sentences": [
       {
         "hash": "1f357bca26f5e331c6eb8b1e95933dc3",
@@ -3614,11 +3614,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "89f5bda5813bf7c69aac912e23021b17",
+    "text_hash": "51e91820bf880948bfcdc47204d4e816",
     "textbook": "jk"
   },
   "grade5B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:28.307556Z",
+    "generated_at": "2026-06-27T13:58:51.500553Z",
     "sentences": [
       {
         "hash": "660d92e6eb02cfe91e5b30c80c6a9002",
@@ -3666,11 +3666,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6403a4b59c2daab2fe0f312629c26b5e",
+    "text_hash": "b5333bca31954ab998173511bf3e2f34",
     "textbook": "jk"
   },
   "grade5B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:28.308416Z",
+    "generated_at": "2026-06-27T13:58:51.501098Z",
     "sentences": [
       {
         "hash": "de20030589ac57db5d2594bce7c6849e",
@@ -3682,11 +3682,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ef2eb3148f2e79cb74043ca69a807900",
+    "text_hash": "e8a7e1676a961f44ce47f3a2d62ff536",
     "textbook": "jk"
   },
   "grade5B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:28.310152Z",
+    "generated_at": "2026-06-27T13:58:51.502535Z",
     "sentences": [
       {
         "hash": "b472b7dc91210fba036384f1e0d3a6d9",
@@ -3734,11 +3734,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "325d6b8324929c0a176e6aca6621bb79",
+    "text_hash": "6f6d079d0c1b2d6fa8bed43f55c9d166",
     "textbook": "jk"
   },
   "grade5B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:28.311021Z",
+    "generated_at": "2026-06-27T13:58:51.504783Z",
     "sentences": [
       {
         "hash": "1c229b83291aaf435d79fc370a248270",
@@ -3750,11 +3750,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "062b993aae7f6bc8a9761cb6ff33bed0",
+    "text_hash": "cc70a6e1455e0a2a43031000f68d5d84",
     "textbook": "jk"
   },
   "grade5B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:28.312975Z",
+    "generated_at": "2026-06-27T13:58:51.506380Z",
     "sentences": [
       {
         "hash": "b91ec90804230632164ce605933657ee",
@@ -3802,11 +3802,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "170f0d2700896f3c54bd22f29516499a",
+    "text_hash": "b6f3446244f2071686897765f6143291",
     "textbook": "jk"
   },
   "grade5B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:28.313596Z",
+    "generated_at": "2026-06-27T13:58:51.506771Z",
     "sentences": [
       {
         "hash": "c28d88f3e983ef7f68905ef19e41a862",
@@ -3818,11 +3818,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "c0a1591bba20bc6b09533d28d0b00c78",
+    "text_hash": "5f25649a2b3e940b65b703df1dbab047",
     "textbook": "jk"
   },
   "grade5B_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:30.143925Z",
+    "generated_at": "2026-06-27T13:58:51.508126Z",
     "sentences": [
       {
         "hash": "58885d71b559175fc1190147278f7492",
@@ -3870,11 +3870,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "a83ae3d361a9279f332f9eb0c5f1d347",
+    "text_hash": "f7c5d3a9f2f32eaabdcea927152310de",
     "textbook": "jk"
   },
   "grade5B_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:30.144704Z",
+    "generated_at": "2026-06-27T13:58:51.508911Z",
     "sentences": [
       {
         "hash": "040cf1728bb0fbe1eb4d2703785d3d2a",
@@ -3886,11 +3886,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "c1beb6a8b615fb70fdbb46395353fded",
+    "text_hash": "f4d0b23de5844427af2f2e7e536c5fa9",
     "textbook": "jk"
   },
   "grade6A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:30.147287Z",
+    "generated_at": "2026-06-27T13:58:51.510112Z",
     "sentences": [
       {
         "hash": "2b23e16417b1d3faefbfad8031288b39",
@@ -3938,11 +3938,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "25e8fcdacb9b6b3c351d004256d164ff",
+    "text_hash": "165a39e00aa0d97c8686c65b2ac35034",
     "textbook": "jk"
   },
   "grade6A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:30.148382Z",
+    "generated_at": "2026-06-27T13:58:51.510609Z",
     "sentences": [
       {
         "hash": "b2fd46623601c0cee4eeebed849b299b",
@@ -3954,11 +3954,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "e52212b403973a734bca2f13bdc5dd08",
+    "text_hash": "09433ec65a787cd9f853618ba05da8d8",
     "textbook": "jk"
   },
   "grade6A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:30.150800Z",
+    "generated_at": "2026-06-27T13:58:51.512133Z",
     "sentences": [
       {
         "hash": "00dca287d8983318f2887e788d73f2de",
@@ -4006,11 +4006,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "a7c093b36c1b1901c072e80c9e69c13b",
+    "text_hash": "a71c92315660849526c9c762124f7be9",
     "textbook": "jk"
   },
   "grade6A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:30.151539Z",
+    "generated_at": "2026-06-27T13:58:51.512612Z",
     "sentences": [
       {
         "hash": "416610647d3dd4ebd324d33b1b544332",
@@ -4022,11 +4022,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "23075fc053a8846551c54e5f58a2dec0",
+    "text_hash": "9adbe6e0586e56585781348d8bdce811",
     "textbook": "jk"
   },
   "grade6A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:30.153812Z",
+    "generated_at": "2026-06-27T13:58:51.514581Z",
     "sentences": [
       {
         "hash": "91c37960f013556ad1398946282933dd",
@@ -4074,11 +4074,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "73185006081abae2ea15c65ac5967cc2",
+    "text_hash": "7f2adbae2262a3bc4e380c5103708517",
     "textbook": "jk"
   },
   "grade6A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:30.155157Z",
+    "generated_at": "2026-06-27T13:58:51.515287Z",
     "sentences": [
       {
         "hash": "dfe4cc452203543b4939e28d11b0f548",
@@ -4090,11 +4090,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ea17aac9f00957308ea322b787c53b96",
+    "text_hash": "0998f7636a8426ad66e896f18bd6822f",
     "textbook": "jk"
   },
   "grade6A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:30.157016Z",
+    "generated_at": "2026-06-27T13:58:51.516434Z",
     "sentences": [
       {
         "hash": "a02dd04ef9dfde780130147e460a08d0",
@@ -4142,11 +4142,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "011d14cba625521756e134cbb507c012",
+    "text_hash": "9dbd098cd13e3fdb988025973d23c6c5",
     "textbook": "jk"
   },
   "grade6A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:30.157490Z",
+    "generated_at": "2026-06-27T13:58:51.516858Z",
     "sentences": [
       {
         "hash": "57fb31ae47f51f3a77ac258e1fa7d394",
@@ -4158,11 +4158,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "cbb75a0342037a150a724d9d49996831",
+    "text_hash": "ceafaa39bee022743195dafc4dd41cef",
     "textbook": "jk"
   },
   "grade6A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:31.966169Z",
+    "generated_at": "2026-06-27T13:58:51.517947Z",
     "sentences": [
       {
         "hash": "96a75f440d7552eb4dbc452ecd38e91e",
@@ -4210,11 +4210,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d965d5bc99c276bc1b0c9ca79d8e3fc5",
+    "text_hash": "818a01311fdffd86d621755c3eeb85da",
     "textbook": "jk"
   },
   "grade6A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:31.967565Z",
+    "generated_at": "2026-06-27T13:58:51.518457Z",
     "sentences": [
       {
         "hash": "053255aec07875b70e84ede9d9ab1c68",
@@ -4226,11 +4226,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8a77b2124f148f27ae1a5441ffe64ecc",
+    "text_hash": "a3121978f4d79f878f3d75d4c9e492e5",
     "textbook": "jk"
   },
   "grade6A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:31.969483Z",
+    "generated_at": "2026-06-27T13:58:51.519442Z",
     "sentences": [
       {
         "hash": "82cfa8566e99f38f5c237deb4b61c3a5",
@@ -4278,11 +4278,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "948e2364a68714658fde0a84950ee3a2",
+    "text_hash": "c2f7c78adb3dde2ad8c3450dcc839cf2",
     "textbook": "jk"
   },
   "grade6A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:31.970752Z",
+    "generated_at": "2026-06-27T13:58:51.520157Z",
     "sentences": [
       {
         "hash": "ebbe3dd19870c6d9e245537fa0d86e77",
@@ -4294,11 +4294,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5799d258fab13ca53506c89c73736aab",
+    "text_hash": "83061a0d15435f6d67cdbe31546b1bac",
     "textbook": "jk"
   },
   "grade6A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:33.453040Z",
+    "generated_at": "2026-06-27T13:58:51.521288Z",
     "sentences": [
       {
         "hash": "d0a1d8297f0f32130475ec989e138668",
@@ -4346,11 +4346,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "1ccfe496013ce8fc1c256f5ffd9278b2",
+    "text_hash": "9e3c932ba50a9466eba99552bcb63b32",
     "textbook": "jk"
   },
   "grade6A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:33.453775Z",
+    "generated_at": "2026-06-27T13:58:51.521677Z",
     "sentences": [
       {
         "hash": "8fae07510ce919764023abfce9ea6e27",
@@ -4362,11 +4362,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6c4306d76ed6091da52f6ee0f7186468",
+    "text_hash": "335b94005bafb7e07cc8ee7cf84758ad",
     "textbook": "jk"
   },
   "grade6A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.776249Z",
+    "generated_at": "2026-06-27T13:58:51.523023Z",
     "sentences": [
       {
         "hash": "eb5cc8fe5a53e0afcba6d63607076bcd",
@@ -4414,11 +4414,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "c62b117f1399ed07c1eb69d4c81f1611",
+    "text_hash": "560febe2f79ea10f0d03ca2c69c12540",
     "textbook": "jk"
   },
   "grade6A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.777224Z",
+    "generated_at": "2026-06-27T13:58:51.525580Z",
     "sentences": [
       {
         "hash": "5adaf50c8c5ac03361d4283a7360695c",
@@ -4430,11 +4430,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d26d542e7f3b0d89274578cf9e6ded78",
+    "text_hash": "7334926ec7b961e8520fdd4151ffd989",
     "textbook": "jk"
   },
   "grade6A_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.779755Z",
+    "generated_at": "2026-06-27T13:58:51.527000Z",
     "sentences": [
       {
         "hash": "4b658d1f37d0035bbdd4f8c93607e1b3",
@@ -4482,11 +4482,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "00233486ffe6459c7e40982f5c741b61",
+    "text_hash": "f5f4b3aefa1ec01cb4170a78a98ae9c1",
     "textbook": "jk"
   },
   "grade6A_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.780522Z",
+    "generated_at": "2026-06-27T13:58:51.527372Z",
     "sentences": [
       {
         "hash": "000caeaf5ad020ad65e7e700a554aa62",
@@ -4498,11 +4498,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4748cd610f4d938d7a465b86af5d91e5",
+    "text_hash": "56fc24c4d0cd7bf837698ca5891e5cc3",
     "textbook": "jk"
   },
   "grade6B_u10_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.161534Z",
+    "generated_at": "2026-06-27T13:59:07.926748Z",
     "sentences": [
       {
         "hash": "a0762630da359ec1617805628fbf7f01",
@@ -4514,11 +4514,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "9278122c8b3a9af6322e2bcad6c5effc",
+    "text_hash": "c16b4ba460de06ba809e0af4e3288f58",
     "textbook": "jk"
   },
   "grade6B_u10_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.162142Z",
+    "generated_at": "2026-06-27T13:59:07.927915Z",
     "sentences": [
       {
         "hash": "f77f6e00caeea2b78cbd525cd4a4221c",
@@ -4530,11 +4530,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "54a9f532ad56c6ff2f778c3a37e85e75",
+    "text_hash": "ff15a1b96bc1784ec998c73e21ddaf4e",
     "textbook": "jk"
   },
   "grade6B_u10_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.163920Z",
+    "generated_at": "2026-06-27T13:59:07.929698Z",
     "sentences": [
       {
         "hash": "f3481783f202de041f5ccaab2ba3cc65",
@@ -4609,11 +4609,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "36099399eadc182dd0e784722a6a9520",
+    "text_hash": "2fb93809ee02a43a4a02ac2fc2a6519b",
     "textbook": "jk"
   },
   "grade6B_u11_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.164681Z",
+    "generated_at": "2026-06-27T13:59:07.930296Z",
     "sentences": [
       {
         "hash": "c1f84e40e77001beab0b50a73b692639",
@@ -4625,11 +4625,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "3111a80459c7e1e97e6683bec153c84a",
+    "text_hash": "a145f45ee78910727c13ef3a84632ca7",
     "textbook": "jk"
   },
   "grade6B_u11_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.165829Z",
+    "generated_at": "2026-06-27T13:59:07.931908Z",
     "sentences": [
       {
         "hash": "737cb36a9705e8d5e92348a0da2a6b66",
@@ -4650,11 +4650,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d20b0450df10f4c6c4242cc80791395d",
+    "text_hash": "e6f4e2992d51d981656fe222db527107",
     "textbook": "jk"
   },
   "grade6B_u11_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.168680Z",
+    "generated_at": "2026-06-27T13:59:07.932522Z",
     "sentences": [
       {
         "hash": "1e77147de77b7889ab46ef7025e0bdd6",
@@ -4666,11 +4666,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "30ed716c9163fc36e0c8fc5d2086499c",
+    "text_hash": "8bdfe19f1949a063af7704bd43a0e3df",
     "textbook": "jk"
   },
   "grade6B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.784513Z",
+    "generated_at": "2026-06-27T13:58:51.530062Z",
     "sentences": [
       {
         "hash": "9909f5e943a68fd6e638de243af1758d",
@@ -4745,11 +4745,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e9eecce46ff9be7e7d77763802bcaf00",
+    "text_hash": "a45b73efcd4e37641c47a853ca7fc658",
     "textbook": "jk"
   },
   "grade6B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.785168Z",
+    "generated_at": "2026-06-27T13:58:51.530812Z",
     "sentences": [
       {
         "hash": "c38dfeec302caae9b129b70c71f26e15",
@@ -4761,11 +4761,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "440d6c2b9e90bd374157a42f1bdcb4b7",
+    "text_hash": "ba725c6e0e8c739d9fb9ea5c2840e949",
     "textbook": "jk"
   },
   "grade6B_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:37.785864Z",
+    "generated_at": "2026-06-27T13:58:51.531213Z",
     "sentences": [
       {
         "hash": "82dcc024d0cc80b79d2b0779aadaaed5",
@@ -4777,11 +4777,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "970a4af943e59e76c5fc6bc26eaa9837",
+    "text_hash": "c5d6a9cbb7389597d1427bf7f05ff50f",
     "textbook": "jk"
   },
   "grade6B_u1_L3.mp3": {
-    "generated_at": "2026-06-27T11:13:37.786681Z",
+    "generated_at": "2026-06-27T13:58:51.531592Z",
     "sentences": [
       {
         "hash": "4ad25d2cb663b5f09db78a3165907af8",
@@ -4793,11 +4793,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "976d7182fac4e87fce8725e4a430ef3f",
+    "text_hash": "dfd21977dc12a1d11f2bb34287549d37",
     "textbook": "jk"
   },
   "grade6B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.787933Z",
+    "generated_at": "2026-06-27T13:58:51.532051Z",
     "sentences": [
       {
         "hash": "dab3343f93d16990916334f25bf9688d",
@@ -4809,11 +4809,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d877f4cb6c89851c49a2dbcaa4b4b012",
+    "text_hash": "c318cae9c937b3e1f15f783788258b69",
     "textbook": "jk"
   },
   "grade6B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.791059Z",
+    "generated_at": "2026-06-27T13:58:51.533763Z",
     "sentences": [
       {
         "hash": "6f3b18d8eec013095e247cce998e5c1c",
@@ -4870,11 +4870,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "196ed3cff2748a0f13ac83b2d62f5d3d",
+    "text_hash": "4f171aa20ce0d84215d4cf8d24bf144f",
     "textbook": "jk"
   },
   "grade6B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.794467Z",
+    "generated_at": "2026-06-27T13:58:51.536265Z",
     "sentences": [
       {
         "hash": "35ab211a89834b0495e3226c44b84ef1",
@@ -4967,11 +4967,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "fc6ddb8ba6421efe7274ca41bfcf1182",
+    "text_hash": "c26c34485fdf69c860927b5ddbe8ef4b",
     "textbook": "jk"
   },
   "grade6B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.794980Z",
+    "generated_at": "2026-06-27T13:58:51.537114Z",
     "sentences": [
       {
         "hash": "3d9da75537e56f80a16b70a075ed4598",
@@ -4983,11 +4983,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d60fd3356800f6cd347ce7696b8e3670",
+    "text_hash": "2dcae244c2cd43564c1c17244dd5a131",
     "textbook": "jk"
   },
   "grade6B_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:37.795588Z",
+    "generated_at": "2026-06-27T13:58:51.538432Z",
     "sentences": [
       {
         "hash": "659c5b710c72f944d863cb24fca079d7",
@@ -4999,11 +4999,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "db0f79b506e10fd1d1822f0ec54c5eff",
+    "text_hash": "49c4a9524961fcc83a8d326bf063b173",
     "textbook": "jk"
   },
   "grade6B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.796775Z",
+    "generated_at": "2026-06-27T13:58:51.538982Z",
     "sentences": [
       {
         "hash": "9f17b343831028ffe35eef68113497c8",
@@ -5015,11 +5015,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "aa647b3e24bd3f711fdd6493af245033",
+    "text_hash": "e21b796fa6247db0c448c4ff5ddb6ab4",
     "textbook": "jk"
   },
   "grade6B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.799507Z",
+    "generated_at": "2026-06-27T13:58:55.847418Z",
     "sentences": [
       {
         "hash": "7aafbea5d5939bc94066317ce0759c14",
@@ -5031,12 +5031,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "04fa3dfc5e56ea480fc3bd055a697df8",
+        "hash": "4f9265fd3365fe8d216902549db80111",
         "idx": 1,
-        "pitch": "+22Hz",
-        "rate": "+1%",
+        "pitch": "+10Hz",
+        "rate": "-2%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+12%"
       },
       {
@@ -5049,12 +5049,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "081209bb328f94224ad4ef375dcad921",
+        "hash": "b9ea3ccd4a920f1380111853256ec875",
         "idx": 3,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -5076,12 +5076,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "5635f24766fbac9496d12bc812ad6494",
+        "hash": "2342b28c18fa0e2e188c630caa452110",
         "idx": 6,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -5094,11 +5094,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4670cbb59c7325a9866cd1dd8d1290cc",
+    "text_hash": "23fbbb558da51037f73289f648895963",
     "textbook": "jk"
   },
   "grade6B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:37.801608Z",
+    "generated_at": "2026-06-27T13:58:55.851196Z",
     "sentences": [
       {
         "hash": "8e541f1793c4dd7bc8a596f1ff5871ce",
@@ -5182,11 +5182,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "2b209e67fcc5a882c9fe652207b52bf9",
+    "text_hash": "9c4c1e7dad25094c7c190c59e8badb21",
     "textbook": "jk"
   },
   "grade6B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:37.802164Z",
+    "generated_at": "2026-06-27T13:58:55.852014Z",
     "sentences": [
       {
         "hash": "2d4d8c62b6a79a7665272f5b32755b1e",
@@ -5198,11 +5198,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "08e3cb51ec40e71cf6d211529032316d",
+    "text_hash": "ab2e3ac320bb2b3bf5d703aabb197f34",
     "textbook": "jk"
   },
   "grade6B_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:40.721143Z",
+    "generated_at": "2026-06-27T13:58:55.855061Z",
     "sentences": [
       {
         "hash": "2bbb76196eee3fa65804b9adbf30c4d1",
@@ -5277,11 +5277,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "cc819d538cd6a0adc6c17db2b20bcb8a",
+    "text_hash": "01adda06a91e2c452948a648c7188b4b",
     "textbook": "jk"
   },
   "grade6B_u5_L3.mp3": {
-    "generated_at": "2026-06-27T11:13:42.635981Z",
+    "generated_at": "2026-06-27T13:58:55.856934Z",
     "sentences": [
       {
         "hash": "16b066ff8fb65d9534edcb6f0147b8db",
@@ -5338,11 +5338,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "c0aac4dc082e4aa9fef9f843d01defbc",
+    "text_hash": "681fd282d81534f2dc610e7d972d438c",
     "textbook": "jk"
   },
   "grade6B_u5_L4.mp3": {
-    "generated_at": "2026-06-27T11:13:45.136704Z",
+    "generated_at": "2026-06-27T13:58:55.859157Z",
     "sentences": [
       {
         "hash": "43242c8748bb369bd9b824f23880840c",
@@ -5399,11 +5399,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ed2d42f331535ad8bb304f8d890ce113",
+    "text_hash": "619734ac630a6a9216bb4cda8a3e3085",
     "textbook": "jk"
   },
   "grade6B_u5_L5.mp3": {
-    "generated_at": "2026-06-27T11:13:45.138107Z",
+    "generated_at": "2026-06-27T13:58:55.859919Z",
     "sentences": [
       {
         "hash": "29ac000b3e2970e52d2cb078e6e3fdb8",
@@ -5415,11 +5415,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "986ae0b23478752b2b8345610a28ddd5",
+    "text_hash": "9430cb7945c4304e62c326d9c0e3d350",
     "textbook": "jk"
   },
   "grade6B_u5_L6.mp3": {
-    "generated_at": "2026-06-27T11:13:45.138986Z",
+    "generated_at": "2026-06-27T13:58:55.860822Z",
     "sentences": [
       {
         "hash": "bf2b3df8a31d4b3f5ad1b1608d49876b",
@@ -5431,11 +5431,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0d4549c7962ee1c05c0fe933f208c182",
+    "text_hash": "22ed6bfd2090c592396b45b2342b0995",
     "textbook": "jk"
   },
   "grade6B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.139944Z",
+    "generated_at": "2026-06-27T13:58:55.862275Z",
     "sentences": [
       {
         "hash": "a23ab98f16d91d0aaf0a46629da39ff6",
@@ -5447,11 +5447,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7bcc6b3433ca4d4a12a797e918359ac7",
+    "text_hash": "ac2f706ddf3c790fe209fe2f667c2d96",
     "textbook": "jk"
   },
   "grade6B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.140750Z",
+    "generated_at": "2026-06-27T13:58:55.862854Z",
     "sentences": [
       {
         "hash": "4d0429aec0c51afa7cec6382983d4de1",
@@ -5463,11 +5463,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5baa88a57ee416143a727177da2fd613",
+    "text_hash": "b8fe15c0d9cbb87527a7f027c9559739",
     "textbook": "jk"
   },
   "grade6B_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.141810Z",
+    "generated_at": "2026-06-27T13:58:55.863735Z",
     "sentences": [
       {
         "hash": "3ae0d7fd33de519ba7f6460a7bf8966d",
@@ -5488,11 +5488,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d18872286493c68698825827027cc46b",
+    "text_hash": "68fd9fac03876264f07409bedab43d86",
     "textbook": "jk"
   },
   "grade6B_u6_L3.mp3": {
-    "generated_at": "2026-06-27T11:13:45.144760Z",
+    "generated_at": "2026-06-27T13:58:55.865707Z",
     "sentences": [
       {
         "hash": "cd14162287efb17182fdabac2dcc40ad",
@@ -5558,11 +5558,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "93d1f183f01ee9728ef3b2ccd8781f80",
+    "text_hash": "aa06e423d5680871f702243372ea6d4e",
     "textbook": "jk"
   },
   "grade6B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.147056Z",
+    "generated_at": "2026-06-27T13:58:55.867619Z",
     "sentences": [
       {
         "hash": "3866f711882f71dbbc1cea0d6052e314",
@@ -5619,11 +5619,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "542bee065924b6660df9771ef89c22af",
+    "text_hash": "f09177534208086fb5306b4c1da8cfc0",
     "textbook": "jk"
   },
   "grade6B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.147666Z",
+    "generated_at": "2026-06-27T13:58:55.868224Z",
     "sentences": [
       {
         "hash": "0454444c62abd0b48b23c8f7b0832685",
@@ -5635,11 +5635,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "481183864932dac8f06e4dcc85e0cb7e",
+    "text_hash": "0b42b5a9618b0159c6f1369d5482df1e",
     "textbook": "jk"
   },
   "grade6B_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.148316Z",
+    "generated_at": "2026-06-27T13:58:55.868805Z",
     "sentences": [
       {
         "hash": "b2fa9e9161908a2fa8f65ad82978b11f",
@@ -5651,11 +5651,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "faecd2e427485f95dec90ef0f29bf994",
+    "text_hash": "9b9a3b91671f6ed5d072a508ab1b994a",
     "textbook": "jk"
   },
   "grade6B_u7_L3.mp3": {
-    "generated_at": "2026-06-27T11:13:45.148864Z",
+    "generated_at": "2026-06-27T13:58:55.869235Z",
     "sentences": [
       {
         "hash": "aeb268cb9e2af81d08377d54029c2332",
@@ -5667,11 +5667,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "06e090d6bbdafad9a246c0a240aeb279",
+    "text_hash": "73539ba8a83a602f10f2c52d78d7eaad",
     "textbook": "jk"
   },
   "grade6B_u7_L4.mp3": {
-    "generated_at": "2026-06-27T11:13:45.149436Z",
+    "generated_at": "2026-06-27T13:58:55.869987Z",
     "sentences": [
       {
         "hash": "29b41f7e27870d4a8611784e7275b6f6",
@@ -5683,11 +5683,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "26a5803c8555a28de5bb3494f7d4b7c5",
+    "text_hash": "9bca66134e1837d0adfae7acd7f1eec2",
     "textbook": "jk"
   },
   "grade6B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.150334Z",
+    "generated_at": "2026-06-27T13:58:55.871819Z",
     "sentences": [
       {
         "hash": "ebcc1a685fa5766a58d503efdc81e89f",
@@ -5699,11 +5699,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b8a605ecd337dc2ae6877a4c58908814",
+    "text_hash": "8e75c90c49fb28e5e3f0b301b2bac3a8",
     "textbook": "jk"
   },
   "grade6B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.152664Z",
+    "generated_at": "2026-06-27T13:58:55.875486Z",
     "sentences": [
       {
         "hash": "ca53ad404ea0e545b6ac536e4611a9ec",
@@ -5715,11 +5715,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "44109d84a0d021afbeacf7b118028c87",
+    "text_hash": "2776637d29f759d028046dd39813af91",
     "textbook": "jk"
   },
   "grade6B_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.156074Z",
+    "generated_at": "2026-06-27T13:59:07.920543Z",
     "sentences": [
       {
         "hash": "9e7438e7c43330fda694c3c6a112a3fe",
@@ -5731,39 +5731,39 @@
         "volume": "+6%"
       },
       {
-        "hash": "9192ff97c40ee839e68a9c42b045d289",
+        "hash": "0b5eb6c8e7a19368546daeac9e4823b3",
         "idx": 1,
-        "pitch": "+18Hz",
-        "rate": "-5%",
+        "pitch": "+6Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+6%"
       },
       {
-        "hash": "458c898c17dd11be824248f52524732a",
+        "hash": "cdd5064a90b1bd53c2619350a202e093",
         "idx": 2,
         "pitch": "+6Hz",
         "rate": "-8%",
         "speaker": "Mum",
-        "voice": "en-US-EmmaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+6%"
       },
       {
-        "hash": "8aab27cff329c1988ed84d6e9489c2b8",
+        "hash": "f81499950b6a3d0593a59eddf22eec78",
         "idx": 3,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "88245c8656b0d58a3e02db71f36a926a",
+        "hash": "6cd8def89f354dd83028cd924c6a4da2",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Mum",
-        "voice": "en-US-EmmaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -5776,12 +5776,12 @@
         "volume": "+6%"
       },
       {
-        "hash": "c4bea605a7ebd3f38daf08f26ece6e4c",
+        "hash": "69db964c54ce30aeb9fe1c6927ed1e7a",
         "idx": 6,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -5794,21 +5794,21 @@
         "volume": "+6%"
       },
       {
-        "hash": "66e07c2669664091a26c4f664728deba",
+        "hash": "34af7366c44762971857ab0962172625",
         "idx": 8,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "055f242fef9bd4bee28ac80c0bd488a8",
+        "hash": "84d96e514999838cdf8916ee1c4a0c34",
         "idx": 9,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Aki",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -5830,11 +5830,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "f00dbc69aa1e05a91982417bd072076e",
+    "text_hash": "13b36e93dd05cac7a2d91cbe95514744",
     "textbook": "jk"
   },
   "grade6B_u9_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.158013Z",
+    "generated_at": "2026-06-27T13:59:07.922724Z",
     "sentences": [
       {
         "hash": "c7dee2f146f2429e146a8c1c04c34773",
@@ -5891,11 +5891,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d06e361d7122144f974972780855cf4f",
+    "text_hash": "1e2db66b98838a00115bd97842088a11",
     "textbook": "jk"
   },
   "grade6B_u9_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.159264Z",
+    "generated_at": "2026-06-27T13:59:07.923920Z",
     "sentences": [
       {
         "hash": "bfedd2c0372a8bd9d45e9ef5a2102b07",
@@ -5907,11 +5907,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "31db8b40977311a54a15fa48d96a1bc5",
+    "text_hash": "ec1eb8e226eae31950cf6efd8596e70f",
     "textbook": "jk"
   },
   "grade6B_u9_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.159894Z",
+    "generated_at": "2026-06-27T13:59:07.924815Z",
     "sentences": [
       {
         "hash": "581c3836ae1566a308787c7bae69ccc9",
@@ -5923,11 +5923,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5f48f539ee4c687445ee94d410f14276",
+    "text_hash": "25bef68d6ed88a9d339277e04492958b",
     "textbook": "jk"
   },
   "grade6B_u9_L3.mp3": {
-    "generated_at": "2026-06-27T11:13:45.160502Z",
+    "generated_at": "2026-06-27T13:59:07.925579Z",
     "sentences": [
       {
         "hash": "810cfa4ee7f97e0c5e3af2f3b3b5f7cb",
@@ -5939,11 +5939,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5b86672aa19c93a06e23871e5260f01a",
+    "text_hash": "83afdf9e21b077f5012c93fccce1e03c",
     "textbook": "jk"
   },
   "grade7A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.417843Z",
+    "generated_at": "2026-06-27T13:59:08.118988Z",
     "sentences": [
       {
         "hash": "77665abde3cf0e3a02e4a583abfc7de3",
@@ -5955,11 +5955,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "6c31db49adce1a76ca66a1140cfaebaf",
+    "text_hash": "dd32a6351b0f586a775404bc6ef04cde",
     "textbook": "hj"
   },
   "grade7A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.418603Z",
+    "generated_at": "2026-06-27T13:59:08.119500Z",
     "sentences": [
       {
         "hash": "98e9a41953ffc4fd8c6dc6b6b80787b3",
@@ -5971,11 +5971,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "a86f2171d78b4d2dcefb2ef3b289234d",
+    "text_hash": "249800b19d3d35594f15e1004fbc9b98",
     "textbook": "hj"
   },
   "grade7A_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.419291Z",
+    "generated_at": "2026-06-27T13:59:08.119982Z",
     "sentences": [
       {
         "hash": "9cb3a877dffb6f0ca195e51e6223ded1",
@@ -5987,11 +5987,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "ad6cea597c4c155fd9abfc7a2e369a5c",
+    "text_hash": "7b7a39e1f29df460c89170e7cc4c4fe7",
     "textbook": "hj"
   },
   "grade7A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.419840Z",
+    "generated_at": "2026-06-27T13:59:08.120486Z",
     "sentences": [
       {
         "hash": "65d56d6bfd60c5166c724878a2540dff",
@@ -6003,11 +6003,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "c170dc8af5bcd74d4f291652ed371bae",
+    "text_hash": "5a79d5d8e6e3aa7ca828e7365d218757",
     "textbook": "hj"
   },
   "grade7A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.420376Z",
+    "generated_at": "2026-06-27T13:59:08.121281Z",
     "sentences": [
       {
         "hash": "8c7c9fe061d1d83940170096fd26bb4f",
@@ -6019,11 +6019,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4fe997f5e7bb01d05942ea66b5bc2168",
+    "text_hash": "dd4c61bc594c4eb6e54213e9db9dae15",
     "textbook": "hj"
   },
   "grade7A_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.421029Z",
+    "generated_at": "2026-06-27T13:59:08.121752Z",
     "sentences": [
       {
         "hash": "70dc1bd62b1e509c960a748b3a1fca7b",
@@ -6035,11 +6035,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0a69970be77711d500d376aed02fed3f",
+    "text_hash": "d33fa72212b54fe901e5be6b6cbec2f2",
     "textbook": "hj"
   },
   "grade7A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.421718Z",
+    "generated_at": "2026-06-27T13:59:08.122312Z",
     "sentences": [
       {
         "hash": "468e38f9009a597fcb9fd3d0931ba7dc",
@@ -6051,11 +6051,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9f5e41773f4b73665774853aa08935a5",
+    "text_hash": "24dd68c1b675952a2eb99ba4f4609ebd",
     "textbook": "hj"
   },
   "grade7A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.422666Z",
+    "generated_at": "2026-06-27T13:59:08.123059Z",
     "sentences": [
       {
         "hash": "1d0959d9d6423f38329ba53cc023894f",
@@ -6076,11 +6076,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "23299b4ff49806ca00879125e0a8e92d",
+    "text_hash": "83c60ea3ccf9065983edfa7dd06f8e96",
     "textbook": "hj"
   },
   "grade7A_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.423588Z",
+    "generated_at": "2026-06-27T13:59:08.123515Z",
     "sentences": [
       {
         "hash": "5234ee958fd77f318e3c0ef0e08fbe87",
@@ -6092,11 +6092,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b3be03d54aa5a4776aec42655ff9a2a5",
+    "text_hash": "90ecc5012b217209ab309546551c6196",
     "textbook": "hj"
   },
   "grade7A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.426374Z",
+    "generated_at": "2026-06-27T13:59:08.125501Z",
     "sentences": [
       {
         "hash": "bc39c4c9ad7e0ce5a7eb5d1512636a29",
@@ -6108,11 +6108,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7158fce0ec6502c7940053fa876c4939",
+    "text_hash": "78e9c54b58c9fe6bc2e0b04e82d3a7f1",
     "textbook": "hj"
   },
   "grade7A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.430920Z",
+    "generated_at": "2026-06-27T13:59:08.968821Z",
     "sentences": [
       {
         "hash": "2f3ea16bcabbbf15568fd406636e5209",
@@ -6124,12 +6124,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "e9e47b6c56642f38758cfcb7e830565a",
+        "hash": "fec18522800c732d01ff54a3d22a984a",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Form",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -6160,11 +6160,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "a6a6b1f56875ad27065fc81cfd311352",
+    "text_hash": "1fcbc3caf3a7e87a432ec028fca1bd36",
     "textbook": "hj"
   },
   "grade7A_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.431472Z",
+    "generated_at": "2026-06-27T13:59:08.969823Z",
     "sentences": [
       {
         "hash": "265f5ca6d536f98dc95363e4552255ec",
@@ -6176,11 +6176,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "a17c6d1760698208ffa0c577615476bd",
+    "text_hash": "8abbb0bcb7a9c078813a233aa1bde66f",
     "textbook": "hj"
   },
   "grade7A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.432154Z",
+    "generated_at": "2026-06-27T13:59:08.970801Z",
     "sentences": [
       {
         "hash": "3d98bc92510bdfecb274ed790002d361",
@@ -6192,11 +6192,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "93ffeb84ac14ac74cbfdd12ec1e3eb82",
+    "text_hash": "2bb6562398ece4eada3640ade32d0953",
     "textbook": "hj"
   },
   "grade7A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.433883Z",
+    "generated_at": "2026-06-27T13:59:10.097160Z",
     "sentences": [
       {
         "hash": "a994217c1d711ac69f736ad5439d510d",
@@ -6208,12 +6208,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "8117fe1ee41a4abf75fe958f341e19d8",
+        "hash": "05cacd957125a8fd6d8eba1896ffb1e0",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Questions",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -6235,11 +6235,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6b1e891e73d758ac94d43933a9ea50fb",
+    "text_hash": "87d8975f994236c5fef8f3934cf75386",
     "textbook": "hj"
   },
   "grade7A_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.434330Z",
+    "generated_at": "2026-06-27T13:59:10.097982Z",
     "sentences": [
       {
         "hash": "cec70db8703360c26b894d9dc20b104e",
@@ -6251,11 +6251,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "cb81f82d2a79bca13ed18e4eb0a971d4",
+    "text_hash": "74b1915b03e26a8e5b76528aadf28661",
     "textbook": "hj"
   },
   "grade7A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.435182Z",
+    "generated_at": "2026-06-27T13:59:10.099310Z",
     "sentences": [
       {
         "hash": "ad7b19944016ae89767108467b852ab2",
@@ -6267,11 +6267,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "ff7ab2b70adf2c44a059a7589052ae0c",
+    "text_hash": "548bc26405797dbe161eacc476c9d20d",
     "textbook": "hj"
   },
   "grade7A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.435816Z",
+    "generated_at": "2026-06-27T13:59:10.101007Z",
     "sentences": [
       {
         "hash": "64f953d91882497606851931af723ec2",
@@ -6292,11 +6292,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ec596eaa656084ef86483aef1e987076",
+    "text_hash": "03d94cefbfff1c79e9512dff04081bbb",
     "textbook": "hj"
   },
   "grade7A_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.436351Z",
+    "generated_at": "2026-06-27T13:59:10.101938Z",
     "sentences": [
       {
         "hash": "bee33bb75bb9dc1fb5eddcd02ef8cc19",
@@ -6308,11 +6308,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7ce36792f3ea972885f8fc21c3d86764",
+    "text_hash": "fde3f544f2fd7fe91ef41cc2b5dea6cf",
     "textbook": "hj"
   },
   "grade7A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.438073Z",
+    "generated_at": "2026-06-27T13:59:11.958313Z",
     "sentences": [
       {
         "hash": "90a8fbd30b731f8f83ce2923fc9603c8",
@@ -6324,12 +6324,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "13ae60238afbe32bd9cb8c5a737d00b0",
+        "hash": "8d162f5278200b640ab3b3f47705ceea",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "The Music Club",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -6351,12 +6351,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "79cb12b1b66321b46909abfc30d51734",
+        "hash": "d6b817a5bfe578e4c1774a832f62922a",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "The Science Club",
-        "voice": "en-US-GuyNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+0%"
       },
       {
@@ -6369,11 +6369,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "7f5dfd9eb13d819dd676dc982dbe70aa",
+    "text_hash": "39777acee36585194b6657042d64d8af",
     "textbook": "hj"
   },
   "grade7A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.438849Z",
+    "generated_at": "2026-06-27T13:59:11.959262Z",
     "sentences": [
       {
         "hash": "cc104b0f428089297a2eb5bd35cfe300",
@@ -6385,11 +6385,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "066683f0ce4839b0725e1666e576a917",
+    "text_hash": "1a86a4a94f5b753366c14b665e217188",
     "textbook": "hj"
   },
   "grade7A_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.439386Z",
+    "generated_at": "2026-06-27T13:59:11.960655Z",
     "sentences": [
       {
         "hash": "f7fa026bc197cb8571ecd9ae6cd57ac9",
@@ -6401,11 +6401,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1844e3f6a50934f75c4b88b4493f45dd",
+    "text_hash": "aae0efa9424fe9afc013480df8596381",
     "textbook": "hj"
   },
   "grade7A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.439953Z",
+    "generated_at": "2026-06-27T13:59:11.961468Z",
     "sentences": [
       {
         "hash": "071a856421f9f6f227c2deb32bc1166e",
@@ -6417,11 +6417,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0683f10bc543b7c63ea8bcd350bbd3fb",
+    "text_hash": "9762b77552fad529e60669dbb47c5bfa",
     "textbook": "hj"
   },
   "grade7A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.440579Z",
+    "generated_at": "2026-06-27T13:59:11.962611Z",
     "sentences": [
       {
         "hash": "bf3dfb79cd38db73d5a7ffd5cb6a0aac",
@@ -6442,11 +6442,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "eb767960485393314a18fd19cff8eeb8",
+    "text_hash": "7cc3e61d95f0678b83adcaea48750eab",
     "textbook": "hj"
   },
   "grade7A_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.441009Z",
+    "generated_at": "2026-06-27T13:59:11.963222Z",
     "sentences": [
       {
         "hash": "cef1d48e64d46558eb70fd661d1a8d06",
@@ -6458,11 +6458,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "76b2eefa986efc6f6a6b509d9d99ae60",
+    "text_hash": "1203791e8a6eb895a7d39368449c2698",
     "textbook": "hj"
   },
   "grade7B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.441525Z",
+    "generated_at": "2026-06-27T13:59:11.963806Z",
     "sentences": [
       {
         "hash": "b2c3a99c353d1e183fe04b213d4e7520",
@@ -6474,11 +6474,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "50ee1f7f87b49cf024fa2994914459d5",
+    "text_hash": "bd7781f3f389c0a3a7488bf00e0aaf48",
     "textbook": "hj"
   },
   "grade7B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.441892Z",
+    "generated_at": "2026-06-27T13:59:11.964347Z",
     "sentences": [
       {
         "hash": "cbaabd23df0b0e64bc132dfef053525e",
@@ -6490,11 +6490,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "077e17ff521775a318cf619d0b65dcc6",
+    "text_hash": "1bb4791932fd31b5824c7877b9fdb68e",
     "textbook": "hj"
   },
   "grade7B_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.446073Z",
+    "generated_at": "2026-06-27T13:59:11.968495Z",
     "sentences": [
       {
         "hash": "06c3ff4ad91329dbc2d1e7869ba55af2",
@@ -6506,11 +6506,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "05bafb7f8b3df6624dc132ebaa1d8fb9",
+    "text_hash": "1b9fc59fe45199f8b804f603275780e1",
     "textbook": "hj"
   },
   "grade7B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.446742Z",
+    "generated_at": "2026-06-27T13:59:11.969170Z",
     "sentences": [
       {
         "hash": "6a2a37d76231874ebafc3797cb96cbbe",
@@ -6522,11 +6522,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "410d301b2af324138fe7723040dae302",
+    "text_hash": "c12dd868a2b67ba2a6c755101ab119b0",
     "textbook": "hj"
   },
   "grade7B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.447983Z",
+    "generated_at": "2026-06-27T13:59:11.970179Z",
     "sentences": [
       {
         "hash": "3d1ca8074038297c4747df0f1b07517b",
@@ -6547,11 +6547,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "cdb95e36fd608a4b87e9b28c6c8e99f8",
+    "text_hash": "9981a08545188d36bcfc7a4b71361192",
     "textbook": "hj"
   },
   "grade7B_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.448846Z",
+    "generated_at": "2026-06-27T13:59:11.970730Z",
     "sentences": [
       {
         "hash": "8eecf4dbba3c75a6a254fb3c74d1ed0a",
@@ -6563,11 +6563,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "d6b4c42f1b465fe425c8bc483980a6f0",
+    "text_hash": "538749a2b405a8d6eeaaeb8c1b993fb8",
     "textbook": "hj"
   },
   "grade7B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.449253Z",
+    "generated_at": "2026-06-27T13:59:11.971270Z",
     "sentences": [
       {
         "hash": "286a894e6e1d0fe4149d8b897a836c23",
@@ -6579,11 +6579,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "286d94a463f2002f691088cae4582cfc",
+    "text_hash": "ba0c76ea0af19fc992739a81b5bd47a0",
     "textbook": "hj"
   },
   "grade7B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.450601Z",
+    "generated_at": "2026-06-27T13:59:12.558839Z",
     "sentences": [
       {
         "hash": "0642614309164d66993b17940cb8bcea",
@@ -6604,12 +6604,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "957c80321920b705c450802d12af883d",
+        "hash": "1fd1f3e99a48d159f943adf73e8afc95",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Active",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+0%"
       },
       {
@@ -6622,11 +6622,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "24cf993fe612d29421c2b7d87baca82d",
+    "text_hash": "87af1938c791a4234b99ea7d51465f85",
     "textbook": "hj"
   },
   "grade7B_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.451097Z",
+    "generated_at": "2026-06-27T13:59:12.559764Z",
     "sentences": [
       {
         "hash": "1284735fc3f32b6a29e11f2f8c9bbc7e",
@@ -6638,11 +6638,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9650a4fcc948c31ef81e7927bed7b16c",
+    "text_hash": "954454d12eb636e6ea51a997c10c2e80",
     "textbook": "hj"
   },
   "grade7B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.451551Z",
+    "generated_at": "2026-06-27T13:59:12.560658Z",
     "sentences": [
       {
         "hash": "2f007ef43836da1577fb59b549a59fc6",
@@ -6654,11 +6654,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6d28cbe9348f32a17b9e502a2de02266",
+    "text_hash": "148f3a911c2aa0fbcfbf8108a6903ace",
     "textbook": "hj"
   },
   "grade7B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.452404Z",
+    "generated_at": "2026-06-27T13:59:12.561715Z",
     "sentences": [
       {
         "hash": "f124a6505a1422244bb29dd90f2cfaf3",
@@ -6679,11 +6679,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7c92ee2cc5214209541e3f0c3415dcd0",
+    "text_hash": "ef00a604a88a8767424171542e367d3b",
     "textbook": "hj"
   },
   "grade7B_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.452871Z",
+    "generated_at": "2026-06-27T13:59:12.562492Z",
     "sentences": [
       {
         "hash": "ece781546640a29b78e39294a45ed2aa",
@@ -6695,11 +6695,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e84f9ce22d8b1d7ba8b684fa388a0b6d",
+    "text_hash": "9fbf12ba9cd35e5355e7ba448214bc06",
     "textbook": "hj"
   },
   "grade7B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.457184Z",
+    "generated_at": "2026-06-27T13:59:12.563811Z",
     "sentences": [
       {
         "hash": "09c7ea93c23d2365f7148c7d723b123d",
@@ -6711,11 +6711,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "74f21d6eade35f9e83646297bf9a95e7",
+    "text_hash": "1f95031d6ee751c8ef74ade563ec9eba",
     "textbook": "hj"
   },
   "grade7B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.458206Z",
+    "generated_at": "2026-06-27T13:59:12.564685Z",
     "sentences": [
       {
         "hash": "76a895e53f081839f686510492cef323",
@@ -6736,11 +6736,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2c4ee6a4bedce16ee7686923b3d4b978",
+    "text_hash": "1cc3800a014e1d52324092acce843616",
     "textbook": "hj"
   },
   "grade7B_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.458682Z",
+    "generated_at": "2026-06-27T13:59:12.565409Z",
     "sentences": [
       {
         "hash": "c5f8a51fa93badbe022a685732827fba",
@@ -6752,11 +6752,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c19cedf9d3672ae504af0de99ea68f0e",
+    "text_hash": "bf86263f6b40b94a79f7b38854e83f89",
     "textbook": "hj"
   },
   "grade7B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.459259Z",
+    "generated_at": "2026-06-27T13:59:12.566226Z",
     "sentences": [
       {
         "hash": "9d8be8d878a171b239798be65be42b85",
@@ -6768,11 +6768,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d993f5bb17f74e2ce7bd33abad975c69",
+    "text_hash": "f6af2650c495cd401ea0fa7dd6d8d7b0",
     "textbook": "hj"
   },
   "grade7B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.460149Z",
+    "generated_at": "2026-06-27T13:59:12.567511Z",
     "sentences": [
       {
         "hash": "d1cd70cca5cb3a66046b324d0b618e6d",
@@ -6802,11 +6802,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9dd0467c0f67e0026284d801e0454fc5",
+    "text_hash": "670b27067bba3b51c509c796279001dc",
     "textbook": "hj"
   },
   "grade7B_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.460708Z",
+    "generated_at": "2026-06-27T13:59:12.568377Z",
     "sentences": [
       {
         "hash": "fd89f662ff082795022a6dab895ef5e9",
@@ -6818,11 +6818,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f089e6658e345b8a45db2000c0abed48",
+    "text_hash": "ce9ec9ef936990a2b01aaf7268ad88c6",
     "textbook": "hj"
   },
   "grade7B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.461211Z",
+    "generated_at": "2026-06-27T13:59:12.568897Z",
     "sentences": [
       {
         "hash": "c06f856bc47026192265361b9a4efb62",
@@ -6834,11 +6834,11 @@
         "volume": "+12%"
       }
     ],
-    "text_hash": "deb8b3134c653cc8ed7d5a3cc6dce159",
+    "text_hash": "3df6ca4578f9c901a85c0eb7f5065700",
     "textbook": "hj"
   },
   "grade7B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.462689Z",
+    "generated_at": "2026-06-27T13:59:12.570121Z",
     "sentences": [
       {
         "hash": "5f52e18de9751e4dd9cc4a9c1adaf260",
@@ -6859,11 +6859,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "34e1aa1b4f10e5259c606d11f4327acd",
+    "text_hash": "9b89e8453deee2ceca7cfe469a964334",
     "textbook": "hj"
   },
   "grade7B_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.463174Z",
+    "generated_at": "2026-06-27T13:59:12.570774Z",
     "sentences": [
       {
         "hash": "eff66a84575e62d7bcb392211a136f9d",
@@ -6875,11 +6875,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "cee62ea84124cdb25efcb8f67853e6b5",
+    "text_hash": "5875b1d5d56b508fa600934a098f7148",
     "textbook": "hj"
   },
   "grade7B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.464447Z",
+    "generated_at": "2026-06-27T13:59:12.574129Z",
     "sentences": [
       {
         "hash": "c3b641be9e1d15aa6104cb7e4b62bbbe",
@@ -6891,19 +6891,19 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c524a54d0e8540dd3b8e5dba12ba2814",
+    "text_hash": "a2b3c24c31f90a45edf543378b40b448",
     "textbook": "hj"
   },
   "grade7B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.469336Z",
+    "generated_at": "2026-06-27T13:59:13.359027Z",
     "sentences": [
       {
-        "hash": "1301848e07f57f5c9b1b1efb6c02fd40",
+        "hash": "7700513a95ba054b101bd40d8aefc3df",
         "idx": 0,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Gerund",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
@@ -6943,11 +6943,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7ee6d15e70604e7726122f963e8e339b",
+    "text_hash": "c20eb00ecb98cb4194f43b725f95e3e2",
     "textbook": "hj"
   },
   "grade7B_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.471931Z",
+    "generated_at": "2026-06-27T13:59:13.360348Z",
     "sentences": [
       {
         "hash": "5f6cc1bced398ed5f6f11748336befda",
@@ -6959,11 +6959,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9aadb2803166cc687c393098a1bc318c",
+    "text_hash": "c67c922fec1bab7419a88b5fd3b56686",
     "textbook": "hj"
   },
   "grade8A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.472886Z",
+    "generated_at": "2026-06-27T13:59:13.361057Z",
     "sentences": [
       {
         "hash": "f7c840f7458ff45587b83335a6472eef",
@@ -6975,11 +6975,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9408902f944ad2ea7cb655c95a7709f8",
+    "text_hash": "b31f0ca1c0266d20b7200a8962f8a220",
     "textbook": "hj"
   },
   "grade8A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.478522Z",
+    "generated_at": "2026-06-27T13:59:13.361683Z",
     "sentences": [
       {
         "hash": "4b0ae309a39e704cb03514fd31f5682e",
@@ -6991,11 +6991,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "65650e2bfe594a0d4f49ea5a49b4645b",
+    "text_hash": "57321e6eaadcda06af83b26d296a8739",
     "textbook": "hj"
   },
   "grade8A_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.481567Z",
+    "generated_at": "2026-06-27T13:59:13.363045Z",
     "sentences": [
       {
         "hash": "39c00afee4af7486485c46402b89cf8c",
@@ -7007,11 +7007,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5df73972f3cf0463f65ba6322f56c630",
+    "text_hash": "136894abb3ddb57041d3edfeefb5e120",
     "textbook": "hj"
   },
   "grade8A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.486689Z",
+    "generated_at": "2026-06-27T13:59:13.364260Z",
     "sentences": [
       {
         "hash": "c2ae1dfe11ae5251df4c05adea5356dc",
@@ -7023,11 +7023,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "3a0779c4b3db4dce6e7a53f072ebb00b",
+    "text_hash": "849c084287a918246a25d3a38ffe9cf6",
     "textbook": "hj"
   },
   "grade8A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.495872Z",
+    "generated_at": "2026-06-27T13:59:13.366119Z",
     "sentences": [
       {
         "hash": "df54fb7d90bd0115b69b1d4bd07991bd",
@@ -7057,11 +7057,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1286b2044682723cbb31b067e106ed92",
+    "text_hash": "1b6c9759dab46facb45593970ecaabbd",
     "textbook": "hj"
   },
   "grade8A_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.504431Z",
+    "generated_at": "2026-06-27T13:59:13.367280Z",
     "sentences": [
       {
         "hash": "237af43208156ebb75789ffa8ad15d73",
@@ -7073,11 +7073,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "aa71ad04f0d7403f2f21b9b393861330",
+    "text_hash": "fd48b1fb4cf74c09f16a076248859830",
     "textbook": "hj"
   },
   "grade8A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.504916Z",
+    "generated_at": "2026-06-27T13:59:13.369912Z",
     "sentences": [
       {
         "hash": "9928488081d6a753cc0c9073e985ec40",
@@ -7089,11 +7089,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "85a2eba583d504b69918b91f2590f2e2",
+    "text_hash": "dd1f052bdf5a726d74f4577505a1053e",
     "textbook": "hj"
   },
   "grade8A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.505480Z",
+    "generated_at": "2026-06-27T13:59:13.371337Z",
     "sentences": [
       {
         "hash": "e7067303dd5638873a34095f0a55a8e1",
@@ -7105,11 +7105,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "36435e5b1042619d38282fd73b156ef6",
+    "text_hash": "745888c9be9666ee46f3d50f6dff8885",
     "textbook": "hj"
   },
   "grade8A_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.505940Z",
+    "generated_at": "2026-06-27T13:59:13.372318Z",
     "sentences": [
       {
         "hash": "ce831e2991921a7923f4c49a9fa32b68",
@@ -7121,11 +7121,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "fbc5f104933ac6af522da805c59941ce",
+    "text_hash": "cda9a1c1f0dad3e840cd113a41a42019",
     "textbook": "hj"
   },
   "grade8A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.506736Z",
+    "generated_at": "2026-06-27T13:59:13.373336Z",
     "sentences": [
       {
         "hash": "8bc8c19a6cfc5924e2985995e90e25f6",
@@ -7137,11 +7137,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "d7b5b8b5b850c67acdf2952c170c429b",
+    "text_hash": "19c901441c30f2b67a56fe6502a6d48c",
     "textbook": "hj"
   },
   "grade8A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.508336Z",
+    "generated_at": "2026-06-27T13:59:14.544923Z",
     "sentences": [
       {
         "hash": "be0132fa204e03f77be525c388142d2a",
@@ -7162,12 +7162,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "585c4eb9aa9bf5087b583bbbd3acdf90",
+        "hash": "4f11579077c37a180f0b37da3c24968b",
         "idx": 2,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Present passive",
-        "voice": "en-US-EmmaNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
@@ -7198,11 +7198,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2db2df569d93f6c60b60c558d0e8e573",
+    "text_hash": "ee4e23fb94193d04813eabfbf7c06ef9",
     "textbook": "hj"
   },
   "grade8A_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.508749Z",
+    "generated_at": "2026-06-27T13:59:14.546525Z",
     "sentences": [
       {
         "hash": "ed615eb3cf64ddf37d283ed9331195dc",
@@ -7214,11 +7214,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8a968ab88ebefa048009f79187cb3f39",
+    "text_hash": "863be955b43a4977489ea06e72bcbf29",
     "textbook": "hj"
   },
   "grade8A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.509209Z",
+    "generated_at": "2026-06-27T13:59:14.547674Z",
     "sentences": [
       {
         "hash": "b0acc31bc61f59ead909f739b48e211f",
@@ -7230,11 +7230,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c36490354aba471717f2c3e7c8d5a468",
+    "text_hash": "482d00c17ee505e7ce69ca01bc9d7ac5",
     "textbook": "hj"
   },
   "grade8A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.509807Z",
+    "generated_at": "2026-06-27T13:59:14.548708Z",
     "sentences": [
       {
         "hash": "be147183803910ed3f8308a50da7d239",
@@ -7255,11 +7255,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ed0b40956ea78f97af1aebadfffb880b",
+    "text_hash": "83fb6a721e550fdda43c9acb990ea333",
     "textbook": "hj"
   },
   "grade8A_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.510224Z",
+    "generated_at": "2026-06-27T13:59:14.549695Z",
     "sentences": [
       {
         "hash": "773d9544ea441988fc568a8f66b768ea",
@@ -7271,11 +7271,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b502683edd8dfae56c6315dec80e3df8",
+    "text_hash": "1b8b477fba59e76156a15430f7a12411",
     "textbook": "hj"
   },
   "grade8A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.511329Z",
+    "generated_at": "2026-06-27T13:59:14.550353Z",
     "sentences": [
       {
         "hash": "67d82dd9b5fb162ef0268388dc8ffdc5",
@@ -7287,19 +7287,19 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "41b66fd8f9d8cadf81b3f4bbd70bf5e0",
+    "text_hash": "8a6b5303cea1fd6b392b70621a9c29f0",
     "textbook": "hj"
   },
   "grade8A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.513048Z",
+    "generated_at": "2026-06-27T13:59:17.285457Z",
     "sentences": [
       {
-        "hash": "46af30a47129494bca321389d4c8e9b8",
+        "hash": "15dcf6657cf2caf12ba2a01f0ac15d89",
         "idx": 0,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Past perfect",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -7321,12 +7321,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "2e8ec0526c5de96208cdc5f172a5e164",
+        "hash": "0844098d626d86627fae4b0e3121b4dd",
         "idx": 3,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Common signal words",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -7339,11 +7339,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b1d4e68366c6abc4b2ec61f87a323beb",
+    "text_hash": "5fc21d1237236fd6ae65261077833fef",
     "textbook": "hj"
   },
   "grade8A_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.516835Z",
+    "generated_at": "2026-06-27T13:59:17.286758Z",
     "sentences": [
       {
         "hash": "ca71c282da2a5159882a989c02f592b2",
@@ -7355,11 +7355,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "da7334808fd380dbd9a7b24087af17de",
+    "text_hash": "4b84361432517e97d3f00a8aff954505",
     "textbook": "hj"
   },
   "grade8A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.517933Z",
+    "generated_at": "2026-06-27T13:59:17.288450Z",
     "sentences": [
       {
         "hash": "f1a2c77eaa167b1ab37da725b84e4b95",
@@ -7371,11 +7371,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "37ba9a11ecf2842a0ffd3c573bff5af2",
+    "text_hash": "dde5c629e2fb6de330e950d9c248c6fe",
     "textbook": "hj"
   },
   "grade8A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.519461Z",
+    "generated_at": "2026-06-27T13:59:17.290195Z",
     "sentences": [
       {
         "hash": "e29bbd6e42ba3a3b017ee8fbc94bffb4",
@@ -7405,11 +7405,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "f6c609e7f0fb20a37af220828c6e5c14",
+    "text_hash": "fa6a825a7e24213f82e5191f5f3209b6",
     "textbook": "hj"
   },
   "grade8A_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.520197Z",
+    "generated_at": "2026-06-27T13:59:17.291934Z",
     "sentences": [
       {
         "hash": "f253b60e6607d3f8ae3c9f45e03e9567",
@@ -7421,11 +7421,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e914d46fa7f3f8f786bb3d40ed1a6d0e",
+    "text_hash": "a06c3431661ebea0444412d4bd0a4f09",
     "textbook": "hj"
   },
   "grade8A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.521110Z",
+    "generated_at": "2026-06-27T13:59:17.292783Z",
     "sentences": [
       {
         "hash": "9dc8d393691caaf61af8db45ea599be9",
@@ -7437,11 +7437,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "efdadde2a6fb8d6bd32cdbf239071d48",
+    "text_hash": "1c202f24e377e23de69663bdf8fc637c",
     "textbook": "hj"
   },
   "grade8A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.525574Z",
+    "generated_at": "2026-06-27T13:59:28.935815Z",
     "sentences": [
       {
         "hash": "27fd1ff09b9da245a2d87d852fb0ae2d",
@@ -7453,21 +7453,21 @@
         "volume": "+0%"
       },
       {
-        "hash": "466af7c427f879086921a467fe7592d0",
+        "hash": "96a6a9eae40627f01c1c085a2e7a712a",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "9d01f88158a6b8996e797bdf9891cdd6",
+        "hash": "02a2c20eb37152d5075500db869354d9",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -7480,57 +7480,57 @@
         "volume": "+0%"
       },
       {
-        "hash": "8f0cc8863aefd6b8d1f568680995a7cb",
+        "hash": "4e4f581504cadc83e03f0a57fdb542aa",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "ef2c431a837b74d7fed2a2d8e6ae23ce",
+        "hash": "4af171fa86290373edc4e5455520e60d",
         "idx": 5,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "01488a02d5b6edad4fbb766bf3a1d23e",
+        "hash": "8a5203f28e7893242441917cccd4c686",
         "idx": 6,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "4af100a3db6b8510aa62e6452f12c7d4",
+        "hash": "7d08090bcefdfa496263e3355bfedfe3",
         "idx": 7,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "a496ba046c6f3d5a9b48d43e604e4101",
-        "idx": 8,
-        "pitch": "+0Hz",
-        "rate": "-8%",
-        "speaker": "Direct",
         "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "4f6cc5d4481e4a7dc0cae01365455277",
+        "hash": "a2db75ae653485de8cf155362f07b199",
+        "idx": 8,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Direct",
+        "voice": "en-GB-RyanNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "18f454da76bf56ad0f604d29b14b6215",
         "idx": 9,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -7543,39 +7543,39 @@
         "volume": "+0%"
       },
       {
-        "hash": "e87c9d580ccdfdb05c48ff2037c4c11b",
+        "hash": "a3f00cfb62586aab8f46a4133a057894",
         "idx": 11,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "51d49765697c0d676c9035741fbb1568",
+        "hash": "0e069cbc65ea7f8af1f8b764e7463788",
         "idx": 12,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "c8a67a7cfaeca246f1c3d4c821da3ac4",
-        "idx": 13,
-        "pitch": "+12Hz",
-        "rate": "-10%",
-        "speaker": "Direct",
         "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "86c978a87f2ce294ef05bd8d8b8bb023",
+        "hash": "bf098703faadbf3b180c439ccdf877e3",
+        "idx": 13,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Direct",
+        "voice": "en-GB-RyanNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "b2859db6688c968f700889a80d4b455f",
         "idx": 14,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Reported",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -7588,11 +7588,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2338794525d5a8e9d9fc109215d5a732",
+    "text_hash": "c1a786be2f2cb16e5508fad51930cadb",
     "textbook": "hj"
   },
   "grade8A_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.526231Z",
+    "generated_at": "2026-06-27T13:59:28.936969Z",
     "sentences": [
       {
         "hash": "e98662502577bef985405ac69cec8c56",
@@ -7604,11 +7604,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0f4bacddc824491a223864c5c5466eb5",
+    "text_hash": "22c588a54ff97a9e9df0d491f5157b7a",
     "textbook": "hj"
   },
   "grade8B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.528342Z",
+    "generated_at": "2026-06-27T13:59:28.937653Z",
     "sentences": [
       {
         "hash": "497524e2f87c1b8c97ad41f7a6ce276c",
@@ -7620,11 +7620,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e20995d2f2c311edf380e0056a57100b",
+    "text_hash": "ccad6a7e09f39f914515895b9b17e726",
     "textbook": "hj"
   },
   "grade8B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.533055Z",
+    "generated_at": "2026-06-27T13:59:28.941067Z",
     "sentences": [
       {
         "hash": "135f2917d41a88357eb350a5277db623",
@@ -7690,11 +7690,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "62f1224972b68c54200b95b0ab2d488f",
+    "text_hash": "923b0e4b64a1696a4dbc58c4eb5afc5c",
     "textbook": "hj"
   },
   "grade8B_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.534280Z",
+    "generated_at": "2026-06-27T13:59:28.941793Z",
     "sentences": [
       {
         "hash": "aa4c5fed938b05b87598068581c6e18d",
@@ -7706,11 +7706,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "43813750abdd2c10d2c529446a232593",
+    "text_hash": "3f865f0547325001f1eb798bc616f849",
     "textbook": "hj"
   },
   "grade8B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.534761Z",
+    "generated_at": "2026-06-27T13:59:28.942703Z",
     "sentences": [
       {
         "hash": "d129966f0738b5ac3ccabd4fa31ea982",
@@ -7722,11 +7722,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "cb820b47fb9736c82387019f61381cdd",
+    "text_hash": "388b976d5c44e9112fd00215978e481f",
     "textbook": "hj"
   },
   "grade8B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.536027Z",
+    "generated_at": "2026-06-27T13:59:29.576453Z",
     "sentences": [
       {
         "hash": "0da15e06b94ecacbef15df008bbced12",
@@ -7738,12 +7738,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "a91213f80cad84cf1b6b62b325634263",
+        "hash": "3bdd0fd87da40c6075f0ca7e53a9eb07",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Rule",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -7756,11 +7756,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "87f4c5ba89ad7253b7e596ff205b7f19",
+    "text_hash": "39ddc0ccf6521dc17835047f6bab4e75",
     "textbook": "hj"
   },
   "grade8B_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.536595Z",
+    "generated_at": "2026-06-27T13:59:29.577348Z",
     "sentences": [
       {
         "hash": "8df91b8a0f52af7799e4daa611477ec1",
@@ -7772,11 +7772,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8a5f9393b9aee6d6050f222a6334e320",
+    "text_hash": "3835531c3115812885ce548e57413389",
     "textbook": "hj"
   },
   "grade8B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.537041Z",
+    "generated_at": "2026-06-27T13:59:29.578172Z",
     "sentences": [
       {
         "hash": "3923a7a7012412feee411ecc1135ef4c",
@@ -7788,11 +7788,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "3a8e57bcdd0e4b537c42253c20780e5f",
+    "text_hash": "0ffd1779ad6b5ad5d969b80e97f58336",
     "textbook": "hj"
   },
   "grade8B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.537697Z",
+    "generated_at": "2026-06-27T13:59:29.579153Z",
     "sentences": [
       {
         "hash": "852da7c2acc9894a346b48c50fb70597",
@@ -7813,11 +7813,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e75d4f7359bd303f64cc04c759d48ebe",
+    "text_hash": "bfa159334573ae65c776eee8bc06911f",
     "textbook": "hj"
   },
   "grade8B_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.538302Z",
+    "generated_at": "2026-06-27T13:59:29.580610Z",
     "sentences": [
       {
         "hash": "db45d5de6b337305364f091dba6f7d14",
@@ -7829,11 +7829,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "76e01272d8e1defcfac65259f3d8a915",
+    "text_hash": "580d267bd0e36afe42b4be7dd447d0cf",
     "textbook": "hj"
   },
   "grade8B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.543337Z",
+    "generated_at": "2026-06-27T13:59:29.582011Z",
     "sentences": [
       {
         "hash": "f587ff0b1ec626af31f0bbffdbc4327f",
@@ -7845,19 +7845,19 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "e5dc2bb566d160dd255a8244dccd81c1",
+    "text_hash": "396e54a2150488ae790cf048b0341ffd",
     "textbook": "hj"
   },
   "grade8B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.544550Z",
+    "generated_at": "2026-06-27T13:59:31.586169Z",
     "sentences": [
       {
-        "hash": "d3015a272a47f38ed79c23baedb0a200",
+        "hash": "778e830f1a8f19bfa5391675ca29e243",
         "idx": 0,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "First conditional",
-        "voice": "en-US-EmmaNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
@@ -7870,12 +7870,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "445d5661494e2bb541d98025bb50d0fe",
+        "hash": "b4397bc41e1d7d0e727c9aff0004b9a9",
         "idx": 2,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Tip",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
@@ -7888,11 +7888,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "58e3460dde0e54d3cf655aeac9e2335e",
+    "text_hash": "bd0a31ed8f6df0c60f4f7e4753dce93c",
     "textbook": "hj"
   },
   "grade8B_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.544953Z",
+    "generated_at": "2026-06-27T13:59:31.587138Z",
     "sentences": [
       {
         "hash": "9d6d2c5bc2ecdb816e5b5b57d95f0861",
@@ -7904,11 +7904,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "253d6b9b0edbacfe88c45d81c43e1a14",
+    "text_hash": "1d9d2210e6562313116c8475f43a7878",
     "textbook": "hj"
   },
   "grade8B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.545497Z",
+    "generated_at": "2026-06-27T13:59:31.588144Z",
     "sentences": [
       {
         "hash": "d67d7d0a977dee54bc6a78ac30a3ffab",
@@ -7920,11 +7920,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "28d0101f124d0d247ff55273b3503e88",
+    "text_hash": "cc4daa90b5f8ec2b66f4d9fe7f865c03",
     "textbook": "hj"
   },
   "grade8B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.546803Z",
+    "generated_at": "2026-06-27T13:59:31.590100Z",
     "sentences": [
       {
         "hash": "717ae2fe420683f59dd6d349e0ebfa29",
@@ -7972,11 +7972,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "819fc3eb4d196001a2a5653b953ebc7f",
+    "text_hash": "a013b904d5db0a1961b3137f177ea0df",
     "textbook": "hj"
   },
   "grade8B_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.547534Z",
+    "generated_at": "2026-06-27T13:59:31.591257Z",
     "sentences": [
       {
         "hash": "66bf7a3c0164edf9ddba1cdccdd75390",
@@ -7988,11 +7988,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6b5169a31328c335db6a4203ba82bcf2",
+    "text_hash": "c63db1e4d1d03350c99cd931959be097",
     "textbook": "hj"
   },
   "grade8B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.548068Z",
+    "generated_at": "2026-06-27T13:59:31.592204Z",
     "sentences": [
       {
         "hash": "98fe34bef64267d8de003adadda1ffff",
@@ -8004,11 +8004,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b5122b407f23993bd9e787d7d13ceae7",
+    "text_hash": "fa0a1be65b9873c02e312f764e141751",
     "textbook": "hj"
   },
   "grade8B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.549048Z",
+    "generated_at": "2026-06-27T13:59:31.594282Z",
     "sentences": [
       {
         "hash": "d794baab7aa1ffa78c36f78f7cc0d98f",
@@ -8038,11 +8038,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "df5fc7a70d0d747a5d90a06e24f582c3",
+    "text_hash": "668bc9824c7738aede8564ea24408695",
     "textbook": "hj"
   },
   "grade8B_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.551182Z",
+    "generated_at": "2026-06-27T13:59:31.594952Z",
     "sentences": [
       {
         "hash": "0723b79a619fdd4063ee08750d4267fc",
@@ -8054,11 +8054,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0422ae7f8031d6994084659bbf5c3a27",
+    "text_hash": "17a3ed32971efd0ece8c38770267a125",
     "textbook": "hj"
   },
   "grade8B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.554666Z",
+    "generated_at": "2026-06-27T13:59:31.595967Z",
     "sentences": [
       {
         "hash": "c30032f149661a926b6425367bf17ab6",
@@ -8070,11 +8070,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "3c48b2c1c6fb74259e1892b038731dc7",
+    "text_hash": "a3fb093696e14348625bcd502b224e02",
     "textbook": "hj"
   },
   "grade8B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.555481Z",
+    "generated_at": "2026-06-27T13:59:31.596923Z",
     "sentences": [
       {
         "hash": "693a76fcc44608651d9d0487d9816fdd",
@@ -8095,11 +8095,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1614f873c929597b7d788dc555c85a55",
+    "text_hash": "8976d3437442108e75dedd8ce2642748",
     "textbook": "hj"
   },
   "grade8B_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.555973Z",
+    "generated_at": "2026-06-27T13:59:31.597610Z",
     "sentences": [
       {
         "hash": "2960d6b62fd7d5b945b79f7ac32aa984",
@@ -8111,11 +8111,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "6923579cef6bacdc10f10a2070745fe7",
+    "text_hash": "7726a3a624678e909054d984740918fd",
     "textbook": "hj"
   },
   "grade8B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.556409Z",
+    "generated_at": "2026-06-27T13:59:31.599886Z",
     "sentences": [
       {
         "hash": "9c5fd4f37a0ac13bbe4c536ed098326f",
@@ -8127,11 +8127,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0fb3d6ff668d6c1aa1b7333910a3d748",
+    "text_hash": "31ee715b1d3d6678f4997552c28a6e8b",
     "textbook": "hj"
   },
   "grade8B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.557592Z",
+    "generated_at": "2026-06-27T13:59:33.696465Z",
     "sentences": [
       {
         "hash": "88731a006fcf36f7c2094e0e72ac3bc4",
@@ -8143,12 +8143,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "cf14664299c5c13f0efc6e96b3ec09ae",
+        "hash": "29a1dfa83eb1b57b49bd67dd6bffc46f",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Negative",
-        "voice": "en-US-JennyNeural",
+        "voice": "en-US-DavisNeural",
         "volume": "+0%"
       },
       {
@@ -8161,12 +8161,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "781a2daa829c5504b2c42ace930c8fb3",
+        "hash": "2e505aafd1d4d6e6d699f8a9f9013873",
         "idx": 3,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Negative",
-        "voice": "en-US-JennyNeural",
+        "voice": "en-US-DavisNeural",
         "volume": "+0%"
       },
       {
@@ -8179,11 +8179,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "00927317cb9743d80c6d05ef20696866",
+    "text_hash": "ec6b38f2f26fbb4d8dc2bdfda9b76252",
     "textbook": "hj"
   },
   "grade8B_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.558198Z",
+    "generated_at": "2026-06-27T13:59:33.697271Z",
     "sentences": [
       {
         "hash": "c42f86d92317edc581c4c4228b9a7a19",
@@ -8195,11 +8195,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9c1bb3c890c94dc93bdcc2cd61efb1af",
+    "text_hash": "906e8ce1e707eb04ed71c35189b92483",
     "textbook": "hj"
   },
   "grade9A_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:45.560803Z",
+    "generated_at": "2026-06-27T13:59:33.701511Z",
     "sentences": [
       {
         "hash": "b44e1bf8815893ef89db884a17ad545d",
@@ -8319,11 +8319,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "06ceca0c9a631fffcc6d4404546c4831",
+    "text_hash": "a1e5dc2fbadf4c0e76c6c47dc955fe53",
     "textbook": "hj"
   },
   "grade9A_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:45.561852Z",
+    "generated_at": "2026-06-27T13:59:33.702736Z",
     "sentences": [
       {
         "hash": "a02b987ed84b44b39e6143cde0e55c36",
@@ -8344,11 +8344,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c33288826e47e1c9ce975ef757f1140c",
+    "text_hash": "06ac8cceeae017e2ab058d9b4eb1ffac",
     "textbook": "hj"
   },
   "grade9A_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:45.562312Z",
+    "generated_at": "2026-06-27T13:59:33.704001Z",
     "sentences": [
       {
         "hash": "0f37034cec6774b070b45d54e9488b80",
@@ -8360,108 +8360,108 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "168380e322ef85b80e51c0dc1a4c98f5",
+    "text_hash": "84b8515f7238ecc241abc901b4af330b",
     "textbook": "hj"
   },
   "grade9A_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:52.921304Z",
+    "generated_at": "2026-06-27T13:59:50.765138Z",
     "sentences": [
       {
-        "hash": "1a2f5d7eb48d44c6d75e0b8563b44e5a",
+        "hash": "a5b370ee796ccdd3fec9de73d91b4d12",
         "idx": 0,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "Reporter",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "8bd441edc6a1face4023850a2515cd79",
+        "hash": "3bb770512c1277018d52f6fc33551745",
         "idx": 1,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Edison",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
-        "hash": "04e1dd3dc75e6668f0ffc317a38329d8",
+        "hash": "a8501336d07b4e41bc58601cf39d6ce3",
         "idx": 2,
-        "pitch": "+22Hz",
-        "rate": "+1%",
+        "pitch": "+10Hz",
+        "rate": "-2%",
         "speaker": "Reporter",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+12%"
       },
       {
-        "hash": "6416d7bdfe1960ef2c679936523bb6ae",
+        "hash": "7ca80197c3824ea0b2cd0c9be677b116",
         "idx": 3,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Edison",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
-        "hash": "6d90dfed54cc767db0e3f0b66d2e8d24",
+        "hash": "326cef1e48d2de1976ade092da273039",
         "idx": 4,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "Reporter",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "89b977c29333c313e4736136b5f78fb9",
+        "hash": "a5895d004b33db168891ee1418c71878",
         "idx": 5,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Edison",
-        "voice": "en-GB-RyanNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "ace36802c445d2aac72eb15570b1db6f",
-        "idx": 6,
-        "pitch": "+24Hz",
-        "rate": "-7%",
-        "speaker": "Reporter",
         "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
-        "hash": "4109610a375a489a020f619becaf6cf3",
+        "hash": "56c205b0338e9235ce82e3a87a3f8449",
+        "idx": 6,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Reporter",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "5914582432cb593b3acd3ad1737e3476",
         "idx": 7,
-        "pitch": "+6Hz",
-        "rate": "-8%",
+        "pitch": "+18Hz",
+        "rate": "-5%",
         "speaker": "Edison",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+6%"
       },
       {
-        "hash": "18db49be0808a346849c3c62e3efb64d",
+        "hash": "4efcb61a3ef4f1216bef38742f7fcc58",
         "idx": 8,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "Reporter",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "485aa1e2332618c5feb2643779767e3f",
+        "hash": "127c3887914005126db579b63972739a",
         "idx": 9,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Edison",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "fb29b31df5dc9bf9bbc2106da39bd103",
+    "text_hash": "1f5975bddfdd28fdb0cc4379c2bebdce",
     "textbook": "hj"
   },
   "grade9A_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:52.923397Z",
+    "generated_at": "2026-06-27T13:59:50.766700Z",
     "sentences": [
       {
         "hash": "1d08c09a23a077ed2c172abdd62f4014",
@@ -8482,11 +8482,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "b2ab5598a54b5f620632a0969688e196",
+    "text_hash": "243a774c6503918731e26702a2bcd7b5",
     "textbook": "hj"
   },
   "grade9A_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:52.924386Z",
+    "generated_at": "2026-06-27T13:59:50.768283Z",
     "sentences": [
       {
         "hash": "ba70fa3991fbf7c74ff928a9a7e43d00",
@@ -8498,11 +8498,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "324212c2b858a5c35fac2edb7bbf4eac",
+    "text_hash": "371847f5981a858dd0ed387522273074",
     "textbook": "hj"
   },
   "grade9A_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:56.869914Z",
+    "generated_at": "2026-06-27T13:59:50.773514Z",
     "sentences": [
       {
         "hash": "b2fb88459c6224c24152f4191c9032e9",
@@ -8640,11 +8640,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7426979ed63c1a6a4cb21f29b2f91874",
+    "text_hash": "6a9ec90a38181a72c206cda33c0ca7f1",
     "textbook": "hj"
   },
   "grade9A_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:56.871836Z",
+    "generated_at": "2026-06-27T13:59:50.775162Z",
     "sentences": [
       {
         "hash": "fd1cf603e8b96a607cdd5fc1a42d1831",
@@ -8674,11 +8674,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5190ace15b257799c7db2f899fbf949e",
+    "text_hash": "da050328a9f8fbf6526f4505a37882bb",
     "textbook": "hj"
   },
   "grade9A_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:56.873252Z",
+    "generated_at": "2026-06-27T13:59:50.776247Z",
     "sentences": [
       {
         "hash": "e0c0c8b82f0fb45f1d2e7c1df35eff8f",
@@ -8690,11 +8690,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "03466223fda7f31ce50b024745d186f5",
+    "text_hash": "4bf6ef539e23d23e1d289a967acb2e5e",
     "textbook": "hj"
   },
   "grade9A_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:56.874110Z",
+    "generated_at": "2026-06-27T13:59:50.777828Z",
     "sentences": [
       {
         "hash": "22ae61f70df21932ee99b54daf15adc9",
@@ -8706,11 +8706,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4e9376c1bbc0036db147de0125dde338",
+    "text_hash": "ccc0c1cf696bf593fed058e8e9608377",
     "textbook": "hj"
   },
   "grade9A_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:56.875649Z",
+    "generated_at": "2026-06-27T13:59:50.779686Z",
     "sentences": [
       {
         "hash": "533a79ac4513a49725aacd69544a3bc7",
@@ -8749,11 +8749,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "615a47245c79b471d90886677a782a87",
+    "text_hash": "aab9686babfcd0f1c17db70635168a97",
     "textbook": "hj"
   },
   "grade9A_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:56.877146Z",
+    "generated_at": "2026-06-27T13:59:50.781813Z",
     "sentences": [
       {
         "hash": "52a52ec0836644c3de8ad6d273b8160a",
@@ -8765,11 +8765,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "97a7cda71607ea050bcc47c0ebc03fe1",
+    "text_hash": "e83196c68447c908a56fd41c7e943428",
     "textbook": "hj"
   },
   "grade9A_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:13:56.880944Z",
+    "generated_at": "2026-06-27T13:59:50.785794Z",
     "sentences": [
       {
         "hash": "d46450d1db4c900dfe250857f51dce84",
@@ -8880,11 +8880,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "d4d286e6e64cbf3f3ed4ec3ee59c604e",
+    "text_hash": "47cc8a670d397954f538f7d64dd362ba",
     "textbook": "hj"
   },
   "grade9A_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:13:56.882116Z",
+    "generated_at": "2026-06-27T13:59:50.787146Z",
     "sentences": [
       {
         "hash": "d223f5854f2f8ae84ffdbbba2e234cfd",
@@ -8914,11 +8914,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "207042b11107cddf986d649ee2ce0375",
+    "text_hash": "f569c2b75fac1abb5839ba65259b41d3",
     "textbook": "hj"
   },
   "grade9A_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:13:56.884511Z",
+    "generated_at": "2026-06-27T13:59:50.788157Z",
     "sentences": [
       {
         "hash": "b77bfd6b6eef54da0888617af43658d2",
@@ -8930,11 +8930,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "588f4c67dc781b000a20d0ed23955bd1",
+    "text_hash": "b2b2d43e4fd9f1a0e364b5245c04b18b",
     "textbook": "hj"
   },
   "grade9A_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:03.925607Z",
+    "generated_at": "2026-06-27T13:59:50.791804Z",
     "sentences": [
       {
         "hash": "86b5656fde4f2c9086334e2c802fd1a5",
@@ -9054,11 +9054,11 @@
         "volume": "+6%"
       }
     ],
-    "text_hash": "caa3c9f098d900cdf2f5d52b0e05af3f",
+    "text_hash": "b3686d740992a7fe4331d83400049335",
     "textbook": "hj"
   },
   "grade9A_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:03.928519Z",
+    "generated_at": "2026-06-27T13:59:50.796983Z",
     "sentences": [
       {
         "hash": "74701c063fd7aeea527970b611e66578",
@@ -9106,11 +9106,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "8c502176ebe08c54eaebabf1318cf988",
+    "text_hash": "2e1e94b8c20b7b26599b9e8cbbc32f89",
     "textbook": "hj"
   },
   "grade9A_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:03.929520Z",
+    "generated_at": "2026-06-27T13:59:50.798171Z",
     "sentences": [
       {
         "hash": "2c18db2f753eeae41ab290fd89622d7e",
@@ -9122,11 +9122,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "a89ff2d761de85c09670ce0502697f9c",
+    "text_hash": "aa03bc0f1505171c88a19bed99a9afb8",
     "textbook": "hj"
   },
   "grade9A_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:03.935862Z",
+    "generated_at": "2026-06-27T14:00:01.881736Z",
     "sentences": [
       {
         "hash": "e518cb07974adb6ca0408b37408cbe6e",
@@ -9147,12 +9147,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "7a08d128690f26d92fc0d02d26db5e11",
+        "hash": "af524e23471d48115ee2cd435c110a68",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Scientist Wang",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -9192,12 +9192,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "8982e01e752bda6f4157ceae86921a0e",
+        "hash": "4c15d5ac2b2b5f24472f36bf445feb22",
         "idx": 7,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Scientist Wang",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -9228,20 +9228,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "a322e050248598a3a1f22bf19328431a",
+        "hash": "cb931b5bdb96f9ad4f854a170c301f3f",
         "idx": 11,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Scientist Wang",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "4f46ec14696f099e8084278d32f95fef",
+    "text_hash": "5f4cc3582599bd48bb7259c50c08204c",
     "textbook": "hj"
   },
   "grade9A_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:03.942307Z",
+    "generated_at": "2026-06-27T14:00:04.038992Z",
     "sentences": [
       {
         "hash": "2415511b3d88203178f64e459485361c",
@@ -9262,12 +9262,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "f6ab22d0f87846d765fe3673653cd177",
+        "hash": "175335077fc486979eca7049d4fec367",
         "idx": 2,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Reported",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
@@ -9289,12 +9289,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "29b22acd4c81f3db00575bd9622cc2c5",
+        "hash": "37840265fc09ad2f54e52a6e34a87e21",
         "idx": 5,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Reported",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
@@ -9316,12 +9316,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "41fd0490a049a76a1cadf1fca8343030",
+        "hash": "5dbf966c628946d5ee89a84ea12865d3",
         "idx": 8,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Reported",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
@@ -9343,11 +9343,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2677d31c61f07006b4a99ec162e72119",
+    "text_hash": "37d5f0148aab3d98777af0c959983e04",
     "textbook": "hj"
   },
   "grade9A_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:03.943247Z",
+    "generated_at": "2026-06-27T14:00:04.040397Z",
     "sentences": [
       {
         "hash": "8bbadeac2e69d4922e9683f96b1688b9",
@@ -9359,11 +9359,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4bf305fc260f59cf34797e615c55e77e",
+    "text_hash": "8e267167457b3a433e470b41ae716763",
     "textbook": "hj"
   },
   "grade9A_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.647501Z",
+    "generated_at": "2026-06-27T14:00:20.009603Z",
     "sentences": [
       {
         "hash": "3c7b88fcbd3eae199da20e03f10066e8",
@@ -9375,119 +9375,119 @@
         "volume": "+0%"
       },
       {
-        "hash": "0b4a87895f06a4fcb8b2bfb172ca77e3",
+        "hash": "fb7a673a073876965264e5086dc3e2e0",
         "idx": 1,
-        "pitch": "+24Hz",
-        "rate": "-7%",
-        "speaker": "Me",
-        "voice": "en-US-AnaNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "bec1482639b19a9987e5bdba837f40d3",
-        "idx": 2,
-        "pitch": "+0Hz",
-        "rate": "-8%",
-        "speaker": "Aido",
-        "voice": "en-US-ChristopherNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "e31eeeb125e9e23cf114adb9e8e0e33a",
-        "idx": 3,
-        "pitch": "+22Hz",
-        "rate": "+1%",
-        "speaker": "Me",
-        "voice": "en-US-AnaNeural",
-        "volume": "+12%"
-      },
-      {
-        "hash": "2ca3dd2781cc0e987aa207bada581a83",
-        "idx": 4,
         "pitch": "+12Hz",
         "rate": "-10%",
-        "speaker": "Aido",
+        "speaker": "Me",
         "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
-        "hash": "e4ec194f7ff264b7c330b5e5fe394508",
-        "idx": 5,
-        "pitch": "+24Hz",
-        "rate": "-7%",
-        "speaker": "Me",
-        "voice": "en-US-AnaNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "7118c19331191be4b830aff5c53bcacb",
-        "idx": 6,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "hash": "a37c0a4070bb6c2bca9e3eb8a71067ee",
+        "idx": 2,
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Aido",
-        "voice": "en-US-ChristopherNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "a818540bee8405ac87785ef68bfadacd",
-        "idx": 7,
-        "pitch": "+24Hz",
-        "rate": "-7%",
-        "speaker": "Me",
         "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "7c2c89a307186ef2d3d3ae512c44a0ca",
-        "idx": 8,
-        "pitch": "+0Hz",
-        "rate": "-8%",
-        "speaker": "Aido",
-        "voice": "en-US-ChristopherNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "db1931f5048c522446e973b44c6e68b7",
-        "idx": 9,
-        "pitch": "+22Hz",
-        "rate": "+1%",
+        "hash": "3fa4f791e2422a26bc6ca90f7a10a0ab",
+        "idx": 3,
+        "pitch": "+10Hz",
+        "rate": "-2%",
         "speaker": "Me",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+12%"
       },
       {
-        "hash": "332599561f6aaf6eaa05269ef6c2e960",
-        "idx": 10,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "hash": "fc3a4457722aebea92871246ef35d612",
+        "idx": 4,
+        "pitch": "+24Hz",
+        "rate": "-7%",
         "speaker": "Aido",
-        "voice": "en-US-ChristopherNeural",
-        "volume": "+0%"
-      },
-      {
-        "hash": "ec00f7031962843070ab4b3bd0e426a0",
-        "idx": 11,
-        "pitch": "+12Hz",
-        "rate": "-5%",
-        "speaker": "Me",
         "voice": "en-US-AnaNeural",
         "volume": "+0%"
       },
       {
-        "hash": "32c7e3100126938e4dd4fa95b202100c",
-        "idx": 12,
-        "pitch": "+6Hz",
-        "rate": "-8%",
-        "speaker": "Aido",
+        "hash": "450cb6354e4f65bd8c4ad863784bddce",
+        "idx": 5,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Me",
         "voice": "en-US-ChristopherNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "28bbb01feeef41d2a67a9662e0a7ad34",
+        "idx": 6,
+        "pitch": "+12Hz",
+        "rate": "-5%",
+        "speaker": "Aido",
+        "voice": "en-US-AnaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "415803a1dad6265ba4b07145db1892c7",
+        "idx": 7,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Me",
+        "voice": "en-US-ChristopherNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "b871e20f286f53b2a1002417090b1728",
+        "idx": 8,
+        "pitch": "+12Hz",
+        "rate": "-5%",
+        "speaker": "Aido",
+        "voice": "en-US-AnaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "e8e68470445212aea3da152fb432a6a8",
+        "idx": 9,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Me",
+        "voice": "en-US-ChristopherNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "6973195402a0d54cd7d386c80b58f0bb",
+        "idx": 10,
+        "pitch": "+12Hz",
+        "rate": "-5%",
+        "speaker": "Aido",
+        "voice": "en-US-AnaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "99403cbebbd23fd215fd346a166fd117",
+        "idx": 11,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Me",
+        "voice": "en-US-ChristopherNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "610bcffd89a9535169223e1b6dbdb929",
+        "idx": 12,
+        "pitch": "+18Hz",
+        "rate": "-5%",
+        "speaker": "Aido",
+        "voice": "en-US-AnaNeural",
         "volume": "+6%"
       }
     ],
-    "text_hash": "b1392e59c77f065f42a6e25d0e2dcc57",
+    "text_hash": "86c3b60545c85af9c8c81928212a3b76",
     "textbook": "hj"
   },
   "grade9A_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.649107Z",
+    "generated_at": "2026-06-27T14:00:20.664849Z",
     "sentences": [
       {
         "hash": "c081a7c4eb2f9840bf54b99da316bc57",
@@ -9508,20 +9508,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "5dfc0792e57676b08637f17af6b2fcd6",
+        "hash": "3021ee8fdf2000e8645b541284357243",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Tip",
-        "voice": "en-US-DavisNeural",
+        "voice": "en-US-JennyNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "4c2cda9fe00f423d86937ec635c8c687",
+    "text_hash": "f9ec9909925b69c76d4d510af9330a49",
     "textbook": "hj"
   },
   "grade9A_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.650490Z",
+    "generated_at": "2026-06-27T14:00:20.666797Z",
     "sentences": [
       {
         "hash": "371ed130f2734700827e3b9368e78725",
@@ -9533,11 +9533,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "fe1660e715794af0acdd12264a8cbaa3",
+    "text_hash": "cd8e6f8ce54f120ea1a6b0d0ae053f45",
     "textbook": "hj"
   },
   "grade9B_u1_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.651431Z",
+    "generated_at": "2026-06-27T14:00:20.667598Z",
     "sentences": [
       {
         "hash": "04abd60f29dd532050dd0f7723636d60",
@@ -9549,11 +9549,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c29ac1a3078a30ccce38dc0b8321cf6b",
+    "text_hash": "e8e18e4d24b61611b91e762470aea6ae",
     "textbook": "hj"
   },
   "grade9B_u1_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.653345Z",
+    "generated_at": "2026-06-27T14:00:21.456067Z",
     "sentences": [
       {
         "hash": "448553aab83af8a1e1707ed586a37366",
@@ -9592,20 +9592,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "6cebaf39b3b432f17ae02f97e233b516",
+        "hash": "beeab18efce99e5dd90b3e4cb5bbc31c",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Time words",
-        "voice": "en-US-GuyNeural",
+        "voice": "en-US-AriaNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "cf35269da88800b311273be33f37365a",
+    "text_hash": "e5dc143d8029d8001d01873f519373f5",
     "textbook": "hj"
   },
   "grade9B_u1_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.655768Z",
+    "generated_at": "2026-06-27T14:00:21.457065Z",
     "sentences": [
       {
         "hash": "107a97d1a9e4610dffc35587583118f6",
@@ -9617,11 +9617,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "258364ffaa04061e70bbfd496adecc55",
+    "text_hash": "963361311cb53fb400d915b7df3a5483",
     "textbook": "hj"
   },
   "grade9B_u2_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.656921Z",
+    "generated_at": "2026-06-27T14:00:21.458688Z",
     "sentences": [
       {
         "hash": "98bf42a011c81bd10166595ec0f21839",
@@ -9633,11 +9633,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "539a42de82b08de5ffb9b87da8248a07",
+    "text_hash": "4f2d72d71756d520a7569e1a02acec35",
     "textbook": "hj"
   },
   "grade9B_u2_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.660398Z",
+    "generated_at": "2026-06-27T14:00:22.950258Z",
     "sentences": [
       {
         "hash": "7b13ec90f3538d67f9589a02340da278",
@@ -9676,12 +9676,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "7baa9c06bfe37d6526739c65c0ab6038",
+        "hash": "9c9f8141909a0ca1fd27f3efc5271224",
         "idx": 4,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Common time markers",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -9712,11 +9712,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "1fc131ab077d611f1ca0856b377ce15c",
+    "text_hash": "2f53c0547ddf3c633994e05069eb3b6c",
     "textbook": "hj"
   },
   "grade9B_u2_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.661180Z",
+    "generated_at": "2026-06-27T14:00:22.951895Z",
     "sentences": [
       {
         "hash": "a4afb05107da6932ded657bf1ac1cf2f",
@@ -9728,19 +9728,19 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "2193ff4eb1bd42b5cf565f312eec41f8",
+    "text_hash": "f67f66f9ebcb62b3e4806c760e266f1b",
     "textbook": "hj"
   },
   "grade9B_u3_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.665915Z",
+    "generated_at": "2026-06-27T14:00:23.812287Z",
     "sentences": [
       {
-        "hash": "41fa8d9c09dc5d179b718eb5d1bd0ce6",
+        "hash": "9fde4f3e9613f571f646be899ff47f86",
         "idx": 0,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Tour Guide",
-        "voice": "en-US-AriaNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -9870,11 +9870,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5eebacf39e7ef012add326e6043f0140",
+    "text_hash": "2b6f80061a48e56c2fcd3cc4f88880e5",
     "textbook": "hj"
   },
   "grade9B_u3_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.668330Z",
+    "generated_at": "2026-06-27T14:00:24.702484Z",
     "sentences": [
       {
         "hash": "18a6a7a71185ab659990eed543143ae6",
@@ -9886,20 +9886,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "2729a565221a0f7b76d75ca6a87ffbec",
+        "hash": "4235b0598d793a748c54634a2d7e779b",
         "idx": 1,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Tip",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-AnaNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "70258f519abd0e041a56d58be2e317ce",
+    "text_hash": "69822f2b842422201317c069255c70ce",
     "textbook": "hj"
   },
   "grade9B_u3_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.669546Z",
+    "generated_at": "2026-06-27T14:00:24.705137Z",
     "sentences": [
       {
         "hash": "46ca0466198b19a0596f19bbc0911416",
@@ -9911,11 +9911,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "5345fcac522d88c3fb2a4e9957e5b2c8",
+    "text_hash": "811c197a1fbbf789fdbfaebc101035bc",
     "textbook": "hj"
   },
   "grade9B_u4_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.671449Z",
+    "generated_at": "2026-06-27T14:00:24.707321Z",
     "sentences": [
       {
         "hash": "0f01c984b62fa748c32966d8fba04849",
@@ -9945,11 +9945,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "ba26a5d9df41478048ca17a05d2a47d9",
+    "text_hash": "7808b0afcc62107a1875c66fb20b310b",
     "textbook": "hj"
   },
   "grade9B_u4_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.673004Z",
+    "generated_at": "2026-06-27T14:00:24.709514Z",
     "sentences": [
       {
         "hash": "c672de809e5513779f391bc9a66c50c9",
@@ -9997,11 +9997,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "56b439a55971b06016a93573e6c8cb86",
+    "text_hash": "8ddca00bc1d7c0a062745e1112dc6998",
     "textbook": "hj"
   },
   "grade9B_u4_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.674639Z",
+    "generated_at": "2026-06-27T14:00:24.713148Z",
     "sentences": [
       {
         "hash": "678e5223f7ca17f1c5d94eb6d8dbfa75",
@@ -10049,11 +10049,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "fca3554257222820f55b5c3988a7bf40",
+    "text_hash": "aaf5488770ed11d00be40aefc4cc4ea8",
     "textbook": "hj"
   },
   "grade9B_u5_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:04.681368Z",
+    "generated_at": "2026-06-27T14:00:24.717343Z",
     "sentences": [
       {
         "hash": "f854f448d574d2c902e7805c98e94b4a",
@@ -10155,11 +10155,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "4773971b6d73cb1bbaf2d57d25022d0b",
+    "text_hash": "85d0bdb5a5226edcc821ebcc957ac6ba",
     "textbook": "hj"
   },
   "grade9B_u5_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:04.682448Z",
+    "generated_at": "2026-06-27T14:00:24.718453Z",
     "sentences": [
       {
         "hash": "9d7f2a07636e9f5a808c7db4f83dc0c9",
@@ -10189,11 +10189,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "7d92ced1a2b46b1584cc6eae31f66af7",
+    "text_hash": "342ec5b848c0eebafddd154cf44a2339",
     "textbook": "hj"
   },
   "grade9B_u5_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:04.683059Z",
+    "generated_at": "2026-06-27T14:00:24.719118Z",
     "sentences": [
       {
         "hash": "1f4bb2d9666a3794c776faa5826e6ad2",
@@ -10205,19 +10205,19 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "c2ee9226772a0af7c768275e69b840da",
+    "text_hash": "86ca3bcc2309d49e473e8e05947b4814",
     "textbook": "hj"
   },
   "grade9B_u6_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:11.989020Z",
+    "generated_at": "2026-06-27T14:00:43.813187Z",
     "sentences": [
       {
-        "hash": "e7479239a1e07bee295935ebf178ad93",
+        "hash": "8f7b6374affe75e1853a457905895f1f",
         "idx": 0,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10230,12 +10230,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "607012624886f12768062f05f34e7810",
+        "hash": "6ac95672f325d2c7b65c98bd8bab9f26",
         "idx": 2,
         "pitch": "+12Hz",
         "rate": "-10%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10248,12 +10248,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "d6986cadec0f02adc1f0e487d080589c",
+        "hash": "e5d86a577a0815fbb9a1ea9aba69785f",
         "idx": 4,
         "pitch": "+6Hz",
         "rate": "-8%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+6%"
       },
       {
@@ -10266,12 +10266,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "261c32e0904895a3443a730501cf1754",
+        "hash": "9f68c05f9c0e289a17af43bca75b457a",
         "idx": 6,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10284,12 +10284,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "c39cf2f9b614fc2495ae48d0304ebc59",
+        "hash": "f4cae7e4256d7692478420017cad3cbc",
         "idx": 8,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10302,12 +10302,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "01e06cbc60230fd23fbb73d063c97b49",
+        "hash": "49c747f54652b1b59f8a18a13adeb95d",
         "idx": 10,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10320,12 +10320,12 @@
         "volume": "+6%"
       },
       {
-        "hash": "f6d553f2ea52308954c524af792ea080",
+        "hash": "6166a31016540bf3d02cca29d1c89d39",
         "idx": 12,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       },
       {
@@ -10338,20 +10338,20 @@
         "volume": "+6%"
       },
       {
-        "hash": "d609db68f9f985944d93e033d6ec4ed6",
+        "hash": "1b34571a1ab7dae6ac2db94e48c5f34f",
         "idx": 14,
         "pitch": "+10Hz",
         "rate": "-2%",
         "speaker": "Guo",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+12%"
       }
     ],
-    "text_hash": "c5381bcadf1e54ae754fd8cd09e3f421",
+    "text_hash": "19583adecc72704b8c42eeaae48741c9",
     "textbook": "hj"
   },
   "grade9B_u6_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:11.990882Z",
+    "generated_at": "2026-06-27T14:00:43.816134Z",
     "sentences": [
       {
         "hash": "7561f78379ef554cc6e5177c67048ff6",
@@ -10390,11 +10390,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "33ea4e59d93ed2a09e5f3a3b4ccab1ca",
+    "text_hash": "48b2f8381b36de5e388fd14d73553292",
     "textbook": "hj"
   },
   "grade9B_u6_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:11.992903Z",
+    "generated_at": "2026-06-27T14:00:45.964085Z",
     "sentences": [
       {
         "hash": "98f4998a8f8447edc6072c8d1d022969",
@@ -10406,12 +10406,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "c760da1bab774c99e8a61696f90a80d0",
+        "hash": "2e2a9b4a6e050c3371ff31c7238333b9",
         "idx": 1,
-        "pitch": "+0Hz",
-        "rate": "-8%",
+        "pitch": "+12Hz",
+        "rate": "-5%",
         "speaker": "Some rules are small",
-        "voice": "en-US-EmmaNeural",
+        "voice": "en-US-BrandonNeural",
         "volume": "+0%"
       },
       {
@@ -10424,11 +10424,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "dfdcd59e986a092e4bb5eb5f86a512af",
+    "text_hash": "e9b47ebe5f1d326423cccbde5e663519",
     "textbook": "hj"
   },
   "grade9B_u7_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:11.998438Z",
+    "generated_at": "2026-06-27T14:00:45.970556Z",
     "sentences": [
       {
         "hash": "bbaa8e9181ba615dcac982a7061c98d7",
@@ -10575,11 +10575,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "640eed19c5626d20486ff62f2a6bec03",
+    "text_hash": "92b45887b5ffd11c9b8308c2ded41db6",
     "textbook": "hj"
   },
   "grade9B_u7_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:12.000228Z",
+    "generated_at": "2026-06-27T14:00:50.857941Z",
     "sentences": [
       {
         "hash": "8b7ce4a1456f50eca940a7bcdb25866e",
@@ -10600,12 +10600,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "5f3594d035fdbc728959d6f2908eab6b",
+        "hash": "f7a9bb9d63a341e3aa649b577fef13de",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Metaphor",
-        "voice": "en-US-ChristopherNeural",
+        "voice": "en-US-EmmaNeural",
         "volume": "+0%"
       },
       {
@@ -10618,20 +10618,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "1b7a9bd1a9cbaa288aa3e2e6d2e0da96",
+        "hash": "d81f98411a9e8a7de75ce534738a519f",
         "idx": 4,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "Tip",
-        "voice": "en-US-BrandonNeural",
+        "voice": "en-GB-SoniaNeural",
         "volume": "+0%"
       }
     ],
-    "text_hash": "dccf3df5f830e2d4f2447e5a2943f6c6",
+    "text_hash": "2aec8ffa350662f1603646a7f7fb9ad1",
     "textbook": "hj"
   },
   "grade9B_u7_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:12.001068Z",
+    "generated_at": "2026-06-27T14:00:50.859258Z",
     "sentences": [
       {
         "hash": "72192ec89cc3b6e8b815b142c62e6d4e",
@@ -10643,11 +10643,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "244934ac3f688eeb4d348362052ae642",
+    "text_hash": "a302390d4cd55def50ff5de7b61ae7ed",
     "textbook": "hj"
   },
   "grade9B_u8_L0.mp3": {
-    "generated_at": "2026-06-27T11:14:12.005401Z",
+    "generated_at": "2026-06-27T14:00:58.047581Z",
     "sentences": [
       {
         "hash": "2a5a3634a979b0faf72e83c4e6f6e2b0",
@@ -10659,12 +10659,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "3a88290f35023efd533fdf1601abc9b7",
+        "hash": "97a90db038be67057a36398a86144728",
         "idx": 1,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10677,12 +10677,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "6ac0ab451566383e3f99fdf1077ac1e8",
+        "hash": "b9dbd7c4df29303a635f8b52623fc43a",
         "idx": 3,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10695,12 +10695,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "b06f95b782da8ef4c652ed63735febf9",
+        "hash": "e28740bff8345ce5ce62a0f450af7730",
         "idx": 5,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10713,12 +10713,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "8005ae3b23ea37c3e9e083c84f64da4e",
+        "hash": "7655db4227c070e556fa08fa73b9a6af",
         "idx": 7,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10731,12 +10731,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "55ac4d05a320eebb8b8bb32f5fe11b4f",
+        "hash": "eeb50673183c6c849bee1aead51a4cbd",
         "idx": 9,
-        "pitch": "+12Hz",
-        "rate": "-5%",
+        "pitch": "+0Hz",
+        "rate": "-8%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10749,12 +10749,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "84ef3cb4899739e127a64ee9e842fcb0",
+        "hash": "ca8fcbed8d1e5742ef2d8bc3843da830",
         "idx": 11,
-        "pitch": "+24Hz",
-        "rate": "-7%",
+        "pitch": "+12Hz",
+        "rate": "-10%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+0%"
       },
       {
@@ -10767,20 +10767,20 @@
         "volume": "+0%"
       },
       {
-        "hash": "b28629bbbce073e068f1a3ec02cde7fe",
+        "hash": "3d48518bbb1041aecf8f14cd650dae08",
         "idx": 13,
-        "pitch": "+18Hz",
-        "rate": "-5%",
+        "pitch": "+6Hz",
+        "rate": "-8%",
         "speaker": "A",
-        "voice": "en-US-AnaNeural",
+        "voice": "en-US-ChristopherNeural",
         "volume": "+6%"
       }
     ],
-    "text_hash": "1a443a6aa691b185dd1242153121364b",
+    "text_hash": "193f14d38d4600d27702c222c7206185",
     "textbook": "hj"
   },
   "grade9B_u8_L1.mp3": {
-    "generated_at": "2026-06-27T11:14:12.012369Z",
+    "generated_at": "2026-06-27T14:01:04.871761Z",
     "sentences": [
       {
         "hash": "6ac008a1be54e6e9f9f7515455a9ab93",
@@ -10792,39 +10792,39 @@
         "volume": "+0%"
       },
       {
-        "hash": "dbcd5534deeaab0ff94b0977a2a0a08b",
+        "hash": "b01f3da3cf958bf44233b42ff0d408ea",
         "idx": 1,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "4e1e434a3abcf9eaf4c4592ce1865724",
+        "hash": "7942cd8e2bdff115e9ffd93147756431",
         "idx": 2,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "427a6ee6c0393e002accb62d979a9b96",
+        "hash": "0a3d1c39ba5eb099868386fecbeb6023",
         "idx": 3,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "582ba9d03ce5c31aa440e240a4c8b8c4",
+        "hash": "93ad52c70a5a1bec32608444b65bd817",
         "idx": 4,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -10837,21 +10837,21 @@
         "volume": "+0%"
       },
       {
-        "hash": "33422bbe1fd3ad7629916aa4b69f06d8",
+        "hash": "59effaf0e18b2287aa080e59799166a5",
         "idx": 6,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
-        "hash": "a083afab40962c4ca5400a06467abc69",
+        "hash": "937cd9dbbea231a113dd53c4480c0c79",
         "idx": 7,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Direct",
-        "voice": "en-GB-SoniaNeural",
+        "voice": "en-GB-RyanNeural",
         "volume": "+0%"
       },
       {
@@ -10864,12 +10864,12 @@
         "volume": "+0%"
       },
       {
-        "hash": "c03d36206a58ff3576432e51cf4670b9",
+        "hash": "c4b3f2e18a90a63808e7dca952887f07",
         "idx": 9,
         "pitch": "+0Hz",
         "rate": "-8%",
         "speaker": "Wh-",
-        "voice": "en-GB-RyanNeural",
+        "voice": "en-US-GuyNeural",
         "volume": "+0%"
       },
       {
@@ -10900,11 +10900,11 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "0eea21cf31fff71f686177ae04401932",
+    "text_hash": "1794e7eff5cc8eadb717548b160d660b",
     "textbook": "hj"
   },
   "grade9B_u8_L2.mp3": {
-    "generated_at": "2026-06-27T11:14:12.013319Z",
+    "generated_at": "2026-06-27T14:01:04.872791Z",
     "sentences": [
       {
         "hash": "7dd60bfb942238a45d1d73b669870cfa",
@@ -10916,7 +10916,7 @@
         "volume": "+0%"
       }
     ],
-    "text_hash": "9fafb85df5f93f5bf636239cf382fe2c",
+    "text_hash": "a223f40ff0a4b887ef500466b67916a0",
     "textbook": "hj"
   }
 }

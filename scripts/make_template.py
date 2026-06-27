@@ -79,7 +79,7 @@ def main():
     print(f"用法:")
     print(f"  1) 在 Excel 里打开模板文件，按示例填写题目")
     print(f"  2) 运行: python scripts/import_questions.py \"你的文件.xlsx\"")
-    print(f"  3) 如果有新听力题，再运行: python gen_audio.py 生成 MP3")
+    print(f"  3) 如果有新听力题，再运行: python gen_hj_listening.py 生成 MP3")
 
 
 if __name__ == '__main__':

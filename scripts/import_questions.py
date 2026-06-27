@@ -195,7 +195,7 @@ def main():
         out_path = os.path.join(out_dir, f"{args.textbook}_{sheet}.json")
         merge_save(out_path, items, args.mode)
 
-    print("\n[done] 导入完成。建议运行 gen_audio.py 为新增听力题生成 MP3。")
+    print("\n[done] 导入完成。建议运行 gen_hj_listening.py 为新增听力题生成 MP3（课文音频见 gen_audio_v2.py）。")
 
 
 if __name__ == '__main__':

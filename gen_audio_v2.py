@@ -91,7 +91,7 @@ def save_manifest(manifest):
 # 🆕 韵律/性别映射版本号：改动 NAME_GENDER / analyze_prosody / 声音池 时 +1，
 #   使旧 manifest 的 text_hash 全部失效 → 课文判为 stale 重新进入生成流程，
 #   届时句级缓存仍按 sentence_hash 复用未变句、只重跑受影响句（增量、高效）。
-PROSODY_VERSION = "2"
+PROSODY_VERSION = "3"
 
 
 def text_hash(text):
@@ -356,8 +356,9 @@ class VoiceAllocator:
         elif gender == "M":
             pool = MALE_VOICES
         else:
-            # 未知性别：偶数哈希取女、奇数取男（保持在同一篇课文里一致）
-            pool = FEMALE_VOICES if (seed % 2 == 0) else MALE_VOICES
+            # 未知性别：用「仅名字」的哈希定性别，保证同一名字在所有篇/教材里性别一致
+            # （之前用含篇 salt 的 seed，会导致同一角色在不同单元忽男忽女）
+            pool = FEMALE_VOICES if (stable_hash_int(key) % 2 == 0) else MALE_VOICES
         # 避免同篇里多个角色撞同一把声音：优先挑尚未用过的
         used = set(self.assigned.values())
         # 按哈希偏移遍历池，挑第一个没用过的

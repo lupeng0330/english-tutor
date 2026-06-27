@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-27 晚**（本次：P0-2 在线依赖排查 + 本地化兜底——拼写题发音本地优先 + Tailwind 静态编译替代 CDN，详见 §28 · ✅ 已验收待部署；前序见 §27 单词本地发音、§26 课文情感韵律 `V02.30`）
+> 最后更新：**2026-06-27 晚**（本次：技术债 T-1/T-2/T-3——删废弃 gen_audio.py + version.txt 交 CI 单一管理 + 课文未知性别角色全局一致，详见 §29 · ⏳ 待验收；前序 §28 在线依赖本地化已上线、§27 单词本地发音、§26 课文情感韵律）
 
 ---
 
@@ -1532,3 +1532,16 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ **2026-06-27 晚双端验收通过**（视觉无回归、词性标签配色正常、拼写题发音正常）。
 - ✅ 随本次 push（CI 自动 bump 版本，铁律 3/4）；PWA 需刷新一次拉取新 `tailwind.css`+`practice.js`+`sw.js`。
 - 🛠️ 后续：T-1 删废弃 `gen_audio.py` / T-2 统一 `version.txt` 格式 / T-3 性别词典校准（接续进行）。
+
+---
+
+## 29. ✅ 技术债清理 T-1/T-2/T-3（2026-06-27 晚 · 待验收）
+
+- **T-1 删除废弃脚本 `gen_audio.py`**：旧全女声整单元版（`gradeXA_uN.mp3` 无 `_L`），已被 `gen_audio_v2.py` 取代且无代码引用。同步修正 `scripts/import_questions.py`、`scripts/make_template.py` 里指向 `gen_audio.py` 的过期提示（改指 `gen_hj_listening.py` / `gen_audio_v2.py`）。
+- **T-2 统一 version.txt 管理权**：根因是「两个写入者」——本地 `dev-push.ps1`（两行格式 + ISO 周递增）与 CI `update-version.yml`（单行 `版本 hash (utc)` + 月递增）冲突，曾致 rebase 冲突。**改为 `dev-push.ps1` 不再本地写 version.txt，完全交给 CI**（脚本只 commit + pull --rebase + push + 提示）。版本号单一源 = CI。
+- **T-3 课文性别词典校准**：`VoiceAllocator` 未知性别判定从「含篇 salt 的哈希」改为「**仅名字哈希**」，保证同一角色（Aki/Ming/Guo/Aido 等）在所有单元/教材里性别一致（此前会忽男忽女）。`PROSODY_VERSION` 2→3 触发增量重生成：jk 重跑 20 句 / hj 重跑 84 句，其余复用缓存，318 篇 0 fail。
+
+### 29.1 收口状态（⏳ 待验收 → 部署）
+
+- 验证：Aki/Ming/Guo/Aido 跨单元性别集合均为单一值（✅ 一致）；lint 0 错误。
+- 待用户确认后随本次 push（CI 自动 bump，铁律 3/4）。
