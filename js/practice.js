@@ -658,24 +658,9 @@ function checkSpellFilled(q, inputs, force) {
   // 🆕 答对时：同步播放单词发音 —— 必须同步调用 new Audio().play()，否则手机浏览器会拒绝自动播放
   if (isCorrect) {
     try {
-      // ① 立刻发起播放（仍在用户最后一次 input 事件的调用栈里 → 算用户手势）
-      const word = String(q.answer).trim();
-      const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(word) + '&type=1';
-      // 停掉旧音频，避免重叠
-      try {
-        if (typeof _currentAudio !== 'undefined' && _currentAudio) {
-          _currentAudio.pause(); _currentAudio.src = '';
-        }
-      } catch(e) {}
-      const audio = new Audio(url);
-      _currentAudio = audio;
-      audio.onerror = () => {
-        // 有道失败 → 降级 TTS（此时可能已脱离手势上下文但 TTS 限制宽松）
-        try { speakWordDirect(word); } catch(e) {}
-      };
-      audio.onended = () => { if (_currentAudio === audio) _currentAudio = null; };
-      const p = audio.play();
-      if (p && p.catch) p.catch(() => { try { speakWordDirect(word); } catch(e) {} });
+      // 本地优先 → 有道 → 浏览器 TTS（复用 player.js 的 speak，与单词卡一致、离线可用）
+      // 仍在用户最后一次 input 事件的调用栈里同步发起 → 算用户手势，手机不拦截
+      speak(String(q.answer).trim());
     } catch(e) {
       try { speakWordDirect(q.answer); } catch(e2) {}
     }
@@ -906,52 +891,20 @@ function speakSpellWord() {
     hintEl.className = 'text-xs ' + (cls || 'text-slate-500');
   };
 
-  // 先停掉任何在播的老音频
-  try {
-    if (typeof _currentAudio !== 'undefined' && _currentAudio) {
-      _currentAudio.pause(); _currentAudio.src = ''; _currentAudio = null;
-    }
-  } catch(e) {}
-  try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch(e) {}
-
   setHint('🔊 加载发音…', 'text-blue-600');
 
-  // 方案 A：有道 API MP3
-  const url = 'https://dict.youdao.com/dictvoice?audio=' + encodeURIComponent(word) + '&type=1';
-  const audio = new Audio(url);
-  _currentAudio = audio;
-  let started = false;
-
-  audio.onplaying = () => {
-    started = true;
-    setHint('🔊 正在播放…点击可重听', 'text-blue-600');
-  };
-  audio.onended = () => {
-    if (_currentAudio === audio) _currentAudio = null;
-    setHint('点击可重听', 'text-slate-500');
-  };
-  audio.onerror = () => {
-    // 方案 B：浏览器 TTS 兜底
-    console.warn('[拼写] 有道 MP3 失败，降级 TTS');
+  // 本地优先 → 有道 → 浏览器 TTS（复用 player.js 的 speak，与单词卡一致、离线可用）
+  try {
+    speak(word, {
+      onStart: () => setHint('🔊 正在播放…点击可重听', 'text-blue-600'),
+      onEnd:   () => setHint('点击可重听', 'text-slate-500'),
+      onError: (msg) => setHint('⚠️ ' + (msg || '当前浏览器不支持语音'), 'text-orange-500'),
+    });
+  } catch(e) {
     const ok = speakWordDirect(word);
-    setHint(ok ? '🔊 正在播放…点击可重听' : '⚠️ 当前浏览器不支持语音', ok ? 'text-blue-600' : 'text-orange-500');
-  };
-
-  audio.play().catch((err) => {
-    console.warn('[拼写] audio.play() 被拒:', err && err.name);
-    const ok = speakWordDirect(word);
-    setHint(ok ? '🔊 正在播放…点击可重听' : '⚠️ 点一下小喇叭才能播放', ok ? 'text-blue-600' : 'text-orange-500');
-  });
-
-  // 3 秒还没播成 → 降级 TTS
-  setTimeout(() => {
-    if (!started && _currentAudio === audio) {
-      try { audio.pause(); } catch(e) {}
-      _currentAudio = null;
-      const ok = speakWordDirect(word);
-      if (ok) setHint('🔊 正在播放…点击可重听', 'text-blue-600');
-    }
-  }, 3000);
+    setHint(ok ? '🔊 正在播放…点击可重听' : '⚠️ 当前浏览器不支持语音',
+            ok ? 'text-blue-600' : 'text-orange-500');
+  }
 }
 
 function nextQuiz() {

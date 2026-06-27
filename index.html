@@ -13,7 +13,9 @@
 <link rel="apple-touch-icon" href="./icon-192.png" />
 <link rel="icon" type="image/svg+xml" href="./icon.svg" />
 <title>乐学英语 · 广州教科版同步辅导 (Demo)</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind 本地静态编译产物（替代运行时 CDN，离线/弱网样式 100% 可用；
+     重新生成见 tailwind.config.js 顶部注释）。render-blocking 引入避免首屏闪烁。 -->
+<link rel="stylesheet" href="./tailwind.css" />
 <!-- 🆕 v01.17：Chart.js 本地化（原 CDN），配合 sw.js 预缓存保证离线报告页图表可用 -->
 <script src="./js/vendor/chart.umd.min.js"></script>
 <!-- 🆕 缓存破坏：优先级 URL?v= > version.txt(commit hash) > 当日小时戳。手机/PC 拿到同一版本号，推送后立即更新。 -->

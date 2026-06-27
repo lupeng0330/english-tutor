@@ -25,6 +25,7 @@ const BOOTSTRAP_VERSION = 'bootstrap';
 const STATIC_ASSETS = [
   './',
   './index.html',
+  './tailwind.css',
   './styles.css',
   './app.js',
   './questionBank.js',

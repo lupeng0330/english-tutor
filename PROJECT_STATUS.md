@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-27 晚**（本次：单词卡发音本地 MP3 化，964 个 `word_*.mp3` + `speak()` 本地优先，并修复叠音/被切/翻页体验，详见 §27 · ✅ 已验收待部署；上一项课文情感韵律增强见 §26 已上线 `20260627V02.30`）
+> 最后更新：**2026-06-27 晚**（本次：P0-2 在线依赖排查 + 本地化兜底——拼写题发音本地优先 + Tailwind 静态编译替代 CDN，详见 §28 · ✅ 已验收待部署；前序见 §27 单词本地发音、§26 课文情感韵律 `V02.30`）
 
 ---
 
@@ -1508,3 +1508,27 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 - ✅ **2026-06-27 晚用户双端验收通过**（不同词发声 / 断网可发声 / 不叠音 / 读完提顿翻页 / 不跳词）。
 - ✅ 随本次一并 push（CI 自动 bump 版本，铁律 3/4）；客户端 PWA 需刷新一次拉取新 `player.js`+`lesson.js`+单词 MP3。
+
+---
+
+## 28. ✅ P0-2 在线依赖排查 + 本地化兜底（2026-06-27 晚 · 已验收）
+
+### 28.1 排查结论
+
+全量梳理联网点（详见过程报告）：单词卡/例句/课文/听力发音均已本地优先离线可用；发现两处短板已修：
+
+- 🔴 **Tailwind 运行时 CDN**（`cdn.tailwindcss.com`，不在 SW 预缓存）→ 离线/弱网整页样式错乱。
+- 🟡 **拼写题两处发音**（答对自动发音、小喇叭）仍直连有道，没用 V02.31 的本地 `word_*.mp3`。
+
+### 28.2 落地改动
+
+- **R1 拼写题发音本地优先**（`js/practice.js`）：答对自动发音 + `speakSpellWord` 小喇叭改为走 `speak()`（本地 `word_*.mp3` → 有道 → 浏览器 TTS），与单词卡一致、离线可用。
+- **R2 Tailwind 本地化**：Node + Tailwind CLI 静态编译实际用到的类 → `tailwind.css`（30KB），替换 CDN `<script>` 为本地 `<link>`；加入 `sw.js` `STATIC_ASSETS` 预缓存。保留 `tailwind.config.js`+`tailwind.input.css`（含重建命令），不引入 node_modules（仍纯静态）。
+  - 动态色类（`_posBadgeClass` 返回的整串 `bg-blue-100`/`text-emerald-700`/`border-amber-200` 等）均被内容扫描捕获，无需 broad safelist。
+- R3 二维码本地化：本轮不做（仅真机扫码调试用，影响极小）。
+
+### 28.3 收口状态（✅ 已验收）
+
+- ✅ **2026-06-27 晚双端验收通过**（视觉无回归、词性标签配色正常、拼写题发音正常）。
+- ✅ 随本次 push（CI 自动 bump 版本，铁律 3/4）；PWA 需刷新一次拉取新 `tailwind.css`+`practice.js`+`sw.js`。
+- 🛠️ 后续：T-1 删废弃 `gen_audio.py` / T-2 统一 `version.txt` 格式 / T-3 性别词典校准（接续进行）。
