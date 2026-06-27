@@ -1127,6 +1127,9 @@ function prevWord() {
   }
 }
 
+// 点"认识"后的"待翻页"令牌：连点时取消上一次未触发的前进，避免一次跳多个词
+let _pendingKnownAdvance = null;
+
 function markKnown() {
   // 📊 记录已掌握单词
   try {
@@ -1134,8 +1137,36 @@ function markKnown() {
     if (w && w.word) markWordKnown(w.word);
     updateUnitProgress();
   } catch(e) {}
-  playWord();
-  setTimeout(() => nextWord(), 500);
+
+  // 取消上一次还没触发的前进（连点保护）
+  if (_pendingKnownAdvance) {
+    try { clearTimeout(_pendingKnownAdvance.timer); } catch(e) {}
+    _pendingKnownAdvance.done = true;
+    _pendingKnownAdvance = null;
+  }
+
+  const w = state.currentUnit && state.currentUnit.words[state.currentWordIndex];
+  if (!w || !w.word) { nextWord(); return; }
+
+  // 关键体验优化：先把当前单词读完整，"提顿"一下，再切下一个
+  const token = { done: false, timer: null };
+  _pendingKnownAdvance = token;
+  const advance = () => {
+    if (token.done) return;
+    token.done = true;
+    if (_pendingKnownAdvance === token) _pendingKnownAdvance = null;
+    nextWord();
+  };
+  // 发音结束 → 提顿约 0.15s → 切换（停顿短一点，节奏更跟手）
+  const onAudioEnd = () => {
+    if (token.done) return;
+    if (token.timer) { try { clearTimeout(token.timer); } catch(e) {} }
+    token.timer = setTimeout(advance, 150);
+  };
+
+  speak(w.word, { onEnd: onAudioEnd });
+  // 绝对兜底：无论 onEnd 是否回调，最多 3.2s 后也前进，避免卡住不翻页
+  token.timer = setTimeout(advance, 3200);
 }
 
 function playWord() {

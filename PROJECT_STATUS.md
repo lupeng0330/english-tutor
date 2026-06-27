@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-27 晚**（本次：课文朗读情感韵律增强 + 全年级 1–9 多角色男女声全量重生成，详见 §26；已双端验收通过、上线 `20260627V02.30`，version.txt 由 CI 自动 bump）
+> 最后更新：**2026-06-27 晚**（本次：单词卡发音本地 MP3 化，964 个 `word_*.mp3` + `speak()` 本地优先，并修复叠音/被切/翻页体验，详见 §27 · ✅ 已验收待部署；上一项课文情感韵律增强见 §26 已上线 `20260627V02.30`）
 
 ---
 
@@ -1469,3 +1469,42 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - ✅ **已上线** `20260627V02.30`（音频 `73d21f4` + CI 版本 `d57a3cc`）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260627V02.30>
 - 📌 客户端 PWA（sw.js）可能需刷新一次才能听到新音频。
 - 📝 **流程纠正**：今后涉及上线一律「先双端验证 → 用户验收 → 再 push」；本地不必手写 `version.txt`，推送后由 CI 自动 bump。
+
+---
+
+## 27. ✅ 单词卡发音本地 MP3 化 · 根治"认识不发音"（2026-06-27 晚 · 待验收）
+
+### 27.1 问题与定位
+
+- **用户反馈**：单词卡点"✓ 认识"单词不发音，疑似 bug。
+- **逐层排查**：有道接口正常（HTTP 200，换任何 Referer/Origin 均返回有效 MP3）；`sw.js` 第 115 行跨域请求不拦截；🔊 与 ✓认识 同走 `playWord()→speak()`，`player.js` 无近期回归。
+- **根因（架构脆弱性，非回归）**：单词发音 **100% 依赖有道在线 + 浏览器 TTS 兜底，无本地 MP3**。网络到有道不通 / PWA 离线 / 设备无英文 TTS 语音包（华为/安卓常见）/ 连点认识时 500ms 自动翻页掐断在线音频 → 都会"不发音"。
+
+### 27.2 落地改动（方案 A · 用户选定）
+
+1. **新增 `gen_word_audio.py`**：遍历所有教材 `words[*].word`，去重 **964 个**单词，用 edge-tts（Aria，RATE -8%）生成本地 MP3。
+   - 确定性文件名：`audio/word_{key}.mp3`，`key = word.lower()` 后非 `[a-z0-9]` 段替换为 `_` 去首尾（apple→word_apple；"get up"→word_get_up）。前端可用同规则拼路径，无需 hash 库。
+2. **`js/player.js` 改造**：`speak()` 单段短词路径改为 `playLocalWordThenOnline()` —— **本地 MP3 优先 → 有道在线 → 浏览器 TTS**。新增 `_wordAudioKey()`（与 Python `word_key` 同规则）。本地命中 2.5s 超时退回在线。
+
+### 27.3 规模与验证
+
+- 生成 **964 个 `word_*.mp3`**，0 fail；HTTP 抽样全 200（apple/hello/cat、带空格词组 word_get_up 等）。
+- 前后端文件名规则一致，单词卡发音离线可用，不再依赖有道。
+- 双端预览：`http://localhost:8765/index.html` + `http://localhost:8765/mobile.html`。
+- `sw.js` 对 `audio/*.mp3` 走 cache-first，单词 MP3 首次播放后自动入缓存离线可播，无需改 SW。
+
+### 27.4 验收期连带修复（同批）
+
+验收过程中暴露并修复了 3 个发音体验问题（均在 `js/player.js` / `js/lesson.js`）：
+
+1. **叠音**：`stopSpeak()` 用 `src=''` 停音会触发本地音频 `onerror` → 误回退有道在线重播 → 与新词叠音。修复：清 `src` 前先解绑 `onerror/onended/onplaying`（与例句早期同款解法）。
+2. **发音被切**：旧 `markKnown` 固定 `setTimeout(nextWord, 500)`，单词常比 500ms 长 → 被 `renderWordExamples→stopSpeak()` 掐断。修复：改为**发音结束回调驱动翻页**。
+3. **不翻页 / onEnd 丢失**：播放期间例句异步重渲染会 `stopSpeak()` 清空 `_currentCallbacks`，丢掉 onEnd。修复：`playLocalWordThenOnline` **调用时闭包捕获回调**；`markKnown` 加 **0.15s 提顿 + 3.2s 绝对兜底 + 连点保护**。
+   - 体验定版：读完单词 → 提顿 **150ms** → 自动翻下一个。
+
+> 本地调试经验：脚本用 `?v={version.txt 首行}` 加载，版本号没变时浏览器走 HTTP 缓存旧 JS；本地验证改用 `index.html?v=<任意新串>` 强制加载最新（URL 的 `?v=` 优先级最高）。线上 push 后 CI 自动 bump 版本，无此问题。
+
+### 27.5 收口状态（✅ 已验收）
+
+- ✅ **2026-06-27 晚用户双端验收通过**（不同词发声 / 断网可发声 / 不叠音 / 读完提顿翻页 / 不跳词）。
+- ✅ 随本次一并 push（CI 自动 bump 版本，铁律 3/4）；客户端 PWA 需刷新一次拉取新 `player.js`+`lesson.js`+单词 MP3。

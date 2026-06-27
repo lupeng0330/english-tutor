@@ -218,14 +218,25 @@ let _hasEmittedStart = false;
 
 function stopSpeak() {
   if (_currentAudio) {
-    try { _currentAudio.pause(); _currentAudio.src = ''; } catch(e){}
+    // 关键：先解绑事件回调再清空 src。否则 src='' 会触发 onerror，
+    // 而单词路径的 onerror=onFail 会回退到有道在线重播一遍 → 叠音。
+    try {
+      _currentAudio.onerror = null;
+      _currentAudio.onended = null;
+      _currentAudio.onplaying = null;
+      _currentAudio.pause();
+      _currentAudio.src = '';
+    } catch(e){}
     _currentAudio = null;
   }
-  // 清理预加载队列里剩余的 Audio 对象
+  // 清理预加载队列里剩余的 Audio 对象（同样先解绑再清 src）
   if (Array.isArray(_playQueue)) {
     for (const item of _playQueue) {
       if (item && typeof item.pause === 'function') {
-        try { item.pause(); item.src = ''; } catch(e){}
+        try {
+          item.onerror = null; item.onended = null; item.onplaying = null;
+          item.pause(); item.src = '';
+        } catch(e){}
       }
     }
   }
@@ -281,18 +292,82 @@ function speak(text, callbacks) {
 
   const segs = splitText(text);
 
-  // 单个短片段（通常是单词 / 短词组）：直接走单次请求路径
+  // 单个短片段（通常是单词 / 短词组）：本地 MP3 优先 → 有道 → 浏览器 TTS
   if (segs.length === 1 && segs[0].length <= 15) {
-    playYoudao(segs[0],
-      () => fallbackWebSpeech(segs[0], _currentCallbacks),
-      () => { if (_currentCallbacks && _currentCallbacks.onEnd) _currentCallbacks.onEnd(); }
-    );
+    playLocalWordThenOnline(segs[0]);
     return;
   }
 
   // 多段：串行播放，每一段都在前一段 onended 的回调里紧接着 play
   // 这是 Android/华为浏览器接受的合法链式播放，不会触发"非用户手势"拦截
   playChain(segs, 0);
+}
+
+// 🆕 单词 → 本地 MP3 文件名 key（与 gen_word_audio.py 的 word_key 规则保持一致）
+//    apple → apple ；"get up" → get_up ；用于拼 audio/word_{key}.mp3
+function _wordAudioKey(text) {
+  return String(text || '')
+    .trim().toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+// 🆕 单词/短词组发音：本地 MP3 优先 → 有道在线 → 浏览器 TTS
+//    解决「单词卡 100% 依赖有道、网络/设备异常时不发音」的问题（离线可用）。
+function playLocalWordThenOnline(text) {
+  // 调用时即捕获本次回调，避免播放期间 _currentCallbacks 被其它 stopSpeak/speak
+  // 清空而丢失 onEnd（典型：例句异步加载重渲染会调用 stopSpeak）。
+  const cbs = _currentCallbacks;
+  let ended = false;
+  const fireEnd = () => {
+    if (ended) return;
+    ended = true;
+    if (cbs && cbs.onEnd) cbs.onEnd();
+  };
+
+  // 在线兜底链（与原单段路径一致）：有道 → 浏览器 TTS
+  const goOnline = () => playYoudao(
+    text,
+    () => fallbackWebSpeech(text, cbs),
+    fireEnd
+  );
+
+  const key = _wordAudioKey(text);
+  if (!key) { goOnline(); return; }
+
+  // 本地预生成 MP3：audio/word_{key}.mp3（SW 对 audio/*.mp3 走 cache-first，离线可播）
+  const audio = new Audio('audio/word_' + key + '.mp3');
+  _currentAudio = audio;
+
+  let failed = false;
+  const onFail = () => {
+    if (failed) return;
+    failed = true;
+    if (_currentAudio === audio) _currentAudio = null;
+    // 本地没有该词（404/解码失败）→ 退回在线
+    goOnline();
+  };
+
+  audio.onerror = onFail;
+  audio.onplaying = () => {
+    if (!_hasEmittedStart && cbs && cbs.onStart) {
+      _hasEmittedStart = true;
+      cbs.onStart();
+    }
+  };
+  audio.onended = () => {
+    if (_currentAudio === audio) _currentAudio = null;
+    fireEnd();
+  };
+
+  audio.play().catch(onFail);
+
+  // 2.5s 还没开始播 → 判失败退回在线（本地命中通常 <300ms）
+  setTimeout(() => {
+    if (_currentAudio === audio && audio.paused && audio.currentTime === 0) {
+      onFail();
+    }
+  }, 2500);
 }
 
 function playChain(segs, idx, preloadedAudio) {
