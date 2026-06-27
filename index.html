@@ -334,6 +334,9 @@
               <div id="unitModuleBadge" class="hide text-center mb-2">
                 <span class="inline-block text-xs font-semibold px-2.5 py-1 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 border border-indigo-200"></span>
               </div>
+              <!-- 卡片舞台：承载两侧悬浮翻页圆钮（方案B） -->
+              <div class="word-card-stage">
+              <button class="word-nav-arrow word-nav-prev" onclick="prevWord()" aria-label="上一个">←</button>
               <div class="word-card" id="wordCard" onclick="flipCard()">
                 <div class="word-card-inner">
                   <div class="word-face word-front">
@@ -350,15 +353,12 @@
                   </div>
                 </div>
               </div>
-              <!-- 主操作：不认识 / 认识（醒目大按钮） -->
-              <div class="grid grid-cols-2 gap-2.5 mt-4">
-                <button class="py-2.5 bg-rose-100 text-rose-700 rounded-xl font-semibold hover:bg-rose-200 active:scale-95 transition" onclick="markUnknown()">✗ 不认识</button>
-                <button class="py-2.5 bg-green-100 text-green-700 rounded-xl font-semibold hover:bg-green-200 active:scale-95 transition" onclick="markKnown()">✓ 认识</button>
+              <button class="word-nav-arrow word-nav-next" onclick="nextWord()" aria-label="下一个">→</button>
               </div>
-              <!-- 导航：上一个 / 下一个 -->
-              <div class="grid grid-cols-2 gap-2.5 mt-2.5">
-                <button class="py-2 bg-slate-100 text-slate-600 rounded-xl font-medium hover:bg-slate-200 active:scale-95 transition" onclick="prevWord()">← 上一个</button>
-                <button class="py-2 gradient-btn rounded-xl font-medium active:scale-95 transition" onclick="nextWord()">下一个 →</button>
+              <!-- 主操作：✗ 不认识 / ✓ 认识（浅红/浅绿，翻页移至两侧圆钮） -->
+              <div class="word-act-row">
+                <button class="word-act word-act-unknown" onclick="markUnknown()">✗ 不认识</button>
+                <button class="word-act word-act-known" onclick="markKnown()">✓ 认识</button>
               </div>
 
               <!-- 🆕 例句阶梯（从易到难 3~4 句） -->
