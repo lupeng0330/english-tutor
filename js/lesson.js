@@ -1224,11 +1224,15 @@ function playLesson() {
   //   2) 整单元 MP3 audio/{grade}{A|B}_{uid}.mp3（旧：单女声）——仅在单篇课文时尝试
   //   3) 浏览器 TTS 兜底
   const termAB = (state.ctx && state.ctx.term === '下') ? 'B' : 'A';
+  // 🆕 教材前缀：gzk(广州口语) 与 jk(教科版) 同为 grade1/2，音频文件名会撞车，
+  //     故 gzk 课文音频统一加 'gzk_' 前缀（与 gen_audio_v2.py 的 TEXTBOOK_PREFIX 一致）。
+  const _tb  = (state.ctx && state.ctx.textbook) || 'jk';
+  const _pfx = _tb === 'gzk' ? 'gzk_' : '';
   const candidates = [];
   if (grade && unitId) {
-    candidates.push(`audio/${grade}${termAB}_${unitId}_L${_curIdx}.mp3`);
+    candidates.push(`audio/${_pfx}${grade}${termAB}_${unitId}_L${_curIdx}.mp3`);
     if (!multiLesson) {
-      candidates.push(`audio/${grade}${termAB}_${unitId}.mp3`);
+      candidates.push(`audio/${_pfx}${grade}${termAB}_${unitId}.mp3`);
     }
   }
 

@@ -10918,5 +10918,545 @@
     ],
     "text_hash": "a223f40ff0a4b887ef500466b67916a0",
     "textbook": "hj"
+  },
+  "gzk_grade1A_u1_L0.mp3": {
+    "generated_at": "2026-06-27T14:11:51.213825Z",
+    "sentences": [
+      {
+        "hash": "994d68bb2ca7521031718709111cf4fe",
+        "idx": 0,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+6%"
+      }
+    ],
+    "text_hash": "4d660f21fa4984de86749fb31762411e",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u1_L1.mp3": {
+    "generated_at": "2026-06-27T14:11:57.017977Z",
+    "sentences": [
+      {
+        "hash": "7ebd02855c6428f68dc1173e00c6cd40",
+        "idx": 0,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-GB-RyanNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "f9a50c3bc058720d817258ca46f203c5",
+        "idx": 1,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "6cfa0a77cef105676a67ae17015f1dce",
+        "idx": 2,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-GB-RyanNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "82cc8b840bca0ea673f24d49fd836551",
+        "idx": 3,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "deea01d8e52b09cc94dd56123ade75d3",
+        "idx": 4,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Miss Li",
+        "voice": "en-GB-SoniaNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "c71c183d449908dd73960591b7e51280",
+        "idx": 5,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Andy",
+        "voice": "en-GB-RyanNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "271c058e16ae02003792eb2a48f20b7f",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u1_L2.mp3": {
+    "generated_at": "2026-06-27T14:11:58.122086Z",
+    "sentences": [
+      {
+        "hash": "3d1cf8569927369033413022831788d7",
+        "idx": 0,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+6%"
+      }
+    ],
+    "text_hash": "e9bb66a2bd73613e43e96dd6f17c4298",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u2_L0.mp3": {
+    "generated_at": "2026-06-27T14:11:58.936852Z",
+    "sentences": [
+      {
+        "hash": "ea344fda1dc7e05f6e115c05b97d2334",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "352ef69ff43ac209a56db80d41482b96",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u2_L1.mp3": {
+    "generated_at": "2026-06-27T14:12:05.780340Z",
+    "sentences": [
+      {
+        "hash": "8068eb75f17f15b2e1a95493eb0aa9b6",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "bd19f1198c6431e704f04cde4936b24d",
+        "idx": 1,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "b77389df458c5320459604240ae3355d",
+        "idx": 2,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "3a18fa032f627f72239e0d9443dbbed2",
+        "idx": 3,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "7e35a6169d3d2e8ce8dab37f70a6f71e",
+        "idx": 4,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "4e6f6c4806ef0bb2d6b9691adfe5c8a1",
+        "idx": 5,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Lily",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "22ef6033d78444710f041a22c6df2f0d",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u2_L2.mp3": {
+    "generated_at": "2026-06-27T14:12:06.536743Z",
+    "sentences": [
+      {
+        "hash": "7c228d9d23da036a0d400e67ae3a6699",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "47660a19b9e634ca2f3cbdd5d163160f",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u3_L0.mp3": {
+    "generated_at": "2026-06-27T14:12:07.294337Z",
+    "sentences": [
+      {
+        "hash": "db7e7c7c2041fc3dc0a6a724287fc2ef",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "6f232f207ee7cb61da6dffc707bed5d5",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u3_L1.mp3": {
+    "generated_at": "2026-06-27T14:12:13.818083Z",
+    "sentences": [
+      {
+        "hash": "1bc4e33e81b961178439e83c6d62d442",
+        "idx": 0,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Teacher",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "4adfceb6d6f6b5c205d6cdd43f92eb7c",
+        "idx": 1,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "b36fe777f1da770a8196a8e606ce80ce",
+        "idx": 2,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Lily",
+        "voice": "en-GB-SoniaNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "7299a2153c10ba427a12a60b81762a85",
+        "idx": 3,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Teacher",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "a358e20f9bc6f0cdce9fa828c22db27b",
+        "idx": 4,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "56f47d3e911abe2e495c70a934172953",
+        "idx": 5,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Teacher",
+        "voice": "en-US-EmmaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "595d27a35e574c09106477ec9fb4ef09",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u3_L2.mp3": {
+    "generated_at": "2026-06-27T14:12:14.978917Z",
+    "sentences": [
+      {
+        "hash": "a79d70d56b34c2f5ab751209b6acd5a4",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "06533c7c1fd6657a6f199769ad9a62a0",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u4_L0.mp3": {
+    "generated_at": "2026-06-27T14:12:15.946219Z",
+    "sentences": [
+      {
+        "hash": "18aa421e2aeadeebd7846338ba7f89cf",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "2e4e3358b6a7ec51ae2c0754ae4666f1",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u4_L1.mp3": {
+    "generated_at": "2026-06-27T14:12:20.447037Z",
+    "sentences": [
+      {
+        "hash": "fb6c681ea34ace59611b16bc3b3ae522",
+        "idx": 0,
+        "pitch": "+12Hz",
+        "rate": "-5%",
+        "speaker": "Andy",
+        "voice": "en-US-BrandonNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "400a6dbf21553febc0195fd4ddcc7d0d",
+        "idx": 1,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "7112dc969a961120000c95c2fe19f479",
+        "idx": 2,
+        "pitch": "+24Hz",
+        "rate": "-7%",
+        "speaker": "Andy",
+        "voice": "en-US-BrandonNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "cf9e9febd5e568e59dcefe6bba1c92bb",
+        "idx": 3,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "9cfe0d4bdecfe071a1252b724e21d919",
+        "idx": 4,
+        "pitch": "+22Hz",
+        "rate": "+1%",
+        "speaker": "Andy",
+        "voice": "en-US-BrandonNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "5b3e31bf8808761a44873309b60c4c31",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u4_L2.mp3": {
+    "generated_at": "2026-06-27T14:12:21.471805Z",
+    "sentences": [
+      {
+        "hash": "1bee3937c7c48307e7fce51e4f39ace3",
+        "idx": 0,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "93ca19c2eade57c64461262421da821f",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u5_L0.mp3": {
+    "generated_at": "2026-06-27T14:12:22.218413Z",
+    "sentences": [
+      {
+        "hash": "2c70a499b10491fb899026e95d858b6a",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "776ba21c369ecc25b184f80a9cdd7dec",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u5_L1.mp3": {
+    "generated_at": "2026-06-27T14:12:29.008243Z",
+    "sentences": [
+      {
+        "hash": "231949f463bddf99c77d02600ed49eff",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "8cf7329174e82f66b36a944cb1e8c5a0",
+        "idx": 1,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Lily",
+        "voice": "en-US-AriaNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "8fc1d92755f4b32003ef669cfc3b8035",
+        "idx": 2,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "2ea8727b5c415766a05e1a6339365fcb",
+        "idx": 3,
+        "pitch": "+24Hz",
+        "rate": "-7%",
+        "speaker": "Ben",
+        "voice": "en-US-BrandonNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "b0e24ca3f74f5f74b141dcd47ee8a10c",
+        "idx": 4,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-DavisNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "e267a5b153578a89f122eacc12830c37",
+        "idx": 5,
+        "pitch": "+22Hz",
+        "rate": "+1%",
+        "speaker": "Ben",
+        "voice": "en-US-BrandonNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "3eebf4696950ddab850dcf257ccc30af",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u5_L2.mp3": {
+    "generated_at": "2026-06-27T14:12:30.092319Z",
+    "sentences": [
+      {
+        "hash": "35dcdb16f0eba3012e7c03fc36503780",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "65fab97e2053e957f92adc5e11c84d19",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u6_L0.mp3": {
+    "generated_at": "2026-06-27T14:12:30.730107Z",
+    "sentences": [
+      {
+        "hash": "27508537c17866dc9ab064bcd00b1abf",
+        "idx": 0,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+0%"
+      }
+    ],
+    "text_hash": "2e3ae7098b133d89ee92ae4374298bac",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u6_L1.mp3": {
+    "generated_at": "2026-06-27T14:12:34.048279Z",
+    "sentences": [
+      {
+        "hash": "b759a9894df1fa8cb71ba456f7eb1053",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": "Andy",
+        "voice": "en-US-ChristopherNeural",
+        "volume": "+12%"
+      },
+      {
+        "hash": "8a1930d3d6c2b56da274419d922c0cf8",
+        "idx": 1,
+        "pitch": "+12Hz",
+        "rate": "-10%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "b724ab17fbe9adf8eb063c017409c6e4",
+        "idx": 2,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Andy",
+        "voice": "en-US-ChristopherNeural",
+        "volume": "+6%"
+      },
+      {
+        "hash": "6fa84f6bfa526e57a2ab6e8d9ef5b680",
+        "idx": 3,
+        "pitch": "+0Hz",
+        "rate": "-8%",
+        "speaker": "Ben",
+        "voice": "en-US-GuyNeural",
+        "volume": "+0%"
+      },
+      {
+        "hash": "d9cd69cd04b1c1c83819f462a015bd34",
+        "idx": 4,
+        "pitch": "+6Hz",
+        "rate": "-8%",
+        "speaker": "Lily",
+        "voice": "en-US-JennyNeural",
+        "volume": "+6%"
+      }
+    ],
+    "text_hash": "29c267ad9fe69796c1caeffa81558a69",
+    "textbook": "gzk"
+  },
+  "gzk_grade1A_u6_L2.mp3": {
+    "generated_at": "2026-06-27T14:12:34.963754Z",
+    "sentences": [
+      {
+        "hash": "0743be079c721ed7972f048ed93cdd8b",
+        "idx": 0,
+        "pitch": "+10Hz",
+        "rate": "-2%",
+        "speaker": null,
+        "voice": "en-US-AriaNeural",
+        "volume": "+12%"
+      }
+    ],
+    "text_hash": "86ad34d5ef5f762314ba7c72cd6cb528",
+    "textbook": "gzk"
   }
 }

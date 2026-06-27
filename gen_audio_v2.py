@@ -153,6 +153,9 @@ def plan_sentences(en_text, seed_salt):
 TEXTBOOK_PREFIX = {
     "jk": "",
     "hj": "",
+    # gzk(广州口语) 也是 grade1/2，与 jk 的 grade1/2 课文音频会撞名，
+    # 故加 'gzk_' 前缀：gzk grade1 上 → audio/gzk_grade1A_u1_L0.mp3
+    "gzk": "gzk_",
 }
 
 # 语速（给小学生听稍慢）

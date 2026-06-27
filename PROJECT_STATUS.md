@@ -1545,3 +1545,15 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 
 - 验证：Aki/Ming/Guo/Aido 跨单元性别集合均为单一值（✅ 一致）；lint 0 错误。
 - 待用户确认后随本次 push（CI 自动 bump，铁律 3/4）。
+
+---
+
+## 30. ✅ P0-1 广州口语 gzk 填充 · 批次1 grade1上（2026-06-27 晚）
+
+> 决策（铁律5）：先做1册验证→对齐参考单元深度→原创改编(话题对官方大纲)。
+
+- **内容**（`scripts/gzk_fill_g1s.py` → `data/textbooks/gzk.json`）：grade1上 6 单元（问候/文具/数字/颜色/玩具/动作），每单元 **12 词**(音标+释义+内联例句) + **3 篇口语课文**(Let's Learn / Let's Talk 对话 / Let's Chant)。对话用"说话人:"前缀触发多角色男女声。
+- **技术链路**：gzk 与 jk 同为 grade1/2，音频文件名冲突 → 课文音频加 `gzk_` 前缀（`gen_audio_v2.py` TEXTBOOK_PREFIX + 前端 `playLesson` 同步）。
+- **音频**：18 个课文 `gzk_grade1A_u*_L*.mp3`（Andy 男/Lily 女/老师女/Ben 男）+ 28 个新单词 MP3（词库 964→992），0 fail。
+- ✅ 用户验收通过；剩余 16 单元（1下6/2上6/2下4）接续。
+
