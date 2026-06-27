@@ -88,19 +88,31 @@ def save_manifest(manifest):
     os.replace(tmp, MANIFEST_PATH)
 
 
+# 🆕 韵律/性别映射版本号：改动 NAME_GENDER / analyze_prosody / 声音池 时 +1，
+#   使旧 manifest 的 text_hash 全部失效 → 课文判为 stale 重新进入生成流程，
+#   届时句级缓存仍按 sentence_hash 复用未变句、只重跑受影响句（增量、高效）。
+PROSODY_VERSION = "2"
+
+
 def text_hash(text):
-    """为课文英文文本计算稳定 hash（预处理后）。"""
+    """为课文英文文本计算稳定 hash（预处理后 + 韵律版本号）。
+    版本号纳入：调整性别/韵律规则时整体判 stale，触发增量重生成。"""
     s = preprocess(text or "").strip()
-    return hashlib.md5(s.encode("utf-8")).hexdigest()
+    return hashlib.md5(("v" + PROSODY_VERSION + "|" + s).encode("utf-8")).hexdigest()
 
 
-def sentence_hash(content, voice, rate=None):
-    """单句缓存键 = md5(句文本 + 音色 + 语速)。
-    音色/语速纳入键：同一句换了说话人音色或全局语速时缓存自然失效，保证正确性。
-    rate 默认在调用时解析为全局 RATE（避免定义期 RATE 尚未声明的顺序问题）。"""
+def sentence_hash(content, voice, rate=None, pitch=None, volume=None):
+    """单句缓存键 = md5(句文本 + 音色 + 语速 + 音高 + 音量)。
+    音色/语速/音高/音量全部纳入键：任一韵律参数变化时缓存自然失效，保证正确性
+    （🆕 新增情感韵律后，旧缓存键自动失效 → 触发重生成，无需手动清缓存）。
+    各参数默认在调用时解析（避免定义期常量尚未声明的顺序问题）。"""
     if rate is None:
         rate = RATE
-    raw = "{}|{}|{}".format((content or "").strip(), voice, rate)
+    if pitch is None:
+        pitch = PITCH_BASE
+    if volume is None:
+        volume = VOLUME_BASE
+    raw = "{}|{}|{}|{}|{}".format((content or "").strip(), voice, rate, pitch, volume)
     return hashlib.md5(raw.encode("utf-8")).hexdigest()
 
 
@@ -119,12 +131,16 @@ def plan_sentences(en_text, seed_salt):
     plan = []
     for i, (speaker, content) in enumerate(parts):
         voice = allocator.voice_for_speaker(speaker)
+        rate, pitch, volume = analyze_prosody(content, speaker, voice)
         plan.append({
             "idx": i,
             "speaker": speaker,
             "content": content,
             "voice": voice,
-            "hash": sentence_hash(content, voice),
+            "rate": rate,
+            "pitch": pitch,
+            "volume": volume,
+            "hash": sentence_hash(content, voice, rate, pitch, volume),
         })
     return plan
 
@@ -141,6 +157,14 @@ TEXTBOOK_PREFIX = {
 
 # 语速（给小学生听稍慢）
 RATE = "-8%"
+
+# 🆕 韵律情感基准（在 edge-tts 免费端用 rate/pitch/volume 近似"情感色彩"）
+RATE_BASE_PCT = -8      # 与 RATE 一致的数值形式，便于叠加增量
+PITCH_BASE  = "+0Hz"
+VOLUME_BASE = "+0%"
+
+# 童声音色集合：命中时再抬高音高/略快，听感更天真活泼
+CHILD_VOICES = {"en-US-AnaNeural", "en-US-BrandonNeural"}
 
 # 声音池：按语气 / 年龄层分组，用于角色自动分配
 FEMALE_VOICES = [
@@ -162,16 +186,26 @@ NARRATOR_VOICE = "en-US-AriaNeural"   # 故事叙述默认
 TEACHER_VOICE  = "en-GB-SoniaNeural"  # 老师默认
 
 # 常见英文名 → 性别（用于自动猜说话人性别）
-# 来源：课本里 Success with English / 教科版常见角色
+# 来源：课本里 Success with English / 教科版 / 沪教牛津版常见角色
 NAME_GENDER = {
-    # 女孩 / 女老师
+    # 女孩 / 女老师 / 女性角色
     "amy": "F", "lily": "F", "janet": "F", "xiaoling": "F", "mum": "F",
     "ms": "F", "miss": "F", "mrs": "F", "sue": "F", "ann": "F",
     "emma": "F", "jenny": "F", "mary": "F", "kate": "F", "lucy": "F",
-    # 男孩 / 男老师
+    "anna": "F", "tina": "F", "nina": "F", "betty": "F", "daisy": "F",
+    "alice": "F", "grace": "F", "rose": "F", "helen": "F", "linda": "F",
+    "susan": "F", "nancy": "F", "sally": "F", "jane": "F", "anne": "F",
+    "fiona": "F", "cindy": "F", "wendy": "F", "eva": "F", "julia": "F",
+    "laura": "F", "sophie": "F", "ella": "F", "gina": "F", "may": "F",
+    # 男孩 / 男老师 / 男性角色
     "tom": "M", "mike": "M", "ben": "M", "jiamin": "M", "andy": "M",
     "dad": "M", "mr": "M", "sir": "M", "jack": "M", "bob": "M",
     "john": "M", "peter": "M", "david": "M", "sam": "M",
+    "jim": "M", "jimmy": "M", "marco": "M", "edison": "M", "eddie": "M",
+    "tony": "M", "tim": "M", "joe": "M", "james": "M", "henry": "M",
+    "eric": "M", "frank": "M", "daniel": "M", "bill": "M", "paul": "M",
+    "george": "M", "kevin": "M", "leo": "M", "max": "M", "alan": "M",
+    "simon": "M", "harry": "M", "danny": "M", "tony": "M", "victor": "M",
 }
 
 # 一些约定俗成：名字里含这些关键词直接定性
@@ -205,6 +239,57 @@ def guess_gender(name):
     for h in MALE_HINTS:
         if h in key: return "M"
     return None
+
+
+# 句首激动/呼语词：命中则轻微抬高音高+音量，让语气更生动
+EXCITE_OPENERS = re.compile(
+    r"^\s*(wow|oh|oops|hi|hey|hello|hooray|hurray|great|good|yeah|yay|yes|no|"
+    r"look|listen|come on|let's|let us|help|sorry|thanks|thank you|please|"
+    r"happy|merry|welcome|cheers|bravo|well done)\b",
+    re.I,
+)
+
+
+def analyze_prosody(content, speaker=None, voice=None):
+    """按句子语气返回 (rate, pitch, volume) 三元组 —— 免费 edge-tts 的"近似情感"层。
+
+    规则（叠加在全局 RATE 基准 -8% 之上）：
+      - 疑问句 (?)  : 音高抬高、语速略放慢 → 上扬询问感
+      - 感叹句 (!)  : 语速略快、音量加大、音高抬高 → 激动/强调
+      - 激动开头词  : 音高/音量轻微抬高 → 生动
+      - 陈述句      : 基准（仅全局放慢）
+      - 童声角色    : 在上述基础上再抬高音高、略快 → 天真活泼
+    返回的 rate 是"最终值"（已含全局 -8% 基准）。
+    """
+    text = (content or "").strip()
+    rate_pct = RATE_BASE_PCT
+    pitch_hz = 0
+    vol_pct  = 0
+
+    # 末尾标点判断语气（剥掉尾部引号/括号等再看）
+    tail = text.rstrip('"\'”’）)】」』 \t')
+    is_question = tail.endswith("?") or tail.endswith("？")
+    is_exclaim  = tail.endswith("!") or tail.endswith("！")
+
+    if is_question:
+        pitch_hz += 12
+        rate_pct -= 2          # 略慢，留出询问停顿感
+    elif is_exclaim:
+        pitch_hz += 10
+        rate_pct += 6          # 略快
+        vol_pct  += 12
+    elif EXCITE_OPENERS.match(text):
+        pitch_hz += 6
+        vol_pct  += 6
+
+    # 童声角色更高更活泼
+    if voice in CHILD_VOICES:
+        pitch_hz += 12
+        rate_pct += 3
+
+    return ("{:+d}%".format(rate_pct),
+            "{:+d}Hz".format(pitch_hz),
+            "{:+d}%".format(vol_pct))
 
 
 def split_dialogue(text):
@@ -289,19 +374,21 @@ class VoiceAllocator:
         return chosen
 
 
-async def tts_to_file(text, voice, fpath, rate=RATE):
+async def tts_to_file(text, voice, fpath, rate=RATE, pitch=PITCH_BASE, volume=VOLUME_BASE):
     if edge_tts is None:
         raise RuntimeError("需要 TTS 但未安装 edge_tts。请：pip install edge-tts")
-    communicate = edge_tts.Communicate(text, voice, rate=rate)
+    communicate = edge_tts.Communicate(text, voice, rate=rate, pitch=pitch, volume=volume)
     await communicate.save(fpath)
 
 
-async def tts_with_retry(text, voice, fpath, gender_pool, rate=RATE):
-    """edge-tts 偶尔对某把声音返回空音频 → 自动换一把同性别声音重试。"""
+async def tts_with_retry(text, voice, fpath, gender_pool,
+                         rate=RATE, pitch=PITCH_BASE, volume=VOLUME_BASE):
+    """edge-tts 偶尔对某把声音返回空音频 → 自动换一把同性别声音重试。
+    韵律参数 rate/pitch/volume 在重试时一并沿用，保持情感一致。"""
     # 首次尝试
     last_err = None
     try:
-        await tts_to_file(text, voice, fpath, rate=rate)
+        await tts_to_file(text, voice, fpath, rate=rate, pitch=pitch, volume=volume)
         if os.path.exists(fpath) and os.path.getsize(fpath) > 256:
             return voice
     except Exception as e:
@@ -312,7 +399,7 @@ async def tts_with_retry(text, voice, fpath, gender_pool, rate=RATE):
         if alt == voice:
             continue
         try:
-            await tts_to_file(text, alt, fpath, rate=rate)
+            await tts_to_file(text, alt, fpath, rate=rate, pitch=pitch, volume=volume)
             if os.path.exists(fpath) and os.path.getsize(fpath) > 256:
                 return alt
         except Exception as e:
@@ -395,7 +482,11 @@ async def gen_lesson_audio(fpath, en_text, seed_salt,
         voice = s["voice"]
         pool = FEMALE_VOICES if voice in FEMALE_VOICES else MALE_VOICES
         part_tmp = cpath + ".part"
-        actual_voice = await tts_with_retry(s["content"], voice, part_tmp, pool)
+        actual_voice = await tts_with_retry(
+            s["content"], voice, part_tmp, pool,
+            rate=s.get("rate", RATE),
+            pitch=s.get("pitch", PITCH_BASE),
+            volume=s.get("volume", VOLUME_BASE))
         os.replace(part_tmp, cpath)  # 原子落盘，避免中断留下半截缓存
         short_voice = actual_voice.split("-")[-1].replace("Neural", "")
         detail.append("{}→{}".format(s["speaker"] or "narr", short_voice))
@@ -408,7 +499,9 @@ async def gen_lesson_audio(fpath, en_text, seed_salt,
 
     info["detail"] = detail
     info["sentences"] = [{"idx": s["idx"], "hash": s["hash"],
-                          "speaker": s["speaker"], "voice": s["voice"]} for s in plan]
+                          "speaker": s["speaker"], "voice": s["voice"],
+                          "rate": s.get("rate"), "pitch": s.get("pitch"),
+                          "volume": s.get("volume")} for s in plan]
     return "ok", info
 
 
@@ -498,7 +591,7 @@ async def main():
             tasks.append((fname, en, seed_salt, label, expected_hash))
 
     print("[info] Textbook: {} ({})".format(tb_id, textbook.get("meta", {}).get("name", "-")))
-    print("[info] Rate: {}".format(RATE))
+    print("[info] Rate: {} (情感韵律层已启用：疑问↑音高 / 感叹↑语速音量 / 童声更活泼)".format(RATE))
     print("[info] Female pool: {} voices".format(len(FEMALE_VOICES)))
     print("[info] Male   pool: {} voices".format(len(MALE_VOICES)))
     print("[info] Tasks: {}".format(len(tasks)))
