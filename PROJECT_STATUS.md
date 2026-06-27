@@ -1557,3 +1557,10 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 - **音频**：18 个课文 `gzk_grade1A_u*_L*.mp3`（Andy 男/Lily 女/老师女/Ben 男）+ 28 个新单词 MP3（词库 964→992），0 fail。
 - ✅ 用户验收通过；剩余 16 单元（1下6/2上6/2下4）接续。
 
+
+### 30.1 批次2-4 grade1下/2上/2下（2026-06-27 晚 · 已验收上线）
+
+- `scripts/gzk_fill_rest.py` 填充剩余 **16 单元**：grade1下6（家庭/房子/房间/看见/宠物/食物）+ grade2上6（能力/晚餐/At the Zoo/时间/进行时运动/家务）+ grade2下4（交通/职业/地点/星期）。
+- ⚠️ grade2上 u3 官方标题缺失 → 拟定 **"Unit 3 At the Zoo（待核对）"**，待用户提供官方标题替换。
+- gzk **23 单元全部填充，0 占位**；课文音频共 **70 个**（gzk_grade1A/1B/2A 各18 + 2B 16）；单词词库 992→1043（gzk 累计新增 79 词 MP3）。0 fail。
+- ✅ 用户验收通过 → P0-1 广州口语填充任务**整体收官**。
