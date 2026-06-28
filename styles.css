@@ -840,6 +840,14 @@ body {
 #quizSpellSpeakBtn { transition: transform 0.15s, box-shadow 0.2s; }
 #quizSpellSpeakBtn:active { transform: scale(0.92); }
 
+/* 稳定答题区：防止智能推题摘要/原因条出现/消失时，圆形按钮（听力播放/拼写发音）跳动 */
+/* 手机屏高有限，用 min-height 给问答区兜底，避免摘要条把按钮挤出可视区 */
+@media (max-width: 640px) {
+  #practiceQuizView .card { min-height: 52vh; }
+}
+#quizAudioBox, #quizSpellBox { flex-shrink: 0; align-self: center; }
+#quizAudioBox .w-16.h-16, #quizSpellSpeakBtn { flex-shrink: 0; margin-left: auto; margin-right: auto; }
+
 /* 小屏幕：字母格略缩小，字号保持清晰 */
 @media (max-width: 380px) {
   #quizSpellBox .spell-cell { width: 32px; height: 44px; font-size: 18px; }
@@ -1420,4 +1428,38 @@ body.keyboard-open #practiceQuizView {
   .exam-cloze-passage { font-size: 13px; line-height: 1.8; }
   .exam-reading-passage { max-height: 200px; }
 }
+
+/* ===== 🧠 智能推题开关：自包含定位 =====
+   背景：tailwind.css 为 purge 构建产物，top-0.5 等类被裁剪缺失；
+   历史多版 inline transform/left 残留叠加，导致圆钮被推出椭圆框外。
+   这里用 ID 选择器 + .is-on 类完全接管几何与配色，且 transform 强制清零，
+   不再依赖任何 Tailwind 工具类，彻底杜绝错位。 */
+#smartPickToggle {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  border: none;
+  padding: 0;
+  border-radius: 9999px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  cursor: pointer;
+  background: #cbd5e1;                 /* OFF：灰 */
+  transition: background-color .2s ease;
+}
+#smartPickToggle.is-on { background: #10b981; }   /* ON：绿 */
+#smartPickToggle #smartPickKnob {
+  position: absolute;
+  top: 2px;                            /* 补回被 purge 的 top-0.5 */
+  left: 2px;                           /* OFF：靠左，距边 2px */
+  right: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  transform: none !important;          /* 清除历史 translateX 残留 */
+  transition: left .2s ease;
+}
+#smartPickToggle.is-on #smartPickKnob { left: 22px; }  /* ON：靠右 48-24-2=22px，恰好贴右边 2px */
 

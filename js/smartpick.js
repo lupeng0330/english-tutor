@@ -157,8 +157,10 @@ function _renderSmartPickToggle() {
   const btn = document.getElementById('smartPickToggle');
   const knob = document.getElementById('smartPickKnob');
   const hint = document.getElementById('smartPickHint');
-  if (btn)  btn.className = 'relative w-12 h-7 rounded-full transition flex-shrink-0 ' + (on ? 'bg-emerald-500' : 'bg-slate-300');
-  if (knob) knob.style.transform = on ? 'translateX(22px)' : 'translateX(2px)';
+  // 几何与配色全部交给 styles.css 的 #smartPickToggle / .is-on 规则，这里只切类
+  if (btn)  { btn.classList.add('smartpick-toggle'); btn.classList.toggle('is-on', on); }
+  // 清除历史版本可能写入的 inline 残留（transform / left / right），避免与 CSS 叠加把圆钮推出框
+  if (knob) { knob.style.transform = ''; knob.style.left = ''; knob.style.right = ''; }
   if (hint) hint.textContent = on ? '按错题/薄弱/新题智能排序出题' : '已关闭：随机出题';
 }
 window.toggleSmartPick = toggleSmartPick;

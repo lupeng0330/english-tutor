@@ -136,6 +136,7 @@ function switchPage(page) {
     document.getElementById('practiceResultView').classList.add('hide');
     document.getElementById('practiceFilterView').classList.remove('hide');
     document.getElementById('practiceTypeView').classList.remove('hide');
+    document.getElementById('smartPickCard').classList.remove('hide');
     try { refreshUnitFilterOptions(); } catch(e){}
     refreshPracticeCounts();
     try { _loadSmartPick(); _renderSmartPickToggle(); } catch(e){}   // 同步智能推题开关偏好

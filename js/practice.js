@@ -258,6 +258,7 @@ function startPractice(type) {
     document.getElementById('practiceFilterView').classList.add('hide');
     document.getElementById('practiceResultView').classList.add('hide');
     document.getElementById('practiceQuizView').classList.remove('hide');
+    document.getElementById('smartPickCard').classList.add('hide');
     state.lastSmartMeta = null;   // 错题本模式非智能推题产物，清掉避免误显示上次摘要
     _renderPickSummary();
     showQuiz();
@@ -284,6 +285,7 @@ function startPractice(type) {
   document.getElementById('practiceFilterView').classList.add('hide');
   document.getElementById('practiceResultView').classList.add('hide');
   document.getElementById('practiceQuizView').classList.remove('hide');
+  document.getElementById('smartPickCard').classList.add('hide');
   _renderPickSummary();   // 普通模式：渲染「本次推题构成」摘要
   showQuiz();
 }
@@ -345,6 +347,7 @@ function startSmartPractice() {
   document.getElementById('practiceFilterView').classList.add('hide');
   document.getElementById('practiceResultView').classList.add('hide');
   document.getElementById('practiceQuizView').classList.remove('hide');
+  document.getElementById('smartPickCard').classList.add('hide');
   _renderPickSummary();
   showQuiz();
 }
@@ -958,6 +961,7 @@ function backToPracticeList() {
   document.getElementById('practiceQuizView').classList.add('hide');
   document.getElementById('practiceTypeView').classList.remove('hide');
   document.getElementById('practiceFilterView').classList.remove('hide');
+  document.getElementById('smartPickCard').classList.remove('hide');
   refreshPracticeCounts();
 }
 
