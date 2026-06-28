@@ -15,6 +15,18 @@ param(
 $ErrorActionPreference = "Stop"
 Set-Location -LiteralPath $PSScriptRoot
 
+# ---------- 安全护栏：禁止手改 version.txt（铁律9）----------
+# version.txt 完全由 CI 托管。若它出现在待提交改动里（已暂存或未暂存），
+# 几乎一定是误操作，直接拦下并自动还原，从源头杜绝 rebase 版本冲突。
+$verChanged = (git status --porcelain -- version.txt) -split "`n" | Where-Object { $_ -ne '' }
+if ($verChanged) {
+    Write-Host "[dev-push] 检测到 version.txt 被本地修改 —— 该文件由 CI 自动管理，禁止手改（铁律9）。" -ForegroundColor Red
+    Write-Host "[dev-push] 正在自动还原 version.txt ..." -ForegroundColor Yellow
+    git restore --staged version.txt 2>$null | Out-Null
+    git checkout -- version.txt 2>$null | Out-Null
+    Write-Host "[dev-push] 已还原。继续推送。" -ForegroundColor Yellow
+}
+
 # ---------- 提交业务改动 ----------
 $porc = (git status --porcelain) -split "`n" | Where-Object { $_ -ne '' }
 if (-not $porc) {
