@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-28 晚**（本次：jk 小学 1-6 年级全册题库补齐，详见 §26；前序 §31 SRS、§30 gzk 回退、§29 技术债）
+> 最后更新：**2026-06-28 深夜**（本次：新增**铁律 9·绝不手改 version.txt** + Mac 版 `dev-push.sh` + 铁律6/7边界，详见 §32；前序 §26 题库补齐、§31 SRS）
 
 ---
 
@@ -33,7 +33,9 @@ start http://localhost:8765/mobile.html
 
 服务**仅用于本地验证**，不动 `version.txt`、不 push（详见 [铁律 3](#铁律速查卡)）。
 
-### ③ 五条铁律（最高优先级，每次任务都必须遵守）
+> ⚡ **推送 & 版本一句话**：要推送时——Mac 跑 `./dev-push.sh`、Windows 跑 `dev-push.ps1`（都会先 `pull --rebase` 再 push）。**`version.txt` 由 CI 全自动 bump、前端缓存随之自动刷新，任何人/任何端都【绝不手改它】（铁律9）**——这是历来 rebase 版本冲突的唯一根因。
+
+### ③ 九条铁律（最高优先级，每次任务都必须遵守）
 
 <a id="铁律速查卡"></a>
 
@@ -41,12 +43,13 @@ start http://localhost:8765/mobile.html
 |---|---|---|---|
 | 1 | 双端验证 | 电脑端 + 手机端两个 URL 都给出，配验证清单 | [§0 铁律 1](#铁律-1--每个任务完成后必须提供电脑端--手机端双验证无需真机) |
 | 2 | 必更新文档 | 任务收尾必须更新本文档（新增完成记录 + §3 规模 + 顶部最后更新行） | [§0 铁律 2](#铁律-2--每个任务完成后必须补记本-project_statusmd不能漏) |
-| 3 | 验证不 push | 本地服务不动 `version.txt` 不擅自 push；上线只走 `dev-push.ps1` | [§0 铁律 3](#铁律-3--验证服务不动-versiontxt不-push部署只走-dev-pushps1) |
+| 3 | 验证不 push | 本地服务不动 `version.txt` 不擅自 push；上线走 `dev-push.sh`(Mac)/`dev-push.ps1`(Win) | [§0 铁律 3](#铁律-3--验证服务不动-versiontxt不-push部署只走-dev-pushps1) |
 | 4 | 上线后对齐文档 | 用户确认 push 后必须把文档状态同步成「已上线（含版本号）」 | [§0 铁律 4](#铁律-4--经用户确认的任务在自动部署上线后必须同步更新-project_statusmd2026-06-26-新增) |
 | 5 | 选项清单决策 | 决策项必须用 `ask_followup_question` 选项清单收集，禁止裸文本提问 | [§0 铁律 5](#铁律-5--涉及方案版本范围节奏的决策项必须用选项清单收集2026-06-26-新增) |
 | 6 | 真实落盘验证 | 关键改动只信磁盘真相：Python 直写 + 读盘验证 + `git diff` 确认 + 拉线上 URL 复核；本环境编辑/shell 输出会乱码出假数据，绝不据此下结论 | §0 铁律 6（2026-06-28 新增） |
 | 7 | 省 token 执行 | 按用户字面诉求一步到位：不脑补问题、不过度自证、不反复测试、不上重工具(Playwright/截图等非必要不用)；少读多准、结论先行 | §0 铁律 7（2026-06-28 新增） |
 | 8 | 数据安全三件套 | 任何写入题库/例句/教材 JSON 的脚本必须带三层防护：①写入前自动备份 `.backups/` ②打印差异报告（保留X/新增Y/替换Z）③合并后题量骤降>30% 中断；写完必须跑 `scripts/_verify_qbank.py` 校验 | §0 铁律 8（2026-06-28 新增） |
+| 9 | **绝不手改 version.txt** | `version.txt` 由 CI（`update-version.yml`）全自动 bump + 缓存自动刷新；任何端/任何人都禁止手写它（曾因手改反复引发 rebase 版本冲突）。推送统一走 `dev-push.sh`/`dev-push.ps1`（内置 pull --rebase + 误改自动还原） | §0 铁律 9（2026-06-28 新增） |
 
 ### ④ 最近 3 件大事（按时间倒序）
 
@@ -87,7 +90,7 @@ start http://localhost:8765/mobile.html
 
 ### 主体（当前活跃）
 
-- [§0 给新进来的 AI 助手的一段话 + 八条铁律](#0-给新进来的-ai-助手的一段话)
+- [§0 给新进来的 AI 助手的一段话 + 九条铁律](#0-给新进来的-ai-助手的一段话)
 - [§1 项目一句话简介](#1-项目一句话简介)
 - [§2 技术栈与运行](#2-技术栈与运行)
 - [§3 当前规模（2026-06-27 核查）](#3-当前规模2026-06-27-核查)
@@ -135,8 +138,8 @@ start http://localhost:8765/mobile.html
 
 如果还有时间，请按顺序读：
 
-1. 顶部 **🚀 速读卡**（项目 / 起服务 / 8 条铁律 / 最近大事 / 决策树 / 接手三件套）
-2. **本节 §0**（8 条铁律完整版） + **§3 当前规模** + **§4 目录与关键文件** + **§5 重要约定（容易踩坑）**
+1. 顶部 **🚀 速读卡**（项目 / 起服务 / 9 条铁律 / 最近大事 / 决策树 / 接手三件套）
+2. **本节 §0**（9 条铁律完整版） + **§3 当前规模** + **§4 目录与关键文件** + **§5 重要约定（容易踩坑）**
 3. **§8 后续版本开发计划**：看 P0/P1/P2/P3 哪些 checkbox 还没勾，决定干啥
 4. 需要看具体实现时再打开对应源文件。
 5. **附录 A**（§10-§25）是历史完成记录，**按需检索**，不需要逐章读完。
@@ -166,10 +169,10 @@ start http://localhost:8765/mobile.html
 - 视情况更新 **§3 当前规模**、**§7 近期进展 git log 摘要**、相关版本计划的 **checkbox**。
 - 顶部「最后更新」行同步成本次内容。
 
-#### 铁律 3 · 验证服务不动 `version.txt`、不 push；部署只走 `dev-push.ps1`
+#### 铁律 3 · 验证服务不动 `version.txt`、不 push；部署走 `dev-push.sh`(Mac)/`dev-push.ps1`(Win)
 
-- 本地起的服务仅用于验证，**绝不手改 `version.txt`、不擅自 push**。
-- 部署 / 上线由用户确认后跑 `dev-push.ps1`（脚本自动 bump 版本号 + commit + push）；用户明确说"推送"时才执行该脚本。
+- 本地起的服务仅用于验证，**绝不手改 `version.txt`、不擅自 push**（详见铁律 9 红线）。
+- 部署 / 上线由用户确认后跑推送脚本——**Mac/Linux：`./dev-push.sh`；Windows：`dev-push.ps1`**；脚本做 `commit + pull --rebase + push`（**版本号 bump 由 CI 负责，脚本本身不写 `version.txt`**）。用户明确说"推送"时才执行。
 
 #### 铁律 4 · 经用户确认的任务在自动部署上线后，必须同步更新 `PROJECT_STATUS.md`（2026-06-26 新增）
 
@@ -1599,6 +1602,8 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 3. **少读多准**：只读必要片段，不重复/大段读；识别到环境乱码立即固定可靠通道。
 4. **回复精简**：结论先行，少铺陈。
 
+> **与铁律 6 的边界**（避免误读为矛盾）：铁律 6 要"真实落盘验证"、铁律 7 要"省 token 不过度自证"，二者自洽的边界是——**关键改动（代码/数据）落盘验证一次到位即可，但不重复自证、不为同一结论反复跑测试或上重工具**。即"验证要到位，但只到位一次"。
+
 #### 铁律 8 — 数据安全三件套（2026-06-28 新增）
 
 > 起因：`build_qbank.py --write` 第一次运行时完全替换了 4 个题库 JSON（420→70 题），导致其他年级旧题全丢。幸好 git 可恢复，但暴露了「构建脚本直接覆写生产数据无安全网」的致命风险。
@@ -1613,6 +1618,18 @@ py -3 scripts/ai_generate_questions.py --mode merge-spelling --textbook hj --wri
 已有防护实现：
 - `scripts/jk/build_qbank.py --write`：已内置备份 + 差异报告 + 骤降阻断（参考实现）
 - `scripts/_verify_qbank.py`：全题库校验脚本（jk+hj，2703 题，0 错误）
+
+#### 铁律 9 — 绝不手改 `version.txt`，推送统一走 dev-push 脚本（2026-06-28 新增 · 最高优先级红线）
+
+> 起因：多次（含最近一次智能推题开关修复）AI 在 Mac 端用裸 `git push`，并**手写 `version.txt` 想"刷新缓存"**，结果与 CI 自动 bump 的 `version.txt` 在同一行 rebase 冲突。这是历来"版本冲突"的**唯一根因**。
+
+铁律（任何端、任何人、任何任务都必须遵守）：
+
+1. **`version.txt` 完全由 CI 托管**：`.github/workflows/update-version.yml` 在 feat/fix/perf/refactor 提交推送后，自动计算下一个版本号（同月小版本 +1 / 跨月大版本 +1）、写入 `version.txt` 并以 "GitHub Actions" 身份提交。docs/chore/ci/test/style/build 不 bump。
+2. **缓存自动刷新**：前端按 `version.txt` 的版本号给 `styles.css`/`js` 加 `?ver=` 参数，CI bump 后 URL 自动变化、缓存自动失效。**无需、也禁止手改 `version.txt` 来"刷缓存"**。
+3. **推送统一走脚本**：Mac/Linux 跑 `./dev-push.sh`、Windows 跑 `dev-push.ps1`。两者都：先提交业务改动 → `git pull --rebase origin main` → `git push`，且**内置护栏**：若检测到 `version.txt` 被本地改动，自动 `git checkout -- version.txt` 还原后再推，从源头杜绝冲突。
+4. **绝不裸操作**：不要绕开脚本手敲 `git push`；更不要 `echo/printf > version.txt`。若脚本不可用，至少手动遵循「`pull --rebase` → push、且不碰 version.txt」。
+5. **真要改版本格式**：只能改 `update-version.yml`（CI 规则），不能改产物 `version.txt`。
 
 
 ## 31. ✅ jk 小学 1-6 年级全册题库补齐（2026-06-28 晚 · 已上线）
@@ -1660,3 +1677,23 @@ grade3上题库补齐（70拼写/18语法/9听力/9阅读）验证通过后，�
 - `scripts/_verify_qbank.py`：2703 题 0 错误（仅 4 条旧版 code 后缀警告）
 - 71 个 jk 听力 MP3 全部存在、非空
 - `python3 scripts/jk/build_qbank.py --write` 合并逻辑验证：旧题保留 + 新题替换
+
+
+## 32. ✅ 铁律体系修订：新增铁律 9 + Mac 推送脚本 + 6/7 边界（2026-06-28 深夜）
+
+### 32.1 背景
+
+用户复盘"近几次 AI 没按铁律执行、反复出现版本冲突"。定位根因：**AI 在 Mac 端用裸 `git push` 并手改 `version.txt`**，与 CI 自动 bump 的 `version.txt` 同行 rebase 冲突（最近一次智能推题开关修复即为现行犯）。根因有三个缺口：①只有 Windows 的 `dev-push.ps1`，Mac 端无对等脚本；②"绝不手改 version.txt"红线藏太深；③缓存刷新机制没讲清，诱导 AI 手改 version.txt"刷缓存"。
+
+### 32.2 落地改动
+
+1. **新增 `dev-push.sh`**（Mac/Linux 版，对等 `dev-push.ps1`）：`commit → pull --rebase → push`，**内置护栏**——检测到 `version.txt` 被本地改动会自动 `git checkout` 还原再推，从源头杜绝冲突。`bash -n` 语法校验通过、已 `chmod +x`。
+2. **新增铁律 9·绝不手改 version.txt**（独立红线）：写入速查卡表格 + §0 完整正文，讲清"CI 全自动 bump + 缓存自动刷新，任何端禁止手写"。
+3. **铁律 3 正文修订**：补 Mac/Win 双脚本，纠正过时表述（版本 bump 由 CI 负责，脚本不写 version.txt）。
+4. **铁律 6/7 边界说明**：补"关键改动落盘验证一次到位，但不重复自证"，消除二者张力。
+5. 顶部速读卡加"推送 & 版本一句话"提示；全文"八条铁律 / 8 条"计数同步为"九条 / 9 条"。
+
+### 32.3 验证
+
+- 8 条铁律全面体检结论：整体合理、无逻辑硬冲突；本次堵住 3 个执行缺口。
+- 本节为 docs 改动，CI **不 bump 版本**，推送走 `dev-push.sh`（不碰 version.txt，无冲突风险）。
