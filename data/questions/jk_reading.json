@@ -1,155 +1,5 @@
 [
   {
-    "grade": 3,
-    "term": "下",
-    "code": "3B_U1",
-    "passage": "Tom gets up at 7. He has breakfast at 7:30. He goes to school at 8.",
-    "q": "When does Tom go to school?",
-    "options": [
-      "At 7:00",
-      "At 7:30",
-      "At 8:00"
-    ],
-    "answer": 2,
-    "explain": "文中说 goes to school at 8",
-    "difficulty": 1
-  },
-  {
-    "grade": 4,
-    "term": "上",
-    "code": "4A_U1",
-    "passage": "This is my room. There is a bed, a desk and two chairs in it. I study at my desk every night.",
-    "q": "What does the writer do at the desk?",
-    "options": [
-      "Sleep",
-      "Study",
-      "Eat"
-    ],
-    "answer": 1,
-    "explain": "study at my desk=在桌边学习",
-    "difficulty": 2
-  },
-  {
-    "grade": 4,
-    "term": "下",
-    "code": "4B_U1",
-    "passage": "I like apples and bananas very much. My sister likes oranges. We eat fruit every day because fruit is healthy.",
-    "q": "Why do they eat fruit every day?",
-    "options": [
-      "Fruit is cheap",
-      "Fruit is healthy",
-      "Fruit is sweet"
-    ],
-    "answer": 1,
-    "explain": "because fruit is healthy",
-    "difficulty": 2
-  },
-  {
-    "grade": 4,
-    "term": "下",
-    "code": "4B_U2",
-    "passage": "There are four seasons in a year. Spring is warm. Summer is hot. Autumn is cool. Winter is cold. I like spring best.",
-    "q": "Which season does the writer like best?",
-    "options": [
-      "Summer",
-      "Spring",
-      "Winter"
-    ],
-    "answer": 1,
-    "explain": "I like spring best",
-    "difficulty": 2
-  },
-  {
-    "grade": 5,
-    "term": "上",
-    "code": "5A_U1",
-    "passage": "Kate wants to be a doctor when she grows up. She often reads books about medicine. Her mother is also a doctor.",
-    "q": "What does Kate want to be?",
-    "options": [
-      "A teacher",
-      "A doctor",
-      "A scientist"
-    ],
-    "answer": 1,
-    "explain": "wants to be a doctor",
-    "difficulty": 2
-  },
-  {
-    "grade": 5,
-    "term": "上",
-    "code": "5A_U2",
-    "passage": "Last summer, Jim traveled to Beijing by plane with his family. They visited the Great Wall and the Forbidden City. They had a great time.",
-    "q": "How did Jim travel to Beijing?",
-    "options": [
-      "By plane",
-      "By train",
-      "By car"
-    ],
-    "answer": 0,
-    "explain": "by plane=坐飞机",
-    "difficulty": 3
-  },
-  {
-    "grade": 5,
-    "term": "下",
-    "code": "5B_U1",
-    "passage": "We should save water to protect our Earth. We can turn off the tap when we brush teeth. We can also plant more trees.",
-    "q": "Which is NOT mentioned in the passage?",
-    "options": [
-      "Saving water",
-      "Planting trees",
-      "Eating vegetables"
-    ],
-    "answer": 2,
-    "explain": "文中没有提到吃蔬菜",
-    "difficulty": 3
-  },
-  {
-    "grade": 5,
-    "term": "下",
-    "code": "5B_U2",
-    "passage": "Exercise is good for health. Mike plays football after school. His sister swims every weekend. Exercise makes them strong.",
-    "q": "What does Mike do after school?",
-    "options": [
-      "Plays football",
-      "Swims",
-      "Runs"
-    ],
-    "answer": 0,
-    "explain": "Mike plays football after school",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U1",
-    "passage": "Tom is 12 years old. He is 160 cm tall. His brother Jack is 10 and 155 cm tall. Tom is older and taller than Jack.",
-    "q": "Who is shorter?",
-    "options": [
-      "Tom",
-      "Jack",
-      "They are the same"
-    ],
-    "answer": 1,
-    "explain": "Jack 155<Tom 160，所以 Jack 更矮",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U2",
-    "passage": "Last Sunday I went to my grandparents' house. I helped them clean the garden and cook lunch. We had a wonderful day.",
-    "q": "What did the writer do last Sunday?",
-    "options": [
-      "Went to school",
-      "Visited grandparents",
-      "Watched TV"
-    ],
-    "answer": 1,
-    "explain": "went to my grandparents' house",
-    "difficulty": 2
-  },
-  {
     "grade": 7,
     "term": "上",
     "code": "7A_U1",
@@ -328,186 +178,6 @@
     "answer": 1,
     "explain": "reduce pollution to save our planet",
     "difficulty": 4
-  },
-  {
-    "grade": 3,
-    "term": "下",
-    "code": "3B_U1",
-    "passage": "I get up at seven o'clock. I have breakfast at seven thirty. Then I go to school. I have lunch at twelve o'clock. I go home at five o'clock.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Food",
-      "Animals",
-      "My Day"
-    ],
-    "answer": 2,
-    "difficulty": 2,
-    "explain": "整段围绕 'My Day' 展开"
-  },
-  {
-    "grade": 3,
-    "term": "下",
-    "code": "3B_U2",
-    "passage": "I have many hobbies. I like to play football and read books. My sister likes to sing and dance. My brother likes to draw. What are your hobbies?",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Weather",
-      "Family",
-      "Hobbies"
-    ],
-    "answer": 2,
-    "difficulty": 2,
-    "explain": "整段围绕 'Hobbies' 展开"
-  },
-  {
-    "grade": 4,
-    "term": "上",
-    "code": "4A_U1",
-    "passage": "This is my room. There is a bed, a desk and a chair in it. There is a window near the desk. I like my room very much.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "My Room",
-      "Sports",
-      "Festivals"
-    ],
-    "answer": 0,
-    "difficulty": 2,
-    "explain": "整段围绕 'My Room' 展开"
-  },
-  {
-    "grade": 4,
-    "term": "上",
-    "code": "4A_U2",
-    "passage": "I am wearing a blue shirt and black shoes. My sister is wearing a pink dress. It is cold today, so I wear a coat and a hat. What are you wearing?",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Weather",
-      "Clothes",
-      "Festivals"
-    ],
-    "answer": 1,
-    "difficulty": 2,
-    "explain": "整段围绕 'Clothes' 展开"
-  },
-  {
-    "grade": 4,
-    "term": "下",
-    "code": "4B_U1",
-    "passage": "I like vegetables and fruit. They are healthy. I have rice and noodles too. What's your favorite food? I also like bread with milk in the morning.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Food I Like",
-      "Animals",
-      "Festivals"
-    ],
-    "answer": 0,
-    "difficulty": 2,
-    "explain": "整段围绕 'Food I Like' 展开"
-  },
-  {
-    "grade": 4,
-    "term": "下",
-    "code": "4B_U2",
-    "passage": "There are four seasons in a year. Spring is warm and colorful. Summer is hot and sunny. Autumn is cool. Winter is cold and snowy. My favorite season is spring.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Seasons",
-      "Weather",
-      "School"
-    ],
-    "answer": 0,
-    "difficulty": 2,
-    "explain": "整段围绕 'Seasons' 展开"
-  },
-  {
-    "grade": 5,
-    "term": "上",
-    "code": "5A_U1",
-    "passage": "What do you want to be when you grow up? I want to be a scientist. I want to help people. My brother wants to be an engineer.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Travel",
-      "My Dream Job",
-      "Family"
-    ],
-    "answer": 1,
-    "difficulty": 2,
-    "explain": "整段围绕 'My Dream Job' 展开"
-  },
-  {
-    "grade": 5,
-    "term": "上",
-    "code": "5A_U2",
-    "passage": "I love to travel. Last summer, I traveled to Beijing by plane. I visited the Great Wall and the Forbidden City. It was a wonderful trip. This winter, I will travel to Shanghai by train.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Weather",
-      "School",
-      "Travel"
-    ],
-    "answer": 2,
-    "difficulty": 2,
-    "explain": "整段围绕 'Travel' 展开"
-  },
-  {
-    "grade": 5,
-    "term": "下",
-    "code": "5B_U1",
-    "passage": "The Earth is our home. We should protect it. We should save water and plant more trees. We should not pollute rivers. Let's recycle paper and plastic to make our planet greener.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Weather",
-      "Travel",
-      "Protect the Earth"
-    ],
-    "answer": 2,
-    "difficulty": 2,
-    "explain": "整段围绕 'Protect the Earth' 展开"
-  },
-  {
-    "grade": 5,
-    "term": "下",
-    "code": "5B_U2",
-    "passage": "Exercise is important for our health. I play football with my classmates after school. My sister likes swimming. My father goes running every morning. What sports do you like?",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Festivals",
-      "Travel",
-      "Sports"
-    ],
-    "answer": 2,
-    "difficulty": 2,
-    "explain": "整段围绕 'Sports' 展开"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U1",
-    "passage": "How tall are you, Mike? I'm 165 cm tall. I'm taller than you. How old is your brother? He is 12. He is younger than me.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Travel",
-      "Festivals",
-      "How Tall Are You?"
-    ],
-    "answer": 2,
-    "difficulty": 3,
-    "explain": "整段围绕 'How Tall Are You?' 展开"
-  },
-  {
-    "grade": 6,
-    "term": "上",
-    "code": "6A_U2",
-    "passage": "What did you do last weekend? I visited my grandparents. I cleaned my room and washed my clothes. It was a busy weekend.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "Family",
-      "Last Weekend",
-      "Festivals"
-    ],
-    "answer": 1,
-    "difficulty": 3,
-    "explain": "整段围绕 'Last Weekend' 展开"
   },
   {
     "grade": 7,
@@ -1182,6 +852,870 @@
     ],
     "answer": 0,
     "explain": "文中说 We sing and dance in our music show",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "passage": "I get up at seven every morning. First I wash my face. Then I brush my teeth. I eat breakfast with my family. At seven thirty, I am ready for school.",
+    "q": "What time does the child get up?",
+    "options": [
+      "Seven o'clock",
+      "Eight o'clock",
+      "Six o'clock"
+    ],
+    "answer": 0,
+    "explain": "文中说 I get up at seven",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "passage": "Today is a busy day. In the morning I went to school. We sang songs and played games. After school I helped Mum at home. At night I read a book in bed. I was tired but happy. What a great day!",
+    "q": "What did the child do after school?",
+    "options": [
+      "Helped Mum",
+      "Played more games",
+      "Went to a party"
+    ],
+    "answer": 0,
+    "explain": "文中说 After school I helped Mum at home",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "passage": "There is a big clock on the wall. It tells me the time. At seven, I get up. At eight, I am at school. At four, school is over. I finish my homework at seven. Time flies fast — make a good plan every day!",
+    "q": "When does school finish?",
+    "options": [
+      "At four o'clock",
+      "At seven o'clock",
+      "At twelve o'clock"
+    ],
+    "answer": 0,
+    "explain": "文中说 At four, school is over",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4",
+    "passage": "On Sunday, my friends came to my home. We had a party. We played games and ate cakes. We sang songs together. Ben said, \"Thank you, Anna. I am so happy today.\" Friends make us smile!",
+    "q": "How did Ben feel at the party?",
+    "options": [
+      "Happy",
+      "Tired",
+      "Hungry"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I am so happy today",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5",
+    "passage": "Our classroom is small but warm. Each desk and chair has a name on it. We have three class rules: keep clean, keep tidy, and help each other. Our class call is \"One team, one dream!\" We love our class!",
+    "q": "How many class rules do they have?",
+    "options": [
+      "Three",
+      "Two",
+      "Five"
+    ],
+    "answer": 0,
+    "explain": "文中说 We have three class rules",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6",
+    "passage": "Today is my duty day. After class, I sweep the floor and wipe the desks. Ben helps me clean the windows. The little plants by the window look thirsty, so I water them. Now our classroom is clean and bright. Helping is fun!",
+    "q": "Why does she water the plants?",
+    "options": [
+      "They look thirsty",
+      "The teacher tells her",
+      "She likes playing with water"
+    ],
+    "answer": 0,
+    "explain": "文中说 The little plants look thirsty",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7",
+    "passage": "Our school has some easy rules. Don't run in the hall. Don't shout in class. We should walk slowly and speak quietly. We should be kind to friends and listen to the teacher. Rules keep us safe and happy.",
+    "q": "Why do we have school rules?",
+    "options": [
+      "To keep us safe and happy",
+      "To make us run faster",
+      "To give us homework"
+    ],
+    "answer": 0,
+    "explain": "文中说 Rules keep us safe and happy",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8",
+    "passage": "\"Please\", \"thanks\", and \"sorry\" are magic words. When we want something, we say \"please\". When others help us, we say \"thanks\". When we make a mistake, we say \"sorry\". A kind smile and a polite word can warm a cold day. Be polite and you will have many friends!",
+    "q": "What are the three magic words?",
+    "options": [
+      "Please, thanks, sorry",
+      "Hello, goodbye, yes",
+      "Run, jump, play"
+    ],
+    "answer": 0,
+    "explain": "文中说 Please, thanks, and sorry are magic words",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U9",
+    "passage": "Every Friday is our Road Helper Day. We stand by the road. When the light is red, we say \"Stop and wait\". When the light is green, we say \"Now you can go\". The children smile and say \"Thanks\". Helping others is a great way to start the day!",
+    "q": "What day is Road Helper Day?",
+    "options": [
+      "Friday",
+      "Monday",
+      "Sunday"
+    ],
+    "answer": 0,
+    "explain": "文中说 Every Friday is our Road Helper Day",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "passage": "I have a new home. It is small but very beautiful. There is a soft sofa in the living room. The kitchen is white and clean. My bedroom has a small bed and a desk. Welcome to my home — come in and have a look!",
+    "q": "What colour is the kitchen?",
+    "options": [
+      "White",
+      "Black",
+      "Blue"
+    ],
+    "answer": 0,
+    "explain": "文中说 The kitchen is white and clean",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "passage": "There are six people in my family. My father is a doctor. My mother is a teacher. I have one brother and one sister. Grandpa and Grandma live with us. After dinner, we talk together. We love each other very much.",
+    "q": "What does the mother do?",
+    "options": [
+      "She is a teacher",
+      "She is a doctor",
+      "She is a cook"
+    ],
+    "answer": 0,
+    "explain": "文中说 My mother is a teacher",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3",
+    "passage": "My favourite room is my bedroom. It is upstairs near the bathroom. There is a small bed, a desk and a lamp. I do my homework at the desk. At night, the lamp is bright and warm. I read storybooks in bed until Mum says, \"Time for bed!\"",
+    "q": "Where does the child do homework?",
+    "options": [
+      "At the desk",
+      "On the bed",
+      "In the kitchen"
+    ],
+    "answer": 0,
+    "explain": "文中说 I do my homework at the desk",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4",
+    "passage": "Every day I do many things. In the morning, I go to school and study with my friends. After school, I do my homework at the desk. Then I read a story or draw a picture. After dinner, I watch TV for a while with my family. A full day, a happy day!",
+    "q": "What does the child do after dinner?",
+    "options": [
+      "Watch TV with family",
+      "Do homework",
+      "Go to bed"
+    ],
+    "answer": 0,
+    "explain": "文中说 After dinner, I watch TV with my family",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5",
+    "passage": "Everyone in my class has a hobby. Tom plays the guitar. Lily likes to dance. Ben plays the piano very well. Anna loves swimming. I like cooking with Mum on weekends. My favourite hobby is reading storybooks. Hobbies are like good friends — they stay with you all life!",
+    "q": "What can Tom do?",
+    "options": [
+      "Play the guitar",
+      "Play the piano",
+      "Swim"
+    ],
+    "answer": 0,
+    "explain": "文中说 Tom plays the guitar",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6",
+    "passage": "My favourite animal is the panda. Pandas live in the mountains of China. They are black and white. They eat bamboo all day. Pandas look slow but they can climb trees fast. I want to see a real panda one day. Animals are our friends — let's care for them!",
+    "q": "What do pandas eat?",
+    "options": [
+      "Bamboo",
+      "Fish",
+      "Meat"
+    ],
+    "answer": 0,
+    "explain": "文中说 They eat bamboo all day",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7",
+    "passage": "I love weekends. On Saturday, I usually visit the park with my family. We bring sandwiches and have a picnic on the grass. On Sunday morning, I do my homework. In the afternoon, I watch a fun movie with my friends. Weekends are short but full of joy and love!",
+    "q": "What do they bring to the picnic?",
+    "options": [
+      "Sandwiches",
+      "Noodles",
+      "Cakes"
+    ],
+    "answer": 0,
+    "explain": "文中说 We bring sandwiches",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8",
+    "passage": "My family loves festivals. At Spring Festival, we eat dumplings and visit our grandparents. We get red envelopes — that's so much fun! At Christmas, we decorate the tree and sing songs. We make cards for our friends. Festivals bring our family closer and make each year warm and bright!",
+    "q": "What do they eat at Spring Festival?",
+    "options": [
+      "Dumplings",
+      "Cakes",
+      "Bread"
+    ],
+    "answer": 0,
+    "explain": "文中说 At Spring Festival, we eat dumplings",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U9",
+    "passage": "A new year has come! I have many new wishes. I wish to study hard and read more storybooks. I wish to help Mum at home and share with my friends. Most of all, I wish a year full of smiles for my family and all my friends. Happy New Year to everyone!",
+    "q": "What does the child wish to do at home?",
+    "options": [
+      "Help Mum",
+      "Watch TV",
+      "Play games"
+    ],
+    "answer": 0,
+    "explain": "文中说 I wish to help Mum at home",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "passage": "It is a warm spring day. The sun is bright and the wind is soft. Pink and yellow flowers grow on the grass. The trees wear new green leaves. Children run in the park and fly kites. Spring is the season of new life!",
+    "q": "What season is it?",
+    "options": [
+      "Spring",
+      "Summer",
+      "Autumn"
+    ],
+    "answer": 0,
+    "explain": "文中多次提到 spring",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "passage": "I have many clothes in my closet. I wear T-shirts and shorts in summer. In spring, I like a light shirt and a skirt. In winter, I wear warm trousers and shoes. A hat keeps my head warm. Clothes make every season comfortable!",
+    "q": "What does she wear in summer?",
+    "options": [
+      "T-shirts and shorts",
+      "A shirt and trousers",
+      "A jacket"
+    ],
+    "answer": 0,
+    "explain": "文中说 I wear T-shirts and shorts in summer",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3",
+    "passage": "On Saturday, Mum and I went to a big store. We saw many shirts and shoes. The blue skirt was eighty yuan — too expensive! The white hat was only fifteen yuan — very cheap. I bought the hat with my own money. Shopping is fun!",
+    "q": "What was expensive?",
+    "options": [
+      "The blue skirt",
+      "The white hat",
+      "The shirt"
+    ],
+    "answer": 0,
+    "explain": "文中说 The blue skirt was eighty yuan — too expensive",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4",
+    "passage": "Numbers help us in many ways. We count money, count days, and count steps. At the store, we add prices to find the total. A book is thirty yuan, a pen is twenty — the total is fifty yuan. Numbers are everywhere!",
+    "q": "What is thirty plus twenty?",
+    "options": [
+      "Fifty",
+      "Forty",
+      "Sixty"
+    ],
+    "answer": 0,
+    "explain": "30+20=50",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5",
+    "passage": "My grandma is a great cook. She makes tasty rice, soft noodles, and warm bread. Her vegetable soup is the best. I love sweet cakes after dinner. Good food keeps us strong and happy!",
+    "q": "Who is a great cook?",
+    "options": [
+      "Grandma",
+      "Mum",
+      "Dad"
+    ],
+    "answer": 0,
+    "explain": "文中说 My grandma is a great cook",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6",
+    "passage": "Today I am a small chef. First, I wash my hands. Then I break two eggs into a bowl. I wash the fruit and put it on a plate. I set the table with a knife, fork and spoon. Cooking with Mum is so much fun!",
+    "q": "How many eggs does she use?",
+    "options": [
+      "Two",
+      "Three",
+      "One"
+    ],
+    "answer": 0,
+    "explain": "文中说 I break two eggs",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7",
+    "passage": "A healthy day starts with a good breakfast. We should drink water and eat fresh fruit. Sweets are tasty but not so healthy. Exercise makes us strong. Good sleep gives us energy. Small habits make a big difference!",
+    "q": "What makes us strong?",
+    "options": [
+      "Exercise",
+      "Sweets",
+      "Sleeping late"
+    ],
+    "answer": 0,
+    "explain": "文中说 Exercise makes us strong",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8",
+    "passage": "Last Sunday we had a wonderful picnic by the lake. The sun was warm and the water was blue. We put a big mat on the grass. We shared sandwiches, fruit and juice. After eating, we walked by the lake. It was a perfect day!",
+    "q": "What did they do after eating?",
+    "options": [
+      "Walked by the lake",
+      "Went home",
+      "Went swimming"
+    ],
+    "answer": 0,
+    "explain": "文中说 After eating, we walked by the lake",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U9",
+    "passage": "Spring is almost over. In my diary I wrote about every weekend. We flew kites in the park, learned to cook with Mum, and had a picnic by the lake. Spring brought us warm days and happy times. Thank you, lovely spring!",
+    "q": "What did they do in the park?",
+    "options": [
+      "Flew kites",
+      "Had a picnic",
+      "Played football"
+    ],
+    "answer": 0,
+    "explain": "文中说 We flew kites in the park",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "passage": "A new term has started! I am in Grade 5 now. My new schedule is busy but exciting. I have new classmates and new teachers. I hope to study hard and make many friends this term. Let's have a great year together!",
+    "q": "What grade is the child in?",
+    "options": [
+      "Grade 5",
+      "Grade 4",
+      "Grade 6"
+    ],
+    "answer": 0,
+    "explain": "文中说 I am in Grade 5 now",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "passage": "We have many subjects at school. English is my favourite — it's easy and fun. Maths is a little difficult, but I try hard. Science teaches us about the world. PE keeps us strong. Art lets us create. Every subject is special in its own way!",
+    "q": "Why does the child like English?",
+    "options": [
+      "It's easy and fun",
+      "It's difficult",
+      "It has no homework"
+    ],
+    "answer": 0,
+    "explain": "文中说 English is easy and fun",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3",
+    "passage": "Everyone has a talent. Tom can dance very well. Lily draws beautiful pictures. I can speak English and tell stories. On the school stage, we show our talents. Our teachers and parents are so proud. A talent is a gift — share it with the world!",
+    "q": "What can Lily do?",
+    "options": [
+      "Draw pictures",
+      "Dance",
+      "Sing"
+    ],
+    "answer": 0,
+    "explain": "文中说 Lily draws beautiful pictures",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4",
+    "passage": "Our school library is a quiet and wonderful place. There are many books on the shelves — storybooks, magazines, and science books. We use a library card to borrow books. We must return them on time. Every book opens a new world!",
+    "q": "What do they use to borrow books?",
+    "options": [
+      "A library card",
+      "Money",
+      "A phone"
+    ],
+    "answer": 0,
+    "explain": "文中说 We use a library card to borrow books",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5",
+    "passage": "It's Sports Day! The sun is bright and everyone is excited. Tom runs fast in the race. Lily jumps very high. Our team wins the relay race. We cheer and hug each other. Winning is great, but having fun together is even better!",
+    "q": "What is more important than winning?",
+    "options": [
+      "Having fun together",
+      "Winning the race",
+      "Getting a prize"
+    ],
+    "answer": 0,
+    "explain": "文中说 having fun together is even better",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U6",
+    "passage": "Festivals around the world are amazing! In China, we celebrate Mid-Autumn with moon cakes and family dinners. Americans have Thanksgiving with turkey. Halloween means costumes and candy. Each festival has its own tradition. They all bring people together!",
+    "q": "What do Americans eat at Thanksgiving?",
+    "options": [
+      "Turkey",
+      "Moon cakes",
+      "Dumplings"
+    ],
+    "answer": 0,
+    "explain": "文中说 Americans have Thanksgiving with turkey",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U7",
+    "passage": "This year, our school has many new clubs. The robot club builds amazing machines. The chess club teaches smart moves. The photo club captures beautiful moments. The drama club puts on great shows. Follow your interest and join a club today!",
+    "q": "What does the robot club do?",
+    "options": [
+      "Build machines",
+      "Take photos",
+      "Put on shows"
+    ],
+    "answer": 0,
+    "explain": "文中说 The robot club builds amazing machines",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U8",
+    "passage": "Last weekend, our class volunteered at the city park. We picked up rubbish, planted flowers, and helped elderly people cross the road. Their warm smiles made us so happy. Helping hands and kind hearts make the world a better place!",
+    "q": "What did they do at the park?",
+    "options": [
+      "Picked up rubbish and planted flowers",
+      "Played games",
+      "Had a picnic"
+    ],
+    "answer": 0,
+    "explain": "文中说 We picked up rubbish, planted flowers",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U9",
+    "passage": "Last Friday our school had a big Show Time. Each class prepared one act. We sang songs in English, danced to popular music, and told funny stories. The audience clapped and cheered. It was a show to remember forever!",
+    "q": "What did the audience do?",
+    "options": [
+      "Clapped and cheered",
+      "Left early",
+      "Read books"
+    ],
+    "answer": 0,
+    "explain": "文中说 The audience clapped and cheered",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "passage": "Summer holiday is coming! My family is planning a trip. Dad wants to go to the mountains. Mum likes the beach. I think both are great ideas. We sit together and discuss our plan. A good trip starts with a good plan!",
+    "q": "What does Dad want to do?",
+    "options": [
+      "Go to the mountains",
+      "Go to the beach",
+      "Stay home"
+    ],
+    "answer": 0,
+    "explain": "文中说 Dad wants to go to the mountains",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "passage": "There are many ways to travel. A plane is the fastest but expensive. A train lets you see beautiful views. A bus is cheap but slow. In the city, the subway is quick. For short trips, I love riding my bike. How will you travel this summer?",
+    "q": "What is the fastest way to travel?",
+    "options": [
+      "By plane",
+      "By train",
+      "By bus"
+    ],
+    "answer": 0,
+    "explain": "文中说 A plane is the fastest",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3",
+    "passage": "Asking the way is an important skill. First, say \"Excuse me\". Then tell where you want to go. Listen carefully: go straight, turn left or right. A map can help you. If you get lost, don't worry — just ask a kind person for help!",
+    "q": "What should you say first when asking the way?",
+    "options": [
+      "Excuse me",
+      "Hello",
+      "Sorry"
+    ],
+    "answer": 0,
+    "explain": "文中说 First, say Excuse me",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4",
+    "passage": "China has many famous tourist spots. The Great Wall is known all over the world. Beijing has beautiful parks and great museums. Every city has its own special places. Travel opens our eyes to the beauty of our country!",
+    "q": "What is known all over the world?",
+    "options": [
+      "The Great Wall",
+      "The parks",
+      "The museums"
+    ],
+    "answer": 0,
+    "explain": "文中说 The Great Wall is known all over the world",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U5",
+    "passage": "Buying souvenirs is part of every trip. In the gift shop, we saw many beautiful things — scarves, fans, and key rings. I tried on a silk scarf. Mum said the colour was perfect. We paid and got a receipt. A small gift carries big memories!",
+    "q": "What did she try on?",
+    "options": [
+      "A silk scarf",
+      "A fan",
+      "A key ring"
+    ],
+    "answer": 0,
+    "explain": "文中说 I tried on a silk scarf",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U6",
+    "passage": "Sending postcards is a sweet tradition. You write about your trip — the weather, the food, the fun. You put on a stamp and write the address. When your friend gets it, they feel your love from far away. I miss you — wish you were here!",
+    "q": "What do you need to send a postcard?",
+    "options": [
+      "A stamp and an address",
+      "A gift",
+      "A photo"
+    ],
+    "answer": 0,
+    "explain": "文中说 put on a stamp and write the address",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U7",
+    "passage": "The world has many different cultures. Some people speak English, others speak Chinese or other languages. Some eat with chopsticks, others with forks. Different foods, different ways — but all are amazing. We should respect and learn from each other!",
+    "q": "Why is the world's culture amazing?",
+    "options": [
+      "Because people are different but special",
+      "Because everyone is the same",
+      "Because there is only one language"
+    ],
+    "answer": 0,
+    "explain": "文中说 all are amazing, should respect each other",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U8",
+    "passage": "Safe travels start with good habits. Always follow the rules on the road. Watch for danger signs and warnings. Stay with your group. Keep a phone with you. Be careful but not afraid. Remember — safety first, fun second!",
+    "q": "What comes first when travelling?",
+    "options": [
+      "Safety",
+      "Fun",
+      "Food"
+    ],
+    "answer": 0,
+    "explain": "文中说 safety first, fun second",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U9",
+    "passage": "A journey ends, but memories stay forever. We visited amazing places, met kind people, and tried new foods. I wrote every day in my travel diary. Now I can share the stories with my friends. Every journey teaches us something new. Thank you, wonderful summer!",
+    "q": "What did the child do every day?",
+    "options": [
+      "Wrote in the travel diary",
+      "Took photos",
+      "Swam in the sea"
+    ],
+    "answer": 0,
+    "explain": "文中说 I wrote every day in my travel diary",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "passage": "Six years in primary school are almost over. We came as little children and will leave as confident students. There were challenges, but we grew stronger. The future is bright, and junior school is waiting. We are ready!",
+    "q": "What comes after primary school?",
+    "options": [
+      "Junior school",
+      "Work",
+      "Stay at home"
+    ],
+    "answer": 0,
+    "explain": "文中说 junior school is waiting",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "passage": "Everyone has a dream job. Tom wants to be a scientist to find new cures. Lily dreams of being a writer to tell amazing stories. I want to be an engineer to build great bridges. No dream is too big if you work hard. What's your dream?",
+    "q": "What does Lily want to be?",
+    "options": [
+      "A writer",
+      "A scientist",
+      "An engineer"
+    ],
+    "answer": 0,
+    "explain": "文中说 Lily dreams of being a writer",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "passage": "Real heroes are all around us. A firefighter runs into a burning building to save strangers. A teacher stays late to help a student. A police officer keeps our streets safe. Heroes don't wear capes — they wear brave hearts.",
+    "q": "What does a firefighter do?",
+    "options": [
+      "Runs into fire to save people",
+      "Teaches students",
+      "Drives a bus"
+    ],
+    "answer": 0,
+    "explain": "文中说 A firefighter runs into a burning building",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4",
+    "passage": "Sport is more than a game. Football and basketball teach us teamwork. Swimming and running build strong bodies. Every match is a chance to learn — winning is great, losing teaches us to try harder. A true champion never gives up!",
+    "q": "What does sport teach us?",
+    "options": [
+      "Teamwork and persistence",
+      "Only winning",
+      "How to rest"
+    ],
+    "answer": 0,
+    "explain": "文中说 teach us teamwork, never gives up",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U5",
+    "passage": "Doctors say, \"You are what you eat.\" If we eat too much junk food, we get tired and weak. Fresh vegetables and fruit give us vitamins and energy. A balanced plate has rice, meat, vegetables and fruit. Eat smart, stay strong!",
+    "q": "What happens if we eat too much junk food?",
+    "options": [
+      "We get tired and weak",
+      "We get stronger",
+      "We feel happier"
+    ],
+    "answer": 0,
+    "explain": "文中说 we get tired and weak",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U6",
+    "passage": "Earth is our only home. Air and river pollution hurt people, animals and plants. Plastic stays in the Earth for hundreds of years. But we can help — recycle, plant trees, use less plastic. Small actions can save our beautiful planet!",
+    "q": "How long does plastic stay in the Earth?",
+    "options": [
+      "Hundreds of years",
+      "One year",
+      "Ten years"
+    ],
+    "answer": 0,
+    "explain": "文中说 Plastic stays for hundreds of years",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U7",
+    "passage": "Some inventions changed the world forever. Paper helped knowledge travel far. The light bulb turned night into day. The phone brought voices across oceans. The internet connected the whole world. What will the next great invention be?",
+    "q": "What did the light bulb do?",
+    "options": [
+      "Turned night into day",
+      "Connected the world",
+      "Helped knowledge travel"
+    ],
+    "answer": 0,
+    "explain": "文中说 The light bulb turned night into day",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U8",
+    "passage": "What makes a true friend? First, trust — we tell our secrets to a friend we trust. Second, kindness — a friend helps without being asked. Third, forgiveness — friends make mistakes but forgive. True friends share joy and sadness. Friendship is a treasure forever!",
+    "q": "What is the first thing in friendship?",
+    "options": [
+      "Trust",
+      "Kindness",
+      "Forgiveness"
+    ],
+    "answer": 0,
+    "explain": "文中说 First, trust",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U9",
+    "passage": "Today we say goodbye to primary school. Six years gave us knowledge, courage and good friends. Believe in your dreams and set big goals. The future is bright for those who work hard. Thank you, teachers. Thank you, friends. The best is yet to come!",
+    "q": "What did primary school give them?",
+    "options": [
+      "Knowledge, courage and friends",
+      "Money and toys",
+      "Games and fun"
+    ],
+    "answer": 0,
+    "explain": "文中说 Six years gave us knowledge, courage and good friends",
     "difficulty": 1,
     "source": "ai_jk_v2"
   }
