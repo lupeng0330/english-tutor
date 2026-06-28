@@ -1,36 +1,6 @@
 [
   {
     "grade": 3,
-    "term": "上",
-    "code": "3A_U1",
-    "passage": "I have a new bag. It is blue. In my bag, there are 3 books, 2 pens and a pencil.",
-    "q": "How many books are in the bag?",
-    "options": [
-      "2",
-      "3",
-      "4"
-    ],
-    "answer": 1,
-    "explain": "文中明确说有 3 本书",
-    "difficulty": 1
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U2",
-    "passage": "Our classroom is big. There is a blackboard in front. The teacher is Miss Li.",
-    "q": "Who is the teacher?",
-    "options": [
-      "Miss Wang",
-      "Miss Li",
-      "Mr. Chen"
-    ],
-    "answer": 1,
-    "explain": "文中明确提到老师是 Miss Li",
-    "difficulty": 1
-  },
-  {
-    "grade": 3,
     "term": "下",
     "code": "3B_U1",
     "passage": "Tom gets up at 7. He has breakfast at 7:30. He goes to school at 8.",
@@ -358,36 +328,6 @@
     "answer": 1,
     "explain": "reduce pollution to save our planet",
     "difficulty": 4
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U1",
-    "passage": "Look at my bag. There are books, pens and pencils in it. This is my school bag. I like it very much.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "School Things",
-      "Festivals",
-      "Food"
-    ],
-    "answer": 0,
-    "difficulty": 2,
-    "explain": "整段围绕 'School Things' 展开"
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U2",
-    "passage": "This is our classroom. It is big and clean. There is a blackboard and a big window. Our teacher stands in front of the blackboard. I like my classroom.",
-    "q": "What is this passage mainly about?",
-    "options": [
-      "My Classroom",
-      "Weather",
-      "Animals"
-    ],
-    "answer": 0,
-    "difficulty": 2,
-    "explain": "整段围绕 'My Classroom' 展开"
   },
   {
     "grade": 3,
@@ -1100,5 +1040,149 @@
     "answer": 2,
     "explain": "1994 年成为总统。",
     "difficulty": 2
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "passage": "We have 26 letters in the alphabet. Some letters are big, and some are small. We see them on signs, on a bus, and in books.",
+    "q": "How many letters are in the alphabet?",
+    "options": [
+      "26",
+      "20",
+      "30"
+    ],
+    "answer": 0,
+    "explain": "文中明确说 26 letters",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "passage": "English and Chinese are two languages. The words look different, but some things are the same. We say \"hello\" in English. We say \"ni hao\" in Chinese.",
+    "q": "What is the same between English and Chinese?",
+    "options": [
+      "They both can say hello",
+      "Words look the same",
+      "They are one language"
+    ],
+    "answer": 0,
+    "explain": "hello 和 ni hao 都表示友好的问候",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "passage": "I have many friends at school. He is Tom. He is a happy boy. She is Lily. She is a kind girl. Miss Wang is our teacher.",
+    "q": "Who is the teacher?",
+    "options": [
+      "Miss Wang",
+      "Tom",
+      "Lily"
+    ],
+    "answer": 0,
+    "explain": "文中说 Miss Wang is our teacher",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "passage": "I have a keyboard with many keys. This key is red. That key is blue. Here is a yellow key, and there is a green one.",
+    "q": "How many colours are on the keyboard?",
+    "options": [
+      "Four",
+      "Two",
+      "Six"
+    ],
+    "answer": 0,
+    "explain": "文中提到 red, blue, yellow, green 四种颜色",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "passage": "A password is a special secret. It is made of numbers, like 2, 5, 8, 0. We type the password to keep things safe. Don't tell your password to others.",
+    "q": "What should we NOT do with a password?",
+    "options": [
+      "Tell it to others",
+      "Remember it",
+      "Keep it safe"
+    ],
+    "answer": 0,
+    "explain": "文中说 Don't tell your password to others",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "passage": "I like to draw with my pen. First, I draw a circle. It is the sun. Then I draw two lines. They are the road. I paint the picture with red and green.",
+    "q": "What does the circle become?",
+    "options": [
+      "The sun",
+      "The road",
+      "A ball"
+    ],
+    "answer": 0,
+    "explain": "文中说 It is the sun",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "passage": "A good listener is quiet and careful. We listen with our ears, not our mouths. When a friend talks, we hear every word. Be a good listener, and you have more friends.",
+    "q": "How do we become a good listener?",
+    "options": [
+      "Be quiet and careful",
+      "Talk more",
+      "Run and jump"
+    ],
+    "answer": 0,
+    "explain": "文中说 A good listener is quiet and careful",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "passage": "Exercise is good for us every day. In the morning, I run and jump. In summer, I like to swim. After school, my friends and I play ball. We do sports and stay healthy and happy!",
+    "q": "Why do we exercise?",
+    "options": [
+      "To stay healthy and happy",
+      "To read books",
+      "To eat food"
+    ],
+    "answer": 0,
+    "explain": "文中说 We do sports and stay healthy and happy!",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "passage": "This term we learned so much. We know letters, words, colours and numbers. We can draw, listen, exercise and play. Now we sing and dance in our music show.",
+    "q": "What do they do in the music show?",
+    "options": [
+      "Sing and dance",
+      "Draw pictures",
+      "Type words"
+    ],
+    "answer": 0,
+    "explain": "文中说 We sing and dance in our music show",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
   }
 ]

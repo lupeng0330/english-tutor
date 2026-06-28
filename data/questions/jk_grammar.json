@@ -99,48 +99,6 @@
   },
   {
     "grade": 3,
-    "term": "上",
-    "code": "3A_U1",
-    "q": "There ____ a book on the desk.",
-    "options": [
-      "is",
-      "are",
-      "am"
-    ],
-    "answer": 0,
-    "explain": "a book 单数用 is",
-    "difficulty": 1
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U1",
-    "q": "This is ____ bag.",
-    "options": [
-      "I",
-      "me",
-      "my"
-    ],
-    "answer": 2,
-    "explain": "形容词性物主代词 my",
-    "difficulty": 1
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U2",
-    "q": "There ____ many students in the classroom.",
-    "options": [
-      "is",
-      "are",
-      "be"
-    ],
-    "answer": 1,
-    "explain": "many students 复数用 are",
-    "difficulty": 2
-  },
-  {
-    "grade": 3,
     "term": "下",
     "code": "3B_U1",
     "q": "I ____ breakfast at 7:30.",
@@ -1040,5 +998,275 @@
     "answer": 0,
     "explain": "should + 动词原形。",
     "difficulty": 2
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "There ____ letters on the sign.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 letters 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "I can see a big ____ B.",
+    "options": [
+      "letter",
+      "letters",
+      "the letter"
+    ],
+    "answer": 0,
+    "explain": "a 后面跟单数名词 letter",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "English words ____ be different from Chinese words.",
+    "options": [
+      "can",
+      "cans",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "can 后面跟动词原形 be",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "We say \"hello\" ____ English.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "用某种语言说用 in",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "q": "Who ____ he? He ____ my friend.",
+    "options": [
+      "is / is",
+      "is / am",
+      "are / is"
+    ],
+    "answer": 0,
+    "explain": "第三人称单数 he 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "q": "____ is she? She is Lily.",
+    "options": [
+      "Who",
+      "What",
+      "How"
+    ],
+    "answer": 0,
+    "explain": "问人用 Who",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "q": "What colour ____ this key? It ____ blue.",
+    "options": [
+      "is / is",
+      "are / is",
+      "is / are"
+    ],
+    "answer": 0,
+    "explain": "单数 key 用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "q": "Colour ____ red, please.",
+    "options": [
+      "it",
+      "they",
+      "he"
+    ],
+    "answer": 0,
+    "explain": "指代单数物品用 it",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "q": "How many ____ do we need?",
+    "options": [
+      "numbers",
+      "number",
+      "a number"
+    ],
+    "answer": 0,
+    "explain": "How many 后用可数名词复数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "q": "Don't tell your password ____ others.",
+    "options": [
+      "to",
+      "for",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "tell... to 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "q": "I ____ draw a picture.",
+    "options": [
+      "can",
+      "cans",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形，不随人称变化",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "q": "Can you ____ it?",
+    "options": [
+      "paint",
+      "paints",
+      "painting"
+    ],
+    "answer": 0,
+    "explain": "Can 后面动词用原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "q": "Please ____ quiet.",
+    "options": [
+      "be",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "祈使句 Please 后用动词原形 be",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "q": "Be a good ____, and you have more friends.",
+    "options": [
+      "listener",
+      "listen",
+      "listening"
+    ],
+    "answer": 0,
+    "explain": "good 后接名词 listener",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "q": "It's time ____ exercise!",
+    "options": [
+      "to",
+      "for",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "It's time to + 动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "q": "Sport ____ us healthy.",
+    "options": [
+      "makes",
+      "make",
+      "making"
+    ],
+    "answer": 0,
+    "explain": "Sport 是第三人称单数，动词加 -s",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "q": "Let's ____ a music show.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "q": "I can ____ an English song.",
+    "options": [
+      "sing",
+      "sings",
+      "singing"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
   }
 ]

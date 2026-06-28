@@ -113,38 +113,6 @@
   },
   {
     "grade": 3,
-    "term": "上",
-    "code": "3A_U1",
-    "audioText": "W: Hello, I'm Amy. M: Hi, Amy.",
-    "audioFile": "listening_01.mp3",
-    "q": "What's the girl's name?",
-    "options": [
-      "Amy",
-      "Ann",
-      "Alice"
-    ],
-    "answer": 0,
-    "explain": "直接听到对话中女孩的名字是Amy",
-    "difficulty": 1
-  },
-  {
-    "grade": 3,
-    "term": "上",
-    "code": "3A_U2",
-    "audioText": "W: Our classroom is big and clean.",
-    "audioFile": "listening_g3_02.mp3",
-    "q": "How is their classroom?",
-    "options": [
-      "Small",
-      "Big and clean",
-      "Dirty"
-    ],
-    "answer": 1,
-    "explain": "big and clean=大又干净",
-    "difficulty": 2
-  },
-  {
-    "grade": 3,
     "term": "下",
     "code": "3B_U1",
     "audioText": "M: I get up at seven o'clock.",
@@ -852,5 +820,158 @@
     "answer": 1,
     "explain": "1994 年成为南非总统。",
     "difficulty": 2
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "audioText": "W: Look! There are letters on the sign. M: Yes! I can see a big letter B.",
+    "audioFile": "jk_listening_3A_01.mp3",
+    "q": "What does the boy see?",
+    "options": [
+      "A big letter B",
+      "A bus",
+      "A book"
+    ],
+    "answer": 0,
+    "explain": "男孩说 I can see a big letter B",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "audioText": "W: How do you say \"book\" in Chinese? M: We say \"shu\". It means the same thing.",
+    "audioFile": "jk_listening_3A_02.mp3",
+    "q": "What does \"book\" mean in Chinese?",
+    "options": [
+      "shu",
+      "bi",
+      "chi"
+    ],
+    "answer": 0,
+    "explain": "回答 We say \"shu\"",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "audioText": "W: Look at the photo. Who is he? M: He is my friend, Tom.",
+    "audioFile": "jk_listening_3A_03.mp3",
+    "q": "Who is the boy in the photo?",
+    "options": [
+      "Tom",
+      "Lily",
+      "Sam"
+    ],
+    "answer": 0,
+    "explain": "回答 He is my friend, Tom",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "audioText": "M: What colour is this key? W: Colour it red, please.",
+    "audioFile": "jk_listening_3A_04.mp3",
+    "q": "What colour is the key?",
+    "options": [
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "answer": 0,
+    "explain": "老师说 Colour it red",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "audioText": "W: Let's set a password. How many numbers do we need? M: Pick four numbers, from one to ten.",
+    "audioFile": "jk_listening_3A_05.mp3",
+    "q": "How many numbers for the password?",
+    "options": [
+      "Four",
+      "Ten",
+      "Two"
+    ],
+    "answer": 0,
+    "explain": "回答 Pick four numbers",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "audioText": "W: Look, I can draw a circle for the sun! M: Wow! It is so nice.",
+    "audioFile": "jk_listening_3A_06.mp3",
+    "q": "What did the girl draw?",
+    "options": [
+      "A circle",
+      "A flower",
+      "A star"
+    ],
+    "answer": 0,
+    "explain": "女孩说 I can draw a circle",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "audioText": "M: Class, please be quiet. I will listen now. W: Good! A good listener learns a lot.",
+    "audioFile": "jk_listening_3A_07.mp3",
+    "q": "What makes a good listener?",
+    "options": [
+      "Being quiet",
+      "Talking loudly",
+      "Running fast"
+    ],
+    "answer": 0,
+    "explain": "老师说 Please be quiet",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "audioText": "M: It's time to exercise! We can run, jump and play ball. W: I love exercise!",
+    "audioFile": "jk_listening_3A_08.mp3",
+    "q": "What can they do for exercise?",
+    "options": [
+      "Run and jump",
+      "Read books",
+      "Draw pictures"
+    ],
+    "answer": 0,
+    "explain": "老师说 We can run, jump and play ball",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "audioText": "W: Let's have a music show! Who can sing an English song? M: I can!",
+    "audioFile": "jk_listening_3A_09.mp3",
+    "q": "Who can sing an English song?",
+    "options": [
+      "The boy",
+      "Lily",
+      "Miss Wang"
+    ],
+    "answer": 0,
+    "explain": "男孩回答 I can",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
   }
 ]
