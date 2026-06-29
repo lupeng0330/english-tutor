@@ -49,4 +49,6 @@ audio/_sent/
 .cursor/
 
 data/questions/.backups/
+data/textbooks/.backups/
+data/examples/.backups/
 audio/_tmp_jk_listen/
