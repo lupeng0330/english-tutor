@@ -10,7 +10,7 @@ import os, json, sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 QDIR = os.path.join(ROOT, 'data', 'questions')
 
-TEXTBOOKS = ['jk', 'hj']
+TEXTBOOKS = ['jk', 'hj', 'gzk']
 TYPES = ['spelling', 'listening', 'grammar', 'reading']
 
 REQUIRED_FIELDS = {

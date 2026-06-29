@@ -82,6 +82,22 @@ function resetPracticeOnContextChange() {
 // 绑定顶部上下文条三个下拉
 const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[], reading:[] };
 
+// 🆕 难度归一化：兼容数字 (1-4) 和字符串 (easy/medium/hard/challenge)
+// gzk 早期题库写的是字符串，jk/hj 是数字；前端统一转 1-4 数字再比较
+function _normalizeDifficulty(d) {
+  if (typeof d === 'number') return d;
+  if (typeof d === 'string') {
+    const k = d.trim().toLowerCase();
+    if (k === 'easy' || k === '简单' || k === '基础') return 1;
+    if (k === 'medium' || k === '中等') return 2;
+    if (k === 'hard' || k === '较难' || k === '难') return 3;
+    if (k === 'challenge' || k === 'expert' || k === '挑战') return 4;
+    const n = parseInt(k);
+    if (!isNaN(n)) return n;
+  }
+  return 0; // 未知 → 不参与难度筛选
+}
+
 // 按筛选条件筛题
 function filterQuestions(type) {
   const all = QB()[type] || [];
@@ -97,7 +113,10 @@ function filterQuestions(type) {
       // 但在"包含全部年级"时宽松处理（跨年级时也允许跨学期）
       if (!state.includeAllGrades) return false;
     }
-    if (state.filterDifficulty > 0 && q.difficulty !== state.filterDifficulty) return false;
+    if (state.filterDifficulty > 0) {
+      const qd = _normalizeDifficulty(q.difficulty);
+      if (qd !== state.filterDifficulty) return false;
+    }
     // 🆕 单元筛选（仅在非跨年级模式下生效）
     if (!state.includeAllGrades && targetUnit) {
       const qUnit = q.unit || _inferUnitFromCode(q.code);
@@ -121,7 +140,16 @@ function _resolveTargetUnit() {
   if (fu === 'all') return null;
   if (fu === 'current') {
     // 跟随课本当前选中的单元
-    return (state.currentUnit && state.currentUnit.id) || null;
+    if (state.currentUnit && state.currentUnit.id) return state.currentUnit.id;
+    // 🆕 兜底：用户未进过课本页时 currentUnit=null，取当前年级第一个单元
+    // 避免「当前课本单元」与「本册全部单元」表现完全一致的视觉错觉
+    try {
+      const tb = window.textbookData || {};
+      const grKey = state.currentGrade;
+      const units = ((tb[grKey] && tb[grKey].units) || []);
+      if (units.length > 0) return units[0].id;
+    } catch (e) { /* ignore */ }
+    return null;
   }
   return fu; // 已是 'u1' 这类形式
 }

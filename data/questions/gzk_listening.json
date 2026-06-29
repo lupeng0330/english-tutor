@@ -1,0 +1,784 @@
+[
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_L01",
+    "audioText": "I'm Andy.    My name is Lily.",
+    "audioFile": "gzk_listening_01.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "I'm Tom.    My fork is Lily.",
+      "I'm Tim.    My name is Lily.",
+      "I'm Bob.    My name is Lulu.",
+      "I'm Andy.    My name is Lily."
+    ],
+    "answer": "D",
+    "explain": "中文：我是安迪。  我叫莉莉。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_L02",
+    "audioText": "Lily: Hi, Andy! I'm Lily.",
+    "audioFile": "gzk_listening_02.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Hi, Andy! I'm Mary.",
+      "Lily: Hi, Sam! I'm Lily.",
+      "Lily: Hi, Andy! I'm Amy.",
+      "Lily: Hi, Andy! I'm Lily."
+    ],
+    "answer": "D",
+    "explain": "中文：嗨，安迪！我是莉莉。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_L01",
+    "audioText": "a bag    a pen    a pencil    a book",
+    "audioFile": "gzk_listening_03.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "a bag    a pen    a pen-case    a book",
+      "a bag    a ruler    a pencil    a book",
+      "a bag    a pen    a pencil    a book",
+      "a glue    a pen    a pen    a book"
+    ],
+    "answer": "C",
+    "explain": "中文：一个书包  一支钢笔  一支铅笔  一本书",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_L02",
+    "audioText": "a ruler    an eraser    a pencil-case",
+    "audioFile": "gzk_listening_04.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "a ruler    an pen    a pencil-case",
+      "a pen    an notebook    a pencil-case",
+      "a ruler    an eraser    a pen-case-case",
+      "a ruler    an eraser    a pencil-case"
+    ],
+    "answer": "D",
+    "explain": "中文：一把尺子  一块橡皮  一个文具盒",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_L01",
+    "audioText": "one    two    three    four    five",
+    "audioFile": "gzk_listening_05.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "fifteen    three    three    four    five",
+      "one    two    three    four    five",
+      "one    seven    five    four    five",
+      "one    two    three    twelve    five"
+    ],
+    "answer": "B",
+    "explain": "中文：一  二  三  四  五",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_L02",
+    "audioText": "six    seven    eight    nine    ten",
+    "audioFile": "gzk_listening_06.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "six    seven    eight    nine    ten",
+      "fifteen    one    eight    nine    ten",
+      "six    three    eight    nine    eight",
+      "six    seven    eight    nine    four"
+    ],
+    "answer": "A",
+    "explain": "中文：六  七  八  九  十",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_L01",
+    "audioText": "orange    purple    pink    black    white",
+    "audioFile": "gzk_listening_07.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "orange    purple    pink    black    white",
+      "orange    green    pink    white    white",
+      "orange    purple    pink    orange    white",
+      "orange    purple    pink    black    pink"
+    ],
+    "answer": "A",
+    "explain": "中文：橙色  紫色  粉色  黑色  白色",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_L02",
+    "audioText": "Lily: I like red and pink.",
+    "audioFile": "gzk_listening_08.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: I like red and pink.",
+      "Lily: I dance blue and pink.",
+      "Lily: I like pink and yellow.",
+      "Lily: I love red and blue."
+    ],
+    "answer": "A",
+    "explain": "中文：我喜欢红色和粉色。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_L01",
+    "audioText": "a scooter    a bike    a ball    a kite",
+    "audioFile": "gzk_listening_09.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "a scooter    a robot    a ball    a kite",
+      "a bike    a bike    a ball    a kite",
+      "a scooter    a bike    a boat    a bike",
+      "a scooter    a bike    a ball    a kite"
+    ],
+    "answer": "D",
+    "explain": "中文：一辆滑板车  一辆自行车  一个球  一只风筝",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_L02",
+    "audioText": "a car    a doll    a robot    a train",
+    "audioFile": "gzk_listening_10.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "a car    a bike    a car    a train",
+      "a kite    a boat    a robot    a train",
+      "a car    a doll    a robot    a train",
+      "a boat    a doll    a robot    a train"
+    ],
+    "answer": "C",
+    "explain": "中文：一辆小汽车  一个洋娃娃  一个机器人  一列火车",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_L01",
+    "audioText": "Andy: I can jump. Look at me!",
+    "audioFile": "gzk_listening_11.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: I can go. Swim at me!",
+      "Andy: I can jump. Look at me!",
+      "Andy: I can clean. Look on me!",
+      "Andy: I can find. Look to me!"
+    ],
+    "answer": "B",
+    "explain": "中文：我会跳。看我！",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_L02",
+    "audioText": "Lily: I can dance. Can you dance?",
+    "audioFile": "gzk_listening_12.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: I can help. Can you find?",
+      "Lily: I can go. Can you write?",
+      "Lily: I can dance. Can you dance?",
+      "Lily: I can dance. Can you sit?"
+    ],
+    "answer": "C",
+    "explain": "中文：我会跳舞。你会跳舞吗？",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_L01",
+    "audioText": "Andy: This is my family.",
+    "audioFile": "gzk_listening_13.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: This is my song.",
+      "Andy: This is my gift.",
+      "Andy: This is my thing.",
+      "Andy: This is my family."
+    ],
+    "answer": "D",
+    "explain": "中文：这是我的家庭。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_L02",
+    "audioText": "Lily: Is this your sister?",
+    "audioFile": "gzk_listening_14.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Is this your son?",
+      "Lily: Is this your grandpa?",
+      "Lily: Is this your sister?",
+      "Lily: Is this your mum?"
+    ],
+    "answer": "C",
+    "explain": "中文：这是你姐姐吗？",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_L01",
+    "audioText": "Andy: Come to my house, Lily.",
+    "audioFile": "gzk_listening_15.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: Come to my house, Anne.",
+      "Andy: Help to my house, May.",
+      "Andy: Come to my house, Lily.",
+      "Andy: Come to my house, Amy."
+    ],
+    "answer": "C",
+    "explain": "中文：来我家吧，莉莉。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_L02",
+    "audioText": "Lily: Wow, it's a big house!",
+    "audioFile": "gzk_listening_16.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Wow, it's a big park!",
+      "Lily: Wow, it's a big garden!",
+      "Lily: Wow, it's a sad house!",
+      "Lily: Wow, it's a big house!"
+    ],
+    "answer": "D",
+    "explain": "中文：哇，好大的房子！",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_L01",
+    "audioText": "Lily: This is my room.",
+    "audioFile": "gzk_listening_17.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: This is my room.",
+      "Lily: This is my zoo.",
+      "Lily: This is my park.",
+      "Lily: This is my shop."
+    ],
+    "answer": "A",
+    "explain": "中文：这是我的房间。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_L02",
+    "audioText": "Andy: What's on the desk?",
+    "audioFile": "gzk_listening_18.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What's with the sofa?",
+      "Andy: What's on the desk?",
+      "Andy: What's near the desk?",
+      "Andy: What's in the bed?"
+    ],
+    "answer": "B",
+    "explain": "中文：书桌上有什么？",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_L01",
+    "audioText": "Andy: Look! What do you see?",
+    "audioFile": "gzk_listening_19.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: Drink! What do you see?",
+      "Andy: Drive! What do you see?",
+      "Andy: Stand! What do you see?",
+      "Andy: Look! What do you see?"
+    ],
+    "answer": "D",
+    "explain": "中文：看！你看见了什么？",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_L02",
+    "audioText": "Lily: I see a bird in the tree.",
+    "audioFile": "gzk_listening_20.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: I see a bird for the tree.",
+      "Lily: I see a bird in the tree.",
+      "Lily: I see a bird with the tree.",
+      "Lily: I see a panda in the tree."
+    ],
+    "answer": "B",
+    "explain": "中文：我看见树上有一只鸟。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_L01",
+    "audioText": "Lily: I want a pet.",
+    "audioFile": "gzk_listening_21.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: I stand a pet.",
+      "Lily: I want a pet.",
+      "Lily: I sing a pet.",
+      "Lily: I write a pet."
+    ],
+    "answer": "B",
+    "explain": "中文：我想要一只宠物。",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_L02",
+    "audioText": "Mum: What pet do you want?",
+    "audioFile": "gzk_listening_22.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Mum: What pet do you paint?",
+      "Mum: What pet do you find?",
+      "Mum: What pet do you go?",
+      "Mum: What pet do you want?"
+    ],
+    "answer": "D",
+    "explain": "中文：你想要什么宠物？",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_L01",
+    "audioText": "ice-cream    cake    candy    juice",
+    "audioFile": "gzk_listening_23.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "ice-cream    cake    candy    noodle",
+      "ice-cream    cake    candy    juice",
+      "ice-cream    soup    candy    juice",
+      "ice-cream    rice    candy    juice"
+    ],
+    "answer": "B",
+    "explain": "中文：冰淇淋  蛋糕  糖果  果汁",
+    "difficulty": 1
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_L02",
+    "audioText": "Andy: I want ice-cream!",
+    "audioFile": "gzk_listening_24.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: I count ice-cream!",
+      "Andy: I love ice-cream!",
+      "Andy: I climb ice-cream!",
+      "Andy: I want ice-cream!"
+    ],
+    "answer": "D",
+    "explain": "中文：我想要冰淇淋！",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_L01",
+    "audioText": "Andy: What can you do, Lily?",
+    "audioFile": "gzk_listening_25.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What can you do, Mary?",
+      "Andy: What can you do, Amy?",
+      "Andy: What can you do, Lulu?",
+      "Andy: What can you do, Lily?"
+    ],
+    "answer": "D",
+    "explain": "中文：你会做什么，莉莉？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_L02",
+    "audioText": "Andy: I can swim and ride a bike.",
+    "audioFile": "gzk_listening_26.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: I can walk and drink a bike.",
+      "Andy: I can swim and ride a bike.",
+      "Andy: I can climb and ride a boat.",
+      "Andy: I can drink and stand a bike."
+    ],
+    "answer": "B",
+    "explain": "中文：我会游泳和骑车。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_L01",
+    "audioText": "Andy: Mum, I'm hungry. What's for dinner?",
+    "audioFile": "gzk_listening_27.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: Mum, I'm hungry. What's on dinner?",
+      "Andy: Mum, I'm bad. What's for dinner?",
+      "Andy: Mum, I'm hungry. What's for dinner?",
+      "Andy: Student, I'm hungry. What's for dinner?"
+    ],
+    "answer": "C",
+    "explain": "中文：妈妈，我饿了。晚饭吃什么？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_L02",
+    "audioText": "Mum: Rice, fish and vegetables.",
+    "audioFile": "gzk_listening_28.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Mum: Egg, fish and vegetables.",
+      "Mum: Orange, fish and vegetables.",
+      "Mum: Rice, soup and vegetables.",
+      "Mum: Rice, fish and vegetables."
+    ],
+    "answer": "D",
+    "explain": "中文：米饭、鱼和蔬菜。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_L01",
+    "audioText": "Andy: Let's go to the zoo!",
+    "audioFile": "gzk_listening_29.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: Let's go from the zoo!",
+      "Andy: Let's go near the library!",
+      "Andy: Let's go in the zoo!",
+      "Andy: Let's go to the zoo!"
+    ],
+    "answer": "D",
+    "explain": "中文：我们去动物园吧！",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_L02",
+    "audioText": "Lily: Great! Look, a big elephant.",
+    "audioFile": "gzk_listening_30.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Great! Look, a big elephant.",
+      "Lily: Great! Look, a big mouse.",
+      "Lily: Great! Find, a big elephant.",
+      "Lily: Great! Look, a big pig."
+    ],
+    "answer": "A",
+    "explain": "中文：太好了！看，一头大象。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_L01",
+    "audioText": "Andy: What time is it now?",
+    "audioFile": "gzk_listening_31.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What time is it now?",
+      "Andy: What time is it often?",
+      "Andy: What home is it tomorrow?",
+      "Andy: What family is it tomorrow?"
+    ],
+    "answer": "A",
+    "explain": "中文：现在几点了？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_L02",
+    "audioText": "Andy: Time to get up!",
+    "audioFile": "gzk_listening_32.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: Time to get up!",
+      "Andy: Picture under get up!",
+      "Andy: Time near get up!",
+      "Andy: Knife to get up!"
+    ],
+    "answer": "A",
+    "explain": "中文：该起床啦！",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_L01",
+    "audioText": "Lily: Where are you, Andy?",
+    "audioFile": "gzk_listening_33.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Where are you, Tim?",
+      "Lily: Where are you, Ben?",
+      "Lily: Where are you, Tom?",
+      "Lily: Where are you, Andy?"
+    ],
+    "answer": "D",
+    "explain": "中文：你在哪儿，安迪？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_L02",
+    "audioText": "Andy: I'm in the park. I'm skating!",
+    "audioFile": "gzk_listening_34.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: I'm in the garden. I'm skating!",
+      "Andy: I'm on the park. I'm skating!",
+      "Andy: I'm by the kitchen. I'm skating!",
+      "Andy: I'm in the park. I'm skating!"
+    ],
+    "answer": "D",
+    "explain": "中文：我在公园，我在滑冰！",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_L01",
+    "audioText": "Andy: What are you doing, mum?",
+    "audioFile": "gzk_listening_35.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What are you doing, mum?",
+      "Andy: What are you doing, son?",
+      "Andy: What are you doing, girl?",
+      "Andy: What are you doing, pupil?"
+    ],
+    "answer": "A",
+    "explain": "中文：妈妈，你在做什么？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_L02",
+    "audioText": "Mum: I'm washing up. Dad is cooking.",
+    "audioFile": "gzk_listening_36.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Mum: I'm washing up. Dad is cooking.",
+      "Mum: I'm washing up. Mother is cooking.",
+      "Mum: I'm washing up. Uncle is cooking.",
+      "Mum: I'm washing up. Pupil is cooking."
+    ],
+    "answer": "A",
+    "explain": "中文：我在洗碗，爸爸在做饭。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_L01",
+    "audioText": "a sweater    socks    shoes    jeans    shorts",
+    "audioFile": "gzk_listening_37.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "a sweater    socks    shoes    dress    shorts",
+      "a coat    socks    shoes    jeans    shorts",
+      "a sweater    socks    shoes    jeans    shorts",
+      "a pants    socks    shoes    hat    shorts"
+    ],
+    "answer": "C",
+    "explain": "中文：一件毛衣    袜子    鞋子    牛仔裤    短裤",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_L02",
+    "audioText": "Here is my T-shirt.",
+    "audioFile": "gzk_listening_38.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Here is my T-shirt.",
+      "Sometimes is my T-cap.",
+      "Often is my T-sock.",
+      "Here is my T-sock."
+    ],
+    "answer": "A",
+    "explain": "中文：这是我的 T 恤衫，",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_L01",
+    "audioText": "Andy: How do you go to school?",
+    "audioFile": "gzk_listening_39.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: How do you sit under school?",
+      "Andy: How do you go to school?",
+      "Andy: How do you go in school?",
+      "Andy: How do you go to kitchen?"
+    ],
+    "answer": "B",
+    "explain": "中文：你怎么去上学？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_L02",
+    "audioText": "Andy: I go by bike. It's fast.",
+    "audioFile": "gzk_listening_40.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: I go by bike. It's fat.",
+      "Andy: I meet by bike. It's kind.",
+      "Andy: I go over ball. It's fast.",
+      "Andy: I go by bike. It's fast."
+    ],
+    "answer": "D",
+    "explain": "中文：我骑自行车，很快。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_L01",
+    "audioText": "Andy: What do you want to be, Lily?",
+    "audioFile": "gzk_listening_41.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What do you want from be, Lily?",
+      "Andy: What do you want on be, Kitty?",
+      "Andy: What do you want with be, Lily?",
+      "Andy: What do you want to be, Lily?"
+    ],
+    "answer": "D",
+    "explain": "中文：你想成为什么，莉莉？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_L02",
+    "audioText": "Ben: I want to be a driver!",
+    "audioFile": "gzk_listening_42.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Ben: I paint to be a driver!",
+      "Ben: I stand to be a driver!",
+      "Ben: I want to be a driver!",
+      "Ben: I meet on be a driver!"
+    ],
+    "answer": "C",
+    "explain": "中文：我想当司机！",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_L01",
+    "audioText": "Lily: Dad, please take me to the park.",
+    "audioFile": "gzk_listening_43.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: Grandpa, please take me to the park.",
+      "Lily: Doctor, please take me to the zoo.",
+      "Lily: Dad, please take me from the zoo.",
+      "Lily: Dad, please take me to the park."
+    ],
+    "answer": "D",
+    "explain": "中文：爸爸，请带我去公园。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_L02",
+    "audioText": "Dad: OK. Let's go now.",
+    "audioFile": "gzk_listening_44.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Dad: OK. Let's go now.",
+      "Dad: OK. Let's sing today.",
+      "Dad: OK. Let's play now.",
+      "Dad: OK. Let's say then."
+    ],
+    "answer": "A",
+    "explain": "中文：好的，我们现在就去。",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_L01",
+    "audioText": "Andy: What day is it today?",
+    "audioFile": "gzk_listening_45.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Andy: What day is it today?",
+      "Andy: What day is it day?",
+      "Andy: What afternoon is it yesterday?",
+      "Andy: What tomorrow is it yesterday?"
+    ],
+    "answer": "A",
+    "explain": "中文：今天星期几？",
+    "difficulty": 1
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_L02",
+    "audioText": "Lily: It's Monday. My favourite day!",
+    "audioFile": "gzk_listening_46.mp3",
+    "q": "听音频，选出听到的句子",
+    "options": [
+      "Lily: It's Yesterday. My favourite night!",
+      "Lily: It's Monday. My favourite tomorrow!",
+      "Lily: It's Monday. My favourite day!",
+      "Lily: It's Yesterday. My favourite evening!"
+    ],
+    "answer": "C",
+    "explain": "中文：星期一，我最喜欢的一天！",
+    "difficulty": 1
+  }
+]

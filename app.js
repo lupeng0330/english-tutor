@@ -359,13 +359,24 @@ applyContextChange = async function() {
   } else if (gr !== _lastLoadedGrade) {
     needReload = true;
   }
+  // 🆕 切教材时必须同步重载题库（与 bootstrap / switchToProfile 行为对齐）
+  // 否则 window.questionBank 还是上一个教材的，导致练习页筛选错配（症状：徽害数字看着不刷新）
+  const textbookChanged = tb !== _lastLoadedTextbook;
   if (needReload) {
-    await loadTextbook();
+    const reloadTasks = [loadTextbook()];
+    if (textbookChanged && typeof window.loadQuestionBank === 'function') {
+      reloadTasks.push(window.loadQuestionBank(tb));
+    }
+    await Promise.all(reloadTasks);
     _lastLoadedTextbook = state.ctx.textbook;
     _lastLoadedTerm     = state.ctx.term;
     _lastLoadedGrade    = state.ctx.grade;
   }
   _originalApplyContextChange();
+  // 🆕 题库重载后，主动刷一次练习页徽章数（覆盖 textbookChanged 但未触发其它 hook 的场景）
+  if (textbookChanged && typeof window.refreshPracticeCounts === 'function') {
+    try { window.refreshPracticeCounts(); } catch (e) { /* ignore */ }
+  }
 };
 
 // 供 renderUnitList 里的"切到XX"按钮调用
