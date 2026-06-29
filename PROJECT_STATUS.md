@@ -17,7 +17,7 @@
 | 形态 | 面向 **1-9 年级** 学生的英语学习 **纯静态 Web 应用** |
 | 部署 | GitHub Pages（main 分支根目录，push 后 1-2 分钟自动上线） |
 | 仓库 | `git@github.com:lupeng0330/email/english-tutor.git`（实际 `lupeng0330/english-tutor`） |
-| 当前线上 | **`20260627V02.28`** · <https://lupeng0330.github.io/english-tutor/?v=20260627V02.28> |
+| 当前线上 | **`20260628V02.41`** · <https://lupeng0330.github.io/english-tutor/?v=20260628V02.41> |
 | 核心能力 | 单词卡 / 课文 / 例句阶梯 / 4 类题型练习 / 真人 TTS / 错题本 / 智能推题 / 学习报告 / 模拟考试 / PWA 离线 |
 
 ### ② 立刻能跑起来（本地验证）
