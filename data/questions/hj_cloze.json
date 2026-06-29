@@ -1,0 +1,398 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1_C01",
+    "topic": "Making friends · My new classmate",
+    "passage": "Hi! I am Tom. I am twelve years old. I have a new ___1___ at school. Her name is Lily. She is from Germany, so she ___2___ German very well. Lily is a kind and ___3___ girl. She often helps me ___4___ my English. We talk about our hobbies after class. I think we will ___5___ good friends very soon.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "family",
+          "pet",
+          "job"
+        ],
+        "answer": "friend",
+        "explain": "friend 朋友；与下文 talk about our hobbies / good friends 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "speaks",
+          "speak",
+          "speaking",
+          "spoke"
+        ],
+        "answer": "speaks",
+        "explain": "主语 she 第三人称单数现在时"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lazy",
+          "angry",
+          "patient",
+          "tired"
+        ],
+        "answer": "patient",
+        "explain": "kind and patient 善良且耐心，褒义词搭配"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "for",
+          "with",
+          "about",
+          "at"
+        ],
+        "answer": "with",
+        "explain": "help sb with sth 帮某人做某事，固定搭配"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "be",
+          "have",
+          "do",
+          "go"
+        ],
+        "answer": "be",
+        "explain": "will + 动词原形；be good friends 成为好朋友"
+      }
+    ],
+    "explain": "主题：新同学。考查名词、第三人称单数动词、形容词褒贬辨析、help with 搭配、will + be 一般将来时。",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2_C02",
+    "topic": "Daily life · My school day",
+    "passage": "My school day starts at half ___1___ seven. I usually ride my bike to school. Classes begin at eight in the ___2___. I have six lessons every day. I ___3___ like English best because our teacher is funny. At noon we have lunch in the canteen. After school, my friends and I often ___4___ basketball on the playground. I get home at six and finish my homework ___5___ nine o'clock.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "past",
+          "to",
+          "by",
+          "on"
+        ],
+        "answer": "past",
+        "explain": "half past seven 七点半，固定时间表达"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "evening",
+          "night",
+          "morning",
+          "afternoon"
+        ],
+        "answer": "morning",
+        "explain": "上午八点上课，与下文 at noon 呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "hardly",
+          "really",
+          "never",
+          "seldom"
+        ],
+        "answer": "really",
+        "explain": "really like 真的喜欢；下文给了正面理由"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "take",
+          "make",
+          "play",
+          "do"
+        ],
+        "answer": "play",
+        "explain": "play basketball 打篮球，固定搭配"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "before",
+          "after",
+          "until",
+          "since"
+        ],
+        "answer": "before",
+        "explain": "finish ... before nine 九点前完成作业"
+      }
+    ],
+    "explain": "主题：日常生活。考查时间介词、频率/程度副词、play + 球类、before/after 时间从属词。",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3_C03",
+    "topic": "The Earth · Save our planet",
+    "passage": "The Earth is our ___1___. It gives us air, water and food. But people pollute it every day. Cars give off bad gas. Factories ___2___ dirty water into rivers. Trees are cut down for paper. We must do ___3___ to protect the Earth. We can ride bikes instead ___4___ taking cars. We can reuse books and recycle bottles. Every small action ___5___ matter. The Earth needs our help!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "school",
+          "home",
+          "club",
+          "park"
+        ],
+        "answer": "home",
+        "explain": "地球是我们的家，与下文 air/water/food 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "put",
+          "pour",
+          "send",
+          "fall"
+        ],
+        "answer": "pour",
+        "explain": "pour ... into rivers 把脏水排入河流，与污染主题呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "anything",
+          "everything",
+          "something",
+          "nothing"
+        ],
+        "answer": "something",
+        "explain": "do something 做点事情；环保号召"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "of",
+          "on",
+          "to",
+          "for"
+        ],
+        "answer": "of",
+        "explain": "instead of doing 而不是做某事，固定搭配"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "do",
+          "does",
+          "doing",
+          "did"
+        ],
+        "answer": "does",
+        "explain": "主语 every small action 第三人称单数现在时"
+      }
+    ],
+    "explain": "主题：环保。考查名词理解、动词搭配、不定代词、instead of 短语、主谓一致。",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4_C04",
+    "topic": "Seasons · My favourite season",
+    "passage": "There are four seasons in a year. My favourite season is ___1___. In spring, the weather is warm and the flowers ___2___ everywhere. Birds come back from the south and start ___3___ in the trees. My family often goes to the park ___4___ a picnic on Sundays. I like flying a kite with my sister. Spring is a ___5___ time to play outside.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "spring",
+          "summer",
+          "autumn",
+          "winter"
+        ],
+        "answer": "spring",
+        "explain": "与下文 In spring 直接呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "open",
+          "grow",
+          "bloom",
+          "fall"
+        ],
+        "answer": "bloom",
+        "explain": "flowers bloom 花朵盛开，地道搭配"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "sing",
+          "singing",
+          "to sing",
+          "sang"
+        ],
+        "answer": "singing",
+        "explain": "start doing sth 开始做某事；与下文 flying a kite 平行"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "in",
+          "for",
+          "on",
+          "at"
+        ],
+        "answer": "for",
+        "explain": "go ... for a picnic 去野餐，固定搭配"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "bad",
+          "cold",
+          "great",
+          "long"
+        ],
+        "answer": "great",
+        "explain": "a great time 美好时光，褒义；与全段语境一致"
+      }
+    ],
+    "explain": "主题：季节。考查四季词汇、动词搭配、动名词、介词、形容词褒贬。",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6_C05",
+    "topic": "Travelling around Asia · A letter from Xi'an",
+    "passage": "Dear Tom,\nI am ___1___ in Xi'an now. Xi'an is an ancient city in China. It is famous ___2___ the Terracotta Army. Yesterday I visited the city wall. It is over 600 years old and very ___3___. The wall is wide enough to ride a bike on it. I also tried local food and ___4___ many photos. I will come back to Shanghai next Monday. I miss you ___5___.\nYours, Linda",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "running",
+          "travelling",
+          "sleeping",
+          "cooking"
+        ],
+        "answer": "travelling",
+        "explain": "与全文「西安游记」主题呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "as",
+          "for",
+          "with",
+          "to"
+        ],
+        "answer": "for",
+        "explain": "be famous for sth 以...著称，固定搭配"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "short",
+          "new",
+          "old",
+          "small"
+        ],
+        "answer": "old",
+        "explain": "over 600 years old 与 ancient 呼应；wall is old 形容年代"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "took",
+          "made",
+          "got",
+          "gave"
+        ],
+        "answer": "took",
+        "explain": "take photos 拍照，固定搭配；过去时"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "few",
+          "much",
+          "many",
+          "little"
+        ],
+        "answer": "much",
+        "explain": "miss sb much 非常想念某人；much 修饰动词"
+      }
+    ],
+    "explain": "主题：旅游。考查动词时态、be famous for、形容词搭配、take photos、副词修饰。",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7_C06",
+    "topic": "School clubs · My Robot Club",
+    "passage": "Our school has many ___1___. I love the Robot Club best. Every Friday afternoon we meet in Lab 3. Our teacher, Mr Lee, teaches us how to ___2___ small robots. Last week, my team built a robot dog. It can walk, jump and even bark! All the members ___3___ very excited. ___4___ you also like robots, please come and join us. I am sure you will have a lot ___5___ fun.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "classes",
+          "clubs",
+          "parties",
+          "shops"
+        ],
+        "answer": "clubs",
+        "explain": "school clubs 学校社团，与全文主题呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "eat",
+          "sell",
+          "build",
+          "open"
+        ],
+        "answer": "build",
+        "explain": "build robots 建造机器人；与下文 built a robot dog 呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "is",
+          "are",
+          "was",
+          "were"
+        ],
+        "answer": "were",
+        "explain": "主语 all the members 复数；上下文是过去时（last week）"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "Because",
+          "Although",
+          "If",
+          "When"
+        ],
+        "answer": "If",
+        "explain": "if 引导条件状语从句；下文 please come and join"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "of",
+          "in",
+          "with",
+          "on"
+        ],
+        "answer": "of",
+        "explain": "a lot of fun 很多乐趣，固定搭配"
+      }
+    ],
+    "explain": "主题：社团。考查名词、动词搭配、主谓一致 + 时态、条件从句连词、a lot of 搭配。",
+    "difficulty": 3
+  }
+]

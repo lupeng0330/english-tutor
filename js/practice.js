@@ -82,6 +82,15 @@ function resetPracticeOnContextChange() {
 // 绑定顶部上下文条三个下拉
 const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[], reading:[] };
 
+// 🆕 通用工具：Fisher-Yates 洗牌
+function _shuffleArr(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 // 🆕 难度归一化：兼容数字 (1-4) 和字符串 (easy/medium/hard/challenge)
 // gzk 早期题库写的是字符串，jk/hj 是数字；前端统一转 1-4 数字再比较
 function _normalizeDifficulty(d) {
@@ -198,10 +207,12 @@ function inferTermFromCode(code) {
 function refreshPracticeCounts() {
   const targetUnit = _resolveTargetUnit();
   const showUnitTag = !state.includeAllGrades && !!targetUnit;
-  ['spelling','listening','grammar','reading'].forEach(t => {
+  // 🆕 cloze 加入；cloze 单位是「篇」，其它是「题」
+  ['spelling','listening','grammar','reading','cloze'].forEach(t => {
     const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
     if (!el) return;
     const cur = filterQuestions(t).length;
+    const unit = (t === 'cloze') ? '篇' : '题';
     if (showUnitTag) {
       // 同时计算本册的总数给用户参照
       const savedUnit = state.filterUnit;
@@ -210,7 +221,7 @@ function refreshPracticeCounts() {
       state.filterUnit = savedUnit;
       el.textContent = `${cur} / 册 ${termTotal}`;
     } else {
-      el.textContent = cur + ' 题';
+      el.textContent = cur + ' ' + unit;
     }
   });
   // 🆕 错题本角标
@@ -298,15 +309,52 @@ function startPractice(type) {
     alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
     return;
   }
-  // 🧠 v01.18 智能推题：pickSmartQuestions 按 4 维度（错题/新题曝光/掌握衰减/单元覆盖）
-  //   加权抽样，并把本次推题构成写入 state.lastSmartMeta，供下面 _renderPickSummary 展示。
-  const shuffled = pickSmartQuestions(questions, Math.min(10, questions.length), type);
+  // 🆕 cloze 特殊：每篇短文 = N 道挖空题；不走 pickSmartQuestions 的 4 维加权
+  //   抽 1-2 篇短文 → 展开为「每空一题」的扁平列表，保留同篇 passage/passageCode 关联
+  let shuffled;
+  if (type === 'cloze') {
+    const pickCount = Math.min(2, questions.length);   // 一次做 1-2 篇
+    const passages = _shuffleArr(questions.slice()).slice(0, pickCount);
+    shuffled = [];
+    for (const p of passages) {
+      const blanks = p.blanks || [];
+      blanks.forEach((b, bi) => {
+        // 包装成 grammar-like 单选题，但保留 cloze 上下文信息
+        shuffled.push({
+          // 原题字段
+          grade: p.grade,
+          term: p.term,
+          code: `${p.code}#${b.pos}`,        // 子题唯一编号
+          q: `第 ${b.pos} 空`,                // showQuiz 标题
+          options: b.options || [],
+          answer: (b.options || []).indexOf(b.answer),  // 索引化（与 grammar 一致）
+          explain: b.explain || '',
+          difficulty: p.difficulty || 2,
+          // cloze 上下文（供 showQuiz 渲染篇章）
+          _clozeContext: {
+            passageCode: p.code,
+            passage: p.passage,
+            topic: p.topic || '',
+            currentBlankPos: b.pos,
+            totalBlanks: blanks.length,
+            blankIndex: bi,
+          },
+          // 标记本题来自 cloze，使错题/掌握度归到 cloze 类
+          _wbType: 'cloze',
+        });
+      });
+    }
+  } else {
+    // 🧠 v01.18 智能推题：pickSmartQuestions 按 4 维度（错题/新题曝光/掌握衰减/单元覆盖）
+    //   加权抽样，并把本次推题构成写入 state.lastSmartMeta，供下面 _renderPickSummary 展示。
+    shuffled = pickSmartQuestions(questions, Math.min(10, questions.length), type);
+  }
   state.quizType = type;
   state.quizQuestions = shuffled;
   state.quizIndex = 0;
   state.quizCorrect = 0;
   state.quizStartTime = Date.now();
-  const typeLabel = { spelling: '单词拼写', listening: '听力选择', grammar: '语法练习', reading: '阅读理解' };
+  const typeLabel = { spelling: '单词拼写', listening: '听力选择', grammar: '语法练习', reading: '阅读理解', cloze: '完形填空' };
   document.getElementById('quizType').textContent = typeLabel[type];
   document.getElementById('quizTotal').textContent = shuffled.length;
   document.getElementById('practiceTypeView').classList.add('hide');
@@ -396,7 +444,7 @@ function showQuiz() {
   // 显示年级/难度 badge
   const metaEl = document.getElementById('quizMeta');
   const stars = '★'.repeat(q.difficulty || 1);
-  const typeLabelShort = { spelling: '拼写', listening: '听力', grammar: '语法', reading: '阅读' };
+  const typeLabelShort = { spelling: '拼写', listening: '听力', grammar: '语法', reading: '阅读', cloze: '完形' };
   // 混合题型模式（错题本/智能推荐）显示题型前缀，方便用户辨识当前是哪种题
   const wbPrefix = (state.quizType === 'wrongbook' || state.quizType === 'smart') ? (typeLabelShort[realType] || realType) + ' · ' : '';
   // 🧠 v01.18 智能推题：非错题本模式下，按打分 reason 打标（🔥错题/✨新题/💪薄弱）并给出「为什么推这题」
@@ -443,6 +491,22 @@ function showQuiz() {
   if ((realType === 'reading' || realType === 'reading_qa') && q.passage) {
     passageBox.classList.remove('hide');
     document.getElementById('quizPassage').textContent = q.passage;
+  } else if (realType === 'cloze' && q._clozeContext) {
+    // 🆕 完形填空：显示短文 + 当前空位高亮（其它空位用占位符样式）
+    passageBox.classList.remove('hide');
+    const ctx = q._clozeContext;
+    const curPos = ctx.currentBlankPos;
+    // 把 ___N___ 替换为高亮/普通的内嵌占位文本
+    let html = ctx.passage
+      .replace(/\n/g, '<br>')
+      .replace(/___(\d+)___/g, (_m, n) => {
+        const isCur = (parseInt(n, 10) === curPos);
+        return isCur
+          ? `<span style="display:inline-block;min-width:50px;padding:0 6px;border-bottom:2px solid #f59e0b;background:#fef3c7;font-weight:600;color:#b45309;border-radius:3px;">(${n})</span>`
+          : `<span style="display:inline-block;min-width:50px;padding:0 6px;border-bottom:1px dashed #cbd5e1;color:#94a3b8;">(${n})</span>`;
+      });
+    const topicLine = ctx.topic ? `<div class="text-xs text-amber-700 font-semibold mb-2">📝 完形填空 · ${escapeHtml(ctx.topic)} · 第 ${curPos} / ${ctx.totalBlanks} 空</div>` : `<div class="text-xs text-amber-700 font-semibold mb-2">📝 完形填空 · 第 ${curPos} / ${ctx.totalBlanks} 空</div>`;
+    document.getElementById('quizPassage').innerHTML = topicLine + html;
   } else {
     passageBox.classList.add('hide');
   }

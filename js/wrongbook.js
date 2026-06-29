@@ -153,6 +153,7 @@ const _WB_TYPE_LABELS = {
   listening: '听力选择',
   grammar: '语法练习',
   reading: '阅读理解',
+  cloze: '完形填空',     // 🆕 P2-C
   reading_qa: '课文自测',
   irregular: '不规则动词'
 };

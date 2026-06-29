@@ -11,13 +11,14 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 QDIR = os.path.join(ROOT, 'data', 'questions')
 
 TEXTBOOKS = ['jk', 'hj', 'gzk']
-TYPES = ['spelling', 'listening', 'grammar', 'reading']
+TYPES = ['spelling', 'listening', 'grammar', 'reading', 'cloze']  # 🆕 cloze (P2-C)
 
 REQUIRED_FIELDS = {
     'spelling':  ['grade', 'term', 'code', 'q', 'answer'],
     'listening':  ['grade', 'term', 'code', 'q', 'options', 'answer', 'audioFile'],
     'grammar':   ['grade', 'term', 'code', 'q', 'options', 'answer', 'explain'],
     'reading':   ['grade', 'term', 'code', 'q', 'options', 'answer', 'passage'],
+    'cloze':     ['grade', 'term', 'code', 'passage', 'blanks', 'difficulty'],  # 🆕 详细校验由 _build_cloze_common.validate_cloze 接管
 }
 
 errors = []
@@ -49,7 +50,7 @@ for tb in TEXTBOOKS:
                 if field not in q or q[field] is None:
                     errors.append(f'{tb}_{t}[{i}]: 缺少必填字段 {field}  (code={q.get("code","?")})')
 
-        # 2. code 格式：{1-9}{A/B}_U{n}（允许旧版 _S01/_L01/_G01/_R01 等后缀）
+        # 2. code 格式：{1-9}{A/B}_U{n}（允许旧版 _S01/_L01/_G01/_R01/_C01 等后缀）
         legacy_codes = []
         bad_codes = []
         for i, q in enumerate(data):
@@ -57,8 +58,8 @@ for tb in TEXTBOOKS:
             import re
             if re.match(r'^[1-9][AB]_U\d+$', code):
                 pass  # 标准格式
-            elif re.match(r'^[1-9][AB]_U\d+_[SLGR]\d+$', code):
-                legacy_codes.append(code)  # 旧版带后缀(spelling/listening/grammar/reading)，功能正常
+            elif re.match(r'^[1-9][AB]_U\d+_[SLGRC]\d+$', code):
+                legacy_codes.append(code)  # 旧版带后缀(S/L/G/R/C)，功能正常
             else:
                 bad_codes.append(f'{tb}_{t}[{i}]: code="{code}" 格式严重异常')
         if legacy_codes:
@@ -86,6 +87,18 @@ for tb in TEXTBOOKS:
             dist[k] = dist.get(k, 0) + 1
         dist_str = '  '.join(f'{k}={v}' for k, v in sorted(dist.items()))
         print(f'  {tb}_{t:10s} {count:>4d}题  {dist_str}')
+
+        # 🆕 5b. cloze 结构专项校验（passage/blanks 一致性 等）
+        if t == 'cloze':
+            try:
+                from _build_cloze_common import validate_cloze_list as _vcl
+                cloze_errs, _ = _vcl(data)
+                for e in cloze_errs[:10]:
+                    errors.append(f'{tb}_cloze: {e}')
+                if len(cloze_errs) > 10:
+                    errors.append(f'  ... 另有 {len(cloze_errs)-10} 条 cloze schema 错误')
+            except ImportError:
+                warnings.append(f'{tb}_cloze: 未能 import _build_cloze_common，跳过 schema 校验')
 
         # 5. 听力题 audioFile 命名一致性
         if t == 'listening':

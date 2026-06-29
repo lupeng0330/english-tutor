@@ -257,26 +257,57 @@ function _buildPaper(def) {
       });
       flatIdx += 1;
     } else if (secDef.type === 'cloze') {
-      // 完形填空：从 grammar 题库抽题，包装成篇章形式
-      let pool = (qb.grammar || []).filter(q =>
+      // 🆕 P2-C：优先从独立 cloze 题库抽（真完形短文 + N 挖空），
+      // 题库缺失时回退到旧逻辑（grammar 题串句子）作为兼容兜底。
+      let clozePool = (qb.cloze || []).filter(q =>
         q.grade === g && q.term === t && _inUnitRange(q, sec.unitRange)
       );
-      const sampled = _sampleRng(pool, secDef.count, rng);
-      if (sampled.length > 0) {
-        const passageParts = [];
-        for (let i = 0; i < sampled.length; i++) {
-          const q = sampled[i];
-          const sentence = (q.q || '').replace(/_{2,}/g, '___').replace(/[？?。.]$/, '');
-          passageParts.push(`(${i + 1}) ${sentence}.`);
-          sec.questions.push({
-            type: 'cloze', original: q, q: q.q,
-            options: q.options || ['A', 'B', 'C', 'D'],
-            answer: q.answer, explain: q.explain || '',
-            index: flatIdx, sectionIdx: paper.sections.length
-          });
-          flatIdx += 1;
+      if (clozePool.length > 0) {
+        // 真完形模式：抽 1 篇短文 → 展开为 N 道挖空题
+        // secDef.count 视为「期望挖空数」；选择最接近的一篇
+        const target = secDef.count || 10;
+        clozePool.sort((a, b) =>
+          Math.abs((a.blanks || []).length - target) - Math.abs((b.blanks || []).length - target));
+        const picked = _sampleRng(clozePool, 1, rng);
+        if (picked.length > 0) {
+          const cz = picked[0];
+          // 在 passage 中标记当前序号给学生看（保留教材本身的 ___N___ 占位符样式）
+          sec.clozePassage = (cz.passage || '').replace(/___(\d+)___/g, '(__$1__)');
+          sec.clozeTopic = cz.topic || '';
+          for (const b of (cz.blanks || [])) {
+            sec.questions.push({
+              type: 'cloze', original: cz, q: `第 ${b.pos} 空`,
+              options: b.options || ['A', 'B', 'C', 'D'],
+              answer: (b.options || []).indexOf(b.answer),  // 索引化（与现有渲染一致）
+              explain: b.explain || '',
+              blankPos: b.pos,
+              index: flatIdx, sectionIdx: paper.sections.length
+            });
+            flatIdx += 1;
+          }
         }
-        sec.clozePassage = passageParts.join(' ');
+      } else {
+        // 兼容兜底：旧版从 grammar 串句子（jk/gzk 没造 cloze 时仍可考）
+        let pool = (qb.grammar || []).filter(q =>
+          q.grade === g && q.term === t && _inUnitRange(q, sec.unitRange)
+        );
+        const sampled = _sampleRng(pool, secDef.count, rng);
+        if (sampled.length > 0) {
+          const passageParts = [];
+          for (let i = 0; i < sampled.length; i++) {
+            const q = sampled[i];
+            const sentence = (q.q || '').replace(/_{2,}/g, '___').replace(/[？?。.]$/, '');
+            passageParts.push(`(${i + 1}) ${sentence}.`);
+            sec.questions.push({
+              type: 'cloze', original: q, q: q.q,
+              options: q.options || ['A', 'B', 'C', 'D'],
+              answer: q.answer, explain: q.explain || '',
+              index: flatIdx, sectionIdx: paper.sections.length
+            });
+            flatIdx += 1;
+          }
+          sec.clozePassage = passageParts.join(' ');
+        }
       }
     } else if (secDef.type === 'reading') {
       let pool = (qb.reading || []).filter(q =>
@@ -1162,22 +1193,22 @@ function _gradeExam() {
         secCorrect++;
         secPoints += sec.pointsPer || 0;
       }
-      // 记录到错题本
+      // 记录到错题本（🆕 P2-C：cloze 错题归 cloze 类，不再 mapping 到 grammar）
       try {
         if (typeof recordAnswer === 'function') {
-          recordAnswer(sec.type === 'cloze' ? 'grammar' : sec.type, q.original || q, isCorrect);
+          recordAnswer(sec.type, q.original || q, isCorrect);
         }
       } catch (e) { /* 静默 */ }
       // 记录掌握度
       try {
         if (typeof recordMastery === 'function') {
-          recordMastery(sec.type === 'cloze' ? 'grammar' : sec.type, q.original || q, isCorrect);
+          recordMastery(sec.type, q.original || q, isCorrect);
         }
       } catch (e) { /* 静默 */ }
       // 记录统计
       try {
         if (typeof recordAnswerStats === 'function') {
-          recordAnswerStats(isCorrect, sec.type === 'cloze' ? 'grammar' : sec.type);
+          recordAnswerStats(isCorrect, sec.type);
         }
       } catch (e) { /* 静默 */ }
     }
