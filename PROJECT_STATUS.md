@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-29 深夜**（本次：**P2-C 完形填空批次 1 · 工程基建 + hj 7A 6 篇**——真完形模式：连贯短文 + 挖空选词独立题型；新增 `data/questions/hj_cloze.json` 6 篇 30 挖空、`scripts/_build_cloze_common.py` 共享库（schema 校验 + 占位符 ___N___ + 铁律 8 三件套）、`scripts/hj/build_cloze.py` 生成脚本；扩 `_verify_qbank.py` + `questionBank.js` + UI 加完形徽章 + 错题本 cloze tab + practice.js 篇章式答题（passage 高亮当前空）+ exam.js 抽题源 grammar→cloze 改造；详见 §36。下次会话补 hj 7B/8A/8B/9A/9B 30 篇。上次：P2-B §35 已上线 V02.43）
+> 最后更新：**2026-06-29 深夜**（本次：**P2-C 完形填空批次 1 · 工程基建 + hj 7A 6 篇 · 已上线 V02.44**——真完形模式：连贯短文 + 挖空选词独立题型；新增 `data/questions/hj_cloze.json` 6 篇 30 挖空、`scripts/_build_cloze_common.py` 共享库（schema 校验 + 占位符 ___N___ + 铁律 8 三件套）、`scripts/hj/build_cloze.py` 生成脚本；扩 `_verify_qbank.py` + `questionBank.js` + UI 加完形徽章 + 错题本 cloze tab + practice.js 篇章式答题（passage 高亮当前空）+ exam.js 抽题源 grammar→cloze 改造；详见 §36。下次会话补 hj 7B/8A/8B/9A/9B 30 篇。上次：P2-B §35 已上线 V02.43）
 
 ---
 
@@ -2050,3 +2050,12 @@ grade3上题库补齐（70拼写/18语法/9听力/9阅读）验证通过后，�
 | 4 | 错题本页 → 切「完形填空」tab | 应能看到刚才答错的 cloze 题 |
 | 5 | 模拟考试任一 hj 7A 卷 → 第三大题完形填空 | 抽到的应该是真完形短文（非旧版串句子） |
 | 6 | 教材切到 jk / gzk + 任意年级 | 完形徽章显示「0 篇」（jk/gzk 还没造数据，UI 不报错） |
+
+### 36.8 收口
+
+- ✅ **已上线** `20260629V02.44`（业务 HEAD `a58fd2c`，CI bump `5415f0a`；2026-06-29 深夜用户验收通过）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260629V02.44>
+- ✅ 工程基建 100% 就绪：schema / 共享库 / 校验扩展 / 前端徽章 / 篇章式答题 UI / exam.js 抽题源改造 / 错题本 cloze tab，剩余任务**全部是纯数据填充**（无新工程）。
+- ⏳ **批次 2**（hj 7B/8A/8B/9A/9B 共 30 篇 ~150 挖空）：直接在 `scripts/hj/build_cloze.py` 的 PASSAGES 列表追加 30 个 dict 即可，下次会话补，预估 3-4 小时。
+- ⏳ **批次 3**（jk 3 上→6 上 7 册 28 篇 ~140 挖空）：写 `scripts/jk/build_cloze.py`（仿 hj 那个）+ 28 篇短文，预估 4 小时。
+- 🚫 gzk 不做 cloze（一二年级口语教材不适合）。
+- 经验固化：**真完形 = 篇章式答题**比「串句子假完形」体验质的提升；schema 设计「passage 占位符 + blanks 数组」让一篇短文 = 一条 JSON 记录、保留语境完整性；前端展开为「每空一题」+ 注入 `_clozeContext` 让 showQuiz 复用 grammar 单选 UI，**最小改动获最大体验**。
