@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-06-30 下午**（本次：**阶段 1 分值 Bug 紧急修复**——用户反馈实际渲染：初中 110 多分（应 120）/ 小学 150 多分（应 100）。审计定位 3 大根因并修复：① hj cloze count=10 但池每篇 5 空 → 改 count=5×points=3=15 ② jk 小学 cloze count=1×points=20 被 exam.js 展开 N 挖空×20 = 80-100 分超额 → 改 count=4/5×points=5/4=20 ③ hj unitTest 没声明 totalPoints → 补 55；exam.js 改造：cloze totalPoints 强制锁死 = 配置 count×points + 单空分按比例缩放；jk_cloze 35→40 篇（补 6 下 5 篇）；详见 §38.8。上次：阶段 1 V02.46）
+> 最后更新：**2026-06-30 下午 · 已上线 V02.47**（本次：**阶段 1 分值 Bug 紧急修复**——用户反馈实际渲染：初中 110 多分（应 120）/ 小学 150 多分（应 100）。审计定位 3 大根因并修复：① hj cloze count=10 但池每篇 5 空 → 改 count=5×points=3=15 ② jk 小学 cloze count=1×points=20 被 exam.js 展开 N 挖空×20 = 80-100 分超额 → 改 count=4/5×points=5/4=20 ③ hj unitTest 没声明 totalPoints → 补 55；exam.js 改造：cloze totalPoints 强制锁死 = 配置 count×points + 单空分按比例缩放；jk_cloze 35→40 篇（补 6 下 5 篇）；详见 §38.8。上次：阶段 1 V02.46）
 
 ---
 
@@ -2313,6 +2313,12 @@ if (secDef.type === 'cloze') {
 | jk **midterm 题库容量缺口**：U1-U4 部分缺 grammar 10 + listening 7 + reading 3 = 20 题 | 各年级 midterm 损失 4-12 分（88-96） | ~4-5 小时（含 7 个 listening MP3 流水线）|
 
 用户 Q1=A 接受 V02.48 单独补全。本次 V02.47 仅推送主修复（hj 中学锁死配置 + jk 小学 cloze 对齐 + jk 6 下 5 篇 + exam.js 改造）。
+
+#### 38.8.6 收口
+
+- ✅ **已上线** `20260630V02.47`（业务 HEAD `b6a3c71`，CI bump `c8f01d3`；2026-06-30 下午用户验收通过）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260630V02.47>
+- ✅ 修复后实际渲染：hj 7-9 全卷 **120 分**、jk 3-6 final **100 分**、jk 6 下 cloze 可抽到（5 篇覆盖 U1/U2/U4/U5/U8）。
+- ⏳ V02.48 待补：jk midterm 题库容量缺口（20 题：grammar 10 + listening 7 + reading 3 含 7 个 MP3）→ midterm 88-96 → 100。
 
 #### 38.8.5 经验固化
 
