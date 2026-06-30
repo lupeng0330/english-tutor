@@ -55,7 +55,7 @@ start http://localhost:8765/mobile.html
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
-| 2026-06-30 下午 | **阶段 1 分值 Bug 修复**：用户报告初中 110+/小学 150+ 分值异常；定位 3 根因（hj cloze 容量缺口 + jk cloze count 误用 + hj unitTest 漏声明）；exam.js cloze totalPoints 锁死配置；jk 6 下补 5 篇 cloze；audit 196 sections 0 不一致；final 全过、midterm 88-96 受题库容量约束 V02.48 补题 | §38.8（附录 A） |
+| 2026-06-30 下午 | **阶段 1 分值 Bug 修复（V02.47）** + **jk midterm 题库补全（V02.48）**：用户报告初中 110+/小学 150+ 分值异常；定位 3 根因；exam.js cloze totalPoints 锁死配置；jk 6 下补 5 篇 cloze；audit 196 sections 0 不一致；final 全过；V02.48 补全 jk 3A-6A 共 7 个 U2（+20 题 + 7 MP3）→ midterm 88-96 → 100 ✅ 已上线 | §38.8（附录 A） |
 | 2026-06-30 中午 | **小学模拟考试阶段 1**：按广州真实试卷标准重做 jk 3-6 年级 8 张 final 为 100 分制 + 新增 8 张 midterm 期中卷 + 4 个 unitTest 升级 50 分制 + 所有卷加完形 section（修配置遗漏 Bug） | §38（附录 A） |
 | 2026-06-30 上午+ | **P2-C 批次 3 · jk 小学 35 篇 cloze**：jk 3 上→6 上 7 册 × 5 篇 = 35 篇 / 155 挖空，分级适龄（3-4 年级 4 挖空 / 5-6 年级 5 挖空 + 难度梯度 diff1→3）；P2-C 全部完成（71 篇 / 335 挖空） | §37（附录 A） |
 | 2026-06-30 上午 | **P2-C 批次 2 · hj 全 6 册 cloze**：追加 7B/8A/8B/9A/9B 共 30 篇 150 挖空；hj 完形 6→36 篇 / 30→180 挖空 | §36（附录 A） |
@@ -2302,23 +2302,21 @@ if (secDef.type === 'cloze') {
 |---|---|
 | 配置审计：所有 196 sections 声明 == 累加 | ✅ 0 不一致 |
 | 运行时模拟：jk/hj **final** 实际 = 声明（100/120）| ✅ 全过 |
-| 运行时模拟：jk **midterm** 实际 = 88-96（声明 100）| ⚠️ -4~-12 分（题库容量约束，V02.48 补题） |
+| 运行时模拟：jk **midterm** 实际 = 声明（100）| ✅ 全过（V02.48 补全题库） |
 | `_verify_qbank.py` 全题库回归 | ✅ 退出码 0 |
 | 本地 HTTP 200 | ✅ exam_config.json 62.4 KB、jk_cloze.json 63.1 KB |
 
-#### 38.8.4 已知尾巴（V02.48 待修）
+#### 38.8.4 已知尾巴（✅ V02.48 已修）
 
-| 项 | 缺口 | 工时 |
-|---|---|---|
-| jk **midterm 题库容量缺口**：U1-U4 部分缺 grammar 10 + listening 7 + reading 3 = 20 题 | 各年级 midterm 损失 4-12 分（88-96） | ~4-5 小时（含 7 个 listening MP3 流水线）|
-
-用户 Q1=A 接受 V02.48 单独补全。本次 V02.47 仅推送主修复（hj 中学锁死配置 + jk 小学 cloze 对齐 + jk 6 下 5 篇 + exam.js 改造）。
+| 项 | 结果 |
+|---|---|
+| jk **midterm 题库容量缺口**：U1-U4 部分缺 grammar 10 + listening 7 + reading 3 = 20 题 | ✅ 已补全（7 个 U2 各 +2~3 题，含 7 个 listening MP3）→ midterm 88-96 → 100 |
 
 #### 38.8.6 收口
 
 - ✅ **已上线** `20260630V02.47`（业务 HEAD `b6a3c71`，CI bump `c8f01d3`；2026-06-30 下午用户验收通过）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260630V02.47>
-- ✅ 修复后实际渲染：hj 7-9 全卷 **120 分**、jk 3-6 final **100 分**、jk 6 下 cloze 可抽到（5 篇覆盖 U1/U2/U4/U5/U8）。
-- ⏳ V02.48 待补：jk midterm 题库容量缺口（20 题：grammar 10 + listening 7 + reading 3 含 7 个 MP3）→ midterm 88-96 → 100。
+- ✅ **已上线** `20260630V02.48`（业务 HEAD `8d179d3`；2026-06-30 晚用户验收通过）— jk midterm 题库补全，全年级 midterm 满分 100 ✅
+- ✅ 修复后实际渲染：hj 7-9 全卷 **120 分**、jk 3-6 final **100 分**、jk 3-6 midterm **100 分**、jk 6 下 cloze 可抽到（5 篇覆盖 U1/U2/U4/U5/U8）。
 
 #### 38.8.5 经验固化
 
