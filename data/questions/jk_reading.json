@@ -1322,6 +1322,22 @@
   {
     "grade": 5,
     "term": "上",
+    "code": "5A_U2",
+    "passage": "School subjects are like colours in a rainbow. English opens the world. Maths trains our minds. Science shows us how things work. PE makes us strong. Art brings beauty. Every subject adds a colour to our rainbow!",
+    "q": "What does Maths do according to the passage?",
+    "options": [
+      "Trains our minds",
+      "Opens the world",
+      "Makes us strong"
+    ],
+    "answer": 0,
+    "explain": "文中说 Maths trains our minds",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
     "code": "5A_U3",
     "passage": "Everyone has a talent. Tom can dance very well. Lily draws beautiful pictures. I can speak English and tell stories. On the school stage, we show our talents. Our teachers and parents are so proud. A talent is a gift — share it with the world!",
     "q": "What can Lily do?",
@@ -1466,6 +1482,22 @@
   {
     "grade": 5,
     "term": "下",
+    "code": "5B_U2",
+    "passage": "Travelling is a big part of life. Some people love the speed of a plane. Others enjoy the view from a train. Buses are good for short trips. In the city, the subway is the fastest way. What about you? How do you like to travel?",
+    "q": "What is the fastest way in the city?",
+    "options": [
+      "The subway",
+      "The bus",
+      "Walking"
+    ],
+    "answer": 0,
+    "explain": "文中说 the subway is the fastest way",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
     "code": "5B_U3",
     "passage": "Asking the way is an important skill. First, say \"Excuse me\". Then tell where you want to go. Listen carefully: go straight, turn left or right. A map can help you. If you get lost, don't worry — just ask a kind person for help!",
     "q": "What should you say first when asking the way?",
@@ -1604,6 +1636,22 @@
     ],
     "answer": 0,
     "explain": "文中说 Lily dreams of being a writer",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "passage": "Dreams give us power. A dream is not just a wish — it is a goal. To make it come true, we must study hard, learn new things, and never give up. Many great people started with a small dream. What's your dream? Go for it!",
+    "q": "What is a dream according to the passage?",
+    "options": [
+      "A goal, not just a wish",
+      "A wish only",
+      "A game"
+    ],
+    "answer": 0,
+    "explain": "文中说 A dream is not just a wish — it is a goal",
     "difficulty": 1,
     "source": "ai_jk_v2"
   },

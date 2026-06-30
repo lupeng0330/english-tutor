@@ -753,6 +753,36 @@
   {
     "grade": 3,
     "term": "上",
+    "code": "3A_U2",
+    "q": "\"Book\" and \"look\" ____ the same.",
+    "options": [
+      "sound",
+      "sounds",
+      "sounding"
+    ],
+    "answer": 0,
+    "explain": "复数主语用 sound",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "____ colour is your English book?",
+    "options": [
+      "What",
+      "Where",
+      "Who"
+    ],
+    "answer": 0,
+    "explain": "问颜色用 What colour",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
     "code": "3A_U3",
     "q": "Who ____ he? He ____ my friend.",
     "options": [
@@ -1017,6 +1047,36 @@
     ],
     "answer": 0,
     "explain": "已经发生的事用过去式 played",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "I ____ very happy today.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "I 后用 am",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "I like ____ school.",
+    "options": [
+      "my",
+      "me",
+      "I"
+    ],
+    "answer": 0,
+    "explain": "my + 名词",
     "difficulty": 1,
     "source": "ai_jk_v2"
   },
@@ -1293,6 +1353,36 @@
   {
     "grade": 4,
     "term": "上",
+    "code": "4A_U2",
+    "q": "My ____ is a teacher.",
+    "options": [
+      "mother",
+      "fathers",
+      "mothers"
+    ],
+    "answer": 0,
+    "explain": "mother 单数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "I ____ a big family.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
     "code": "4A_U3",
     "q": "My bedroom is ____.",
     "options": [
@@ -1557,6 +1647,36 @@
     ],
     "answer": 0,
     "explain": "shirt 搭配 trousers 更常见",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "These shoes ____ very nice.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 shoes 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "____ T-shirt is red.",
+    "options": [
+      "My",
+      "Me",
+      "I"
+    ],
+    "answer": 0,
+    "explain": "My + 名词",
     "difficulty": 1,
     "source": "ai_jk_v2"
   },
@@ -1833,6 +1953,36 @@
   {
     "grade": 5,
     "term": "上",
+    "code": "5A_U2",
+    "q": "____ is your English teacher?",
+    "options": [
+      "Who",
+      "What",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "问人用 Who",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "We have English ____ Monday and Friday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
     "code": "5A_U3",
     "q": "I can ____ songs in English.",
     "options": [
@@ -2103,6 +2253,36 @@
   {
     "grade": 5,
     "term": "下",
+    "code": "5B_U2",
+    "q": "The train ____ at 8 o'clock.",
+    "options": [
+      "leaves",
+      "leave",
+      "leaving"
+    ],
+    "answer": 0,
+    "explain": "单数 the train 后用 leaves",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "It ____ about two hours to get there.",
+    "options": [
+      "takes",
+      "take",
+      "taking"
+    ],
+    "answer": 0,
+    "explain": "It takes... 表示花费时间",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
     "code": "5B_U3",
     "q": "Turn ____ at the crossroads.",
     "options": [
@@ -2367,6 +2547,36 @@
     ],
     "answer": 0,
     "explain": "条件状语从句用一般现在时",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "She ____ to be a writer.",
+    "options": [
+      "wants",
+      "want",
+      "wanting"
+    ],
+    "answer": 0,
+    "explain": "She 后用 wants",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "I will ____ hard for my dream.",
+    "options": [
+      "study",
+      "studies",
+      "studying"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
     "difficulty": 1,
     "source": "ai_jk_v2"
   },

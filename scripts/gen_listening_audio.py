@@ -66,14 +66,27 @@ async def gen_one(fname, raw_text, force=False):
 
 
 async def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--missing', action='store_true', help='只生成 audio/ 中缺失的 MP3')
+    ap.add_argument('--audio-file', type=str, help='指定单个 audioFile 生成')
+    args = ap.parse_args()
+
     if not os.path.exists(OUT_DIR):
         os.makedirs(OUT_DIR)
     with open(QB_PATH, "r", encoding="utf-8") as f:
         qs = json.load(f)
 
-    # 只处理 grade6 下册
-    targets = [q for q in qs if q.get("grade") == 6 and q.get("term") == "下" and q.get("audioFile")]
-    print(f"[info] Targets (grade6 下): {len(targets)} listening MP3s")
+    if args.audio_file:
+        targets = [q for q in qs if q.get("audioFile") == args.audio_file]
+        print(f"[info] Target: {args.audio_file}")
+    elif args.missing:
+        targets = [q for q in qs if q.get("audioFile") and not os.path.exists(os.path.join(OUT_DIR, q["audioFile"]))]
+        print(f"[info] Missing MP3s: {len(targets)}")
+    else:
+        # 默认：只处理 grade6 下册（兼容旧行为）
+        targets = [q for q in qs if q.get("grade") == 6 and q.get("term") == "下" and q.get("audioFile")]
+        print(f"[info] Targets (grade6 下): {len(targets)} listening MP3s")
 
     ok, skip, fail = 0, 0, 0
     for i, q in enumerate(targets, 1):

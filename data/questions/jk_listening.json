@@ -554,9 +554,26 @@
   {
     "grade": 3,
     "term": "上",
+    "code": "3A_U2",
+    "audioText": "M: Can you read this English word? W: Yes, I can. It is \"apple\". W: What does it mean? M: It means a kind of fruit.",
+    "audioFile": "jk_listening_3A_03.mp3",
+    "q": "What does the word \"apple\" mean?",
+    "options": [
+      "A kind of fruit",
+      "A colour",
+      "A name"
+    ],
+    "answer": 0,
+    "explain": "M 说 It means a kind of fruit",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
     "code": "3A_U3",
     "audioText": "W: Look at the photo. Who is he? M: He is my friend, Tom.",
-    "audioFile": "jk_listening_3A_03.mp3",
+    "audioFile": "jk_listening_3A_04.mp3",
     "q": "Who is the boy in the photo?",
     "options": [
       "Tom",
@@ -573,7 +590,7 @@
     "term": "上",
     "code": "3A_U4",
     "audioText": "M: What colour is this key? W: Colour it red, please.",
-    "audioFile": "jk_listening_3A_04.mp3",
+    "audioFile": "jk_listening_3A_05.mp3",
     "q": "What colour is the key?",
     "options": [
       "Red",
@@ -590,7 +607,7 @@
     "term": "上",
     "code": "3A_U5",
     "audioText": "W: Let's set a password. How many numbers do we need? M: Pick four numbers, from one to ten.",
-    "audioFile": "jk_listening_3A_05.mp3",
+    "audioFile": "jk_listening_3A_06.mp3",
     "q": "How many numbers for the password?",
     "options": [
       "Four",
@@ -607,7 +624,7 @@
     "term": "上",
     "code": "3A_U6",
     "audioText": "W: Look, I can draw a circle for the sun! M: Wow! It is so nice.",
-    "audioFile": "jk_listening_3A_06.mp3",
+    "audioFile": "jk_listening_3A_07.mp3",
     "q": "What did the girl draw?",
     "options": [
       "A circle",
@@ -624,7 +641,7 @@
     "term": "上",
     "code": "3A_U7",
     "audioText": "M: Class, please be quiet. I will listen now. W: Good! A good listener learns a lot.",
-    "audioFile": "jk_listening_3A_07.mp3",
+    "audioFile": "jk_listening_3A_08.mp3",
     "q": "What makes a good listener?",
     "options": [
       "Being quiet",
@@ -641,7 +658,7 @@
     "term": "上",
     "code": "3A_U8",
     "audioText": "M: It's time to exercise! We can run, jump and play ball. W: I love exercise!",
-    "audioFile": "jk_listening_3A_08.mp3",
+    "audioFile": "jk_listening_3A_09.mp3",
     "q": "What can they do for exercise?",
     "options": [
       "Run and jump",
@@ -658,7 +675,7 @@
     "term": "上",
     "code": "3A_U9",
     "audioText": "W: Let's have a music show! Who can sing an English song? M: I can!",
-    "audioFile": "jk_listening_3A_09.mp3",
+    "audioFile": "jk_listening_3A_10.mp3",
     "q": "Who can sing an English song?",
     "options": [
       "The boy",
@@ -707,9 +724,26 @@
   {
     "grade": 3,
     "term": "下",
+    "code": "3B_U2",
+    "audioText": "W: What a busy day! M: Yes. We had four classes and ran on the playground. W: I am so hungry now. Let's go home.",
+    "audioFile": "jk_listening_3B_03.mp3",
+    "q": "Why are they so hungry?",
+    "options": [
+      "They had classes and ran a lot",
+      "They forgot to eat",
+      "They cooked too much"
+    ],
+    "answer": 0,
+    "explain": "他们上了四节课还在操场跑步，所以很饿",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
     "code": "3B_U3",
     "audioText": "W: Look at my plan for Saturday! M: Cool! What will you do first? W: First I'll read a book. Then I'll play with my dog.",
-    "audioFile": "jk_listening_3B_03.mp3",
+    "audioFile": "jk_listening_3B_04.mp3",
     "q": "What will she do first on Saturday?",
     "options": [
       "Read a book",
@@ -726,7 +760,7 @@
     "term": "下",
     "code": "3B_U4",
     "audioText": "W: Ben, I have a party on Sunday. Come and join us! M: Sure! We'll play games and sing songs together.",
-    "audioFile": "jk_listening_3B_04.mp3",
+    "audioFile": "jk_listening_3B_05.mp3",
     "q": "What will they do at the party?",
     "options": [
       "Play games and sing songs",
@@ -743,7 +777,7 @@
     "term": "下",
     "code": "3B_U5",
     "audioText": "M: Look at our new classroom! W: Wow, it's so clean and tidy. M: There is a big poster on the wall. It's our class call.",
-    "audioFile": "jk_listening_3B_05.mp3",
+    "audioFile": "jk_listening_3B_06.mp3",
     "q": "What is on the wall?",
     "options": [
       "A big poster",
@@ -760,7 +794,7 @@
     "term": "下",
     "code": "3B_U6",
     "audioText": "W: I'm on duty today. What should I do? M: First, sweep the floor. Then wipe the windows and water the plants.",
-    "audioFile": "jk_listening_3B_06.mp3",
+    "audioFile": "jk_listening_3B_07.mp3",
     "q": "What should she do first?",
     "options": [
       "Sweep the floor",
@@ -777,7 +811,7 @@
     "term": "下",
     "code": "3B_U7",
     "audioText": "W: Ben, don't run in the hall! M: Sorry, I'm late for class. W: You should walk, not run. It's safer.",
-    "audioFile": "jk_listening_3B_07.mp3",
+    "audioFile": "jk_listening_3B_08.mp3",
     "q": "Why should Ben walk?",
     "options": [
       "It's safer",
@@ -794,7 +828,7 @@
     "term": "下",
     "code": "3B_U8",
     "audioText": "M: Excuse me, may I borrow your pen? W: Sure, here you are. M: Thanks a lot! W: You're welcome.",
-    "audioFile": "jk_listening_3B_08.mp3",
+    "audioFile": "jk_listening_3B_09.mp3",
     "q": "What does the boy want to borrow?",
     "options": [
       "A pen",
@@ -811,7 +845,7 @@
     "term": "下",
     "code": "3B_U9",
     "audioText": "W: Today is Road Helper Day! I help kids cross the road. M: What do you say? W: Red light, stop! Green light, go!",
-    "audioFile": "jk_listening_3B_09.mp3",
+    "audioFile": "jk_listening_3B_10.mp3",
     "q": "What does green light mean?",
     "options": [
       "Go",
@@ -860,9 +894,26 @@
   {
     "grade": 4,
     "term": "上",
+    "code": "4A_U2",
+    "audioText": "M: How many people in your family? W: Five — grandpa, grandma, father, mother and me. M: That's a warm family!",
+    "audioFile": "jk_listening_4A_03.mp3",
+    "q": "How many people in Anna's family?",
+    "options": [
+      "Five",
+      "Four",
+      "Six"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 Five",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
     "code": "4A_U3",
     "audioText": "M: Anna, can you show me your house? W: Sure! This is the kitchen, and that is the study. My bedroom is upstairs.",
-    "audioFile": "jk_listening_4A_03.mp3",
+    "audioFile": "jk_listening_4A_04.mp3",
     "q": "Where is the bedroom?",
     "options": [
       "Upstairs",
@@ -879,7 +930,7 @@
     "term": "上",
     "code": "4A_U4",
     "audioText": "M: Anna, what do you do at home? W: I read books and draw pictures. I watch TV only on weekends.",
-    "audioFile": "jk_listening_4A_04.mp3",
+    "audioFile": "jk_listening_4A_05.mp3",
     "q": "When does Anna watch TV?",
     "options": [
       "Only on weekends",
@@ -896,7 +947,7 @@
     "term": "上",
     "code": "4A_U5",
     "audioText": "W: Ben, what's your hobby? M: My hobby is music. I play the piano. W: Cool! I love dance. I can also swim.",
-    "audioFile": "jk_listening_4A_05.mp3",
+    "audioFile": "jk_listening_4A_06.mp3",
     "q": "What is Ben's hobby?",
     "options": [
       "Playing the piano",
@@ -913,7 +964,7 @@
     "term": "上",
     "code": "4A_U6",
     "audioText": "M: Look at the pandas! They're so cute. W: I love their black and white fur. M: There are birds, rabbits and even a tiger here.",
-    "audioFile": "jk_listening_4A_06.mp3",
+    "audioFile": "jk_listening_4A_07.mp3",
     "q": "What animals do they see first?",
     "options": [
       "Pandas",
@@ -930,7 +981,7 @@
     "term": "上",
     "code": "4A_U7",
     "audioText": "M: What will you do this weekend, Anna? W: On Saturday, my family will have a picnic in the park. On Sunday, we'll go shopping and watch a movie.",
-    "audioFile": "jk_listening_4A_07.mp3",
+    "audioFile": "jk_listening_4A_08.mp3",
     "q": "What will Anna do on Saturday?",
     "options": [
       "Have a picnic",
@@ -947,7 +998,7 @@
     "term": "上",
     "code": "4A_U8",
     "audioText": "M: Merry Christmas, Anna! W: Merry Christmas, Ben! Look at our Christmas tree. I made a card for Mum and Dad.",
-    "audioFile": "jk_listening_4A_08.mp3",
+    "audioFile": "jk_listening_4A_09.mp3",
     "q": "What did Anna make?",
     "options": [
       "A card",
@@ -964,7 +1015,7 @@
     "term": "上",
     "code": "4A_U9",
     "audioText": "M: Happy New Year, Anna! W: Happy New Year, Ben! I wish to learn more English and make new friends.",
-    "audioFile": "jk_listening_4A_09.mp3",
+    "audioFile": "jk_listening_4A_10.mp3",
     "q": "What does Anna wish for?",
     "options": [
       "Learn more English",
@@ -1013,9 +1064,26 @@
   {
     "grade": 4,
     "term": "下",
+    "code": "4B_U2",
+    "audioText": "W: Mum, I need new clothes for school. M: Let's go shopping. W: I want a blue hat and blue shoes. M: Blue is your favourite colour!",
+    "audioFile": "jk_listening_4B_03.mp3",
+    "q": "What does the child want?",
+    "options": [
+      "A blue hat and blue shoes",
+      "A red shirt",
+      "A green skirt"
+    ],
+    "answer": 0,
+    "explain": "孩子说 I want a blue hat and blue shoes",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
     "code": "4B_U3",
     "audioText": "W: Mum, look at this red T-shirt. How much is it? M: It's only twenty yuan. W: That's cheap! Let's buy it.",
-    "audioFile": "jk_listening_4B_03.mp3",
+    "audioFile": "jk_listening_4B_04.mp3",
     "q": "How much is the T-shirt?",
     "options": [
       "Twenty yuan",
@@ -1032,7 +1100,7 @@
     "term": "下",
     "code": "4B_U4",
     "audioText": "W: I want a book and a pen. M: The book is thirty yuan, the pen is twenty. W: How much in total? M: Fifty yuan.",
-    "audioFile": "jk_listening_4B_04.mp3",
+    "audioFile": "jk_listening_4B_05.mp3",
     "q": "How much in total?",
     "options": [
       "Fifty yuan",
@@ -1049,7 +1117,7 @@
     "term": "下",
     "code": "4B_U5",
     "audioText": "M: What's your favourite food, Anna? W: I love noodles and dumplings. M: I prefer rice and meat. W: Vegetables are tasty too!",
-    "audioFile": "jk_listening_4B_05.mp3",
+    "audioFile": "jk_listening_4B_06.mp3",
     "q": "What does Ben prefer?",
     "options": [
       "Rice and meat",
@@ -1066,7 +1134,7 @@
     "term": "下",
     "code": "4B_U6",
     "audioText": "W: Anna, will you help me in the kitchen? M: Sure, Mum. What can I do? W: Please wash the fruit and get two eggs.",
-    "audioFile": "jk_listening_4B_06.mp3",
+    "audioFile": "jk_listening_4B_07.mp3",
     "q": "What does Mum ask Anna to do?",
     "options": [
       "Wash the fruit and get eggs",
@@ -1083,7 +1151,7 @@
     "term": "下",
     "code": "4B_U7",
     "audioText": "M: Anna, why are you so strong? W: I have healthy habits. I exercise every morning and sleep early. M: I should try that too!",
-    "audioFile": "jk_listening_4B_07.mp3",
+    "audioFile": "jk_listening_4B_08.mp3",
     "q": "Why is Anna strong?",
     "options": [
       "She has healthy habits",
@@ -1100,7 +1168,7 @@
     "term": "下",
     "code": "4B_U8",
     "audioText": "W: It's a sunny Saturday! Let's have a picnic. M: Great! I'll bring sandwiches and juice. W: I have a big basket and we can sit by the lake.",
-    "audioFile": "jk_listening_4B_08.mp3",
+    "audioFile": "jk_listening_4B_09.mp3",
     "q": "Where will they have the picnic?",
     "options": [
       "By the lake",
@@ -1117,7 +1185,7 @@
     "term": "下",
     "code": "4B_U9",
     "audioText": "W: This spring was so lovely. We flew kites and had a picnic. M: I wrote it all in my diary. W: I'll remember it forever. Thank you, spring!",
-    "audioFile": "jk_listening_4B_09.mp3",
+    "audioFile": "jk_listening_4B_10.mp3",
     "q": "Where did Ben write about spring?",
     "options": [
       "In his diary",
@@ -1166,9 +1234,26 @@
   {
     "grade": 5,
     "term": "上",
+    "code": "5A_U2",
+    "audioText": "M: Anna, do you like PE? W: Yes! I love sports. We run, jump and play ball games. M: My favourite is football. W: Me too! Let's play after school.",
+    "audioFile": "jk_listening_5A_03.mp3",
+    "q": "What sport do they both like?",
+    "options": [
+      "Football",
+      "Basketball",
+      "Swimming"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 My favourite is football, Anna 说 Me too",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
     "code": "5A_U3",
     "audioText": "M: Anna, what's your talent? W: I can sing songs in English. What about you? M: I can tell stories on stage. W: Your parents must be proud!",
-    "audioFile": "jk_listening_5A_03.mp3",
+    "audioFile": "jk_listening_5A_04.mp3",
     "q": "What is Ben's talent?",
     "options": [
       "Telling stories",
@@ -1185,7 +1270,7 @@
     "term": "上",
     "code": "5A_U4",
     "audioText": "W: I want to borrow a story book. Where is it? M: It's on the shelf by the window. W: Thanks! Don't forget to return it next week.",
-    "audioFile": "jk_listening_5A_04.mp3",
+    "audioFile": "jk_listening_5A_05.mp3",
     "q": "Where is the story book?",
     "options": [
       "On the shelf by the window",
@@ -1202,7 +1287,7 @@
     "term": "上",
     "code": "5A_U5",
     "audioText": "M: Anna, today is Sports Day. Are you ready? W: Yes! I'll run the 100-metre race. M: Good luck! I'll cheer for you!",
-    "audioFile": "jk_listening_5A_05.mp3",
+    "audioFile": "jk_listening_5A_06.mp3",
     "q": "What will Anna do on Sports Day?",
     "options": [
       "Run the 100-metre race",
@@ -1219,7 +1304,7 @@
     "term": "上",
     "code": "5A_U6",
     "audioText": "W: Ben, what festivals do you celebrate? M: I love Spring Festival and Mid-Autumn. We eat moon cakes and watch the moon. W: In America, they have Thanksgiving and Halloween.",
-    "audioFile": "jk_listening_5A_06.mp3",
+    "audioFile": "jk_listening_5A_07.mp3",
     "q": "What do they eat at Mid-Autumn?",
     "options": [
       "Moon cakes",
@@ -1236,7 +1321,7 @@
     "term": "上",
     "code": "5A_U7",
     "audioText": "M: Anna, which club will you join? W: I want to join the photo club. I love taking pictures. M: Cool! I'll join the robot club.",
-    "audioFile": "jk_listening_5A_07.mp3",
+    "audioFile": "jk_listening_5A_08.mp3",
     "q": "Which club does Anna want to join?",
     "options": [
       "Photo club",
@@ -1253,7 +1338,7 @@
     "term": "上",
     "code": "5A_U8",
     "audioText": "W: Ben, the elderly man next door looks sad. M: Let's help him carry his bags. W: Good idea! A small act can make a big difference.",
-    "audioFile": "jk_listening_5A_08.mp3",
+    "audioFile": "jk_listening_5A_09.mp3",
     "q": "What do they want to do?",
     "options": [
       "Help the elderly man",
@@ -1270,7 +1355,7 @@
     "term": "上",
     "code": "5A_U9",
     "audioText": "W: Ben, our school show is tomorrow! M: Yes! I've prepared for weeks. I'll sing and act. W: I'll dance. The audience will love it!",
-    "audioFile": "jk_listening_5A_09.mp3",
+    "audioFile": "jk_listening_5A_10.mp3",
     "q": "What will Ben do at the show?",
     "options": [
       "Sing and act",
@@ -1319,9 +1404,26 @@
   {
     "grade": 5,
     "term": "下",
+    "code": "5B_U2",
+    "audioText": "W: How do you go to school, Ben? M: I take the school bus. It's safe and fun. W: I walk to school. It's only 10 minutes. M: That's good exercise!",
+    "audioFile": "jk_listening_5B_03.mp3",
+    "q": "How does Ben go to school?",
+    "options": [
+      "By school bus",
+      "On foot",
+      "By bike"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I take the school bus",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
     "code": "5B_U3",
     "audioText": "W: Excuse me, can you show me the way to the museum? M: Sure. Go straight, then turn right at the crossroads. W: Thank you so much!",
-    "audioFile": "jk_listening_5B_03.mp3",
+    "audioFile": "jk_listening_5B_04.mp3",
     "q": "Where should the tourist turn?",
     "options": [
       "Right at the crossroads",
@@ -1338,7 +1440,7 @@
     "term": "下",
     "code": "5B_U4",
     "audioText": "M: Anna, which tourist spot do you want to see most? W: I want to visit the Great Wall. It's famous all over the world. M: Me too!",
-    "audioFile": "jk_listening_5B_04.mp3",
+    "audioFile": "jk_listening_5B_05.mp3",
     "q": "What does Anna want to visit?",
     "options": [
       "The Great Wall",
@@ -1355,7 +1457,7 @@
     "term": "下",
     "code": "5B_U5",
     "audioText": "W: This silk scarf is so beautiful! What colour do you prefer? M: I'll take the blue one. W: Good choice! Let's pay and get a receipt.",
-    "audioFile": "jk_listening_5B_05.mp3",
+    "audioFile": "jk_listening_5B_06.mp3",
     "q": "What colour scarf does Ben choose?",
     "options": [
       "Blue",
@@ -1372,7 +1474,7 @@
     "term": "下",
     "code": "5B_U6",
     "audioText": "W: Look, Ben! I got a postcard from Beijing. M: Wow! Who sent it? W: My cousin. She says the weather is great and she misses me.",
-    "audioFile": "jk_listening_5B_06.mp3",
+    "audioFile": "jk_listening_5B_07.mp3",
     "q": "Who sent the postcard?",
     "options": [
       "Anna's cousin",
@@ -1389,7 +1491,7 @@
     "term": "下",
     "code": "5B_U7",
     "audioText": "W: Ben, I met a foreign student. She speaks three languages! M: Amazing! W: She eats with chopsticks and loves Chinese food.",
-    "audioFile": "jk_listening_5B_07.mp3",
+    "audioFile": "jk_listening_5B_08.mp3",
     "q": "What does the foreign student use to eat?",
     "options": [
       "Chopsticks",
@@ -1406,7 +1508,7 @@
     "term": "下",
     "code": "5B_U8",
     "audioText": "W: Anna, you and Ben will travel alone. Be safe! M: Don't worry, Mum. We'll follow the rules and keep our phones ready.",
-    "audioFile": "jk_listening_5B_08.mp3",
+    "audioFile": "jk_listening_5B_09.mp3",
     "q": "What will they do to stay safe?",
     "options": [
       "Follow rules and keep phones ready",
@@ -1423,7 +1525,7 @@
     "term": "下",
     "code": "5B_U9",
     "audioText": "W: Ben, this summer journey was wonderful! M: Yes. The beach, the mountains, the food. W: I'll write everything in my diary. Thank you for the memories!",
-    "audioFile": "jk_listening_5B_09.mp3",
+    "audioFile": "jk_listening_5B_10.mp3",
     "q": "What will Anna do with the memories?",
     "options": [
       "Write in her diary",
@@ -1472,9 +1574,26 @@
   {
     "grade": 6,
     "term": "上",
+    "code": "6A_U2",
+    "audioText": "M: Anna, do you think doctors are great? W: Yes! They save lives every day. M: I want to be a doctor too. W: Then let's study hard together! M: Deal!",
+    "audioFile": "jk_listening_6A_03.mp3",
+    "q": "What do they both want to be?",
+    "options": [
+      "Doctors",
+      "Teachers",
+      "Writers"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 doctors are great, Ben 说 I want to be a doctor too",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
     "code": "6A_U3",
     "audioText": "W: Ben, who is your hero? M: My grandpa. He saved a child from a fire. W: Wow! He is so brave and great.",
-    "audioFile": "jk_listening_6A_03.mp3",
+    "audioFile": "jk_listening_6A_04.mp3",
     "q": "What did Ben's grandpa do?",
     "options": [
       "Saved a child from a fire",
@@ -1491,7 +1610,7 @@
     "term": "上",
     "code": "6A_U4",
     "audioText": "W: Ben, are you ready for the football match? M: Of course! Our team has practised for two weeks. W: Good luck! I'll cheer for you.",
-    "audioFile": "jk_listening_6A_04.mp3",
+    "audioFile": "jk_listening_6A_05.mp3",
     "q": "How long has the team practised?",
     "options": [
       "Two weeks",
@@ -1508,7 +1627,7 @@
     "term": "上",
     "code": "6A_U5",
     "audioText": "M: Anna, eat more vegetables. They have vitamins. W: Can I have some chips too? M: A little is OK, but junk food has too much fat.",
-    "audioFile": "jk_listening_6A_05.mp3",
+    "audioFile": "jk_listening_6A_06.mp3",
     "q": "Why should Anna eat vegetables?",
     "options": [
       "They have vitamins",
@@ -1525,7 +1644,7 @@
     "term": "上",
     "code": "6A_U6",
     "audioText": "W: Ben, pollution is so bad. We must do something. M: Let's recycle paper and plastic. W: And plant more trees. Every little bit helps!",
-    "audioFile": "jk_listening_6A_06.mp3",
+    "audioFile": "jk_listening_6A_07.mp3",
     "q": "What do they want to recycle?",
     "options": [
       "Paper and plastic",
@@ -1542,7 +1661,7 @@
     "term": "上",
     "code": "6A_U7",
     "audioText": "M: Anna, what invention do you love most? W: The phone, because I can talk to Grandma far away. M: I love the computer. It helps me learn.",
-    "audioFile": "jk_listening_6A_07.mp3",
+    "audioFile": "jk_listening_6A_08.mp3",
     "q": "Why does Anna love the phone?",
     "options": [
       "She can talk to Grandma",
@@ -1559,7 +1678,7 @@
     "term": "上",
     "code": "6A_U8",
     "audioText": "W: Ben, we've been friends for six years. I'll miss you in junior high. M: Don't worry — true friendship lasts forever. W: Promise we'll stay in touch?",
-    "audioFile": "jk_listening_6A_08.mp3",
+    "audioFile": "jk_listening_6A_09.mp3",
     "q": "How long have they been friends?",
     "options": [
       "Six years",
@@ -1576,7 +1695,7 @@
     "term": "上",
     "code": "6A_U9",
     "audioText": "W: Ben, six years are over. It's time to say goodbye. M: Goodbye to primary, hello to junior! W: Believe in yourself. Our future is bright!",
-    "audioFile": "jk_listening_6A_09.mp3",
+    "audioFile": "jk_listening_6A_10.mp3",
     "q": "What does Ben look forward to?",
     "options": [
       "Junior school",

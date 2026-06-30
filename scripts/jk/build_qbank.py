@@ -62,9 +62,12 @@ BOOKS = {
                     'grammar': [
                         {"q": "English words ____ be different from Chinese words.", "options": ["can", "cans", "is"], "answer": 0, "explain": "can 后面跟动词原形 be"},
                         {"q": "We say \"hello\" ____ English.", "options": ["in", "on", "at"], "answer": 0, "explain": "用某种语言说用 in"},
+                        {"q": "\"Book\" and \"look\" ____ the same.", "options": ["sound", "sounds", "sounding"], "answer": 0, "explain": "复数主语用 sound"},
+                        {"q": "____ colour is your English book?", "options": ["What", "Where", "Who"], "answer": 0, "explain": "问颜色用 What colour"},
                     ],
                     'listening': [
                         {"audioText": "W: How do you say \"book\" in Chinese? M: We say \"shu\". It means the same thing.", "q": "What does \"book\" mean in Chinese?", "options": ["shu", "bi", "chi"], "answer": 0, "explain": "回答 We say \"shu\""},
+                        {"audioText": "M: Can you read this English word? W: Yes, I can. It is \"apple\". W: What does it mean? M: It means a kind of fruit.", "q": "What does the word \"apple\" mean?", "options": ["A kind of fruit", "A colour", "A name"], "answer": 0, "explain": "M 说 It means a kind of fruit"},
                     ],
                     'reading': [
                         {"passage": "English and Chinese are two languages. The words look different, but some things are the same. We say \"hello\" in English. We say \"ni hao\" in Chinese.", "q": "What is the same between English and Chinese?", "options": ["They both can say hello", "Words look the same", "They are one language"], "answer": 0, "explain": "hello 和 ni hao 都表示友好的问候"},
@@ -270,9 +273,12 @@ BOOKS = {
                     'grammar': [
                         {"q": "How ____ your day?", "options": ["was", "is", "were"], "answer": 0, "explain": "问已经过去的一天用过去式 was"},
                         {"q": "We ____ games at school.", "options": ["played", "play", "plays"], "answer": 0, "explain": "已经发生的事用过去式 played"},
+                        {"q": "I ____ very happy today.", "options": ["am", "is", "are"], "answer": 0, "explain": "I 后用 am"},
+                        {"q": "I like ____ school.", "options": ["my", "me", "I"], "answer": 0, "explain": "my + 名词"},
                     ],
                     'listening': [
                         {"audioText": "M: Hi, Anna! How was your day? W: Great! We played games at school. I am very happy but tired.", "q": "How does Anna feel?", "options": ["Happy but tired", "Sad and angry", "Busy and hungry"], "answer": 0, "explain": "Anna 说 I am very happy but tired"},
+                        {"audioText": "W: What a busy day! M: Yes. We had four classes and ran on the playground. W: I am so hungry now. Let's go home.", "q": "Why are they so hungry?", "options": ["They had classes and ran a lot", "They forgot to eat", "They cooked too much"], "answer": 0, "explain": "他们上了四节课还在操场跑步，所以很饿"},
                     ],
                     'reading': [
                         {"passage": "Today is a busy day. In the morning I went to school. We sang songs and played games. After school I helped Mum at home. At night I read a book in bed. I was tired but happy. What a great day!", "q": "What did the child do after school?", "options": ["Helped Mum", "Played more games", "Went to a party"], "answer": 0, "explain": "文中说 After school I helped Mum at home"},
@@ -478,9 +484,12 @@ BOOKS = {
                     'grammar': [
                         {"q": "Who ____ the man with glasses?", "options": ["is", "are", "am"], "answer": 0, "explain": "单数 the man 后用 is"},
                         {"q": "There ____ six people in my family.", "options": ["are", "is", "am"], "answer": 0, "explain": "复数 six people 后用 are"},
+                        {"q": "My ____ is a teacher.", "options": ["mother", "fathers", "mothers"], "answer": 0, "explain": "mother 单数"},
+                        {"q": "I ____ a big family.", "options": ["have", "has", "am"], "answer": 0, "explain": "I 后用 have"},
                     ],
                     'listening': [
                         {"audioText": "W: Look, Ben. This is my family photo. M: Who is the man with glasses? W: He's my father. The kind lady is my mother.", "q": "Who is the man with glasses?", "options": ["Her father", "Her brother", "Her grandpa"], "answer": 0, "explain": "Anna 说 He's my father"},
+                        {"audioText": "M: How many people in your family? W: Five — grandpa, grandma, father, mother and me. M: That's a warm family!", "q": "How many people in Anna's family?", "options": ["Five", "Four", "Six"], "answer": 0, "explain": "Anna 说 Five"},
                     ],
                     'reading': [
                         {"passage": "There are six people in my family. My father is a doctor. My mother is a teacher. I have one brother and one sister. Grandpa and Grandma live with us. After dinner, we talk together. We love each other very much.", "q": "What does the mother do?", "options": ["She is a teacher", "She is a doctor", "She is a cook"], "answer": 0, "explain": "文中说 My mother is a teacher"},
@@ -668,9 +677,12 @@ BOOKS = {
                     'grammar': [
                         {"q": "What will you ____ to the party?", "options": ["wear", "wears", "wearing"], "answer": 0, "explain": "will 后跟动词原形"},
                         {"q": "I'll wear a white ____ and blue trousers.", "options": ["shirt", "skirt", "hat"], "answer": 0, "explain": "shirt 搭配 trousers 更常见"},
+                        {"q": "These shoes ____ very nice.", "options": ["are", "is", "am"], "answer": 0, "explain": "复数 shoes 后用 are"},
+                        {"q": "____ T-shirt is red.", "options": ["My", "Me", "I"], "answer": 0, "explain": "My + 名词"},
                     ],
                     'listening': [
                         {"audioText": "W: What will you wear to the party, Ben? M: I'll wear a white shirt and blue trousers. W: Cool! I'll wear a new skirt.", "q": "What will Ben wear?", "options": ["A white shirt and blue trousers", "A T-shirt and shorts", "A jacket"], "answer": 0, "explain": "Ben 说 a white shirt and blue trousers"},
+                        {"audioText": "W: Mum, I need new clothes for school. M: Let's go shopping. W: I want a blue hat and blue shoes. M: Blue is your favourite colour!", "q": "What does the child want?", "options": ["A blue hat and blue shoes", "A red shirt", "A green skirt"], "answer": 0, "explain": "孩子说 I want a blue hat and blue shoes"},
                     ],
                     'reading': [
                         {"passage": "I have many clothes in my closet. I wear T-shirts and shorts in summer. In spring, I like a light shirt and a skirt. In winter, I wear warm trousers and shoes. A hat keeps my head warm. Clothes make every season comfortable!", "q": "What does she wear in summer?", "options": ["T-shirts and shorts", "A shirt and trousers", "A jacket"], "answer": 0, "explain": "文中说 I wear T-shirts and shorts in summer"},
@@ -797,12 +809,16 @@ BOOKS = {
                     'grammar': [
                         {"q": "What's ____ favourite subject?", "options": ["your", "you", "yours"], "answer": 0, "explain": "your + 名词"},
                         {"q": "Maths is difficult ____ English is easy.", "options": ["but", "and", "or"], "answer": 0, "explain": "转折用 but"},
+                        {"q": "____ is your English teacher?", "options": ["Who", "What", "Where"], "answer": 0, "explain": "问人用 Who"},
+                        {"q": "We have English ____ Monday and Friday.", "options": ["on", "in", "at"], "answer": 0, "explain": "星期前用 on"},
                     ],
                     'listening': [
                         {"audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy and fun. M: I like science, but it's a bit difficult.", "q": "What subject does Ben find difficult?", "options": ["Science", "English", "Art"], "answer": 0, "explain": "Ben 说 science is a bit difficult"},
+                        {"audioText": "M: Anna, do you like PE? W: Yes! I love sports. We run, jump and play ball games. M: My favourite is football. W: Me too! Let's play after school.", "q": "What sport do they both like?", "options": ["Football", "Basketball", "Swimming"], "answer": 0, "explain": "Ben 说 My favourite is football, Anna 说 Me too"},
                     ],
                     'reading': [
                         {"passage": "We have many subjects at school. English is my favourite — it's easy and fun. Maths is a little difficult, but I try hard. Science teaches us about the world. PE keeps us strong. Art lets us create. Every subject is special in its own way!", "q": "Why does the child like English?", "options": ["It's easy and fun", "It's difficult", "It has no homework"], "answer": 0, "explain": "文中说 English is easy and fun"},
+                        {"passage": "School subjects are like colours in a rainbow. English opens the world. Maths trains our minds. Science shows us how things work. PE makes us strong. Art brings beauty. Every subject adds a colour to our rainbow!", "q": "What does Maths do according to the passage?", "options": ["Trains our minds", "Opens the world", "Makes us strong"], "answer": 0, "explain": "文中说 Maths trains our minds"},
                     ],
                 },
                 {
@@ -926,12 +942,16 @@ BOOKS = {
                     'grammar': [
                         {"q": "How shall we ____ to Beijing?", "options": ["go", "goes", "going"], "answer": 0, "explain": "shall 后跟动词原形"},
                         {"q": "By plane is ____, but the train is cheaper.", "options": ["fast", "fastly", "fasting"], "answer": 0, "explain": "fast 本身就是副词"},
+                        {"q": "The train ____ at 8 o'clock.", "options": ["leaves", "leave", "leaving"], "answer": 0, "explain": "单数 the train 后用 leaves"},
+                        {"q": "It ____ about two hours to get there.", "options": ["takes", "take", "taking"], "answer": 0, "explain": "It takes... 表示花费时间"},
                     ],
                     'listening': [
                         {"audioText": "M: How shall we go to Beijing? W: By plane is fast, but the train is cheaper. M: Let's take the train and enjoy the view.", "q": "How will they travel?", "options": ["By train", "By plane", "By bus"], "answer": 0, "explain": "Ben 说 Let's take the train"},
+                        {"audioText": "W: How do you go to school, Ben? M: I take the school bus. It's safe and fun. W: I walk to school. It's only 10 minutes. M: That's good exercise!", "q": "How does Ben go to school?", "options": ["By school bus", "On foot", "By bike"], "answer": 0, "explain": "Ben 说 I take the school bus"},
                     ],
                     'reading': [
                         {"passage": "There are many ways to travel. A plane is the fastest but expensive. A train lets you see beautiful views. A bus is cheap but slow. In the city, the subway is quick. For short trips, I love riding my bike. How will you travel this summer?", "q": "What is the fastest way to travel?", "options": ["By plane", "By train", "By bus"], "answer": 0, "explain": "文中说 A plane is the fastest"},
+                        {"passage": "Travelling is a big part of life. Some people love the speed of a plane. Others enjoy the view from a train. Buses are good for short trips. In the city, the subway is the fastest way. What about you? How do you like to travel?", "q": "What is the fastest way in the city?", "options": ["The subway", "The bus", "Walking"], "answer": 0, "explain": "文中说 the subway is the fastest way"},
                     ],
                 },
                 {
@@ -1055,12 +1075,16 @@ BOOKS = {
                     'grammar': [
                         {"q": "I want to ____ a doctor.", "options": ["be", "am", "is"], "answer": 0, "explain": "want to 后跟动词原形 be"},
                         {"q": "If you ____ hard, your dream will come true.", "options": ["work", "works", "working"], "answer": 0, "explain": "条件状语从句用一般现在时"},
+                        {"q": "She ____ to be a writer.", "options": ["wants", "want", "wanting"], "answer": 0, "explain": "She 后用 wants"},
+                        {"q": "I will ____ hard for my dream.", "options": ["study", "studies", "studying"], "answer": 0, "explain": "will 后跟动词原形"},
                     ],
                     'listening': [
                         {"audioText": "W: Ben, what's your dream job? M: I want to be a doctor and help people. W: I want to be a teacher like my mum. M: Let's work hard for our dreams!", "q": "What is Ben's dream job?", "options": ["Doctor", "Teacher", "Scientist"], "answer": 0, "explain": "Ben 说 I want to be a doctor"},
+                        {"audioText": "M: Anna, do you think doctors are great? W: Yes! They save lives every day. M: I want to be a doctor too. W: Then let's study hard together! M: Deal!", "q": "What do they both want to be?", "options": ["Doctors", "Teachers", "Writers"], "answer": 0, "explain": "Anna 说 doctors are great, Ben 说 I want to be a doctor too"},
                     ],
                     'reading': [
                         {"passage": "Everyone has a dream job. Tom wants to be a scientist to find new cures. Lily dreams of being a writer to tell amazing stories. I want to be an engineer to build great bridges. No dream is too big if you work hard. What's your dream?", "q": "What does Lily want to be?", "options": ["A writer", "A scientist", "An engineer"], "answer": 0, "explain": "文中说 Lily dreams of being a writer"},
+                        {"passage": "Dreams give us power. A dream is not just a wish — it is a goal. To make it come true, we must study hard, learn new things, and never give up. Many great people started with a small dream. What's your dream? Go for it!", "q": "What is a dream according to the passage?", "options": ["A goal, not just a wish", "A wish only", "A game"], "answer": 0, "explain": "文中说 A dream is not just a wish — it is a goal"},
                     ],
                 },
                 {
