@@ -1,0 +1,2092 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_C01",
+    "topic": "English and Chinese · I can say hello",
+    "passage": "Hi! I am Tom. I can ___1___ English. I can say \"hello\" and \"thank you\". My friend Lily can speak ___2___. She is from China. We learn ___3___ new words every day. We are ___4___ friends!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "speak",
+          "eat",
+          "sleep",
+          "jump"
+        ],
+        "answer": "speak",
+        "explain": "speak English 讲英语"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "Chinese",
+          "red",
+          "happy",
+          "big"
+        ],
+        "answer": "Chinese",
+        "explain": "Lily 来自中国，会说中文"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "few",
+          "many",
+          "no",
+          "old"
+        ],
+        "answer": "many",
+        "explain": "many new words 许多新单词"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "bad",
+          "tired",
+          "good",
+          "angry"
+        ],
+        "answer": "good",
+        "explain": "good friends 好朋友，褒义"
+      }
+    ],
+    "explain": "主题：中英文。考查动词 speak、语言名词、量词 many、形容词褒贬。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_C02",
+    "topic": "Colour a Keyboard · My colourful pens",
+    "passage": "I have many pens. Look! The ___1___ pen is yellow. The big pen is ___2___. I like ___3___ best. Red is the colour of apples. My friend Sam likes ___4___. Blue is the colour of the sky.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "small",
+          "tall",
+          "cold",
+          "fast"
+        ],
+        "answer": "small",
+        "explain": "small 小（与下文 big 对比）"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "noisy",
+          "red",
+          "tired",
+          "hungry"
+        ],
+        "answer": "red",
+        "explain": "与下文 Red is the colour of apples 呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "red",
+          "green",
+          "pink",
+          "black"
+        ],
+        "answer": "red",
+        "explain": "like red best 最喜欢红色；下文「红色是苹果的颜色」呼应"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "blue",
+          "white",
+          "brown",
+          "grey"
+        ],
+        "answer": "blue",
+        "explain": "下文「蓝色是天空的颜色」呼应"
+      }
+    ],
+    "explain": "主题：颜色。考查形容词大小对比、颜色词与具体事物的联想。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_C03",
+    "topic": "I Can Draw · A pretty picture",
+    "passage": "I can ___1___ a picture. Look at my picture! There is a big tree. The tree is ___2___. There are two birds in the tree. The birds are ___3___. I ___4___ my picture very much!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "eat",
+          "draw",
+          "sleep",
+          "sing"
+        ],
+        "answer": "draw",
+        "explain": "我能画画；与主题 I Can Draw 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "blue",
+          "green",
+          "red",
+          "white"
+        ],
+        "answer": "green",
+        "explain": "tree is green 树是绿色的；常识"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "big",
+          "sad",
+          "happy",
+          "cold"
+        ],
+        "answer": "happy",
+        "explain": "小鸟很开心；褒义"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "hate",
+          "lose",
+          "like",
+          "sell"
+        ],
+        "answer": "like",
+        "explain": "like ... very much 非常喜欢"
+      }
+    ],
+    "explain": "主题：画画。考查动词、颜色常识、形容词褒贬、like ... very much。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_C04",
+    "topic": "Be a Good Listener · Listen and learn",
+    "passage": "A good ___1___ is important. We listen with our ___2___. In class, we listen ___3___ the teacher. Then we can ___4___ new things every day.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "eater",
+          "listener",
+          "driver",
+          "cook"
+        ],
+        "answer": "listener",
+        "explain": "与主题 Good Listener 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "eyes",
+          "hands",
+          "ears",
+          "feet"
+        ],
+        "answer": "ears",
+        "explain": "用耳朵听"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "on",
+          "to",
+          "in",
+          "at"
+        ],
+        "answer": "to",
+        "explain": "listen to 听，固定搭配"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "lose",
+          "forget",
+          "learn",
+          "sell"
+        ],
+        "answer": "learn",
+        "explain": "learn new things 学新东西，褒义"
+      }
+    ],
+    "explain": "主题：当个好听众。考查名词、身体部位、listen to、动词褒贬。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_C05",
+    "topic": "Exercise · Let's play",
+    "passage": "It is ___1___ to exercise! I can run. My sister can ___2___. My brother can play ___3___. We are all ___4___ and healthy.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "time",
+          "food",
+          "home",
+          "water"
+        ],
+        "answer": "time",
+        "explain": "It is time to do 该是做...的时候，固定句型"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "eat",
+          "jump",
+          "sleep",
+          "cry"
+        ],
+        "answer": "jump",
+        "explain": "姐姐会跳；运动动作"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "food",
+          "rules",
+          "games",
+          "lessons"
+        ],
+        "answer": "games",
+        "explain": "play games 玩游戏，固定搭配"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "weak",
+          "sick",
+          "strong",
+          "sad"
+        ],
+        "answer": "strong",
+        "explain": "strong and healthy 又强壮又健康，并列褒义"
+      }
+    ],
+    "explain": "主题：运动。考查 It is time to、运动动词、play games、形容词褒贬并列。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_C01",
+    "topic": "Get up · My morning",
+    "passage": "I get ___1___ at seven. I wash my ___2___ and brush my teeth. I eat ___3___ with my family. Then I go to ___4___ by bike.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "up",
+          "down",
+          "in",
+          "on"
+        ],
+        "answer": "up",
+        "explain": "get up 起床，固定短语"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "hands",
+          "food",
+          "face",
+          "bed"
+        ],
+        "answer": "face",
+        "explain": "wash face 洗脸；与「刷牙」并列"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lunch",
+          "dinner",
+          "breakfast",
+          "snack"
+        ],
+        "answer": "breakfast",
+        "explain": "早晨吃早餐"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "bed",
+          "home",
+          "school",
+          "park"
+        ],
+        "answer": "school",
+        "explain": "go to school 上学；与「骑车」呼应"
+      }
+    ],
+    "explain": "主题：早晨生活。考查 get up、wash face、三餐词、go to school。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_C02",
+    "topic": "What a Day · A happy day",
+    "passage": "Today is ___1___! In the morning, I went to the zoo with mum. I saw many ___2___ animals. In the afternoon, we ___3___ ice cream. I feel so ___4___ today!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "Monday",
+          "Saturday",
+          "cold",
+          "busy"
+        ],
+        "answer": "Saturday",
+        "explain": "推断：去动物园吃冰淇淋是周末"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "few",
+          "no",
+          "old",
+          "cute"
+        ],
+        "answer": "cute",
+        "explain": "cute animals 可爱的动物"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cooked",
+          "ate",
+          "sold",
+          "lost"
+        ],
+        "answer": "ate",
+        "explain": "ate ice cream 吃冰淇淋；过去时"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "sad",
+          "tired",
+          "happy",
+          "angry"
+        ],
+        "answer": "happy",
+        "explain": "与主题「快乐的一天」呼应"
+      }
+    ],
+    "explain": "主题：开心的一天。考查推断、形容词褒义、动词过去式 ate、心情形容词。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_C03",
+    "topic": "Come and Join Us · A party",
+    "passage": "It is my birthday today. I ___1___ a party at home. My friends come and we play ___2___ together. We sing songs and eat ___3___. We have a lot of ___4___!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "have",
+          "do",
+          "sell",
+          "lose"
+        ],
+        "answer": "have",
+        "explain": "have a party 开派对，固定搭配"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "rules",
+          "food",
+          "games",
+          "lessons"
+        ],
+        "answer": "games",
+        "explain": "play games 玩游戏"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cake",
+          "rules",
+          "pens",
+          "desks"
+        ],
+        "answer": "cake",
+        "explain": "生日吃蛋糕"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "noise",
+          "work",
+          "fun",
+          "rain"
+        ],
+        "answer": "fun",
+        "explain": "a lot of fun 很多乐趣，固定搭配"
+      }
+    ],
+    "explain": "主题：聚会。考查 have a party、play games、a lot of fun。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_C04",
+    "topic": "Our Classroom · A clean room",
+    "passage": "Our classroom is big and ___1___. There are 40 ___2___ in our class. We sit at our desks and ___3___ our books. After class, we clean the ___4___ together.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "dirty",
+          "tired",
+          "clean",
+          "sad"
+        ],
+        "answer": "clean",
+        "explain": "big and clean 又大又干净，褒义并列"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "flowers",
+          "students",
+          "books",
+          "cars"
+        ],
+        "answer": "students",
+        "explain": "班里有 40 个学生"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "eat",
+          "sell",
+          "cook",
+          "read"
+        ],
+        "answer": "read",
+        "explain": "read books 读书；坐在课桌前读书"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "bed",
+          "classroom",
+          "park",
+          "shop"
+        ],
+        "answer": "classroom",
+        "explain": "与全文「教室」主题呼应"
+      }
+    ],
+    "explain": "主题：教室。考查形容词褒义并列、名词、动词 read books。",
+    "difficulty": 1
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_C05",
+    "topic": "School Rules · Be a good student",
+    "passage": "Our school has some ___1___. We should be on time. We should ___2___ to the teacher in class. We should not ___3___ in the library. A good student always ___4___ the rules.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "rules",
+          "cars",
+          "songs",
+          "gifts"
+        ],
+        "answer": "rules",
+        "explain": "与主题 School Rules 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "eat",
+          "cry",
+          "listen",
+          "shout"
+        ],
+        "answer": "listen",
+        "explain": "listen to the teacher 听老师讲"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "read",
+          "sit",
+          "study",
+          "run"
+        ],
+        "answer": "run",
+        "explain": "图书馆里不能跑"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "breaks",
+          "hates",
+          "follows",
+          "forgets"
+        ],
+        "answer": "follows",
+        "explain": "follow the rules 遵守规则"
+      }
+    ],
+    "explain": "主题：校规。考查名词、动词、否定行为、follow the rules。",
+    "difficulty": 1
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_C01",
+    "topic": "My Family · A happy family",
+    "passage": "I have a happy family. My ___1___ is a doctor. He works in a hospital. My mother is a ___2___. She teaches English at a school. My little brother is ___3___ years old. He likes to play with me. We ___4___ each other very much.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "sister",
+          "father",
+          "aunt",
+          "friend"
+        ],
+        "answer": "father",
+        "explain": "在医院工作的男医生 → father"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "driver",
+          "farmer",
+          "teacher",
+          "nurse"
+        ],
+        "answer": "teacher",
+        "explain": "与下文 teaches English 呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "five",
+          "fifty",
+          "ten cars",
+          "red"
+        ],
+        "answer": "five",
+        "explain": "弟弟年龄；5 岁合理"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "hate",
+          "sell",
+          "love",
+          "lose"
+        ],
+        "answer": "love",
+        "explain": "love each other 彼此相爱，褒义"
+      }
+    ],
+    "explain": "主题：家人。考查家庭成员、职业、年龄表达、love each other。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_C02",
+    "topic": "My Hobbies · I love music",
+    "passage": "My hobby ___1___ music. I can play the ___2___ very well. I practise every day after school. My teacher ___3___ I am clever. I want to be a great ___4___ when I grow up.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ],
+        "answer": "is",
+        "explain": "主语 my hobby 单数"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "piano",
+          "apple",
+          "rule",
+          "door"
+        ],
+        "answer": "piano",
+        "explain": "play the piano 弹钢琴；the + 乐器"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "eats",
+          "says",
+          "forgets",
+          "sells"
+        ],
+        "answer": "says",
+        "explain": "teacher says ... 老师说"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "cook",
+          "farmer",
+          "musician",
+          "driver"
+        ],
+        "answer": "musician",
+        "explain": "热爱音乐 → musician 音乐家；与全文呼应"
+      }
+    ],
+    "explain": "主题：爱好。考查主谓一致、play the + 乐器、动词 say、职业名词。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_C03",
+    "topic": "Animals · My pet dog",
+    "passage": "I have a pet dog. ___1___ name is Lucky. Lucky is two years old. He has big ___2___ and a long tail. He can run very ___3___. Every evening, I take Lucky to the park. We are good ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "My",
+          "His",
+          "Its",
+          "Her"
+        ],
+        "answer": "His",
+        "explain": "指代狗 Lucky（已用 he 代指）→ His"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "rules",
+          "eyes",
+          "wheels",
+          "songs"
+        ],
+        "answer": "eyes",
+        "explain": "大眼睛 + 长尾巴，外貌描述"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cold",
+          "fast",
+          "few",
+          "noisy"
+        ],
+        "answer": "fast",
+        "explain": "run fast 跑得快"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "enemies",
+          "cars",
+          "friends",
+          "rooms"
+        ],
+        "answer": "friends",
+        "explain": "good friends 好朋友"
+      }
+    ],
+    "explain": "主题：宠物狗。考查代词、外貌描写、副词、good friends。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_C04",
+    "topic": "Our Weekend · A fun Sunday",
+    "passage": "On ___1___, I usually get up late. After breakfast, I go to the ___2___ with my parents. We play football and ride bikes. At noon, we have ___3___ at a restaurant. The food is ___4___. I love weekends!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "Monday",
+          "school days",
+          "Sunday",
+          "class"
+        ],
+        "answer": "Sunday",
+        "explain": "与「晚起 + 全家活动」呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "hospital",
+          "park",
+          "office",
+          "classroom"
+        ],
+        "answer": "park",
+        "explain": "与「踢球骑车」呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "breakfast",
+          "lunch",
+          "dinner",
+          "snack"
+        ],
+        "answer": "lunch",
+        "explain": "at noon 中午吃午餐"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "bad",
+          "cold",
+          "delicious",
+          "dirty"
+        ],
+        "answer": "delicious",
+        "explain": "美味的，褒义"
+      }
+    ],
+    "explain": "主题：周末。考查时间词、地点、三餐、形容词褒义。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_C05",
+    "topic": "Festivals · Spring Festival",
+    "passage": "Spring Festival is the most important ___1___ in China. On New Year's Eve, families have a big dinner ___2___. Children get red envelopes from ___3___ elders. On the street, people watch dragon dances. I love this ___4___ very much!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "game",
+          "festival",
+          "lesson",
+          "meal"
+        ],
+        "answer": "festival",
+        "explain": "与主题 Festivals 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "together",
+          "alone",
+          "never",
+          "badly"
+        ],
+        "answer": "together",
+        "explain": "一家人一起吃年夜饭"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "my",
+          "his",
+          "their",
+          "our"
+        ],
+        "answer": "their",
+        "explain": "指代「孩子们」复数 → their"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "rule",
+          "food",
+          "festival",
+          "job"
+        ],
+        "answer": "festival",
+        "explain": "与开头 Spring Festival 呼应"
+      }
+    ],
+    "explain": "主题：春节。考查名词、副词 together、物主代词、回指。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_C01",
+    "topic": "Spring Is Here · A walk in spring",
+    "passage": "Spring is my favourite season. The ___1___ is warm and sunny. Flowers are everywhere. The grass is ___2___ again. On weekends, my family goes for a ___3___ in the park. We feel ___4___ and free.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "food",
+          "weather",
+          "noise",
+          "rule"
+        ],
+        "answer": "weather",
+        "explain": "weather is warm 天气暖和"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "cold",
+          "red",
+          "green",
+          "dry"
+        ],
+        "answer": "green",
+        "explain": "草又绿了，与「春天」呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "fight",
+          "rule",
+          "walk",
+          "test"
+        ],
+        "answer": "walk",
+        "explain": "go for a walk 散步，固定搭配"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "tired",
+          "angry",
+          "happy",
+          "bored"
+        ],
+        "answer": "happy",
+        "explain": "褒义心情"
+      }
+    ],
+    "explain": "主题：春天。考查名词、颜色、go for a walk、形容词褒义。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_C02",
+    "topic": "Let's Go Shopping · A new pair of shoes",
+    "passage": "My mum and I go ___1___ today. We are in a big shoe store. I try on a pair of red ___2___. They are too small. Then I try a bigger pair. They fit ___3___! I pay forty yuan and take them ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "shopping",
+          "eating",
+          "sleeping",
+          "cooking"
+        ],
+        "answer": "shopping",
+        "explain": "go shopping 购物，固定搭配"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "cars",
+          "shoes",
+          "flowers",
+          "books"
+        ],
+        "answer": "shoes",
+        "explain": "在鞋店试鞋"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "well",
+          "badly",
+          "never",
+          "sometimes"
+        ],
+        "answer": "well",
+        "explain": "fit well 合身"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "away",
+          "down",
+          "home",
+          "off"
+        ],
+        "answer": "home",
+        "explain": "take them home 带回家"
+      }
+    ],
+    "explain": "主题：购物。考查 go shopping、名词、副词、take ... home。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_C03",
+    "topic": "My Favourite Food · I love noodles",
+    "passage": "I have many favourite ___1___. I like noodles best. My grandma ___2___ noodles for me every Sunday. The noodles taste ___3___. I also like rice and bread. But I don't like ___4___ food like chips.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "cars",
+          "foods",
+          "books",
+          "lessons"
+        ],
+        "answer": "foods",
+        "explain": "我最爱的食物（许多种）"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "cooks",
+          "sells",
+          "eats",
+          "cuts"
+        ],
+        "answer": "cooks",
+        "explain": "奶奶煮面"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "bad",
+          "great",
+          "cold",
+          "angry"
+        ],
+        "answer": "great",
+        "explain": "taste great 美味；褒义"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "healthy",
+          "junk",
+          "cheap",
+          "fresh"
+        ],
+        "answer": "junk",
+        "explain": "junk food 垃圾食品；薯片是垃圾食品"
+      }
+    ],
+    "explain": "主题：食物。考查名词复数、动词 cook、感官系动词 taste、junk food。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_C04",
+    "topic": "Healthy Habits · Stay healthy",
+    "passage": "To stay ___1___, we need good habits. We should eat lots of ___2___ and fruits. We should drink ___3___ water every day. We should also sleep ___4___ at night. Then we will feel strong.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "sick",
+          "sad",
+          "healthy",
+          "lazy"
+        ],
+        "answer": "healthy",
+        "explain": "与主题 Healthy Habits 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "cars",
+          "vegetables",
+          "rules",
+          "pens"
+        ],
+        "answer": "vegetables",
+        "explain": "eat vegetables 吃蔬菜；与 fruits 并列"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "few",
+          "no",
+          "enough",
+          "cold"
+        ],
+        "answer": "enough",
+        "explain": "每天喝足够的水"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "little",
+          "badly",
+          "shortly",
+          "early"
+        ],
+        "answer": "early",
+        "explain": "sleep early 早睡"
+      }
+    ],
+    "explain": "主题：健康。考查形容词、可数名词、enough 修饰、副词 early。",
+    "difficulty": 2
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_C05",
+    "topic": "Picnic · A picnic in the park",
+    "passage": "Last Sunday, my class had a ___1___ in the park. We brought sandwiches, juice and ___2___. We sat on the grass and ate ___3___. After lunch, we played games. We had a ___4___ time.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "fight",
+          "picnic",
+          "test",
+          "rule"
+        ],
+        "answer": "picnic",
+        "explain": "与主题 Picnic 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "shoes",
+          "rules",
+          "fruit",
+          "cars"
+        ],
+        "answer": "fruit",
+        "explain": "带三明治、果汁、水果"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "noise",
+          "sadly",
+          "together",
+          "badly"
+        ],
+        "answer": "together",
+        "explain": "坐在草地上一起吃，副词"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "boring",
+          "bad",
+          "tired",
+          "great"
+        ],
+        "answer": "great",
+        "explain": "have a great time 玩得很开心，固定搭配"
+      }
+    ],
+    "explain": "主题：野餐。考查名词、可数与不可数、副词、have a great time。",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1_C01",
+    "topic": "A New School Year · Meeting new classmates",
+    "passage": "It is a new school ___1___. I meet many new classmates today. Our new teacher, Mr Wang, is very ___2___. He smiles a lot. In the first class, we ___3___ ourselves one by one. I tell others my name, my hobby and my dream. Everyone listens to me ___4___. I think this term will be ___5___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "year",
+          "cake",
+          "rule",
+          "shop"
+        ],
+        "answer": "year",
+        "explain": "school year 学年"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "lazy",
+          "angry",
+          "kind",
+          "tired"
+        ],
+        "answer": "kind",
+        "explain": "老师友善爱笑"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "sell",
+          "lose",
+          "introduce",
+          "forget"
+        ],
+        "answer": "introduce",
+        "explain": "introduce ourselves 自我介绍"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "noisily",
+          "carefully",
+          "badly",
+          "sadly"
+        ],
+        "answer": "carefully",
+        "explain": "认真听"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "boring",
+          "bad",
+          "great",
+          "short"
+        ],
+        "answer": "great",
+        "explain": "本学期会很棒，褒义"
+      }
+    ],
+    "explain": "主题：新学期。考查名词搭配、形容词褒义、动词 introduce、副词、心情形容词。",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2_C02",
+    "topic": "My Subjects · My favourite subject",
+    "passage": "We have many subjects at school. My favourite ___1___ is science. Our science teacher always shows us interesting ___2___. Last week, we learned about plants. We even ___3___ some flowers in pots. I love science because it makes me ___4___ many things about the world. I want to be a scientist ___5___ I grow up.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "food",
+          "song",
+          "subject",
+          "rule"
+        ],
+        "answer": "subject",
+        "explain": "与主题 My Subjects 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "noises",
+          "experiments",
+          "rules",
+          "songs"
+        ],
+        "answer": "experiments",
+        "explain": "科学课展示实验"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "ate",
+          "sold",
+          "planted",
+          "lost"
+        ],
+        "answer": "planted",
+        "explain": "plant flowers 种花；过去时"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "forget",
+          "hate",
+          "understand",
+          "lose"
+        ],
+        "answer": "understand",
+        "explain": "understand things 理解事物"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "when",
+          "because",
+          "before",
+          "although"
+        ],
+        "answer": "when",
+        "explain": "when I grow up 等我长大时"
+      }
+    ],
+    "explain": "主题：学科。考查名词、experiment、动词过去式、understand、when 引导时间从句。",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5_C03",
+    "topic": "Sports Day · A great race",
+    "passage": "Last Friday was our Sports ___1___. I joined the 100-metre race. Before the race, I was very ___2___. My heart beat fast. When the whistle blew, I ran ___3___ I could. Although I did not win, I felt ___4___ of myself. My classmates ___5___ for me all the way.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "Day",
+          "food",
+          "rule",
+          "shop"
+        ],
+        "answer": "Day",
+        "explain": "Sports Day 运动日"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "lazy",
+          "tired",
+          "nervous",
+          "old"
+        ],
+        "answer": "nervous",
+        "explain": "紧张；与下文「心跳加速」呼应"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "as fast as",
+          "so fast as",
+          "too fast as",
+          "more fast"
+        ],
+        "answer": "as fast as",
+        "explain": "as fast as I could 尽我最快"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "proud",
+          "sad",
+          "sick",
+          "tired"
+        ],
+        "answer": "proud",
+        "explain": "proud of myself 为自己自豪"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "cried",
+          "cheered",
+          "forgot",
+          "lost"
+        ],
+        "answer": "cheered",
+        "explain": "cheer for sb 为某人加油"
+      }
+    ],
+    "explain": "主题：运动会。考查 Sports Day、心情形容词、as ... as 比较、proud of、cheer for。",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U7_C04",
+    "topic": "My Hobby Club · The robot club",
+    "passage": "Our school has many hobby clubs. I joined the ___1___ club. Every Wednesday afternoon, we meet in the lab. Mr Lee teaches us how to ___2___ small robots. My team and I ___3___ a robot dog last week. It can walk and bark. ___4___ you also like robots, come and ___5___ us!",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "food",
+          "cooking",
+          "robot",
+          "shopping"
+        ],
+        "answer": "robot",
+        "explain": "与下文「机器人」呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "eat",
+          "sell",
+          "build",
+          "lose"
+        ],
+        "answer": "build",
+        "explain": "build robots 造机器人"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "made",
+          "ate",
+          "sold",
+          "lost"
+        ],
+        "answer": "made",
+        "explain": "made a robot 做了一个机器人；过去时"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "Because",
+          "Although",
+          "If",
+          "When"
+        ],
+        "answer": "If",
+        "explain": "条件句：如果你也喜欢"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "hate",
+          "leave",
+          "join",
+          "forget"
+        ],
+        "answer": "join",
+        "explain": "join us 加入我们"
+      }
+    ],
+    "explain": "主题：社团。考查名词、动词 build / make、条件连词 if、join。",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U8_C05",
+    "topic": "Helping Hands · A volunteer day",
+    "passage": "Last Saturday, my class visited an old people's ___1___. We sang songs and told stories to the elderly. I helped a grandma ___2___ flowers in the garden. She was very ___3___ and told me about her life. ___4___ the day, we all felt warm inside. Helping others is the best way to be ___5___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "shop",
+          "home",
+          "park",
+          "school"
+        ],
+        "answer": "home",
+        "explain": "old people's home 养老院"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "cut",
+          "plant",
+          "sell",
+          "lose"
+        ],
+        "answer": "plant",
+        "explain": "plant flowers 种花"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "rude",
+          "kind",
+          "angry",
+          "lazy"
+        ],
+        "answer": "kind",
+        "explain": "老奶奶很善良"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "Before",
+          "After",
+          "During",
+          "Without"
+        ],
+        "answer": "After",
+        "explain": "After the day 一天结束后"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "lazy",
+          "angry",
+          "happy",
+          "tired"
+        ],
+        "answer": "happy",
+        "explain": "帮助他人是变快乐的最好方式"
+      }
+    ],
+    "explain": "主题：助人。考查 old people's home、plant、形容词褒贬、时间介词。",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1_C01",
+    "topic": "Trip Plans · Summer holiday plan",
+    "passage": "Summer holiday is coming! My family is making a ___1___ trip plan. We want to go to Hainan ___2___ a week. The weather there is warm and the beaches are ___3___. We will swim, eat seafood and take photos. I am ___4___ excited about this trip. I hope time can ___5___ faster.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "boring",
+          "wonderful",
+          "sad",
+          "cold"
+        ],
+        "answer": "wonderful",
+        "explain": "wonderful trip 美妙旅行，褒义"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "for",
+          "in",
+          "by",
+          "with"
+        ],
+        "answer": "for",
+        "explain": "for a week 持续一周"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "dirty",
+          "beautiful",
+          "small",
+          "tired"
+        ],
+        "answer": "beautiful",
+        "explain": "海边沙滩很美"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "few",
+          "no",
+          "so",
+          "never"
+        ],
+        "answer": "so",
+        "explain": "so excited 非常兴奋；副词修饰形容词"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "stop",
+          "sell",
+          "fly",
+          "cook"
+        ],
+        "answer": "fly",
+        "explain": "time flies 时光飞逝；比喻用法"
+      }
+    ],
+    "explain": "主题：旅行计划。考查形容词褒义、for + 时间、副词 so、time flies。",
+    "difficulty": 2
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3_C02",
+    "topic": "Asking the Way · A kind stranger",
+    "passage": "Yesterday I lost my ___1___ in a new city. I did not know where to go. I asked a man, \"Excuse me, ___2___ is the train station?\" He said, \"Turn ___3___ at the second corner and walk for 10 minutes. You will see it on your right.\" I ___4___ him very much. People in this city are so ___5___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "way",
+          "food",
+          "sock",
+          "song"
+        ],
+        "answer": "way",
+        "explain": "lose one's way 迷路"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "what",
+          "why",
+          "where",
+          "when"
+        ],
+        "answer": "where",
+        "explain": "where is ... 询问地点"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "up",
+          "left",
+          "down",
+          "over"
+        ],
+        "answer": "left",
+        "explain": "在第二个路口左转"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "hated",
+          "thanked",
+          "lost",
+          "sold"
+        ],
+        "answer": "thanked",
+        "explain": "thank him 感谢他"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "rude",
+          "lazy",
+          "kind",
+          "angry"
+        ],
+        "answer": "kind",
+        "explain": "这里的人很友善，褒义"
+      }
+    ],
+    "explain": "主题：问路。考查 lose way、where、turn left、动词、形容词褒贬。",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U6_C03",
+    "topic": "Postcards · A postcard from Beijing",
+    "passage": "Dear Mum,\nI am ___1___ a great time in Beijing. The Great Wall is amazing! I ___2___ a lot of pictures yesterday. Today we visited the Forbidden City. It is so big and ___3___. The food here is also delicious. I will be ___4___ next Friday. I ___5___ you very much.\nLove, Lily",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "making",
+          "having",
+          "cooking",
+          "losing"
+        ],
+        "answer": "having",
+        "explain": "have a great time 玩得开心"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "took",
+          "ate",
+          "sold",
+          "lost"
+        ],
+        "answer": "took",
+        "explain": "take pictures 拍照；过去时"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "boring",
+          "beautiful",
+          "sad",
+          "small"
+        ],
+        "answer": "beautiful",
+        "explain": "故宫又大又美"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "back",
+          "down",
+          "off",
+          "up"
+        ],
+        "answer": "back",
+        "explain": "be back 返回"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "hate",
+          "sell",
+          "miss",
+          "forget"
+        ],
+        "answer": "miss",
+        "explain": "miss you 想你"
+      }
+    ],
+    "explain": "主题：明信片。考查 have a great time、take photos、形容词、be back、miss。",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U7_C04",
+    "topic": "Different Cultures · Greetings around the world",
+    "passage": "People say hello in many different ___1___ around the world. In China, we usually say \"ni hao\" with a smile. In France, people give two ___2___ on the cheek when they meet. In Japan, people ___3___ deeply to show respect. In some Western countries, people just ___4___ hands politely. ___5___ way is special and lovely in its own culture.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "rules",
+          "ways",
+          "foods",
+          "cars"
+        ],
+        "answer": "ways",
+        "explain": "in different ways 用不同方式"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "noises",
+          "kisses",
+          "rules",
+          "songs"
+        ],
+        "answer": "kisses",
+        "explain": "give kisses 行贴面礼"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "bow",
+          "eat",
+          "cry",
+          "sell"
+        ],
+        "answer": "bow",
+        "explain": "日本人鞠躬表敬意"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "lose",
+          "shake",
+          "sell",
+          "eat"
+        ],
+        "answer": "shake",
+        "explain": "shake hands 握手"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "Each",
+          "No",
+          "Few",
+          "Some"
+        ],
+        "answer": "Each",
+        "explain": "每一种方式都特别可爱"
+      }
+    ],
+    "explain": "主题：不同文化。考查 in ways、kiss、bow、shake hands、不定代词 each。",
+    "difficulty": 3
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U8_C05",
+    "topic": "Safe Travels · Travel safely",
+    "passage": "When we travel, safety is the most ___1___ thing. We should always stay close to our ___2___. We must not talk to ___3___ or take food from them. If we get lost, we should ___4___ a police officer. ___5___ safe is more important than having fun.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "cheap",
+          "important",
+          "small",
+          "lazy"
+        ],
+        "answer": "important",
+        "explain": "most important 最重要的"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "rules",
+          "parents",
+          "cars",
+          "shops"
+        ],
+        "answer": "parents",
+        "explain": "紧跟父母"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "friends",
+          "teachers",
+          "strangers",
+          "classmates"
+        ],
+        "answer": "strangers",
+        "explain": "不和陌生人说话"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "hate",
+          "sell",
+          "find",
+          "lose"
+        ],
+        "answer": "find",
+        "explain": "find a police officer 找警察"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "Being",
+          "Be",
+          "Are",
+          "To"
+        ],
+        "answer": "Being",
+        "explain": "动名词作主语：保持安全更重要"
+      }
+    ],
+    "explain": "主题：旅行安全。考查最高级、名词、stranger、动词、动名词主语。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2_C01",
+    "topic": "Dream Jobs · I want to be a doctor",
+    "passage": "Everyone has a dream ___1___. My dream is to be a doctor. I want to help sick people and ___2___ their lives. To be a good doctor, I must work ___3___ in school. I will study science and learn ___4___ the human body. It will not be easy, ___5___ I will never give up.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "job",
+          "food",
+          "shop",
+          "rule"
+        ],
+        "answer": "job",
+        "explain": "与主题 Dream Jobs 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "lose",
+          "save",
+          "sell",
+          "eat"
+        ],
+        "answer": "save",
+        "explain": "save lives 救命"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lazily",
+          "badly",
+          "hard",
+          "shortly"
+        ],
+        "answer": "hard",
+        "explain": "work hard 努力学习"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "from",
+          "about",
+          "on",
+          "against"
+        ],
+        "answer": "about",
+        "explain": "learn about 学习关于..."
+      },
+      {
+        "pos": 5,
+        "options": [
+          "so",
+          "or",
+          "but",
+          "because"
+        ],
+        "answer": "but",
+        "explain": "前句「不易」后句「绝不放弃」，转折"
+      }
+    ],
+    "explain": "主题：理想职业。考查名词、save lives、副词 hard、learn about、转折 but。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3_C02",
+    "topic": "Heroes Around Us · A kind firefighter",
+    "passage": "Heroes are not only in films. Many heroes are ___1___ us. My uncle is a firefighter. He puts ___2___ fires and saves people. Last month, he saved a little girl from a burning house. He was very ___3___, but he kept calm. When he came home, his hands were ___4___, but his smile was big. I think he is the ___5___ hero in my life.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "under",
+          "around",
+          "after",
+          "against"
+        ],
+        "answer": "around",
+        "explain": "around us 在我们身边"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "off",
+          "up",
+          "out",
+          "on"
+        ],
+        "answer": "out",
+        "explain": "put out fires 灭火，固定短语"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "brave",
+          "lazy",
+          "rude",
+          "sleepy"
+        ],
+        "answer": "brave",
+        "explain": "brave 勇敢；与「保持冷静」呼应"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "cold",
+          "dirty",
+          "rich",
+          "short"
+        ],
+        "answer": "dirty",
+        "explain": "灭火后双手很脏，符合现实"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "shortest",
+          "cheapest",
+          "greatest",
+          "laziest"
+        ],
+        "answer": "greatest",
+        "explain": "greatest hero 最伟大的英雄；最高级褒义"
+      }
+    ],
+    "explain": "主题：身边的英雄。考查介词、put out、形容词褒贬、最高级。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U6_C03",
+    "topic": "Save Our Earth · Small actions make a difference",
+    "passage": "The Earth is getting hotter every year. We must take ___1___ now. Many small actions can ___2___ a difference. For example, we should turn off the lights when we ___3___ a room. We can use bags ___4___ of plastic ones. If everyone does ___5___ little, the Earth will be greener.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "noise",
+          "action",
+          "rest",
+          "food"
+        ],
+        "answer": "action",
+        "explain": "take action 行动"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "make",
+          "cook",
+          "sell",
+          "eat"
+        ],
+        "answer": "make",
+        "explain": "make a difference 起作用，固定搭配"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "build",
+          "open",
+          "leave",
+          "enter"
+        ],
+        "answer": "leave",
+        "explain": "leave a room 离开房间，与「关灯」呼应"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "because",
+          "instead",
+          "after",
+          "before"
+        ],
+        "answer": "instead",
+        "explain": "instead of plastic ones 而不是塑料袋"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "a",
+          "no",
+          "much",
+          "some"
+        ],
+        "answer": "a",
+        "explain": "a little 一点点，固定用法"
+      }
+    ],
+    "explain": "主题：保护地球。考查 take action、make a difference、leave、instead of、a little。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U7_C04",
+    "topic": "Amazing Inventions · The mobile phone",
+    "passage": "The mobile phone is one of the most ___1___ inventions in modern life. It can do many things. We can ___2___ photos, send messages, and watch films. My grandma uses her phone to ___3___ video calls with me every weekend. ___4___, we should not use phones for too long. Looking at the screen too much is ___5___ for our eyes.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "boring",
+          "amazing",
+          "cheap",
+          "lazy"
+        ],
+        "answer": "amazing",
+        "explain": "与主题 Amazing Inventions 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "take",
+          "sell",
+          "cook",
+          "eat"
+        ],
+        "answer": "take",
+        "explain": "take photos 拍照"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lose",
+          "cut",
+          "make",
+          "eat"
+        ],
+        "answer": "make",
+        "explain": "make calls 打电话"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "Luckily",
+          "However",
+          "Suddenly",
+          "Finally"
+        ],
+        "answer": "However",
+        "explain": "前句优点后句风险，转折"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "good",
+          "bad",
+          "fun",
+          "great"
+        ],
+        "answer": "bad",
+        "explain": "盯屏幕太久对眼睛不好"
+      }
+    ],
+    "explain": "主题：发明。考查形容词褒义、take photos、make calls、转折 However、形容词褒贬。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U8_C05",
+    "topic": "Friendship Forever · My best friend",
+    "passage": "A true ___1___ is like a treasure. My best friend Anna is like this. When I am sad, she always ___2___ to me. When I make a mistake, she tells me the ___3___ kindly. Last week I was ill at home, and she brought my homework to me ___4___. I am so ___5___ to have such a wonderful friend.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "rule",
+          "shop",
+          "gift"
+        ],
+        "answer": "friend",
+        "explain": "与主题 Friendship 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "shouts",
+          "listens",
+          "cries",
+          "sleeps"
+        ],
+        "answer": "listens",
+        "explain": "listen to 倾听"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lie",
+          "truth",
+          "story",
+          "joke"
+        ],
+        "answer": "truth",
+        "explain": "tell sb the truth 实话相告"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "lazily",
+          "never",
+          "every day",
+          "badly"
+        ],
+        "answer": "every day",
+        "explain": "每天送作业；时间频率"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "sad",
+          "angry",
+          "lucky",
+          "tired"
+        ],
+        "answer": "lucky",
+        "explain": "lucky to have ... 有幸拥有"
+      }
+    ],
+    "explain": "主题：友谊。考查名词、listen to、truth、时间频率、lucky to。",
+    "difficulty": 3
+  }
+]
