@@ -815,6 +815,127 @@ def jk_6a():
 
 
 # ============================================================
+# jk 6B · 5 篇（U1 / U2 / U4 / U5 / U8）· 5 挖空 / 80-90 词 / difficulty=3
+# ============================================================
+
+def jk_6b():
+    items = []
+
+    # 1) 6B U1 Slow and steady wins the race
+    items.append(make_cloze(
+        grade=6, term='下', unit_n=1, seq=1,
+        topic='Slow and steady wins the race · The tortoise and the hare',
+        passage=(
+            'Long ago, a hare laughed at a tortoise because the tortoise walked very ___1___. '
+            'The angry tortoise asked the hare to ___2___ a race. The hare agreed and started fast. '
+            'Soon he was far ahead, so he ___3___ to take a rest under a tree. '
+            'He fell asleep. The tortoise ___4___ walked and never stopped. '
+            'When the hare woke up, the tortoise had already ___5___ the line.'
+        ),
+        blanks=[
+            make_blank(1, ['fast', 'slowly', 'angrily', 'happily'], 'slowly', '上下文：兔子嘲笑乌龟走得慢'),
+            make_blank(2, ['have', 'cook', 'sell', 'eat'], 'have', 'have a race 进行比赛，固定搭配'),
+            make_blank(3, ['refused', 'decided', 'forgot', 'failed'], 'decided', '决定休息一会'),
+            make_blank(4, ['never', 'badly', 'just', 'angrily'], 'just', 'just walked 只是不停走'),
+            make_blank(5, ['lost', 'crossed', 'broken', 'eaten'], 'crossed', 'crossed the line 越过终点线'),
+        ],
+        explain='主题：龟兔赛跑。考查副词、固定搭配 have a race、动词时态、副词、cross the line。',
+        difficulty=3,
+    ))
+
+    # 2) 6B U2 Waiting for another hare
+    items.append(make_cloze(
+        grade=6, term='下', unit_n=2, seq=2,
+        topic='Waiting for another hare · The lazy farmer',
+        passage=(
+            'Long ago, there was a farmer who ___1___ very hard every day. '
+            'One day, a hare ran into a tree and ___2___ on the spot. '
+            'The farmer was very happy and got a free meal. '
+            'After that, he stopped ___3___ in the field. '
+            'He just sat by the tree and waited ___4___ another hare. '
+            'But no more hares came. His fields ___5___ wild and he lost everything.'
+        ),
+        blanks=[
+            make_blank(1, ['played', 'worked', 'slept', 'sang'], 'worked', '勤劳的农夫；worked hard'),
+            make_blank(2, ['ran', 'died', 'grew', 'jumped'], 'died', '兔子撞树而死'),
+            make_blank(3, ['working', 'playing', 'eating', 'singing'], 'working', 'stop working 不再干活'),
+            make_blank(4, ['from', 'with', 'against', 'for'], 'for', 'wait for 等待，固定搭配'),
+            make_blank(5, ['turned', 'cooked', 'sold', 'kept'], 'turned', 'turned wild 变得荒芜'),
+        ],
+        explain='主题：守株待兔。考查动词时态、stop doing、介词、turn + 形容词。',
+        difficulty=3,
+    ))
+
+    # 3) 6B U4 We can save the animals
+    items.append(make_cloze(
+        grade=6, term='下', unit_n=4, seq=3,
+        topic='We can save the animals · Save the elephants',
+        passage=(
+            'Elephants are the largest animals on land. They are ___1___ and gentle. '
+            'However, the number of elephants is getting ___2___ every year. '
+            'Bad people kill them for their ___3___. '
+            'If we do not protect them, our children may ___4___ see real elephants. '
+            'We can help by joining clubs and ___5___ the truth to others.'
+        ),
+        blanks=[
+            make_blank(1, ['weak', 'tiny', 'smart', 'angry'], 'smart', 'smart and gentle 聪明又温和，褒义'),
+            make_blank(2, ['smaller', 'bigger', 'happier', 'safer'], 'smaller', 'getting smaller 数量减少'),
+            make_blank(3, ['songs', 'tusks', 'rooms', 'colours'], 'tusks', 'tusks 象牙；坏人为象牙杀象'),
+            make_blank(4, ['only', 'never', 'always', 'often'], 'never', '可能再也见不到真象'),
+            make_blank(5, ['hiding', 'telling', 'cutting', 'selling'], 'telling', 'tell the truth 讲出真相'),
+        ],
+        explain='主题：保护大象。考查形容词褒义、比较级、名词、副词、动词搭配。',
+        difficulty=3,
+    ))
+
+    # 4) 6B U5 Dr Sun Yatsen
+    items.append(make_cloze(
+        grade=6, term='下', unit_n=5, seq=4,
+        topic='Dr Sun Yatsen · A great leader',
+        passage=(
+            'Dr Sun Yatsen was one of the greatest leaders in modern Chinese ___1___. '
+            'He was born in 1866 in Guangdong. He studied medicine ___2___ Hong Kong. '
+            'Later he gave up being a doctor and ___3___ his life to saving China. '
+            'He led many people to fight for a ___4___ country. '
+            'Today Chinese people still ___5___ him as the father of modern China.'
+        ),
+        blanks=[
+            make_blank(1, ['food', 'history', 'songs', 'shops'], 'history', '中国历史；与「伟大领袖」呼应'),
+            make_blank(2, ['under', 'in', 'on', 'against'], 'in', 'in Hong Kong 在香港'),
+            make_blank(3, ['gave', 'sold', 'lost', 'forgot'], 'gave', 'gave his life to 为...献身'),
+            make_blank(4, ['poor', 'lazy', 'better', 'sad'], 'better', 'better country 更美好的国家'),
+            make_blank(5, ['fight', 'remember', 'lose', 'sell'], 'remember', 'remember him 铭记他'),
+        ],
+        explain='主题：孙中山。考查名词、介词、动词搭配 give one\'s life to、比较级、动词。',
+        difficulty=3,
+    ))
+
+    # 5) 6B U8 The magic words
+    items.append(make_cloze(
+        grade=6, term='下', unit_n=8, seq=5,
+        topic='The magic words · Please and thank you',
+        passage=(
+            '"Please" and "thank you" are simple but ___1___ words. We use them every day. '
+            'When you ask for help, always say "___2___". '
+            'When someone helps you, say "thank you" with a ___3___. '
+            'These magic words can make others feel ___4___ and respected. '
+            'Good manners cost ___5___, but they bring happiness to everyone.'
+        ),
+        blanks=[
+            make_blank(1, ['useless', 'magic', 'wrong', 'lazy'], 'magic', '与主题 magic words 呼应'),
+            make_blank(2, ['no', 'why', 'please', 'how'], 'please', '求人帮忙说 please'),
+            make_blank(3, ['fight', 'cry', 'smile', 'lie'], 'smile', '微笑致谢；with a smile'),
+            make_blank(4, ['angry', 'tired', 'happy', 'sick'], 'happy', '让他人感到开心'),
+            make_blank(5, ['everything', 'much', 'a lot', 'nothing'], 'nothing', 'cost nothing 不花一文，固定表达'),
+        ],
+        explain='主题：礼貌用语。考查形容词褒义、礼貌用语、with a smile、形容词、固定表达 cost nothing。',
+        difficulty=3,
+    ))
+
+    return items
+
+
+# ============================================================
 # 主流程
 # ============================================================
 
@@ -827,6 +948,7 @@ def build():
     all_items.extend(jk_5a())
     all_items.extend(jk_5b())
     all_items.extend(jk_6a())
+    all_items.extend(jk_6b())
     return all_items
 
 

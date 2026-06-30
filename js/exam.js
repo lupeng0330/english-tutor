@@ -346,8 +346,32 @@ function _buildPaper(def) {
       }
     }
 
-    // 按「实际抽到的题量」计分，避免题库不足时无法达到满分
-    sec.totalPoints = Math.round(sec.questions.length * (secDef.points || 0) * 10) / 10;
+    // 计分策略：
+    //  - cloze（真完形整篇当 1 大题）：totalPoints 强制 = 配置 count × points（与配置声明一致），
+    //    单空分按比例缩放（避免「池子里短文 4 空 vs 配置 5 空」导致总分跳动）。
+    //  - 其他题型：按「实际抽到的题量 × 单题分」（题库不足时分值自然减少，与现状一致）。
+    if (secDef.type === 'cloze') {
+      const N = sec.questions.length;
+      const expectedTotal = Math.round((secDef.count || 0) * (secDef.points || 0) * 10) / 10;
+      if (N > 0 && expectedTotal > 0) {
+        // 单空分按 expectedTotal/N 缩放（保留 2 位小数，最后 1 空兜底凑齐 totalPoints 避免浮点误差）
+        const perBlank = Math.floor((expectedTotal / N) * 100) / 100;
+        let acc = 0;
+        for (let i = 0; i < N - 1; i++) {
+          sec.questions[i].pointsPer = perBlank;
+          acc += perBlank;
+        }
+        // 最后 1 空兜底凑齐
+        sec.questions[N - 1].pointsPer = Math.round((expectedTotal - acc) * 100) / 100;
+        sec.pointsPer = perBlank;                  // 段级默认（多数空用此值）
+        sec.totalPoints = expectedTotal;           // 锁死到配置
+      } else {
+        sec.totalPoints = 0;
+        sec.pointsPer = 0;
+      }
+    } else {
+      sec.totalPoints = Math.round(sec.questions.length * (secDef.points || 0) * 10) / 10;
+    }
     sec.endIdx = flatIdx - 1;
     if (sec.questions.length > 0) paper.sections.push(sec);
   }
@@ -1191,7 +1215,9 @@ function _gradeExam() {
       const isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
       if (isCorrect) {
         secCorrect++;
-        secPoints += sec.pointsPer || 0;
+        // cloze 段：题级 pointsPer 优先（最后 1 空兜底凑齐总分，与段级默认略不同）
+        const pp = (q.pointsPer != null) ? q.pointsPer : (sec.pointsPer || 0);
+        secPoints += pp;
       }
       // 记录到错题本（🆕 P2-C：cloze 错题归 cloze 类，不再 mapping 到 grammar）
       try {

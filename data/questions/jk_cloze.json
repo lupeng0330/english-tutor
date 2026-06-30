@@ -2088,5 +2088,335 @@
     ],
     "explain": "主题：友谊。考查名词、listen to、truth、时间频率、lucky to。",
     "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1_C01",
+    "topic": "Slow and steady wins the race · The tortoise and the hare",
+    "passage": "Long ago, a hare laughed at a tortoise because the tortoise walked very ___1___. The angry tortoise asked the hare to ___2___ a race. The hare agreed and started fast. Soon he was far ahead, so he ___3___ to take a rest under a tree. He fell asleep. The tortoise ___4___ walked and never stopped. When the hare woke up, the tortoise had already ___5___ the line.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "fast",
+          "slowly",
+          "angrily",
+          "happily"
+        ],
+        "answer": "slowly",
+        "explain": "上下文：兔子嘲笑乌龟走得慢"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "have",
+          "cook",
+          "sell",
+          "eat"
+        ],
+        "answer": "have",
+        "explain": "have a race 进行比赛，固定搭配"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "refused",
+          "decided",
+          "forgot",
+          "failed"
+        ],
+        "answer": "decided",
+        "explain": "决定休息一会"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "never",
+          "badly",
+          "just",
+          "angrily"
+        ],
+        "answer": "just",
+        "explain": "just walked 只是不停走"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "lost",
+          "crossed",
+          "broken",
+          "eaten"
+        ],
+        "answer": "crossed",
+        "explain": "crossed the line 越过终点线"
+      }
+    ],
+    "explain": "主题：龟兔赛跑。考查副词、固定搭配 have a race、动词时态、副词、cross the line。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2_C02",
+    "topic": "Waiting for another hare · The lazy farmer",
+    "passage": "Long ago, there was a farmer who ___1___ very hard every day. One day, a hare ran into a tree and ___2___ on the spot. The farmer was very happy and got a free meal. After that, he stopped ___3___ in the field. He just sat by the tree and waited ___4___ another hare. But no more hares came. His fields ___5___ wild and he lost everything.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "played",
+          "worked",
+          "slept",
+          "sang"
+        ],
+        "answer": "worked",
+        "explain": "勤劳的农夫；worked hard"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "ran",
+          "died",
+          "grew",
+          "jumped"
+        ],
+        "answer": "died",
+        "explain": "兔子撞树而死"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "working",
+          "playing",
+          "eating",
+          "singing"
+        ],
+        "answer": "working",
+        "explain": "stop working 不再干活"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "from",
+          "with",
+          "against",
+          "for"
+        ],
+        "answer": "for",
+        "explain": "wait for 等待，固定搭配"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "turned",
+          "cooked",
+          "sold",
+          "kept"
+        ],
+        "answer": "turned",
+        "explain": "turned wild 变得荒芜"
+      }
+    ],
+    "explain": "主题：守株待兔。考查动词时态、stop doing、介词、turn + 形容词。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U4_C03",
+    "topic": "We can save the animals · Save the elephants",
+    "passage": "Elephants are the largest animals on land. They are ___1___ and gentle. However, the number of elephants is getting ___2___ every year. Bad people kill them for their ___3___. If we do not protect them, our children may ___4___ see real elephants. We can help by joining clubs and ___5___ the truth to others.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "weak",
+          "tiny",
+          "smart",
+          "angry"
+        ],
+        "answer": "smart",
+        "explain": "smart and gentle 聪明又温和，褒义"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "smaller",
+          "bigger",
+          "happier",
+          "safer"
+        ],
+        "answer": "smaller",
+        "explain": "getting smaller 数量减少"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "songs",
+          "tusks",
+          "rooms",
+          "colours"
+        ],
+        "answer": "tusks",
+        "explain": "tusks 象牙；坏人为象牙杀象"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "only",
+          "never",
+          "always",
+          "often"
+        ],
+        "answer": "never",
+        "explain": "可能再也见不到真象"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "hiding",
+          "telling",
+          "cutting",
+          "selling"
+        ],
+        "answer": "telling",
+        "explain": "tell the truth 讲出真相"
+      }
+    ],
+    "explain": "主题：保护大象。考查形容词褒义、比较级、名词、副词、动词搭配。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U5_C04",
+    "topic": "Dr Sun Yatsen · A great leader",
+    "passage": "Dr Sun Yatsen was one of the greatest leaders in modern Chinese ___1___. He was born in 1866 in Guangdong. He studied medicine ___2___ Hong Kong. Later he gave up being a doctor and ___3___ his life to saving China. He led many people to fight for a ___4___ country. Today Chinese people still ___5___ him as the father of modern China.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "food",
+          "history",
+          "songs",
+          "shops"
+        ],
+        "answer": "history",
+        "explain": "中国历史；与「伟大领袖」呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "under",
+          "in",
+          "on",
+          "against"
+        ],
+        "answer": "in",
+        "explain": "in Hong Kong 在香港"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "gave",
+          "sold",
+          "lost",
+          "forgot"
+        ],
+        "answer": "gave",
+        "explain": "gave his life to 为...献身"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "poor",
+          "lazy",
+          "better",
+          "sad"
+        ],
+        "answer": "better",
+        "explain": "better country 更美好的国家"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "fight",
+          "remember",
+          "lose",
+          "sell"
+        ],
+        "answer": "remember",
+        "explain": "remember him 铭记他"
+      }
+    ],
+    "explain": "主题：孙中山。考查名词、介词、动词搭配 give one's life to、比较级、动词。",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U8_C05",
+    "topic": "The magic words · Please and thank you",
+    "passage": "\"Please\" and \"thank you\" are simple but ___1___ words. We use them every day. When you ask for help, always say \"___2___\". When someone helps you, say \"thank you\" with a ___3___. These magic words can make others feel ___4___ and respected. Good manners cost ___5___, but they bring happiness to everyone.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "useless",
+          "magic",
+          "wrong",
+          "lazy"
+        ],
+        "answer": "magic",
+        "explain": "与主题 magic words 呼应"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "no",
+          "why",
+          "please",
+          "how"
+        ],
+        "answer": "please",
+        "explain": "求人帮忙说 please"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "fight",
+          "cry",
+          "smile",
+          "lie"
+        ],
+        "answer": "smile",
+        "explain": "微笑致谢；with a smile"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "angry",
+          "tired",
+          "happy",
+          "sick"
+        ],
+        "answer": "happy",
+        "explain": "让他人感到开心"
+      },
+      {
+        "pos": 5,
+        "options": [
+          "everything",
+          "much",
+          "a lot",
+          "nothing"
+        ],
+        "answer": "nothing",
+        "explain": "cost nothing 不花一文，固定表达"
+      }
+    ],
+    "explain": "主题：礼貌用语。考查形容词褒义、礼貌用语、with a smile、形容词、固定表达 cost nothing。",
+    "difficulty": 3
   }
 ]

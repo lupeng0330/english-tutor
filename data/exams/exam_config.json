@@ -40,8 +40,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -108,8 +108,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -167,7 +167,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -175,7 +175,9 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       },
       "下": {
@@ -210,8 +212,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -278,8 +280,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -337,7 +339,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -345,7 +347,9 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       }
     },
@@ -382,8 +386,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -450,8 +454,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -509,7 +513,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -517,7 +521,9 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       },
       "下": {
@@ -552,8 +558,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -620,8 +626,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -679,7 +685,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -687,7 +693,9 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       }
     },
@@ -724,8 +732,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -792,8 +800,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -851,7 +859,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -859,7 +867,9 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       },
       "下": {
@@ -894,8 +904,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 4
@@ -962,8 +972,8 @@
             {
               "type": "cloze",
               "title": "三、完形填空",
-              "count": 10,
-              "points": 1.5,
+              "count": 5,
+              "points": 3,
               "unitRange": [
                 1,
                 8
@@ -1021,7 +1031,7 @@
               "type": "cloze",
               "title": "三、完形填空",
               "count": 5,
-              "points": 2
+              "points": 3
             },
             {
               "type": "reading",
@@ -1029,15 +1039,17 @@
               "count": 10,
               "points": 2
             }
-          ]
+          ],
+          "totalPoints": 55,
+          "autoPoints": 55
         }
       }
     },
     "3": {
       "上": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 50,
           "unitRange": [
             1,
             12
@@ -1047,7 +1059,7 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 10,
-              "points": 2,
+              "points": 3,
               "unitRange": [
                 1,
                 12
@@ -1056,8 +1068,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1066,8 +1078,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 5,
+              "points": 3,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
@@ -1075,21 +1097,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
+              "title": "五、阅读理解",
               "count": 3,
-              "points": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100,
+          "autoPoints": 100
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1097,27 +1119,97 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 40,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 3,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 5,
+              "points": 3,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 3,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100,
+          "autoPoints": 100
         }
       },
       "下": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 50,
           "unitRange": [
             1,
             12
@@ -1127,7 +1219,7 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 10,
-              "points": 2,
+              "points": 3,
               "unitRange": [
                 1,
                 12
@@ -1136,8 +1228,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1146,8 +1238,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 5,
+              "points": 3,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
@@ -1155,21 +1257,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
+              "title": "五、阅读理解",
               "count": 3,
-              "points": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100,
+          "autoPoints": 100
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1177,29 +1279,99 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 40,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 3,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 5,
+              "points": 3,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 3,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100,
+          "autoPoints": 100
         }
       }
     },
     "4": {
       "上": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 60,
           "unitRange": [
             1,
             12
@@ -1209,7 +1381,7 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 10,
-              "points": 2,
+              "points": 2.5,
               "unitRange": [
                 1,
                 12
@@ -1218,8 +1390,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1228,8 +1400,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
@@ -1237,21 +1419,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1259,27 +1441,97 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 50,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       },
       "下": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 60,
           "unitRange": [
             1,
             12
@@ -1289,7 +1541,7 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 10,
-              "points": 2,
+              "points": 2.5,
               "unitRange": [
                 1,
                 12
@@ -1298,8 +1550,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1308,8 +1560,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
@@ -1317,21 +1579,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 4,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1339,29 +1601,99 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 50,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 4,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       }
     },
     "5": {
       "上": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 70,
           "unitRange": [
             1,
             12
@@ -1380,8 +1712,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1390,8 +1722,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1399,21 +1741,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1421,27 +1763,97 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 60,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       },
       "下": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 70,
           "unitRange": [
             1,
             12
@@ -1460,8 +1872,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1470,8 +1882,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1479,21 +1901,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1501,29 +1923,99 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 60,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       }
     },
     "6": {
       "上": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 70,
           "unitRange": [
             1,
             12
@@ -1542,8 +2034,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1552,8 +2044,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1561,21 +2063,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1583,27 +2085,97 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 60,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       },
       "下": {
         "final": {
-          "name": "综合测试",
-          "time": 40,
+          "name": "期末考试",
+          "time": 70,
           "unitRange": [
             1,
             12
@@ -1622,8 +2194,8 @@
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 2,
-              "points": 3,
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1632,8 +2204,18 @@
             {
               "type": "grammar",
               "title": "三、语法选择",
-              "count": 3,
-              "points": 2,
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                12
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
               "unitRange": [
                 1,
                 12
@@ -1641,21 +2223,21 @@
             },
             {
               "type": "reading",
-              "title": "四、阅读理解",
-              "count": 3,
-              "points": 4,
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
               "unitRange": [
                 1,
                 12
               ]
             }
           ],
-          "totalPoints": 60,
-          "autoPoints": 60
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         },
         "unitTest": {
           "namePattern": "第{n}单元测试",
-          "time": 20,
+          "time": 25,
           "maxUnit": 8,
           "cumulative": true,
           "sections": [
@@ -1663,21 +2245,91 @@
               "type": "spelling",
               "title": "一、单词拼写",
               "count": 5,
-              "points": 3
+              "points": 4
             },
             {
               "type": "listening",
               "title": "二、听力理解",
-              "count": 1,
-              "points": 3
+              "count": 2,
+              "points": 5
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 2,
+              "points": 5
             },
             {
               "type": "reading",
-              "title": "三、阅读理解",
+              "title": "四、阅读理解",
               "count": 1,
-              "points": 4
+              "points": 10
             }
-          ]
+          ],
+          "totalPoints": 50,
+          "autoPoints": 50
+        },
+        "midterm": {
+          "name": "期中考试",
+          "time": 60,
+          "unitRange": [
+            1,
+            4
+          ],
+          "sections": [
+            {
+              "type": "spelling",
+              "title": "一、单词拼写",
+              "count": 10,
+              "points": 2,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "listening",
+              "title": "二、听力理解",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "grammar",
+              "title": "三、语法选择",
+              "count": 10,
+              "points": 1.5,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "cloze",
+              "title": "四、完形填空",
+              "count": 5,
+              "points": 4,
+              "unitRange": [
+                1,
+                4
+              ]
+            },
+            {
+              "type": "reading",
+              "title": "五、阅读理解",
+              "count": 5,
+              "points": 5,
+              "unitRange": [
+                1,
+                4
+              ]
+            }
+          ],
+          "totalPoints": 100.0,
+          "autoPoints": 100.0
         }
       }
     }
