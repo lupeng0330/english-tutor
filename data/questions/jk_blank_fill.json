@@ -1,0 +1,15 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "passage": "I have a ____. It is ____.",
+    "blanks": [
+      {"pos": 1, "answer": "dog", "options": ["dog", "cat", "bird"]},
+      {"pos": 2, "answer": "cute", "options": ["cute", "big", "small"]}
+    ],
+    "explain": "上下文描述宠物"
+  }
+]

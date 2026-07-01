@@ -1,0 +1,28 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片",
+    "audioText": "M: It's sunny today.",
+    "audioFile": "listen_pic_01.mp3",
+    "options": ["☀️", "🌧️", "☁️"],
+    "answer": 0,
+    "explain": "音频说 sunny，对应太阳"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片",
+    "audioText": "W: I like cats.",
+    "audioFile": "listen_pic_02.mp3",
+    "options": ["🐱", "🐶", "🐦"],
+    "answer": 0,
+    "explain": "音频说 cats，对应猫"
+  }
+]

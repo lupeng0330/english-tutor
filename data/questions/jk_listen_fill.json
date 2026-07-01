@@ -1,0 +1,15 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "M: My favourite colour is blue.",
+    "audioFile": "listen_fill_01.mp3",
+    "q": "男孩最喜欢的颜色是？",
+    "options": ["blue", "red", "green"],
+    "answer": 0,
+    "explain": "音频说 favourite colour is blue"
+  }
+]

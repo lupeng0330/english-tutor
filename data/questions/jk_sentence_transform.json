@@ -1,0 +1,13 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "I am a student.",
+    "target": "否定句",
+    "answer": "I am not a student.",
+    "explain": "be 动词后加 not"
+  }
+]

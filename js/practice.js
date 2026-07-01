@@ -80,7 +80,12 @@ function resetPracticeOnContextChange() {
 }
 
 // 绑定顶部上下文条三个下拉
-const QB = () => window.questionBank || { spelling:[], listening:[], grammar:[], reading:[] };
+const QB = () => window.questionBank || {
+  spelling:[], listening:[], grammar:[], reading:[],
+  // 阶段 2 新题型（批次 1）
+  listen_pic:[], listen_judge:[], listen_fill:[],
+  blank_fill:[], sentence_transform:[], sentence_order:[]
+};
 
 // 🆕 通用工具：Fisher-Yates 洗牌
 function _shuffleArr(arr) {
@@ -354,7 +359,12 @@ function startPractice(type) {
   state.quizIndex = 0;
   state.quizCorrect = 0;
   state.quizStartTime = Date.now();
-  const typeLabel = { spelling: '单词拼写', listening: '听力选择', grammar: '语法练习', reading: '阅读理解', cloze: '完形填空' };
+  const typeLabel = {
+    spelling: '单词拼写', listening: '听力选择', grammar: '语法练习',
+    reading: '阅读理解', cloze: '完形填空',
+    listen_pic: '听音选图', listen_judge: '听音判断', listen_fill: '听音填空',
+    blank_fill: '选词填空', sentence_transform: '句型转换', sentence_order: '连词成句'
+  };
   document.getElementById('quizType').textContent = typeLabel[type];
   document.getElementById('quizTotal').textContent = shuffled.length;
   document.getElementById('practiceTypeView').classList.add('hide');
@@ -383,7 +393,9 @@ function _renderPickSummary() {
 
 // 🧠 智能推荐练习（v01.18）：跨 4 种题型按打分混合组卷，首页一键开练
 function startSmartPractice() {
-  const types = ['spelling', 'listening', 'grammar', 'reading'];
+  const types = ['spelling', 'listening', 'grammar', 'reading', 'cloze',
+                'listen_pic', 'listen_judge', 'listen_fill',
+                'blank_fill', 'sentence_transform', 'sentence_order'];
   const pool = [];
   for (const t of types) {
     let qs = [];

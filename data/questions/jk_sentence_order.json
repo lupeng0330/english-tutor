@@ -1,0 +1,13 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": ["This", "is", "an", "apple", "."],
+    "answer": [0, 1, 3, 2, 4],
+    "explain": "陈述句语序：主+谓+宾"
+  }
+]

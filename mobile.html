@@ -192,8 +192,15 @@
   const phone = document.getElementById('phone');
   const label = document.getElementById('sizeLabel');
 
+  // 🆕 透传本页 URL 的 ?v= 到内嵌 index.html：mobile.html?v=xxx → index.html?v=xxx
+  //    使手机预览也能带版本号强制绕过 ServiceWorker 旧缓存（拿到最新 exam_config.json 等）。
+  const PAGE_V = (function () {
+    try { return new URL(location.href).searchParams.get('v') || ''; } catch (e) { return ''; }
+  })();
+  const V_SUFFIX = PAGE_V ? ('&v=' + encodeURIComponent(PAGE_V)) : '';
+
   function loadIframe() {
-    ifr.src = 'index.html?ts=' + Date.now();
+    ifr.src = 'index.html?ts=' + Date.now() + V_SUFFIX;
   }
   loadIframe();
 
@@ -223,7 +230,7 @@
   //   - 如果你是 localhost/127.0.0.1 打开，二维码生成的就是 localhost，手机扫不到 → 会显示红色提示
   const lanHost = window.location.hostname || 'localhost';
   const lanPort = window.location.port || '8765';
-  const lanUrl  = 'http://' + lanHost + ':' + lanPort + '/index.html?ts=' + Date.now().toString(36);
+  const lanUrl  = 'http://' + lanHost + ':' + lanPort + '/index.html?ts=' + Date.now().toString(36) + V_SUFFIX;
   const onlineUrlFresh = GITHUB_PAGES_BASE + '?v=' + Date.now().toString(36);
 
   let currentMode = 'lan';

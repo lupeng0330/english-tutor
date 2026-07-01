@@ -323,12 +323,37 @@ function _buildPaper(def) {
         });
         flatIdx += 1;
       }
+    } else if (['listen_pic','listen_judge','listen_fill','blank_fill','sentence_transform','sentence_order'].includes(secDef.type)) {
+      // 🆕 新题型：直接从对应题库抽取
+      let pool = (qb[secDef.type] || []).filter(q =>
+        q.grade === g && q.term === t && _inUnitRange(q, sec.unitRange)
+      );
+      const sampled = _sampleRng(pool, secDef.count, rng);
+      for (const q of sampled) {
+        const item = {
+          type: secDef.type, original: q, q: q.q || '',
+          options: q.options || [], answer: q.answer,
+          explain: q.explain || '', difficulty: q.difficulty || 1,
+          index: flatIdx, sectionIdx: paper.sections.length
+        };
+        // 听力类题型需要 audioText / audioFile
+        if (['listen_pic','listen_judge','listen_fill'].includes(secDef.type)) {
+          item.audioText = q.audioText || '';
+          item.audioFile = q.audioFile || '';
+        }
+        sec.questions.push(item);
+        flatIdx += 1;
+      }
     } else {
-      // listening / spelling / grammar
+      // listening / spelling / grammar / 新题型
       const bankKey = secDef.type;
       let pool = (qb[bankKey] || []).filter(q =>
         q.grade === g && q.term === t && _inUnitRange(q, sec.unitRange)
       );
+      // 🔧 防御：如果 bankKey 对应题型未加载，pool 为空，直接跳过
+      if (!qb[bankKey] && console) {
+        console.warn('[考试] 题型未加载:', bankKey, '→ 跳过该 section');
+      }
       const sampled = _sampleRng(pool, secDef.count, rng);
       for (const q of sampled) {
         const item = {
@@ -370,7 +395,28 @@ function _buildPaper(def) {
         sec.pointsPer = 0;
       }
     } else {
-      sec.totalPoints = Math.round(sec.questions.length * (secDef.points || 0) * 10) / 10;
+      // 🔒 P1 总分锁定：section 满分锁定到「配置 count × points」（声明值）；
+      //    题库抽不满时，单题分按比例放大（答对全部实抽题仍得该 section 满分），
+      //    并打 shortfall 标记，供卷面/结果页提示「题库不足，按比例计分」。
+      //    → 保证整卷满分 = Σ(count × points) = 配置声明总分，严格闭合，杜绝 106 溢出。
+      const N = sec.questions.length;
+      const expectedTotal = Math.round((secDef.count || 0) * (secDef.points || 0) * 10) / 10;
+      if (N > 0 && expectedTotal > 0) {
+        if (N < (secDef.count || 0)) {
+          const perQ = Math.floor((expectedTotal / N) * 100) / 100;
+          let acc = 0;
+          for (let i = 0; i < N - 1; i++) { sec.questions[i].pointsPer = perQ; acc += perQ; }
+          sec.questions[N - 1].pointsPer = Math.round((expectedTotal - acc) * 100) / 100;
+          sec.pointsPer = perQ;
+          sec.shortfall = { got: N, need: secDef.count || 0 };
+        } else {
+          sec.pointsPer = secDef.points || 0;
+        }
+        sec.totalPoints = expectedTotal;   // 锁定到配置声明
+      } else {
+        sec.totalPoints = 0;
+        sec.pointsPer = 0;
+      }
     }
     sec.endIdx = flatIdx - 1;
     if (sec.questions.length > 0) paper.sections.push(sec);
@@ -779,12 +825,36 @@ function _renderSection(sectionIdx) {
       }
       html += `</div>`;
     }
-  } else {
-    // 普通题型（听力 / 拼写 / 语法）
+  } else if (sec.type === 'listen_pic') {
+    // 听音选图：选项为 emoji 图片
     html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
       <div class="exam-questions">`;
     for (const q of sec.questions) {
-      if (sec.type === 'listening') {
+      html += _renderListenPicHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'listen_judge') {
+    // 听音判断：True / False 按钮
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderListenJudgeHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'sentence_order') {
+    // 连词成句：拖拽排序单词
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderSentenceOrderHTML(q);
+    }
+    html += `</div>`;
+  } else {
+    // 普通题型（听力 / 拼写 / 语法 / 新题型单选类）
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      if (sec.type === 'listening' || q.type === 'listening') {
         html += _renderListeningHTML(q);
       } else {
         html += _renderQuestionHTML(q);
@@ -867,6 +937,68 @@ function _renderListeningHTML(q) {
 }
 
 
+/** 渲染听音选图题（选项为 emoji） */
+function _renderListenPicHTML(q) {
+  const selected = _examState.answers[q.index];
+  let optionsHtml = '';
+  const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+  for (let i = 0; i < (q.options || []).length; i++) {
+    const selClass = selected === i ? 'exam-option selected' : 'exam-option';
+    optionsHtml += `<div class="${selClass}" data-qindex="${q.index}" data-optindex="${i}">
+      <span class="exam-option-label">${labels[i] || i}</span>
+      <span style="font-size:2rem">${escapeHtml(String(q.options[i] || ''))}</span>
+    </div>`;
+  }
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">
+      ${q.index + 1}.
+      <button class="exam-listen-btn" data-qindex="${q.index}" title="播放听力">🔊 播放</button>
+      ${escapeHtml(q.q || '请听录音，选择正确的图片')}
+    </div>
+    <div class="exam-options exam-options-grid">${optionsHtml}</div>
+  </div>`;
+}
+
+
+/** 渲染听音判断题（True / False 按钮） */
+function _renderListenJudgeHTML(q) {
+  const selected = _examState.answers[q.index];
+  const isTrue = selected === true;
+  const isFalse = selected === false;
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">
+      ${q.index + 1}.
+      <button class="exam-listen-btn" data-qindex="${q.index}" title="播放听力">🔊 播放</button>
+      ${escapeHtml(q.statement || '')}
+    </div>
+    <div class="exam-judge-btns">
+      <button class="exam-judge-btn ${isTrue ? 'selected' : ''}" data-qindex="${q.index}" data-value="true">✅ True</button>
+      <button class="exam-judge-btn ${isFalse ? 'selected' : ''}" data-qindex="${q.index}" data-value="false">❌ False</button>
+    </div>
+  </div>`;
+}
+
+
+/** 渲染连词成句题（点击单词排序） */
+function _renderSentenceOrderHTML(q) {
+  const selected = _examState.answers[q.index] || [];
+  const words = q.words || [];
+  // 已选单词 → 答案区；未选单词 → 候选区
+  const chosen = selected.map(i => words[i]).join(' ');
+  let poolHtml = '';
+  for (let i = 0; i < words.length; i++) {
+    if (selected.includes(i)) continue;
+    poolHtml += `<span class="exam-word-pool-item" data-qindex="${q.index}" data-wordidx="${i}">${escapeHtml(words[i])}</span> `;
+  }
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">${q.index + 1}. ${escapeHtml(q.q || '请点击单词，组成正确句子')}</div>
+    <div class="exam-sentence-answer">${chosen ? escapeHtml(chosen) : '<span class="text-slate-400">点击上方单词组成句子...</span>'}</div>
+    <div class="exam-word-pool">${poolHtml}</div>
+    <button class="exam-clear-btn" data-qindex="${q.index}">🔄 清空重排</button>
+  </div>`;
+}
+
+
 // ===================== 答题交互 =====================
 
 function _selectOption(qIdx, optIdx) {
@@ -912,6 +1044,79 @@ function _updateSectionTabCounts() {
     if (badge) badge.textContent = `(${answered}/${sec.questions.length})`;
   });
 }
+
+// ===================== 新题型交互（事件委托） =====================
+
+// 听音选图点击
+document.addEventListener('click', (e) => {
+  if (_examState.submitted) return;
+  const opt = e.target.closest('.exam-option[data-qindex]');
+  if (!opt) return;
+  const qIdx = parseInt(opt.dataset.qindex);
+  const optIdx = parseInt(opt.dataset.optindex);
+  _selectOption(qIdx, optIdx);
+});
+
+// 听音判断点击
+document.addEventListener('click', (e) => {
+  if (_examState.submitted) return;
+  const btn = e.target.closest('.exam-judge-btn[data-qindex]');
+  if (!btn) return;
+  const qIdx = parseInt(btn.dataset.qindex);
+  const val = btn.dataset.value === 'true';
+  _examState.answers[qIdx] = val;
+  // 更新按钮高亮
+  const container = document.getElementById('examSectionContent');
+  if (container) {
+    container.querySelectorAll(`.exam-judge-btn[data-qindex="${qIdx}"]`).forEach(b => {
+      b.classList.toggle('selected', b.dataset.value === String(val));
+    });
+  }
+  _updateSectionTabCounts();
+});
+
+// 连词成句：点击单词池
+document.addEventListener('click', (e) => {
+  if (_examState.submitted) return;
+  const item = e.target.closest('.exam-word-pool-item[data-qindex]');
+  if (!item) return;
+  const qIdx = parseInt(item.dataset.qindex);
+  const wIdx = parseInt(item.dataset.wordidx);
+  if (!_examState.answers[qIdx]) _examState.answers[qIdx] = [];
+  if (!_examState.answers[qIdx].includes(wIdx)) {
+    _examState.answers[qIdx].push(wIdx);
+    _renderSection(_examState.currentSection);
+    _updateSectionTabCounts();
+  }
+});
+
+// 连词成句：清空按钮
+document.addEventListener('click', (e) => {
+  if (_examState.submitted) return;
+  const btn = e.target.closest('.exam-clear-btn[data-qindex]');
+  if (!btn) return;
+  const qIdx = parseInt(btn.dataset.qindex);
+  delete _examState.answers[qIdx];
+  _renderSection(_examState.currentSection);
+  _updateSectionTabCounts();
+});
+
+// 听力播放按钮（新题型通用）
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.exam-listen-btn[data-qindex]');
+  if (!btn) return;
+  const qIdx = parseInt(btn.dataset.qindex);
+  const paper = _examState.paper;
+  if (!paper) return;
+  for (const sec of paper.sections) {
+    const q = sec.questions.find(q => q.index === qIdx);
+    if (q && q.audioFile) {
+      _playExamAudio(q.audioFile, btn);
+      break;
+    }
+  }
+});
+
 
 /** 切换题型区 */
 function _switchExamSection(idx) {
@@ -1212,7 +1417,21 @@ function _gradeExam() {
 
     for (const q of sec.questions) {
       const userAnswer = _examState.answers[q.index];
-      const isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+      let isCorrect = false;
+      // listen_judge：answer 是 true/false，userAnswer 也是 true/false
+      if (q.type === 'listen_judge' || sec.type === 'listen_judge') {
+        isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+      }
+      // sentence_order：answer 是正确顺序数组，userAnswer 是索引数组
+      else if (q.type === 'sentence_order' || sec.type === 'sentence_order') {
+        const ans = q.answer || [];
+        const ua = userAnswer || [];
+        isCorrect = (ans.length === ua.length && ans.every((v, i) => v === ua[i]));
+      }
+      // 通用单选：answer 是选项索引
+      else {
+        isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+      }
       if (isCorrect) {
         secCorrect++;
         // cloze 段：题级 pointsPer 优先（最后 1 空兜底凑齐总分，与段级默认略不同）

@@ -1463,3 +1463,79 @@ body.keyboard-open #practiceQuizView {
 }
 #smartPickToggle.is-on #smartPickKnob { left: 22px; }  /* ON：靠右 48-24-2=22px，恰好贴右边 2px */
 
+
+/* --- 听音选图选项（emoji 大图） --- */
+.exam-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.exam-option img {
+  width: 60px;
+  height: 60px;
+}
+
+
+/* --- 听音判断按钮 --- */
+.exam-judge-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+.exam-judge-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: var(--r-lg);
+  border: 2px solid var(--line-2);
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.exam-judge-btn:hover { border-color: var(--brand); background: var(--brand-50); }
+.exam-judge-btn.selected {
+  border-color: var(--brand);
+  background: var(--brand-50);
+  color: var(--brand-stronger);
+}
+
+
+/* --- 连词成句：单词池 + 答案区 --- */
+.exam-sentence-answer {
+  min-height: 40px;
+  padding: 10px 14px;
+  border: 2px dashed var(--line-2);
+  border-radius: var(--r-lg);
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--text-1);
+  background: var(--bg-1);
+}
+.exam-word-pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.exam-word-pool-item {
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--brand);
+  background: var(--brand-50);
+  color: var(--brand);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.exam-word-pool-item:hover { background: var(--brand-100); }
+.exam-clear-btn {
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line-2);
+  background: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+

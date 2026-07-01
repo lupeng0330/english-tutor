@@ -1,0 +1,26 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_judge",
+    "difficulty": 1,
+    "audioText": "M: I have 3 books.",
+    "audioFile": "listen_judge_01.mp3",
+    "statement": "The boy has 3 books.",
+    "answer": true,
+    "explain": "音频明确说 I have 3 books"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_judge",
+    "difficulty": 1,
+    "audioText": "W: My favourite colour is red.",
+    "audioFile": "listen_judge_02.mp3",
+    "statement": "The girl likes blue.",
+    "answer": false,
+    "explain": "音频说 red，不是 blue"
+  }
+]
