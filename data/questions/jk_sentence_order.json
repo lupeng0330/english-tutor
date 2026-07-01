@@ -6,8 +6,431 @@
     "type": "sentence_order",
     "difficulty": 1,
     "q": "请点击单词，组成正确句子",
-    "words": ["This", "is", "an", "apple", "."],
-    "answer": [0, 1, 3, 2, 4],
-    "explain": "陈述句语序：主+谓+宾"
+    "words": [
+      "is",
+      ".",
+      "big",
+      "This",
+      "letter",
+      "a"
+    ],
+    "answer": "This is a big letter.",
+    "explain": "指示代词 + be 动词陈述句"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "see",
+      "the",
+      ".",
+      "can",
+      "I",
+      "sign"
+    ],
+    "answer": "I can see the sign.",
+    "explain": "can + 动词原形"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "name",
+      "?",
+      "What",
+      "is",
+      "your"
+    ],
+    "answer": "What is your name?",
+    "explain": "特殊疑问句 what"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "I",
+      ".",
+      "read",
+      "can",
+      "English"
+    ],
+    "answer": "I can read English.",
+    "explain": "can + 动词原形"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "is",
+      "This",
+      "Chinese",
+      "word",
+      "."
+    ],
+    "answer": "This word is Chinese.",
+    "explain": "主系表结构"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "the",
+      "They",
+      "are",
+      "same",
+      "."
+    ],
+    "answer": "They are the same.",
+    "explain": "be 动词复数 are"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "is",
+      "my",
+      ".",
+      "He",
+      "friend"
+    ],
+    "answer": "He is my friend.",
+    "explain": "第三人称 he + is"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "teacher",
+      ".",
+      "She",
+      "is",
+      "a"
+    ],
+    "answer": "She is a teacher.",
+    "explain": "第三人称 she + is"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "boy",
+      "Who",
+      "that",
+      "?",
+      "is"
+    ],
+    "answer": "Who is that boy?",
+    "explain": "特殊疑问句 who"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "is",
+      "blue",
+      "The",
+      "key",
+      "."
+    ],
+    "answer": "The key is blue.",
+    "explain": "主系表：颜色"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "the",
+      "key",
+      "green",
+      ".",
+      "Click"
+    ],
+    "answer": "Click the green key.",
+    "explain": "祈使句"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "yellow",
+      "the",
+      ".",
+      "I",
+      "colour",
+      "like"
+    ],
+    "answer": "I like the yellow colour.",
+    "explain": "like + 名词短语"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "the",
+      "Please",
+      "remember",
+      "password"
+    ],
+    "answer": "Please remember the password.",
+    "explain": "祈使句 please"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "is",
+      "number",
+      "secret",
+      "a",
+      "The",
+      "."
+    ],
+    "answer": "The number is a secret.",
+    "explain": "主系表结构"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "password",
+      "safe",
+      "Set",
+      "a"
+    ],
+    "answer": "Set a safe password.",
+    "explain": "祈使句"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "circle",
+      "can",
+      ".",
+      "a",
+      "I",
+      "draw"
+    ],
+    "answer": "I can draw a circle.",
+    "explain": "can + 动词原形"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "picture",
+      "Draw",
+      ".",
+      "nice",
+      "a"
+    ],
+    "answer": "Draw a nice picture.",
+    "explain": "祈使句"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "paint",
+      "a",
+      "can",
+      ".",
+      "line",
+      "She"
+    ],
+    "answer": "She can paint a line.",
+    "explain": "can + 动词原形"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "quiet",
+      "be",
+      "Please"
+    ],
+    "answer": "Please be quiet.",
+    "explain": "祈使句 please be"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "I",
+      "good",
+      "listener",
+      "am",
+      "a"
+    ],
+    "answer": "I am a good listener.",
+    "explain": "主系表结构"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "please",
+      "to",
+      "Listen",
+      "me"
+    ],
+    "answer": "Listen to me please.",
+    "explain": "祈使句"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "is",
+      "It",
+      "time",
+      "to",
+      ".",
+      "exercise"
+    ],
+    "answer": "It is time to exercise.",
+    "explain": "It is time to do"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      "swim",
+      "and",
+      "I",
+      "jump",
+      ".",
+      "can"
+    ],
+    "answer": "I can swim and jump.",
+    "explain": "can + 并列动词"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "like",
+      "run",
+      "I",
+      "to"
+    ],
+    "answer": "I like to run.",
+    "explain": "like to do"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_REV",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子",
+    "words": [
+      ".",
+      "I",
+      "song",
+      "a",
+      "sing",
+      "can"
+    ],
+    "answer": "I can sing a song.",
+    "explain": "can + 动词原形（复习）"
   }
 ]

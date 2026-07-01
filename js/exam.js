@@ -341,6 +341,20 @@ function _buildPaper(def) {
           item.audioText = q.audioText || '';
           item.audioFile = q.audioFile || '';
         }
+        // 🆕 连词成句：带上乱序词块 words（answer 为正确句子字符串）
+        if (secDef.type === 'sentence_order') {
+          item.words = Array.isArray(q.words) ? q.words.slice() : [];
+        }
+        // 🆕 完成句子：带上 passage（含 ____ 占位）与 blanks（每空 answer/options）
+        if (secDef.type === 'blank_fill') {
+          item.passage = q.passage || '';
+          item.cn = q.cn || '';
+          item.blanks = Array.isArray(q.blanks) ? q.blanks : [];
+        }
+        // 听音判断：渲染用 statement（兼容旧字段 q）
+        if (secDef.type === 'listen_judge') {
+          item.statement = q.statement || q.q || '';
+        }
         sec.questions.push(item);
         flatIdx += 1;
       }
@@ -365,6 +379,10 @@ function _buildPaper(def) {
         if (secDef.type === 'listening') {
           item.audioText = q.audioText || '';
           item.audioFile = q.audioFile || '';
+        }
+        // 🆕 单词拼写（中译英）：带上首字母提示 hint（answer 为正确英文单词）
+        if (secDef.type === 'spelling') {
+          item.hint = q.hint || '';
         }
         sec.questions.push(item);
         flatIdx += 1;
@@ -841,12 +859,36 @@ function _renderSection(sectionIdx) {
       html += _renderListenJudgeHTML(q);
     }
     html += `</div>`;
+  } else if (sec.type === 'listen_fill') {
+    // 🆕 听音填空：播放听力 + 中文题问 + 文字选项（与 listen_pic 同构）
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderListenFillHTML(q);
+    }
+    html += `</div>`;
   } else if (sec.type === 'sentence_order') {
-    // 连词成句：拖拽排序单词
+    // 连词成句：点击乱序单词组句
     html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
       <div class="exam-questions">`;
     for (const q of sec.questions) {
       html += _renderSentenceOrderHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'spelling') {
+    // 🆕 单词拼写：中文词义 + 首字母/字母数提示 + 英文输入框
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分 · 根据中文写出英文单词</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderSpellingHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'blank_fill') {
+    // 🆕 完成句子：句子中挖空，逐空选词/填空
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分 · 在空格处填入正确的单词</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderBlankFillHTML(q);
     }
     html += `</div>`;
   } else {
@@ -978,6 +1020,28 @@ function _renderListenJudgeHTML(q) {
   </div>`;
 }
 
+function _renderListenFillHTML(q) {
+  // 🆕 听音填空：播放听力 + 中文题问 + 文字选项（与 listen_pic 同构）
+  const selected = _examState.answers[q.index];
+  let optionsHtml = '';
+  const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+  for (let i = 0; i < (q.options || []).length; i++) {
+    const selClass = selected === i ? 'exam-option selected' : 'exam-option';
+    optionsHtml += `<div class="${selClass}" data-qindex="${q.index}" data-optindex="${i}">
+      <span class="exam-option-label">${labels[i] || i}</span>
+      <span>${escapeHtml(String(q.options[i] || ''))}</span>
+    </div>`;
+  }
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">
+      ${q.index + 1}.
+      <button class="exam-listen-btn" data-qindex="${q.index}" title="播放听力">🔊 播放</button>
+      ${escapeHtml(q.q || '请听录音，选择正确的答案')}
+    </div>
+    <div class="exam-options">${optionsHtml}</div>
+  </div>`;
+}
+
 
 /** 渲染连词成句题（点击单词排序） */
 function _renderSentenceOrderHTML(q) {
@@ -995,6 +1059,70 @@ function _renderSentenceOrderHTML(q) {
     <div class="exam-sentence-answer">${chosen ? escapeHtml(chosen) : '<span class="text-slate-400">点击上方单词组成句子...</span>'}</div>
     <div class="exam-word-pool">${poolHtml}</div>
     <button class="exam-clear-btn" data-qindex="${q.index}">🔄 清空重排</button>
+  </div>`;
+}
+
+
+/** 文本答案规范化：忽略大小写、合并空格、去标点前空格（用于拼写/句子/填空判分） */
+function _normText(s) {
+  return String(s == null ? '' : s)
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([.,!?;:'"])/g, '$1')
+    .trim();
+}
+
+
+/** 🆕 渲染单词拼写题（中文词义 + 首字母/字母数提示 + 英文输入框） */
+function _renderSpellingHTML(q) {
+  const cur = _examState.answers[q.index] || '';
+  const ans = q.answer || '';
+  // 首字母提示（题库 hint 优先；缺省时用首字母 + 下划线补足单词长度）
+  let hintTxt = q.hint || '';
+  if (!hintTxt && ans) hintTxt = ans[0] + '＿'.repeat(Math.max(0, ans.length - 1));
+  // 字母数下划线（提示单词长度）
+  const underline = ans ? '＿'.repeat(ans.length) : '';
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">${q.index + 1}. ${escapeHtml(q.q || '')}
+      <span class="exam-spell-hint">💡 ${escapeHtml(hintTxt)}${ans ? '（' + ans.length + ' 个字母）' : ''}</span>
+    </div>
+    <div class="exam-spell-wrap">
+      <input type="text" class="exam-spell-input" data-qindex="${q.index}"
+             value="${escapeHtml(cur)}" placeholder="${underline}" autocomplete="off"
+             autocapitalize="off" spellcheck="false" />
+    </div>
+  </div>`;
+}
+
+
+/** 🆕 渲染完成句子题（passage 就地挖空：有选项则选词、无则填空，按空给分） */
+function _renderBlankFillHTML(q) {
+  const passage = q.passage || '';
+  const blanks = q.blanks || [];
+  const cur = Array.isArray(_examState.answers[q.index]) ? _examState.answers[q.index] : [];
+  // 以连续 2 个及以上下划线作为一个空的占位符切分
+  const parts = passage.split(/_{2,}/);
+  let inner = '';
+  for (let i = 0; i < parts.length; i++) {
+    inner += escapeHtml(parts[i]);
+    if (i < parts.length - 1) {
+      const b = blanks[i] || {};
+      const val = cur[i] != null ? cur[i] : '';
+      if (Array.isArray(b.options) && b.options.length) {
+        let opts = `<option value="">— 选择 —</option>`;
+        for (const o of b.options) {
+          opts += `<option value="${escapeHtml(o)}" ${val === o ? 'selected' : ''}>${escapeHtml(o)}</option>`;
+        }
+        inner += `<select class="exam-blank-select" data-qindex="${q.index}" data-blankidx="${i}">${opts}</select>`;
+      } else {
+        inner += `<input type="text" class="exam-blank-input" data-qindex="${q.index}" data-blankidx="${i}"
+                    value="${escapeHtml(val)}" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="＿＿＿" />`;
+      }
+    }
+  }
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">${q.index + 1}. 根据中文意思，完成句子${q.cn ? `<span class="exam-blank-cn">${escapeHtml(q.cn)}</span>` : ''}</div>
+    <div class="exam-blank-passage">${inner}</div>
   </div>`;
 }
 
@@ -1099,6 +1227,52 @@ document.addEventListener('click', (e) => {
   delete _examState.answers[qIdx];
   _renderSection(_examState.currentSection);
   _updateSectionTabCounts();
+});
+
+/** 更新答题卡某题的已答/未答状态（不重渲染，避免输入框失焦） */
+function _markAnswered(qIdx, answered) {
+  const sheetItem = document.querySelector(`#examAnswersheet .exam-sheet-item:nth-child(${qIdx + 1})`);
+  if (sheetItem) sheetItem.classList.toggle('answered', !!answered);
+}
+
+// 🆕 单词拼写：文本输入（不重渲染，保持焦点）
+document.addEventListener('input', (e) => {
+  if (_examState.submitted) return;
+  const inp = e.target.closest('.exam-spell-input[data-qindex]');
+  if (!inp) return;
+  const qIdx = parseInt(inp.dataset.qindex);
+  const v = inp.value.trim();
+  if (v) _examState.answers[qIdx] = inp.value;
+  else delete _examState.answers[qIdx];
+  _markAnswered(qIdx, !!v);
+  _updateSectionTabCounts();
+});
+
+// 🆕 完成句子：写入某一空的答案
+function _setBlankAnswer(qIdx, blankIdx, val) {
+  if (!Array.isArray(_examState.answers[qIdx])) _examState.answers[qIdx] = [];
+  _examState.answers[qIdx][blankIdx] = val;
+  const arr = _examState.answers[qIdx];
+  const anyFilled = arr.some(x => x != null && String(x).trim() !== '');
+  if (!anyFilled) delete _examState.answers[qIdx];
+  _markAnswered(qIdx, anyFilled);
+  _updateSectionTabCounts();
+}
+
+// 🆕 完成句子：选词（下拉）
+document.addEventListener('change', (e) => {
+  if (_examState.submitted) return;
+  const sel = e.target.closest('.exam-blank-select[data-qindex]');
+  if (!sel) return;
+  _setBlankAnswer(parseInt(sel.dataset.qindex), parseInt(sel.dataset.blankidx), sel.value);
+});
+
+// 🆕 完成句子：填空（输入）
+document.addEventListener('input', (e) => {
+  if (_examState.submitted) return;
+  const inp = e.target.closest('.exam-blank-input[data-qindex]');
+  if (!inp) return;
+  _setBlankAnswer(parseInt(inp.dataset.qindex), parseInt(inp.dataset.blankidx), inp.value.trim());
 });
 
 // 听力播放按钮（新题型通用）
@@ -1418,26 +1592,52 @@ function _gradeExam() {
     for (const q of sec.questions) {
       const userAnswer = _examState.answers[q.index];
       let isCorrect = false;
+      let qPoints = 0;
+      // cloze 段：题级 pointsPer 优先（最后 1 空兜底凑齐总分，与段级默认略不同）
+      const pp = (q.pointsPer != null) ? q.pointsPer : (sec.pointsPer || 0);
+
       // listen_judge：answer 是 true/false，userAnswer 也是 true/false
       if (q.type === 'listen_judge' || sec.type === 'listen_judge') {
         isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+        if (isCorrect) qPoints = pp;
       }
-      // sentence_order：answer 是正确顺序数组，userAnswer 是索引数组
+      // 🆕 单词拼写：answer 是英文单词，userAnswer 是输入文本（忽略大小写/空格）
+      else if (sec.type === 'spelling') {
+        const ansN = _normText(q.answer);
+        isCorrect = (userAnswer !== undefined && ansN !== '' && _normText(userAnswer) === ansN);
+        if (isCorrect) qPoints = pp;
+      }
+      // 🆕 连词成句：新规范 answer=正确句子字符串；兼容旧规范 answer=索引数组
       else if (q.type === 'sentence_order' || sec.type === 'sentence_order') {
-        const ans = q.answer || [];
-        const ua = userAnswer || [];
-        isCorrect = (ans.length === ua.length && ans.every((v, i) => v === ua[i]));
+        const words = q.words || [];
+        const ua = Array.isArray(userAnswer) ? userAnswer : [];
+        if (Array.isArray(q.answer)) {
+          isCorrect = (q.answer.length === ua.length && q.answer.every((v, i) => v === ua[i]));
+        } else {
+          const userSent = ua.map(i => words[i]).join(' ');
+          isCorrect = (ua.length === words.length && _normText(userSent) === _normText(q.answer));
+        }
+        if (isCorrect) qPoints = pp;
+      }
+      // 🆕 完成句子：blanks 逐空比对，按空给分
+      else if (sec.type === 'blank_fill') {
+        const blanks = q.blanks || [];
+        const ua = Array.isArray(userAnswer) ? userAnswer : [];
+        let correctBlanks = 0;
+        for (let i = 0; i < blanks.length; i++) {
+          const bAns = _normText(blanks[i].answer);
+          if (bAns !== '' && _normText(ua[i]) === bAns) correctBlanks++;
+        }
+        isCorrect = (blanks.length > 0 && correctBlanks === blanks.length);
+        qPoints = blanks.length > 0 ? Math.round(pp * correctBlanks / blanks.length * 10) / 10 : 0;
       }
       // 通用单选：answer 是选项索引
       else {
         isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+        if (isCorrect) qPoints = pp;
       }
-      if (isCorrect) {
-        secCorrect++;
-        // cloze 段：题级 pointsPer 优先（最后 1 空兜底凑齐总分，与段级默认略不同）
-        const pp = (q.pointsPer != null) ? q.pointsPer : (sec.pointsPer || 0);
-        secPoints += pp;
-      }
+      if (isCorrect) secCorrect++;
+      secPoints += qPoints;
       // 记录到错题本（🆕 P2-C：cloze 错题归 cloze 类，不再 mapping 到 grammar）
       try {
         if (typeof recordAnswer === 'function') {
@@ -1537,13 +1737,50 @@ function _renderResult(result) {
       if (sec.type === 'writing') continue;
       for (const q of sec.questions) {
         const userAnswer = _examState.answers[q.index];
-        const isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+        const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
+        let isCorrect, userLabel, correctLabel, stem;
+
+        if (sec.type === 'spelling') {
+          const ansN = _normText(q.answer);
+          isCorrect = (userAnswer !== undefined && ansN !== '' && _normText(userAnswer) === ansN);
+          userLabel = (userAnswer && String(userAnswer).trim()) ? escapeHtml(userAnswer) : '未作答';
+          correctLabel = escapeHtml(q.answer || '');
+          stem = escapeHtml(q.q || '');
+        } else if (q.type === 'sentence_order' || sec.type === 'sentence_order') {
+          const words = q.words || [];
+          const ua = Array.isArray(userAnswer) ? userAnswer : [];
+          const userSent = ua.map(i => words[i]).join(' ');
+          const correctSent = Array.isArray(q.answer) ? q.answer.map(i => words[i]).join(' ') : (q.answer || '');
+          isCorrect = (ua.length === words.length && _normText(userSent) === _normText(correctSent));
+          userLabel = userSent ? escapeHtml(userSent) : '未作答';
+          correctLabel = escapeHtml(correctSent);
+          stem = escapeHtml(q.q || '连词成句');
+        } else if (sec.type === 'blank_fill') {
+          const blanks = q.blanks || [];
+          const ua = Array.isArray(userAnswer) ? userAnswer : [];
+          let ok = blanks.length > 0;
+          for (let i = 0; i < blanks.length; i++) {
+            if (_normText(ua[i]) !== _normText(blanks[i].answer)) ok = false;
+          }
+          isCorrect = ok;
+          userLabel = ua.length ? escapeHtml(ua.map(x => (x && String(x).trim()) ? x : '＿').join(' / ')) : '未作答';
+          correctLabel = escapeHtml(blanks.map(b => b.answer).join(' / '));
+          stem = escapeHtml(q.passage || '完成句子');
+        } else if (q.type === 'listen_judge' || sec.type === 'listen_judge') {
+          isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+          userLabel = userAnswer === undefined ? '未作答' : (userAnswer ? 'True' : 'False');
+          correctLabel = q.answer ? 'True' : 'False';
+          stem = escapeHtml(q.statement || q.q || '');
+        } else {
+          isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
+          userLabel = userAnswer !== undefined ? (labels[userAnswer] || userAnswer) : '未作答';
+          correctLabel = labels[q.answer] || q.answer;
+          stem = escapeHtml(q.q || '');
+        }
+
         if (!isCorrect) {
-          const labels = ['A', 'B', 'C', 'D', 'E', 'F'];
-          const userLabel = userAnswer !== undefined ? (labels[userAnswer] || userAnswer) : '未作答';
-          const correctLabel = labels[q.answer] || q.answer;
           wrongReviewHtml += `<div class="exam-wrong-item">
-            <div class="font-semibold text-slate-700 text-sm">${q.index + 1}. ${escapeHtml(q.q || '')}</div>
+            <div class="font-semibold text-slate-700 text-sm">${q.index + 1}. ${stem}</div>
             <div class="text-xs mt-1">
               <span class="text-red-600">你的答案：${userLabel}</span>
               <span class="mx-2">→</span>

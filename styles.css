@@ -1538,4 +1538,71 @@ body.keyboard-open #practiceQuizView {
   cursor: pointer;
 }
 
+/* 🆕 单词拼写（中译英输入） */
+.exam-spell-hint {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--brand);
+  letter-spacing: 1px;
+}
+.exam-spell-wrap { margin-top: 8px; }
+.exam-spell-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 14px;
+  border: 2px solid var(--line-2);
+  border-radius: var(--r-lg);
+  font-size: 16px;
+  letter-spacing: 1px;
+  outline: none;
+  transition: border-color .15s;
+}
+.exam-spell-input:focus { border-color: var(--brand); }
+
+/* 🆕 完成句子（passage 就地挖空） */
+.exam-blank-cn {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--brand-50, #eef2ff);
+  color: var(--brand, #4f46e5);
+  font-size: 14px;
+  font-weight: 400;
+}
+.exam-blank-passage {
+  line-height: 2.4;
+  font-size: 16px;
+  color: var(--ink-1, #1f2937);
+  margin-top: 6px;
+}
+.exam-blank-input {
+  display: inline-block;
+  width: 108px;
+  padding: 2px 8px;
+  margin: 0 3px;
+  border: none;
+  border-bottom: 2px solid var(--brand);
+  background: var(--brand-50);
+  border-radius: 6px 6px 0 0;
+  font-size: 15px;
+  text-align: center;
+  outline: none;
+}
+.exam-blank-input:focus { background: var(--brand-100); }
+.exam-blank-select {
+  display: inline-block;
+  margin: 0 3px;
+  padding: 3px 8px;
+  border: 1px solid var(--brand);
+  border-radius: var(--r-md, 8px);
+  background: var(--brand-50);
+  color: var(--brand);
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
 

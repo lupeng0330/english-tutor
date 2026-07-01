@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-01 上午 · 广州题型方案 P1 已上线（推送后 CI 自动 bump）**（本次：产出《广州各年级英语题型分布方案》`GZ_EXAM_BLUEPRINT.md` + 定稿 4 项决策；**P1 总分锁定机制**——`exam.js` 把所有题型 section 满分锁定到配置 `count×points`，题库抽不满时单题分按比例折算并打 `shortfall` 标记 → 整卷满分严格 = Σ(count×points)，从根上杜绝溢出；**3 上期中重写为低段 8 题型模板**（听音选图/听音判断/听音填空/单词拼写/情景选择/连词成句/完成句子/短文阅读，50 题，分值和 = 100，消除 106 溢出）；`mobile.html` 支持 `?v=` 透传，便于带版本号强制绕过 SW 旧缓存验证。上次：阶段 1 分值 Bug 修复 V02.47/V02.48）
+> 最后更新：**2026-07-01 下午 · 三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3 已上线（推送后 CI 自动 bump）**（本次：①`exam.js` 重做 `spelling`（单词拼写：中文词义+首字母提示+输入框）/ `blank_fill`（完成句子：根据中文意思+下拉选词+逐空判分）/ `sentence_order`（连词成句：乱序词池+点选拼句+清空重排）3 题型渲染+路由+判分；②新增 `_renderListenFillHTML` 修复 `listen_fill` 听音填空 bug（之前 `_renderSection` 路由缺失导致只有题目没有听力按钮/选项/判分）；③5 个 edge-tts 多角色童声 MP3 落盘（`listen_fill_01/judge_01-02/pic_01-02.mp3`，W=女声 Aria / M=男声 Guy，语速 -10%）；④**index.html SW 防本地缓存改造**：仅 `*.github.io` 注册 SW，本地/局域网（localhost、127.0.0.1、192.168.x 等）自动 `unregister` + `caches.delete`，从根源杜绝 SW 旧缓存回退；⑤产出《三大书写/词汇题型·重设计方案》`GZ_THREE_TYPES_REDESIGN.md`。上次：广州题型方案 P1（V02.49，2026-07-01 上午））
 
 ---
 
@@ -55,6 +55,7 @@ start http://localhost:8765/mobile.html
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
+| 2026-07-01 下午 | **三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3（推送后 CI bump）**：`exam.js` 重做 `spelling` / `blank_fill` / `sentence_order` 渲染+路由+判分；新增 `_renderListenFillHTML` + 路由（修复「听音填空只有题目没有听力按钮」bug）；5 个 edge-tts 多角色童声 MP3 落盘（listen_fill_01 / judge_01-02 / pic_01-02）；`index.html` SW 防本地缓存改造（仅 `*.github.io` 注册，本地自动 `unregister` + `caches.delete`） | §39 |
 | 2026-07-01 上午 | **广州题型方案 P1（推送后 CI bump）**：产出全学段《广州题型分布方案》文档 + 定稿 4 决策；`exam.js` 全题型 section 满分锁定 `count×points` + 抽不满按比例折算(`shortfall`)，杜绝总分溢出；**3 上期中重写为低段 8 题型 / 50 题模板，106→100**；`mobile.html` 支持 `?v=` 透传验证 | `GZ_EXAM_BLUEPRINT.md` |
 | 2026-06-30 下午 | **阶段 1 分值 Bug 修复（V02.47）** + **jk midterm 题库补全（V02.48）**：用户报告初中 110+/小学 150+ 分值异常；定位 3 根因；exam.js cloze totalPoints 锁死配置；jk 6 下补 5 篇 cloze；audit 196 sections 0 不一致；final 全过；V02.48 补全 jk 3A-6A 共 7 个 U2（+20 题 + 7 MP3）→ midterm 88-96 → 100 ✅ 已上线 | §38.8（附录 A） |
 | 2026-06-30 中午 | **小学模拟考试阶段 1**：按广州真实试卷标准重做 jk 3-6 年级 8 张 final 为 100 分制 + 新增 8 张 midterm 期中卷 + 4 个 unitTest 升级 50 分制 + 所有卷加完形 section（修配置遗漏 Bug） | §38（附录 A） |
@@ -2324,3 +2325,154 @@ if (secDef.type === 'cloze') {
 1. **配置类 bug 必跑「运行时模拟审计」**：之前阶段 1 上线的 V02.46 只校验「config.totalPoints == sections 累加」（静态一致性），未跑「按题库容量模拟抽题计分」的运行时一致性。新增 `_verify_runtime.py` 模式（虽然本次清理了，但写过的脚本逻辑沉淀到经验中）。
 2. **cloze 计分约束法**：一篇完形 = 1 道大题，**整体分值锁死配置**，N 个挖空内部按比例分配。让数据池容量（每篇 4/5/10 空）和配置（期望分值 20 分）解耦。
 3. **审计脚本要兼顾两个层面**：① 配置自洽（声明 vs 累加）② 运行时实际（声明 vs 实际抽题计分），二者都得过。
+
+
+---
+
+## 39. ✅ 三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3（2026-07-01 下午）
+
+> 本次会话三件实事一齐推：
+> 1. `spelling` / `blank_fill` / `sentence_order` 三个低段书写/词汇题型从「残废」（有数据没渲染/没判分）重做；
+> 2. 修「听音填空（`listen_fill`）只有题目、没有听力按钮」的 bug（路由+渲染+判分三处全断）；
+> 3. 给新听力三题型（`listen_fill` / `listen_judge` / `listen_pic`）生成 5 个 edge-tts 多角色童声 MP3（不再靠 TTS 兜底）。
+> 另：`index.html` SW 防本地缓存改造 — 本地/局域网自动 `unregister` + `caches.delete`。
+
+### 39.1 三大题型重做（spelling / blank_fill / sentence_order）
+
+#### 39.1.1 原 Bug 诊断
+
+| 题型 | 现象 | 根因（代码层） |
+|---|---|---|
+| `spelling` 单词拼写 | 有中文词义，但**没地方填英文** | 题库是「中文→拼英文」（`q`=中文、`answer`=英文），但**被当选择题**走 `_renderQuestionHTML`（遍历 `q.options`，为空）→ 只显示中文；判分还按「选项索引」比对（完全错位）|
+| `blank_fill` 完成句子 | **只有标题，没有题干、无处作答** | 题库是 `passage + blanks[]`（无 `q`/`options`），却当普通选择题渲染 → 题干 `q` 为空；也无判分 |
+| `sentence_order` 连词成句 | **上方没有可点的单词** | 抽题时**漏拷 `words` 字段** → 渲染函数里 `q.words` 为空 |
+
+#### 39.1.2 修复（`exam.js`）
+
+| 题型 | 渲染函数 | 数据补全 | 判分策略 |
+|---|---|---|---|
+| `spelling` | 新增 `_renderSpellingHTML`（中文词义+首字母提示+输入框）| 题库保持原状 | `_normText(用户输入) === _normText(answer)`（忽略大小写/首尾空格）|
+| `blank_fill` | 新增 `_renderBlankFillHTML`（题干+下拉选词）| 给 25 题补 `cn`（中文整句释义）+ `blanks[0].options`（3 选 1）| 逐空比对，**全对才得分** |
+| `sentence_order` | 新增 `_renderSentenceOrderHTML`（乱序词池+点选拼句+清空重排）| 给 25 题补 `words`（乱序池）+ `answer` | 拼接用户序列为句子 → `_normText` 后 === `_normText(answer)` |
+
+判分/错题回顾：spelling/blank_fill/sentence_order 三块在 `_grade` 和错题回顾里都接入了对应分支（含 `你的答案 / 正确答案 / explain` 展示）。
+
+#### 39.1.3 总分验算（P1 总分锁定兼容）
+
+- 受 P1 锁约束：每个 section 满分 = 配置 `count × points`，题库抽不满时单题分按比例折算。
+- 实测：3 上期中 50 题 / 100 分严格不溢出。✅
+
+---
+
+### 39.2 听音填空 bug 修复（`listen_fill`）
+
+#### 39.2.1 现象与根因
+
+- 用户报告：「听音填空题型逻辑有问题，只有题目，没有听力按钮，无法做题」
+- 根因（代码层）：`listen_fill` 在业务识别/组卷层已「预留」（`exam.js` L326 类型列表、L340 `audioText` 装填），但**三层全断**：
+  1. `_renderListenFillHTML` 函数**不存在** → 不会渲染播放按钮、不会渲染选项
+  2. `_renderSection` 路由**未到** `listen_fill` → 整 section 走 `else` 兜底（只显示 `q.q` 一句中文）
+  3. 判分函数**未识别** `listen_fill` → 永远记 0 分
+- 配套：5 个 MP3 全部缺失（`audio/listen_fill_01.mp3` / `listen_judge_01-02.mp3` / `listen_pic_01-02.mp3`），此前靠 TTS 兜底。
+
+#### 39.2.2 修复（A 方案 · 最小修复）
+
+| 改动 | 文件 | 内容 |
+|---|---|---|
+| 渲染函数 | `js/exam.js` | 新增 `_renderListenFillHTML`（与 `_renderListenPicHTML` 同构：播放按钮+中文题干+文字选项）|
+| 路由分支 | `js/exam.js` | `_renderSection` 在 `listen_judge` 后插入 `listen_fill` 分支 |
+| 判分/回顾 | `js/exam.js` | 复用 `else` 兜底（`userAnswer` 数字索引 vs `q.answer` 数字索引）— 跟 `listen_pic` 一致，无需新分支 |
+
+---
+
+### 39.3 新听力三题型 MP3（B+C 方案 · 多角色童声）
+
+#### 39.3.1 工具沉淀：`gen_jk_listen_new.py`
+
+- 复用 `gen_jk_listening.py` 的 edge-tts 模式（VOICE_W=Aria / VOICE_M=Guy，RATE=-10% 童声感）
+- 遍历 3 个目标题库 `jk_listen_fill.json` / `jk_listen_judge.json` / `jk_listen_pic.json`
+- 单声部单句直接出 MP3（无需 ffmpeg 拼接），5 段都满足
+- 用法：`python gen_jk_listen_new.py [--dry-run] [--force] [--limit N]`
+
+#### 39.3.2 生成结果
+
+| MP3 | 题型 | 角色 | 内容 | 体积 |
+|---|---|---|---|---|
+| `listen_fill_01.mp3` | 听音填空 | M=Guy | "My favourite colour is blue." | 16848 B |
+| `listen_judge_01.mp3` | 听音判断 | M=Guy | "I have 3 books." | 14400 B |
+| `listen_judge_02.mp3` | 听音判断 | W=Aria | "My favourite colour is red." | 17424 B |
+| `listen_pic_01.mp3` | 听音选图 | M=Guy | "It's sunny today." | 13968 B |
+| `listen_pic_02.mp3` | 听音选图 | W=Aria | "I like cats." | 13248 B |
+
+> 三听力题型现在全部有真 MP3，不再靠 TTS 兜底，体验与教材原声接近。
+
+---
+
+### 39.4 SW 防本地缓存改造（index.html）
+
+#### 39.4.1 根因
+
+- 此前 PWA 的 `sw.js` 在**所有环境**（含 `localhost`）都注册，导致本地验证时被旧 SW 拦截 → 出现「回到 106 分旧版本」类问题
+- 唯一靠 `?v=` 时间戳绕过，治标不治本
+
+#### 39.4.2 改造
+
+- **判定**：`isProd = /\.github\.io$/i.test(location.hostname)`
+- **线上**（`*.github.io`）：保留 SW 注册逻辑不变
+- **本地/局域网**（`localhost` / `127.0.0.1` / `192.168.x` 等）：**自动 `navigator.serviceWorker.getRegistrations()` → 全部 `unregister()` + `caches.keys()` → 全部 `caches.delete()`**，从根源杜绝 SW 旧缓存回退
+- 配合 `?v=` 时间戳双保险：双端预览（电脑+手机）都带 `?v=1782925744` 验证
+
+---
+
+### 39.5 本次未推送改动一览（5 modified + 7 untracked）
+
+| 类型 | 文件 | 关键改动 |
+|---|---|---|
+| M | `data/questions/jk_blank_fill.json` | 25 题加 `cn`（中文释义）+ `blanks[0].options` |
+| M | `data/questions/jk_sentence_order.json` | 25 题加 `words`（乱序池）+ `answer` |
+| M | `index.html` | SW 防本地缓存：仅 `*.github.io` 注册；本地自动 `unregister` + `caches.delete` |
+| M | `js/exam.js` | 新增 `_renderListenFillHTML` / `_renderListenJudgeHTML` / `_renderBlankFillHTML` / `_renderSentenceOrderHTML` / `_renderSpellingHTML` + 路由 + 判分（+269 / -37）|
+| M | `styles.css` | `.exam-blank-passage` / `.exam-blank-cn` / `.exam-word-pool-item` / `.exam-clear-btn` / `.exam-blank-select` 等（+67 行）|
+| ? | `GZ_THREE_TYPES_REDESIGN.md` | 三大书写/词汇题型重设计方案文档 |
+| ? | `audio/listen_fill_01.mp3` | edge-tts 童声 "My favourite colour is blue." |
+| ? | `audio/listen_judge_01.mp3` | edge-tts 童声 "I have 3 books." |
+| ? | `audio/listen_judge_02.mp3` | edge-tts 童声 "My favourite colour is red." |
+| ? | `audio/listen_pic_01.mp3` | edge-tts 童声 "It's sunny today." |
+| ? | `audio/listen_pic_02.mp3` | edge-tts 童声 "I like cats." |
+| ? | `gen_jk_listen_new.py` | 新听力三题型 MP3 生成器 |
+
+---
+
+### 39.6 验证清单（双端 · 入口：考试 → 3 年级 → 上 → 期中考试）
+
+> 详情见双端 preview（电脑 `http://localhost:8765/index.html?v=1782925744` / 手机 `http://localhost:8765/mobile.html?v=1782925744`）
+
+| # | 题型 | 关键点 | 状态 |
+|---|---|---|---|
+| 1 | 单词拼写 `spelling` | 中文词义 + 首字母提示 + 输入框 + 判分（忽略大小写）| ✅ |
+| 2 | 听音选图 `listen_pic` | 播放按钮 + 3 个 emoji 选项 + 判分 | ✅ |
+| 3 | 听音判断 `listen_judge` | 播放按钮 + True/False 按钮 + 判分 | ✅ |
+| 4 | 听音填空 `listen_fill` | **bug 已修**：播放按钮 + 中文题问 + 3 个文字选项 + 判分 | ✅ |
+| 5 | 情景选择（普通选择题）| 题型无变化，正常 | ✅ |
+| 6 | 连词成句 `sentence_order` | 乱序词池 + 点选拼句 + 清空重排 + 判分 | ✅ |
+| 7 | 完成句子 `blank_fill` | 题干 + 高亮中文释义 + 下拉选词 + 判分 | ✅ |
+| 8 | 短文阅读 | 篇章+题目，正常 | ✅ |
+| 9 | 总分 | 严格 100 分不溢出 | ✅ |
+| 10 | SW 防本地缓存 | F12 → Application → Service Workers：本地 SW 状态 `unregistered`，无残留 worker | ✅ |
+| 11 | 双端一致性 | 电脑端 + 手机端均正常 | ✅ |
+
+---
+
+### 39.7 收口状态
+
+- ✅ **已上线**（推送后 CI 自动 bump，预计 V02.50）— 用户 2026-07-01 17:14 双端验收通过
+- 📌 客户端 PWA（sw.js）需刷新一次才能听到新 MP3（线上环境）
+- 📌 本次未做（按用户指示）：① 连词成句朗读按钮（用户说「那钮可以不做」）；② jk 小学 3-6 其它年级 blank_fill / sentence_order 扩容（GZ_THREE_TYPES_REDESIGN.md §四 后续排期）
+- 📝 流程固化：今后所有「新题型」上线前必须三处接通（识别/组卷 + 渲染+路由 + 判分），缺一不可；本次 `listen_fill` 漏接就是反例。
+
+### 39.8 经验固化
+
+1. **新题型上线三件套**：`类型列表`（业务识别） + `组卷时带字段` + `渲染函数 + 路由 + 判分`。只看类型列表看不出断点，必须全链路跑通。
+2. **听力的"三件"**：数据 + 渲染 + MP3。MP3 缺失时 TTS 兜底可工作，但体验差；落地童声 MP3 才是合格状态。
+3. **PWA 本地验证的根因治理**：之前只靠 `?v=` 治标，SW 一注册就把 `?v=` 后的真实版本拦截到旧缓存。把 SW 注册限定到「线上域名」是治本（`isProd = /\.github\.io$/i.test(location.hostname)`），本地/局域网自动 `unregister` + `caches.delete`。
+4. **MP3 生成的工程化**：单声部单句无需 ffmpeg 拼接（直接 `edge-tts.Communicate.save`），多声部才需要 ffmpeg concat + list.txt。脚本写成可复用（`gen_jk_listen_new.py`），后续其它教材同理。
