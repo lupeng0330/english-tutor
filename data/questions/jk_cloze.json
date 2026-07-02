@@ -2418,5 +2418,901 @@
     ],
     "explain": "主题：礼貌用语。考查形容词褒义、礼貌用语、with a smile、形容词、固定表达 cost nothing。",
     "difficulty": 3
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_C01",
+    "topic": "My School Day",
+    "passage": "My School Day: I ___1___ to school in the morning. I have ___2___ class. At noon I eat ___3___ with my friends. We are ___4___ every day.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "go",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "go",
+        "explain": "根据上下文选择 go。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "English",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "English",
+        "explain": "根据上下文选择 English。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lunch",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "lunch",
+        "explain": "根据上下文选择 lunch。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "happy",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "happy",
+        "explain": "根据上下文选择 happy。"
+      }
+    ],
+    "explain": "主题：My School Day。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_C02",
+    "topic": "A Good Friend",
+    "passage": "Tom is my ___1___. He is ___2___. We ___3___ football after school. He ___4___ me with English.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "friend",
+        "explain": "根据上下文选择 friend。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "kind",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "kind",
+        "explain": "根据上下文选择 kind。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "play",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "play",
+        "explain": "根据上下文选择 play。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "helps",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "helps",
+        "explain": "根据上下文选择 helps。"
+      }
+    ],
+    "explain": "主题：A Good Friend。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_C03",
+    "topic": "At the Park",
+    "passage": "We go to the ___1___ on Saturday. There are many ___2___. I can ___3___ there. We keep the park ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "park",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "park",
+        "explain": "根据上下文选择 park。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "trees",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "trees",
+        "explain": "根据上下文选择 trees。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "run",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "run",
+        "explain": "根据上下文选择 run。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "clean",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "clean",
+        "explain": "根据上下文选择 clean。"
+      }
+    ],
+    "explain": "主题：At the Park。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_C04",
+    "topic": "My Family",
+    "passage": "I have a big ___1___. My ___2___ is a teacher. She can ___3___ nice food. I ___4___ my home.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "family",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "family",
+        "explain": "根据上下文选择 family。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "mother",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "mother",
+        "explain": "根据上下文选择 mother。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cook",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "cook",
+        "explain": "根据上下文选择 cook。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "love",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "love",
+        "explain": "根据上下文选择 love。"
+      }
+    ],
+    "explain": "主题：My Family。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_C01",
+    "topic": "My School Day",
+    "passage": "My School Day: I ___1___ to school in the morning. I have ___2___ class. At noon I eat ___3___ with my friends. We are ___4___ every day.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "go",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "go",
+        "explain": "根据上下文选择 go。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "English",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "English",
+        "explain": "根据上下文选择 English。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lunch",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "lunch",
+        "explain": "根据上下文选择 lunch。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "happy",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "happy",
+        "explain": "根据上下文选择 happy。"
+      }
+    ],
+    "explain": "主题：My School Day。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_C02",
+    "topic": "A Good Friend",
+    "passage": "Tom is my ___1___. He is ___2___. We ___3___ football after school. He ___4___ me with English.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "friend",
+        "explain": "根据上下文选择 friend。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "kind",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "kind",
+        "explain": "根据上下文选择 kind。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "play",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "play",
+        "explain": "根据上下文选择 play。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "helps",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "helps",
+        "explain": "根据上下文选择 helps。"
+      }
+    ],
+    "explain": "主题：A Good Friend。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_C03",
+    "topic": "At the Park",
+    "passage": "We go to the ___1___ on Saturday. There are many ___2___. I can ___3___ there. We keep the park ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "park",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "park",
+        "explain": "根据上下文选择 park。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "trees",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "trees",
+        "explain": "根据上下文选择 trees。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "run",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "run",
+        "explain": "根据上下文选择 run。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "clean",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "clean",
+        "explain": "根据上下文选择 clean。"
+      }
+    ],
+    "explain": "主题：At the Park。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_C04",
+    "topic": "My Family",
+    "passage": "I have a big ___1___. My ___2___ is a teacher. She can ___3___ nice food. I ___4___ my home.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "family",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "family",
+        "explain": "根据上下文选择 family。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "mother",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "mother",
+        "explain": "根据上下文选择 mother。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cook",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "cook",
+        "explain": "根据上下文选择 cook。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "love",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "love",
+        "explain": "根据上下文选择 love。"
+      }
+    ],
+    "explain": "主题：My Family。考查低段常用词汇与上下文理解。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_C01",
+    "topic": "My School Day",
+    "passage": "My School Day: I ___1___ to school in the morning. I have ___2___ class. At noon I eat ___3___ with my friends. We are ___4___ every day.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "go",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "go",
+        "explain": "根据上下文选择 go。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "English",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "English",
+        "explain": "根据上下文选择 English。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lunch",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "lunch",
+        "explain": "根据上下文选择 lunch。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "happy",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "happy",
+        "explain": "根据上下文选择 happy。"
+      }
+    ],
+    "explain": "主题：My School Day。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_C02",
+    "topic": "A Good Friend",
+    "passage": "Tom is my ___1___. He is ___2___. We ___3___ football after school. He ___4___ me with English.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "friend",
+        "explain": "根据上下文选择 friend。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "kind",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "kind",
+        "explain": "根据上下文选择 kind。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "play",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "play",
+        "explain": "根据上下文选择 play。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "helps",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "helps",
+        "explain": "根据上下文选择 helps。"
+      }
+    ],
+    "explain": "主题：A Good Friend。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_C03",
+    "topic": "At the Park",
+    "passage": "We go to the ___1___ on Saturday. There are many ___2___. I can ___3___ there. We keep the park ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "park",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "park",
+        "explain": "根据上下文选择 park。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "trees",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "trees",
+        "explain": "根据上下文选择 trees。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "run",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "run",
+        "explain": "根据上下文选择 run。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "clean",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "clean",
+        "explain": "根据上下文选择 clean。"
+      }
+    ],
+    "explain": "主题：At the Park。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_C04",
+    "topic": "My Family",
+    "passage": "I have a big ___1___. My ___2___ is a teacher. She can ___3___ nice food. I ___4___ my home.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "family",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "family",
+        "explain": "根据上下文选择 family。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "mother",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "mother",
+        "explain": "根据上下文选择 mother。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cook",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "cook",
+        "explain": "根据上下文选择 cook。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "love",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "love",
+        "explain": "根据上下文选择 love。"
+      }
+    ],
+    "explain": "主题：My Family。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_C01",
+    "topic": "My School Day",
+    "passage": "My School Day: I ___1___ to school in the morning. I have ___2___ class. At noon I eat ___3___ with my friends. We are ___4___ every day.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "go",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "go",
+        "explain": "根据上下文选择 go。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "English",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "English",
+        "explain": "根据上下文选择 English。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "lunch",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "lunch",
+        "explain": "根据上下文选择 lunch。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "happy",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "happy",
+        "explain": "根据上下文选择 happy。"
+      }
+    ],
+    "explain": "主题：My School Day。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_C02",
+    "topic": "A Good Friend",
+    "passage": "Tom is my ___1___. He is ___2___. We ___3___ football after school. He ___4___ me with English.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "friend",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "friend",
+        "explain": "根据上下文选择 friend。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "kind",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "kind",
+        "explain": "根据上下文选择 kind。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "play",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "play",
+        "explain": "根据上下文选择 play。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "helps",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "helps",
+        "explain": "根据上下文选择 helps。"
+      }
+    ],
+    "explain": "主题：A Good Friend。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_C03",
+    "topic": "At the Park",
+    "passage": "We go to the ___1___ on Saturday. There are many ___2___. I can ___3___ there. We keep the park ___4___.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "park",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "park",
+        "explain": "根据上下文选择 park。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "trees",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "trees",
+        "explain": "根据上下文选择 trees。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "run",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "run",
+        "explain": "根据上下文选择 run。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "clean",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "clean",
+        "explain": "根据上下文选择 clean。"
+      }
+    ],
+    "explain": "主题：At the Park。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_C04",
+    "topic": "My Family",
+    "passage": "I have a big ___1___. My ___2___ is a teacher. She can ___3___ nice food. I ___4___ my home.",
+    "blanks": [
+      {
+        "pos": 1,
+        "options": [
+          "family",
+          "sleep",
+          "blue",
+          "ten"
+        ],
+        "answer": "family",
+        "explain": "根据上下文选择 family。"
+      },
+      {
+        "pos": 2,
+        "options": [
+          "mother",
+          "apple",
+          "run",
+          "cold"
+        ],
+        "answer": "mother",
+        "explain": "根据上下文选择 mother。"
+      },
+      {
+        "pos": 3,
+        "options": [
+          "cook",
+          "chair",
+          "sing",
+          "black"
+        ],
+        "answer": "cook",
+        "explain": "根据上下文选择 cook。"
+      },
+      {
+        "pos": 4,
+        "options": [
+          "love",
+          "sad",
+          "short",
+          "old"
+        ],
+        "answer": "love",
+        "explain": "根据上下文选择 love。"
+      }
+    ],
+    "explain": "主题：My Family。考查低段常用词汇与上下文理解。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
   }
 ]

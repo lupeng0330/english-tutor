@@ -432,5 +432,906 @@
     ],
     "answer": "I can sing a song.",
     "explain": "can + 动词原形（复习）"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_01",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "my",
+      "school",
+      "bag",
+      ".",
+      "This",
+      "is"
+    ],
+    "answer": "This is my school bag.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_02",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "red",
+      ".",
+      "The",
+      "pencil"
+    ],
+    "answer": "The pencil is red.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_03",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "big",
+      "family",
+      ".",
+      "I",
+      "have"
+    ],
+    "answer": "I have a big family.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_04",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "yellow",
+      ".",
+      "The",
+      "duck"
+    ],
+    "answer": "The duck is yellow.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_05",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "the",
+      "toy",
+      "car",
+      ".",
+      "I",
+      "like"
+    ],
+    "answer": "I like the toy car.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_06",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "two",
+      "hands",
+      ".",
+      "I",
+      "have"
+    ],
+    "answer": "I have two hands.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_07",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "an",
+      "apple",
+      ".",
+      "I",
+      "want"
+    ],
+    "answer": "I want an apple.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_08",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "sunny",
+      "day",
+      ".",
+      "It",
+      "is"
+    ],
+    "answer": "It is a sunny day.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5_B2_09",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "blue",
+      ".",
+      "My",
+      "ruler"
+    ],
+    "answer": "My ruler is blue.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_B2_10",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "bird",
+      "can",
+      "sing",
+      ".",
+      "A",
+      "little"
+    ],
+    "answer": "A little bird can sing.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_B2_11",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "green",
+      ".",
+      "The",
+      "tree"
+    ],
+    "answer": "The tree is green.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_B2_12",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "happy",
+      ".",
+      "The",
+      "boy"
+    ],
+    "answer": "The boy is happy.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_01",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "white",
+      "rabbit",
+      ".",
+      "I",
+      "see"
+    ],
+    "answer": "I see a white rabbit.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_02",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "my",
+      "new",
+      "T-shirt",
+      ".",
+      "This",
+      "is"
+    ],
+    "answer": "This is my new T-shirt.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_03",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "three",
+      "books",
+      ".",
+      "I",
+      "have"
+    ],
+    "answer": "I have three books.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_04",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "clean",
+      ".",
+      "My",
+      "desk"
+    ],
+    "answer": "My desk is clean.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_05",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "run",
+      "fast",
+      ".",
+      "I",
+      "can"
+    ],
+    "answer": "I can run fast.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_06",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "orange",
+      "juice",
+      ".",
+      "I",
+      "like"
+    ],
+    "answer": "I like orange juice.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_07",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "gate",
+      "is",
+      "big",
+      ".",
+      "The",
+      "park"
+    ],
+    "answer": "The park gate is big.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_08",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "small",
+      "house",
+      ".",
+      "This",
+      "is"
+    ],
+    "answer": "This is a small house.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_B2_09",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "brown",
+      ".",
+      "The",
+      "dog"
+    ],
+    "answer": "The dog is brown.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6_B2_10",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "pink",
+      ".",
+      "Her",
+      "dress"
+    ],
+    "answer": "Her dress is pink.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_B2_11",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "count",
+      "ten",
+      "stars",
+      ".",
+      "I",
+      "can"
+    ],
+    "answer": "I can count ten stars.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8_B2_12",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "the",
+      "door",
+      ".",
+      "Please",
+      "open"
+    ],
+    "answer": "Please open the door.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_01",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "English",
+      "today",
+      ".",
+      "We",
+      "have"
+    ],
+    "answer": "We have English today.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_02",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "room",
+      "is",
+      "clean",
+      ".",
+      "The",
+      "music"
+    ],
+    "answer": "The music room is clean.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_03",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "Monday",
+      "morning",
+      ".",
+      "It",
+      "is"
+    ],
+    "answer": "It is Monday morning.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_04",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "a",
+      "doctor",
+      ".",
+      "My",
+      "aunt"
+    ],
+    "answer": "My aunt is a doctor.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_05",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "in",
+      "the",
+      "living",
+      "room",
+      ".",
+      "Dad",
+      "is"
+    ],
+    "answer": "Dad is in the living room.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_06",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "cool",
+      ".",
+      "Autumn",
+      "is"
+    ],
+    "answer": "Autumn is cool.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_07",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "to",
+      "school",
+      "by",
+      "bus",
+      ".",
+      "I",
+      "go"
+    ],
+    "answer": "I go to school by bus.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_08",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "small",
+      "shop",
+      ".",
+      "There",
+      "is"
+    ],
+    "answer": "There is a small shop.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_B2_09",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "my",
+      "math",
+      "book",
+      ".",
+      "This",
+      "is"
+    ],
+    "answer": "This is my math book.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_B2_10",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "chess",
+      "after",
+      "school",
+      ".",
+      "They",
+      "play"
+    ],
+    "answer": "They play chess after school.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_B2_11",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "party",
+      "on",
+      "Friday",
+      ".",
+      "We",
+      "have"
+    ],
+    "answer": "We have a party on Friday.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_B2_12",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "station",
+      "is",
+      "near",
+      ".",
+      "The",
+      "train"
+    ],
+    "answer": "The train station is near.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_01",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "warm",
+      "water",
+      ".",
+      "Drink",
+      "some"
+    ],
+    "answer": "Drink some warm water.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_02",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "at",
+      "the",
+      "shop",
+      ".",
+      "Turn",
+      "left"
+    ],
+    "answer": "Turn left at the shop.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_03",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "dragon",
+      "boat",
+      "race",
+      ".",
+      "We",
+      "watch"
+    ],
+    "answer": "We watch a dragon boat race.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_04",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "in",
+      "the",
+      "city",
+      ".",
+      "The",
+      "library"
+    ],
+    "answer": "The library is in the city.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_05",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "clothes",
+      "on",
+      "Sunday",
+      ".",
+      "I",
+      "wash"
+    ],
+    "answer": "I wash clothes on Sunday.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_06",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "family",
+      "picnic",
+      ".",
+      "We",
+      "have"
+    ],
+    "answer": "We have a family picnic.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_07",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "game",
+      "is",
+      "fun",
+      ".",
+      "The",
+      "football"
+    ],
+    "answer": "The football game is fun.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_08",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "a",
+      "story",
+      "in",
+      "the",
+      "library",
+      ".",
+      "I",
+      "read"
+    ],
+    "answer": "I read a story in the library.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_B2_09",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "healthy",
+      "food",
+      ".",
+      "Vegetables",
+      "are"
+    ],
+    "answer": "Vegetables are healthy food.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6_B2_10",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "and",
+      "you",
+      "can",
+      "see",
+      "it",
+      ".",
+      "Go",
+      "straight"
+    ],
+    "answer": "Go straight and you can see it.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_B2_11",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "is",
+      "happy",
+      ".",
+      "Spring",
+      "Festival"
+    ],
+    "answer": "Spring Festival is happy.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_B2_12",
+    "type": "sentence_order",
+    "difficulty": 1,
+    "q": "请点击单词，组成正确句子。",
+    "words": [
+      "my",
+      "room",
+      "every",
+      "week",
+      ".",
+      "I",
+      "clean"
+    ],
+    "answer": "I clean my room every week.",
+    "explain": "按主语、谓语和补充信息的顺序组成陈述句。",
+    "source": "b2_primary_v01"
   }
 ]

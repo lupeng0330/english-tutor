@@ -1766,5 +1766,773 @@
     "explain": "文中说 Six years gave us knowledge, courage and good friends",
     "difficulty": 1,
     "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_01",
+    "passage": "This is my school bag. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "school bag",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 school bag 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_02",
+    "passage": "The pencil is red. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "red pencil",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 red pencil 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_03",
+    "passage": "I have a big family. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "big family",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 big family 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_04",
+    "passage": "The duck is yellow. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "yellow duck",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 yellow duck 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_05",
+    "passage": "I like the toy car. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "toy car",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 toy car 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_06",
+    "passage": "I have two hands. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "two hands",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 two hands 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_07",
+    "passage": "I want an apple. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "an apple",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 an apple 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_08",
+    "passage": "It is a sunny day. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "sunny day",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 sunny day 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5_B2_09",
+    "passage": "My ruler is blue. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "blue ruler",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 blue ruler 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_B2_10",
+    "passage": "A little bird can sing. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "little bird",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 little bird 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_B2_11",
+    "passage": "The tree is green. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "green tree",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 green tree 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_B2_12",
+    "passage": "The boy is happy. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "happy boy",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 happy boy 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_01",
+    "passage": "I see a white rabbit. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "white rabbit",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 white rabbit 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_02",
+    "passage": "This is my new T-shirt. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "new T-shirt",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 new T-shirt 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_03",
+    "passage": "I have three books. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "three books",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 three books 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_04",
+    "passage": "My desk is clean. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "clean desk",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 clean desk 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_05",
+    "passage": "I can run fast. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "run fast",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 run fast 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_06",
+    "passage": "I like orange juice. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "orange juice",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 orange juice 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_07",
+    "passage": "The park gate is big. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "park gate",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 park gate 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_08",
+    "passage": "This is a small house. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "small house",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 small house 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_B2_09",
+    "passage": "The dog is brown. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "brown dog",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 brown dog 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6_B2_10",
+    "passage": "Her dress is pink. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "pink dress",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 pink dress 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_B2_11",
+    "passage": "I can count ten stars. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "ten stars",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 ten stars 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8_B2_12",
+    "passage": "Please open the door. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "open door",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 open door 展开。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_01",
+    "passage": "We have English today. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "English class",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 English class 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_02",
+    "passage": "The music room is clean. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "music room",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 music room 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_03",
+    "passage": "It is Monday morning. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "Monday morning",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 Monday morning 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_04",
+    "passage": "My aunt is a doctor. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "a doctor",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 a doctor 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_05",
+    "passage": "Dad is in the living room. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "living room",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 living room 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_06",
+    "passage": "Autumn is cool. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "cool autumn",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 cool autumn 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_07",
+    "passage": "I go to school by bus. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "school bus",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 school bus 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_08",
+    "passage": "There is a small shop. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "small shop",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 small shop 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_B2_09",
+    "passage": "This is my math book. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "math book",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 math book 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_B2_10",
+    "passage": "They play chess after school. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "play chess",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 play chess 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_B2_11",
+    "passage": "We have a party on Friday. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "Friday party",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 Friday party 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_B2_12",
+    "passage": "The train station is near. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "train station",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 train station 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_01",
+    "passage": "Drink some warm water. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "warm water",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 warm water 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_02",
+    "passage": "Turn left at the shop. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "turn left",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 turn left 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_03",
+    "passage": "We watch a dragon boat race. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "dragon boat",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 dragon boat 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_04",
+    "passage": "The library is in the city. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "city library",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 city library 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_05",
+    "passage": "I wash clothes on Sunday. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "wash clothes",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 wash clothes 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_06",
+    "passage": "We have a family picnic. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "family picnic",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 family picnic 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_07",
+    "passage": "The football game is fun. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "football game",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 football game 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_08",
+    "passage": "I read a story in the library. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "read a story",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 read a story 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_B2_09",
+    "passage": "Vegetables are healthy food. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "healthy food",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 healthy food 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6_B2_10",
+    "passage": "Go straight and you can see it. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "go straight",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 go straight 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_B2_11",
+    "passage": "Spring Festival is happy. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "spring festival",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 spring festival 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_B2_12",
+    "passage": "I clean my room every week. I use it at school and at home. My friend likes it too. We talk about it in English.",
+    "q": "What does the passage talk about?",
+    "options": [
+      "clean room",
+      "a hospital",
+      "a rainy night"
+    ],
+    "answer": 0,
+    "explain": "短文围绕 clean room 展开。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
   }
 ]

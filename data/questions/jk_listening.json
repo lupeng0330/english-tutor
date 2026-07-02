@@ -1842,5 +1842,277 @@
     "explain": "男孩说 Yesterday was rainy and cold",
     "difficulty": 1,
     "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
   }
 ]

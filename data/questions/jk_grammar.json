@@ -3029,5 +3029,485 @@
     "explain": "rainy 是形容词",
     "difficulty": 1,
     "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
   }
 ]
