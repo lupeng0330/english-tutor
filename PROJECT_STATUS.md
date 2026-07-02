@@ -2535,7 +2535,7 @@ if (secDef.type === 'cloze') {
 
 ### 40.6 收口状态
 
-- ✅ **已上线**（推送后 CI 自动 bump version.txt；用户 2026-07-02 16:21 双端验收通过）
+- ✅ **已上线 `20260702V03.03`**（业务 HEAD `cd9a513`，CI bump `5b6a23c`；2026-07-02 16:21 用户双端验收通过）— 线上 <https://lupeng0330.github.io/english-tutor/?v=20260702V03.03>
 - ✅ smoke test 44/44 全过
 - ✅ `_buildPaper()` 零改动（渲染兼容，零风险）
 - ✅ 9 下 final 中考模拟改名落地
