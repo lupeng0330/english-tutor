@@ -25,6 +25,10 @@ let _examConfig = null;   // exam_config.json 缓存
 let _examConfigLoading = false;
 let _examConfigPromise = null;
 
+let _examTemplates = null;        // exam_templates.json 缓存（v3 起：模板化抽离）
+let _examTemplatesLoading = false;
+let _examTemplatesPromise = null;
+
 let _realPapers = null;   // real_papers/index.json 缓存（历年真题·固定卷）
 let _realPapersPromise = null;
 
@@ -53,6 +57,65 @@ async function _loadExamConfig() {
     }
   })();
   return _examConfigPromise;
+}
+
+// ===================== 加载考试模板（v3 · exam_templates.json） =====================
+async function _loadExamTemplates() {
+  if (_examTemplates) return _examTemplates;
+  if (_examTemplatesLoading) return _examTemplatesPromise;
+  _examTemplatesLoading = true;
+  _examTemplatesPromise = (async () => {
+    try {
+      const raw = 'data/exams/exam_templates.json';
+      const url = (typeof window.__withVer === 'function')
+        ? window.__withVer(raw) : (raw + '?t=' + Date.now());
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      _examTemplates = await res.json();
+      return _examTemplates;
+    } catch (e) {
+      console.warn('[考试] 模板库加载失败（将回退到 v2 内联 sections）', e);
+      _examTemplates = { templates: {} };
+      return _examTemplates;
+    } finally {
+      _examTemplatesLoading = false;
+    }
+  })();
+  return _examTemplatesPromise;
+}
+
+/**
+ * 把 grades[g][t].{midterm|final|unitTest} 引用模板展开为完整 sections 对象。
+ * 解析规则：
+ *   1. 若 node 含 `template` 字段 → 拷贝对应模板的字段（name/time/unitRange/sections/totalPoints/autoPoints）
+ *   2. node 上其它字段（除 template/writing/sections）覆盖模板字段
+ *   3. 若 node.writing.prompts / node.writing.modelAnswers 存在 → 注入到 sections 中 type==='writing' 的项
+ *   4. 删掉 template/writing 字段，返回纯 v2 形态（_buildPaper 兼容）
+ */
+function _applyTemplate(node) {
+  if (!node || typeof node !== 'object') return node;
+  if (!node.template || !_examTemplates || !_examTemplates.templates) return node;
+  const tpl = _examTemplates.templates[node.template];
+  if (!tpl) {
+    console.warn('[考试] 模板不存在：' + node.template);
+    return node;
+  }
+  // 1+2 浅合并：tpl 为基，node 覆盖；sections 深拷贝（防外部修改污染模板）
+  const out = Object.assign({}, tpl, node);
+  out.sections = (tpl.sections || []).map(s => Object.assign({}, s));
+  // 3 写作题注入
+  if (node.writing && typeof node.writing === 'object') {
+    for (const sec of out.sections) {
+      if (sec.type === 'writing') {
+        if (Array.isArray(node.writing.prompts)) sec.prompts = node.writing.prompts;
+        if (Array.isArray(node.writing.modelAnswers)) sec.modelAnswers = node.writing.modelAnswers;
+      }
+    }
+  }
+  // 4 清理中间字段
+  delete out.template;
+  delete out.writing;
+  return out;
 }
 
 // ===================== 加载历年真题（固定卷） =====================
@@ -155,16 +218,17 @@ function _getExamsForContext() {
   if (!cfg || !cfg.grades || !cfg.grades[g] || !cfg.grades[g][t]) return out;
   const node = cfg.grades[g][t];
 
-  // 模拟卷：期中、期末（含中考模拟）
+  // 模拟卷：期中、期末（含中考模拟）—— 先把 { template, writing } 引用展开为完整 sections
   for (const key of ['midterm', 'final']) {
     if (node[key]) {
-      out.sim.push({ key, source: 'config', grade: parseInt(g), term: t, ...node[key] });
+      const resolved = _applyTemplate(node[key]);
+      out.sim.push({ key, source: 'config', grade: parseInt(g), term: t, ...resolved });
     }
   }
 
   // 单元测试：按模板展开，累积式 [1, N]
   if (node.unitTest) {
-    const ut = node.unitTest;
+    const ut = _applyTemplate(node.unitTest);
     const maxUnit = ut.maxUnit || 8;
     for (let n = 1; n <= maxUnit; n++) {
       out.unit.push({
@@ -461,6 +525,7 @@ function _buildPaper(def) {
 // 声明为 window 以便 switchPage 调用；内部依赖会在调用时已加载
 let renderExamPage = async function() {
   await _loadExamConfig();
+  await _loadExamTemplates();   // B1 模板化后必须先加载模板库，否则 _applyTemplate() 不会展开 sections
   _loadHistory();
   _examState.submitted = false;
   _examState.paper = null;
@@ -645,6 +710,7 @@ function _examCardHtml(ex) {
 
 async function _startExam(examKey, source) {
   await _loadExamConfig();
+  await _loadExamTemplates();   // B1 模板化后必须先加载模板库，否则 _getExamsForContext() 拿不到 sections
 
   // 解析试卷定义
   let def = null;

@@ -55,6 +55,7 @@ start http://localhost:8765/mobile.html
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
+| 2026-07-02 下午 | **A 档 B1 · 考试配置模板化（推送后 CI bump）**：`data/exams/exam_templates.json` 新建（10 套模板：low/mid/high × midterm/final/unit + 3 上期中 GZ 8 题型样板）；`exam_config.json` 简化为 280 行引用形式（`{ template, writing? }`）；`exam.js` 加 `_loadExamTemplates()` + `_applyTemplate()` 展开引擎；首验修复 1 竞态（`renderExamPage` / `_startExam` 漏 await）→ 44/44 smoke test 全过；9 下 final 中考模拟改名 / 7-9 年级写作题 prompt+model 注入均落地 | §40 |
 | 2026-07-01 下午 | **三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3（推送后 CI bump）**：`exam.js` 重做 `spelling` / `blank_fill` / `sentence_order` 渲染+路由+判分；新增 `_renderListenFillHTML` + 路由（修复「听音填空只有题目没有听力按钮」bug）；5 个 edge-tts 多角色童声 MP3 落盘（listen_fill_01 / judge_01-02 / pic_01-02）；`index.html` SW 防本地缓存改造（仅 `*.github.io` 注册，本地自动 `unregister` + `caches.delete`） | §39 |
 | 2026-07-01 上午 | **广州题型方案 P1（推送后 CI bump）**：产出全学段《广州题型分布方案》文档 + 定稿 4 决策；`exam.js` 全题型 section 满分锁定 `count×points` + 抽不满按比例折算(`shortfall`)，杜绝总分溢出；**3 上期中重写为低段 8 题型 / 50 题模板，106→100**；`mobile.html` 支持 `?v=` 透传验证 | `GZ_EXAM_BLUEPRINT.md` |
 | 2026-06-30 下午 | **阶段 1 分值 Bug 修复（V02.47）** + **jk midterm 题库补全（V02.48）**：用户报告初中 110+/小学 150+ 分值异常；定位 3 根因；exam.js cloze totalPoints 锁死配置；jk 6 下补 5 篇 cloze；audit 196 sections 0 不一致；final 全过；V02.48 补全 jk 3A-6A 共 7 个 U2（+20 题 + 7 MP3）→ midterm 88-96 → 100 ✅ 已上线 | §38.8（附录 A） |
@@ -527,6 +528,7 @@ a4f0da4 2026-05-03 Initial commit                                               
 | ✅ **P2-B 完成** | gzk 题库补齐：244 拼写 + 46 听力 + 46 个 gzk_listening_01-46.mp3；铁律 8 三件套落地新 `scripts/gzk/build_qbank.py` + `gen_listening_audio.py`；**首验后修复 2 全教材 Bug（难度/单元切换）+ 男女声+词性感知干扰句质量增强，已上线 V02.43** | §34 + §35 |
 
 | ✅ **P2-C 完成** | 完形填空独立题库三批次全部完成：hj 全 6 册 36 篇 + jk 全 7 册 35 篇 = 71 篇 / 335 挖空 | §36 + §37 |
+| ✅ **A2-B1 完成** | 考试配置模板化：`exam_templates.json`（10 套模板）+ `exam_config.json` 引用化（2390→280 行）+ `_applyTemplate()` 展开引擎；smoke test 44/44；首验发现并修复 renderExamPage / _startExam 漏 await 模板库的竞态 bug | §40 |
 
 ### 🎯 下一档可选任务（按用户偏好挑一项）
 
@@ -2476,3 +2478,79 @@ if (secDef.type === 'cloze') {
 2. **听力的"三件"**：数据 + 渲染 + MP3。MP3 缺失时 TTS 兜底可工作，但体验差；落地童声 MP3 才是合格状态。
 3. **PWA 本地验证的根因治理**：之前只靠 `?v=` 治标，SW 一注册就把 `?v=` 后的真实版本拦截到旧缓存。把 SW 注册限定到「线上域名」是治本（`isProd = /\.github\.io$/i.test(location.hostname)`），本地/局域网自动 `unregister` + `caches.delete`。
 4. **MP3 生成的工程化**：单声部单句无需 ffmpeg 拼接（直接 `edge-tts.Communicate.save`），多声部才需要 ffmpeg concat + list.txt。脚本写成可复用（`gen_jk_listen_new.py`），后续其它教材同理。
+
+---
+
+## 40. ✅ A 档 B1 · 考试配置模板化（2026-07-02 用户双端验收通过）
+
+### 40.1 背景与目标
+
+`data/exams/exam_config.json` v2 时期 2390 行，每张卷都把 sections 全量内联，3-9 年级 × 上/下 × midterm/final/unitTest = 42 套卷（实际 14 个 grade/term 各 3 套共 42 套），改一处要翻半天；题型增减 / 改分值也得每处单独改。
+
+**目标：** 抽离到 `data/exams/exam_templates.json`（10 套模板），主配置改为 `{ template, writing? }` 引用形式，未来加新学段 / 调模板 1 处搞定。
+
+### 40.2 关键决策（用户拍板）
+
+| 决策点 | 选定 |
+|---|---|
+| 批次顺序 | **B1 → B2 → B3 → B4**（先打配置骨架，再填题库） |
+| 题库扩容方式 | **AI 脚本半自动**（edge-tts 造句 + 人工抽查 + 校对话术） |
+| 部署节奏 | **每批独立 push**（逐批验收，失败可回滚） |
+| 模板化策略 | 9 套「段 × 类」模板 + 1 套 GZ 8 题型样板（3 上期中特殊）|
+
+### 40.3 改动清单
+
+| # | 文件 | 操作 | 行数 | 关键变化 |
+|---|---|---|---|---|
+| 1 | `data/exams/exam_templates.json` | **新建** | 152 | 10 套模板：`low_midterm_gz`（3 上期中 GZ 8 题型样板 100 分）+ `low_midterm` / `low_final` / `low_unit`（小学 100/50 分）+ `mid_midterm` / `mid_final` / `mid_unit`（5-6 年级 100/50 分）+ `high_midterm` / `high_final` / `high_unit`（7-9 年级 120/55 分）|
+| 2 | `data/exams/exam_config.json` | **重写** | 2390 → 240 | version 2 → 3；`grades.{g}.{上\|下}.{midterm\|final\|unitTest}` 全部简化为 `{ template: '...' }` 引用；7-9 年级保留 `writing: { prompts, modelAnswers }` 用于注入模板中 `_writingPlaceholder` 标记的写作题；9 下 final 个性覆盖 `name: "期末考试 / 中考模拟"` |
+| 3 | `js/exam.js` | **+82 行** | — | 新增 `_loadExamTemplates()`（带 Promise 缓存 + `__withVer` 版本号 + 失败回退空对象）+ `_applyTemplate(node)` 浅合并 + sections 深拷贝 + writing 注入 + 清理中间字段；`_getExamsForContext()` 在展开后 push；`_buildPaper()` 零改动（兼容 v2 形态）|
+| 4 | `scripts/verify_templates.py` | **新建** | — | smoke test：模拟前端 `_applyTemplate` 校验 14 个 grade/term × 3 套 = 42 套 + 9 下 final 中考模拟改名特殊覆盖 + 3 上 midterm GZ 8 题型样板 = **44/44 全过** |
+
+### 40.4 模板分值矩阵（10 套）
+
+| 模板 | 适用 | 题型 / 题数 / 单分 | 总分 | 自动判分 |
+|---|---|---|---|---|
+| `low_midterm_gz` | 3 上期中 | listen_pic(5×2) + listen_judge(5×2) + listen_fill(5×2) + spelling(10×2) + grammar(5×2) + sentence_order(5×2) + blank_fill(5×2) + reading(10×2) | 100 | 100 |
+| `low_midterm` | 3 下 / 4 期中 | spelling(10×2.5) + listening(5×4) + grammar(10×1.5) + cloze(4×5) + reading(4×5) | 100 | 100 |
+| `low_final` | 3-4 期末 | spelling(10×3) + listening(5×4) + grammar(5×3) + cloze(4×5) + reading(3×5) | 100 | 100 |
+| `low_unit` | 3-4 单元 | spelling(5×4) + listening(2×5) + grammar(2×5) + reading(1×10) | 50 | 50 |
+| `mid_midterm` | 5-6 期中 | spelling(10×2) + listening(5×4) + grammar(10×1.5) + cloze(5×4) + reading(5×5) | 100 | 100 |
+| `mid_final` | 5-6 期末 | 同 mid_midterm | 100 | 100 |
+| `mid_unit` | 5-6 单元 | 同 low_unit | 50 | 50 |
+| `high_midterm` | 7-9 期中 | listening(15×2) + grammar(15×1) + cloze(5×3) + reading(15×2) + writing(1×30) | 120 | 90 |
+| `high_final` | 7-9 期末 | 同 high_midterm | 120 | 90 |
+| `high_unit` | 7-9 单元 | listening(5×2) + grammar(10×1) + cloze(5×3) + reading(10×2) | 55 | 55 |
+
+### 40.5 写作题 prompt / model 注入矩阵
+
+| 年级 / 学期 | 期中 prompt | 期末 prompt |
+|---|---|---|
+| 7 上 | My Best Friend | My Daily Life |
+| 7 下 | My Best Friend | My School |
+| 8 上 | My Hobby | An Unforgettable Experience |
+| 8 下 | My Hobby | Volunteering |
+| 9 上 | The Power of Dreams | Online Learning |
+| 9 下 | The Power of Dreams | My Junior High School Life（**期末：期末考试 / 中考模拟**）|
+
+### 40.6 收口状态
+
+- ✅ **已上线**（推送后 CI 自动 bump version.txt；用户 2026-07-02 16:21 双端验收通过）
+- ✅ smoke test 44/44 全过
+- ✅ `_buildPaper()` 零改动（渲染兼容，零风险）
+- ✅ 9 下 final 中考模拟改名落地
+- ✅ 7-9 年级 6 × 2 = 12 个写作题 prompt + model 全部注入
+
+### 40.7 经验固化
+
+1. **模板抽离三件套**：`templates` 独立文件 + 主配置 `{ template: '...' }` 引用 + 前端 `applyTemplate()` 浅合并引擎。三者缺一不可，否则要么体积大（不抽离）、要么配置不直观（不引用）、要么组卷错乱（不展开）。
+2. **首验竞态反例**：`_applyTemplate` 内部依赖 `_examTemplates` 全局缓存已加载完成，但 `renderExamPage` / `_startExam` 入口只 await 了 `_loadExamConfig()`，模板异步加载还没 resolve 就开始调 `_getExamsForContext()` → sections 为空 → 卡片看似渲染但点击报"题库数据不足"。**铁律追加候选**：凡是新加的 async 加载器（`_loadXxx`），调用方入口必须 `await`，且 `_applyXxx()` 这类依赖它的同步函数也应在被调前确认依赖已就绪。
+3. **smoke test 提前发现**：44 个组合在 Python 端模拟前端 `_applyTemplate` 跑一遍，能在 1 秒内发现模板缺失、字段错位、总分不符、writing 未注入等问题，比等用户到浏览器验收再发现省 1 轮交互。
+4. **占位字段约定**：写作题用 `_writingPlaceholder: true` 标记，提醒「该 section 的 prompts/modelAnswers 需要从年级配置注入」，避免后续接 GZ 真实写作题库时漏接。
+
+### 40.8 下一档预告（B2 · 低段题库扩容 / B3 · 高段题库扩容 / B4 · 验收回滚预案）
+
+- **B2**：低段（3-4 年级）题库扩容，目标是让 `low_midterm` 模板的 grammar 10×1.5 / cloze 4×5 / reading 4×5 在各年级 midterm 都能抽满（目前部分年级 cloze 仅 1-2 篇）
+- **B3**：高段（7-9 年级）题库扩容，目标是让 high 模板的 cloze 5×3 / reading 15×2 在 midterm 抽得动
+- **B4**：全量回归（14 个 grade/term 模拟卷 + 单元测试 1-8 共 196 套）全部能正常生成、开始考试、提交、查看历史
+
