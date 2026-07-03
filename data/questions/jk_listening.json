@@ -484,40 +484,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_L01",
-    "audioText": "Teacher: In Africa you can see lions hunt, elephants play and giraffes eat leaves.",
-    "audioFile": "listening_6B_U11_01.mp3",
-    "q": "Which animal is NOT mentioned?",
-    "options": [
-      "Lion",
-      "Panda",
-      "Giraffe"
-    ],
-    "answer": 1,
-    "explain": "没提到熊猫。",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_L02",
-    "audioText": "Boy: Nelson Mandela won the Nobel Peace Prize in 1993 and became president in 1994.",
-    "audioFile": "listening_6B_U11_02.mp3",
-    "q": "When did Mandela become president?",
-    "options": [
-      "1993",
-      "1994",
-      "2013"
-    ],
-    "answer": 1,
-    "explain": "1994 年成为南非总统。",
-    "difficulty": 2
-  },
-  {
     "grade": 3,
     "term": "上",
     "code": "3A_U1",
@@ -2114,5 +2080,35 @@
     "explain": "录音中提到 English club。",
     "difficulty": 2,
     "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_L01",
+    "q": "Which Chinese scientist won the Nobel Prize?",
+    "options": [
+      "Tu Youyou",
+      "Deng Jiaxian",
+      "Yuan Longping",
+      "Qian Xuesen"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "explain": "屠呦呦2015年诺贝尔奖"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_L02",
+    "q": "What is Guangzhou famous for?",
+    "options": [
+      "Dim sum",
+      "Hamburgers",
+      "Sushi",
+      "Pizza"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "explain": "广州早茶文化"
   }
 ]

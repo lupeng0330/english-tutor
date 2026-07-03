@@ -680,38 +680,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_R01",
-    "passage": "The lion caught a small mouse but let it go. Later the lion was trapped in a hunter’s net. The small mouse came and chewed the net, setting the lion free.",
-    "q": "What is the moral of the story?",
-    "options": [
-      "The lion is king",
-      "Never look down on anyone",
-      "Mice are stronger than lions"
-    ],
-    "answer": 1,
-    "explain": "寓意：不要小看弱小的。",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_R02",
-    "passage": "Nelson Mandela was born in 1918 in South Africa. He studied law and tried to free black people. He was in prison for 27 years. In 1994 he became president of South Africa.",
-    "q": "When did Mandela become president?",
-    "options": [
-      "1918",
-      "1993",
-      "1994"
-    ],
-    "answer": 2,
-    "explain": "1994 年成为总统。",
-    "difficulty": 2
-  },
-  {
     "grade": 3,
     "term": "上",
     "code": "3A_U1",
@@ -2534,5 +2502,35 @@
     "explain": "短文围绕 clean room 展开。",
     "difficulty": 2,
     "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_R01",
+    "q": "Who discovered artemisinin to fight malaria?",
+    "options": [
+      "Tu Youyou",
+      "Deng Jiaxian",
+      "Yuan Longping",
+      "Sun Yatsen"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "explain": "屠呦呦发现青蒿素"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_R02",
+    "q": "What is the tallest building in Guangzhou?",
+    "options": [
+      "Canton Tower",
+      "Pearl River Tower",
+      "CITIC Plaza",
+      "Guangzhou IFC"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "广州塔600米"
   }
 ]

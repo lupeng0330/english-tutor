@@ -646,51 +646,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_G01",
-    "q": "If the mouse ____ small, can it help the lion?",
-    "options": [
-      "is",
-      "was",
-      "are"
-    ],
-    "answer": 0,
-    "explain": "If + 一般现在时：is。",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_G02",
-    "q": "Nelson Mandela ____ the Nobel Peace Prize in 1993.",
-    "options": [
-      "win",
-      "won",
-      "wins"
-    ],
-    "answer": 1,
-    "explain": "in 1993 一般过去时 win → won。",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_G03",
-    "q": "We should ____ our Earth and protect animals.",
-    "options": [
-      "save",
-      "saves",
-      "saving"
-    ],
-    "answer": 0,
-    "explain": "should + 动词原形。",
-    "difficulty": 2
-  },
-  {
     "grade": 3,
     "term": "上",
     "code": "3A_U1",
@@ -3509,5 +3464,50 @@
     "explain": "under the chair 在椅子下面。",
     "difficulty": 2,
     "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G01",
+    "q": "Deng Jiaxian ____ a great Chinese scientist.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "explain": "过去式·人物描述"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G02",
+    "q": "Tu Youyou ____ the Nobel Prize for her work.",
+    "options": [
+      "win",
+      "wins",
+      "winning",
+      "won"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "explain": "一般过去时·成就"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G03",
+    "q": "If you visit Guangzhou, you ____ try dim sum.",
+    "options": [
+      "should",
+      "shall",
+      "will",
+      "can"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "情态动词·建议"
   }
 ]

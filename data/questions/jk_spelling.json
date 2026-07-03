@@ -1100,56 +1100,6 @@
     "difficulty": 2
   },
   {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_S01",
-    "q": "保护（动物）",
-    "answer": "protect",
-    "hint": "p______",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_S02",
-    "q": "拯救",
-    "answer": "save",
-    "hint": "s___",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_S03",
-    "q": "地球",
-    "answer": "earth",
-    "hint": "e____",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_S04",
-    "q": "旅行",
-    "answer": "travel",
-    "hint": "t_____",
-    "difficulty": 2
-  },
-  {
-    "grade": 6,
-    "term": "下",
-    "unit": "u11",
-    "code": "6B_U11_S05",
-    "q": "家乡",
-    "answer": "hometown",
-    "hint": "h_______",
-    "difficulty": 2
-  },
-  {
     "grade": 3,
     "term": "上",
     "code": "3A_U1",
@@ -6978,5 +6928,55 @@
     "difficulty": 1,
     "explain": "'冷的' 的英文是 cold",
     "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_S01",
+    "q": "科学家",
+    "answer": "scientist",
+    "hint": "a person who studies science",
+    "difficulty": 3,
+    "explain": "回顾 U5-U6 主题词"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_S02",
+    "q": "发明",
+    "answer": "invent",
+    "hint": "make something new for the first time",
+    "difficulty": 3,
+    "explain": "中国发明主题"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_S03",
+    "q": "文化",
+    "answer": "culture",
+    "hint": "the way of life of a group of people",
+    "difficulty": 2,
+    "explain": "广州文化主题"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_S04",
+    "q": "国家",
+    "answer": "country",
+    "hint": "China is our ____.",
+    "difficulty": 1,
+    "explain": "爱国教育"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_S05",
+    "q": "梦想",
+    "answer": "dream",
+    "hint": "something you want to be or do",
+    "difficulty": 1,
+    "explain": "呼应 U2 dream jobs"
   }
 ]
