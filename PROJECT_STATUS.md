@@ -22,16 +22,19 @@
 
 ### ② 立刻能跑起来（本地验证）
 
-```powershell
+```bash
+# Mac（一键启动 + 免缓存）
+./dev-open.sh
+
 # Windows · 在项目根目录
 Start-Process python -ArgumentList '-m','http.server','8765' -WindowStyle Hidden
-# 电脑端入口
-start http://localhost:8765/index.html
-# 手机端（带手机外壳 + iframe 真实渲染，可切 iPhone14/Huawei360/iPhone11ProMax 三档尺寸）
-start http://localhost:8765/mobile.html
+# 电脑端入口（加 ?v= 日期 破缓存）
+start http://localhost:8765/index.html?v=$(Get-Date -Format yyyyMMdd)
+# 手机端
+start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
 ```
 
-服务**仅用于本地验证**，不动 `version.txt`、不 push（详见 [铁律 3](#铁律速查卡)）。
+> Mac 运行 `./dev-open.sh` 自动启动服务 + 打开双端免缓存页面。参数 `./dev-open.sh pc` 仅电脑端、`./dev-open.sh mb` 仅手机端。`?v=日期` 参数不修改 version.txt，仅用于浏览器缓存破坏。
 
 > ⚡ **推送 & 版本一句话**：要推送时——Mac 跑 `./dev-push.sh`、Windows 跑 `dev-push.ps1`（都会先 `pull --rebase` 再 push）。**`version.txt` 由 CI 全自动 bump、前端缓存随之自动刷新，任何人/任何端都【绝不手改它】（铁律9）**——这是历来 rebase 版本冲突的唯一根因。
 
