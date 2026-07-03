@@ -2708,3 +2708,162 @@ P0/P1/P2 全部清零，用户通过铁律 5 选项清单确定后续方向：**
 - ✅ **无版本冲突**：docs 改动，CI 不 bump；推送走 `dev-push.sh`
 
 > 本节为 docs 改动，CI 不 bump 版本。
+
+
+## 44. 🚧 P5 · jk 6 下 2024 新版升级方案（方案制定，待执行）
+
+> 📌 决策依据：2026-07-03 用户通过铁律 5 选择"版本升级优先（C）+ 逐个完成"。  
+> 📌 教材来源：教科版（广州）三年级起点，2024 新版对比 2014 旧版。
+> 📌 数据来源：网络公开教育资源（电子课本导航、教师备课课件、知识点归纳文档）。
+
+### 44.1 新版 vs 旧版 · 差异清单
+
+网搜确认：2024 新版 **10 个单元**（去掉了旧版的 Review Module U11-U12），核心变化 **仅 1 处**：
+
+| # | 旧版 2014（11 单元） | 新版 2024（10 单元） | 变化 |
+|---|---|---|---|
+| U1 | Slow and steady wins the race | Slow and steady wins the race | **不变** |
+| U2 | Waiting for another hare | Waiting for another hare | **不变** |
+| U3 | What animal is it? | What animal is it? | **不变** |
+| U4 | We can save the animals | We can save the animals | **不变** |
+| U5 | Dr Sun Yatsen | Dr Sun Yatsen | **不变** |
+| **U6** | **Early years of Deng Jiaxian** | **🆕 Steve Jobs** | **完全替换** |
+| U7 | It's the polite thing to do | It's the polite thing to do | **不变** |
+| U8 | The magic words | The magic words | **不变** |
+| U9 | Where will you go? | Where will you go? | **不变** |
+| U10 | I can't wait to see you | I can't wait to see you | **不变** |
+| — | U11-U12 Review Module | **❌ 已删除** | **移除** |
+
+### 44.2 新版 U6 Steve Jobs 课文内容（网搜复原）
+
+```
+Do you love playing with an iPad or watching wonderful cartoon movies like Toy Story? 
+If you answer yes, you probably love Steve Jobs, too. He made these things come true.
+
+Steve was born in America on February 24th, 1955. When he finished school, he worked 
+as a computer game-maker. But he quickly got bored. So in 1976 he and his friend started 
+to build computers in their home. They called their company Apple Computers. People love 
+their computers. They were easy to use and looked great!
+
+But things were not always easy. At 30, Steve had to leave his company. However, he 
+didn't give up. He started a new company. He also bought a small company and turned it 
+into Pixar. Pixar made many famous cartoon movies.
+
+Later, Steve returned to Apple. He made Apple great again. The iPad, iPhone and iPod 
+were all his ideas. They changed the world. Steve Jobs once said, "Stay hungry. Stay 
+foolish." He meant we should always try to learn new things.
+
+Steve died in 2011. But people will always remember him. He was a great man who changed 
+the world.
+```
+
+### 44.3 新版 U6 单词表（网搜汇总）
+
+| 单词 | 中文 | 音标参考 |
+|---|---|---|
+| probably | 大概；可能 | /ˈprɒbəbli/ |
+| true | 真的；真实的 | /truː/ |
+| company | 公司 | /ˈkʌmpəni/ |
+| once | 曾经；一次 | /wʌns/ |
+| successful | 成功的 | /səkˈsesfəl/ |
+| return | 返回；归还 | /rɪˈtɜːn/ |
+| lose | 失去；丢失 | /luːz/ |
+| inventor | 发明家 | /ɪnˈventə/ |
+| cartoon | 卡通片 | /kɑːˈtuːn/ |
+
+### 44.4 升级影响范围分析
+
+| 文件/目录 | 影响 | 操作 |
+|---|---|---|
+| `data/textbooks/jk.json` grade6/下 | U6 单词 5→9 词 + 课文 4→1 篇 + 删除 U11-U12 | 手动编辑 |
+| `data/questions/jk_spelling.json` | U6 旧题 ~5 道 + U11/U12 ~10 道 | 删除旧题 → 铁律 8 造新题 |
+| `data/questions/jk_grammar.json` | U6 旧 3 道 + U11 旧 3 道 | 同上 |
+| `data/questions/jk_listening.json` | U6 旧 2 道 + U11 旧 2 道 | 同上 + 重生成 MP3 |
+| `data/questions/jk_reading.json` | U6 旧 2 道 + U11 旧 2 道 | 同上 |
+| `data/questions/jk_cloze.json` | **无 U6/U11 数据 → 不受影响** | ✅ 跳过 |
+| `data/questions/jk_blank_fill.json` 等新型 | **无 6B 数据 → 不受影响** | ✅ 跳过 |
+| `data/examples/jk_grade6_xia.json` | U6 旧例句替换 | 人工编写 9 词 × 3 句 |
+| `audio/listening_6B_U6_*.mp3` | U6 听力 MP3 需重新生成 | edge-tts 生成 |
+| `audio/listening_6B_U11_*.mp3` | 删除（U11 不再存在） | 删除 |
+| `audio/ex_*.mp3` | U6 新 27 条例句 MP3 | gen_audio_v2.py 增量生成 |
+| `data/exams/exam_templates.json` | U11/U12 可能被引用 | 检查并更新 |
+| `data/exams/exam_config.json` | 同上 | 检查并更新 |
+
+### 44.5 执行步骤（小步走，每步独立 commit）
+
+#### 第1步：数据备份（铁律 8）
+```bash
+python scripts/_verify_qbank.py  # 升级前基线
+cp data/textbooks/jk.json data/questions/.backups/jk_textbook_$(date +%Y%m%d_%H%M).json
+cp data/questions/jk_spelling.json data/questions/.backups/
+cp data/questions/jk_grammar.json data/questions/.backups/
+cp data/questions/jk_listening.json data/questions/.backups/
+cp data/questions/jk_reading.json data/questions/.backups/
+cp data/examples/jk_grade6_xia.json data/questions/.backups/
+```
+
+#### 第2步：更新教材 JSON
+- 修改 `data/textbooks/jk.json` grade6/下的 U6 单词表（5→9 词）
+- 替换 U6 课文内容为新版 Steve Jobs
+- 删除 U11-U12 数据
+- 更新单元数 11→10 → commit "feat(jk6b): textbook JSON 更新为2024新版(U6 Steve Jobs, 删U11-U12)"
+
+#### 第3步：更新题库（铁律 8 三件套）
+- 删除 U6 旧题 + U11/U12 旧题（spelling/grammar/listening/reading）
+- 手工编写新版 U6 试题（拼写9词/语法3题/听力2题/阅读2题）
+- 打印差异报告（保留X/删除Y/新增Z）
+- 骤降阻断：检查删除题量合理性 → commit "feat(jk6b): 题库同步2024新版(U6替换+U11-U12删除)"
+
+#### 第4步：更新例句
+- 为 U6 新 9 词编写例句（每词 3 句，易/中/难，参考课本课文语境）
+- 删除 U6 旧词例句条目 → commit "feat(jk6b): 例句同步2024新版 U6 Steve Jobs"
+
+#### 第5步：生成新音频
+- U6 听力题 2 个 MP3（edge-tts 生成）→ 删除 U11 旧 MP3
+- U6 新词 27 条例句 MP3（`gen_audio_v2.py` 增量生成）→ commit "feat(jk6b): 音频同步2024新版 U6"
+
+#### 第6步：全量校验（铁律 6 落盘验证）
+```bash
+python scripts/_verify_qbank.py          # 题库完整性
+git diff --stat HEAD                     # 确认改动范围
+python3 -m http.server 8765              # 本地验证
+```
+- 电脑端：切 jk 6 下 → 单词卡显示 U6 Steve Jobs 新词
+- 手机端：练习页 U6 有新题、考试卷无 U11-U12 → commit "test(jk6b): 6下全量校验通过"
+
+### 44.6 风险与不升级项
+
+| 风险 | 等级 | 应对 |
+|---|---|---|
+| 网络搜集的单词表不全（仅 9 词，真实教材可能更多） | 中 | 升级后标注"基于网络公开资源，可能不完全"，后续用户对照实体书补漏 |
+| U11-U12 Review 删除后，考试配置中引用需检查 | 低 | 第6步验证时覆盖所有考试模板 |
+| 批量 MP3 生成可能耗时 | 低 | 仅 U6 2 个听力 + 27 条例句，约 5 分钟 |
+| 其他单元（U1-U5/U7-U10）可能有细微内容修订 | 低 | 仅确认到的变化是 U6 替换 + U11-U12 删除；细微修订需用户对照实体书确认 |
+
+### 44.7 铁律遵循清单
+
+| 铁律 | 计划 |
+|---|---|
+| 铁律 1 双端验证 | ✅ 第6步明确电脑端+手机端验证清单 |
+| 铁律 2 更新文档 | ✅ 本次 §44 方案 + 完成后追加 §45 收口 |
+| 铁律 3 分批推送 | ✅ 6 步拆分为 5 个独立 commit + 1 个归档 commit |
+| 铁律 4 上线对齐 | ✅ 上线后更新版本号到文档 |
+| 铁律 5 选项清单 | ✅ 已在 §43 完成决策收集 |
+| 铁律 6 落盘验证 | ✅ 第1步基线 + 第6步全量 git diff + qbank 校验 |
+| 铁律 7 省 token | ✅ 6 步紧凑、无过度测试 |
+| 铁律 8 数据安全 | ✅ 第1步全量备份 + 差异报告 + 骤降阻断 |
+| 铁律 9 version.txt | ✅ 全程不碰，推送走 dev-push.sh |
+
+### 44.8 预估工时
+
+| 步骤 | 预估 |
+|---|---|
+| 第1步 备份 | 2 分钟 |
+| 第2步 教材 JSON | 15 分钟 |
+| 第3步 题库更新 | 30 分钟 |
+| 第4步 例句编写 | 20 分钟 |
+| 第5步 音频生成 | 10 分钟 |
+| 第6步 全量校验 | 15 分钟 |
+| **合计** | **~1.5 小时** |
+
+> 本文为方案草案（docs），CI 不 bump 版本。下一步：用户确认方案后立即执行第1-6步。
