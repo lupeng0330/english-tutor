@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-03 深夜 · P5 U11 Review 中国化替换完成（课文3篇+题库12题+MP3 2个），已上线 §46 收口**
+> 最后更新：**2026-07-03 深夜 · P3-D 语法数据化完整方案（§47：80条结构化JSON + 教材关联 + 7大类 + 全部/当前切换）**
 
 ---
 
@@ -2851,3 +2851,223 @@ P0/P1/P2 全部清零，用户通过铁律 5 选项清单确定后续方向：**
 
 > 本节为收口记录，CI 不 bump 版本。
 > 线上版本见仓库根 `version.txt`
+
+
+
+## 47. 📋 P3-D · 语法讲解页数据化完整方案（2026-07-03 深夜制定）
+
+> 📌 铁律 5 决策：C.完整版(~80条) + A.结构化字段 + B.全部/当前教材切换。
+> 📌 目标：4条硬编码 → ~80条结构化语法知识库，覆盖小学三年级到初中九年级全体系，支持按教材/年级筛选。
+
+### 47.1 JSON Schema 设计
+
+每条语法知识点存储在 `data/grammar/grammar_knowledge.json`，结构如下：
+
+```json
+{
+  "id": "g001",
+  "title": "一般现在时",
+  "titleEn": "Simple Present Tense",
+  "category": "tenses",
+  "level": "basic",
+  "grades": ["G3", "G4", "G5", "G6", "G7"],
+  "relatedUnits": {
+    "jk": ["3A_U5", "4A_U3", "5A_U1", "6A_U2"],
+    "hj": ["7A_U2", "7A_U4"]
+  },
+  "definition": "表示经常性、习惯性的动作或存在的状态。",
+  "definitionEn": "Used to express habitual actions, general truths, or states.",
+  "rules": [
+    {"rule": "主语+动词原形(s/es)", "note": "第三人称单数加s/es"},
+    {"rule": "主语+don't/doesn't+动词原形", "note": "否定句"}
+  ],
+  "examples": [
+    {"en": "I go to school every day.", "cn": "我每天上学。"},
+    {"en": "She likes apples.", "cn": "她喜欢苹果。"}
+  ],
+  "commonErrors": [
+    {"wrong": "She like apples.", "correct": "She likes apples.", "note": "三单忘加s"}
+  ],
+  "keywords": ["时态", "一般现在时", "三单", "do/does"],
+  "tips": "I/You/We/They用原形，He/She/It加s/es"
+}
+```
+
+**字段说明**：
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `id` | string | 唯一标识 `g001`~`g080` |
+| `title` | string | 中文标题 |
+| `titleEn` | string | 英文标题（可选） |
+| `category` | enum | parts_of_speech / tenses / verb_forms / sentence / clauses / voice / structures |
+| `level` | enum | basic(G3-G4) / intermediate(G5-G6) / advanced(G7-G9) |
+| `grades` | []string | 适用年级 `G3`~`G9` |
+| `relatedUnits` | object | 按教材分组的单元 code 列表 |
+| `definition` | string | 中文定义 |
+| `definitionEn` | string | 英文定义 |
+| `rules` | []object | 规则列表(rule + note) |
+| `examples` | []object | 例句列表(en + cn) |
+| `commonErrors` | []object | 常见错误(wrong + correct + note) |
+| `keywords` | []string | 搜索关键词 |
+| `tips` | string | 记忆口诀/提示 |
+
+### 47.2 完整语法分类体系（80条）
+
+#### Ⅰ. 词性 · Parts of Speech（20条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g001 | 名词：可数/不可数 | basic | G3 |
+| g002 | 名词：复数规则 | basic | G3 |
+| g003 | 名词：所有格 | basic | G4 |
+| g004 | 人称代词(I/you/he/she/it/we/they) | basic | G3 |
+| g005 | 物主代词(my/your/his/her) | basic | G3 |
+| g006 | 反身代词(myself/yourself) | intermediate | G6 |
+| g007 | 指示代词(this/that/these/those) | basic | G3 |
+| g008 | 不定代词(some/any/no/every) | intermediate | G5 |
+| g009 | 冠词：定冠词 the | basic | G4 |
+| g010 | 冠词：不定冠词 a/an | basic | G3 |
+| g011 | 数词：基数词 1-100 | basic | G3 |
+| g012 | 数词：序数词 first-tenth | basic | G4 |
+| g013 | 形容词：用法与位置 | basic | G4 |
+| g014 | 副词：方式副词(ly结尾) | intermediate | G5 |
+| g015 | 副词：频度副词(always/usually/often) | basic | G4 |
+| g016 | 介词：时间介词(at/in/on) | basic | G4 |
+| g017 | 介词：地点介词(in/on/under/behind) | basic | G3 |
+| g018 | 连词：and/but/or/so/because | intermediate | G5 |
+| g019 | 感叹词(Oh/Wow/Great/Oops) | basic | G3 |
+| g020 | 量词(a cup of/a piece of) | intermediate | G5 |
+
+#### Ⅱ. 动词时态 · Tenses（16条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g021 | 一般现在时 | basic | G3 |
+| g022 | 现在进行时 | basic | G4 |
+| g023 | 一般过去时(规则动词) | intermediate | G5 |
+| g024 | 一般过去时(不规则动词) | intermediate | G5 |
+| g025 | 过去进行时 | advanced | G8 |
+| g026 | 一般将来时 will | intermediate | G5 |
+| g027 | 一般将来时 be going to | intermediate | G6 |
+| g028 | 现在完成时(1)：基本用法 | advanced | G8 |
+| g029 | 现在完成时(2)：since/for | advanced | G8 |
+| g030 | 现在完成时(3)：already/yet/just | advanced | G9 |
+| g031 | 过去完成时 | advanced | G9 |
+| g032 | 过去将来时 | advanced | G9 |
+| g033 | 现在完成进行时 | advanced | G9 |
+| g034 | 一般过去时 vs 现在完成时 | advanced | G9 |
+| g035 | be动词的时态变化 | basic | G3 |
+| g036 | have/has got 句型 | basic | G3 |
+
+#### Ⅲ. 动词形式 · Verb Forms（10条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g037 | 情态动词 can/can't | basic | G3 |
+| g038 | 情态动词 must/have to | intermediate | G5 |
+| g039 | 情态动词 should/shouldn't | intermediate | G6 |
+| g040 | 情态动词 may/might | intermediate | G6 |
+| g041 | 情态动词 would/could | advanced | G8 |
+| g042 | 情态动词 need/dare | advanced | G9 |
+| g043 | 不定式 to do(作宾语/目的状语) | advanced | G8 |
+| g044 | 动名词 doing(作宾语) | advanced | G8 |
+| g045 | 使役动词 make/let/have | advanced | G9 |
+| g046 | 感官动词 see/hear/watch+do/doing | advanced | G9 |
+
+#### Ⅳ. 句子结构 · Sentence Structure（15条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g047 | 陈述句(肯定句/否定句) | basic | G3 |
+| g048 | 一般疑问句(Yes/No) | basic | G3 |
+| g049 | 特殊疑问句(Wh-Questions) | basic | G4 |
+| g050 | 选择疑问句(Or-Questions) | intermediate | G5 |
+| g051 | 反意疑问句 | advanced | G8 |
+| g052 | 祈使句(肯定/否定) | basic | G3 |
+| g053 | 感叹句 What/How | intermediate | G6 |
+| g054 | There be 句型(1)：基本用法 | basic | G3 |
+| g055 | There be 句型(2)：时态变化 | intermediate | G5 |
+| g056 | 主谓一致(1)：基本规则 | basic | G4 |
+| g057 | 主谓一致(2)：特殊主语 | intermediate | G6 |
+| g058 | 倒装句(so/neither/nor) | advanced | G9 |
+| g059 | 强调句(It is...that) | advanced | G9 |
+| g060 | 并列句(and/but/or) | intermediate | G5 |
+| g061 | 复合句概述 | advanced | G8 |
+
+#### Ⅴ. 从句 · Clauses（8条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g062 | 宾语从句(1)：that引导 | advanced | G8 |
+| g063 | 宾语从句(2)：if/whether引导 | advanced | G9 |
+| g064 | 宾语从句(3)：wh-引导 | advanced | G9 |
+| g065 | 定语从句(1)：关系代词 who/which/that | advanced | G9 |
+| g066 | 定语从句(2)：关系副词 when/where/why | advanced | G9 |
+| g067 | 状语从句：时间(when/while/as) | advanced | G8 |
+| g068 | 状语从句：条件(if/unless) | advanced | G8 |
+| g069 | 状语从句：原因/目的/结果 | advanced | G9 |
+
+#### Ⅵ. 语态 · Voice（4条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g070 | 被动语态(1)：一般现在时/一般过去时 | advanced | G8 |
+| g071 | 被动语态(2)：含情态动词 | advanced | G9 |
+| g072 | 被动语态(3)：现在完成时/将来时 | advanced | G9 |
+| g073 | 主动语态 vs 被动语态 | advanced | G8 |
+
+#### Ⅶ. 特殊结构 · Special Structures（7条）
+
+| id | 语法点 | level | 关键年级 |
+|---|---|---|---|
+| g074 | used to do / be used to doing | advanced | G8 |
+| g075 | It is + adj + (for/of sb) to do | advanced | G8 |
+| g076 | so...that / such...that | advanced | G9 |
+| g077 | 比较级 & 最高级 (完整版) | intermediate | G5 |
+| g078 | 直接引语 → 间接引语 | advanced | G9 |
+| g079 | 条件句：真实条件 (if+一般现在, will) | advanced | G8 |
+| g080 | 祈使句 + and/or + 陈述句 | advanced | G9 |
+
+### 47.3 前端改造方案
+
+| 维度 | 现状 | 目标 |
+|---|---|---|
+| 数据源 | `app.js` 硬编码 `grammarData` 4条 | `data/grammar/grammar_knowledge.json` ~80条 |
+| 加载方式 | 内联变量 | `js/grammar.js` 模块 fetch + 缓存 |
+| 目录渲染 | 全部 4 条平铺 | 7大分类折叠 + 筛选 + 搜索 |
+| 内容渲染 | innerHTML 直出 | 结构化渲染（定义→规则→例句→常见错误→提示） |
+| 教材关联 | 无 | `relatedUnits` + "全部/当前教材"切换 |
+| 搜索 | 无 | 关键词搜索框 |
+
+#### 新增/修改文件
+
+| 文件 | 变更 |
+|---|---|
+| `data/grammar/grammar_knowledge.json` | 🆕 新建，~80条结构化数据 |
+| `js/grammar.js` | 🆕 新建模块：加载/筛选/渲染 |
+| `index.html` | ✏️ 注入 `grammar.js` + 更新 `#page-grammar` DOM |
+| `app.js` | ✏️ 删除 `grammarData` + `renderGrammar()`，改为调用 GrammarModule |
+| `styles.css` | ✏️ 新增语法页筛选/toggle/搜索样式 |
+
+### 47.4 执行步骤（~2天，5个commit）
+
+| 步 | 内容 | 预估 |
+|---|---|---|
+| 1 | 铁律8备份 + 创建 `data/grammar/` | 2min |
+| 2 | 编写 80 条语法 JSON（分4批，每批20条独立校验） | ~3h |
+| 3 | 创建 `js/grammar.js`（加载/分组/筛选/渲染 4 函数） | ~1h |
+| 4 | 更新 `index.html` + `app.js` + `styles.css` | ~1.5h |
+| 5 | 全量校验 + 双端验证 + 推送 | ~30min |
+
+### 47.5 铁律
+
+| 铁律 | 状态 |
+|---|---|
+| 1 双端验证 | ✅ 第5步电脑+手机语法页 |
+| 2 更新文档 | ✅ §47 方案 + §48 收口 |
+| 3 分批推送 | ✅ 5 个独立 commit |
+| 5 选项清单 | ✅ C.完整版/A.结构化/B.切换按钮 |
+| 6 落盘验证 | ✅ JSON 写入后 python 校验 |
+| 8 数据安全 | ✅ 全量备份 + 写入前校验 |
+| 9 version.txt | ✅ 全程不碰 |
