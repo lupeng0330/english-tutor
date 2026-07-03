@@ -2094,7 +2094,8 @@
     ],
     "answer": 0,
     "difficulty": 1,
-    "explain": "屠呦呦2015年诺贝尔奖"
+    "explain": "屠呦呦2015年诺贝尔奖",
+    "audioFile": "listening_6B_U11_01.mp3"
   },
   {
     "grade": 6,
@@ -2109,6 +2110,7 @@
     ],
     "answer": 0,
     "difficulty": 1,
-    "explain": "广州早茶文化"
+    "explain": "广州早茶文化",
+    "audioFile": "listening_6B_U11_02.mp3"
   }
 ]
