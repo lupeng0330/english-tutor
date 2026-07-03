@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-03 深夜 · §8 开发计划重构为逐期推进（一期 P5 jk 6下升级 → 二期 P3-D 语法数据化 → 三期 P4 新教材）+ §43 收口**（前序：§42 全量对账）
+> 最后更新：**2026-07-03 深夜 · §44 纠错（P5 方向修正：邓稼先已就位无需升级，仅 U11 Review 需中国化替换）+ §45 全年级审查收口**（前序：§43 计划重构）
 
 ---
 
@@ -538,19 +538,18 @@ a4f0da4 2026-05-03 Initial commit                                               
 
 ---
 
-### 🎯 一期（当前）：P5 · jk 6 下 2024 新版升级
+### 🎯 一期（当前）：P5 · jk 6 下 U11 Review 中国化替换
+
+> ⚠️ **方向修正**（2026-07-03）：6 下 U5 孙中山 + U6 邓稼先**已就位**（已替换老版 Steve Jobs），核心无需升级。仅 U11 Review（非洲 Safari / 曼德拉）需替换为中国科学家/文化主题。
 
 | 维度 | 说明 |
 |---|---|
-| **目标** | jk 教科版 6 年级下册 11 单元从 2014 旧版内容升级到 2024 秋新版 |
-| **工时** | ~3 天（预估） |
-| **风险** | **低**。仅数据替换，不改架构。可复用 jk 7 册流水线（`scripts/jk/build_qbank.py` + 铁律 8 三件套） |
+| **目标** | 6 下 U11 Review 从全非洲/外国内容 → 中国文化名人/科学家回顾主题 |
+| **工时** | ~45 分钟 |
+| **风险** | **低**。仅 1 个复习单元替换，不改 U1-U10 核心 |
 | **无 LLM Key 依赖** | ✅ |
-| **输入** | 用户提供 2024 新版教材数据（词表 / 课文 / 单元结构） |
-| **产出** | 新版 6 下 textbook JSON + 题库更新 + 课文 MP3 重生成 |
-| **验收**（铁律 1） | 电脑端 + 手机端：切到 jk 六年级下 → 单词卡/课文/练习/考试全部用新版内容 |
-
-> 📌 注：jk 1-2 年级不存在（三年级起点），仅需升级 6 年级下册 1 册；3 上→6 上 7 册已是 2024 新版无需动。
+| **产出** | U11 新课文 3 篇 + 对应题库更新 + MP3 |
+| **验收**（铁律 1） | 切 jk 6 下 → 复习页显示中国科学家/文化内容，不再出现非洲 Safari |
 
 ---
 
@@ -2710,160 +2709,102 @@ P0/P1/P2 全部清零，用户通过铁律 5 选项清单确定后续方向：**
 > 本节为 docs 改动，CI 不 bump 版本。
 
 
-## 44. 🚧 P5 · jk 6 下 2024 新版升级方案（方案制定，待执行）
+## 44. 🚧 P5 · jk 6 下内容审查 + U11 Review 中国化替换（方案制定，待执行）
 
-> 📌 决策依据：2026-07-03 用户通过铁律 5 选择"版本升级优先（C）+ 逐个完成"。  
-> 📌 教材来源：教科版（广州）三年级起点，2024 新版对比 2014 旧版。
-> 📌 数据来源：网络公开教育资源（电子课本导航、教师备课课件、知识点归纳文档）。
+> ⚠️ **前版方案（Steve Jobs 替换邓稼先）方向性错误，已废弃。经用户纠正：2024 新版方向是「用中国科学家替换外国名人」，项目 6 下 U5 孙中山 + U6 邓稼先 **已就位**，无需升级。**
+> 
+> 📌 决策依据：2026-07-03 用户通过铁律 5 三次选项清单确定——①U9 暂不动（等实体书）②U11 需替换为中国内容 ③U5/U6 副课文保留。
+> 📌 新增审查：用户要求强化本国科学家、家国教育内容。
 
-### 44.1 新版 vs 旧版 · 差异清单
+### 44.1 审查结论：6 下核心中国内容已正确
 
-网搜确认：2024 新版 **10 个单元**（去掉了旧版的 Review Module U11-U12），核心变化 **仅 1 处**：
-
-| # | 旧版 2014（11 单元） | 新版 2024（10 单元） | 变化 |
+| 单元 | 内容 | 国籍 | 判定 |
 |---|---|---|---|
-| U1 | Slow and steady wins the race | Slow and steady wins the race | **不变** |
-| U2 | Waiting for another hare | Waiting for another hare | **不变** |
-| U3 | What animal is it? | What animal is it? | **不变** |
-| U4 | We can save the animals | We can save the animals | **不变** |
-| U5 | Dr Sun Yatsen | Dr Sun Yatsen | **不变** |
-| **U6** | **Early years of Deng Jiaxian** | **🆕 Steve Jobs** | **完全替换** |
-| U7 | It's the polite thing to do | It's the polite thing to do | **不变** |
-| U8 | The magic words | The magic words | **不变** |
-| U9 | Where will you go? | Where will you go? | **不变** |
-| U10 | I can't wait to see you | I can't wait to see you | **不变** |
-| — | U11-U12 Review Module | **❌ 已删除** | **移除** |
+| U5 | Dr Sun Yatsen（孙中山） | 🇨🇳 中国 | ✅ 正确 |
+| U6 | Early years of Deng Jiaxian（邓稼先） | 🇨🇳 中国 | ✅ 正确（已替换老版 Steve Jobs） |
 
-### 44.2 新版 U6 Steve Jobs 课文内容（网搜复原）
+> **"2014 旧版"标签为过去错误标注**——6 下 U6 邓稼先已经是课改方向下的成果（老版此处为 Steve Jobs，已被替换）。无需再做 U6→Steve Jobs 的逆方向升级。
 
-```
-Do you love playing with an iPad or watching wonderful cartoon movies like Toy Story? 
-If you answer yes, you probably love Steve Jobs, too. He made these things come true.
+### 44.2 全年级审查发现（3-6 年级）
 
-Steve was born in America on February 24th, 1955. When he finished school, he worked 
-as a computer game-maker. But he quickly got bored. So in 1976 he and his friend started 
-to build computers in their home. They called their company Apple Computers. People love 
-their computers. They were easy to use and looked great!
-
-But things were not always easy. At 30, Steve had to leave his company. However, he 
-didn't give up. He started a new company. He also bought a small company and turned it 
-into Pixar. Pixar made many famous cartoon movies.
-
-Later, Steve returned to Apple. He made Apple great again. The iPad, iPhone and iPod 
-were all his ideas. They changed the world. Steve Jobs once said, "Stay hungry. Stay 
-foolish." He meant we should always try to learn new things.
-
-Steve died in 2011. But people will always remember him. He was a great man who changed 
-the world.
-```
-
-### 44.3 新版 U6 单词表（网搜汇总）
-
-| 单词 | 中文 | 音标参考 |
-|---|---|---|
-| probably | 大概；可能 | /ˈprɒbəbli/ |
-| true | 真的；真实的 | /truː/ |
-| company | 公司 | /ˈkʌmpəni/ |
-| once | 曾经；一次 | /wʌns/ |
-| successful | 成功的 | /səkˈsesfəl/ |
-| return | 返回；归还 | /rɪˈtɜːn/ |
-| lose | 失去；丢失 | /luːz/ |
-| inventor | 发明家 | /ɪnˈventə/ |
-| cartoon | 卡通片 | /kɑːˈtuːn/ |
-
-### 44.4 升级影响范围分析
-
-| 文件/目录 | 影响 | 操作 |
-|---|---|---|
-| `data/textbooks/jk.json` grade6/下 | U6 单词 5→9 词 + 课文 4→1 篇 + 删除 U11-U12 | 手动编辑 |
-| `data/questions/jk_spelling.json` | U6 旧题 ~5 道 + U11/U12 ~10 道 | 删除旧题 → 铁律 8 造新题 |
-| `data/questions/jk_grammar.json` | U6 旧 3 道 + U11 旧 3 道 | 同上 |
-| `data/questions/jk_listening.json` | U6 旧 2 道 + U11 旧 2 道 | 同上 + 重生成 MP3 |
-| `data/questions/jk_reading.json` | U6 旧 2 道 + U11 旧 2 道 | 同上 |
-| `data/questions/jk_cloze.json` | **无 U6/U11 数据 → 不受影响** | ✅ 跳过 |
-| `data/questions/jk_blank_fill.json` 等新型 | **无 6B 数据 → 不受影响** | ✅ 跳过 |
-| `data/examples/jk_grade6_xia.json` | U6 旧例句替换 | 人工编写 9 词 × 3 句 |
-| `audio/listening_6B_U6_*.mp3` | U6 听力 MP3 需重新生成 | edge-tts 生成 |
-| `audio/listening_6B_U11_*.mp3` | 删除（U11 不再存在） | 删除 |
-| `audio/ex_*.mp3` | U6 新 27 条例句 MP3 | gen_audio_v2.py 增量生成 |
-| `data/exams/exam_templates.json` | U11/U12 可能被引用 | 检查并更新 |
-| `data/exams/exam_config.json` | 同上 | 检查并更新 |
-
-### 44.5 执行步骤（小步走，每步独立 commit）
-
-#### 第1步：数据备份（铁律 8）
-```bash
-python scripts/_verify_qbank.py  # 升级前基线
-cp data/textbooks/jk.json data/questions/.backups/jk_textbook_$(date +%Y%m%d_%H%M).json
-cp data/questions/jk_spelling.json data/questions/.backups/
-cp data/questions/jk_grammar.json data/questions/.backups/
-cp data/questions/jk_listening.json data/questions/.backups/
-cp data/questions/jk_reading.json data/questions/.backups/
-cp data/examples/jk_grade6_xia.json data/questions/.backups/
-```
-
-#### 第2步：更新教材 JSON
-- 修改 `data/textbooks/jk.json` grade6/下的 U6 单词表（5→9 词）
-- 替换 U6 课文内容为新版 Steve Jobs
-- 删除 U11-U12 数据
-- 更新单元数 11→10 → commit "feat(jk6b): textbook JSON 更新为2024新版(U6 Steve Jobs, 删U11-U12)"
-
-#### 第3步：更新题库（铁律 8 三件套）
-- 删除 U6 旧题 + U11/U12 旧题（spelling/grammar/listening/reading）
-- 手工编写新版 U6 试题（拼写9词/语法3题/听力2题/阅读2题）
-- 打印差异报告（保留X/删除Y/新增Z）
-- 骤降阻断：检查删除题量合理性 → commit "feat(jk6b): 题库同步2024新版(U6替换+U11-U12删除)"
-
-#### 第4步：更新例句
-- 为 U6 新 9 词编写例句（每词 3 句，易/中/难，参考课本课文语境）
-- 删除 U6 旧词例句条目 → commit "feat(jk6b): 例句同步2024新版 U6 Steve Jobs"
-
-#### 第5步：生成新音频
-- U6 听力题 2 个 MP3（edge-tts 生成）→ 删除 U11 旧 MP3
-- U6 新词 27 条例句 MP3（`gen_audio_v2.py` 增量生成）→ commit "feat(jk6b): 音频同步2024新版 U6"
-
-#### 第6步：全量校验（铁律 6 落盘验证）
-```bash
-python scripts/_verify_qbank.py          # 题库完整性
-git diff --stat HEAD                     # 确认改动范围
-python3 -m http.server 8765              # 本地验证
-```
-- 电脑端：切 jk 6 下 → 单词卡显示 U6 Steve Jobs 新词
-- 手机端：练习页 U6 有新题、考试卷无 U11-U12 → commit "test(jk6b): 6下全量校验通过"
-
-### 44.6 风险与不升级项
-
-| 风险 | 等级 | 应对 |
-|---|---|---|
-| 网络搜集的单词表不全（仅 9 词，真实教材可能更多） | 中 | 升级后标注"基于网络公开资源，可能不完全"，后续用户对照实体书补漏 |
-| U11-U12 Review 删除后，考试配置中引用需检查 | 低 | 第6步验证时覆盖所有考试模板 |
-| 批量 MP3 生成可能耗时 | 低 | 仅 U6 2 个听力 + 27 条例句，约 5 分钟 |
-| 其他单元（U1-U5/U7-U10）可能有细微内容修订 | 低 | 仅确认到的变化是 U6 替换 + U11-U12 删除；细微修订需用户对照实体书确认 |
-
-### 44.7 铁律遵循清单
-
-| 铁律 | 计划 |
+#### ✅ 中国正向内容
+| 位置 | 内容 |
 |---|---|
-| 铁律 1 双端验证 | ✅ 第6步明确电脑端+手机端验证清单 |
-| 铁律 2 更新文档 | ✅ 本次 §44 方案 + 完成后追加 §45 收口 |
-| 铁律 3 分批推送 | ✅ 6 步拆分为 5 个独立 commit + 1 个归档 commit |
-| 铁律 4 上线对齐 | ✅ 上线后更新版本号到文档 |
-| 铁律 5 选项清单 | ✅ 已在 §43 完成决策收集 |
-| 铁律 6 落盘验证 | ✅ 第1步基线 + 第6步全量 git diff + qbank 校验 |
-| 铁律 7 省 token | ✅ 6 步紧凑、无过度测试 |
-| 铁律 8 数据安全 | ✅ 第1步全量备份 + 差异报告 + 骤降阻断 |
-| 铁律 9 version.txt | ✅ 全程不碰，推送走 dev-push.sh |
+| 5下 U4 | Famous spots in China（中国名胜） |
+| 5下 U6 | A postcard from Beijing（北京明信片） |
+| 6下 U5 | Dr Sun Yatsen（孙中山） |
+| 6下 U6 | Early years of Deng Jiaxian（邓稼先） |
 
-### 44.8 预估工时
+#### ⚠️ 保留（经决策：可接受的副课文/语言素材）
+| 位置 | 内容 | 决策 |
+|---|---|---|
+| 6下 U5 Fun with language | Mozart（莫扎特） | B.保留 |
+| 6下 U6 Fun with language | J.K. Rowling（罗琳） | B.保留 |
+| 6下 U9 整单元 | Daniel→Sydney / Mr Brown→Hawaii | C.暂不动（等实体书） |
 
-| 步骤 | 预估 |
+#### 🔴 需替换
+| 位置 | 现内容 | 替换方向 |
+|---|---|---|
+| 6下 U11 Review | African Safari / The Lion and the Mouse / Nelson Mandela | → 中国科学家/文化主题 |
+
+### 44.3 执行范围：仅 U11 Review 替换
+
+| 影响文件 | 操作 |
 |---|---|
-| 第1步 备份 | 2 分钟 |
-| 第2步 教材 JSON | 15 分钟 |
-| 第3步 题库更新 | 30 分钟 |
-| 第4步 例句编写 | 20 分钟 |
-| 第5步 音频生成 | 10 分钟 |
-| 第6步 全量校验 | 15 分钟 |
-| **合计** | **~1.5 小时** |
+| `data/textbooks/jk.json` grade6/下 U11 | 替换课文内容 |
+| `data/questions/jk_spelling.json` | U11 旧题 ~5 道 → 新题 |
+| `data/questions/jk_reading.json` | U11 旧题 ~2 道 → 新题 |
+| `data/questions/jk_listening.json` | U11 旧题 ~2 道 → 新题 + 重生成 MP3 |
+| `data/questions/jk_grammar.json` | U11 旧题 ~3 道 → 新题（可选） |
+| 其他新型题库 | U11 无数据 → 不受影响 |
+| `data/exams/` | 检查是否有考试卷引用 U11 |
 
-> 本文为方案草案（docs），CI 不 bump 版本。下一步：用户确认方案后立即执行第1-6步。
+### 44.4 U11 替换建议方案
+
+**推荐方向**：中国文化名人/科学家回顾 + 广州/广东文化
+
+| 新课文 | 主题 | 说明 |
+|---|---|---|
+| 课文1 | Chinese Scientists（中国科学家） | 回顾邓稼先 + 延伸介绍屠呦呦/袁隆平/钱学森 |
+| 课文2 | A Trip to Guangzhou（广州之旅） | 广州地标/美食/文化，对接本土认同 |
+| 课文3 | Great Chinese Inventions（中国伟大发明） | 四大发明 + 现代中国科技成就 |
+
+### 44.5 执行步骤（~45 分钟）
+
+```
+第1步 备份（铁律8）→ 第2步 替换U11课文 → 第3步 造新题（3类题型） 
+→ 第4步 生成MP3 → 第5步 exam配置检查 → 第6步 全量校验+推送
+```
+
+每步独立 commit，铁律 8 三件套（备份/差异报告/骤降阻断）兜底。
+
+### 44.6 待确认事项
+
+> ⚠️ 以上 U11 替换方案基于公开资料推测。**最终以实体书为准**。用户对照 2024 新版实体书确认后，我立即执行。
+
+---
+
+## 45. ⚠️ 审查纠错 · 全年级内容审查报告（2026-07-03 深夜）
+
+### 45.1 触发
+
+用户在审查 §44 P5 方案时指出 AI 犯了**方向性错误**：把老版教材（Steve Jobs）误认为"2024 新版"，推导出"邓稼先→乔布斯"的逆方向升级。经用户纠正：2024 教科书改革方向是**强化本国科学家、家国情怀教育**，用中国科学家替换外国名人。
+
+### 45.2 审查结论
+
+| 结论 | 说明 |
+|---|---|
+| ✅ 6下 U5 孙中山 | 中国历史人物，正确 |
+| ✅ 6下 U6 邓稼先 | 已替换老版 Steve Jobs，正确 |
+| ⚠️ 6下 U9 | 全西方故事线（悉尼/夏威夷），用户决定暂不动 |
+| 🔴 6下 U11 | 非洲/外国 Review，用户决定替换为中国内容 |
+| ✅ 3-5 年级、6上 | 日常/学校/家庭主题，无突出问题 |
+| ✅ U5/U6 副课文 | 莫扎特/罗琳，用户决定保留 |
+
+### 45.3 铁律
+
+- ✅ 铁律 5：三次 `ask_followup_question` 收集决策
+- ✅ 铁律 2：§44+§45 完整记录
+- ✅ 无版本冲突：docs 改动，走 dev-push.sh
+
+> 本文为 docs 改动，CI 不 bump 版本。
