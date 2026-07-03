@@ -700,7 +700,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <div class="card p-4 lg:col-span-1">
           <div class="font-bold text-slate-800 mb-3">知识点目录</div>
-          <div id="grammarList" class="space-y-2"></div>
+          <div id="grammarNav" class="space-y-2"></div>
         </div>
         <div class="card p-6 lg:col-span-3" id="grammarContent"></div>
       </div>
@@ -890,6 +890,7 @@
         .then(function(){ return addScript('./js/practice.js'); })
         .then(function(){ return addScript('./questionBank.js'); })
         .then(function(){ return addScript('./js/exam.js'); })
+        .then(function(){ return addScript('./js/grammar.js'); })
         .then(function(){ return addScript('./app.js'); });
     });
   })();

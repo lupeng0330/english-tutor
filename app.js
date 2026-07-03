@@ -21,73 +21,11 @@
 //   2. 当前 Step 3 仅定义函数、不接入任何 key；接入留给 Step 4-6 一对一对改。
 //   3. 测试入口：浏览器 Console 输入 `_pkey('yxyy_stats_v1')` 应返回带后缀的字符串。
 // =====================================================================
-const grammarData = [
-  {
-    id: 'g1', title: '一般现在时 (Simple Present)', level: '小学',
-    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">一般现在时 (Simple Present Tense)</h3>
-      <p class="text-slate-700 mb-3"><b>概念：</b>表示经常性的动作、习惯性的行为或客观事实。</p>
-      <p class="text-slate-700 mb-3"><b>构成：</b>主语 + 动词原形 (第三人称单数时动词加 -s/-es)</p>
-      <div class="grammar-example">
-        <div class="font-semibold">✅ I <b>like</b> apples.（我喜欢苹果。）</div>
-        <div class="font-semibold">✅ She <b>likes</b> apples.（她喜欢苹果。）</div>
-        <div class="text-sm text-slate-600 mt-1">👉 第三人称单数 (he/she/it) 后面动词要加 -s</div>
-      </div>
-      <p class="text-slate-700 mt-3"><b>时间状语：</b>often, usually, always, every day, sometimes</p>`
-  },
-  {
-    id: 'g2', title: '一般过去时 (Simple Past)', level: '小学/初中',
-    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">一般过去时 (Simple Past Tense)</h3>
-      <p class="text-slate-700 mb-3"><b>概念：</b>表示过去某时发生的动作或存在的状态。</p>
-      <p class="text-slate-700 mb-3"><b>构成：</b>主语 + 动词过去式</p>
-      <div class="grammar-example">
-        <div class="font-semibold">✅ I <b>visited</b> my grandma yesterday.</div>
-        <div class="font-semibold">✅ He <b>went</b> to school by bike.</div>
-      </div>
-      <p class="text-slate-700 mt-3"><b>规则动词变化：</b></p>
-      <ul class="list-disc ml-6 text-slate-700">
-        <li>一般情况加 -ed: play → played</li>
-        <li>以 e 结尾加 -d: live → lived</li>
-        <li>辅音字母+y结尾，变 y 为 i 加 -ed: study → studied</li>
-        <li>重读闭音节双写末尾字母加 -ed: stop → stopped</li>
-      </ul>
-      <p class="text-slate-700 mt-3"><b>时间状语：</b>yesterday, last week, ago, just now</p>`
-  },
-  {
-    id: 'g3', title: '形容词比较级 (Comparative)', level: '小学高/初中',
-    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">形容词比较级 (Comparative)</h3>
-      <p class="text-slate-700 mb-3"><b>概念：</b>比较两个人或事物的性质、特征的等级差异。</p>
-      <p class="text-slate-700 mb-3"><b>构成：</b>形容词比较级 + than</p>
-      <div class="grammar-example">
-        <div class="font-semibold">✅ Tom is <b>taller than</b> Jerry.</div>
-        <div class="font-semibold">✅ This book is <b>more interesting than</b> that one.</div>
-      </div>
-      <p class="text-slate-700 mt-3"><b>变化规则：</b></p>
-      <ul class="list-disc ml-6 text-slate-700">
-        <li>单音节+-er: tall → taller</li>
-        <li>以 e 结尾+-r: nice → nicer</li>
-        <li>辅音+y结尾变y为i+-er: happy → happier</li>
-        <li>多音节词前加 more: beautiful → more beautiful</li>
-        <li>不规则: good → better, bad → worse, many → more</li>
-      </ul>`
-  },
-  {
-    id: 'g4', title: '情态动词 should', level: '初中',
-    content: `<h3 class="text-xl font-bold text-slate-800 mb-3">情态动词 should (应该)</h3>
-      <p class="text-slate-700 mb-3"><b>用法：</b>表示建议、劝告，后接动词原形。</p>
-      <div class="grammar-example">
-        <div class="font-semibold">✅ You <b>should</b> drink more water.</div>
-        <div class="font-semibold">✅ You <b>shouldn't</b> eat too much junk food.</div>
-      </div>
-      <p class="text-slate-700 mt-3"><b>疑问句：</b>Should + 主语 + 动词原形?</p>
-      <div class="grammar-example">
-        <div class="font-semibold">✅ Should I see a doctor? Yes, you should.</div>
-      </div>`
-  }
-];
+// 注：语法数据已迁移到 data/grammar/grammar_knowledge.json（80条结构化）
+// 语法渲染由 js/grammar.js 模块负责（window.renderGrammarPage）
 
 // 注：state / TEXTBOOK_NAMES / TEXTBOOK_GRADES / GRADE_LABELS /
 // refreshGradeOptionsForTextbook / ctxSummaryText / ctxBadgeText 已迁移到 js/state.js。
-// 此处保留注释以帮助 grep 追溯。
 
 // ===================== 错题本（B3）=====================
 // 存储在 localStorage: { "textbook::type::qid": { type, question, wrongCount, correctStreak, lastWrongAt, lastAnswerAt } }
@@ -126,7 +64,7 @@ function switchPage(page) {
 
   if (page === 'textbook') renderUnitList();
   if (page === 'exam') { try { renderExamPage(); } catch(e) { console.warn(e); } }
-  if (page === 'grammar') { renderGrammar(); try { renderIrregVerbTable(); } catch(e){} }
+  if (page === 'grammar') { if (window.renderGrammarPage) window.renderGrammarPage(); try { renderIrregVerbTable(); } catch(e){} }
   if (page === 'report') setTimeout(renderReport, 100);
   if (page === 'wrongbook') { _wbPageFilter = 'all'; renderWrongbookPage(); }
   if (page === 'review') { try { renderReviewPage(); } catch(e) { console.warn(e); } }
@@ -195,24 +133,7 @@ function applyContextChange() {
 //   words: unit.words 里在 knownWords 中的数量
 //   reading: readingExDone 里该单元已做过的题数（作为分母）/ 其中答对数（作为分子）
 // 返回 { pct, known, total, readingOk, readingAttempted }
-function renderGrammar() {
-  const list = document.getElementById('grammarList');
-  list.innerHTML = grammarData.map((g, i) => `
-    <div class="p-3 rounded-xl cursor-pointer hover:bg-blue-50 grammar-item" data-idx="${i}">
-      <div class="font-semibold text-slate-800 text-sm">${g.title}</div>
-      <div class="text-xs text-slate-500 mt-1">${g.level}</div>
-    </div>
-  `).join('');
-  list.querySelectorAll('.grammar-item').forEach(el => {
-    el.addEventListener('click', () => {
-      list.querySelectorAll('.grammar-item').forEach(e => e.classList.remove('bg-blue-100'));
-      el.classList.add('bg-blue-100');
-      document.getElementById('grammarContent').innerHTML = grammarData[el.dataset.idx].content +
-        `<div class="mt-6"><button class="gradient-btn" onclick="switchPage('practice'); setTimeout(()=>startPractice('grammar'),100)">开始本知识点练习 →</button></div>`;
-    });
-  });
-  list.querySelector('.grammar-item').click();
-}
+// renderGrammar 已迁移到 js/grammar.js → window.renderGrammarPage
 
 // ===================== AI 对话 =====================
 const aiResponses = {
