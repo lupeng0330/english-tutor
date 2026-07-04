@@ -646,7 +646,7 @@
       "writingPoints": 10
     },
     "g3a_midterm": {
-      "name": "三上·期中",
+      "name": "G3上·期中",
       "time": 60,
       "unitRange": [
         1,
@@ -677,7 +677,27 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 2,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -685,42 +705,22 @@
         },
         {
           "type": "sentence_order",
-          "title": "四、连词成句",
+          "title": "六、连词成句",
           "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "matching",
-          "title": "五、匹配题",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "六、补全对话",
-          "count": 10,
-          "points": 2,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g3a_final": {
-      "name": "三上·期末",
+      "name": "G3上·期末",
       "time": 70,
       "unitRange": [
         1,
@@ -751,7 +751,27 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -759,52 +779,22 @@
         },
         {
           "type": "sentence_order",
-          "title": "四、连词成句",
+          "title": "六、连词成句",
           "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "matching",
-          "title": "五、匹配题",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "六、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "七、句型转换",
-          "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g3b_midterm": {
-      "name": "三下·期中",
+      "name": "G3下·期中",
       "time": 60,
       "unitRange": [
         1,
@@ -835,7 +825,27 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 2,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -843,42 +853,22 @@
         },
         {
           "type": "sentence_order",
-          "title": "四、连词成句",
+          "title": "六、连词成句",
           "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "matching",
-          "title": "五、匹配题",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "六、补全对话",
-          "count": 10,
-          "points": 2,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g3b_final": {
-      "name": "三下·期末",
+      "name": "G3下·期末",
       "time": 70,
       "unitRange": [
         1,
@@ -909,7 +899,27 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -917,52 +927,22 @@
         },
         {
           "type": "sentence_order",
-          "title": "四、连词成句",
+          "title": "六、连词成句",
           "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "matching",
-          "title": "五、匹配题",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "六、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "七、句型转换",
-          "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g4a_midterm": {
-      "name": "四上·期中",
+      "name": "G4上·期中",
       "time": 60,
       "unitRange": [
         1,
@@ -993,27 +973,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_order",
-          "title": "四、连词成句",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "五、补全对话",
-          "count": 5,
-          "points": 2,
+          "points": 1.5,
           "unitRange": [
             1,
             12
@@ -1021,22 +981,42 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "sentence_order",
+          "title": "六、连词成句",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g4a_final": {
-      "name": "四上·期末",
+      "name": "G4上·期末",
       "time": 70,
       "unitRange": [
         1,
@@ -1067,27 +1047,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_order",
-          "title": "四、连词成句",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "五、补全对话",
-          "count": 5,
-          "points": 2,
+          "points": 1.5,
           "unitRange": [
             1,
             12
@@ -1095,32 +1055,42 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         },
         {
-          "type": "sentence_transform",
-          "title": "七、句型转换",
+          "type": "cloze",
+          "title": "五、完形填空",
           "count": 5,
-          "points": 2,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "sentence_order",
+          "title": "六、连词成句",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g4b_midterm": {
-      "name": "四下·期中",
+      "name": "G4下·期中",
       "time": 60,
       "unitRange": [
         1,
@@ -1151,27 +1121,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_order",
-          "title": "四、连词成句",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "五、补全对话",
-          "count": 5,
-          "points": 2,
+          "points": 1.5,
           "unitRange": [
             1,
             12
@@ -1179,22 +1129,42 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "sentence_order",
+          "title": "六、连词成句",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g4b_final": {
-      "name": "四下·期末",
+      "name": "G4下·期末",
       "time": 70,
       "unitRange": [
         1,
@@ -1225,27 +1195,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_order",
-          "title": "四、连词成句",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "五、补全对话",
-          "count": 5,
-          "points": 2,
+          "points": 1.5,
           "unitRange": [
             1,
             12
@@ -1253,29 +1203,39 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         },
         {
-          "type": "sentence_transform",
-          "title": "七、句型转换",
+          "type": "cloze",
+          "title": "五、完形填空",
           "count": 5,
-          "points": 2,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "sentence_order",
+          "title": "六、连词成句",
+          "count": 5,
+          "points": 3,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "totalPoints": 100.0,
+      "autoPoints": 100.0,
+      "writingPoints": 0.0,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g5a_midterm": {
       "name": "五上·期中",
@@ -1316,28 +1276,18 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
+          "count": 5,
+          "points": 4,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
           "count": 5,
           "points": 4,
           "unitRange": [
@@ -1349,7 +1299,7 @@
       "totalPoints": 100,
       "autoPoints": 100,
       "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g5a_final": {
       "name": "五上·期末",
@@ -1383,26 +1333,6 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
           "points": 2,
           "unitRange": [
             1,
@@ -1411,9 +1341,9 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -1421,9 +1351,9 @@
         },
         {
           "type": "cloze",
-          "title": "七、完形填空",
+          "title": "五、完形填空",
           "count": 5,
-          "points": 2,
+          "points": 5,
           "unitRange": [
             1,
             12
@@ -1433,7 +1363,7 @@
       "totalPoints": 100,
       "autoPoints": 100,
       "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g5b_midterm": {
       "name": "五下·期中",
@@ -1474,30 +1404,30 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "六、书面表达",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1505,9 +1435,9 @@
         }
       ],
       "totalPoints": 100,
-      "autoPoints": 100,
-      "writingPoints": 0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "autoPoints": 90,
+      "writingPoints": 10,
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g5b_final": {
       "name": "五下·期末",
@@ -1541,26 +1471,6 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
           "points": 2,
           "unitRange": [
             1,
@@ -1569,9 +1479,9 @@
         },
         {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
-          "points": 2,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -1579,9 +1489,9 @@
         },
         {
           "type": "cloze",
-          "title": "七、完形填空",
+          "title": "五、完形填空",
           "count": 5,
-          "points": 2,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -1589,7 +1499,7 @@
         },
         {
           "type": "writing",
-          "title": "八、书面表达",
+          "title": "六、书面表达",
           "count": 1,
           "points": 10,
           "unitRange": [
@@ -1601,7 +1511,7 @@
       "totalPoints": 100,
       "autoPoints": 90,
       "writingPoints": 10,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g6a_midterm": {
       "name": "六上·期中",
@@ -1642,28 +1552,8 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
           "points": 3,
           "unitRange": [
@@ -1672,8 +1562,18 @@
           ]
         },
         {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 4,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
           "type": "writing",
-          "title": "七、书面表达",
+          "title": "六、书面表达",
           "count": 1,
           "points": 10,
           "unitRange": [
@@ -1685,7 +1585,7 @@
       "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g6a_final": {
       "name": "六上·期末",
@@ -1707,7 +1607,7 @@
         },
         {
           "type": "spelling",
-          "title": "二、归类填词",
+          "title": "二、单词拼写",
           "count": 10,
           "points": 2,
           "unitRange": [
@@ -1726,28 +1626,8 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "cloze_passage",
-          "title": "五、补全短文",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
           "points": 3,
           "unitRange": [
@@ -1756,8 +1636,18 @@
           ]
         },
         {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 4,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
           "type": "writing",
-          "title": "七、书面表达",
+          "title": "六、书面表达",
           "count": 1,
           "points": 10,
           "unitRange": [
@@ -1769,7 +1659,7 @@
       "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g6b_midterm": {
       "name": "六下·期中",
@@ -1810,28 +1700,8 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "sentence_transform",
-          "title": "五、句型转换",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
           "points": 3,
           "unitRange": [
@@ -1840,8 +1710,18 @@
           ]
         },
         {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 4,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
           "type": "writing",
-          "title": "七、书面表达",
+          "title": "六、书面表达",
           "count": 1,
           "points": 10,
           "unitRange": [
@@ -1853,7 +1733,7 @@
       "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     },
     "g6b_final": {
       "name": "六下·期末",
@@ -1875,7 +1755,7 @@
         },
         {
           "type": "spelling",
-          "title": "二、归类填词",
+          "title": "二、单词拼写",
           "count": 10,
           "points": 2,
           "unitRange": [
@@ -1894,28 +1774,8 @@
           ]
         },
         {
-          "type": "dialog_complete",
-          "title": "四、补全对话",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
-          "type": "cloze_passage",
-          "title": "五、补全短文",
-          "count": 5,
-          "points": 2,
-          "unitRange": [
-            1,
-            12
-          ]
-        },
-        {
           "type": "reading",
-          "title": "六、阅读理解",
+          "title": "四、阅读理解",
           "count": 5,
           "points": 3,
           "unitRange": [
@@ -1924,8 +1784,18 @@
           ]
         },
         {
+          "type": "cloze",
+          "title": "五、完形填空",
+          "count": 5,
+          "points": 4,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
           "type": "writing",
-          "title": "七、书面表达",
+          "title": "六、书面表达",
           "count": 1,
           "points": 10,
           "unitRange": [
@@ -1937,7 +1807,7 @@
       "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
-      "note": "P6-E 学期独立模板；未实现题型(补全对话/匹配/补全短文)题库为空时该section自动跳过，待P6-A/B/D补齐"
+      "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
     }
   }
 }
