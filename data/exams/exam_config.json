@@ -10,50 +10,98 @@
   "grades": {
     "3": {
       "上": {
-        "midterm": { "template": "low_midterm_gz" },
-        "final":   { "template": "low_final" },
-        "unitTest":{ "template": "low_unit" }
+        "midterm": {
+          "template": "low_midterm_gz"
+        },
+        "final": {
+          "template": "low_final"
+        },
+        "unitTest": {
+          "template": "low_unit"
+        }
       },
       "下": {
-        "midterm": { "template": "low_midterm" },
-        "final":   { "template": "low_final" },
-        "unitTest":{ "template": "low_unit" }
+        "midterm": {
+          "template": "low_midterm"
+        },
+        "final": {
+          "template": "low_final"
+        },
+        "unitTest": {
+          "template": "low_unit"
+        }
       }
     },
     "4": {
       "上": {
-        "midterm": { "template": "low_midterm" },
-        "final":   { "template": "low_final" },
-        "unitTest":{ "template": "low_unit" }
+        "midterm": {
+          "template": "low_midterm"
+        },
+        "final": {
+          "template": "low_final"
+        },
+        "unitTest": {
+          "template": "low_unit"
+        }
       },
       "下": {
-        "midterm": { "template": "low_midterm" },
-        "final":   { "template": "low_final" },
-        "unitTest":{ "template": "low_unit" }
+        "midterm": {
+          "template": "low_midterm"
+        },
+        "final": {
+          "template": "low_final"
+        },
+        "unitTest": {
+          "template": "low_unit"
+        }
       }
     },
     "5": {
       "上": {
-        "midterm": { "template": "mid_midterm" },
-        "final":   { "template": "mid_final" },
-        "unitTest":{ "template": "mid_unit" }
+        "midterm": {
+          "template": "mid_midterm"
+        },
+        "final": {
+          "template": "mid_final"
+        },
+        "unitTest": {
+          "template": "mid_unit"
+        }
       },
       "下": {
-        "midterm": { "template": "mid_midterm" },
-        "final":   { "template": "mid_final" },
-        "unitTest":{ "template": "mid_unit" }
+        "midterm": {
+          "template": "mid_midterm"
+        },
+        "final": {
+          "template": "mid_final_w"
+        },
+        "unitTest": {
+          "template": "mid_unit"
+        }
       }
     },
     "6": {
       "上": {
-        "midterm": { "template": "mid_midterm" },
-        "final":   { "template": "mid_final" },
-        "unitTest":{ "template": "mid_unit" }
+        "midterm": {
+          "template": "mid_midterm"
+        },
+        "final": {
+          "template": "mid_final_w"
+        },
+        "unitTest": {
+          "template": "mid_unit"
+        }
       },
       "下": {
-        "midterm": { "template": "mid_midterm" },
-        "final":   { "template": "mid_final" },
-        "unitTest":{ "template": "mid_unit" }
+        "midterm": {
+          "template": "mid_midterm"
+        },
+        "final": {
+          "template": "mid_final_w"
+        },
+        "unitTest": {
+          "template": "mid_unit"
+        }
       }
     },
     "7": {
@@ -80,7 +128,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       },
       "下": {
         "midterm": {
@@ -105,7 +155,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       }
     },
     "8": {
@@ -132,7 +184,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       },
       "下": {
         "midterm": {
@@ -157,7 +211,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       }
     },
     "9": {
@@ -184,7 +240,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       },
       "下": {
         "midterm": {
@@ -210,7 +268,9 @@
             ]
           }
         },
-        "unitTest": { "template": "high_unit" }
+        "unitTest": {
+          "template": "high_unit"
+        }
       }
     }
   },
