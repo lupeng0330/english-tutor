@@ -155,6 +155,7 @@ const _WB_TYPE_LABELS = {
   reading: '阅读理解',
   cloze: '完形填空',     // 🆕 P2-C
   dialog_complete: '补全对话',  // 🆕 P6-A
+  sentence_transform: '句型转换',  // 🆕 P6-B
   reading_qa: '课文自测',
   irregular: '不规则动词'
 };
