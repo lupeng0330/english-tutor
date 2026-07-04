@@ -101,6 +101,10 @@
       ' · 对话' + window.questionBank.stats.dialog_complete +
       ' · 共' + window.questionBank.stats.total + '题'
     );
+    // 🆕 题库异步加载完成后主动刷新练习页徽章，避免页面先渲染为0后未更新
+    try {
+      if (typeof window.refreshPracticeCounts === 'function') window.refreshPracticeCounts();
+    } catch (e) { /* ignore */ }
     return window.questionBank;
   };
 })();

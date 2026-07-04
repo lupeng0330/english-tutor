@@ -224,7 +224,9 @@ function refreshPracticeCounts() {
   const showUnitTag = !state.includeAllGrades && !!targetUnit;
   // cloze 单位是「篇」，dialog_complete 是「组」，其它是「题」
   ['spelling','listening','grammar','reading','cloze','dialog_complete'].forEach(t => {
-    const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
+    // snake_case 题型不能直接首字母大写拼 id：dialog_complete → countDialogComplete
+    const countIdMap = { dialog_complete: 'countDialogComplete' };
+    const el = document.getElementById(countIdMap[t] || ('count' + t.charAt(0).toUpperCase() + t.slice(1)));
     if (!el) return;
     const cur = filterQuestions(t).length;
     const unit = (t === 'cloze' || t === 'dialog_complete') ? '组' : '题';
