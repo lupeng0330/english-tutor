@@ -694,10 +694,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -724,7 +724,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -778,10 +778,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -808,7 +808,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -845,7 +845,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.0,
           "unitRange": [
             1,
             12
@@ -862,10 +862,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -939,7 +939,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.0,
           "unitRange": [
             1,
             12
@@ -956,10 +956,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1050,10 +1050,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1080,7 +1080,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1134,10 +1134,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1164,7 +1164,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1201,7 +1201,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.0,
           "unitRange": [
             1,
             12
@@ -1218,10 +1218,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1295,7 +1295,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.0,
           "unitRange": [
             1,
             12
@@ -1312,10 +1312,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "matching",
+          "title": "匹配题",
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1725,7 +1725,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.9,
           "unitRange": [
             1,
             12
@@ -1742,10 +1742,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "cloze_passage",
+          "title": "补全短文",
+          "count": 1,
+          "points": 6,
           "unitRange": [
             1,
             12
@@ -1772,7 +1772,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1809,7 +1809,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.9,
           "unitRange": [
             1,
             12
@@ -1826,10 +1826,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 2,
+          "type": "cloze_passage",
+          "title": "补全短文",
+          "count": 1,
+          "points": 6,
           "unitRange": [
             1,
             12
@@ -1856,7 +1856,7 @@
           ]
         }
       ],
-      "totalPoints": 100,
+      "totalPoints": 100.0,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1893,7 +1893,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.4,
           "unitRange": [
             1,
             12
@@ -1910,10 +1910,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "cloze_passage",
+          "title": "补全短文",
+          "count": 1,
+          "points": 6,
           "unitRange": [
             1,
             12
@@ -1987,7 +1987,7 @@
           "type": "grammar",
           "title": "三、语法选择",
           "count": 10,
-          "points": 1.5,
+          "points": 1.4,
           "unitRange": [
             1,
             12
@@ -2004,10 +2004,10 @@
           ]
         },
         {
-          "type": "cloze",
-          "title": "五、完形填空",
-          "count": 5,
-          "points": 1,
+          "type": "cloze_passage",
+          "title": "补全短文",
+          "count": 1,
+          "points": 6,
           "unitRange": [
             1,
             12
