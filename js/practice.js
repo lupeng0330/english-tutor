@@ -81,10 +81,11 @@ function resetPracticeOnContextChange() {
 
 // 绑定顶部上下文条三个下拉
 const QB = () => window.questionBank || {
-  spelling:[], listening:[], grammar:[], reading:[],
+  spelling:[], listening:[], grammar:[], reading:[], cloze:[],
   // 阶段 2 新题型（批次 1）
   listen_pic:[], listen_judge:[], listen_fill:[],
-  blank_fill:[], sentence_transform:[], sentence_order:[]
+  blank_fill:[], sentence_transform:[], sentence_order:[],
+  writing:[], dialog_complete:[]
 };
 
 // 🆕 通用工具：Fisher-Yates 洗牌
@@ -1394,6 +1395,8 @@ function selectDialogBlank(pos) {
   var el = document.querySelector('.dialog-blank[data-blankpos="'+pos+'"]');
   if (el) el.classList.add('current');
 }
+window.refreshPracticeCounts = refreshPracticeCounts;
+window.filterQuestions = filterQuestions;
 window.selectDialogBlank = selectDialogBlank;
 
 function fillDialogWord(word) {
