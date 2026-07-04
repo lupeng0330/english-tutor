@@ -11,13 +11,13 @@
 
   // 分类中文名 + 图标
   var CATEGORY_META = {
-    parts_of_speech: { label: '词性', icon: 'A' },
-    tenses: { label: '时态', icon: '\u23F0' },
-    verb_forms: { label: '动词形式', icon: '\u2699' },
-    sentence: { label: '句子结构', icon: '\u270D' },
-    clauses: { label: '从句', icon: '\U0001F517' },
-    voice: { label: '语态', icon: '\u{1F504}' },
-    structures: { label: '特殊结构', icon: '\u2B50' }
+    parts_of_speech: { label: '词性', icon: 'Aa' },
+    tenses: { label: '时态', icon: '⏰' },
+    verb_forms: { label: '动词形式', icon: '⚙' },
+    sentence: { label: '句子结构', icon: '✍' },
+    clauses: { label: '从句', icon: '🔗' },
+    voice: { label: '语态', icon: '🔄' },
+    structures: { label: '特殊结构', icon: '⭐' }
   };
 
   var LEVEL_LABEL = { basic: '基础', intermediate: '进阶', advanced: '高级' };
