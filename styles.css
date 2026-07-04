@@ -92,6 +92,114 @@
   /* ===== 🆕 body 页面背景渐变（变量化，便于主题整体换背景）===== */
   --page-bg: linear-gradient(135deg, var(--brand-50) 0%, #f5f3ff 100%);
 }
+
+/* ============================================================
+   🎨 多主题系统（P-Theme）：切换 <html data-theme="xxx"> 即换肤
+   每套主题重定义品牌色系 + 背景 + 状态色 + 阴影；
+   其它结构性变量（圆角/字体）沿用 :root，无需重定义。
+   晴空蓝 sunny = :root 默认，无需单列。
+   ============================================================ */
+
+/* —— 🔴 国风·朱砂橘红 —— */
+[data-theme="vermilion"] {
+  --brand: #e2483a; --brand-strong: #c62f22; --brand-stronger: #a51f14;
+  --brand-2: #f97316; --brand-ink: #8a1c10;
+  --brand-gradient: linear-gradient(135deg, #e2483a, #f97316);
+  --brand-50: #fdf0ec; --brand-100: #fbe0d8; --brand-150: #fcd9c4;
+  --accent: #f59e0b; --warn: #ea580c; --warn-ink: #9a3412;
+  --success: #16a34a; --success-ink: #166534;
+  --danger: #b91c1c; --danger-ink: #7f1d1d;
+  --surface: #fffaf7; --card: var(--surface);
+  --bg-soft: #faf0ea; --bg-softer: #fdf6f2; --bg-1: var(--bg-softer);
+  --shadow-card: 0 4px 20px rgba(226,72,58,0.10);
+  --shadow-card-hover: 0 8px 30px rgba(226,72,58,0.18);
+  --shadow-nav: 0 4px 12px rgba(226,72,58,0.32);
+  --shadow-btn: 0 6px 20px rgba(226,72,58,0.42);
+  --shadow: var(--shadow-card);
+  --page-bg: linear-gradient(135deg, #fdf0ec 0%, #fff7ed 100%);
+}
+
+/* —— 🟢 国风·青瓷青绿 —— */
+[data-theme="celadon"] {
+  --brand: #0d9488; --brand-strong: #0f766e; --brand-stronger: #115e59;
+  --brand-2: #14b8a6; --brand-ink: #134e4a;
+  --brand-gradient: linear-gradient(135deg, #0d9488, #14b8a6);
+  --brand-50: #ecfdf7; --brand-100: #d1faf0; --brand-150: #ccfbf1;
+  --accent: #ca8a04; --warn: #d97706; --warn-ink: #92400e;
+  --success: #059669; --success-ink: #065f46;
+  --danger: #dc2626; --danger-ink: #991b1b;
+  --surface: #f8fdfb; --card: var(--surface);
+  --bg-soft: #edf7f4; --bg-softer: #f4fbf9; --bg-1: var(--bg-softer);
+  --shadow-card: 0 4px 20px rgba(13,148,136,0.10);
+  --shadow-card-hover: 0 8px 30px rgba(13,148,136,0.18);
+  --shadow-nav: 0 4px 12px rgba(13,148,136,0.32);
+  --shadow-btn: 0 6px 20px rgba(13,148,136,0.42);
+  --shadow: var(--shadow-card);
+  --page-bg: linear-gradient(135deg, #ecfdf7 0%, #f0fdfa 100%);
+}
+
+/* —— ⚫ 国风·水墨黛（深色）—— */
+[data-theme="ink"] {
+  --brand: #64748b; --brand-strong: #475569; --brand-stronger: #334155;
+  --brand-2: #94a3b8; --brand-ink: #cbd5e1;
+  --brand-gradient: linear-gradient(135deg, #475569, #1e293b);
+  --brand-50: #1e293b; --brand-100: #334155; --brand-150: #3b4b63;
+  --accent: #d4a017; --warn: #ea9433; --warn-ink: #fcd9a0;
+  --success: #34d399; --success-ink: #6ee7b7;
+  --danger: #f87171; --danger-ink: #fca5a5;
+  /* 深色：文字整体转浅 */
+  --text-1: #f1f5f9; --text-2: #e2e8f0; --text-3: #cbd5e1; --text-4: #94a3b8;
+  --line-1: #475569; --line-2: #3a4658; --line-3: #334155;
+  --ink-1: var(--text-1);
+  --surface: #26303f; --card: var(--surface); --border: var(--line-3);
+  --bg-soft: #1e293b; --bg-softer: #263041; --bg-1: var(--bg-softer);
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.35);
+  --shadow-card-hover: 0 8px 30px rgba(0,0,0,0.5);
+  --shadow-nav: 0 4px 12px rgba(0,0,0,0.5);
+  --shadow-btn: 0 6px 20px rgba(0,0,0,0.55);
+  --shadow-panel: 0 10px 30px rgba(0,0,0,0.6);
+  --shadow: var(--shadow-card);
+  --page-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* —— 🔵 藏青金（沉稳华贵）—— */
+[data-theme="navy"] {
+  --brand: #1e3a8a; --brand-strong: #1e40af; --brand-stronger: #172554;
+  --brand-2: #3b5ba9; --brand-ink: #c9a227;
+  --brand-gradient: linear-gradient(135deg, #1e3a8a, #2b4a9e);
+  --brand-50: #eef1f8; --brand-100: #dde3f2; --brand-150: #e5e9f5;
+  --accent: #c9a227; --warn: #b8860b; --warn-ink: #8a6508;
+  --success: #0f766e; --success-ink: #115e59;
+  --danger: #be123c; --danger-ink: #9f1239;
+  --surface: #fbfcfe; --card: var(--surface);
+  --bg-soft: #eef1f8; --bg-softer: #f5f7fc; --bg-1: var(--bg-softer);
+  --shadow-card: 0 4px 20px rgba(30,58,138,0.12);
+  --shadow-card-hover: 0 8px 30px rgba(30,58,138,0.2);
+  --shadow-nav: 0 4px 12px rgba(30,58,138,0.35);
+  --shadow-btn: 0 6px 20px rgba(30,58,138,0.45);
+  --shadow: var(--shadow-card);
+  --page-bg: linear-gradient(135deg, #eef1f8 0%, #f8f6ee 100%);
+}
+
+/* —— 🌸 胭脂粉（柔和暖调）—— */
+[data-theme="rouge"] {
+  --brand: #db2777; --brand-strong: #be185d; --brand-stronger: #9d174d;
+  --brand-2: #f472b6; --brand-ink: #831843;
+  --brand-gradient: linear-gradient(135deg, #db2777, #f472b6);
+  --brand-50: #fdf2f8; --brand-100: #fce7f3; --brand-150: #fbcfe8;
+  --accent: #f59e0b; --warn: #f97316; --warn-ink: #c2410c;
+  --success: #16a34a; --success-ink: #166534;
+  --danger: #e11d48; --danger-ink: #be123c;
+  --surface: #fffafc; --card: var(--surface);
+  --bg-soft: #fdf0f6; --bg-softer: #fef6fa; --bg-1: var(--bg-softer);
+  --shadow-card: 0 4px 20px rgba(219,39,119,0.10);
+  --shadow-card-hover: 0 8px 30px rgba(219,39,119,0.18);
+  --shadow-nav: 0 4px 12px rgba(219,39,119,0.3);
+  --shadow-btn: 0 6px 20px rgba(219,39,119,0.4);
+  --shadow: var(--shadow-card);
+  --page-bg: linear-gradient(135deg, #fdf2f8 0%, #fff1f2 100%);
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
   background: var(--page-bg);
