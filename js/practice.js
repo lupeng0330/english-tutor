@@ -222,12 +222,12 @@ function inferTermFromCode(code) {
 function refreshPracticeCounts() {
   const targetUnit = _resolveTargetUnit();
   const showUnitTag = !state.includeAllGrades && !!targetUnit;
-  // 🆕 cloze 加入；cloze 单位是「篇」，其它是「题」
-  ['spelling','listening','grammar','reading','cloze'].forEach(t => {
+  // cloze 单位是「篇」，dialog_complete 是「组」，其它是「题」
+  ['spelling','listening','grammar','reading','cloze','dialog_complete'].forEach(t => {
     const el = document.getElementById('count' + t.charAt(0).toUpperCase() + t.slice(1));
     if (!el) return;
     const cur = filterQuestions(t).length;
-    const unit = (t === 'cloze') ? '篇' : '题';
+    const unit = (t === 'cloze' || t === 'dialog_complete') ? '组' : '题';
     if (showUnitTag) {
       // 同时计算本册的总数给用户参照
       const savedUnit = state.filterUnit;
@@ -416,7 +416,7 @@ function _renderPickSummary() {
 function startSmartPractice() {
   const types = ['spelling', 'listening', 'grammar', 'reading', 'cloze',
                 'listen_pic', 'listen_judge', 'listen_fill',
-                'blank_fill', 'sentence_transform', 'sentence_order'];
+                'blank_fill', 'sentence_transform', 'sentence_order', 'dialog_complete'];
   const pool = [];
   for (const t of types) {
     let qs = [];

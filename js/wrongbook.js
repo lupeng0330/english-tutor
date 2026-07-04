@@ -154,6 +154,7 @@ const _WB_TYPE_LABELS = {
   grammar: '语法练习',
   reading: '阅读理解',
   cloze: '完形填空',     // 🆕 P2-C
+  dialog_complete: '补全对话',  // 🆕 P6-A
   reading_qa: '课文自测',
   irregular: '不规则动词'
 };
