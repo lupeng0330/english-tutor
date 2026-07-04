@@ -716,15 +716,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -800,15 +800,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -884,15 +884,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -968,15 +968,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1052,15 +1052,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1136,15 +1136,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1220,15 +1220,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1304,15 +1304,15 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 100.0,
       "writingPoints": 0.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1378,8 +1378,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1452,8 +1452,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1526,8 +1526,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1610,8 +1610,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1694,8 +1694,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1712,7 +1712,7 @@
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1778,8 +1778,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1796,7 +1796,7 @@
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1862,8 +1862,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1880,7 +1880,7 @@
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
@@ -1946,8 +1946,8 @@
         {
           "type": "dialog_complete",
           "title": "补全对话",
-          "count": 5,
-          "points": 2,
+          "count": 1,
+          "points": 10,
           "unitRange": [
             1,
             12
@@ -1964,7 +1964,7 @@
           ]
         }
       ],
-      "totalPoints": 100.0,
+      "totalPoints": 100,
       "autoPoints": 90.0,
       "writingPoints": 10.0,
       "note": "P6-E: 仅含当前可用题型(待A/B/D补齐dialog/matching/cloze_passage后更新)"
