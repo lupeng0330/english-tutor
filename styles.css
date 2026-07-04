@@ -1800,24 +1800,65 @@ body.keyboard-open #practiceQuizView {
 .theme-card-swatch { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
 .theme-card-name { font-size: 11px; color: var(--text-2); font-weight: 600; }
 
-/* ===== 🎨 A+ 覆盖 Tailwind 固定色，使全站关键处跟随主题 (P-Theme T4) =====
-   Tailwind 是静态编译的固定色类，不会跟随 data-theme；这里用变量覆盖关键视觉面。 */
-/* 顶栏白底 → 卡面色 */
+/* ===== 🎨 A+ 覆盖 Tailwind 固定色，使全站关键处跟随主题 (P-Theme T4·安全版) =====
+   Tailwind 是静态编译的固定色类，不跟随 data-theme；这里用变量覆盖关键视觉面。
+   ⚠️ 关键原则：
+   1) 带 Tailwind 彩色/渐变背景 + 白字的元素（如首页CTA横幅）必须保留其背景，
+      否则会被 .card{background:var(--surface)} 覆盖成白底 → 白底白字看不清。
+   2) 文字色覆盖一律排除 .text-white 及彩色背景内部文字，避免误伤浅色文字。 */
+
+/* —— 蓝紫「深色」渐变背景（from-blue-500/600、from-indigo-500/600、from-purple-500/600、from-pink-500 等）
+   → 主题渐变，且优先级高于 .card 白底。
+   ⚠️ 只匹配深色调（-400/-500/-600/-700），不碰 -50/-100 浅色调容器（如 #contextBar 当前学习条） —— */
+.bg-gradient-to-r.from-blue-400, .bg-gradient-to-r.from-blue-500, .bg-gradient-to-r.from-blue-600, .bg-gradient-to-r.from-blue-700,
+.bg-gradient-to-r.from-indigo-500, .bg-gradient-to-r.from-indigo-600, .bg-gradient-to-r.from-indigo-700,
+.bg-gradient-to-r.from-purple-500, .bg-gradient-to-r.from-purple-600, .bg-gradient-to-r.from-pink-500,
+.bg-gradient-to-br.from-blue-500, .bg-gradient-to-br.from-blue-600,
+.bg-gradient-to-br.from-indigo-500, .bg-gradient-to-br.from-indigo-600,
+.bg-gradient-to-br.from-purple-500, .bg-gradient-to-br.from-purple-600, .bg-gradient-to-br.from-pink-500,
+.card.from-blue-500, .card.from-blue-600, .card.from-indigo-500, .card.from-indigo-600 {
+  background-image: var(--brand-gradient) !important;
+}
+/* 这类横幅内的白字/半透明白字保持原样（不被下方文字覆盖误伤） */
+.from-blue-500 .text-white, .from-blue-600 .text-white,
+.from-indigo-500 .text-white, .from-indigo-600 .text-white,
+.from-purple-500 .text-white, .from-pink-500 .text-white,
+.text-white { color: #fff !important; }
+
+/* —— 顶栏 & 纯白底容器 → 卡面色（但排除带彩色/渐变背景的元素）—— */
 header.bg-white { background: var(--surface) !important; }
-/* 通用白底容器（卡片/面板/弹层）→ 卡面色 */
-.bg-white { background-color: var(--surface) !important; }
-/* 浅蓝底（大量用于徽章/高亮块）→ 品牌浅底 */
+.bg-white:not([class*="bg-gradient"]):not([class*="from-"]) { background-color: var(--surface) !important; }
+
+/* —— 浅底块 → 主题浅底 —— */
 .bg-blue-50 { background-color: var(--brand-50) !important; }
 .bg-indigo-50 { background-color: var(--brand-50) !important; }
 .bg-slate-50 { background-color: var(--bg-softer) !important; }
 .bg-slate-100 { background-color: var(--bg-soft) !important; }
-/* 主色文字（品牌蓝字）→ 主题品牌色 */
-.text-blue-600, .text-blue-700 { color: var(--brand-strong) !important; }
+
+/* —— 品牌色文字（仅在非彩色背景语境）→ 主题品牌色 —— */
+.text-blue-600:not(.text-white), .text-blue-700:not(.text-white) { color: var(--brand-strong) !important; }
 .text-indigo-600 { color: var(--brand-2) !important; }
-/* 主文字/次文字 → 主题文字色（关键：水墨深色主题下文字需转浅）*/
+
+/* —— 中性文字 → 主题文字色（排除 .text-white 与彩底横幅内部）——
+   深色(水墨)主题下 --text-* 转浅，白底主题下为深，保证对比度 —— */
 .text-slate-800 { color: var(--text-1) !important; }
 .text-slate-700 { color: var(--text-2) !important; }
 .text-slate-500 { color: var(--text-3) !important; }
 .text-slate-400 { color: var(--text-4) !important; }
-/* 品牌渐变小图标块（如 logo "乐"）→ 主题渐变 */
-.bg-gradient-to-br.from-blue-500.to-indigo-500 { background: var(--brand-gradient) !important; }
+/* 彩色「深色」渐变横幅内部的所有文字强制白色，压过上面的中性覆盖。
+   ⚠️ 只对深色调渐变生效，不影响 from-blue-50 等浅色调容器（保留其品牌色可读文字） */
+.from-blue-400 [class*="text-"], .from-blue-500 [class*="text-"], .from-blue-600 [class*="text-"], .from-blue-700 [class*="text-"],
+.from-indigo-500 [class*="text-"], .from-indigo-600 [class*="text-"], .from-indigo-700 [class*="text-"],
+.from-purple-500 [class*="text-"], .from-purple-600 [class*="text-"], .from-pink-500 [class*="text-"] { color: #fff !important; }
+/* 横幅里"继续学习"白底按钮的品牌字保持品牌色（它是白底，不是彩底）*/
+.from-blue-500 .bg-white.text-blue-600, .from-blue-600 .bg-white.text-blue-600,
+.from-indigo-500 .bg-white.text-blue-600, .from-indigo-600 .bg-white.text-blue-600 { color: var(--brand-strong) !important; background: #fff !important; }
+
+/* —— #contextBar 当前学习条是 Tailwind 固定「浅色」渐变容器（from-blue-50 via-indigo-50 to-purple-50，
+   不被上方主题覆盖规则命中），内部元素也不应跟随深色主题变浅字/变深底，否则水墨黛下会出现
+   「深底 select + 中灰字」(亮度差36看不清) 和「浅灰标签压浅色条」问题。
+   故在此固定回浅色语境：白底 select + 品牌色字 + 深灰标签，6 主题全程可读 —— */
+#contextBar .bg-white { background-color: #fff !important; }
+#contextBar .text-blue-700 { color: var(--brand-strong) !important; }
+#contextBar .text-slate-500 { color: #64748b !important; }
+#contextBar .text-slate-700, #contextBar .text-slate-600 { color: #475569 !important; }
