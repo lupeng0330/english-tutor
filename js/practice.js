@@ -991,13 +991,13 @@ function answerQuiz(idx) {
     var allFilled=true;
     for (var i=0; i<blanks.length; i++){ if (!ans[i]){ allFilled=false; break; } }
     if (!allFilled){ alert('请先填完所有空位再提交！'); return; }
-    // 判断正确性
-    var isCorrect=true; var errMsg='';
-    for (var i=0; i<blanks.length; i++){ if (ans[i]!==blanks[i].answer) {isCorrect=false; errMsg+=('空'+(i+1)+'应选「'+blanks[i].answer+'」而非「'+(ans[i]||'未填')+'」\n');} }
-    try { recordAnswer(realType, q, isCorrect); } catch(e) {}
-    try { recordMastery(realType, q, isCorrect); } catch(e) {}
-    try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
-    if (isCorrect) {
+    // 判断正确性（用独立变量名，避免与下方通用分支的 const isCorrect 冲突）
+    var dlgCorrect=true; var errMsg='';
+    for (var i=0; i<blanks.length; i++){ if (ans[i]!==blanks[i].answer) {dlgCorrect=false; errMsg+=('空'+(i+1)+'应选「'+blanks[i].answer+'」而非「'+(ans[i]||'未填')+'」\n');} }
+    try { recordAnswer(realType, q, dlgCorrect); } catch(e) {}
+    try { recordMastery(realType, q, dlgCorrect); } catch(e) {}
+    try { recordAnswerStats(dlgCorrect, realType); _bumpStreak(); } catch(e) {}
+    if (dlgCorrect) {
       state.quizCorrect++;
       fb.className='mt-4 p-4 rounded-xl bg-green-50 text-green-800';
       fb.innerHTML='<b>✅ 回答正确！<span class=\"confetti-emoji\">🎉</span></b><div class=\"text-sm mt-1\">'+((q.explain||'')+'</div>');
