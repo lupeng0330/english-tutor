@@ -16,6 +16,19 @@
 <!-- Tailwind 本地静态编译产物（替代运行时 CDN，离线/弱网样式 100% 可用；
      重新生成见 tailwind.config.js 顶部注释）。render-blocking 引入避免首屏闪烁。 -->
 <link rel="stylesheet" href="./tailwind.css" />
+<!-- 🆕 styles.css 改为 render-blocking 静态引入（原为 version.txt 回来后动态注入，一旦该链路异常会丢失全部 CSS 变量导致"白底"）。
+     静态引入保证关键样式与主题变量首屏必达；缓存破坏改由下方内联脚本给它追加 ?v= 参数或依赖 SW。 -->
+<link rel="stylesheet" href="./styles.css" id="appStylesLink" />
+<!-- 🆕 主题预应用（防 FOUC）：在样式生效前尽早根据本地偏好设置 data-theme -->
+<script>
+  (function(){
+    try {
+      var t = localStorage.getItem('yxyy_theme_v1');
+      var VALID = ['sunny','vermilion','celadon','ink','navy','rouge'];
+      if (t && VALID.indexOf(t) >= 0) document.documentElement.setAttribute('data-theme', t);
+    } catch(e){}
+  })();
+</script>
 <!-- 🆕 v01.17：Chart.js 本地化（原 CDN），配合 sw.js 预缓存保证离线报告页图表可用 -->
 <script src="./js/vendor/chart.umd.min.js"></script>
 <!-- 🆕 缓存破坏：优先级 URL?v= > version.txt(commit hash) > 当日小时戳。手机/PC 拿到同一版本号，推送后立即更新。 -->
@@ -53,11 +66,11 @@
       .catch(function(){ return fallbackVersion(); });
   })().then(function(v){
     window.__APP_VERSION = v;
-    // 注入 styles.css（带上版本号）
-    var l = document.createElement('link');
-    l.rel  = 'stylesheet';
-    l.href = window.__withVer('./styles.css');
-    document.head.appendChild(l);
+    // styles.css 已在 <head> 静态引入（见上），此处仅为其追加版本号做缓存破坏（不影响首屏，已加载的样式不会因改 href 丢失）
+    try {
+      var sl = document.getElementById('appStylesLink');
+      if (sl) sl.href = window.__withVer('./styles.css');
+    } catch(e){}
     // 更新左下角版本号角标
     var el = document.getElementById('appVersionBadge');
     if (el) el.textContent = 'v' + v;

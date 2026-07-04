@@ -80,10 +80,21 @@
   --amber-a08: rgba(251, 191, 36, 0.08);
   --danger-a70: rgba(239, 68, 68, 0.7);
   --danger-a0: rgba(239, 68, 68, 0);
+
+  /* ===== 🆕 补齐 exam-* 等模块引用但此前未定义的变量（映射到既有语义色，使主题可覆盖考试/语法页）===== */
+  --card: var(--surface);       /* 卡面（考试卡等） */
+  --border: var(--line-3);      /* 通用描边 */
+  --shadow: var(--shadow-card); /* 通用阴影 */
+  --ink-1: var(--text-1);       /* 主墨色文字 */
+  --bg-1: var(--bg-softer);     /* 浅背景 */
+  --amber-50: #fffbeb;          /* 琥珀极浅底 */
+
+  /* ===== 🆕 body 页面背景渐变（变量化，便于主题整体换背景）===== */
+  --page-bg: linear-gradient(135deg, var(--brand-50) 0%, #f5f3ff 100%);
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, var(--brand-50) 0%, #f5f3ff 100%);
+  background: var(--page-bg);
   min-height: 100vh;
 }
 .card {
