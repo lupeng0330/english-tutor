@@ -1656,3 +1656,7 @@ body.keyboard-open #practiceQuizView {
 .dialog-word-btn { padding:6px 14px; border:1px solid #bfdbfe; border-radius:20px; background:#eff6ff; color:#1e40af; font-weight:600; cursor:pointer; font-size:13px; transition:all .15s; }
 .dialog-word-btn:hover { background:#bfdbfe; }
 .dialog-word-btn.used { opacity:.35; pointer-events:none; text-decoration:line-through; }
+
+/* ===== 句型转换 (P6-B) ===== */
+.exam-transform-orig { font-style: italic; color: #334155; }
+.exam-transform-target { color: #2563eb; font-size: 13px; font-weight: 600; margin-left: 4px; }

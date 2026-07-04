@@ -437,6 +437,12 @@ function _buildPaper(def) {
         if (secDef.type === 'listen_judge') {
           item.statement = q.statement || q.q || '';
         }
+        // 🆕 句型转换：带上原句 original + 转换要求 target + 多可接受答案 answers
+        if (secDef.type === 'sentence_transform') {
+          item.originalSentence = q.original || '';
+          item.target = q.target || '';
+          item.answers = Array.isArray(q.answers) ? q.answers : (q.answer ? [q.answer] : []);
+        }
         sec.questions.push(item);
         flatIdx += 1;
       }
@@ -986,6 +992,14 @@ function _renderSection(sectionIdx) {
       <div class="exam-questions">`;
     for (const q of sec.questions) {
       html += _renderDialogCompleteHTML(q, paper.sections.indexOf(sec));
+    }
+    html += `</div>`;
+  } else if (sec.type === 'sentence_transform') {
+    // 🆕 句型转换：原句 + 转换要求 + 文本输入框
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分 · 按要求改写句子</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderSentenceTransformHTML(q);
     }
     html += `</div>`;
   } else {
@@ -1691,6 +1705,24 @@ function _renderDialogCompleteHTML(q, sectionIdx) {
 }
 window._renderDialogCompleteHTML = _renderDialogCompleteHTML;
 
+// 🆕 句型转换渲染 (P6-B)：原句 + 转换要求 + 文本输入框（复用 spelling 输入机制）
+function _renderSentenceTransformHTML(q) {
+  const cur = _examState.answers[q.index] || '';
+  const orig = q.originalSentence || (q.original && q.original.original) || '';
+  const target = q.target || (q.original && q.original.target) || '';
+  return `<div class="exam-question" id="examQ${q.index}">
+    <div class="exam-q-num">${q.index + 1}. <span class="exam-transform-orig">${escapeHtml(orig)}</span>
+      <span class="exam-transform-target">（${escapeHtml(target)}）</span>
+    </div>
+    <div class="exam-spell-wrap">
+      <input type="text" class="exam-spell-input" data-qindex="${q.index}"
+             value="${escapeHtml(cur)}" placeholder="在此输入改写后的句子..." autocomplete="off"
+             autocapitalize="off" spellcheck="false" />
+    </div>
+  </div>`;
+}
+window._renderSentenceTransformHTML = _renderSentenceTransformHTML;
+
 
 function _gradeExam() {
   const paper = _examState.paper;
@@ -1773,6 +1805,13 @@ function _gradeExam() {
         }
         isCorrect = (blanks.length > 0 && correctBlanks === blanks.length);
         qPoints = blanks.length > 0 ? Math.round(pp * correctBlanks / blanks.length * 10) / 10 : 0;
+      }
+      // 🆕 句型转换：用户输入标准化后与 answers 中任一匹配即算对
+      else if (sec.type === 'sentence_transform') {
+        const accept = (q.answers && q.answers.length ? q.answers : [q.answer]).filter(Boolean);
+        const ua = _normText(userAnswer);
+        isCorrect = (ua !== '' && accept.some(a => _normText(a) === ua));
+        if (isCorrect) qPoints = pp;
       }
       // 🆕 补全对话：blanks逐空比对，按空给分
       else if (sec.type === 'dialog_complete') {
@@ -1921,6 +1960,13 @@ function _renderResult(result) {
           userLabel = ua.length ? escapeHtml(ua.map(x => (x && String(x).trim()) ? x : '＿').join(' / ')) : '未作答';
           correctLabel = escapeHtml(blanks.map(b => b.answer).join(' / '));
           stem = escapeHtml(q.passage || '完成句子');
+        } else if (sec.type === 'sentence_transform') {
+          const accept = (q.answers && q.answers.length ? q.answers : [q.answer]).filter(Boolean);
+          const ua = _normText(userAnswer);
+          isCorrect = (ua !== '' && accept.some(a => _normText(a) === ua));
+          userLabel = (userAnswer && String(userAnswer).trim()) ? escapeHtml(userAnswer) : '未作答';
+          correctLabel = escapeHtml((q.answers && q.answers.length ? q.answers : [q.answer]).filter(Boolean).join(' / '));
+          stem = escapeHtml((q.originalSentence || (q.original && q.original.original) || '') + '（' + (q.target || (q.original && q.original.target) || '') + '）');
         } else if (q.type === 'listen_judge' || sec.type === 'listen_judge') {
           isCorrect = (userAnswer !== undefined && userAnswer === q.answer);
           userLabel = userAnswer === undefined ? '未作答' : (userAnswer ? 'True' : 'False');
