@@ -1638,3 +1638,11 @@ body.keyboard-open #practiceQuizView {
 
 /* ===== 写作提示词 chip (P6-C) ===== */
 .exam-writing-hint { display: inline-block; background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; border-radius: 6px; padding: 1px 8px; margin: 2px 2px 0 0; font-size: 12px; }
+
+/* ===== 补全对话 (P6-A) ===== */
+.exam-dialog { border-radius: 12px; }
+.exam-dialog-line { margin-bottom: 4px; font-size: 14px; line-height: 2; display: flex; align-items: center; gap: 6px; }
+.exam-dialog-speaker { font-weight: 700; color: #0f766e; min-width: 24px; text-align: right; }
+.exam-dialog-text { flex: 1; }
+.exam-dialog-select { padding: 3px 8px; border: 1px solid #93c5fd; border-radius: 6px; font-size: 13px; background: #fff; color: #1e40af; font-weight: 600; cursor: pointer; min-width: 80px; }
+.exam-dialog-select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,.2); }

@@ -405,7 +405,7 @@ function _buildPaper(def) {
         });
         flatIdx += 1;
       }
-    } else if (['listen_pic','listen_judge','listen_fill','blank_fill','sentence_transform','sentence_order'].includes(secDef.type)) {
+    } else if (['listen_pic','listen_judge','listen_fill','blank_fill','sentence_transform','sentence_order','dialog_complete'].includes(secDef.type)) {
       // 🆕 新题型：直接从对应题库抽取
       let pool = (qb[secDef.type] || []).filter(q =>
         q.grade === g && q.term === t && _inUnitRange(q, sec.unitRange)
@@ -980,6 +980,14 @@ function _renderSection(sectionIdx) {
       html += _renderBlankFillHTML(q);
     }
     html += `</div>`;
+  } else if (sec.type === 'dialog_complete') {
+    // 🆕 补全对话：显示对话，每个空白处下拉选择
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分 · 为每个空白选择正确的选项</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderDialogCompleteHTML(q, paper.sections.indexOf(sec));
+    }
+    html += `</div>`;
   } else {
     // 普通题型（听力 / 拼写 / 语法 / 新题型单选类）
     html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.questions.length} 题 · ${sec.totalPoints} 分</div>
@@ -1023,6 +1031,24 @@ function _renderSection(sectionIdx) {
 
   // 高亮已选选项
   _highlightSelected();
+
+  // 🆕 补全对话下拉事件
+  contentEl.querySelectorAll('.exam-dialog-select').forEach(function(sel) {
+    sel.addEventListener('change', function() {
+      var qIdx = parseInt(this.dataset.qindex);
+      var blankPos = parseInt(this.dataset.blankpos);
+      if (!_examState.answers[qIdx]) _examState.answers[qIdx] = [];
+      var arr = _examState.answers[qIdx];
+      // 确保索引对齐，空白位置-1为数组索引
+      var idx = blankPos - 1;
+      if (!Array.isArray(arr)) arr = [];
+      arr[idx] = this.value;
+      _examState.answers[qIdx] = arr;
+      // 更新答题卡
+      var sheetItem = document.querySelector('#examAnswersheet .exam-sheet-item:nth-child(' + (qIdx + 1) + ')');
+      if (sheetItem) sheetItem.classList.add('answered');
+    });
+  });
 }
 
 
@@ -1637,6 +1663,34 @@ function _gradeWriting(text, q, maxPoints) {
 }
 window._gradeWriting = _gradeWriting;
 
+// 🆕 补全对话渲染 (P6-A)：对话 + 每空下拉选择
+function _renderDialogCompleteHTML(q, sectionIdx) {
+  var dia = q.dialogue || q.original.dialogue || [];
+  var blanks = q.blanks || q.original.blanks || [];
+  var html = '<div class="exam-dialog bg-sky-50 border border-sky-200 rounded-xl p-4 mb-4"><div class="text-xs text-sky-600 font-semibold mb-3">' + (q.title || q.original.title || '补全对话') + '</div>';
+  for (var li = 0; li < dia.length; li++) {
+    var line = dia[li];
+    var text = line.text;
+    var speaker = line.speaker || '';
+    // 替换 ___N___ 为下拉选择
+    var rendered = text.replace(/___(\d+)___/g, function(match, num) {
+      var b = null;
+      for (var bi = 0; bi < blanks.length; bi++) { if (blanks[bi].pos === parseInt(num)) { b = blanks[bi]; break; } }
+      if (!b) return match;
+      var opts = b.options || [];
+      var optionsHtml = '';
+      for (var oi = 0; oi < opts.length; oi++) {
+        optionsHtml += '<option value="' + opts[oi] + '">' + opts[oi] + '</option>';
+      }
+      return '<select class="exam-dialog-select exam-qselect" data-qindex="' + q.index + '" data-blankpos="' + num + '"><option value="">--</option>' + optionsHtml + '</select>';
+    });
+    html += '<div class="exam-dialog-line"><span class="exam-dialog-speaker">' + speaker + ':</span> <span class="exam-dialog-text">' + rendered + '</span></div>';
+  }
+  html += '</div>';
+  return html;
+}
+window._renderDialogCompleteHTML = _renderDialogCompleteHTML;
+
 
 function _gradeExam() {
   const paper = _examState.paper;
@@ -1719,6 +1773,18 @@ function _gradeExam() {
         }
         isCorrect = (blanks.length > 0 && correctBlanks === blanks.length);
         qPoints = blanks.length > 0 ? Math.round(pp * correctBlanks / blanks.length * 10) / 10 : 0;
+      }
+      // 🆕 补全对话：blanks逐空比对，按空给分
+      else if (sec.type === 'dialog_complete') {
+        var diaBlanks = q.blanks || (q.original && q.original.blanks) || [];
+        var ua = Array.isArray(userAnswer) ? userAnswer : [];
+        var correctBlanks = 0;
+        for (var bi = 0; bi < diaBlanks.length; bi++) {
+          var bAns = diaBlanks[bi].answer;
+          if (bAns && ua[bi] === bAns) correctBlanks++;
+        }
+        isCorrect = (diaBlanks.length > 0 && correctBlanks === diaBlanks.length);
+        qPoints = diaBlanks.length > 0 ? Math.round(pp * correctBlanks / diaBlanks.length * 10) / 10 : 0;
       }
       // 通用单选：answer 是选项索引
       else {
