@@ -1,0 +1,1374 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_DC01",
+    "title": "Meeting a Friend",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hello, ___1___ your name?"
+      },
+      {
+        "speaker": "B",
+        "text": "___2___ name is Tom. What's your name?"
+      },
+      {
+        "speaker": "A",
+        "text": "I'm Lily. Nice to ___3___ you."
+      },
+      {
+        "speaker": "B",
+        "text": "Nice to meet you, ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "___5___ you in Class 1?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I am."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "what",
+        "options": [
+          "what",
+          "how",
+          "where",
+          "who"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "My",
+        "options": [
+          "My",
+          "I",
+          "Me",
+          "Mine"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "meet",
+        "options": [
+          "meet",
+          "see",
+          "look",
+          "find"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "too",
+        "options": [
+          "too",
+          "also",
+          "well",
+          "nice"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "Are",
+        "options": [
+          "Are",
+          "Is",
+          "Do",
+          "Does"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_DC02",
+    "title": "At the Classroom",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good morning! What's this?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's ___1___ English book."
+      },
+      {
+        "speaker": "A",
+        "text": "___2___ colour is it?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's blue and ___3___."
+      },
+      {
+        "speaker": "A",
+        "text": "May I have a ___4___?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure. ___5___ you are."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "an",
+        "options": [
+          "an",
+          "a",
+          "the",
+          "one"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "What",
+        "options": [
+          "What",
+          "Which",
+          "How",
+          "Where"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "white",
+        "options": [
+          "white",
+          "green",
+          "red",
+          "black"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "look",
+        "options": [
+          "look",
+          "see",
+          "watch",
+          "read"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "Here",
+        "options": [
+          "Here",
+          "There",
+          "This",
+          "That"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_DC01",
+    "title": "At the Zoo",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look! ___1___ many animals!"
+      },
+      {
+        "speaker": "B",
+        "text": "I can see a big ___2___."
+      },
+      {
+        "speaker": "A",
+        "text": "___3___ is black and white."
+      },
+      {
+        "speaker": "B",
+        "text": "That's a ___4___! Do you like pandas?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, I like ___5___ very much."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "So",
+        "options": [
+          "So",
+          "Too",
+          "Very",
+          "How"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "panda",
+        "options": [
+          "panda",
+          "tiger",
+          "lion",
+          "elephant"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "It",
+        "options": [
+          "It",
+          "He",
+          "She",
+          "They"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "panda",
+        "options": [
+          "panda",
+          "bear",
+          "cat",
+          "dog"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "them",
+        "options": [
+          "them",
+          "it",
+          "him",
+          "her"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_DC02",
+    "title": "Shopping for Food",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Mum, can I ___1___ some ice cream?"
+      },
+      {
+        "speaker": "B",
+        "text": "First let's ___2___ some fruit."
+      },
+      {
+        "speaker": "A",
+        "text": "OK. ___3___ many apples do we need?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need five apples and some ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "Can we get some juice, ___5___?"
+      },
+      {
+        "speaker": "B",
+        "text": "Alright. Let's go to the drinks section."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "have",
+        "options": [
+          "have",
+          "eat",
+          "take",
+          "get"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "buy",
+        "options": [
+          "buy",
+          "eat",
+          "make",
+          "cook"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "How",
+        "options": [
+          "How",
+          "What",
+          "Which",
+          "Where"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "oranges",
+        "options": [
+          "oranges",
+          "bananas",
+          "grapes",
+          "pears"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "too",
+        "options": [
+          "too",
+          "also",
+          "please",
+          "now"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_DC03",
+    "title": "My Family",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "___1___ people are there in your family?"
+      },
+      {
+        "speaker": "B",
+        "text": "There ___2___ four. My parents, my sister and me."
+      },
+      {
+        "speaker": "A",
+        "text": "___3___ does your father do?"
+      },
+      {
+        "speaker": "B",
+        "text": "He is a ___4___. He works in a hospital."
+      },
+      {
+        "speaker": "A",
+        "text": "That's great! My mother is a teacher. She ___5___ English."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "How many",
+        "options": [
+          "How many",
+          "How much",
+          "How old",
+          "How long"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "are",
+        "options": [
+          "are",
+          "is",
+          "am",
+          "be"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "What",
+        "options": [
+          "What",
+          "Who",
+          "How",
+          "Where"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "doctor",
+        "options": [
+          "doctor",
+          "teacher",
+          "driver",
+          "farmer"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "teaches",
+        "options": [
+          "teaches",
+          "teach",
+          "teaching",
+          "taught"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_DC01",
+    "title": "School Subjects",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's your ___1___ subject?"
+      },
+      {
+        "speaker": "B",
+        "text": "I like English ___2___. What about you?"
+      },
+      {
+        "speaker": "A",
+        "text": "___3___ favourite is maths."
+      },
+      {
+        "speaker": "B",
+        "text": "___4___ do you like maths?"
+      },
+      {
+        "speaker": "A",
+        "text": "___5___ I think it's interesting."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "favourite",
+        "options": [
+          "favourite",
+          "best",
+          "good",
+          "nice"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "best",
+        "options": [
+          "best",
+          "most",
+          "better",
+          "well"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "My",
+        "options": [
+          "My",
+          "I",
+          "Mine",
+          "Me"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "Why",
+        "options": [
+          "Why",
+          "What",
+          "How",
+          "When"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "Because",
+        "options": [
+          "Because",
+          "So",
+          "But",
+          "And"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_DC02",
+    "title": "Daily Routine",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you ___1___ up every day?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up ___2___ 6:30 in the morning."
+      },
+      {
+        "speaker": "A",
+        "text": "That's early! Do you ___3___ breakfast at home?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes. I have milk and bread. Then I go to school ___4___ bus."
+      },
+      {
+        "speaker": "A",
+        "text": "What do you ___5___ after school?"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "get",
+        "options": [
+          "get",
+          "wake",
+          "stand",
+          "go"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "at",
+        "options": [
+          "at",
+          "on",
+          "in",
+          "for"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "have",
+        "options": [
+          "have",
+          "eat",
+          "make",
+          "take"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "by",
+        "options": [
+          "by",
+          "on",
+          "with",
+          "in"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "do",
+        "options": [
+          "do",
+          "make",
+          "play",
+          "have"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_DC01",
+    "title": "Weather Talk",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the ___1___ like today?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's sunny and ___2___."
+      },
+      {
+        "speaker": "A",
+        "text": "Great! Let's go to the ___3___."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea! ___4___ shall we meet?"
+      },
+      {
+        "speaker": "A",
+        "text": "Let's meet ___5___ the school gate at 9:00."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "weather",
+        "options": [
+          "weather",
+          "day",
+          "sky",
+          "wind"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "warm",
+        "options": [
+          "warm",
+          "cold",
+          "cool",
+          "hot"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "park",
+        "options": [
+          "park",
+          "zoo",
+          "school",
+          "library"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "Where",
+        "options": [
+          "Where",
+          "When",
+          "What",
+          "How"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "at",
+        "options": [
+          "at",
+          "in",
+          "on",
+          "by"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_DC02",
+    "title": "Weekend Plans",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you going to ___1___ this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "I ___2___ going to visit my grandparents."
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds ___3___! Where do they live?"
+      },
+      {
+        "speaker": "B",
+        "text": "They live in the ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "How ___5___ does it take to get there?"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "do",
+        "options": [
+          "do",
+          "make",
+          "go",
+          "play"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "am",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "nice",
+        "options": [
+          "nice",
+          "good",
+          "well",
+          "fine"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "countryside",
+        "options": [
+          "countryside",
+          "city",
+          "town",
+          "village"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "long",
+        "options": [
+          "long",
+          "far",
+          "much",
+          "many"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_DC01",
+    "title": "Hobbies",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have any ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I like ___2___ basketball."
+      },
+      {
+        "speaker": "A",
+        "text": "How ___3___ do you play?"
+      },
+      {
+        "speaker": "B",
+        "text": "I play three times a ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "Can I ___5___ you next time?"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "hobbies",
+        "options": [
+          "hobbies",
+          "hobby",
+          "friends",
+          "pets"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "playing",
+        "options": [
+          "playing",
+          "play",
+          "plays",
+          "to play"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "often",
+        "options": [
+          "often",
+          "long",
+          "many",
+          "far"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "week",
+        "options": [
+          "week",
+          "day",
+          "month",
+          "year"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "join",
+        "options": [
+          "join",
+          "play",
+          "watch",
+          "help"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_DC02",
+    "title": "At the Library",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, where can I ___1___ story books?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can find them on the second ___2___."
+      },
+      {
+        "speaker": "A",
+        "text": "How many books can I ___3___ at a time?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can borrow ___4___ to five books."
+      },
+      {
+        "speaker": "A",
+        "text": "___5___ long can I keep them?"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "find",
+        "options": [
+          "find",
+          "look",
+          "see",
+          "read"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "floor",
+        "options": [
+          "floor",
+          "room",
+          "shelf",
+          "desk"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "borrow",
+        "options": [
+          "borrow",
+          "lend",
+          "take",
+          "bring"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "up",
+        "options": [
+          "up",
+          "down",
+          "in",
+          "out"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "How",
+        "options": [
+          "How",
+          "What",
+          "Which",
+          "Where"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_DC01",
+    "title": "Planning a Trip",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where are you going for the ___1___ holiday?"
+      },
+      {
+        "speaker": "B",
+        "text": "We are going to ___2___ Beijing."
+      },
+      {
+        "speaker": "A",
+        "text": "That's ___3___! How will you get there?"
+      },
+      {
+        "speaker": "B",
+        "text": "___4___ plane. It's much faster."
+      },
+      {
+        "speaker": "A",
+        "text": "I hope you have a ___5___ time!"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "summer",
+        "options": [
+          "summer",
+          "winter",
+          "spring",
+          "autumn"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "visit",
+        "options": [
+          "visit",
+          "go",
+          "travel",
+          "come"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "exciting",
+        "options": [
+          "exciting",
+          "excited",
+          "boring",
+          "sad"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "By",
+        "options": [
+          "By",
+          "On",
+          "With",
+          "In"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "great",
+        "options": [
+          "great",
+          "good",
+          "nice",
+          "wonderful"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_DC02",
+    "title": "Festivals",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's your ___1___ festival?"
+      },
+      {
+        "speaker": "B",
+        "text": "___2___ favourite is the Spring Festival."
+      },
+      {
+        "speaker": "A",
+        "text": "What do you usually ___3___?"
+      },
+      {
+        "speaker": "B",
+        "text": "We have a big ___4___ and set off fireworks."
+      },
+      {
+        "speaker": "A",
+        "text": "Sounds fun! Do you get ___5___ money?"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "favourite",
+        "options": [
+          "favourite",
+          "best",
+          "like",
+          "nice"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "My",
+        "options": [
+          "My",
+          "Mine",
+          "I",
+          "Me"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "do",
+        "options": [
+          "do",
+          "make",
+          "eat",
+          "play"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "dinner",
+        "options": [
+          "dinner",
+          "lunch",
+          "breakfast",
+          "party"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "lucky",
+        "options": [
+          "lucky",
+          "red",
+          "good",
+          "pocket"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_DC01",
+    "title": "Talking about Heroes",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who is your ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "I ___2___ Dr Sun Yatsen very much."
+      },
+      {
+        "speaker": "A",
+        "text": "Why do you ___3___ him?"
+      },
+      {
+        "speaker": "B",
+        "text": "___4___ he was a great leader. He loved his ___5___."
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, he was a very important person in Chinese history."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "hero",
+        "options": [
+          "hero",
+          "teacher",
+          "friend",
+          "father"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "admire",
+        "options": [
+          "admire",
+          "like",
+          "love",
+          "respect"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "admire",
+        "options": [
+          "admire",
+          "like",
+          "know",
+          "see"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "Because",
+        "options": [
+          "Because",
+          "So",
+          "But",
+          "And"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "country",
+        "options": [
+          "country",
+          "city",
+          "family",
+          "school"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_DC02",
+    "title": "In the City",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you tell me the ___1___ to the museum?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure. Go straight and turn ___2___ at the second crossing."
+      },
+      {
+        "speaker": "A",
+        "text": "Is it ___3___ from here?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it's ___4___ about ten minutes' walk."
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you very ___5___!"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "way",
+        "options": [
+          "way",
+          "road",
+          "street",
+          "path"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "left",
+        "options": [
+          "left",
+          "right",
+          "back",
+          "around"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "far",
+        "options": [
+          "far",
+          "near",
+          "long",
+          "close"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "only",
+        "options": [
+          "only",
+          "about",
+          "around",
+          "nearly"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "much",
+        "options": [
+          "much",
+          "many",
+          "well",
+          "kind"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_DC01",
+    "title": "Being Polite",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Could you ___1___ me your pen, please?"
+      },
+      {
+        "speaker": "B",
+        "text": "Of ___2___. Here you are."
+      },
+      {
+        "speaker": "A",
+        "text": "Thanks. I'll ___3___ it back soon."
+      },
+      {
+        "speaker": "B",
+        "text": "No ___4___. Take your time."
+      },
+      {
+        "speaker": "A",
+        "text": "You are so ___5___!"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "lend",
+        "options": [
+          "lend",
+          "borrow",
+          "give",
+          "pass"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "course",
+        "options": [
+          "course",
+          "sure",
+          "cause",
+          "kind"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "give",
+        "options": [
+          "give",
+          "take",
+          "bring",
+          "send"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "hurry",
+        "options": [
+          "hurry",
+          "problem",
+          "worry",
+          "rush"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "kind",
+        "options": [
+          "kind",
+          "nice",
+          "good",
+          "sweet"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_DC02",
+    "title": "Saying Goodbye",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "We are ___1___ to middle school soon."
+      },
+      {
+        "speaker": "B",
+        "text": "I know. I will ___2___ everyone here."
+      },
+      {
+        "speaker": "A",
+        "text": "Me too. Let's ___3___ in touch."
+      },
+      {
+        "speaker": "B",
+        "text": "Good ___4___. Let's write emails to each other."
+      },
+      {
+        "speaker": "A",
+        "text": "I wish you all the ___5___ in the future!"
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "going",
+        "options": [
+          "going",
+          "moving",
+          "leaving",
+          "coming"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "miss",
+        "options": [
+          "miss",
+          "remember",
+          "forget",
+          "leave"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "keep",
+        "options": [
+          "keep",
+          "stay",
+          "be",
+          "get"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "idea",
+        "options": [
+          "idea",
+          "plan",
+          "way",
+          "luck"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "best",
+        "options": [
+          "best",
+          "good",
+          "better",
+          "luck"
+        ]
+      }
+    ]
+  }
+]
