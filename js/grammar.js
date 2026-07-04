@@ -250,8 +250,10 @@
       html += '<div class="grammar-tips">+ ' + item.tips + '</div>';
     }
 
-    // 练习按钮
-    html += '<div class="mt-6"><button class="gradient-btn" onclick="switchPage(\'practice\');setTimeout(function(){startPractice(\'grammar\')},100)">开始本知识点练习 </button></div>';
+    // 练习按钮：传递知识点信息，供练习页按相关单元过滤题目
+    // 注意：JSON.stringify 含双引号会与 HTML onclick 属性冲突 → 用 &quot; 转义
+    var relUnitsJson = JSON.stringify(item.relatedUnits || {}).replace(/\"/g, '&quot;');
+    html += '<div class="mt-6"><button class="gradient-btn" onclick="window._grammarPracticeTopic={id:\'' + item.id + '\',title:\'' + item.title.replace(/\'/g,'\\\'') + '\',relatedUnits:' + relUnitsJson + '};switchPage(\'practice\');setTimeout(function(){startPractice(\'grammar\')},100)">开始「' + item.title + '」练习 +</button></div>';
 
     content.innerHTML = html;
   }

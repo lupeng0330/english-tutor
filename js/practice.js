@@ -117,6 +117,8 @@ function filterQuestions(type) {
   const all = QB()[type] || [];
   // 目标单元（仅非"全部单元"且非"跨年级"时生效）
   const targetUnit = _resolveTargetUnit();
+  // 语法知识点过滤：从语法讲解页跳转来时，按关联单元码过滤
+  const gtp = window._grammarPracticeTopic;
   return all.filter(q => {
     // 年级筛选（除非勾选了"包含全部年级"）
     if (!state.includeAllGrades && q.grade !== state.ctx.grade) return false;
@@ -135,6 +137,14 @@ function filterQuestions(type) {
     if (!state.includeAllGrades && targetUnit) {
       const qUnit = q.unit || _inferUnitFromCode(q.code);
       if (!qUnit || qUnit !== targetUnit) return false;
+    }
+    // 🆕 语法知识点过滤：匹配关联单元码
+    if (type === 'grammar' && gtp && gtp.relatedUnits) {
+      var qCode = q.code || '';
+      var tbUnits = gtp.relatedUnits[(state.ctx && state.ctx.textbook) || 'jk'] || [];
+      if (tbUnits.length > 0 && !tbUnits.some(function(u) { return qCode.indexOf(u) === 0; })) {
+        return false;
+      }
     }
     return true;
   });
@@ -311,7 +321,13 @@ function startPractice(type) {
 
   const questions = filterQuestions(type);
   if (questions.length === 0) {
-    alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
+    // 语法知识点过滤无结果时，给出更具体的提示
+    if (type === 'grammar' && window._grammarPracticeTopic) {
+      var msg = '当前教材暂无「' + window._grammarPracticeTopic.title + '」相关语法题。\\n\\n请尝试：\\n1. 切到教材对应年级\\n2. 选择\"全部教材\"模式查看语法讲解\\n3. 或在练习页直接选\"语法练习\"做全部语法题';
+      alert(msg);
+    } else {
+      alert('⚠️ 当前筛选条件下没有题目，请放宽筛选后再试！');
+    }
     return;
   }
   // 🆕 cloze 特殊：每篇短文 = N 道挖空题；不走 pickSmartQuestions 的 4 维加权
@@ -365,7 +381,12 @@ function startPractice(type) {
     listen_pic: '听音选图', listen_judge: '听音判断', listen_fill: '听音填空',
     blank_fill: '选词填空', sentence_transform: '句型转换', sentence_order: '连词成句'
   };
-  document.getElementById('quizType').textContent = typeLabel[type];
+  // 语法知识点练习：显示具体知识点名称
+  var quizLabel = typeLabel[type];
+  if (type === 'grammar' && window._grammarPracticeTopic) {
+    quizLabel = '语法「' + window._grammarPracticeTopic.title + '」';
+  }
+  document.getElementById('quizType').textContent = quizLabel;
   document.getElementById('quizTotal').textContent = shuffled.length;
   document.getElementById('practiceTypeView').classList.add('hide');
   document.getElementById('practiceFilterView').classList.add('hide');
@@ -1061,6 +1082,8 @@ function restartPractice() {
 }
 
 function backToPracticeList() {
+  // 清除语法知识点过滤，回到全量练习
+  if (window._grammarPracticeTopic) { delete window._grammarPracticeTopic; }
   document.getElementById('practiceResultView').classList.add('hide');
   document.getElementById('practiceQuizView').classList.add('hide');
   document.getElementById('practiceTypeView').classList.remove('hide');
