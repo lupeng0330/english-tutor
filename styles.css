@@ -1789,3 +1789,35 @@ body.keyboard-open #practiceQuizView {
 .exam-clozep-word { background: #fef3c7; color: #b45309; border-radius: 6px; padding: 2px 10px; font-size: 13px; font-weight: 600; }
 .exam-clozep-passage { line-height: 2.4; color: #334155; font-size: 15px; }
 .exam-clozep-select { min-width: 90px; margin: 0 2px; }
+
+/* ===== 🎨 主题选择器 UI (P-Theme T4) ===== */
+.theme-picker { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line-2); }
+.theme-picker-title { font-size: 13px; font-weight: 700; color: var(--text-2); margin-bottom: 8px; }
+.theme-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.theme-card { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 4px; border: 2px solid var(--line-2); border-radius: var(--r-xl); background: var(--surface); cursor: pointer; transition: all .15s; }
+.theme-card:hover { border-color: var(--brand); transform: translateY(-1px); }
+.theme-card.active { border-color: var(--brand); box-shadow: 0 0 0 2px var(--brand-a25); }
+.theme-card-swatch { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 700; font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+.theme-card-name { font-size: 11px; color: var(--text-2); font-weight: 600; }
+
+/* ===== 🎨 A+ 覆盖 Tailwind 固定色，使全站关键处跟随主题 (P-Theme T4) =====
+   Tailwind 是静态编译的固定色类，不会跟随 data-theme；这里用变量覆盖关键视觉面。 */
+/* 顶栏白底 → 卡面色 */
+header.bg-white { background: var(--surface) !important; }
+/* 通用白底容器（卡片/面板/弹层）→ 卡面色 */
+.bg-white { background-color: var(--surface) !important; }
+/* 浅蓝底（大量用于徽章/高亮块）→ 品牌浅底 */
+.bg-blue-50 { background-color: var(--brand-50) !important; }
+.bg-indigo-50 { background-color: var(--brand-50) !important; }
+.bg-slate-50 { background-color: var(--bg-softer) !important; }
+.bg-slate-100 { background-color: var(--bg-soft) !important; }
+/* 主色文字（品牌蓝字）→ 主题品牌色 */
+.text-blue-600, .text-blue-700 { color: var(--brand-strong) !important; }
+.text-indigo-600 { color: var(--brand-2) !important; }
+/* 主文字/次文字 → 主题文字色（关键：水墨深色主题下文字需转浅）*/
+.text-slate-800 { color: var(--text-1) !important; }
+.text-slate-700 { color: var(--text-2) !important; }
+.text-slate-500 { color: var(--text-3) !important; }
+.text-slate-400 { color: var(--text-4) !important; }
+/* 品牌渐变小图标块（如 logo "乐"）→ 主题渐变 */
+.bg-gradient-to-br.from-blue-500.to-indigo-500 { background: var(--brand-gradient) !important; }

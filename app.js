@@ -413,9 +413,11 @@ function renderProfilePanel() {
     }),
     '</div>',
     '<button id="profileCreateBtn" class="profile-create-btn">+ 新建档案</button>',
-    '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>'
+    '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>',
+    _renderThemePickerHTML()
   ].join('');
   panel.innerHTML = html;
+  _bindThemePicker(panel);
 
   // 绑定事件（事件委托）
   panel.querySelectorAll('[data-action]').forEach(el => {
@@ -465,6 +467,45 @@ function renderProfilePanel() {
       }
     });
   }
+}
+
+/** 🎨 主题选择器 HTML（6 套色卡，当前高亮） */
+function _renderThemePickerHTML() {
+  if (!window.ThemeManager) return '';
+  const cur = window.ThemeManager.get();
+  const cards = window.ThemeManager.list().map(function (t) {
+    const on = (t.id === cur);
+    return (
+      '<button class="theme-card' + (on ? ' active' : '') + '" data-theme-id="' + t.id + '" title="' + t.desc + '">' +
+        '<span class="theme-card-swatch" style="background:linear-gradient(135deg,' + t.c1 + ',' + t.c2 + ')">' + (on ? '✓' : '') + '</span>' +
+        '<span class="theme-card-name">' + t.name + '</span>' +
+      '</button>'
+    );
+  }).join('');
+  return (
+    '<div class="theme-picker">' +
+      '<div class="theme-picker-title">🎨 界面主题</div>' +
+      '<div class="theme-card-grid">' + cards + '</div>' +
+    '</div>'
+  );
+}
+
+/** 绑定主题色卡点击：切换主题 + 刷新高亮 */
+function _bindThemePicker(panel) {
+  if (!panel || !window.ThemeManager) return;
+  panel.querySelectorAll('.theme-card[data-theme-id]').forEach(function (btn) {
+    btn.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      const id = btn.dataset.themeId;
+      window.ThemeManager.set(id);
+      // 刷新色卡高亮（重渲染主题区块即可）
+      const wrap = panel.querySelector('.theme-picker');
+      if (wrap) {
+        wrap.outerHTML = _renderThemePickerHTML();
+        _bindThemePicker(panel);
+      }
+    });
+  });
 }
 
 function openProfilePanel() {
