@@ -11,10 +11,10 @@
     "3": {
       "上": {
         "midterm": {
-          "template": "low_midterm_gz"
+          "template": "g3a_midterm"
         },
         "final": {
-          "template": "low_final"
+          "template": "g3a_final"
         },
         "unitTest": {
           "template": "low_unit"
@@ -22,10 +22,10 @@
       },
       "下": {
         "midterm": {
-          "template": "low_midterm"
+          "template": "g3b_midterm"
         },
         "final": {
-          "template": "low_final"
+          "template": "g3b_final"
         },
         "unitTest": {
           "template": "low_unit"
@@ -35,10 +35,10 @@
     "4": {
       "上": {
         "midterm": {
-          "template": "low_midterm"
+          "template": "g4a_midterm"
         },
         "final": {
-          "template": "low_final"
+          "template": "g4a_final"
         },
         "unitTest": {
           "template": "low_unit"
@@ -46,10 +46,10 @@
       },
       "下": {
         "midterm": {
-          "template": "low_midterm"
+          "template": "g4b_midterm"
         },
         "final": {
-          "template": "low_final"
+          "template": "g4b_final"
         },
         "unitTest": {
           "template": "low_unit"
@@ -59,10 +59,10 @@
     "5": {
       "上": {
         "midterm": {
-          "template": "mid_midterm"
+          "template": "g5a_midterm"
         },
         "final": {
-          "template": "mid_final"
+          "template": "g5a_final"
         },
         "unitTest": {
           "template": "mid_unit"
@@ -70,10 +70,10 @@
       },
       "下": {
         "midterm": {
-          "template": "mid_midterm"
+          "template": "g5b_midterm"
         },
         "final": {
-          "template": "mid_final_w"
+          "template": "g5b_final"
         },
         "unitTest": {
           "template": "mid_unit"
@@ -83,10 +83,10 @@
     "6": {
       "上": {
         "midterm": {
-          "template": "mid_midterm"
+          "template": "g6a_midterm"
         },
         "final": {
-          "template": "mid_final_w"
+          "template": "g6a_final"
         },
         "unitTest": {
           "template": "mid_unit"
@@ -94,10 +94,10 @@
       },
       "下": {
         "midterm": {
-          "template": "mid_midterm"
+          "template": "g6b_midterm"
         },
         "final": {
-          "template": "mid_final_w"
+          "template": "g6b_final"
         },
         "unitTest": {
           "template": "mid_unit"
