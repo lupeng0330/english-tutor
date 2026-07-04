@@ -569,6 +569,13 @@ function showQuiz() {
     // ===== 补全对话：对话+空位点选+词池点击填充 =====
     var dia = q.dialogue || [];
     var blanks = q.blanks || [];
+    var dialogKey = (q.code || '') + ':' + state.quizIndex;
+    // 只在切换到新题时重置，词池点击触发 showQuiz() 刷新时保留答案
+    if (state._dialogActiveKey !== dialogKey) {
+      state._dialogActiveKey = dialogKey;
+      state.quizAnswers = new Array(blanks.length);
+      state._dialogCurrentBlank = 1;
+    }
     var qEl2 = document.getElementById('quizQuestion');
     qEl2.className = 'text-lg font-semibold text-slate-800 mb-3';
     qEl2.textContent = q.title || '补全对话';
@@ -582,6 +589,7 @@ function showQuiz() {
         var val = (state.quizAnswers && state.quizAnswers[pos-1]) || '';
         var display = val || '___'+pos+'___';
         var cls = val ? 'dialog-blank filled' : 'dialog-blank empty';
+        if (state._dialogCurrentBlank === pos) cls += ' current';
         return '<button class="'+cls+'" data-blankpos="'+pos+'" onclick="selectDialogBlank('+pos+')">'+display+'</button>';
       });
       diaHtml += '<div class="exam-dialog-line"><span class="exam-dialog-speaker">'+line.speaker+':</span> <span class="exam-dialog-text">'+rendered+'</span></div>';
@@ -598,13 +606,11 @@ function showQuiz() {
     for (var wi=0; wi<allWords.length; wi++){
       var used=false;
       if (state.quizAnswers){ for (var ai=0; ai<state.quizAnswers.length; ai++){ if (state.quizAnswers[ai]===allWords[wi]){used=true; break;} }}
-      diaHtml += '<button class="dialog-word-btn'+(used?' used':'')+'" onclick="fillDialogWord(\''+allWords[wi].replace(/'/g,'\\\x27')+'\')">'+allWords[wi]+'</button>';
+      diaHtml += '<button class="dialog-word-btn'+(used?' used':'')+'" onclick="fillDialogWord(\''+allWords[wi].replace(/'/g,'\\\'')+'\')">'+allWords[wi]+'</button>';
     }
-    diaHtml += '</div><div class="mt-3"><button class="text-xs text-slate-500 underline" onclick="resetDialogBlanks()">清空重填</button></div>';
+    diaHtml += '</div><div class="mt-3 flex gap-2"><button class="gradient-btn flex-1" onclick="answerQuiz(0)">提交答案</button><button class="px-4 py-2 rounded-xl bg-slate-100 text-slate-600 text-sm" onclick="resetDialogBlanks()">清空重填</button></div>';
     document.getElementById('quizPassage').innerHTML = diaHtml;
     document.getElementById('quizPassageBox').classList.remove('hide');
-    state._dialogCurrentBlank = 1;
-    if (!state.quizAnswers) state.quizAnswers = new Array(blanks.length);
   } else {
     // ===== 选择题（听力/语法/阅读） =====
     const qEl = document.getElementById('quizQuestion');
@@ -1392,13 +1398,20 @@ function fillDialogWord(word) {
   var pos = state._dialogCurrentBlank || 1;
   if (!state.quizAnswers) state.quizAnswers = [];
   state.quizAnswers[pos-1] = word;
-  // 刷新界面
+  // 自动跳到下一个未填空位，提升连续填空体验
+  var next = 0;
+  for (var i = 0; i < state.quizAnswers.length; i++) {
+    if (!state.quizAnswers[i]) { next = i + 1; break; }
+  }
+  state._dialogCurrentBlank = next || pos;
   showQuiz();
 }
 window.fillDialogWord = fillDialogWord;
 
 function resetDialogBlanks() {
-  state.quizAnswers = [];
+  var q = state.quizQuestions && state.quizQuestions[state.quizIndex];
+  var len = q && q.blanks ? q.blanks.length : 0;
+  state.quizAnswers = new Array(len);
   state._dialogCurrentBlank = 1;
   showQuiz();
 }
