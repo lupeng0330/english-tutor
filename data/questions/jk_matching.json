@@ -1,0 +1,302 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "What's your name?",
+        "a": "My name is Ming."
+      },
+      {
+        "q": "How are you?",
+        "a": "I'm fine, thank you."
+      },
+      {
+        "q": "How old are you?",
+        "a": "I'm nine."
+      },
+      {
+        "q": "Hello!",
+        "a": "Hi!"
+      },
+      {
+        "q": "Goodbye!",
+        "a": "See you!"
+      }
+    ],
+    "explain": "日常问候与自我介绍"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "What's this?",
+        "a": "It's a pen."
+      },
+      {
+        "q": "What colour is it?",
+        "a": "It's red."
+      },
+      {
+        "q": "Is it a cat?",
+        "a": "Yes, it is."
+      },
+      {
+        "q": "How many books?",
+        "a": "Five books."
+      },
+      {
+        "q": "Where is my bag?",
+        "a": "It's on the desk."
+      }
+    ],
+    "explain": "物品与颜色问答"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "Can I have an apple?",
+        "a": "Sure, here you are."
+      },
+      {
+        "q": "Do you like bananas?",
+        "a": "Yes, I do."
+      },
+      {
+        "q": "What would you like?",
+        "a": "I'd like some milk."
+      },
+      {
+        "q": "Is this your book?",
+        "a": "No, it isn't."
+      },
+      {
+        "q": "Thank you!",
+        "a": "You're welcome."
+      }
+    ],
+    "explain": "食物与礼貌用语"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "What day is it today?",
+        "a": "It's Monday."
+      },
+      {
+        "q": "What's the weather like?",
+        "a": "It's sunny."
+      },
+      {
+        "q": "What time is it?",
+        "a": "It's seven o'clock."
+      },
+      {
+        "q": "Where are you from?",
+        "a": "I'm from China."
+      },
+      {
+        "q": "Who is she?",
+        "a": "She is my mother."
+      }
+    ],
+    "explain": "时间/天气/人物问答"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "Can you swim?",
+        "a": "Yes, I can."
+      },
+      {
+        "q": "What are you doing?",
+        "a": "I'm reading."
+      },
+      {
+        "q": "Whose bag is this?",
+        "a": "It's mine."
+      },
+      {
+        "q": "Where is the dog?",
+        "a": "It's under the table."
+      },
+      {
+        "q": "Do you have a ruler?",
+        "a": "Yes, I do."
+      }
+    ],
+    "explain": "能力与位置问答"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "type": "matching",
+    "difficulty": 1,
+    "pairs": [
+      {
+        "q": "Happy birthday!",
+        "a": "Thank you!"
+      },
+      {
+        "q": "Let's play football.",
+        "a": "Great idea!"
+      },
+      {
+        "q": "May I come in?",
+        "a": "Yes, please."
+      },
+      {
+        "q": "How much is it?",
+        "a": "Ten yuan."
+      },
+      {
+        "q": "What's your favourite fruit?",
+        "a": "I like oranges."
+      }
+    ],
+    "explain": "祝福与日常交流"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "type": "matching",
+    "difficulty": 2,
+    "pairs": [
+      {
+        "q": "What's your father's job?",
+        "a": "He is a doctor."
+      },
+      {
+        "q": "Where do you live?",
+        "a": "I live in Guangzhou."
+      },
+      {
+        "q": "What subject do you like?",
+        "a": "I like English."
+      },
+      {
+        "q": "How do you go to school?",
+        "a": "By bus."
+      },
+      {
+        "q": "When do you get up?",
+        "a": "At six o'clock."
+      }
+    ],
+    "explain": "职业/地点/日常"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "type": "matching",
+    "difficulty": 2,
+    "pairs": [
+      {
+        "q": "What's in your bag?",
+        "a": "There are some books."
+      },
+      {
+        "q": "Is there a park near here?",
+        "a": "Yes, there is."
+      },
+      {
+        "q": "What are these?",
+        "a": "They are apples."
+      },
+      {
+        "q": "Whose pen is it?",
+        "a": "It's Tom's."
+      },
+      {
+        "q": "Can you help me?",
+        "a": "Of course."
+      }
+    ],
+    "explain": "存在句与物品"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "type": "matching",
+    "difficulty": 2,
+    "pairs": [
+      {
+        "q": "What's the date today?",
+        "a": "It's May 1st."
+      },
+      {
+        "q": "What will you do tomorrow?",
+        "a": "I'll go hiking."
+      },
+      {
+        "q": "Why do you like spring?",
+        "a": "Because it's warm."
+      },
+      {
+        "q": "What's your hobby?",
+        "a": "I like drawing."
+      },
+      {
+        "q": "How's the weather in summer?",
+        "a": "It's hot."
+      }
+    ],
+    "explain": "日期/计划/爱好"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "type": "matching",
+    "difficulty": 2,
+    "pairs": [
+      {
+        "q": "What did you do yesterday?",
+        "a": "I watched TV."
+      },
+      {
+        "q": "Where did you go?",
+        "a": "I went to the zoo."
+      },
+      {
+        "q": "What animals did you see?",
+        "a": "I saw pandas."
+      },
+      {
+        "q": "Was it fun?",
+        "a": "Yes, it was."
+      },
+      {
+        "q": "Did you like it?",
+        "a": "Yes, very much."
+      }
+    ],
+    "explain": "过去时问答（游玩）"
+  }
+]
