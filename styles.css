@@ -1660,3 +1660,13 @@ body.keyboard-open #practiceQuizView {
 /* ===== 句型转换 (P6-B) ===== */
 .exam-transform-orig { font-style: italic; color: #334155; }
 .exam-transform-target { color: #2563eb; font-size: 13px; font-weight: 600; margin-left: 4px; }
+
+/* ===== 匹配题 (P6-D1) ===== */
+.exam-matching-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.exam-matching-q { flex: 1; font-size: 14px; color: #334155; }
+.exam-matching-select { min-width: 160px; }
+/* ===== 补全短文 (P6-D2) ===== */
+.exam-clozep-bank { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; padding: 8px; background: #fff; border: 1px dashed #fbbf24; border-radius: 8px; }
+.exam-clozep-word { background: #fef3c7; color: #b45309; border-radius: 6px; padding: 2px 10px; font-size: 13px; font-weight: 600; }
+.exam-clozep-passage { line-height: 2.4; color: #334155; font-size: 15px; }
+.exam-clozep-select { min-width: 90px; margin: 0 2px; }

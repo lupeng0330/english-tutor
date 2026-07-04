@@ -443,6 +443,17 @@ function _buildPaper(def) {
           item.target = q.target || '';
           item.answers = Array.isArray(q.answers) ? q.answers : (q.answer ? [q.answer] : []);
         }
+        // 🆕 匹配题：带上 pairs（问答对），选项 = 打乱后的全部答句
+        if (secDef.type === 'matching') {
+          item.pairs = Array.isArray(q.pairs) ? q.pairs : [];
+          item.answerOptions = _sampleRng(item.pairs.map(p => p.a), item.pairs.length, rng);
+        }
+        // 🆕 补全短文：带上 passage(含 ___n___) + blanks(每空 answer) + 词池 options
+        if (secDef.type === 'cloze_passage') {
+          item.passage = q.passage || '';
+          item.blanks = Array.isArray(q.blanks) ? q.blanks : [];
+          item.wordbank = Array.isArray(q.wordbank) ? q.wordbank : [];
+        }
         sec.questions.push(item);
         flatIdx += 1;
       }
@@ -1000,6 +1011,22 @@ function _renderSection(sectionIdx) {
       <div class="exam-questions">`;
     for (const q of sec.questions) {
       html += _renderSentenceTransformHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'matching') {
+    // 🆕 匹配题：左问句 + 右下拉选答句
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.totalPoints} 分 · 为每个问句选择正确的答句</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderMatchingHTML(q);
+    }
+    html += `</div>`;
+  } else if (sec.type === 'cloze_passage') {
+    // 🆕 补全短文：短文含空 + 词池下拉选择
+    html = `<div class="mb-4 text-sm text-slate-500">${_typeIcon(sec.type)} ${sec.title} · 共 ${sec.totalPoints} 分 · 从方框中选择合适的词补全短文</div>
+      <div class="exam-questions">`;
+    for (const q of sec.questions) {
+      html += _renderClozePassageHTML(q);
     }
     html += `</div>`;
   } else {
@@ -1723,6 +1750,50 @@ function _renderSentenceTransformHTML(q) {
 }
 window._renderSentenceTransformHTML = _renderSentenceTransformHTML;
 
+// 🆕 匹配题渲染 (P6-D1)：左问句 + 右下拉选答句（复用 exam-dialog-select 事件收集）
+function _renderMatchingHTML(q) {
+  var pairs = q.pairs || (q.original && q.original.pairs) || [];
+  var opts = q.answerOptions || pairs.map(function(p){ return p.a; });
+  var optionsHtml = '<option value="">--</option>';
+  for (var oi = 0; oi < opts.length; oi++) {
+    optionsHtml += '<option value="' + escapeHtml(opts[oi]) + '">' + escapeHtml(opts[oi]) + '</option>';
+  }
+  var html = '<div class="exam-matching bg-violet-50 border border-violet-200 rounded-xl p-4 mb-4">';
+  for (var i = 0; i < pairs.length; i++) {
+    html += '<div class="exam-matching-row">'
+      + '<span class="exam-matching-q">' + (i + 1) + '. ' + escapeHtml(pairs[i].q) + '</span>'
+      + '<select class="exam-dialog-select exam-matching-select" data-qindex="' + q.index + '" data-blankpos="' + (i + 1) + '">' + optionsHtml + '</select>'
+      + '</div>';
+  }
+  html += '</div>';
+  return html;
+}
+window._renderMatchingHTML = _renderMatchingHTML;
+
+// 🆕 补全短文渲染 (P6-D2)：短文含 ___n___ + 词池提示 + 每空下拉选词
+function _renderClozePassageHTML(q) {
+  var passage = q.passage || (q.original && q.original.passage) || '';
+  var blanks = q.blanks || (q.original && q.original.blanks) || [];
+  var bank = q.wordbank || (q.original && q.original.wordbank) || [];
+  // 词池提示
+  var bankHtml = bank.length ? ('<div class="exam-clozep-bank">' + bank.map(function(w){ return '<span class="exam-clozep-word">' + escapeHtml(w) + '</span>'; }).join('') + '</div>') : '';
+  // 选项统一用词池（无则用各空 answer 汇总）
+  var opts = bank.length ? bank : blanks.map(function(b){ return b.answer; });
+  var optionsHtml = '<option value="">--</option>';
+  for (var oi = 0; oi < opts.length; oi++) {
+    optionsHtml += '<option value="' + escapeHtml(opts[oi]) + '">' + escapeHtml(opts[oi]) + '</option>';
+  }
+  // 替换 ___n___ 为下拉
+  var rendered = String(passage).replace(/___(\d+)___/g, function(_m, num) {
+    return '<select class="exam-dialog-select exam-clozep-select" data-qindex="' + q.index + '" data-blankpos="' + num + '">' + optionsHtml + '</select>';
+  });
+  return '<div class="exam-clozep bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">'
+    + bankHtml
+    + '<div class="exam-clozep-passage">' + rendered + '</div>'
+    + '</div>';
+}
+window._renderClozePassageHTML = _renderClozePassageHTML;
+
 
 function _gradeExam() {
   const paper = _examState.paper;
@@ -1824,6 +1895,28 @@ function _gradeExam() {
         }
         isCorrect = (diaBlanks.length > 0 && correctBlanks === diaBlanks.length);
         qPoints = diaBlanks.length > 0 ? Math.round(pp * correctBlanks / diaBlanks.length * 10) / 10 : 0;
+      }
+      // 🆕 匹配题：每个问句选对答句，按对数给分
+      else if (sec.type === 'matching') {
+        var mPairs = q.pairs || (q.original && q.original.pairs) || [];
+        var mUa = Array.isArray(userAnswer) ? userAnswer : [];
+        var mCorrect = 0;
+        for (var mi = 0; mi < mPairs.length; mi++) {
+          if (mUa[mi] && _normText(mUa[mi]) === _normText(mPairs[mi].a)) mCorrect++;
+        }
+        isCorrect = (mPairs.length > 0 && mCorrect === mPairs.length);
+        qPoints = mPairs.length > 0 ? Math.round(pp * mCorrect / mPairs.length * 10) / 10 : 0;
+      }
+      // 🆕 补全短文：每空选对词，按空给分
+      else if (sec.type === 'cloze_passage') {
+        var cpBlanks = q.blanks || (q.original && q.original.blanks) || [];
+        var cpUa = Array.isArray(userAnswer) ? userAnswer : [];
+        var cpCorrect = 0;
+        for (var ci = 0; ci < cpBlanks.length; ci++) {
+          if (cpUa[ci] && _normText(cpUa[ci]) === _normText(cpBlanks[ci].answer)) cpCorrect++;
+        }
+        isCorrect = (cpBlanks.length > 0 && cpCorrect === cpBlanks.length);
+        qPoints = cpBlanks.length > 0 ? Math.round(pp * cpCorrect / cpBlanks.length * 10) / 10 : 0;
       }
       // 通用单选：answer 是选项索引
       else {
