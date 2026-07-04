@@ -1,0 +1,178 @@
+[
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_W01",
+    "topic": "我的好朋友",
+    "prompt": "请以\"My Friend\"为题，介绍你的一位好朋友（姓名、外貌、爱好、你们一起做的事），不少于40词。",
+    "hints": ["name", "tall/short", "like", "play together"],
+    "keywords": ["friend", "like", "play", "together"],
+    "minWords": 40,
+    "modelAnswer": "I have a good friend. Her name is Lily. She is tall and has long black hair. She is kind and helpful. Lily likes reading books and drawing pictures. Every weekend, we play badminton in the park together. Sometimes we do our homework at her home. I am very happy to have such a good friend. We will be friends forever."
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_W02",
+    "topic": "我的周末计划",
+    "prompt": "请以\"My Weekend Plan\"为题，写一写你这个周末的计划（打算做什么、和谁一起、心情如何），不少于40词。",
+    "hints": ["are going to", "with", "visit", "happy"],
+    "keywords": ["weekend", "going to", "visit", "happy"],
+    "minWords": 40,
+    "modelAnswer": "This weekend I am going to be busy. On Saturday morning, I am going to do my homework. In the afternoon, I am going to visit my grandparents with my parents. On Sunday, I am going to play football with my friends in the park. Then I am going to read an interesting book at home. I think I will have a wonderful weekend."
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_W03",
+    "topic": "我最喜欢的季节",
+    "prompt": "请以\"My Favourite Season\"为题，介绍你最喜欢的季节（天气、可以做的活动、为什么喜欢），不少于40词。",
+    "hints": ["season", "weather", "can", "because"],
+    "keywords": ["season", "weather", "because", "like"],
+    "minWords": 40,
+    "modelAnswer": "My favourite season is autumn. In autumn, the weather is cool and sunny. The leaves turn yellow and red. They are very beautiful. I can fly kites and go hiking with my family. I can also eat many kinds of fruit, such as apples and oranges. I like autumn because it is not too hot or too cold. It is the best season for me."
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_W04",
+    "topic": "北京之旅",
+    "prompt": "请以\"A Trip to Beijing\"为题，写一写你去北京旅行的经历（去了哪里、做了什么、感受如何），不少于40词。",
+    "hints": ["went", "visited", "the Great Wall", "wonderful"],
+    "keywords": ["Beijing", "visited", "Great Wall", "wonderful"],
+    "minWords": 40,
+    "modelAnswer": "Last summer, I went to Beijing with my family. Beijing is the capital of China. We visited the Great Wall. It was very long and old. We also went to the Palace Museum and Tian'anmen Square. They were beautiful and grand. We took many photos and ate Beijing duck. It was delicious. I had a wonderful time in Beijing. I hope to go there again."
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_W05",
+    "topic": "我的爱好",
+    "prompt": "请以\"My Hobby\"为题，介绍你的一个爱好（是什么、什么时候做、为什么喜欢），不少于40词。",
+    "hints": ["hobby", "usually", "because", "relax"],
+    "keywords": ["hobby", "like", "because", "usually"],
+    "minWords": 40,
+    "modelAnswer": "My hobby is reading books. I usually read books after school and on weekends. I like reading story books and science books best. Reading can help me learn a lot of new things. It can also make me relax and feel happy. My favourite book is about animals. I think reading is a good hobby. I hope more people can enjoy reading like me."
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_W01",
+    "topic": "我心中的英雄——杨利伟",
+    "prompt": "请以\"My Hero\"为题，介绍你心中的英雄杨利伟（他是谁、做了什么、你的感受），不少于50词。",
+    "hints": ["hero", "astronaut", "space", "brave", "proud"],
+    "keywords": ["hero", "astronaut", "space", "brave"],
+    "minWords": 50,
+    "modelAnswer": "My hero is Yang Liwei. He is a great Chinese astronaut. In 2003, he became the first Chinese person to travel into space. He flew around the Earth in the spaceship Shenzhou 5. He is very brave and hard-working. He worked hard for many years to make his dream come true. I am very proud of him. He tells me that if I work hard, I can also make my dreams come true."
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_W02",
+    "topic": "保护动物",
+    "prompt": "请以\"Protect Animals\"为题，写一写我们为什么要保护动物以及如何保护，不少于50词。",
+    "hints": ["animals", "friends", "should", "environment"],
+    "keywords": ["animals", "protect", "should", "environment"],
+    "minWords": 50,
+    "modelAnswer": "Animals are our good friends. They are an important part of nature. But today, many animals are in danger. Some of them are becoming fewer and fewer. We should do something to protect them. First, we should not kill wild animals. Second, we should protect their homes and the environment. We should also plant more trees. If everyone tries their best, our world will be more beautiful and animals will live happily."
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_W03",
+    "topic": "我理想中的学校",
+    "prompt": "请以\"My Ideal School\"为题，描述你理想中的学校（环境、课程、活动），不少于50词。",
+    "hints": ["ideal", "there are", "would like", "happy"],
+    "keywords": ["school", "there are", "would like", "happy"],
+    "minWords": 50,
+    "modelAnswer": "I would like to study in an ideal school. In my ideal school, there is a big garden with many flowers and trees. There is also a large library with lots of books. We have interesting lessons every day. We can learn English, science and art. After class, we can play sports and join clubs. The teachers are kind and friendly. I think students will be very happy in this school."
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_W04",
+    "topic": "健康的生活",
+    "prompt": "请以\"A Healthy Life\"为题，写一写如何保持健康的生活（饮食、运动、作息），不少于50词。",
+    "hints": ["healthy", "should", "exercise", "early"],
+    "keywords": ["healthy", "should", "exercise", "food"],
+    "minWords": 50,
+    "modelAnswer": "It is important to have a healthy life. First, we should eat healthy food. We should eat more vegetables and fruit, and less junk food. Second, we should do exercise every day. We can run, swim or play ball games. Third, we should go to bed early and get up early. We should not stay up late. If we do these things, we will be strong and healthy. A healthy life makes us happy."
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_W05",
+    "topic": "介绍中国",
+    "prompt": "请以\"My Country China\"为题，向外国朋友介绍中国（地理、文化、美食），不少于50词。",
+    "hints": ["China", "great country", "famous for", "delicious"],
+    "keywords": ["China", "country", "famous", "culture"],
+    "minWords": 50,
+    "modelAnswer": "China is my great country. It is a large and beautiful country in Asia. It has a long history of more than five thousand years. China is famous for the Great Wall and the Palace Museum. Chinese food is delicious, such as dumplings and Beijing duck. We have many traditional festivals, like the Spring Festival. Chinese people are friendly and hard-working. I love my country. Welcome to China!"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W01",
+    "topic": "我敬佩的人——钟南山",
+    "prompt": "请以\"The Person I Admire\"为题，介绍你敬佩的钟南山爷爷（他是谁、做了什么、为什么敬佩），不少于50词。",
+    "hints": ["admire", "doctor", "brave", "help people"],
+    "keywords": ["admire", "doctor", "brave", "help"],
+    "minWords": 50,
+    "modelAnswer": "The person I admire most is Zhong Nanshan. He is a famous doctor in China. He is over eighty years old, but he still works very hard. When people were ill, he was brave and went to help them. He told everyone how to keep healthy and safe. He saved many people's lives. He loves his country and his people. I admire him very much. I want to be a helpful person like him."
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W02",
+    "topic": "杂交水稻之父——袁隆平",
+    "prompt": "请以\"A Great Scientist\"为题，介绍袁隆平爷爷（他是谁、做出的贡献、你的感受），不少于50词。",
+    "hints": ["scientist", "rice", "hard-working", "thankful"],
+    "keywords": ["scientist", "rice", "hard-working", "great"],
+    "minWords": 50,
+    "modelAnswer": "Yuan Longping was a great Chinese scientist. People called him the Father of Hybrid Rice. He worked in the fields for many years. He studied how to grow more rice. Because of his hard work, farmers could grow much more rice than before. His work helped feed millions of people around the world. He was hard-working and never gave up. I am very thankful to him. He is a hero in my heart."
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W03",
+    "topic": "广州之旅",
+    "prompt": "请以\"A Trip to Guangzhou\"为题，介绍广州（有名的地方、美食、你的感受），不少于50词。",
+    "hints": ["Guangzhou", "Canton Tower", "dim sum", "beautiful"],
+    "keywords": ["Guangzhou", "tower", "food", "beautiful"],
+    "minWords": 50,
+    "modelAnswer": "Guangzhou is a beautiful city in southern China. It is the capital of Guangdong Province. Last month, I visited Guangzhou with my family. We went to the Canton Tower. It is very tall and we could see the whole city from the top. We also enjoyed dim sum for morning tea. It was really delicious. In the evening, the lights along the Pearl River were wonderful. I had a great time in Guangzhou."
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W04",
+    "topic": "家乡的变化",
+    "prompt": "请以\"Changes in My Hometown\"为题，写一写你家乡的变化（过去和现在的对比），不少于50词。",
+    "hints": ["hometown", "in the past", "now", "great changes"],
+    "keywords": ["hometown", "past", "now", "changes"],
+    "minWords": 50,
+    "modelAnswer": "My hometown has changed a lot in the past few years. In the past, the roads were narrow and dirty. There were only a few small houses. People were poor and life was hard. But now, everything is different. The roads are wide and clean. There are many tall buildings and beautiful parks. People live a happy and rich life. I am very glad to see the great changes. I love my hometown."
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W05",
+    "topic": "给朋友的一封信",
+    "prompt": "假设你叫 Li Ming，请给你的朋友 Tom 写一封信，介绍你的暑假计划，不少于50词。",
+    "hints": ["Dear Tom", "summer holiday", "am going to", "Yours"],
+    "keywords": ["Dear", "summer", "going to", "Yours"],
+    "minWords": 50,
+    "modelAnswer": "Dear Tom, How are you? The summer holiday is coming. I want to tell you about my plan. First, I am going to visit my grandparents in the countryside. Then I am going to learn swimming with my father. I am also going to read some interesting books and help my mother with the housework. I hope you can come and play with me. Please write to me soon. Yours, Li Ming"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_W06",
+    "topic": "保护环境",
+    "prompt": "请以\"Protect the Environment\"为题，写一写我们为什么要保护环境以及如何做，不少于50词。",
+    "hints": ["environment", "should", "save", "plant trees"],
+    "keywords": ["environment", "protect", "should", "trees"],
+    "minWords": 50,
+    "modelAnswer": "The environment is very important to us. But it is getting worse and worse. The air and water are polluted. We should do something to protect it. First, we should not throw rubbish everywhere. Second, we should save water and electricity. Third, we should plant more trees and flowers. We can also ride bikes instead of taking cars. If everyone protects the environment, our world will become greener and more beautiful."
+  }
+]
