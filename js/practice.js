@@ -151,6 +151,16 @@ function filterQuestions(type) {
   });
 }
 
+// 🆕 句型转换判分用：句子标准化（小写/压空格/标点前去空格/去尾），与 exam.js _normText 一致
+function _normSentence(s) {
+  return String(s == null ? '' : s)
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/\s+([.,!?;:'"])/g, '$1')
+    .trim();
+}
+window._normSentence = _normSentence;
+
 // 从 code（如 "6B_U1" / "3A_U10"）推断单元 id（小写形式 u1/u10）
 function _inferUnitFromCode(code) {
   if (!code) return null;
@@ -628,6 +638,26 @@ function showQuiz() {
       </button>
     `).join('');
   }
+  if (realType === 'sentence_transform') {
+    // ===== 句型转换：原句 + 转换要求 + 文本输入框 + 提交 =====
+    var qElT = document.getElementById('quizQuestion');
+    qElT.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElT.innerHTML = '句型转换';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var orig = q.original || '';
+    var target = q.target || '';
+    opts.innerHTML =
+      '<div class="mb-3 p-3 bg-slate-50 rounded-xl">'
+      + '<div class="text-base text-slate-700"><span class="italic">' + escapeHtml(orig) + '</span></div>'
+      + '<div class="text-sm text-blue-600 font-semibold mt-1">要求：' + escapeHtml(target) + '</div>'
+      + '</div>'
+      + '<input type="text" id="transformInput" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:border-blue-400 focus:outline-none" '
+      + 'placeholder="在此输入改写后的句子..." autocomplete="off" autocapitalize="off" spellcheck="false" '
+      + 'onkeydown="if(event.key===\'Enter\'){answerQuiz(0);}" value="' + escapeHtml(state._transformDraft || '') + '">'
+      + '<button class="gradient-btn w-full mt-3" onclick="answerQuiz(0)">提交答案</button>';
+    setTimeout(function(){ var el=document.getElementById('transformInput'); if(el) el.focus(); }, 50);
+  }
   document.getElementById('quizFeedback').classList.add('hide');
   document.getElementById('quizNextBtn').classList.add('hide');
 }
@@ -1009,6 +1039,33 @@ function answerQuiz(idx) {
     document.querySelectorAll('.dialog-word-btn').forEach(function(b){ b.disabled=true; });
     document.getElementById('quizNextBtn').classList.remove('hide');
     state.quizAnswered = true;
+    return;
+  }
+
+  // 句型转换：文本输入标准化后与 answers 中任一匹配
+  if (realType === 'sentence_transform') {
+    var inpEl = document.getElementById('transformInput');
+    var userText = inpEl ? inpEl.value : '';
+    if (!userText || !userText.trim()) { alert('请先输入改写后的句子再提交！'); return; }
+    state._transformDraft = '';
+    var accept = (q.answers && q.answers.length ? q.answers : [q.answer]).filter(Boolean);
+    var uNorm = _normSentence(userText);
+    var stCorrect = accept.some(function(a){ return _normSentence(a) === uNorm; });
+    try { recordAnswer(realType, q, stCorrect); } catch(e) {}
+    try { recordMastery(realType, q, stCorrect); } catch(e) {}
+    try { recordAnswerStats(stCorrect, realType); _bumpStreak(); } catch(e) {}
+    if (stCorrect) {
+      state.quizCorrect++;
+      fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+      fb.innerHTML = '<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b><div class="text-sm mt-1">' + (q.explain || '') + '</div>';
+    } else {
+      fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+      fb.innerHTML = '<b>❌ 有误</b><div class="text-sm mt-1">正确答案：<b>' + escapeHtml(accept.join(' / ')) + '</b></div>' + (q.explain ? '<div class="text-sm mt-1">💡 ' + escapeHtml(q.explain) + '</div>' : '');
+    }
+    if (inpEl) inpEl.disabled = true;
+    fb.classList.remove('hide');
+    state.quizAnswered = true;
+    document.getElementById('quizNextBtn').classList.remove('hide');
     return;
   }
 
