@@ -17,10 +17,11 @@
     sentence_transform: [],
     sentence_order: [],
     writing: [],  // 🆕 书面表达（P6-C）
+    dialog_complete: [],  // 🆕 补全对话（P6-A）
     stats: { spelling: 0, listening: 0, grammar: 0, reading: 0, cloze: 0,
            listen_pic: 0, listen_judge: 0, listen_fill: 0,
            blank_fill: 0, sentence_transform: 0, sentence_order: 0,
-           writing: 0, total: 0 }
+           writing: 0, dialog_complete: 0, total: 0 }
   };
 
   window.loadQuestionBank = async function(textbookId) {
@@ -28,7 +29,7 @@
     const base = 'data/questions/' + textbookId + '_';
     const types = ['spelling', 'listening', 'grammar', 'reading', 'cloze',
                    'listen_pic', 'listen_judge', 'listen_fill',
-                   'blank_fill', 'sentence_transform', 'sentence_order', 'writing'];
+                   'blank_fill', 'sentence_transform', 'sentence_order', 'writing', 'dialog_complete'];
     const results = {};
     for (const t of types) {
       try {
@@ -42,7 +43,7 @@
       } catch (err) {
         // 新题型 404 是正常的（还没填充题目），降到 debug
         if (['listen_pic','listen_judge','listen_fill',
-            'blank_fill','sentence_transform','sentence_order','writing'].includes(t)) {
+            'blank_fill','sentence_transform','sentence_order','writing','dialog_complete'].includes(t)) {
           console.debug('[题库] 新题型未配置（正常）:', base + t + '.json');
         } else if (t === 'cloze') {
           console.debug('[题库] cloze 未配置（正常）:', base + t + '.json');
@@ -65,6 +66,7 @@
     window.questionBank.sentence_transform = results.sentence_transform || [];
     window.questionBank.sentence_order = results.sentence_order || [];
     window.questionBank.writing = results.writing || [];
+    window.questionBank.dialog_complete = results.dialog_complete || [];
     window.questionBank.stats = {
       spelling:  results.spelling.length,
       listening: results.listening.length,
@@ -78,11 +80,12 @@
       sentence_transform: results.sentence_transform.length,
       sentence_order: results.sentence_order.length,
       writing:   (results.writing || []).length,
+      dialog_complete: (results.dialog_complete || []).length,
       total:     results.spelling.length + results.listening.length +
                  results.grammar.length + results.reading.length + results.cloze.length +
                  results.listen_pic.length + results.listen_judge.length + results.listen_fill.length +
                  results.blank_fill.length + results.sentence_transform.length + results.sentence_order.length +
-                 (results.writing || []).length
+                 (results.writing || []).length + (results.dialog_complete || []).length
     };
     console.log(
       '[题库] 加载完成 (' + textbookId + '): 单词' + window.questionBank.stats.spelling +
@@ -95,6 +98,7 @@
       window.questionBank.stats.blank_fill + '/' + window.questionBank.stats.sentence_transform + '/' +
       window.questionBank.stats.sentence_order + ')' +
       ' · 写作' + window.questionBank.stats.writing +
+      ' · 对话' + window.questionBank.stats.dialog_complete +
       ' · 共' + window.questionBank.stats.total + '题'
     );
     return window.questionBank;
