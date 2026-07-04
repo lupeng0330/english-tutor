@@ -309,16 +309,34 @@ function _buildPaper(def) {
     };
 
     if (secDef.type === 'writing') {
-      const prompts = secDef.prompts || [];
-      const modelAnswers = secDef.modelAnswers || [];
-      const pickIdx = Math.floor(rng() * Math.max(1, prompts.length));
-      sec.questions.push({
-        type: 'writing',
-        prompt: prompts[pickIdx] || '请根据题目要求写一篇短文。',
-        modelAnswer: modelAnswers[pickIdx] || '',
-        index: flatIdx,
-        sectionIdx: paper.sections.length
-      });
+      // 🆕 P6-C：优先从独立写作题库 qb.writing 按年级/学期抽一题（含 prompt/modelAnswer/hints）；
+      // 题库缺失时回退到模板内联 prompts/modelAnswers（兼容旧模板）。
+      const wPool = (qb.writing || []).filter(q => q.grade === g && q.term === t);
+      if (wPool.length > 0) {
+        const wq = wPool[Math.floor(rng() * wPool.length)];
+        sec.questions.push({
+          type: 'writing',
+          prompt: wq.prompt || '请根据题目要求写一篇短文。',
+          modelAnswer: wq.modelAnswer || '',
+          hints: wq.hints || [],
+          keywords: wq.keywords || [],
+          minWords: wq.minWords || 0,
+          code: wq.code || '',
+          index: flatIdx,
+          sectionIdx: paper.sections.length
+        });
+      } else {
+        const prompts = secDef.prompts || [];
+        const modelAnswers = secDef.modelAnswers || [];
+        const pickIdx = Math.floor(rng() * Math.max(1, prompts.length));
+        sec.questions.push({
+          type: 'writing',
+          prompt: prompts[pickIdx] || '请根据题目要求写一篇短文。',
+          modelAnswer: modelAnswers[pickIdx] || '',
+          index: flatIdx,
+          sectionIdx: paper.sections.length
+        });
+      }
       flatIdx += 1;
     } else if (secDef.type === 'cloze') {
       // 🆕 P2-C：优先从独立 cloze 题库抽（真完形短文 + N 挖空），
@@ -864,17 +882,22 @@ function _renderSection(sectionIdx) {
     // 写作区
     const q = sec.questions[0];
     if (q) {
+      const minW = q.minWords || 40;
+      const hintsHtml = (q.hints && q.hints.length > 0)
+        ? `<div class="exam-writing-hints text-xs text-slate-500 mt-2">💡 提示词：${q.hints.map(h => `<span class="exam-writing-hint">${escapeHtml(h)}</span>`).join(' ')}</div>`
+        : '';
       html = `
         <div class="mb-4 text-sm text-slate-500">${_typeIcon('writing')} ${sec.title} · 共 ${sec.count} 题 · ${sec.totalPoints} 分</div>
         <div class="exam-writing-prompt">
           <div class="font-semibold text-slate-700 mb-2">📝 写作题目：</div>
           <div class="text-slate-600 leading-relaxed">${escapeHtml(q.prompt || '')}</div>
+          ${hintsHtml}
         </div>
         <div class="mt-4">
-          <div class="font-semibold text-slate-700 mb-2">✏️ 请在下方作答（不少于60词）：</div>
+          <div class="font-semibold text-slate-700 mb-2">✏️ 请在下方作答（不少于${minW}词）：</div>
           <textarea id="examWritingArea" class="exam-writing-textarea" rows="10"
-            placeholder="在此输入你的作文...">${escapeHtml(_examState.writingText || '')}</textarea>
-          <div class="text-xs text-slate-400 mt-1">写作不自动评分，提交后可查看范文参考</div>
+            placeholder="在此输入你的作文..." oninput="try{var w=(this.value.toLowerCase().match(/[a-z']+/g)||[]).length;var el=document.getElementById('examWritingWordCount');if(el){el.textContent=w;el.style.color=w>=${minW}?'#16a34a':'#f59e0b';}}catch(e){}">${escapeHtml(_examState.writingText || '')}</textarea>
+          <div class="text-xs text-slate-400 mt-1">当前字数：<span id="examWritingWordCount">0</span> / ${minW} 词 · 提交后系统会自动评分并展示范文参考</div>
         </div>`;
     }
   } else if (sec.type === 'cloze' && sec.clozePassage) {
