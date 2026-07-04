@@ -234,13 +234,13 @@ function refreshPracticeCounts() {
   const targetUnit = _resolveTargetUnit();
   const showUnitTag = !state.includeAllGrades && !!targetUnit;
   // cloze 单位是「篇」，dialog_complete 是「组」，其它是「题」
-  ['spelling','listening','grammar','reading','cloze','dialog_complete','sentence_transform'].forEach(t => {
+  ['spelling','listening','grammar','reading','cloze','dialog_complete','sentence_transform','matching','cloze_passage'].forEach(t => {
     // snake_case 题型不能直接首字母大写拼 id：dialog_complete → countDialogComplete
-    const countIdMap = { dialog_complete: 'countDialogComplete', sentence_transform: 'countSentenceTransform' };
+    const countIdMap = { dialog_complete: 'countDialogComplete', sentence_transform: 'countSentenceTransform', matching: 'countMatching', cloze_passage: 'countClozePassage' };
     const el = document.getElementById(countIdMap[t] || ('count' + t.charAt(0).toUpperCase() + t.slice(1)));
     if (!el) return;
     const cur = filterQuestions(t).length;
-    const unit = (t === 'cloze' || t === 'dialog_complete') ? '组' : '题';
+    const unit = (t === 'cloze' || t === 'cloze_passage') ? '篇' : (t === 'dialog_complete' || t === 'matching') ? '组' : '题';
     if (showUnitTag) {
       // 同时计算本册的总数给用户参照
       const savedUnit = state.filterUnit;
@@ -429,7 +429,7 @@ function _renderPickSummary() {
 function startSmartPractice() {
   const types = ['spelling', 'listening', 'grammar', 'reading', 'cloze',
                 'listen_pic', 'listen_judge', 'listen_fill',
-                'blank_fill', 'sentence_transform', 'sentence_order', 'dialog_complete'];
+                'blank_fill', 'sentence_transform', 'sentence_order', 'dialog_complete', 'matching', 'cloze_passage'];
   const pool = [];
   for (const t of types) {
     let qs = [];
@@ -657,6 +657,60 @@ function showQuiz() {
       + 'onkeydown="if(event.key===\'Enter\'){answerQuiz(0);}" value="' + escapeHtml(state._transformDraft || '') + '">'
       + '<button class="gradient-btn w-full mt-3" onclick="answerQuiz(0)">提交答案</button>';
     setTimeout(function(){ var el=document.getElementById('transformInput'); if(el) el.focus(); }, 50);
+  }
+  if (realType === 'matching') {
+    // ===== 匹配题：左问句 + 右下拉选答句 + 提交 =====
+    var qElM = document.getElementById('quizQuestion');
+    qElM.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElM.textContent = '匹配题 · 为每个问句选择正确的答句';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var pairs = q.pairs || [];
+    // 打乱答句选项（按题固定，用 code 作 key 避免每次刷新变化）
+    if (state._matchKey !== (q.code || '') + ':' + state.quizIndex) {
+      state._matchKey = (q.code || '') + ':' + state.quizIndex;
+      state.quizAnswers = new Array(pairs.length);
+      var ans = pairs.map(function(p){ return p.a; });
+      for (var s = ans.length - 1; s > 0; s--) { var r = Math.floor(Math.random() * (s + 1)); var tm = ans[s]; ans[s] = ans[r]; ans[r] = tm; }
+      state._matchOptions = ans;
+    }
+    var mOpts = state._matchOptions || pairs.map(function(p){ return p.a; });
+    var optionsHtml = '<option value="">--</option>';
+    for (var oi = 0; oi < mOpts.length; oi++) optionsHtml += '<option value="' + escapeHtml(mOpts[oi]) + '">' + escapeHtml(mOpts[oi]) + '</option>';
+    var mHtml = '<div class="exam-matching bg-violet-50 border border-violet-200 rounded-xl p-4 mb-3">';
+    for (var mi = 0; mi < pairs.length; mi++) {
+      var selVal = (state.quizAnswers && state.quizAnswers[mi]) || '';
+      var selHtml = optionsHtml.replace('value="' + escapeHtml(selVal) + '">', 'value="' + escapeHtml(selVal) + '" selected>');
+      mHtml += '<div class="exam-matching-row"><span class="exam-matching-q">' + (mi + 1) + '. ' + escapeHtml(pairs[mi].q) + '</span>'
+        + '<select class="exam-matching-select" onchange="setMatchAnswer(' + mi + ', this.value)">' + selHtml + '</select></div>';
+    }
+    mHtml += '</div><button class="gradient-btn w-full" onclick="answerQuiz(0)">提交答案</button>';
+    opts.innerHTML = mHtml;
+  }
+  if (realType === 'cloze_passage') {
+    // ===== 补全短文：短文含空 + 词池 + 每空下拉 + 提交 =====
+    var qElC = document.getElementById('quizQuestion');
+    qElC.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElC.textContent = q.topic || '补全短文';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var cpBlanks = q.blanks || [];
+    var bank = q.wordbank || cpBlanks.map(function(b){ return b.answer; });
+    if (state._clozepKey !== (q.code || '') + ':' + state.quizIndex) {
+      state._clozepKey = (q.code || '') + ':' + state.quizIndex;
+      state.quizAnswers = new Array(cpBlanks.length);
+    }
+    var cpOptsHtml = '<option value="">--</option>';
+    for (var ci = 0; ci < bank.length; ci++) cpOptsHtml += '<option value="' + escapeHtml(bank[ci]) + '">' + escapeHtml(bank[ci]) + '</option>';
+    var bankHtml = '<div class="exam-clozep-bank">' + bank.map(function(w){ return '<span class="exam-clozep-word">' + escapeHtml(w) + '</span>'; }).join('') + '</div>';
+    var rendered = String(q.passage || '').replace(/___(\d+)___/g, function(_m, num) {
+      var pos = parseInt(num); var selVal = (state.quizAnswers && state.quizAnswers[pos - 1]) || '';
+      var selHtml = cpOptsHtml.replace('value="' + escapeHtml(selVal) + '">', 'value="' + escapeHtml(selVal) + '" selected>');
+      return '<select class="exam-clozep-select" onchange="setClozepAnswer(' + pos + ', this.value)">' + selHtml + '</select>';
+    });
+    opts.innerHTML = '<div class="exam-clozep bg-amber-50 border border-amber-200 rounded-xl p-4 mb-3">' + bankHtml
+      + '<div class="exam-clozep-passage">' + rendered + '</div></div>'
+      + '<button class="gradient-btn w-full" onclick="answerQuiz(0)">提交答案</button>';
   }
   document.getElementById('quizFeedback').classList.add('hide');
   document.getElementById('quizNextBtn').classList.add('hide');
@@ -1069,6 +1123,29 @@ function answerQuiz(idx) {
     return;
   }
 
+  // 匹配题：每个问句选对答句
+  if (realType === 'matching') {
+    var mPairs = q.pairs || []; var mAns = state.quizAnswers || [];
+    for (var mi2 = 0; mi2 < mPairs.length; mi2++) { if (!mAns[mi2]) { alert('请为每个问句都选择答句再提交！'); return; } }
+    var mErr = ''; var mAllOk = true;
+    for (var mj = 0; mj < mPairs.length; mj++) {
+      if (_normSentence(mAns[mj]) !== _normSentence(mPairs[mj].a)) { mAllOk = false; mErr += ('第' + (mj + 1) + '题应选「' + mPairs[mj].a + '」\n'); }
+    }
+    _finishNonChoice(mAllOk, q, realType, fb, mAllOk ? (q.explain || '') : mErr);
+    return;
+  }
+  // 补全短文：每空选对词
+  if (realType === 'cloze_passage') {
+    var cpBlanks = q.blanks || []; var cpAns = state.quizAnswers || [];
+    for (var ci2 = 0; ci2 < cpBlanks.length; ci2++) { if (!cpAns[ci2]) { alert('请填完所有空再提交！'); return; } }
+    var cpErr = ''; var cpAllOk = true;
+    for (var cj = 0; cj < cpBlanks.length; cj++) {
+      if (_normSentence(cpAns[cj]) !== _normSentence(cpBlanks[cj].answer)) { cpAllOk = false; cpErr += ('空' + cpBlanks[cj].pos + '应填「' + cpBlanks[cj].answer + '」\n'); }
+    }
+    _finishNonChoice(cpAllOk, q, realType, fb, cpAllOk ? (q.explain || '') : cpErr);
+    return;
+  }
+
   const btns = document.querySelectorAll('#quizOptions button');
   btns.forEach(b => b.disabled = true);
   const isCorrect = (idx === q.answer);
@@ -1455,6 +1532,40 @@ function selectDialogBlank(pos) {
 window.refreshPracticeCounts = refreshPracticeCounts;
 window.filterQuestions = filterQuestions;
 window.selectDialogBlank = selectDialogBlank;
+
+// ===== 匹配题 / 补全短文 练习辅助 (P6-D) =====
+function setMatchAnswer(idx, val) {
+  if (!state.quizAnswers) state.quizAnswers = [];
+  state.quizAnswers[idx] = val;
+}
+window.setMatchAnswer = setMatchAnswer;
+
+function setClozepAnswer(pos, val) {
+  if (!state.quizAnswers) state.quizAnswers = [];
+  state.quizAnswers[pos - 1] = val;
+}
+window.setClozepAnswer = setClozepAnswer;
+
+// 非选择题（匹配/补全短文）统一结果处理：记账 + 反馈 + 显示下一题
+function _finishNonChoice(ok, q, realType, fb, msg) {
+  try { recordAnswer(realType, q, ok); } catch(e) {}
+  try { recordMastery(realType, q, ok); } catch(e) {}
+  try { recordAnswerStats(ok, realType); _bumpStreak(); } catch(e) {}
+  if (ok) {
+    state.quizCorrect++;
+    fb.className = 'mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+    fb.innerHTML = '<b>✅ 回答正确！<span class="confetti-emoji">🎉</span></b>' + (msg ? '<div class="text-sm mt-1">' + escapeHtml(msg) + '</div>' : '');
+  } else {
+    fb.className = 'mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+    fb.innerHTML = '<b>❌ 有误</b><div class="text-sm mt-1" style="white-space:pre-line">' + escapeHtml(msg) + '</div>';
+  }
+  document.querySelectorAll('#quizOptions select').forEach(function(s){ s.disabled = true; });
+  document.querySelectorAll('#quizOptions button').forEach(function(b){ b.disabled = true; });
+  fb.classList.remove('hide');
+  state.quizAnswered = true;
+  document.getElementById('quizNextBtn').classList.remove('hide');
+}
+window._finishNonChoice = _finishNonChoice;
 
 function fillDialogWord(word) {
   var pos = state._dialogCurrentBlank || 1;
