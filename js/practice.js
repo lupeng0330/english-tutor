@@ -565,6 +565,46 @@ function showQuiz() {
         hintEl.className = 'text-xs text-slate-500';
       }
     }
+  } else if (realType === 'dialog_complete') {
+    // ===== 补全对话：对话+空位点选+词池点击填充 =====
+    var dia = q.dialogue || [];
+    var blanks = q.blanks || [];
+    var qEl2 = document.getElementById('quizQuestion');
+    qEl2.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qEl2.textContent = q.title || '补全对话';
+    opts.classList.add('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var diaHtml = '<div class="exam-dialog bg-sky-50 border border-sky-200 rounded-xl p-4 mb-4">';
+    for (var li=0; li<dia.length; li++){
+      var line = dia[li]; var txt=line.text;
+      var rendered = txt.replace(/___(\d+)___/g, function(_m, num){
+        var pos = parseInt(num);
+        var val = (state.quizAnswers && state.quizAnswers[pos-1]) || '';
+        var display = val || '___'+pos+'___';
+        var cls = val ? 'dialog-blank filled' : 'dialog-blank empty';
+        return '<button class="'+cls+'" data-blankpos="'+pos+'" onclick="selectDialogBlank('+pos+')">'+display+'</button>';
+      });
+      diaHtml += '<div class="exam-dialog-line"><span class="exam-dialog-speaker">'+line.speaker+':</span> <span class="exam-dialog-text">'+rendered+'</span></div>';
+    }
+    diaHtml += '</div>';
+    diaHtml += '<div id="dialogPool" class="dialog-pool"><div class="text-xs text-slate-500 mb-2">点击单词填入当前空位：</div>';
+    var allWords=[]; var seen={};
+    for (var bi=0; bi<blanks.length; bi++){
+      for (var oi=0; oi<(blanks[bi].options||[]).length; oi++){
+        var w=blanks[bi].options[oi];
+        if (!seen[w]){seen[w]=true;allWords.push(w);}
+      }
+    }
+    for (var wi=0; wi<allWords.length; wi++){
+      var used=false;
+      if (state.quizAnswers){ for (var ai=0; ai<state.quizAnswers.length; ai++){ if (state.quizAnswers[ai]===allWords[wi]){used=true; break;} }}
+      diaHtml += '<button class="dialog-word-btn'+(used?' used':'')+'" onclick="fillDialogWord(\''+allWords[wi].replace(/'/g,'\\\x27')+'\')">'+allWords[wi]+'</button>';
+    }
+    diaHtml += '</div><div class="mt-3"><button class="text-xs text-slate-500 underline" onclick="resetDialogBlanks()">清空重填</button></div>';
+    document.getElementById('quizPassage').innerHTML = diaHtml;
+    document.getElementById('quizPassageBox').classList.remove('hide');
+    state._dialogCurrentBlank = 1;
+    if (!state.quizAnswers) state.quizAnswers = new Array(blanks.length);
   } else {
     // ===== 选择题（听力/语法/阅读） =====
     const qEl = document.getElementById('quizQuestion');
@@ -933,12 +973,39 @@ function toggleAudioText() {
 
 function answerQuiz(idx) {
   const q = state.quizQuestions[state.quizIndex];
-  const btns = document.querySelectorAll('#quizOptions button');
-  btns.forEach(b => b.disabled = true);
+  const realType = q._wbType || state.quizType;
   const fb = document.getElementById('quizFeedback');
 
+  // 补全对话：检查所有空位是否都已填写
+  if (realType === 'dialog_complete') {
+    var blanks=q.blanks||[]; var ans=state.quizAnswers||[];
+    var allFilled=true;
+    for (var i=0; i<blanks.length; i++){ if (!ans[i]){ allFilled=false; break; } }
+    if (!allFilled){ alert('请先填完所有空位再提交！'); return; }
+    // 判断正确性
+    var isCorrect=true; var errMsg='';
+    for (var i=0; i<blanks.length; i++){ if (ans[i]!==blanks[i].answer) {isCorrect=false; errMsg+=('空'+(i+1)+'应选「'+blanks[i].answer+'」而非「'+(ans[i]||'未填')+'」\n');} }
+    try { recordAnswer(realType, q, isCorrect); } catch(e) {}
+    try { recordMastery(realType, q, isCorrect); } catch(e) {}
+    try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
+    if (isCorrect) {
+      state.quizCorrect++;
+      fb.className='mt-4 p-4 rounded-xl bg-green-50 text-green-800';
+      fb.innerHTML='<b>✅ 回答正确！<span class=\"confetti-emoji\">🎉</span></b><div class=\"text-sm mt-1\">'+((q.explain||'')+'</div>');
+    } else {
+      fb.className='mt-4 p-4 rounded-xl bg-red-50 text-red-800';
+      fb.innerHTML='<b>❌ 有误</b><div class=\"text-sm mt-1\" style=\"white-space:pre-line\">'+errMsg+'</div>';
+    }
+    document.querySelectorAll('#quizPassage button').forEach(function(b){ b.disabled=true; });
+    document.querySelectorAll('.dialog-word-btn').forEach(function(b){ b.disabled=true; });
+    document.getElementById('quizNextBtn').classList.remove('hide');
+    state.quizAnswered = true;
+    return;
+  }
+
+  const btns = document.querySelectorAll('#quizOptions button');
+  btns.forEach(b => b.disabled = true);
   const isCorrect = (idx === q.answer);
-  const realType = q._wbType || state.quizType;
   try { recordAnswer(realType, q, isCorrect); } catch(e) { console.warn('[错题本]', e); }
   try { recordMastery(realType, q, isCorrect); } catch(e) { console.warn('[掌握度]', e); }
   try { recordAnswerStats(isCorrect, realType); _bumpStreak(); } catch(e) {}
@@ -1310,3 +1377,29 @@ window.irregShowHint      = irregShowHint;
 window.irregSkip          = irregSkip;
 window.exitIrregPractice  = exitIrregPractice;
 
+
+// ===== 补全对话练习辅助函数 (P6-A) =====
+function selectDialogBlank(pos) {
+  state._dialogCurrentBlank = pos;
+  // 高亮当前空位
+  document.querySelectorAll('.dialog-blank').forEach(function(b){ b.classList.remove('current'); });
+  var el = document.querySelector('.dialog-blank[data-blankpos="'+pos+'"]');
+  if (el) el.classList.add('current');
+}
+window.selectDialogBlank = selectDialogBlank;
+
+function fillDialogWord(word) {
+  var pos = state._dialogCurrentBlank || 1;
+  if (!state.quizAnswers) state.quizAnswers = [];
+  state.quizAnswers[pos-1] = word;
+  // 刷新界面
+  showQuiz();
+}
+window.fillDialogWord = fillDialogWord;
+
+function resetDialogBlanks() {
+  state.quizAnswers = [];
+  state._dialogCurrentBlank = 1;
+  showQuiz();
+}
+window.resetDialogBlanks = resetDialogBlanks;

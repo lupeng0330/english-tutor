@@ -1646,3 +1646,13 @@ body.keyboard-open #practiceQuizView {
 .exam-dialog-text { flex: 1; }
 .exam-dialog-select { padding: 3px 8px; border: 1px solid #93c5fd; border-radius: 6px; font-size: 13px; background: #fff; color: #1e40af; font-weight: 600; cursor: pointer; min-width: 80px; }
 .exam-dialog-select:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 2px rgba(37,99,235,.2); }
+
+/* ===== 补全对话练习 (P6-A) ===== */
+.dialog-blank { display:inline-block; min-width:60px; padding:3px 10px; border:2px dashed #cbd5e1; border-radius:8px; font-weight:600; text-align:center; cursor:pointer; transition:all .15s; margin:0 4px; background:#fff; }
+.dialog-blank.empty { border-color:#f59e0b; color:#f59e0b; }
+.dialog-blank.filled { border-color:#10b981; color:#10b981; background:#f0fdf4; }
+.dialog-blank.current { border-color:#3b82f6; box-shadow:0 0 0 3px rgba(59,130,246,.25); }
+.dialog-pool { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+.dialog-word-btn { padding:6px 14px; border:1px solid #bfdbfe; border-radius:20px; background:#eff6ff; color:#1e40af; font-weight:600; cursor:pointer; font-size:13px; transition:all .15s; }
+.dialog-word-btn:hover { background:#bfdbfe; }
+.dialog-word-btn.used { opacity:.35; pointer-events:none; text-decoration:line-through; }
