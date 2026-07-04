@@ -3191,7 +3191,7 @@ P0/P1/P2 全部清零，用户通过铁律 5 选项清单确定后续方向：**
 | 听力新题型(选图/判断/填空) | ✅ | ✅ | ✅ | ✅ | ✅ gz模板 | — |
 | 单词拼写 | — | — | — | ✅ | ✅ | — |
 | 语法选择 | ✅ | ✅ | ✅ | ✅ | ✅ | — |
-| 完形填空(cloze) | — | — | — | — | ✅ | ⚠️ 官无此题型(小学不考) |
+| 完形填空(cloze) | — | — | — | — | ✅ | ⚠️ 官无此题型, 保留作拓展练习 |
 | 阅读理解 | — | ✅ | ✅ | ✅ | ✅ | — |
 | **连词成句** | ✅ | ✅ | — | — | ✅ gz模板 | 3-4年级low/mid模板缺 |
 | **句型转换** | ✅ | ✅ | ✅ | — | ❌ | **3-6年级全缺** |
@@ -3405,7 +3405,7 @@ A: I'm going to the library. ___________ (空白3)
 
 ---
 
-### 49.6 P6-E · 模板对齐 + 移除完形（~0.5 天）
+### 49.6 P6-E · 模板对齐（~0.5 天）
 
 | # | 操作 | 影响模板 |
 |---|---|---|
@@ -3414,8 +3414,8 @@ A: I'm going to the library. ___________ (空白3)
 | 3 | mid_midterm 加 `dialog_complete` 10分 + `sentence_transform` 10分 | mid_midterm |
 | 4 | mid_final 同上 + `writing` 10分(5-6级) | mid_final |
 | 5 | low_unit 加 `dialog_complete` 10分 | low_unit |
-| 6 | 所有 low/mid 模板移除 `cloze`（广州小学不考） | low/mid 全模板 |
-| 7 | gz 广州市题型模板：补全 `dialog_complete` + `sentence_transform` + `matching`(3年级) + `writing`(5-6) | gz模板 |
+| 6 | `cloze` 保留为拓展练习（官无此题型，但作为阅读+词汇综合训-练） | low/mid 全模板 |
+| 7 | gz 广州市题型模板：补全 `dialog_complete` + `sentence_transform` + `matching`(3年级) + `writing`(5-6) + `cloze_passage`(6年级) | gz模板 |
 | 8 | 总分重算：确保每卷 100 分 | 全模板 |
 
 ---
