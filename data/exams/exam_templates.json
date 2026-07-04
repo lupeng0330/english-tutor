@@ -697,7 +697,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -707,7 +707,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -771,7 +781,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -781,7 +791,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -845,7 +865,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -855,7 +875,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -919,7 +949,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -929,7 +959,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -993,7 +1033,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1003,7 +1043,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1067,7 +1117,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1077,7 +1127,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1141,7 +1201,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1151,7 +1211,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1215,7 +1285,7 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1225,7 +1295,17 @@
           "type": "sentence_order",
           "title": "六、连词成句",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1279,7 +1359,7 @@
           "type": "reading",
           "title": "四、阅读理解",
           "count": 5,
-          "points": 4,
+          "points": 3,
           "unitRange": [
             1,
             12
@@ -1289,7 +1369,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 4,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1353,7 +1443,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 5,
+          "points": 3,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1407,7 +1507,7 @@
           "type": "reading",
           "title": "四、阅读理解",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1417,7 +1517,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1481,7 +1591,7 @@
           "type": "reading",
           "title": "四、阅读理解",
           "count": 5,
-          "points": 3,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1491,7 +1601,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 3,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1565,7 +1685,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 4,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1639,7 +1769,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 4,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1713,7 +1853,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 4,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
@@ -1787,7 +1937,17 @@
           "type": "cloze",
           "title": "五、完形填空",
           "count": 5,
-          "points": 4,
+          "points": 2,
+          "unitRange": [
+            1,
+            12
+          ]
+        },
+        {
+          "type": "dialog_complete",
+          "title": "补全对话",
+          "count": 5,
+          "points": 2,
           "unitRange": [
             1,
             12
