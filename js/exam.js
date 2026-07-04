@@ -152,6 +152,8 @@ function _parseUnit(code) {
 /** 检查题目是否在单元范围内 */
 function _inUnitRange(q, range) {
   const unit = _parseUnit(q.code);
+  // code 无 _U 单元号（如补全对话 3A_DC01）→ 视为通用题，不做单元过滤，避免被误排除导致 section 抽空
+  if (unit < 0) return true;
   return unit >= range[0] && unit <= range[1];
 }
 
