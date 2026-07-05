@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-05 · T1-T4 6主题系统上线(§54) + contextBar下拉框修复(§54.6) + 项目清理(删 __v.txt/__pycache__/_tmp_jk_listen/_sent ~93MB，gen_sample_mp3.py 核查后保留); 下一站③P6-A补全对话**
+> 最后更新：**2026-07-05 · 进度对账补录(§55)——确认 P3-D语法数据化 + P6-A/B/D全链路 均已完成上线(此前文档漏记); T1-T4主题系统(§54); 下一站→三期 P4 新教材(rj/wy) 或 P6-E模板验收收尾**
 
 ---
 
@@ -59,7 +59,11 @@ start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
 | 时间 | 事件 | 详见 |
 |---|---|---|
 | 2026-07-04 深夜 | **T1-T4·6主题系统上线 + contextBar下拉框修复**：T1 根治白底(`styles.css`静态引入/防FOUC/变量收敛)；T2 6套主题变量(朱砂/青瓷/水墨黛/藏青/胭脂+晴空蓝默认)；T3 `js/theme.js` 管理器(localStorage持久化+主题切换)；T4 个人中心面板6色卡选择器 + A+覆盖Tailwind固定色(header/bg-white/text-slate等都跟主题)；fix contextBar from-blue-50子串匹配误伤致3下拉框白字白底，收窄为深色调类列表 + #contextBar例外规则固化浅色语境 | §54 |
-| 2026-07-04 全天 | **P6-C 写作上线 + P6-E 16套模板完成**：`jk_writing.json` 16篇(中国元素优先)+复用`_gradeWriting`零重写；16套学期独立模板(g3a_midterm~g6b_final)总分100+题型递进+写作接入，待验收 | §53 |
+| 2026-07-04 | **P6-D 匹配题 + 补全短文全链路**：`jk_matching.json` 10组问答配对 + `jk_cloze_passage.json` 9篇选词短文；考试+练习+智能推题+错题本全接入；3-4年级8套模板加matching(10分)/6年级4套加cloze_passage | §55 |
+| 2026-07-04 | **P6-B 句型转换全链路**：`jk_sentence_transform.json` 扩至40题(3-6年级各上下,多可接受答案)；exam.js `_renderSentenceTransformHTML`+练习+智能+错题；下册8套模板加句型转换section(10分) | §55 |
+| 2026-07-04 | **P6-A 补全对话全链路**：`jk_dialog_complete.json` 17组 + `hj_dialog_complete.json` 8组；exam.js `_renderDialogCompleteHTML`+逐空判分+练习点选词池+智能+错题；16套模板加dialog section(1组10分)；修复满分恢复100 | §55 |
+| 2026-07-04 上午 | **P3-D 语法讲解页数据化**：`data/grammar/grammar_knowledge.json` 80条结构化语法库(7大类:词性/时态/动词/句子/从句/语态/结构,basic26+inter18+adv36)；新增 `js/grammar.js`(加载/分类/教材筛选/搜索/折叠)替换旧4条硬编码 | §55 |
+| 2026-07-04 全天 | **P6-C 写作上线 + P6-E 16套模板完成**：`jk_writing.json` 16篇(中国元素优先)+复用`_gradeWriting`零重写；16套学期独立模板(g3a_midterm~g6b_final)总分100+题型递进+写作接入 | §53 |
 | 2026-07-02 下午 | **A 档 B1 · 考试配置模板化（推送后 CI bump）**：`data/exams/exam_templates.json` 新建（10 套模板：low/mid/high × midterm/final/unit + 3 上期中 GZ 8 题型样板）；`exam_config.json` 简化为 280 行引用形式（`{ template, writing? }`）；`exam.js` 加 `_loadExamTemplates()` + `_applyTemplate()` 展开引擎；首验修复 1 竞态（`renderExamPage` / `_startExam` 漏 await）→ 44/44 smoke test 全过；9 下 final 中考模拟改名 / 7-9 年级写作题 prompt+model 注入均落地 | §40 |
 | 2026-07-01 下午 | **三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3（推送后 CI bump）**：`exam.js` 重做 `spelling` / `blank_fill` / `sentence_order` 渲染+路由+判分；新增 `_renderListenFillHTML` + 路由（修复「听音填空只有题目没有听力按钮」bug）；5 个 edge-tts 多角色童声 MP3 落盘（listen_fill_01 / judge_01-02 / pic_01-02）；`index.html` SW 防本地缓存改造（仅 `*.github.io` 注册，本地自动 `unregister` + `caches.delete`） | §39 |
 | 2026-07-01 上午 | **广州题型方案 P1（推送后 CI bump）**：产出全学段《广州题型分布方案》文档 + 定稿 4 决策；`exam.js` 全题型 section 满分锁定 `count×points` + 抽不满按比例折算(`shortfall`)，杜绝总分溢出；**3 上期中重写为低段 8 题型 / 50 题模板，106→100**；`mobile.html` 支持 `?v=` 透传验证 | `GZ_EXAM_BLUEPRINT.md` |
@@ -82,17 +86,20 @@ start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
   2) 读完本速读卡 + §0 铁律 + §3 当前规模 + §8 逐期计划
   3) 看 §8「🎯 一期」当前正在进行的任务
 
-  ▼ 一期 P5 未完成？  → 立刻做 P5（jk 6下 U11 中国化替换，~45分钟）
-  ▼ 一期完成？       → 做二期 P3-D（语法讲解页数据化，~5天）
-  ▼ 二期完成？       → 做三期 P4（人教 rj / 外研 wy 新教材建设，~1月）
+  ▼ 一期 P5 已完成 ✅   → jk 6下 U11 中国化替换（§46）
+  ▼ 二期 P3-D 已完成 ✅ → 语法讲解页数据化（§55，80条+grammar.js）
+  ▼ P6 全系已完成 ✅    → P6-A/B/C/D/E 全链路（§53/§55）
+  ▼ 下一站 → 三期 P4（人教 rj / 外研 wy 新教材建设，~1月）
+                        或 复核 P6-E 16套模板双端验收收尾
   ▼ 三期完成 + 有 Key？ → 做 P3-A/B/C（AI 对话 / ASR / 作文评分）
-  ▼ 都完成？         → 维护：跑 tests/smoke.py 回归 / 升级依赖 / 清理技术债
+  ▼ 都完成？           → 维护：跑 tests/smoke.py 回归 / 升级依赖 / 清理技术债
 ```
 
-> 当前优先级（2026-07-03 用户决策，铁律 5）：
+> 当前优先级（2026-07-05 进度对账更新，铁律 2/5）：
 > - ✅ **一期 P5**：jk 6 下 U11 Review 中国化替换（§46，已上线）
-> - 🎯 **二期 P3-D**：语法讲解页数据化（~5 天，无需 Key）← **当前**
-> - 🎯 **三期 P4**：人教 rj + 外研 wy 新教材建设（~1 月，无需 Key）
+> - ✅ **二期 P3-D**：语法讲解页数据化（§55，80 条语法库 + `js/grammar.js`，已上线）
+> - ✅ **P6-A/B/C/D/E**：写作 / 补全对话 / 句型转换 / 匹配 / 补全短文 / 16套模板 全链路（§53/§55，已上线）
+> - 🎯 **三期 P4**：人教 rj + 外研 wy 新教材建设（~1 月，无需 Key）← **下一站**
 > - 📋 **等 Key 到位**：P3-A AI 对话 / P3-B 录音 ASR / P3-C 作文评分
 > - ✅ **P0/P1/P2/P5 全部清零** 🎉
 
@@ -2699,9 +2706,10 @@ P0/P1/P2 全部清零，用户通过铁律 5 选项清单确定后续方向：**
 
 | 序 | 编号 | 任务 | 工时 | 需 Key | 见 §8 |
 |---|---|---|---|---|---|
-| 🎯 一期 | **P5** | jk 6 下 2024 新版升级 | ~3 天 | ❌ | §8.一期 |
-| 🎯 二期 | **P3-D** | 语法讲解页数据化 | ~5 天 | ❌ | §8.二期 |
-| 🎯 三期 | **P4** | 人教 rj + 外研 wy 新教材建设 | ~1 月 | ❌ | §8.三期 |
+| ✅ 一期 | **P5** | jk 6 下 U11 中国化替换 | ~3 天 | ❌ | §46 已上线 |
+| ✅ 二期 | **P3-D** | 语法讲解页数据化 | ~5 天 | ❌ | §55 已上线 |
+| ✅ | **P6-A/B/C/D/E** | 写作/对话/转换/匹配/短文/模板 | — | ❌ | §53/§55 已上线 |
+| 🎯 三期 | **P4** | 人教 rj + 外研 wy 新教材建设 | ~1 月 | ❌ | §8.三期 ← 下一站 |
 | 📋 等 Key | P3-A | AI 对话真接入 | ~1 周 | ✅ | §8.条件就绪 |
 | 📋 等 Key | P3-B | 录音 ASR 评测 | ~1 周 | ✅/免费 | §8.条件就绪 |
 | 📋 等 Key | P3-C | 作文 AI 评分 | ~3-5 天 | ✅ | §8.条件就绪 |
@@ -4064,4 +4072,83 @@ step3: 全字匹配则满分，否则0分
 | ⚠️ 保留 `gen_sample_mp3.py` | 用户核查后保留（虽 listen_pic_01/02.mp3 产物已在，脚本留作日后重生成样例） |
 
 > 本节 docs 收口，CI 不 bump。
+
+
+---
+
+## 55. ✅ 进度对账补录 · P3-D + P6-A/B/D 已完成（2026-07-05 核查）
+
+> 📌 **铁律 2 补录**：核查发现以下任务此前已开发上线（git log 有据），但 PROJECT_STATUS.md 漏记完成状态，本节统一补录。核查依据：`git log` + 题库文件实盘 + 代码链路确认。
+
+### 55.1 P3-D · 语法讲解页数据化（已上线）
+
+| 项 | 内容 |
+|---|---|
+| 数据 | `data/grammar/grammar_knowledge.json` **80 条**结构化语法知识库（78KB） |
+| 分类 | 7 大类：词性 20 / 时态 16 / 动词 10 / 句子 15 / 从句 8 / 语态 4 / 结构 7 |
+| 分级 | basic 26 + intermediate 18 + advanced 36 |
+| 引擎 | 新增 `js/grammar.js`（11KB，加载 / 7分类 / 教材筛选 / 搜索 / 折叠），替换旧 4 条硬编码 |
+| 关联 | 每条含 `relatedUnits`（jk/hj 单元映射），支持按教材/年级筛选 + 练习按钮跳转关联题 |
+| commit | `b7e7c7e`(知识库) + `2121c29`(模块数据化) + `ed26027`/`c86d249`(icon/跳转 fix) |
+
+### 55.2 P6-A · 补全对话（全链路已上线）
+
+| 环节 | 实况 | commit |
+|---|---|---|
+| 题库 | `jk_dialog_complete.json` 17 组 + `hj_dialog_complete.json` 8 组（7A-9B 学校/餐厅/假日/健康/环境） | `732149a` |
+| 加载 | `questionBank.js` 加 `dialog_complete` 类型（初始/加载/404容错/合并/统计全链路） | `dc28fb3` |
+| 考试 | `exam.js` `_renderDialogCompleteHTML` 对话+每空下拉 + 逐空判分 + 答题卡联动 | `d98d125` |
+| 练习 | `practice.js` 对话+空位点选+词池点击填充 + 逐空判分 + 错因展示 | `ca8b210` |
+| 智能+错题 | `index.html` 徽章卡片 + smartTypes + wrongbook 标签全接入 | `0c6501f` |
+| 模板 | 16 套模板加 dialog section（1 组 10 分，避免 5组=25空题量错误） | `895dae1`/`7ac438e`/`2b09957` |
+| 关键 fix | `964195e` 修复 `_inUnitRange` 对无单元号题(3A_DC01)误判致 dialog 抽空丢 10 分，满分恢复 100 | `964195e` |
+
+### 55.3 P6-B · 句型转换（全链路已上线）
+
+| 环节 | 实况 | commit |
+|---|---|---|
+| 题库 | `jk_sentence_transform.json` 扩充 1→**40 题**（3-6年级各上下5题，含多可接受答案 answers + 转换要求 target，中国元素） | `eb2042d` |
+| 考试 | `exam.js` `_renderSentenceTransformHTML`(原句+要求+输入框) + `_normText` 多答案匹配判分 | `dc0eaa3` |
+| 练习 | `practice.js` showQuiz 渲染 + `_normSentence` 标准化多答案匹配 + 错因展示 | `0aa574e` |
+| 智能+错题 | index 徽章(🔄) + refreshCounts + wrongbook 标签(smartTypes 已含) | `12a0447` |
+| 模板 | 下册 8 套(3下/4下/5下/6下 期中期末)加句型转换 section(5题×2分=10分) | `88b8b29` |
+
+### 55.4 P6-D · 匹配题 + 补全短文（全链路已上线）
+
+| 环节 | 实况 | commit |
+|---|---|---|
+| 匹配题库 | `jk_matching.json` **10 组**问答配对(3上~4下,日常问候/物品/时间/职业/过去时,答句唯一) | `e62dfa1` |
+| 短文题库 | `jk_cloze_passage.json` **9 篇**选词填空短文(5下3+6上3+6下3各5空,含干扰词,中国元素) | `86339ed` |
+| 加载+考试 | `questionBank.js` 加 matching/cloze_passage + `exam.js` 匹配左问右下拉/短文词池下拉判分 | `fdd0adc` |
+| 练习 | `practice.js` 匹配下拉 + 短文词池下拉(setMatchAnswer/setClozepAnswer/_finishNonChoice) + index徽章(🔗/📄)+smartTypes+wrongbook | `058b48b` |
+| 模板 | 3-4年级8套 cloze→matching(1组10分)，6年级4套 cloze→cloze_passage(1篇6分)，全16套总分100 | `1b26df4` |
+
+### 55.5 当前完整进度总览
+
+| 阶段 | 任务 | 状态 |
+|---|---|---|
+| 一期 P5 | jk 6下 U11 中国化 | ✅ 已上线(§46) |
+| 二期 P3-D | 语法讲解页数据化 | ✅ 已上线(§55.1) |
+| P6-A | 补全对话 | ✅ 已上线(§55.2) |
+| P6-B | 句型转换 | ✅ 已上线(§55.3) |
+| P6-C | 书面表达 | ✅ 已上线(§53.1) |
+| P6-D | 匹配+补全短文 | ✅ 已上线(§55.4) |
+| P6-E | 16套学期模板 | ✅ 已完成(§53.2)，建议复核双端验收 |
+| T1-T4 | 6套主题系统 | ✅ 已上线(§54) |
+| **🎯 下一站 三期 P4** | 人教 rj + 外研 wy 新教材 | ⏳ 未启动 |
+| 📋 等 Key | P3-A/B/C AI 功能 | ⏸ 阻塞 |
+
+### 55.6 题库实盘（2026-07-05 核查）
+
+| 题库 | 条数 |
+|---|---|
+| jk_writing | 16 |
+| jk_dialog_complete / hj_dialog_complete | 17 / 8 |
+| jk_sentence_transform | 40 |
+| jk_matching | 10 |
+| jk_cloze_passage | 9 |
+| jk_sentence_order | 73 |
+| grammar_knowledge | 80 |
+
+> 本节为 docs 补录，CI 不 bump。
 
