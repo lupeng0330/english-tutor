@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-04 · P6-C写作已上线(jk_writing 16篇+题库化) + P6-E 16套学期独立模板完成待验收(§53); 下一站③P6-A补全对话**
+> 最后更新：**2026-07-05 · T1-T4 6主题系统上线(§54) + contextBar下拉框修复(§54.6) + 项目清理(删 __v.txt/__pycache__/_tmp_jk_listen/_sent ~93MB，gen_sample_mp3.py 核查后保留); 下一站③P6-A补全对话**
 
 ---
 
@@ -58,6 +58,8 @@ start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
+| 2026-07-04 深夜 | **T1-T4·6主题系统上线 + contextBar下拉框修复**：T1 根治白底(`styles.css`静态引入/防FOUC/变量收敛)；T2 6套主题变量(朱砂/青瓷/水墨黛/藏青/胭脂+晴空蓝默认)；T3 `js/theme.js` 管理器(localStorage持久化+主题切换)；T4 个人中心面板6色卡选择器 + A+覆盖Tailwind固定色(header/bg-white/text-slate等都跟主题)；fix contextBar from-blue-50子串匹配误伤致3下拉框白字白底，收窄为深色调类列表 + #contextBar例外规则固化浅色语境 | §54 |
+| 2026-07-04 全天 | **P6-C 写作上线 + P6-E 16套模板完成**：`jk_writing.json` 16篇(中国元素优先)+复用`_gradeWriting`零重写；16套学期独立模板(g3a_midterm~g6b_final)总分100+题型递进+写作接入，待验收 | §53 |
 | 2026-07-02 下午 | **A 档 B1 · 考试配置模板化（推送后 CI bump）**：`data/exams/exam_templates.json` 新建（10 套模板：low/mid/high × midterm/final/unit + 3 上期中 GZ 8 题型样板）；`exam_config.json` 简化为 280 行引用形式（`{ template, writing? }`）；`exam.js` 加 `_loadExamTemplates()` + `_applyTemplate()` 展开引擎；首验修复 1 竞态（`renderExamPage` / `_startExam` 漏 await）→ 44/44 smoke test 全过；9 下 final 中考模拟改名 / 7-9 年级写作题 prompt+model 注入均落地 | §40 |
 | 2026-07-01 下午 | **三大题型重做 + 听音填空 bug 修复 + 新听力三题型 MP3（推送后 CI bump）**：`exam.js` 重做 `spelling` / `blank_fill` / `sentence_order` 渲染+路由+判分；新增 `_renderListenFillHTML` + 路由（修复「听音填空只有题目没有听力按钮」bug）；5 个 edge-tts 多角色童声 MP3 落盘（listen_fill_01 / judge_01-02 / pic_01-02）；`index.html` SW 防本地缓存改造（仅 `*.github.io` 注册，本地自动 `unregister` + `caches.delete`） | §39 |
 | 2026-07-01 上午 | **广州题型方案 P1（推送后 CI bump）**：产出全学段《广州题型分布方案》文档 + 定稿 4 决策；`exam.js` 全题型 section 满分锁定 `count×points` + 抽不满按比例折算(`shortfall`)，杜绝总分溢出；**3 上期中重写为低段 8 题型 / 50 题模板，106→100**；`mobile.html` 支持 `?v=` 透传验证 | `GZ_EXAM_BLUEPRINT.md` |
@@ -3984,3 +3986,82 @@ step3: 全字匹配则满分，否则0分
 - ✅ 3 P6-E 未推送，等验收
 
 > 本节 docs 收口，CI 不 bump。
+
+---
+
+## 54. ✅ T1-T4 · 6 套主题系统 + contextBar 下拉框修复（2026-07-04 ~ 07-05，已上线）
+
+> 📌 主题系统跨 5 个 commit（T1→T4→hotfix），全部已 push 上线。
+
+### 54.1 T1 · 根治白底 + 变量收敛（`9136216`）
+
+| 项 | 内容 |
+|---|---|
+| 问题 | `styles.css` 原为 JS 动态注入，注入失败时全站 CSS 变量丢失 → 白底白字；`:root` 缺变量 `card/border/shadow/ink-1/bg-1/amber-50` 致 exam 页渲染异常 |
+| 修复 | `styles.css` 改为 `<head>` 静态引入（`index.html`/`mobile.html`）；`:root` 补齐所有缺失变量；`body` 背景变量化 `--page-bg`；防 FOUC 预应用主题脚本 |
+| 影响面 | `index.html`、`mobile.html`、`styles.css` |
+
+### 54.2 T2 · 6 套主题变量定义（`d8870bd`）
+
+| 主题 | `data-theme` | `--brand` | `--brand-strong` | `--surface` | 特色 |
+|---|---|---|---|---|---|
+| 晴空蓝(默认) | `:root` | `#3b82f6` | `#2563eb` | `#fff` | 蓝紫渐变品牌色 |
+| 朱砂 | `vermilion` | `#e2483a` | `#c62f22` | `#fffaf7` | 橘红暖色调 |
+| 青瓷 | `celadon` | `#0d9488` | `#0f766e` | `#f8fdfb` | 青绿冷色调 |
+| 水墨黛 | `ink` | `#64748b` | `#475569` | `#26303f` | 深色模式 |
+| 藏青 | `navy` | `#1e3a8a` | `#1e40af` | `#fbfcfe` | 稳重蓝金 |
+| 胭脂 | `rouge` | `#db2777` | `#be185d` | `#fffafc` | 粉红温馨 |
+
+每组变量含：品牌色系(`--brand/strong/stronger/-2/-ink/gradient/-50/-100/-150`)、状态色(`--accent/warn/success/danger + --ink`)、文字色(`--text-1~4`)、线条色(`--line-1~3`)、底面色(`--surface/card/border/bg-soft/bg-softer/bg-1`)、阴影色(`--shadow-*`)、页面背景(`--page-bg`)。
+
+### 54.3 T3 · ThemeManager（`d5bac79`）
+
+| 项 | 内容 |
+|---|---|
+| 文件 | `js/theme.js`（2.57 KB） |
+| API | `list()` 返回全部主题；`get()` 获取当前；`set(id)` 切换主题（设置 `<html data-theme>`，`sunny` 移除属性回退 :root）；`apply()` 恢复持久化主题 |
+| 持久化 | `localStorage` key `yxyy_theme_v1` |
+| 事件 | `window.dispatchEvent('themechange', { theme: id })` |
+| 加载链 | `index.html` 中 `theme.js` 在 `profile.js` 之后加载 |
+
+### 54.4 T4 · 主题切换 UI + A+ 覆盖 Tailwind 固定色（`27c26ce`）
+
+**UI**：个人中心面板加 6 色卡选择器（圆形 swatch，点击即换主题 + 高亮当前）
+
+**A+ 覆盖**（`styles.css` 第 1803-1855 行）：Tailwind 编译的静态色类不跟随 `data-theme`，用 CSS 变量覆盖关键视觉面：
+- `header.bg-white` → `var(--surface)`
+- `.bg-white` 无渐变元素 → `var(--surface)`
+- `.bg-blue-50/.bg-indigo-50` → `var(--brand-50)`（浅底色）
+- `.text-blue-600/.text-blue-700` → `var(--brand-strong)`（品牌色字）
+- `.text-slate-800/700/500/400` → `var(--text-1~4)`（中性文字）
+- 深色渐变横幅（`from-blue-500` 等）→ `var(--brand-gradient)` + 白字
+
+### 54.5 修复：contextBar 白字白底（`d2fd968`）
+
+| 问题 | A+ 覆盖用了 `[class*="from-blue"]` 子串匹配，同时命中深色 `from-blue-500`（应处理）和浅色 `from-blue-50`（`#contextBar`，不该碰）→ 3 个 `<select>`（`text-blue-700`）被强制染白 + `bg-white→surface` 白底 → 白字白底 |
+|---|---|
+| 修复 | 3 处子串匹配收窄为显式深色调类列表（`.from-blue-400/500/600/700` 等）；新增 `#contextBar` 例外规则块（固定白底 select + 品牌色字 + 深灰标签），保证 6 主题（含水墨黛深色主题）全程可读 |
+| 顺带修复 | 考试入口卡/阅读练习区/听力音频区等 `-50` 浅色调容器文字恢复正常 |
+
+### 54.6 铁律（汇总）
+
+| 铁律 | T1 | T2 | T3 | T4 | fix |
+|---|---|---|---|---|---|
+| ✅ 1 双端验证 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ✅ 2 更新文档 | — | — | — | — | ✅ 本§54 补录 |
+| ✅ 6 落盘验证 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ✅ 9 version.txt 不碰 | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+### 54.7 项目清理（2026-07-05）
+
+| 清理项 | 说明 |
+|---|---|
+| `__v.txt` (177B) | 双语测试样本，0 引用 |
+| `__pycache__/` × 3 (72KB) | Python 编译缓存（本地，未入库） |
+| `audio/_tmp_jk_listen/` (72KB) | 听力临时分片（`gen_jk_listening.py` 运行时自动重建；误入库，顺带清理） |
+| `audio/_sent/` (93MB) | 句级增量缓存（388 子目录，从未入库的本地缓存） |
+| **回收** | **~93MB+** |
+| ⚠️ 保留 `gen_sample_mp3.py` | 用户核查后保留（虽 listen_pic_01/02.mp3 产物已在，脚本留作日后重生成样例） |
+
+> 本节 docs 收口，CI 不 bump。
+

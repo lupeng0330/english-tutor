@@ -1,3 +1,0 @@
-file '/Users/lupeng/CodeBuddy/english-tutor/audio/_tmp_jk_listen/seg_0.mp3'
-file '/Users/lupeng/CodeBuddy/english-tutor/audio/_tmp_jk_listen/seg_1.mp3'
-file '/Users/lupeng/CodeBuddy/english-tutor/audio/_tmp_jk_listen/seg_2.mp3'
