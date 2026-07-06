@@ -271,7 +271,7 @@ function renderReadingEx() {
       inputHtml = it.options.map((opt, k) => {
         const safe = _escapeHtml(opt);
         return `<label class="flex items-center gap-2 py-1 cursor-pointer">
-          <input type="radio" name="rex_${i}" value="${_escapeHtml(opt.charAt(0))}" class="rex-input">
+          <input type="radio" name="rex_${i}" value="${k}" class="rex-input">
           <span class="text-sm text-slate-700">${safe}</span>
         </label>`;
       }).join('');
@@ -321,16 +321,21 @@ function submitReadingEx() {
     let thisOk = false;
     if (it.type === 'choice') {
       const picked = row.querySelector('input[name="rex_' + i + '"]:checked');
-      user = picked ? picked.value : '';
-      // 选择题：答案是 "A" 或 "A. xxx"，取首字母比对
+      const userIdx = picked ? parseInt(picked.value) : -1;
+      // 选择题：答案 "A"/"B"/"C" → 索引 0/1/2 比对
       const correctLetter = String(it.a || '').trim().charAt(0).toUpperCase();
-      const userLetter    = user.toUpperCase();
-      thisOk = !!(userLetter && userLetter === correctLetter);
+      const correctIdx = correctLetter.charCodeAt(0) - 65; // A=0, B=1, C=2
+      thisOk = !!(userIdx >= 0 && userIdx === correctIdx);
       if (thisOk) ok++;
       if (fb) {
         fb.classList.remove('hide');
         fb.className = 'rex-feedback mt-2 text-xs ' + (thisOk ? 'text-green-600' : 'text-red-600');
-        fb.textContent = thisOk ? '✓ 正确' : ('✗ 正确答案：' + it.a);
+        if (thisOk) {
+          fb.textContent = '✓ 正确';
+        } else {
+          const correctText = (it.options && it.options[correctIdx]) ? it.options[correctIdx] : it.a;
+          fb.textContent = '✗ 正确答案：' + correctText;
+        }
       }
     } else {
       const ta = row.querySelector('textarea.rex-input');
