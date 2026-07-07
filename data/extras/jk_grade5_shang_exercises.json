@@ -7,33 +7,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where does Anna want to go?",
+            "问题": "What grade are Anna and Ben in now?",
             "选项": [
-              "To the museum",
-              "To the zoo",
-              "To the park"
+              "Grade 5",
+              "Grade 4",
+              "Grade 6"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How will they get there?",
+            "问题": "How does Anna feel about the new school year?",
             "选项": [
-              "By bus",
-              "By train",
-              "By plane"
+              "Excited",
+              "Bored",
+              "Afraid"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben want to see?",
+            "问题": "What does Anna suggest they do for the new students?",
             "选项": [
-              "Old things and art",
-              "Animals",
-              "The sea"
+              "Introduce themselves",
+              "Give them books",
+              "Show the schedule"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Welcome back",
+        "data": [
+          {
+            "问题": "How was Anna's summer?",
+            "答案": "Great."
+          },
+          {
+            "问题": "What new things do they have in Grade 5?",
+            "答案": "New classmates and new teachers."
           }
         ]
       },
@@ -43,33 +57,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where will the writer go?",
+            "问题": "What grade is the writer in this year?",
             "选项": [
-              "To Beijing",
-              "To Hainan",
-              "To Chengdu"
+              "Grade 5",
+              "Grade 4",
+              "Grade 6"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Who will the writer travel with?",
+            "问题": "Where is the new schedule?",
             "选项": [
-              "Family",
-              "Friends",
-              "Teachers"
+              "On the wall",
+              "On the desk",
+              "In the book"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does the writer want to see?",
+            "问题": "How many English books does the writer hope to read?",
             "选项": [
-              "Old buildings",
-              "The sea",
-              "The pandas"
+              "Fifty",
+              "Fifteen",
+              "Five"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | My fifth-grade plan",
+        "data": [
+          {
+            "问题": "What subjects are on the new schedule?",
+            "答案": "English, Maths, music and PE."
+          },
+          {
+            "问题": "What is the writer's biggest hope this term?",
+            "答案": "To read fifty English books before the term ends."
           }
         ]
       },
@@ -97,33 +125,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "How does Ben like to travel?",
+            "问题": "What are Anna's favourite subjects?",
             "选项": [
-              "By train",
-              "By plane",
-              "By bike"
+              "English and art",
+              "Science and PE",
+              "Maths and music"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna think about flying?",
+            "问题": "Which subject is a little difficult for Ben?",
             "选项": [
-              "It is fast",
-              "It is slow",
-              "It is boring"
+              "Maths",
+              "Science",
+              "PE"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do on a train?",
+            "问题": "What does Anna suggest to help Ben?",
             "选项": [
-              "Sit well and enjoy the view",
-              "Run around",
-              "Sleep all the time"
+              "Study together",
+              "Skip the class",
+              "Ask the teacher"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | What's your favourite?",
+        "data": [
+          {
+            "问题": "Why are English and art easy for Anna?",
+            "答案": "Because they are her favourite subjects."
+          },
+          {
+            "问题": "How will Anna help Ben with Maths?",
+            "答案": "They can study together."
           }
         ]
       },
@@ -133,33 +175,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is the fastest way to travel?",
+            "问题": "What does Maths train?",
             "选项": [
-              "By plane",
-              "By train",
-              "By bike"
+              "Our minds to think",
+              "Our bodies",
+              "Our voices"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What is good about travelling by train?",
+            "问题": "What does science show us?",
             "选项": [
-              "You can see the view",
-              "It is the fastest",
-              "It is free"
+              "How the world works",
+              "How to sing",
+              "How to draw"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do when travelling?",
+            "问题": "What keeps our bodies strong?",
             "选项": [
-              "Be safe and careful",
-              "Be careless",
-              "Be loud"
+              "PE",
+              "Art",
+              "Maths"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Subjects in Grade 5",
+        "data": [
+          {
+            "问题": "What does English help us do?",
+            "答案": "It helps us talk with people from other countries."
+          },
+          {
+            "问题": "What do art and music make us?",
+            "答案": "They make us creative."
           }
         ]
       },
@@ -187,33 +243,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is Anna looking for?",
+            "问题": "What is Anna's talent?",
             "选项": [
-              "The museum",
-              "The school",
-              "The park"
+              "Singing songs in English",
+              "Dancing",
+              "Drawing"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Who does Anna ask?",
+            "问题": "How many languages can Ben speak?",
             "选项": [
-              "A policeman",
-              "A teacher",
-              "A friend"
+              "Three",
+              "Two",
+              "Four"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Where should Anna turn left?",
+            "问题": "Where do they want to show their talents?",
             "选项": [
-              "At the second crossing",
-              "At the first crossing",
-              "At the third crossing"
+              "On the school stage",
+              "At home",
+              "In the library"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Show your talent",
+        "data": [
+          {
+            "问题": "What can Anna do in English?",
+            "答案": "She can sing songs in English."
+          },
+          {
+            "问题": "Where do they want to show their talents?",
+            "答案": "On the school stage."
           }
         ]
       },
@@ -223,33 +293,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What helps us find our way?",
+            "问题": "How many talents does everyone have at least?",
             "选项": [
-              "A map",
-              "A book",
-              "A song"
+              "One",
+              "Two",
+              "Three"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does a map show us?",
+            "问题": "In front of how many people can Tom speak without fear?",
             "选项": [
-              "Roads and places",
-              "Songs and stories",
-              "Numbers"
+              "Three hundred",
+              "Thirty",
+              "Thirteen"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do before asking for directions?",
+            "问题": "Who will be proud of you when you share your talent?",
             "选项": [
-              "Try reading a map first",
-              "Walk away",
-              "Call Mum"
+              "Your family",
+              "Your teacher",
+              "Strangers"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Everyone has a talent",
+        "data": [
+          {
+            "问题": "What can the writer's friend Tom do?",
+            "答案": "He can speak in front of three hundred people without fear."
+          },
+          {
+            "问题": "What does Lily do well?",
+            "答案": "She writes funny stories."
           }
         ]
       },
@@ -277,33 +361,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna want to visit?",
+            "问题": "What does Anna want to borrow?",
             "选项": [
-              "A famous place",
-              "A shop",
-              "A restaurant"
+              "A story book",
+              "A magazine",
+              "A dictionary"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What can they see there?",
+            "问题": "Where is the book?",
             "选项": [
-              "Old things and beautiful buildings",
-              "Animals",
-              "Movies"
+              "On the shelf by the window",
+              "On the teacher's desk",
+              "Under the table"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben like to take?",
+            "问题": "When should Anna return the book?",
             "选项": [
-              "Photos",
-              "Food",
-              "Books"
+              "Within two weeks",
+              "Within one week",
+              "Within one month"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | At the library",
+        "data": [
+          {
+            "问题": "What does Anna want to borrow?",
+            "答案": "A story book."
+          },
+          {
+            "问题": "When should Anna return the book?",
+            "答案": "Within two weeks."
           }
         ]
       },
@@ -313,33 +411,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is the Great Wall like?",
+            "问题": "What does the school library have thousands of?",
             "选项": [
-              "Long and great",
-              "Short and small",
-              "New and tall"
+              "Books and magazines",
+              "Chairs",
+              "Computers"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Where is the West Lake?",
+            "问题": "What should we NOT do in the library?",
             "选项": [
-              "In Hangzhou",
-              "In Beijing",
-              "In Shanghai"
+              "Shout or run",
+              "Read books",
+              "Borrow books"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What can you see at the West Lake?",
+            "问题": "How long does Mrs Lee take to find the right book?",
             "选项": [
-              "Beautiful water and hills",
-              "Tall buildings",
-              "Desert"
+              "Just a minute",
+              "An hour",
+              "A day"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | The school library",
+        "data": [
+          {
+            "问题": "How many books can students borrow with their card?",
+            "答案": "Up to three books."
+          },
+          {
+            "问题": "Who is the kind librarian?",
+            "答案": "Mrs Lee."
           }
         ]
       },
@@ -367,33 +479,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna want to buy?",
+            "问题": "What race will Anna run?",
             "选项": [
-              "A souvenir",
-              "A book",
-              "A hat"
+              "The 100-meter race",
+              "The relay race",
+              "The long jump"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How much is the souvenir?",
+            "问题": "What event will Ben join?",
             "选项": [
-              "Ten yuan",
-              "Five yuan",
-              "Twenty yuan"
+              "The long jump",
+              "The 100-meter race",
+              "Throwing the ball"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Does Ben buy anything?",
+            "问题": "What do they decide to do whether they win or lose?",
             "选项": [
-              "Yes, a postcard",
-              "No, nothing",
-              "Yes, a toy"
+              "Cheer for their team",
+              "Go home",
+              "Stop playing"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Cheer for our team",
+        "data": [
+          {
+            "问题": "What race will Anna run?",
+            "答案": "The 100-meter race."
+          },
+          {
+            "问题": "What will they do whether they win or lose?",
+            "答案": "Cheer for their team."
           }
         ]
       },
@@ -403,33 +529,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What makes a good souvenir?",
+            "问题": "What was the playground full of?",
             "选项": [
-              "It reminds you of the trip",
-              "It is expensive",
-              "It is very big"
+              "Cheering students",
+              "Empty chairs",
+              "Teachers"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did the writer buy?",
+            "问题": "What race did the writer join?",
             "选项": [
-              "A small key ring",
-              "A big toy",
-              "A book"
+              "The relay race",
+              "The long jump",
+              "The 100-meter race"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Who was the souvenir for?",
+            "问题": "What did the friends do even when they lost?",
             "选项": [
-              "The writer",
-              "The teacher",
-              "A stranger"
+              "Smiled and tried again",
+              "Cried",
+              "Went home"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A wonderful Sports Day",
+        "data": [
+          {
+            "问题": "What place did the writer's team win in the relay race?",
+            "答案": "Second place."
+          },
+          {
+            "问题": "What do sports teach us?",
+            "答案": "Teamwork and never giving up."
           }
         ]
       },
@@ -457,33 +597,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did Anna send to Ben?",
+            "问题": "What does Ben eat at Mid-Autumn Festival?",
             "选项": [
-              "A postcard",
-              "A letter",
-              "An email"
+              "Moon cakes",
+              "Turkey",
+              "Dumplings"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did Anna see?",
+            "问题": "What do Western kids wear at Halloween?",
             "选项": [
-              "Beautiful places",
-              "A movie",
-              "A book"
+              "Masks",
+              "Hats",
+              "Gloves"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does Ben feel about the postcard?",
+            "问题": "What festival does Ben's pen pal in the US love?",
             "选项": [
-              "Happy",
-              "Sad",
-              "Angry"
+              "Thanksgiving",
+              "Halloween",
+              "Christmas"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Festivals we love",
+        "data": [
+          {
+            "问题": "What does Ben eat at Mid-Autumn Festival?",
+            "答案": "Moon cakes."
+          },
+          {
+            "问题": "What festival does Ben's pen pal in the US love?",
+            "答案": "Thanksgiving."
           }
         ]
       },
@@ -493,33 +647,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did the writer send to Grandma?",
+            "问题": "What festivals do families gather for in China?",
             "选项": [
-              "A postcard",
-              "A gift",
-              "An email"
+              "Spring Festival and Mid-Autumn Festival",
+              "Halloween",
+              "Thanksgiving"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What was on the postcard?",
+            "问题": "Where do people enjoy Thanksgiving dinner with turkey?",
             "选项": [
-              "A picture of the trip",
-              "A song",
-              "A map"
+              "The United States",
+              "China",
+              "Mexico"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How did Grandma feel?",
+            "问题": "What do festivals remind us?",
             "选项": [
-              "Happy",
-              "Sad",
-              "Worried"
+              "We are one big family on this planet",
+              "We should travel",
+              "We should study"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | One world, many festivals",
+        "data": [
+          {
+            "问题": "What do people in the United States enjoy at Thanksgiving?",
+            "答案": "Thanksgiving dinner with turkey."
+          },
+          {
+            "问题": "What do children in Mexico break at parties?",
+            "答案": "Colourful piñatas."
           }
         ]
       },
@@ -547,33 +715,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna learn about?",
+            "问题": "Which club does Anna want to join?",
             "选项": [
-              "Different cultures",
-              "Maths",
-              "Science"
+              "The photo club",
+              "The robot club",
+              "The chess club"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What do people use to eat in China?",
+            "问题": "What will Ben's club build?",
             "选项": [
-              "Chopsticks",
-              "Forks",
-              "Hands"
+              "A small robot",
+              "A photo album",
+              "A chessboard"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben find interesting?",
+            "问题": "Which club did Anna's sister join last year?",
             "选项": [
-              "Different traditions",
-              "Different food",
-              "Different clothes"
+              "The chess club",
+              "The photo club",
+              "The robot club"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Which club?",
+        "data": [
+          {
+            "问题": "Which club does Anna want to join?",
+            "答案": "The photo club."
+          },
+          {
+            "问题": "What will Ben's robot club build?",
+            "答案": "A small robot."
           }
         ]
       },
@@ -583,33 +765,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should we do with different cultures?",
+            "问题": "How often does the photo club take a class trip?",
             "选项": [
-              "Respect them",
-              "Ignore them",
-              "Change them"
+              "Every month",
+              "Every week",
+              "Every day"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What do people in Western countries use to eat?",
+            "问题": "What does the chess club teach?",
             "选项": [
-              "Forks and knives",
-              "Chopsticks",
-              "Hands"
+              "Careful thinking",
+              "Singing",
+              "Drawing"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What can we learn from different cultures?",
+            "问题": "What do clubs make school life?",
             "选项": [
-              "New things",
-              "Nothing",
-              "Bad habits"
+              "Rich and colourful",
+              "Long and hard",
+              "Quiet and boring"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Our school clubs",
+        "data": [
+          {
+            "问题": "When does the drama club meet?",
+            "答案": "Every Tuesday after school."
+          },
+          {
+            "问题": "What does the robot club build?",
+            "答案": "Small machines that move and talk."
           }
         ]
       },
@@ -637,33 +833,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should Anna do before travelling?",
+            "问题": "Who looks sad today?",
             "选项": [
-              "Pack her bag carefully",
-              "Watch TV",
-              "Play games"
+              "The elderly man next door",
+              "Anna's brother",
+              "The teacher"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What should Ben remember to bring?",
+            "问题": "How do they decide to help him?",
             "选项": [
-              "His ID card",
-              "A toy",
-              "A book"
+              "Carry his bags",
+              "Give him money",
+              "Cook for him"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What is the most important thing when travelling?",
+            "问题": "What does Ben's mum call the shortest helping hand?",
             "选项": [
-              "Safety",
-              "Speed",
-              "Price"
+              "A smile",
+              "A gift",
+              "A word"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | A helping hand",
+        "data": [
+          {
+            "问题": "Who looks sad today?",
+            "答案": "The elderly man next door."
+          },
+          {
+            "问题": "How do they decide to help him?",
+            "答案": "Carry his bags."
           }
         ]
       },
@@ -673,33 +883,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should we do before we travel?",
+            "问题": "Where did the class volunteer last weekend?",
             "选项": [
-              "Make a plan",
-              "Buy everything",
-              "Sleep all day"
+              "The city park",
+              "The library",
+              "The school"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What should we do if we get lost?",
+            "问题": "What did some kids share with strangers?",
             "选项": [
-              "Ask a policeman for help",
-              "Run around",
-              "Cry loudly"
+              "Bread and warm drinks",
+              "Books",
+              "Toys"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What comes first when travelling?",
+            "问题": "What can small acts of kindness build?",
             "选项": [
-              "Safety",
-              "Fun",
-              "Money"
+              "A great world",
+              "A big house",
+              "A tall tree"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Small acts, big love",
+        "data": [
+          {
+            "问题": "What did the class do at the city park?",
+            "答案": "Picked up rubbish, planted flowers, and helped elderly people walk to the bus stop."
+          },
+          {
+            "问题": "What did a grandma teach the children?",
+            "答案": "How to fold paper birds."
           }
         ]
       },
@@ -727,33 +951,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did Anna enjoy most?",
+            "问题": "When is the school show?",
             "选项": [
-              "The beautiful places",
-              "The food",
-              "The shopping"
+              "Tomorrow",
+              "Next week",
+              "Today"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Ben want to do next year?",
+            "问题": "What will Ben do in the show?",
             "选项": [
-              "Visit another city",
-              "Stay home",
-              "Visit Anna"
+              "Sing and act",
+              "Dance only",
+              "Play chess"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does Anna feel about the trip?",
+            "问题": "What does Ben tell Anna not to forget?",
             "选项": [
-              "Happy and thankful",
-              "Sad and tired",
-              "Bored"
+              "To smile",
+              "To bring props",
+              "To be early"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Time to shine",
+        "data": [
+          {
+            "问题": "When is the school show?",
+            "答案": "Tomorrow."
+          },
+          {
+            "问题": "What will Ben do in the show?",
+            "答案": "Sing and act."
           }
         ]
       },
@@ -763,33 +1001,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did the writer learn from the trip?",
+            "问题": "When did the school have the big Show Time?",
             "选项": [
-              "About history and culture",
-              "About maths",
-              "About science"
+              "Last Friday",
+              "Last Monday",
+              "Last Sunday"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did the writer see?",
+            "问题": "What did they sing in?",
             "选项": [
-              "Old buildings and beautiful places",
-              "Only shops",
-              "Only restaurants"
+              "English",
+              "Chinese",
+              "French"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the writer feel about the journey?",
+            "问题": "How did the writer feel when the audience clapped?",
             "选项": [
-              "It was wonderful",
-              "It was boring",
-              "It was terrible"
+              "Heart jumped with joy",
+              "Very tired",
+              "A little sad"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A show to remember",
+        "data": [
+          {
+            "问题": "What did each class prepare for Show Time?",
+            "答案": "One act."
+          },
+          {
+            "问题": "What was the short play about?",
+            "答案": "Friendship."
           }
         ]
       },

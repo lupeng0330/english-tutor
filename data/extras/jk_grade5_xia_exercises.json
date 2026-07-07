@@ -7,33 +7,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where does Anna want to go?",
+            "问题": "What season is coming?",
             "选项": [
-              "To the museum",
-              "To the zoo",
-              "To the park"
+              "Summer holiday",
+              "Winter holiday",
+              "Spring Festival"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How will they get there?",
+            "问题": "What can they do at the beach?",
             "选项": [
-              "By bus",
-              "By train",
-              "By plane"
+              "Swim and play in the sand",
+              "Climb rocks",
+              "Ski"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben want to see?",
+            "问题": "What do they plan to do tonight?",
             "选项": [
-              "Old things and art",
-              "Animals",
-              "The sea"
+              "Discuss with their parents",
+              "Buy tickets",
+              "Pack their bags"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Where shall we go?",
+        "data": [
+          {
+            "问题": "What can they do at the beach?",
+            "答案": "Swim and play in the sand."
+          },
+          {
+            "问题": "What will they do tonight?",
+            "答案": "Discuss with their parents."
           }
         ]
       },
@@ -43,33 +57,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where will the writer go?",
+            "问题": "What is part of the fun of a trip?",
             "选项": [
-              "To Beijing",
-              "To Hainan",
-              "To Chengdu"
+              "Planning a trip",
+              "Packing bags",
+              "Buying tickets"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Who will the writer travel with?",
+            "问题": "What do we pack for a trip?",
             "选项": [
-              "Family",
-              "Friends",
-              "Teachers"
+              "Clothes, water and snacks",
+              "Only clothes",
+              "Only water"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does the writer want to see?",
+            "问题": "What does a good plan give us?",
             "选项": [
-              "Old buildings",
-              "The sea",
-              "The pandas"
+              "More time to enjoy",
+              "Less money",
+              "More work"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Making a plan",
+        "data": [
+          {
+            "问题": "What is the first step in planning a trip?",
+            "答案": "Choose a place."
+          },
+          {
+            "问题": "What do the best trips begin with?",
+            "答案": "A good idea."
           }
         ]
       },
@@ -97,33 +125,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "How does Ben like to travel?",
+            "问题": "Where do Anna and Ben plan to go?",
             "选项": [
-              "By train",
-              "By plane",
-              "By bike"
+              "Beijing",
+              "Shanghai",
+              "Xi'an"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna think about flying?",
+            "问题": "Why does Anna think the train is better?",
             "选项": [
-              "It is fast",
-              "It is slow",
-              "It is boring"
+              "It is more interesting and shows scenery",
+              "It is faster",
+              "It is quieter"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do on a train?",
+            "问题": "What will they buy tomorrow?",
             "选项": [
-              "Sit well and enjoy the view",
-              "Run around",
-              "Sleep all the time"
+              "Two train tickets",
+              "Two plane tickets",
+              "Bus tickets"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | By plane or by train?",
+        "data": [
+          {
+            "问题": "Where do Anna and Ben plan to go?",
+            "答案": "Beijing."
+          },
+          {
+            "问题": "What can they see from the train window?",
+            "答案": "The fields and rivers."
           }
         ]
       },
@@ -133,33 +175,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is the fastest way to travel?",
+            "问题": "What do trains show us?",
             "选项": [
-              "By plane",
-              "By train",
-              "By bike"
+              "Beautiful scenery",
+              "The fastest way",
+              "Cheap tickets"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What is good about travelling by train?",
+            "问题": "What do we use in a city?",
             "选项": [
-              "You can see the view",
-              "It is the fastest",
-              "It is free"
+              "The subway and the bus",
+              "Only planes",
+              "Only bikes"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do when travelling?",
+            "问题": "What is the best part of travel?",
             "选项": [
-              "Be safe and careful",
-              "Be careless",
-              "Be loud"
+              "The journey itself",
+              "The tickets",
+              "The food"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Ways to travel",
+        "data": [
+          {
+            "问题": "Which way of travel is the fastest?",
+            "答案": "Planes are the fastest."
+          },
+          {
+            "问题": "What is perfect for short trips around the neighbourhood?",
+            "答案": "A bike."
           }
         ]
       },
@@ -187,33 +243,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is Anna looking for?",
+            "问题": "Where does the tourist want to go?",
             "选项": [
               "The museum",
-              "The school",
-              "The park"
+              "The park",
+              "The train station"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Who does Anna ask?",
+            "问题": "What does Anna tell the tourist to do at the crossroads?",
             "选项": [
-              "A policeman",
-              "A teacher",
-              "A friend"
+              "Turn left",
+              "Turn right",
+              "Go straight"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Where should Anna turn left?",
+            "问题": "How will the tourist know the place?",
             "选项": [
-              "At the second crossing",
-              "At the first crossing",
-              "At the third crossing"
+              "There is a big sign",
+              "It is very tall",
+              "It is red"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Excuse me, where is...?",
+        "data": [
+          {
+            "问题": "Where does the tourist want to go?",
+            "答案": "The museum."
+          },
+          {
+            "问题": "What should the tourist do at the crossroads?",
+            "答案": "Turn left."
           }
         ]
       },
@@ -223,33 +293,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What helps us find our way?",
+            "问题": "What is very useful when we travel?",
             "选项": [
-              "A map",
-              "A book",
-              "A song"
+              "Knowing how to ask the way",
+              "Bringing a lot of food",
+              "Buying souvenirs"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does a map show us?",
+            "问题": "Where can we also read a map?",
             "选项": [
-              "Roads and places",
-              "Songs and stories",
-              "Numbers"
+              "On our phone",
+              "On the wall",
+              "In a shop"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do before asking for directions?",
+            "问题": "What should you not be afraid to do?",
             "选项": [
-              "Try reading a map first",
-              "Walk away",
-              "Call Mum"
+              "Ask",
+              "Walk",
+              "Read"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Reading the map",
+        "data": [
+          {
+            "问题": "What can you find if you go straight?",
+            "答案": "The train station."
+          },
+          {
+            "问题": "Who will help you if you get lost?",
+            "答案": "Kind people."
           }
         ]
       },
@@ -277,33 +361,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna want to visit?",
+            "问题": "Which spots does Anna want to visit most?",
             "选项": [
-              "A famous place",
-              "A shop",
-              "A restaurant"
+              "The Great Wall and the Forbidden City",
+              "A science museum",
+              "The Terracotta Army"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What can they see there?",
+            "问题": "What does Ben want to see in Shanghai?",
             "选项": [
-              "Old things and beautiful buildings",
-              "Animals",
-              "Movies"
+              "A science museum",
+              "The Great Wall",
+              "The Forbidden City"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben like to take?",
+            "问题": "What does Ben say is the best way to learn about a city?",
             "选项": [
-              "Photos",
-              "Food",
-              "Books"
+              "A trip",
+              "A book",
+              "A film"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Where will you go?",
+        "data": [
+          {
+            "问题": "Which spots does Anna want to visit most?",
+            "答案": "The Great Wall and the Forbidden City."
+          },
+          {
+            "问题": "What does Ben want to see in Shanghai?",
+            "答案": "A science museum."
           }
         ]
       },
@@ -313,33 +411,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is the Great Wall like?",
+            "问题": "How many rooms does the Forbidden City have?",
             "选项": [
-              "Long and great",
-              "Short and small",
-              "New and tall"
+              "More than nine thousand",
+              "About one hundred",
+              "About one thousand"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Where is the West Lake?",
+            "问题": "What surprises every visitor in Shanghai?",
             "选项": [
-              "In Hangzhou",
-              "In Beijing",
-              "In Shanghai"
+              "The modern science museum",
+              "The Great Wall",
+              "The Terracotta Army"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What can you see at the West Lake?",
+            "问题": "What does every city have?",
             "选项": [
-              "Beautiful water and hills",
-              "Tall buildings",
-              "Desert"
+              "Its own special place",
+              "A great wall",
+              "A science museum"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Famous spots in China",
+        "data": [
+          {
+            "问题": "How old is the Great Wall?",
+            "答案": "Over two thousand years old."
+          },
+          {
+            "问题": "What can you see in Xi'an?",
+            "答案": "The amazing Terracotta Army."
           }
         ]
       },
@@ -367,33 +479,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna want to buy?",
+            "问题": "What colour scarf does Ben take?",
             "选项": [
-              "A souvenir",
-              "A book",
-              "A hat"
+              "The red one",
+              "The blue one",
+              "The green one"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How much is the souvenir?",
+            "问题": "What else does Ben try on?",
             "选项": [
-              "Ten yuan",
-              "Five yuan",
-              "Twenty yuan"
+              "A hat",
+              "A coat",
+              "A pair of shoes"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Does Ben buy anything?",
+            "问题": "How much is everything?",
             "选项": [
-              "Yes, a postcard",
-              "No, nothing",
-              "Yes, a toy"
+              "Two hundred yuan",
+              "One hundred yuan",
+              "Fifty yuan"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | At the gift shop",
+        "data": [
+          {
+            "问题": "What colour scarf does Ben take?",
+            "答案": "The red one."
+          },
+          {
+            "问题": "How much is everything?",
+            "答案": "Two hundred yuan."
           }
         ]
       },
@@ -403,33 +529,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What makes a good souvenir?",
+            "问题": "What is a souvenir?",
             "选项": [
-              "It reminds you of the trip",
-              "It is expensive",
-              "It is very big"
+              "A small gift that helps us remember a trip",
+              "A big box",
+              "A kind of food"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did the writer buy?",
+            "问题": "What should you choose for a souvenir?",
             "选项": [
-              "A small key ring",
-              "A big toy",
-              "A book"
+              "One you really like",
+              "The cheapest one",
+              "The biggest one"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Who was the souvenir for?",
+            "问题": "What will a souvenir remind you of years later?",
             "选项": [
-              "The writer",
-              "The teacher",
-              "A stranger"
+              "A happy day",
+              "A sad day",
+              "A busy day"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A good souvenir",
+        "data": [
+          {
+            "问题": "What did the writer buy in Hangzhou?",
+            "答案": "A paper fan with a flower picture."
+          },
+          {
+            "问题": "What did Dad bring back from Yunnan?",
+            "答案": "A small silver hat."
           }
         ]
       },
@@ -457,33 +597,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did Anna send to Ben?",
+            "问题": "Where did Anna's postcard come from?",
             "选项": [
-              "A postcard",
-              "A letter",
-              "An email"
+              "Beijing",
+              "Shanghai",
+              "Hangzhou"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did Anna see?",
+            "问题": "Who sent the postcard?",
             "选项": [
-              "Beautiful places",
-              "A movie",
-              "A book"
+              "Her cousin Tom",
+              "Her friend Ben",
+              "Her teacher"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does Ben feel about the postcard?",
+            "问题": "What is on the postcard?",
             "选项": [
-              "Happy",
-              "Sad",
-              "Angry"
+              "A pretty stamp",
+              "A photo of Anna",
+              "A drawing"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | A postcard from Beijing",
+        "data": [
+          {
+            "问题": "Where did Anna's postcard come from?",
+            "答案": "Beijing."
+          },
+          {
+            "问题": "Who sent the postcard?",
+            "答案": "Her cousin Tom."
           }
         ]
       },
@@ -493,33 +647,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did the writer send to Grandma?",
+            "问题": "Whom can we send postcards to when we travel?",
             "选项": [
-              "A postcard",
-              "A gift",
-              "An email"
+              "Friends and family",
+              "Strangers",
+              "Shopkeepers"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What was on the postcard?",
+            "问题": "What do people love to see on a postcard?",
             "选项": [
-              "A picture of the trip",
-              "A song",
-              "A map"
+              "New pictures",
+              "Old maps",
+              "Numbers"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How did Grandma feel?",
+            "问题": "What does a small postcard tell others?",
             "选项": [
-              "Happy",
-              "Sad",
-              "Worried"
+              "I miss you and I'm thinking of you",
+              "I am busy",
+              "I am tired"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Greetings from afar",
+        "data": [
+          {
+            "问题": "What should you do before dropping the card into a mailbox?",
+            "答案": "Write the address clearly and stick on a stamp."
+          },
+          {
+            "问题": "How far can a small postcard travel?",
+            "答案": "Thousands of kilometres."
           }
         ]
       },
@@ -547,33 +715,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna learn about?",
+            "问题": "How many languages does the foreign student speak?",
             "选项": [
-              "Different cultures",
-              "Maths",
-              "Science"
+              "Three",
+              "Two",
+              "Four"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What do people use to eat in China?",
+            "问题": "What country is the student from?",
             "选项": [
-              "Chopsticks",
-              "Forks",
-              "Hands"
+              "Japan",
+              "Italy",
+              "America"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben find interesting?",
+            "问题": "What does she use like Anna and Ben?",
             "选项": [
-              "Different traditions",
-              "Different food",
-              "Different clothes"
+              "Chopsticks",
+              "A fork",
+              "A spoon"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Different but lovely",
+        "data": [
+          {
+            "问题": "How many languages does the foreign student speak?",
+            "答案": "Three."
+          },
+          {
+            "问题": "What country is the student from?",
+            "答案": "Japan."
           }
         ]
       },
@@ -583,33 +765,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should we do with different cultures?",
+            "问题": "How many cultures does our world have?",
             "选项": [
-              "Respect them",
-              "Ignore them",
-              "Change them"
+              "Thousands",
+              "Only a few",
+              "Just one"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What do people in Western countries use to eat?",
+            "问题": "What do people in China use?",
             "选项": [
-              "Forks and knives",
               "Chopsticks",
-              "Hands"
+              "A fork",
+              "A spoon"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What can we learn from different cultures?",
+            "问题": "What helps you understand different cultures?",
             "选项": [
-              "New things",
-              "Nothing",
-              "Bad habits"
+              "Travel and read books",
+              "Stay at home",
+              "Watch TV"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | One world, many cultures",
+        "data": [
+          {
+            "问题": "How do people in Italy eat pasta?",
+            "答案": "With a fork."
+          },
+          {
+            "问题": "What should we do with different cultures?",
+            "答案": "Understand and respect them."
           }
         ]
       },
@@ -637,33 +833,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should Anna do before travelling?",
+            "问题": "What will Anna and Ben do next week?",
             "选项": [
-              "Pack her bag carefully",
-              "Watch TV",
-              "Play games"
+              "Travel alone",
+              "Go to school",
+              "Visit grandparents"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What should Ben remember to bring?",
+            "问题": "What does Mum tell Anna to remember?",
             "选项": [
-              "His ID card",
-              "A toy",
-              "A book"
+              "The family phone number",
+              "The map",
+              "The tickets"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What is the most important thing when travelling?",
+            "问题": "What will they watch for?",
             "选项": [
-              "Safety",
-              "Speed",
-              "Price"
+              "Warning signs",
+              "Buses",
+              "Shops"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Be safe on the trip",
+        "data": [
+          {
+            "问题": "What will Anna and Ben do next week?",
+            "答案": "Travel alone."
+          },
+          {
+            "问题": "What does Mum tell Anna to remember?",
+            "答案": "The family phone number."
           }
         ]
       },
@@ -673,33 +883,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should we do before we travel?",
+            "问题": "What always comes first when travelling?",
             "选项": [
-              "Make a plan",
-              "Buy everything",
-              "Sleep all day"
+              "Safety",
+              "Fun",
+              "Food"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What should we do if we get lost?",
+            "问题": "Whom should you not talk to?",
             "选项": [
-              "Ask a policeman for help",
-              "Run around",
-              "Cry loudly"
+              "Strangers",
+              "Your family",
+              "Your friends"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What comes first when travelling?",
+            "问题": "What should you carry in a small bag?",
             "选项": [
-              "Safety",
-              "Fun",
-              "Money"
+              "Water, a map and a phone",
+              "Only water",
+              "Only a map"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Safety on the road",
+        "data": [
+          {
+            "问题": "When should you cross the road?",
+            "答案": "With the green light."
+          },
+          {
+            "问题": "What should you do if you get lost?",
+            "答案": "Call a family phone number right away."
           }
         ]
       },
@@ -727,33 +951,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did Anna enjoy most?",
+            "问题": "Where did Anna write everything?",
             "选项": [
-              "The beautiful places",
-              "The food",
-              "The shopping"
+              "In her diary",
+              "On a postcard",
+              "In a book"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Ben want to do next year?",
+            "问题": "What places did they visit this summer?",
             "选项": [
-              "Visit another city",
-              "Stay home",
-              "Visit Anna"
+              "The mountain, the beach, and the city",
+              "Only the beach",
+              "Only the city"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does Anna feel about the trip?",
+            "问题": "What will they share with the class?",
             "选项": [
-              "Happy and thankful",
-              "Sad and tired",
-              "Bored"
+              "The photos",
+              "The souvenirs",
+              "The tickets"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Telling my story",
+        "data": [
+          {
+            "问题": "Where did Anna write everything?",
+            "答案": "In her diary."
+          },
+          {
+            "问题": "What places did they visit this summer?",
+            "答案": "The mountain, the beach, and the city."
           }
         ]
       },
@@ -763,33 +1001,47 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did the writer learn from the trip?",
+            "问题": "What was the writer's summer journey full of?",
             "选项": [
-              "About history and culture",
-              "About maths",
-              "About science"
+              "Wonderful moments",
+              "Hard tests",
+              "Rainy days"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did the writer see?",
+            "问题": "Whom did they make friends with?",
             "选项": [
-              "Old buildings and beautiful places",
-              "Only shops",
-              "Only restaurants"
+              "Kids from another city",
+              "Their teachers",
+              "Shopkeepers"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the writer feel about the journey?",
+            "问题": "What does the writer call the best teacher?",
             "选项": [
-              "It was wonderful",
-              "It was boring",
-              "It was terrible"
+              "A journey",
+              "A book",
+              "A diary"
             ],
             "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | My summer journey",
+        "data": [
+          {
+            "问题": "What did the writer learn to do in English?",
+            "答案": "Ask the way and pay for souvenirs."
+          },
+          {
+            "问题": "How many pages of stories does the diary have now?",
+            "答案": "Fifty pages."
           }
         ]
       },
