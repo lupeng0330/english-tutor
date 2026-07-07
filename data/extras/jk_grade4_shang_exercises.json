@@ -7,31 +7,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What season is it?",
+            "问题": "Whose home does Ben visit?",
             "选项": [
-              "Spring",
-              "Summer",
-              "Winter"
+              "Anna's home",
+              "Ben's home",
+              "the teacher's home"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What colour are the trees again?",
+            "问题": "What does Ben think of the house?",
             "选项": [
-              "Green",
-              "Yellow",
-              "Red"
+              "It is beautiful.",
+              "It is old.",
+              "It is small."
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What do Anna and Ben want to do?",
+            "问题": "What room does Anna want to show Ben upstairs?",
             "选项": [
-              "Fly a kite",
-              "Make a snowman",
-              "Go swimming"
+              "Her bedroom",
+              "The kitchen",
+              "The living room"
             ],
             "答案": "A"
           }
@@ -43,31 +43,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What grows on the green grass?",
+            "问题": "What is the writer's new home like?",
             "选项": [
-              "Pink and yellow flowers",
-              "Trees",
-              "Vegetables"
+              "Small but very beautiful",
+              "Big and old",
+              "Dark and dirty"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What appears after a short rain?",
+            "问题": "What is in the living room?",
             "选项": [
-              "A small rainbow",
-              "A big cloud",
-              "A bird"
+              "A soft sofa",
+              "A big bed",
+              "A white desk"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does the writer call spring?",
+            "问题": "What does the writer like to do in the bedroom?",
             "选项": [
-              "The most lovely time of the year",
-              "The coldest time",
-              "The hottest time"
+              "Read books",
+              "Cook food",
+              "Watch TV"
             ],
             "答案": "A"
           }
@@ -97,31 +97,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What will Ben wear to the party?",
+            "问题": "Who is the man with glasses in the photo?",
             "选项": [
-              "A white shirt and blue trousers",
-              "A red T-shirt",
-              "A black coat"
+              "Anna's father",
+              "Anna's brother",
+              "Anna's grandpa"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna want to wear?",
+            "问题": "What is Anna's mother like?",
             "选项": [
-              "Her pink skirt",
-              "A blue dress",
-              "A green hat"
+              "Kind",
+              "Tall",
+              "Young"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben tell Anna not to forget?",
+            "问题": "Who else lives with Anna's family?",
             "选项": [
-              "Her hat",
-              "Her bag",
-              "Her shoes"
+              "Grandpa and Grandma",
+              "Her friends",
+              "Her teacher"
             ],
             "答案": "A"
           }
@@ -133,31 +133,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does the writer wear in summer?",
+            "问题": "How many people are there in the writer's family?",
             "选项": [
-              "T-shirts and shorts",
-              "Coats and gloves",
-              "Sweaters"
+              "Six",
+              "Four",
+              "Five"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does the writer wear on rainy days?",
+            "问题": "What is the writer's mother's job?",
             "选项": [
-              "Yellow boots",
-              "Blue shoes",
-              "Red sandals"
+              "A teacher",
+              "A doctor",
+              "A nurse"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What do clothes do for us?",
+            "问题": "What does the family do after dinner?",
             "选项": [
-              "Keep us warm and make us smile",
-              "Make us sad",
-              "Cost much money"
+              "Sit together and talk",
+              "Watch a movie",
+              "Go to bed"
             ],
             "答案": "A"
           }
@@ -187,31 +187,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna show Mum?",
+            "问题": "What does Anna show Ben first?",
             "选项": [
-              "A red T-shirt",
-              "A blue skirt",
-              "A green hat"
+              "The kitchen",
+              "The garden",
+              "The bedroom"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Mum ask?",
+            "问题": "Where is Anna's bedroom?",
             "选项": [
-              "How much is it?",
-              "Where is it from?",
-              "What colour is it?"
+              "Upstairs",
+              "Downstairs",
+              "Near the garden"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What colour is the T-shirt?",
+            "问题": "What does Ben find outside the house?",
             "选项": [
-              "Red",
-              "Blue",
-              "Green"
+              "A small garden",
+              "A big car",
+              "A dog"
             ],
             "答案": "A"
           }
@@ -223,31 +223,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where did Mum and the writer go on Saturday?",
+            "问题": "What is the writer's favourite room?",
             "选项": [
-              "To a big store",
-              "To the park",
-              "To school"
+              "The bedroom",
+              "The study",
+              "The kitchen"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How much was the blue T-shirt?",
+            "问题": "What does the writer do at the desk?",
             "选项": [
-              "Twenty yuan",
-              "Two hundred yuan",
-              "Fifty yuan"
+              "Homework",
+              "Cooking",
+              "Drawing"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How much were the white shoes?",
+            "问题": "What does the writer do in bed at night?",
             "选项": [
-              "Two hundred yuan",
-              "Twenty yuan",
-              "Fifty yuan"
+              "Read storybooks",
+              "Play games",
+              "Sing songs"
             ],
             "答案": "A"
           }
@@ -277,31 +277,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Anna want to buy?",
+            "问题": "What does Anna do at home?",
             "选项": [
-              "A book and a pen",
-              "A shirt and shoes",
-              "A bag"
+              "Read books and draw pictures",
+              "Play the piano",
+              "Cook dinner"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How much is the book?",
+            "问题": "When does Anna watch TV?",
             "选项": [
-              "Thirty yuan",
-              "Twenty yuan",
-              "Fifty yuan"
+              "Only on weekends",
+              "Every day",
+              "Never"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How much is the pen?",
+            "问题": "What does Ben do every day?",
             "选项": [
-              "Twenty yuan",
-              "Thirty yuan",
-              "Ten yuan"
+              "Write a diary",
+              "Watch TV",
+              "Draw pictures"
             ],
             "答案": "A"
           }
@@ -313,31 +313,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What do numbers help us do?",
+            "问题": "What does the writer do in the morning?",
             "选项": [
-              "Count money, days and steps",
-              "Draw pictures",
-              "Sing songs"
+              "Go to school and study",
+              "Watch TV",
+              "Draw pictures"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What is twenty plus thirty?",
+            "问题": "Where does the writer do homework?",
             "选项": [
-              "Fifty",
-              "Forty",
-              "Sixty"
+              "At the study desk",
+              "In bed",
+              "In the garden"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we learn to pay by ourselves?",
+            "问题": "What does the writer do after dinner?",
             "选项": [
-              "Numbers",
-              "Songs",
-              "Pictures"
+              "Watch a short TV show with family",
+              "Read a story",
+              "Draw a picture"
             ],
             "答案": "A"
           }
@@ -367,31 +367,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does Ben ask Anna?",
+            "问题": "What is Ben's hobby?",
             "选项": [
-              "What's your favourite food?",
-              "How old are you?",
-              "Where do you live?"
+              "Music",
+              "Dance",
+              "Cooking"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna love?",
+            "问题": "What can Anna do besides dance?",
             "选项": [
-              "Noodles and dumplings",
-              "Pizza and burgers",
-              "Cake and ice cream"
+              "Swim",
+              "Cook",
+              "Play the piano"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Who is asking the question?",
+            "问题": "What is Ben's sister's hobby?",
             "选项": [
-              "Ben",
-              "Anna",
-              "Mum"
+              "Cooking many things",
+              "Dancing",
+              "Swimming"
             ],
             "答案": "A"
           }
@@ -403,31 +403,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Who is a great cook?",
+            "问题": "What does Tom play?",
             "选项": [
-              "Grandma",
-              "Mum",
-              "The teacher"
+              "The guitar",
+              "The piano",
+              "Football"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What is famous in the family?",
+            "问题": "Who loves swimming?",
             "选项": [
-              "Grandma's vegetable soup",
-              "Grandma's rice",
-              "Grandma's bread"
+              "Anna",
+              "Lily",
+              "Ben"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Grandma give after a meal?",
+            "问题": "What is the writer's favourite hobby?",
             "选项": [
-              "A small sweet — fruit or cake",
-              "Money",
-              "A book"
+              "Reading storybooks",
+              "Cooking",
+              "Dancing"
             ],
             "答案": "A"
           }
@@ -457,31 +457,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where does Mum ask Anna to help?",
+            "问题": "What animals do Anna and Ben see first?",
             "选项": [
-              "In the kitchen",
-              "In the garden",
-              "At school"
+              "Pandas",
+              "Tigers",
+              "Birds"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna say?",
+            "问题": "What does Anna like about the pandas?",
             "选项": [
-              "Sure, Mum",
-              "No, I'm busy",
-              "Maybe later"
+              "Their black and white fur",
+              "Their big eyes",
+              "Their long tails"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Anna ask?",
+            "问题": "What is Anna's favourite animal at the zoo?",
             "选项": [
-              "What can I do?",
-              "When is dinner?",
-              "Where is Dad?"
+              "The little fish in the pond",
+              "The rabbits",
+              "The tiger"
             ],
             "答案": "A"
           }
@@ -493,31 +493,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does the writer do first?",
+            "问题": "Where do pandas live?",
             "选项": [
-              "Wash hands and put on an apron",
-              "Cut the bread",
-              "Turn on the fire"
+              "In the mountains of China",
+              "In the sea",
+              "In the desert"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does the writer break into a bowl?",
+            "问题": "What do pandas eat all day?",
             "选项": [
-              "Two eggs",
-              "Two apples",
-              "Two tomatoes"
+              "Bamboo",
+              "Fish",
+              "Carrots"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Mum let the writer cut?",
+            "问题": "What can pandas do very fast?",
             "选项": [
-              "The bread",
-              "The meat",
-              "The onions"
+              "Climb trees",
+              "Swim",
+              "Run"
             ],
             "答案": "A"
           }
@@ -547,31 +547,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Why is Anna so strong?",
+            "问题": "What will Anna's family do on Saturday?",
             "选项": [
-              "She has healthy habits",
-              "She eats a lot",
-              "She sleeps all day"
+              "Have a picnic in the park",
+              "See a movie",
+              "Go shopping"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna do every morning?",
+            "问题": "What will Anna and Mum do on Sunday morning?",
             "选项": [
-              "She exercises",
-              "She reads",
-              "She watches TV"
+              "Shop",
+              "Have a picnic",
+              "Do homework"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Who asks Anna why she is strong?",
+            "问题": "What will they do after shopping on Sunday?",
             "选项": [
-              "Ben",
-              "Mum",
-              "The teacher"
+              "See a movie",
+              "Visit grandparents",
+              "Go to the zoo"
             ],
             "答案": "A"
           }
@@ -583,31 +583,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What should we start the day with?",
+            "问题": "Where does the writer usually go on Saturday?",
             "选项": [
-              "A good breakfast",
-              "A long sleep",
-              "A big lunch"
+              "The park",
+              "The zoo",
+              "The cinema"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What should we do after school?",
+            "问题": "What does the writer do on Sunday morning?",
             "选项": [
-              "Ride a bike or play sports",
-              "Watch TV",
-              "Sleep"
+              "Homework",
+              "A picnic",
+              "Shopping"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we do at night?",
+            "问题": "What does the writer do on Sunday afternoon?",
             "选项": [
-              "Sleep early",
-              "Play games",
-              "Eat sweets"
+              "See a fun movie with friends",
+              "Have a picnic",
+              "Visit the park"
             ],
             "答案": "A"
           }
@@ -637,31 +637,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What kind of Saturday is it?",
+            "问题": "What are Anna and Ben looking at?",
             "选项": [
-              "A sunny Saturday",
-              "A rainy Saturday",
-              "A cloudy Saturday"
+              "Their Christmas tree",
+              "A big cake",
+              "A snowman"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What will Ben bring?",
+            "问题": "What is under the Christmas tree?",
             "选项": [
-              "Sandwiches and juice",
-              "Books and pens",
-              "Toys and games"
+              "Many gifts",
+              "Some books",
+              "A dog"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What do they want to have?",
+            "问题": "What did Anna make for Mum and Dad?",
             "选项": [
-              "A picnic",
-              "A party",
-              "A lesson"
+              "A card",
+              "A gift",
+              "A cake"
             ],
             "答案": "A"
           }
@@ -673,31 +673,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Where did they have the picnic?",
+            "问题": "What does the family eat at Spring Festival?",
             "选项": [
-              "By the lake",
-              "At school",
-              "In the garden"
+              "Dumplings",
+              "Cakes",
+              "Sandwiches"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What was on the mat?",
+            "问题": "What do they do at Christmas?",
             "选项": [
-              "Sandwiches, fruit, juice and cookies",
-              "Only sandwiches",
-              "Only juice"
+              "Put up a tree and sing songs",
+              "Eat dumplings",
+              "Get red envelopes"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What is the best part of spring?",
+            "问题": "What do festivals do for the family?",
             "选项": [
-              "A picnic with friends",
-              "Staying at home",
-              "Going to school"
+              "Bring the family closer",
+              "Make them tired",
+              "Cost much money"
             ],
             "答案": "A"
           }
@@ -727,31 +727,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What did they do this spring?",
+            "问题": "What do Anna and Ben say to each other?",
             "选项": [
-              "Flew kites, had a picnic and went shopping",
-              "Only flew kites",
-              "Only went shopping"
+              "Happy New Year",
+              "Merry Christmas",
+              "Good morning"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Anna want to write?",
+            "问题": "What is Anna's wish this year?",
             "选项": [
-              "All of this in her diary",
-              "A letter to Grandma",
-              "A story for school"
+              "Learn more English and make new friends",
+              "Travel around the world",
+              "Buy a new bike"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Ben tell Anna not to forget?",
+            "问题": "How do they start the new year together?",
             "选项": [
-              "To thank their friends",
-              "To do homework",
-              "To buy a gift"
+              "Share a smile",
+              "Give gifts",
+              "Sing a song"
             ],
             "答案": "A"
           }
@@ -763,31 +763,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is almost over?",
+            "问题": "What does the writer wish to do with study?",
             "选项": [
-              "Spring",
-              "Summer",
-              "Winter"
+              "Study hard and read more storybooks",
+              "Play more games",
+              "Watch more TV"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What did the writer write about in the diary?",
+            "问题": "Whom does the writer wish to help at home?",
             "选项": [
-              "Every weekend",
-              "Every day",
-              "Every month"
+              "Mum",
+              "Dad",
+              "Grandma"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does the writer say to spring?",
+            "问题": "What does the writer wish for family and friends?",
             "选项": [
-              "Thank you, lovely spring — I will miss you",
-              "Goodbye forever",
-              "I am glad you are over"
+              "A year full of smiles",
+              "A lot of money",
+              "A big house"
             ],
             "答案": "A"
           }
