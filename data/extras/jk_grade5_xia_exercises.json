@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Where shall we go?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where does Anna want to go?",
+            "选项": [
+              "To the museum",
+              "To the zoo",
+              "To the park"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How will they get there?",
+            "选项": [
+              "By bus",
+              "By train",
+              "By plane"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben want to see?",
+            "选项": [
+              "Old things and art",
+              "Animals",
+              "The sea"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Making a plan",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where will the writer go?",
+            "选项": [
+              "To Beijing",
+              "To Hainan",
+              "To Chengdu"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who will the writer travel with?",
+            "选项": [
+              "Family",
+              "Friends",
+              "Teachers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer want to see?",
+            "选项": [
+              "Old buildings",
+              "The sea",
+              "The pandas"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Where will you go?",
+            "例句": "I will go to Beijing.",
+            "提示": "将来时问去向"
+          },
+          {
+            "句型": "How will you travel?",
+            "例句": "I will travel by train.",
+            "提示": "问交通方式"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | By plane or by train?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How does Ben like to travel?",
+            "选项": [
+              "By train",
+              "By plane",
+              "By bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna think about flying?",
+            "选项": [
+              "It is fast",
+              "It is slow",
+              "It is boring"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do on a train?",
+            "选项": [
+              "Sit well and enjoy the view",
+              "Run around",
+              "Sleep all the time"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Ways to travel",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the fastest way to travel?",
+            "选项": [
+              "By plane",
+              "By train",
+              "By bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is good about travelling by train?",
+            "选项": [
+              "You can see the view",
+              "It is the fastest",
+              "It is free"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do when travelling?",
+            "选项": [
+              "Be safe and careful",
+              "Be careless",
+              "Be loud"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How will you go to + place?",
+            "例句": "I will go to Shanghai by plane.",
+            "提示": "问怎么去某地"
+          },
+          {
+            "句型": "We should + verb",
+            "例句": "We should fasten the seatbelt.",
+            "提示": "should表安全建议"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Excuse me, where is...?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Anna looking for?",
+            "选项": [
+              "The museum",
+              "The school",
+              "The park"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who does Anna ask?",
+            "选项": [
+              "A policeman",
+              "A teacher",
+              "A friend"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where should Anna turn left?",
+            "选项": [
+              "At the second crossing",
+              "At the first crossing",
+              "At the third crossing"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Reading the map",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What helps us find our way?",
+            "选项": [
+              "A map",
+              "A book",
+              "A song"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does a map show us?",
+            "选项": [
+              "Roads and places",
+              "Songs and stories",
+              "Numbers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do before asking for directions?",
+            "选项": [
+              "Try reading a map first",
+              "Walk away",
+              "Call Mum"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Excuse me, where is + place?",
+            "例句": "Excuse me, where is the museum?",
+            "提示": "礼貌问路"
+          },
+          {
+            "句型": "Turn left/right at + crossing",
+            "例句": "Turn left at the second crossing.",
+            "提示": "指路用语"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Where will you go?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to visit?",
+            "选项": [
+              "A famous place",
+              "A shop",
+              "A restaurant"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What can they see there?",
+            "选项": [
+              "Old things and beautiful buildings",
+              "Animals",
+              "Movies"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben like to take?",
+            "选项": [
+              "Photos",
+              "Food",
+              "Books"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Famous spots in China",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the Great Wall like?",
+            "选项": [
+              "Long and great",
+              "Short and small",
+              "New and tall"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where is the West Lake?",
+            "选项": [
+              "In Hangzhou",
+              "In Beijing",
+              "In Shanghai"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can you see at the West Lake?",
+            "选项": [
+              "Beautiful water and hills",
+              "Tall buildings",
+              "Desert"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do you want to visit?",
+            "例句": "I want to visit the museum.",
+            "提示": "问想参观哪里"
+          },
+          {
+            "句型": "You can see + noun at + place",
+            "例句": "You can see old things at the museum.",
+            "提示": "描述在景点能看到什么"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | At the gift shop",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to buy?",
+            "选项": [
+              "A souvenir",
+              "A book",
+              "A hat"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How much is the souvenir?",
+            "选项": [
+              "Ten yuan",
+              "Five yuan",
+              "Twenty yuan"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Does Ben buy anything?",
+            "选项": [
+              "Yes, a postcard",
+              "No, nothing",
+              "Yes, a toy"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A good souvenir",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What makes a good souvenir?",
+            "选项": [
+              "It reminds you of the trip",
+              "It is expensive",
+              "It is very big"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer buy?",
+            "选项": [
+              "A small key ring",
+              "A big toy",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who was the souvenir for?",
+            "选项": [
+              "The writer",
+              "The teacher",
+              "A stranger"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How much is/are...?",
+            "例句": "How much is the key ring? — Ten yuan.",
+            "提示": "问价格"
+          },
+          {
+            "句型": "I bought + noun for + person",
+            "例句": "I bought a postcard for Grandma.",
+            "提示": "过去时描述买了什么给谁"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A postcard from Beijing",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did Anna send to Ben?",
+            "选项": [
+              "A postcard",
+              "A letter",
+              "An email"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did Anna see?",
+            "选项": [
+              "Beautiful places",
+              "A movie",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does Ben feel about the postcard?",
+            "选项": [
+              "Happy",
+              "Sad",
+              "Angry"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Greetings from afar",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the writer send to Grandma?",
+            "选项": [
+              "A postcard",
+              "A gift",
+              "An email"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What was on the postcard?",
+            "选项": [
+              "A picture of the trip",
+              "A song",
+              "A map"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How did Grandma feel?",
+            "选项": [
+              "Happy",
+              "Sad",
+              "Worried"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I sent + noun to + person",
+            "例句": "I sent a postcard to Ben.",
+            "提示": "过去时描述寄了什么"
+          },
+          {
+            "句型": "I saw + noun",
+            "例句": "I saw the Great Wall.",
+            "提示": "过去时描述看到了什么"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Different but lovely",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna learn about?",
+            "选项": [
+              "Different cultures",
+              "Maths",
+              "Science"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do people use to eat in China?",
+            "选项": [
+              "Chopsticks",
+              "Forks",
+              "Hands"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben find interesting?",
+            "选项": [
+              "Different traditions",
+              "Different food",
+              "Different clothes"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | One world, many cultures",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should we do with different cultures?",
+            "选项": [
+              "Respect them",
+              "Ignore them",
+              "Change them"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do people in Western countries use to eat?",
+            "选项": [
+              "Forks and knives",
+              "Chopsticks",
+              "Hands"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can we learn from different cultures?",
+            "选项": [
+              "New things",
+              "Nothing",
+              "Bad habits"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do people eat in + country?",
+            "例句": "People eat sushi in Japan.",
+            "提示": "问不同国家的饮食"
+          },
+          {
+            "句型": "We should respect + noun",
+            "例句": "We should respect different cultures.",
+            "提示": "should表示应该尊重"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Be safe on the trip",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should Anna do before travelling?",
+            "选项": [
+              "Pack her bag carefully",
+              "Watch TV",
+              "Play games"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should Ben remember to bring?",
+            "选项": [
+              "His ID card",
+              "A toy",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the most important thing when travelling?",
+            "选项": [
+              "Safety",
+              "Speed",
+              "Price"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Safety on the road",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should we do before we travel?",
+            "选项": [
+              "Make a plan",
+              "Buy everything",
+              "Sleep all day"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should we do if we get lost?",
+            "选项": [
+              "Ask a policeman for help",
+              "Run around",
+              "Cry loudly"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What comes first when travelling?",
+            "选项": [
+              "Safety",
+              "Fun",
+              "Money"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What should we do before + v-ing?",
+            "例句": "What should we do before travelling?",
+            "提示": "问做某事前应该准备什么"
+          },
+          {
+            "句型": "Safety comes first.",
+            "例句": "Safety comes first when travelling.",
+            "提示": "安全第一的表达"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Telling my story",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did Anna enjoy most?",
+            "选项": [
+              "The beautiful places",
+              "The food",
+              "The shopping"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben want to do next year?",
+            "选项": [
+              "Visit another city",
+              "Stay home",
+              "Visit Anna"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does Anna feel about the trip?",
+            "选项": [
+              "Happy and thankful",
+              "Sad and tired",
+              "Bored"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My summer journey",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the writer learn from the trip?",
+            "选项": [
+              "About history and culture",
+              "About maths",
+              "About science"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer see?",
+            "选项": [
+              "Old buildings and beautiful places",
+              "Only shops",
+              "Only restaurants"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does the writer feel about the journey?",
+            "选项": [
+              "It was wonderful",
+              "It was boring",
+              "It was terrible"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What did you enjoy most?",
+            "例句": "I enjoyed the train ride most.",
+            "提示": "过去时问最喜欢什么"
+          },
+          {
+            "句型": "I learned about + noun",
+            "例句": "I learned about history and culture.",
+            "提示": "过去时描述学到了什么"
+          }
+        ]
+      }
+    ]
+  }
+}

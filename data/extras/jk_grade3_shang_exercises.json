@@ -7,31 +7,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What can Ben see on the sign?",
+            "问题": "What time is it when Mum calls Anna?",
             "选项": [
-              "A big letter B and a small letter s",
-              "A big letter A and a small letter b",
-              "A big letter C and a small letter d"
+              "Seven o'clock",
+              "Six o'clock",
+              "Eight o'clock"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Where do Anna and Ben see letters?",
+            "问题": "What does Mum ask Anna to do?",
             "选项": [
-              "On the bus sign",
-              "In the classroom",
-              "In a book"
+              "Wash her face and brush her teeth",
+              "Do homework",
+              "Clean the room"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Anna want to do on the way to school?",
+            "问题": "What is for breakfast?",
             "选项": [
-              "Find more letters",
-              "Sing the ABC song",
-              "Count the letters"
+              "Milk and bread",
+              "Eggs and juice",
+              "Cake and tea"
             ],
             "答案": "A"
           }
@@ -43,31 +43,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "How many letters are there in the alphabet?",
+            "问题": "What time does the writer get up?",
             "选项": [
-              "24",
-              "26",
-              "28"
+              "At seven",
+              "At six",
+              "At eight"
             ],
-            "答案": "B"
+            "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Where can we see letters?",
+            "问题": "What does the writer eat for breakfast?",
             "选项": [
-              "On signs, on a bus and in books",
-              "Only in books",
-              "Only on signs"
+              "Eggs and milk",
+              "Bread and juice",
+              "Cake and tea"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What do we use letters to write?",
+            "问题": "When is the writer ready for school?",
             "选项": [
-              "Our names",
-              "Numbers",
-              "Pictures"
+              "At seven thirty",
+              "At eight",
+              "At seven"
             ],
             "答案": "A"
           }
@@ -97,31 +97,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What two languages do they have in class?",
+            "问题": "How was Anna's day?",
             "选项": [
-              "English and Chinese",
-              "English and French",
-              "Chinese and Japanese"
+              "Great",
+              "Bad",
+              "Boring"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How do you say \"book\" in Chinese?",
+            "问题": "What did Anna do at school?",
             "选项": [
-              "Shu",
-              "Ben",
-              "Shu ben"
+              "Played games",
+              "Read books",
+              "Drew pictures"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What can Lily do?",
+            "问题": "How does Anna feel now?",
             "选项": [
-              "She can read English",
-              "She can sing Chinese songs",
-              "She can draw"
+              "Very tired",
+              "Very hungry",
+              "Very angry"
             ],
             "答案": "A"
           }
@@ -133,31 +133,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Are some things the same in English and Chinese?",
+            "问题": "How many lessons did the writer have?",
             "选项": [
-              "Yes, they are",
-              "No, they are not",
-              "The passage does not say"
+              "Four",
+              "Three",
+              "Five"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What do both English and Chinese speakers say when they meet?",
+            "问题": "What did the writer do after school?",
             "选项": [
-              "Hello",
-              "Ni hao",
-              "Goodbye"
+              "Helped Mum at home",
+              "Played football",
+              "Went to the park"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How do people show they are happy in both languages?",
+            "问题": "How does the writer feel about the day?",
             "选项": [
-              "They smile",
-              "They sing",
-              "They jump"
+              "Tired but happy",
+              "Sad and bored",
+              "Angry and tired"
             ],
             "答案": "A"
           }
@@ -187,31 +187,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "Who is the boy in the photo?",
+            "问题": "What will Anna do first on Saturday?",
             "选项": [
-              "Tom, Kate's friend",
-              "Sam",
-              "Ben"
+              "Read a book",
+              "Play with her dog",
+              "Finish homework"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Which class is Tom in?",
+            "问题": "What will Anna do then?",
             "选项": [
-              "Class 2",
-              "Class 1",
-              "Class 3"
+              "Play with her dog",
+              "Read a book",
+              "Watch TV"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Who is the girl in the photo?",
+            "问题": "What will Anna do after that?",
             "选项": [
-              "Amy, Tom's classmate",
-              "Kate",
-              "Lily"
+              "Finish her homework",
+              "Go shopping",
+              "Visit a friend"
             ],
             "答案": "A"
           }
@@ -223,31 +223,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What kind of boy is Tom?",
+            "问题": "What does the clock on the wall do?",
             "选项": [
-              "A happy boy",
-              "A quiet boy",
-              "A tall boy"
+              "Tells the time",
+              "Shows pictures",
+              "Plays music"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Who is the teacher in the passage?",
+            "问题": "When does the writer get up?",
             "选项": [
-              "Miss Wang",
-              "Miss Li",
-              "Miss Chen"
+              "At seven",
+              "At six",
+              "At eight"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the writer feel about school?",
+            "问题": "When does the writer finish homework?",
             "选项": [
-              "Happy to have friends",
-              "Tired of studying",
-              "Worried about the test"
+              "At seven in the evening",
+              "At four",
+              "At twelve"
             ],
             "答案": "A"
           }
@@ -277,31 +277,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What are they colouring today?",
+            "问题": "When is Anna's party?",
             "选项": [
-              "A keyboard",
-              "A picture",
-              "A book"
+              "On Sunday",
+              "On Saturday",
+              "On Friday"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What colour does the teacher ask Mike to use first?",
+            "问题": "What will they do at the party?",
             "选项": [
-              "Red",
-              "Blue",
-              "Yellow"
+              "Play games and sing songs",
+              "Watch a movie",
+              "Go swimming"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How many colours do they talk about?",
+            "问题": "Can Ben bring a friend?",
             "选项": [
-              "Four",
-              "Three",
-              "Five"
+              "Yes, of course",
+              "No",
+              "The passage does not say"
             ],
             "答案": "A"
           }
@@ -313,31 +313,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "How many colours does the writer colour the keys?",
+            "问题": "What did the friends eat at the party?",
             "选项": [
-              "Four",
-              "Three",
-              "Five"
+              "Cakes",
+              "Pizza",
+              "Ice cream"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What colour is the key that is like the sun?",
+            "问题": "Who said \"Thank you, Anna\"?",
             "选项": [
-              "Yellow",
-              "Red",
-              "Blue"
+              "Ben",
+              "Mum",
+              "The teacher"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Does the writer like the colourful keyboard?",
+            "问题": "What do friends make us do?",
             "选项": [
-              "Yes, very much",
-              "No, not at all",
-              "The passage does not say"
+              "Smile",
+              "Cry",
+              "Sleep"
             ],
             "答案": "A"
           }
@@ -367,31 +367,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is Dad helping Emma to set?",
+            "问题": "How is the new classroom?",
             "选项": [
-              "A password for the tablet",
-              "A password for the door",
-              "A password for the phone"
+              "Clean and tidy",
+              "Big and noisy",
+              "Old and dirty"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "How many numbers do they need to pick?",
+            "问题": "What is on the wall?",
             "选项": [
-              "Four",
-              "Three",
-              "Five"
+              "A big poster",
+              "A clock",
+              "A map"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What is Emma's password?",
+            "问题": "What does the poster say?",
             "选项": [
-              "2, 4, 6, 8",
-              "1, 3, 5, 7",
-              "5, 0, 3, 9"
+              "Be kind, be brave",
+              "Work hard, play hard",
+              "Love and peace"
             ],
             "答案": "A"
           }
@@ -403,31 +403,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What is a password made of?",
+            "问题": "How many class rules do they have?",
             "选项": [
-              "Numbers",
-              "Letters",
-              "Words"
+              "Three",
+              "Two",
+              "Four"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Why do we type a password?",
+            "问题": "What is their class call?",
             "选项": [
-              "To keep things safe",
-              "To open the door",
-              "To play a game"
+              "One team, one dream",
+              "Be kind, be brave",
+              "Work together"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "Should we tell our password to everyone?",
+            "问题": "When do they say the class call?",
             "选项": [
-              "No, never tell",
-              "Yes, tell your friends",
-              "Only tell your teacher"
+              "Every morning",
+              "Every afternoon",
+              "Every Friday"
             ],
             "答案": "A"
           }
@@ -457,31 +457,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What can Lucy draw?",
+            "问题": "What should Anna do first?",
             "选项": [
-              "A picture",
-              "A keyboard",
-              "A password"
+              "Sweep the floor",
+              "Wipe the windows",
+              "Water the plants"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Lucy draw for the sun?",
+            "问题": "What should Anna do after sweeping?",
             "选项": [
-              "A circle",
-              "A line",
-              "A square"
+              "Wipe the windows and water the plants",
+              "Clean the desks",
+              "Go home"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What colours does Lucy use?",
+            "问题": "Who helps Anna know what to do?",
             "选项": [
-              "Red and yellow",
-              "Blue and green",
-              "Black and white"
+              "Ben",
+              "Mum",
+              "The teacher"
             ],
             "答案": "A"
           }
@@ -493,30 +493,30 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does the writer draw first?",
+            "问题": "What does the writer sweep?",
             "选项": [
-              "A circle for the sun",
-              "A line for the road",
-              "A tree"
+              "The floor",
+              "The yard",
+              "The stairs"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What colour is the tree?",
+            "问题": "Who helps clean the windows?",
             "选项": [
-              "Green",
-              "Yellow",
-              "Blue"
+              "Ben",
+              "Mum",
+              "The teacher"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the writer feel about the picture?",
+            "问题": "How does the writer feel after duty?",
             "选项": [
-              "Proud and happy",
-              "Sad",
+              "Tired but happy",
+              "Angry and sad",
               "Bored"
             ],
             "答案": "A"
@@ -547,31 +547,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does the teacher ask the class to do?",
+            "问题": "What does Anna tell Ben not to do?",
             "选项": [
-              "Be quiet and listen",
-              "Draw a picture",
-              "Run outside"
+              "Run in the hall",
+              "Shout in class",
+              "Be late"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What does Jack say?",
+            "问题": "Why is Ben running?",
             "选项": [
-              "Sorry, I will listen now",
-              "Sorry, I am late",
-              "Sorry, I forgot"
+              "He is late for class",
+              "He is playing",
+              "He is going home"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What should we use when we listen?",
+            "问题": "What should Ben do instead?",
             "选项": [
-              "Our ears",
-              "Our mouths",
-              "Our hands"
+              "Walk, not run",
+              "Run faster",
+              "Stay outside"
             ],
             "答案": "A"
           }
@@ -583,31 +583,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "A good listener is ______ and careful.",
+            "问题": "What should students NOT do in class?",
             "选项": [
-              "Quiet",
-              "Loud",
-              "Fast"
+              "Shout",
+              "Read",
+              "Write"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "When a friend talks, what should we do?",
+            "问题": "How should students speak?",
             "选项": [
-              "Hear every word",
-              "Talk at the same time",
-              "Walk away"
+              "Quietly",
+              "Loudly",
+              "Fast"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does the friend's face show when we listen well?",
+            "问题": "What do rules keep us?",
             "选项": [
-              "A happy face",
-              "A sad face",
-              "An angry face"
+              "Safe and happy",
+              "Tired and busy",
+              "Quiet and still"
             ],
             "答案": "A"
           }
@@ -637,33 +637,33 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What sport do they talk about?",
+            "问题": "What does Ben want to borrow?",
             "选项": [
-              "Running, jumping and playing ball",
-              "Swimming only",
-              "Basketball only"
+              "Anna's pen",
+              "Anna's book",
+              "Anna's ruler"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Can Nina swim?",
+            "问题": "What does Ben say after Anna helps him?",
             "选项": [
-              "Yes, she can",
-              "No, she cannot",
-              "The passage does not say"
+              "Thanks a lot",
+              "Sorry",
+              "Hello"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does Nina like best?",
+            "问题": "What does Anna say makes everyone happy?",
             "选项": [
-              "Running",
-              "Swimming",
-              "Jumping"
+              "A smile",
+              "A gift",
+              "A song"
             ],
-            "答案": "B"
+            "答案": "A"
           }
         ]
       },
@@ -673,31 +673,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What does the writer like to do in summer?",
+            "问题": "What are the \"magic words\"?",
             "选项": [
-              "Swim",
-              "Run",
-              "Jump"
+              "Please, thanks, and sorry",
+              "Hello, goodbye, and yes",
+              "Yes, no, and OK"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What sport do they play after school?",
+            "问题": "When do we say \"please\"?",
             "选项": [
-              "Football",
-              "Basketball",
-              "Swimming"
+              "When we want something",
+              "When we make a mistake",
+              "When others help us"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "What does exercise make us?",
+            "问题": "When do we say \"sorry\"?",
             "选项": [
-              "Strong and happy",
-              "Tired and sad",
-              "Slow and weak"
+              "When we make a mistake",
+              "When we want something",
+              "When others help us"
             ],
             "答案": "A"
           }
@@ -727,31 +727,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What can Tom do at the music show?",
+            "问题": "What does Anna do on Road Helper Day?",
             "选项": [
-              "Sing an English song",
-              "Dance",
-              "Play the piano"
+              "Helps kids cross the road",
+              "Cleans the classroom",
+              "Reads books"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "What can Lily do?",
+            "问题": "What does \"red light\" mean?",
             "选项": [
-              "Dance with her friends",
-              "Sing a Chinese song",
-              "Play the guitar"
+              "Stop",
+              "Go",
+              "Wait and then go"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the teacher feel?",
+            "问题": "What does \"green light\" mean?",
             "选项": [
-              "Happy and proud",
-              "Tired",
-              "Worried"
+              "Go",
+              "Stop",
+              "Slow down"
             ],
             "答案": "A"
           }
@@ -763,31 +763,31 @@
         "data": [
           {
             "题号": 1,
-            "问题": "What have the children learned this term?",
+            "问题": "When is Road Helper Day?",
             "选项": [
-              "Letters, words, colours and numbers",
-              "Only letters",
-              "Only colours"
+              "Every Friday",
+              "Every Monday",
+              "Every day"
             ],
             "答案": "A"
           },
           {
             "题号": 2,
-            "问题": "Can the children draw and listen?",
+            "问题": "What do they say when the light is red?",
             "选项": [
-              "Yes, they can",
-              "No, they cannot",
-              "The passage does not say"
+              "Stop and wait",
+              "Go now",
+              "Run fast"
             ],
             "答案": "A"
           },
           {
             "题号": 3,
-            "问题": "How does the passage make you feel?",
+            "问题": "What do kids say to the helpers?",
             "选项": [
-              "Proud and excited",
-              "Sad and worried",
-              "Bored and tired"
+              "Thanks",
+              "Goodbye",
+              "Sorry"
             ],
             "答案": "A"
           }

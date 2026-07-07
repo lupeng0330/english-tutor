@@ -194,21 +194,34 @@ function loadExercisesIfNeeded(ctx, onReady) {
     });
 }
 
-// 找到"当前篇课文"应该关联的练习（按 extras.title 与当前 lesson.title 模糊匹配）
+// 找到"当前篇课文"应该关联的练习（按 extras.title 与当前 lesson 模糊匹配）
+// 匹配策略：先按 page 过滤（exercise title 含 "page | title" 格式），再按 title 精确/关键词匹配
 function _findExerciseForLesson(allExs, lesson) {
   if (!Array.isArray(allExs) || !lesson) return [];
   const t = (lesson.title || '').toLowerCase();
   const page = (lesson.page || '').toLowerCase();
-  // 命中规则：extras.title 与 lesson.title / lesson.page 有共同子串
   const hits = [];
   for (const ex of allExs) {
     const exTitle = (ex.title || '').toLowerCase();
     if (!exTitle) continue;
-    // 精确：任一方包含另一方
-    if (t && (exTitle.indexOf(t) >= 0 || t.indexOf(exTitle) >= 0)) { hits.push(ex); continue; }
-    // 关键词匹配：取 lesson.title / page 里的显著词做 AND
-    const keywords = (t + ' ' + page).split(/[·\-·\s/]+/).filter(k => k.length >= 3);
-    if (keywords.length > 0 && keywords.some(k => exTitle.indexOf(k) >= 0)) {
+    // 拆分 exercise title: "page | title" 格式
+    const pipeIdx = exTitle.indexOf('|');
+    let exPage = '', exTitlePart = exTitle;
+    if (pipeIdx >= 0) {
+      exPage = exTitle.substring(0, pipeIdx).trim();
+      exTitlePart = exTitle.substring(pipeIdx + 1).trim();
+    }
+    // 第一层过滤：如果 exercise 有 page 且 lesson 有 page，必须 page 匹配
+    if (exPage && page && exPage.indexOf(page) < 0 && page.indexOf(exPage) < 0) {
+      continue; // page 不匹配，跳过
+    }
+    // 第二层匹配：title 精确包含
+    if (t && (exTitlePart.indexOf(t) >= 0 || t.indexOf(exTitlePart) >= 0)) {
+      hits.push(ex); continue;
+    }
+    // 第三层匹配：title 关键词
+    const keywords = (t + ' ' + page).split(/[·\-\s/|]+/).filter(k => k.length >= 3);
+    if (keywords.length > 0 && keywords.some(k => exTitlePart.indexOf(k) >= 0)) {
       hits.push(ex);
     }
   }

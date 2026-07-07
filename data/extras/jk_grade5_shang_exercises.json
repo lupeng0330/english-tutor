@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Welcome back",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where does Anna want to go?",
+            "选项": [
+              "To the museum",
+              "To the zoo",
+              "To the park"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How will they get there?",
+            "选项": [
+              "By bus",
+              "By train",
+              "By plane"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben want to see?",
+            "选项": [
+              "Old things and art",
+              "Animals",
+              "The sea"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My fifth-grade plan",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where will the writer go?",
+            "选项": [
+              "To Beijing",
+              "To Hainan",
+              "To Chengdu"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who will the writer travel with?",
+            "选项": [
+              "Family",
+              "Friends",
+              "Teachers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer want to see?",
+            "选项": [
+              "Old buildings",
+              "The sea",
+              "The pandas"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I am excited about + noun",
+            "例句": "I am excited about the new school year.",
+            "提示": "表达对某事感到兴奋"
+          },
+          {
+            "句型": "I want to + verb",
+            "例句": "I want to read more books.",
+            "提示": "表达愿望"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What's your favourite?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How does Ben like to travel?",
+            "选项": [
+              "By train",
+              "By plane",
+              "By bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna think about flying?",
+            "选项": [
+              "It is fast",
+              "It is slow",
+              "It is boring"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do on a train?",
+            "选项": [
+              "Sit well and enjoy the view",
+              "Run around",
+              "Sleep all the time"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Subjects in Grade 5",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the fastest way to travel?",
+            "选项": [
+              "By plane",
+              "By train",
+              "By bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is good about travelling by train?",
+            "选项": [
+              "You can see the view",
+              "It is the fastest",
+              "It is free"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do when travelling?",
+            "选项": [
+              "Be safe and careful",
+              "Be careless",
+              "Be loud"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What's your favourite subject?",
+            "例句": "My favourite subject is English.",
+            "提示": "问最喜欢的科目"
+          },
+          {
+            "句型": "I am good at + noun/v-ing",
+            "例句": "I am good at Maths.",
+            "提示": "表达擅长某事"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Show your talent",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Anna looking for?",
+            "选项": [
+              "The museum",
+              "The school",
+              "The park"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who does Anna ask?",
+            "选项": [
+              "A policeman",
+              "A teacher",
+              "A friend"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where should Anna turn left?",
+            "选项": [
+              "At the second crossing",
+              "At the first crossing",
+              "At the third crossing"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Everyone has a talent",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What helps us find our way?",
+            "选项": [
+              "A map",
+              "A book",
+              "A song"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does a map show us?",
+            "选项": [
+              "Roads and places",
+              "Songs and stories",
+              "Numbers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we do before asking for directions?",
+            "选项": [
+              "Try reading a map first",
+              "Walk away",
+              "Call Mum"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I am good at + v-ing",
+            "例句": "I am good at singing.",
+            "提示": "表达擅长做某事"
+          },
+          {
+            "句型": "I want to learn to + verb",
+            "例句": "I want to learn to dance.",
+            "提示": "表达想学某技能"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | At the library",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to visit?",
+            "选项": [
+              "A famous place",
+              "A shop",
+              "A restaurant"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What can they see there?",
+            "选项": [
+              "Old things and beautiful buildings",
+              "Animals",
+              "Movies"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben like to take?",
+            "选项": [
+              "Photos",
+              "Food",
+              "Books"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | The school library",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the Great Wall like?",
+            "选项": [
+              "Long and great",
+              "Short and small",
+              "New and tall"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where is the West Lake?",
+            "选项": [
+              "In Hangzhou",
+              "In Beijing",
+              "In Shanghai"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can you see at the West Lake?",
+            "选项": [
+              "Beautiful water and hills",
+              "Tall buildings",
+              "Desert"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I want to borrow + noun",
+            "例句": "I want to borrow a storybook.",
+            "提示": "图书馆借书表达"
+          },
+          {
+            "句型": "We should + verb",
+            "例句": "We should keep quiet in the library.",
+            "提示": "should表规则/建议"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Cheer for our team",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to buy?",
+            "选项": [
+              "A souvenir",
+              "A book",
+              "A hat"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How much is the souvenir?",
+            "选项": [
+              "Ten yuan",
+              "Five yuan",
+              "Twenty yuan"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Does Ben buy anything?",
+            "选项": [
+              "Yes, a postcard",
+              "No, nothing",
+              "Yes, a toy"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A wonderful Sports Day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What makes a good souvenir?",
+            "选项": [
+              "It reminds you of the trip",
+              "It is expensive",
+              "It is very big"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer buy?",
+            "选项": [
+              "A small key ring",
+              "A big toy",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who was the souvenir for?",
+            "选项": [
+              "The writer",
+              "The teacher",
+              "A stranger"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What will you + verb?",
+            "例句": "What will you run? — The 100-metre race.",
+            "提示": "将来时问将做什么"
+          },
+          {
+            "句型": "I won + noun",
+            "例句": "I won a gold medal.",
+            "提示": "过去时描述获奖"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Festivals we love",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did Anna send to Ben?",
+            "选项": [
+              "A postcard",
+              "A letter",
+              "An email"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did Anna see?",
+            "选项": [
+              "Beautiful places",
+              "A movie",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does Ben feel about the postcard?",
+            "选项": [
+              "Happy",
+              "Sad",
+              "Angry"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | One world, many festivals",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the writer send to Grandma?",
+            "选项": [
+              "A postcard",
+              "A gift",
+              "An email"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What was on the postcard?",
+            "选项": [
+              "A picture of the trip",
+              "A song",
+              "A map"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How did Grandma feel?",
+            "选项": [
+              "Happy",
+              "Sad",
+              "Worried"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do people do at + festival?",
+            "例句": "People decorate trees at Christmas.",
+            "提示": "问节日的活动"
+          },
+          {
+            "句型": "We can learn about + noun",
+            "例句": "We can learn about different cultures.",
+            "提示": "can表达能学到什么"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Which club?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna learn about?",
+            "选项": [
+              "Different cultures",
+              "Maths",
+              "Science"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do people use to eat in China?",
+            "选项": [
+              "Chopsticks",
+              "Forks",
+              "Hands"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben find interesting?",
+            "选项": [
+              "Different traditions",
+              "Different food",
+              "Different clothes"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Our school clubs",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should we do with different cultures?",
+            "选项": [
+              "Respect them",
+              "Ignore them",
+              "Change them"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do people in Western countries use to eat?",
+            "选项": [
+              "Forks and knives",
+              "Chopsticks",
+              "Hands"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can we learn from different cultures?",
+            "选项": [
+              "New things",
+              "Nothing",
+              "Bad habits"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I join + club name",
+            "例句": "I join the Art Club.",
+            "提示": "表达加入社团"
+          },
+          {
+            "句型": "... are good for + noun",
+            "例句": "Clubs are good for students.",
+            "提示": "be good for表示\"对...有益\""
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A helping hand",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should Anna do before travelling?",
+            "选项": [
+              "Pack her bag carefully",
+              "Watch TV",
+              "Play games"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should Ben remember to bring?",
+            "选项": [
+              "His ID card",
+              "A toy",
+              "A book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the most important thing when travelling?",
+            "选项": [
+              "Safety",
+              "Speed",
+              "Price"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Small acts, big love",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should we do before we travel?",
+            "选项": [
+              "Make a plan",
+              "Buy everything",
+              "Sleep all day"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should we do if we get lost?",
+            "选项": [
+              "Ask a policeman for help",
+              "Run around",
+              "Cry loudly"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What comes first when travelling?",
+            "选项": [
+              "Safety",
+              "Fun",
+              "Money"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I help + person + verb",
+            "例句": "I help an old woman carry the bags.",
+            "提示": "help sb do sth"
+          },
+          {
+            "句型": "... makes us feel + adj",
+            "例句": "Helping others makes us feel happy.",
+            "提示": "动名词作主语 + makes sb feel"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Time to shine",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did Anna enjoy most?",
+            "选项": [
+              "The beautiful places",
+              "The food",
+              "The shopping"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben want to do next year?",
+            "选项": [
+              "Visit another city",
+              "Stay home",
+              "Visit Anna"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does Anna feel about the trip?",
+            "选项": [
+              "Happy and thankful",
+              "Sad and tired",
+              "Bored"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A show to remember",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the writer learn from the trip?",
+            "选项": [
+              "About history and culture",
+              "About maths",
+              "About science"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer see?",
+            "选项": [
+              "Old buildings and beautiful places",
+              "Only shops",
+              "Only restaurants"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does the writer feel about the journey?",
+            "选项": [
+              "It was wonderful",
+              "It was boring",
+              "It was terrible"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What will you perform?",
+            "例句": "I will perform a dance.",
+            "提示": "将来时问表演什么"
+          },
+          {
+            "句型": "The show is about + noun",
+            "例句": "The show is about their talents.",
+            "提示": "描述表演内容"
+          }
+        ]
+      }
+    ]
+  }
+}
