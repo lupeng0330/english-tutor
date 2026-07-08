@@ -2,328 +2,545 @@
   "exercises": {
     "u1": [
       {
+        "kind": "choice_qa",
+        "title": "Reading · A day on Mars",
+        "data": [
+          {"题号": 1, "问题": "In which year is Anna's diary written?", "选项": ["A. 2049", "B. 2026", "C. 2100"], "答案": "A"},
+          {"题号": 2, "问题": "Why is the Mars sky pink?", "选项": ["A. Tiny red dust flies in the air", "B. The sun is red", "C. The greenhouse glows"], "答案": "A"},
+          {"题号": 3, "问题": "How long did it take to grow the tomato?", "选项": ["A. Nine months", "B. Nine days", "C. Nine weeks"], "答案": "A"},
+          {"题号": 4, "问题": "What is Anna's favourite subject?", "选项": ["A. Mars Weather", "B. Earth history", "C. Mars geography"], "答案": "A"},
+          {"题号": 5, "问题": "How strong is Mars gravity compared with Earth's?", "选项": ["A. Only 38%", "B. The same", "C. Twice as strong"], "答案": "A"},
+          {"题号": 6, "问题": "What did Earth look like from Anna's window at night?", "选项": ["A. A tiny blue dot", "B. A big red ball", "C. A pink cloud"], "答案": "A"}
+        ]
+      },
+      {
         "kind": "reading_qa",
         "title": "Reading · A day on Mars",
         "data": [
-          {"问题": "What year is it in Anna's diary?", "答案": "2049."},
-          {"问题": "Where does Anna live?", "答案": "On Mars, at Station Hope-1."},
-          {"问题": "What colour is the Martian sky?", "答案": "A dusty orange-pink."},
-          {"问题": "What do people eat on Mars?", "答案": "Food grown in special greenhouses."},
-          {"问题": "What can you infer about life on Mars from Anna's diary?", "答案": "It is challenging but full of wonder — humans have adapted to a new world."}
+          {"问题": "What do they drink on Mars?", "答案": "Recycled water."},
+          {"问题": "How many photos did the rover take in one day?", "答案": "2,000."},
+          {"问题": "Why is indoor PE held in a big dome?", "答案": "Because outside you must wear a heavy suit."},
+          {"问题": "What did Grandma always say about home?", "答案": "Home is where your heart is."}
         ]
       },
       {
         "kind": "choice_qa",
-        "title": "Reading · A day on Mars",
+        "title": "Grammar focus · Future simple and future continuous",
         "data": [
-          {"题号": 1, "问题": "Anna lives in a ___ on Mars.", "选项": ["A. house", "B. station", "C. tent"], "答案": "B"},
-          {"题号": 2, "问题": "The Martian sky is described as ___.", "选项": ["A. blue", "B. dusty orange-pink", "C. dark black"], "答案": "B"},
-          {"题号": 3, "问题": "The author's tone can be described as ___.", "选项": ["A. fearful", "B. curious and hopeful", "C. angry"], "答案": "B"}
+          {"题号": 1, "问题": "The future simple is formed with ___.", "选项": ["A. will + verb", "B. will be + V-ing", "C. going to + V-ing"], "答案": "A"},
+          {"题号": 2, "问题": "The future continuous is formed with ___.", "选项": ["A. will be + V-ing", "B. will + verb", "C. have + pp"], "答案": "A"},
+          {"题号": 3, "问题": "Which is a sudden decision?", "选项": ["A. OK, I will help you.", "B. I'm going to help him.", "C. I will be helping."], "答案": "A"},
+          {"题号": 4, "问题": "At 7 p.m. tomorrow, I ___ over the North Pole.", "选项": ["A. will be flying", "B. will fly", "C. fly"], "答案": "A"},
+          {"题号": 5, "问题": "Look at those black clouds — it's ___ rain.", "选项": ["A. going to", "B. will", "C. will be"], "答案": "A"},
+          {"题号": 6, "问题": "Which shows an action in progress at a future time?", "选项": ["A. At 3 p.m., she will be taking the test.", "B. I will help you.", "C. It will rain."], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Future simple and future continuous",
         "data": [
-          {"问题": "Complete (future simple): One day, humans ___ (live) on Mars.", "答案": "will live"},
-          {"问题": "Complete (future continuous): At this time tomorrow, we ___ (travel) to Mars.", "答案": "will be travelling"},
-          {"问题": "Difference: 'I will eat at 7' vs 'I will be eating at 7.'", "答案": "Simple: at 7 I'll start. Continuous: the action will be in progress at 7."},
-          {"问题": "When do we use future continuous?", "答案": "For an action that will be in progress at a specific future time."}
+          {"问题": "Give a use of the future simple.", "答案": "Simple predictions / sudden decisions / promises (any one)."},
+          {"问题": "What does 'going to' express?", "答案": "A planned intention or a visible sign."},
+          {"问题": "Fill in: Will you ___ using the laptop tonight?", "答案": "be"},
+          {"问题": "Give one time word for the future.", "答案": "tomorrow / next week / in 2049 / by 2100 (any one)."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Why bother with Mars?",
+        "data": [
+          {"题号": 1, "问题": "What does Mars teach us according to answer 1?", "选项": ["A. How to be careful with Earth", "B. How to build cities", "C. How to grow food"], "答案": "A"},
+          {"题号": 2, "问题": "What did Mars use to have?", "选项": ["A. Water, warm air and possibly life", "B. Only ice", "C. Nothing"], "答案": "A"},
+          {"题号": 3, "问题": "What does landing a rover push scientists to build?", "选项": ["A. Better rockets and longer-lasting batteries", "B. Bigger houses", "C. Faster cars"], "答案": "A"},
+          {"题号": 4, "问题": "What grew out of the space programme?", "选项": ["A. The first mobile phone", "B. The first car", "C. The first plane"], "答案": "A"},
+          {"题号": 5, "问题": "Human history is a history of ___.", "选项": ["A. journeys", "B. wars", "C. money"], "答案": "A"},
+          {"题号": 6, "问题": "What is 'impossible' according to the passage?", "选项": ["A. Just a word", "B. A rule", "C. A fact"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Why bother with Mars?",
         "data": [
-          {"问题": "What is the first reason to explore Mars?", "答案": "Mars teaches us how to live with fewer resources."},
-          {"问题": "What is the second reason?", "答案": "It drives new technology that also helps Earth."},
-          {"问题": "What is the third reason?", "答案": "It gives humanity a backup plan for survival."},
-          {"问题": "What is the author's purpose in this passage?", "答案": "To argue that Mars exploration is valuable for humanity's future."}
+          {"问题": "Why is studying Mars like reading Earth's older brother's diary?", "答案": "It can warn us what not to do."},
+          {"问题": "What do many space ideas return to Earth as?", "答案": "Cheaper phones, better medical scans, or clean power."},
+          {"问题": "What does a bigger dream bring?", "答案": "A braver spirit."},
+          {"问题": "What three things should you try to see in a photo of Mars?", "答案": "A mirror for our home, a gym for our ideas, and a new page for our great-grandchildren."}
         ]
       }
     ],
-
     "u2": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · A letter from Helen Keller",
-        "data": [
-          {"问题": "At what age did Helen Keller lose her sight and hearing?", "答案": "Only 19 months old."},
-          {"问题": "Who helped Helen learn to communicate?", "答案": "Her teacher, Anne Sullivan."},
-          {"问题": "What was Helen's message to young readers?", "答案": "Never give up; the best things in life cannot be seen or touched — they are felt with the heart."},
-          {"问题": "What can you infer about Helen's character?", "答案": "She was incredibly determined, optimistic and resilient."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · A letter from Helen Keller",
         "data": [
-          {"题号": 1, "问题": "Helen lost her sight and hearing at ___ months.", "选项": ["A. 19", "B. 12", "C. 24"], "答案": "A"},
-          {"题号": 2, "问题": "The letter's tone is ___.", "选项": ["A. bitter and angry", "B. inspiring and warm", "C. sad and hopeless"], "答案": "B"},
-          {"题号": 3, "问题": "The main message is that the best things are felt with ___.", "选项": ["A. hands", "B. eyes", "C. the heart"], "答案": "C"}
+          {"题号": 1, "问题": "At what age did Helen Keller lose her sight and hearing?", "选项": ["A. 19 months old", "B. 10 years old", "C. 5 years old"], "答案": "A"},
+          {"题号": 2, "问题": "Who was her teacher?", "选项": ["A. Anne Sullivan", "B. Her mother", "C. Mrs Brown"], "答案": "A"},
+          {"题号": 3, "问题": "What word did the teacher spell into her hand under water?", "选项": ["A. WATER", "B. HAND", "C. HOME"], "答案": "A"},
+          {"题号": 4, "问题": "What did she suddenly understand at that moment?", "选项": ["A. Every thing has a name", "B. Water is cold", "C. She could hear"], "答案": "A"},
+          {"题号": 5, "问题": "What was she the first deaf-blind person to do?", "选项": ["A. Graduate from university", "B. Fly a plane", "C. Write a novel"], "答案": "A"},
+          {"题号": 6, "问题": "According to her, what is the real darkness?", "选项": ["A. Losing hope", "B. Losing eyes", "C. Losing ears"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A letter from Helen Keller",
+        "data": [
+          {"问题": "How did she read books?", "答案": "With her fingers."},
+          {"问题": "Name one subject she studied.", "答案": "Latin / French / German / algebra (any one)."},
+          {"问题": "What should you do when a door closes in front of you?", "答案": "Touch the wall until you find the next door."},
+          {"问题": "What should you trust?", "答案": "Your hands, your heart and the people who love you."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Past perfect tense",
+        "data": [
+          {"题号": 1, "问题": "The past perfect is formed with ___.", "选项": ["A. had + past participle", "B. have + V-ing", "C. will + verb"], "答案": "A"},
+          {"题号": 2, "问题": "It shows an action that happened ___ another past action.", "选项": ["A. before", "B. after", "C. during"], "答案": "A"},
+          {"题号": 3, "问题": "By 1904, Helen Keller ___ from university.", "选项": ["A. had graduated", "B. has graduated", "C. graduates"], "答案": "A"},
+          {"题号": 4, "问题": "When I reached the station, the train ___ already left.", "选项": ["A. had", "B. has", "C. will"], "答案": "A"},
+          {"题号": 5, "问题": "Which is a time marker for the past perfect?", "选项": ["A. by + time", "B. now", "C. tomorrow"], "答案": "A"},
+          {"题号": 6, "问题": "He ___ met her before that day.", "选项": ["A. had not", "B. has not", "C. does not"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Past perfect tense",
         "data": [
-          {"问题": "Complete: By the time Sullivan arrived, Helen ___ (already lose) her sight.", "答案": "had already lost"},
-          {"问题": "Complete: She ___ (never see) colours before she described them in her writing.", "答案": "had never seen"},
-          {"问题": "Complete: After she ___ (learn) to read Braille, she ___ (write) her first book.", "答案": "had learned ... wrote"},
-          {"问题": "Why do we need past perfect in Helen's story?", "答案": "Because many events happened before other past events — it shows the order clearly."}
+          {"问题": "Fill in: She ___ learned ten words before her teacher arrived.", "答案": "had"},
+          {"问题": "Answer: Had you ever heard of her before reading the book?", "答案": "Yes, I had. / No, I hadn't."},
+          {"问题": "Combine: She had waited for an hour. Her teacher came. (use 'before')", "答案": "She had waited for an hour before her teacher came."},
+          {"问题": "When do native speakers sometimes use the simple past instead?", "答案": "When the time order is already clear."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Ordinary heroes in our own streets",
+        "data": [
+          {"题号": 1, "问题": "How long has Aunt Wang been cleaning the market?", "选项": ["A. 22 years", "B. 2 years", "C. 12 years"], "答案": "A"},
+          {"题号": 2, "问题": "What time does Aunt Wang wake up?", "选项": ["A. 4 a.m.", "B. 6 a.m.", "C. 8 a.m."], "答案": "A"},
+          {"题号": 3, "问题": "What is Mr Liu's job?", "选项": ["A. He fixes shoes", "B. He is a teacher", "C. He is a doctor"], "答案": "A"},
+          {"题号": 4, "问题": "How many times has Mr Liu donated blood since 1998?", "选项": ["A. 132", "B. 32", "C. 12"], "答案": "A"},
+          {"题号": 5, "问题": "At what age did Ms Chen go to the mountain village?", "选项": ["A. 24", "B. 30", "C. 18"], "答案": "A"},
+          {"题号": 6, "问题": "How many children had Ms Chen taught by last year?", "选项": ["A. More than 800", "B. About 60", "C. About 200"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Ordinary heroes in our own streets",
         "data": [
-          {"问题": "What is the main point of this passage?", "答案": "Great people are not just famous names — many ordinary heroes live among us."},
-          {"问题": "Give an example of an 'ordinary hero'.", "答案": "A teacher who stays late to help students; a neighbour who volunteers every weekend."},
-          {"问题": "What is the author's purpose?", "答案": "To redefine 'greatness' — it's found in everyday acts of kindness and courage."}
+          {"问题": "What did Aunt Wang do when a little boy got lost?", "答案": "She found him first and held his hand until his parents came."},
+          {"问题": "What does Mr Liu say about blood?", "答案": "Blood runs the same in every person; if he has extra, someone else may need it."},
+          {"问题": "How many of Ms Chen's students went to university?", "答案": "Over 60."},
+          {"问题": "What may a great person be carrying as they walk past you?", "答案": "A broom, a toolbox, or a stack of simple books."}
         ]
       }
     ],
-
     "u3": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · Wonders across Asia",
-        "data": [
-          {"问题": "What kind of journey is described?", "答案": "A 10-day journey across Asia."},
-          {"问题": "What is the first stop on the tour?", "答案": "Beijing, China."},
-          {"问题": "What makes Asia special according to the guide?", "答案": "It is the largest continent with incredible diversity — ancient temples and modern wonders."},
-          {"问题": "What can we infer about Asia's appeal to travellers?", "答案": "Its mix of ancient history and modern development makes it uniquely attractive."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · Wonders across Asia",
         "data": [
-          {"题号": 1, "问题": "The journey lasts ___ days.", "选项": ["A. five", "B. ten", "C. fifteen"], "答案": "B"},
-          {"题号": 2, "问题": "The first stop is in ___.", "选项": ["A. Tokyo", "B. Beijing", "C. Bangkok"], "答案": "B"}
+          {"题号": 1, "问题": "How long is the journey across Asia?", "选项": ["A. 10 days", "B. 5 days", "C. 20 days"], "答案": "A"},
+          {"题号": 2, "问题": "What is the first stop?", "选项": ["A. Beijing", "B. Hanoi", "C. Agra"], "答案": "A"},
+          {"题号": 3, "问题": "What famous noodle soup will they taste in Hanoi?", "选项": ["A. Pho", "B. Ramen", "C. Laksa"], "答案": "A"},
+          {"题号": 4, "问题": "What will they see in Agra, India?", "选项": ["A. The Taj Mahal", "B. The Great Wall", "C. Mount Everest"], "答案": "A"},
+          {"题号": 5, "问题": "What do Kazakh children learn before walking?", "选项": ["A. To ride (horses)", "B. To swim", "C. To read"], "答案": "A"},
+          {"题号": 6, "问题": "How does Bhutan measure its success?", "选项": ["A. By Gross National Happiness", "B. Only by money", "C. By population"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Wonders across Asia",
+        "data": [
+          {"问题": "How old is the Great Wall and how long is it?", "答案": "Over 2,000 years old and more than 20,000 kilometres."},
+          {"问题": "When was the Taj Mahal built and why?", "答案": "In the 17th century, as a memorial of love."},
+          {"问题": "What did a poet call the Taj Mahal?", "答案": "A teardrop on the cheek of time."},
+          {"问题": "What does the guide say Asia is?", "答案": "A hundred stories in one book."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Comparatives and superlatives (review + long adjectives)",
+        "data": [
+          {"题号": 1, "问题": "The comparative of 'big' is ___.", "选项": ["A. bigger", "B. more big", "C. biggest"], "答案": "A"},
+          {"题号": 2, "问题": "The superlative of 'beautiful' is ___.", "选项": ["A. the most beautiful", "B. the beautifulest", "C. more beautiful"], "答案": "A"},
+          {"题号": 3, "问题": "The superlative of 'good' is ___.", "选项": ["A. best", "B. goodest", "C. more good"], "答案": "A"},
+          {"题号": 4, "问题": "Shanghai is ___ than Hangzhou.", "选项": ["A. busier", "B. busiest", "C. more busier"], "答案": "A"},
+          {"题号": 5, "问题": "China is ___ big ___ the whole Europe. (equal)", "选项": ["A. as ... as", "B. more ... than", "C. the ... est"], "答案": "A"},
+          {"题号": 6, "问题": "Which is WRONG?", "选项": ["A. the most easiest", "B. easier", "C. the easiest"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Comparatives and superlatives (review + long adjectives)",
         "data": [
-          {"问题": "Complete (comparative): Tokyo is ___ (modern) than Beijing.", "答案": "more modern"},
-          {"问题": "Complete (superlative): Asia is the ___ (large) continent on Earth.", "答案": "largest"},
-          {"问题": "Complete: Travelling by train is ___ (comfortable) than by bus.", "答案": "more comfortable"},
-          {"问题": "What is the rule for long adjectives?", "答案": "Use 'more' for comparatives and 'most' for superlatives."}
+          {"问题": "How do you form the comparative of a long adjective like 'interesting'?", "答案": "more interesting."},
+          {"问题": "What is the superlative of 'far'?", "答案": "the farthest / the furthest."},
+          {"问题": "Fill in: Laos is not ___ crowded ___ Vietnam.", "答案": "as ... as"},
+          {"问题": "Why can't you say 'more bigger'?", "答案": "Use only one comparison marker at a time."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Four Asian cities in four days",
+        "data": [
+          {"题号": 1, "问题": "Where do you cross the world's busiest crossing?", "选项": ["A. Tokyo (Shibuya)", "B. Seoul", "C. Singapore"], "答案": "A"},
+          {"题号": 2, "问题": "What traditional clothes do you try on in Seoul?", "选项": ["A. Hanbok", "B. Kimono", "C. Cheongsam"], "答案": "A"},
+          {"题号": 3, "问题": "What is the greenest big city in Asia?", "选项": ["A. Singapore", "B. Tokyo", "C. Shanghai"], "答案": "A"},
+          {"题号": 4, "问题": "What is the tallest building in China?", "选项": ["A. The Shanghai Tower", "B. Marina Bay Sands", "C. N Seoul Tower"], "答案": "A"},
+          {"题号": 5, "问题": "On Day 1, who makes you coffee in the robot café?", "选项": ["A. A friendly robot", "B. A waiter", "C. A student"], "答案": "A"},
+          {"题号": 6, "问题": "According to the ending, ancient and modern Asia are ___.", "选项": ["A. two pages of the same long story", "B. two different worlds", "C. the same page"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Four Asian cities in four days",
         "data": [
-          {"问题": "Which four cities are mentioned?", "答案": "Tokyo, Singapore, Shanghai and Mumbai."},
-          {"问题": "What makes each city unique?", "答案": "Tokyo: technology; Singapore: green city; Shanghai: blend of old and new; Mumbai: energy and film industry."},
-          {"问题": "What is the main theme?", "答案": "Asia's cities show how tradition and modernity can coexist beautifully."}
+          {"问题": "Where in Singapore do you see giant metal trees next to real ones?", "答案": "Gardens by the Bay."},
+          {"问题": "What is beautiful in Shanghai in the morning fog?", "答案": "The Bund."},
+          {"问题": "Since when has the Shanghai noodle shop been there?", "答案": "Since 1937."},
+          {"问题": "What is being written every day, according to the passage?", "答案": "New pages (of Asia's story)."}
         ]
       }
     ],
-
     "u4": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · One Earth, many faces",
-        "data": [
-          {"问题": "What day is it in the passage?", "答案": "World Environment Day."},
-          {"问题": "Where is Pema from?", "答案": "Bhutan."},
-          {"问题": "What makes Bhutan special environmentally?", "答案": "It is the only carbon-negative country in the world."},
-          {"问题": "What is the main point of having three guests from different places?", "答案": "To show that every part of the world faces different but connected environmental challenges."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · One Earth, many faces",
         "data": [
-          {"题号": 1, "问题": "Pema is from ___.", "选项": ["A. China", "B. Bhutan", "C. India"], "答案": "B"},
-          {"题号": 2, "问题": "Bhutan is the only ___ country in the world.", "选项": ["A. carbon-neutral", "B. carbon-negative", "C. carbon-positive"], "答案": "B"}
+          {"题号": 1, "问题": "What day is it on the radio show?", "选项": ["A. World Environment Day", "B. New Year's Day", "C. Tree Planting Day"], "答案": "A"},
+          {"题号": 2, "问题": "Where is Pema from?", "选项": ["A. Bhutan", "B. Kenya", "C. Japan"], "答案": "A"},
+          {"题号": 3, "问题": "How much of Bhutan's land must stay forest?", "选项": ["A. More than 70%", "B. About 30%", "C. About 50%"], "答案": "A"},
+          {"题号": 4, "问题": "Where does Mwenesi live?", "选项": ["A. Near a national park in Kenya", "B. In Bhutan", "C. On a Pacific island"], "答案": "A"},
+          {"题号": 5, "问题": "How much has the water temperature near Yuki's island risen since 1970?", "选项": ["A. About 1.5 degrees", "B. About 15 degrees", "C. About 0.5 degrees"], "答案": "A"},
+          {"题号": 6, "问题": "What is the same message from all three stories?", "选项": ["A. Earth has many faces but only one heart", "B. Money is most important", "C. Cities are best"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · One Earth, many faces",
+        "data": [
+          {"问题": "What does Pema's grandmother say about the stream?", "答案": "If you keep the stream clean, the stream will keep you alive."},
+          {"问题": "What is making Kenya's rainy season shorter?", "答案": "Climate change."},
+          {"问题": "What do children in Yuki's school learn to do now?", "答案": "Repair coral and grow seaweed that cleans water."},
+          {"问题": "What beats through every stream, elephant and coral?", "答案": "Earth's one heart."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Conditional sentences (type 1 and type 2)",
+        "data": [
+          {"题号": 1, "问题": "Type 1 conditional uses ___.", "选项": ["A. if + present, will + verb", "B. if + past, would + verb", "C. if + will, present"], "答案": "A"},
+          {"题号": 2, "问题": "Type 2 conditional uses ___.", "选项": ["A. if + past, would + verb", "B. if + present, will + verb", "C. if + would, past"], "答案": "A"},
+          {"题号": 3, "问题": "If we recycle more, we ___ save trees.", "选项": ["A. will", "B. would", "C. are"], "答案": "A"},
+          {"题号": 4, "问题": "If I ___ a scientist, I would study climate.", "选项": ["A. were", "B. was", "C. am"], "答案": "A"},
+          {"题号": 5, "问题": "'Unless' means ___.", "选项": ["A. if ... not", "B. because", "C. so"], "答案": "A"},
+          {"题号": 6, "问题": "Which is an imagined (type 2) sentence?", "选项": ["A. If the oceans rose by ten metres, cities would disappear.", "B. If we act now, the planet will recover.", "C. When the sun sets, the temperature will fall."], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Conditional sentences (type 1 and type 2)",
         "data": [
-          {"问题": "Complete (Type 1): If we ___ (protect) our forests, the Earth ___ (be) healthier.", "答案": "protect ... will be"},
-          {"问题": "Complete (Type 2): If every country ___ (be) carbon-negative, climate change ___ (slow) down.", "答案": "were ... would slow"},
-          {"问题": "Complete (Type 1): If the ice ___ (melt), sea levels ___ (rise).", "答案": "melts ... will rise"},
-          {"问题": "What is the difference between Type 1 and Type 2 conditionals?", "答案": "Type 1 = real/possible future; Type 2 = unreal/hypothetical present."}
+          {"问题": "Fill in: If everyone walked to school, the air ___ be cleaner.", "答案": "would"},
+          {"问题": "Rewrite with unless: If we don't save water, we will be in trouble.", "答案": "Unless we save water, we will be in trouble."},
+          {"问题": "In type 2, which form of 'be' is used for all persons?", "答案": "were"},
+          {"问题": "Which type shows there is still time (real future)?", "答案": "Type 1."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A letter to the next generation",
+        "data": [
+          {"题号": 1, "问题": "In which year is the letter written?", "选项": ["A. 2026", "B. 2100", "C. 2049"], "答案": "A"},
+          {"题号": 2, "问题": "Whom is the letter to?", "选项": ["A. A young person of the year 2100", "B. A teacher", "C. A scientist"], "答案": "A"},
+          {"题号": 3, "问题": "Why are bees important?", "选项": ["A. They pollinate most of our food", "B. They make honey only", "C. They are pretty"], "答案": "A"},
+          {"题号": 4, "问题": "What climate treaty have many countries signed?", "选项": ["A. The Paris climate treaty", "B. The Tokyo treaty", "C. The Rome treaty"], "答案": "A"},
+          {"题号": 5, "问题": "What are farmers in Africa planting?", "选项": ["A. A Great Green Wall", "B. A Great Wall of stone", "C. A forest of one tree"], "答案": "A"},
+          {"题号": 6, "问题": "Who showed that the young can shake the world?", "选项": ["A. Greta Thunberg", "B. The writer's grandfather", "C. A scientist"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · A letter to the next generation",
         "data": [
-          {"问题": "Who is the letter addressed to?", "答案": "A young person of the year 2100."},
-          {"问题": "What is the writer worried about?", "答案": "Climate change and whether today's actions are enough."},
-          {"问题": "What is the writer hopeful about?", "答案": "That young people of the future will continue to protect the Earth."},
-          {"问题": "What rhetorical device (修辞手法) is used in addressing the year 2100?", "答案": "Apostrophe — speaking directly to someone in the distant future."}
+          {"问题": "What childhood memory does the writer have about snow?", "答案": "Making a small snowman with grandfather."},
+          {"问题": "What is rising in number in 2026?", "答案": "Electric cars."},
+          {"问题": "What does the writer apologise for on behalf of the generation?", "答案": "Sometimes choosing the easier path though they knew."},
+          {"问题": "What can every kind act add to Earth's song?", "答案": "A new word."}
         ]
       }
     ],
-
     "u5": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · Spring Festival and beyond",
-        "data": [
-          {"问题": "What festival is being celebrated?", "答案": "Spring Festival (Chinese New Year)."},
-          {"问题": "Why do people set off firecrackers?", "答案": "To scare away evil spirits and welcome the new year."},
-          {"问题": "What do dumplings symbolise?", "答案": "Wealth and family reunion."},
-          {"问题": "What does the grandfather teach Ming?", "答案": "That traditions carry wisdom and family memories across generations."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · Spring Festival and beyond",
         "data": [
-          {"题号": 1, "问题": "Firecrackers are used to ___.", "选项": ["A. make noise for fun", "B. scare away evil spirits", "C. celebrate birthdays"], "答案": "B"},
-          {"题号": 2, "问题": "Dumplings symbolise ___.", "选项": ["A. health", "B. wealth and reunion", "C. long life"], "答案": "B"}
+          {"题号": 1, "问题": "What night is it in the dialogue?", "选项": ["A. New Year's Eve", "B. Mid-Autumn night", "C. Lantern Festival night"], "答案": "A"},
+          {"题号": 2, "问题": "What is the monster's name that red is said to scare away?", "选项": ["A. Nian", "B. Gao", "C. Hong"], "答案": "A"},
+          {"题号": 3, "问题": "In the north, dumplings are shaped like ___.", "选项": ["A. ancient gold coins", "B. flowers", "C. stars"], "答案": "A"},
+          {"题号": 4, "问题": "Why do southern families eat Nian Gao?", "选项": ["A. 'Gao' sounds like 'tall' — hoping for a taller life", "B. It is cheap", "C. It is red"], "答案": "A"},
+          {"题号": 5, "问题": "What do parents give children to wish health and growth?", "选项": ["A. Hong Bao (red envelopes)", "B. Dumplings", "C. Lanterns"], "答案": "A"},
+          {"题号": 6, "问题": "What do families eat at the Lantern Festival?", "选项": ["A. Tang yuan", "B. Dumplings", "C. Nian Gao"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Spring Festival and beyond",
+        "data": [
+          {"问题": "What was the beast Nian afraid of?", "答案": "The colour red and loud noises."},
+          {"问题": "Which day is the Lantern Festival?", "答案": "The 15th day of the first lunar month."},
+          {"问题": "What does tang yuan symbolise?", "答案": "Reunion."},
+          {"问题": "Why does Grandpa say Spring Festival should be long?", "答案": "It is when family rests together, stories are remembered, and new dreams are planted."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Present perfect with since / for and adverbs",
+        "data": [
+          {"题号": 1, "问题": "'since' is used with ___.", "选项": ["A. a point in time", "B. a period of time", "C. the future"], "答案": "A"},
+          {"题号": 2, "问题": "'for' is used with ___.", "选项": ["A. a period of time", "B. a point in time", "C. a place"], "答案": "A"},
+          {"题号": 3, "问题": "I have lived in Shanghai ___ 2010.", "选项": ["A. since", "B. for", "C. in"], "答案": "A"},
+          {"题号": 4, "问题": "I have lived in Shanghai ___ 14 years.", "选项": ["A. for", "B. since", "C. at"], "答案": "A"},
+          {"题号": 5, "问题": "'He has gone to Beijing' means he ___.", "选项": ["A. is still there", "B. went and came back", "C. never went"], "答案": "A"},
+          {"题号": 6, "问题": "Where does 'yet' usually go?", "选项": ["A. At the end of the sentence", "B. At the start", "C. In the middle"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Present perfect with since / for and adverbs",
         "data": [
-          {"问题": "Fill in: I ___ (celebrate) Spring Festival ___ (since/for) I was born.", "答案": "have celebrated ... since"},
-          {"问题": "Fill in: We ___ (make) dumplings together ___ (since/for) ten years.", "答案": "have made ... for"},
-          {"问题": "Fill in (yet/already): Have you eaten dumplings ___?", "答案": "yet"},
-          {"问题": "What's the difference between 'since' and 'for'?", "答案": "'Since' + point in time; 'for' + period of time."}
+          {"问题": "What is the difference between 'been' and 'gone'?", "答案": "'been' = went and came back; 'gone' = still there."},
+          {"问题": "Answer: Have you ever seen a lion dance?", "答案": "Yes, I have. / No, I haven't."},
+          {"问题": "Which tense: 'I saw the film last night' or 'I have seen the film' has a definite past time?", "答案": "I saw the film last night."},
+          {"问题": "Fill in: We have ___ eaten the dumplings. (adverb meaning 'before now')", "答案": "already"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Four festivals, four hearts",
+        "data": [
+          {"题号": 1, "问题": "In which month is Thailand's Songkran (Water Festival)?", "选项": ["A. April", "B. March", "C. October"], "答案": "A"},
+          {"题号": 2, "问题": "What do people throw at each other during Holi in India?", "选项": ["A. Colourful powders", "B. Water", "C. Flowers"], "答案": "A"},
+          {"题号": 3, "问题": "What does Holi celebrate?", "选项": ["A. The win of good over evil", "B. The new year", "C. The harvest"], "答案": "A"},
+          {"题号": 4, "问题": "What do Mexican families believe about the Day of the Dead?", "选项": ["A. Loved ones return home once a year", "B. Monsters come out", "C. It brings rain"], "答案": "A"},
+          {"题号": 5, "问题": "On Mid-Autumn night, what is the moon like?", "选项": ["A. Brightest and roundest", "B. Red", "C. Hidden"], "答案": "A"},
+          {"题号": 6, "问题": "What do the four festivals share under the surface?", "选项": ["A. The same heart", "B. The same colours", "C. The same food"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Four festivals, four hearts",
         "data": [
-          {"问题": "Name the four festivals mentioned.", "答案": "Songkran (Thailand), Diwali (India), Carnival (Brazil), and Mid-Autumn Festival (China)."},
-          {"问题": "What do all these festivals have in common?", "答案": "They all bring people together to celebrate joy, light and community."},
-          {"问题": "What is the central theme?", "答案": "Despite cultural differences, festivals express universal human emotions."}
+          {"问题": "Why do Thai people celebrate with water?", "答案": "Because the Thai New Year is the hottest time of the year."},
+          {"问题": "What do Mexican families make for the Day of the Dead?", "答案": "Sugar skulls (and decorate graves with marigold flowers)."},
+          {"问题": "Whom do families tell stories about on Mid-Autumn?", "答案": "Chang'e, the moon lady."},
+          {"问题": "What three things do the festivals show we want?", "答案": "To be together, to give thanks, and to keep hope alive."}
         ]
       }
     ],
-
     "u6": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · When in Rome",
-        "data": [
-          {"问题": "What confused Marco in his first week in China?", "答案": "Cultural differences — the way people greet, eat and interact."},
-          {"问题": "What does the saying 'When in Rome, do as the Romans do' mean?", "答案": "When you visit a new place, follow the local customs."},
-          {"问题": "How did Guo help Marco?", "答案": "By explaining Chinese customs and answering his questions."},
-          {"问题": "What is the author's message about culture shock?", "答案": "It is normal; being open-minded and curious helps you adapt."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · When in Rome",
         "data": [
-          {"题号": 1, "问题": "Marco found his first week in China 'crazy and wonderful but also ___'.", "选项": ["A. boring", "B. confusing", "C. scary"], "答案": "B"},
-          {"题号": 2, "问题": "'When in Rome' means you should ___.", "选项": ["A. keep your own customs", "B. follow local customs", "C. avoid new places"], "答案": "B"}
+          {"题号": 1, "问题": "What gift did Marco give his roommate?", "选项": ["A. A clock", "B. A book", "C. A pen"], "答案": "A"},
+          {"题号": 2, "问题": "Why is 'giving a clock' avoided in Chinese?", "选项": ["A. It sounds like 'seeing someone off at the end of life'", "B. Clocks are expensive", "C. Clocks are useless"], "答案": "A"},
+          {"题号": 3, "问题": "How long has Marco been learning Chinese?", "选项": ["A. Three years", "B. One year", "C. Ten years"], "答案": "A"},
+          {"题号": 4, "问题": "What do many Chinese people do with a gift?", "选项": ["A. Put it aside and open it later", "B. Open it right away", "C. Refuse it"], "答案": "A"},
+          {"题号": 5, "问题": "What should you never do with chopsticks in a rice bowl?", "选项": ["A. Stick them straight up", "B. Lay them flat", "C. Use them"], "答案": "A"},
+          {"题号": 6, "问题": "What does Guo call older people to show respect?", "选项": ["A. 'Uncle' or 'Auntie'", "B. By first name", "C. 'Sir'"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · When in Rome",
+        "data": [
+          {"问题": "What may you say a few times before accepting a gift in China?", "答案": "It's too expensive, really you shouldn't."},
+          {"问题": "In Italy, what do people expect when they give a gift?", "答案": "The other person opens it right away."},
+          {"问题": "Who usually serves rice first at the dinner table?", "答案": "An older person."},
+          {"问题": "What does Marco say culture is?", "答案": "A language his book cannot teach him."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Linking words: however, therefore, although, because",
+        "data": [
+          {"题号": 1, "问题": "Which word gives a reason?", "选项": ["A. because", "B. so", "C. however"], "答案": "A"},
+          {"题号": 2, "问题": "Which word gives a result (formal)?", "选项": ["A. therefore", "B. because", "C. although"], "答案": "A"},
+          {"题号": 3, "问题": "Which word shows contrast (formal)?", "选项": ["A. however", "B. because", "C. so"], "答案": "A"},
+          {"题号": 4, "问题": "___ he is new here, he has already learned many customs.", "选项": ["A. Although", "B. Because", "C. So"], "答案": "A"},
+          {"题号": 5, "问题": "'however' is often followed by a ___.", "选项": ["A. comma", "B. full stop", "C. question mark"], "答案": "A"},
+          {"题号": 6, "问题": "Can you use 'because' and 'so' in the same sentence?", "选项": ["A. No", "B. Yes", "C. Sometimes"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Linking words: however, therefore, although, because",
         "data": [
-          {"问题": "Join: She felt nervous. She smiled bravely. (however)", "答案": "She felt nervous; however, she smiled bravely."},
-          {"问题": "Join: He was late. He missed the first show. (therefore)", "答案": "He was late; therefore, he missed the first show."},
-          {"问题": "Join: She was tired. She kept working. (although)", "答案": "Although she was tired, she kept working."},
-          {"问题": "What does 'therefore' express?", "答案": "A result or logical conclusion."}
+          {"问题": "Fill in: I like Chinese food, ___ I can't eat spicy food. (contrast)", "答案": "but / however"},
+          {"问题": "Fill in: ___ it was raining, we stayed inside. (reason)", "答案": "As / Because / Since"},
+          {"问题": "Rewrite correctly: Because it rained, so we stayed home.", "答案": "Because it rained, we stayed home. (or: It rained, so we stayed home.)"},
+          {"问题": "Fill in: Even ___ it was her first time in China, she felt at home.", "答案": "though"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A short manual for the curious traveller",
+        "data": [
+          {"题号": 1, "问题": "What is the first tip?", "选项": ["A. Observe before you act", "B. Speak loudly", "C. Judge quickly"], "答案": "A"},
+          {"题号": 2, "问题": "What three power words can save your day?", "选项": ["A. Hello, Thank you, Sorry", "B. Yes, No, Maybe", "C. Come, Go, Stop"], "答案": "A"},
+          {"题号": 3, "问题": "What is a small rule example?", "选项": ["A. Take off your shoes at a Japanese home", "B. Pay taxes", "C. Know taxi prices"], "答案": "A"},
+          {"题号": 4, "问题": "What should you do about something strange?", "选项": ["A. Don't judge too fast", "B. Call it wrong at once", "C. Ignore it"], "答案": "A"},
+          {"题号": 5, "问题": "What is the cheapest and most powerful gift in every culture?", "选项": ["A. A smile", "B. Money", "C. A clock"], "答案": "A"},
+          {"题号": 6, "问题": "Which week do most travellers say is the best?", "选项": ["A. The fourth", "B. The first", "C. The second"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · A short manual for the curious traveller",
         "data": [
-          {"问题": "What is the first tip for travellers?", "答案": "Observe before you act — watch how locals behave."},
-          {"问题": "What is the second tip?", "答案": "Learn a few local phrases — it shows respect."},
-          {"问题": "What is the third tip?", "答案": "Be patient with yourself — adapting takes time."},
-          {"问题": "What is the main purpose of this manual?", "答案": "To help travellers avoid culture shock and enjoy their journey."}
+          {"问题": "What should you do for big rules like laws and taxi prices?", "答案": "Ask a trusted local or check online before you act."},
+          {"问题": "What should you do when you make a mistake abroad?", "答案": "Laugh with the local people."},
+          {"问题": "What is culture shock called in the last tip?", "答案": "A teacher."},
+          {"问题": "What kind of person do you become by the fourth week?", "答案": "A calmer, kinder, wider person."}
         ]
       }
     ],
-
     "u7": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · A short journey through English poems",
-        "data": [
-          {"问题": "What is Mrs Brown teaching?", "答案": "Poetry."},
-          {"问题": "Does a poem always have to rhyme?", "答案": "No, sometimes it doesn't rhyme."},
-          {"问题": "What does Emma say a poem is?", "答案": "It is like painting with words — it makes you see and feel things."},
-          {"问题": "What is the author's purpose in this passage?", "答案": "To introduce students to the beauty and variety of poetry."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · A short journey through English poems",
         "data": [
-          {"题号": 1, "问题": "Jack thinks a poem must ___.", "选项": ["A. be long", "B. rhyme", "C. tell a story"], "答案": "B"},
-          {"题号": 2, "问题": "Emma describes poetry as 'painting with ___'.", "选项": ["A. colours", "B. words", "C. sounds"], "答案": "B"}
+          {"题号": 1, "问题": "What day is it in Mrs Brown's class?", "选项": ["A. The first poetry day", "B. Sports day", "C. English week"], "答案": "A"},
+          {"题号": 2, "问题": "According to Emma, what does a poem do?", "选项": ["A. Paints a picture with words", "B. Only rhymes", "C. Tells the news"], "答案": "A"},
+          {"题号": 3, "问题": "'Lonely as a cloud' is an example of a ___.", "选项": ["A. simile", "B. metaphor", "C. command"], "答案": "A"},
+          {"题号": 4, "问题": "Why does the poet repeat the last line, according to Mrs Brown?", "选项": ["A. Repetition makes it stay in your mind", "B. He forgot", "C. It rhymes"], "答案": "A"},
+          {"题号": 5, "问题": "'Hope is the thing with feathers' is a ___.", "选项": ["A. metaphor", "B. simile", "C. question"], "答案": "A"},
+          {"题号": 6, "问题": "What does Mrs Brown say we should do when reading a poem?", "选项": ["A. Slow down and listen to the sounds", "B. Read as fast as possible", "C. Skip the hard words"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A short journey through English poems",
+        "data": [
+          {"问题": "What word does a simile use to compare things?", "答案": "'like' (or 'as')."},
+          {"问题": "What three questions should you ask when reading a poem?", "答案": "What colour? What sound? What feeling?"},
+          {"问题": "What does Mrs Brown say we simply forgot to do?", "答案": "Listen."},
+          {"问题": "How does a metaphor differ from a simile?", "答案": "A metaphor says X IS Y, without saying 'like'."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Simile and metaphor; figurative language",
+        "data": [
+          {"题号": 1, "问题": "A simile uses ___.", "选项": ["A. 'like' or 'as'", "B. no comparison word", "C. a question"], "答案": "A"},
+          {"题号": 2, "问题": "A metaphor says X ___ Y.", "选项": ["A. IS", "B. is like", "C. is as"], "答案": "A"},
+          {"题号": 3, "问题": "'The wind whispered in the trees' is ___.", "选项": ["A. personification", "B. a simile", "C. alliteration"], "答案": "A"},
+          {"题号": 4, "问题": "Saying the same line again for rhythm is ___.", "选项": ["A. repetition", "B. metaphor", "C. simile"], "答案": "A"},
+          {"题号": 5, "问题": "'Silver streams, sleepy stars, silent night' is ___.", "选项": ["A. alliteration", "B. metaphor", "C. repetition"], "答案": "A"},
+          {"题号": 6, "问题": "'Her smile is like the morning sun' is a ___.", "选项": ["A. simile", "B. metaphor", "C. personification"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Simile and metaphor; figurative language",
         "data": [
-          {"问题": "Identify the simile: 'Her voice is like music.' What two things are compared?", "答案": "Her voice and music, using 'like'."},
-          {"问题": "Identify the metaphor: 'The classroom was a zoo.' What does it mean?", "答案": "It means the classroom was very noisy and chaotic."},
-          {"问题": "Create a simile: The moon is as ___ as ___ .", "答案": "(Any correct simile, e.g., The moon is as bright as silver.)"},
-          {"问题": "What is the difference between a simile and a metaphor?", "答案": "Simile uses 'like' or 'as' to compare; metaphor says one thing IS another."}
+          {"问题": "Turn into a metaphor: Her smile is like the morning sun.", "答案": "Her smile is the morning sun."},
+          {"问题": "Why do poets use figurative language?", "答案": "To make the reader see and feel more — to turn an idea into a picture."},
+          {"问题": "What is 'Books are doors' an example of?", "答案": "A metaphor."},
+          {"问题": "Do poems always follow normal grammar rules?", "答案": "No; poets break lines where it feels right."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · From Li Bai to the world",
+        "data": [
+          {"题号": 1, "问题": "How old is Chinese poetry?", "选项": ["A. More than 3,000 years", "B. About 300 years", "C. About 100 years"], "答案": "A"},
+          {"题号": 2, "问题": "Which dynasty is called the golden age of Chinese poetry?", "选项": ["A. The Tang Dynasty", "B. The Ming Dynasty", "C. The Song Dynasty"], "答案": "A"},
+          {"题号": 3, "问题": "What was Li Bai called?", "选项": ["A. The 'Immortal Poet'", "B. The 'Sage of Poetry'", "C. The 'King of Poems'"], "答案": "A"},
+          {"题号": 4, "问题": "What was Du Fu called?", "选项": ["A. The 'Sage of Poetry'", "B. The 'Immortal Poet'", "C. The 'Father of Poems'"], "答案": "A"},
+          {"题号": 5, "问题": "Who was one of China's greatest female poets?", "选项": ["A. Li Qingzhao", "B. Su Shi", "C. Cao Xueqin"], "答案": "A"},
+          {"题号": 6, "问题": "What is a good poem compared to?", "选项": ["A. A seed", "B. A river", "C. A door"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · From Li Bai to the world",
         "data": [
-          {"问题": "How old is Chinese poetry?", "答案": "More than 3,000 years old."},
-          {"问题": "Which dynasty is called the golden age of Chinese poetry?", "答案": "The Tang Dynasty (618–907)."},
-          {"问题": "Why is Li Bai still read worldwide?", "答案": "His poems express universal feelings — loneliness, friendship and wonder — that cross cultures."},
-          {"问题": "What can we infer about poetry's role across cultures?", "答案": "Poetry is a bridge between cultures; it expresses emotions that all humans share."}
+          {"问题": "About how many poems did Tang poets leave behind?", "答案": "Nearly 50,000."},
+          {"问题": "What subjects did Du Fu's poems write about?", "答案": "Ordinary soldiers, lost mothers, and tiny gardens."},
+          {"问题": "What new form of poem did Su Shi and Li Qingzhao write?", "答案": "Ci — poems following the tunes of old songs."},
+          {"问题": "What do American teenagers memorise in their first Chinese class?", "答案": "'Quiet Night Thoughts'."}
         ]
       }
     ],
-
     "u8": [
-      {
-        "kind": "reading_qa",
-        "title": "Reading · Meeting Shakespeare",
-        "data": [
-          {"问题": "Where and when does the scene take place?", "答案": "A bookshop in London, 1601."},
-          {"问题": "Who are the two characters?", "答案": "A young Chinese traveller and an English shopkeeper."},
-          {"问题": "What does the traveller want to know?", "答案": "About Shakespeare and his plays."},
-          {"问题": "What is Shakespeare famous for?", "答案": "His plays and poems — stories about love, power, jealousy and human nature."},
-          {"问题": "Why is Shakespeare still relevant today?", "答案": "Because his works explore timeless human emotions that everyone can relate to."}
-        ]
-      },
       {
         "kind": "choice_qa",
         "title": "Reading · Meeting Shakespeare",
         "data": [
-          {"题号": 1, "问题": "The scene is set in a ___ in 1601.", "选项": ["A. palace", "B. bookshop", "C. theatre"], "答案": "B"},
-          {"题号": 2, "问题": "Shakespeare is famous for his ___.", "选项": ["A. science discoveries", "B. plays and poems", "C. inventions"], "答案": "B"}
+          {"题号": 1, "问题": "Where and when is the dialogue set?", "选项": ["A. A bookshop in London, 1601", "B. A school in China, 2026", "C. A theatre in Rome"], "答案": "A"},
+          {"题号": 2, "问题": "What does Shakespeare write besides poems?", "选项": ["A. Plays — comedies, tragedies, history plays", "B. Only novels", "C. Only songs"], "答案": "A"},
+          {"题号": 3, "问题": "What kind of story is Romeo and Juliet?", "选项": ["A. A love story and a tragedy", "B. A comedy", "C. A history play"], "答案": "A"},
+          {"题号": 4, "问题": "Which Chinese story does the traveller compare it to?", "选项": ["A. The Butterfly Lovers", "B. Journey to the West", "C. The Monkey King"], "答案": "A"},
+          {"题号": 5, "问题": "Which is the shopkeeper's favourite comedy?", "选项": ["A. A Midsummer Night's Dream", "B. Romeo and Juliet", "C. Hamlet"], "答案": "A"},
+          {"题号": 6, "问题": "What did the traveller leave the shop with?", "选项": ["A. A teacher (as well as a book)", "B. Nothing", "C. Only money"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Meeting Shakespeare",
+        "data": [
+          {"问题": "In Romeo and Juliet, what does the young couple's death end?", "答案": "The war between the families."},
+          {"问题": "Give one word Shakespeare invented that we still use.", "答案": "lonely / bedroom / critic / new-fangled (any one)."},
+          {"问题": "How much did Romeo and Juliet cost?", "答案": "Two shillings."},
+          {"问题": "What advice did the shopkeeper give about reading Shakespeare?", "答案": "Read him slowly and aloud; Shakespeare is a river."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Reported speech (advanced) and review",
+        "data": [
+          {"题号": 1, "问题": "Reported commands use ___.", "选项": ["A. to + verb / not to + verb", "B. that", "C. if"], "答案": "A"},
+          {"题号": 2, "问题": "Direct: 'Go home!' → He told her ___ home.", "选项": ["A. to go", "B. go", "C. going"], "答案": "A"},
+          {"题号": 3, "问题": "Direct: 'Don't be late.' → She asked him ___ late.", "选项": ["A. not to be", "B. to not be", "C. don't be"], "答案": "A"},
+          {"题号": 4, "问题": "Direct: 'I have seen him.' → She said she ___ him.", "选项": ["A. had seen", "B. has seen", "C. sees"], "答案": "A"},
+          {"题号": 5, "问题": "Reported yes/no questions use ___.", "选项": ["A. if", "B. that", "C. to"], "答案": "A"},
+          {"题号": 6, "问题": "For a timeless fact, in reported speech you can keep the ___ tense.", "选项": ["A. present", "B. past", "C. future"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · Reported speech (advanced) and review",
         "data": [
-          {"问题": "Report: 'I love you,' he said. → He said ___ .", "答案": "he loved her."},
-          {"问题": "Report: 'I have never seen such a play,' she said. → She said ___ .", "答案": "she had never seen such a play."},
-          {"问题": "Report: 'Will you come tomorrow?' he asked. → He asked ___ .", "答案": "if/whether I would come the next day."},
-          {"问题": "What three things typically change in reported speech?", "答案": "Tense (goes back), pronouns (change to match reporter), time words (tomorrow → the next day)."}
+          {"问题": "Report: 'I will visit Verona,' Juliet said.", "答案": "Juliet said she would visit Verona."},
+          {"问题": "Report: 'Where does he live?'", "答案": "She asked where he lived."},
+          {"问题": "Name one reporting verb besides 'say' and 'ask'.", "答案": "tell / advise / warn / promise / suggest (any one)."},
+          {"问题": "Report the timeless fact: The teacher said, 'The Earth is round.'", "答案": "The teacher said that the Earth is round."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Books that have changed the world",
+        "data": [
+          {"题号": 1, "问题": "What is The Analects a book of?", "选项": ["A. Short sayings by Confucius and his disciples", "B. Poems", "C. Plays"], "答案": "A"},
+          {"题号": 2, "问题": "What is often called the birth of the modern novel?", "选项": ["A. Don Quixote", "B. Oliver Twist", "C. The Analects"], "答案": "A"},
+          {"题号": 3, "问题": "Who wrote Oliver Twist?", "选项": ["A. Charles Dickens", "B. Cao Xueqin", "C. Cervantes"], "答案": "A"},
+          {"题号": 4, "问题": "What did Oliver dare to ask for?", "选项": ["A. A little more food", "B. Money", "C. A book"], "答案": "A"},
+          {"题号": 5, "问题": "Who wrote Dream of the Red Chamber?", "选项": ["A. Cao Xueqin", "B. Charles Dickens", "C. Confucius"], "答案": "A"},
+          {"题号": 6, "问题": "What science has grown around Dream of the Red Chamber?", "选项": ["A. Redology", "B. Biology", "C. Geology"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Books that have changed the world",
         "data": [
-          {"问题": "Name two of the four world-changing books.", "答案": "The Analects of Confucius and Darwin's On the Origin of Species (and others)."},
-          {"问题": "What do these books have in common?", "答案": "Each challenged old ways of thinking and opened new paths for humanity."},
-          {"问题": "What is the main message?", "答案": "Books have the power to change how we think and shape the course of history."}
+          {"问题": "What golden rule does The Analects give?", "答案": "Do not do to others what you do not want done to yourself."},
+          {"问题": "What did British parliament start to change after Oliver Twist appeared?", "答案": "Laws about children's work."},
+          {"问题": "About how many characters does Dream of the Red Chamber have?", "答案": "Over 400."},
+          {"问题": "What is a good book called at the end?", "答案": "A mirror, a lamp, and sometimes a small revolution."}
         ]
       }
     ]

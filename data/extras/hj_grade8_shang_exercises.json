@@ -2,414 +2,545 @@
   "exercises": {
     "u1": [
       {
+        "kind": "choice_qa",
+        "title": "Reading · A treasure of knowledge",
+        "data": [
+          {"题号": 1, "问题": "Where did Father take the writer?", "选项": ["A. His old study", "B. A library", "C. A shop"], "答案": "A"},
+          {"题号": 2, "问题": "How many big books were on the shelf?", "选项": ["A. 20", "B. 12", "C. 5"], "答案": "A"},
+          {"题号": 3, "问题": "What does an encyclopaedia try to tell you about?", "选项": ["A. Everything", "B. Only animals", "C. Only stars"], "答案": "A"},
+          {"题号": 4, "问题": "Where can we find any topic quickly?", "选项": ["A. In the index at the end", "B. On the cover", "C. In the middle"], "答案": "A"},
+          {"题号": 5, "问题": "How far is the moon from the Earth, the writer learned?", "选项": ["A. 384,000 kilometres", "B. 38,400 kilometres", "C. 3,840 kilometres"], "答案": "A"},
+          {"题号": 6, "问题": "What is an encyclopaedia like?", "选项": ["A. A small library", "B. A big kitchen", "C. A garden"], "答案": "A"}
+        ]
+      },
+      {
         "kind": "reading_qa",
         "title": "Reading · A treasure of knowledge",
         "data": [
-          {"问题": "Where did the father take the writer?", "答案": "To his old study."},
-          {"问题": "How many big books were on the shelf?", "答案": "20 big books."},
-          {"问题": "What does an encyclopaedia tell you about?", "答案": "Animals, plants, planets, countries and famous people."},
-          {"问题": "How can you find a topic quickly in an encyclopaedia?", "答案": "Use the index at the end."},
+          {"问题": "What were the 20 books?", "答案": "The Children's Encyclopaedia."},
           {"问题": "What did the writer read about in Volume 5?", "答案": "The moon."},
-          {"问题": "Why does the writer call an encyclopaedia a 'treasure of knowledge'?", "答案": "Because you can travel the world and visit the stars without leaving home."}
+          {"问题": "What did the writer read about in Volume 12?", "答案": "Dinosaurs."},
+          {"问题": "What is an encyclopaedia called at the end of the passage?", "答案": "A treasure of knowledge."}
         ]
       },
       {
         "kind": "choice_qa",
-        "title": "Reading · A treasure of knowledge",
+        "title": "Grammar focus · How to ask questions",
         "data": [
-          {"题号": 1, "问题": "The encyclopaedia books were the father's ___.", "选项": ["A. new books", "B. childhood books", "C. borrowed books"], "答案": "B"},
-          {"题号": 2, "问题": "The moon is ___ kilometres from the Earth.", "选项": ["A. 38,400", "B. 384,000", "C. 3,840,000"], "答案": "B"},
-          {"题号": 3, "问题": "The writer also read about ___ in Volume 12.", "选项": ["A. planets", "B. oceans", "C. dinosaurs"], "答案": "C"}
+          {"题号": 1, "问题": "Which question word asks about a person?", "选项": ["A. Who", "B. What", "C. Where"], "答案": "A"},
+          {"题号": 2, "问题": "Which question word asks about a place?", "选项": ["A. Where", "B. When", "C. Why"], "答案": "A"},
+          {"题号": 3, "问题": "Which word asks about a reason?", "选项": ["A. Why", "B. How", "C. Who"], "答案": "A"},
+          {"题号": 4, "问题": "Which word asks about time?", "选项": ["A. When", "B. Where", "C. What"], "答案": "A"},
+          {"题号": 5, "问题": "'How do you search for a topic?' asks about ___.", "选项": ["A. the way / method", "B. the place", "C. the time"], "答案": "A"},
+          {"题号": 6, "问题": "Who writes the articles?", "选项": ["A. Many experts", "B. One student", "C. A machine"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "Grammar focus · How to ask questions",
         "data": [
-          {"问题": "Ask a question with 'What': ___ is an encyclopaedia?", "答案": "What"},
-          {"问题": "Ask a question with 'Who': ___ writes the articles?", "答案": "Who"},
-          {"问题": "Ask a question with 'Where': ___ can we find the index?", "答案": "Where"},
-          {"问题": "Ask a question with 'Why': ___ do students read encyclopaedias?", "答案": "Why"}
+          {"问题": "List two question words from the lesson.", "答案": "what / who / where / when / why / how (any two)."},
+          {"问题": "Where can we find the word list?", "答案": "In the index at the end."},
+          {"问题": "When was the first encyclopaedia published?", "答案": "About two thousand years ago in ancient Rome."},
+          {"问题": "How do you search for a topic?", "答案": "Look up the key word in the index first."}
         ]
       },
       {
         "kind": "choice_qa",
-        "title": "Grammar focus · How to ask questions",
+        "title": "More reading · From paper to the Internet",
         "data": [
-          {"题号": 1, "问题": "Which question word asks about time?", "选项": ["A. What", "B. When", "C. How"], "答案": "B"},
-          {"题号": 2, "问题": "___ do you search for a topic?", "选项": ["A. What", "B. Who", "C. How"], "答案": "C"}
+          {"题号": 1, "问题": "Who wrote the oldest encyclopaedia?", "选项": ["A. A Roman writer called Pliny", "B. A French scholar", "C. An Indian scholar"], "答案": "A"},
+          {"题号": 2, "问题": "How many volumes did Pliny's book have?", "选项": ["A. 37", "B. 28", "C. 20"], "答案": "A"},
+          {"题号": 3, "问题": "When was Wikipedia started?", "选项": ["A. 2001", "B. 1801", "C. 2021"], "答案": "A"},
+          {"题号": 4, "问题": "How many English articles does Wikipedia have?", "选项": ["A. Over 6 million", "B. About 1,000", "C. About 600"], "答案": "A"},
+          {"题号": 5, "问题": "What should you always do with online information?", "选项": ["A. Check more than one website", "B. Believe it at once", "C. Ignore it"], "答案": "A"},
+          {"题号": 6, "问题": "What does a good reader use?", "选项": ["A. Both paper books and online pages", "B. Only the Internet", "C. Only paper"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · From paper to the Internet",
         "data": [
-          {"问题": "Who wrote the oldest encyclopaedia in the world?", "答案": "A Roman writer called Pliny."},
-          {"问题": "How many volumes did Pliny write?", "答案": "37 volumes."},
-          {"问题": "How long did French scholars work to publish their encyclopaedia?", "答案": "25 years."},
-          {"问题": "When was Wikipedia started?", "答案": "In 2001."},
-          {"问题": "Why should we not believe everything on the Internet?", "答案": "Because not everything on the Internet is true."}
+          {"问题": "How long did French scholars work in the 18th century?", "答案": "25 years."},
+          {"问题": "Who can write or correct a Wikipedia article?", "答案": "Anyone."},
+          {"问题": "Is everything on the Internet true?", "答案": "No."},
+          {"问题": "What should a good reader do before believing?", "答案": "Think."}
         ]
       }
     ],
-
     "u2": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · Numbers in our life",
-        "data": [
-          {"问题": "What do numbers tell us in daily life?", "答案": "Time, price, phone number and temperature."},
-          {"问题": "How many basic digits do we have?", "答案": "Ten (from zero to nine)."},
-          {"问题": "What can we write with these ten digits?", "答案": "Any number from one to a billion and more."},
-          {"问题": "Where did the ten-digit system come from?", "答案": "From ancient India."},
-          {"问题": "Why are numbers important?", "答案": "Because they are everywhere in our life."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · Numbers in our life",
         "data": [
-          {"题号": 1, "问题": "The ten-digit number system came from ___.", "选项": ["A. ancient Greece", "B. ancient India", "C. ancient Rome"], "答案": "B"},
-          {"题号": 2, "问题": "With ten digits we can write numbers up to ___.", "选项": ["A. one thousand", "B. one million", "C. a billion and more"], "答案": "C"}
+          {"题号": 1, "问题": "What do numbers tell us?", "选项": ["A. The time, price, phone number and temperature", "B. Only the time", "C. Only the price"], "答案": "A"},
+          {"题号": 2, "问题": "How many common digits are there?", "选项": ["A. Ten (0-9)", "B. Five", "C. Twenty"], "答案": "A"},
+          {"题号": 3, "问题": "How long ago did Chinese people use the ten-digit system?", "选项": ["A. More than 3,000 years ago", "B. 300 years ago", "C. 30 years ago"], "答案": "A"},
+          {"题号": 4, "问题": "Why is eight a lucky number in China?", "选项": ["A. It sounds like 'getting rich'", "B. There are eight days in a week", "C. It is small"], "答案": "A"},
+          {"题号": 5, "问题": "Why is seven lucky in the West?", "选项": ["A. Seven days in a week, seven rainbow colours", "B. It is round", "C. It sounds like money"], "答案": "A"},
+          {"题号": 6, "问题": "Which number is often seen as unlucky?", "选项": ["A. 13", "B. 8", "C. 7"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Big numbers in English",
+        "title": "Reading · Numbers in our life",
         "data": [
-          {"问题": "Write in words: 1,000,000.", "答案": "One million."},
-          {"问题": "Write in words: 1,000,000,000.", "答案": "One billion."},
-          {"问题": "Fill in: 10,000 = ten ___", "答案": "thousand"},
-          {"问题": "Fill in: 100,000 = one ___ thousand", "答案": "hundred"}
+          {"问题": "With ten digits, what can we write?", "答案": "Any number, from one to a billion and more."},
+          {"问题": "Why do many buildings have no 13th floor?", "答案": "Because 13 is often seen as unlucky."},
+          {"问题": "What would there be no of without numbers?", "答案": "No math, no computers, no smartphones."},
+          {"问题": "What does the writer ask us to do with numbers?", "答案": "Learn to love them."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Big numbers in English",
         "data": [
-          {"题号": 1, "问题": "'1,500,000' in English is ___.", "选项": ["A. one million five hundred", "B. one million five hundred thousand", "C. one thousand five hundred"], "答案": "B"},
-          {"题号": 2, "问题": "In English, we put a ___ between hundreds and tens.", "选项": ["A. comma", "B. and", "C. hyphen"], "答案": "B"}
+          {"题号": 1, "问题": "1,000,000 in English is ___.", "选项": ["A. one million", "B. one thousand", "C. one billion"], "答案": "A"},
+          {"题号": 2, "问题": "1,000,000,000 in English is ___.", "选项": ["A. one billion", "B. one million", "C. one hundred thousand"], "答案": "A"},
+          {"题号": 3, "问题": "386 in British English is ___.", "选项": ["A. three hundred and eighty-six", "B. three hundred eighty-six", "C. thirty-eight six"], "答案": "A"},
+          {"题号": 4, "问题": "After a number, hundred/million/billion take ___.", "选项": ["A. singular form (no -s)", "B. plural -s", "C. -es"], "答案": "A"},
+          {"题号": 5, "问题": "With 'of', we say ___.", "选项": ["A. thousands of people", "B. thousand of people", "C. thousands people"], "答案": "A"},
+          {"题号": 6, "问题": "10,000 in English is ___.", "选项": ["A. ten thousand", "B. one hundred thousand", "C. one thousand"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Big numbers in English",
+        "data": [
+          {"问题": "How do you say 2,500?", "答案": "Two thousand five hundred."},
+          {"问题": "In British English, what word is added after 'hundred'?", "答案": "and"},
+          {"问题": "Do you add -s to 'million' after a specific number?", "答案": "No."},
+          {"问题": "How do you say 100,000?", "答案": "One hundred thousand."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · The story of zero",
+        "data": [
+          {"题号": 1, "问题": "Did the ancient Greeks have zero?", "选项": ["A. No", "B. Yes", "C. Only sometimes"], "答案": "A"},
+          {"题号": 2, "问题": "Who invented the symbol 0?", "选项": ["A. Indian scholars", "B. Greek scholars", "C. Roman scholars"], "答案": "A"},
+          {"题号": 3, "问题": "How long ago was zero invented?", "选项": ["A. Around 1,500 years ago", "B. 150 years ago", "C. 15 years ago"], "答案": "A"},
+          {"题号": 4, "问题": "Who brought zero to Europe in the 9th century?", "选项": ["A. An Arab traveller", "B. A Greek king", "C. An Indian king"], "答案": "A"},
+          {"题号": 5, "问题": "What is zero the base of today?", "选项": ["A. Modern math and computer science", "B. Music", "C. Art"], "答案": "A"},
+          {"题号": 6, "问题": "Which two numbers do computers use?", "选项": ["A. 0 and 1", "B. 1 and 2", "C. 0 and 10"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · The story of zero",
         "data": [
-          {"问题": "Did the ancient Greeks have zero?", "答案": "No, they didn't."},
-          {"问题": "How did the Greeks write 102 without zero?", "答案": "As 'one hundred two', without showing the empty tens place."},
-          {"问题": "Who invented zero?", "答案": "Ancient Indian mathematicians."},
-          {"问题": "What did zero make possible?", "答案": "It made calculations much easier and faster."},
-          {"问题": "Why is zero called one of the greatest inventions?", "答案": "Because without zero, modern maths and science would be impossible."}
+          {"问题": "What does the symbol 0 mean?", "答案": "Nothing."},
+          {"问题": "Why was math slow for the ancient Greeks?", "答案": "They could not easily show that a place was empty."},
+          {"问题": "Why didn't people in Europe trust zero at first?", "答案": "They thought 'nothing' could not be a number."},
+          {"问题": "What is 'sometimes the greatest gift'?", "答案": "The smallest idea."}
         ]
       }
     ],
-
     "u3": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · My first computer",
-        "data": [
-          {"问题": "When did the writer get his first computer?", "答案": "Last year, for his thirteenth birthday."},
-          {"问题": "How heavy was the laptop?", "答案": "Only 1.5 kilograms."},
-          {"问题": "What did Dad show the writer first?", "答案": "How to turn it on."},
-          {"问题": "What did the screen ask the writer to do?", "答案": "Set a password."},
-          {"问题": "What did the writer do next after turning it on?", "答案": "Opened the browser and searched for information."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · My first computer",
         "data": [
-          {"题号": 1, "问题": "The writer got his first computer as a ___ gift.", "选项": ["A. New Year", "B. birthday", "C. Christmas"], "答案": "B"},
-          {"题号": 2, "问题": "The laptop weighed only ___.", "选项": ["A. 1.5 kg", "B. 2.5 kg", "C. 3 kg"], "答案": "A"}
+          {"题号": 1, "问题": "When did the writer get the first computer?", "选项": ["A. Last year for the 13th birthday", "B. Last week", "C. Two years ago"], "答案": "A"},
+          {"题号": 2, "问题": "How heavy was the laptop?", "选项": ["A. 1.5 kilograms", "B. 5 kilograms", "C. 15 kilograms"], "答案": "A"},
+          {"题号": 3, "问题": "What did the computer ask the writer to set?", "选项": ["A. A password", "B. A name", "C. A photo"], "答案": "A"},
+          {"题号": 4, "问题": "To whom did the writer type a short letter first?", "选项": ["A. Grandma", "B. A cousin", "C. A teacher"], "答案": "A"},
+          {"题号": 5, "问题": "How long did the first letter take?", "选项": ["A. Thirty minutes", "B. Five minutes", "C. Three hours"], "答案": "A"},
+          {"题号": 6, "问题": "What does Dad say a computer is?", "选项": ["A. A tool", "B. A toy", "C. A friend"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · How to give instructions",
+        "title": "Reading · My first computer",
         "data": [
-          {"问题": "Rewrite as an instruction: You should turn on the computer.", "答案": "Turn on the computer."},
-          {"问题": "Rewrite as an instruction: You must save the file.", "答案": "Save the file."},
-          {"问题": "Rewrite as an instruction: You should close the window.", "答案": "Close the window."},
-          {"问题": "What form do we use to give instructions?", "答案": "The imperative form: verb first, no subject."}
+          {"问题": "What did the writer learn to use after the password?", "答案": "The mouse and keyboard."},
+          {"问题": "What folders did the writer save files in?", "答案": "'homework', 'music', 'photos'."},
+          {"问题": "What does the writer do with the computer now?", "答案": "Write stories, watch English videos, and email a cousin in America."},
+          {"问题": "What does Dad warn: don't let the computer do what?", "答案": "Use you."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · How to give instructions",
         "data": [
-          {"题号": 1, "问题": "The imperative form starts with ___.", "选项": ["A. a subject", "B. a verb", "C. please"], "答案": "B"},
-          {"题号": 2, "问题": "Choose the correct instruction:", "选项": ["A. You type your password.", "B. Typing your password.", "C. Type your password."], "答案": "C"}
+          {"题号": 1, "问题": "What form gives clear instructions?", "选项": ["A. The imperative (verb first, no subject)", "B. A question", "C. The past tense"], "答案": "A"},
+          {"题号": 2, "问题": "Which is a correct instruction?", "选项": ["A. Save the file.", "B. You saving the file.", "C. The file saved."], "答案": "A"},
+          {"题号": 3, "问题": "How do you make a negative instruction?", "选项": ["A. Use 'Don't'", "B. Use 'will'", "C. Use 'have'"], "答案": "A"},
+          {"题号": 4, "问题": "How do you make an instruction polite?", "选项": ["A. Add 'please'", "B. Add 'never'", "C. Add 'not'"], "答案": "A"},
+          {"题号": 5, "问题": "Which word comes first in a step sequence?", "选项": ["A. First", "B. Finally", "C. Then"], "答案": "A"},
+          {"题号": 6, "问题": "Which is a negative instruction?", "选项": ["A. Don't share your password.", "B. Share your password.", "C. Please share."], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · How to give instructions",
+        "data": [
+          {"问题": "Give one imperative instruction from the lesson.", "答案": "Turn on the computer. / Open the program. (any one)"},
+          {"问题": "How do you tell someone politely to click?", "答案": "Please click here."},
+          {"问题": "What four order words are used for steps?", "答案": "First, then, next, finally."},
+          {"问题": "Fill in: ___ download strange files.", "答案": "Don't"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Safe on the Internet",
+        "data": [
+          {"题号": 1, "问题": "The Internet is compared to ___.", "选项": ["A. a huge city", "B. a small room", "C. a book"], "答案": "A"},
+          {"题号": 2, "问题": "What should you do with your password?", "选项": ["A. Keep it secret", "B. Tell your best friend", "C. Write it online"], "答案": "A"},
+          {"题号": 3, "问题": "What might a strange email carry?", "选项": ["A. A virus", "B. A gift", "C. Money"], "答案": "A"},
+          {"题号": 4, "问题": "What should you never write on public websites?", "选项": ["A. Your private information", "B. A kind word", "C. A green photo"], "答案": "A"},
+          {"题号": 5, "问题": "How should you behave online?", "选项": ["A. Be kind", "B. Be rude", "C. Be silent"], "答案": "A"},
+          {"题号": 6, "问题": "After an hour at the computer, what should follow?", "选项": ["A. Ten minutes of rest", "B. Another hour", "C. A meal"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Safe on the Internet",
         "data": [
-          {"问题": "What does the passage compare the Internet to?", "答案": "A huge city."},
-          {"问题": "What is Rule 1 for Internet safety?", "答案": "Keep your password secret and change it every few months."},
-          {"问题": "Should you tell your best friend your password?", "答案": "No, never tell anyone."},
-          {"问题": "Why does the passage say to be careful on the Internet?", "答案": "Because it has wonderful places but also dangerous streets."},
-          {"问题": "What should you do before believing information online?", "答案": "Check more than one website."}
+          {"问题": "How often should you change your password?", "答案": "Every few months."},
+          {"问题": "What should you do if you are not sure about a link?", "答案": "Don't click it."},
+          {"问题": "Where should you look during a rest to help your eyes?", "答案": "At something green (outside)."},
+          {"问题": "What is the Internet called at the end?", "答案": "A tool."}
         ]
       }
     ],
-
     "u4": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · Four great inventions",
-        "data": [
-          {"问题": "What are the Four Great Inventions of ancient China?", "答案": "Paper, the compass, printing and gunpowder."},
-          {"问题": "When was paper invented?", "答案": "About two thousand years ago."},
-          {"问题": "What did people write on before paper?", "答案": "Bamboo or silk."},
-          {"问题": "Why was the compass important?", "答案": "It helped sailors find their way on the sea."},
-          {"问题": "What did gunpowder change?", "答案": "It changed the way people fought wars."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · Four great inventions",
         "data": [
-          {"题号": 1, "问题": "Paper was invented in ___ about 2,000 years ago.", "选项": ["A. India", "B. China", "C. Egypt"], "答案": "B"},
-          {"题号": 2, "问题": "The compass helped sailors find their ___ at sea.", "选项": ["A. food", "B. way", "C. friends"], "答案": "B"},
-          {"题号": 3, "问题": "The four inventions each ___ the world.", "选项": ["A. destroyed", "B. changed", "C. ignored"], "答案": "B"}
+          {"题号": 1, "问题": "What are the Four Great Inventions of ancient China?", "选项": ["A. Paper, the compass, printing and gunpowder", "B. The wheel, fire, paper and glass", "C. The phone, TV, radio and computer"], "答案": "A"},
+          {"题号": 2, "问题": "What did people write on before paper?", "选项": ["A. Bamboo or silk", "B. Plastic", "C. Glass"], "答案": "A"},
+          {"题号": 3, "问题": "What does the compass's needle always point to?", "选项": ["A. North", "B. South", "C. East"], "答案": "A"},
+          {"题号": 4, "问题": "What did printing make cheap and common?", "选项": ["A. Books", "B. Ships", "C. Houses"], "答案": "A"},
+          {"题号": 5, "问题": "What was gunpowder first used in?", "选项": ["A. Medicine", "B. Fireworks", "C. Warfare"], "答案": "A"},
+          {"题号": 6, "问题": "Along which road did the inventions travel to Europe?", "选项": ["A. The Silk Road", "B. The sea road", "C. The mountain road"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Passive voice with by",
+        "title": "Reading · Four great inventions",
         "data": [
-          {"问题": "Rewrite in passive: The Chinese invented paper.", "答案": "Paper was invented by the Chinese."},
-          {"问题": "Rewrite in passive: Edison invented the light bulb.", "答案": "The light bulb was invented by Edison."},
-          {"问题": "Fill in: Hundreds of machines ___ (make) by this factory.", "答案": "were made"},
-          {"问题": "When do we use 'by' in passive voice?", "答案": "To show who did the action (the doer)."}
+          {"问题": "How long ago was paper invented in China?", "答案": "About two thousand years ago."},
+          {"问题": "Why was paper better than bamboo and silk?", "答案": "It was light and cheap, so knowledge could travel far."},
+          {"问题": "How were books made before printing?", "答案": "Copied by hand."},
+          {"问题": "What did the four inventions push the world into?", "答案": "A new age."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Passive voice with by",
         "data": [
-          {"题号": 1, "问题": "'The book was written by Lu Xun.' Who is the doer?", "选项": ["A. the book", "B. Lu Xun", "C. the reader"], "答案": "B"},
-          {"题号": 2, "问题": "Choose the correct passive sentence:", "选项": ["A. The compass invented by Chinese.", "B. The compass was invented by the Chinese.", "C. The compass is invent by Chinese."], "答案": "B"}
+          {"题号": 1, "问题": "The passive voice is formed with ___.", "选项": ["A. be + past participle", "B. have + V-ing", "C. will + verb"], "答案": "A"},
+          {"题号": 2, "问题": "What word shows who did the action?", "选项": ["A. by", "B. with", "C. for"], "答案": "A"},
+          {"题号": 3, "问题": "Paper was invented ___ the Chinese.", "选项": ["A. by", "B. with", "C. of"], "答案": "A"},
+          {"题号": 4, "问题": "The light bulb was invented by ___.", "选项": ["A. Edison", "B. the Chinese", "C. Pliny"], "答案": "A"},
+          {"题号": 5, "问题": "Future passive is formed with ___.", "选项": ["A. will be + past participle", "B. is + V-ing", "C. had + pp"], "答案": "A"},
+          {"题号": 6, "问题": "When do we omit 'by ...'?", "选项": ["A. When the doer is unknown or not important", "B. Always", "C. Never"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Passive voice with by",
+        "data": [
+          {"问题": "Change to passive: The Chinese invented paper.", "答案": "Paper was invented by the Chinese."},
+          {"问题": "Fill in: The letter ___ written by hand. (present)", "答案": "is"},
+          {"问题": "Answer: Are the books printed by hand?", "答案": "No, they are printed by machines."},
+          {"问题": "Fill in: The new computer ___ be sold next year.", "答案": "will"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Invent for the future",
+        "data": [
+          {"题号": 1, "问题": "Are inventions only for grown-ups?", "选项": ["A. No", "B. Yes", "C. Only for teachers"], "答案": "A"},
+          {"题号": 2, "问题": "At what age did Louis Braille lose his sight?", "选项": ["A. Three", "B. Ten", "C. Fourteen"], "答案": "A"},
+          {"题号": 3, "问题": "What did Braille design?", "选项": ["A. A way of writing with small dots", "B. A telephone", "C. A television"], "答案": "A"},
+          {"题号": 4, "问题": "How old was Philo Farnsworth when he drew the TV design?", "选项": ["A. 14", "B. 3", "C. 20"], "答案": "A"},
+          {"题号": 5, "问题": "Where did Farnsworth draw his first design?", "选项": ["A. On a school blackboard", "B. In a book", "C. On paper"], "答案": "A"},
+          {"题号": 6, "问题": "What do you need to invent?", "选项": ["A. A notebook, a pencil and an open mind", "B. A big lab", "C. A lot of money"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Invent for the future",
         "data": [
-          {"问题": "Who was Louis Braille?", "答案": "A boy who lost his sight and invented a writing system with dots."},
-          {"问题": "At what age did Braille lose his sight?", "答案": "At the age of three."},
-          {"问题": "What question do inventors often start with?", "答案": "'Can I make this better?'"},
-          {"问题": "What does the story of Braille teach us?", "答案": "That even young people and those with difficulties can invent great things."}
+          {"问题": "What question did many inventors start with as children?", "答案": "Can I make this better?"},
+          {"问题": "Who reads books in Braille today?", "答案": "Blind people all over the world."},
+          {"问题": "What should you look for around your home?", "答案": "What is slow, heavy or wasteful."},
+          {"问题": "Whom should you share your idea with?", "答案": "Teachers and friends."}
         ]
       }
     ],
-
     "u5": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · How to remember better",
-        "data": [
-          {"问题": "What does the writer compare memory to?", "答案": "A muscle."},
-          {"问题": "What is the first trick to improve memory?", "答案": "Repeat with space — review what you learned after one hour, one day and one week."},
-          {"问题": "What is the second trick?", "答案": "Make a picture in your mind — connect new words to images."},
-          {"问题": "What is the third trick?", "答案": "Teach someone else — when you explain something, you understand it better."},
-          {"问题": "Why do we forget words learned in the morning by night?", "答案": "Because memory needs training; without review, we forget quickly."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · How to remember better",
         "data": [
-          {"题号": 1, "问题": "The writer says memory is like a ___.", "选项": ["A. computer", "B. muscle", "C. book"], "答案": "B"},
-          {"题号": 2, "问题": "You should review new words after ___ for best memory.", "选项": ["A. one day only", "B. one hour, one day and one week", "C. one month only"], "答案": "B"},
-          {"题号": 3, "问题": "Teaching someone else helps you ___ the knowledge.", "选项": ["A. forget", "B. understand better", "C. ignore"], "答案": "B"}
+          {"题号": 1, "问题": "What is memory compared to?", "选项": ["A. A muscle", "B. A box", "C. A warehouse"], "答案": "A"},
+          {"题号": 2, "问题": "What is the first trick?", "选项": ["A. Repeat with space", "B. Sleep more", "C. Eat well"], "答案": "A"},
+          {"题号": 3, "问题": "For 'elephant', what does the writer imagine?", "选项": ["A. A pink elephant riding a bicycle", "B. A grey elephant sleeping", "C. A small elephant eating"], "答案": "A"},
+          {"题号": 4, "问题": "The crazier the picture, the ___ it is to forget.", "选项": ["A. harder", "B. easier", "C. faster"], "答案": "A"},
+          {"题号": 5, "问题": "What is the third trick?", "选项": ["A. Tell a friend", "B. Write it down", "C. Read it once"], "答案": "A"},
+          {"题号": 6, "问题": "The teacher says the brain is not a warehouse but a ___.", "选项": ["A. garden", "B. river", "C. mountain"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Adverbs of degree",
+        "title": "Reading · How to remember better",
         "data": [
-          {"问题": "Order from weakest to strongest: quite, extremely, very.", "答案": "quite → very → extremely"},
-          {"问题": "Fill in (very strong): I am ___ tired. (很累)", "答案": "very"},
-          {"问题": "Fill in (fairly strong): Her memory is ___ good.", "答案": "quite"},
-          {"问题": "Fill in (strongest): This test is ___ difficult!", "答案": "extremely"}
+          {"问题": "When does the writer review a new word (the spaced steps)?", "答案": "Five minutes, one hour, one day, and one week later."},
+          {"问题": "Why does explaining to a little brother help?", "答案": "The writer understands it twice as well."},
+          {"问题": "What grows stronger the more you train it?", "答案": "Memory."},
+          {"问题": "What must you do to the garden every day?", "答案": "Water it."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Adverbs of degree",
         "data": [
-          {"题号": 1, "问题": "Which is the strongest?", "选项": ["A. very", "B. quite", "C. extremely"], "答案": "C"},
-          {"题号": 2, "问题": "'The test was pretty easy.' — 'pretty' means ___.", "选项": ["A. very", "B. fairly/rather", "C. not at all"], "答案": "B"}
+          {"题号": 1, "问题": "What do adverbs of degree tell us?", "选项": ["A. How much", "B. When", "C. Where"], "答案": "A"},
+          {"题号": 2, "问题": "Which shows a strong degree?", "选项": ["A. very", "B. a bit", "C. a little"], "答案": "A"},
+          {"题号": 3, "问题": "Which shows a small amount?", "选项": ["A. a little", "B. very", "C. really"], "答案": "A"},
+          {"题号": 4, "问题": "'Too' means ___.", "选项": ["A. more than needed", "B. as much as needed", "C. a little"], "答案": "A"},
+          {"题号": 5, "问题": "'Enough' comes ___ the adjective.", "选项": ["A. after", "B. before", "C. inside"], "答案": "A"},
+          {"题号": 6, "问题": "The homework is ___ difficult (more than needed).", "选项": ["A. too", "B. enough", "C. a bit"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Adverbs of degree",
+        "data": [
+          {"问题": "Fill in: This book is ___ interesting. (strong)", "答案": "very / really"},
+          {"问题": "Fill in: I am ___ tired. (small amount)", "答案": "a bit / a little"},
+          {"问题": "What does 'enough' mean?", "答案": "As much as needed."},
+          {"问题": "Rewrite with degree: She runs fast → (strong).", "答案": "She runs very fast."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Champions of memory",
+        "data": [
+          {"题号": 1, "问题": "How many countries join the World Memory Championships?", "选项": ["A. Over thirty", "B. About five", "C. About one hundred"], "答案": "A"},
+          {"题号": 2, "问题": "Where is Alex Mullen from?", "选项": ["A. The USA", "B. China", "C. Greece"], "答案": "A"},
+          {"题号": 3, "问题": "How many numbers can he remember in one hour?", "选项": ["A. 3,000", "B. 300", "C. 30"], "答案": "A"},
+          {"题号": 4, "问题": "What is his secret?", "选项": ["A. He changes numbers into pictures", "B. He writes them down", "C. He sings them"], "答案": "A"},
+          {"题号": 5, "问题": "Do memory champions have special brains?", "选项": ["A. No, special methods and practice", "B. Yes, bigger brains", "C. Yes, faster brains"], "答案": "A"},
+          {"题号": 6, "问题": "How many hours do they train every day?", "选项": ["A. Three or four", "B. One", "C. Ten"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Champions of memory",
         "data": [
-          {"问题": "What event do memory champions join?", "答案": "The World Memory Championships."},
-          {"问题": "How many numbers can Alex Mullen remember in one hour?", "答案": "A random list of 3,000 numbers."},
-          {"问题": "What do champions use to memorise long lists?", "答案": "They turn numbers into stories or pictures."},
-          {"问题": "What does this passage tell us about memory?", "答案": "Memory can be trained to an amazing level."},
-          {"问题": "Can ordinary people improve their memory like champions?", "答案": "Yes, with training and the right techniques."}
+          {"问题": "What do the champions try to memorise?", "答案": "Names, numbers and cards."},
+          {"问题": "Where does Alex put his number-pictures?", "答案": "On a road he knows very well (his street, school, living room)."},
+          {"问题": "How does he recall them?", "答案": "He 'walks' along the road."},
+          {"问题": "What can you turn twenty new words into?", "答案": "Funny pictures in a room you know."}
         ]
       }
     ],
-
     "u6": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · The Monkey King",
-        "data": [
-          {"问题": "What is another name for Sun Wukong?", "答案": "The Monkey King."},
-          {"问题": "Where was Sun Wukong born?", "答案": "From a stone on the Flower-Fruit Mountain."},
-          {"问题": "How many changes did Sun Wukong learn?", "答案": "72 changes."},
-          {"问题": "What weapon did he use?", "答案": "A magic iron bar (Ruyi Jingu Bang)."},
-          {"问题": "Why is Sun Wukong loved by so many Chinese people?", "答案": "Because he is brave, clever and full of magic."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · The Monkey King",
         "data": [
-          {"题号": 1, "问题": "Sun Wukong was born from ___.", "选项": ["A. an egg", "B. a stone", "C. a tree"], "答案": "B"},
-          {"题号": 2, "问题": "His magic iron bar could ___.", "选项": ["A. become very big or very small", "B. only break walls", "C. fly by itself"], "答案": "A"},
-          {"题号": 3, "问题": "The Monkey King is a hero from ___ stories.", "选项": ["A. Greek", "B. Chinese", "C. Roman"], "答案": "B"}
+          {"题号": 1, "问题": "What is another name for Sun Wukong?", "选项": ["A. The Monkey King", "B. The Dragon King", "C. The Stone King"], "答案": "A"},
+          {"题号": 2, "问题": "Where was he born from?", "选项": ["A. A stone on the Flower-Fruit Mountain", "B. An egg", "C. A cloud"], "答案": "A"},
+          {"题号": 3, "问题": "How many changes did he learn?", "选项": ["A. 72", "B. 81", "C. 100"], "答案": "A"},
+          {"题号": 4, "问题": "In Journey to the West, whom does he travel with?", "选项": ["A. The monk Tang Sanzang", "B. A king", "C. A dragon"], "答案": "A"},
+          {"题号": 5, "问题": "How many dangers do they meet?", "选项": ["A. Eighty-one", "B. Seventy-two", "C. Ten"], "答案": "A"},
+          {"题号": 6, "问题": "Why do children love Sun Wukong?", "选项": ["A. He is not a perfect hero — naughty but loyal and kind", "B. He is quiet", "C. He is rich"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Past perfect tense",
+        "title": "Reading · The Monkey King",
         "data": [
-          {"问题": "Complete: When the soldiers arrived, the Emperor ___ (already leave).", "答案": "had already left"},
-          {"问题": "Complete: She ___ (never see) the sea before she was ten.", "答案": "had never seen"},
-          {"问题": "Complete: By the time we got there, the movie ___ (start).", "答案": "had started"},
-          {"问题": "When do we use past perfect tense?", "答案": "For an action that happened before another past action."}
+          {"问题": "What could his gold stick do?", "答案": "Grow as tall as the sky or shrink to the size of a needle."},
+          {"问题": "What did they bring back from India?", "答案": "Buddhist books."},
+          {"问题": "How long did the journey take?", "答案": "More than ten years."},
+          {"问题": "What does a true hero remind us to be?", "答案": "Brave, clever and faithful to friends."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Past perfect tense",
         "data": [
-          {"题号": 1, "问题": "The past perfect is formed with ___.", "选项": ["A. was + V-ing", "B. had + past participle", "C. have + past participle"], "答案": "B"},
-          {"题号": 2, "问题": "Choose the correct sentence:", "选项": ["A. She left before I had arrived.", "B. She had left before I arrived.", "C. She has left before I arrived."], "答案": "B"}
+          {"题号": 1, "问题": "The past perfect is formed with ___.", "选项": ["A. had + past participle", "B. have + V-ing", "C. will + verb"], "答案": "A"},
+          {"题号": 2, "问题": "When is the past perfect used?", "选项": ["A. For an action before another past action", "B. For the future", "C. For a habit"], "答案": "A"},
+          {"题号": 3, "问题": "When the soldiers arrived, the Emperor ___ already left.", "选项": ["A. had", "B. has", "C. will"], "答案": "A"},
+          {"题号": 4, "问题": "By the time we got there, the movie ___ started.", "选项": ["A. had", "B. have", "C. is"], "答案": "A"},
+          {"题号": 5, "问题": "Which is a signal word for the past perfect?", "选项": ["A. by the time", "B. now", "C. tomorrow"], "答案": "A"},
+          {"题号": 6, "问题": "They ___ read the story before the teacher told it.", "选项": ["A. hadn't", "B. haven't", "C. don't"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Past perfect tense",
+        "data": [
+          {"问题": "Answer: Had you met him before?", "答案": "Yes, I had. / No, I hadn't."},
+          {"问题": "Fill in: She ___ never seen the sea before she was ten.", "答案": "had"},
+          {"问题": "Which happened first: 'I had finished my homework at 6' or 'I got home at 7'?", "答案": "Finished homework at 6."},
+          {"问题": "List one signal word for the past perfect.", "答案": "before / after / by the time / already (any one)."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Stories from Greece",
+        "data": [
+          {"题号": 1, "问题": "Where did the Greek gods live?", "选项": ["A. On Mount Olympus", "B. In the sea", "C. In a forest"], "答案": "A"},
+          {"题号": 2, "问题": "Who was the king of the gods?", "选项": ["A. Zeus", "B. Poseidon", "C. Hera"], "答案": "A"},
+          {"题号": 3, "问题": "Who ruled the sea?", "选项": ["A. Poseidon", "B. Zeus", "C. Athena"], "答案": "A"},
+          {"题号": 4, "问题": "Who taught people wisdom?", "选项": ["A. Athena", "B. Hera", "C. Zeus"], "答案": "A"},
+          {"题号": 5, "问题": "How long did Odysseus's trip home last (extra)?", "选项": ["A. Another ten years", "B. One year", "C. Twenty years"], "答案": "A"},
+          {"题号": 6, "问题": "What message do Chinese and Greek stories share?", "选项": ["A. Be brave, be clever, and be true", "B. Be rich", "C. Be quiet"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Stories from Greece",
         "data": [
-          {"问题": "Where did Greek gods live?", "答案": "On Mount Olympus."},
-          {"问题": "Who was the king of the Greek gods?", "答案": "Zeus."},
-          {"问题": "What could Zeus throw?", "答案": "Lightning like a spear."},
-          {"问题": "Who ruled the sea?", "答案": "Poseidon, Zeus' brother."},
-          {"问题": "What do both Chinese and Greek stories show us?", "答案": "That ancient people used stories to explain the world around them."}
+          {"问题": "What could Zeus throw like a spear?", "答案": "Lightning."},
+          {"问题": "Whom did Hera protect?", "答案": "Families."},
+          {"问题": "How long had Odysseus's wife and son waited for him?", "答案": "Twenty years."},
+          {"问题": "What do clever people do, the Greek stories teach?", "答案": "Solve problems."}
         ]
       }
     ],
-
     "u7": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · Two cities, two worlds",
-        "data": [
-          {"问题": "Which two cities are compared in the passage?", "答案": "Harbin and Guangzhou."},
-          {"问题": "How long does winter last in Harbin?", "答案": "More than five months (from November to March)."},
-          {"问题": "What is the winter temperature in Harbin often like?", "答案": "Below zero."},
-          {"问题": "What is the weather in Guangzhou like?", "答案": "Warm and mild; seldom snowy in winter."},
-          {"问题": "Why is the weather so different between the two cities?", "答案": "Because China is a big country, and Harbin is in the north while Guangzhou is in the south."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · Two cities, two worlds",
         "data": [
-          {"题号": 1, "问题": "In Harbin, winter lasts more than ___ months.", "选项": ["A. three", "B. five", "C. eight"], "答案": "B"},
-          {"题号": 2, "问题": "Guangzhou's winter is ___.", "选项": ["A. very cold", "B. warm and mild", "C. long and snowy"], "答案": "B"},
-          {"题号": 3, "问题": "The main idea of the passage is ___.", "选项": ["A. Guangzhou is the best city", "B. Weather differs from north to south in China", "C. Harbin is too cold to live in"], "答案": "B"}
+          {"题号": 1, "问题": "Which city is in the north?", "选项": ["A. Harbin", "B. Guangzhou", "C. Shanghai"], "答案": "A"},
+          {"题号": 2, "问题": "How long does winter last in Harbin?", "选项": ["A. More than five months", "B. Two months", "C. One month"], "答案": "A"},
+          {"题号": 3, "问题": "What does Harbin hold every January?", "选项": ["A. A famous Ice Festival", "B. A flower show", "C. A rain festival"], "答案": "A"},
+          {"题号": 4, "问题": "What is winter like in Guangzhou?", "选项": ["A. Short and mild", "B. Long and cold", "C. Snowy"], "答案": "A"},
+          {"题号": 5, "问题": "What comes to Guangzhou from May to September?", "选项": ["A. Storms and typhoons", "B. Snow", "C. Ice"], "答案": "A"},
+          {"题号": 6, "问题": "What happens when a typhoon arrives?", "选项": ["A. Schools close and planes cannot fly", "B. It snows", "C. Nothing changes"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Comparatives and superlatives",
+        "title": "Reading · Two cities, two worlds",
         "data": [
-          {"问题": "Complete (comparative): Winter in Harbin is ___ (cold) than in Guangzhou.", "答案": "colder"},
-          {"问题": "Complete (superlative): Harbin is one of the ___ (cold) cities in China.", "答案": "coldest"},
-          {"问题": "Complete: Typhoons are ___ (dangerous) than summer rain.", "答案": "more dangerous"},
-          {"问题": "Complete: This is the ___ (bad) storm I have ever seen.", "答案": "worst"}
+          {"问题": "What do children do on the ice in Harbin?", "答案": "Skate."},
+          {"问题": "What are the ice buildings like under the lights?", "答案": "They shine like crystal."},
+          {"问题": "What do people wear in Guangzhou winter?", "答案": "Jackets, not heavy coats."},
+          {"问题": "What does a southern child do in the summer rain?", "答案": "Jumps in it."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Comparatives and superlatives",
         "data": [
-          {"题号": 1, "问题": "For short adjectives, we add ___ for comparatives.", "选项": ["A. more", "B. -er", "C. -est"], "答案": "B"},
-          {"题号": 2, "问题": "The superlative of 'bad' is ___.", "选项": ["A. badder", "B. worse", "C. worst"], "答案": "C"}
+          {"题号": 1, "问题": "Which is used to compare two things?", "选项": ["A. The comparative", "B. The superlative", "C. The imperative"], "答案": "A"},
+          {"题号": 2, "问题": "Winter in Harbin is ___ than in Guangzhou.", "选项": ["A. colder", "B. coldest", "C. cold"], "答案": "A"},
+          {"题号": 3, "问题": "The superlative of 'good' is ___.", "选项": ["A. the best", "B. better", "C. gooder"], "答案": "A"},
+          {"题号": 4, "问题": "The comparative of 'bad' is ___.", "选项": ["A. worse", "B. worst", "C. badder"], "答案": "A"},
+          {"题号": 5, "问题": "Harbin has ___ winter in China.", "选项": ["A. the coldest", "B. colder", "C. cold"], "答案": "A"},
+          {"题号": 6, "问题": "'Guangzhou is ___ big ___ Shanghai' (equal).", "选项": ["A. as ... as", "B. more ... than", "C. the ... est"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Comparatives and superlatives",
+        "data": [
+          {"问题": "What is the superlative of 'hot'?", "答案": "the hottest"},
+          {"问题": "Fill in: Today is not ___ hot ___ yesterday.", "答案": "as ... as"},
+          {"问题": "What is the comparative and superlative of 'far'?", "答案": "farther / the farthest"},
+          {"问题": "Complete: The colder, ___ .", "答案": "the better"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A warming world",
+        "data": [
+          {"题号": 1, "问题": "How much warmer is the Earth than 100 years ago?", "选项": ["A. About one degree", "B. About ten degrees", "C. About twenty degrees"], "答案": "A"},
+          {"题号": 2, "问题": "What is happening to the glaciers at the Poles?", "选项": ["A. They are melting", "B. They are growing", "C. They are moving"], "答案": "A"},
+          {"题号": 3, "问题": "What is happening to sea levels?", "选项": ["A. They are rising", "B. They are falling", "C. They stay the same"], "答案": "A"},
+          {"题号": 4, "问题": "Why is this happening?", "选项": ["A. We burn too much coal, oil and gas", "B. It rains too much", "C. The sun is closer"], "答案": "A"},
+          {"题号": 5, "问题": "What should we do instead of driving?", "选项": ["A. Walk or cycle", "B. Fly", "C. Take a taxi"], "答案": "A"},
+          {"题号": 6, "问题": "How many Earths do we have?", "选项": ["A. One", "B. Two", "C. Many"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · A warming world",
         "data": [
-          {"问题": "How much warmer is the Earth today than 100 years ago?", "答案": "About one degree."},
-          {"问题": "What is happening to glaciers?", "答案": "They are melting."},
-          {"问题": "What is happening to sea levels?", "答案": "They are rising."},
-          {"问题": "Why does one degree make a big difference?", "答案": "Because it melts glaciers and raises sea levels, affecting the whole planet."},
-          {"问题": "What can we infer from this passage?", "答案": "Global warming is a serious problem and we need to take action."}
+          {"问题": "What are already under water?", "答案": "Some low islands in the Pacific."},
+          {"问题": "How are the seasons changing?", "答案": "Spring comes earlier, winter is shorter, and storms are stronger."},
+          {"问题": "What do the fuels release?", "答案": "Gases that trap the sun's heat."},
+          {"问题": "What is protecting the Earth's seasons?", "答案": "Protecting ourselves."}
         ]
       }
     ],
-
     "u8": [
       {
-        "kind": "reading_qa",
-        "title": "Reading · Our English week",
-        "data": [
-          {"问题": "When was English Week held?", "答案": "Last week."},
-          {"问题": "What happened on Monday?", "答案": "Opening ceremony; the headmaster gave a welcome speech in English."},
-          {"问题": "What was special about the classroom doors?", "答案": "Every door had a new English name like Ocean Room or Star Room."},
-          {"问题": "How many days did English Week last?", "答案": "Five days."},
-          {"问题": "What was the purpose of English Week?", "答案": "To encourage students to use English everywhere."}
-        ]
-      },
-      {
         "kind": "choice_qa",
         "title": "Reading · Our English week",
         "data": [
-          {"题号": 1, "问题": "English Week lasted for ___ days.", "选项": ["A. three", "B. five", "C. seven"], "答案": "B"},
-          {"题号": 2, "问题": "On Monday, the headmaster gave a speech in ___.", "选项": ["A. Chinese", "B. English", "C. both languages"], "答案": "B"},
-          {"题号": 3, "问题": "The classroom doors had ___ names.", "选项": ["A. number", "B. English", "C. colour"], "答案": "B"}
+          {"题号": 1, "问题": "How many days did English Week last?", "选项": ["A. Five", "B. Three", "C. Seven"], "答案": "A"},
+          {"题号": 2, "问题": "What happened on Monday?", "选项": ["A. Opening ceremony", "B. Reading day", "C. Prize day"], "答案": "A"},
+          {"题号": 3, "问题": "What did the writer show on Reading day?", "选项": ["A. Harry Potter", "B. The Little Prince", "C. A dictionary"], "答案": "A"},
+          {"题号": 4, "问题": "What number was the writer in the speaking contest?", "选项": ["A. Twelve", "B. Three", "C. Twenty"], "答案": "A"},
+          {"题号": 5, "问题": "What role did the writer play in the play?", "选项": ["A. The tortoise", "B. The hare", "C. The narrator"], "答案": "A"},
+          {"题号": 6, "问题": "What prize did the writer's speech win?", "选项": ["A. Third prize", "B. First prize", "C. No prize"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
-        "title": "Grammar focus · Reported speech",
+        "title": "Reading · Our English week",
         "data": [
-          {"问题": "Change to reported speech: He says, 'I am nervous.'", "答案": "He says (that) he is nervous."},
-          {"问题": "Change to reported: She said, 'I am tired.' → She said ___.", "答案": "she was tired"},
-          {"问题": "Change to reported: He said, 'I will come tomorrow.' → He said ___.", "答案": "he would come the next day"},
-          {"问题": "What changes in reported speech when the reporting verb is past?", "答案": "The tense goes back one step; pronouns and time words may also change."}
+          {"问题": "What new names did the classroom doors have?", "答案": "Ocean Room, Star Room, Rainbow Room."},
+          {"问题": "How long was each speech?", "答案": "Three minutes."},
+          {"问题": "What play did the class perform?", "答案": "The Tortoise and the Hare."},
+          {"问题": "What is English called at the end?", "答案": "A bridge that connects the writer to a bigger world."}
         ]
       },
       {
         "kind": "choice_qa",
         "title": "Grammar focus · Reported speech",
         "data": [
-          {"题号": 1, "问题": "'I am happy,' she said. → She said she ___ happy.", "选项": ["A. is", "B. was", "C. has been"], "答案": "B"},
-          {"题号": 2, "问题": "'I can swim,' he said. → He said he ___ swim.", "选项": ["A. can", "B. could", "C. will"], "答案": "B"}
+          {"题号": 1, "问题": "Direct speech uses ___.", "选项": ["A. quotation marks", "B. brackets", "C. no punctuation"], "答案": "A"},
+          {"题号": 2, "问题": "When the reporting verb is past, the tense ___.", "选项": ["A. changes back one step", "B. stays the same", "C. moves forward"], "答案": "A"},
+          {"题号": 3, "问题": "Direct: She said, 'I am tired.' Reported: She said she ___ tired.", "选项": ["A. was", "B. is", "C. are"], "答案": "A"},
+          {"题号": 4, "问题": "Direct: 'I will help you.' Reported: He said he ___ help me.", "选项": ["A. would", "B. will", "C. can"], "答案": "A"},
+          {"题号": 5, "问题": "Reported questions use ___ word order.", "选项": ["A. statement", "B. question", "C. command"], "答案": "A"},
+          {"题号": 6, "问题": "'today' changes to ___ in reported speech.", "选项": ["A. that day", "B. this day", "C. next day"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Reported speech",
+        "data": [
+          {"问题": "Report: 'I have won the prize,' she told me.", "答案": "She told me she had won the prize."},
+          {"问题": "Report: He asked, 'Where is the stage?'", "答案": "He asked where the stage was."},
+          {"问题": "Which words introduce a reported yes/no question?", "答案": "if / whether."},
+          {"问题": "What does 'here' change to?", "答案": "there"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Tips for a good speech",
+        "data": [
+          {"题号": 1, "问题": "How many tips does the teacher give?", "选项": ["A. Five", "B. Three", "C. Ten"], "答案": "A"},
+          {"题号": 2, "问题": "What is the first tip?", "选项": ["A. Know your topic", "B. Speak fast", "C. Memorise everything"], "答案": "A"},
+          {"题号": 3, "问题": "Where should you practise out loud?", "选项": ["A. In front of a mirror", "B. In bed", "C. In the dark"], "答案": "A"},
+          {"题号": 4, "问题": "What should you do about mistakes?", "选项": ["A. Don't be afraid — smile and keep going", "B. Stop the speech", "C. Start over"], "答案": "A"},
+          {"题号": 5, "问题": "How many friendly faces should you pick to look at?", "选项": ["A. Three", "B. One", "C. Ten"], "答案": "A"},
+          {"题号": 6, "问题": "A good speech is also about your ___.", "选项": ["A. courage", "B. clothes", "C. money"], "答案": "A"}
         ]
       },
       {
         "kind": "reading_qa",
         "title": "More reading · Tips for a good speech",
         "data": [
-          {"问题": "What is Tip 1 for a good speech?", "答案": "Know your topic — read a lot about it."},
-          {"问题": "What should you write first according to Tip 2?", "答案": "A simple plan."},
-          {"问题": "How should you start your speech according to Tip 3?", "答案": "With a story or a question."},
-          {"问题": "What is Tip 4?", "答案": "Practise in front of a mirror or with friends."},
-          {"问题": "Why is confidence important in a speech?", "答案": "Because the more you know, the more confident you are."}
+          {"问题": "How should you start your speech plan?", "答案": "With a story or a question."},
+          {"问题": "How should you end your speech?", "答案": "With a strong sentence the audience will remember."},
+          {"问题": "What should you do while practising to improve?", "答案": "Record yourself, listen and improve."},
+          {"问题": "What happens every time you stand on the stage?", "答案": "You grow a little taller."}
         ]
       }
     ]

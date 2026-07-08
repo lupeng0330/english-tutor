@@ -204,15 +204,22 @@ function _findExerciseForLesson(allExs, lesson) {
   for (const ex of allExs) {
     const exTitle = (ex.title || '').toLowerCase();
     if (!exTitle) continue;
-    // 拆分 exercise title: "page | title" 格式
-    const pipeIdx = exTitle.indexOf('|');
+    // 拆分 exercise title: 支持 "page | title"（小学）与 "page · title"（初中）两种分隔符
+    const sepIdx = (() => {
+      const a = exTitle.indexOf('|');
+      const b = exTitle.indexOf('·');
+      if (a < 0) return b;
+      if (b < 0) return a;
+      return Math.min(a, b);
+    })();
     let exPage = '', exTitlePart = exTitle;
-    if (pipeIdx >= 0) {
-      exPage = exTitle.substring(0, pipeIdx).trim();
-      exTitlePart = exTitle.substring(pipeIdx + 1).trim();
+    if (sepIdx >= 0) {
+      exPage = exTitle.substring(0, sepIdx).trim();
+      exTitlePart = exTitle.substring(sepIdx + 1).trim();
     }
-    // 第一层过滤：如果 exercise 有 page 且 lesson 有 page，必须 page 匹配
-    if (exPage && page && exPage.indexOf(page) < 0 && page.indexOf(exPage) < 0) {
+    // 第一层过滤：如果 exercise 有 page 且 lesson 有 page，必须 page 精确相等
+    // （用 === 而非子串，避免 "reading" 命中 "more reading" 导致跨篇串题）
+    if (exPage && page && exPage !== page) {
       continue; // page 不匹配，跳过
     }
     // 第二层匹配：title 精确包含
