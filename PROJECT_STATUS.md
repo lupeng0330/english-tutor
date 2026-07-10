@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-09 · 轻量维护——清理9个.bak备份 + 同步速读卡/§3规模/决策树(反映QZ-R小学7册+HJ-R初中6册理解自测原文级重做已上线 V03.21) + smoke回归; 下一站→6下对齐 or 三期P4新教材(rj/wy)**
+> 最后更新：**2026-07-10 · 🖥️ 全平台化改造启动 · Phase 1 桌面 Electron 壳已上线(§58)——新增 electron/(内嵌本地静态HTTP服务解决file://下fetch失败 + loadURL加载现有前端 + preload注入app.getVersion + Win/Mac打包配置)，产出「乐学英语 Setup.exe」；现有前端零改造被桌面壳复用。下一站→Phase M 移动端Capacitor(Android/iOS套壳)。完整路线见 §58 计划总览**
 
 ---
 
@@ -4117,6 +4117,52 @@ P6-A 补全对话 (~2天)
 | HJ-R6 | 9 下 | 144 选 + 96 问 | ✅ 已上线（初中优化统一批） |
 
 > 备注：6 册课文均为项目自有的自编简化教学内容（textbook 数据文件原创课文）。9 下 U7 诗歌篇的题目围绕「修辞概念/教学对话」命制，不复制诗句原文。
+
+---
+
+## 58. 🖥️ 全平台化改造 · Phase 1 桌面 Electron 壳（2026-07-10）
+
+> 📌 **背景**：项目从「纯静态 Web 应用」升级为「一套前端 = 单一事实源，多端套壳」的全平台学习 App + 云端后端 + 管理后台 + 会员收费系统。核心策略：**不推倒重来，现有原生前端零改造被各端外壳复用**；GitHub Pages 静态版全程持续可用。
+
+### 完整路线图（已与用户逐项确认，MVP 优先分阶段交付）
+
+| 阶段 | 内容 | 平台/范围 | 状态 |
+|---|---|---|---|
+| **Phase 1** | **桌面 Electron 壳 MVP** | Win/Mac | ✅ **已上线（本次）** |
+| Phase M | 移动 Capacitor 套壳（复用同一份前端，与 Electron 同哲学） | Android/iOS；鸿蒙靠 APK 兼容过渡 | ⏳ 下一站 |
+| Phase 2 | Express+TS+Prisma+PostgreSQL：登录/JWT/三角色RBAC + **会员/权益/订单模型(架构预留)** + 后台手动开通VIP | 后端 | ⏳ |
+| Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史） | 全端 | ⏳ |
+| Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ⏳ |
+| Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ⏳ |
+| Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ |
+| Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
+| Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
+| Phase H | 纯血鸿蒙 ArkTS WebView 壳（可选后置） | 鸿蒙 NEXT | ⏳ 可选 |
+
+> 收费模式=混合（订阅+买断终身+单项）；首期支付=后台手动开通（支付 provider 适配层预留）；权益划分=按教材年级/AI功能/高级功能（可配置系统）。
+
+### 技术选型（已确认）
+
+- 桌面 **Electron**（内嵌本地静态 HTTP 服务 + loadURL）；移动 **Capacitor**；后端 **Node.js+Express+TypeScript+Prisma**；库 **云端 PostgreSQL + 端侧 SQLite**；后台 **React+Vite+Tailwind+shadcn**；部署 **后端 Railway/Render + 后台 Vercel/EdgeOne**。
+
+### Phase 1 本次交付内容（新增 `electron/`，现有前端零改造）
+
+- **`electron/static-server.js`**（命门修正）：内嵌本地静态 HTTP 服务（绑 127.0.0.1 + 随机端口 + 路径穿越防护）。**原因**：现有前端全站用 `fetch('data/**.json')` 相对路径加载（6 处入口），Chromium 在 `file://` 下禁止 fetch，若用 `loadFile()` 会导致所有题库/教材/考试数据加载失败。改用内嵌服务 + `loadURL('http://127.0.0.1:<port>')`，现有 fetch **零改动**即可工作。
+- **`electron/main.js`**：主进程——启动静态服务 → 创建窗口 loadURL 加载现有前端 → 中文菜单 → 文件日志(userData/desktop.log) → IPC 提供 `app:getVersion` → 自动更新预留接口(Phase6)。`nodeIntegration=false` + `contextIsolation=true`。
+- **`electron/preload.js`**：contextBridge 安全白名单，暴露 `desktopBridge.getAppVersion()` / `isElectron` / `platform`。
+- **`index.html`**（仅微改）：版本号链路最前面加 Electron 分支——壳内用 `desktopBridge.getAppVersion()`（app.getVersion）注入版本，避免 `fetch('./version.txt')` 在壳内走 fallback。**不改动线上静态版逻辑**（无 desktopBridge 时走原有 URL?v=/version.txt 链路）。SW 因 hostname 非 *.github.io 天然不启用，无缓存回退问题。
+- **`package.json` + `electron-builder.yml`**：Electron 31.7.7 + electron-builder 24.13.3；打包白名单含前端运行时资源（index/js/data/audio/css/图标），排除 Python 脚本/后端(apps)/移动(mobile)/文档/备份等。Win=nsis(x64)，Mac=dmg(x64+arm64)。
+- **`.gitignore`**：新增忽略 `release/`、`dist/`、`out/`、`package-lock.json`。
+
+### 验证结果（全通过）
+
+- 静态服务托管 index/app.js/js/data/version.txt 全部 200；路径穿越 `/../secret` 被拦截 404。
+- Electron 冒烟：`title=乐学英语`、`bootOK=true`、`version=app-31.7.7`（Electron 分支生效，不依赖 version.txt）。
+- 打包 asar 资源随包核验：data 77 文件、audio 5639 MP3、js 19 模块全进包，无 Python/后端/移动目录泄漏。
+- 产物：`release\乐学英语 Setup 0.1.0.exe`（NSIS 安装程序，~208MB）+ `release\win-unpacked\乐学英语.exe`（免安装版）。用户双端真机验收通过。
+
+> ⚙️ **构建环境备注**：本机原无 Node，已装 Node v22.12.0 + npm 10.9.0（`~/.workbuddy/binaries/node/versions/22.12.0`）。构建命令：`npm install` → `npm run pack`(免安装) / `npm run dist:win`(安装包)；electron 二进制走 npmmirror 镜像。`release/` 与 `node_modules/` 均 git 忽略，不入仓。
+> 📌 **注意**：桌面/移动壳不参与 GitHub Pages 部署，`version.txt` 仍仅服务线上静态版（铁律9不变）。桌面 App 版本号由 `package.json` 的 version 字段管理（当前 0.1.0）。
 
 
 

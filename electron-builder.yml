@@ -1,0 +1,68 @@
+# electron-builder 打包配置 —— Phase 1 桌面壳（Win/Mac）
+# 说明：复用现有前端资源随包；排除后端/移动/开发脚本等无关目录，控制包体。
+appId: com.yxyy.englishtutor
+productName: 乐学英语
+copyright: Copyright © 2026 english-tutor
+
+directories:
+  output: release
+
+# 白名单式包含：Electron 壳 + 现有前端运行时资源。
+# 排除后端(apps)、移动壳(mobile/harmony)、Python 脚本、文档、备份等。
+files:
+  - electron/**/*
+  - index.html
+  - mobile.html
+  - app.js
+  - questionBank.js
+  - sw.js
+  - manifest.json
+  - styles.css
+  - tailwind.css
+  - version.txt
+  - icon.svg
+  - icon-192.png
+  - icon-512.png
+  - js/**/*
+  - data/**/*
+  - audio/**/*
+  - package.json
+  - "!**/*.py"
+  - "!**/*.pyc"
+  - "!**/__pycache__/**"
+  - "!**/.backups/**"
+  - "!scripts/**"
+  - "!tests/**"
+  - "!apps/**"
+  - "!mobile/**"
+  - "!harmony/**"
+  - "!packages/**"
+  - "!**/*.md"
+  - "!**/*.sh"
+  - "!**/*.command"
+  - "!**/*.bat"
+  - "!dev-push.ps1"
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: icon-512.png
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 乐学英语
+
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: icon-512.png
+  category: public.app-category.education

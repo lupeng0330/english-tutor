@@ -47,6 +47,16 @@
            + '-' + String(d.getHours()).padStart(2,'0');
     }
 
+    // 0) Electron/移动壳环境：无 version.txt，直接用原生应用版本号，
+    //    避免 fetch('./version.txt') 在壳内走 fallback（不影响线上静态版逻辑）。
+    try {
+      if (window.desktopBridge && typeof window.desktopBridge.getAppVersion === 'function') {
+        return window.desktopBridge.getAppVersion()
+          .then(function(v){ return v ? ('app-' + v) : fallbackVersion(); })
+          .catch(function(){ return fallbackVersion(); });
+      }
+    } catch(e){}
+
     // 1) URL ?v=xxx 优先级最高（用于强制回到特定版本）
     try {
       var u = new URL(window.location.href);

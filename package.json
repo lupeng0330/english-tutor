@@ -1,0 +1,21 @@
+{
+  "name": "yxyy-desktop",
+  "version": "0.1.0",
+  "description": "乐学英语 桌面端（Electron 壳，复用现有前端）",
+  "private": true,
+  "main": "electron/main.js",
+  "author": "english-tutor",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win",
+    "dist:mac": "electron-builder --mac",
+    "pack": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "31.7.7",
+    "electron-builder": "24.13.3"
+  }
+}
