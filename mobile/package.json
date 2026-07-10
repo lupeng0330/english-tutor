@@ -1,0 +1,23 @@
+{
+  "name": "yxyy-mobile",
+  "version": "0.1.0",
+  "description": "乐学英语 移动端（Capacitor 壳，复用现有前端）",
+  "private": true,
+  "scripts": {
+    "sync-web": "node scripts/copy-web-assets.js",
+    "cap:sync": "node scripts/copy-web-assets.js && cap sync",
+    "cap:add:android": "node scripts/copy-web-assets.js && cap add android",
+    "cap:add:ios": "node scripts/copy-web-assets.js && cap add ios",
+    "cap:open:android": "cap open android",
+    "cap:open:ios": "cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "6.2.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "6.2.0",
+    "@capacitor/android": "6.2.0",
+    "@capacitor/ios": "6.2.0",
+    "@capacitor/app": "6.0.2"
+  }
+}

@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-10 · 🖥️ 全平台化改造启动 · Phase 1 桌面 Electron 壳已上线(§58)——新增 electron/(内嵌本地静态HTTP服务解决file://下fetch失败 + loadURL加载现有前端 + preload注入app.getVersion + Win/Mac打包配置)，产出「乐学英语 Setup.exe」；现有前端零改造被桌面壳复用。下一站→Phase M 移动端Capacitor(Android/iOS套壳)。完整路线见 §58 计划总览**
+> 最后更新：**2026-07-10 · 🖥️📱 全平台化改造 · Phase 1 桌面Electron壳 + Phase M 移动Capacitor骨架已上线(§58)——桌面产出「乐学英语 Setup.exe」；移动新增 mobile/(Capacitor工程+copy-web-assets同步脚本+版本号Capacitor分支)，www复用现有前端相对fetch全200验证通过，Android/iOS原生打包待SDK/Mac环境。现有前端零改造被三端壳复用。下一站→Phase 2 后端(Express+PG+账号/权限/会员模型)。完整路线见 §58**
 
 ---
 
@@ -4129,7 +4129,7 @@ P6-A 补全对话 (~2天)
 | 阶段 | 内容 | 平台/范围 | 状态 |
 |---|---|---|---|
 | **Phase 1** | **桌面 Electron 壳 MVP** | Win/Mac | ✅ **已上线（本次）** |
-| Phase M | 移动 Capacitor 套壳（复用同一份前端，与 Electron 同哲学） | Android/iOS；鸿蒙靠 APK 兼容过渡 | ⏳ 下一站 |
+| Phase M | 移动 Capacitor 套壳（复用同一份前端，与 Electron 同哲学） | Android/iOS；鸿蒙靠 APK 兼容过渡 | 🟡 **骨架已上线**（Web层已验证；原生打包待SDK/Mac环境） |
 | Phase 2 | Express+TS+Prisma+PostgreSQL：登录/JWT/三角色RBAC + **会员/权益/订单模型(架构预留)** + 后台手动开通VIP | 后端 | ⏳ |
 | Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史） | 全端 | ⏳ |
 | Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ⏳ |

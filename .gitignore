@@ -37,6 +37,13 @@ release/
 dist/
 out/
 
+# Capacitor 移动壳：webDir 构建产物(由 copy-web-assets.js 生成) + 原生构建缓存
+mobile/www/
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/ios/App/Pods/
+mobile/ios/App/build/
+
 # 临时二维码页（仅本地调试用）
 qrcode*.html
 _parse_tmp.py

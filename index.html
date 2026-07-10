@@ -49,11 +49,25 @@
 
     // 0) Electron/移动壳环境：无 version.txt，直接用原生应用版本号，
     //    避免 fetch('./version.txt') 在壳内走 fallback（不影响线上静态版逻辑）。
+    // 0a) 桌面 Electron：preload 暴露 desktopBridge.getAppVersion()
     try {
       if (window.desktopBridge && typeof window.desktopBridge.getAppVersion === 'function') {
         return window.desktopBridge.getAppVersion()
           .then(function(v){ return v ? ('app-' + v) : fallbackVersion(); })
           .catch(function(){ return fallbackVersion(); });
+      }
+    } catch(e){}
+    // 0b) 移动 Capacitor：@capacitor/app 的 App.getInfo() 提供原生版本
+    try {
+      if (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()) {
+        var CapApp = (window.Capacitor.Plugins && window.Capacitor.Plugins.App) || null;
+        if (CapApp && typeof CapApp.getInfo === 'function') {
+          return CapApp.getInfo()
+            .then(function(info){ return (info && info.version) ? ('app-' + info.version) : fallbackVersion(); })
+            .catch(function(){ return fallbackVersion(); });
+        }
+        // 原生平台但拿不到插件信息也不应去 fetch version.txt
+        return Promise.resolve(fallbackVersion());
       }
     } catch(e){}
 
