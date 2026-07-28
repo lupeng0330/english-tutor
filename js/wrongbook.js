@@ -30,7 +30,15 @@ function _saveWrongbook() {
   } catch (e) {
     console.warn('[错题本] 保存失败', e);
   }
+  // Phase3 云同步：本地写变更后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(WRONGBOOK_STORAGE_KEY); } catch (e) {}
 }
+
+// Phase3 云同步：拉取云端覆盖 localStorage 后，清空内存缓存以让 _loadWrongbook 重读新数据
+window.__wrongbookReload = function () {
+  _wrongbook = null;
+  _loadWrongbook();
+};
 
 // 题目稳定 id：优先 q.id / 否则 code + q 文本的简易 hash
 function _questionId(q) {

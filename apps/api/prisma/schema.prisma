@@ -42,6 +42,26 @@ model User {
   // 班级：作为学生所属 / 作为教师任教
   studentOf         ClassMember[]
   teachingClasses   Class[]           @relation("classTeacher")
+  syncBlobs         SyncBlob[]
+}
+
+// 学习数据云同步 blob：按 (user, profileId, key) 存一份 JSON + 版本号。
+// key 如 yxyy_wrongbook_v1 / yxyy_stats_v1；profileId 对应前端本地档案。
+// 冲突策略：服务端 version 单调递增 + 客户端 updatedAt 辅助判断（Phase3 首批用
+// last-write-wins：客户端推送带上本地 version，服务端更新版本并返回新版本）。
+model SyncBlob {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  profileId  String   @default("default")
+  key        String   // base key，如 yxyy_wrongbook_v1
+  data       String   // JSON 字符串
+  version    Int      @default(1)
+  updatedAt  DateTime @updatedAt
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, profileId, key])
+  @@index([userId])
 }
 
 // Refresh Token（支持登出/失效）

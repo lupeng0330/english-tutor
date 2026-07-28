@@ -1862,3 +1862,13 @@ header.bg-white { background: var(--surface) !important; }
 #contextBar .text-blue-700 { color: var(--brand-strong) !important; }
 #contextBar .text-slate-500 { color: #64748b !important; }
 #contextBar .text-slate-700, #contextBar .text-slate-600 { color: #475569 !important; }
+
+/* ☁️ Phase3 云账号登录区块（个人中心面板内） */
+.cloud-auth { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: rgba(37,99,235,0.06); border: 1px solid rgba(37,99,235,0.12); }
+.cloud-auth-title { font-size: 13px; font-weight: 600; color: var(--brand-strong, #2563eb); margin-bottom: 4px; }
+.cloud-auth-hint { font-size: 11px; color: #64748b; line-height: 1.5; margin-bottom: 8px; }
+.cloud-auth-user { font-size: 13px; color: #0f172a; margin-bottom: 4px; }
+.cloud-auth-input { display: block; width: 100%; box-sizing: border-box; margin: 6px 0; padding: 8px 10px; font-size: 13px; border: 1px solid #cbd5e1; border-radius: 8px; outline: none; background: #fff; color: #0f172a; }
+.cloud-auth-input:focus { border-color: var(--brand-strong, #2563eb); box-shadow: 0 0 0 2px rgba(37,99,235,0.15); }
+.cloud-auth-ops { display: flex; align-items: center; }
+.cloud-auth-msg { font-size: 12px; margin-top: 6px; min-height: 16px; }

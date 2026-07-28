@@ -40,7 +40,15 @@ function _loadStats() {
 function _saveStats() {
   // v01.20：走 _pkey() 加 :profileId 后缀
   try { localStorage.setItem(_pkey(STATS_KEY), JSON.stringify(_stats || {})); } catch(e) {}
+  // Phase3 云同步：本地写变更后节流推送云端（未登录时 no-op；计时器高频写由 CloudSync 节流）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(STATS_KEY); } catch(e) {}
 }
+
+// Phase3 云同步：拉取云端覆盖 localStorage 后，清空内存缓存以让 _loadStats 重读新数据
+window.__statsReload = function () {
+  _stats = null;
+  _loadStats();
+};
 function _todayStr() {
   const d = new Date();
   return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');

@@ -52,6 +52,11 @@
     return 'p_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 6);
   }
 
+  // Phase3 云同步：档案列表变更（新建/重命名/删除）后节流推送云端（未登录时 no-op）
+  function _notifyProfilesChanged() {
+    try { if (window.CloudSync) window.CloudSync.schedulePush(KEY_PROFILES); } catch (e) {}
+  }
+
   function _ensureDefaultProfile() {
     // 内部工具：确保至少有一个档案 + 有 active id；只在被调用时执行，IIFE 不自动调用。
     var list = _readJSON(KEY_PROFILES, null);
@@ -120,6 +125,7 @@
       var prof = { id: _genId(), name: trimmed, createdAt: Date.now() };
       list.push(prof);
       _writeJSON(KEY_PROFILES, list);
+      _notifyProfilesChanged();
       return prof;
     },
 
@@ -139,7 +145,7 @@
           break;
         }
       }
-      if (changed) _writeJSON(KEY_PROFILES, list);
+      if (changed) { _writeJSON(KEY_PROFILES, list); _notifyProfilesChanged(); }
       return changed;
     },
 
@@ -161,6 +167,7 @@
 
       list.splice(idx, 1);
       _writeJSON(KEY_PROFILES, list);
+      _notifyProfilesChanged(); // 删除也推送（他端按并集合并，不会误删他端本地档案）
 
       // 清理对应数据
       for (var k = 0; k < DATA_KEYS.length; k++) {

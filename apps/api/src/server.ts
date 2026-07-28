@@ -6,6 +6,7 @@ import { errorHandler } from './middleware/error';
 import authRouter from './routes/auth';
 import usersRouter from './routes/users';
 import membershipRouter from './routes/membership';
+import syncRouter from './routes/sync';
 
 export function createApp() {
   const app = express();
@@ -29,6 +30,7 @@ export function createApp() {
   app.use('/api/auth', authRouter);
   app.use('/api/users', usersRouter);
   app.use('/api', membershipRouter); // /api/me/entitlements, /api/plans, /api/admin/*
+  app.use('/api', syncRouter); // /api/sync, /api/sync/:key
 
   // 错误处理（最后）
   app.use(errorHandler);

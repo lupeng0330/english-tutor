@@ -361,6 +361,13 @@ async function switchToProfile(profileId) {
     console.warn('[switchToProfile] 教材/题库加载失败', e);
   }
 
+  // 3.5) 已登录时：拉取新档案的云端数据（错题/统计），让该档案在他端的学习记录同步过来
+  try {
+    if (window.CloudSync && window.CloudSync.isEnabled && window.CloudSync.isEnabled()) {
+      await window.CloudSync.pullAll();
+    }
+  } catch (e) { console.warn('[switchToProfile] 云端拉取失败（保留本地）', e); }
+
   // 4) 全量刷新 UI
   try { applyContextChange(); } catch (e) { console.warn(e); }
   try { renderHomeStats(); }   catch (e) { console.warn(e); }
@@ -414,10 +421,12 @@ function renderProfilePanel() {
     '</div>',
     '<button id="profileCreateBtn" class="profile-create-btn">+ 新建档案</button>',
     '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>',
+    _renderCloudAuthHTML(),
     _renderThemePickerHTML()
   ].join('');
   panel.innerHTML = html;
   _bindThemePicker(panel);
+  _bindCloudAuth(panel);
 
   // 绑定事件（事件委托）
   panel.querySelectorAll('[data-action]').forEach(el => {
@@ -467,6 +476,123 @@ function renderProfilePanel() {
       }
     });
   }
+}
+
+/** ☁️ 云账号登录区块 HTML（渐进增强：未登录显示登录/注册入口，已登录显示账号+同步+登出） */
+function _renderCloudAuthHTML() {
+  if (!window.ApiClient) return '';
+  // 后端未开通（如线上未部署云端）：优雅降级——只提示“即将上线”，不显示登录框，避免连不上转圈/误导
+  if (window.ApiClient.isBackendAvailable && !window.ApiClient.isBackendAvailable()) {
+    return (
+      '<div class="cloud-auth" id="cloudAuthBox">' +
+        '<div class="cloud-auth-title">☁️ 云同步（即将上线）</div>' +
+        '<div class="cloud-auth-hint">当前学习记录、错题本已安全保存在本机，完全可用；跨设备云端同步正在开发中，上线后可登录账号多端同步，敬请期待。</div>' +
+      '</div>'
+    );
+  }
+  const user = window.ApiClient.getUser();
+  const loggedIn = window.ApiClient.isLoggedIn();
+  if (loggedIn && user) {
+    const name = String(user.displayName || user.username || '').replace(/</g, '&lt;');
+    return (
+      '<div class="cloud-auth" id="cloudAuthBox">' +
+        '<div class="cloud-auth-title">☁️ 云账号</div>' +
+        '<div class="cloud-auth-user">已登录：<b>' + name + '</b></div>' +
+        '<div class="cloud-auth-hint">错题本、学习统计已开启云端同步</div>' +
+        '<div class="cloud-auth-ops">' +
+          '<button id="cloudSyncNowBtn" class="profile-create-btn" style="margin-top:6px">立即同步</button>' +
+          '<button id="cloudLogoutBtn" class="profile-op-btn profile-op-del" style="margin-left:8px">登出</button>' +
+        '</div>' +
+        '<div class="cloud-auth-msg" id="cloudAuthMsg"></div>' +
+      '</div>'
+    );
+  }
+  return (
+    '<div class="cloud-auth" id="cloudAuthBox">' +
+      '<div class="cloud-auth-title">☁️ 云账号（可选）</div>' +
+      '<div class="cloud-auth-hint">登录后错题本/统计可跨设备同步；不登录不影响本地使用</div>' +
+      '<input id="cloudUser" class="cloud-auth-input" placeholder="用户名" autocomplete="username" />' +
+      '<input id="cloudPass" class="cloud-auth-input" type="password" placeholder="密码" autocomplete="current-password" />' +
+      '<div class="cloud-auth-ops">' +
+        '<button id="cloudLoginBtn" class="profile-create-btn" style="margin-top:6px">登录</button>' +
+        '<button id="cloudRegisterBtn" class="profile-op-btn" style="margin-left:8px">注册</button>' +
+      '</div>' +
+      '<div class="cloud-auth-msg" id="cloudAuthMsg"></div>' +
+    '</div>'
+  );
+}
+
+/** 绑定云账号登录区块事件（独立于档案/主题逻辑） */
+function _bindCloudAuth(panel) {
+  if (!panel || !window.ApiClient) return;
+  const msg = panel.querySelector('#cloudAuthMsg');
+  const setMsg = function (t, isErr) {
+    if (msg) { msg.textContent = t || ''; msg.style.color = isErr ? '#dc2626' : '#16a34a'; }
+  };
+
+  const loginBtn = panel.querySelector('#cloudLoginBtn');
+  const registerBtn = panel.querySelector('#cloudRegisterBtn');
+  const logoutBtn = panel.querySelector('#cloudLogoutBtn');
+  const syncBtn = panel.querySelector('#cloudSyncNowBtn');
+
+  const doLogin = function () {
+    const u = (panel.querySelector('#cloudUser') || {}).value || '';
+    const p = (panel.querySelector('#cloudPass') || {}).value || '';
+    if (!u || !p) { setMsg('请输入用户名和密码', true); return; }
+    setMsg('登录中…');
+    window.ApiClient.login(u.trim(), p)
+      .then(function () {
+        // 登录成功：立即更新 UI 为已登录（不再长时间停留“正在同步…”）；
+        // 云同步放后台执行，并加 10s 超时兜底——即使同步卡住/失败，也不会转圈、不影响已登录状态。
+        renderProfilePanel();
+        try {
+          if (window.CloudSync) {
+            var syncP = window.CloudSync.onLogin();
+            Promise.race([
+              syncP,
+              new Promise(function (resolve) { setTimeout(resolve, 10000); }),
+            ]).catch(function () {});
+          }
+        } catch (e) {}
+      })
+      .catch(function (err) {
+        const m = (err && err.body && err.body.error && err.body.error.message) || '登录失败，请检查用户名密码或后端服务';
+        setMsg(m, true);
+      });
+  };
+
+  if (loginBtn) loginBtn.addEventListener('click', function (ev) { ev.stopPropagation(); doLogin(); });
+  if (registerBtn) registerBtn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    const u = (panel.querySelector('#cloudUser') || {}).value || '';
+    const p = (panel.querySelector('#cloudPass') || {}).value || '';
+    if (!u || u.trim().length < 3 || !p || p.length < 6) { setMsg('用户名≥3位、密码≥6位', true); return; }
+    setMsg('注册中…');
+    window.ApiClient.register(u.trim(), p)
+      .then(function () { setMsg('注册成功，正在登录…'); doLogin(); })
+      .catch(function (err) {
+        const m = (err && err.body && err.body.error && err.body.error.message) || '注册失败';
+        setMsg(m, true);
+      });
+  });
+  if (logoutBtn) logoutBtn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    window.ApiClient.logout().then(function () {
+      if (window.CloudSync) window.CloudSync.onLogout();
+      renderProfilePanel();
+    });
+  });
+  if (syncBtn) syncBtn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    setMsg('同步中…');
+    Promise.all([
+      window.CloudSync ? window.CloudSync.pushNow('yxyy_wrongbook_v1') : null,
+      window.CloudSync ? window.CloudSync.pushNow('yxyy_stats_v1') : null,
+    ]).then(function () {
+      return window.CloudSync ? window.CloudSync.pullAll() : null;
+    }).then(function () { setMsg('同步完成'); })
+      .catch(function () { setMsg('同步失败，请稍后重试', true); });
+  });
 }
 
 /** 🎨 主题选择器 HTML（6 套色卡，当前高亮） */

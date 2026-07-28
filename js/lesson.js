@@ -357,6 +357,28 @@ function submitReadingEx() {
           fb.textContent = '✗ 正确答案：' + correctText;
         }
       }
+      // 错题进错题本（与简答题分支对齐：选择题答错也要进错题本，之前漏接）
+      if (!thisOk) {
+        try {
+          const uid = _readingExState.uid;
+          const _lessonIdx = _readingExState.lessonIdx | 0;
+          const _lesson = normalizeLessons(state.currentUnit)[_lessonIdx] || {};
+          const correctText = (it.options && it.options[correctIdx]) ? it.options[correctIdx] : it.a;
+          const userText = (userIdx >= 0 && it.options && it.options[userIdx]) ? it.options[userIdx] : '(未作答)';
+          recordAnswer('reading_qa', {
+            id: 'rex_' + uid + '_' + i,
+            q: it.q,
+            correct: correctText,
+            user: userText,
+            unit: uid,
+            grade: state.currentGrade,
+            lessonIdx: _lessonIdx,
+            lessonTitle: _lesson.title || '',
+            passage: _lesson.en || '',
+            blockTitle: _readingExState.blockTitle || ''
+          }, false);
+        } catch(e){}
+      }
     } else {
       const ta = row.querySelector('textarea.rex-input');
       user = ta ? ta.value : '';
