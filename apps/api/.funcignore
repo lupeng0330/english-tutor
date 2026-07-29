@@ -1,0 +1,7 @@
+.env
+dev.db
+dev.db-journal
+*.log
+_*.txt
+_*.js
+node_modules/.cache

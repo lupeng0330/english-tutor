@@ -31,6 +31,19 @@
 </script>
 <!-- 🆕 v01.17：Chart.js 本地化（原 CDN），配合 sw.js 预缓存保证离线报告页图表可用 -->
 <script src="./js/vendor/chart.umd.min.js"></script>
+<!-- 🆕 云端后端地址（CloudBase 云函数）：仅线上环境注入；本地/局域网开发不注入，走 api-client.js 的本地 127.0.0.1:4000 默认 -->
+<script>
+  (function () {
+    try {
+      var h = (location && location.hostname) || '';
+      var isLocal = (h === 'localhost' || h === '127.0.0.1' || h === '' ||
+        /^192\.168\./.test(h) || /^10\./.test(h) || /^172\.(1[6-9]|2\d|3[01])\./.test(h));
+      if (!isLocal) {
+        window.__API_BASE = 'https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api';
+      }
+    } catch (e) {}
+  })();
+</script>
 <!-- 🆕 缓存破坏：优先级 URL?v= > version.txt(commit hash) > 当日小时戳。手机/PC 拿到同一版本号，推送后立即更新。 -->
 <script>
   window.__APP_VERSION = 'loading';

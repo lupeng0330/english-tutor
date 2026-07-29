@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-28 · 🖥️📱🔐☁️ 全平台化改造 · Phase 3 云同步首批已上线(§58)——错题本/统计/档案列表三端同步：登录时本地↔云端合并(存量上云不丢数据)、写时3s节流推送、切回前台自动拉取(30s节流)、切换档案自动拉取该档案数据、版本冲突409检测、refreshToken加jti防同秒500、线上未部署后端时「云同步即将上线」优雅降级;另修复课本理解自测选择题答错不进错题本。后端e2e 17/17 PASS,tsc 0错误。下一站→CloudBase后端部署(公网同步可用)。完整路线见 §58**
+> 最后更新：**2026-07-29 · 🖥️📱🔐☁️🚀 全平台化改造 · 后端已上云(CloudBase)——Phase 3 云同步对公网用户可用(§59)：apps/api 部署至腾讯云 CloudBase 云函数Web版(体验版免费额度)，公网地址 https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api；前端 index.html 注入 __API_BASE(仅线上环境,本地开发不受影响)，线上用户登录即享错题/统计/档案跨设备同步。公网 e2e 7/7 PASS。踩坑记录与部署工具链见 §59。下一站→Phase 3 剩余数据(考试历史/掌握度)增量接入 or Phase 4 管理后台**
 
 ---
 
@@ -4163,6 +4163,57 @@ P6-A 补全对话 (~2天)
 
 > ⚙️ **构建环境备注**：本机原无 Node，已装 Node v22.12.0 + npm 10.9.0（`~/.workbuddy/binaries/node/versions/22.12.0`）。构建命令：`npm install` → `npm run pack`(免安装) / `npm run dist:win`(安装包)；electron 二进制走 npmmirror 镜像。`release/` 与 `node_modules/` 均 git 忽略，不入仓。
 > 📌 **注意**：桌面/移动壳不参与 GitHub Pages 部署，`version.txt` 仍仅服务线上静态版（铁律9不变）。桌面 App 版本号由 `package.json` 的 version 字段管理（当前 0.1.0）。
+
+---
+
+## 59. 🚀 后端上云 · CloudBase 云函数 Web 版（2026-07-29）
+
+> 📌 **成果**：`apps/api`（Express+Prisma SQLite）已部署至腾讯云 CloudBase **云函数 Web 版**（体验版，免费额度内），Phase 3 云同步对公网用户开放。
+
+### 线上信息
+
+| 项 | 值 |
+|---|---|
+| 环境 ID | `happyenglish-d1gda90e97d02a8c6`（体验版，到期 2027-01-28） |
+| 公网地址 | `https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api` |
+| 健康检查 | `GET /yxyy-api/health` → `{"ok":true}` |
+| 前端接入 | `index.html` 注入 `window.__API_BASE`（仅非本地环境生效；本地/局域网开发仍走 `127.0.0.1:4000`） |
+| CORS | `scf_bootstrap` 设 `CORS_ORIGINS=https://lupeng0330.github.io,...` |
+
+### ⚠️ 体验版限制（重要）
+
+- **SQLite 放 `/tmp`，实例回收后数据丢失**——当前为「跑通链路」性质。正式持久化需升级按量付费套餐（云托管 + 云数据库 PG/MySQL），升级路径见 §58 计划 Phase 6。
+- 冷启动约 3-10s（init-db 建表 + Prisma 初始化），`init-db.js` 幂等（已存在表自动跳过）。
+
+### 部署工具链（apps/api/ 下，可复用）
+
+| 文件 | 作用 |
+|---|---|
+| `scf_bootstrap` | 云函数启动脚本（PORT=9000、/tmp SQLite、CORS）。**必须 LF 行尾 + 可执行权限** |
+| `scripts/pack-scf.js` | yazl 打部署 zip：`scf_bootstrap` 设 0o755，只带 rhel 引擎（排除 win/debian） |
+| `scripts/update-fn-code.js` | TC3 签名直调 SCF `UpdateFunctionCode`（ZipFile 直传，凭证读 CLI 本地 auth.json） |
+| `scripts/init-db.js` | 冷启动建表：PrismaClient 执行 `prisma/init.sql`（比 db push 可靠——CLI schema-engine 平台相关） |
+| `prisma/init.sql` | 由 `prisma migrate diff --from-empty --to-schema-datamodel ... --script` 生成（注意用 UTF-8 写文件） |
+| `cloudbaserc.json` | 环境/函数配置（envId、HTTP 类型、60s、512MB） |
+| `cloudbase-login.cmd`（项目根） | 双击式 CLI 密钥登录助手 |
+
+### 部署流程（以后更新后端代码后重发）
+
+```powershell
+cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-code.js
+```
+
+### 踩坑记录（全是血泪，后续别再踩）
+
+1. **CLI 打包漏 `scf_bootstrap`**（无后缀文件被默认忽略）→ 必须手动 yazl 打包（`pack-scf.js`）。
+2. **`scf_bootstrap` CRLF 行尾** → Linux shebang 解析失败报 "no such file or directory"（最经典坑），必须 LF。
+3. **SCF 运行时 = RHEL + OpenSSL 1.1** → `binaryTargets` 必须含 `rhel-openssl-1.1.x`（不是 debian）。
+4. **CloudBase「HTTP 访问服务路由」上游类型**：Event 函数用 `SCF`，Web 函数必须 `WEB_SCF`（`routes add`），否则 400 FunctionType invalid。
+5. **路径透传开启** + **Express 剥离 `/yxyy-api` 前缀**（server.ts 中间件）才是正确组合；不透传则子路径 404。
+6. `tcb api` 代理对 COS 桶名校验与 SCF 不一致 → 直接用 TC3 签名调原生 API（`update-fn-code.js`）。
+7. PowerShell `>` 重定向写文件默认 UTF-16 → init.sql 乱码，用 `Out-File -Encoding utf8`。
+8. CLI 交互式确认（选择环境/部署确认/删除确认）→ `RedirectStandardInput` 喂回车绕过。
+9. 公网 e2e 7/7 PASS：注册/登录/档案列表上云/错题上云/跨设备拉取/jti 同秒登录。
 
 
 

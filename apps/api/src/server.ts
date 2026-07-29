@@ -23,6 +23,13 @@ export function createApp() {
   );
   app.use(express.json({ limit: '2mb' }));
 
+  // 兼容 CloudBase HTTP 路由「路径透传」：网关把 /yxyy-api 前缀原样传给函数，剥掉再进路由
+  app.use((req, _res, next) => {
+    if (req.url === '/yxyy-api') req.url = '/';
+    else if (req.url.startsWith('/yxyy-api/')) req.url = req.url.slice('/yxyy-api'.length);
+    next();
+  });
+
   // 健康检查
   app.get('/health', (_req, res) => res.json({ ok: true, ts: Date.now() }));
 
