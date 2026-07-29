@@ -1,0 +1,2 @@
+# scf_bootstrap 必须保持 LF 行尾（Linux 云函数 shebang 解析需要，CRLF 会报 "no such file or directory"）
+scf_bootstrap text eol=lf
