@@ -949,13 +949,20 @@
 <script>
   (function () {
     function addScript(src) {
-      return new Promise(function(resolve) {
+      return new Promise(function(resolve, reject) {
         var s = document.createElement('script');
         s.src = window.__withVer ? window.__withVer(src) : src;
         s.onload = resolve;
-        s.onerror = resolve; // 失败也 resolve，避免阻塞整条链（单个脚本丢失的诊断走 console）
+        s.onerror = function(){ reject(new Error('核心脚本加载失败：' + src)); };
         document.body.appendChild(s);
       });
+    }
+    function showLoadError(err) {
+      console.error('[启动失败]', err);
+      var box = document.createElement('div');
+      box.style.cssText = 'position:fixed;inset:auto 16px 16px;z-index:10001;padding:14px 16px;border-radius:12px;background:#fff1f2;color:#9f1239;border:1px solid #fecdd3;box-shadow:0 10px 30px rgba(15,23,42,.18);font-size:13px;';
+      box.textContent = '应用资源加载不完整，请联网后刷新页面。';
+      document.body.appendChild(box);
     }
     // 等拿到真实版本号再 load；即便 fetch version.txt 失败，fallback 也会 resolve
     (window.__versionReady || Promise.resolve()).then(function(){
@@ -979,6 +986,7 @@
         .then(function(){ return addScript('./js/smartpick.js'); })
         .then(function(){ return addScript('./js/stats.js'); })
         .then(function(){ return addScript('./js/sync-client.js'); })
+        .then(function(){ return addScript('./js/offline-audio.js'); })
         .then(function(){ return addScript('./js/srs.js'); })
         .then(function(){ return addScript('./js/home.js'); })
         .then(function(){ return addScript('./js/lesson.js'); })
@@ -986,7 +994,8 @@
         .then(function(){ return addScript('./questionBank.js'); })
         .then(function(){ return addScript('./js/exam.js'); })
         .then(function(){ return addScript('./js/grammar.js'); })
-        .then(function(){ return addScript('./app.js'); });
+        .then(function(){ return addScript('./app.js'); })
+        .catch(showLoadError);
     });
   })();
 </script>
@@ -998,7 +1007,7 @@
      所有逻辑包裹在 'serviceWorker' in navigator 守卫内，失败只 warn，不影响主 app。 -->
 <script>
   // 仅线上 GitHub Pages（*.github.io）启用 Service Worker 做 PWA 离线缓存；
-  // 本地开发 / 局域网预览（localhost、127.0.0.1、192.168.x 等）一律禁用并彻底清缓存，
+  // 本地开发 / 局域网预览一律禁用 SW 并清理版本化应用壳缓存（保留用户离线语音包），
   // 从根源杜绝「本地验证时被 SW 旧缓存拽回旧版本」的问题。
   (function () {
     if (!('serviceWorker' in navigator)) return;
@@ -1007,15 +1016,22 @@
 
     if (isProd) {
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function (reg) {
-            console.log('[SW] 已注册，scope =', reg.scope);
-            if (reg && reg.update) { try { reg.update(); } catch (_) {} }
-          })
-          .catch(function (err) { console.warn('[SW] 注册失败', err); });
+        // 把应用版本写入 SW 脚本 URL；即使 sw.js 源码未变，每次发布也会触发浏览器更新检查与新壳安装。
+        Promise.resolve(window.__versionReady).then(function () {
+          return navigator.serviceWorker.register('./sw.js?v=' + encodeURIComponent(window.__APP_VERSION || ''));
+        }).then(function (reg) {
+          console.log('[SW] 已注册，scope =', reg.scope);
+          if (reg && reg.update) { try { reg.update(); } catch (_) {} }
+        }).catch(function (err) { console.warn('[SW] 注册失败', err); });
       });
     } else {
-      // 开发/预览环境：注销所有已注册 SW + 清空所有 Cache Storage
+      // 本地断网重载时不动现有控制器/缓存，便于验证离线应用壳；恢复联网后下次刷新会照常清理。
+      if (navigator.onLine === false) {
+        console.log('[SW] 开发环境当前离线，暂不清理缓存');
+        return;
+      }
+      // 开发/预览环境：注销 SW 并仅清理应用壳版本缓存；保留用户主动下载的
+      // lexue-audio-offline-v1 / lexue-data-offline-v1，且不触碰其它 Cache Storage。
       try {
         navigator.serviceWorker.getRegistrations().then(function (regs) {
           regs.forEach(function (r) { r.unregister(); });
@@ -1025,8 +1041,9 @@
       try {
         if (window.caches && caches.keys) {
           caches.keys().then(function (keys) {
-            keys.forEach(function (k) { caches.delete(k); });
-            if (keys.length) console.log('[SW] 开发环境已清空缓存', keys);
+            var stale = keys.filter(function (k) { return /^lexue-(?:static|runtime)-/.test(k); });
+            stale.forEach(function (k) { caches.delete(k); });
+            if (stale.length) console.log('[SW] 开发环境已清理应用壳缓存', stale);
           });
         }
       } catch (_) {}

@@ -424,11 +424,13 @@ function renderProfilePanel() {
     '<button id="profileCreateBtn" class="profile-create-btn">+ 新建档案</button>',
     '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>',
     _renderCloudAuthHTML(),
+    _renderOfflineAudioHTML(),
     _renderThemePickerHTML()
   ].join('');
   panel.innerHTML = html;
   _bindThemePicker(panel);
   _bindCloudAuth(panel);
+  _bindOfflineAudio(panel);
 
   // 绑定事件（事件委托）
   panel.querySelectorAll('[data-action]').forEach(el => {
@@ -594,6 +596,32 @@ function _bindCloudAuth(panel) {
         return window.CloudSync ? window.CloudSync.pullAll() : null;
       }).then(function () { setMsg('同步完成'); })
       .catch(function () { setMsg('同步失败，请稍后重试', true); });
+  });
+}
+
+/** Phase 3.5 离线语音包入口（下载数据全局共享，不跟随学习档案切换） */
+function _renderOfflineAudioHTML() {
+  if (!window.OfflineAudio) return '';
+  return (
+    '<div class="offline-audio-entry">' +
+      '<div class="offline-audio-entry-copy">' +
+        '<div class="offline-audio-entry-title">离线语音包</div>' +
+        '<div class="offline-audio-entry-hint" data-offline-audio-summary>正在读取当前教材…</div>' +
+      '</div>' +
+      '<button id="offlineAudioManageBtn" type="button" class="offline-audio-entry-btn">管理</button>' +
+    '</div>'
+  );
+}
+
+function _bindOfflineAudio(panel) {
+  if (!panel || !window.OfflineAudio) return;
+  const summary = panel.querySelector('[data-offline-audio-summary]');
+  window.OfflineAudio.updateSummary(summary);
+  const button = panel.querySelector('#offlineAudioManageBtn');
+  if (button) button.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    closeProfilePanel();
+    window.OfflineAudio.openManager();
   });
 }
 
