@@ -1927,17 +1927,29 @@ function _gradeExam() {
       }
       if (isCorrect) secCorrect++;
       secPoints += qPoints;
+      // 错题本与掌握度共用同一题目快照，保证 key 一致。
+      let trackedQuestion = q.original || q;
+      // 完形必须按当前空保存，而不是每个空反复写入同一篇原题；否则会碰撞、互相抵消且无法重练。
+      if (sec.type === 'cloze' && q.original && q.blankPos != null) {
+        trackedQuestion = {
+          grade: q.original.grade, term: q.original.term,
+          code: String(q.original.code || '') + '#' + q.blankPos,
+          q: q.q || ('第 ' + q.blankPos + ' 空'), options: q.options || [], answer: q.answer,
+          explain: q.explain || '', difficulty: q.original.difficulty || 2,
+          _clozeContext: {
+            passageCode: q.original.code || '', passage: q.original.passage || '',
+            topic: q.original.topic || '', currentBlankPos: q.blankPos,
+            totalBlanks: (q.original.blanks || []).length
+          }
+        };
+      }
       // 记录到错题本（🆕 P2-C：cloze 错题归 cloze 类，不再 mapping 到 grammar）
       try {
-        if (typeof recordAnswer === 'function') {
-          recordAnswer(sec.type, q.original || q, isCorrect);
-        }
+        if (typeof recordAnswer === 'function') recordAnswer(sec.type, trackedQuestion, isCorrect);
       } catch (e) { /* 静默 */ }
       // 记录掌握度
       try {
-        if (typeof recordMastery === 'function') {
-          recordMastery(sec.type, q.original || q, isCorrect);
-        }
+        if (typeof recordMastery === 'function') recordMastery(sec.type, trackedQuestion, isCorrect);
       } catch (e) { /* 静默 */ }
       // 记录统计
       try {

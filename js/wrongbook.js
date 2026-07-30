@@ -16,7 +16,13 @@ function _loadWrongbook() {
   try {
     // v01.20：走 _pkey() 加 :profileId 后缀，实现多用户档案数据隔离
     const raw = localStorage.getItem(_pkey(WRONGBOOK_STORAGE_KEY));
-    _wrongbook = raw ? JSON.parse(raw) : {};
+    const parsed = raw ? JSON.parse(raw) : {};
+    _wrongbook = parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+    // 忽略结构损坏的记录，避免列表渲染或一键重练被单条坏数据阻断。
+    Object.keys(_wrongbook).forEach(function(key) {
+      const rec = _wrongbook[key];
+      if (!rec || typeof rec !== 'object' || !rec.question || typeof rec.question !== 'object') delete _wrongbook[key];
+    });
   } catch (e) {
     console.warn('[错题本] 加载失败', e);
     _wrongbook = {};
@@ -40,10 +46,32 @@ window.__wrongbookReload = function () {
   _loadWrongbook();
 };
 
-// 题目稳定 id：优先 q.id / 否则 code + q 文本的简易 hash
+// 题目稳定 id：覆盖所有结构化题型字段，避免同 code、无 q/顶层 answer 的题互相覆盖。
 function _questionId(q) {
   if (q && q.id) return String(q.id);
-  const raw = String(q.code || '') + '|' + String(q.q || '') + '|' + String(q.answer || '');
+  q = q || {};
+  const identity = {
+    code: q.code != null ? q.code : '',
+    q: q.q != null ? q.q : '',
+    word: q.word != null ? q.word : '',
+    statement: q.statement != null ? q.statement : '',
+    passage: q.passage != null ? q.passage : '',
+    cn: q.cn != null ? q.cn : '',
+    original: typeof q.original === 'string' ? q.original : '',
+    target: q.target != null ? q.target : '',
+    prompt: q.prompt != null ? q.prompt : '',
+    topic: q.topic != null ? q.topic : '',
+    answer: q.answer !== undefined ? q.answer : null,
+    correct: q.correct !== undefined ? q.correct : null,
+    answers: q.answers || null,
+    options: q.options || null,
+    words: q.words || null,
+    blanks: q.blanks || null,
+    dialogue: q.dialogue || null,
+    pairs: q.pairs || null,
+    clozePos: q._clozeContext ? q._clozeContext.currentBlankPos : (q.blankPos || null)
+  };
+  const raw = JSON.stringify(identity);
   let h = 0;
   for (let i = 0; i < raw.length; i++) {
     h = ((h << 5) - h + raw.charCodeAt(i)) | 0;
@@ -51,6 +79,8 @@ function _questionId(q) {
   return 'h' + (h >>> 0).toString(36);
 }
 function _wbKey(type, q) {
+  // 历史错题重练沿用原 key，确保连续答对后能移出旧记录。
+  if (q && q._wrongbookKey) return String(q._wrongbookKey);
   const tb = (state && state.ctx && state.ctx.textbook) || 'jk';
   return tb + '::' + type + '::' + _questionId(q);
 }
@@ -162,25 +192,52 @@ const _WB_TYPE_LABELS = {
   grammar: '语法练习',
   reading: '阅读理解',
   cloze: '完形填空',     // 🆕 P2-C
+  listen_pic: '听音选图',
+  listen_judge: '听音判断',
+  listen_fill: '听音填空',
+  blank_fill: '完成句子',
+  sentence_order: '连词成句',
   dialog_complete: '补全对话',  // 🆕 P6-A
   sentence_transform: '句型转换',  // 🆕 P6-B
   matching: '匹配题',  // 🆕 P6-D1
   cloze_passage: '补全短文',  // 🆕 P6-D2
   reading_qa: '课文自测',
-  irregular: '不规则动词'
+  irregular: '不规则动词',
+  irreg_verb: '不规则动词'
 };
 function _wbTypeLabel(type) {
   return _WB_TYPE_LABELS[type] || (type || '其他');
 }
 
-// 取一条错题记录的"正确答案"文本（兼容选择题索引 / 拼写串 / 阅读自测 correct 字段）
+// 取结构化题目的可读题干，兼容历史字段。
+function _wbStemText(rec) {
+  const q = (rec && rec.question) || {};
+  if (q.q || q.word || q.statement) return String(q.q || q.word || q.statement);
+  if (q.title || q.topic) return String(q.title || q.topic);
+  if (q.cn || q.passage) return [q.cn, q.passage].filter(Boolean).join(' · ');
+  if (typeof q.original === 'string' || q.target) return [q.original, q.target].filter(Boolean).join(' → ');
+  if (Array.isArray(q.dialogue) && q.dialogue.length) return '根据对话内容补全 ' + (q.blanks || []).length + ' 个空位';
+  if (Array.isArray(q.pairs) && q.pairs.length) return '为 ' + q.pairs.length + ' 个问句匹配正确答句';
+  if (Array.isArray(q.blanks) && q.blanks.length) return '完成 ' + q.blanks.length + ' 个空位';
+  return '(题目数据不完整)';
+}
+
+// 取一条错题记录的"正确答案"文本，覆盖选择、填空、排序、对话和匹配题。
 function _wbAnswerText(rec) {
   const q = (rec && rec.question) || {};
   if (Array.isArray(q.options) && typeof q.answer === 'number') {
     return q.options[q.answer] != null ? String(q.options[q.answer]) : String(q.answer);
   }
+  if (Array.isArray(q.options) && typeof q.answer === 'string' && /^[A-Z]$/i.test(q.answer.trim())) {
+    const idx = q.answer.trim().toUpperCase().charCodeAt(0) - 65;
+    return q.options[idx] != null ? String(q.options[idx]) : q.answer;
+  }
+  if (q._judgeAnswer !== undefined) return q._judgeAnswer ? '正确（True）' : '错误（False）';
+  if (Array.isArray(q.answers) && q.answers.length) return q.answers.join(' / ');
+  if (Array.isArray(q.blanks) && q.blanks.length) return q.blanks.map(function(b){ return b.answer; }).filter(Boolean).join(' / ');
+  if (Array.isArray(q.pairs) && q.pairs.length) return q.pairs.map(function(p){ return p.q + ' → ' + p.a; }).join('；');
   if (q.correct != null) return String(q.correct);
-  if (q.answer != null) return String(q.answer);
+  if (q.answer != null) return Array.isArray(q.answer) ? q.answer.join(' ') : String(q.answer);
   return '—';
 }
 
@@ -297,17 +354,19 @@ function renderWrongbookPage() {
   listEl.innerHTML = list.map(rec => {
     const q = rec.question || {};
     const typeLabel = _wbTypeLabel(rec.type);
-    const stem = _escapeHtml(q.q || q.word || '(无题干)');
+    const stem = _escapeHtml(_wbStemText(rec));
     const answer = _escapeHtml(_wbAnswerText(rec));
     const explain = q.explain ? _escapeHtml(q.explain) : '';
     const when = _wbTimeAgo(rec.lastWrongAt);
     const key = _escapeHtml(rec._key);
     // 🆕 阅读类题目：详情区展示文章原文（reading 题来自题库 passage；reading_qa 题来自入错题本时存档的课文原文）
     const passageHtml = _wbPassageHtml(rec);
+    const correctIdx = typeof q.answer === 'number' ? q.answer
+      : (typeof q.answer === 'string' && /^[A-Z]$/i.test(q.answer.trim()) ? q.answer.trim().toUpperCase().charCodeAt(0) - 65 : -1);
     const optionsHtml = (Array.isArray(q.options) && q.options.length)
       ? '<div class="mt-1 space-y-1">' + q.options.map((o, i) =>
-          '<div class="text-sm ' + (i === q.answer ? 'text-green-700 font-semibold' : 'text-slate-600') + '">'
-          + String.fromCharCode(65 + i) + '. ' + _escapeHtml(String(o)) + (i === q.answer ? ' ✓' : '')
+          '<div class="text-sm ' + (i === correctIdx ? 'text-green-700 font-semibold' : 'text-slate-600') + '">'
+          + String.fromCharCode(65 + i) + '. ' + _escapeHtml(String(o)) + (i === correctIdx ? ' ✓' : '')
           + '</div>').join('') + '</div>'
       : '';
     return ''

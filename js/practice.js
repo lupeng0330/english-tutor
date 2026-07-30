@@ -24,9 +24,23 @@ function resetPracticeOnContextChange() {
   const inQuiz   = quizView   && !quizView.classList.contains('hide');
   const inResult = resultView && !resultView.classList.contains('hide');
 
-  // 正在答题：用新学段的题库重新抽题，无缝留在当前答题界面
+  // 正在答题：用新学段的题库重新抽题，无缝留在当前答题界面。
+  // 智能推荐是跨题型混合模式，不能拿虚拟类型 "smart" 去查题库，否则会得到空数组并提示 undefined。
   if (inQuiz && state.quizType) {
-    const newQs = filterQuestions(state.quizType);
+    if (state.quizType === 'smart') {
+      startSmartPractice();
+      const smartToast = document.getElementById('quizRefreshToast');
+      const smartCtx = document.getElementById('quizRefreshCtx');
+      if (smartToast && smartCtx) {
+        smartCtx.textContent = ctxBadgeText(state.ctx) + ' · 智能推荐';
+        smartToast.classList.remove('hide');
+        clearTimeout(window._quizToastTimer);
+        window._quizToastTimer = setTimeout(() => smartToast.classList.add('hide'), 2000);
+      }
+      return;
+    }
+    const rawNewQs = filterQuestions(state.quizType);
+    const newQs = state.quizType === 'cloze' ? rawNewQs : _preparePracticeList(state.quizType, rawNewQs);
     if (newQs.length > 0) {
       const shuffled = [...newQs].sort(() => Math.random() - 0.5).slice(0, Math.min(10, newQs.length));
       state.quizQuestions = shuffled;
@@ -53,9 +67,15 @@ function resetPracticeOnContextChange() {
       quizView.classList.add('hide');
       if (typeView)   typeView.classList.remove('hide');
       if (filterView) filterView.classList.remove('hide');
+      const missingType = state.quizType;
+      const missingLabel = {
+        spelling:'单词拼写', listening:'听力选择', grammar:'语法练习', reading:'阅读理解',
+        cloze:'完形填空', listen_pic:'听音选图', listen_judge:'听音判断', listen_fill:'听音填空',
+        blank_fill:'完成句子', sentence_transform:'句型转换', sentence_order:'连词成句',
+        dialog_complete:'补全对话', matching:'匹配题', cloze_passage:'补全短文'
+      }[missingType] || '当前类型';
       setTimeout(() => {
-        alert('⚠️ ' + ctxBadgeText(state.ctx) + ' 下暂无"' +
-              ({spelling:'单词拼写',listening:'听力选择',grammar:'语法练习',reading:'阅读理解'}[state.quizType]) +
+        alert('⚠️ ' + ctxBadgeText(state.ctx) + ' 下暂无"' + missingLabel +
               '"题目，请切换到其他学段或勾选"包含全部年级"');
       }, 100);
       return;
@@ -160,6 +180,66 @@ function _normSentence(s) {
     .trim();
 }
 window._normSentence = _normSentence;
+
+// 将题库中的多种历史字段统一成练习页可直接渲染/判分的结构。
+// 返回数组是为了把一篇完形拆成逐空题，避免混合推荐拿到整篇后无法作答。
+function _preparePracticeQuestions(type, raw) {
+  if (!raw || typeof raw !== 'object') return [];
+  if (type === 'cloze' && Array.isArray(raw.blanks) && !raw._clozeContext) {
+    return raw.blanks.map(function(b, bi) {
+      var options = Array.isArray(b.options) ? b.options.slice() : [];
+      return {
+        grade: raw.grade, term: raw.term, code: String(raw.code || '') + '#' + b.pos,
+        q: '第 ' + b.pos + ' 空', options: options, answer: options.indexOf(b.answer),
+        explain: b.explain || '', difficulty: raw.difficulty || 2, _wbType: 'cloze',
+        _clozeContext: {
+          passageCode: raw.code || '', passage: raw.passage || '', topic: raw.topic || '',
+          currentBlankPos: b.pos, totalBlanks: raw.blanks.length, blankIndex: bi
+        }
+      };
+    }).filter(_isPracticeQuestionUsable);
+  }
+
+  var q = Object.assign({}, raw, { _wbType: type });
+  // 兼容广州口语题库使用 A/B/C/D 字母作为答案。
+  if (Array.isArray(q.options) && typeof q.answer === 'string' && /^[A-Z]$/i.test(q.answer.trim())) {
+    q.answer = q.answer.trim().toUpperCase().charCodeAt(0) - 65;
+  }
+  // 判断题统一转成普通二选一，保留原始布尔答案供错题详情识别。
+  if (type === 'listen_judge') {
+    q.q = q.statement || q.q || '请根据录音判断正误';
+    q.options = ['正确（True）', '错误（False）'];
+    q._judgeAnswer = q.answer;
+    q.answer = q.answer === true ? 0 : 1;
+  }
+  // 课文自测和不规则动词历史错题使用 correct 字段，重练时转为文本答案。
+  if ((type === 'reading_qa' || type === 'irreg_verb' || type === 'irregular') && q.correct != null && q.answer == null) {
+    q.answer = String(q.correct);
+  }
+  return _isPracticeQuestionUsable(q) ? [q] : [];
+}
+
+function _isPracticeQuestionUsable(q) {
+  if (!q) return false;
+  var type = q._wbType || q.type || '';
+  if (type === 'spelling') return !!String(q.q || q.word || '').trim() && !!String(q.answer || '').trim();
+  if (type === 'sentence_order') return Array.isArray(q.words) && q.words.length > 0 && !!String(q.answer || '').trim();
+  if (type === 'blank_fill') return !!String(q.passage || '').trim() && Array.isArray(q.blanks) && q.blanks.length > 0;
+  if (type === 'sentence_transform') return !!String(q.original || '').trim() && (Array.isArray(q.answers) ? q.answers.length > 0 : !!q.answer);
+  if (type === 'dialog_complete') return Array.isArray(q.dialogue) && q.dialogue.length > 0 && Array.isArray(q.blanks) && q.blanks.length > 0;
+  if (type === 'matching') return Array.isArray(q.pairs) && q.pairs.length > 0;
+  if (type === 'cloze_passage') return !!String(q.passage || '').trim() && Array.isArray(q.blanks) && q.blanks.length > 0;
+  if (type === 'reading_qa' || type === 'irreg_verb' || type === 'irregular') return !!String(q.q || '').trim() && q.answer != null;
+  return !!String(q.q || '').trim() && Array.isArray(q.options) && q.options.length > 0
+    && typeof q.answer === 'number' && q.answer >= 0 && q.answer < q.options.length;
+}
+
+function _preparePracticeList(type, list) {
+  var out = [];
+  (list || []).forEach(function(q) { out.push.apply(out, _preparePracticeQuestions(type, q)); });
+  return out;
+}
+window._preparePracticeQuestions = _preparePracticeQuestions;
 
 // 从 code（如 "6B_U1" / "3A_U10"）推断单元 id（小写形式 u1/u10）
 function _inferUnitFromCode(code) {
@@ -310,10 +390,23 @@ function startPractice(type) {
       alert('🎉 错题本' + tabTip + '是空的，先去做一些练习吧！');
       return;
     }
+    // 统一兼容历史错题结构；整篇完形会拆成逐空题，其余不可作答的损坏记录不进入本轮。
+    const prepared = [];
+    list.forEach(function(w) {
+      const items = _preparePracticeQuestions(w.type, w.question);
+      items.forEach(function(item) {
+        item._wrongbookKey = w._key; // 沿用历史存储 key，答对后仍能正确移出旧记录
+        prepared.push(item);
+      });
+    });
+    if (!prepared.length) {
+      alert('⚠️ 当前错题记录缺少可作答内容，请在错题本详情中移除损坏记录。');
+      return;
+    }
     // 最多 10 题
-    const picked = list.slice(0, Math.min(10, list.length));
+    const picked = prepared.slice(0, Math.min(10, prepared.length));
     state.quizType = 'wrongbook';
-    state.quizQuestions = picked.map(w => Object.assign({}, w.question, { _wbType: w.type }));
+    state.quizQuestions = picked;
     state.quizIndex = 0;
     state.quizCorrect = 0;
     state.quizStartTime = Date.now();
@@ -332,7 +425,8 @@ function startPractice(type) {
     return;
   }
 
-  const questions = filterQuestions(type);
+  const rawQuestions = filterQuestions(type);
+  const questions = type === 'cloze' ? rawQuestions : _preparePracticeList(type, rawQuestions);
   if (questions.length === 0) {
     // 语法知识点过滤无结果时，给出更具体的提示
     if (type === 'grammar' && window._grammarPracticeTopic) {
@@ -433,7 +527,7 @@ function startSmartPractice() {
   const pool = [];
   for (const t of types) {
     let qs = [];
-    try { qs = filterQuestions(t) || []; } catch (e) { qs = []; }
+    try { qs = _preparePracticeList(t, filterQuestions(t) || []); } catch (e) { qs = []; }
     for (const q of qs) pool.push({ q, t, score: _scoreQuestion(t, q).score });
   }
   if (!pool.length) { alert('⚠️ 当前学段下暂无可练习的题目，请先到「练习」调整筛选。'); return; }
@@ -519,7 +613,7 @@ function showQuiz() {
   const audioBox = document.getElementById('quizAudioBox');
   const audioText = document.getElementById('quizAudioText');
   const playHint = document.getElementById('playAudioHint');
-  if (realType === 'listening' && q.audioText) {
+  if (['listening', 'listen_pic', 'listen_judge', 'listen_fill'].includes(realType) && q.audioText) {
     audioBox.classList.remove('hide');
     audioText.textContent = q.audioText;
     audioText.classList.add('hide'); // 默认隐藏原文
@@ -578,6 +672,66 @@ function showQuiz() {
         hintEl.className = 'text-xs text-slate-500';
       }
     }
+  } else if (realType === 'sentence_order') {
+    // ===== 连词成句：点击乱序词块组成完整句子 =====
+    var orderKey = (q.code || '') + ':' + state.quizIndex;
+    if (state._orderKey !== orderKey) {
+      state._orderKey = orderKey;
+      state._orderPicked = [];
+    }
+    var pickedOrder = state._orderPicked || [];
+    var qElOrder = document.getElementById('quizQuestion');
+    qElOrder.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElOrder.textContent = q.q || '请点击单词，组成正确句子';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var builtWords = pickedOrder.map(function(i){ return q.words[i]; });
+    var orderHtml = '<div class="min-h-14 p-3 mb-3 rounded-xl border-2 border-dashed border-blue-200 bg-blue-50 text-lg text-slate-800">'
+      + (builtWords.length ? escapeHtml(builtWords.join(' ')) : '<span class="text-slate-400 text-sm">按正确顺序点击下方词块</span>') + '</div>'
+      + '<div class="flex flex-wrap gap-2 mb-4">';
+    q.words.forEach(function(word, wi) {
+      if (pickedOrder.indexOf(wi) !== -1) return;
+      orderHtml += '<button class="px-3 py-2 rounded-lg bg-white border border-slate-300 hover:border-blue-400 hover:bg-blue-50" onclick="pickOrderWord(' + wi + ')">' + escapeHtml(word) + '</button>';
+    });
+    orderHtml += '</div><div class="flex gap-2"><button class="gradient-btn flex-1" onclick="answerQuiz(0)">提交答案</button>'
+      + '<button class="px-4 py-2 rounded-xl bg-slate-100 text-slate-600" onclick="undoOrderWord()">撤回</button>'
+      + '<button class="px-4 py-2 rounded-xl bg-slate-100 text-slate-600" onclick="resetOrderWords()">清空</button></div>';
+    opts.innerHTML = orderHtml;
+  } else if (realType === 'blank_fill') {
+    // ===== 完成句子：题干、中文提示、逐空选词 =====
+    var blankKey = (q.code || '') + ':' + state.quizIndex;
+    if (state._blankFillKey !== blankKey) {
+      state._blankFillKey = blankKey;
+      state.quizAnswers = new Array((q.blanks || []).length);
+    }
+    var qElBlank = document.getElementById('quizQuestion');
+    qElBlank.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElBlank.textContent = q.cn || '请选择合适的单词完成句子';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    var blankNo = 0;
+    var blankSentence = escapeHtml(String(q.passage || '')).replace(/_{2,}/g, function() {
+      var bi = blankNo++;
+      var blank = (q.blanks || [])[bi] || {};
+      var selected = (state.quizAnswers && state.quizAnswers[bi]) || '';
+      var html = '<select class="mx-1 px-2 py-1 rounded-lg border-2 border-blue-200 bg-white" onchange="setBlankFillAnswer(' + bi + ', this.value)"><option value="">请选择</option>';
+      (blank.options || []).forEach(function(word) {
+        html += '<option value="' + escapeHtml(word) + '"' + (selected === word ? ' selected' : '') + '>' + escapeHtml(word) + '</option>';
+      });
+      return html + '</select>';
+    });
+    opts.innerHTML = '<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-lg leading-10">' + blankSentence + '</div>'
+      + '<button class="gradient-btn w-full mt-3" onclick="answerQuiz(0)">提交答案</button>';
+  } else if (realType === 'reading_qa' || realType === 'irreg_verb' || realType === 'irregular') {
+    // ===== 历史课文自测 / 不规则动词错题：文本输入重练 =====
+    var qElText = document.getElementById('quizQuestion');
+    qElText.className = 'text-lg font-semibold text-slate-800 mb-3';
+    qElText.textContent = q.q || '请输入答案';
+    opts.classList.remove('hide');
+    if (spellBox) spellBox.classList.add('hide');
+    opts.innerHTML = '<input type="text" id="wrongTextInput" class="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:border-blue-400 focus:outline-none" '
+      + 'placeholder="在此输入答案..." autocomplete="off" onkeydown="if(event.key===\'Enter\'){answerQuiz(0);}">'
+      + '<button class="gradient-btn w-full mt-3" onclick="answerQuiz(0)">提交答案</button>';
   } else if (realType === 'dialog_complete') {
     // ===== 补全对话：对话+空位点选+词池点击填充 =====
     var dia = q.dialogue || [];
@@ -627,14 +781,14 @@ function showQuiz() {
   } else {
     // ===== 选择题（听力/语法/阅读） =====
     const qEl = document.getElementById('quizQuestion');
-    qEl.textContent = q.q;
+    qEl.textContent = q.q || q.statement || '请选择正确答案';
     qEl.className = 'text-lg font-semibold text-slate-800 mb-4';
     opts.classList.remove('hide');
     if (spellBox) spellBox.classList.add('hide');
     opts.innerHTML = (q.options || []).map((opt, i) => `
       <button onclick="answerQuiz(${i})" class="w-full text-left px-4 py-3 bg-slate-50 rounded-xl hover:bg-blue-50 border-2 border-transparent hover:border-blue-300 transition">
         <span class="inline-block w-6 h-6 rounded-full bg-white text-center font-bold mr-2 text-sm">${String.fromCharCode(65 + i)}</span>
-        ${opt}
+        ${escapeHtml(String(opt))}
       </button>
     `).join('');
   }
@@ -727,6 +881,8 @@ function generateRandomHint(answer) {
   const w = String(answer || '').toLowerCase();
   if (!w) return '';
   const n = w.length;
+  // 单字母词（如一年级字母 i）必须提供输入格，不能把答案直接完整显示。
+  if (n === 1) return '_';
   let k;
   if      (n <= 3) k = 1;
   else if (n <= 6) k = 2 + ((Math.random() * 2) | 0);   // 2 or 3
@@ -1068,6 +1224,46 @@ function answerQuiz(idx) {
   const q = state.quizQuestions[state.quizIndex];
   const realType = q._wbType || state.quizType;
   const fb = document.getElementById('quizFeedback');
+
+  // 连词成句：按点击顺序拼句，统一忽略大小写及标点前空格。
+  if (realType === 'sentence_order') {
+    var picked = state._orderPicked || [];
+    if (picked.length !== (q.words || []).length) { alert('请先使用全部词块组成句子！'); return; }
+    var orderOk;
+    if (Array.isArray(q.answer)) {
+      orderOk = q.answer.length === picked.length && q.answer.every(function(v, i){ return v === picked[i]; });
+    } else {
+      var built = picked.map(function(i){ return q.words[i]; }).join(' ');
+      orderOk = _normSentence(built) === _normSentence(q.answer);
+    }
+    _finishNonChoice(orderOk, q, realType, fb, orderOk ? (q.explain || '') : ('正确答案：' + q.answer));
+    return;
+  }
+
+  // 完成句子：逐空比对。
+  if (realType === 'blank_fill') {
+    var fillBlanks = q.blanks || [];
+    var fillAnswers = state.quizAnswers || [];
+    if (fillBlanks.some(function(_b, i){ return !fillAnswers[i]; })) { alert('请先填完所有空位再提交！'); return; }
+    var fillErrors = [];
+    fillBlanks.forEach(function(b, i) {
+      if (_normSentence(fillAnswers[i]) !== _normSentence(b.answer)) fillErrors.push('空' + (b.pos || i + 1) + '应填「' + b.answer + '」');
+    });
+    _finishNonChoice(fillErrors.length === 0, q, realType, fb, fillErrors.length ? fillErrors.join('\n') : (q.explain || ''));
+    return;
+  }
+
+  // 课文自测 / 不规则动词历史错题：文本答案重练。
+  if (realType === 'reading_qa' || realType === 'irreg_verb' || realType === 'irregular') {
+    var textInput = document.getElementById('wrongTextInput');
+    var textAnswer = textInput ? textInput.value.trim() : '';
+    if (!textAnswer) { alert('请先输入答案再提交！'); return; }
+    var accepted = (Array.isArray(q.answers) && q.answers.length ? q.answers : [q.answer != null ? q.answer : q.correct]).filter(function(v){ return v != null && String(v).trim(); });
+    var textOk = accepted.some(function(v){ return _normSentence(v) === _normSentence(textAnswer); });
+    _finishNonChoice(textOk, q, realType, fb, textOk ? '' : ('参考答案：' + accepted.join(' / ')));
+    if (textInput) textInput.disabled = true;
+    return;
+  }
 
   // 补全对话：检查所有空位是否都已填写
   if (realType === 'dialog_complete') {
@@ -1533,6 +1729,29 @@ window.refreshPracticeCounts = refreshPracticeCounts;
 window.filterQuestions = filterQuestions;
 window.selectDialogBlank = selectDialogBlank;
 
+// ===== 连词成句 / 完成句子练习辅助 =====
+function pickOrderWord(idx) {
+  if (!state._orderPicked) state._orderPicked = [];
+  if (state._orderPicked.indexOf(idx) === -1) state._orderPicked.push(idx);
+  showQuiz();
+}
+function undoOrderWord() {
+  if (state._orderPicked && state._orderPicked.length) state._orderPicked.pop();
+  showQuiz();
+}
+function resetOrderWords() {
+  state._orderPicked = [];
+  showQuiz();
+}
+function setBlankFillAnswer(idx, value) {
+  if (!state.quizAnswers) state.quizAnswers = [];
+  state.quizAnswers[idx] = value;
+}
+window.pickOrderWord = pickOrderWord;
+window.undoOrderWord = undoOrderWord;
+window.resetOrderWords = resetOrderWords;
+window.setBlankFillAnswer = setBlankFillAnswer;
+
 // ===== 匹配题 / 补全短文 练习辅助 (P6-D) =====
 function setMatchAnswer(idx, val) {
   if (!state.quizAnswers) state.quizAnswers = [];
@@ -1563,7 +1782,9 @@ function _finishNonChoice(ok, q, realType, fb, msg) {
   document.querySelectorAll('#quizOptions button').forEach(function(b){ b.disabled = true; });
   fb.classList.remove('hide');
   state.quizAnswered = true;
-  document.getElementById('quizNextBtn').classList.remove('hide');
+  const nextBtn = document.getElementById('quizNextBtn');
+  nextBtn.classList.remove('hide');
+  nextBtn.textContent = state.quizIndex < state.quizQuestions.length - 1 ? '下一题 →' : '查看结果 →';
 }
 window._finishNonChoice = _finishNonChoice;
 
