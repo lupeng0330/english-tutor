@@ -8,10 +8,31 @@
   // 本批同步的 key（与后端 ALLOWED_KEYS 对应）
   // PROFILE_SCOPED：按档案隔离（localStorage key 加 :profileId，云端按真实 profileId 存）
   // GLOBAL：全局元数据（档案列表本身；localStorage 无后缀，云端用固定 profileId='__global__' 存）
-  var PROFILE_SCOPED_KEYS = ['yxyy_wrongbook_v1', 'yxyy_stats_v1'];
+  var PROFILE_SCOPED_KEYS = [
+    'yxyy_wrongbook_v1',   // 错题本
+    'yxyy_stats_v1',       // 学习统计
+    'yxyy_exam_history',   // 考试历史
+    'yxyy_mastery_v1',     // 单词掌握度
+    'yxyy_srs_v1',         // 记忆曲线(SRS)
+    'yxyy_theme_v1',       // 主题（已档案化）
+    'yxyy_smartpick_v1',   // 智能推题开关
+    'yxyy_ctx',            // 学习上下文（年级/学期/教材）
+  ];
   var GLOBAL_KEYS = ['yxyy_profiles_v1'];
   var SYNC_KEYS = PROFILE_SCOPED_KEYS.concat(GLOBAL_KEYS);
   var GLOBAL_PID = '__global__';
+
+  // 裸字符串型 key（localStorage 里不是 JSON，不能 JSON.parse/stringify，否则值被加上引号污染）
+  var RAW_KEYS = ['yxyy_theme_v1', 'yxyy_smartpick_v1'];
+  function isRawKey(base) { return RAW_KEYS.indexOf(base) >= 0; }
+
+  // 兼容修复前已被污染的双重编码值（'"ink"'）：读取时 JSON 还原，同步一次即洗白
+  function normalizeRaw(v) {
+    if (typeof v === 'string' && v.length > 1 && v.charAt(0) === '"') {
+      try { var p = JSON.parse(v); if (typeof p === 'string') return p; } catch (e) {}
+    }
+    return v;
+  }
 
   // 记录各 key 的服务端版本（用于 PUT 的 baseVersion，做乐观并发）
   var _versions = {}; // { key: version }
@@ -56,6 +77,16 @@
     // 档案列表可能被云端合并出新档案：重渲染档案面板与 header 徽标
     try { if (window.renderProfilePanel) window.renderProfilePanel(); } catch (e) {}
     try { if (window.refreshProfileBadge) window.refreshProfileBadge(); } catch (e) {}
+    // 掌握度 / SRS 内存缓存复位（下次访问时重读 localStorage）
+    try { if (window.__masteryReset) window.__masteryReset(); } catch (e) {}
+    try { if (typeof srsReset === 'function') srsReset(); } catch (e) {}
+    // 主题按档案隔离且可被云端同步：重新应用当前档案主题
+    try { if (window.ThemeManager) window.ThemeManager.apply(window.ThemeManager.get()); } catch (e) {}
+    // 学习上下文（年级/学期/教材）可能被云端更新：重读并刷新上下文 UI
+    try { if (typeof loadCtx === 'function') loadCtx(); } catch (e) {}
+    try { if (typeof applyContextChange === 'function') applyContextChange(); } catch (e) {}
+    // 智能推题开关（每次调用都重读 localStorage，直接刷新 state）
+    try { if (typeof _loadSmartPick === 'function') _loadSmartPick(); } catch (e) {}
   }
 
   // —— 合并策略（登录时本地↔云端，保证存量上云、多设备互不覆盖）——
@@ -151,11 +182,73 @@
     return out;
   }
 
+  // 考试历史：[{examKey, date, score, ...}] 最新在前 ≤50 条 —— 按 examKey+date 去重并集，date 降序，截 50
+  function mergeExamHistory(server, local) {
+    var s = Array.isArray(server) ? server : [];
+    var l = Array.isArray(local) ? local : [];
+    var seen = {};
+    var out = [];
+    function add(r) {
+      if (!r) return;
+      var k = (r.examKey || '') + '|' + (r.date || '');
+      if (seen[k]) return;
+      seen[k] = 1;
+      out.push(r);
+    }
+    l.forEach(add); // 本地优先（同一条保留本地记录）
+    s.forEach(add);
+    out.sort(function (a, b) { return new Date(b.date || 0) - new Date(a.date || 0); });
+    return out.slice(0, 50);
+  }
+
+  // 掌握度：{wbKey: {seen,correct,wrong,streak,firstAt,lastAt}} —— 按 key 并集；计数取大；firstAt 取小、lastAt 取大
+  function mergeMastery(server, local) {
+    var s = (server && typeof server === 'object') ? server : {};
+    var l = (local && typeof local === 'object') ? local : {};
+    var out = {};
+    var k;
+    for (k in s) { if (Object.prototype.hasOwnProperty.call(s, k)) out[k] = s[k]; }
+    for (k in l) {
+      if (!Object.prototype.hasOwnProperty.call(l, k)) continue;
+      var sv = out[k], lv = l[k];
+      if (sv == null) { out[k] = lv; continue; }
+      out[k] = {
+        seen: Math.max(sv.seen || 0, lv.seen || 0),
+        correct: Math.max(sv.correct || 0, lv.correct || 0),
+        wrong: Math.max(sv.wrong || 0, lv.wrong || 0),
+        streak: Math.max(sv.streak || 0, lv.streak || 0),
+        firstAt: Math.min(sv.firstAt || lv.firstAt || 0, lv.firstAt || sv.firstAt || 0),
+        lastAt: Math.max(sv.lastAt || 0, lv.lastAt || 0),
+      };
+    }
+    return out;
+  }
+
+  // SRS：{word: {box,due,reps,lapses,last,w}} —— 按 key 并集；取 last 较新的整条（最近复习状态为准）
+  function mergeSrs(server, local) {
+    var s = (server && typeof server === 'object') ? server : {};
+    var l = (local && typeof local === 'object') ? local : {};
+    var out = {};
+    var k;
+    for (k in s) { if (Object.prototype.hasOwnProperty.call(s, k)) out[k] = s[k]; }
+    for (k in l) {
+      if (!Object.prototype.hasOwnProperty.call(l, k)) continue;
+      var sv = out[k], lv = l[k];
+      if (sv == null) { out[k] = lv; continue; }
+      out[k] = ((lv.last || 0) >= (sv.last || 0)) ? lv : sv;
+    }
+    return out;
+  }
+
   function mergeByKey(key, server, local) {
     if (key === 'yxyy_wrongbook_v1') return mergeWrongbook(server, local);
     if (key === 'yxyy_stats_v1') return mergeStats(server, local);
     if (key === 'yxyy_profiles_v1') return mergeProfiles(server, local);
-    return (local != null) ? local : server; // 默认本地优先
+    if (key === 'yxyy_exam_history') return mergeExamHistory(server, local);
+    if (key === 'yxyy_mastery_v1') return mergeMastery(server, local);
+    if (key === 'yxyy_srs_v1') return mergeSrs(server, local);
+    // theme/smartpick/ctx：无时间戳，本地优先（当前设备正在使用的设置/上下文为准）
+    return (local != null) ? local : server;
   }
 
   function differs(a, b) {
@@ -175,9 +268,19 @@
           var localRaw = null;
           try { localRaw = localStorage.getItem(pkey(key)); } catch (e) {}
           var localData = null;
-          try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) { localData = null; }
+          if (isRawKey(key)) {
+            localData = normalizeRaw(localRaw); // 裸字符串（含污染自愈）
+          } else {
+            try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) { localData = null; }
+          }
           var merged = mergeByKey(key, serverData, localData);
-          try { localStorage.setItem(pkey(key), JSON.stringify(merged)); } catch (e) {}
+          try {
+            if (isRawKey(key)) {
+              if (merged != null) localStorage.setItem(pkey(key), String(merged));
+            } else {
+              localStorage.setItem(pkey(key), JSON.stringify(merged));
+            }
+          } catch (e) {}
           if (differs(merged, serverData)) {
             // 合并结果与云端不同（本地有独有/更新数据）→ 回推云端
             return window.ApiClient.request('PUT', '/api/sync/' + key, {
@@ -213,7 +316,12 @@
     var profileId = serverProfileId(base);
     var raw;
     try { raw = localStorage.getItem(pkey(base)); } catch (e) { raw = null; }
-    var data; try { data = raw ? JSON.parse(raw) : {}; } catch (e) { data = {}; }
+    var data;
+    if (isRawKey(base)) {
+      data = normalizeRaw(raw); // 裸字符串上云（含污染自愈）
+    } else {
+      try { data = raw ? JSON.parse(raw) : {}; } catch (e) { data = {}; }
+    }
     return window.ApiClient.request('PUT', '/api/sync/' + base, {
       profileId: profileId,
       data: data,
@@ -229,11 +337,23 @@
             var localRaw = null;
             try { localRaw = localStorage.getItem(pkey(base)); } catch (e) {}
             var localData = null;
-            try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) {}
+            if (isRawKey(base)) { localData = localRaw; }
+            else { try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) {} }
             var merged = mergeByKey(base, payload.serverData, localData);
-            localStorage.setItem(pkey(base), JSON.stringify(merged));
+            if (isRawKey(base)) { localStorage.setItem(pkey(base), String(merged)); }
+            else { localStorage.setItem(pkey(base), JSON.stringify(merged)); }
             _versions[base] = payload.serverVersion || _versions[base];
             refreshModuleMemory();
+            // 合并结果若与服务端不同（本地有独有/更新数据），以服务端版本为基准重推一次，避免两端长期不一致
+            if (differs(merged, payload.serverData)) {
+              return window.ApiClient.request('PUT', '/api/sync/' + base, {
+                profileId: serverProfileId(base),
+                data: merged,
+                baseVersion: payload.serverVersion,
+              }).then(function (r2) {
+                _versions[base] = (r2 && r2.version) || ((_versions[base] || 0) + 1);
+              }).catch(function () { /* 重推失败保留本地，后续推送会再试 */ });
+            }
           }
         } catch (e) {}
       }

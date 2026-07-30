@@ -2205,6 +2205,8 @@ function _saveHistory(result) {
   try {
     localStorage.setItem(_pkey('yxyy_exam_history'), JSON.stringify(_examState.history));
   } catch (e) { /* ignore */ }
+  // Phase3 云同步：考试历史写后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush('yxyy_exam_history'); } catch (e) {}
 }
 
 function _renderHistory() {

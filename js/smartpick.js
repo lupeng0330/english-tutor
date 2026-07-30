@@ -137,13 +137,19 @@ window.__smartpick = { score: _scoreQuestion, pick: pickSmartQuestions, coverage
 const SMARTPICK_KEY = 'yxyy_smartpick_v1';
 function _loadSmartPick() {
   try {
-    const raw = localStorage.getItem(_pkey(SMARTPICK_KEY));
+    let raw = localStorage.getItem(_pkey(SMARTPICK_KEY));
+    // 兼容被旧版同步逻辑污染的双重编码值（'"1"'），JSON 还原自愈
+    if (typeof raw === 'string' && raw.length > 1 && raw.charAt(0) === '"') {
+      try { const p = JSON.parse(raw); if (typeof p === 'string') raw = p; } catch (e) {}
+    }
     state.smartPick = (raw === null) ? true : (raw === '1' || raw === 'true');
   } catch (e) { state.smartPick = true; }
   return state.smartPick;
 }
 function _saveSmartPick() {
   try { localStorage.setItem(_pkey(SMARTPICK_KEY), (state.smartPick !== false) ? '1' : '0'); } catch (e) {}
+  // Phase3 云同步：推题开关写后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(SMARTPICK_KEY); } catch (e) {}
 }
 function setSmartPick(on) {
   state.smartPick = !!on;

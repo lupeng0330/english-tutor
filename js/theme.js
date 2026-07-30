@@ -23,10 +23,29 @@
 
   function list() { return THEMES.slice(); }
 
+  // Phase3：主题按档案隔离（_pkey 加 :profileId 后缀），兼容旧全局 key 一次性迁移
+  function _scopedKey() {
+    try { return (typeof _pkey === 'function') ? _pkey(STORAGE_KEY) : STORAGE_KEY; } catch (e) { return STORAGE_KEY; }
+  }
+
+  // 读取的值可能是被旧版同步逻辑污染的双重编码（'"ink"'），做一次 JSON 还原自愈
+  function _normalize(v) {
+    if (typeof v === 'string' && v.length > 1 && v.charAt(0) === '"') {
+      try { var p = JSON.parse(v); if (typeof p === 'string') return p; } catch (e) {}
+    }
+    return v;
+  }
+
   function get() {
     try {
-      var t = localStorage.getItem(STORAGE_KEY);
+      var t = _normalize(localStorage.getItem(_scopedKey()));
       if (t && VALID.indexOf(t) >= 0) return t;
+      // 旧全局 key 迁移：有全局偏好则写入当前档案并沿用（只迁移一次）
+      var legacy = localStorage.getItem(STORAGE_KEY);
+      if (legacy && VALID.indexOf(legacy) >= 0) {
+        try { localStorage.setItem(_scopedKey(), legacy); } catch (e) {}
+        return legacy;
+      }
     } catch (e) {}
     return DEFAULT;
   }
@@ -41,11 +60,13 @@
     return id;
   }
 
-  // 切换主题：应用 + 持久化 + 广播事件（供 UI 刷新高亮）
+  // 切换主题：应用 + 持久化（按档案）+ 广播事件（供 UI 刷新高亮）
   function set(id) {
     if (VALID.indexOf(id) < 0) id = DEFAULT;
     apply(id);
-    try { localStorage.setItem(STORAGE_KEY, id); } catch (e) {}
+    try { localStorage.setItem(_scopedKey(), id); } catch (e) {}
+    // Phase3 云同步：写后节流推送云端（未登录时 no-op）
+    try { if (window.CloudSync) window.CloudSync.schedulePush(STORAGE_KEY); } catch (e) {}
     try {
       window.dispatchEvent(new CustomEvent('themechange', { detail: { id: id } }));
     } catch (e) {}

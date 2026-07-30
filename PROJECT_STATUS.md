@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-29 · 🖥️📱🔐☁️🚀 全平台化改造 · 后端已上云(CloudBase)——Phase 3 云同步对公网用户可用(§59)：apps/api 部署至腾讯云 CloudBase 云函数Web版(体验版免费额度)，公网地址 https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api；前端 index.html 注入 __API_BASE(仅线上环境,本地开发不受影响)，线上用户登录即享错题/统计/档案跨设备同步。公网 e2e 7/7 PASS。踩坑记录与部署工具链见 §59。下一站→Phase 3 剩余数据(考试历史/掌握度)增量接入 or Phase 4 管理后台**
+> 最后更新：**2026-07-30 · 🖥️📱🔐☁️🚀 全平台化改造 · Phase 3 云同步全量打通(§60)：8 类档案级数据(错题/统计/考试历史/掌握度/SRS/主题/智能推题/学习上下文)+档案列表全部上云同步；主题按档案隔离并可跨设备同步(实测 Chrome 胭脂粉 → Edge 秒同步)；修复「立即同步只推 2 个 key」「裸字符串被 JSON 双重编码污染」「课本选择题答错不进错题本」三大 bug；云函数同步接口同步扩容。下一站→Phase 3.5 离线TTS or Phase 4 管理后台**
 
 ---
 
@@ -4131,7 +4131,7 @@ P6-A 补全对话 (~2天)
 | **Phase 1** | **桌面 Electron 壳 MVP** | Win/Mac | ✅ **已上线（本次）** |
 | Phase M | 移动 Capacitor 套壳（复用同一份前端，与 Electron 同哲学） | Android/iOS；鸿蒙靠 APK 兼容过渡 | 🟡 **骨架已上线**（Web层已验证；原生打包待SDK/Mac环境） |
 | Phase 2 | Express+TS+Prisma+PostgreSQL：登录/JWT/三角色RBAC + **会员/权益/订单模型(架构预留)** + 后台手动开通VIP | 后端 | ✅ **已完成**（apps/api，本地SQLite跑通，端到端10/10 PASS；云PG待Phase6部署） |
-| Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史） | 全端 | ✅ **首批已上线**（错题本/统计/档案列表；合并上云+节流推送+自动拉取+优雅降级；考试历史等后续增量） |
+| Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史/掌握度/SRS/主题/智能推题/学习上下文） | 全端 | ✅ **全量已上线**（8 类档案级 key + 档案列表全部上云；合并上云+节流推送+自动拉取+409冲突合并重推+优雅降级；主题按档案隔离可同步，详见 §60） |
 | Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ⏳ |
 | Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ⏳ |
 | Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ |
@@ -4214,6 +4214,48 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 7. PowerShell `>` 重定向写文件默认 UTF-16 → init.sql 乱码，用 `Out-File -Encoding utf8`。
 8. CLI 交互式确认（选择环境/部署确认/删除确认）→ `RedirectStandardInput` 喂回车绕过。
 9. 公网 e2e 7/7 PASS：注册/登录/档案列表上云/错题上云/跨设备拉取/jti 同秒登录。
+
+---
+
+## 60. ✅ Phase 3 全量打通 · 8 类档案级数据同步 + 主题档案化（2026-07-30，已上线）
+
+> 📌 **成果**：云同步从「首批 3 类」扩到「8 类档案级 key + 档案列表」全覆盖；主题色按档案隔离且可跨设备同步；修复 3 个实测 bug。Chrome(ss档案/胭脂粉) → Edge 双会话实测秒级同步通过。
+
+### 同步范围（js/sync-client.js）
+
+- **PROFILE_SCOPED_KEYS（8 个，key 带 `:profileId` 后缀）**：`yxyy_wrongbook_v1` / `yxyy_stats_v1` / `yxyy_exam_history` / `yxyy_mastery_v1` / `yxyy_srs_v1` / `yxyy_theme_v1` / `yxyy_smartpick_v1` / `yxyy_lesson_ctx_v1`。
+- **GLOBAL_KEYS**：`yxyy_profiles_v1`（档案列表，服务端以 `__global__` 存储）。
+- **RAW_KEYS（裸字符串，不走 JSON 编码）**：`yxyy_theme_v1` / `yxyy_smartpick_v1`——这两个模块存的是裸字符串而非 JSON，统一 `normalizeRaw` 自愈历史脏数据（双重编码的 `'"ink"'` 自动还原）。
+
+### 合并策略（409 冲突 & 登录合并上云共用）
+
+| 数据 | 策略 |
+|---|---|
+| 错题本 / 档案列表 | 按 id 并集（删除不扩散） |
+| 考试历史 | 按 examKey+date 去重，截 50 条 |
+| 掌握度 | 各项计数取大 |
+| SRS | 同词取 last 较新者 |
+| 主题/智能推题/上下文 | 本地优先（last-writer 语义） |
+
+409 冲突时：合并本地+云端 → 与 serverData 有差异则按 serverVersion 重推一次。
+
+### 本次修复的 3 个实测 bug
+
+1. **「立即同步」只推 2 个 key**（app.js 硬编码 wrongbook/stats）→ 改为遍历 `CloudSync.keys` 全量推送（用户实测：改主题点同步 Edge 收不到）。
+2. **主题被同步"打回原形"**：theme/smartpick 存裸字符串，旧链路 `JSON.stringify` 二次编码污染 → RAW_KEYS + normalizeRaw + theme.js/smartpick.js 读取自愈。
+3. **课本选择题答错不进错题本**（lesson.js 只有简答题接了 recordAnswer）→ 选择题答错补 `recordAnswer('reading_qa', ...)`。
+
+### 主题档案化（js/theme.js）
+
+- `_scopedKey()` 走 `_pkey()`：主题 key 变为 `yxyy_theme_v1:<profileId>`，不同档案独立配色。
+- 旧全局 `yxyy_theme_v1` 一次性迁移到当前档案。
+- `set()` 内 schedulePush（3s 节流上云）；index.html 防 FOUC 脚本按 `yxyy_active_profile_v1` 读档案级主题（回退全局）。
+- 切换档案（app.js switchToProfile）：`__masteryReset()` + ThemeManager 重应用 + `pullAll` 拉取该档案云端数据。
+
+### 涉及文件
+
+前端：`js/sync-client.js`（核心扩容+RAW_KEYS+合并器）、`js/theme.js`、`js/smartpick.js`（自愈）、`js/profile.js`（DATA_KEYS 补 theme/exam_history）、`js/mastery.js`（__masteryReset+推送）、`js/srs.js`、`js/exam.js`、`js/lesson.js`、`app.js`（全量推送+登录兜底）、`index.html`（防FOUC档案级主题）。
+后端：`apps/api/src/routes/sync.ts`（ALLOWED_KEYS 扩至 9 个）。
 
 
 

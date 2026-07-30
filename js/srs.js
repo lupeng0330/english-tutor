@@ -29,6 +29,8 @@ function srsLoad() {
 
 function srsSave() {
   try { localStorage.setItem(_srsKey(SRS_STORAGE_KEY), JSON.stringify(_srs || {})); } catch (e) {}
+  // Phase3 云同步：SRS 写后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(SRS_STORAGE_KEY); } catch (e) {}
 }
 
 // 切换学习者后强制重载

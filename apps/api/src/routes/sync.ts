@@ -17,9 +17,19 @@ import { AuthedRequest } from '../types';
 const router = Router();
 router.use(authRequired);
 
-// 允许同步的 key 白名单（错题本 + 统计 + 档案列表；后续增量放开）
-// yxyy_profiles_v1 是全局元数据（客户端用固定 profileId='__global__' 存取）
-const ALLOWED_KEYS = new Set(['yxyy_wrongbook_v1', 'yxyy_stats_v1', 'yxyy_profiles_v1']);
+// 允许同步的 key 白名单（Phase3 全量：错题/统计/档案/考试历史/掌握度/SRS/主题/推题开关/上下文）
+// yxyy_profiles_v1 是全局元数据（客户端用固定 profileId='__global__' 存取）；其余按档案隔离
+const ALLOWED_KEYS = new Set([
+  'yxyy_wrongbook_v1',
+  'yxyy_stats_v1',
+  'yxyy_profiles_v1',
+  'yxyy_exam_history',
+  'yxyy_mastery_v1',
+  'yxyy_srs_v1',
+  'yxyy_theme_v1',
+  'yxyy_smartpick_v1',
+  'yxyy_ctx',
+]);
 
 function assertKey(key: string) {
   if (!ALLOWED_KEYS.has(key)) throw badRequest(`不支持同步的 key：${key}`);

@@ -339,7 +339,9 @@ async function switchToProfile(profileId) {
   // 1) 清"档案绑定"的内存缓存
   _wrongbook = null;
   _stats     = null;
+  if (window.__masteryReset) window.__masteryReset(); // 🆕 掌握度缓存随档案切换复位
   if (typeof srsReset === 'function') srsReset();   // 🆕 SRS 记忆曲线缓存随档案切换复位
+  try { if (window.ThemeManager) window.ThemeManager.apply(window.ThemeManager.get()); } catch (e) {} // 🆕 主题已档案化，切档后应用新档案主题
   if (typeof _lastLoadedTextbook !== 'undefined') _lastLoadedTextbook = null;
   if (typeof _lastLoadedTerm     !== 'undefined') _lastLoadedTerm     = null;
   if (typeof _lastLoadedGrade    !== 'undefined') _lastLoadedGrade    = null;
@@ -585,12 +587,12 @@ function _bindCloudAuth(panel) {
   if (syncBtn) syncBtn.addEventListener('click', function (ev) {
     ev.stopPropagation();
     setMsg('同步中…');
-    Promise.all([
-      window.CloudSync ? window.CloudSync.pushNow('yxyy_wrongbook_v1') : null,
-      window.CloudSync ? window.CloudSync.pushNow('yxyy_stats_v1') : null,
-    ]).then(function () {
-      return window.CloudSync ? window.CloudSync.pullAll() : null;
-    }).then(function () { setMsg('同步完成'); })
+    // 推送全部同步 key（错题/统计/考试历史/掌握度/SRS/主题/推题/上下文/档案列表），再拉取合并
+    var keys = (window.CloudSync && window.CloudSync.keys) || [];
+    Promise.all(keys.map(function (k) { return window.CloudSync.pushNow(k); }))
+      .then(function () {
+        return window.CloudSync ? window.CloudSync.pullAll() : null;
+      }).then(function () { setMsg('同步完成'); })
       .catch(function () { setMsg('同步失败，请稍后重试', true); });
   });
 }

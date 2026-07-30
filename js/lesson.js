@@ -567,6 +567,8 @@ function saveCtx() {
   try {
     localStorage.setItem(_pkey(CTX_KEY), JSON.stringify(state.ctx));
   } catch(e) {}
+  // Phase3 云同步：学习上下文写后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(CTX_KEY); } catch (e) {}
 }
 function computeUnitProgress(unit) {
   const knownMap = _loadStats().knownWords || {};

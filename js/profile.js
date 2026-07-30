@@ -25,7 +25,8 @@
   // ============ 受迁移影响的「业务数据 key」base 列表 ============
   // 这三对 key 在 app.js 中通过 _pkey() 加 :profileId 后缀；
   // 删除档案时也按此清单清掉 :id 后缀数据。
-  var DATA_KEYS = ['yxyy_wrongbook_v1', 'yxyy_stats_v1', 'yxyy_ctx', 'yxyy_mastery_v1', 'yxyy_smartpick_v1', 'yxyy_srs_v1'];
+  // Phase3：补 yxyy_theme_v1（主题已档案化）+ yxyy_exam_history（考试历史，此前漏注册）
+  var DATA_KEYS = ['yxyy_wrongbook_v1', 'yxyy_stats_v1', 'yxyy_ctx', 'yxyy_mastery_v1', 'yxyy_smartpick_v1', 'yxyy_srs_v1', 'yxyy_theme_v1', 'yxyy_exam_history'];
 
   // ============ 内部工具 ============
   function _readJSON(key, fallback) {

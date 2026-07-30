@@ -27,7 +27,12 @@ function _saveMastery() {
   } catch (e) {
     console.warn('[掌握度] 保存失败', e);
   }
+  // Phase3 云同步：掌握度写后节流推送云端（未登录时 no-op）
+  try { if (window.CloudSync) window.CloudSync.schedulePush(MASTERY_STORAGE_KEY); } catch (e) {}
 }
+
+// Phase3 云同步：拉取云端覆盖 localStorage 后 / 切档案时，清空内存缓存重读
+window.__masteryReset = function () { _mastery = null; };
 
 // 记录单题作答（对错都调），维护 seen/correct/wrong/streak/时间戳
 function recordMastery(type, q, isCorrect) {

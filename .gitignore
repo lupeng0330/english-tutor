@@ -75,3 +75,6 @@ data/textbooks/.backups/
 data/examples/.backups/
 data/exams/.backups/
 audio/_tmp_jk_listen/
+
+# playwright-cli 浏览器自动化测试本地缓存（会话/profile/截图等，不入仓）
+.playwright-cli/
