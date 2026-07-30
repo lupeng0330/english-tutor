@@ -27,6 +27,9 @@
       var rawActive = localStorage.getItem('yxyy_active_profile_v1');
       if (rawActive) { var p = JSON.parse(rawActive); if (p) pid = p; }
       var t = localStorage.getItem('yxyy_theme_v1:' + pid) || localStorage.getItem('yxyy_theme_v1');
+      // Phase3 信封格式 {v:'rouge',t:...} 取 v；旧裸串/双重编码自愈
+      if (t && t.charAt(0) === '{') { try { var o = JSON.parse(t); if (o && typeof o.v === 'string') t = o.v; } catch(e){} }
+      if (t && t.length > 1 && t.charAt(0) === '"') { try { var p2 = JSON.parse(t); if (typeof p2 === 'string') t = p2; } catch(e){} }
       var VALID = ['sunny','vermilion','celadon','ink','navy','rouge'];
       if (t && VALID.indexOf(t) >= 0) document.documentElement.setAttribute('data-theme', t);
     } catch(e){}

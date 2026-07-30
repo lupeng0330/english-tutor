@@ -36,19 +36,32 @@
     return v;
   }
 
-  function get() {
+  // Phase3 信封存储：{v:'rouge', t:epochMs}（t 供云端 last-writer-wins 合并）；
+  // 兼容旧裸串/双重编码（视为 t=0 最旧，不遮挡他端新数据）
+  function _read() {
     try {
-      var t = _normalize(localStorage.getItem(_scopedKey()));
-      if (t && VALID.indexOf(t) >= 0) return t;
-      // 旧全局 key 迁移：有全局偏好则写入当前档案并沿用（只迁移一次）
-      var legacy = localStorage.getItem(STORAGE_KEY);
+      var raw = _normalize(localStorage.getItem(_scopedKey()));
+      if (raw) {
+        if (raw.charAt(0) === '{') {
+          try {
+            var o = JSON.parse(raw);
+            if (o && typeof o.v === 'string' && VALID.indexOf(o.v) >= 0) return { v: o.v, t: o.t || 0 };
+          } catch (e) {}
+        }
+        if (VALID.indexOf(raw) >= 0) return { v: raw, t: 0 };
+      }
+      // 旧全局 key 迁移：包信封（t=0）写入当前档案并沿用（只迁移一次）
+      var legacy = _normalize(localStorage.getItem(STORAGE_KEY));
       if (legacy && VALID.indexOf(legacy) >= 0) {
-        try { localStorage.setItem(_scopedKey(), legacy); } catch (e) {}
-        return legacy;
+        var env = { v: legacy, t: 0 };
+        try { localStorage.setItem(_scopedKey(), JSON.stringify(env)); } catch (e) {}
+        return env;
       }
     } catch (e) {}
-    return DEFAULT;
+    return { v: DEFAULT, t: 0 };
   }
+
+  function get() { return _read().v; }
 
   // 仅设置 <html data-theme>（sunny 用默认，移除属性即可）
   function apply(id) {
@@ -64,7 +77,7 @@
   function set(id) {
     if (VALID.indexOf(id) < 0) id = DEFAULT;
     apply(id);
-    try { localStorage.setItem(_scopedKey(), id); } catch (e) {}
+    try { localStorage.setItem(_scopedKey(), JSON.stringify({ v: id, t: Date.now() })); } catch (e) {}
     // Phase3 云同步：写后节流推送云端（未登录时 no-op）
     try { if (window.CloudSync) window.CloudSync.schedulePush(STORAGE_KEY); } catch (e) {}
     try {

@@ -4257,5 +4257,12 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 前端：`js/sync-client.js`（核心扩容+RAW_KEYS+合并器）、`js/theme.js`、`js/smartpick.js`（自愈）、`js/profile.js`（DATA_KEYS 补 theme/exam_history）、`js/mastery.js`（__masteryReset+推送）、`js/srs.js`、`js/exam.js`、`js/lesson.js`、`app.js`（全量推送+登录兜底）、`index.html`（防FOUC档案级主题）。
 后端：`apps/api/src/routes/sync.ts`（ALLOWED_KEYS 扩至 9 个）。
 
+### 60.1 主题跨浏览器同步最终修复（2026-07-30，用户实测反馈后）
+
+- **根因**：此前主题合并策略是「本地非空则本地优先」。当 Chrome、Edge 都已有自己的主题值时，Edge 登录拉取会用自己的旧主题覆盖云端，造成主题永远无法跨浏览器收敛；错题/考试/报告有专用并集合并器，所以不受影响。
+- **修复**：主题与智能推题改为信封格式 `{v:<值>, t:<epoch ms>}`，云同步按 `t` 做 **Last-Writer-Wins**（最后修改者生效）；旧裸字符串与历史双重编码值统一兼容为 `t=0`，可平滑迁移。
+- **一并加固**：学习上下文保存增加 `__ts`，上下文也按时间戳 LWW，不再本地永远优先。
+- **双会话实测**：A 设水墨黛→B 本地预置朱砂橘红并登录，B 正确收敛为水墨黛；B 再设胭脂粉→A 拉取，A 的 localStorage/ThemeManager/DOM 三层均为 `rouge`。
+
 
 

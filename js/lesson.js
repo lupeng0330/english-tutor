@@ -565,6 +565,7 @@ function updateUnitProgress() {
 // 老数据迁移由 bootstrap() 的 migrateLegacyOnce() 一次性搬到 :default 档案。
 function saveCtx() {
   try {
+    state.ctx.__ts = Date.now(); // Phase3：云端 last-writer-wins 合并用时间戳
     localStorage.setItem(_pkey(CTX_KEY), JSON.stringify(state.ctx));
   } catch(e) {}
   // Phase3 云同步：学习上下文写后节流推送云端（未登录时 no-op）

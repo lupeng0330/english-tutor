@@ -22,16 +22,32 @@
   var SYNC_KEYS = PROFILE_SCOPED_KEYS.concat(GLOBAL_KEYS);
   var GLOBAL_PID = '__global__';
 
-  // 裸字符串型 key（localStorage 里不是 JSON，不能 JSON.parse/stringify，否则值被加上引号污染）
-  var RAW_KEYS = ['yxyy_theme_v1', 'yxyy_smartpick_v1'];
-  function isRawKey(base) { return RAW_KEYS.indexOf(base) >= 0; }
+  // 「信封型」key（标量设置类：主题/推题开关）：localStorage 与云端统一存 {v:<值>, t:<epoch ms>}，
+  // 合并按 t 做 last-writer-wins（谁最后设置谁生效），杜绝「本地优先」导致的两端互相覆盖、永不同步。
+  // 历史形态兼容：旧裸串('rouge'/'1') 与双重编码裸串('"rouge"') 一律视为 {v:裸串, t:0}（最旧）。
+  var ENVELOPE_KEYS = ['yxyy_theme_v1', 'yxyy_smartpick_v1'];
+  function isEnvelopeKey(base) { return ENVELOPE_KEYS.indexOf(base) >= 0; }
 
-  // 兼容修复前已被污染的双重编码值（'"ink"'）：读取时 JSON 还原，同步一次即洗白
-  function normalizeRaw(v) {
-    if (typeof v === 'string' && v.length > 1 && v.charAt(0) === '"') {
-      try { var p = JSON.parse(v); if (typeof p === 'string') return p; } catch (e) {}
+  // 解析任意历史形态为信封 {v,t}；无法识别返回 null
+  function parseEnvelope(raw) {
+    if (raw == null) return null;
+    if (typeof raw === 'object') {
+      if (typeof raw.v !== 'undefined') return { v: raw.v, t: raw.t || 0 };
+      return null;
     }
-    return v;
+    var s = String(raw);
+    // 双重编码自愈（'"rouge"' → 'rouge'）
+    if (s.length > 1 && s.charAt(0) === '"') {
+      try { var p = JSON.parse(s); if (typeof p === 'string') s = p; } catch (e) {}
+    }
+    if (s.charAt(0) === '{') {
+      try {
+        var o = JSON.parse(s);
+        if (o && typeof o.v !== 'undefined') return { v: o.v, t: o.t || 0 };
+      } catch (e) {}
+      return null;
+    }
+    return { v: s, t: 0 }; // 旧裸串 → t=0（最旧）
   }
 
   // 记录各 key 的服务端版本（用于 PUT 的 baseVersion，做乐观并发）
@@ -240,6 +256,20 @@
     return out;
   }
 
+  // 信封（主题/推题开关）：t 大者胜（last-writer-wins）；t 相等取 server（收敛方向）；一方 null 取另一方
+  function mergeEnvelope(server, local) {
+    if (server == null) return local;
+    if (local == null) return server;
+    return ((local.t || 0) > (server.t || 0)) ? local : server;
+  }
+
+  // 学习上下文：按 __ts 字段 last-writer-wins（saveCtx 每次写入打 __ts=Date.now()；旧数据无 __ts 视为 0）
+  function mergeCtx(server, local) {
+    if (server == null || typeof server !== 'object') return local;
+    if (local == null || typeof local !== 'object') return server;
+    return ((local.__ts || 0) > (server.__ts || 0)) ? local : server;
+  }
+
   function mergeByKey(key, server, local) {
     if (key === 'yxyy_wrongbook_v1') return mergeWrongbook(server, local);
     if (key === 'yxyy_stats_v1') return mergeStats(server, local);
@@ -247,7 +277,8 @@
     if (key === 'yxyy_exam_history') return mergeExamHistory(server, local);
     if (key === 'yxyy_mastery_v1') return mergeMastery(server, local);
     if (key === 'yxyy_srs_v1') return mergeSrs(server, local);
-    // theme/smartpick/ctx：无时间戳，本地优先（当前设备正在使用的设置/上下文为准）
+    if (isEnvelopeKey(key)) return mergeEnvelope(server, local);
+    if (key === 'yxyy_ctx') return mergeCtx(server, local);
     return (local != null) ? local : server;
   }
 
@@ -268,18 +299,15 @@
           var localRaw = null;
           try { localRaw = localStorage.getItem(pkey(key)); } catch (e) {}
           var localData = null;
-          if (isRawKey(key)) {
-            localData = normalizeRaw(localRaw); // 裸字符串（含污染自愈）
+          if (isEnvelopeKey(key)) {
+            localData = parseEnvelope(localRaw);
+            serverData = parseEnvelope(serverData); // 云端可能仍是旧裸串，统一升级为信封再比较
           } else {
             try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) { localData = null; }
           }
           var merged = mergeByKey(key, serverData, localData);
           try {
-            if (isRawKey(key)) {
-              if (merged != null) localStorage.setItem(pkey(key), String(merged));
-            } else {
-              localStorage.setItem(pkey(key), JSON.stringify(merged));
-            }
+            if (merged != null) localStorage.setItem(pkey(key), JSON.stringify(merged));
           } catch (e) {}
           if (differs(merged, serverData)) {
             // 合并结果与云端不同（本地有独有/更新数据）→ 回推云端
@@ -317,8 +345,9 @@
     var raw;
     try { raw = localStorage.getItem(pkey(base)); } catch (e) { raw = null; }
     var data;
-    if (isRawKey(base)) {
-      data = normalizeRaw(raw); // 裸字符串上云（含污染自愈）
+    if (isEnvelopeKey(base)) {
+      data = parseEnvelope(raw); // 信封对象上云（旧裸串自动升级为 {v,t:0}）
+      if (data == null) return Promise.resolve(); // 本地无值不推，避免把空值盖上云
     } else {
       try { data = raw ? JSON.parse(raw) : {}; } catch (e) { data = {}; }
     }
@@ -337,15 +366,19 @@
             var localRaw = null;
             try { localRaw = localStorage.getItem(pkey(base)); } catch (e) {}
             var localData = null;
-            if (isRawKey(base)) { localData = localRaw; }
-            else { try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) {} }
-            var merged = mergeByKey(base, payload.serverData, localData);
-            if (isRawKey(base)) { localStorage.setItem(pkey(base), String(merged)); }
-            else { localStorage.setItem(pkey(base), JSON.stringify(merged)); }
+            var serverData = payload.serverData;
+            if (isEnvelopeKey(base)) {
+              localData = parseEnvelope(localRaw);
+              serverData = parseEnvelope(serverData);
+            } else {
+              try { localData = localRaw ? JSON.parse(localRaw) : null; } catch (e) {}
+            }
+            var merged = mergeByKey(base, serverData, localData);
+            if (merged != null) { try { localStorage.setItem(pkey(base), JSON.stringify(merged)); } catch (e) {} }
             _versions[base] = payload.serverVersion || _versions[base];
             refreshModuleMemory();
             // 合并结果若与服务端不同（本地有独有/更新数据），以服务端版本为基准重推一次，避免两端长期不一致
-            if (differs(merged, payload.serverData)) {
+            if (differs(merged, serverData)) {
               return window.ApiClient.request('PUT', '/api/sync/' + base, {
                 profileId: serverProfileId(base),
                 data: merged,

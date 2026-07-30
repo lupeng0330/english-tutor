@@ -142,12 +142,17 @@ function _loadSmartPick() {
     if (typeof raw === 'string' && raw.length > 1 && raw.charAt(0) === '"') {
       try { const p = JSON.parse(raw); if (typeof p === 'string') raw = p; } catch (e) {}
     }
+    // Phase3 信封格式 {v:'1',t:...}：取 v 字段
+    if (typeof raw === 'string' && raw.charAt(0) === '{') {
+      try { const o = JSON.parse(raw); if (o && typeof o.v !== 'undefined') raw = String(o.v); } catch (e) {}
+    }
     state.smartPick = (raw === null) ? true : (raw === '1' || raw === 'true');
   } catch (e) { state.smartPick = true; }
   return state.smartPick;
 }
 function _saveSmartPick() {
-  try { localStorage.setItem(_pkey(SMARTPICK_KEY), (state.smartPick !== false) ? '1' : '0'); } catch (e) {}
+  // Phase3 信封存储：{v:'1'/'0', t:epochMs}（t 供云端 last-writer-wins 合并）
+  try { localStorage.setItem(_pkey(SMARTPICK_KEY), JSON.stringify({ v: (state.smartPick !== false) ? '1' : '0', t: Date.now() })); } catch (e) {}
   // Phase3 云同步：推题开关写后节流推送云端（未登录时 no-op）
   try { if (window.CloudSync) window.CloudSync.schedulePush(SMARTPICK_KEY); } catch (e) {}
 }
