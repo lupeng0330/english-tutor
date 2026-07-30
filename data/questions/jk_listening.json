@@ -1184,16 +1184,16 @@
     "grade": 5,
     "term": "上",
     "code": "5A_U2",
-    "audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy and fun. M: I like science, but it's a bit difficult.",
+    "audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy for me. M: I like science and PE. Maths is a little difficult.",
     "audioFile": "jk_listening_5A_02.mp3",
     "q": "What subject does Ben find difficult?",
     "options": [
-      "Science",
+      "Maths",
       "English",
       "Art"
     ],
     "answer": 0,
-    "explain": "Ben 说 science is a bit difficult",
+    "explain": "Ben 说 Maths is a little difficult",
     "difficulty": 1,
     "source": "ai_jk_v2"
   },

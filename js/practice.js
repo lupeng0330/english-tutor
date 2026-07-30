@@ -370,6 +370,7 @@ function refreshPracticeCounts() {
 }
 
 function startPractice(type) {
+  _stopListeningPlayback();
   // 🆕 错题本模式：混合 4 种题型，从 localStorage 读
   // 🆕 错题本模式：支持 Tab 过滤（'all' | 'reading_qa'）
   if (type === 'wrongbook') {
@@ -521,6 +522,7 @@ function _renderPickSummary() {
 
 // 🧠 智能推荐练习（v01.18）：跨 4 种题型按打分混合组卷，首页一键开练
 function startSmartPractice() {
+  _stopListeningPlayback();
   const types = ['spelling', 'listening', 'grammar', 'reading', 'cloze',
                 'listen_pic', 'listen_judge', 'listen_fill',
                 'blank_fill', 'sentence_transform', 'sentence_order', 'dialog_complete', 'matching', 'cloze_passage'];
@@ -1099,6 +1101,19 @@ function checkSpellFilled(q, inputs, force) {
 let _listeningPlaying = false;
 let _listeningAudio = null;
 
+function _stopListeningPlayback() {
+  _listeningPlaying = false;
+  if (_listeningAudio) {
+    try {
+      _listeningAudio.pause();
+      _listeningAudio.removeAttribute('src');
+      _listeningAudio.load();
+    } catch (e) {}
+    _listeningAudio = null;
+  }
+  try { stopSpeak(); } catch (e) {}
+}
+
 function playAudioText() {
   const q = state.quizQuestions[state.quizIndex];
   if (!q || !q.audioText) return;
@@ -1111,12 +1126,7 @@ function playAudioText() {
 
   // 如果正在播，当作停止按钮用
   if (_listeningPlaying) {
-    _listeningPlaying = false;
-    if (_listeningAudio) {
-      try { _listeningAudio.pause(); _listeningAudio.src = ''; } catch(e){}
-      _listeningAudio = null;
-    }
-    stopSpeak();
+    _stopListeningPlayback();
     setHint('⏹ 已停止，点击可重听', 'text-slate-500');
     return;
   }
@@ -1442,6 +1452,7 @@ function speakSpellWord() {
 }
 
 function nextQuiz() {
+  _stopListeningPlayback();
   if (state.quizIndex < state.quizQuestions.length - 1) {
     state.quizIndex++;
     showQuiz();

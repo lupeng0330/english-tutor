@@ -7,6 +7,7 @@
 import asyncio
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,6 +34,9 @@ async def gen_one(fname, raw_text, force=False):
         return "skip", None
 
     raw_text = preprocess(raw_text).strip()
+    # 题库听力原文常把 M:/W: 写在同一行；核心切分器按行识别，需先拆行。
+    # 否则整段会被第一个角色朗读，并把后续 “W:”/“M:” 当成正文念出来。
+    raw_text = re.sub(r"\s+(?=(?:M|W)\s*[:：]\s*)", "\n", raw_text)
     parts = split_dialogue(raw_text)
     if not parts:
         return "empty", None
@@ -70,6 +74,7 @@ async def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--missing', action='store_true', help='只生成 audio/ 中缺失的 MP3')
     ap.add_argument('--audio-file', type=str, help='指定单个 audioFile 生成')
+    ap.add_argument('--force', action='store_true', help='覆盖已存在的目标 MP3')
     args = ap.parse_args()
 
     if not os.path.exists(OUT_DIR):
@@ -93,7 +98,7 @@ async def main():
         fname = q["audioFile"]
         text  = q.get("audioText", "")
         try:
-            status, detail = await gen_one(fname, text)
+            status, detail = await gen_one(fname, text, force=args.force)
             if status == "skip":
                 skip += 1
                 print(f"  [{i:>3}/{len(targets)}] skip   {fname}")

@@ -813,7 +813,7 @@ BOOKS = {
                         {"q": "We have English ____ Monday and Friday.", "options": ["on", "in", "at"], "answer": 0, "explain": "星期前用 on"},
                     ],
                     'listening': [
-                        {"audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy and fun. M: I like science, but it's a bit difficult.", "q": "What subject does Ben find difficult?", "options": ["Science", "English", "Art"], "answer": 0, "explain": "Ben 说 science is a bit difficult"},
+                        {"audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy for me. M: I like science and PE. Maths is a little difficult.", "q": "What subject does Ben find difficult?", "options": ["Maths", "English", "Art"], "answer": 0, "explain": "Ben 说 Maths is a little difficult"},
                         {"audioText": "M: Anna, do you like PE? W: Yes! I love sports. We run, jump and play ball games. M: My favourite is football. W: Me too! Let's play after school.", "q": "What sport do they both like?", "options": ["Football", "Basketball", "Swimming"], "answer": 0, "explain": "Ben 说 My favourite is football, Anna 说 Me too"},
                     ],
                     'reading': [

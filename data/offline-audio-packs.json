@@ -1,13 +1,13 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-30T12:00:45Z",
+  "generatedAt": "2026-07-30T13:57:11Z",
   "cacheName": "lexue-audio-offline-v1",
   "dataCacheName": "lexue-data-offline-v1",
   "packCount": 18,
   "fileCount": 5581,
   "dataFileCount": 61,
-  "bytes": 182819088,
-  "dataBytes": 3811308,
+  "bytes": 183322512,
+  "dataBytes": 3811316,
   "assets": {
     "audio/ex_001438af87.mp3": {
       "bytes": 13392,
@@ -17974,44 +17974,44 @@
       "revision": "92482c963e023769"
     },
     "audio/jk_listening_5A_01.mp3": {
-      "bytes": 28800,
-      "revision": "11e610c9f53d2eac"
+      "bytes": 72000,
+      "revision": "04681e75529ba1df"
     },
     "audio/jk_listening_5A_02.mp3": {
-      "bytes": 20304,
-      "revision": "e48ca3ffe4914298"
+      "bytes": 73296,
+      "revision": "6fb36625a584c168"
     },
     "audio/jk_listening_5A_03.mp3": {
-      "bytes": 16416,
-      "revision": "5f57278946426fe8"
+      "bytes": 106128,
+      "revision": "9615ef8ebb962da9"
     },
     "audio/jk_listening_5A_04.mp3": {
-      "bytes": 28368,
-      "revision": "0435b1b5f06f8157"
+      "bytes": 79776,
+      "revision": "f13a2bbd78133265"
     },
     "audio/jk_listening_5A_05.mp3": {
-      "bytes": 29808,
-      "revision": "5c795a319c642eec"
+      "bytes": 77040,
+      "revision": "b355b4ab3c4cc5ed"
     },
     "audio/jk_listening_5A_06.mp3": {
-      "bytes": 21744,
-      "revision": "80ee539e2ddd500b"
+      "bytes": 73008,
+      "revision": "eeca7696cc7ece9c"
     },
     "audio/jk_listening_5A_07.mp3": {
-      "bytes": 18432,
-      "revision": "d5431bc5cd8bc7b9"
+      "bytes": 89856,
+      "revision": "fdc41fcf0a4bacce"
     },
     "audio/jk_listening_5A_08.mp3": {
-      "bytes": 25056,
-      "revision": "7b95f988b66d01ee"
+      "bytes": 69120,
+      "revision": "4170af1a388c2e29"
     },
     "audio/jk_listening_5A_09.mp3": {
-      "bytes": 19584,
-      "revision": "6e712ca58e5e835b"
+      "bytes": 78336,
+      "revision": "479e7a7ba61eb219"
     },
     "audio/jk_listening_5A_10.mp3": {
-      "bytes": 89856,
-      "revision": "6d2d5940b363bcc7"
+      "bytes": 83232,
+      "revision": "0381f7b9dfee762a"
     },
     "audio/jk_listening_5B_01.mp3": {
       "bytes": 31680,
@@ -22530,8 +22530,8 @@
       "revision": "8ef7bf00a268101a"
     },
     "data/questions/jk_listening.json": {
-      "bytes": 59260,
-      "revision": "8133786a552d02ee"
+      "bytes": 59268,
+      "revision": "14d2d9290c36226b"
     },
     "data/questions/jk_matching.json": {
       "bytes": 6091,
@@ -23377,9 +23377,9 @@
       "fileCount": 312,
       "dataFileCount": 22,
       "bytes": 6502464,
-      "dataBytes": 1232598,
-      "totalBytes": 7735062,
-      "revision": "806d1cce4becde0a"
+      "dataBytes": 1232606,
+      "totalBytes": 7735070,
+      "revision": "275b444853f2f5c7"
     },
     {
       "id": "jk-g3-下",
@@ -23716,9 +23716,9 @@
       "fileCount": 299,
       "dataFileCount": 22,
       "bytes": 6262704,
-      "dataBytes": 1230773,
-      "totalBytes": 7493477,
-      "revision": "24cd577b9a852aaa"
+      "dataBytes": 1230781,
+      "totalBytes": 7493485,
+      "revision": "79a3469186a76a91"
     },
     {
       "id": "jk-g4-上",
@@ -24059,9 +24059,9 @@
       "fileCount": 303,
       "dataFileCount": 22,
       "bytes": 6626592,
-      "dataBytes": 1231937,
-      "totalBytes": 7858529,
-      "revision": "848e923994ee8118"
+      "dataBytes": 1231945,
+      "totalBytes": 7858537,
+      "revision": "cc98b3de9fcd9a39"
     },
     {
       "id": "jk-g4-下",
@@ -24399,9 +24399,9 @@
       "fileCount": 300,
       "dataFileCount": 22,
       "bytes": 6512688,
-      "dataBytes": 1230822,
-      "totalBytes": 7743510,
-      "revision": "0e1a2df0759727c2"
+      "dataBytes": 1230830,
+      "totalBytes": 7743518,
+      "revision": "164b22c5e536d866"
     },
     {
       "id": "jk-g5-上",
@@ -24746,10 +24746,10 @@
       ],
       "fileCount": 308,
       "dataFileCount": 22,
-      "bytes": 6914880,
-      "dataBytes": 1239276,
-      "totalBytes": 8154156,
-      "revision": "cafb34812381728e"
+      "bytes": 7418304,
+      "dataBytes": 1239284,
+      "totalBytes": 8657588,
+      "revision": "da2c68c54cd47a4b"
     },
     {
       "id": "jk-g5-下",
@@ -25091,9 +25091,9 @@
       "fileCount": 304,
       "dataFileCount": 22,
       "bytes": 6856272,
-      "dataBytes": 1238630,
-      "totalBytes": 8094902,
-      "revision": "e15168e921d12058"
+      "dataBytes": 1238638,
+      "totalBytes": 8094910,
+      "revision": "58a4206d6d7fc304"
     },
     {
       "id": "jk-g6-上",
@@ -25418,9 +25418,9 @@
       "fileCount": 287,
       "dataFileCount": 22,
       "bytes": 6803712,
-      "dataBytes": 1236741,
-      "totalBytes": 8040453,
-      "revision": "92c1bfba41848f17"
+      "dataBytes": 1236749,
+      "totalBytes": 8040461,
+      "revision": "4fbcf9ba18310347"
     },
     {
       "id": "jk-g6-下",
@@ -26115,9 +26115,9 @@
       "fileCount": 656,
       "dataFileCount": 23,
       "bytes": 20116368,
-      "dataBytes": 1324570,
-      "totalBytes": 21440938,
-      "revision": "e4cdda078e92383e"
+      "dataBytes": 1324578,
+      "totalBytes": 21440946,
+      "revision": "4381b76d26e45a5f"
     },
     {
       "id": "hj-g7-上",
