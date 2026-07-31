@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-31 · ✅🛠️ Phase 4 管理后台（React+shadcn 8 页含会员&营收、套餐&权益 + JSON↔DB 导入导出）已验收上线 `20260731V03.30`(§64)：前后端契约对齐、admin 默认登录密码修复、跨端口 CORS 放宽，全接口冒烟通过。上一阶段(§63)为智能推荐 Ben 学科听力题与录音生命周期修复已验收上线 `20260730V03.29`。**
+> 最后更新：**2026-07-31 · ✅👑 Phase 5 学生端 AI 代理 + 权益门控（§65）与「会员中心 + 套餐订购闭环」（§66）已验收上线 `20260731V03.31`：学生端可自助浏览套餐→下单→管理后台一键确认收款→权益自动开通（订阅续费顺延/终身/单项），AI 对话·口语·作文按权益放行并优雅降级。上一阶段(§64)为 Phase 4 管理后台已验收上线 `20260731V03.30`。**
 
 ---
 
@@ -4134,7 +4134,8 @@ P6-A 补全对话 (~2天)
 | Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史/掌握度/SRS/主题/智能推题/学习上下文） | 全端 | ✅ **全量已上线**（8 类档案级 key + 档案列表全部上云；合并上云+节流推送+自动拉取+409冲突合并重推+优雅降级；主题按档案隔离可同步，详见 §60） |
 | Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ✅ **已验收上线 `20260730V03.27`**（18 册按需下载；5581 音频+教材/题库/例句/练习/考试数据自包含；断点续传/修订更新/存储管理；移动端随包，详见 §61） |
 | Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ✅ **已验收上线 `20260731V03.30`**（apps/api 构建+种子通过、apps/admin 8 页构建通过、全接口冒烟通过；默认账号 admin/admin123456；已修复默认登录密码 + 跨端口 CORS；详见 §64） |
-| Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ **待验收**（后端 `apps/api/src/routes/ai.ts` + `services/ai.ts` OpenAI 兼容代理、三个 AI 接口均按权益门控且优雅降级；前端 `js/entitlement.js` 权益门控 + `app.js` 对话/`lesson.js` 口语/`exam.js` 作文接入真 AI 并降级；教材软门控；后端冒烟全通过：401/403/503/200 与 git stu1 端到端验证；默认登录密码与 CORS 沿用 §64 修复。详见 §65） |
+| Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ✅ **已验收上线 `20260731V03.31`**（后端 `apps/api/src/routes/ai.ts` + `services/ai.ts` OpenAI 兼容代理、三个 AI 接口均按权益门控且优雅降级；前端 `js/entitlement.js` 权益门控 + `app.js` 对话/`lesson.js` 口语/`exam.js` 作文接入真 AI 并降级；教材软门控；后端冒烟全通过：401/403/503/200 与 git stu1 端到端验证。详见 §65） |
+| **Phase 5.5** | **学生端会员中心 + 套餐订购闭环**（浏览套餐→下单→后台确认收款→权益自动开通） | 全端 | ✅ **已验收上线 `20260731V03.31`**（新增 `js/member.js` 会员中心页；后端公开 `GET /api/membership/plans` + 学生端订单接口；管理后台订单「确认收款并开通/关闭」；订阅续费顺延/终身/单项统一由 `fulfillPlanForUser` 开通。详见 §66） |
 | Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
 | Phase H | 纯血鸿蒙 ArkTS WebView 壳（可选后置） | 鸿蒙 NEXT | ⏳ 可选 |
@@ -4430,7 +4431,7 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 
 ---
 
-## 65. ⏳ Phase 5 学生端 AI 代理 + 权益门控（待验收，2026-07-31）
+## 65. ✅ Phase 5 学生端 AI 代理 + 权益门控（已验收上线 `20260731V03.31`，2026-07-31）
 
 ### 65.1 交付范围
 
@@ -4458,6 +4459,41 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 ### 65.3 备注
 
 - 真实 AI 能力需运营在「系统设置 / 会员中心」配置 `aiProvider/aiModel/aiApiKey` 并开启 `aiEnabled`（密钥仅存服务端）；配置后即可对持有对应权益的会员生效。
-- 部署上线待用户验收通过后按铁律执行 `dev-push.ps1`（feat 提交触发 CI bump 版本）。
+- ✅ 2026-07-31：用户确认验收通过，已按铁律执行 `dev-push.ps1`，CI bump 上线版本 `20260731V03.31`。
+
+---
+
+## 66. ✅ 学生端会员中心 + 套餐订购闭环（已验收上线 `20260731V03.31`，2026-07-31）
+
+> 📌 **起因**：用户反馈「前端没有套餐权益订购页面，也没有会员中心」——Phase 4 已有后台的套餐/权益/订单管理，但学生端没有任何入口，收费链路断在最前一环。本次补齐 **浏览套餐 → 自助下单 → 管理员确认收款 → 权益自动开通** 的完整闭环。
+
+### 66.1 后端（apps/api）
+
+| 文件 | 变更 |
+|---|---|
+| `src/services/membership.ts` | 抽出通用开通函数 **`fulfillPlanForUser({userId, plan, itemRef, orderId, source})`**，统一处理三种套餐：`item`（写 ItemPurchase）、`subscription`（**已有未过期订阅在原到期日上顺延 durationDays**，而非重算）、`lifetime`（永久）。后台手动开通与订单确认共用，杜绝逻辑分叉。 |
+| `src/routes/membership.ts` | 新增**公开** `GET /api/membership/plans`（置于 `authRequired` 之前，未登录也能浏览套餐，含 planEntitlements）；学生端 `GET /api/me/membership`（会员状态聚合：user/subscriptions/itemPurchases/entitlements/isAdmin）、`GET /api/me/orders`、`POST /api/me/orders`（同套餐已有 pending 订单则**复用**返回 `reused:true`，防重复下单）、`POST /api/me/orders/:id/cancel`；手动开通改调 `fulfillPlanForUser`。 |
+| `src/routes/admin/commerce.ts` | 新增 `POST /api/admin/orders/:id/confirm`（确认收款：置 `paid` + 调 `fulfillPlanForUser` 自动开通 + 审计 `order.confirm`，支持 `externalTxnId`/从备注解析 `itemRef=xxx`）与 `POST /api/admin/orders/:id/cancel`（置 `canceled` + 审计 `order.cancel`）。 |
+
+> 支付方式仍为 **手动收款**（`channel='manual'`）；真实支付（微信/支付宝/IAP）按路线图属 Phase P，适配层已预留。
+
+### 66.2 学生端前端
+
+- **新增 `js/member.js`**（`window.MemberCenter`：`open/refresh`）：会员状态卡（有效期/终身/免费）、已解锁权益分组、套餐卡片（价格/时长/含权益/立即订购）、我的订单（状态、取消待付款、付款说明）。未登录时引导 `window.openProfilePanel()` 登录；**后端不可用时显示「会员服务即将上线」优雅降级**，不报错（GitHub Pages 静态版安全）。
+- `index.html`：新增 `#page-member` 页面容器 + 侧栏「👑 会员中心」导航 + 动态加载 `js/member.js`。
+- `app.js`：`switchPage('member')` 分支；档案面板内新增**金色会员入口卡**（`_renderMemberEntryHTML/_bindMemberEntry`，仅后端可用时显示）；登录成功/登出后改调 `Entitlements.refresh()` 再刷新会员中心；AI 未开通提示文案改为可点击跳转会员中心。
+- `js/entitlement.js`：新增 **`refresh()`**（清缓存重新 bootstrap）——修复此前登录/登出后权益缓存不更新的问题。
+- `styles.css`：`.member-entry` 金色主题样式。
+
+### 66.3 管理后台
+
+- `apps/admin/src/types.ts`：`Order` 增加 `remark`。
+- `apps/admin/src/pages/MembershipPage.tsx`：订单卡片 pending 高亮 + 「确认收款并开通 / 关闭」按钮（`orderAction`，confirm 支持填流水号，成功后刷新订单与会员列表）；标题增加 **「N 笔待确认」徽标**。
+
+### 66.4 验证
+
+- `tsc` 类型检查通过；前端 `node --check` 语法全通过。
+- **端到端实测**：新用户 0 权益 → 下单 ¥18 生成 `pending` → 重复下单返回 `reused:true` → 管理员确认收款 → 订阅生成、权益 7 项、到期 2026-08-30。
+- 电脑网页 + 手机布局双端由用户验收通过。
 
 
