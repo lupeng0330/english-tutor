@@ -249,3 +249,37 @@ model AuditLog {
   @@index([actorId])
   @@index([action])
 }
+
+// ============ 5) 内容管理与系统设置 ============
+
+// 静态 JSON 的数据库版本；payload 使用 JSON 字符串以同时兼容 SQLite/PostgreSQL。
+model ContentDocument {
+  id          String    @id @default(cuid())
+  path        String    @unique // 仓库根目录相对路径，如 data/questions/jk_grammar.json
+  kind        String    // questions | exams | textbooks | examples | extras | grammar | other
+  version     Int       @default(1)
+  status      String    @default("draft") // draft | published
+  checksum    String
+  itemCount   Int       @default(0)
+  payload     String
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([kind])
+  @@index([status])
+}
+
+// AI 与通用系统配置；value 使用 JSON 字符串，避免绑定数据库 JSON 类型。
+model SystemSetting {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  category    String   @default("system") // system | ai
+  value       String
+  isSecret    Boolean  @default(false)
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}

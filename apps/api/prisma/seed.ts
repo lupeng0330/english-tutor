@@ -27,10 +27,22 @@ const PLANS = [
   { code: 'single_textbook', name: '单册教材解锁', type: 'item', durationDays: null, priceCents: 1200, ents: ['unlock_textbook'] },
 ];
 
+const SETTINGS = [
+  { key: 'siteName', category: 'system', value: '乐学英语', description: '后台与客户端显示名称', isSecret: false },
+  { key: 'registrationEnabled', category: 'system', value: true, description: '是否开放用户注册', isSecret: false },
+  { key: 'maintenanceMode', category: 'system', value: false, description: '维护模式（暂停客户端登录）', isSecret: false },
+  { key: 'dailyLimit', category: 'system', value: 20, description: '免费用户每日 AI 调用额度', isSecret: false },
+  { key: 'aiEnabled', category: 'ai', value: false, description: '是否启用 AI 能力', isSecret: false },
+  { key: 'aiProvider', category: 'ai', value: 'openai', description: 'AI 服务提供方', isSecret: false },
+  { key: 'aiModel', category: 'ai', value: 'gpt-4o-mini', description: '默认 AI 模型', isSecret: false },
+  { key: 'aiApiKey', category: 'ai', value: '', description: 'AI 服务密钥', isSecret: true },
+];
+
 async function main() {
   // 1) 管理员
   const adminUsername = process.env.SEED_ADMIN_USERNAME || 'admin';
   const adminPassword = process.env.SEED_ADMIN_PASSWORD || 'admin123456';
+  const passwordHash = await bcrypt.hash(adminPassword, 10);
   const existing = await prisma.user.findUnique({ where: { username: adminUsername } });
   if (!existing) {
     await prisma.user.create({
@@ -38,12 +50,18 @@ async function main() {
         username: adminUsername,
         displayName: '超级管理员',
         role: 'admin',
-        passwordHash: await bcrypt.hash(adminPassword, 10),
+        status: 'active',
+        passwordHash,
       },
     });
     console.log(`[seed] admin created: ${adminUsername}`);
   } else {
-    console.log(`[seed] admin exists: ${adminUsername}`);
+    // 已存在也强制保证默认密码 / 角色 / 状态，避免「默认无法登录」
+    await prisma.user.update({
+      where: { username: adminUsername },
+      data: { passwordHash, role: 'admin', status: 'active', displayName: existing.displayName || '超级管理员' },
+    });
+    console.log(`[seed] admin exists, password reset: ${adminUsername}`);
   }
 
   // 2) 权益点
@@ -73,6 +91,22 @@ async function main() {
     }
   }
   console.log(`[seed] plans: ${PLANS.length}`);
+
+  // 4) 系统与 AI 设置
+  for (const setting of SETTINGS) {
+    await prisma.systemSetting.upsert({
+      where: { key: setting.key },
+      update: {},
+      create: {
+        key: setting.key,
+        category: setting.category,
+        value: JSON.stringify(setting.value),
+        description: setting.description,
+        isSecret: setting.isSecret || false,
+      },
+    });
+  }
+  console.log(`[seed] settings: ${SETTINGS.length}`);
   console.log('[seed] done.');
 }
 
