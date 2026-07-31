@@ -201,6 +201,7 @@
       <div class="nav-item nav-item--deskonly" data-page="chat"><span class="nav-ico">💬</span><span class="nav-lbl-full">AI对话</span><span class="nav-lbl-mb">对话</span></div>
       <div class="nav-item" data-page="wrongbook"><span class="nav-ico">🩹</span><span class="nav-lbl-full">错题本</span><span class="nav-lbl-mb">错题</span></div>
       <div class="nav-item" data-page="report"><span class="nav-ico">📊</span><span class="nav-lbl-full">学习报告</span><span class="nav-lbl-mb">报告</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="member"><span class="nav-ico">👑</span><span class="nav-lbl-full">会员中心</span><span class="nav-lbl-mb">会员</span></div>
     </nav>
   </aside>
 
@@ -942,6 +943,17 @@
       </div>
     </section>
 
+    <!-- ============ 会员中心（会员状态 / 我的权益 / 套餐订购 / 我的订单） ============ -->
+    <section id="page-member" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">👑 会员中心</h2>
+        <button id="memberRefreshBtn" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition">↻ 刷新</button>
+      </div>
+      <div id="memberBody">
+        <div class="card p-10 text-center text-slate-400 text-sm">正在加载会员信息…</div>
+      </div>
+    </section>
+
   </main>
 </div>
 
@@ -981,6 +993,7 @@
         .then(function(){ return addScript('./js/player.js'); })
         .then(function(){ return addScript('./js/core.js'); })
         .then(function(){ return addScript('./js/api-client.js'); })
+        .then(function(){ return addScript('./js/entitlement.js'); }) // Phase 5 学生端权益门控
         .then(function(){ return addScript('./js/wrongbook.js'); })
         .then(function(){ return addScript('./js/mastery.js'); })
         .then(function(){ return addScript('./js/smartpick.js'); })
@@ -994,6 +1007,7 @@
         .then(function(){ return addScript('./questionBank.js'); })
         .then(function(){ return addScript('./js/exam.js'); })
         .then(function(){ return addScript('./js/grammar.js'); })
+        .then(function(){ return addScript('./js/member.js'); }) // Phase 5 会员中心 / 套餐订购
         .then(function(){ return addScript('./app.js'); })
         .catch(showLoadError);
     });

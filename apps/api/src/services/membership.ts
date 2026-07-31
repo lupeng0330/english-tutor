@@ -20,6 +20,47 @@ function notExpired(expiresAt: Date | null | undefined): boolean {
   return !expiresAt || expiresAt.getTime() > Date.now();
 }
 
+// 按套餐类型为用户开通：subscription→按 durationDays 计到期；lifetime→永久订阅；item→单项购买
+// 供「后台手动开通」与「订单确认收款后自动开通」复用
+export async function fulfillPlanForUser(params: {
+  userId: string;
+  plan: { id: string; type: string; durationDays: number | null };
+  itemRef?: string | null;
+  orderId?: string | null;
+  source?: string;
+}): Promise<{ kind: 'subscription' | 'item'; id: string }> {
+  const { userId, plan, itemRef, orderId } = params;
+  const source = params.source || 'manual';
+
+  if (plan.type === 'item') {
+    if (!itemRef) throw new Error('单项套餐需提供 itemRef');
+    const rec = await prisma.itemPurchase.create({
+      data: { userId, planId: plan.id, itemRef, orderId: orderId || null },
+    });
+    return { kind: 'item', id: rec.id };
+  }
+
+  let expiresAt: Date | null = null;
+  if (plan.type === 'subscription' && plan.durationDays) {
+    // 续费叠加：若已有同套餐未过期订阅，从原到期时间往后顺延
+    const existing = await prisma.subscription.findFirst({
+      where: { userId, planId: plan.id, status: 'active' },
+      orderBy: { expiresAt: 'desc' },
+    });
+    const base =
+      existing?.expiresAt && existing.expiresAt.getTime() > Date.now()
+        ? new Date(existing.expiresAt)
+        : new Date();
+    base.setDate(base.getDate() + plan.durationDays);
+    expiresAt = base;
+  }
+
+  const sub = await prisma.subscription.create({
+    data: { userId, planId: plan.id, expiresAt, status: 'active', source },
+  });
+  return { kind: 'subscription', id: sub.id };
+}
+
 export async function computeEffectiveEntitlements(
   userId: string
 ): Promise<EffectiveEntitlement[]> {

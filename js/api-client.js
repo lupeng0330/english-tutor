@@ -115,9 +115,32 @@
     return p.then(function () { clearSession(); });
   }
 
+  // 流式请求（SSE）：返回原始 fetch Response，供调用方按块读取。401 自动尝试刷新后重试一次。
+  function streamRaw(method, path, body, _retried) {
+    if (!BACKEND_AVAILABLE) return Promise.reject(_err(0, 'NO_BACKEND', '云同步服务暂未开通'));
+    var headers = { 'Content-Type': 'application/json' };
+    var access = getAccess();
+    if (access) headers['Authorization'] = 'Bearer ' + access;
+    return fetch(API_BASE + path, {
+      method: method,
+      headers: headers,
+      body: body ? JSON.stringify(body) : undefined,
+    }).then(function (res) {
+      if (res.status === 401 && !_retried && getRefresh()) {
+        return refresh().then(function (ok) {
+          if (ok) return streamRaw(method, path, body, true);
+          clearSession();
+          throw _err(401, 'UNAUTHORIZED', '未登录或登录已过期');
+        });
+      }
+      return res;
+    });
+  }
+
   window.ApiClient = {
     base: API_BASE,
     request: request,
+    stream: streamRaw,
     login: login,
     register: register,
     logout: logout,

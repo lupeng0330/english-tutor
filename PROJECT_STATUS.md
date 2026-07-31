@@ -4134,7 +4134,7 @@ P6-A 补全对话 (~2天)
 | Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史/掌握度/SRS/主题/智能推题/学习上下文） | 全端 | ✅ **全量已上线**（8 类档案级 key + 档案列表全部上云；合并上云+节流推送+自动拉取+409冲突合并重推+优雅降级；主题按档案隔离可同步，详见 §60） |
 | Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ✅ **已验收上线 `20260730V03.27`**（18 册按需下载；5581 音频+教材/题库/例句/练习/考试数据自包含；断点续传/修订更新/存储管理；移动端随包，详见 §61） |
 | Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ✅ **已验收上线 `20260731V03.30`**（apps/api 构建+种子通过、apps/admin 8 页构建通过、全接口冒烟通过；默认账号 admin/admin123456；已修复默认登录密码 + 跨端口 CORS；详见 §64） |
-| Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ |
+| Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ **待验收**（后端 `apps/api/src/routes/ai.ts` + `services/ai.ts` OpenAI 兼容代理、三个 AI 接口均按权益门控且优雅降级；前端 `js/entitlement.js` 权益门控 + `app.js` 对话/`lesson.js` 口语/`exam.js` 作文接入真 AI 并降级；教材软门控；后端冒烟全通过：401/403/503/200 与 git stu1 端到端验证；默认登录密码与 CORS 沿用 §64 修复。详见 §65） |
 | Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
 | Phase H | 纯血鸿蒙 ArkTS WebView 壳（可选后置） | 鸿蒙 NEXT | ⏳ 可选 |
@@ -4427,4 +4427,37 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 - ✅ 已按铁律执行 `dev-push.ps1`（feat 提交触发 CI 自动 bump 版本），上线版本：`20260731V03.30`。
 - 🌐 线上地址：<https://lupeng0330.github.io/english-tutor/?v=20260731V03.30>。
 - 🔧 管理后台本地访问：vite preview `http://localhost:4173/`，默认账号 `admin / admin123456`。
+
+---
+
+## 65. ⏳ Phase 5 学生端 AI 代理 + 权益门控（待验收，2026-07-31）
+
+### 65.1 交付范围
+
+- **服务端 AI 代理**（密钥留服务端，绝不暴露给前端）：`apps/api/src/routes/ai.ts` + `services/ai.ts`。
+  - `GET /api/ai/status`：返回 `enabled/provider/model`（不含密钥）。
+  - `POST /api/ai/chat`：流式对话（SSE 转发 OpenAI 兼容 `/chat/completions`），需 `ai_chat` 权益。
+  - `POST /api/ai/transcribe`：语音转写（ASR，base64 音频手工拼 multipart 转发 `/audio/transcriptions`），需 `ai_speaking` 权益。
+  - `POST /api/ai/essay`：作文评分（LLM 结构化评分），需 `ai_essay` 权益。
+  - 支持 openai / deepseek / qwen / moonshot / custom（provider→baseUrl 映射），经系统设置 `aiEnabled/aiProvider/aiModel/aiApiKey` 配置。未开启或密钥缺失时统一 `503 {error}` 优雅降级。
+- **权益门控中间件复用**：`requireEntitlement(code)`（管理员放行、无权益 403、未登录 401）。
+- **前端学生端门控**：新增 `js/entitlement.js`（`window.Entitlements`：`has/canAI/canTextbook/bootstrap`），在 `index.html` 动态加载中 `api-client.js` 之后、`app.js` 之前注入；`app.js` 的 `bootstrap()`、登录/登出回调均触发 `bootstrap()`。
+- **三大 AI 功能接入真 AI + 降级**：
+  - `app.js` AI 对话：有 `ai_chat` 且 AI 开启 → 流式真对话；否则本地演示 + 会员提示。
+  - `lesson.js` 跟读口语：有 `ai_speaking` 且开启 → `MediaRecorder` 真实采集并调 `/api/ai/transcribe` 评测（不支持则降级模拟分 + 提示）。
+  - `exam.js` 作文：`_gradeExam` 改 async，有 `ai_essay` 且开启 → 调 `/api/ai/essay` 真实评分，否则本地启发式。
+  - `api-client.js` 新增 `stream()` 方法支持 SSE 流式读取。
+- **教材软门控**：`canTextbook` 对免费教材（jk/hj/gzk）始终放行，仅门控付费教材（rj/wy/qz…）；`app.js` 的 `ctxTextbook` 切换受阻时还原并 `showToast` 提示。
+
+### 65.2 验证
+
+- 后端冒烟：`/api/ai/status` 无 token→401、有 token→200 `{enabled:false}`；chat/essay/transcribe 无密钥→503。
+- 端到端（stu1 测试学生）：无 `ai_chat` → chat `403`；授予 `ai_chat` 后 `/api/me/entitlements` 返回 `['ai_chat']` 且 chat 越过门控→`503`（AI 未配置）；管理员 status 200。
+- 前端 5 个 JS（`app.js`/`js/entitlement.js`/`js/api-client.js`/`js/lesson.js`/`js/exam.js`）`node --check` 语法全通过。
+
+### 65.3 备注
+
+- 真实 AI 能力需运营在「系统设置 / 会员中心」配置 `aiProvider/aiModel/aiApiKey` 并开启 `aiEnabled`（密钥仅存服务端）；配置后即可对持有对应权益的会员生效。
+- 部署上线待用户验收通过后按铁律执行 `dev-push.ps1`（feat 提交触发 CI bump 版本）。
+
 

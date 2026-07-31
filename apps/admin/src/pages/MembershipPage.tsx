@@ -62,8 +62,26 @@ export function MembershipPage() {
         channel: o.channel,
         status: o.status,
         createdAt: o.createdAt,
+        remark: o.remark,
       })),
     );
+  };
+
+  // 用户自助下单产生 pending 订单：管理员确认收款后自动开通对应套餐
+  const orderAction = async (o: Order, type: 'confirm' | 'cancel') => {
+    try {
+      if (type === 'confirm') {
+        if (!confirm(`确认已收款并为「${o.username || '该用户'}」开通「${o.planName || '该套餐'}」？`)) return;
+        const txn = window.prompt('收款流水号（可留空）', '') || undefined;
+        await api.post(`/admin/orders/${o.id}/confirm`, txn ? { externalTxnId: txn } : {});
+      } else {
+        if (!confirm('确定关闭该订单？')) return;
+        await api.post(`/admin/orders/${o.id}/cancel`, {});
+      }
+      await Promise.all([loadOrders(), loadMembers()]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '操作失败');
+    }
   };
 
   const loadPlans = async () => {
@@ -112,6 +130,8 @@ export function MembershipPage() {
     }
   };
 
+  const pendingCount = orders.filter((o) => o.status === 'pending').length;
+
   return (
     <>
       <PageHeader
@@ -141,11 +161,14 @@ export function MembershipPage() {
           )}
         </Card>
         <Card className="p-5">
-          <h2 className="mb-4 text-base font-medium text-slate-900">开通记录</h2>
+          <h2 className="mb-4 flex items-center gap-2 text-base font-medium text-slate-900">
+            订单 / 开通记录
+            {pendingCount > 0 && <Badge tone="amber">{pendingCount} 笔待确认</Badge>}
+          </h2>
           {!orders.length ? <EmptyState title="暂无订单" /> : (
             <div className="space-y-3">
               {orders.map((o) => (
-                <div key={o.id} className="rounded-xl border border-slate-100 p-3">
+                <div key={o.id} className={`rounded-xl border p-3 ${o.status === 'pending' ? 'border-amber-200 bg-amber-50/60' : 'border-slate-100'}`}>
                   <div className="flex items-center justify-between">
                     <span className="font-medium text-slate-800">{o.username || '未知用户'}</span>
                     <span className="text-sm text-slate-500">{money(o.amountCents || 0)}</span>
@@ -154,6 +177,12 @@ export function MembershipPage() {
                     <span>{o.planName || '-'} · {o.channel ? (CHANNEL_LABEL[o.channel] || o.channel) : '-'}</span>
                     <Badge tone={o.status === 'paid' ? 'green' : o.status === 'pending' ? 'amber' : 'slate'}>{o.status}</Badge>
                   </div>
+                  {o.status === 'pending' && (
+                    <div className="mt-2 flex justify-end gap-1">
+                      <Button size="sm" variant="ghost" className="text-emerald-600" onClick={() => orderAction(o, 'confirm')}>确认收款并开通</Button>
+                      <Button size="sm" variant="ghost" className="text-red-600" onClick={() => orderAction(o, 'cancel')}>关闭</Button>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -39,7 +39,7 @@ export interface Membership {
 }
 export interface Order {
   id: string; username?: string; planName?: string; amountCents: number;
-  channel?: string; status: Status; createdAt?: string;
+  channel?: string; status: Status; createdAt?: string; remark?: string | null;
 }
 export interface AuditLog {
   id: string; action: string; actor?: string; actorId?: string; target?: string;

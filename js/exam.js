@@ -1706,6 +1706,40 @@ function _gradeWriting(text, q, maxPoints) {
 }
 window._gradeWriting = _gradeWriting;
 
+// Phase 5：真·AI 作文评分（需 ai_essay 权益）。将后端 /api/ai/essay 结果映射为与 _gradeWriting 相同结构。
+async function _gradeWritingAI(text, q, maxPoints) {
+  maxPoints = maxPoints || 30;
+  const CMAX = Math.round(maxPoints * 0.6 * 10) / 10;
+  const GMAX = Math.round(maxPoints * 0.2 * 10) / 10;
+  const SMAX = Math.round((maxPoints - CMAX - GMAX) * 10) / 10;
+  const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+  if (!window.ApiClient || !window.ApiClient.request) return null;
+  const r = await window.ApiClient.request('POST', '/api/ai/essay', {
+    text: text,
+    prompt: (q && (q.prompt || q.title)) || '',
+    title: (q && q.title) || '',
+    language: 'en',
+  });
+  const ai = (r && r.result) || {};
+  const aiScore = Number(ai.score) || 0;
+  const bd = ai.breakdown || {};
+  const content = clamp(Math.round((Number(bd.content) || 0) / 25 * CMAX), 0, CMAX);
+  const grammar = clamp(Math.round((Number(bd.language) || 0) / 25 * GMAX), 0, GMAX);
+  const style = clamp(Math.round(((Number(bd.structure) || 0) + (Number(bd.task) || 0)) / 50 * SMAX), 0, SMAX);
+  const score = Math.round((aiScore / 100) * maxPoints);
+  const comments = [];
+  if (ai.comment) comments.push(String(ai.comment));
+  if (Array.isArray(ai.suggestions)) ai.suggestions.forEach(function (s) { comments.push('• ' + String(s)); });
+  const words = (text.toLowerCase().match(/[a-z']+/g) || []).length;
+  return {
+    score: score, max: maxPoints,
+    content: content, grammar: grammar, style: style,
+    contentMax: CMAX, grammarMax: GMAX, styleMax: SMAX,
+    wordCount: words, targetWords: 0, comments: comments, ai: true
+  };
+}
+window._gradeWritingAI = _gradeWritingAI;
+
 // 🆕 补全对话渲染 (P6-A)：对话 + 每空下拉选择
 function _renderDialogCompleteHTML(q, sectionIdx) {
   var dia = q.dialogue || q.original.dialogue || [];
@@ -1797,7 +1831,7 @@ function _renderClozePassageHTML(q) {
 window._renderClozePassageHTML = _renderClozePassageHTML;
 
 
-function _gradeExam() {
+async function _gradeExam() {
   const paper = _examState.paper;
   if (!paper) return;
 
@@ -1812,11 +1846,18 @@ function _gradeExam() {
   for (const sec of paper.sections) {
     const secMaxPoints = sec.totalPoints || 0;
 
-    // 写作：本地启发式自动判分（切题保底 → 语法 → 文笔）
+    // 写作：本地启发式自动判分（切题保底 → 语法 → 文笔）；会员且 AI 开启则改用真·AI 评分
     if (sec.type === 'writing') {
       const wq = (sec.questions && sec.questions[0]) || {};
       const wmax = secMaxPoints || 30;
-      const detail = _gradeWriting(_examState.writingText || '', wq, wmax);
+      let detail = _gradeWriting(_examState.writingText || '', wq, wmax);
+      if (window.Entitlements && window.Entitlements.canAI('ai_essay') &&
+          (_examState.writingText || '').trim().length >= 10) {
+        try {
+          const aiDetail = await _gradeWritingAI(_examState.writingText || '', wq, wmax);
+          if (aiDetail) detail = aiDetail;
+        } catch (e) { /* 失败则保留本地启发式评分 */ }
+      }
       writingDetail = detail;
       writingScore = detail.score;
       maxWritingScore = wmax;

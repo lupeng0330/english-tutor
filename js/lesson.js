@@ -1368,7 +1368,102 @@ function playLesson() {
 // _playQueue / _playingQueue 等顶级变量已迁移到 js/player.js。
 // 此处保留注释以帮助 grep 追溯。
 
-// ===================== 录音模拟 =====================
+// ===================== 录音 / AI 口语评测（Phase 5） =====================
+// 会员且 AI 服务开启 → 真实采集音频并调用 /api/ai/transcribe 做口语评测；否则本地模拟评分 + 会员提示。
+function startMicCapture() {
+  try {
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || typeof MediaRecorder === 'undefined') return;
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
+      try {
+        var mr = new MediaRecorder(stream);
+        state._chunks = [];
+        mr.ondataavailable = function (e) { if (e.data && e.data.size) state._chunks.push(e.data); };
+        mr.onstop = function () {
+          try { stream.getTracks().forEach(function (t) { t.stop(); }); } catch (e) {}
+          if (state._chunks && state._chunks.length) {
+            state._audioBlob = new Blob(state._chunks, { type: (state._chunks[0] && state._chunks[0].type) || 'audio/webm' });
+          }
+        };
+        mr.start();
+        state._mr = mr;
+      } catch (e) { state._mr = null; }
+    }).catch(function () { state._mr = null; });
+  } catch (e) { state._mr = null; }
+}
+
+function blobToBase64(blob, cb) {
+  var fr = new FileReader();
+  fr.onload = function () { try { cb(String(fr.result).split(',')[1] || ''); } catch (e) { cb(''); } };
+  fr.onerror = function () { cb(''); };
+  fr.readAsDataURL(blob);
+}
+
+function showScore(score, extraHtml) {
+  document.getElementById('scoreDisplay').textContent = score + ' 分';
+  var hint = document.getElementById('recordHint');
+  hint.textContent = '点击麦克风重新录音';
+  var result = document.getElementById('recordResult');
+  if (extraHtml) {
+    var ex = document.getElementById('recordExtra');
+    if (!ex) {
+      ex = document.createElement('div');
+      ex.id = 'recordExtra';
+      ex.className = 'mt-2 text-sm text-slate-600';
+      result.insertBefore(ex, result.firstChild);
+    }
+    ex.innerHTML = extraHtml;
+  }
+  result.classList.remove('hide');
+}
+
+function simulateScore() {
+  var score = 85 + Math.floor(Math.random() * 12);
+  var msg;
+  if (window.ApiClient && window.ApiClient.isLoggedIn && window.ApiClient.isLoggedIn()) {
+    msg = '🔒 真·AI 口语评测为会员功能，请在「会员中心」开通 <b>ai_speaking</b> 权益后体验。';
+  } else {
+    msg = '💡 登录并开通会员可用真·AI 口语评测（当前为模拟评分）。';
+  }
+  showScore(score, msg);
+}
+
+function scoreByASR(blob) {
+  var hint = document.getElementById('recordHint');
+  hint.textContent = '✅ 录音完成，AI 正在评测...';
+  blobToBase64(blob, function (b64) {
+    if (!b64 || !window.ApiClient || !window.ApiClient.request) { simulateScore(); return; }
+    window.ApiClient.request('POST', '/api/ai/transcribe', { audio: b64, mime: blob.type || 'audio/webm' })
+      .then(function (r) {
+        var transcript = (r && r.text) || '';
+        // 简单完成度评分：识别到文本越长越完整（封顶 100）
+        var score = transcript ? Math.min(100, 70 + Math.min(transcript.length, 60) / 60 * 30) : 60;
+        score = Math.round(score);
+        showScore(score, '🎙️ AI 识别：' + (transcript ? escapeHtml(transcript) : '（未识别到语音）') + ' <span class="text-xs text-slate-400">· AI 口语评测</span>');
+      })
+      .catch(function (err) {
+        var m = (err && err.body && err.body.error && (err.body.error.message || err.body.error)) || 'AI 口语评测失败';
+        showScore(85 + Math.floor(Math.random() * 12), '⚠️ ' + (typeof m === 'string' ? m : 'AI 口语评测失败') + '（已用模拟分）');
+      });
+  });
+}
+
+function stopAndScore() {
+  var wantASR = window.Entitlements && window.Entitlements.canAI('ai_speaking');
+  if (wantASR && state._mr) {
+    var mr = state._mr;
+    var done = false;
+    mr.onstop = function () {
+      try { (mr.stream || []).forEach && mr.stream.getTracks && mr.stream.getTracks().forEach(function (t) { t.stop(); }); } catch (e) {}
+      if (state._audioBlob) { scoreByASR(state._audioBlob); } else { simulateScore(); }
+      done = true;
+    };
+    try { mr.stop(); } catch (e) { if (!done) simulateScore(); }
+  } else {
+    simulateScore();
+  }
+  state._mr = null;
+}
+
 function toggleRecord() {
   const btn = document.getElementById('recordBtn');
   const hint = document.getElementById('recordHint');
@@ -1380,18 +1475,13 @@ function toggleRecord() {
     btn.textContent = '⏹';
     hint.textContent = '🔴 录音中... 请大声朗读课文，再次点击停止';
     result.classList.add('hide');
+    startMicCapture();
   } else {
     state.isRecording = false;
     btn.classList.remove('record-pulse');
     btn.textContent = '🎤';
     hint.textContent = '✅ 录音完成，AI 正在评测...';
-
-    setTimeout(() => {
-      const score = 85 + Math.floor(Math.random() * 12);
-      document.getElementById('scoreDisplay').textContent = score + ' 分';
-      hint.textContent = '点击麦克风重新录音';
-      result.classList.remove('hide');
-    }, 1500);
+    stopAndScore();
   }
 }
 

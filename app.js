@@ -68,6 +68,7 @@ function switchPage(page) {
   if (page === 'report') setTimeout(renderReport, 100);
   if (page === 'wrongbook') { _wbPageFilter = 'all'; renderWrongbookPage(); }
   if (page === 'review') { try { renderReviewPage(); } catch(e) { console.warn(e); } }
+  if (page === 'member') { try { if (window.MemberCenter) window.MemberCenter.open(); } catch(e) { console.warn(e); } }
   if (page === 'practice') {
     // 重置练习视图到初始状态
     document.getElementById('practiceQuizView').classList.add('hide');
@@ -117,13 +118,41 @@ function applyContextChange() {
 }
 
 // 切换上下文时处理练习状态
+// 轻量提示条（Phase 5 权益门控等场景复用）
+function showToast(msg, type) {
+  try {
+    var old = document.getElementById('appToast');
+    if (old) old.remove();
+    var el = document.createElement('div');
+    el.id = 'appToast';
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;left:50%;top:64px;transform:translateX(-50%);z-index:9999;max-width:90vw;padding:10px 16px;border-radius:10px;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.18);' +
+      (type === 'warn' ? 'background:#fff7ed;color:#b45309;border:1px solid #fed7aa;' : 'background:#0f172a;color:#fff;');
+    document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, 2600);
+  } catch (e) {}
+}
+
 ['ctxGrade', 'ctxTerm', 'ctxTextbook'].forEach(id => {
   const el = document.getElementById(id);
   if (!el) return;
   el.addEventListener('change', (e) => {
     if (id === 'ctxGrade')    state.ctx.grade    = parseInt(e.target.value, 10);
     if (id === 'ctxTerm')     state.ctx.term     = e.target.value;
-    if (id === 'ctxTextbook') state.ctx.textbook = e.target.value;
+    if (id === 'ctxTextbook') {
+      // Phase 5：付费教材按 textbook_* 权益门控（免费教材始终可访问）
+      const want = e.target.value;
+      if (window.Entitlements && !window.Entitlements.canTextbook(want)) {
+        e.target.value = state.ctx.textbook; // 还原选择
+        if (window.ApiClient && window.ApiClient.isLoggedIn && window.ApiClient.isLoggedIn()) {
+          showToast('🔒 该教材为会员专享，请到「会员中心」开通对应权益后解锁', 'warn');
+        } else {
+          showToast('🔒 该教材为会员专享，登录并开通会员后可解锁', 'warn');
+        }
+        return;
+      }
+      state.ctx.textbook = want;
+    }
     applyContextChange();
   });
 });
@@ -158,13 +187,78 @@ function sendChat() {
   addChatMessage(text, 'user');
   input.value = '';
 
+  // Phase 5：持有 ai_chat 权益且 AI 服务开启 → 真·流式对话；否则本地演示 + 会员提示
+  if (window.Entitlements && window.Entitlements.canAI('ai_chat')) {
+    streamAIChat(text);
+    return;
+  }
+
   setTimeout(() => {
     const reply = getAIReply(text);
     addChatMessage(reply, 'ai');
     const enOnly = reply.replace(/<[^>]+>/g, '').replace(/[\u4e00-\u9fa5]/g, '').replace(/[。，！？：；、]/g, '').trim();
     if (enOnly.length > 3) speak(enOnly.substring(0, 120));
+    const goMember = ' <a href="javascript:void(0)" onclick="switchPage(\'member\')" class="underline text-sky-600 font-bold">👑 前往会员中心</a>';
+    if (window.ApiClient && window.ApiClient.isLoggedIn && window.ApiClient.isLoggedIn()) {
+      addChatMessage('🔒 真·AI 对话为会员功能，开通 <b>AI 对话</b> 权益后体验。' + goMember, 'ai');
+    } else {
+      addChatMessage('💡 登录并开通会员，即可使用真·AI 对话（当前为本地演示回复）。' + goMember, 'ai');
+    }
   }, 600);
 }
+
+// Phase 5：流式调用后端 /api/ai/chat（SSE），逐字渲染。降级由 sendChat 的 canAI 判断保证。
+function streamAIChat(userText) {
+  const container = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = 'flex gap-2';
+  div.innerHTML = `<div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-sm flex-shrink-0">🤖</div>
+    <div class="chat-bubble-ai">思考中…</div>`;
+  const bubble = div.querySelector('.chat-bubble-ai');
+  container.appendChild(div);
+  container.scrollTop = container.scrollHeight;
+
+  if (!window.ApiClient || !window.ApiClient.stream) { bubble.textContent = '客户端不支持流式对话'; return; }
+  window.ApiClient.stream('POST', '/api/ai/chat', { messages: [{ role: 'user', content: userText }] })
+    .then(function (res) {
+      if (!res.ok) {
+        return res.text().then(function (t) {
+          let msg = 'AI 服务暂不可用';
+          try { var j = JSON.parse(t); if (j && j.error) msg = (typeof j.error === 'string') ? j.error : (j.error.message || msg); } catch (e) {}
+          bubble.textContent = '⚠️ ' + msg;
+        });
+      }
+      const reader = res.body && res.body.getReader ? res.body.getReader() : null;
+      if (!reader) { bubble.textContent = '⚠️ 当前环境不支持流式读取'; return; }
+      const decoder = new TextDecoder('utf-8');
+      let buf = '';
+      let full = '';
+      function pump() {
+        return reader.read().then(function (r) {
+          if (r.done) { bubble.innerHTML = _aiLinkify(full); return; }
+          buf += decoder.decode(r.value, { stream: true });
+          let idx;
+          while ((idx = buf.indexOf('\n\n')) >= 0) {
+            const chunk = buf.slice(0, idx); buf = buf.slice(idx + 2);
+            const line = chunk.split('\n').find(function (l) { return l.indexOf('data:') === 0; });
+            if (!line) continue;
+            const data = line.slice(5).trim();
+            if (data === '[DONE]') { bubble.innerHTML = _aiLinkify(full); return; }
+            try {
+              const j = JSON.parse(data);
+              const delta = j.choices && j.choices[0] && j.choices[0].delta && j.choices[0].delta.content;
+              if (delta) { full += delta; bubble.textContent = full; container.scrollTop = container.scrollHeight; }
+            } catch (e) {}
+          }
+          return pump();
+        });
+      }
+      return pump().then(function () { bubble.innerHTML = _aiLinkify(full); });
+    })
+    .catch(function () { bubble.textContent = '⚠️ 连接 AI 服务失败，请稍后再试。'; });
+}
+
+function _aiLinkify(s) { return (typeof escapeHtml === 'function' ? escapeHtml(s) : s).replace(/\n/g, '<br>'); }
 
 function quickChat(text) {
   document.getElementById('chatInput').value = text;
@@ -235,6 +329,9 @@ if ('speechSynthesis' in window) {
   ]);
   applyContextChange();               // 统一渲染（会调用 renderUnitList + refreshPracticeCounts）
   renderHomeStats();                  // 📊 首页数据看板（真实 localStorage 统计）
+
+  // Phase 5：拉取登录用户的「有效权益」与「AI 服务状态」（未登录/失败则无权益，功能降级）
+  try { if (window.Entitlements) window.Entitlements.bootstrap(); } catch (e) {}
 })();
 
 // 🆕 全局虚拟键盘检测：弹起时给 body 加 class，让 CSS 自动隐藏底部 tab 栏
@@ -424,12 +521,14 @@ function renderProfilePanel() {
     '<button id="profileCreateBtn" class="profile-create-btn">+ 新建档案</button>',
     '<div class="profile-panel-hint">不同档案的学习记录、错题本、统计互相独立</div>',
     _renderCloudAuthHTML(),
+    _renderMemberEntryHTML(),
     _renderOfflineAudioHTML(),
     _renderThemePickerHTML()
   ].join('');
   panel.innerHTML = html;
   _bindThemePicker(panel);
   _bindCloudAuth(panel);
+  _bindMemberEntry(panel);
   _bindOfflineAudio(panel);
 
   // 绑定事件（事件委托）
@@ -526,6 +625,31 @@ function _renderCloudAuthHTML() {
   );
 }
 
+/** 👑 会员中心入口（档案面板内，桌面/移动端通用；后端未开通时不显示） */
+function _renderMemberEntryHTML() {
+  if (!window.ApiClient || !window.ApiClient.isBackendAvailable || !window.ApiClient.isBackendAvailable()) return '';
+  return (
+    '<div class="offline-audio-entry member-entry" id="memberEntryBox">' +
+      '<div class="offline-audio-entry-copy">' +
+        '<div class="offline-audio-entry-title">👑 会员中心</div>' +
+        '<div class="offline-audio-entry-hint">查看会员状态、已解锁权益与套餐订购</div>' +
+      '</div>' +
+      '<button id="memberEntryBtn" type="button" class="offline-audio-entry-btn">进入</button>' +
+    '</div>'
+  );
+}
+
+function _bindMemberEntry(panel) {
+  if (!panel) return;
+  const btn = panel.querySelector('#memberEntryBtn');
+  if (!btn) return;
+  btn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    closeProfilePanel();
+    switchPage('member');
+  });
+}
+
 /** 绑定云账号登录区块事件（独立于档案/主题逻辑） */
 function _bindCloudAuth(panel) {
   if (!panel || !window.ApiClient) return;
@@ -549,6 +673,13 @@ function _bindCloudAuth(panel) {
         // 登录成功：立即更新 UI 为已登录（不再长时间停留“正在同步…”）；
         // 云同步放后台执行，并加 10s 超时兜底——即使同步卡住/失败，也不会转圈、不影响已登录状态。
         renderProfilePanel();
+        try {
+          if (window.Entitlements) {
+            window.Entitlements.refresh().then(function () {
+              if (window.MemberCenter && state.currentPage === 'member') window.MemberCenter.refresh();
+            });
+          }
+        } catch (e) {}
         try {
           if (window.CloudSync) {
             var syncP = window.CloudSync.onLogin();
@@ -583,6 +714,13 @@ function _bindCloudAuth(panel) {
     ev.stopPropagation();
     window.ApiClient.logout().then(function () {
       if (window.CloudSync) window.CloudSync.onLogout();
+      try {
+        if (window.Entitlements) {
+          window.Entitlements.refresh().then(function () {
+            if (window.MemberCenter && state.currentPage === 'member') window.MemberCenter.refresh();
+          });
+        }
+      } catch (e) {}
       renderProfilePanel();
     });
   });

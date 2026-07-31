@@ -4,6 +4,7 @@ import { prisma } from '../../db';
 import { asyncHandler, badRequest, notFound } from '../../middleware/error';
 import { AuthedRequest } from '../../types';
 import { writeAudit } from '../../services/audit';
+import { fulfillPlanForUser } from '../../services/membership';
 
 const router = Router();
 const pagination = z.object({
@@ -68,6 +69,58 @@ router.get('/orders', asyncHandler(async (req, res) => {
     prisma.order.findMany({ where, skip: (page - 1) * pageSize, take: pageSize, orderBy: { createdAt: 'desc' }, include: { user: { select: { id: true, username: true, displayName: true } }, plan: true } }),
   ]);
   res.json({ total, page, pageSize, items });
+}));
+
+// 待支付订单：确认收款并自动开通对应套餐
+const orderConfirmSchema = z.object({
+  externalTxnId: z.string().max(100).optional(),
+  itemRef: z.string().max(200).optional(),
+  remark: z.string().max(200).optional(),
+});
+
+router.post('/orders/:id/confirm', asyncHandler(async (req: AuthedRequest, res) => {
+  const parsed = orderConfirmSchema.safeParse(req.body || {});
+  if (!parsed.success) throw badRequest(parsed.error.issues[0].message);
+  const order = await prisma.order.findUnique({ where: { id: req.params.id }, include: { plan: true } });
+  if (!order) throw notFound('订单不存在');
+  if (order.status !== 'pending') throw badRequest('仅待支付订单可确认');
+  if (!order.plan) throw badRequest('订单未关联套餐，无法自动开通');
+
+  // itemRef 优先取请求参数，其次从订单备注 itemRef=xxx 中解析
+  const itemRef = parsed.data.itemRef || (order.remark?.match(/itemRef=([^|]+)/)?.[1] || '').trim() || null;
+  if (order.plan.type === 'item' && !itemRef) throw badRequest('单项套餐需提供 itemRef');
+
+  const updated = await prisma.order.update({
+    where: { id: order.id },
+    data: {
+      status: 'paid',
+      externalTxnId: parsed.data.externalTxnId || order.externalTxnId,
+      remark: parsed.data.remark ? `${order.remark || ''} | ${parsed.data.remark}` : order.remark,
+    },
+    include: { plan: true, user: { select: { id: true, username: true, displayName: true } } },
+  });
+  const granted = await fulfillPlanForUser({
+    userId: order.userId,
+    plan: order.plan,
+    itemRef,
+    orderId: order.id,
+    source: 'manual',
+  });
+  await writeAudit(req.user!.sub, 'order.confirm', order.id, { planCode: order.plan.code, itemRef, granted }, req.ip);
+  res.json({ order: updated, granted });
+}));
+
+router.post('/orders/:id/cancel', asyncHandler(async (req: AuthedRequest, res) => {
+  const order = await prisma.order.findUnique({ where: { id: req.params.id } });
+  if (!order) throw notFound('订单不存在');
+  if (order.status !== 'pending') throw badRequest('仅待支付订单可关闭');
+  const updated = await prisma.order.update({
+    where: { id: order.id },
+    data: { status: 'canceled', remark: req.body?.reason ? `${order.remark || ''} | ${String(req.body.reason).slice(0, 200)}` : order.remark },
+    include: { plan: true, user: { select: { id: true, username: true, displayName: true } } },
+  });
+  await writeAudit(req.user!.sub, 'order.cancel', order.id, { reason: req.body?.reason }, req.ip);
+  res.json({ order: updated });
 }));
 
 const subscriptionSchema = z.discriminatedUnion('action', [

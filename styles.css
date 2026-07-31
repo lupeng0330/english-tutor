@@ -1900,6 +1900,11 @@ header.bg-white { background: var(--surface) !important; }
 .offline-audio-entry-btn { flex: 0 0 auto; padding: 7px 10px; color: #fff; background: #059669; font-size: 12px; }
 .offline-audio-entry-btn:hover,
 .offline-pack-btn:hover { transform: translateY(-1px); }
+/* Phase 5 会员中心入口（档案面板内，金色主题以区分离线音频包） */
+.member-entry { border-color: rgba(217, 119, 6, 0.22); background: rgba(245, 158, 11, 0.09); }
+.member-entry .offline-audio-entry-title { color: #b45309; }
+.member-entry .offline-audio-entry-btn { background: linear-gradient(135deg, #f59e0b, #d97706); }
+
 .offline-audio-open { overflow: hidden; }
 .offline-audio-modal { position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center; padding: 18px; }
 .offline-audio-modal.hide { display: none; }

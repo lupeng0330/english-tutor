@@ -8,6 +8,7 @@ import usersRouter from './routes/users';
 import membershipRouter from './routes/membership';
 import syncRouter from './routes/sync';
 import adminRouter from './routes/admin';
+import aiRouter from './routes/ai';
 
 export function createApp() {
   const app = express();
@@ -42,6 +43,7 @@ export function createApp() {
   app.use('/api/admin', adminRouter);
   app.use('/api', membershipRouter); // /api/me/entitlements, /api/plans, /api/admin/*
   app.use('/api', syncRouter); // /api/sync, /api/sync/:key
+  app.use('/api/ai', aiRouter); // 服务端 AI 代理（对话/转写/作文评分，密钥留服务端）
 
   // 错误处理（最后）
   app.use(errorHandler);
