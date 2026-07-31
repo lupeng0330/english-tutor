@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-30 · ✅🔊 智能推荐 Ben 学科听力题修复已验收上线 `20260730V03.29`(§63)：题目已按五年级上册 U2 教材统一为 Maths，原文/选项/答案/解析/MP3 完全一致；审计并重生成五年级上册 10 段听力，修复行内 M:/W: 未分角色的问题；切换下一题会立即停止旧录音。下一阶段→Phase 4 管理后台。**
+> 最后更新：**2026-07-31 · ✅🛠️ Phase 4 管理后台（React+shadcn 8 页含会员&营收、套餐&权益 + JSON↔DB 导入导出）已验收上线 `20260731V03.30`(§64)：前后端契约对齐、admin 默认登录密码修复、跨端口 CORS 放宽，全接口冒烟通过。上一阶段(§63)为智能推荐 Ben 学科听力题与录音生命周期修复已验收上线 `20260730V03.29`。**
 
 ---
 
@@ -4133,7 +4133,7 @@ P6-A 补全对话 (~2天)
 | Phase 2 | Express+TS+Prisma+PostgreSQL：登录/JWT/三角色RBAC + **会员/权益/订单模型(架构预留)** + 后台手动开通VIP | 后端 | ✅ **已完成**（apps/api，本地SQLite跑通，端到端10/10 PASS；云PG待Phase6部署） |
 | Phase 3 | 统一 Storage 层 + SQLite + 三端增量云同步（错题本/统计/档案/考试历史/掌握度/SRS/主题/智能推题/学习上下文） | 全端 | ✅ **全量已上线**（8 类档案级 key + 档案列表全部上云；合并上云+节流推送+自动拉取+409冲突合并重推+优雅降级；主题按档案隔离可同步，详见 §60） |
 | Phase 3.5 | 离线 TTS 方案 + 移动端音频随包/按需下载策略 | 全端 | ✅ **已验收上线 `20260730V03.27`**（18 册按需下载；5581 音频+教材/题库/例句/练习/考试数据自包含；断点续传/修订更新/存储管理；移动端随包，详见 §61） |
-| Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ✅ **已上线（版本号待 CI 自动 bump 后回填）**（apps/api 构建+种子通过、apps/admin 8 页构建通过、全接口冒烟通过；默认账号 admin/admin123456；已修复默认登录密码 + 跨端口 CORS） |
+| Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ✅ **已验收上线 `20260731V03.30`**（apps/api 构建+种子通过、apps/admin 8 页构建通过、全接口冒烟通过；默认账号 admin/admin123456；已修复默认登录密码 + 跨端口 CORS；详见 §64） |
 | Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ⏳ |
 | Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
@@ -4404,4 +4404,27 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 - ✅ 2026-07-30：用户确认电脑网页与手机布局验收通过。
 - ✅ 已按铁律执行 `dev-push.ps1`，上线版本：`20260730V03.29`。
 - 🌐 线上地址：<https://lupeng0330.github.io/english-tutor/?v=20260730V03.29>。
+
+---
+
+## 64. ✅ Phase 4 管理后台（React+shadcn 8 页）已验收上线 `20260731V03.30`（2026-07-31）
+
+### 64.1 交付范围
+
+- Web 管理后台 `apps/admin`（React 18 + Vite + TS + Tailwind + lucide-react）：8 个页面，含 **会员&营收、套餐&权益、内容、题目、用户、设置、审计、仪表盘**。
+- 后端 `apps/api`：`/api/admin/*` 路由（operations / content / exams / membership / commerce / logs），默认账号登录 `admin/admin123456`。
+
+### 64.2 本次修复（用户验收中发现）
+
+1. **默认登录密码失效**：`prisma/seed.ts` 原逻辑仅在 admin 不存在时创建，库内已有 admin 但密码哈希不匹配，导致 `admin/admin123456` 无法登录。
+   - 修复：`seed.ts` 改为 admin 已存在时也强制重置默认密码/角色/状态；并新增 `apps/api/scripts/reset-admin.ts` 一键重置工具。
+2. **前端 "Failed to fetch"**：管理后台运行在 `4173`（vite preview），但后端 `.env` 的 `CORS_ORIGINS` 仅含 `5173`/`8765`，浏览器跨端口请求被 CORS 拦截。
+   - 修复：`apps/api/src/server.ts` CORS 放宽为允许所有 `localhost`/`127.0.0.1` 来源，重建并重启 API 服务；已实测带 `Origin: http://localhost:4173` 的登录返回 200 且响应头 `Access-Control-Allow-Origin` 正确。
+
+### 64.3 验收与上线
+
+- ✅ 2026-07-31：用户确认管理后台验收通过。
+- ✅ 已按铁律执行 `dev-push.ps1`（feat 提交触发 CI 自动 bump 版本），上线版本：`20260731V03.30`。
+- 🌐 线上地址：<https://lupeng0330.github.io/english-tutor/?v=20260731V03.30>。
+- 🔧 管理后台本地访问：vite preview `http://localhost:4173/`，默认账号 `admin / admin123456`。
 
