@@ -4496,4 +4496,17 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 - **端到端实测**：新用户 0 权益 → 下单 ¥18 生成 `pending` → 重复下单返回 `reused:true` → 管理员确认收款 → 订阅生成、权益 7 项、到期 2026-08-30。
 - 电脑网页 + 手机布局双端由用户验收通过。
 
+### 66.5 后端已发布到 CloudBase 云函数（2026-07-31）
+
+前端 `20260731V03.31` 上线后，会员中心依赖的接口必须同步发到云函数，否则线上只会显示「会员服务即将上线」降级页。本次发布顺带修掉两个部署链路的坑：
+
+| 问题 | 现象 | 修复 |
+|---|---|---|
+| **部署包膨胀到 51.4MB** | `update-fn-code.js` 上传报 **HTTP 413 请求体过大**，函数发不上去 | `scripts/pack-scf.js` 增加排除规则：①`EXCLUDE_FILE_PATTERNS` 排除 `query_engine-windows.dll.node`、debian 引擎，以及 **`*.tmpNNNN` 残留**（prisma generate 中断留下的 18.4MB×2 引擎副本，是这次膨胀主因）；②`EXCLUDE_RELS` 排除 dev-only 依赖 `prisma`(59.5MB)/`typescript`/`ts-node`/`ts-node-dev`/`@types`/`yazl`/`@prisma/engines`(71.4MB)。**51.4MB → 12.9MB**，并新增「包内必须含 `libquery_engine-rhel-openssl-1.1.x.so.node`」的自检，缺失直接 fail。 |
+| **线上套餐列表为空、没有 admin 账号** | 体验版 SQLite 在 `/tmp`，实例回收即清空；`init-db.js` 只建表不种数据 | 新增 **`scripts/seed-core.js`**（CommonJS，仅依赖生产依赖 `@prisma/client`+`bcryptjs`+`dotenv`，因为 ts-node 不入包）作为种子数据**单一事实源**：管理员 + 8 个权益点 + 4 个默认套餐（月度¥18/年度¥128/终身¥298/单册教材¥12）+ 8 项系统&AI 设置，全部 upsert 幂等；`prisma/seed.ts` 改为薄壳调用它（本地 `npm run seed` 保持强制重置 admin 密码，云端冷启动**不重置**已存在管理员密码）；`scf_bootstrap` 冷启动追加 `node scripts/seed-core.js`（写入时强制 LF 行尾，CRLF 会导致云函数启动失败）。 |
+
+**线上验证**（`https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api`）：`/health` ok → `/api/plans` 返回 4 个套餐 → 新用户注册登录（0 权益）→ 下单 ¥18 `pending` → 重复下单 `reused=true` → admin 确认收款 → **权益 7 项、订阅 1 条、到期 2026-08-30**，全链路通过。
+
+> ⚠️ 仍是体验版：云函数实例回收后 `/tmp/dev.db` 清空（订单/会员数据丢失，套餐与 admin 会自动重新种入）。要真正持久化需升级云托管 + 云数据库（路线图 Phase P）。
+
 

@@ -12,5 +12,10 @@ export CORS_ORIGINS="https://lupeng0330.github.io,http://localhost:8765,http://1
 # 冷启动建表（幂等；用 PrismaClient 执行 init.sql，不依赖平台相关的 prisma CLI）
 node scripts/init-db.js || true
 
+# 冷启动种子（幂等）：管理员 + 权益点 + 默认套餐 + 系统设置
+# /tmp 的 SQLite 实例回收即清空，不种数据的话线上「会员中心」会永远是空套餐、且没有 admin 账号。
+# 已存在的 admin 不会被重置密码（seed-core 默认 resetAdminPassword=false）。
+node scripts/seed-core.js || true
+
 # 启动编译产物
 node dist/server.js

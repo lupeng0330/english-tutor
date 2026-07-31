@@ -13,13 +13,27 @@ const INCLUDE = ['dist', 'node_modules', 'prisma', 'scripts', 'package.json', 's
 // 排除规则
 const EXCLUDE_NAMES = new Set(['dev.db', 'dev.db-journal', '.env', 'scf-deploy.zip', '.DS_Store']);
 const EXCLUDE_DIRS = new Set(['.cache', '.git']);
-// 部署包只带 SCF 运行时引擎（rhel-openssl-1.1.x）；windows/debian 引擎本地保留、不入包（省 ~23MB）
-const EXCLUDE_ENGINE_FILES = new Set([
-  'query_engine-windows.dll.node',
-  'libquery_engine-debian-openssl-3.0.x.so.node',
+// 部署包只带 SCF 运行时引擎（rhel-openssl-1.1.x）；windows/debian 引擎与 prisma generate
+// 遗留的 *.tmp<pid> 半成品副本一律不入包（曾各 18.4MB × N，直接把包顶到 51MB 触发上传 413）
+const EXCLUDE_FILE_PATTERNS = [
+  /query_engine-windows\.dll\.node/,      // Windows 引擎（含 .tmp1234 残留）
+  /libquery_engine-debian-openssl/,       // debian 引擎
+  /\.tmp\d+$/,                            // 任何 *.tmpNNNN 临时残留
+];
+// dev-only 依赖不入包（运行时 scf_bootstrap 只跑 node scripts/init-db.js + node dist/server.js）
+// @prisma/engines 是 prisma CLI 的引擎包，@prisma/client 运行时用 .prisma/client 内的引擎，不需要它
+const EXCLUDE_RELS = new Set([
+  'node_modules/prisma',
+  'node_modules/typescript',
+  'node_modules/ts-node',
+  'node_modules/ts-node-dev',
+  'node_modules/@types',
+  'node_modules/yazl',
+  'node_modules/@prisma/engines',
 ]);
 
 let count = 0;
+let hasRhelEngine = false;
 const zip = new yazl.ZipFile();
 
 function addDir(dirAbs, dirRel) {
@@ -30,9 +44,11 @@ function addDir(dirAbs, dirRel) {
     const rel = dirRel ? dirRel + '/' + e.name : e.name;
     if (e.isDirectory()) {
       if (EXCLUDE_DIRS.has(e.name)) continue;
+      if (EXCLUDE_RELS.has(rel)) continue; // dev-only 依赖
       addDir(abs, rel);
     } else if (e.isFile()) {
-      if (EXCLUDE_ENGINE_FILES.has(e.name)) continue; // 非 SCF 运行时的 Prisma 引擎不入包
+      if (EXCLUDE_FILE_PATTERNS.some((re) => re.test(e.name))) continue; // 非 SCF 运行时引擎 / tmp 残留
+      if (e.name === 'libquery_engine-rhel-openssl-1.1.x.so.node') hasRhelEngine = true;
       // scf_bootstrap 必须可执行；其他文件只读
       const mode = e.name === 'scf_bootstrap' ? 0o100755 : 0o100644;
       zip.addFile(abs, rel, { mode });
@@ -58,5 +74,9 @@ zip.outputStream
   .on('close', () => {
     const mb = (fs.statSync(OUT).size / 1024 / 1024).toFixed(1);
     console.log(`[pack] done: ${count} files -> scf-deploy.zip (${mb} MB)`);
+    if (!hasRhelEngine) {
+      console.error('[pack] FATAL: 包内缺少 libquery_engine-rhel-openssl-1.1.x.so.node，云函数将无法连库！');
+      process.exitCode = 1;
+    }
   });
 zip.end();
