@@ -48,6 +48,8 @@ mobile/ios/App/build/
 apps/api/dist/
 apps/api/prisma/dev.db
 apps/api/prisma/dev.db-journal
+# 数据迁移快照（含用户数据，敏感，绝不入仓；已同样排除出部署包 pack-scf.js）
+apps/api/scripts/backups/
 **/*.db-journal
 apps/api/.env
 **/prisma/migrations/**/migration.lock

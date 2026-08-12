@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-07-31 · ✅👑 Phase 5 学生端 AI 代理 + 权益门控（§65）与「会员中心 + 套餐订购闭环」（§66）已验收上线 `20260731V03.31`：学生端可自助浏览套餐→下单→管理后台一键确认收款→权益自动开通（订阅续费顺延/终身/单项），AI 对话·口语·作文按权益放行并优雅降级。上一阶段(§64)为 Phase 4 管理后台已验收上线 `20260731V03.30`。**
+> 最后更新：**2026-08-12 · ✅ 后端持久化 PostgreSQL 双轨脚手架 + 支付适配层骨架（Phase P0）已发布（仍走 SQLite 体验版，真实 PG 连接复用 Supabase 免费档待用户授权后接；版本号由 CI 自动 bump）。上一里程碑：§66 会员中心 + 套餐订购闭环已验收上线 `20260731V03.31`。**
 
 ---
 
@@ -58,6 +58,7 @@ start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
+| 2026-08-12 | **Phase 7 后端持久化 PostgreSQL 双轨脚手架 + Phase P0 支付适配层骨架发布**：`apps/api` 改造为 Prisma PostgreSQL 生产轨 + SQLite 本地轨双文件（`schema.prisma`/`schema.sqlite.prisma`）+ `init-pg.sql` 权威建表（含历史漂移缺的 2 表）；新增 `src/services/payment.ts` PaymentProvider 抽象 + ManualProvider（迁入手动收款逻辑）+ 5 渠道注册表、`src/routes/payment.ts` 渠道清单 + `/api/payment/callback/:channel` 501 桩、`scripts/export-data.js`/`import-data.js` 数据抢救迁移（铁律8三件套）；`/health` 加 DB 探测、`containsCI` 跨库大小写不敏感搜索。本期仍走 SQLite 体验版（数据回收仍丢），真实 PG（Supabase）连接待用户授权后接 | §67 |
 | 2026-07-04 深夜 | **T1-T4·6主题系统上线 + contextBar下拉框修复**：T1 根治白底(`styles.css`静态引入/防FOUC/变量收敛)；T2 6套主题变量(朱砂/青瓷/水墨黛/藏青/胭脂+晴空蓝默认)；T3 `js/theme.js` 管理器(localStorage持久化+主题切换)；T4 个人中心面板6色卡选择器 + A+覆盖Tailwind固定色(header/bg-white/text-slate等都跟主题)；fix contextBar from-blue-50子串匹配误伤致3下拉框白字白底，收窄为深色调类列表 + #contextBar例外规则固化浅色语境 | §54 |
 | 2026-07-04 | **P6-D 匹配题 + 补全短文全链路**：`jk_matching.json` 10组问答配对 + `jk_cloze_passage.json` 9篇选词短文；考试+练习+智能推题+错题本全接入；3-4年级8套模板加matching(10分)/6年级4套加cloze_passage | §55 |
 | 2026-07-04 | **P6-B 句型转换全链路**：`jk_sentence_transform.json` 扩至40题(3-6年级各上下,多可接受答案)；exam.js `_renderSentenceTransformHTML`+练习+智能+错题；下册8套模板加句型转换section(10分) | §55 |
@@ -4136,7 +4137,10 @@ P6-A 补全对话 (~2天)
 | Phase 4 | React+shadcn 管理后台 8 页（含**会员&营收、套餐&权益**）+ JSON↔DB 导入导出 | Web 后台 | ✅ **已验收上线 `20260731V03.30`**（apps/api 构建+种子通过、apps/admin 8 页构建通过、全接口冒烟通过；默认账号 admin/admin123456；已修复默认登录密码 + 跨端口 CORS；详见 §64） |
 | Phase 5 | AI 对话/ASR/作文评分（服务端代理）+ 学生端**权益门控**（教材/AI/高级功能按 VIP 放行） | 全端 | ✅ **已验收上线 `20260731V03.31`**（后端 `apps/api/src/routes/ai.ts` + `services/ai.ts` OpenAI 兼容代理、三个 AI 接口均按权益门控且优雅降级；前端 `js/entitlement.js` 权益门控 + `app.js` 对话/`lesson.js` 口语/`exam.js` 作文接入真 AI 并降级；教材软门控；后端冒烟全通过：401/403/503/200 与 git stu1 端到端验证。详见 §65） |
 | **Phase 5.5** | **学生端会员中心 + 套餐订购闭环**（浏览套餐→下单→后台确认收款→权益自动开通） | 全端 | ✅ **已验收上线 `20260731V03.31`**（新增 `js/member.js` 会员中心页；后端公开 `GET /api/membership/plans` + 学生端订单接口；管理后台订单「确认收款并开通/关闭」；订阅续费顺延/终身/单项统一由 `fulfillPlanForUser` 开通。详见 §66） |
+| **Phase 7** | **后端持久化 PostgreSQL 双轨脚手架**（生产 PG 轨 `schema.prisma` + 本地 SQLite 轨 `schema.sqlite.prisma` + `init-pg.sql`；数据抢救 `export/import-data.js`；`/health` DB 探测） | 后端 | 🟡 **脚手架已发布（2026-08-12）**：仍走 SQLite 体验版（实例回收数据仍丢）；真实 Supabase PG 连接待用户授权后接（详见 §67） |
+| **Phase P0** | **支付适配层骨架**（PaymentProvider 抽象 + ManualProvider + 5 渠道注册表 + `/api/payment/callback/:channel` 501 桩） | 收费 | ✅ **骨架已发布（2026-08-12）**：现有手动收款闭环不变；真实微信/支付宝/IAP 接入属 Phase P（详见 §67） |
 | Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
+| Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），在 Phase P0 骨架上接 | 收费 | ⏳ 后置（骨架已就绪，详见 §67） |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
 | Phase H | 纯血鸿蒙 ArkTS WebView 壳（可选后置） | 鸿蒙 NEXT | ⏳ 可选 |
 
@@ -4508,5 +4512,53 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 **线上验证**（`https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api`）：`/health` ok → `/api/plans` 返回 4 个套餐 → 新用户注册登录（0 权益）→ 下单 ¥18 `pending` → 重复下单 `reused=true` → admin 确认收款 → **权益 7 项、订阅 1 条、到期 2026-08-30**，全链路通过。
 
 > ⚠️ 仍是体验版：云函数实例回收后 `/tmp/dev.db` 清空（订单/会员数据丢失，套餐与 admin 会自动重新种入）。要真正持久化需升级云托管 + 云数据库（路线图 Phase P）。
+
+## 67. ✅ 后端持久化 PostgreSQL 双轨脚手架 + 支付适配层骨架（Phase P0，已发布 2026-08-12）
+
+> 📌 **起因**：体验版云函数 SQLite 在 `/tmp/dev.db`，实例回收即清空，订单/会员/学习数据全部丢失（§66.5 已记录）。本期按 2026-08-06 决策：**只做持久化脚手架 + 支付适配层骨架，全走免费资源，不连真实 PG、不接真实支付**。真实 Supabase PG 连接与真实支付渠道留待后续单独开（§67.5）。
+
+### 67.1 Prisma 双轨（生产 PG / 本地 SQLite）
+
+| 文件 | 变更 |
+|---|---|
+| `prisma/schema.prisma` | datasource 改 `postgresql`（生产轨；字段设计本就 PG 兼容：枚举用 String、无 SQLite 特有类型）；本地开发轨见 `schema.sqlite.prisma`（`npm run prisma:generate:sqlite`）。 |
+| `prisma/init-pg.sql` | 新增：由 `prisma migrate diff --from-empty --to-schema-datamodel` 生成的权威 PG 方言建表（16 表全含，补齐历史 `init.sql` 漂移缺失的 `ContentDocument`/`SystemSetting` 两表）。 |
+| `scripts/init-db.js` | 按 `DATABASE_URL` scheme 自动选 `init-pg.sql`(postgres:) / `init.sql`(file:) 双方言建表；去 BOM 容错。 |
+| `src/config.ts` | 新增 `config.db.{url,provider,isPg}`，由 `DATABASE_URL` scheme 驱动。 |
+| `src/db.ts` | PrismaClient 加 `log:['warn','error']`；注释补 `connection_limit=1`(SCF 单并发) 建议。 |
+| `src/server.ts` | `/health` 加 DB 连通性探测（`SELECT 1`，db 挂返回 503）；`/api/payment` 路由挂载在公共 `membershipRouter` 之前避免被其 `authRequired` 拦截。 |
+| `src/utils/query.ts` | 新增 `containsCI()`：PG 用 `mode:'insensitive'`、SQLite 不加该参数，统一 5 处搜索大小写不敏感。 |
+
+### 67.2 支付适配层骨架（Phase P0）
+
+| 文件 | 变更 |
+|---|---|
+| `src/services/payment.ts` | 新增 `PaymentProvider` 接口（createOrder/confirmPaid/handleCallback/refund 桩）+ `ManualProvider`（迁入原 `admin/commerce.ts` 确认收款逻辑，复用 `fulfillPlanForUser`）+ 5 渠道注册表（manual 已实现，wechat/alipay/apple_iap/google_play 占位）+ `PaymentLog` 写入工具。 |
+| `src/routes/payment.ts` | 新增 `GET /api/payment/channels`（公开，返回渠道实现状态）+ `POST /api/payment/callback/:channel`（验签桩，未实现渠道返回 **501**）。 |
+| `src/routes/admin/commerce.ts` | 「确认收款」改走 `getProvider('manual').confirmPaid(...)`，行为与契约不变。 |
+| `prisma/schema.prisma` | `orders.status` 预留 `refunded`；`PaymentLog` 模型已存在（回调流水/防重放结构预留，首期空表）。 |
+
+### 67.3 数据抢救迁移脚本（铁律 8 三件套）
+
+| 文件 | 说明 |
+|---|---|
+| `scripts/export-data.js` | 本地直读库 / 远程走 `GET /api/admin/export` 双模式；逐表容错（缺表不拖垮整体）+ 行数报告 + 快照落 `scripts/backups/`。 |
+| `scripts/import-data.js` | 外键安全顺序按 id 幂等 upsert + 差异报告 + **行数骤降>30% 中断**保护；`backups/` 已加入 `pack-scf.js` 排除项（敏感数据不入部署包）。 |
+| `src/routes/admin/operations.ts` | 新增 `GET /api/admin/export`（管理员）：14 表全量快照。 |
+
+> 抢救结论：现网 `/tmp` 快照仅 1 用户 + 4 套餐 + 22 绑定 + 8 权益，**业务数据（订阅/订单/审计）已因实例回收丢失**——印证升级 PG 的紧迫性。因无真实业务数据可迁，切 PG 后由 `seed-core.js` 幂等重种即可。
+
+### 67.4 验证
+
+- `npm run build`（tsc）通过；`npm run prisma:generate:sqlite` + 构建本地通过；`node --check` 两脚本通过。
+- 中间版已发布 CloudBase 云函数（仍 SQLite 客户端）：线上 `/health` → `db:up`；`/api/payment/channels` → 5 渠道（manual 已实现）；`/api/payment/callback/wechat` → **HTTP 501**；`/api/plans` 正常返回 4 套餐 + 权益。
+- 前端零改动，会员订购闭环契约不变。
+
+### 67.5 后续（待用户授权）
+
+- **真实 PG**：连接 Supabase 免费档 PostgreSQL → 配置云函数 `DATABASE_URL` 环境变量 → `init-pg.sql` 建表 → `import-data.js` 迁入 → 重新打包部署（`prisma generate` 默认 PG 轨）上线。
+- **真实支付**：在 `payment.ts` 注册表补齐 `WechatPayProvider/AlipayProvider/AppleIAPProvider` 实现 `handleCallback` + 商户号配置；`/api/payment/callback/:channel` 由 501 升级为验签处理。
+
+> ⚠️ **当前仍走 SQLite 体验版**：`scf_bootstrap` 在 `DATABASE_URL` 未注入时回退 `file:/tmp/dev.db`，实例回收数据仍会丢。持久化真正生效需完成 §67.5 的 Supabase 连接步骤。
 
 

@@ -9,9 +9,13 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
     "prisma:generate": "prisma generate",
+    "prisma:generate:sqlite": "prisma generate --schema prisma/schema.sqlite.prisma",
     "prisma:migrate": "prisma migrate dev",
     "prisma:push": "prisma db push",
-    "seed": "ts-node --transpile-only prisma/seed.ts"
+    "prisma:push:sqlite": "prisma db push --schema prisma/schema.sqlite.prisma",
+    "seed": "ts-node --transpile-only prisma/seed.ts",
+    "export-data": "node scripts/export-data.js",
+    "import-data": "node scripts/import-data.js"
   },
   "dependencies": {
     "@prisma/client": "5.22.0",

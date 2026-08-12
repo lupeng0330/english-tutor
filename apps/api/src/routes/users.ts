@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { Prisma } from '@prisma/client';
 import { prisma } from '../db';
 import { hashPassword } from '../utils/password';
+import { containsCI } from '../utils/query';
 import { authRequired } from '../middleware/auth';
 import { requireRole } from '../middleware/rbac';
 import { asyncHandler, badRequest, conflict, notFound } from '../middleware/error';
@@ -31,7 +32,7 @@ router.get(
     const where: Prisma.UserWhereInput = {
       ...(role ? { role } : {}),
       ...(status ? { status } : {}),
-      ...(search ? { OR: [{ username: { contains: search } }, { email: { contains: search } }, { displayName: { contains: search } }] } : {}),
+      ...(search ? { OR: [{ username: containsCI(search) }, { email: containsCI(search) }, { displayName: containsCI(search) }] } : {}),
     };
 
     const [total, items] = await Promise.all([
@@ -113,7 +114,7 @@ router.get(
     const { page, pageSize, teacherId, search } = parsed.data;
     const where: Prisma.ClassWhereInput = {
       ...(teacherId ? { teacherId } : {}),
-      ...(search ? { name: { contains: search } } : {}),
+      ...(search ? { name: containsCI(search) } : {}),
     };
     const [total, items] = await Promise.all([
       prisma.class.count({ where }),

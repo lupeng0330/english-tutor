@@ -1,7 +1,7 @@
-// 乐学英语 后端数据模型
-// 本文件 = 生产轨（PostgreSQL，Supabase 免费档）；本地开发用 schema.sqlite.prisma
-// （npm run prisma:generate:sqlite）。字段设计双库兼容：不用特有类型，枚举以
-// String + 常量约束表达，JSON 一律存 String。
+// 乐学英语 后端数据模型 —— 本地开发轨（SQLite 零依赖）
+// 生产轨见 schema.prisma（PostgreSQL，Supabase）。两文件模型必须保持同步：
+// 改模型时两边一起改，仅 datasource provider 不同。
+// 用法：npm run prisma:generate:sqlite（生成本地 SQLite 版 client）
 //
 // 模块分区：
 //   1) 账号与权限（RBAC）
@@ -16,7 +16,7 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
 }
 
@@ -71,7 +71,7 @@ model SyncBlob {
 model RefreshToken {
   id        String   @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   token     String   @unique
   expiresAt DateTime
   revoked   Boolean  @default(false)

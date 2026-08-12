@@ -5,6 +5,7 @@ import { asyncHandler, badRequest } from '../../middleware/error';
 import { AuthedRequest } from '../../types';
 import { writeAudit } from '../../services/audit';
 import { checksum, countItems, getParsedDocument, importContentFiles } from '../../services/content';
+import { containsCI } from '../../utils/query';
 
 const router = Router();
 const pageQuery = z.object({
@@ -22,7 +23,7 @@ router.get('/content', asyncHandler(async (req, res) => {
   const where = {
     ...(kind ? { kind } : {}),
     ...(status ? { status } : {}),
-    ...(search ? { path: { contains: search } } : {}),
+    ...(search ? { path: containsCI(search) } : {}),
   };
   const [total, items] = await Promise.all([
     prisma.contentDocument.count({ where }),

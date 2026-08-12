@@ -2,6 +2,7 @@
 import express from 'express';
 import cors from 'cors';
 import { config } from './config';
+import { prisma } from './db';
 import { errorHandler } from './middleware/error';
 import authRouter from './routes/auth';
 import usersRouter from './routes/users';
@@ -9,6 +10,7 @@ import membershipRouter from './routes/membership';
 import syncRouter from './routes/sync';
 import adminRouter from './routes/admin';
 import aiRouter from './routes/ai';
+import paymentRouter from './routes/payment';
 
 export function createApp() {
   const app = express();
@@ -34,13 +36,23 @@ export function createApp() {
     next();
   });
 
-  // 健康检查
-  app.get('/health', (_req, res) => res.json({ ok: true, ts: Date.now() }));
+  // 健康检查：附数据库连通性探测（SELECT 1），便于发现 PG 连接问题
+  app.get('/health', async (_req, res) => {
+    try {
+      await prisma.$queryRawUnsafe('SELECT 1');
+      res.json({ ok: true, db: 'up', provider: config.db.provider, ts: Date.now() });
+    } catch (e) {
+      res.status(503).json({ ok: false, db: 'down', provider: config.db.provider, ts: Date.now() });
+    }
+  });
 
   // 路由
   app.use('/api/auth', authRouter);
   app.use('/api/users', usersRouter);
   app.use('/api/admin', adminRouter);
+  // 注意顺序：membershipRouter 挂在 /api 且含 router.use(authRequired)，会拦截所有 /api/*；
+  // 公共/独立鉴权的路由必须挂在它前面。
+  app.use('/api/payment', paymentRouter); // 支付渠道骨架：/channels 清单 + /callback/:channel 桩（501）
   app.use('/api', membershipRouter); // /api/me/entitlements, /api/plans, /api/admin/*
   app.use('/api', syncRouter); // /api/sync, /api/sync/:key
   app.use('/api/ai', aiRouter); // 服务端 AI 代理（对话/转写/作文评分，密钥留服务端）

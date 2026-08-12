@@ -2,9 +2,9 @@
 # 腾讯云函数 Web 版启动脚本（CloudBase 云函数 Node 运行时入口）
 # Web 函数固定要求监听 9000 端口
 export PORT=9000
-# 云函数文件系统只读（/tmp 可写但实例回收后清空）：SQLite 放 /tmp，冷启动重建
-# ⚠️ 这是「免费跑通链路」方案：实例回收后数据会丢。要持久化需升级按量付费（云托管+云数据库）。
-export DATABASE_URL="file:/tmp/dev.db"
+# 数据库：优先用平台环境变量注入的 PostgreSQL 连接串（Supabase 免费档，持久化）；
+# 未注入时回退 /tmp SQLite（实例回收即丢数据，仅作降级兜底，保证服务可启动）。
+export DATABASE_URL="${DATABASE_URL:-file:/tmp/dev.db}"
 export NODE_ENV=production
 # 线上前端域名（GitHub Pages）+ 本地开发
 export CORS_ORIGINS="https://lupeng0330.github.io,http://localhost:8765,http://127.0.0.1:8765"

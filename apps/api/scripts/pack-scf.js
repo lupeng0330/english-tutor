@@ -12,7 +12,8 @@ const OUT = path.join(ROOT, 'scf-deploy.zip');
 const INCLUDE = ['dist', 'node_modules', 'prisma', 'scripts', 'package.json', 'scf_bootstrap'];
 // 排除规则
 const EXCLUDE_NAMES = new Set(['dev.db', 'dev.db-journal', '.env', 'scf-deploy.zip', '.DS_Store']);
-const EXCLUDE_DIRS = new Set(['.cache', '.git']);
+// backups：数据迁移快照（含用户数据），绝不入部署包
+const EXCLUDE_DIRS = new Set(['.cache', '.git', 'backups']);
 // 部署包只带 SCF 运行时引擎（rhel-openssl-1.1.x）；windows/debian 引擎与 prisma generate
 // 遗留的 *.tmp<pid> 半成品副本一律不入包（曾各 18.4MB × N，直接把包顶到 51MB 触发上传 413）
 const EXCLUDE_FILE_PATTERNS = [

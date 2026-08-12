@@ -1,6 +1,6 @@
 # 乐学英语 后端 API（CloudBase 云托管 / 通用容器部署）
-# 本地阶段：容器内 SQLite（prisma db push 自动建表），跑通链路；
-# 生产阶段：切云 PostgreSQL/MySQL 时仅需改 schema provider + DATABASE_URL 环境变量。
+# 数据库双轨：schema.prisma=PostgreSQL（生产，DATABASE_URL 环境变量注入）；
+# 本地/容器内用 SQLite 时请改用 schema.sqlite.prisma（prisma:generate:sqlite / prisma:push:sqlite）。
 FROM node:20-slim
 
 # Prisma 引擎需要 openssl
@@ -29,5 +29,5 @@ ENV NODE_ENV=production
 ENV PORT=3000
 EXPOSE 3000
 
-# 启动：先对齐数据库结构（SQLite 自动建库建表），再起服务
+# 启动：先对齐数据库结构（db push 对 PG/SQLite 均可用；生产建议后续改 migrate deploy），再起服务
 CMD npx prisma db push --skip-generate && node dist/server.js
