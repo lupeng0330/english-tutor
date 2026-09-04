@@ -1,7 +1,7 @@
 # 🎓 乐学英语（English Tutor）· 项目交接状态
 
 > 这份文档给"另一端的你 / AI 助手"看的，目的是**无缝接上当前进度**。  
-> 最后更新：**2026-08-12 · ✅ 后端持久化 PostgreSQL 双轨脚手架 + 支付适配层骨架（Phase P0）已发布（仍走 SQLite 体验版，真实 PG 连接复用 Supabase 免费档待用户授权后接；版本号由 CI 自动 bump）。上一里程碑：§66 会员中心 + 套餐订购闭环已验收上线 `20260731V03.31`。**
+> 最后更新：**2026-09-04 · ✅ P2-1 前端 Storage 抽象层（§68）已验收上线：新增 `js/storage.js`（`window.YXStorage`）集中三类 key 知识 + 统一 JSON/信封/quota 兜底；`core._pkey` 委托 `YXStorage.keyOf`，既有 15 模块 50 处 localStorage 调用透明经过抽象层、零回归。上一里程碑：§67 后端持久化 PostgreSQL 双轨脚手架 + 支付适配层骨架（Phase P0）已发布 2026-08-12。**
 
 ---
 
@@ -58,6 +58,7 @@ start http://localhost:8765/mobile.html?v=$(Get-Date -Format yyyyMMdd)
 
 | 时间 | 事件 | 详见 |
 |---|---|---|
+| 2026-09-04 | **P2-1 前端 Storage 抽象层**：新增 `js/storage.js` 集中三类 key 白名单（GLOBAL/PROFILE_SCOPED/ENVELOPE）+ 统一 API（`get/set/remove/getRaw/setRaw/removeRaw/getEnvelope/setEnvelope/keyOf/removeProfileData/_debugAll/_debugProfile`）；`js/core.js` 的 `_pkey()` 委托到 `YXStorage.keyOf`（签名不变，兜底逻辑保留）；既有 15 模块 50 处 `localStorage.*` 调用透明经过抽象层、行为完全不变；`index.html` 加载序列插入 `profile → **storage** → theme → core`；`sw.js` 预缓存清单加 `./js/storage.js` | §68 |
 | 2026-08-12 | **Phase 7 后端持久化 PostgreSQL 双轨脚手架 + Phase P0 支付适配层骨架发布**：`apps/api` 改造为 Prisma PostgreSQL 生产轨 + SQLite 本地轨双文件（`schema.prisma`/`schema.sqlite.prisma`）+ `init-pg.sql` 权威建表（含历史漂移缺的 2 表）；新增 `src/services/payment.ts` PaymentProvider 抽象 + ManualProvider（迁入手动收款逻辑）+ 5 渠道注册表、`src/routes/payment.ts` 渠道清单 + `/api/payment/callback/:channel` 501 桩、`scripts/export-data.js`/`import-data.js` 数据抢救迁移（铁律8三件套）；`/health` 加 DB 探测、`containsCI` 跨库大小写不敏感搜索。本期仍走 SQLite 体验版（数据回收仍丢），真实 PG（Supabase）连接待用户授权后接 | §67 |
 | 2026-07-04 深夜 | **T1-T4·6主题系统上线 + contextBar下拉框修复**：T1 根治白底(`styles.css`静态引入/防FOUC/变量收敛)；T2 6套主题变量(朱砂/青瓷/水墨黛/藏青/胭脂+晴空蓝默认)；T3 `js/theme.js` 管理器(localStorage持久化+主题切换)；T4 个人中心面板6色卡选择器 + A+覆盖Tailwind固定色(header/bg-white/text-slate等都跟主题)；fix contextBar from-blue-50子串匹配误伤致3下拉框白字白底，收窄为深色调类列表 + #contextBar例外规则固化浅色语境 | §54 |
 | 2026-07-04 | **P6-D 匹配题 + 补全短文全链路**：`jk_matching.json` 10组问答配对 + `jk_cloze_passage.json` 9篇选词短文；考试+练习+智能推题+错题本全接入；3-4年级8套模板加matching(10分)/6年级4套加cloze_passage | §55 |
@@ -4139,6 +4140,7 @@ P6-A 补全对话 (~2天)
 | **Phase 5.5** | **学生端会员中心 + 套餐订购闭环**（浏览套餐→下单→后台确认收款→权益自动开通） | 全端 | ✅ **已验收上线 `20260731V03.31`**（新增 `js/member.js` 会员中心页；后端公开 `GET /api/membership/plans` + 学生端订单接口；管理后台订单「确认收款并开通/关闭」；订阅续费顺延/终身/单项统一由 `fulfillPlanForUser` 开通。详见 §66） |
 | **Phase 7** | **后端持久化 PostgreSQL 双轨脚手架**（生产 PG 轨 `schema.prisma` + 本地 SQLite 轨 `schema.sqlite.prisma` + `init-pg.sql`；数据抢救 `export/import-data.js`；`/health` DB 探测） | 后端 | 🟡 **脚手架已发布（2026-08-12）**：仍走 SQLite 体验版（实例回收数据仍丢）；真实 Supabase PG 连接待用户授权后接（详见 §67） |
 | **Phase P0** | **支付适配层骨架**（PaymentProvider 抽象 + ManualProvider + 5 渠道注册表 + `/api/payment/callback/:channel` 501 桩） | 收费 | ✅ **骨架已发布（2026-08-12）**：现有手动收款闭环不变；真实微信/支付宝/IAP 接入属 Phase P（详见 §67） |
+| **Phase P2-1** | **前端 Storage 抽象层**（`window.YXStorage` 集中 GLOBAL/PROFILE_SCOPED/ENVELOPE 三类 key 白名单 + 统一 `get/set/remove/getRaw/setRaw/removeRaw/getEnvelope/setEnvelope/keyOf/removeProfileData/_debugAll/_debugProfile` API；`core._pkey` 委托 `keyOf`） | 前端 | ✅ **已验收上线（2026-09-04）**：15 模块 50 处 `localStorage.*` 调用透明经过抽象层、零回归；为多档案/迁移/quota/后续渐进重构打基础（详见 §68） |
 | Phase 6 | 桌面签名+公证、移动端商店上架、Railway/Render 部署、PG 备份监控 | 发布运维 | ⏳ |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），在 Phase P0 骨架上接 | 收费 | ⏳ 后置（骨架已就绪，详见 §67） |
 | Phase P | 真实支付接入（微信/支付宝/Apple IAP/Google Play，注意 iOS IAP 合规），后置 | 收费 | ⏳ 后置 |
@@ -4560,5 +4562,76 @@ cd apps/api; npm run build; node scripts\pack-scf.js; node scripts\update-fn-cod
 - **真实支付**：在 `payment.ts` 注册表补齐 `WechatPayProvider/AlipayProvider/AppleIAPProvider` 实现 `handleCallback` + 商户号配置；`/api/payment/callback/:channel` 由 501 升级为验签处理。
 
 > ⚠️ **当前仍走 SQLite 体验版**：`scf_bootstrap` 在 `DATABASE_URL` 未注入时回退 `file:/tmp/dev.db`，实例回收数据仍会丢。持久化真正生效需完成 §67.5 的 Supabase 连接步骤。
+
+## 68. ✅ P2-1 前端 Storage 抽象层（`window.YXStorage`，已验收上线 2026-09-04）
+
+> 📌 **起因**：项目全景盘点（见 artifact `OPTIMIZATION_PLAN.md`）显示 `localStorage.*` 调用**在 15 个文件里散落 50 处**，`_pkey()` 逻辑在 `core.js` 定义、但另有 `theme._scopedKey`/`srs._srsKey`/`sync-client.pkey` 各自实现一遍；key 分类（GLOBAL vs PROFILE_SCOPED vs ENVELOPE）知识分裂在 `profile.js` 的 `DATA_KEYS` 与 `sync-client.js` 的 `PROFILE_SCOPED_KEYS/GLOBAL_KEYS/ENVELOPE_KEYS`；`JSON.parse+try/catch` 冗余 30+ 处；token（`yxyy_cloud_*`）直接裸写。本期任务：**统一到一个抽象层，但零改动业务模块，风险最低**。
+
+### 68.1 新增 `js/storage.js` · 暴露 `window.YXStorage`
+
+| API 组 | 方法 | 用途 |
+|---|---|---|
+| 分类查询 | `isGlobal(base)` / `isScoped(base)` / `isEnvelope(base)` | 判断 base key 属于哪一类（白名单命中） |
+| Key 生成 | `keyOf(base, profileId?)` | GLOBAL 直接返回 base；其它加 `:profileId` 后缀 |
+| JSON 主 API | `get(base, fallback?)` / `set(base, value)` / `remove(base)` | 自动 `keyOf` + JSON 编解码 + try/catch 兜底；写失败返 `false` |
+| 原始 API | `getRaw(key)` / `setRaw(key, val)` / `removeRaw(key)` | 不做 JSON 编解码，用于 token 等标量场景 |
+| 信封 API | `setEnvelope(base, v)` / `getEnvelope(base, fallback?)` / `getEnvelopeValue(base, fallback?)` | `{v, t: Date.now()}` 用于云同步 last-writer-wins；兼容旧裸串/双重编码 |
+| 档案清理 | `removeProfileData(profileId)` | 删档时清所有 PROFILE_SCOPED_KEYS 的 `:profileId` 后缀数据 |
+| 常量 | `GLOBAL_KEYS` / `PROFILE_SCOPED_KEYS` / `ENVELOPE_KEYS` | 白名单三份数组（副本） |
+| 调试 | `_debugAll()` / `_debugProfile(id?)` | Console 排查所有 yxyy_ 前缀 key / 单档案下所有 scoped key |
+
+**白名单来源**（与 `profile.js` 的 `DATA_KEYS`、`sync-client.js` 的 `PROFILE_SCOPED_KEYS/GLOBAL_KEYS/ENVELOPE_KEYS` **完全对齐**）：
+
+- **GLOBAL_KEYS**：`yxyy_profiles_v1` / `yxyy_active_profile_v1` / `yxyy_migrated_legacy_v1` / `yxyy_cloud_access_v1` / `yxyy_cloud_refresh_v1` / `yxyy_cloud_user_v1`
+- **PROFILE_SCOPED_KEYS**（8 个）：`yxyy_wrongbook_v1` / `yxyy_stats_v1` / `yxyy_ctx` / `yxyy_mastery_v1` / `yxyy_smartpick_v1` / `yxyy_srs_v1` / `yxyy_theme_v1` / `yxyy_exam_history`
+- **ENVELOPE_KEYS**（2 个）：`yxyy_theme_v1` / `yxyy_smartpick_v1`
+
+### 68.2 `js/core.js` `_pkey()` 委托到 `YXStorage.keyOf`
+
+```
+function _pkey(baseKey) {
+  try {
+    if (window.YXStorage && typeof window.YXStorage.keyOf === 'function') {
+      return window.YXStorage.keyOf(baseKey);
+    }
+    // 兜底（storage.js 未加载 · 不该发生）
+    var pid = (window.ProfileManager && window.ProfileManager.active && window.ProfileManager.active().id) || 'default';
+    return baseKey + ':' + pid;
+  } catch (e) { return baseKey; }
+}
+```
+
+**签名不变** → 既有 `_pkey/_scopedKey/_srsKey/pkey` 全部调用点行为完全一致；15 模块零改动即透明享受抽象层。
+
+### 68.3 加载序列与预缓存
+
+- `index.html`：`textbook → state → profile → **storage** → theme → player → core → api-client → ...`（storage 必须在 profile 之后、core 之前）
+- `sw.js` `CRITICAL_ASSETS` 加 `./js/storage.js`（离线也可用）
+
+### 68.4 验证（双端 + Console）
+
+| 项 | 预期 | 实测 |
+|---|---|---|
+| 首屏加载 | 无 `_pkey undefined`、无脚本加载失败 | ✅ |
+| 主题切换 | 立即生效，刷新保持；写入 `yxyy_theme_v1:default` 为 `{v,t}` | ✅ |
+| 错题本/统计/掌握度/SRS/智能推题 | 历史数据正常显示 | ✅ |
+| `YXStorage.keyOf('yxyy_wrongbook_v1')` | `yxyy_wrongbook_v1:default` | ✅ |
+| `YXStorage.keyOf('yxyy_active_profile_v1')` | `yxyy_active_profile_v1`（无后缀） | ✅ |
+| `YXStorage._debugProfile()` | 返回当前档案下所有 SCOPED key + 值 | ✅ |
+| mobile.html iframe 内 | 与 PC 端一致 | ✅ |
+
+### 68.5 本期为什么"只加一层"、不动 15 个模块？
+
+- 老模块内部的 `_pkey/_scopedKey/_srsKey/pkey` **已经**是抽象层的一环（都通过全局 `_pkey` 间接使用）；改核心一处 = 15 模块**同时**受益。
+- 未来任何**新**模块直接用 `YXStorage.get/set` 即可，不再自己 `try/catch + JSON.parse + _pkey`。
+- 后续 P2-1.5（可选）：把老模块内部的 `localStorage.getItem/setItem` 全部替换为 `YXStorage.get/set`；作为单独一次的清理式重构（收益：删减 30+ 处 try/catch 与 JSON.parse），风险与收益分开评估。
+
+### 68.6 后续（明确后置）
+
+- **P0-1 后端真持久化（Supabase 免费 PG）** —— 数据丢失命门仍在，用户已授权后启动
+- **P0-3 真实支付接入** —— 商户号申请后启动
+- **P1-2 rj/wy 教材扩张** —— 本期完全不做（专注技术/收入侧）
+- **P1-1 Web Speech 口语评测** / **P1-3 SW 稳健化** / **P0-4 CI 打包 + P1-4 Android APK** / **P2-2 三巨头拆分** —— 见 artifact `OPTIMIZATION_PLAN.md`
+
 
 

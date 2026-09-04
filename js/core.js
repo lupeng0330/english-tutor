@@ -7,12 +7,17 @@
  *      加载顺序见 index.html / sw.js。
  * ======================================================= */
 
+// v01.32 P2-1：委托到 YXStorage.keyOf（统一 Storage 抽象层）；
+// 保持原签名 (baseKey) → 'baseKey:profileId'，所有既有模块的 _pkey/_scopedKey/_srsKey 调用行为不变。
 function _pkey(baseKey) {
   try {
+    if (window.YXStorage && typeof window.YXStorage.keyOf === 'function') {
+      return window.YXStorage.keyOf(baseKey);
+    }
+    // 兜底（storage.js 未加载 · 不该发生）：保留原逻辑，业务照常运行
     var pid = (window.ProfileManager && window.ProfileManager.active && window.ProfileManager.active().id) || 'default';
     return baseKey + ':' + pid;
   } catch (e) {
-    // 任何异常（包括 ProfileManager 还没加载好）都退化为原 key，保证调用点永不崩
     return baseKey;
   }
 }

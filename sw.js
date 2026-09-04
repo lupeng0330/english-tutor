@@ -23,7 +23,7 @@ const BOOTSTRAP_VERSION = 'bootstrap';
 // 应用壳与默认教材必须原子安装：任一失败都不激活新 SW，上一版完整缓存继续可用。
 const CRITICAL_ASSETS = [
   './', './index.html', './tailwind.css', './styles.css', './app.js', './questionBank.js',
-  './js/textbook.js', './js/state.js', './js/profile.js', './js/theme.js', './js/player.js',
+  './js/textbook.js', './js/state.js', './js/profile.js', './js/storage.js', './js/theme.js', './js/player.js',
   './js/core.js', './js/api-client.js', './js/wrongbook.js', './js/mastery.js', './js/smartpick.js',
   './js/stats.js', './js/sync-client.js', './js/offline-audio.js', './js/srs.js', './js/home.js',
   './js/lesson.js', './js/practice.js', './js/exam.js', './js/grammar.js',

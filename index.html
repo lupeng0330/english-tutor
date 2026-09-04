@@ -989,6 +989,7 @@
       addScript('./js/textbook.js')
         .then(function(){ return addScript('./js/state.js'); })
         .then(function(){ return addScript('./js/profile.js'); })
+        .then(function(){ return addScript('./js/storage.js'); }) // v01.32 P2-1 Storage 抽象层：必须在 profile 之后（依赖 ProfileManager）、core 之前（core._pkey 委托到 YXStorage.keyOf）
         .then(function(){ return addScript('./js/theme.js'); })
         .then(function(){ return addScript('./js/player.js'); })
         .then(function(){ return addScript('./js/core.js'); })
