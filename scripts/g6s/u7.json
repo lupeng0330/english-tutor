@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 Amazing Inventions",
+  "words": [
+    { "word": "invention", "phonetic": "/ɪnˈvenʃn/", "meaning": "[n.] 发明", "example": "A great invention." },
+    { "word": "invent", "phonetic": "/ɪnˈvent/", "meaning": "[v.] 发明", "example": "Who invented it?" },
+    { "word": "phone", "phonetic": "/fəʊn/", "meaning": "[n.] 电话", "example": "A smart phone." },
+    { "word": "computer", "phonetic": "/kəmˈpjuːtə(r)/", "meaning": "[n.] 电脑", "example": "Use a computer." },
+    { "word": "internet", "phonetic": "/ˈɪntənet/", "meaning": "[n.] 互联网", "example": "The internet is fast." },
+    { "word": "robot", "phonetic": "/ˈrəʊbɒt/", "meaning": "[n.] 机器人", "example": "A helpful robot." },
+    { "word": "change", "phonetic": "/tʃeɪndʒ/", "meaning": "[v./n.] 改变", "example": "Inventions change life." },
+    { "word": "future", "phonetic": "/ˈfjuːtʃə(r)/", "meaning": "[n.] 未来", "example": "Future inventions." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Amazing inventions",
+      "en": "Ben: Anna, what invention do you love most?\nAnna: The phone, because I can talk to Grandma far away.\nBen: I love the internet — I can learn anything online.\nAnna: Robots can help in hospitals and homes too.\nBen: Inventions really change our lives. The future will be amazing!",
+      "cn": "本：安娜，你最爱什么发明？\n安娜：电话，能和远方奶奶说话。\n本：我爱互联网，能在线学任何东西。\n安娜：机器人也能帮助医院和家庭。\n本：发明真的改变生活。未来会更精彩！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Inventions that changed the world",
+      "en": "Some inventions changed the world forever. Paper helped knowledge travel far. The light bulb turned dark nights bright. The computer and the internet brought people from across the world together. Today, robots help doctors do small surgery. Tomorrow, maybe cars will drive themselves to school. Inventors keep dreaming, and the world keeps growing.",
+      "cn": "有些发明永远改变了世界。纸让知识传得远。电灯泡照亮黑夜。电脑和互联网把世界各地的人连在一起。今天机器人帮医生做小手术。明天也许汽车自己开去学校。发明家不断梦想，世界不断成长。"
+    }
+  ]
+}

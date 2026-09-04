@@ -1,0 +1,32 @@
+{
+  "lovely": [
+    { "en": "Lovely day.", "cn": "美好的一天。", "level": 1 },
+    { "en": "What a lovely garden!", "cn": "多美的花园！", "level": 2 },
+    { "en": "We had a lovely time together in the warm spring sun.", "cn": "我们在温暖的春日阳光里度过了美好的时光。", "level": 3 }
+  ],
+  "remember": [
+    { "en": "Remember!", "cn": "记住！", "level": 1 },
+    { "en": "Remember to smile.", "cn": "记得微笑。", "level": 2 },
+    { "en": "I will always remember this happy spring.", "cn": "我会永远记得这个快乐的春天。", "level": 3 }
+  ],
+  "diary": [
+    { "en": "My diary.", "cn": "我的日记。", "level": 1 },
+    { "en": "I write a diary.", "cn": "我写日记。", "level": 2 },
+    { "en": "I have kept a diary for almost two years now.", "cn": "我已经写日记差不多两年了。", "level": 3 }
+  ],
+  "friend": [
+    { "en": "My friend.", "cn": "我的朋友。", "level": 1 },
+    { "en": "He is my best friend.", "cn": "他是我最好的朋友。", "level": 2 },
+    { "en": "Good friends help each other through hard times.", "cn": "好朋友在困难时彼此帮助。", "level": 3 }
+  ],
+  "thank": [
+    { "en": "Thank you!", "cn": "谢谢你！", "level": 1 },
+    { "en": "Thank you, Mum.", "cn": "谢谢妈妈。", "level": 2 },
+    { "en": "I want to thank my teacher for her endless support.", "cn": "我想感谢老师无尽的支持。", "level": 3 }
+  ],
+  "spring": [
+    { "en": "Lovely spring.", "cn": "美好的春天。", "level": 1 },
+    { "en": "Spring is my favourite.", "cn": "春天是我最爱。", "level": 2 },
+    { "en": "Each spring reminds me to start fresh with new dreams.", "cn": "每个春天都提醒我带着新梦想重新开始。", "level": 3 }
+  ]
+}

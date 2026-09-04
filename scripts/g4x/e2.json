@@ -1,0 +1,42 @@
+{
+  "clothes": [
+    { "en": "New clothes.", "cn": "新衣服。", "level": 1 },
+    { "en": "I wash my clothes.", "cn": "我洗衣服。", "level": 2 },
+    { "en": "Mum keeps my clothes neatly folded in the drawer.", "cn": "妈妈把我的衣服整齐地叠在抽屉里。", "level": 3 }
+  ],
+  "shirt": [
+    { "en": "A white shirt.", "cn": "一件白衬衫。", "level": 1 },
+    { "en": "Dad wears a blue shirt.", "cn": "爸爸穿蓝衬衫。", "level": 2 },
+    { "en": "I always wear a clean shirt to school.", "cn": "我上学总穿干净衬衫。", "level": 3 }
+  ],
+  "T-shirt": [
+    { "en": "My T-shirt.", "cn": "我的 T 恤。", "level": 1 },
+    { "en": "My T-shirt is blue.", "cn": "我 T 恤是蓝色的。", "level": 2 },
+    { "en": "I wear a cotton T-shirt on hot summer days.", "cn": "炎热夏日我穿棉 T 恤。", "level": 3 }
+  ],
+  "skirt": [
+    { "en": "A pink skirt.", "cn": "一条粉裙子。", "level": 1 },
+    { "en": "Her skirt is short.", "cn": "她的裙子短。", "level": 2 },
+    { "en": "Lily wears a long flower skirt to the party.", "cn": "莉莉穿着长花裙去聚会。", "level": 3 }
+  ],
+  "trousers": [
+    { "en": "Black trousers.", "cn": "黑裤子。", "level": 1 },
+    { "en": "His trousers are new.", "cn": "他裤子是新的。", "level": 2 },
+    { "en": "These blue trousers feel very comfortable.", "cn": "这条蓝裤子穿着很舒服。", "level": 3 }
+  ],
+  "shoes": [
+    { "en": "New shoes.", "cn": "新鞋。", "level": 1 },
+    { "en": "I have white shoes.", "cn": "我有白鞋。", "level": 2 },
+    { "en": "Sports shoes are great for running on the playground.", "cn": "运动鞋很适合在操场上跑步。", "level": 3 }
+  ],
+  "hat": [
+    { "en": "A sun hat.", "cn": "一顶遮阳帽。", "level": 1 },
+    { "en": "I have a red hat.", "cn": "我有顶红帽子。", "level": 2 },
+    { "en": "Don't forget your hat — the sun is very strong today.", "cn": "别忘戴帽子——今天太阳很大。", "level": 3 }
+  ],
+  "wear": [
+    { "en": "Wear it.", "cn": "穿上。", "level": 1 },
+    { "en": "Wear your coat.", "cn": "穿上外套。", "level": 2 },
+    { "en": "What will you wear to the school party tonight?", "cn": "今晚学校聚会你穿什么？", "level": 3 }
+  ]
+}

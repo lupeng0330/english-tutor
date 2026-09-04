@@ -1,0 +1,32 @@
+{
+  "future": [
+    { "en": "Bright future.", "cn": "光明未来。", "level": 1 },
+    { "en": "Look to the future.", "cn": "展望未来。", "level": 2 },
+    { "en": "The future belongs to those who keep on dreaming.", "cn": "未来属于那些不停做梦的人。", "level": 3 }
+  ],
+  "bright": [
+    { "en": "Bright!", "cn": "明亮！", "level": 1 },
+    { "en": "A bright sky.", "cn": "明亮的天空。", "level": 2 },
+    { "en": "With courage and effort, our future will be bright.", "cn": "凭借勇气与努力，我们的未来必定光明。", "level": 3 }
+  ],
+  "goal": [
+    { "en": "My goal.", "cn": "我的目标。", "level": 1 },
+    { "en": "Set a goal.", "cn": "定个目标。", "level": 2 },
+    { "en": "Write down your goals and check them every week.", "cn": "把目标写下来，每周检查。", "level": 3 }
+  ],
+  "believe": [
+    { "en": "Believe me.", "cn": "相信我。", "level": 1 },
+    { "en": "Believe in yourself.", "cn": "相信自己。", "level": 2 },
+    { "en": "Believe in yourself even when others doubt you.", "cn": "即使别人怀疑，也要相信自己。", "level": 3 }
+  ],
+  "thank": [
+    { "en": "Thanks!", "cn": "谢谢！", "level": 1 },
+    { "en": "Thank everyone.", "cn": "感谢大家。", "level": 2 },
+    { "en": "Thank everyone who walked this journey with us.", "cn": "感谢一路同行的每一个人。", "level": 3 }
+  ],
+  "goodbye": [
+    { "en": "Goodbye!", "cn": "再见！", "level": 1 },
+    { "en": "Say goodbye.", "cn": "道别。", "level": 2 },
+    { "en": "Goodbye is not an end, but a brand-new beginning.", "cn": "再见不是结束，而是全新开始。", "level": 3 }
+  ]
+}

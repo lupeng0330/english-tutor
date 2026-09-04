@@ -1,0 +1,42 @@
+{
+  "classroom": [
+    { "en": "This is our classroom.", "cn": "这是我们的教室。", "level": 1 },
+    { "en": "Our classroom is bright and clean.", "cn": "我们的教室明亮又干净。", "level": 2 },
+    { "en": "There are many posters on the walls of our classroom.", "cn": "我们教室的墙上有许多海报。", "level": 3 }
+  ],
+  "desk": [
+    { "en": "This is my desk.", "cn": "这是我的课桌。", "level": 1 },
+    { "en": "I have a book on my desk.", "cn": "我课桌上有一本书。", "level": 2 },
+    { "en": "Please keep your desk clean and tidy.", "cn": "请保持你的课桌干净整洁。", "level": 3 }
+  ],
+  "chair": [
+    { "en": "Sit on the chair.", "cn": "坐在椅子上。", "level": 1 },
+    { "en": "This chair is too small.", "cn": "这把椅子太小了。", "level": 2 },
+    { "en": "Each student has a desk and a chair in our class.", "cn": "我们班每个学生都有一张课桌和一把椅子。", "level": 3 }
+  ],
+  "clean": [
+    { "en": "Be clean.", "cn": "要干净。", "level": 1 },
+    { "en": "I clean my desk every day.", "cn": "我每天打扫我的课桌。", "level": 2 },
+    { "en": "We work together to keep our classroom clean.", "cn": "我们一起努力保持教室干净。", "level": 3 }
+  ],
+  "tidy": [
+    { "en": "Be tidy.", "cn": "要整洁。", "level": 1 },
+    { "en": "Your room is very tidy.", "cn": "你的房间很整洁。", "level": 2 },
+    { "en": "A tidy desk helps me study better.", "cn": "整洁的课桌让我学得更好。", "level": 3 }
+  ],
+  "poster": [
+    { "en": "Look at this poster.", "cn": "看这张海报。", "level": 1 },
+    { "en": "I have a new poster.", "cn": "我有一张新海报。", "level": 2 },
+    { "en": "The poster on the wall shows our class rules.", "cn": "墙上的海报展示了我们的班规。", "level": 3 }
+  ],
+  "rule": [
+    { "en": "Know the rules.", "cn": "知道规则。", "level": 1 },
+    { "en": "We have three class rules.", "cn": "我们有三条班规。", "level": 2 },
+    { "en": "Rules help everyone live and study happily together.", "cn": "规则帮助大家一起开心地生活和学习。", "level": 3 }
+  ],
+  "call": [
+    { "en": "Hear our call!", "cn": "听我们的呼喊！", "level": 1 },
+    { "en": "Our class call is loud.", "cn": "我们的班级口号很响亮。", "level": 2 },
+    { "en": "We shout our class call together every morning.", "cn": "我们每天早上一起喊出班级口号。", "level": 3 }
+  ]
+}

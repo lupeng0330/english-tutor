@@ -1,0 +1,29 @@
+{
+  "id": "u5",
+  "title": "Unit 5 Set a Password",
+  "module": "",
+  "words": [
+    { "word": "password", "phonetic": "/ˈpɑːswɜːd/", "meaning": "[n.] 密码", "example": "Keep your password safe." },
+    { "word": "number", "phonetic": "/ˈnʌmbə(r)/", "meaning": "[n.] 数字；号码", "example": "Pick a number from 1 to 10." },
+    { "word": "set", "phonetic": "/set/", "meaning": "[v.] 设置", "example": "Let's set a password." },
+    { "word": "secret", "phonetic": "/ˈsiːkrət/", "meaning": "[n./adj.] 秘密（的）", "example": "A password is a secret." },
+    { "word": "safe", "phonetic": "/seɪf/", "meaning": "[adj.] 安全的", "example": "Your number is safe." },
+    { "word": "remember", "phonetic": "/rɪˈmembə(r)/", "meaning": "[v.] 记住", "example": "Remember your password." },
+    { "word": "type", "phonetic": "/taɪp/", "meaning": "[v.] 输入；打字", "example": "Type the numbers here." },
+    { "word": "ten", "phonetic": "/ten/", "meaning": "[num.] 十", "example": "I count to ten." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Set a password",
+      "en": "Dad: Let's set a password for the tablet.\nEmma: How many numbers do we need?\nDad: Pick four numbers, from one to ten.\nEmma: My secret password is ready!\nDad: Good. Remember it, and keep it safe.\nEmma: I'll type it carefully every time.",
+      "cn": "爸爸：我们来给平板设个密码吧。\n艾玛：我们需要几个数字？\n爸爸：选四个数字，从一到十。\n艾玛：我的秘密密码好啦！\n爸爸：很好。记住它，并且保管好。\n艾玛：我每次都会小心地输入。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Keep it secret",
+      "en": "A password is a special secret.\nIt is made of numbers, like 2, 5, 8, 0.\nWe type the password to keep things safe.\nDon't tell your password to others.\nRemember it well, and you are safe!",
+      "cn": "密码是一个特别的秘密。\n它由数字组成，比如 2、5、8、0。\n我们输入密码来保证东西安全。\n不要把你的密码告诉别人。\n好好记住它，你就安全啦！"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "get up": [
+    { "en": "Get up!", "cn": "起床！", "level": 1 },
+    { "en": "I get up at seven.", "cn": "我七点起床。", "level": 2 },
+    { "en": "On Sunday, I get up a little later.", "cn": "周日我起得稍微晚一点。", "level": 3 }
+  ],
+  "morning": [
+    { "en": "Good morning!", "cn": "早上好！", "level": 1 },
+    { "en": "I have milk every morning.", "cn": "我每天早上喝牛奶。", "level": 2 },
+    { "en": "In the morning, the sun is bright and warm.", "cn": "早晨阳光明亮又温暖。", "level": 3 }
+  ],
+  "breakfast": [
+    { "en": "Eat breakfast.", "cn": "吃早餐。", "level": 1 },
+    { "en": "I have eggs for breakfast.", "cn": "我早餐吃鸡蛋。", "level": 2 },
+    { "en": "A good breakfast gives us energy for the day.", "cn": "好的早餐让我们一天都有精神。", "level": 3 }
+  ],
+  "wash": [
+    { "en": "Wash your hands.", "cn": "洗手。", "level": 1 },
+    { "en": "I wash my face in the morning.", "cn": "我早上洗脸。", "level": 2 },
+    { "en": "Please wash the apples before you eat them.", "cn": "吃苹果前请先把它们洗干净。", "level": 3 }
+  ],
+  "face": [
+    { "en": "This is my face.", "cn": "这是我的脸。", "level": 1 },
+    { "en": "Wash your face, please.", "cn": "请洗脸。", "level": 2 },
+    { "en": "She has a big smile on her face.", "cn": "她脸上挂着大大的笑容。", "level": 3 }
+  ],
+  "brush": [
+    { "en": "Brush your teeth.", "cn": "刷牙。", "level": 1 },
+    { "en": "I brush my teeth twice a day.", "cn": "我一天刷两次牙。", "level": 2 },
+    { "en": "Don't forget to brush your teeth before bed.", "cn": "睡前别忘了刷牙。", "level": 3 }
+  ],
+  "tooth": [
+    { "en": "Look, a new tooth!", "cn": "看，一颗新牙！", "level": 1 },
+    { "en": "I have a tooth ache.", "cn": "我牙疼。", "level": 2 },
+    { "en": "Brush your teeth carefully every morning and night.", "cn": "每天早晚要仔细刷牙。", "level": 3 }
+  ],
+  "ready": [
+    { "en": "I am ready.", "cn": "我准备好了。", "level": 1 },
+    { "en": "Are you ready for school?", "cn": "你准备好上学了吗？", "level": 2 },
+    { "en": "When breakfast is ready, Mum calls us to the table.", "cn": "早餐准备好时，妈妈叫我们到桌前。", "level": 3 }
+  ]
+}

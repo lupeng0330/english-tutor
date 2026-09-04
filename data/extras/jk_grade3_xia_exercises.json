@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Time to get up",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What time is it when Mum calls Anna?",
+            "选项": [
+              "Seven o'clock",
+              "Six o'clock",
+              "Eight o'clock"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Mum ask Anna to do?",
+            "选项": [
+              "Wash her face and brush her teeth",
+              "Do homework",
+              "Clean the room"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is for breakfast?",
+            "选项": [
+              "Milk and bread",
+              "Eggs and juice",
+              "Cake and tea"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My morning",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What time does the writer get up?",
+            "选项": [
+              "At seven",
+              "At six",
+              "At eight"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the writer eat for breakfast?",
+            "选项": [
+              "Eggs and milk",
+              "Bread and juice",
+              "Cake and tea"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "When is the writer ready for school?",
+            "选项": [
+              "At seven thirty",
+              "At eight",
+              "At seven"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "It's + time. Get up!",
+            "例句": "It's seven o'clock. Get up!",
+            "提示": "报时 + 祈使句催促"
+          },
+          {
+            "句型": "First ... Then ...",
+            "例句": "First I wash my face. Then I brush my teeth.",
+            "提示": "描述做事的先后顺序"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What a day!",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did Anna do at school?",
+            "选项": [
+              "Played games",
+              "Read books",
+              "Sang songs"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How does Anna feel now?",
+            "选项": [
+              "Very tired",
+              "Very hungry",
+              "Very sad"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben tell Anna to do?",
+            "选项": [
+              "Go home and have a rest",
+              "Play more games",
+              "Do homework"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A busy day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How many lessons did the writer have?",
+            "选项": [
+              "Four",
+              "Three",
+              "Five"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer do after school?",
+            "选项": [
+              "Helped Mum at home",
+              "Played games",
+              "Went to the park"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does the writer feel about the day?",
+            "选项": [
+              "Tired but very happy",
+              "Sad and bored",
+              "Angry"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How was your day?",
+            "例句": "How was your day? — Great!",
+            "提示": "问对方今天过得怎样"
+          },
+          {
+            "句型": "I am + adj (tired/happy)",
+            "例句": "I am very tired now.",
+            "提示": "用 am + 形容词描述感受"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | My Saturday plan",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will Anna do first on Saturday?",
+            "选项": [
+              "Read a book",
+              "Play with her dog",
+              "Finish homework"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will Anna do after reading?",
+            "选项": [
+              "Play with her dog",
+              "Sleep",
+              "Cook"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What will Anna do next?",
+            "选项": [
+              "Finish her homework",
+              "Read a book",
+              "Watch TV"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A clock on the wall",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is on the wall?",
+            "选项": [
+              "A big clock",
+              "A poster",
+              "A window"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What time is school over?",
+            "选项": [
+              "At four",
+              "At twelve",
+              "At seven"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What time does the writer finish homework?",
+            "选项": [
+              "At seven in the evening",
+              "At four",
+              "At eight"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I'll + verb (将来时)",
+            "例句": "I'll read a book.",
+            "提示": "I'll = I will，表将来要做的事"
+          },
+          {
+            "句型": "First / Then / Next / After that",
+            "例句": "First I'll read. Then I'll play. Next I'll finish homework.",
+            "提示": "用连接词描述计划顺序"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Come to my party!",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When is Anna's party?",
+            "选项": [
+              "On Sunday",
+              "On Saturday",
+              "On Monday"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will they do at the party?",
+            "选项": [
+              "Play games and sing songs",
+              "Do homework",
+              "Watch a film"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben ask to do?",
+            "选项": [
+              "Bring a friend",
+              "Bring food",
+              "Bring a gift"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A happy party",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who came to the writer's home on Sunday?",
+            "选项": [
+              "The writer's friends",
+              "The teacher",
+              "The neighbours"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did they eat at the party?",
+            "选项": [
+              "Cakes",
+              "Bread",
+              "Fruit"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What did Ben say to Anna?",
+            "选项": [
+              "Thank you, I'm so happy today",
+              "Goodbye",
+              "I'm tired"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Come and join us!",
+            "例句": "Come and join us! We'll play games.",
+            "提示": "邀请别人参加活动的祈使句"
+          },
+          {
+            "句型": "Can I + verb?",
+            "例句": "Can I bring a friend?",
+            "提示": "请求许可的疑问句"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Our classroom",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the new classroom like?",
+            "选项": [
+              "Clean and tidy",
+              "Old and dark",
+              "Big and empty"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is on the wall?",
+            "选项": [
+              "A big poster",
+              "A clock",
+              "A window"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the class call say?",
+            "选项": [
+              "Be kind, be brave!",
+              "One team, one dream!",
+              "Work hard!"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Our class rules",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is on each desk and chair?",
+            "选项": [
+              "A name",
+              "A number",
+              "A picture"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How many class rules are there?",
+            "选项": [
+              "Three",
+              "Two",
+              "Four"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the class call?",
+            "选项": [
+              "One team, one dream!",
+              "Be kind, be brave!",
+              "Keep clean!"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "There is + noun",
+            "例句": "There is a big poster on the wall.",
+            "提示": "There is 描述某处有某物（单数）"
+          },
+          {
+            "句型": "It says, \"...\"",
+            "例句": "It says, \"Be kind, be brave!\"",
+            "提示": "描述文字/标语的内容"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | I'm on duty today",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should Anna do first on duty?",
+            "选项": [
+              "Sweep the floor",
+              "Wipe the windows",
+              "Water the plants"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should Anna do next?",
+            "选项": [
+              "Wipe the windows and water the plants",
+              "Sweep the floor again",
+              "Clean the desks"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does Anna feel about her duty?",
+            "选项": [
+              "She will do her best",
+              "She is bored",
+              "She is afraid"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A duty day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who helps the writer clean the windows?",
+            "选项": [
+              "Ben",
+              "Anna",
+              "The teacher"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Why does the writer water the plants?",
+            "选项": [
+              "They look thirsty",
+              "They are dirty",
+              "They are new"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does the writer feel after the duty?",
+            "选项": [
+              "Tired but very happy",
+              "Sad",
+              "Angry"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I'm on duty today.",
+            "例句": "I'm on duty today.",
+            "提示": "on duty 表示\"值日\""
+          },
+          {
+            "句型": "First ... Then ...",
+            "例句": "First, sweep the floor. Then wipe the windows.",
+            "提示": "祈使句 + 顺序词，描述值日步骤"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Don't run in the hall",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why is Ben running in the hall?",
+            "选项": [
+              "He is late for class",
+              "He is playing a game",
+              "He is happy"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should Ben do instead of running?",
+            "选项": [
+              "Walk",
+              "Jump",
+              "Stop"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Why should Ben walk?",
+            "选项": [
+              "It's safer",
+              "It's faster",
+              "It's more fun"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Our school rules",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What should we NOT do in the hall?",
+            "选项": [
+              "Run",
+              "Walk",
+              "Talk quietly"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How should we speak?",
+            "选项": [
+              "Quietly",
+              "Loudly",
+              "Fast"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do rules do for us?",
+            "选项": [
+              "Keep us safe and happy",
+              "Make us tired",
+              "Make us sad"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Don't + verb",
+            "例句": "Don't run in the hall!",
+            "提示": "Don't = Do not，表禁止"
+          },
+          {
+            "句型": "You should + verb",
+            "例句": "You should walk, not run.",
+            "提示": "should 表建议\"应该...\""
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A polite way",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Ben want to borrow?",
+            "选项": [
+              "A pen",
+              "A book",
+              "A ruler"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben say after Anna gives the pen?",
+            "选项": [
+              "Thanks a lot",
+              "Sorry",
+              "Goodbye"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Anna say makes everyone happy?",
+            "选项": [
+              "A smile",
+              "A gift",
+              "A game"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Magic words",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Which are the magic words?",
+            "选项": [
+              "Please, thanks, and sorry",
+              "Hello and goodbye",
+              "Yes and no"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do we say when others help us?",
+            "选项": [
+              "Thanks",
+              "Please",
+              "Sorry"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do we say when we make a mistake?",
+            "选项": [
+              "Sorry",
+              "Thanks",
+              "Please"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Excuse me, may I + verb?",
+            "例句": "Excuse me, may I borrow your pen?",
+            "提示": "礼貌请求许可的句型"
+          },
+          {
+            "句型": "You're welcome.",
+            "例句": "Thanks. — You're welcome.",
+            "提示": "回应感谢的礼貌用语"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Road Helper Day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Anna on Road Helper Day?",
+            "选项": [
+              "A little helper",
+              "A teacher",
+              "A driver"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna help kids do?",
+            "选项": [
+              "Cross the road",
+              "Do homework",
+              "Play games"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do you do at a green light?",
+            "选项": [
+              "Go",
+              "Stop",
+              "Wait"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Be safe on the road",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When is Road Helper Day?",
+            "选项": [
+              "Every Friday",
+              "Every Monday",
+              "Every Sunday"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do they say when the light is red?",
+            "选项": [
+              "Stop and wait",
+              "Now you can go",
+              "Run fast"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do the kids say to the helpers?",
+            "选项": [
+              "Thanks",
+              "Sorry",
+              "Goodbye"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Red light, stop. Green light, go.",
+            "例句": "Red light, stop. Green light, go.",
+            "提示": "交通规则口诀"
+          },
+          {
+            "句型": "Always be safe on the road.",
+            "例句": "Always be safe on the road.",
+            "提示": "Always + 祈使句，表始终注意安全"
+          }
+        ]
+      }
+    ]
+  }
+}

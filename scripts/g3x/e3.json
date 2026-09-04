@@ -1,0 +1,42 @@
+{
+  "plan": [
+    { "en": "Make a plan.", "cn": "做个计划。", "level": 1 },
+    { "en": "Let's plan our weekend.", "cn": "我们来计划周末吧。", "level": 2 },
+    { "en": "A good plan helps us use time well.", "cn": "好的计划能帮我们用好时间。", "level": 3 }
+  ],
+  "time": [
+    { "en": "What time is it?", "cn": "几点了？", "level": 1 },
+    { "en": "It's time for class.", "cn": "上课时间到了。", "level": 2 },
+    { "en": "Time goes fast when we are having fun.", "cn": "玩得开心的时候时间过得真快。", "level": 3 }
+  ],
+  "clock": [
+    { "en": "This is a clock.", "cn": "这是一只钟。", "level": 1 },
+    { "en": "The clock says nine.", "cn": "钟显示九点。", "level": 2 },
+    { "en": "The clock on the wall ticks all day.", "cn": "墙上的钟一整天都在滴答响。", "level": 3 }
+  ],
+  "first": [
+    { "en": "I am first.", "cn": "我是第一。", "level": 1 },
+    { "en": "First, wash your hands.", "cn": "首先，洗手。", "level": 2 },
+    { "en": "First, we read the story, then we answer the questions.", "cn": "首先我们读故事，然后回答问题。", "level": 3 }
+  ],
+  "then": [
+    { "en": "Then I sleep.", "cn": "然后我睡觉。", "level": 1 },
+    { "en": "I had lunch, then I played.", "cn": "我吃了午饭，然后玩了。", "level": 2 },
+    { "en": "First I do my homework, then I watch TV for a while.", "cn": "我先做作业，然后看一会儿电视。", "level": 3 }
+  ],
+  "next": [
+    { "en": "Next, please.", "cn": "下一个，请。", "level": 1 },
+    { "en": "What's next on the plan?", "cn": "计划里下一个是什么？", "level": 2 },
+    { "en": "Next, we will sing a song together.", "cn": "接下来，我们一起唱首歌。", "level": 3 }
+  ],
+  "finish": [
+    { "en": "I finish my work.", "cn": "我做完作业。", "level": 1 },
+    { "en": "Finish your milk, please.", "cn": "请把牛奶喝完。", "level": 2 },
+    { "en": "I finish my homework before dinner every day.", "cn": "我每天晚饭前完成作业。", "level": 3 }
+  ],
+  "homework": [
+    { "en": "Do your homework.", "cn": "做作业。", "level": 1 },
+    { "en": "I have homework today.", "cn": "我今天有作业。", "level": 2 },
+    { "en": "After I finish my homework, I can play games.", "cn": "我做完作业后就可以玩游戏。", "level": 3 }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Around the House",
+  "words": [
+    { "word": "study", "phonetic": "/ˈstʌdi/", "meaning": "[n.] 书房；学习", "example": "Dad is in the study." },
+    { "word": "bathroom", "phonetic": "/ˈbɑːθruːm/", "meaning": "[n.] 浴室", "example": "Wash your hands in the bathroom." },
+    { "word": "table", "phonetic": "/ˈteɪbl/", "meaning": "[n.] 桌子", "example": "Put the cup on the table." },
+    { "word": "lamp", "phonetic": "/læmp/", "meaning": "[n.] 灯", "example": "I read with a lamp." },
+    { "word": "bed", "phonetic": "/bed/", "meaning": "[n.] 床", "example": "My bed is soft." },
+    { "word": "door", "phonetic": "/dɔː(r)/", "meaning": "[n.] 门", "example": "Open the door, please." },
+    { "word": "garden", "phonetic": "/ˈɡɑːdn/", "meaning": "[n.] 花园", "example": "Roses grow in the garden." },
+    { "word": "upstairs", "phonetic": "/ˌʌpˈsteəz/", "meaning": "[adv.] 在楼上", "example": "Go upstairs to sleep." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Show me your house",
+      "en": "Ben: Anna, can you show me your house?\nAnna: Sure! This is the kitchen, and that is the study.\nBen: Where is your bedroom?\nAnna: It's upstairs. Come and see.\nBen: Wow, you have a small garden too!",
+      "cn": "本：安娜，能带我参观你家吗？\n安娜：当然！这是厨房，那是书房。\n本：你的卧室在哪？\n安娜：在楼上。来看看吧。\n本：哇，你还有个小花园！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My favourite room",
+      "en": "My favourite room is my bedroom. It is upstairs near the bathroom. There is a small bed, a desk and a lamp. I do my homework at the desk. At night, my lamp is bright and warm. I read storybooks in bed until Mum says, \"Time to sleep!\"",
+      "cn": "我最喜欢的房间是卧室。它在楼上，挨着浴室。屋里有一张小床、一张书桌和一盏灯。我在桌前做作业。夜里灯光又亮又温暖。我在床上看故事书，直到妈妈说\"该睡觉啦！\""
+    }
+  ]
+}

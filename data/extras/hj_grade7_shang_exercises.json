@@ -1,0 +1,548 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My new friends",
+        "data": [
+          {"题号": 1, "问题": "How old is Li Hua?", "选项": ["A. 12", "B. 13", "C. 14"], "答案": "B"},
+          {"题号": 2, "问题": "Where does Li Hua live?", "选项": ["A. Guangzhou", "B. Germany", "C. London"], "答案": "A"},
+          {"题号": 3, "问题": "What is Li Hua's favourite subject?", "选项": ["A. Chinese", "B. Maths", "C. English"], "答案": "C"},
+          {"题号": 4, "问题": "Where does Anna come from?", "选项": ["A. China", "B. Germany", "C. England"], "答案": "B"},
+          {"题号": 5, "问题": "What does Anna love doing?", "选项": ["A. Hiking in the mountains", "B. Playing the guitar", "C. Reading books"], "答案": "A"},
+          {"题号": 6, "问题": "What is Anna's brother's job?", "选项": ["A. A teacher", "B. An engineer", "C. A writer"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My new friends",
+        "data": [
+          {"问题": "What does Li Hua look like?", "答案": "Tall and thin, with long hair."},
+          {"问题": "What are Li Hua's hobbies?", "答案": "Playing the guitar and reading books."},
+          {"问题": "Why does Anna want to improve her English?", "答案": "So she can travel around China and meet new friends."},
+          {"问题": "What languages can Anna speak?", "答案": "German and a little English."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Be & Have",
+        "data": [
+          {"题号": 1, "问题": "___ Li Hua a student?", "选项": ["A. Is", "B. Are", "C. Am"], "答案": "A"},
+          {"题号": 2, "问题": "She ___ from Germany.", "选项": ["A. is", "B. are", "C. am"], "答案": "A"},
+          {"题号": 3, "问题": "I ___ long hair.", "选项": ["A. have", "B. has", "C. am"], "答案": "A"},
+          {"题号": 4, "问题": "Anna ___ short hair.", "选项": ["A. has", "B. have", "C. is"], "答案": "A"},
+          {"题号": 5, "问题": "We ___ good friends.", "选项": ["A. are", "B. is", "C. am"], "答案": "A"},
+          {"题号": 6, "问题": "Is he from Germany? — No, he ___.", "选项": ["A. isn't", "B. aren't", "C. don't"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Be & Have",
+        "data": [
+          {"问题": "Answer: Are you a student?", "答案": "Yes, I am."},
+          {"问题": "Fill in: My brother ___ tall and friendly.", "答案": "is"},
+          {"问题": "Fill in: Anna ___ a dream to visit China.", "答案": "has"},
+          {"问题": "Answer: Do you have any hobbies?", "答案": "Yes, I do. I like playing the guitar."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A blog from Tom",
+        "data": [
+          {"题号": 1, "问题": "How old is Tom?", "选项": ["A. 13", "B. 14", "C. 15"], "答案": "B"},
+          {"题号": 2, "问题": "Where does Tom live?", "选项": ["A. London", "B. Guangzhou", "C. Germany"], "答案": "A"},
+          {"题号": 3, "问题": "What does Tom often help his classmates with?", "选项": ["A. Maths", "B. Art", "C. English grammar"], "答案": "C"},
+          {"题号": 4, "问题": "What word best describes Tom?", "选项": ["A. Shy", "B. Confident", "C. Careless"], "答案": "B"},
+          {"题号": 5, "问题": "What are Tom's hobbies?", "选项": ["A. Playing football and singing", "B. Hiking", "C. Reading"], "答案": "A"},
+          {"题号": 6, "问题": "What is Tom's dream?", "选项": ["A. To be an engineer", "B. To be a writer", "C. To be a teacher"], "答案": "B"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A blog from Tom",
+        "data": [
+          {"问题": "Who are in Tom's big family?", "答案": "His parents, his elder sister and him."},
+          {"问题": "What is Tom good at?", "答案": "Grammar."},
+          {"问题": "What does Tom like doing online?", "答案": "Making friends."},
+          {"问题": "What does Tom ask the readers to do?", "答案": "Write to him about their name, home and hobbies."}
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My school day",
+        "data": [
+          {"题号": 1, "问题": "What time does the writer get up?", "选项": ["A. 6:00 a.m.", "B. 6:30 a.m.", "C. 7:00 a.m."], "答案": "B"},
+          {"题号": 2, "问题": "How does the writer go to school?", "选项": ["A. By bus", "B. By bike", "C. On foot"], "答案": "C"},
+          {"题号": 3, "问题": "What time does school start?", "选项": ["A. 8 a.m.", "B. 8:30 a.m.", "C. 9 a.m."], "答案": "A"},
+          {"题号": 4, "问题": "How many lessons are there in the morning?", "选项": ["A. Three", "B. Four", "C. Five"], "答案": "B"},
+          {"题号": 5, "问题": "What time does school end?", "选项": ["A. 4:00 p.m.", "B. 4:30 p.m.", "C. 5:00 p.m."], "答案": "B"},
+          {"题号": 6, "问题": "What does the writer do after school?", "选项": ["A. Plays table tennis", "B. Reads books", "C. Watches TV"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My school day",
+        "data": [
+          {"问题": "What subjects do they have in the morning?", "答案": "English, Chinese, Maths and Geography."},
+          {"问题": "When do they have a break?", "答案": "At 10 a.m."},
+          {"问题": "Where does the writer usually have lunch?", "答案": "At school."},
+          {"问题": "What time does the writer go to bed?", "答案": "At 9:30 p.m."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Frequency adverbs",
+        "data": [
+          {"题号": 1, "问题": "Which adverb means 100%?", "选项": ["A. always", "B. often", "C. never"], "答案": "A"},
+          {"题号": 2, "问题": "Which adverb means 0%?", "选项": ["A. never", "B. seldom", "C. usually"], "答案": "A"},
+          {"题号": 3, "问题": "Frequency adverbs come ___ most verbs.", "选项": ["A. before", "B. after", "C. inside"], "答案": "A"},
+          {"题号": 4, "问题": "She ___ never late for class.", "选项": ["A. is", "B. are", "C. am"], "答案": "A"},
+          {"题号": 5, "问题": "Which shows about 60%?", "选项": ["A. often", "B. always", "C. seldom"], "答案": "A"},
+          {"题号": 6, "问题": "I ___ get up at 6:30.", "选项": ["A. always", "B. never", "C. seldom"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Frequency adverbs",
+        "data": [
+          {"问题": "Where do frequency adverbs go with the verb 'to be'?", "答案": "After the verb 'to be'."},
+          {"问题": "Answer: Do you often ride your bike?", "答案": "Yes, I do. / No, I don't."},
+          {"问题": "What percentage does 'usually' show?", "答案": "About 80%."},
+          {"问题": "Fill in: Sometimes I ___ to the library.", "答案": "go"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · My mum's routine",
+        "data": [
+          {"题号": 1, "问题": "What time does Mum get up?", "选项": ["A. 6 a.m.", "B. 6:30 a.m.", "C. 7 a.m."], "答案": "A"},
+          {"题号": 2, "问题": "Where does Mum go first in the morning?", "选项": ["A. To work", "B. To the market", "C. To school"], "答案": "B"},
+          {"题号": 3, "问题": "What is Mum's job?", "选项": ["A. A doctor", "B. A teacher", "C. A cook"], "答案": "B"},
+          {"题号": 4, "问题": "How does Mum go to work?", "选项": ["A. By bike", "B. By bus", "C. On foot"], "答案": "A"},
+          {"题号": 5, "问题": "How many lessons does Mum teach every day?", "选项": ["A. Three", "B. Four", "C. Five"], "答案": "B"},
+          {"题号": 6, "问题": "What does Mum never forget to do?", "选项": ["A. Smile", "B. Eat", "C. Sleep"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · My mum's routine",
+        "data": [
+          {"问题": "What does Mum buy at the market?", "答案": "Fresh food."},
+          {"问题": "What does Mum do at 7 a.m.?", "答案": "Makes breakfast for the family."},
+          {"问题": "What does Mum read on her phone?", "答案": "The daily news."},
+          {"问题": "What do they sometimes do together in the evening?", "答案": "Read articles and practice English."}
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Our home, the Earth",
+        "data": [
+          {"题号": 1, "问题": "What is our home?", "选项": ["A. The Moon", "B. The Earth", "C. The Sun"], "答案": "B"},
+          {"题号": 2, "问题": "What is on the Earth?", "选项": ["A. Forests and oceans", "B. Only deserts", "C. Only cities"], "答案": "A"},
+          {"题号": 3, "问题": "What do plants give us?", "选项": ["A. Fresh air", "B. Water", "C. Food"], "答案": "A"},
+          {"题号": 4, "问题": "What do people throw on the ground?", "选项": ["A. Waste", "B. Trees", "C. Water"], "答案": "A"},
+          {"题号": 5, "问题": "What happens to many animals?", "选项": ["A. They are in danger", "B. They are safe", "C. They grow fast"], "答案": "A"},
+          {"题号": 6, "问题": "What can we recycle?", "选项": ["A. Glass and paper", "B. Air", "C. Oceans"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Our home, the Earth",
+        "data": [
+          {"问题": "Where do animals live?", "答案": "In the forests, in the oceans and on the ground."},
+          {"问题": "How do people pollute the oceans?", "答案": "They pollute the water in the oceans."},
+          {"问题": "What do people do to the trees in the forests?", "答案": "They cut them down."},
+          {"问题": "What must we do with our home?", "答案": "Protect it and keep it clean and beautiful."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · There be & prepositions",
+        "data": [
+          {"题号": 1, "问题": "There ___ a forest near my home.", "选项": ["A. is", "B. are", "C. am"], "答案": "A"},
+          {"题号": 2, "问题": "There ___ many animals in the forest.", "选项": ["A. are", "B. is", "C. am"], "答案": "A"},
+          {"题号": 3, "问题": "The cat is ___ the table.", "选项": ["A. under", "B. on", "C. between"], "答案": "A"},
+          {"题号": 4, "问题": "The book is ___ the desk.", "选项": ["A. on", "B. under", "C. near"], "答案": "A"},
+          {"题号": 5, "问题": "The bank is ___ the hotel and the shop.", "选项": ["A. between", "B. under", "C. on"], "答案": "A"},
+          {"题号": 6, "问题": "There ___ any waste on the ground.", "选项": ["A. isn't", "B. aren't", "C. don't"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · There be & prepositions",
+        "data": [
+          {"问题": "Answer: Is there a park in your city?", "答案": "Yes, there is."},
+          {"问题": "Answer: Are there any oceans in China?", "答案": "Yes, there are."},
+          {"问题": "Fill in: There ___ five tall trees near the school.", "答案": "are"},
+          {"问题": "Fill in: My school is ___ the park.", "答案": "near"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · What can we do at home?",
+        "data": [
+          {"题号": 1, "问题": "How many easy ways are listed?", "选项": ["A. Four", "B. Five", "C. Six"], "答案": "B"},
+          {"题号": 2, "问题": "What should you do when you leave a room?", "选项": ["A. Turn off the light", "B. Open the window", "C. Close the door"], "答案": "A"},
+          {"题号": 3, "问题": "When should you turn off the tap?", "选项": ["A. When you brush your teeth", "B. When you cook", "C. When you sleep"], "答案": "A"},
+          {"题号": 4, "问题": "What bag should you reuse at the market?", "选项": ["A. A cloth bag", "B. A plastic bag", "C. A paper bag"], "答案": "A"},
+          {"题号": 5, "问题": "Where should you put old paper, glass and plastic?", "选项": ["A. Into different boxes", "B. On the ground", "C. In the river"], "答案": "A"},
+          {"题号": 6, "问题": "What should you keep clean?", "选项": ["A. Our streets", "B. Our books", "C. Our clothes"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · What can we do at home?",
+        "data": [
+          {"问题": "Who can help protect the Earth?", "答案": "Every family."},
+          {"问题": "Why should we not waste water?", "答案": "To protect the Earth / So the planet stays beautiful."},
+          {"问题": "Why do we put waste into different boxes?", "答案": "So workers can recycle them."},
+          {"问题": "What will happen if everyone does a little?", "答案": "Our planet will stay beautiful for our children."}
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Four seasons in a year",
+        "data": [
+          {"题号": 1, "问题": "How many seasons are there in a year?", "选项": ["A. Three", "B. Four", "C. Five"], "答案": "B"},
+          {"题号": 2, "问题": "What is the weather like in spring?", "选项": ["A. Warm and windy", "B. Hot", "C. Cold"], "答案": "A"},
+          {"题号": 3, "问题": "What can we do in summer?", "选项": ["A. Swim in the sea", "B. Fly kites", "C. Make a snowman"], "答案": "A"},
+          {"题号": 4, "问题": "What happens to leaves in autumn?", "选项": ["A. They turn yellow and fall", "B. They turn green", "C. They grow"], "答案": "A"},
+          {"题号": 5, "问题": "What is the weather like in winter?", "选项": ["A. Cold and snowy", "B. Warm", "C. Rainy"], "答案": "A"},
+          {"题号": 6, "问题": "What do people wear in winter?", "选项": ["A. A scarf and gloves", "B. A T-shirt", "C. Shorts"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Four seasons in a year",
+        "data": [
+          {"问题": "What happens to flowers and trees in spring?", "答案": "Flowers come out and trees turn green."},
+          {"问题": "What can we do in the park in spring?", "答案": "Fly kites."},
+          {"问题": "Who are busy in autumn?", "答案": "Farmers, picking apples."},
+          {"问题": "What can we do at home in winter?", "答案": "Make a snowman and have hot soup."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Present continuous",
+        "data": [
+          {"题号": 1, "问题": "The present continuous form is ___.", "选项": ["A. am/is/are + V-ing", "B. will + verb", "C. have + V-ed"], "答案": "A"},
+          {"题号": 2, "问题": "Look! It ___ raining outside.", "选项": ["A. is", "B. are", "C. am"], "答案": "A"},
+          {"题号": 3, "问题": "The children ___ flying a kite.", "选项": ["A. are", "B. is", "C. am"], "答案": "A"},
+          {"题号": 4, "问题": "Which tense describes what is happening now?", "选项": ["A. Present continuous", "B. Simple present", "C. Simple past"], "答案": "A"},
+          {"题号": 5, "问题": "I ___ a warm scarf because it is snowy.", "选项": ["A. am wearing", "B. wear", "C. wore"], "答案": "A"},
+          {"题号": 6, "问题": "Look, I ___ now!", "选项": ["A. am swimming", "B. swim", "C. swam"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Present continuous",
+        "data": [
+          {"问题": "Answer: Is it snowing in Beijing now?", "答案": "Yes, it is."},
+          {"问题": "Answer: Are you making a snowman?", "答案": "No, I'm not. I'm drinking hot tea."},
+          {"问题": "Fill in: We ___ swimming today — it is too cold.", "答案": "aren't"},
+          {"问题": "Which tense is 'I often swim in summer'?", "答案": "Simple present (a habit)."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Seasons in Guangzhou",
+        "data": [
+          {"题号": 1, "问题": "Where is Guangzhou?", "选项": ["A. In the south of China", "B. In the north", "C. In the west"], "答案": "A"},
+          {"题号": 2, "问题": "What is spring in Guangzhou like?", "选项": ["A. Wet", "B. Dry", "C. Snowy"], "答案": "A"},
+          {"题号": 3, "问题": "What do people always carry in spring?", "选项": ["A. Umbrellas", "B. Gloves", "C. Kites"], "答案": "A"},
+          {"题号": 4, "问题": "What is winter in Guangzhou like?", "选项": ["A. Warm", "B. Very cold", "C. Snowy"], "答案": "A"},
+          {"题号": 5, "问题": "What do people wear in Guangzhou winter?", "选项": ["A. A light coat", "B. Thick gloves", "C. A scarf"], "答案": "A"},
+          {"题号": 6, "问题": "What is Guangzhou called?", "选项": ["A. The city of flowers", "B. The city of snow", "C. The city of rain"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Seasons in Guangzhou",
+        "data": [
+          {"问题": "How is the weather in Guangzhou compared with the north?", "答案": "It is different."},
+          {"问题": "What is summer in Guangzhou like?", "答案": "Very long and hot, sometimes rainy in the afternoon."},
+          {"问题": "What is autumn in Guangzhou like?", "答案": "Short but nice, cool and dry with a blue sky."},
+          {"问题": "Why can you see flowers all year round in Guangzhou?", "答案": "Because of the mild weather."}
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A trip to the Moon",
+        "data": [
+          {"题号": 1, "问题": "How will we travel to the Moon?", "选项": ["A. By rocket", "B. By plane", "C. By train"], "答案": "A"},
+          {"题号": 2, "问题": "How far is the Moon from the Earth?", "选项": ["A. About 384,000 km", "B. About 38,400 km", "C. About 3,840 km"], "答案": "A"},
+          {"题号": 3, "问题": "What is it like on the Moon?", "选项": ["A. Very quiet", "B. Very loud", "C. Very crowded"], "答案": "A"},
+          {"题号": 4, "问题": "Why must we wear spacesuits?", "选项": ["A. There is no air", "B. It is cold", "C. It is bright"], "答案": "A"},
+          {"题号": 5, "问题": "Why does our body feel light on the Moon?", "选项": ["A. The gravity is weak", "B. There is no ground", "C. We are tired"], "答案": "A"},
+          {"题号": 6, "问题": "What does the writer hope to become?", "选项": ["A. An astronaut", "B. A pilot", "C. A teacher"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A trip to the Moon",
+        "data": [
+          {"问题": "What can we do because our body feels light?", "答案": "Jump high and far."},
+          {"问题": "Where can we stay when we land on the Moon?", "答案": "In a space hotel."},
+          {"问题": "What can we watch from the window?", "答案": "The Earth."},
+          {"问题": "What does the Earth look like from the Moon?", "答案": "A beautiful blue ball."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Will & modal verbs",
+        "data": [
+          {"题号": 1, "问题": "I ___ travel to the Moon one day.", "选项": ["A. will", "B. am", "C. have"], "答案": "A"},
+          {"题号": 2, "问题": "Which shows ability?", "选项": ["A. CAN", "B. MUST", "C. SHOULD"], "答案": "A"},
+          {"题号": 3, "问题": "Which shows a strong rule / necessity?", "选项": ["A. MUST", "B. CAN", "C. WILL"], "答案": "A"},
+          {"题号": 4, "问题": "Which gives advice?", "选项": ["A. SHOULD", "B. MUST", "C. CAN"], "答案": "A"},
+          {"题号": 5, "问题": "We ___ visit a space hotel next week.", "选项": ["A. are going to", "B. will not", "C. must not"], "答案": "A"},
+          {"题号": 6, "问题": "We ___ wear spacesuits on the Moon.", "选项": ["A. must", "B. can", "C. should"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Will & modal verbs",
+        "data": [
+          {"问题": "Answer: Will you be an astronaut?", "答案": "Yes, I will. / No, I won't."},
+          {"问题": "What does 'be going to' express?", "答案": "A plan or a decided action."},
+          {"问题": "Fill in: I ___ see the Earth from here.", "答案": "can"},
+          {"问题": "Fill in: You ___ learn more about science.", "答案": "should"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Life as an astronaut",
+        "data": [
+          {"题号": 1, "问题": "What is being an astronaut like?", "选项": ["A. Hard work", "B. Easy", "C. Boring"], "答案": "A"},
+          {"题号": 2, "问题": "How long must astronauts train before a space trip?", "选项": ["A. Many years", "B. A few days", "C. One month"], "答案": "A"},
+          {"题号": 3, "问题": "What is there no up or down in?", "选项": ["A. The space station", "B. The rocket", "C. The hotel"], "答案": "A"},
+          {"题号": 4, "问题": "Where do astronauts sleep?", "选项": ["A. In sleeping bags tied to the wall", "B. In beds", "C. On the floor"], "答案": "A"},
+          {"题号": 5, "问题": "How does the Earth look from space?", "选项": ["A. Very small", "B. Very big", "C. Very close"], "答案": "A"},
+          {"题号": 6, "问题": "What are astronauts called?", "选项": ["A. Heroes", "B. Teachers", "C. Writers"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Life as an astronaut",
+        "data": [
+          {"问题": "What do astronauts learn before a trip?", "答案": "How to fly a rocket, how to land safely, and how to fix problems in space."},
+          {"问题": "How do astronauts drink water in space?", "答案": "From special bags."},
+          {"问题": "What do many astronauts say about the Earth?", "答案": "Now I know how important it is to protect our planet."},
+          {"问题": "What do astronauts show us?", "答案": "With courage and hard work, people can go anywhere."}
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Welcome to Asia",
+        "data": [
+          {"题号": 1, "问题": "What is Asia?", "选项": ["A. A big continent", "B. A country", "C. A city"], "答案": "A"},
+          {"题号": 2, "问题": "What is the capital of China?", "选项": ["A. Beijing", "B. Tokyo", "C. Bangkok"], "答案": "A"},
+          {"题号": 3, "问题": "What is the capital of Japan?", "选项": ["A. Tokyo", "B. Beijing", "C. Bangkok"], "答案": "A"},
+          {"题号": 4, "问题": "Where is Tokyo Tower?", "选项": ["A. In Tokyo", "B. In Beijing", "C. In Bangkok"], "答案": "A"},
+          {"题号": 5, "问题": "Where is Thailand?", "选项": ["A. In Southeast Asia", "B. In East Asia", "C. In North Asia"], "答案": "A"},
+          {"题号": 6, "问题": "What is the capital of Thailand?", "选项": ["A. Bangkok", "B. Tokyo", "C. Beijing"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Welcome to Asia",
+        "data": [
+          {"问题": "What does each country in Asia have?", "答案": "Its own language, food and culture."},
+          {"问题": "What famous places does Beijing have?", "答案": "The Great Wall, the Forbidden City and the Summer Palace."},
+          {"问题": "What is Tokyo like?", "答案": "A very modern city with many tall buildings."},
+          {"问题": "What can you do in Bangkok?", "答案": "See many old palaces and eat delicious Thai food."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Facts & prepositions",
+        "data": [
+          {"题号": 1, "问题": "Which tense is used for facts?", "选项": ["A. Simple present", "B. Present continuous", "C. Simple past"], "答案": "A"},
+          {"题号": 2, "问题": "Bangkok is ___ Thailand.", "选项": ["A. in", "B. on", "C. at"], "答案": "A"},
+          {"题号": 3, "问题": "Trains arrive ___ the station at 8 a.m.", "选项": ["A. at", "B. in", "C. on"], "答案": "A"},
+          {"题号": 4, "问题": "Tourists come ___ all over the world.", "选项": ["A. from", "B. to", "C. at"], "答案": "A"},
+          {"题号": 5, "问题": "Which words should be capitalised?", "选项": ["A. Proper nouns", "B. All verbs", "C. All adjectives"], "答案": "A"},
+          {"题号": 6, "问题": "The palace is ___ the hill.", "选项": ["A. on", "B. in", "C. from"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Facts & prepositions",
+        "data": [
+          {"问题": "Fill in: Beijing ___ the capital of China.", "答案": "is"},
+          {"问题": "Fill in: Asia ___ many countries.", "答案": "has"},
+          {"问题": "Give an example of a proper noun from the text.", "答案": "China / Japan / the Great Wall (any one)."},
+          {"问题": "Fill in: We travel ___ Beijing next month.", "答案": "to"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A letter from Xi'an",
+        "data": [
+          {"题号": 1, "问题": "Who is the letter to?", "选项": ["A. Tom", "B. Lily", "C. Anna"], "答案": "A"},
+          {"题号": 2, "问题": "What is Xi'an?", "选项": ["A. An ancient capital of China", "B. A modern city with no history", "C. A small village"], "答案": "A"},
+          {"题号": 3, "问题": "What did Lily visit yesterday?", "选项": ["A. The Terracotta Army", "B. The Great Wall", "C. Tokyo Tower"], "答案": "A"},
+          {"题号": 4, "问题": "How are the soldiers' faces?", "选项": ["A. Each one is different", "B. All the same", "C. All broken"], "答案": "A"},
+          {"题号": 5, "问题": "What did Lily walk on today?", "选项": ["A. The old city wall", "B. A bridge", "C. The Great Wall"], "答案": "A"},
+          {"题号": 6, "问题": "Who wrote the letter?", "选项": ["A. Lily", "B. Tom", "C. Anna"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A letter from Xi'an",
+        "data": [
+          {"问题": "How long ago was Xi'an the largest city in the world?", "答案": "More than 1,300 years ago."},
+          {"问题": "Where are the stone soldiers and horses kept?", "答案": "In three big halls."},
+          {"问题": "What can you see from the old city wall?", "答案": "Both old buildings and modern towers."},
+          {"问题": "What did they eat at a local market?", "答案": "Noodles."}
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Join a club!",
+        "data": [
+          {"题号": 1, "问题": "When can students join clubs?", "选项": ["A. Every Friday afternoon", "B. Every Monday morning", "C. Every day"], "答案": "A"},
+          {"题号": 2, "问题": "What do students do in the Music Club?", "选项": ["A. Learn songs and have shows", "B. Draw pictures", "C. Play chess"], "答案": "A"},
+          {"题号": 3, "问题": "What did Tom draw in the Art Club?", "选项": ["A. A funny robot", "B. A cat", "C. A house"], "答案": "A"},
+          {"题号": 4, "问题": "What does the Chess Club make you do?", "选项": ["A. Think fast", "B. Sing", "C. Draw"], "答案": "A"},
+          {"题号": 5, "问题": "What is the Science Club building this term?", "选项": ["A. Robots", "B. Cars", "C. Houses"], "答案": "A"},
+          {"题号": 6, "问题": "What does everyone have?", "选项": ["A. A talent", "B. A club", "C. A pet"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Join a club!",
+        "data": [
+          {"问题": "How often does the Music Club have small shows?", "答案": "Every month."},
+          {"问题": "What do students do in the Art Club?", "答案": "Draw pictures and paint cartoons."},
+          {"问题": "What does the Chess Club have every year?", "答案": "A school chess game."},
+          {"问题": "What does the Science Club do?", "答案": "Science experiments."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · CAN & play + instruments",
+        "data": [
+          {"题号": 1, "问题": "What does CAN show?", "选项": ["A. Ability", "B. Necessity", "C. Advice"], "答案": "A"},
+          {"题号": 2, "问题": "She can play ___ piano very well.", "选项": ["A. the", "B. a", "C. /（不填）"], "答案": "A"},
+          {"题号": 3, "问题": "We play ___ football after school.", "选项": ["A. /（不填）", "B. the", "C. a"], "答案": "A"},
+          {"题号": 4, "问题": "Which needs 'the' before it?", "选项": ["A. guitar", "B. football", "C. basketball"], "答案": "A"},
+          {"题号": 5, "问题": "Would you like to join the Art Club? — ___", "选项": ["A. Yes, I'd love to.", "B. Yes, I am.", "C. No, I don't."], "答案": "A"},
+          {"题号": 6, "问题": "I can sing but I ___ dance.", "选项": ["A. can't", "B. don't", "C. am not"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · CAN & play + instruments",
+        "data": [
+          {"问题": "Answer: Can you draw cartoons?", "答案": "Yes, I can. / No, I can't."},
+          {"问题": "Do you add 'the' before ball games?", "答案": "No. (play football, play chess)"},
+          {"问题": "Fill in: play ___ violin.", "答案": "the"},
+          {"问题": "Answer: Would you like some tea?", "答案": "Yes, please. / No, thanks."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · My Robot Club diary",
+        "data": [
+          {"题号": 1, "问题": "What club did the writer join?", "选项": ["A. The Robot Club", "B. The Music Club", "C. The Art Club"], "答案": "A"},
+          {"题号": 2, "问题": "Who is the science teacher?", "选项": ["A. Mr Liu", "B. Mr Wang", "C. Miss Lee"], "答案": "A"},
+          {"题号": 3, "问题": "How many members are in the writer's team?", "选项": ["A. Three", "B. Four", "C. Five"], "答案": "B"},
+          {"题号": 4, "问题": "What is the writer good at?", "选项": ["A. Writing computer programs", "B. Drawing", "C. Building"], "答案": "A"},
+          {"题号": 5, "问题": "What is the name of their first robot?", "选项": ["A. Star", "B. Sam", "C. Lily"], "答案": "A"},
+          {"题号": 6, "问题": "What can the robot do?", "选项": ["A. Turn its head and say Hello", "B. Fly", "C. Cook"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · My Robot Club diary",
+        "data": [
+          {"问题": "What did Mr Liu show the students?", "答案": "A small walking robot."},
+          {"问题": "What is Sam great at?", "答案": "Building."},
+          {"问题": "What will they teach Star to do next week?", "答案": "Dance."},
+          {"问题": "What has the writer found?", "答案": "His favourite hobby."}
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · My hobby is collecting",
+        "data": [
+          {"题号": 1, "问题": "What is the writer's hobby?", "选项": ["A. Collecting stamps", "B. Collecting coins", "C. Collecting fans"], "答案": "A"},
+          {"题号": 2, "问题": "How many stamps does the writer have?", "选项": ["A. More than 300", "B. About 100", "C. About 50"], "答案": "A"},
+          {"题号": 3, "问题": "Where do the stamps come from?", "选项": ["A. The envelopes of letters", "B. Shops", "C. Books"], "答案": "A"},
+          {"题号": 4, "问题": "What is the writer's favourite stamp?", "选项": ["A. A red monkey from 1980", "B. A blue bird", "C. A green tree"], "答案": "A"},
+          {"题号": 5, "问题": "Who taught the writer to take care of stamps?", "选项": ["A. Grandpa", "B. Mum", "C. Teacher"], "答案": "A"},
+          {"题号": 6, "问题": "Where should you keep stamps?", "选项": ["A. In a dry, cool place", "B. In water", "C. In the sun"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · My hobby is collecting",
+        "data": [
+          {"问题": "Where does the writer keep all the stamps?", "答案": "In a big book."},
+          {"问题": "How should you not touch stamps?", "答案": "With dirty hands."},
+          {"问题": "Whom does the writer like to share the collection with?", "答案": "Friends."},
+          {"问题": "What does collecting things do for the writer?", "答案": "Makes him happy and helps him learn about the world."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Plurals & opposites",
+        "data": [
+          {"题号": 1, "问题": "The plural of 'box' is ___.", "选项": ["A. boxes", "B. boxs", "C. box"], "答案": "A"},
+          {"题号": 2, "问题": "The plural of 'child' is ___.", "选项": ["A. children", "B. childs", "C. childes"], "答案": "A"},
+          {"题号": 3, "问题": "The plural of 'knife' is ___.", "选项": ["A. knives", "B. knifes", "C. knifves"], "答案": "A"},
+          {"题号": 4, "问题": "The opposite of 'expensive' is ___.", "选项": ["A. cheap", "B. new", "C. big"], "答案": "A"},
+          {"题号": 5, "问题": "The opposite of 'long' is ___.", "选项": ["A. short", "B. old", "C. small"], "答案": "A"},
+          {"题号": 6, "问题": "Which needs -es for the plural?", "选项": ["A. watch", "B. toy", "C. coin"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Plurals & opposites",
+        "data": [
+          {"问题": "What is the plural of 'man'?", "答案": "men"},
+          {"问题": "What is the plural of 'leaf'?", "答案": "leaves"},
+          {"问题": "What is the opposite of 'old'?", "答案": "new"},
+          {"问题": "Fill in: I ___ collected stamps for five years.", "答案": "have"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A world of collectors",
+        "data": [
+          {"题号": 1, "问题": "What do many young people collect?", "选项": ["A. Stickers, small toys or cards", "B. Old clocks", "C. Paintings"], "答案": "A"},
+          {"题号": 2, "问题": "What do a few rich people collect?", "选项": ["A. Expensive paintings", "B. Stickers", "C. Fans"], "答案": "A"},
+          {"题号": 3, "问题": "What do many old people in China love to collect?", "选项": ["A. Fans", "B. Cards", "C. Toys"], "答案": "A"},
+          {"题号": 4, "问题": "What might a fan from Hangzhou have a picture of?", "选项": ["A. West Lake", "B. A panda", "C. A dragon"], "答案": "A"},
+          {"题号": 5, "问题": "How old is the aunt's oldest coin?", "选项": ["A. 200 years old", "B. 100 years old", "C. 50 years old"], "答案": "A"},
+          {"题号": 6, "问题": "What does the aunt say coins carry?", "选项": ["A. The story of our country", "B. Money", "C. Pictures"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A world of collectors",
+        "data": [
+          {"问题": "What do some adults collect?", "答案": "Old clocks, old books or old photos."},
+          {"问题": "Why are fans not only useful in summer?", "答案": "They also tell stories."},
+          {"问题": "What might a fan from Sichuan show?", "答案": "A beautiful panda."},
+          {"问题": "What does the writer ask readers to do with their collection?", "答案": "Share it and be proud of their hobby."}
+        ]
+      }
+    ]
+  }
+}

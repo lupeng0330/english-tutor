@@ -1,0 +1,29 @@
+{
+  "id": "u2",
+  "title": "Unit 2 English and Chinese",
+  "module": "",
+  "words": [
+    { "word": "English", "phonetic": "/ˈɪŋɡlɪʃ/", "meaning": "[n.] 英语", "example": "I can speak English." },
+    { "word": "Chinese", "phonetic": "/ˌtʃaɪˈniːz/", "meaning": "[n.] 汉语；中文", "example": "Chinese is my first language." },
+    { "word": "word", "phonetic": "/wɜːd/", "meaning": "[n.] 单词", "example": "This word is new to me." },
+    { "word": "say", "phonetic": "/seɪ/", "meaning": "[v.] 说", "example": "How do you say this?" },
+    { "word": "mean", "phonetic": "/miːn/", "meaning": "[v.] 意思是", "example": "What does it mean?" },
+    { "word": "same", "phonetic": "/seɪm/", "meaning": "[adj.] 相同的", "example": "They have the same meaning." },
+    { "word": "different", "phonetic": "/ˈdɪfrənt/", "meaning": "[adj.] 不同的", "example": "The two words are different." },
+    { "word": "read", "phonetic": "/riːd/", "meaning": "[v.] 读", "example": "I can read this word." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Two languages",
+      "en": "Mr Lin: We have English and Chinese in class.\nLily: How do you say \"book\" in Chinese?\nMr Lin: We say \"shu\". It means the same thing.\nLily: English and Chinese words can be different, but they can mean the same!\nMr Lin: Right. Let's read them together.",
+      "cn": "林老师：课堂上我们有英语和汉语。\n莉莉：\"book\" 用汉语怎么说？\n林老师：我们说\"书\"。它的意思是一样的。\n莉莉：英语和汉语的单词可以不同，但意思可以相同！\n林老师：对。我们一起来读吧。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Same and different",
+      "en": "English and Chinese are two languages.\nThe words look different, but some things are the same.\nWe say \"hello\" in English. We say \"ni hao\" in Chinese.\nThey mean the same: a friendly hello!\nIt is fun to read and say words in two languages.",
+      "cn": "英语和汉语是两种语言。\n单词看起来不同，但有些东西是相同的。\n我们用英语说 \"hello\"。我们用汉语说\"你好\"。\n它们意思相同：一句友好的问候！\n用两种语言读和说单词很有趣。"
+    }
+  ]
+}

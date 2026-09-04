@@ -1,0 +1,15 @@
+import { useEffect, useState } from 'react';
+import { Download, Search, ShieldCheck } from 'lucide-react';
+import { api, query } from '../lib/api';
+import { asArray, type AuditLog } from '../types';
+import { dateTime } from '../lib/format';
+import { Badge, Button, Card, Input, Select, Table } from '../components/ui';
+import { EmptyState, ErrorState, LoadingState, PageHeader } from '../components/DataState';
+
+export function AuditPage(){
+ const [items,setItems]=useState<AuditLog[]>([]);const [loading,setLoading]=useState(true);const [error,setError]=useState('');const [keyword,setKeyword]=useState('');const [action,setAction]=useState('');
+ const load=()=>{setLoading(true);setError('');api.get(`/admin/audit-logs${query({search:keyword,action,pageSize:100})}`).then(r=>setItems(asArray<AuditLog>(r,['items','logs','auditLogs']))).catch(e=>setError(e.message)).finally(()=>setLoading(false));};useEffect(load,[action]);
+ const exportCsv=()=>{const rows=[['时间','操作者','动作','目标','IP'],...items.map(i=>[i.createdAt,i.actor||i.actorId||'',i.action,i.target||'',i.ip||''])];const csv='\ufeff'+rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download=`audit-${Date.now()}.csv`;a.click();URL.revokeObjectURL(a.href);};
+ const filtered=items.filter(i=>!keyword||`${i.actor||''} ${i.action} ${i.target||''}`.toLowerCase().includes(keyword.toLowerCase()));
+ return <><PageHeader title="审计日志" subtitle="追踪高风险管理操作，保障平台安全合规" action={<Button variant="secondary" onClick={exportCsv} disabled={!items.length}><Download size={16}/>导出 CSV</Button>}/><Card className="mb-5 p-4"><div className="grid gap-3 sm:grid-cols-[1fr_200px_auto]"><div className="relative"><Search size={16} className="absolute left-3 top-3 text-slate-400"/><Input className="pl-9" value={keyword} onChange={e=>setKeyword(e.target.value)} placeholder="搜索操作者、动作或目标"/></div><Select value={action} onChange={e=>setAction(e.target.value)}><option value="">全部操作</option><option value="user">用户管理</option><option value="membership">会员管理</option><option value="plan">套餐管理</option><option value="settings">系统设置</option></Select><Button variant="secondary" onClick={load}>查询</Button></div></Card><Card>{loading?<LoadingState/>:error?<ErrorState message={error} retry={load}/>:!filtered.length?<EmptyState title="暂无审计记录"/>:<Table headers={['时间','操作者','操作动作','目标','来源 IP','详情']}>{filtered.map(log=><tr key={log.id} className="hover:bg-slate-50"><td className="whitespace-nowrap px-4 py-4 text-slate-500">{dateTime(log.createdAt)}</td><td className="px-4 py-4"><span className="flex items-center gap-2 font-medium"><ShieldCheck size={15} className="text-brand-600"/>{log.actor||log.actorId||'系统'}</span></td><td className="px-4 py-4"><Badge tone="blue">{log.action}</Badge></td><td className="px-4 py-4">{log.target||'—'}</td><td className="px-4 py-4 font-mono text-xs text-slate-500">{log.ip||'—'}</td><td className="max-w-xs truncate px-4 py-4 font-mono text-xs text-slate-400">{log.detail?JSON.stringify(log.detail):'—'}</td></tr>)}</Table>}</Card></>;
+}

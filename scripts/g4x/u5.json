@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 What's Your Favourite Food?",
+  "words": [
+    { "word": "food", "phonetic": "/fuːd/", "meaning": "[n.] 食物", "example": "I love food." },
+    { "word": "rice", "phonetic": "/raɪs/", "meaning": "[n.] 米饭", "example": "I eat rice every day." },
+    { "word": "noodle", "phonetic": "/ˈnuːdl/", "meaning": "[n.] 面条", "example": "I like noodles." },
+    { "word": "bread", "phonetic": "/bred/", "meaning": "[n.] 面包", "example": "Have some bread." },
+    { "word": "meat", "phonetic": "/miːt/", "meaning": "[n.] 肉", "example": "Meat is tasty." },
+    { "word": "vegetable", "phonetic": "/ˈvedʒtəbl/", "meaning": "[n.] 蔬菜", "example": "Eat your vegetables." },
+    { "word": "tasty", "phonetic": "/ˈteɪsti/", "meaning": "[adj.] 美味的", "example": "The cake is tasty." },
+    { "word": "sweet", "phonetic": "/swiːt/", "meaning": "[adj.] 甜的", "example": "Honey is very sweet." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What's your favourite?",
+      "en": "Ben: What's your favourite food, Anna?\nAnna: I love noodles and dumplings.\nBen: I prefer rice and meat.\nAnna: Vegetables are also important. Mum says they make us strong.\nBen: True! Let's eat more healthy food.",
+      "cn": "本：安娜，你最爱什么吃的？\n安娜：我喜欢面条和饺子。\n本：我更喜欢米饭和肉。\n安娜：蔬菜也很重要，妈妈说能让我们强壮。\n本：对！我们要多吃健康食物。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A tasty meal",
+      "en": "My grandma is a great cook. She makes tasty rice, soft noodles, and warm bread. Her vegetable soup is famous in our family. After a meal, she gives us a small sweet — fruit or cake. Eating together with family makes every meal more delicious.",
+      "cn": "我奶奶做菜很厉害。她做香喷喷的米饭、软软的面条和暖暖的面包。她做的蔬菜汤在我们家很有名。饭后她还会给我们点小甜品——水果或蛋糕。和家人一起吃饭让每顿饭更美味。"
+    }
+  ]
+}

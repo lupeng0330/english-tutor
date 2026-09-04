@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review Happy New Year!",
+  "words": [
+    { "word": "new", "phonetic": "/njuː/", "meaning": "[adj.] 新的", "example": "A new year is coming!" },
+    { "word": "year", "phonetic": "/jɪə(r)/", "meaning": "[n.] 年", "example": "Happy New Year!" },
+    { "word": "wish", "phonetic": "/wɪʃ/", "meaning": "[v./n.] 祝愿", "example": "Best wishes to you." },
+    { "word": "share", "phonetic": "/ʃeə(r)/", "meaning": "[v.] 分享", "example": "Share with your friend." },
+    { "word": "thank", "phonetic": "/θæŋk/", "meaning": "[v.] 感谢", "example": "Thank you, Mum." },
+    { "word": "smile", "phonetic": "/smaɪl/", "meaning": "[v./n.] 微笑", "example": "Give me a smile." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Happy New Year!",
+      "en": "Ben: Happy New Year, Anna!\nAnna: Happy New Year, Ben! Best wishes to you and your family.\nBen: Thank you. What are your wishes this year?\nAnna: I wish to learn more English and make new friends.\nBen: Me too! Let's share a smile and start the new year together.",
+      "cn": "本：新年快乐，安娜！\n安娜：新年快乐，本！祝你和家人一切顺利。\n本：谢谢。你今年的愿望是什么？\n安娜：我希望学更多英语、交新朋友。\n本：我也是！让我们带着笑容一起开启新年。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A new year, new me",
+      "en": "A new year has come! I have many new wishes. I wish to study hard and read more storybooks. I wish to help Mum at home and share with my friends. Most of all, I wish my family and all my friends a year full of smiles. Happy New Year, everyone!",
+      "cn": "新的一年到了！我有很多新愿望。我希望努力学习、多读故事书。希望在家帮妈妈、和朋友们分享。最重要的，我祝家人和所有朋友新的一年充满微笑。大家新年快乐！"
+    }
+  ]
+}

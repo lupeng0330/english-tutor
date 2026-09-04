@@ -1,0 +1,2116 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "audioText": "M: I usually go to school by bus.",
+    "audioFile": "listening_08.mp3",
+    "q": "How does the boy go to school?",
+    "options": [
+      "By bus",
+      "By bike",
+      "On foot"
+    ],
+    "answer": 0,
+    "explain": "男孩说自己通常坐公交上学",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "audioText": "W: My favorite subject is English.",
+    "audioFile": "listening_g7_02.mp3",
+    "q": "What's her favorite subject?",
+    "options": [
+      "Math",
+      "English",
+      "Chinese"
+    ],
+    "answer": 1,
+    "explain": "favorite subject=最喜欢的学科是英语",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "audioText": "M: We should protect our environment.",
+    "audioFile": "listening_g7_03.mp3",
+    "q": "What does the boy think?",
+    "options": [
+      "We should protect environment",
+      "We should travel more",
+      "We should study more"
+    ],
+    "answer": 0,
+    "explain": "protect environment=保护环境",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "audioText": "W: The movie is very interesting.",
+    "audioFile": "listening_09.mp3",
+    "q": "How is the movie?",
+    "options": [
+      "Interesting",
+      "Boring",
+      "Scary"
+    ],
+    "answer": 0,
+    "explain": "女孩评价电影很有趣",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "audioText": "M: Reading is my favorite hobby.",
+    "audioFile": "listening_g8_02.mp3",
+    "q": "What's his favorite hobby?",
+    "options": [
+      "Swimming",
+      "Reading",
+      "Running"
+    ],
+    "answer": 1,
+    "explain": "favorite hobby=最喜欢的爱好是阅读",
+    "difficulty": 2
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "audioText": "W: Last Saturday I worked as a volunteer.",
+    "audioFile": "listening_g8_03.mp3",
+    "q": "What did the girl do last Saturday?",
+    "options": [
+      "Played games",
+      "Worked as a volunteer",
+      "Went to school"
+    ],
+    "answer": 1,
+    "explain": "worked as a volunteer=做志愿者",
+    "difficulty": 3
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "audioText": "M: I have learned English for 5 years.",
+    "audioFile": "listening_10.mp3",
+    "q": "How long has the boy learned English?",
+    "options": [
+      "For 5 years",
+      "For 3 years",
+      "For 10 years"
+    ],
+    "answer": 0,
+    "explain": "男孩说自己学英语5年了",
+    "difficulty": 3
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "audioText": "W: The telephone was invented by Alexander Bell.",
+    "audioFile": "listening_g9_02.mp3",
+    "q": "Who invented the telephone?",
+    "options": [
+      "Edison",
+      "Bell",
+      "Newton"
+    ],
+    "answer": 1,
+    "explain": "Alexander Bell=贝尔发明了电话",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "audioText": "M: I plan to major in computer science at university.",
+    "audioFile": "listening_g9_03.mp3",
+    "q": "What will he major in?",
+    "options": [
+      "English",
+      "Computer science",
+      "Math"
+    ],
+    "answer": 1,
+    "explain": "major in computer science=主修计算机科学",
+    "difficulty": 4
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_L01",
+    "audioText": "Janet: Why are you in such a hurry, Jiamin? Jiamin: I have to return this book to the library.",
+    "audioFile": "listening_6B_U1_01.mp3",
+    "q": "Where is Jiamin going?",
+    "options": [
+      "The classroom",
+      "The library",
+      "The playground"
+    ],
+    "answer": 1,
+    "explain": "Jiamin 说要去图书馆还书。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_L02",
+    "audioText": "Boy: In the story, the hare took a rest under a tree. The tortoise walked slowly but never stopped.",
+    "audioFile": "listening_6B_U1_02.mp3",
+    "q": "Who won the race?",
+    "options": [
+      "The hare",
+      "The tortoise",
+      "Neither"
+    ],
+    "answer": 1,
+    "explain": "龟兔赛跑里乌龟赢了。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_L01",
+    "audioText": "Teacher: A hare ran and crashed into a tree. It fell to the ground and died.",
+    "audioFile": "listening_6B_U2_01.mp3",
+    "q": "What happened to the hare?",
+    "options": [
+      "It ran away",
+      "It died",
+      "It was hungry"
+    ],
+    "answer": 1,
+    "explain": "野兔撞树后死了。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_L02",
+    "audioText": "Boy: The farmer stopped working. He just sat and waited for another hare. His vegetables died.",
+    "audioFile": "listening_6B_U2_02.mp3",
+    "q": "Why did his vegetables die?",
+    "options": [
+      "He didn’t water them",
+      "He stopped working",
+      "It was too hot"
+    ],
+    "answer": 1,
+    "explain": "农夫不再劳作，庄稼枯死。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_L01",
+    "audioText": "Jiamin: This animal has two strong back legs and it can jump very far.",
+    "audioFile": "listening_6B_U3_01.mp3",
+    "q": "What animal is Jiamin talking about?",
+    "options": [
+      "A frog",
+      "A kangaroo",
+      "A rabbit"
+    ],
+    "answer": 1,
+    "explain": "两条强壮后腿 + 跳得很远 → 袋鼠。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_L02",
+    "audioText": "Janet: It is a very large animal. It has a long nose and two big ears. It likes eating plants.",
+    "audioFile": "listening_6B_U3_02.mp3",
+    "q": "What is it?",
+    "options": [
+      "An elephant",
+      "A tiger",
+      "A lion"
+    ],
+    "answer": 0,
+    "explain": "长鼻子大耳朵 + 吃植物 → 大象。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_L01",
+    "audioText": "Reporter: Pandas, tigers and whales are in danger. We need to save them together.",
+    "audioFile": "listening_6B_U4_01.mp3",
+    "q": "Which animal is NOT mentioned?",
+    "options": [
+      "Panda",
+      "Tiger",
+      "Lion"
+    ],
+    "answer": 2,
+    "explain": "只提到了熊猫、老虎、鲸鱼。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_L02",
+    "audioText": "Amy: People cut down forests and pollute rivers. Animals lose their homes.",
+    "audioFile": "listening_6B_U4_02.mp3",
+    "q": "What is making animals lose their homes?",
+    "options": [
+      "Cutting forests and polluting rivers",
+      "Drought",
+      "Hunting"
+    ],
+    "answer": 0,
+    "explain": "砍伐森林 + 污染河流。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_L01",
+    "audioText": "Xiaoling: Dr Sun Yatsen was born in 1866 in Guangdong. He was a great leader of China.",
+    "audioFile": "listening_6B_U5_01.mp3",
+    "q": "When was Dr Sun Yatsen born?",
+    "options": [
+      "1866",
+      "1876",
+      "1888"
+    ],
+    "answer": 0,
+    "explain": "1866 年出生。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_L02",
+    "audioText": "Ben: Mozart began to play the piano when he was four and write music when he was five.",
+    "audioFile": "listening_6B_U5_02.mp3",
+    "q": "How old was Mozart when he started writing music?",
+    "options": [
+      "Four",
+      "Five",
+      "Six"
+    ],
+    "answer": 1,
+    "explain": "五岁开始作曲。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_L01",
+    "audioText": "Teacher: Deng Jiaxian was the father of Chinese atomic science. He was clever and hard-working.",
+    "audioFile": "listening_6B_U6_01.mp3",
+    "q": "What was Deng Jiaxian?",
+    "options": [
+      "A musician",
+      "A scientist",
+      "A writer"
+    ],
+    "answer": 1,
+    "explain": "他是科学家（原子科学之父）。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_L02",
+    "audioText": "Ben: Deng went to the United States in 1948 to study physics. He finished his PhD in only two years.",
+    "audioFile": "listening_6B_U6_02.mp3",
+    "q": "How long did Deng take to finish his PhD?",
+    "options": [
+      "Four years",
+      "Two years",
+      "One year"
+    ],
+    "answer": 1,
+    "explain": "两年完成博士学位。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_L01",
+    "audioText": "Jiamin: Today on the bus I stood up to give my seat to an old lady. But a young man sat down first.",
+    "audioFile": "listening_6B_U7_01.mp3",
+    "q": "What did the young man do?",
+    "options": [
+      "He gave his seat",
+      "He sat down quickly",
+      "He helped the lady"
+    ],
+    "answer": 1,
+    "explain": "年轻人抢坐了。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_L02",
+    "audioText": "Xiaoling: Yesterday at the supermarket, a girl tried to push in line without saying “Excuse me”.",
+    "audioFile": "listening_6B_U7_02.mp3",
+    "q": "What did the girl do wrong?",
+    "options": [
+      "She was too loud",
+      "She pushed in line",
+      "She ran"
+    ],
+    "answer": 1,
+    "explain": "插队。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_L01",
+    "audioText": "Ted the bear: Can I help you? Can I open the door for you?",
+    "audioFile": "listening_6B_U8_01.mp3",
+    "q": "What is Ted doing?",
+    "options": [
+      "Asking for food",
+      "Offering help",
+      "Playing a game"
+    ],
+    "answer": 1,
+    "explain": "礼貌地提供帮助。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_L02",
+    "audioText": "Boy: Please and thank you are the magic words that make people happy.",
+    "audioFile": "listening_6B_U8_02.mp3",
+    "q": "What does the boy call magic words?",
+    "options": [
+      "Sorry and excuse me",
+      "Please and thank you",
+      "Hello and goodbye"
+    ],
+    "answer": 1,
+    "explain": "magic words = please + thank you。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_L01",
+    "audioText": "Ben: I will go to South Africa. I love nature.",
+    "audioFile": "listening_6B_U9_01.mp3",
+    "q": "Where will Ben go?",
+    "options": [
+      "Japan",
+      "France",
+      "South Africa"
+    ],
+    "answer": 2,
+    "explain": "Ben 选南非。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_L02",
+    "audioText": "Jiamin: If I can travel abroad, I will go to France. Paris is the food capital of the world.",
+    "audioFile": "listening_6B_U9_02.mp3",
+    "q": "Why does Jiamin want to go to Paris?",
+    "options": [
+      "For food",
+      "For clothes",
+      "For music"
+    ],
+    "answer": 0,
+    "explain": "巴黎以美食闻名。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_L01",
+    "audioText": "Li Hua: I will arrive at the airport on June 12th at 1 p.m.",
+    "audioFile": "listening_6B_U10_01.mp3",
+    "q": "When will Li Hua arrive?",
+    "options": [
+      "June 2nd, 1 p.m.",
+      "June 12th, 1 p.m.",
+      "June 12th, 12 p.m."
+    ],
+    "answer": 1,
+    "explain": "6 月 12 日下午 1 点。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_L02",
+    "audioText": "Janet: I live in Milan. It is in the north of Italy and famous for fashion.",
+    "audioFile": "listening_6B_U10_02.mp3",
+    "q": "Where does Janet live?",
+    "options": [
+      "Rome",
+      "Milan",
+      "Paris"
+    ],
+    "answer": 1,
+    "explain": "Janet 住在米兰。",
+    "difficulty": 2
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "audioText": "W: Look! There are letters on the sign. M: Yes! I can see a big letter B.",
+    "audioFile": "jk_listening_3A_01.mp3",
+    "q": "What does the boy see?",
+    "options": [
+      "A big letter B",
+      "A bus",
+      "A book"
+    ],
+    "answer": 0,
+    "explain": "男孩说 I can see a big letter B",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "audioText": "W: How do you say \"book\" in Chinese? M: We say \"shu\". It means the same thing.",
+    "audioFile": "jk_listening_3A_02.mp3",
+    "q": "What does \"book\" mean in Chinese?",
+    "options": [
+      "shu",
+      "bi",
+      "chi"
+    ],
+    "answer": 0,
+    "explain": "回答 We say \"shu\"",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "audioText": "M: Can you read this English word? W: Yes, I can. It is \"apple\". W: What does it mean? M: It means a kind of fruit.",
+    "audioFile": "jk_listening_3A_03.mp3",
+    "q": "What does the word \"apple\" mean?",
+    "options": [
+      "A kind of fruit",
+      "A colour",
+      "A name"
+    ],
+    "answer": 0,
+    "explain": "M 说 It means a kind of fruit",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "audioText": "W: Look at the photo. Who is he? M: He is my friend, Tom.",
+    "audioFile": "jk_listening_3A_04.mp3",
+    "q": "Who is the boy in the photo?",
+    "options": [
+      "Tom",
+      "Lily",
+      "Sam"
+    ],
+    "answer": 0,
+    "explain": "回答 He is my friend, Tom",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "audioText": "M: What colour is this key? W: Colour it red, please.",
+    "audioFile": "jk_listening_3A_05.mp3",
+    "q": "What colour is the key?",
+    "options": [
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "answer": 0,
+    "explain": "老师说 Colour it red",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "audioText": "W: Let's set a password. How many numbers do we need? M: Pick four numbers, from one to ten.",
+    "audioFile": "jk_listening_3A_06.mp3",
+    "q": "How many numbers for the password?",
+    "options": [
+      "Four",
+      "Ten",
+      "Two"
+    ],
+    "answer": 0,
+    "explain": "回答 Pick four numbers",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "audioText": "W: Look, I can draw a circle for the sun! M: Wow! It is so nice.",
+    "audioFile": "jk_listening_3A_07.mp3",
+    "q": "What did the girl draw?",
+    "options": [
+      "A circle",
+      "A flower",
+      "A star"
+    ],
+    "answer": 0,
+    "explain": "女孩说 I can draw a circle",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "audioText": "M: Class, please be quiet. I will listen now. W: Good! A good listener learns a lot.",
+    "audioFile": "jk_listening_3A_08.mp3",
+    "q": "What makes a good listener?",
+    "options": [
+      "Being quiet",
+      "Talking loudly",
+      "Running fast"
+    ],
+    "answer": 0,
+    "explain": "老师说 Please be quiet",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "audioText": "M: It's time to exercise! We can run, jump and play ball. W: I love exercise!",
+    "audioFile": "jk_listening_3A_09.mp3",
+    "q": "What can they do for exercise?",
+    "options": [
+      "Run and jump",
+      "Read books",
+      "Draw pictures"
+    ],
+    "answer": 0,
+    "explain": "老师说 We can run, jump and play ball",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "audioText": "W: Let's have a music show! Who can sing an English song? M: I can!",
+    "audioFile": "jk_listening_3A_10.mp3",
+    "q": "Who can sing an English song?",
+    "options": [
+      "The boy",
+      "Lily",
+      "Miss Wang"
+    ],
+    "answer": 0,
+    "explain": "男孩回答 I can",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "audioText": "W: Anna, it's seven o'clock. Get up! M: OK, Mum. Wash my face and brush my teeth.",
+    "audioFile": "jk_listening_3B_01.mp3",
+    "q": "What does Anna do first?",
+    "options": [
+      "Wash her face",
+      "Eat breakfast",
+      "Go to school"
+    ],
+    "answer": 0,
+    "explain": "妈妈说 Wash your face and brush your teeth",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "audioText": "M: Hi, Anna! How was your day? W: Great! We played games at school. I am very happy but tired.",
+    "audioFile": "jk_listening_3B_02.mp3",
+    "q": "How does Anna feel?",
+    "options": [
+      "Happy but tired",
+      "Sad and angry",
+      "Busy and hungry"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I am very happy but tired",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "audioText": "W: What a busy day! M: Yes. We had four classes and ran on the playground. W: I am so hungry now. Let's go home.",
+    "audioFile": "jk_listening_3B_03.mp3",
+    "q": "Why are they so hungry?",
+    "options": [
+      "They had classes and ran a lot",
+      "They forgot to eat",
+      "They cooked too much"
+    ],
+    "answer": 0,
+    "explain": "他们上了四节课还在操场跑步，所以很饿",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "audioText": "W: Look at my plan for Saturday! M: Cool! What will you do first? W: First I'll read a book. Then I'll play with my dog.",
+    "audioFile": "jk_listening_3B_04.mp3",
+    "q": "What will she do first on Saturday?",
+    "options": [
+      "Read a book",
+      "Play with her dog",
+      "Do homework"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 First I'll read a book",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4",
+    "audioText": "W: Ben, I have a party on Sunday. Come and join us! M: Sure! We'll play games and sing songs together.",
+    "audioFile": "jk_listening_3B_05.mp3",
+    "q": "What will they do at the party?",
+    "options": [
+      "Play games and sing songs",
+      "Read books",
+      "Do homework"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 We'll play games and sing songs",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5",
+    "audioText": "M: Look at our new classroom! W: Wow, it's so clean and tidy. M: There is a big poster on the wall. It's our class call.",
+    "audioFile": "jk_listening_3B_06.mp3",
+    "q": "What is on the wall?",
+    "options": [
+      "A big poster",
+      "A clock",
+      "A picture"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 There is a big poster on the wall",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6",
+    "audioText": "W: I'm on duty today. What should I do? M: First, sweep the floor. Then wipe the windows and water the plants.",
+    "audioFile": "jk_listening_3B_07.mp3",
+    "q": "What should she do first?",
+    "options": [
+      "Sweep the floor",
+      "Water the plants",
+      "Wipe the windows"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 First, sweep the floor",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7",
+    "audioText": "W: Ben, don't run in the hall! M: Sorry, I'm late for class. W: You should walk, not run. It's safer.",
+    "audioFile": "jk_listening_3B_08.mp3",
+    "q": "Why should Ben walk?",
+    "options": [
+      "It's safer",
+      "It's faster",
+      "It's funnier"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 It's safer",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8",
+    "audioText": "M: Excuse me, may I borrow your pen? W: Sure, here you are. M: Thanks a lot! W: You're welcome.",
+    "audioFile": "jk_listening_3B_09.mp3",
+    "q": "What does the boy want to borrow?",
+    "options": [
+      "A pen",
+      "A book",
+      "A ruler"
+    ],
+    "answer": 0,
+    "explain": "男孩说 May I borrow your pen",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U9",
+    "audioText": "W: Today is Road Helper Day! I help kids cross the road. M: What do you say? W: Red light, stop! Green light, go!",
+    "audioFile": "jk_listening_3B_10.mp3",
+    "q": "What does green light mean?",
+    "options": [
+      "Go",
+      "Stop",
+      "Wait"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 Green light, go",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "audioText": "W: Hi, Ben! Welcome to my home. M: Wow, what a beautiful house! W: Come in, please. This is our living room.",
+    "audioFile": "jk_listening_4A_01.mp3",
+    "q": "Where are they?",
+    "options": [
+      "At Anna's home",
+      "At school",
+      "At the zoo"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 Welcome to my home",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "audioText": "W: Look, Ben. This is my family photo. M: Who is the man with glasses? W: He's my father. The kind lady is my mother.",
+    "audioFile": "jk_listening_4A_02.mp3",
+    "q": "Who is the man with glasses?",
+    "options": [
+      "Her father",
+      "Her brother",
+      "Her grandpa"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 He's my father",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "audioText": "M: How many people in your family? W: Five — grandpa, grandma, father, mother and me. M: That's a warm family!",
+    "audioFile": "jk_listening_4A_03.mp3",
+    "q": "How many people in Anna's family?",
+    "options": [
+      "Five",
+      "Four",
+      "Six"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 Five",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3",
+    "audioText": "M: Anna, can you show me your house? W: Sure! This is the kitchen, and that is the study. My bedroom is upstairs.",
+    "audioFile": "jk_listening_4A_04.mp3",
+    "q": "Where is the bedroom?",
+    "options": [
+      "Upstairs",
+      "Downstairs",
+      "In the garden"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 My bedroom is upstairs",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4",
+    "audioText": "M: Anna, what do you do at home? W: I read books and draw pictures. I watch TV only on weekends.",
+    "audioFile": "jk_listening_4A_05.mp3",
+    "q": "When does Anna watch TV?",
+    "options": [
+      "Only on weekends",
+      "Every day",
+      "Never"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 only on weekends",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5",
+    "audioText": "W: Ben, what's your hobby? M: My hobby is music. I play the piano. W: Cool! I love dance. I can also swim.",
+    "audioFile": "jk_listening_4A_06.mp3",
+    "q": "What is Ben's hobby?",
+    "options": [
+      "Playing the piano",
+      "Swimming",
+      "Dancing"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I play the piano",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6",
+    "audioText": "M: Look at the pandas! They're so cute. W: I love their black and white fur. M: There are birds, rabbits and even a tiger here.",
+    "audioFile": "jk_listening_4A_07.mp3",
+    "q": "What animals do they see first?",
+    "options": [
+      "Pandas",
+      "Birds",
+      "Rabbits"
+    ],
+    "answer": 0,
+    "explain": "Ben 先说 Look at the pandas",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7",
+    "audioText": "M: What will you do this weekend, Anna? W: On Saturday, my family will have a picnic in the park. On Sunday, we'll go shopping and watch a movie.",
+    "audioFile": "jk_listening_4A_08.mp3",
+    "q": "What will Anna do on Saturday?",
+    "options": [
+      "Have a picnic",
+      "Watch a movie",
+      "Go shopping"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 we'll have a picnic in the park on Saturday",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8",
+    "audioText": "M: Merry Christmas, Anna! W: Merry Christmas, Ben! Look at our Christmas tree. I made a card for Mum and Dad.",
+    "audioFile": "jk_listening_4A_09.mp3",
+    "q": "What did Anna make?",
+    "options": [
+      "A card",
+      "A gift",
+      "A cake"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I made a card",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U9",
+    "audioText": "M: Happy New Year, Anna! W: Happy New Year, Ben! I wish to learn more English and make new friends.",
+    "audioFile": "jk_listening_4A_10.mp3",
+    "q": "What does Anna wish for?",
+    "options": [
+      "Learn more English",
+      "Get more gifts",
+      "Travel to China"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I wish to learn more English",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "audioText": "W: Ben, look! The trees are green again. M: Yes! Spring is here. Many flowers are out. W: Let's fly a kite!",
+    "audioFile": "jk_listening_4B_01.mp3",
+    "q": "What do they want to do?",
+    "options": [
+      "Fly a kite",
+      "Plant a tree",
+      "Pick flowers"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 Let's fly a kite",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "audioText": "W: What will you wear to the party, Ben? M: I'll wear a white shirt and blue trousers. W: Cool! I'll wear a new skirt.",
+    "audioFile": "jk_listening_4B_02.mp3",
+    "q": "What will Ben wear?",
+    "options": [
+      "A white shirt and blue trousers",
+      "A T-shirt and shorts",
+      "A jacket"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 a white shirt and blue trousers",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "audioText": "W: Mum, I need new clothes for school. M: Let's go shopping. W: I want a blue hat and blue shoes. M: Blue is your favourite colour!",
+    "audioFile": "jk_listening_4B_03.mp3",
+    "q": "What does the child want?",
+    "options": [
+      "A blue hat and blue shoes",
+      "A red shirt",
+      "A green skirt"
+    ],
+    "answer": 0,
+    "explain": "孩子说 I want a blue hat and blue shoes",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3",
+    "audioText": "W: Mum, look at this red T-shirt. How much is it? M: It's only twenty yuan. W: That's cheap! Let's buy it.",
+    "audioFile": "jk_listening_4B_04.mp3",
+    "q": "How much is the T-shirt?",
+    "options": [
+      "Twenty yuan",
+      "Thirty yuan",
+      "Fifty yuan"
+    ],
+    "answer": 0,
+    "explain": "妈妈说 It's only twenty yuan",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4",
+    "audioText": "W: I want a book and a pen. M: The book is thirty yuan, the pen is twenty. W: How much in total? M: Fifty yuan.",
+    "audioFile": "jk_listening_4B_05.mp3",
+    "q": "How much in total?",
+    "options": [
+      "Fifty yuan",
+      "Thirty yuan",
+      "Twenty yuan"
+    ],
+    "answer": 0,
+    "explain": "30+20=50",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5",
+    "audioText": "M: What's your favourite food, Anna? W: I love noodles and dumplings. M: I prefer rice and meat. W: Vegetables are tasty too!",
+    "audioFile": "jk_listening_4B_06.mp3",
+    "q": "What does Ben prefer?",
+    "options": [
+      "Rice and meat",
+      "Noodles and dumplings",
+      "Bread and milk"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I prefer rice and meat",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6",
+    "audioText": "W: Anna, will you help me in the kitchen? M: Sure, Mum. What can I do? W: Please wash the fruit and get two eggs.",
+    "audioFile": "jk_listening_4B_07.mp3",
+    "q": "What does Mum ask Anna to do?",
+    "options": [
+      "Wash the fruit and get eggs",
+      "Cook the dinner",
+      "Set the table"
+    ],
+    "answer": 0,
+    "explain": "妈妈说 wash the fruit and get two eggs",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7",
+    "audioText": "M: Anna, why are you so strong? W: I have healthy habits. I exercise every morning and sleep early. M: I should try that too!",
+    "audioFile": "jk_listening_4B_08.mp3",
+    "q": "Why is Anna strong?",
+    "options": [
+      "She has healthy habits",
+      "She eats a lot",
+      "She runs fast"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I have healthy habits",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8",
+    "audioText": "W: It's a sunny Saturday! Let's have a picnic. M: Great! I'll bring sandwiches and juice. W: I have a big basket and we can sit by the lake.",
+    "audioFile": "jk_listening_4B_09.mp3",
+    "q": "Where will they have the picnic?",
+    "options": [
+      "By the lake",
+      "In the park",
+      "At home"
+    ],
+    "answer": 0,
+    "explain": "Anna 提到 by the lake",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U9",
+    "audioText": "W: This spring was so lovely. We flew kites and had a picnic. M: I wrote it all in my diary. W: I'll remember it forever. Thank you, spring!",
+    "audioFile": "jk_listening_4B_10.mp3",
+    "q": "Where did Ben write about spring?",
+    "options": [
+      "In his diary",
+      "On a card",
+      "In a book"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I wrote it all in my diary",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "audioText": "M: Anna, welcome back! How was your summer? W: Great! I'm so excited for the new term. I hope to make new friends.",
+    "audioFile": "jk_listening_5A_01.mp3",
+    "q": "How does Anna feel?",
+    "options": [
+      "Excited",
+      "Sad",
+      "Tired"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I'm so excited",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "audioText": "M: Anna, what's your favourite subject? W: I love English and art. They are easy for me. M: I like science and PE. Maths is a little difficult.",
+    "audioFile": "jk_listening_5A_02.mp3",
+    "q": "What subject does Ben find difficult?",
+    "options": [
+      "Maths",
+      "English",
+      "Art"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 Maths is a little difficult",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "audioText": "M: Anna, do you like PE? W: Yes! I love sports. We run, jump and play ball games. M: My favourite is football. W: Me too! Let's play after school.",
+    "audioFile": "jk_listening_5A_03.mp3",
+    "q": "What sport do they both like?",
+    "options": [
+      "Football",
+      "Basketball",
+      "Swimming"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 My favourite is football, Anna 说 Me too",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3",
+    "audioText": "M: Anna, what's your talent? W: I can sing songs in English. What about you? M: I can tell stories on stage. W: Your parents must be proud!",
+    "audioFile": "jk_listening_5A_04.mp3",
+    "q": "What is Ben's talent?",
+    "options": [
+      "Telling stories",
+      "Singing",
+      "Dancing"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I can tell stories on stage",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4",
+    "audioText": "W: I want to borrow a story book. Where is it? M: It's on the shelf by the window. W: Thanks! Don't forget to return it next week.",
+    "audioFile": "jk_listening_5A_05.mp3",
+    "q": "Where is the story book?",
+    "options": [
+      "On the shelf by the window",
+      "On the desk",
+      "In the bag"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 It's on the shelf by the window",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5",
+    "audioText": "M: Anna, today is Sports Day. Are you ready? W: Yes! I'll run the 100-metre race. M: Good luck! I'll cheer for you!",
+    "audioFile": "jk_listening_5A_06.mp3",
+    "q": "What will Anna do on Sports Day?",
+    "options": [
+      "Run the 100-metre race",
+      "Jump high",
+      "Throw a ball"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I'll run the 100-metre race",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U6",
+    "audioText": "W: Ben, what festivals do you celebrate? M: I love Spring Festival and Mid-Autumn. We eat moon cakes and watch the moon. W: In America, they have Thanksgiving and Halloween.",
+    "audioFile": "jk_listening_5A_07.mp3",
+    "q": "What do they eat at Mid-Autumn?",
+    "options": [
+      "Moon cakes",
+      "Turkey",
+      "Candy"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 We eat moon cakes",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U7",
+    "audioText": "M: Anna, which club will you join? W: I want to join the photo club. I love taking pictures. M: Cool! I'll join the robot club.",
+    "audioFile": "jk_listening_5A_08.mp3",
+    "q": "Which club does Anna want to join?",
+    "options": [
+      "Photo club",
+      "Robot club",
+      "Drama club"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I want to join the photo club",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U8",
+    "audioText": "W: Ben, the elderly man next door looks sad. M: Let's help him carry his bags. W: Good idea! A small act can make a big difference.",
+    "audioFile": "jk_listening_5A_09.mp3",
+    "q": "What do they want to do?",
+    "options": [
+      "Help the elderly man",
+      "Go to the park",
+      "Buy food"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 Let's help him carry his bags",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U9",
+    "audioText": "W: Ben, our school show is tomorrow! M: Yes! I've prepared for weeks. I'll sing and act. W: I'll dance. The audience will love it!",
+    "audioFile": "jk_listening_5A_10.mp3",
+    "q": "What will Ben do at the show?",
+    "options": [
+      "Sing and act",
+      "Dance",
+      "Play the piano"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I'll sing and act",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "audioText": "M: Anna, summer holiday is coming! Where shall we go? W: How about the beach? M: Or the mountains? Let's discuss with our families.",
+    "audioFile": "jk_listening_5B_01.mp3",
+    "q": "What does Anna suggest?",
+    "options": [
+      "Going to the beach",
+      "Going to the mountains",
+      "Staying home"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 How about the beach",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "audioText": "M: How shall we go to Beijing? W: By plane is fast, but the train is cheaper. M: Let's take the train and enjoy the view.",
+    "audioFile": "jk_listening_5B_02.mp3",
+    "q": "How will they travel?",
+    "options": [
+      "By train",
+      "By plane",
+      "By bus"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 Let's take the train",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "audioText": "W: How do you go to school, Ben? M: I take the school bus. It's safe and fun. W: I walk to school. It's only 10 minutes. M: That's good exercise!",
+    "audioFile": "jk_listening_5B_03.mp3",
+    "q": "How does Ben go to school?",
+    "options": [
+      "By school bus",
+      "On foot",
+      "By bike"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I take the school bus",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3",
+    "audioText": "W: Excuse me, can you show me the way to the museum? M: Sure. Go straight, then turn right at the crossroads. W: Thank you so much!",
+    "audioFile": "jk_listening_5B_04.mp3",
+    "q": "Where should the tourist turn?",
+    "options": [
+      "Right at the crossroads",
+      "Left at the park",
+      "Go straight"
+    ],
+    "answer": 0,
+    "explain": "指路说 turn right at the crossroads",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4",
+    "audioText": "M: Anna, which tourist spot do you want to see most? W: I want to visit the Great Wall. It's famous all over the world. M: Me too!",
+    "audioFile": "jk_listening_5B_05.mp3",
+    "q": "What does Anna want to visit?",
+    "options": [
+      "The Great Wall",
+      "A museum",
+      "A park"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I want to visit the Great Wall",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U5",
+    "audioText": "W: This silk scarf is so beautiful! What colour do you prefer? M: I'll take the blue one. W: Good choice! Let's pay and get a receipt.",
+    "audioFile": "jk_listening_5B_06.mp3",
+    "q": "What colour scarf does Ben choose?",
+    "options": [
+      "Blue",
+      "Red",
+      "Yellow"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I'll take the blue one",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U6",
+    "audioText": "W: Look, Ben! I got a postcard from Beijing. M: Wow! Who sent it? W: My cousin. She says the weather is great and she misses me.",
+    "audioFile": "jk_listening_5B_07.mp3",
+    "q": "Who sent the postcard?",
+    "options": [
+      "Anna's cousin",
+      "Ben's friend",
+      "Her teacher"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 My cousin sent it",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U7",
+    "audioText": "W: Ben, I met a foreign student. She speaks three languages! M: Amazing! W: She eats with chopsticks and loves Chinese food.",
+    "audioFile": "jk_listening_5B_08.mp3",
+    "q": "What does the foreign student use to eat?",
+    "options": [
+      "Chopsticks",
+      "A fork",
+      "A spoon"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 She eats with chopsticks",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U8",
+    "audioText": "W: Anna, you and Ben will travel alone. Be safe! M: Don't worry, Mum. We'll follow the rules and keep our phones ready.",
+    "audioFile": "jk_listening_5B_09.mp3",
+    "q": "What will they do to stay safe?",
+    "options": [
+      "Follow rules and keep phones ready",
+      "Run fast",
+      "Go alone"
+    ],
+    "answer": 0,
+    "explain": "他们说 follow rules and keep phones ready",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U9",
+    "audioText": "W: Ben, this summer journey was wonderful! M: Yes. The beach, the mountains, the food. W: I'll write everything in my diary. Thank you for the memories!",
+    "audioFile": "jk_listening_5B_10.mp3",
+    "q": "What will Anna do with the memories?",
+    "options": [
+      "Write in her diary",
+      "Tell a story",
+      "Draw a picture"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I'll write everything in my diary",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "audioText": "W: Ben, soon we'll graduate from primary school. M: I know. Six years passed so fast. W: I'll miss our school, but I'm ready for the future!",
+    "audioFile": "jk_listening_6A_01.mp3",
+    "q": "How does Anna feel about graduation?",
+    "options": [
+      "She'll miss school but is ready",
+      "She is scared",
+      "She wants to stay"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I'll miss our school, but I'm ready",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "audioText": "W: Ben, what's your dream job? M: I want to be a doctor and help people. W: I want to be a teacher like my mum. M: Let's work hard for our dreams!",
+    "audioFile": "jk_listening_6A_02.mp3",
+    "q": "What is Ben's dream job?",
+    "options": [
+      "Doctor",
+      "Teacher",
+      "Scientist"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 I want to be a doctor",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "audioText": "M: Anna, do you think doctors are great? W: Yes! They save lives every day. M: I want to be a doctor too. W: Then let's study hard together! M: Deal!",
+    "audioFile": "jk_listening_6A_03.mp3",
+    "q": "What do they both want to be?",
+    "options": [
+      "Doctors",
+      "Teachers",
+      "Writers"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 doctors are great, Ben 说 I want to be a doctor too",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "audioText": "W: Ben, who is your hero? M: My grandpa. He saved a child from a fire. W: Wow! He is so brave and great.",
+    "audioFile": "jk_listening_6A_04.mp3",
+    "q": "What did Ben's grandpa do?",
+    "options": [
+      "Saved a child from a fire",
+      "Caught a thief",
+      "Built a house"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 He saved a child from a fire",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4",
+    "audioText": "W: Ben, are you ready for the football match? M: Of course! Our team has practised for two weeks. W: Good luck! I'll cheer for you.",
+    "audioFile": "jk_listening_6A_05.mp3",
+    "q": "How long has the team practised?",
+    "options": [
+      "Two weeks",
+      "One week",
+      "Three days"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 for two weeks",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U5",
+    "audioText": "M: Anna, eat more vegetables. They have vitamins. W: Can I have some chips too? M: A little is OK, but junk food has too much fat.",
+    "audioFile": "jk_listening_6A_06.mp3",
+    "q": "Why should Anna eat vegetables?",
+    "options": [
+      "They have vitamins",
+      "They taste good",
+      "They are cheap"
+    ],
+    "answer": 0,
+    "explain": "妈妈说 They have vitamins",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U6",
+    "audioText": "W: Ben, pollution is so bad. We must do something. M: Let's recycle paper and plastic. W: And plant more trees. Every little bit helps!",
+    "audioFile": "jk_listening_6A_07.mp3",
+    "q": "What do they want to recycle?",
+    "options": [
+      "Paper and plastic",
+      "Food and water",
+      "Clothes and shoes"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 recycle paper and plastic",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U7",
+    "audioText": "M: Anna, what invention do you love most? W: The phone, because I can talk to Grandma far away. M: I love the computer. It helps me learn.",
+    "audioFile": "jk_listening_6A_08.mp3",
+    "q": "Why does Anna love the phone?",
+    "options": [
+      "She can talk to Grandma",
+      "It's cheap",
+      "It's new"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 I can talk to Grandma far away",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U8",
+    "audioText": "W: Ben, we've been friends for six years. I'll miss you in junior high. M: Don't worry — true friendship lasts forever. W: Promise we'll stay in touch?",
+    "audioFile": "jk_listening_6A_09.mp3",
+    "q": "How long have they been friends?",
+    "options": [
+      "Six years",
+      "Three years",
+      "One year"
+    ],
+    "answer": 0,
+    "explain": "Anna 说 we've been friends for six years",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U9",
+    "audioText": "W: Ben, six years are over. It's time to say goodbye. M: Goodbye to primary, hello to junior! W: Believe in yourself. Our future is bright!",
+    "audioFile": "jk_listening_6A_10.mp3",
+    "q": "What does Ben look forward to?",
+    "options": [
+      "Junior school",
+      "Summer holiday",
+      "Staying in primary"
+    ],
+    "answer": 0,
+    "explain": "Ben 说 hello to junior",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "audioText": "M: Hello! I'm Tom. What's your name? W: Hi, Tom. My name is Amy. Nice to meet you!",
+    "audioFile": "jk_listening_1A_01.mp3",
+    "q": "What is the girl's name?",
+    "options": [
+      "Amy",
+      "Tom",
+      "Anna"
+    ],
+    "answer": 0,
+    "explain": "女孩说 My name is Amy",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "audioText": "M: Let's count! One, two, three, four, five. W: I have five fingers on my hand. M: Can you count with me?",
+    "audioFile": "jk_listening_1A_02.mp3",
+    "q": "How many fingers on one hand?",
+    "options": [
+      "Five",
+      "Four",
+      "Three"
+    ],
+    "answer": 0,
+    "explain": "一只手有五根手指",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "audioText": "W: Look at the rainbow! I see red, yellow and blue. M: I like green. What colour do you like? W: I like black.",
+    "audioFile": "jk_listening_1B_01.mp3",
+    "q": "What colour does the boy like?",
+    "options": [
+      "Green",
+      "Red",
+      "Yellow"
+    ],
+    "answer": 0,
+    "explain": "男孩说 I like green",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "audioText": "W: This is my family. M: Who is she? W: She is my mum. And this is my dad. M: I love my family too!",
+    "audioFile": "jk_listening_1B_02.mp3",
+    "q": "Who is the first person in the photo?",
+    "options": [
+      "Mum",
+      "Dad",
+      "Baby"
+    ],
+    "answer": 0,
+    "explain": "女孩先说 She is my mum",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "audioText": "M: I have many pets. I have a cat and a dog. W: What colour is your cat? M: My cat is black and my dog is white.",
+    "audioFile": "jk_listening_2A_01.mp3",
+    "q": "What colour is the cat?",
+    "options": [
+      "Black",
+      "White",
+      "Brown"
+    ],
+    "answer": 0,
+    "explain": "男孩说 My cat is black",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "audioText": "M: This is my body. I have two eyes and two ears. W: I see with my eyes and hear with my ears. M: Touch your head!",
+    "audioFile": "jk_listening_2A_02.mp3",
+    "q": "What do we use to hear?",
+    "options": [
+      "Ears",
+      "Eyes",
+      "Hands"
+    ],
+    "answer": 0,
+    "explain": "女孩说 hear with my ears",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "audioText": "W: I like apples and bananas. M: My mum likes oranges. W: My dad likes grapes. Fruit is sweet and healthy.",
+    "audioFile": "jk_listening_2B_01.mp3",
+    "q": "What does Mum like?",
+    "options": [
+      "Oranges",
+      "Apples",
+      "Bananas"
+    ],
+    "answer": 0,
+    "explain": "男孩说 My mum likes oranges",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "audioText": "W: Today is sunny. I am happy. M: Yesterday was rainy and cold. W: Tomorrow will be windy. I like sunny days.",
+    "audioFile": "jk_listening_2B_02.mp3",
+    "q": "What was the weather yesterday?",
+    "options": [
+      "Rainy and cold",
+      "Sunny and warm",
+      "Windy and hot"
+    ],
+    "answer": 0,
+    "explain": "男孩说 Yesterday was rainy and cold",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1_B2_L01",
+    "audioText": "W: The science book is on the desk.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "science book",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 science book。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2_B2_L02",
+    "audioText": "W: We will visit the school library after lunch.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "school library",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 school library。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U3_B2_L03",
+    "audioText": "W: My brother goes to school by bus.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "by bus",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 by bus。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U4_B2_L04",
+    "audioText": "W: The English club starts at four o’clock.",
+    "audioFile": "",
+    "q": "What does the speaker mention?",
+    "options": [
+      "English club",
+      "a rainy day",
+      "a birthday cake"
+    ],
+    "answer": 0,
+    "explain": "录音中提到 English club。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_L01",
+    "q": "Which Chinese scientist won the Nobel Prize?",
+    "options": [
+      "Tu Youyou",
+      "Deng Jiaxian",
+      "Yuan Longping",
+      "Qian Xuesen"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "explain": "屠呦呦2015年诺贝尔奖",
+    "audioFile": "listening_6B_U11_01.mp3"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_L02",
+    "q": "What is Guangzhou famous for?",
+    "options": [
+      "Dim sum",
+      "Hamburgers",
+      "Sushi",
+      "Pizza"
+    ],
+    "answer": 0,
+    "difficulty": 1,
+    "explain": "广州早茶文化",
+    "audioFile": "listening_6B_U11_02.mp3"
+  }
+]

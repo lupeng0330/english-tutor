@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 Animals Around Us",
+  "words": [
+    { "word": "animal", "phonetic": "/ˈænɪml/", "meaning": "[n.] 动物", "example": "I love animals." },
+    { "word": "dog", "phonetic": "/dɒɡ/", "meaning": "[n.] 狗", "example": "My dog is brown." },
+    { "word": "cat", "phonetic": "/kæt/", "meaning": "[n.] 猫", "example": "The cat is on the chair." },
+    { "word": "bird", "phonetic": "/bɜːd/", "meaning": "[n.] 鸟", "example": "Birds can fly." },
+    { "word": "fish", "phonetic": "/fɪʃ/", "meaning": "[n.] 鱼", "example": "Fish live in water." },
+    { "word": "rabbit", "phonetic": "/ˈræbɪt/", "meaning": "[n.] 兔子", "example": "Rabbits eat carrots." },
+    { "word": "panda", "phonetic": "/ˈpændə/", "meaning": "[n.] 熊猫", "example": "Pandas are from China." },
+    { "word": "zoo", "phonetic": "/zuː/", "meaning": "[n.] 动物园", "example": "Let's go to the zoo." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "At the zoo",
+      "en": "Ben: Anna, look at the pandas! They're so cute.\nAnna: I love their black and white fur.\nBen: There are many animals here — birds, rabbits and even a tiger.\nAnna: My favourite is the little fish in the pond.\nBen: The zoo is full of fun!",
+      "cn": "本：安娜，看那些熊猫！它们好可爱。\n安娜：我喜欢它们黑白相间的毛。\n本：这里好多动物——鸟、兔子，还有老虎呢。\n安娜：我最喜欢池塘里的小鱼。\n本：动物园真有趣！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My favourite animal",
+      "en": "My favourite animal is the panda. Pandas live in the mountains of China. They are black and white. They eat bamboo all day. Pandas look slow but they can climb trees very fast. I want to see a real panda one day. Animals are our friends — let's protect them!",
+      "cn": "我最喜欢的动物是熊猫。熊猫生活在中国的山里。它们黑白相间。它们整天吃竹子。熊猫看起来慢，但它们能很快爬上树。有一天我想看到真正的熊猫。动物是我们的朋友——让我们保护它们！"
+    }
+  ]
+}

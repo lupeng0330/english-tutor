@@ -1,0 +1,29 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Who's Who?",
+  "module": "",
+  "words": [
+    { "word": "who", "phonetic": "/huː/", "meaning": "[pron.] 谁", "example": "Who is he?" },
+    { "word": "he", "phonetic": "/hiː/", "meaning": "[pron.] 他", "example": "He is my friend." },
+    { "word": "she", "phonetic": "/ʃiː/", "meaning": "[pron.] 她", "example": "She is a teacher." },
+    { "word": "friend", "phonetic": "/frend/", "meaning": "[n.] 朋友", "example": "You are my good friend." },
+    { "word": "teacher", "phonetic": "/ˈtiːtʃə(r)/", "meaning": "[n.] 老师", "example": "Our teacher is kind." },
+    { "word": "classmate", "phonetic": "/ˈklɑːsmeɪt/", "meaning": "[n.] 同学", "example": "Tom is my classmate." },
+    { "word": "boy", "phonetic": "/bɔɪ/", "meaning": "[n.] 男孩", "example": "The boy is tall." },
+    { "word": "girl", "phonetic": "/ɡɜːl/", "meaning": "[n.] 女孩", "example": "The girl can sing." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Who is he?",
+      "en": "Kate: Look at the photo. Who is he?\nSam: He is my friend, Tom. He is a boy in Class 2.\nKate: And who is she?\nSam: She is my classmate, Lily.\nKate: Is she your teacher?\nSam: No, she isn't. Our teacher is Miss Wang.",
+      "cn": "凯特：看这张照片。他是谁？\n山姆：他是我的朋友汤姆。他是二班的一个男孩。\n凯特：那她是谁？\n山姆：她是我的同学莉莉。\n凯特：她是你的老师吗？\n山姆：不，她不是。我们的老师是王老师。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My friends",
+      "en": "I have many friends at school.\nHe is Tom. He is a happy boy.\nShe is Lily. She is a kind girl.\nMiss Wang is our teacher. We all like her.\nA friend, a classmate, a teacher \u2014 they make my school day warm.",
+      "cn": "我在学校有很多朋友。\n他是汤姆。他是个快乐的男孩。\n她是莉莉。她是个善良的女孩。\n王老师是我们的老师。我们都喜欢她。\n一个朋友、一个同学、一位老师——他们让我的校园生活很温暖。"
+    }
+  ]
+}

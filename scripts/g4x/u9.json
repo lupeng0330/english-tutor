@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review A Lovely Spring",
+  "words": [
+    { "word": "lovely", "phonetic": "/ˈlʌvli/", "meaning": "[adj.] 可爱的；美好的", "example": "What a lovely day!" },
+    { "word": "remember", "phonetic": "/rɪˈmembə(r)/", "meaning": "[v.] 记得", "example": "Remember to smile." },
+    { "word": "diary", "phonetic": "/ˈdaɪəri/", "meaning": "[n.] 日记", "example": "I write a diary." },
+    { "word": "friend", "phonetic": "/frend/", "meaning": "[n.] 朋友", "example": "He is my best friend." },
+    { "word": "thank", "phonetic": "/θæŋk/", "meaning": "[v.] 感谢", "example": "Thank you!" },
+    { "word": "spring", "phonetic": "/sprɪŋ/", "meaning": "[n.] 春天", "example": "I love spring." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "A lovely spring",
+      "en": "Anna: This spring is so lovely. We did so many fun things!\nBen: We flew kites, had a picnic and went shopping.\nAnna: I want to write all of this in my diary.\nBen: Don't forget to thank our friends.\nAnna: Sure. Friends make every season better.",
+      "cn": "安娜：今年春天太美好了，我们做了好多有趣的事！\n本：放风筝、野餐、购物。\n安娜：我要把这些都写到日记里。\n本：别忘了谢谢朋友们。\n安娜：当然，有朋友每个季节都更美好。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My spring diary",
+      "en": "Spring is almost over. In my diary I wrote about every weekend. We flew kites in the park, learned to cook with Mum, and had a picnic by the lake. I remember the warm sun, the green grass and my friends' smiles. Thank you, lovely spring — I will miss you.",
+      "cn": "春天快结束了。日记里写满了每个周末。我们去公园放风筝、和妈妈学做饭、在湖边野餐。我记得暖暖的太阳、绿绿的草和朋友们的笑容。谢谢你，美好的春天——我会想你。"
+    }
+  ]
+}

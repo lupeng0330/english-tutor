@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 Healthy Habits",
+  "words": [
+    { "word": "healthy", "phonetic": "/ˈhelθi/", "meaning": "[adj.] 健康的", "example": "Eat healthy food." },
+    { "word": "habit", "phonetic": "/ˈhæbɪt/", "meaning": "[n.] 习惯", "example": "A good habit." },
+    { "word": "exercise", "phonetic": "/ˈeksəsaɪz/", "meaning": "[v./n.] 锻炼", "example": "Exercise every day." },
+    { "word": "sleep", "phonetic": "/sliːp/", "meaning": "[v./n.] 睡觉", "example": "I sleep well." },
+    { "word": "water", "phonetic": "/ˈwɔːtə(r)/", "meaning": "[n.] 水", "example": "Drink more water." },
+    { "word": "sweet", "phonetic": "/swiːt/", "meaning": "[n.] 糖果", "example": "Don't eat too many sweets." },
+    { "word": "fresh", "phonetic": "/freʃ/", "meaning": "[adj.] 新鲜的", "example": "Fresh fruit is good." },
+    { "word": "strong", "phonetic": "/strɒŋ/", "meaning": "[adj.] 强壮的", "example": "He is strong." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Good habits",
+      "en": "Ben: Anna, why are you so strong?\nAnna: I have healthy habits. I exercise every morning.\nBen: What else do you do?\nAnna: I eat fresh fruit, drink lots of water and sleep early.\nBen: I should learn from you!",
+      "cn": "本：安娜，你怎么这么强壮？\n安娜：我有健康习惯。每天早晨锻炼。\n本：还有呢？\n安娜：吃新鲜水果，多喝水，早睡。\n本：我得向你学习！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A healthy day",
+      "en": "A healthy day starts with a good breakfast. We should drink water and eat fresh fruit. Sweets are tasty but we shouldn't eat too many. After school, ride a bike or play sports. At night, sleep early so we can wake up fresh. Good habits make us strong and happy.",
+      "cn": "健康的一天从好早餐开始。我们应该喝水、吃新鲜水果。糖果好吃但不能吃太多。放学后骑车或运动。晚上早睡，第二天才有精神。好习惯让我们强壮又快乐。"
+    }
+  ]
+}

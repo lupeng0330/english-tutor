@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 My Talents",
+  "words": [
+    { "word": "talent", "phonetic": "/ˈtælənt/", "meaning": "[n.] 才能", "example": "She has a talent." },
+    { "word": "sing", "phonetic": "/sɪŋ/", "meaning": "[v.] 唱歌", "example": "I can sing well." },
+    { "word": "dance", "phonetic": "/dɑːns/", "meaning": "[v.] 跳舞", "example": "She dances on stage." },
+    { "word": "draw", "phonetic": "/drɔː/", "meaning": "[v.] 画画", "example": "He can draw a horse." },
+    { "word": "speak", "phonetic": "/spiːk/", "meaning": "[v.] 说", "example": "I speak two languages." },
+    { "word": "story", "phonetic": "/ˈstɔːri/", "meaning": "[n.] 故事", "example": "Tell me a story." },
+    { "word": "stage", "phonetic": "/steɪdʒ/", "meaning": "[n.] 舞台", "example": "He stands on the stage." },
+    { "word": "proud", "phonetic": "/praʊd/", "meaning": "[adj.] 自豪的", "example": "Mum is proud of me." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Show your talent",
+      "en": "Ben: Anna, what's your talent?\nAnna: I can sing songs in English. What about you?\nBen: I can speak three languages and tell stories.\nAnna: Wow, cool! Let's show our talents on the school stage.\nBen: Yes! I'm sure our parents will be proud.",
+      "cn": "本：安娜，你有什么才艺？\n安娜：我会用英语唱歌，你呢？\n本：我会说三种语言，还会讲故事。\n安娜：哇酷！我们去学校舞台上展示吧。\n本：好！爸妈一定会自豪的。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Everyone has a talent",
+      "en": "Everyone has at least one talent. Some children sing or dance well. Others can draw beautiful pictures. My friend Tom can speak in front of three hundred people without fear. My classmate Lily writes funny stories. Find your talent, share it on the stage, and your family will be proud of you.",
+      "cn": "每个人都有至少一项才能。有的孩子唱歌跳舞好。有的能画漂亮的画。我的朋友汤姆能在三百人面前演讲不害怕。同学莉莉能写有趣的故事。找到你的才能，登上舞台展示，家人会为你骄傲。"
+    }
+  ]
+}

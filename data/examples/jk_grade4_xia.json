@@ -1,0 +1,1364 @@
+{
+  "words": {
+    "spring": [
+      {
+        "en": "Lovely spring.",
+        "cn": "美好的春天。",
+        "level": 1,
+        "audioFile": "ex_26de136cd1.mp3"
+      },
+      {
+        "en": "Spring is my favourite.",
+        "cn": "春天是我最爱。",
+        "level": 2,
+        "audioFile": "ex_0590b85756.mp3"
+      },
+      {
+        "en": "Each spring reminds me to start fresh with new dreams.",
+        "cn": "每个春天都提醒我带着新梦想重新开始。",
+        "level": 3,
+        "audioFile": "ex_1cbfffda92.mp3"
+      }
+    ],
+    "warm": [
+      {
+        "en": "It's warm.",
+        "cn": "天气暖。",
+        "level": 1,
+        "audioFile": "ex_89c5057150.mp3"
+      },
+      {
+        "en": "The sun is warm.",
+        "cn": "阳光温暖。",
+        "level": 2,
+        "audioFile": "ex_5575b562b1.mp3"
+      },
+      {
+        "en": "After a long winter, a warm day feels wonderful.",
+        "cn": "漫长冬天后，温暖的一天感觉真好。",
+        "level": 3,
+        "audioFile": "ex_eb87f8ed18.mp3"
+      }
+    ],
+    "flower": [
+      {
+        "en": "Pretty flowers.",
+        "cn": "漂亮的花。",
+        "level": 1,
+        "audioFile": "ex_6b99068d5a.mp3"
+      },
+      {
+        "en": "Roses are red flowers.",
+        "cn": "玫瑰是红花。",
+        "level": 2,
+        "audioFile": "ex_5e0ee756af.mp3"
+      },
+      {
+        "en": "Pink flowers cover the small hill in spring.",
+        "cn": "春天小山坡上开满了粉色的花。",
+        "level": 3,
+        "audioFile": "ex_5da73a604c.mp3"
+      }
+    ],
+    "grass": [
+      {
+        "en": "Green grass.",
+        "cn": "绿草。",
+        "level": 1,
+        "audioFile": "ex_4930deafbf.mp3"
+      },
+      {
+        "en": "Sit on the grass.",
+        "cn": "坐在草地上。",
+        "level": 2,
+        "audioFile": "ex_ee6d777f99.mp3"
+      },
+      {
+        "en": "The grass under my feet feels soft and fresh.",
+        "cn": "脚下的草又软又新鲜。",
+        "level": 3,
+        "audioFile": "ex_42486d1e23.mp3"
+      }
+    ],
+    "tree": [
+      {
+        "en": "A big tree.",
+        "cn": "一棵大树。",
+        "level": 1,
+        "audioFile": "ex_e8324895bd.mp3"
+      },
+      {
+        "en": "Birds sing in the tree.",
+        "cn": "鸟儿在树上唱歌。",
+        "level": 2,
+        "audioFile": "ex_60ff53c9e1.mp3"
+      },
+      {
+        "en": "The old tree by the gate is over a hundred years old.",
+        "cn": "门口那棵老树已经一百多岁了。",
+        "level": 3,
+        "audioFile": "ex_a426237f4d.mp3"
+      }
+    ],
+    "wind": [
+      {
+        "en": "Strong wind.",
+        "cn": "大风。",
+        "level": 1,
+        "audioFile": "ex_37d4badc0e.mp3"
+      },
+      {
+        "en": "The wind is soft.",
+        "cn": "风很轻柔。",
+        "level": 2,
+        "audioFile": "ex_20385e7f4c.mp3"
+      },
+      {
+        "en": "A gentle spring wind blows the kite up into the blue sky.",
+        "cn": "春风轻柔，把风筝吹上蓝天。",
+        "level": 3,
+        "audioFile": "ex_2f36e01429.mp3"
+      }
+    ],
+    "rain": [
+      {
+        "en": "It rains.",
+        "cn": "下雨了。",
+        "level": 1,
+        "audioFile": "ex_100b81a84f.mp3"
+      },
+      {
+        "en": "I like rainy days.",
+        "cn": "我喜欢雨天。",
+        "level": 2,
+        "audioFile": "ex_5a71a6000c.mp3"
+      },
+      {
+        "en": "The rain in spring makes everything fresh and green.",
+        "cn": "春雨让一切都新鲜又翠绿。",
+        "level": 3,
+        "audioFile": "ex_df0686ac1f.mp3"
+      }
+    ],
+    "kite": [
+      {
+        "en": "Fly a kite.",
+        "cn": "放风筝。",
+        "level": 1,
+        "audioFile": "ex_57bba054d4.mp3"
+      },
+      {
+        "en": "My kite is red.",
+        "cn": "我的风筝是红色的。",
+        "level": 2,
+        "audioFile": "ex_caf9078fbd.mp3"
+      },
+      {
+        "en": "On windy days, many children fly kites in the park.",
+        "cn": "起风的日子，很多孩子在公园放风筝。",
+        "level": 3,
+        "audioFile": "ex_e177814898.mp3"
+      }
+    ],
+    "clothes": [
+      {
+        "en": "New clothes.",
+        "cn": "新衣服。",
+        "level": 1,
+        "audioFile": "ex_52e55e19c0.mp3"
+      },
+      {
+        "en": "I wash my clothes.",
+        "cn": "我洗衣服。",
+        "level": 2,
+        "audioFile": "ex_9780c91726.mp3"
+      },
+      {
+        "en": "Mum keeps my clothes neatly folded in the drawer.",
+        "cn": "妈妈把我的衣服整齐地叠在抽屉里。",
+        "level": 3,
+        "audioFile": "ex_3c7928a7d3.mp3"
+      }
+    ],
+    "shirt": [
+      {
+        "en": "A white shirt.",
+        "cn": "一件白衬衫。",
+        "level": 1,
+        "audioFile": "ex_499a907678.mp3"
+      },
+      {
+        "en": "Dad wears a blue shirt.",
+        "cn": "爸爸穿蓝衬衫。",
+        "level": 2,
+        "audioFile": "ex_be3f5b4687.mp3"
+      },
+      {
+        "en": "I always wear a clean shirt to school.",
+        "cn": "我上学总穿干净衬衫。",
+        "level": 3,
+        "audioFile": "ex_56457b90c9.mp3"
+      }
+    ],
+    "T-shirt": [
+      {
+        "en": "My T-shirt.",
+        "cn": "我的 T 恤。",
+        "level": 1,
+        "audioFile": "ex_683174af1c.mp3"
+      },
+      {
+        "en": "My T-shirt is blue.",
+        "cn": "我 T 恤是蓝色的。",
+        "level": 2,
+        "audioFile": "ex_7b9a477ef1.mp3"
+      },
+      {
+        "en": "I wear a cotton T-shirt on hot summer days.",
+        "cn": "炎热夏日我穿棉 T 恤。",
+        "level": 3,
+        "audioFile": "ex_1979d53289.mp3"
+      }
+    ],
+    "skirt": [
+      {
+        "en": "A pink skirt.",
+        "cn": "一条粉裙子。",
+        "level": 1,
+        "audioFile": "ex_0366cf229e.mp3"
+      },
+      {
+        "en": "Her skirt is short.",
+        "cn": "她的裙子短。",
+        "level": 2,
+        "audioFile": "ex_0911d840f0.mp3"
+      },
+      {
+        "en": "Lily wears a long flower skirt to the party.",
+        "cn": "莉莉穿着长花裙去聚会。",
+        "level": 3,
+        "audioFile": "ex_314778bb81.mp3"
+      }
+    ],
+    "trousers": [
+      {
+        "en": "Black trousers.",
+        "cn": "黑裤子。",
+        "level": 1,
+        "audioFile": "ex_546cfcf292.mp3"
+      },
+      {
+        "en": "His trousers are new.",
+        "cn": "他裤子是新的。",
+        "level": 2,
+        "audioFile": "ex_474687b8b3.mp3"
+      },
+      {
+        "en": "These blue trousers feel very comfortable.",
+        "cn": "这条蓝裤子穿着很舒服。",
+        "level": 3,
+        "audioFile": "ex_4ff1832594.mp3"
+      }
+    ],
+    "shoes": [
+      {
+        "en": "New shoes.",
+        "cn": "新鞋。",
+        "level": 1,
+        "audioFile": "ex_2d4bdb219e.mp3"
+      },
+      {
+        "en": "I have white shoes.",
+        "cn": "我有白鞋。",
+        "level": 2,
+        "audioFile": "ex_c0d41634d1.mp3"
+      },
+      {
+        "en": "Sports shoes are great for running on the playground.",
+        "cn": "运动鞋很适合在操场上跑步。",
+        "level": 3,
+        "audioFile": "ex_fc486617ef.mp3"
+      }
+    ],
+    "hat": [
+      {
+        "en": "A sun hat.",
+        "cn": "一顶遮阳帽。",
+        "level": 1,
+        "audioFile": "ex_c5f8a31cf0.mp3"
+      },
+      {
+        "en": "I have a red hat.",
+        "cn": "我有顶红帽子。",
+        "level": 2,
+        "audioFile": "ex_18d62b59ea.mp3"
+      },
+      {
+        "en": "Don't forget your hat — the sun is very strong today.",
+        "cn": "别忘戴帽子——今天太阳很大。",
+        "level": 3,
+        "audioFile": "ex_7d5d96e715.mp3"
+      }
+    ],
+    "wear": [
+      {
+        "en": "Wear it.",
+        "cn": "穿上。",
+        "level": 1,
+        "audioFile": "ex_7594a20614.mp3"
+      },
+      {
+        "en": "Wear your coat.",
+        "cn": "穿上外套。",
+        "level": 2,
+        "audioFile": "ex_3c1948f1f7.mp3"
+      },
+      {
+        "en": "What will you wear to the school party tonight?",
+        "cn": "今晚学校聚会你穿什么？",
+        "level": 3,
+        "audioFile": "ex_52c621fa96.mp3"
+      }
+    ],
+    "shopping": [
+      {
+        "en": "Go shopping.",
+        "cn": "去购物。",
+        "level": 1,
+        "audioFile": "ex_72af3fb0f6.mp3"
+      },
+      {
+        "en": "I love shopping.",
+        "cn": "我喜欢购物。",
+        "level": 2,
+        "audioFile": "ex_f8b74cbf18.mp3"
+      },
+      {
+        "en": "Mum and I went shopping for fruit yesterday.",
+        "cn": "妈妈和我昨天去买水果了。",
+        "level": 3,
+        "audioFile": "ex_3557741b0a.mp3"
+      }
+    ],
+    "buy": [
+      {
+        "en": "I buy a pen.",
+        "cn": "我买一支笔。",
+        "level": 1,
+        "audioFile": "ex_15b16642a3.mp3"
+      },
+      {
+        "en": "She buys some milk.",
+        "cn": "她买了一些牛奶。",
+        "level": 2,
+        "audioFile": "ex_1049e030f1.mp3"
+      },
+      {
+        "en": "I want to buy a new bag for my brother's birthday.",
+        "cn": "我想买个新书包给弟弟做生日礼物。",
+        "level": 3,
+        "audioFile": "ex_fddbcf91dc.mp3"
+      }
+    ],
+    "store": [
+      {
+        "en": "A big store.",
+        "cn": "一家大商店。",
+        "level": 1,
+        "audioFile": "ex_f02b3235d2.mp3"
+      },
+      {
+        "en": "Go to the store.",
+        "cn": "去商店。",
+        "level": 2,
+        "audioFile": "ex_04d0787f7f.mp3"
+      },
+      {
+        "en": "There is a new clothes store near our school.",
+        "cn": "学校附近有家新开的服装店。",
+        "level": 3,
+        "audioFile": "ex_6550d642e6.mp3"
+      }
+    ],
+    "money": [
+      {
+        "en": "Some money.",
+        "cn": "一些钱。",
+        "level": 1,
+        "audioFile": "ex_1cb6eec4cc.mp3"
+      },
+      {
+        "en": "I have ten yuan.",
+        "cn": "我有十元钱。",
+        "level": 2,
+        "audioFile": "ex_ec06918b82.mp3"
+      },
+      {
+        "en": "Save your money for things you really need.",
+        "cn": "把钱存起来买真正需要的东西。",
+        "level": 3,
+        "audioFile": "ex_0b5adff087.mp3"
+      }
+    ],
+    "price": [
+      {
+        "en": "Good price.",
+        "cn": "价格不错。",
+        "level": 1,
+        "audioFile": "ex_8f0df7d5e0.mp3"
+      },
+      {
+        "en": "What's the price?",
+        "cn": "什么价？",
+        "level": 2,
+        "audioFile": "ex_c4177906d4.mp3"
+      },
+      {
+        "en": "The price of this bike is too high for me.",
+        "cn": "这辆自行车的价格对我来说太高了。",
+        "level": 3,
+        "audioFile": "ex_a80bfee513.mp3"
+      }
+    ],
+    "cheap": [
+      {
+        "en": "Cheap and good.",
+        "cn": "便宜又好。",
+        "level": 1,
+        "audioFile": "ex_893d4a5e47.mp3"
+      },
+      {
+        "en": "This bag is cheap.",
+        "cn": "这个包很便宜。",
+        "level": 2,
+        "audioFile": "ex_171d869c22.mp3"
+      },
+      {
+        "en": "We found some very cheap apples at the market.",
+        "cn": "我们在市场上找到了非常便宜的苹果。",
+        "level": 3,
+        "audioFile": "ex_f8dbf32f81.mp3"
+      }
+    ],
+    "expensive": [
+      {
+        "en": "It's expensive.",
+        "cn": "它很贵。",
+        "level": 1,
+        "audioFile": "ex_09ec8213f9.mp3"
+      },
+      {
+        "en": "This pen is expensive.",
+        "cn": "这支笔贵。",
+        "level": 2,
+        "audioFile": "ex_7a4945a340.mp3"
+      },
+      {
+        "en": "I love this jacket, but it's too expensive.",
+        "cn": "我喜欢这件夹克，但太贵了。",
+        "level": 3,
+        "audioFile": "ex_c510cbb5b5.mp3"
+      }
+    ],
+    "yuan": [
+      {
+        "en": "Ten yuan.",
+        "cn": "十元。",
+        "level": 1,
+        "audioFile": "ex_8787bde97d.mp3"
+      },
+      {
+        "en": "It costs five yuan.",
+        "cn": "它五元。",
+        "level": 2,
+        "audioFile": "ex_96d8491782.mp3"
+      },
+      {
+        "en": "I bought three books for sixty yuan in total.",
+        "cn": "我一共花六十元买了三本书。",
+        "level": 3,
+        "audioFile": "ex_3391a80f19.mp3"
+      }
+    ],
+    "number": [
+      {
+        "en": "A number.",
+        "cn": "一个数字。",
+        "level": 1,
+        "audioFile": "ex_39da67eabe.mp3"
+      },
+      {
+        "en": "Read the number.",
+        "cn": "读出数字。",
+        "level": 2,
+        "audioFile": "ex_492a375d2b.mp3"
+      },
+      {
+        "en": "Please tell me the number of students in your class.",
+        "cn": "请告诉我你们班的学生人数。",
+        "level": 3,
+        "audioFile": "ex_8701996f95.mp3"
+      }
+    ],
+    "twenty": [
+      {
+        "en": "Twenty.",
+        "cn": "二十。",
+        "level": 1,
+        "audioFile": "ex_0a36d3653d.mp3"
+      },
+      {
+        "en": "Twenty boys are here.",
+        "cn": "这里有二十个男孩。",
+        "level": 2,
+        "audioFile": "ex_f3714bd539.mp3"
+      },
+      {
+        "en": "There are twenty students in our English class today.",
+        "cn": "今天我们英语课有二十个学生。",
+        "level": 3,
+        "audioFile": "ex_0a4fe75fcd.mp3"
+      }
+    ],
+    "thirty": [
+      {
+        "en": "Thirty.",
+        "cn": "三十。",
+        "level": 1,
+        "audioFile": "ex_7722b47144.mp3"
+      },
+      {
+        "en": "Thirty yuan, please.",
+        "cn": "三十元。",
+        "level": 2,
+        "audioFile": "ex_e23ee94784.mp3"
+      },
+      {
+        "en": "My dad is thirty years old this year.",
+        "cn": "我爸爸今年三十岁。",
+        "level": 3,
+        "audioFile": "ex_4c1437f5ed.mp3"
+      }
+    ],
+    "fifty": [
+      {
+        "en": "Fifty.",
+        "cn": "五十。",
+        "level": 1,
+        "audioFile": "ex_b559264dda.mp3"
+      },
+      {
+        "en": "Fifty yuan in total.",
+        "cn": "一共五十元。",
+        "level": 2,
+        "audioFile": "ex_e474acefc4.mp3"
+      },
+      {
+        "en": "Fifty new books arrived at our school library today.",
+        "cn": "今天我们学校图书馆来了五十本新书。",
+        "level": 3,
+        "audioFile": "ex_42396d3e55.mp3"
+      }
+    ],
+    "hundred": [
+      {
+        "en": "One hundred.",
+        "cn": "一百。",
+        "level": 1,
+        "audioFile": "ex_cf122a4ecf.mp3"
+      },
+      {
+        "en": "A hundred years.",
+        "cn": "一百年。",
+        "level": 2,
+        "audioFile": "ex_d1981192e8.mp3"
+      },
+      {
+        "en": "Grandma is almost one hundred years old.",
+        "cn": "奶奶快一百岁了。",
+        "level": 3,
+        "audioFile": "ex_5e3c674160.mp3"
+      }
+    ],
+    "how much": [
+      {
+        "en": "How much?",
+        "cn": "多少钱？",
+        "level": 1,
+        "audioFile": "ex_6362cf5662.mp3"
+      },
+      {
+        "en": "How much is it?",
+        "cn": "这个多少钱？",
+        "level": 2,
+        "audioFile": "ex_6ca7524a64.mp3"
+      },
+      {
+        "en": "How much do these three apples cost in total?",
+        "cn": "这三个苹果一共多少钱？",
+        "level": 3,
+        "audioFile": "ex_37db535438.mp3"
+      }
+    ],
+    "count": [
+      {
+        "en": "Count to ten.",
+        "cn": "数到十。",
+        "level": 1,
+        "audioFile": "ex_890ada5c4f.mp3"
+      },
+      {
+        "en": "Count the apples.",
+        "cn": "数数苹果。",
+        "level": 2,
+        "audioFile": "ex_0460090d7c.mp3"
+      },
+      {
+        "en": "Can you count from one to one hundred in English?",
+        "cn": "你能用英语从 1 数到 100 吗？",
+        "level": 3,
+        "audioFile": "ex_cb804cf9c4.mp3"
+      }
+    ],
+    "total": [
+      {
+        "en": "The total.",
+        "cn": "总数。",
+        "level": 1,
+        "audioFile": "ex_8549156a55.mp3"
+      },
+      {
+        "en": "What's the total?",
+        "cn": "总共多少？",
+        "level": 2,
+        "audioFile": "ex_e087c38c4d.mp3"
+      },
+      {
+        "en": "Add the prices and tell me the total amount, please.",
+        "cn": "把价格加起来告诉我总数。",
+        "level": 3,
+        "audioFile": "ex_e43c18e307.mp3"
+      }
+    ],
+    "food": [
+      {
+        "en": "Good food.",
+        "cn": "好食物。",
+        "level": 1,
+        "audioFile": "ex_7c44d4c396.mp3"
+      },
+      {
+        "en": "I love Chinese food.",
+        "cn": "我爱中餐。",
+        "level": 2,
+        "audioFile": "ex_f1c45474e1.mp3"
+      },
+      {
+        "en": "Different countries have very different traditional food.",
+        "cn": "不同国家有非常不同的传统食物。",
+        "level": 3,
+        "audioFile": "ex_765b0ac00c.mp3"
+      }
+    ],
+    "rice": [
+      {
+        "en": "White rice.",
+        "cn": "白米饭。",
+        "level": 1,
+        "audioFile": "ex_68cb3d8eef.mp3"
+      },
+      {
+        "en": "We eat rice every day.",
+        "cn": "我们每天吃米饭。",
+        "level": 2,
+        "audioFile": "ex_e1b9f1e0ff.mp3"
+      },
+      {
+        "en": "A bowl of rice with vegetables makes a simple lunch.",
+        "cn": "一碗米饭配蔬菜就是简单的午餐。",
+        "level": 3,
+        "audioFile": "ex_d77a30bbb3.mp3"
+      }
+    ],
+    "noodle": [
+      {
+        "en": "Noodles!",
+        "cn": "面条！",
+        "level": 1,
+        "audioFile": "ex_e26964364b.mp3"
+      },
+      {
+        "en": "I like noodles.",
+        "cn": "我喜欢面条。",
+        "level": 2,
+        "audioFile": "ex_2c8d782652.mp3"
+      },
+      {
+        "en": "On my birthday, Mum always cooks long noodles for me.",
+        "cn": "我生日时妈妈总给我做长面条。",
+        "level": 3,
+        "audioFile": "ex_30aeac3eee.mp3"
+      }
+    ],
+    "bread": [
+      {
+        "en": "Fresh bread.",
+        "cn": "新鲜面包。",
+        "level": 1,
+        "audioFile": "ex_f18ba24109.mp3"
+      },
+      {
+        "en": "Have some bread.",
+        "cn": "吃点面包。",
+        "level": 2,
+        "audioFile": "ex_cbaae0ec09.mp3"
+      },
+      {
+        "en": "I eat a piece of bread and an egg every morning.",
+        "cn": "我每天早上吃一片面包和一个鸡蛋。",
+        "level": 3,
+        "audioFile": "ex_510958cc68.mp3"
+      }
+    ],
+    "meat": [
+      {
+        "en": "Tasty meat.",
+        "cn": "美味的肉。",
+        "level": 1,
+        "audioFile": "ex_f59030be09.mp3"
+      },
+      {
+        "en": "I eat meat at dinner.",
+        "cn": "我晚餐吃肉。",
+        "level": 2,
+        "audioFile": "ex_cfd125dc17.mp3"
+      },
+      {
+        "en": "We should not eat too much meat — vegetables are also important.",
+        "cn": "我们不该吃太多肉——蔬菜也很重要。",
+        "level": 3,
+        "audioFile": "ex_e74ad35766.mp3"
+      }
+    ],
+    "vegetable": [
+      {
+        "en": "Eat vegetables.",
+        "cn": "吃蔬菜。",
+        "level": 1,
+        "audioFile": "ex_f70310d2be.mp3"
+      },
+      {
+        "en": "Vegetables are good.",
+        "cn": "蔬菜好。",
+        "level": 2,
+        "audioFile": "ex_db109b923e.mp3"
+      },
+      {
+        "en": "Fresh vegetables help us grow strong and healthy.",
+        "cn": "新鲜蔬菜帮我们茁壮健康。",
+        "level": 3,
+        "audioFile": "ex_73e5f7b004.mp3"
+      }
+    ],
+    "tasty": [
+      {
+        "en": "It's tasty.",
+        "cn": "好吃。",
+        "level": 1,
+        "audioFile": "ex_e6e85ca5df.mp3"
+      },
+      {
+        "en": "The cake is tasty.",
+        "cn": "蛋糕好吃。",
+        "level": 2,
+        "audioFile": "ex_5a4db5403f.mp3"
+      },
+      {
+        "en": "Grandma's dumplings are the tastiest food in the world.",
+        "cn": "奶奶的饺子是世上最好吃的食物。",
+        "level": 3,
+        "audioFile": "ex_6f8885bd65.mp3"
+      }
+    ],
+    "sweet": [
+      {
+        "en": "Tasty sweets.",
+        "cn": "好吃的糖果。",
+        "level": 1,
+        "audioFile": "ex_804f219bf2.mp3"
+      },
+      {
+        "en": "Don't eat too many sweets.",
+        "cn": "别吃太多糖。",
+        "level": 2,
+        "audioFile": "ex_f16a466706.mp3"
+      },
+      {
+        "en": "Too many sweets are not good for your teeth.",
+        "cn": "糖吃太多对牙齿不好。",
+        "level": 3,
+        "audioFile": "ex_3818df37af.mp3"
+      }
+    ],
+    "cook": [
+      {
+        "en": "Mum cooks.",
+        "cn": "妈妈做饭。",
+        "level": 1,
+        "audioFile": "ex_a03d16cabf.mp3"
+      },
+      {
+        "en": "Dad cooks dinner.",
+        "cn": "爸爸做晚饭。",
+        "level": 2,
+        "audioFile": "ex_734c791812.mp3"
+      },
+      {
+        "en": "I'm learning to cook a few simple dishes from Grandma.",
+        "cn": "我正跟奶奶学几道简单菜。",
+        "level": 3,
+        "audioFile": "ex_5272a82e9e.mp3"
+      }
+    ],
+    "egg": [
+      {
+        "en": "An egg.",
+        "cn": "一个鸡蛋。",
+        "level": 1,
+        "audioFile": "ex_cf7e5124ee.mp3"
+      },
+      {
+        "en": "I eat two eggs.",
+        "cn": "我吃两个鸡蛋。",
+        "level": 2,
+        "audioFile": "ex_5964d9f486.mp3"
+      },
+      {
+        "en": "Break the eggs into the bowl carefully.",
+        "cn": "小心地把鸡蛋打进碗里。",
+        "level": 3,
+        "audioFile": "ex_cd8a7bacf7.mp3"
+      }
+    ],
+    "milk": [
+      {
+        "en": "Drink milk.",
+        "cn": "喝牛奶。",
+        "level": 1,
+        "audioFile": "ex_8eb6922fa9.mp3"
+      },
+      {
+        "en": "I drink milk every day.",
+        "cn": "我每天喝牛奶。",
+        "level": 2,
+        "audioFile": "ex_00a4d22e9a.mp3"
+      },
+      {
+        "en": "A glass of warm milk before bed helps me sleep.",
+        "cn": "睡前一杯温牛奶帮我入睡。",
+        "level": 3,
+        "audioFile": "ex_392cb7f34b.mp3"
+      }
+    ],
+    "fruit": [
+      {
+        "en": "Fresh fruit.",
+        "cn": "新鲜水果。",
+        "level": 1,
+        "audioFile": "ex_193b9b4ce5.mp3"
+      },
+      {
+        "en": "Apples are fruit.",
+        "cn": "苹果是水果。",
+        "level": 2,
+        "audioFile": "ex_19e78e25f5.mp3"
+      },
+      {
+        "en": "Eating fruit every day is good for your health.",
+        "cn": "每天吃水果对健康好。",
+        "level": 3,
+        "audioFile": "ex_01c7637681.mp3"
+      }
+    ],
+    "knife": [
+      {
+        "en": "A small knife.",
+        "cn": "一把小刀。",
+        "level": 1,
+        "audioFile": "ex_eaf7e5b971.mp3"
+      },
+      {
+        "en": "Use the knife carefully.",
+        "cn": "小心用刀。",
+        "level": 2,
+        "audioFile": "ex_fbef49a66e.mp3"
+      },
+      {
+        "en": "Mum uses a sharp knife to cut the apples.",
+        "cn": "妈妈用锋利的刀切苹果。",
+        "level": 3,
+        "audioFile": "ex_44e8442160.mp3"
+      }
+    ],
+    "fork": [
+      {
+        "en": "A fork.",
+        "cn": "一把叉子。",
+        "level": 1,
+        "audioFile": "ex_8a7edd519e.mp3"
+      },
+      {
+        "en": "Hold the fork.",
+        "cn": "拿住叉子。",
+        "level": 2,
+        "audioFile": "ex_21e45f06c3.mp3"
+      },
+      {
+        "en": "I eat the noodles with a fork at school.",
+        "cn": "我在学校用叉子吃面条。",
+        "level": 3,
+        "audioFile": "ex_8bf6d6b792.mp3"
+      }
+    ],
+    "spoon": [
+      {
+        "en": "A spoon.",
+        "cn": "一把勺子。",
+        "level": 1,
+        "audioFile": "ex_030546fa9d.mp3"
+      },
+      {
+        "en": "Eat with a spoon.",
+        "cn": "用勺子吃。",
+        "level": 2,
+        "audioFile": "ex_ce7524a4c8.mp3"
+      },
+      {
+        "en": "Use a big spoon to mix the soup well.",
+        "cn": "用大勺子把汤拌匀。",
+        "level": 3,
+        "audioFile": "ex_4c11341ffb.mp3"
+      }
+    ],
+    "wash": [
+      {
+        "en": "Wash the apple.",
+        "cn": "洗苹果。",
+        "level": 1,
+        "audioFile": "ex_e8fcd586bc.mp3"
+      },
+      {
+        "en": "Wash your hands.",
+        "cn": "洗手。",
+        "level": 2,
+        "audioFile": "ex_ecdef109e1.mp3"
+      },
+      {
+        "en": "Please wash the vegetables in cold water before cooking.",
+        "cn": "做菜前请用凉水洗一下蔬菜。",
+        "level": 3,
+        "audioFile": "ex_56a723f5be.mp3"
+      }
+    ],
+    "healthy": [
+      {
+        "en": "Be healthy.",
+        "cn": "要健康。",
+        "level": 1,
+        "audioFile": "ex_eb83c6e27d.mp3"
+      },
+      {
+        "en": "Apples are healthy.",
+        "cn": "苹果有益健康。",
+        "level": 2,
+        "audioFile": "ex_175d74838b.mp3"
+      },
+      {
+        "en": "Healthy food and exercise make a happy life.",
+        "cn": "健康饮食和锻炼让生活快乐。",
+        "level": 3,
+        "audioFile": "ex_24d77711d4.mp3"
+      }
+    ],
+    "habit": [
+      {
+        "en": "A good habit.",
+        "cn": "一个好习惯。",
+        "level": 1,
+        "audioFile": "ex_b7800e2acc.mp3"
+      },
+      {
+        "en": "I have good habits.",
+        "cn": "我有好习惯。",
+        "level": 2,
+        "audioFile": "ex_4c8811ebcc.mp3"
+      },
+      {
+        "en": "Reading before bed is a wonderful daily habit.",
+        "cn": "睡前阅读是个很棒的日常习惯。",
+        "level": 3,
+        "audioFile": "ex_742938752e.mp3"
+      }
+    ],
+    "exercise": [
+      {
+        "en": "Do exercise.",
+        "cn": "做运动。",
+        "level": 1,
+        "audioFile": "ex_ed95cb7958.mp3"
+      },
+      {
+        "en": "I exercise every day.",
+        "cn": "我每天锻炼。",
+        "level": 2,
+        "audioFile": "ex_dd4a68fdfb.mp3"
+      },
+      {
+        "en": "A little exercise in the morning gives me energy all day.",
+        "cn": "早上稍微运动一下，我一整天都有精神。",
+        "level": 3,
+        "audioFile": "ex_6dc914148f.mp3"
+      }
+    ],
+    "sleep": [
+      {
+        "en": "Sleep well.",
+        "cn": "睡好。",
+        "level": 1,
+        "audioFile": "ex_f95b1ae963.mp3"
+      },
+      {
+        "en": "I sleep at nine.",
+        "cn": "我九点睡。",
+        "level": 2,
+        "audioFile": "ex_f964e802e2.mp3"
+      },
+      {
+        "en": "Children should sleep at least nine hours every night.",
+        "cn": "孩子每晚至少应睡九小时。",
+        "level": 3,
+        "audioFile": "ex_b35bacab56.mp3"
+      }
+    ],
+    "water": [
+      {
+        "en": "Drink water.",
+        "cn": "喝水。",
+        "level": 1,
+        "audioFile": "ex_82ac3af832.mp3"
+      },
+      {
+        "en": "Water is healthy.",
+        "cn": "水有益健康。",
+        "level": 2,
+        "audioFile": "ex_4bd0ce3a24.mp3"
+      },
+      {
+        "en": "Try to drink eight glasses of water a day.",
+        "cn": "尽量每天喝八杯水。",
+        "level": 3,
+        "audioFile": "ex_ce5d52709a.mp3"
+      }
+    ],
+    "fresh": [
+      {
+        "en": "Fresh air.",
+        "cn": "新鲜空气。",
+        "level": 1,
+        "audioFile": "ex_2ebec070b0.mp3"
+      },
+      {
+        "en": "Fresh fruit is good.",
+        "cn": "新鲜水果好。",
+        "level": 2,
+        "audioFile": "ex_4402428bc4.mp3"
+      },
+      {
+        "en": "Open the window and breathe in the fresh morning air.",
+        "cn": "打开窗，呼吸清新的早晨空气。",
+        "level": 3,
+        "audioFile": "ex_c29951d28a.mp3"
+      }
+    ],
+    "strong": [
+      {
+        "en": "He is strong.",
+        "cn": "他很强壮。",
+        "level": 1,
+        "audioFile": "ex_ef5a490f09.mp3"
+      },
+      {
+        "en": "Milk makes us strong.",
+        "cn": "牛奶让我们强壮。",
+        "level": 2,
+        "audioFile": "ex_22c1330c99.mp3"
+      },
+      {
+        "en": "Daily exercise makes our muscles strong and healthy.",
+        "cn": "每天锻炼让肌肉强壮健康。",
+        "level": 3,
+        "audioFile": "ex_a2ad99929b.mp3"
+      }
+    ],
+    "picnic": [
+      {
+        "en": "A picnic.",
+        "cn": "野餐。",
+        "level": 1,
+        "audioFile": "ex_714eca63d2.mp3"
+      },
+      {
+        "en": "We have a picnic.",
+        "cn": "我们野餐。",
+        "level": 2,
+        "audioFile": "ex_e8dcbb21ec.mp3"
+      },
+      {
+        "en": "A picnic by the lake is the best part of spring.",
+        "cn": "湖边野餐是春天最棒的事。",
+        "level": 3,
+        "audioFile": "ex_6d0cc7435f.mp3"
+      }
+    ],
+    "basket": [
+      {
+        "en": "A basket.",
+        "cn": "一个篮子。",
+        "level": 1,
+        "audioFile": "ex_9a9e15beba.mp3"
+      },
+      {
+        "en": "Bring the basket.",
+        "cn": "把篮子拿来。",
+        "level": 2,
+        "audioFile": "ex_b4b285df7b.mp3"
+      },
+      {
+        "en": "Mum filled the basket with sandwiches and fruit.",
+        "cn": "妈妈把篮子装满了三明治和水果。",
+        "level": 3,
+        "audioFile": "ex_a13921dd77.mp3"
+      }
+    ],
+    "sandwich": [
+      {
+        "en": "A sandwich.",
+        "cn": "一个三明治。",
+        "level": 1,
+        "audioFile": "ex_764c950aa7.mp3"
+      },
+      {
+        "en": "I eat a sandwich.",
+        "cn": "我吃个三明治。",
+        "level": 2,
+        "audioFile": "ex_671b3b1e97.mp3"
+      },
+      {
+        "en": "I made cheese sandwiches for our picnic.",
+        "cn": "我做了奶酪三明治带去野餐。",
+        "level": 3,
+        "audioFile": "ex_6d3b678aaa.mp3"
+      }
+    ],
+    "juice": [
+      {
+        "en": "Apple juice.",
+        "cn": "苹果汁。",
+        "level": 1,
+        "audioFile": "ex_79b6f52220.mp3"
+      },
+      {
+        "en": "I want some juice.",
+        "cn": "我想喝果汁。",
+        "level": 2,
+        "audioFile": "ex_fe4200d39a.mp3"
+      },
+      {
+        "en": "Fresh orange juice tastes much better than soda.",
+        "cn": "鲜橙汁比汽水好喝多了。",
+        "level": 3,
+        "audioFile": "ex_2f5f52fe52.mp3"
+      }
+    ],
+    "lake": [
+      {
+        "en": "A big lake.",
+        "cn": "一个大湖。",
+        "level": 1,
+        "audioFile": "ex_d5934681c9.mp3"
+      },
+      {
+        "en": "The lake is blue.",
+        "cn": "湖水很蓝。",
+        "level": 2,
+        "audioFile": "ex_971d46aa1b.mp3"
+      },
+      {
+        "en": "We can see many ducks swimming on the lake.",
+        "cn": "我们能看到湖上有很多鸭子在游。",
+        "level": 3,
+        "audioFile": "ex_0bcf9dd1ab.mp3"
+      }
+    ],
+    "sunny": [
+      {
+        "en": "A sunny day.",
+        "cn": "晴天。",
+        "level": 1,
+        "audioFile": "ex_7639022ab4.mp3"
+      },
+      {
+        "en": "It's sunny today.",
+        "cn": "今天有阳光。",
+        "level": 2,
+        "audioFile": "ex_b10678c50f.mp3"
+      },
+      {
+        "en": "On a sunny Saturday, our family always goes for a walk.",
+        "cn": "阳光明媚的周六，我们家总会出去散步。",
+        "level": 3,
+        "audioFile": "ex_2161028e62.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Share, please.",
+        "cn": "请分享。",
+        "level": 1,
+        "audioFile": "ex_9e7f2eb8ad.mp3"
+      },
+      {
+        "en": "Share with me.",
+        "cn": "和我分享。",
+        "level": 2,
+        "audioFile": "ex_4c923b2126.mp3"
+      },
+      {
+        "en": "We share our food and stories at the picnic.",
+        "cn": "我们在野餐时分享食物和故事。",
+        "level": 3,
+        "audioFile": "ex_59c0ff9f39.mp3"
+      }
+    ],
+    "enjoy": [
+      {
+        "en": "Enjoy!",
+        "cn": "好好享受！",
+        "level": 1,
+        "audioFile": "ex_ee40e852b9.mp3"
+      },
+      {
+        "en": "Enjoy your meal.",
+        "cn": "用餐愉快。",
+        "level": 2,
+        "audioFile": "ex_9f025f8db6.mp3"
+      },
+      {
+        "en": "I really enjoy spending time with friends in nature.",
+        "cn": "我很享受和朋友在大自然里的时光。",
+        "level": 3,
+        "audioFile": "ex_6bd0a64aab.mp3"
+      }
+    ],
+    "lovely": [
+      {
+        "en": "Lovely day.",
+        "cn": "美好的一天。",
+        "level": 1,
+        "audioFile": "ex_51d3a7d76e.mp3"
+      },
+      {
+        "en": "What a lovely garden!",
+        "cn": "多美的花园！",
+        "level": 2,
+        "audioFile": "ex_195bd553f3.mp3"
+      },
+      {
+        "en": "We had a lovely time together in the warm spring sun.",
+        "cn": "我们在温暖的春日阳光里度过了美好的时光。",
+        "level": 3,
+        "audioFile": "ex_17f8b5ec97.mp3"
+      }
+    ],
+    "remember": [
+      {
+        "en": "Remember!",
+        "cn": "记住！",
+        "level": 1,
+        "audioFile": "ex_24f4f1ebfe.mp3"
+      },
+      {
+        "en": "Remember to smile.",
+        "cn": "记得微笑。",
+        "level": 2,
+        "audioFile": "ex_5c66e472e1.mp3"
+      },
+      {
+        "en": "I will always remember this happy spring.",
+        "cn": "我会永远记得这个快乐的春天。",
+        "level": 3,
+        "audioFile": "ex_77c3c1bd30.mp3"
+      }
+    ],
+    "diary": [
+      {
+        "en": "My diary.",
+        "cn": "我的日记。",
+        "level": 1,
+        "audioFile": "ex_daf282d215.mp3"
+      },
+      {
+        "en": "I write a diary.",
+        "cn": "我写日记。",
+        "level": 2,
+        "audioFile": "ex_5861a314ff.mp3"
+      },
+      {
+        "en": "I have kept a diary for almost two years now.",
+        "cn": "我已经写日记差不多两年了。",
+        "level": 3,
+        "audioFile": "ex_bfeb5858b1.mp3"
+      }
+    ],
+    "friend": [
+      {
+        "en": "My friend.",
+        "cn": "我的朋友。",
+        "level": 1,
+        "audioFile": "ex_fe37f9b602.mp3"
+      },
+      {
+        "en": "He is my best friend.",
+        "cn": "他是我最好的朋友。",
+        "level": 2,
+        "audioFile": "ex_8c9f4507c5.mp3"
+      },
+      {
+        "en": "Good friends help each other through hard times.",
+        "cn": "好朋友在困难时彼此帮助。",
+        "level": 3,
+        "audioFile": "ex_39b789ffc0.mp3"
+      }
+    ],
+    "thank": [
+      {
+        "en": "Thank you!",
+        "cn": "谢谢你！",
+        "level": 1,
+        "audioFile": "ex_498cd895eb.mp3"
+      },
+      {
+        "en": "Thank you, Mum.",
+        "cn": "谢谢妈妈。",
+        "level": 2,
+        "audioFile": "ex_bbb5e7ed92.mp3"
+      },
+      {
+        "en": "I want to thank my teacher for her endless support.",
+        "cn": "我想感谢老师无尽的支持。",
+        "level": 3,
+        "audioFile": "ex_d4c07a6dbd.mp3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "subject": [
+    { "en": "My subject.", "cn": "我的科目。", "level": 1 },
+    { "en": "Maths is my subject.", "cn": "数学是我的科目。", "level": 2 },
+    { "en": "Which subject do you find the most interesting?", "cn": "你觉得哪门科目最有趣？", "level": 3 }
+  ],
+  "English": [
+    { "en": "I love English.", "cn": "我爱英语。", "level": 1 },
+    { "en": "English class is fun.", "cn": "英语课有趣。", "level": 2 },
+    { "en": "English helps me read stories from many countries.", "cn": "英语帮我读很多国家的故事。", "level": 3 }
+  ],
+  "Maths": [
+    { "en": "Maths!", "cn": "数学！", "level": 1 },
+    { "en": "Maths is useful.", "cn": "数学有用。", "level": 2 },
+    { "en": "I use Maths every time I help Mum count money.", "cn": "我每次帮妈妈算钱都用到数学。", "level": 3 }
+  ],
+  "science": [
+    { "en": "Cool science!", "cn": "酷酷的科学！", "level": 1 },
+    { "en": "Science is fun.", "cn": "科学有趣。", "level": 2 },
+    { "en": "In science class we did an experiment with water and oil.", "cn": "科学课上我们做了水和油的实验。", "level": 3 }
+  ],
+  "PE": [
+    { "en": "PE class.", "cn": "体育课。", "level": 1 },
+    { "en": "We have PE today.", "cn": "我们今天有体育课。", "level": 2 },
+    { "en": "PE class makes me healthy and full of energy.", "cn": "体育课让我健康有活力。", "level": 3 }
+  ],
+  "art": [
+    { "en": "Art class.", "cn": "美术课。", "level": 1 },
+    { "en": "I love art.", "cn": "我喜欢美术。", "level": 2 },
+    { "en": "In art class we painted spring flowers on big paper.", "cn": "美术课我们在大纸上画了春天的花。", "level": 3 }
+  ],
+  "difficult": [
+    { "en": "It's difficult.", "cn": "好难。", "level": 1 },
+    { "en": "Maths is difficult.", "cn": "数学有点难。", "level": 2 },
+    { "en": "Today's homework is more difficult than yesterday's.", "cn": "今天作业比昨天难一些。", "level": 3 }
+  ],
+  "easy": [
+    { "en": "It's easy.", "cn": "好简单。", "level": 1 },
+    { "en": "English is easy for me.", "cn": "英语对我很简单。", "level": 2 },
+    { "en": "This puzzle is not as easy as it looks.", "cn": "这个谜题不像看起来那么简单。", "level": 3 }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 Let's Have a Picnic",
+  "words": [
+    { "word": "picnic", "phonetic": "/ˈpɪknɪk/", "meaning": "[n.] 野餐", "example": "Let's have a picnic." },
+    { "word": "basket", "phonetic": "/ˈbɑːskɪt/", "meaning": "[n.] 篮子", "example": "Bring the basket." },
+    { "word": "sandwich", "phonetic": "/ˈsænwɪtʃ/", "meaning": "[n.] 三明治", "example": "I eat a sandwich." },
+    { "word": "juice", "phonetic": "/dʒuːs/", "meaning": "[n.] 果汁", "example": "Apple juice is sweet." },
+    { "word": "lake", "phonetic": "/leɪk/", "meaning": "[n.] 湖", "example": "The lake is big." },
+    { "word": "sunny", "phonetic": "/ˈsʌni/", "meaning": "[adj.] 阳光明媚的", "example": "It's a sunny day." },
+    { "word": "share", "phonetic": "/ʃeə(r)/", "meaning": "[v.] 分享", "example": "Share with me." },
+    { "word": "enjoy", "phonetic": "/ɪnˈdʒɔɪ/", "meaning": "[v.] 享受", "example": "Enjoy your meal!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "By the lake",
+      "en": "Anna: It's a sunny Saturday! Let's have a picnic.\nBen: Great! I'll bring sandwiches and juice.\nAnna: I have a big basket. We can sit by the lake.\nBen: Let's invite Tom and Lily to share with us.\nAnna: Yes, the more, the merrier!",
+      "cn": "安娜：阳光明媚的周六，我们去野餐吧！\n本：好！我带三明治和果汁。\n安娜：我有个大篮子，我们可以坐在湖边。\n本：叫上汤姆和莉莉一起。\n安娜：好，人越多越热闹！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Picnic by the lake",
+      "en": "Last Sunday we had a wonderful picnic by the lake. The sun was warm and the water was blue. We put a big mat on the grass and opened our baskets. There were sandwiches, fruit, juice and cookies. We shared everything and laughed a lot. A picnic with friends is the best part of spring.",
+      "cn": "上周日我们在湖边野餐，玩得很开心。阳光暖暖，湖水蓝蓝。我们在草地上铺好大垫子，打开篮子。里面有三明治、水果、果汁和饼干。我们彼此分享，笑个不停。和朋友野餐是春天最棒的事。"
+    }
+  ]
+}

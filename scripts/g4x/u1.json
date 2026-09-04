@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Spring Is Here",
+  "words": [
+    { "word": "spring", "phonetic": "/sprɪŋ/", "meaning": "[n.] 春天", "example": "Spring is here." },
+    { "word": "warm", "phonetic": "/wɔːm/", "meaning": "[adj.] 温暖的", "example": "It's warm today." },
+    { "word": "flower", "phonetic": "/ˈflaʊə(r)/", "meaning": "[n.] 花", "example": "I see a flower." },
+    { "word": "grass", "phonetic": "/ɡrɑːs/", "meaning": "[n.] 草", "example": "The grass is green." },
+    { "word": "tree", "phonetic": "/triː/", "meaning": "[n.] 树", "example": "A bird is in the tree." },
+    { "word": "wind", "phonetic": "/wɪnd/", "meaning": "[n.] 风", "example": "The wind is soft." },
+    { "word": "rain", "phonetic": "/reɪn/", "meaning": "[n./v.] 雨；下雨", "example": "It rains a lot." },
+    { "word": "kite", "phonetic": "/kaɪt/", "meaning": "[n.] 风筝", "example": "Let's fly a kite." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Spring is here",
+      "en": "Anna: Ben, look! The trees are green again.\nBen: Yes! Spring is here. It's so warm.\nAnna: Many flowers are blooming on the grass.\nBen: Let's fly a kite in the wind.\nAnna: Great idea! I love spring.",
+      "cn": "安娜：本，看！树又绿了。\n本：是的！春天来了，好暖和。\n安娜：草地上开了很多花。\n本：我们去放风筝吧。\n安娜：好主意！我爱春天。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A warm day",
+      "en": "It is a warm spring day. The sun is bright and the wind is soft. Pink and yellow flowers grow on the green grass. Birds sing in the tall trees. After a short rain, a small rainbow appears in the sky. Spring is the most lovely time of the year.",
+      "cn": "这是一个温暖的春日。阳光明媚，微风轻柔。粉色和黄色的花开在绿草上。鸟儿在高树上唱歌。一阵小雨后，天上出现了一道小彩虹。春天是一年中最美的时节。"
+    }
+  ]
+}

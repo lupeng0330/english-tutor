@@ -1,0 +1,879 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "M: My favourite colour is blue.",
+    "audioFile": "listen_fill_01.mp3",
+    "q": "男孩最喜欢的颜色是？",
+    "options": ["blue", "red", "green"],
+    "answer": 0,
+    "explain": "音频说 favourite colour is blue"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_01",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: This is my school bag.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "school bag",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 school bag。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_02",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The pencil is red.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "red pencil",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 red pencil。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_03",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I have a big family.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "big family",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 big family。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_04",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The duck is yellow.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "yellow duck",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 yellow duck。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_05",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I like the toy car.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "toy car",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 toy car。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_06",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I have two hands.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "two hands",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 two hands。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_07",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I want an apple.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "an apple",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 an apple。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_08",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: It is a sunny day.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "sunny day",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 sunny day。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5_B2_09",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: My ruler is blue.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "blue ruler",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 blue ruler。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_B2_10",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: A little bird can sing.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "little bird",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 little bird。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_B2_11",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The tree is green.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "green tree",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 green tree。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_B2_12",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The boy is happy.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "happy boy",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 happy boy。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_01",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I see a white rabbit.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "white rabbit",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 white rabbit。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_02",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: This is my new T-shirt.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "new T-shirt",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 new T-shirt。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_03",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I have three books.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "three books",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 three books。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_04",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: My desk is clean.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "clean desk",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 clean desk。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_05",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I can run fast.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "run fast",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 run fast。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_06",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I like orange juice.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "orange juice",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 orange juice。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_07",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The park gate is big.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "park gate",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 park gate。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_08",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: This is a small house.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "small house",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 small house。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_B2_09",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The dog is brown.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "brown dog",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 brown dog。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6_B2_10",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Her dress is pink.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "pink dress",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 pink dress。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_B2_11",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I can count ten stars.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "ten stars",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 ten stars。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8_B2_12",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Please open the door.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "open door",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 open door。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_01",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: We have English today.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "English class",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 English class。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_02",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The music room is clean.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "music room",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 music room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_03",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: It is Monday morning.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "Monday morning",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 Monday morning。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_04",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: My aunt is a doctor.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "a doctor",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 a doctor。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_05",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Dad is in the living room.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "living room",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 living room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_06",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Autumn is cool.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "cool autumn",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 cool autumn。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_07",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I go to school by bus.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "school bus",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 school bus。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_08",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: There is a small shop.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "small shop",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 small shop。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_B2_09",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: This is my math book.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "math book",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 math book。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_B2_10",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: They play chess after school.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "play chess",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 play chess。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_B2_11",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: We have a party on Friday.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "Friday party",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 Friday party。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_B2_12",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The train station is near.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "train station",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 train station。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_01",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Drink some warm water.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "warm water",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 warm water。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_02",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Turn left at the shop.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "turn left",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 turn left。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_03",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: We watch a dragon boat race.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "dragon boat",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 dragon boat。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_04",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The library is in the city.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "city library",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 city library。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_05",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I wash clothes on Sunday.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "wash clothes",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 wash clothes。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_06",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: We have a family picnic.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "family picnic",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 family picnic。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_07",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: The football game is fun.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "football game",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 football game。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_08",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I read a story in the library.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "read a story",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 read a story。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_B2_09",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Vegetables are healthy food.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "healthy food",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 healthy food。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6_B2_10",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Go straight and you can see it.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "go straight",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 go straight。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_B2_11",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: Spring Festival is happy.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "spring festival",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 spring festival。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_B2_12",
+    "type": "listen_fill",
+    "difficulty": 1,
+    "audioText": "W: I clean my room every week.",
+    "audioFile": "",
+    "q": "录音中提到的是哪一项？",
+    "options": [
+      "clean room",
+      "banana",
+      "rainy day"
+    ],
+    "answer": 0,
+    "explain": "录音中出现 clean room。",
+    "source": "b2_primary_v01"
+  }
+]

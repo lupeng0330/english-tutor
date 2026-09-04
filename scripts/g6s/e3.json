@@ -1,0 +1,42 @@
+{
+  "hero": [
+    { "en": "My hero.", "cn": "我的英雄。", "level": 1 },
+    { "en": "He is a real hero.", "cn": "他是真正的英雄。", "level": 2 },
+    { "en": "Real heroes do brave things without expecting praise.", "cn": "真正的英雄不求赞美就做勇敢的事。", "level": 3 }
+  ],
+  "brave": [
+    { "en": "Be brave.", "cn": "勇敢。", "level": 1 },
+    { "en": "A brave girl.", "cn": "一个勇敢的女孩。", "level": 2 },
+    { "en": "It takes a brave heart to help a stranger in trouble.", "cn": "帮助困境中的陌生人需要勇敢的心。", "level": 3 }
+  ],
+  "save": [
+    { "en": "Save him!", "cn": "救他！", "level": 1 },
+    { "en": "Doctors save lives.", "cn": "医生救人。", "level": 2 },
+    { "en": "The firefighter saved a child from the burning house.", "cn": "消防员从着火的房子里救出了一个孩子。", "level": 3 }
+  ],
+  "help": [
+    { "en": "Help others.", "cn": "帮助他人。", "level": 1 },
+    { "en": "I help my friends.", "cn": "我帮助朋友。", "level": 2 },
+    { "en": "A small act of help can change someone's day.", "cn": "一件小小的帮助能改变别人一天的心情。", "level": 3 }
+  ],
+  "fire": [
+    { "en": "A big fire.", "cn": "一场大火。", "level": 1 },
+    { "en": "Put out the fire.", "cn": "灭火。", "level": 2 },
+    { "en": "Stay low and crawl out when there is a fire.", "cn": "着火时低姿势爬出来。", "level": 3 }
+  ],
+  "fighter": [
+    { "en": "A firefighter.", "cn": "一名消防员。", "level": 1 },
+    { "en": "Firefighters are brave.", "cn": "消防员勇敢。", "level": 2 },
+    { "en": "Firefighters train hard so they can save lives quickly.", "cn": "消防员刻苦训练才能快速救人。", "level": 3 }
+  ],
+  "police": [
+    { "en": "The police.", "cn": "警察。", "level": 1 },
+    { "en": "Call the police.", "cn": "叫警察。", "level": 2 },
+    { "en": "The police officer helped the lost child find his way home.", "cn": "警察叔叔帮迷路的孩子回家。", "level": 3 }
+  ],
+  "great": [
+    { "en": "Great hero.", "cn": "伟大的英雄。", "level": 1 },
+    { "en": "A great teacher.", "cn": "一位伟大的老师。", "level": 2 },
+    { "en": "Great heroes are usually quiet, kind everyday people.", "cn": "伟大的英雄通常是安静善良的普通人。", "level": 3 }
+  ]
+}

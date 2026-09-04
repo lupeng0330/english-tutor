@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 Friendship Forever",
+  "words": [
+    { "word": "friendship", "phonetic": "/ˈfrendʃɪp/", "meaning": "[n.] 友谊", "example": "Long friendship." },
+    { "word": "trust", "phonetic": "/trʌst/", "meaning": "[v./n.] 信任", "example": "I trust you." },
+    { "word": "kind", "phonetic": "/kaɪnd/", "meaning": "[adj.] 友善的", "example": "Be kind." },
+    { "word": "help", "phonetic": "/help/", "meaning": "[v.] 帮助", "example": "Help each other." },
+    { "word": "share", "phonetic": "/ʃeə(r)/", "meaning": "[v.] 分享", "example": "Share happiness." },
+    { "word": "forgive", "phonetic": "/fəˈɡɪv/", "meaning": "[v.] 原谅", "example": "Forgive a friend." },
+    { "word": "miss", "phonetic": "/mɪs/", "meaning": "[v.] 想念", "example": "I miss you." },
+    { "word": "forever", "phonetic": "/fərˈevə(r)/", "meaning": "[adv.] 永远", "example": "Friends forever." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Friends forever",
+      "en": "Anna: Ben, we've been friends for six years. I'll miss you in junior high.\nBen: Don't worry — true friendship lasts forever.\nAnna: We can still share stories on the phone.\nBen: We help each other and forgive each other.\nAnna: Yes, trust and kindness keep our friendship strong.",
+      "cn": "安娜：本，我们做了六年朋友，上初中我会想你。\n本：别担心，真正的友谊永远长存。\n安娜：我们可以电话分享故事。\n本：我们互相帮助，互相原谅。\n安娜：对，信任和善良让友谊牢固。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "What makes a true friend",
+      "en": "What makes a true friend? First, trust — we tell our secrets to a friend we trust. Second, kindness — a friend smiles and listens. Third, help — a friend stands beside us when we are sad. Finally, forgiveness — friends sometimes make mistakes, but they say sorry and move on. True friendship lasts through the years, and even far apart, two hearts stay close.",
+      "cn": "什么是真朋友？第一是信任——把秘密告诉信任的朋友。第二是善良——朋友会微笑会倾听。第三是帮助——伤心时朋友陪在身边。最后是原谅——朋友会犯错，但能道歉、向前看。真正的友谊跨越岁月，即使相隔遥远，两颗心也紧紧相连。"
+    }
+  ]
+}

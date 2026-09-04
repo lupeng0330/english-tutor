@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 I'm on Duty",
+  "words": [
+    { "word": "duty", "phonetic": "/ˈdjuːti/", "meaning": "[n.] 职责；值日", "example": "I'm on duty today." },
+    { "word": "water", "phonetic": "/ˈwɔːtə(r)/", "meaning": "[v./n.] 浇水；水", "example": "I water the plants." },
+    { "word": "plant", "phonetic": "/plɑːnt/", "meaning": "[n.] 植物", "example": "Look at this green plant." },
+    { "word": "wipe", "phonetic": "/waɪp/", "meaning": "[v.] 擦", "example": "Wipe the desk, please." },
+    { "word": "window", "phonetic": "/ˈwɪndəʊ/", "meaning": "[n.] 窗户", "example": "Open the window." },
+    { "word": "sweep", "phonetic": "/swiːp/", "meaning": "[v.] 扫", "example": "Ben sweeps the floor." },
+    { "word": "floor", "phonetic": "/flɔː(r)/", "meaning": "[n.] 地板", "example": "The floor is clean." },
+    { "word": "help", "phonetic": "/help/", "meaning": "[v.] 帮助", "example": "Can I help you?" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "I'm on duty today",
+      "en": "Anna: I'm on duty today. What should I do?\nBen: First, sweep the floor.\nAnna: OK. Then?\nBen: Then wipe the windows and water the plants.\nAnna: Thanks, Ben. I will do my best!",
+      "cn": "安娜：我今天值日。我要做什么？\n本：首先，扫地。\n安娜：好的。然后呢？\n本：然后擦窗户、给植物浇水。\n安娜：谢谢，本，我会尽力做好！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A duty day",
+      "en": "Today is my duty day. After class, I sweep the floor and wipe the desks. Ben helps me clean the windows. The little plants by the window look thirsty, so I water them. Now our classroom is clean and bright. I feel tired but very happy. Helping others is fun!",
+      "cn": "今天是我的值日日。下课后，我扫地、擦课桌。本帮我擦窗户。窗边的小植物看起来口渴了，所以我给它们浇水。现在我们的教室又干净又明亮。我感到很累但很开心。帮助别人真有趣！"
+    }
+  ]
+}

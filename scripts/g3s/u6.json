@@ -1,0 +1,29 @@
+{
+  "id": "u6",
+  "title": "Unit 6 I Can Draw",
+  "module": "",
+  "words": [
+    { "word": "draw", "phonetic": "/drɔː/", "meaning": "[v.] 画", "example": "I can draw a cat." },
+    { "word": "can", "phonetic": "/kæn/", "meaning": "[modal] 能；会", "example": "I can draw well." },
+    { "word": "picture", "phonetic": "/ˈpɪktʃə(r)/", "meaning": "[n.] 图画", "example": "This picture is nice." },
+    { "word": "line", "phonetic": "/laɪn/", "meaning": "[n.] 线", "example": "Draw a long line." },
+    { "word": "circle", "phonetic": "/ˈsɜːkl/", "meaning": "[n.] 圆", "example": "Draw a circle for the sun." },
+    { "word": "paint", "phonetic": "/peɪnt/", "meaning": "[v.] 用颜料画", "example": "I paint the sky blue." },
+    { "word": "pen", "phonetic": "/pen/", "meaning": "[n.] 笔", "example": "I draw with a pen." },
+    { "word": "nice", "phonetic": "/naɪs/", "meaning": "[adj.] 漂亮的；好的", "example": "What a nice picture!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "I can draw",
+      "en": "Lucy: Look, I can draw a picture!\nPeter: What can you draw?\nLucy: I can draw a circle for the sun and a line for the road.\nPeter: Can you paint it?\nLucy: Yes, I can. I paint the sun yellow.\nPeter: Wow, it's a nice picture!",
+      "cn": "露西：看，我会画画！\n彼得：你会画什么？\n露西：我能画一个圆作太阳，画一条线作马路。\n彼得：你能涂色吗？\n露西：能。我把太阳涂成黄色。\n彼得：哇，这是一幅漂亮的画！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My picture",
+      "en": "I like to draw with my pen.\nFirst, I draw a circle. It is the sun.\nThen I draw two lines. They are the road.\nI paint the picture with red and green.\nNow my picture is ready. It is so nice!",
+      "cn": "我喜欢用我的笔画画。\n首先，我画一个圆。它是太阳。\n然后我画两条线。它们是马路。\n我用红色和绿色给画上色。\n现在我的画好啦。它真漂亮！"
+    }
+  ]
+}

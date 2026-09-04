@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Plan My Day",
+  "words": [
+    { "word": "plan", "phonetic": "/plæn/", "meaning": "[v./n.] 计划", "example": "Let's plan our day." },
+    { "word": "time", "phonetic": "/taɪm/", "meaning": "[n.] 时间", "example": "What time is it?" },
+    { "word": "clock", "phonetic": "/klɒk/", "meaning": "[n.] 钟", "example": "The clock says nine." },
+    { "word": "first", "phonetic": "/fɜːst/", "meaning": "[adv.] 首先", "example": "First, wash your hands." },
+    { "word": "then", "phonetic": "/ðen/", "meaning": "[adv.] 然后", "example": "Then we have breakfast." },
+    { "word": "next", "phonetic": "/nekst/", "meaning": "[adv.] 接下来", "example": "Next, I read a book." },
+    { "word": "finish", "phonetic": "/ˈfɪnɪʃ/", "meaning": "[v.] 完成", "example": "I finish my homework." },
+    { "word": "homework", "phonetic": "/ˈhəʊmwɜːk/", "meaning": "[n.] 家庭作业", "example": "Do your homework, please." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "My Saturday plan",
+      "en": "Anna: Look at my plan for Saturday!\nBen: Cool! What will you do first?\nAnna: First I'll read a book. Then I'll play with my dog.\nBen: And next?\nAnna: Next I'll finish my homework. After that, we can play together!",
+      "cn": "安娜：看我周六的计划！\n本：酷！你首先要做什么？\n安娜：我先读书，然后陪我的狗玩。\n本：然后呢？\n安娜：接下来我做完作业。之后我们就可以一起玩了！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A clock on the wall",
+      "en": "There is a big clock on the wall. It tells me the time. At seven, I get up. At eight, I am at school. At twelve, it's time for lunch. At four, school is over. At seven in the evening, I finish my homework. Time goes fast — make a good plan every day!",
+      "cn": "墙上有一只大钟。它告诉我时间。七点起床。八点我在学校。十二点是午餐时间。四点放学。晚上七点我做完作业。时间过得真快——每天都要做个好计划！"
+    }
+  ]
+}

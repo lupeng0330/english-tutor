@@ -1,0 +1,1964 @@
+{
+  "words": {
+    "guitar": [
+      {
+        "en": "A guitar.",
+        "cn": "一把吉他。",
+        "level": 1,
+        "audioFile": "ex_751fd19d4d.mp3"
+      },
+      {
+        "en": "I can play the guitar.",
+        "cn": "我会弹吉他。",
+        "level": 2,
+        "audioFile": "ex_2605af4e91.mp3"
+      },
+      {
+        "en": "Li Hua likes playing the guitar and reading books.",
+        "cn": "李华喜欢弹吉他和读书。",
+        "level": 3,
+        "audioFile": "ex_e8b5517275.mp3"
+      }
+    ],
+    "honest": [
+      {
+        "en": "Be honest.",
+        "cn": "要诚实。",
+        "level": 1,
+        "audioFile": "ex_cc95e2417a.mp3"
+      },
+      {
+        "en": "An honest boy never tells lies.",
+        "cn": "诚实的男孩从不说谎。",
+        "level": 2,
+        "audioFile": "ex_d6d31cc5a8.mp3"
+      },
+      {
+        "en": "Li Hua is honest and friendly to everyone.",
+        "cn": "李华对每个人都诚实友好。",
+        "level": 3,
+        "audioFile": "ex_3b361e03a7.mp3"
+      }
+    ],
+    "patient": [
+      {
+        "en": "Be patient.",
+        "cn": "有耐心。",
+        "level": 1,
+        "audioFile": "ex_dd6ccf74ef.mp3"
+      },
+      {
+        "en": "A good teacher is patient with students.",
+        "cn": "好老师对学生有耐心。",
+        "level": 2,
+        "audioFile": "ex_e1f29f6c84.mp3"
+      },
+      {
+        "en": "Anna is patient and confident.",
+        "cn": "Anna 有耐心也很自信。",
+        "level": 3,
+        "audioFile": "ex_cbbd42f003.mp3"
+      }
+    ],
+    "confident": [
+      {
+        "en": "I am confident.",
+        "cn": "我很自信。",
+        "level": 1,
+        "audioFile": "ex_88b698ed27.mp3"
+      },
+      {
+        "en": "Be confident and speak English loudly.",
+        "cn": "自信点，大声说英语。",
+        "level": 2,
+        "audioFile": "ex_da119c6dc0.mp3"
+      },
+      {
+        "en": "Tom is confident and likes making friends online.",
+        "cn": "Tom 很自信，喜欢网上交朋友。",
+        "level": 3,
+        "audioFile": "ex_0fbea23ff3.mp3"
+      }
+    ],
+    "improve": [
+      {
+        "en": "Improve yourself.",
+        "cn": "提升自己。",
+        "level": 1,
+        "audioFile": "ex_654dafea9f.mp3"
+      },
+      {
+        "en": "I want to improve my English.",
+        "cn": "我想提高英语。",
+        "level": 2,
+        "audioFile": "ex_be1b7902b8.mp3"
+      },
+      {
+        "en": "Anna wants to improve her English in China.",
+        "cn": "Anna 想在中国提高英语水平。",
+        "level": 3,
+        "audioFile": "ex_60a95a6f9a.mp3"
+      }
+    ],
+    "German": [
+      {
+        "en": "She is German.",
+        "cn": "她是德国人。",
+        "level": 1,
+        "audioFile": "ex_c1044be139.mp3"
+      },
+      {
+        "en": "She can speak German.",
+        "cn": "她会说德语。",
+        "level": 2,
+        "audioFile": "ex_f203a693ca.mp3"
+      },
+      {
+        "en": "Anna speaks German and a little English.",
+        "cn": "Anna 会说德语和一点英语。",
+        "level": 3,
+        "audioFile": "ex_fbd232b41d.mp3"
+      }
+    ],
+    "blog": [
+      {
+        "en": "Read my blog.",
+        "cn": "读我的博客。",
+        "level": 1,
+        "audioFile": "ex_a6058762d2.mp3"
+      },
+      {
+        "en": "I write a blog every week.",
+        "cn": "我每周写一篇博客。",
+        "level": 2,
+        "audioFile": "ex_56bf5aa508.mp3"
+      },
+      {
+        "en": "Welcome to my blog! I'm Tom from London.",
+        "cn": "欢迎来到我的博客！我是伦敦的 Tom。",
+        "level": 3,
+        "audioFile": "ex_b068662868.mp3"
+      }
+    ],
+    "grammar": [
+      {
+        "en": "English grammar.",
+        "cn": "英语语法。",
+        "level": 1,
+        "audioFile": "ex_83ac09e4ed.mp3"
+      },
+      {
+        "en": "I am good at grammar.",
+        "cn": "我擅长语法。",
+        "level": 2,
+        "audioFile": "ex_bb01626ccc.mp3"
+      },
+      {
+        "en": "I often help my classmates with English grammar.",
+        "cn": "我常帮同学学习英语语法。",
+        "level": 3,
+        "audioFile": "ex_f99897dfe2.mp3"
+      }
+    ],
+    "hobby": [
+      {
+        "en": "My hobby.",
+        "cn": "我的爱好。",
+        "level": 1,
+        "audioFile": "ex_59fe061799.mp3"
+      },
+      {
+        "en": "My hobby is reading books.",
+        "cn": "我的爱好是读书。",
+        "level": 2,
+        "audioFile": "ex_828fbc8e70.mp3"
+      },
+      {
+        "en": "His hobbies are playing football and singing.",
+        "cn": "他的爱好是踢足球和唱歌。",
+        "level": 3,
+        "audioFile": "ex_eef8e885d5.mp3"
+      }
+    ],
+    "country": [
+      {
+        "en": "A country.",
+        "cn": "一个国家。",
+        "level": 1,
+        "audioFile": "ex_af3e39b7d1.mp3"
+      },
+      {
+        "en": "China is a great country.",
+        "cn": "中国是一个伟大的国家。",
+        "level": 2,
+        "audioFile": "ex_8c83a8d4ea.mp3"
+      },
+      {
+        "en": "Each country has its own language and culture.",
+        "cn": "每个国家都有自己的语言和文化。",
+        "level": 3,
+        "audioFile": "ex_c100314473.mp3"
+      }
+    ],
+    "age": [
+      {
+        "en": "What is your age?",
+        "cn": "你多大了？",
+        "level": 1,
+        "audioFile": "ex_5eb0e8e260.mp3"
+      },
+      {
+        "en": "My age is 13.",
+        "cn": "我 13 岁。",
+        "level": 2,
+        "audioFile": "ex_055825bc05.mp3"
+      },
+      {
+        "en": "Li Hua is 13 years old.",
+        "cn": "李华 13 岁。",
+        "level": 3,
+        "audioFile": "ex_3498f741da.mp3"
+      }
+    ],
+    "dream": [
+      {
+        "en": "I have a dream.",
+        "cn": "我有个梦想。",
+        "level": 1,
+        "audioFile": "ex_384205d4eb.mp3"
+      },
+      {
+        "en": "My dream is to be a doctor.",
+        "cn": "我的梦想是成为医生。",
+        "level": 2,
+        "audioFile": "ex_04d2e25525.mp3"
+      },
+      {
+        "en": "Anna's dream is to travel around China.",
+        "cn": "Anna 的梦想是环游中国。",
+        "level": 3,
+        "audioFile": "ex_b1424e5a32.mp3"
+      }
+    ],
+    "Germany": [
+      {
+        "en": "Germany is in Europe.",
+        "cn": "德国在欧洲。",
+        "level": 1,
+        "audioFile": "ex_5b5b524ecc.mp3"
+      },
+      {
+        "en": "My pen-pal lives in Germany.",
+        "cn": "我的笔友住在德国。",
+        "level": 2,
+        "audioFile": "ex_355245f891.mp3"
+      },
+      {
+        "en": "Anna comes from Germany.",
+        "cn": "Anna 来自德国。",
+        "level": 3,
+        "audioFile": "ex_369182db93.mp3"
+      }
+    ],
+    "mountain": [
+      {
+        "en": "A high mountain.",
+        "cn": "一座高山。",
+        "level": 1,
+        "audioFile": "ex_c9651d5d4d.mp3"
+      },
+      {
+        "en": "We climbed the mountain last weekend.",
+        "cn": "上周末我们爬了山。",
+        "level": 2,
+        "audioFile": "ex_3c2b37301b.mp3"
+      },
+      {
+        "en": "Anna loves hiking in the mountains.",
+        "cn": "Anna 喜欢在山里徒步。",
+        "level": 3,
+        "audioFile": "ex_8dd97711d9.mp3"
+      }
+    ],
+    "elder": [
+      {
+        "en": "My elder sister.",
+        "cn": "我的姐姐。",
+        "level": 1,
+        "audioFile": "ex_efaaaa437c.mp3"
+      },
+      {
+        "en": "My elder brother is an engineer.",
+        "cn": "我哥哥是工程师。",
+        "level": 2,
+        "audioFile": "ex_6532aab0ab.mp3"
+      },
+      {
+        "en": "Anna's elder brother works as an engineer.",
+        "cn": "Anna 的哥哥从事工程师工作。",
+        "level": 3,
+        "audioFile": "ex_16043388cb.mp3"
+      }
+    ],
+    "friendly": [
+      {
+        "en": "Be friendly.",
+        "cn": "要友好。",
+        "level": 1,
+        "audioFile": "ex_c25770d10e.mp3"
+      },
+      {
+        "en": "The people here are friendly.",
+        "cn": "这里的人很友好。",
+        "level": 2,
+        "audioFile": "ex_b3f373c8ff.mp3"
+      },
+      {
+        "en": "Li Hua is honest and friendly to everyone.",
+        "cn": "李华对每个人都诚实友好。",
+        "level": 3,
+        "audioFile": "ex_3b361e03a7.mp3"
+      }
+    ],
+    "engineer": [
+      {
+        "en": "He is an engineer.",
+        "cn": "他是一名工程师。",
+        "level": 1,
+        "audioFile": "ex_617d1b3010.mp3"
+      },
+      {
+        "en": "My father is an engineer.",
+        "cn": "我爸爸是工程师。",
+        "level": 2,
+        "audioFile": "ex_cdd8a4927e.mp3"
+      },
+      {
+        "en": "Anna's elder brother is an engineer.",
+        "cn": "Anna 的哥哥是一名工程师。",
+        "level": 3,
+        "audioFile": "ex_1fcfcd2f5b.mp3"
+      }
+    ],
+    "daily": [
+      {
+        "en": "My daily life.",
+        "cn": "我的日常生活。",
+        "level": 1,
+        "audioFile": "ex_8470d66213.mp3"
+      },
+      {
+        "en": "This is my daily routine.",
+        "cn": "这是我每天的日程。",
+        "level": 2,
+        "audioFile": "ex_8731da1098.mp3"
+      },
+      {
+        "en": "She often reads the daily news on her phone.",
+        "cn": "她常在手机上看每日新闻。",
+        "level": 3,
+        "audioFile": "ex_42d3fde1ef.mp3"
+      }
+    ],
+    "article": [
+      {
+        "en": "Read this article.",
+        "cn": "读这篇文章。",
+        "level": 1,
+        "audioFile": "ex_402df08c15.mp3"
+      },
+      {
+        "en": "I read an article about pandas.",
+        "cn": "我读了一篇关于熊猫的文章。",
+        "level": 2,
+        "audioFile": "ex_26484c6712.mp3"
+      },
+      {
+        "en": "We sometimes read articles and practice English together.",
+        "cn": "我们有时一起读文章、练习英语。",
+        "level": 3,
+        "audioFile": "ex_ae1fa2d0bd.mp3"
+      }
+    ],
+    "never": [
+      {
+        "en": "Never late.",
+        "cn": "从不迟到。",
+        "level": 1,
+        "audioFile": "ex_82e9da6ab8.mp3"
+      },
+      {
+        "en": "I never drink coffee at night.",
+        "cn": "我晚上从不喝咖啡。",
+        "level": 2,
+        "audioFile": "ex_6f53f8a435.mp3"
+      },
+      {
+        "en": "I never go home late after school.",
+        "cn": "放学后我从不晚回家。",
+        "level": 3,
+        "audioFile": "ex_0e42baf6b2.mp3"
+      }
+    ],
+    "ride": [
+      {
+        "en": "Ride a bike.",
+        "cn": "骑自行车。",
+        "level": 1,
+        "audioFile": "ex_45fe9d4147.mp3"
+      },
+      {
+        "en": "I ride a bike to school.",
+        "cn": "我骑车上学。",
+        "level": 2,
+        "audioFile": "ex_4d261883a8.mp3"
+      },
+      {
+        "en": "After breakfast she rides her bike to work.",
+        "cn": "早饭后她骑车去上班。",
+        "level": 3,
+        "audioFile": "ex_28313af343.mp3"
+      }
+    ],
+    "seldom": [
+      {
+        "en": "He seldom smiles.",
+        "cn": "他很少笑。",
+        "level": 1,
+        "audioFile": "ex_f4d7baf0dc.mp3"
+      },
+      {
+        "en": "She seldom watches TV on school days.",
+        "cn": "她上学日很少看电视。",
+        "level": 2,
+        "audioFile": "ex_4f6aefa9d7.mp3"
+      },
+      {
+        "en": "It is seldom snowy in Guangzhou.",
+        "cn": "广州很少下雪。",
+        "level": 3,
+        "audioFile": "ex_1cc709bd63.mp3"
+      }
+    ],
+    "geography": [
+      {
+        "en": "I like geography.",
+        "cn": "我喜欢地理。",
+        "level": 1,
+        "audioFile": "ex_f5af46a436.mp3"
+      },
+      {
+        "en": "Geography is my favourite subject.",
+        "cn": "地理是我最喜欢的科目。",
+        "level": 2,
+        "audioFile": "ex_37c877969e.mp3"
+      },
+      {
+        "en": "We have English, Chinese, Maths and Geography in the morning.",
+        "cn": "上午我们有英语、语文、数学和地理课。",
+        "level": 3,
+        "audioFile": "ex_5edf66a252.mp3"
+      }
+    ],
+    "break": [
+      {
+        "en": "Take a break.",
+        "cn": "休息一下。",
+        "level": 1,
+        "audioFile": "ex_caab15c5e8.mp3"
+      },
+      {
+        "en": "Let's have a short break.",
+        "cn": "我们短暂休息一下。",
+        "level": 2,
+        "audioFile": "ex_596a86b90a.mp3"
+      },
+      {
+        "en": "We have a break at 10 a.m.",
+        "cn": "上午 10 点我们有一次休息。",
+        "level": 3,
+        "audioFile": "ex_7aa47af7f6.mp3"
+      }
+    ],
+    "bell": [
+      {
+        "en": "The bell rings.",
+        "cn": "铃响了。",
+        "level": 1,
+        "audioFile": "ex_6d74789846.mp3"
+      },
+      {
+        "en": "The school bell rings at 8 a.m.",
+        "cn": "学校的铃在早上 8 点响。",
+        "level": 2,
+        "audioFile": "ex_0cdadd8d5e.mp3"
+      },
+      {
+        "en": "When the last bell rings, she comes home.",
+        "cn": "放学铃一响，她就回家。",
+        "level": 3,
+        "audioFile": "ex_bd897b382b.mp3"
+      }
+    ],
+    "end": [
+      {
+        "en": "The end.",
+        "cn": "结束。",
+        "level": 1,
+        "audioFile": "ex_6784afa2a0.mp3"
+      },
+      {
+        "en": "The film ends at 9 p.m.",
+        "cn": "电影 9 点结束。",
+        "level": 2,
+        "audioFile": "ex_18952e1baf.mp3"
+      },
+      {
+        "en": "School ends at 4:30 p.m.",
+        "cn": "学校 4:30 放学。",
+        "level": 3,
+        "audioFile": "ex_53ad7e580d.mp3"
+      }
+    ],
+    "practice": [
+      {
+        "en": "Practice every day.",
+        "cn": "每天练习。",
+        "level": 1,
+        "audioFile": "ex_71664c4c11.mp3"
+      },
+      {
+        "en": "Practice makes perfect.",
+        "cn": "熟能生巧。",
+        "level": 2,
+        "audioFile": "ex_5ad523f1f2.mp3"
+      },
+      {
+        "en": "We practice English together in the evening.",
+        "cn": "晚上我们一起练习英语。",
+        "level": 3,
+        "audioFile": "ex_19dc82fdbb.mp3"
+      }
+    ],
+    "together": [
+      {
+        "en": "We are together.",
+        "cn": "我们在一起。",
+        "level": 1,
+        "audioFile": "ex_3a72d40c46.mp3"
+      },
+      {
+        "en": "Let's study together.",
+        "cn": "我们一起学习吧。",
+        "level": 2,
+        "audioFile": "ex_48f687a8e8.mp3"
+      },
+      {
+        "en": "I often play table tennis with my friends together.",
+        "cn": "我经常和朋友一起打乒乓球。",
+        "level": 3,
+        "audioFile": "ex_c51901efe7.mp3"
+      }
+    ],
+    "market": [
+      {
+        "en": "Go to the market.",
+        "cn": "去市场。",
+        "level": 1,
+        "audioFile": "ex_95d36fa2cb.mp3"
+      },
+      {
+        "en": "Mum buys food at the market.",
+        "cn": "妈妈在市场买菜。",
+        "level": 2,
+        "audioFile": "ex_b713ef5963.mp3"
+      },
+      {
+        "en": "She goes to the market and buys fresh food every morning.",
+        "cn": "她每天早晨去市场买新鲜食物。",
+        "level": 3,
+        "audioFile": "ex_5eaa90edcb.mp3"
+      }
+    ],
+    "usually": [
+      {
+        "en": "Usually at 7.",
+        "cn": "通常 7 点。",
+        "level": 1,
+        "audioFile": "ex_df2b8c21b4.mp3"
+      },
+      {
+        "en": "I usually have lunch at school.",
+        "cn": "我通常在学校吃午饭。",
+        "level": 2,
+        "audioFile": "ex_8137f029d0.mp3"
+      },
+      {
+        "en": "I usually go home by bike after school.",
+        "cn": "放学后我通常骑车回家。",
+        "level": 3,
+        "audioFile": "ex_8d0bb2cbea.mp3"
+      }
+    ],
+    "often": [
+      {
+        "en": "Often happy.",
+        "cn": "经常开心。",
+        "level": 1,
+        "audioFile": "ex_ae99fa8ffa.mp3"
+      },
+      {
+        "en": "I often play football.",
+        "cn": "我经常踢足球。",
+        "level": 2,
+        "audioFile": "ex_8420f00678.mp3"
+      },
+      {
+        "en": "After school, I often play table tennis with my friends.",
+        "cn": "放学后我经常和朋友打乒乓球。",
+        "level": 3,
+        "audioFile": "ex_725878c4a5.mp3"
+      }
+    ],
+    "sometimes": [
+      {
+        "en": "Sometimes sunny.",
+        "cn": "有时晴朗。",
+        "level": 1,
+        "audioFile": "ex_151df748f1.mp3"
+      },
+      {
+        "en": "Sometimes I go to the library.",
+        "cn": "我有时去图书馆。",
+        "level": 2,
+        "audioFile": "ex_d1f4315bd4.mp3"
+      },
+      {
+        "en": "It is sometimes rainy in the afternoon.",
+        "cn": "下午有时下雨。",
+        "level": 3,
+        "audioFile": "ex_8efa9b6967.mp3"
+      }
+    ],
+    "Earth": [
+      {
+        "en": "Our Earth.",
+        "cn": "我们的地球。",
+        "level": 1,
+        "audioFile": "ex_f2572bec95.mp3"
+      },
+      {
+        "en": "The Earth is our home.",
+        "cn": "地球是我们的家园。",
+        "level": 2,
+        "audioFile": "ex_dcd02b7dcc.mp3"
+      },
+      {
+        "en": "The Earth is a beautiful planet with forests and oceans.",
+        "cn": "地球是一颗美丽的行星，有森林和海洋。",
+        "level": 3,
+        "audioFile": "ex_b5da6fc0d9.mp3"
+      }
+    ],
+    "planet": [
+      {
+        "en": "A planet.",
+        "cn": "一颗行星。",
+        "level": 1,
+        "audioFile": "ex_646191e31c.mp3"
+      },
+      {
+        "en": "The Earth is a planet.",
+        "cn": "地球是一颗行星。",
+        "level": 2,
+        "audioFile": "ex_83f2cff3cf.mp3"
+      },
+      {
+        "en": "Our planet needs our protection.",
+        "cn": "我们的星球需要我们保护。",
+        "level": 3,
+        "audioFile": "ex_653ffb72dd.mp3"
+      }
+    ],
+    "forest": [
+      {
+        "en": "A forest.",
+        "cn": "一片森林。",
+        "level": 1,
+        "audioFile": "ex_079874732d.mp3"
+      },
+      {
+        "en": "There are tall trees in the forest.",
+        "cn": "森林里有高大的树。",
+        "level": 2,
+        "audioFile": "ex_479a38a39d.mp3"
+      },
+      {
+        "en": "Animals live in the forests and on the ground.",
+        "cn": "动物生活在森林里和陆地上。",
+        "level": 3,
+        "audioFile": "ex_8b2c4e520f.mp3"
+      }
+    ],
+    "ocean": [
+      {
+        "en": "The blue ocean.",
+        "cn": "蓝色的海洋。",
+        "level": 1,
+        "audioFile": "ex_114dc49010.mp3"
+      },
+      {
+        "en": "The Pacific Ocean is huge.",
+        "cn": "太平洋很巨大。",
+        "level": 2,
+        "audioFile": "ex_5a6e06985f.mp3"
+      },
+      {
+        "en": "People pollute the water in the oceans.",
+        "cn": "人们污染了海洋里的水。",
+        "level": 3,
+        "audioFile": "ex_5e96d95fc0.mp3"
+      }
+    ],
+    "ground": [
+      {
+        "en": "On the ground.",
+        "cn": "在地面上。",
+        "level": 1,
+        "audioFile": "ex_d65e9142d9.mp3"
+      },
+      {
+        "en": "Don't throw waste on the ground.",
+        "cn": "不要把垃圾扔在地上。",
+        "level": 2,
+        "audioFile": "ex_79fc6ffbed.mp3"
+      },
+      {
+        "en": "Keep our streets clean — no waste on the ground.",
+        "cn": "保持街道干净——地上不乱扔垃圾。",
+        "level": 3,
+        "audioFile": "ex_28a906ed08.mp3"
+      }
+    ],
+    "pollute": [
+      {
+        "en": "Don't pollute.",
+        "cn": "别污染。",
+        "level": 1,
+        "audioFile": "ex_a659a8581d.mp3"
+      },
+      {
+        "en": "Cars pollute the air.",
+        "cn": "汽车污染空气。",
+        "level": 2,
+        "audioFile": "ex_d7e178cc16.mp3"
+      },
+      {
+        "en": "People pollute the Earth every day by cutting trees.",
+        "cn": "人们砍伐树木，每天在污染地球。",
+        "level": 3,
+        "audioFile": "ex_dfab22d0eb.mp3"
+      }
+    ],
+    "protect": [
+      {
+        "en": "Protect animals.",
+        "cn": "保护动物。",
+        "level": 1,
+        "audioFile": "ex_748306dee5.mp3"
+      },
+      {
+        "en": "We must protect our home.",
+        "cn": "我们必须保护家园。",
+        "level": 2,
+        "audioFile": "ex_8acc2c3bb9.mp3"
+      },
+      {
+        "en": "Every family can help protect the Earth.",
+        "cn": "每个家庭都能帮助保护地球。",
+        "level": 3,
+        "audioFile": "ex_3c39529f51.mp3"
+      }
+    ],
+    "waste": [
+      {
+        "en": "Throw the waste.",
+        "cn": "扔垃圾。",
+        "level": 1,
+        "audioFile": "ex_6de998061c.mp3"
+      },
+      {
+        "en": "Don't waste water.",
+        "cn": "不要浪费水。",
+        "level": 2,
+        "audioFile": "ex_2beb619ce8.mp3"
+      },
+      {
+        "en": "Don't throw waste on the ground.",
+        "cn": "不要把垃圾扔在地上。",
+        "level": 3,
+        "audioFile": "ex_79fc6ffbed.mp3"
+      }
+    ],
+    "reuse": [
+      {
+        "en": "Reuse bags.",
+        "cn": "重复使用袋子。",
+        "level": 1,
+        "audioFile": "ex_da23cedbc4.mp3"
+      },
+      {
+        "en": "We should reuse paper.",
+        "cn": "我们应重复利用纸张。",
+        "level": 2,
+        "audioFile": "ex_a91ab054b1.mp3"
+      },
+      {
+        "en": "Reuse your cloth bag every time you go to the market.",
+        "cn": "每次去市场都重复使用布袋。",
+        "level": 3,
+        "audioFile": "ex_2d3f3d3353.mp3"
+      }
+    ],
+    "recycle": [
+      {
+        "en": "Recycle bottles.",
+        "cn": "回收瓶子。",
+        "level": 1,
+        "audioFile": "ex_fcbd09f7f5.mp3"
+      },
+      {
+        "en": "Please recycle plastic bottles.",
+        "cn": "请回收塑料瓶。",
+        "level": 2,
+        "audioFile": "ex_8339ae0eaa.mp3"
+      },
+      {
+        "en": "Put old paper, glass and plastic into different boxes to recycle them.",
+        "cn": "把旧纸、玻璃和塑料分类放入箱子以便回收。",
+        "level": 3,
+        "audioFile": "ex_3469bdf6b0.mp3"
+      }
+    ],
+    "season": [
+      {
+        "en": "Four seasons.",
+        "cn": "四个季节。",
+        "level": 1,
+        "audioFile": "ex_3fde254ae7.mp3"
+      },
+      {
+        "en": "There are four seasons in a year.",
+        "cn": "一年有四个季节。",
+        "level": 2,
+        "audioFile": "ex_e7d62ff158.mp3"
+      },
+      {
+        "en": "Which season do you like best?",
+        "cn": "你最喜欢哪个季节？",
+        "level": 3,
+        "audioFile": "ex_726d3b7b27.mp3"
+      }
+    ],
+    "spring": [
+      {
+        "en": "I like spring.",
+        "cn": "我喜欢春天。",
+        "level": 1,
+        "audioFile": "ex_d330f309e4.mp3"
+      },
+      {
+        "en": "Flowers bloom in spring.",
+        "cn": "春天花儿盛开。",
+        "level": 2,
+        "audioFile": "ex_a7a3113fbb.mp3"
+      },
+      {
+        "en": "In spring, it is warm and windy; we can fly kites.",
+        "cn": "春天温暖多风，我们可以放风筝。",
+        "level": 3,
+        "audioFile": "ex_edd5cc3e01.mp3"
+      }
+    ],
+    "summer": [
+      {
+        "en": "Hot summer.",
+        "cn": "炎热的夏天。",
+        "level": 1,
+        "audioFile": "ex_f32342b561.mp3"
+      },
+      {
+        "en": "It is very hot in summer.",
+        "cn": "夏天非常热。",
+        "level": 2,
+        "audioFile": "ex_267c62d07d.mp3"
+      },
+      {
+        "en": "In summer, we can swim in the sea or eat ice-cream.",
+        "cn": "夏天我们可以去海里游泳或吃冰淇淋。",
+        "level": 3,
+        "audioFile": "ex_2048719e09.mp3"
+      }
+    ],
+    "autumn": [
+      {
+        "en": "Cool autumn.",
+        "cn": "凉爽的秋天。",
+        "level": 1,
+        "audioFile": "ex_d24e337c17.mp3"
+      },
+      {
+        "en": "Leaves turn yellow in autumn.",
+        "cn": "秋天叶子变黄。",
+        "level": 2,
+        "audioFile": "ex_76409b6872.mp3"
+      },
+      {
+        "en": "In autumn, farmers are busy picking apples.",
+        "cn": "秋天农民忙着采摘苹果。",
+        "level": 3,
+        "audioFile": "ex_847ca8d5a1.mp3"
+      }
+    ],
+    "winter": [
+      {
+        "en": "Cold winter.",
+        "cn": "寒冷的冬天。",
+        "level": 1,
+        "audioFile": "ex_ab0518f51f.mp3"
+      },
+      {
+        "en": "Winter is the coldest season.",
+        "cn": "冬天是最冷的季节。",
+        "level": 2,
+        "audioFile": "ex_24f8bd29c8.mp3"
+      },
+      {
+        "en": "In winter, we can make a snowman and have hot soup.",
+        "cn": "冬天我们可以堆雪人、喝热汤。",
+        "level": 3,
+        "audioFile": "ex_659f881561.mp3"
+      }
+    ],
+    "sunny": [
+      {
+        "en": "A sunny day.",
+        "cn": "晴朗的一天。",
+        "level": 1,
+        "audioFile": "ex_7639022ab4.mp3"
+      },
+      {
+        "en": "It is sunny today.",
+        "cn": "今天天晴。",
+        "level": 2,
+        "audioFile": "ex_a652b95148.mp3"
+      },
+      {
+        "en": "Summer days are sunny and bright in Guangzhou.",
+        "cn": "广州的夏日阳光灿烂。",
+        "level": 3,
+        "audioFile": "ex_673fdbd70d.mp3"
+      }
+    ],
+    "rainy": [
+      {
+        "en": "A rainy day.",
+        "cn": "下雨天。",
+        "level": 1,
+        "audioFile": "ex_7c1ab61d2d.mp3"
+      },
+      {
+        "en": "It is a rainy day.",
+        "cn": "这是下雨的一天。",
+        "level": 2,
+        "audioFile": "ex_76487cd47e.mp3"
+      },
+      {
+        "en": "Spring in Guangzhou is wet and rainy.",
+        "cn": "广州的春天潮湿多雨。",
+        "level": 3,
+        "audioFile": "ex_320a5698e8.mp3"
+      }
+    ],
+    "windy": [
+      {
+        "en": "A windy day.",
+        "cn": "有风的一天。",
+        "level": 1,
+        "audioFile": "ex_6422e03e07.mp3"
+      },
+      {
+        "en": "Fly a kite when it is windy.",
+        "cn": "有风的时候放风筝。",
+        "level": 2,
+        "audioFile": "ex_38d5c3517c.mp3"
+      },
+      {
+        "en": "In spring, it is warm and windy.",
+        "cn": "春天温暖多风。",
+        "level": 3,
+        "audioFile": "ex_602d3efebc.mp3"
+      }
+    ],
+    "snowy": [
+      {
+        "en": "A snowy morning.",
+        "cn": "下雪的清晨。",
+        "level": 1,
+        "audioFile": "ex_7dd1a873e8.mp3"
+      },
+      {
+        "en": "A snowy day is beautiful.",
+        "cn": "下雪天很美。",
+        "level": 2,
+        "audioFile": "ex_85458f88c8.mp3"
+      },
+      {
+        "en": "In winter, it is cold and snowy in the north.",
+        "cn": "北方的冬天又冷又下雪。",
+        "level": 3,
+        "audioFile": "ex_fefa09f9cd.mp3"
+      }
+    ],
+    "dry": [
+      {
+        "en": "Dry weather.",
+        "cn": "干燥的天气。",
+        "level": 1,
+        "audioFile": "ex_7f23590175.mp3"
+      },
+      {
+        "en": "Autumn is dry in the north.",
+        "cn": "北方的秋天很干燥。",
+        "level": 2,
+        "audioFile": "ex_f210d997e4.mp3"
+      },
+      {
+        "en": "Autumn is short but cool and dry in Guangzhou.",
+        "cn": "广州的秋天短暂但凉爽干燥。",
+        "level": 3,
+        "audioFile": "ex_120e93f9fd.mp3"
+      }
+    ],
+    "wet": [
+      {
+        "en": "Wet clothes.",
+        "cn": "湿衣服。",
+        "level": 1,
+        "audioFile": "ex_9e2be0da1a.mp3"
+      },
+      {
+        "en": "The street is wet after the rain.",
+        "cn": "雨后街道是湿的。",
+        "level": 2,
+        "audioFile": "ex_900063207b.mp3"
+      },
+      {
+        "en": "Spring in Guangzhou is wet and everything feels damp.",
+        "cn": "广州的春天潮湿，万物都有湿润感。",
+        "level": 3,
+        "audioFile": "ex_8dbf614dcf.mp3"
+      }
+    ],
+    "scarf": [
+      {
+        "en": "A warm scarf.",
+        "cn": "一条暖和的围巾。",
+        "level": 1,
+        "audioFile": "ex_4fa38deb52.mp3"
+      },
+      {
+        "en": "Wear a scarf in winter.",
+        "cn": "冬天围围巾。",
+        "level": 2,
+        "audioFile": "ex_ddf18efa41.mp3"
+      },
+      {
+        "en": "I am wearing a warm scarf because it is snowy.",
+        "cn": "因为下雪，我戴着暖和的围巾。",
+        "level": 3,
+        "audioFile": "ex_a15de782e8.mp3"
+      }
+    ],
+    "glove": [
+      {
+        "en": "New gloves.",
+        "cn": "新手套。",
+        "level": 1,
+        "audioFile": "ex_9f5d9e7ce1.mp3"
+      },
+      {
+        "en": "My gloves keep my hands warm.",
+        "cn": "我的手套让手很暖。",
+        "level": 2,
+        "audioFile": "ex_5485cd9010.mp3"
+      },
+      {
+        "en": "Everyone wears a scarf and gloves in winter.",
+        "cn": "冬天大家都戴围巾和手套。",
+        "level": 3,
+        "audioFile": "ex_c4281cbca3.mp3"
+      }
+    ],
+    "Moon": [
+      {
+        "en": "The Moon is bright.",
+        "cn": "月亮很亮。",
+        "level": 1,
+        "audioFile": "ex_942ea2d64f.mp3"
+      },
+      {
+        "en": "The Moon goes around the Earth.",
+        "cn": "月球绕着地球运行。",
+        "level": 2,
+        "audioFile": "ex_ffc1b638c3.mp3"
+      },
+      {
+        "en": "One day, we will travel to the Moon by rocket.",
+        "cn": "有一天我们将乘火箭去月球。",
+        "level": 3,
+        "audioFile": "ex_fb2904f8c1.mp3"
+      }
+    ],
+    "space": [
+      {
+        "en": "Outer space.",
+        "cn": "外太空。",
+        "level": 1,
+        "audioFile": "ex_36f642bdd7.mp3"
+      },
+      {
+        "en": "Astronauts work in space.",
+        "cn": "宇航员在太空工作。",
+        "level": 2,
+        "audioFile": "ex_323f16cdaf.mp3"
+      },
+      {
+        "en": "In the space station, everything floats.",
+        "cn": "在空间站里，一切都漂浮着。",
+        "level": 3,
+        "audioFile": "ex_cd31b75c74.mp3"
+      }
+    ],
+    "rocket": [
+      {
+        "en": "A big rocket.",
+        "cn": "一枚大火箭。",
+        "level": 1,
+        "audioFile": "ex_ffae80ac17.mp3"
+      },
+      {
+        "en": "The rocket flew into the sky.",
+        "cn": "火箭飞向天空。",
+        "level": 2,
+        "audioFile": "ex_ce9b0def81.mp3"
+      },
+      {
+        "en": "Rockets will be faster in 2050.",
+        "cn": "2050 年火箭会更快。",
+        "level": 3,
+        "audioFile": "ex_8e09a4dfc2.mp3"
+      }
+    ],
+    "astronaut": [
+      {
+        "en": "Be an astronaut.",
+        "cn": "做宇航员。",
+        "level": 1,
+        "audioFile": "ex_3e3d91b18e.mp3"
+      },
+      {
+        "en": "Yang Liwei is a Chinese astronaut.",
+        "cn": "杨利伟是中国宇航员。",
+        "level": 2,
+        "audioFile": "ex_f3c2564085.mp3"
+      },
+      {
+        "en": "Astronauts must train for many years before a space trip.",
+        "cn": "宇航员上太空前必须训练多年。",
+        "level": 3,
+        "audioFile": "ex_c6149fc781.mp3"
+      }
+    ],
+    "spacesuit": [
+      {
+        "en": "A spacesuit.",
+        "cn": "一件航天服。",
+        "level": 1,
+        "audioFile": "ex_b2898f7b7e.mp3"
+      },
+      {
+        "en": "A spacesuit protects the astronaut.",
+        "cn": "航天服保护宇航员。",
+        "level": 2,
+        "audioFile": "ex_aa08ce5492.mp3"
+      },
+      {
+        "en": "We must wear spacesuits to breathe on the Moon.",
+        "cn": "在月球上我们必须穿航天服才能呼吸。",
+        "level": 3,
+        "audioFile": "ex_12286314f7.mp3"
+      }
+    ],
+    "hotel": [
+      {
+        "en": "A big hotel.",
+        "cn": "一家大酒店。",
+        "level": 1,
+        "audioFile": "ex_ecc5a6612f.mp3"
+      },
+      {
+        "en": "We stayed in a hotel in Beijing.",
+        "cn": "我们住在北京的酒店。",
+        "level": 2,
+        "audioFile": "ex_3928d53ecc.mp3"
+      },
+      {
+        "en": "We can stay in a space hotel on the Moon.",
+        "cn": "在月球上我们可以住太空旅馆。",
+        "level": 3,
+        "audioFile": "ex_8a33c7b6df.mp3"
+      }
+    ],
+    "light": [
+      {
+        "en": "It is light.",
+        "cn": "它很轻。",
+        "level": 1,
+        "audioFile": "ex_3ecb734839.mp3"
+      },
+      {
+        "en": "A feather is very light.",
+        "cn": "羽毛非常轻。",
+        "level": 2,
+        "audioFile": "ex_00d69554a1.mp3"
+      },
+      {
+        "en": "Our body feels very light on the Moon.",
+        "cn": "在月球上我们的身体感觉很轻。",
+        "level": 3,
+        "audioFile": "ex_a61c178c73.mp3"
+      }
+    ],
+    "land": [
+      {
+        "en": "The plane lands.",
+        "cn": "飞机降落。",
+        "level": 1,
+        "audioFile": "ex_c9fb5b5519.mp3"
+      },
+      {
+        "en": "The plane will land at 3 p.m.",
+        "cn": "飞机下午 3 点降落。",
+        "level": 2,
+        "audioFile": "ex_ce0b9e9dc7.mp3"
+      },
+      {
+        "en": "When we land on the Moon, we stay in a space hotel.",
+        "cn": "登月后我们住在太空旅馆。",
+        "level": 3,
+        "audioFile": "ex_fab98de6ce.mp3"
+      }
+    ],
+    "kilometre": [
+      {
+        "en": "One kilometre.",
+        "cn": "一千米。",
+        "level": 1,
+        "audioFile": "ex_a130ccb2a3.mp3"
+      },
+      {
+        "en": "The park is 5 kilometres away.",
+        "cn": "公园在 5 公里外。",
+        "level": 2,
+        "audioFile": "ex_73cf9f06f5.mp3"
+      },
+      {
+        "en": "The Moon is about 384,000 kilometres from the Earth.",
+        "cn": "月球距地球约 38.4 万公里。",
+        "level": 3,
+        "audioFile": "ex_18d2712ffe.mp3"
+      }
+    ],
+    "weak": [
+      {
+        "en": "I feel weak.",
+        "cn": "我觉得虚弱。",
+        "level": 1,
+        "audioFile": "ex_5d033e5c25.mp3"
+      },
+      {
+        "en": "After the long trip he felt weak.",
+        "cn": "长途旅行后他很虚弱。",
+        "level": 2,
+        "audioFile": "ex_392dd2768a.mp3"
+      },
+      {
+        "en": "The Moon's gravity is weak, so we can jump high.",
+        "cn": "月球引力弱，所以我们能跳得很高。",
+        "level": 3,
+        "audioFile": "ex_06f4fd980c.mp3"
+      }
+    ],
+    "breathe": [
+      {
+        "en": "Breathe deeply.",
+        "cn": "深呼吸。",
+        "level": 1,
+        "audioFile": "ex_8ed3e1d1d6.mp3"
+      },
+      {
+        "en": "Open the window so we can breathe fresh air.",
+        "cn": "开窗让我们呼吸新鲜空气。",
+        "level": 2,
+        "audioFile": "ex_51fb2b111c.mp3"
+      },
+      {
+        "en": "There is no air on the Moon, so we must wear spacesuits to breathe.",
+        "cn": "月球上没有空气，我们必须穿航天服才能呼吸。",
+        "level": 3,
+        "audioFile": "ex_eed97684c3.mp3"
+      }
+    ],
+    "Asia": [
+      {
+        "en": "I am from Asia.",
+        "cn": "我来自亚洲。",
+        "level": 1,
+        "audioFile": "ex_1528d19fca.mp3"
+      },
+      {
+        "en": "China is a big country in Asia.",
+        "cn": "中国是亚洲的大国。",
+        "level": 2,
+        "audioFile": "ex_fc37426ec7.mp3"
+      },
+      {
+        "en": "Asia is a big continent with many countries.",
+        "cn": "亚洲是一个拥有众多国家的大洲。",
+        "level": 3,
+        "audioFile": "ex_bc18abea50.mp3"
+      }
+    ],
+    "capital": [
+      {
+        "en": "The capital.",
+        "cn": "首都。",
+        "level": 1,
+        "audioFile": "ex_8afc7880b7.mp3"
+      },
+      {
+        "en": "Beijing is the capital of China.",
+        "cn": "北京是中国首都。",
+        "level": 2,
+        "audioFile": "ex_76b21e1676.mp3"
+      },
+      {
+        "en": "Tokyo is the capital of Japan.",
+        "cn": "东京是日本首都。",
+        "level": 3,
+        "audioFile": "ex_142de91aad.mp3"
+      }
+    ],
+    "famous": [
+      {
+        "en": "He is famous.",
+        "cn": "他很有名。",
+        "level": 1,
+        "audioFile": "ex_a680f1c436.mp3"
+      },
+      {
+        "en": "The Great Wall is famous.",
+        "cn": "长城很有名。",
+        "level": 2,
+        "audioFile": "ex_6d61f049c0.mp3"
+      },
+      {
+        "en": "Tokyo Tower is a famous tower in Tokyo.",
+        "cn": "东京塔是东京著名的塔。",
+        "level": 3,
+        "audioFile": "ex_c8f009e6a9.mp3"
+      }
+    ],
+    "tour": [
+      {
+        "en": "A tour.",
+        "cn": "一次旅行。",
+        "level": 1,
+        "audioFile": "ex_a8b81d7e41.mp3"
+      },
+      {
+        "en": "We had a tour of the old city.",
+        "cn": "我们游览了古城。",
+        "level": 2,
+        "audioFile": "ex_86bf1ebe12.mp3"
+      },
+      {
+        "en": "Asia is a wonderful place for a tour!",
+        "cn": "亚洲是绝佳的旅行目的地！",
+        "level": 3,
+        "audioFile": "ex_3dec29d707.mp3"
+      }
+    ],
+    "building": [
+      {
+        "en": "A tall building.",
+        "cn": "一栋高楼。",
+        "level": 1,
+        "audioFile": "ex_5342210564.mp3"
+      },
+      {
+        "en": "There are many tall buildings here.",
+        "cn": "这里有许多高楼。",
+        "level": 2,
+        "audioFile": "ex_20555a8cf4.mp3"
+      },
+      {
+        "en": "Tokyo is a modern city with many tall buildings.",
+        "cn": "东京是一座有许多高楼的现代城市。",
+        "level": 3,
+        "audioFile": "ex_2e51c64bd4.mp3"
+      }
+    ],
+    "ancient": [
+      {
+        "en": "Ancient city.",
+        "cn": "古老的城市。",
+        "level": 1,
+        "audioFile": "ex_8af84debdf.mp3"
+      },
+      {
+        "en": "The temple is very ancient.",
+        "cn": "这座寺庙非常古老。",
+        "level": 2,
+        "audioFile": "ex_7450c2a979.mp3"
+      },
+      {
+        "en": "Xi'an is an ancient capital of China.",
+        "cn": "西安是中国的一个古都。",
+        "level": 3,
+        "audioFile": "ex_cbfb6b4f4d.mp3"
+      }
+    ],
+    "modern": [
+      {
+        "en": "A modern city.",
+        "cn": "一座现代化城市。",
+        "level": 1,
+        "audioFile": "ex_397505abab.mp3"
+      },
+      {
+        "en": "Shanghai is a modern city.",
+        "cn": "上海是一座现代化城市。",
+        "level": 2,
+        "audioFile": "ex_f4c290efc2.mp3"
+      },
+      {
+        "en": "Tokyo is very modern with many tall buildings.",
+        "cn": "东京非常现代，高楼林立。",
+        "level": 3,
+        "audioFile": "ex_7222be14d6.mp3"
+      }
+    ],
+    "palace": [
+      {
+        "en": "A beautiful palace.",
+        "cn": "美丽的宫殿。",
+        "level": 1,
+        "audioFile": "ex_76fb038c77.mp3"
+      },
+      {
+        "en": "The Imperial Palace is in Beijing.",
+        "cn": "故宫在北京。",
+        "level": 2,
+        "audioFile": "ex_79aad7e604.mp3"
+      },
+      {
+        "en": "In Bangkok you can see many old palaces.",
+        "cn": "在曼谷你能看到许多古老宫殿。",
+        "level": 3,
+        "audioFile": "ex_4d46c4c2a1.mp3"
+      }
+    ],
+    "tower": [
+      {
+        "en": "A tall tower.",
+        "cn": "一座高塔。",
+        "level": 1,
+        "audioFile": "ex_011a0fd2a7.mp3"
+      },
+      {
+        "en": "Tokyo Tower is a famous tower.",
+        "cn": "东京塔是著名的塔。",
+        "level": 2,
+        "audioFile": "ex_916a2025eb.mp3"
+      },
+      {
+        "en": "You can see both old buildings and modern towers.",
+        "cn": "你能看到古建筑也能看到现代塔楼。",
+        "level": 3,
+        "audioFile": "ex_095e90f7c7.mp3"
+      }
+    ],
+    "bridge": [
+      {
+        "en": "A long bridge.",
+        "cn": "一座长桥。",
+        "level": 1,
+        "audioFile": "ex_f676833721.mp3"
+      },
+      {
+        "en": "The bridge is over the river.",
+        "cn": "桥横跨河流。",
+        "level": 2,
+        "audioFile": "ex_9bd91deec0.mp3"
+      },
+      {
+        "en": "We crossed a small bridge and ate noodles at a local market.",
+        "cn": "我们过了一座小桥，在当地市场吃了面条。",
+        "level": 3,
+        "audioFile": "ex_ed369e0a6f.mp3"
+      }
+    ],
+    "club": [
+      {
+        "en": "A music club.",
+        "cn": "一个音乐社。",
+        "level": 1,
+        "audioFile": "ex_7df36e4bad.mp3"
+      },
+      {
+        "en": "Our school has many clubs.",
+        "cn": "我们学校有很多社团。",
+        "level": 2,
+        "audioFile": "ex_922f5b6eaf.mp3"
+      },
+      {
+        "en": "Every Friday afternoon we can join different clubs.",
+        "cn": "每周五下午我们可以加入不同社团。",
+        "level": 3,
+        "audioFile": "ex_a52af6109e.mp3"
+      }
+    ],
+    "join": [
+      {
+        "en": "Join us.",
+        "cn": "加入我们。",
+        "level": 1,
+        "audioFile": "ex_fa11733872.mp3"
+      },
+      {
+        "en": "I want to join the Music Club.",
+        "cn": "我想加入音乐社。",
+        "level": 2,
+        "audioFile": "ex_9bff3a58c3.mp3"
+      },
+      {
+        "en": "Would you like to join the Art Club?",
+        "cn": "你想加入美术社吗？",
+        "level": 3,
+        "audioFile": "ex_ee564c2041.mp3"
+      }
+    ],
+    "dance": [
+      {
+        "en": "Let's dance.",
+        "cn": "我们跳舞吧。",
+        "level": 1,
+        "audioFile": "ex_bd43515993.mp3"
+      },
+      {
+        "en": "She can dance very well.",
+        "cn": "她跳得很好。",
+        "level": 2,
+        "audioFile": "ex_2bad21f127.mp3"
+      },
+      {
+        "en": "If you can sing or dance, come and join us!",
+        "cn": "会唱歌或跳舞的，快来加入我们！",
+        "level": 3,
+        "audioFile": "ex_118612dc67.mp3"
+      }
+    ],
+    "sing": [
+      {
+        "en": "Sing a song.",
+        "cn": "唱首歌。",
+        "level": 1,
+        "audioFile": "ex_4636930e3e.mp3"
+      },
+      {
+        "en": "I love to sing English songs.",
+        "cn": "我爱唱英文歌。",
+        "level": 2,
+        "audioFile": "ex_7973faaf07.mp3"
+      },
+      {
+        "en": "We learn songs and have small shows every month.",
+        "cn": "我们每月学唱歌，还举办小型演出。",
+        "level": 3,
+        "audioFile": "ex_d0e507a973.mp3"
+      }
+    ],
+    "draw": [
+      {
+        "en": "Draw a cat.",
+        "cn": "画一只猫。",
+        "level": 1,
+        "audioFile": "ex_9cff0b5b8b.mp3"
+      },
+      {
+        "en": "He can draw a horse.",
+        "cn": "他会画马。",
+        "level": 2,
+        "audioFile": "ex_aecd850f56.mp3"
+      },
+      {
+        "en": "Tom drew a very funny robot last week.",
+        "cn": "上周 Tom 画了一个很搞笑的机器人。",
+        "level": 3,
+        "audioFile": "ex_818f03ca04.mp3"
+      }
+    ],
+    "chess": [
+      {
+        "en": "Play chess.",
+        "cn": "下棋。",
+        "level": 1,
+        "audioFile": "ex_db439399a1.mp3"
+      },
+      {
+        "en": "We play chess after school.",
+        "cn": "放学后我们下棋。",
+        "level": 2,
+        "audioFile": "ex_abef55b4e7.mp3"
+      },
+      {
+        "en": "Chess makes you think fast.",
+        "cn": "国际象棋锻炼你快速思考。",
+        "level": 3,
+        "audioFile": "ex_3bce3409de.mp3"
+      }
+    ],
+    "piano": [
+      {
+        "en": "A black piano.",
+        "cn": "一架黑色钢琴。",
+        "level": 1,
+        "audioFile": "ex_1dce3a5295.mp3"
+      },
+      {
+        "en": "She plays the piano every day.",
+        "cn": "她每天弹钢琴。",
+        "level": 2,
+        "audioFile": "ex_6ea4a03341.mp3"
+      },
+      {
+        "en": "My elder sister can play the piano very well.",
+        "cn": "我姐姐钢琴弹得很好。",
+        "level": 3,
+        "audioFile": "ex_70567e2843.mp3"
+      }
+    ],
+    "violin": [
+      {
+        "en": "A small violin.",
+        "cn": "一把小提琴。",
+        "level": 1,
+        "audioFile": "ex_241770521d.mp3"
+      },
+      {
+        "en": "He plays the violin in the orchestra.",
+        "cn": "他在乐队里拉小提琴。",
+        "level": 2,
+        "audioFile": "ex_7d9a205da9.mp3"
+      },
+      {
+        "en": "Would you like to play the violin at the school show?",
+        "cn": "你想在校演出上拉小提琴吗？",
+        "level": 3,
+        "audioFile": "ex_fa39a4bdd1.mp3"
+      }
+    ],
+    "drum": [
+      {
+        "en": "A big drum.",
+        "cn": "一面大鼓。",
+        "level": 1,
+        "audioFile": "ex_6d25c310f6.mp3"
+      },
+      {
+        "en": "The little boy plays the drum.",
+        "cn": "小男孩击鼓。",
+        "level": 2,
+        "audioFile": "ex_714e69643e.mp3"
+      },
+      {
+        "en": "The music club needs someone to play the drum.",
+        "cn": "音乐社需要一个会打鼓的人。",
+        "level": 3,
+        "audioFile": "ex_52e706eee3.mp3"
+      }
+    ],
+    "robot": [
+      {
+        "en": "A cool robot.",
+        "cn": "一个酷酷的机器人。",
+        "level": 1,
+        "audioFile": "ex_b5cedcd663.mp3"
+      },
+      {
+        "en": "I built a small robot with my team.",
+        "cn": "我和队友做了一个小机器人。",
+        "level": 2,
+        "audioFile": "ex_d2656a7913.mp3"
+      },
+      {
+        "en": "We named our first robot \"Star\" and taught it to dance.",
+        "cn": "我们把第一台机器人取名“Star”并教它跳舞。",
+        "level": 3,
+        "audioFile": "ex_90e702aa3d.mp3"
+      }
+    ],
+    "science": [
+      {
+        "en": "I like science.",
+        "cn": "我喜欢科学。",
+        "level": 1,
+        "audioFile": "ex_e52dee21fb.mp3"
+      },
+      {
+        "en": "Science is an interesting subject.",
+        "cn": "科学是一门有趣的科目。",
+        "level": 2,
+        "audioFile": "ex_c9cc2d5220.mp3"
+      },
+      {
+        "en": "In the Science Club we do experiments and build robots.",
+        "cn": "在科学社我们做实验、制作机器人。",
+        "level": 3,
+        "audioFile": "ex_e2cc4b134f.mp3"
+      }
+    ],
+    "collect": [
+      {
+        "en": "Collect stamps.",
+        "cn": "集邮。",
+        "level": 1,
+        "audioFile": "ex_e1c9fb2286.mp3"
+      },
+      {
+        "en": "I collect beautiful shells.",
+        "cn": "我收集漂亮的贝壳。",
+        "level": 2,
+        "audioFile": "ex_198272e4e8.mp3"
+      },
+      {
+        "en": "I have collected stamps for five years.",
+        "cn": "我已经集邮五年了。",
+        "level": 3,
+        "audioFile": "ex_dbebc0df2d.mp3"
+      }
+    ],
+    "stamp": [
+      {
+        "en": "A red stamp.",
+        "cn": "一张红色邮票。",
+        "level": 1,
+        "audioFile": "ex_d5e5985e19.mp3"
+      },
+      {
+        "en": "He has stamps from many countries.",
+        "cn": "他有来自许多国家的邮票。",
+        "level": 2,
+        "audioFile": "ex_2517d1088d.mp3"
+      },
+      {
+        "en": "My favourite stamp is a 1980 red monkey stamp.",
+        "cn": "我最喜欢的邮票是 1980 年的红色猴票。",
+        "level": 3,
+        "audioFile": "ex_79e71a29bd.mp3"
+      }
+    ],
+    "coin": [
+      {
+        "en": "An old coin.",
+        "cn": "一枚古老的硬币。",
+        "level": 1,
+        "audioFile": "ex_63ad4d7d77.mp3"
+      },
+      {
+        "en": "This is a very old coin.",
+        "cn": "这是一枚非常古老的硬币。",
+        "level": 2,
+        "audioFile": "ex_953d6b7f82.mp3"
+      },
+      {
+        "en": "My aunt's oldest coin is 200 years old.",
+        "cn": "姑姑最古老的硬币有 200 年历史。",
+        "level": 3,
+        "audioFile": "ex_301c3a000b.mp3"
+      }
+    ],
+    "toy": [
+      {
+        "en": "A new toy.",
+        "cn": "一个新玩具。",
+        "level": 1,
+        "audioFile": "ex_fa3722bfd8.mp3"
+      },
+      {
+        "en": "The baby loves his new toy.",
+        "cn": "宝宝喜爱他的新玩具。",
+        "level": 2,
+        "audioFile": "ex_070ecffd29.mp3"
+      },
+      {
+        "en": "Some young people collect small toys or cards from movies.",
+        "cn": "一些年轻人收藏小玩具或电影卡片。",
+        "level": 3,
+        "audioFile": "ex_9f41dcb6f3.mp3"
+      }
+    ],
+    "fan": [
+      {
+        "en": "A pretty fan.",
+        "cn": "一把漂亮的扇子。",
+        "level": 1,
+        "audioFile": "ex_f8fa956393.mp3"
+      },
+      {
+        "en": "She bought a paper fan in Hangzhou.",
+        "cn": "她在杭州买了一把纸扇。",
+        "level": 2,
+        "audioFile": "ex_25d4daaea6.mp3"
+      },
+      {
+        "en": "A fan from Hangzhou may have a picture of West Lake on it.",
+        "cn": "杭州的扇子上可能画着西湖。",
+        "level": 3,
+        "audioFile": "ex_293f3b0cdc.mp3"
+      }
+    ],
+    "valuable": [
+      {
+        "en": "A valuable ring.",
+        "cn": "一枚贵重的戒指。",
+        "level": 1,
+        "audioFile": "ex_f5975ea689.mp3"
+      },
+      {
+        "en": "My grandma's ring is very valuable.",
+        "cn": "奶奶的戒指非常贵重。",
+        "level": 2,
+        "audioFile": "ex_898735e9c9.mp3"
+      },
+      {
+        "en": "The 1980 monkey stamp is very valuable today.",
+        "cn": "1980 年的猴票如今非常贵重。",
+        "level": 3,
+        "audioFile": "ex_5e8457f360.mp3"
+      }
+    ],
+    "expensive": [
+      {
+        "en": "Very expensive.",
+        "cn": "非常贵。",
+        "level": 1,
+        "audioFile": "ex_3c1c9feba7.mp3"
+      },
+      {
+        "en": "This bag is too expensive.",
+        "cn": "这个包太贵了。",
+        "level": 2,
+        "audioFile": "ex_32b0d66686.mp3"
+      },
+      {
+        "en": "A few rich people collect expensive paintings.",
+        "cn": "少数富人会收藏昂贵的画作。",
+        "level": 3,
+        "audioFile": "ex_e9990e298e.mp3"
+      }
+    ],
+    "cheap": [
+      {
+        "en": "It's cheap.",
+        "cn": "它很便宜。",
+        "level": 1,
+        "audioFile": "ex_b70c8a46fc.mp3"
+      },
+      {
+        "en": "The fruit here is cheap and fresh.",
+        "cn": "这里的水果便宜又新鲜。",
+        "level": 2,
+        "audioFile": "ex_0e2234e35f.mp3"
+      },
+      {
+        "en": "Some stamps are cheap, but they are also beautiful.",
+        "cn": "一些邮票便宜，但也很漂亮。",
+        "level": 3,
+        "audioFile": "ex_82189bbe20.mp3"
+      }
+    ],
+    "collection": [
+      {
+        "en": "My collection.",
+        "cn": "我的收藏。",
+        "level": 1,
+        "audioFile": "ex_dba14ae9ee.mp3"
+      },
+      {
+        "en": "Show me your stamp collection.",
+        "cn": "给我看看你的邮票收藏。",
+        "level": 2,
+        "audioFile": "ex_386ca18c4c.mp3"
+      },
+      {
+        "en": "I like to share my collection with my friends.",
+        "cn": "我喜欢把收藏分享给朋友。",
+        "level": 3,
+        "audioFile": "ex_e12c5f5160.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Please share.",
+        "cn": "请分享。",
+        "level": 1,
+        "audioFile": "ex_f88f1d76f1.mp3"
+      },
+      {
+        "en": "Please share the cake with us.",
+        "cn": "请把蛋糕和我们分享。",
+        "level": 2,
+        "audioFile": "ex_ecff7168f4.mp3"
+      },
+      {
+        "en": "Share your collection and be proud of your hobby!",
+        "cn": "分享你的藏品，为自己的爱好感到自豪！",
+        "level": 3,
+        "audioFile": "ex_16bb9a97ed.mp3"
+      }
+    ],
+    "envelope": [
+      {
+        "en": "An envelope.",
+        "cn": "一个信封。",
+        "level": 1,
+        "audioFile": "ex_3151daa07a.mp3"
+      },
+      {
+        "en": "Put the letter in the envelope.",
+        "cn": "把信放进信封。",
+        "level": 2,
+        "audioFile": "ex_d337910cfe.mp3"
+      },
+      {
+        "en": "My stamps all come from the envelopes of letters.",
+        "cn": "我的邮票都来自信件的信封。",
+        "level": 3,
+        "audioFile": "ex_76e92b906f.mp3"
+      }
+    ]
+  }
+}

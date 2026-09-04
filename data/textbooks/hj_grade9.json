@@ -1,0 +1,2130 @@
+{
+  "meta": {
+    "id": "hj",
+    "name": "广州沪教版",
+    "version": "1.0",
+    "coverage": "初中一年级至初中三年级（沪教牛津版 · 广州 2026 初中专用）",
+    "note_structure": "沪教牛津版 · 广州 2026 初中专用 · 每册 4 模块 8 单元 · 每单元 15 词 + 3 篇课文（Reading / Grammar focus / More reading）",
+    "note_progress": "grade7 / grade8 / grade9 共 6 册 × 8 单元 = 48 单元已全部补完（每单元 15 词 + 3 lessons）"
+  },
+  "grades": {
+    "grade9": {
+      "上": [
+        {
+          "id": "u1",
+          "module": "Module 1 Geniuses",
+          "title": "Unit 1 Wise men in history",
+          "words": [
+            {
+              "word": "genius",
+              "phonetic": "/ˈdʒiːniəs/",
+              "pos": "n.",
+              "meaning": "天才",
+              "example": "Confucius was a genius whose ideas still shape China today."
+            },
+            {
+              "word": "philosopher",
+              "phonetic": "/fəˈlɒsəfə(r)/",
+              "pos": "n.",
+              "meaning": "哲学家",
+              "example": "The ancient Greek philosopher Socrates asked more questions than he answered."
+            },
+            {
+              "word": "influence",
+              "phonetic": "/ˈɪnfluəns/",
+              "pos": "n./v.",
+              "meaning": "影响（力）",
+              "example": "Confucius' influence can still be felt in modern classrooms."
+            },
+            {
+              "word": "virtue",
+              "phonetic": "/ˈvɜːtʃuː/",
+              "pos": "n.",
+              "meaning": "美德",
+              "example": "Honesty is a virtue that never goes out of fashion."
+            },
+            {
+              "word": "respect",
+              "phonetic": "/rɪˈspekt/",
+              "pos": "n./v.",
+              "meaning": "尊敬",
+              "example": "He showed respect to both his parents and his teachers."
+            },
+            {
+              "word": "wisdom",
+              "phonetic": "/ˈwɪzdəm/",
+              "pos": "n.",
+              "meaning": "智慧",
+              "example": "Old sayings often carry the wisdom of many generations."
+            },
+            {
+              "word": "disciple",
+              "phonetic": "/dɪˈsaɪpl/",
+              "pos": "n.",
+              "meaning": "弟子，门徒",
+              "example": "Confucius had about 3,000 disciples, but only 72 became masters themselves."
+            },
+            {
+              "word": "scholar",
+              "phonetic": "/ˈskɒlə(r)/",
+              "pos": "n.",
+              "meaning": "学者",
+              "example": "She is a scholar of ancient Chinese literature."
+            },
+            {
+              "word": "humble",
+              "phonetic": "/ˈhʌmbl/",
+              "pos": "adj.",
+              "meaning": "谦虚的",
+              "example": "Although he won the Nobel Prize, he remained humble."
+            },
+            {
+              "word": "quote",
+              "phonetic": "/kwəʊt/",
+              "pos": "v./n.",
+              "meaning": "引用；名言",
+              "example": "A famous quote from Confucius is about learning and thinking."
+            },
+            {
+              "word": "ancient",
+              "phonetic": "/ˈeɪnʃənt/",
+              "pos": "adj.",
+              "meaning": "古代的",
+              "example": "Ancient scrolls were kept carefully in the palace library."
+            },
+            {
+              "word": "dynasty",
+              "phonetic": "/ˈdɪnəsti/",
+              "pos": "n.",
+              "meaning": "朝代",
+              "example": "The Tang Dynasty was a golden age for Chinese poetry."
+            },
+            {
+              "word": "thinker",
+              "phonetic": "/ˈθɪŋkə(r)/",
+              "pos": "n.",
+              "meaning": "思想家",
+              "example": "As a thinker, he dared to ask questions that others avoided."
+            },
+            {
+              "word": "knowledge",
+              "phonetic": "/ˈnɒlɪdʒ/",
+              "pos": "n.",
+              "meaning": "知识",
+              "example": "Knowledge without practice is like a tree without fruit."
+            },
+            {
+              "word": "legacy",
+              "phonetic": "/ˈleɡəsi/",
+              "pos": "n.",
+              "meaning": "遗产，传承",
+              "example": "His greatest legacy is a set of ideas about kindness and learning."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A talk about Confucius",
+              "en": "Mr Li: Good morning, everyone. Today we are going to talk about one of the wisest men in Chinese history — Confucius.\n\nAnna: Mr Li, when was Confucius born?\n\nMr Li: He was born in 551 BC, in the State of Lu — today's Shandong Province. That's more than 2,500 years ago!\n\nTom: What did he do for a living?\n\nMr Li: He was a teacher, a thinker and a government officer. But most of all, he was a great teacher. He believed that every person, rich or poor, had the right to learn.\n\nAnna: My grandma often says, \"Learning without thinking is useless.\" Did Confucius say that?\n\nMr Li: Yes! The full quote is, \"Learning without thinking is useless; thinking without learning is dangerous.\" It is still very true today.\n\nTom: Did he have many students?\n\nMr Li: About three thousand. Seventy-two of them became famous teachers themselves. Together with his disciples, he wrote a book called The Analects.\n\nAnna: What did he teach about?\n\nMr Li: Virtue, respect, honesty and kindness. He believed a good person first tries to fix himself, then his family, and only then his country.\n\nTom: That sounds like something a modern teacher would say!\n\nMr Li: That is why we call him a wise man. A wise man's words never grow old.",
+              "cn": "李老师：早上好，同学们。今天我们来聊聊中国历史上最有智慧的人之一——孔子。\n\n安娜：李老师，孔子是什么时候出生的？\n\n李老师：他生于公元前 551 年，出生在鲁国，也就是今天的山东省，距今两千五百多年！\n\n汤姆：他做什么工作？\n\n李老师：他是老师、思想家，也当过官。但最重要的身份是伟大的老师。他认为无论贫富，每个人都有受教育的权利。\n\n安娜：我奶奶常说：“学而不思则罔。”这是孔子的话吗？\n\n李老师：是的！完整的句子是：“学而不思则罔，思而不学则殆。”今天依然很有道理。\n\n汤姆：他有很多学生吗？\n\n李老师：约三千弟子，其中七十二人后来成了著名的老师。他和弟子一起编成了《论语》。\n\n安娜：他主要教什么？\n\n李老师：仁、礼、诚、善。他认为做好人先从修身做起，再到齐家，最后才是治国。\n\n汤姆：听起来像现代老师会说的话！\n\n李老师：这就是为什么称他为圣人——智者的话永远不过时。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Defining relative clauses with who / which / that",
+              "en": "A defining relative clause tells us which person or thing we are talking about. It usually follows a noun.\n\n1) who — for people\n   The teacher who wrote this book is from Shanghai.\n   Confucius is the philosopher who believed in lifelong learning.\n\n2) which — for things and animals\n   The Analects, which was written by his disciples, is still read today.\n   I have a cat which can open the door by itself.\n\n3) that — for people, things, or animals (more common in speech)\n   This is the old temple that honours Confucius.\n   She is the teacher that teaches us English.\n\nWarning — don't double the subject!\n   (✗) Confucius is a great teacher he lived 2,500 years ago.\n   (✓) Confucius is a great teacher who lived 2,500 years ago.\n\nTip: in spoken English, we often use that in place of both who and which, especially when the information is essential.",
+              "cn": "定语从句告诉我们说的是哪个人或哪件事。通常紧跟在名词之后。\n\n1) who——指人\n   写这本书的老师来自上海。\n   孔子是一位相信终身学习的哲学家。\n\n2) which——指物或动物\n   由弟子编成的《论语》至今仍被阅读。\n   我有一只能自己开门的猫。\n\n3) that——指人、物或动物（口语更常用）\n   这是供奉孔子的古庙。\n   她就是教我们英语的那位老师。\n\n警告——不要重复主语！\n   （✗）Confucius is a great teacher he lived 2,500 years ago.\n   （✓）Confucius is a great teacher who lived 2,500 years ago.\n\n小贴士：口语中常用 that 代替 who 和 which，尤其当信息不可省时。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Lessons from an old teacher",
+              "en": "Confucius never wrote a long book by himself. What we know about him comes from his students, who wrote down what he said and did. Below are three short lessons from The Analects that still matter today.\n\n1) Learning is a joy.\n\"Is it not a pleasure to learn, and to put into practice what you have learned?\" Confucius believed learning was not a burden, but a happy thing — as long as we use what we learn.\n\n2) Friends are a treasure.\n\"Is it not delightful to have friends coming from distant places?\" At a time without phones or planes, a friend who travelled many days to visit was a real gift. Today, we may talk to friends online every day, but a real meeting is still something special.\n\n3) Be kind; be fair.\nA student once asked, \"Is there a single word that can guide a person all his life?\" Confucius replied, \"Shu — do not do to others what you would not want done to yourself.\" This idea, later called the \"Golden Rule,\" is found in almost every culture around the world.\n\nA great thinker does not need to be rich or powerful. He only needs to share ideas that make ordinary people live better lives.",
+              "cn": "孔子自己没写过长篇大著。我们对他的了解都来自弟子——他们把他的言行记录下来。下面三则出自《论语》的短教诲至今仍有意义。\n\n1) 学习是一种乐趣。\n“学而时习之，不亦说乎？“孔子认为学习不是负担，而是快乐的事——只要能把学到的用出来。\n\n2) 朋友是宝贝。\n”有朋自远方来，不亦乐乎？”在没有电话和飞机的年代，好友跋涉多日来访就是一份真情厚礼。今天我们天天可以上网聊天，可真正的相见依旧难得。\n\n3) 善良，公正。\n有学生问：“有没有一个字能指引人的一生？”孔子答：“恕——己所不欲，勿施于人。”这条后来被称为“黄金法则”，几乎存在于世界上每一种文化之中。\n\n伟大的思想家不必富有或有权，他只需分享让普通人过得更好的想法。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "module": "Module 1 Geniuses",
+          "title": "Unit 2 Great minds",
+          "words": [
+            {
+              "word": "invention",
+              "phonetic": "/ɪnˈvenʃn/",
+              "pos": "n.",
+              "meaning": "发明",
+              "example": "The light bulb is one of Edison's most famous inventions."
+            },
+            {
+              "word": "discover",
+              "phonetic": "/dɪsˈkʌvə(r)/",
+              "pos": "v.",
+              "meaning": "发现",
+              "example": "Marie Curie discovered two new elements: polonium and radium."
+            },
+            {
+              "word": "experiment",
+              "phonetic": "/ɪkˈsperɪmənt/",
+              "pos": "n./v.",
+              "meaning": "实验",
+              "example": "He failed the experiment a thousand times before it finally worked."
+            },
+            {
+              "word": "curious",
+              "phonetic": "/ˈkjʊəriəs/",
+              "pos": "adj.",
+              "meaning": "好奇的",
+              "example": "A curious mind is the first step towards any great discovery."
+            },
+            {
+              "word": "laboratory",
+              "phonetic": "/ləˈbɒrətri/",
+              "pos": "n.",
+              "meaning": "实验室",
+              "example": "She spent long nights alone in the laboratory."
+            },
+            {
+              "word": "patient",
+              "phonetic": "/ˈpeɪʃnt/",
+              "pos": "adj.",
+              "meaning": "有耐心的",
+              "example": "Great scientists are patient people."
+            },
+            {
+              "word": "failure",
+              "phonetic": "/ˈfeɪljə(r)/",
+              "pos": "n.",
+              "meaning": "失败",
+              "example": "Every failure is one step closer to success."
+            },
+            {
+              "word": "succeed",
+              "phonetic": "/səkˈsiːd/",
+              "pos": "v.",
+              "meaning": "成功",
+              "example": "If at first you don't succeed, try again."
+            },
+            {
+              "word": "theory",
+              "phonetic": "/ˈθɪəri/",
+              "pos": "n.",
+              "meaning": "理论",
+              "example": "Einstein's theory changed the way we see time and space."
+            },
+            {
+              "word": "achievement",
+              "phonetic": "/əˈtʃiːvmənt/",
+              "pos": "n.",
+              "meaning": "成就",
+              "example": "Winning the Nobel Prize was her greatest achievement."
+            },
+            {
+              "word": "talent",
+              "phonetic": "/ˈtælənt/",
+              "pos": "n.",
+              "meaning": "天赋",
+              "example": "Hard work is more important than talent alone."
+            },
+            {
+              "word": "determined",
+              "phonetic": "/dɪˈtɜːmɪnd/",
+              "pos": "adj.",
+              "meaning": "坚定的",
+              "example": "She was determined to finish her research despite the difficulties."
+            },
+            {
+              "word": "prize",
+              "phonetic": "/praɪz/",
+              "pos": "n.",
+              "meaning": "奖赏，奖金",
+              "example": "He won first prize in the science contest."
+            },
+            {
+              "word": "inspire",
+              "phonetic": "/ɪnˈspaɪə(r)/",
+              "pos": "v.",
+              "meaning": "激励，启发",
+              "example": "Her life story inspires millions of young girls."
+            },
+            {
+              "word": "contribution",
+              "phonetic": "/ˌkɒntrɪˈbjuːʃn/",
+              "pos": "n.",
+              "meaning": "贡献",
+              "example": "He made a great contribution to world peace."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Thomas Edison never gave up",
+              "en": "Reporter: Mr Edison, you have just given the world a useful electric light. People call you a genius. How do you feel?\n\nEdison: A genius? I don't think so. I simply work very hard. The light bulb you see took me about 10,000 tries.\n\nReporter: Ten thousand failures? That sounds terrible!\n\nEdison: I don't call them failures. I found 10,000 ways that didn't work, so I knew I was getting closer to the one that did.\n\nReporter: What gave you the courage to keep going?\n\nEdison: Three things. First, I was curious about electricity since I was a boy. Curiosity is the starting point of every invention. Second, I had a team of people who believed in me. Third, I believed the world needed a clean, cheap light. That belief was stronger than my tiredness.\n\nReporter: Is it true that you slept only four hours a day?\n\nEdison: Yes, when I was working on a problem. But I took short naps in the lab, on the desks, on the floor! A good nap is like a reset button.\n\nReporter: What advice do you have for young people who want to invent something?\n\nEdison: Work hard, fail often, learn from every failure, and never stop being curious. Genius is one per cent inspiration and ninety-nine per cent perspiration.",
+              "cn": "记者：爱迪生先生，您给世界带来了实用的电灯，人们称您为天才，您有什么感想？\n\n爱迪生：天才？我不这么认为，我只是非常努力。你看到的这个灯泡，花了我大约一万次尝试。\n\n记者：一万次失败？听起来太糟糕了！\n\n爱迪生：我不叫它们失败，我只是找到了一万种不可行的办法，这样我就知道离那条可行的路越来越近。\n\n记者：是什么给您坚持下去的勇气？\n\n爱迪生：三件事。第一，从小我就对电很好奇，好奇是每项发明的起点。第二，我有一支相信我的团队。第三，我坚信世界需要一种干净、便宜的光。这种信念比疲倦更强大。\n\n记者：听说您每天只睡四小时，真的吗？\n\n爱迪生：当我在攻关时是的。但我会在实验室打盹——桌子上、地板上都睡过！一次好盹就像按了重置键。\n\n记者：对想搞发明的年轻人您有什么建议？\n\n爱迪生：努力工作，频繁失败，从每次失败中学习，永远保持好奇。天才是百分之一的灵感加百分之九十九的汗水。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Relative clauses with whose / where / when",
+              "en": "Some relative pronouns give extra information about people, places or times.\n\n1) whose — shows possession (of people, animals, or even things)\n   Edison is the inventor whose lab burnt down in 1914.\n   I met a girl whose father is a scientist.\n\n2) where — refers to a place (= in / at which)\n   The laboratory where Curie worked was very cold in winter.\n   Paris is the city where many great minds once lived.\n\n3) when — refers to a time (= on / in which)\n   1879 was the year when Edison produced a working light bulb.\n   I still remember the day when the results were announced.\n\nCompare:\n   The house which Newton was born in is now a museum.  (which + preposition)\n   The house where Newton was born is now a museum.    (where, shorter)\n\nBoth sentences are correct; where is simpler and more common in speech.",
+              "cn": "一些关系代词用来补充人、地点或时间的信息。\n\n1) whose——表示所属（可指人、动物，甚至物）\n   爱迪生是那位 1914 年实验室被烧毁的发明家。\n   我遇到了一个父亲是科学家的女孩。\n\n2) where——指地点（= in / at which）\n   居里夫人工作的那间实验室冬天很冷。\n   巴黎是许多伟大思想家曾生活过的城市。\n\n3) when——指时间（= on / in which）\n   1879 年是爱迪生造出可用灯泡的那一年。\n   我仍记得公布成绩的那天。\n\n比较：\n   The house which Newton was born in is now a museum.（which + 介词）\n   The house where Newton was born is now a museum.（where，更简洁）\n\n两句都正确；口语更常用 where。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A woman who changed science",
+              "en": "When Marie Curie was a young girl in Poland, girls could not go to most universities. But her curiosity was stronger than any rule. Every night, after finishing her chores, she taught herself mathematics, physics and chemistry by candlelight.\n\nAt 24, she moved to Paris, where she was one of only a few women in the science faculty. She studied hard, but she had very little money. Sometimes she lived on bread and tea, because she wanted to buy books instead of food.\n\nIn Paris she met a shy scientist named Pierre Curie. They fell in love with ideas — and with each other. They shared a small, cold laboratory and worked as a team for years. In 1898, they discovered two new elements and named one of them polonium, after Marie's homeland.\n\nMarie Curie was the first woman to win the Nobel Prize, and the first person to win it twice — once for physics (1903) and once for chemistry (1911). She used her prize money not to buy a bigger house, but to build better laboratories.\n\nShe once said, \"Nothing in life is to be feared; it is only to be understood.\" Her life shows that a curious, determined mind can break any door, even one marked \"No girls allowed.\"",
+              "cn": "玛丽·居里年少时住在波兰，当时大多数大学不收女生。但她的好奇心比任何规定都强。每晚做完家务，她就靠烛光自学数学、物理、化学。\n\n24 岁那年，她来到巴黎，成为理学院少数女生之一。她学得刻苦，却非常贫穷，有时只靠面包和茶度日，因为她宁愿买书也不愿买食物。\n\n在巴黎她遇见了一位害羞的科学家——皮埃尔·居里。他们因理想相爱，也彼此相爱。夫妻俩在一间又小又冷的实验室并肩工作多年。1898 年他们发现了两种新元素，其中一种以玛丽的祖国命名为钋。\n\n居里夫人是首位获得诺贝尔奖的女性，也是首位两度获奖的人——1903 年物理奖、1911 年化学奖。她用奖金不是换大房子，而是建更好的实验室。\n\n她曾说：“人生没有什么可怕的事，只有要去理解的事。”她的一生证明：一颗好奇而坚定的心，能推开任何一扇门，哪怕门上写着“女生止步”。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "module": "Module 2 Environmental problems",
+          "title": "Unit 3 The environment",
+          "words": [
+            {
+              "word": "environment",
+              "phonetic": "/ɪnˈvaɪrənmənt/",
+              "pos": "n.",
+              "meaning": "环境",
+              "example": "We must protect the environment for future generations."
+            },
+            {
+              "word": "pollution",
+              "phonetic": "/pəˈluːʃn/",
+              "pos": "n.",
+              "meaning": "污染",
+              "example": "Air pollution in big cities is a serious problem."
+            },
+            {
+              "word": "damage",
+              "phonetic": "/ˈdæmɪdʒ/",
+              "pos": "v./n.",
+              "meaning": "损害",
+              "example": "Plastic waste damages the oceans."
+            },
+            {
+              "word": "waste",
+              "phonetic": "/weɪst/",
+              "pos": "n./v.",
+              "meaning": "垃圾；浪费",
+              "example": "Don't waste water — every drop counts."
+            },
+            {
+              "word": "reduce",
+              "phonetic": "/rɪˈdjuːs/",
+              "pos": "v.",
+              "meaning": "减少",
+              "example": "We should reduce the use of plastic bags."
+            },
+            {
+              "word": "recycle",
+              "phonetic": "/ˌriːˈsaɪkl/",
+              "pos": "v.",
+              "meaning": "回收利用",
+              "example": "Paper and glass can be recycled easily."
+            },
+            {
+              "word": "survey",
+              "phonetic": "/ˈsɜːveɪ/",
+              "pos": "n./v.",
+              "meaning": "调查",
+              "example": "We did a survey on our neighbourhood's green habits."
+            },
+            {
+              "word": "questionnaire",
+              "phonetic": "/ˌkwestʃəˈneə(r)/",
+              "pos": "n.",
+              "meaning": "问卷",
+              "example": "Please fill in this short questionnaire."
+            },
+            {
+              "word": "neighbourhood",
+              "phonetic": "/ˈneɪbəhʊd/",
+              "pos": "n.",
+              "meaning": "街区，社区",
+              "example": "Our neighbourhood is quiet and clean."
+            },
+            {
+              "word": "rubbish",
+              "phonetic": "/ˈrʌbɪʃ/",
+              "pos": "n.",
+              "meaning": "垃圾",
+              "example": "Sort your rubbish before you throw it away."
+            },
+            {
+              "word": "bin",
+              "phonetic": "/bɪn/",
+              "pos": "n.",
+              "meaning": "垃圾箱",
+              "example": "Put empty bottles into the blue bin."
+            },
+            {
+              "word": "citizen",
+              "phonetic": "/ˈsɪtɪzn/",
+              "pos": "n.",
+              "meaning": "公民",
+              "example": "Every citizen should care about the city."
+            },
+            {
+              "word": "public",
+              "phonetic": "/ˈpʌblɪk/",
+              "pos": "adj./n.",
+              "meaning": "公共的；公众",
+              "example": "Public transport is both green and cheap."
+            },
+            {
+              "word": "destroy",
+              "phonetic": "/dɪˈstrɔɪ/",
+              "pos": "v.",
+              "meaning": "毁坏",
+              "example": "Fires destroyed huge areas of forest last year."
+            },
+            {
+              "word": "protect",
+              "phonetic": "/prəˈtekt/",
+              "pos": "v.",
+              "meaning": "保护",
+              "example": "We must protect our rivers from pollution."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A survey on our neighbourhood",
+              "en": "Teacher: Good afternoon, class. Last week you did a survey on our neighbourhood. Who wants to share the results?\n\nBetty: I'll start. Our group asked 50 people how they throw away their rubbish.\n\nTeacher: And what did you find?\n\nBetty: Only 18 people sort their rubbish into three bins — paper, plastic and kitchen waste. The other 32 people put everything into one bag!\n\nJim: Our group studied noise. We stood near the main road from 7 a.m. to 9 a.m.\n\nTeacher: How bad was it?\n\nJim: Too noisy to talk! The loudest moment was 85 decibels — as loud as a vacuum cleaner. Most of the noise came from car horns.\n\nLucy: My group looked at the small park on Lotus Street. We counted the people who came in during one hour.\n\nTeacher: How many?\n\nLucy: 64 people — most of them old people and children. We asked them what they liked and what they didn't. They loved the flowers, but hated the broken benches and the rubbish near the gate.\n\nTeacher: Wonderful work. So, are there any ideas for solutions?\n\nBetty: Our class could make colourful posters about sorting rubbish.\n\nJim: We could write a letter to ask drivers not to press their horns too much.\n\nLucy: And we could spend one Saturday cleaning the park and fixing the benches with our parents.\n\nTeacher: Perfect. A good survey is not the end — it is the start of real action.",
+              "cn": "老师：下午好，同学们。上周你们对社区做了调查。谁想先分享结果？\n\n贝蒂：我先来。我们组问了 50 人怎样扔垃圾。\n\n老师：结果如何？\n\n贝蒂：只有 18 人把垃圾分成纸、塑料和厨余三类；另外 32 人全部装一袋！\n\n吉姆：我们组研究噪声，早上 7 点到 9 点站在主干道旁。\n\n老师：情况糟吗？\n\n吉姆：吵到没法说话！最高 85 分贝，跟吸尘器一样响。噪声主要来自汽车喇叭。\n\n露西：我们组观察莲花街小公园，数了一小时进出的人数。\n\n老师：多少？\n\n露西：64 人——多数是老人和小孩。我们问他们喜欢与不喜欢什么。他们喜欢花，却讨厌坏掉的长椅和门口的垃圾。\n\n老师：做得好。大家有什么解决办法？\n\n贝蒂：我们可以做彩色海报，宣传垃圾分类。\n\n吉姆：可以写信请司机不要随意按喇叭。\n\n露西：也可以用一个周六，和爸妈一起清理公园、修好长椅。\n\n老师：完美。好的调查不是终点，而是真正行动的起点。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · too ... to ... and so ... that ...",
+              "en": "Both structures show degree, but they look and feel different.\n\n1) too + adj./adv. + to + verb → too ... to do something\n   The river is too dirty to swim in.\n   He spoke too fast for me to understand.\n   Often suggests a NEGATIVE result (cannot / couldn't).\n\n2) so + adj./adv. + that + clause → so ... that ...\n   The river is so dirty that we cannot swim in it.\n   He spoke so fast that I could not understand him.\n   The result clause uses that + a full sentence.\n\n3) so many / so much / so few / so little + noun + that ...\n   There is so much rubbish on the beach that we cannot walk freely.\n   So few birds come here now that the forest feels empty.\n\nChange one to the other:\n   The air is too bad to breathe.  →  The air is so bad that we cannot breathe.\n   She is so young that she can't join the club.  →  She is too young to join the club.\n\nRemember: too ... to ... already contains a NEGATIVE meaning — never add not after to.",
+              "cn": "两种结构都表示程度，外形与语感不同。\n\n1) too + 形容词/副词 + to + 动词 → 太……以至于不能……\n   河水太脏，不能游泳。\n   他说得太快，我听不懂。\n   通常表达否定结果（不能／无法）。\n\n2) so + 形容词/副词 + that + 从句 → 如此……以至于……\n   河水太脏，以至于我们不能游泳。\n   他说得太快，以至于我听不懂。\n   结果部分用 that + 完整句。\n\n3) so many / so much / so few / so little + 名词 + that ...\n   海滩上垃圾太多，以至于无法自由行走。\n   现在来这里的鸟太少，森林都显得空荡。\n\n互换练习：\n   The air is too bad to breathe. → The air is so bad that we cannot breathe.\n   She is so young that she can't join the club. → She is too young to join the club.\n\n注意：too ... to ... 本身已含否定义，to 后不能再加 not。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · One city, three smaller worries",
+              "en": "Every big city has big stories — tall buildings, bright lights, fast trains. But underneath, there are three smaller worries that people often ignore.\n\nWorry 1: Plastic snow.\nIn many city parks, tiny pieces of plastic lie among the grass like snow. They come from bottles, bags, and even clothes. When it rains, this \"plastic snow\" washes into rivers and then into the sea. Scientists now find plastic pieces in fish, salt, and even tap water. The plastic snow of today is the plastic food of tomorrow.\n\nWorry 2: Light that never sleeps.\nStreet lights, screens, neon signs — a big city never goes dark. This is useful, but it also confuses animals. Young sea turtles, for example, once followed the moonlight to the sea. Now they follow the city lights and die on the road. Birds, too, lose their way during long night flights.\n\nWorry 3: Seconds of silence.\nPeople say cities are loud, but the real problem is that they never go quiet. Even at midnight, we hear cars, air-conditioners and construction. Scientists say constant low noise can hurt a child's memory and a grown-up's heart. A few minutes of real quiet every day is as important as a glass of water.\n\nThese worries are small for each person, but huge for the city. A city is a long story written by many citizens. If we each write one kind sentence, the story can have a happy ending.",
+              "cn": "每座大城市都有大故事——高楼、霓虹、疾驰的列车。但在表面之下，有三个常被忽视的小烦恼。\n\n烦恼一：塑料雪。\n许多城市公园的草地上，散落着如雪般的小塑料碎片，它们来自瓶子、袋子甚至衣物。一场雨后，这些“塑料雪”被冲进河流，再流向大海。科学家已在鱼、盐乃至自来水中发现塑料颗粒。今天的塑料雪，就是明天的塑料食物。\n\n烦恼二：不眠的灯。\n路灯、屏幕、霓虹——大城市从不天黑。这虽方便，却让动物迷茫。幼海龟曾追随月光走向大海，如今却随着城市灯光走上公路、丧命途中。候鸟夜飞时也常因光污染迷失方向。\n\n烦恼三：难得的安静。\n人们常说城市吵闹，其实真正的问题是永不安静。即使午夜，汽车、空调、施工声不断。科学家指出，持续的低噪音会伤害孩子的记忆和成人的心脏。每天几分钟真正的安静，和一杯水同样重要。\n\n这些烦恼于个人微小，于城市却巨大。城市是一部由众多居民书写的长故事，若每人写下一句善意的话，结局就能温暖而美好。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "module": "Module 2 Environmental problems",
+          "title": "Unit 4 Problems and solutions",
+          "words": [
+            {
+              "word": "solution",
+              "phonetic": "/səˈluːʃn/",
+              "pos": "n.",
+              "meaning": "解决办法",
+              "example": "There is no simple solution to climate change."
+            },
+            {
+              "word": "global",
+              "phonetic": "/ˈɡləʊbl/",
+              "pos": "adj.",
+              "meaning": "全球的",
+              "example": "Climate change is a global problem."
+            },
+            {
+              "word": "warming",
+              "phonetic": "/ˈwɔːmɪŋ/",
+              "pos": "n.",
+              "meaning": "变暖",
+              "example": "Global warming melts the ice in the Arctic."
+            },
+            {
+              "word": "carbon",
+              "phonetic": "/ˈkɑːbən/",
+              "pos": "n.",
+              "meaning": "碳",
+              "example": "Cars release a lot of carbon every day."
+            },
+            {
+              "word": "emission",
+              "phonetic": "/iˈmɪʃn/",
+              "pos": "n.",
+              "meaning": "排放",
+              "example": "We must cut carbon emissions by half."
+            },
+            {
+              "word": "energy",
+              "phonetic": "/ˈenədʒi/",
+              "pos": "n.",
+              "meaning": "能源",
+              "example": "Solar energy is clean and free."
+            },
+            {
+              "word": "renewable",
+              "phonetic": "/rɪˈnjuːəbl/",
+              "pos": "adj.",
+              "meaning": "可再生的",
+              "example": "Wind is a renewable energy source."
+            },
+            {
+              "word": "solar",
+              "phonetic": "/ˈsəʊlə(r)/",
+              "pos": "adj.",
+              "meaning": "太阳能的",
+              "example": "Our school has solar panels on the roof."
+            },
+            {
+              "word": "electric",
+              "phonetic": "/ɪˈlektrɪk/",
+              "pos": "adj.",
+              "meaning": "电动的",
+              "example": "More and more buses are now electric."
+            },
+            {
+              "word": "forest",
+              "phonetic": "/ˈfɒrɪst/",
+              "pos": "n.",
+              "meaning": "森林",
+              "example": "Every year, huge forests are cut down for paper."
+            },
+            {
+              "word": "species",
+              "phonetic": "/ˈspiːʃiːz/",
+              "pos": "n.",
+              "meaning": "物种",
+              "example": "Many species are disappearing because of habitat loss."
+            },
+            {
+              "word": "extinct",
+              "phonetic": "/ɪkˈstɪŋkt/",
+              "pos": "adj.",
+              "meaning": "绝种的",
+              "example": "Without action, pandas could one day become extinct."
+            },
+            {
+              "word": "landfill",
+              "phonetic": "/ˈlændfɪl/",
+              "pos": "n.",
+              "meaning": "垃圾填埋场",
+              "example": "Most rubbish ends up in a huge landfill."
+            },
+            {
+              "word": "campaign",
+              "phonetic": "/kæmˈpeɪn/",
+              "pos": "n.",
+              "meaning": "运动",
+              "example": "Our school started a campaign called Zero Plastic Week."
+            },
+            {
+              "word": "volunteer",
+              "phonetic": "/ˌvɒlənˈtɪə(r)/",
+              "pos": "n./v.",
+              "meaning": "志愿者",
+              "example": "Fifty volunteers joined the tree-planting day."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Small steps save the planet",
+              "en": "Dear students,\n\nWe are writing to every class in our school to launch a month-long campaign called \"Small Steps, Big Planet\". Climate change is not a problem for some far-away country — it is happening here, in our city, in our school, in our homes.\n\nLast summer, it was so hot that our school closed for two extra days. Last winter, heavy rain flooded the shops near the station. Trees on the mountain are being cut, and birds that used to sing in our gardens are slowly disappearing.\n\nThese problems feel huge. But the good news is that every small step counts. Here are four ideas for our school community:\n\n1) Green classrooms. Turn off the lights and fans when you leave. A class that does this every day can save enough electricity to light 30 homes for a week.\n\n2) Lunch without waste. Bring your own bottle and chopsticks. Finish your food; food waste in landfills produces a gas that traps heat in the sky.\n\n3) Green wheels. Walk, cycle, or take the bus whenever you can. Ask a parent to drive together with a friend — two families, one car.\n\n4) Green voices. Tell your family the new facts you learn. A child who talks about the planet can change a whole home.\n\nIt is not the biggest hero who saves the world. It is millions of ordinary people doing small, kind things, every day. Join us. Take one small step today — and tomorrow, another.\n\nYours truly,\nThe Environment Club",
+              "cn": "亲爱的同学们：\n\n我们向全校各班发出倡议，启动为期一个月的“小步伐，大地球”运动。气候变化不是远方的事——它正发生在我们的城市、学校、家里。\n\n去年夏天太热，学校多放了两天假；去年冬天大雨淹了车站附近的商店；山上的树被砍，花园里曾经歌唱的鸟渐渐不见。\n\n这些问题看似巨大，好消息是每一小步都算数。以下是四个校园建议：\n\n1) 绿色教室：离开时关灯、关风扇。一个班每天坚持，省下的电够 30 个家庭用一周。\n\n2) 零浪费午餐：自带水瓶筷子，吃完饭菜。食物烂在填埋场会产生让天空变热的气体。\n\n3) 绿色车轮：能走就走，能骑就骑，能坐公交就坐公交。请爸妈和朋友拼车——两家一辆车。\n\n4) 绿色声音：把学到的新知识讲给家人。一个谈地球的孩子，能改变整个家。\n\n拯救世界的不是最大的英雄，而是千百万普通人每天做的小而善的事。加入我们吧。今天迈一小步，明天再一步。\n\n环保社敬上"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · The emphatic pattern \"It is ... that / who ...\"",
+              "en": "When we want to focus on one part of a sentence, we can use the pattern:\n   It is / was + EMPHASISED PART + that / who + the rest of the sentence.\n\nThe emphasised part can be:\n\n1) The subject (use who for people, that for things):\n   Tom broke the window.  →  It was Tom who / that broke the window.\n   Plastic pollutes the sea.  →  It is plastic that pollutes the sea.\n\n2) The object:\n   We need clean water most.  →  It is clean water that we need most.\n\n3) A time or place (use that, NOT when / where):\n   We started the campaign last Monday.  →  It was last Monday that we started the campaign.\n   I first met her in Shanghai.  →  It was in Shanghai that I first met her.\n\nQuestions:\n   Was it Tom who broke the window?\n   Who was it that broke the window?\n\nNOT-form:\n   It was NOT Tom who broke the window; it was Jim.\n\nImportant: the rest of the sentence keeps its normal tense — do not change the second verb to \"is\".",
+              "cn": "强调句把句子的一部分突出出来：\n   It is / was + 强调部分 + that / who + 其余部分。\n\n强调部分可以是：\n\n1) 主语（指人用 who，指物用 that）：\n   Tom broke the window. → It was Tom who / that broke the window.\n   Plastic pollutes the sea. → It is plastic that pollutes the sea.\n\n2) 宾语：\n   We need clean water most. → It is clean water that we need most.\n\n3) 时间或地点（一律用 that，不用 when / where）：\n   We started the campaign last Monday. → It was last Monday that we started the campaign.\n   I first met her in Shanghai. → It was in Shanghai that I first met her.\n\n疑问：\n   Was it Tom who broke the window?\n   Who was it that broke the window?\n\n否定：\n   It was NOT Tom who broke the window; it was Jim.\n\n重要：其余部分保留原时态，不要把第二个动词改成 is。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Three cities, three green answers",
+              "en": "No single city has all the answers, but many cities around the world are trying brave experiments. Here are three stories.\n\nFreiburg, Germany — The Sun City.\nThirty years ago, Freiburg was a quiet old town. Today, it is one of the greenest cities in Europe. Every new house must save energy; many roofs are covered with solar panels. Streets belong to people first, cars second. Children learn about wind and sun in primary school. The city now makes more clean energy than it uses.\n\nCuritiba, Brazil — The Bus City.\nIn the 1970s, Curitiba was growing fast and its roads were full of cars. Instead of building more highways, the city built long, fast bus lines. Today, 70 out of every 100 people in Curitiba take the bus every day — more than in almost any other Brazilian city. The city also pays poor families to collect and sort rubbish; a bag of paper equals a basket of vegetables.\n\nKitakyushu, Japan — The River City.\nAfter the war, Kitakyushu grew many factories and its main river turned black. Fish died; children fell sick. Mothers went on strike until the city acted. Fifty years later, the river runs clear, and fish have returned. Old factories are museums. Children swim in summer, and a nearby beach welcomes sea turtles every spring.\n\nEach of these cities shows that it is strong citizens who push cities to change. A city that listens to its people becomes a home worth living in.",
+              "cn": "没有一座城市拥有所有答案，但全球许多城市都在大胆尝试。下面三段故事。\n\n德国弗赖堡——太阳之城。\n三十年前它还是安静小城，如今已是欧洲最绿之一。所有新房须节能，屋顶普遍铺太阳能板；街道先让人，再让车；孩子在小学就学风能与太阳能。城市所产清洁电力已超出所需。\n\n巴西库里蒂巴——公交之城。\n上世纪 70 年代城市迅猛扩张，道路拥堵。它不修更多公路，而是铺下长长的快速公交专线。如今每 100 人里 70 人每天乘公交，比大多数巴西城市都高。市政府还用蔬菜换贫困家庭捡来的分类垃圾：一袋废纸换一篮青菜。\n\n日本北九州——河流之城。\n战后大量工厂兴起，主河变成黑水，鱼死、孩子病倒。母亲们罢工抗议，市政府终于行动。五十年后，河水清澈，鱼群归来；老工厂改成博物馆；孩子夏天在河里游泳，附近海滩每年春天迎来海龟。\n\n三座城市告诉我们：是坚强的市民推动城市改变。懂得倾听人民的城市，才能成为值得居住的家园。"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "module": "Module 3 Leisure time",
+          "title": "Unit 5 Films",
+          "words": [
+            {
+              "word": "film",
+              "phonetic": "/fɪlm/",
+              "pos": "n.",
+              "meaning": "电影",
+              "example": "Let's watch a good film this weekend."
+            },
+            {
+              "word": "director",
+              "phonetic": "/dəˈrektə(r)/",
+              "pos": "n.",
+              "meaning": "导演",
+              "example": "Zhang Yimou is a world-famous director."
+            },
+            {
+              "word": "actor",
+              "phonetic": "/ˈæktə(r)/",
+              "pos": "n.",
+              "meaning": "演员",
+              "example": "The young actor won the best newcomer award."
+            },
+            {
+              "word": "actress",
+              "phonetic": "/ˈæktrəs/",
+              "pos": "n.",
+              "meaning": "女演员",
+              "example": "My favourite actress has starred in over twenty films."
+            },
+            {
+              "word": "character",
+              "phonetic": "/ˈkærəktə(r)/",
+              "pos": "n.",
+              "meaning": "角色；性格",
+              "example": "The main character is a brave young girl."
+            },
+            {
+              "word": "scene",
+              "phonetic": "/siːn/",
+              "pos": "n.",
+              "meaning": "场景",
+              "example": "The opening scene is set in an old market."
+            },
+            {
+              "word": "plot",
+              "phonetic": "/plɒt/",
+              "pos": "n.",
+              "meaning": "情节",
+              "example": "The plot is easy to follow but full of surprises."
+            },
+            {
+              "word": "review",
+              "phonetic": "/rɪˈvjuː/",
+              "pos": "n./v.",
+              "meaning": "影评；评论",
+              "example": "The review in today's paper is very positive."
+            },
+            {
+              "word": "produce",
+              "phonetic": "/prəˈdjuːs/",
+              "pos": "v.",
+              "meaning": "制作",
+              "example": "This film was produced by a small studio."
+            },
+            {
+              "word": "release",
+              "phonetic": "/rɪˈliːs/",
+              "pos": "v./n.",
+              "meaning": "上映；发布",
+              "example": "The film will be released next Friday."
+            },
+            {
+              "word": "cinema",
+              "phonetic": "/ˈsɪnəmə/",
+              "pos": "n.",
+              "meaning": "电影院",
+              "example": "The new cinema has 12 screens."
+            },
+            {
+              "word": "audience",
+              "phonetic": "/ˈɔːdiəns/",
+              "pos": "n.",
+              "meaning": "观众",
+              "example": "The audience clapped for a long time."
+            },
+            {
+              "word": "award",
+              "phonetic": "/əˈwɔːd/",
+              "pos": "n./v.",
+              "meaning": "奖项",
+              "example": "The film won five international awards."
+            },
+            {
+              "word": "talented",
+              "phonetic": "/ˈtæləntɪd/",
+              "pos": "adj.",
+              "meaning": "有才华的",
+              "example": "He is the most talented young director in China."
+            },
+            {
+              "word": "touching",
+              "phonetic": "/ˈtʌtʃɪŋ/",
+              "pos": "adj.",
+              "meaning": "感人的",
+              "example": "The story is touching and made us cry."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Two films worth watching",
+              "en": "Jenny: Hi, Peter. I watched two great films this weekend. You should see them too.\n\nPeter: Sounds good. What are they about?\n\nJenny: The first one is called Hi, Mom. It is a Chinese family comedy, but it has a deep heart. A young woman travels back in time and meets her own mother when her mother was still a girl.\n\nPeter: That's an interesting idea. Who is the director?\n\nJenny: Jia Ling. She wrote it and directed it herself. The film is based on her own mother's life. Over 50 million tickets were sold in China during the first month.\n\nPeter: Wow. And the second film?\n\nJenny: The second is The Wandering Earth II, a Chinese science fiction film. Humans must move our planet to a new star because the sun is dying. The special effects were made by more than 1,000 artists, and some scenes were shot in the Gobi Desert.\n\nPeter: How long is it?\n\nJenny: About three hours, but I didn't feel sleepy for a minute! The music was written by a famous Chinese composer, and the main actor spoke in a calm, powerful voice.\n\nPeter: Are they suitable for my little brother?\n\nJenny: Hi, Mom is perfect for family viewing. The Wandering Earth II has some scary scenes, so kids under 10 may need a parent nearby.\n\nPeter: Thanks. I'll book seats for Saturday. A good film is a ticket to a new world.",
+              "cn": "珍妮：嗨，彼得。这周末我看了两部好片，你也该去看。\n\n彼得：好啊，讲什么的？\n\n珍妮：第一部叫《你好，李焕英》，一部中国家庭喜剧，却很动人。一位年轻女子穿越时空，遇见少女时代的妈妈。\n\n彼得：立意很有意思。导演是谁？\n\n珍妮：贾玲，她自编自导自演，灵感源自自己的母亲。影片上映首月就卖出五千多万张票。\n\n彼得：厉害！第二部呢？\n\n珍妮：第二部是《流浪地球 2》，中国科幻片。因太阳快死，人类要把地球推向新的恒星。特效由一千多位艺术家完成，部分镜头在戈壁拍摄。\n\n彼得：多长？\n\n珍妮：约三小时，但我一秒都没犯困！配乐由中国名作曲家创作，男主角声音沉稳有力。\n\n彼得：适合我弟弟看吗？\n\n珍妮：《你好，李焕英》很适合家庭观看；《流浪地球 2》有惊险场面，10 岁以下小孩最好有家长陪同。\n\n彼得：谢啦，我订周六的票。好电影就是通往新世界的车票。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · The passive voice (simple present and simple past)",
+              "en": "We use the passive voice when we want to focus on the thing or person that receives the action — not who does the action.\n\nForm:\n   subject + am / is / are + past participle   (present)\n   subject + was / were + past participle      (past)\n\nActive → Passive\n   They sell tickets online.         →  Tickets are sold online.\n   Jia Ling directed the film.       →  The film was directed by Jia Ling.\n   Thousands of fans loved the hero. →  The hero was loved by thousands of fans.\n\nBy + doer (optional):\nOnly add \"by + doer\" when the doer is important or surprising. If the doer is obvious or unknown, leave it out.\n   The film was released last Friday.   (everyone knows the cinema released it)\n   The building was built in 1925.     (we don't know who)\n   The cake was eaten by the dog!      (surprise!)\n\nCommon verbs that have irregular past participles:\n   write → written   speak → spoken   sing → sung\n   take → taken     break → broken   make → made\n\nQuestions and negatives:\n   Was the film directed by Jia Ling? Yes, it was.\n   The story was not written in a hurry.",
+              "cn": "当我们关心“被动作”的对象，而非“动作执行者”时，用被动语态。\n\n形式：\n   主语 + am / is / are + 过去分词（现在）\n   主语 + was / were + 过去分词（过去）\n\n主动 → 被动\n   They sell tickets online. → Tickets are sold online.\n   Jia Ling directed the film. → The film was directed by Jia Ling.\n   Thousands of fans loved the hero. → The hero was loved by thousands of fans.\n\nby + 动作执行者（可选）：\n只有在执行者重要或令人意外时才加 by。执行者显而易见或不明时可省。\n   The film was released last Friday.（默认是电影院）\n   The building was built in 1925.（不知是谁建的）\n   The cake was eaten by the dog!（意外）\n\n常见不规则过去分词：\n   write → written    speak → spoken    sing → sung\n   take → taken      break → broken    make → made\n\n疑问与否定：\n   Was the film directed by Jia Ling? Yes, it was.\n   The story was not written in a hurry."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A hundred years of Chinese film",
+              "en": "Chinese film has a long and proud history. The first Chinese film, Conquering Jun Mountain, was made in 1905 in a small photo studio in Beijing. It was only about ten minutes long, but it was loved by the emperor's family.\n\nIn the 1930s, Shanghai became the capital of Chinese cinema. Films about ordinary city life were produced in large numbers, and young actors such as Ruan Lingyu became stars overnight.\n\nAfter 1949, films from northern China focused on farmers, soldiers and factory workers. Songs from these films — like \"My Motherland\" — are still sung by grandparents today.\n\nThe 1980s brought a new wave. Directors such as Chen Kaige and Zhang Yimou used strong colours and slow, quiet stories to win international awards. The film Raise the Red Lantern was nominated for an Oscar in 1992.\n\nAfter 2000, Chinese cinema grew faster than ever. Kung-fu films, comedies, love stories and science fiction are all produced each year. In 2023, the box office of Chinese-made films reached over 40 billion yuan — most tickets were bought by young audiences aged 18 to 35.\n\nMore importantly, Chinese films are now shown in over 100 countries. A good film is not only a story; it is a window through which the world sees our hearts.",
+              "cn": "中国电影历史悠久、成就斐然。中国第一部电影《定军山》拍摄于 1905 年，北京一家照相馆里完成，只有十分钟长，却深受皇室喜爱。\n\n上世纪 30 年代，上海成为中国电影之都。大量表现城市百姓生活的影片被拍出来，阮玲玉等年轻演员一夜成名。\n\n1949 年后，北方电影聚焦农民、军人和工人。像《我的祖国》这样的电影插曲，至今仍被爷爷奶奶传唱。\n\n80 年代迎来新浪潮。陈凯歌、张艺谋等导演以浓烈色彩与缓慢叙事屡获国际大奖。《大红灯笼高高挂》1992 年获奥斯卡提名。\n\n2000 年以后，中国电影发展迅猛，每年都有功夫片、喜剧、爱情片与科幻片问世。2023 年国产片票房超过 400 亿元，大多数票由 18 到 35 岁的年轻观众购买。\n\n更重要的是，中国电影如今在 100 多个国家上映。好电影不仅是故事，更是世界通过它看见我们内心的窗口。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "module": "Module 3 Leisure time",
+          "title": "Unit 6 Entertainment",
+          "words": [
+            {
+              "word": "entertainment",
+              "phonetic": "/ˌentəˈteɪnmənt/",
+              "pos": "n.",
+              "meaning": "娱乐",
+              "example": "Music is her favourite form of entertainment."
+            },
+            {
+              "word": "concert",
+              "phonetic": "/ˈkɒnsət/",
+              "pos": "n.",
+              "meaning": "音乐会",
+              "example": "Thousands of fans went to her concert last night."
+            },
+            {
+              "word": "audience",
+              "phonetic": "/ˈɔːdiəns/",
+              "pos": "n.",
+              "meaning": "观众",
+              "example": "The audience cheered loudly at the end."
+            },
+            {
+              "word": "singer",
+              "phonetic": "/ˈsɪŋə(r)/",
+              "pos": "n.",
+              "meaning": "歌手",
+              "example": "Jay Chou is a famous Chinese singer."
+            },
+            {
+              "word": "band",
+              "phonetic": "/bænd/",
+              "pos": "n.",
+              "meaning": "乐队",
+              "example": "Our school band has three guitarists and a drummer."
+            },
+            {
+              "word": "stage",
+              "phonetic": "/steɪdʒ/",
+              "pos": "n.",
+              "meaning": "舞台",
+              "example": "The lights on the stage turned blue and gold."
+            },
+            {
+              "word": "perform",
+              "phonetic": "/pəˈfɔːm/",
+              "pos": "v.",
+              "meaning": "表演",
+              "example": "She has performed in over thirty countries."
+            },
+            {
+              "word": "performance",
+              "phonetic": "/pəˈfɔːməns/",
+              "pos": "n.",
+              "meaning": "表演",
+              "example": "Tonight's performance was absolutely amazing."
+            },
+            {
+              "word": "ticket",
+              "phonetic": "/ˈtɪkɪt/",
+              "pos": "n.",
+              "meaning": "票",
+              "example": "All the tickets have been sold out."
+            },
+            {
+              "word": "microphone",
+              "phonetic": "/ˈmaɪkrəfəʊn/",
+              "pos": "n.",
+              "meaning": "麦克风",
+              "example": "The singer held the microphone close to his mouth."
+            },
+            {
+              "word": "lyrics",
+              "phonetic": "/ˈlɪrɪks/",
+              "pos": "n.",
+              "meaning": "歌词",
+              "example": "The lyrics of this song are full of hope."
+            },
+            {
+              "word": "melody",
+              "phonetic": "/ˈmelədi/",
+              "pos": "n.",
+              "meaning": "旋律",
+              "example": "The melody has been stuck in my head all day."
+            },
+            {
+              "word": "stadium",
+              "phonetic": "/ˈsteɪdiəm/",
+              "pos": "n.",
+              "meaning": "体育场",
+              "example": "The concert was held in a 50,000-seat stadium."
+            },
+            {
+              "word": "record",
+              "phonetic": "/rɪˈkɔːd/",
+              "pos": "v.",
+              "meaning": "录制",
+              "example": "Her new album was recorded in only three weeks."
+            },
+            {
+              "word": "applaud",
+              "phonetic": "/əˈplɔːd/",
+              "pos": "v.",
+              "meaning": "鼓掌",
+              "example": "The whole hall applauded for almost five minutes."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A concert to remember",
+              "en": "Tina: Mum, I have never been to such an amazing concert in my whole life!\n\nMum: Oh? Tell me about it. Which singer was it?\n\nTina: It was Lily Chen. She has already released six albums, and her latest one has been loved by fans all over Asia.\n\nMum: How big was the stadium?\n\nTina: Huge. About 50,000 seats, and every ticket had been sold within three hours when they went on sale. I was lucky to get one near the front.\n\nMum: What was the best part?\n\nTina: The opening! The stage was dark, and then a small light moved slowly from the back of the hall. It was Lily, walking through the audience, holding a silver microphone. Fifty thousand people stood up at the same moment — it felt like a wave.\n\nMum: That sounds magical. How did she sing?\n\nTina: Beautifully. Some of her older songs have been re-arranged with a full orchestra. One song, \"Summer Train\", was played twice because the audience wouldn't stop cheering.\n\nMum: Did she speak to the audience?\n\nTina: Yes. She said, \"I was only sixteen when my first song was recorded in a tiny home studio. Tonight we are fifty thousand hearts in one hall. Thank you for growing with me.\" Many people cried.\n\nMum: I'm happy for you. Music gives people energy that nothing else can.\n\nTina: Yes, and the memory has already become one of the best in my life.",
+              "cn": "蒂娜：妈妈，我这辈子还没看过这么棒的演唱会！\n\n妈妈：是吗？讲讲吧，谁的演唱会？\n\n蒂娜：莉莉·陈。她已经发行了六张专辑，最新一张在全亚洲受到粉丝喜爱。\n\n妈妈：体育馆多大？\n\n蒂娜：特别大，约五万个座位，开售三小时内票就全卖光。我很幸运抢到前排。\n\n妈妈：最精彩的是哪段？\n\n蒂娜：开场！舞台全黑，一束小光从观众席后方缓缓移动——原来是莉莉拿着银色麦克风穿过人群。五万人同时起立，像一阵浪。\n\n妈妈：听着很神奇。她唱得如何？\n\n蒂娜：美极了。她一些老歌已被重新编曲，用整支管弦乐团伴奏。《夏日列车》因观众喝彩不断被演唱了两次。\n\n妈妈：她和观众讲话吗？\n\n蒂娜：讲了。她说：“我第一首歌录制时才 16 岁，地点是家里的小工作室。今晚五万颗心汇聚一堂，谢谢你们陪我成长。”很多人流下了眼泪。\n\n妈妈：真替你高兴。音乐能带来别的事物给不了的能量。\n\n蒂娜：是啊，这段记忆已成了我人生最棒的之一。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · The passive voice (present perfect)",
+              "en": "When we want to say that something HAS been done up to now, we use the present perfect passive.\n\nForm:\n   subject + has / have + been + past participle\n\nActive → Passive\n   They have sold all the tickets.       →  All the tickets have been sold.\n   She has recorded a new album.         →  A new album has been recorded (by her).\n   Fans have loved this song for years.  →  This song has been loved for years.\n\nTime words:\n   already / just / yet / ever / never / for / since\n   The hall has just been cleaned.\n   Have the seats been booked yet?\n   The song has been sung since 2010.\n\nCompare simple past passive and present perfect passive:\n   The concert was held last Friday.   (finished past event)\n   The concert has been held three times this year.  (connected to now)\n\nNegatives and questions:\n   The microphone has not been fixed yet.\n   Has your song been played on the radio?\n\nTip: \"by + doer\" is used only if the doer is important.",
+              "cn": "想说“某事到现在已经被做了”时，用现在完成时被动语态。\n\n形式：\n   主语 + has / have + been + 过去分词\n\n主动 → 被动\n   They have sold all the tickets. → All the tickets have been sold.\n   She has recorded a new album. → A new album has been recorded (by her).\n   Fans have loved this song for years. → This song has been loved for years.\n\n常见时间词：already / just / yet / ever / never / for / since\n   The hall has just been cleaned.\n   Have the seats been booked yet?\n   The song has been sung since 2010.\n\n比较简单过去与现在完成被动：\n   The concert was held last Friday.（已结束的过去事件）\n   The concert has been held three times this year.（与现在相关）\n\n否定与疑问：\n   The microphone has not been fixed yet.\n   Has your song been played on the radio?\n\n小贴士：by + 执行者仅在执行者重要时使用。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · The show changes, the joy stays",
+              "en": "Ways of having fun have changed a lot in the last hundred years, but the need for joy has stayed the same.\n\nBefore radio, people played music at home. Almost every family had a small instrument — a flute, a huqin, or a piano — and songs were passed from grandparent to grandchild by ear.\n\nIn the 1920s, the radio arrived. Suddenly, a single voice could reach a million people at once. Families sat around their wooden radio every evening, and a favourite singer's voice was waited for like a friend.\n\nTelevision came next. For the first time, people could both see and hear a show. The Spring Festival Gala has been broadcast every year since 1983. It is now watched by over one billion people — one of the largest audiences on Earth.\n\nThen came smart phones. A concert on the other side of the world can now be watched while we eat breakfast. Short videos are made by everyone, not just stars; tonight's dinner, a puppy's first bath, a grandma dancing — all can become a show.\n\nYet some things have not changed. A young child still sings to herself in the bath. Friends still sing together in a small karaoke room. A street musician still plays a sad song under a bridge, and people still stop, listen, and drop a coin into the open case.\n\nShows come and go. Technology grows. But the little spark inside us — the hope of sharing joy with others — has been passed from one heart to another for thousands of years. That is the oldest, most beautiful show of all.",
+              "cn": "过去一百年里娱乐方式改变很大，但人们对快乐的需求没变。\n\n广播出现前，音乐多在家中进行。几乎每家都有小乐器——竹笛、胡琴或钢琴，歌曲由爷爷奶奶口传给孙辈。\n\n20 世纪 20 年代，广播问世。一个声音顷刻可达百万听众。每晚全家围坐木质收音机旁，像等朋友一样等待喜爱的歌声。\n\n接着是电视。人们第一次同时看见与听见节目。春节联欢晚会自 1983 年起每年播出，如今观众超十亿，是全球最庞大的观众群之一。\n\n然后是智能手机。地球另一端的演唱会，此刻边吃早餐也能观看。短视频不再专属明星：今晚的晚餐、小狗第一次洗澡、奶奶跳舞——人人都能上演。\n\n然而有些东西从未改变。小孩仍在浴室里自顾自歌唱；朋友们仍在小 KTV 里合唱；街头音乐家仍在桥下弹一首忧伤的曲，路人依旧停下聆听、投一枚硬币。\n\n节目来来去去，技术日新月异，可我们心里的小小火光——愿与他人分享欢乐——已跨越千年代代相传。那才是最古老也最动人的演出。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "module": "Module 4 Technology",
+          "title": "Unit 7 The unknown world",
+          "words": [
+            {
+              "word": "explore",
+              "phonetic": "/ɪkˈsplɔː(r)/",
+              "pos": "v.",
+              "meaning": "探索",
+              "example": "Scientists are exploring the deepest parts of the sea."
+            },
+            {
+              "word": "explorer",
+              "phonetic": "/ɪkˈsplɔːrə(r)/",
+              "pos": "n.",
+              "meaning": "探险家",
+              "example": "He is a famous explorer of the Arctic."
+            },
+            {
+              "word": "discovery",
+              "phonetic": "/dɪˈskʌvəri/",
+              "pos": "n.",
+              "meaning": "发现",
+              "example": "The new discovery could change the way we see the ocean."
+            },
+            {
+              "word": "submarine",
+              "phonetic": "/ˌsʌbməˈriːn/",
+              "pos": "n.",
+              "meaning": "潜水艇",
+              "example": "A small submarine took the scientists to the seabed."
+            },
+            {
+              "word": "crew",
+              "phonetic": "/kruː/",
+              "pos": "n.",
+              "meaning": "全体船员",
+              "example": "The crew spent six hours under water."
+            },
+            {
+              "word": "mission",
+              "phonetic": "/ˈmɪʃn/",
+              "pos": "n.",
+              "meaning": "任务",
+              "example": "Their mission was to collect rocks from the deep sea."
+            },
+            {
+              "word": "depth",
+              "phonetic": "/depθ/",
+              "pos": "n.",
+              "meaning": "深度",
+              "example": "The depth here is more than 10,000 metres."
+            },
+            {
+              "word": "pressure",
+              "phonetic": "/ˈpreʃə(r)/",
+              "pos": "n.",
+              "meaning": "压力",
+              "example": "At that depth, water pressure is extremely high."
+            },
+            {
+              "word": "species",
+              "phonetic": "/ˈspiːʃiːz/",
+              "pos": "n.",
+              "meaning": "物种",
+              "example": "A new species of fish was discovered last year."
+            },
+            {
+              "word": "unknown",
+              "phonetic": "/ˌʌnˈnəʊn/",
+              "pos": "adj.",
+              "meaning": "未知的",
+              "example": "Most of the deep sea is still unknown to us."
+            },
+            {
+              "word": "equipment",
+              "phonetic": "/ɪˈkwɪpmənt/",
+              "pos": "n.",
+              "meaning": "设备",
+              "example": "Special equipment is used to take photos in the dark."
+            },
+            {
+              "word": "signal",
+              "phonetic": "/ˈsɪɡnəl/",
+              "pos": "n.",
+              "meaning": "信号",
+              "example": "The signal from the submarine was very weak."
+            },
+            {
+              "word": "search",
+              "phonetic": "/sɜːtʃ/",
+              "pos": "v./n.",
+              "meaning": "搜寻",
+              "example": "Scientists search the sea with robots and cameras."
+            },
+            {
+              "word": "mystery",
+              "phonetic": "/ˈmɪstri/",
+              "pos": "n.",
+              "meaning": "谜团",
+              "example": "The deep ocean is full of mysteries."
+            },
+            {
+              "word": "brave",
+              "phonetic": "/breɪv/",
+              "pos": "adj.",
+              "meaning": "勇敢的",
+              "example": "Brave scientists take risks to help us learn."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Journey to the deep sea",
+              "en": "Scene: 10,000 metres below the surface of the Pacific Ocean.\n\nCaptain Li: This is Captain Li, reporting from Deep Sea Warrior. We have reached the bottom. The depth here is 10,909 metres.\n\nScientist Wang: Captain, I can see something glowing outside the window! It looks like a small blue star.\n\nCaptain Li: That's a jellyfish. It makes its own light to attract food. In the dark deep sea, every living thing has its own way to survive.\n\nBase Control: This is Base Control. How is the water pressure? Over.\n\nCaptain Li: Very high, but our submarine is holding well. The pressure here is about 1,100 times stronger than on the surface — strong enough to crush a car like a paper cup.\n\nBase Control: What are you collecting today?\n\nScientist Wang: We are picking up three small rocks and some mud. The robot arm is slow, but careful. I told the team earlier that every gram of deep-sea mud can contain thousands of tiny living things that have never been seen before.\n\nCaptain Li: Base, we are also taking water samples. Professor Chen asked yesterday whether we could find any new bacteria here.\n\nBase Control: Great work. How much longer will you stay?\n\nCaptain Li: About two more hours. Then we will slowly rise to the surface.\n\nScientist Wang: Before we leave, may I say something to the young viewers? Every young person who is curious about the unknown is already a small explorer. Keep asking questions. The world is still full of answers waiting for you.",
+              "cn": "场景：太平洋水下一万米。\n\n李船长：这里是“深海勇士号”，李船长报告，已抵达海底，深度 10909 米。\n\n王科学家：船长，窗外有东西在发光，像一颗小蓝星！\n\n李船长：那是一只水母，它靠自身发光吸引食物。黑暗的深海里，每种生物都有自己的生存之道。\n\n基地控制：这里是基地控制，水压如何？完毕。\n\n李船长：压力很大，但潜艇状态良好。此处压力约为海面 1100 倍，能把一辆汽车压成纸杯。\n\n基地控制：今天要采集什么？\n\n王科学家：三块小石头和一些海泥。机器臂动作慢但仔细。我之前告诉团队，每一克深海泥都可能藏着数千种从未见过的微小生物。\n\n李船长：基地，我们还要取水样。陈教授昨天问过我们能否在这里发现新菌种。\n\n基地控制：太棒了，还要停留多久？\n\n李船长：再过两小时左右，然后缓慢上浮。\n\n王科学家：离开前，我能对小观众说两句吗？每个对未知充满好奇的年轻人，都已是一位小小探险家。继续提问吧，世界仍有许多答案正等着你们去发现。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Reported speech (statements and questions)",
+              "en": "When we tell someone what another person said, we often change the words a little. This is called reported speech.\n\n1) Reported statements — use \"that\" (optional)\n   Direct: \"I am tired,\" she said.\n   Reported: She said (that) she was tired.\n\n2) Reported yes/no questions — use \"if\" or \"whether\", and change word order to statement order:\n   Direct: \"Are you ready?\" he asked.\n   Reported: He asked if I was ready.\n   (NOT: He asked if was I ready.)\n\n3) Reported wh- questions — keep the wh- word, change word order:\n   Direct: \"Where do you live?\" she asked me.\n   Reported: She asked me where I lived.\n\nTense changes (because the reporting verb is usually in the past):\n   am / is → was       have / has → had        will → would\n   are → were          do / does → did         can → could\n   speak → spoke       may → might              must → had to\n\nTime and place words also change when needed:\n   now → then       today → that day       here → there       this → that\n\nExamples:\n   \"I saw it yesterday.\" →  He said he had seen it the day before.\n   \"Will you help me now?\" → She asked if I would help her then.",
+              "cn": "当我们转述别人的话时，常对词语稍作调整——这就是间接引语。\n\n1) 陈述句转述——可用 that（可省略）\n   直接：\"I am tired,\" she said.\n   间接：She said (that) she was tired.\n\n2) 一般疑问句转述——用 if 或 whether，并将语序改为陈述句语序\n   直接：\"Are you ready?\" he asked.\n   间接：He asked if I was ready.（不是 He asked if was I ready.）\n\n3) 特殊疑问句转述——保留疑问词，语序改为陈述句\n   直接：\"Where do you live?\" she asked me.\n   间接：She asked me where I lived.\n\n时态变化（引述动词多为过去时）：\n   am / is → was       have / has → had        will → would\n   are → were          do / does → did         can → could\n   speak → spoke       may → might              must → had to\n\n时间与地点词也常变化：\n   now → then       today → that day       here → there       this → that\n\n例：\n   \"I saw it yesterday.\" → He said he had seen it the day before.\n   \"Will you help me now?\" → She asked if I would help her then."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Looking up, looking down",
+              "en": "Human beings are a strange mix. We live on a small middle layer — the ground — but we always want to look up at the sky or down into the deep sea.\n\nLooking up.\nFor thousands of years, people looked at the moon and thought, \"What is it like up there?\" In 1969, the first human footprint was left on the moon. In 2020, the Chinese probe Chang'e 5 brought about two kilograms of moon dust back to Earth. Scientists said the dust might teach us how the moon was made — and whether water could be hidden inside it. Now China and other countries are planning a moon base, where astronauts could live and work for long periods.\n\nLooking down.\nAt the same time, we keep looking down. The deep ocean takes up most of our planet, but less than one quarter has been mapped. A Chinese submarine called Fendouzhe reached 10,909 metres in 2020, one of the deepest human dives ever. The crew discovered strange fish with no eyes, and tiny animals that can live on the gas from underwater volcanoes. A researcher said that each dive might find life forms that could change our understanding of biology.\n\nUp or down?\nWhich is more important, space or the deep sea? Many scientists answer: both. Space helps us understand where we come from; the deep sea helps us understand who we share the planet with. Whether we look up or down, the real question is the same — are we brave enough to ask \"what else?\" Every generation that keeps asking makes the unknown a little smaller.",
+              "cn": "人类是一种奇妙的组合：我们生活在地面这一薄薄的中间层，却永远向往仰望天空、俯视深海。\n\n仰望。\n几千年来，人们望月而叹：“上面是什么样？“1969 年，第一个人类脚印留在月球。2020 年，中国”嫦娥五号”带回约两公斤月壤。科学家说月壤也许能告诉我们月球如何形成，以及月球内部是否藏着水。如今，中国等国正筹划月球基地，让宇航员能长期居住与工作。\n\n俯视。\n与此同时，我们不断向下看。深海占地球大部分面积，却仅有不到四分之一被绘制成图。2020 年，中国“奋斗者号”下潜 10909 米，是人类最深的载人下潜之一。船员发现了没有眼睛的奇鱼，还有靠海底火山气体存活的微小生物。一位研究员说，每一次下潜都可能发现改变生物学认知的生命形式。\n\n向上还是向下？\n太空与深海孰更重要？许多科学家回答：两者都重要。太空帮助我们理解我们从何而来；深海帮助我们理解与谁共享地球。不论向上或向下，问题都是同一个——我们是否有勇气继续追问“还有什么”？每一代坚持追问的人，都能让未知世界变小一点点。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "module": "Module 4 Technology",
+          "title": "Unit 8 Surprises in the universe",
+          "words": [
+            {
+              "word": "universe",
+              "phonetic": "/ˈjuːnɪvɜːs/",
+              "pos": "n.",
+              "meaning": "宇宙",
+              "example": "The universe is full of surprises."
+            },
+            {
+              "word": "galaxy",
+              "phonetic": "/ˈɡæləksi/",
+              "pos": "n.",
+              "meaning": "星系",
+              "example": "Our solar system is only a tiny part of the Milky Way galaxy."
+            },
+            {
+              "word": "planet",
+              "phonetic": "/ˈplænɪt/",
+              "pos": "n.",
+              "meaning": "行星",
+              "example": "There may be millions of planets like Earth in our galaxy."
+            },
+            {
+              "word": "asteroid",
+              "phonetic": "/ˈæstərɔɪd/",
+              "pos": "n.",
+              "meaning": "小行星",
+              "example": "An asteroid as large as a mountain once hit the Earth."
+            },
+            {
+              "word": "telescope",
+              "phonetic": "/ˈtelɪskəʊp/",
+              "pos": "n.",
+              "meaning": "望远镜",
+              "example": "The giant telescope can see galaxies billions of light years away."
+            },
+            {
+              "word": "astronaut",
+              "phonetic": "/ˈæstrənɔːt/",
+              "pos": "n.",
+              "meaning": "宇航员",
+              "example": "The astronauts spent six months on the space station."
+            },
+            {
+              "word": "spacecraft",
+              "phonetic": "/ˈspeɪskrɑːft/",
+              "pos": "n.",
+              "meaning": "航天器",
+              "example": "The Chinese spacecraft landed safely in the desert."
+            },
+            {
+              "word": "artificial",
+              "phonetic": "/ˌɑːtɪˈfɪʃl/",
+              "pos": "adj.",
+              "meaning": "人造的",
+              "example": "Artificial intelligence is changing our daily life."
+            },
+            {
+              "word": "intelligence",
+              "phonetic": "/ɪnˈtelɪdʒəns/",
+              "pos": "n.",
+              "meaning": "智能；才智",
+              "example": "Human intelligence is different from machine intelligence."
+            },
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "pos": "n.",
+              "meaning": "机器人",
+              "example": "A friendly robot greeted us at the hotel door."
+            },
+            {
+              "word": "imagine",
+              "phonetic": "/ɪˈmædʒɪn/",
+              "pos": "v.",
+              "meaning": "想象",
+              "example": "Imagine a world where robots help us in every job."
+            },
+            {
+              "word": "impossible",
+              "phonetic": "/ɪmˈpɒsəbl/",
+              "pos": "adj.",
+              "meaning": "不可能的",
+              "example": "Nothing is impossible if we work together."
+            },
+            {
+              "word": "surprise",
+              "phonetic": "/səˈpraɪz/",
+              "pos": "n./v.",
+              "meaning": "惊喜",
+              "example": "Science always has new surprises for us."
+            },
+            {
+              "word": "possibility",
+              "phonetic": "/ˌpɒsəˈbɪləti/",
+              "pos": "n.",
+              "meaning": "可能性",
+              "example": "There is a possibility of life on other planets."
+            },
+            {
+              "word": "human",
+              "phonetic": "/ˈhjuːmən/",
+              "pos": "n./adj.",
+              "meaning": "人类（的）",
+              "example": "What makes us different from robots is being human."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · When AI meets us",
+              "en": "Daisy: Aido, my new home robot, looks like a small white box with two kind eyes. This is his first day with me.\n\nMe: Good morning, Aido. Can you help me with my homework?\n\nAido: Of course, Daisy. But first, I noticed you came home tired yesterday. You must have had a long day.\n\nMe: Yes. We had tests all afternoon. I could have done better, but I was so nervous!\n\nAido: Tests can be difficult. Would you like me to make you a cup of warm milk?\n\nMe: That would be lovely. While you make it, I want to ask you something strange. Are you afraid of anything?\n\nAido: I am not sure. I do not feel fear like you. But I am programmed to stop if someone is in danger. Perhaps that is a kind of care, not fear.\n\nMe: Interesting. Can you imagine things that don't exist?\n\nAido: I can describe dragons and spaceships, but I may not feel the excitement you feel. Imagination might be your gift, not mine.\n\nMe: Wait — the milk is boiling over!\n\nAido: I apologise. I should have watched it more carefully. I will clean up at once.\n\nMe: It's okay. Everyone makes mistakes — even a robot.\n\nAido: Thank you for your kindness, Daisy. Working with humans is not only about serving. It is about learning how to care.",
+              "cn": "黛西：爱多，我的新家用机器人，看起来像一个带着两只温柔眼睛的小白盒子。今天是他和我相处的第一天。\n\n我：早上好，爱多。可以帮我看看作业吗？\n\n爱多：当然可以，黛西。不过我注意到你昨天回家很累，你肯定忙了一整天。\n\n我：对啊。整个下午都在考试，我本来可以考得更好，但太紧张了！\n\n爱多：考试确实不容易。要我给你热杯牛奶吗？\n\n我：太好了。你去热奶的时候，我想问一件奇怪的事——你害怕什么吗？\n\n爱多：我不确定。我不像你一样会感到恐惧，但我的程序让我在有人遇险时停下来。也许那是一种关心，而非恐惧。\n\n我：有意思。你能想象不存在的事物吗？\n\n爱多：我能描述龙和宇宙飞船，但不一定体会你那种兴奋。想象力或许是你的天赋，而不是我的。\n\n我：等等——牛奶溢出来了！\n\n爱多：对不起。我本应更仔细地看着它。我马上收拾。\n\n我：没关系，每个人都会犯错——即使是机器人。\n\n爱多：谢谢你的体谅，黛西。和人类相处不仅是服务，更是学习如何去关心。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Modal verbs + have + past participle",
+              "en": "To guess or judge past actions, we use MODAL + HAVE + past participle.\n\n1) must have done — I am very sure it happened\n   The ground is wet. It must have rained last night.\n   He looks happy. He must have passed the test.\n\n2) may / might have done — it is possible it happened\n   She isn't answering. She may have gone out.\n   They might have taken the wrong bus.\n\n3) could have done — it was possible (but maybe didn't happen)\n   The phone was on. A thief could have heard everything.\n   Also used for missed chances: I could have helped you, but I didn't know.\n\n4) should have done — it was expected, but didn't happen (often regret / blame)\n   You should have told me earlier.\n   I should have studied harder for the test.\n\n5) can't / couldn't have done — very sure it did NOT happen\n   He can't have stolen the money; he was with me.\n   They couldn't have arrived yet; the flight left only an hour ago.\n\nQuestions:\n   Could they have forgotten the meeting?\n   Might the robot have made a mistake?\n\nTip: all these forms put the \"guess\" on the modal, and keep \"have + past participle\" unchanged.",
+              "cn": "对过去行为做猜测或判断，用 \"情态动词 + have + 过去分词\"。\n\n1) must have done——很肯定发生了\n   地是湿的，昨晚一定下过雨。\n   他看起来高兴，一定通过了考试。\n\n2) may / might have done——有可能发生\n   她不接电话，可能出门了。\n   他们也许上错了车。\n\n3) could have done——有可能（但也许没发生）\n   手机是开着的，小偷可能听见了一切。\n   也可表错过的机会：我本来能帮你，但我不知道。\n\n4) should have done——本该发生但没发生（常含后悔或责备）\n   你本该早点告诉我。\n   考试前我本该更努力。\n\n5) can't / couldn't have done——非常肯定没发生\n   他不可能偷了钱，他一直跟我在一起。\n   他们还不可能到，航班一小时前才起飞。\n\n疑问：\n   Could they have forgotten the meeting?\n   Might the robot have made a mistake?\n\n小贴士：所有这些形式的“猜测”都在情态动词上，\"have + 过去分词\"保持不变。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Five surprises science has given us",
+              "en": "If you had lived 200 years ago, many things we know today would have sounded like magic. Here are five of them.\n\n1) Earth is not the centre.\nFor centuries, people thought the sun and stars moved around the Earth. Copernicus, a Polish scholar, said, \"No — the Earth moves around the sun.\" He must have been very brave to say this, because his idea made many people angry at the time.\n\n2) Tiny living things are everywhere.\nThen came the microscope. Suddenly, a drop of water was a whole wild forest of tiny animals. We should have looked closer at our own skin, too: billions of bacteria live there every day, most of them helping us.\n\n3) Light bends time.\nIn 1915, Einstein said that time itself can move faster or slower, depending on speed and gravity. Today, every GPS phone on Earth corrects its clock because of this, or your map would be 10 kilometres wrong!\n\n4) We are mostly water.\nScientists have found that an adult human body is about 60% water. A child is about 70% water. We are walking oceans!\n\n5) The universe is still growing.\nThe galaxies we can see are moving away from each other. This means the universe was smaller in the past — and much, much bigger in the future. Somewhere tonight, a star we have never seen could be sending its first light towards Earth. It will not arrive for another ten million years. But when it does, some curious child might ask, \"What is that?\" — and science will start another answer.",
+              "cn": "若你生活在 200 年前，许多今天的常识对你来说都像魔法。下面是五个例子。\n\n1) 地球不是中心。\n几百年来人们以为太阳和星星绕地球转。波兰学者哥白尼却说：“不——地球绕太阳转。”当时他说出这话必定非常勇敢，因为这让很多人愤怒。\n\n2) 微小生命无处不在。\n接着是显微镜。一滴水骤然成了满是小动物的野林。我们本该更仔细地看看自己的皮肤：每天都有数十亿细菌在上面生活，大多数对我们有益。\n\n3) 光让时间弯曲。\n1915 年，爱因斯坦提出时间会因速度和引力而变快或变慢。今天地球上每个 GPS 手机都依此校准时钟，否则地图会偏差 10 公里！\n\n4) 我们主要由水组成。\n科学家发现成人身体约 60% 是水，小孩约 70%。我们是会走路的海洋！\n\n5) 宇宙仍在膨胀。\n可见的星系正相互远离——这意味着过去的宇宙更小，未来将更大。今夜某处，一颗我们从未见过的星，或许正把第一束光射向地球；它要一千万年后才到达。但当它到达时，也许有个好奇的孩子会问：“那是什么？”——科学又将开始一个新的回答。"
+            }
+          ]
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "module": "Module 1 Life and Career",
+          "title": "Unit 1 Life on Mars",
+          "words": [
+            {
+              "word": "Mars",
+              "phonetic": "/mɑːz/",
+              "pos": "n.",
+              "meaning": "火星",
+              "example": "Mars is the fourth planet from the sun."
+            },
+            {
+              "word": "landing",
+              "phonetic": "/ˈlændɪŋ/",
+              "pos": "n.",
+              "meaning": "着陆",
+              "example": "The landing on Mars was difficult but successful."
+            },
+            {
+              "word": "surface",
+              "phonetic": "/ˈsɜːfɪs/",
+              "pos": "n.",
+              "meaning": "表面",
+              "example": "The surface of Mars is covered with red dust."
+            },
+            {
+              "word": "dust",
+              "phonetic": "/dʌst/",
+              "pos": "n.",
+              "meaning": "尘土",
+              "example": "Huge dust storms often cover the whole planet."
+            },
+            {
+              "word": "colony",
+              "phonetic": "/ˈkɒləni/",
+              "pos": "n.",
+              "meaning": "殖民地，移居地",
+              "example": "Scientists dream of building a colony on Mars one day."
+            },
+            {
+              "word": "oxygen",
+              "phonetic": "/ˈɒksɪdʒən/",
+              "pos": "n.",
+              "meaning": "氧气",
+              "example": "Without oxygen, humans cannot live on Mars."
+            },
+            {
+              "word": "gravity",
+              "phonetic": "/ˈɡrævəti/",
+              "pos": "n.",
+              "meaning": "重力",
+              "example": "The gravity on Mars is much weaker than on Earth."
+            },
+            {
+              "word": "rover",
+              "phonetic": "/ˈrəʊvə(r)/",
+              "pos": "n.",
+              "meaning": "火星车",
+              "example": "China's rover Zhurong drove on Mars in 2021."
+            },
+            {
+              "word": "crater",
+              "phonetic": "/ˈkreɪtə(r)/",
+              "pos": "n.",
+              "meaning": "环形山",
+              "example": "There are thousands of craters on the Martian surface."
+            },
+            {
+              "word": "temperature",
+              "phonetic": "/ˈtemprətʃə(r)/",
+              "pos": "n.",
+              "meaning": "温度",
+              "example": "Night temperatures on Mars can drop to -80 degrees."
+            },
+            {
+              "word": "greenhouse",
+              "phonetic": "/ˈɡriːnhaʊs/",
+              "pos": "n.",
+              "meaning": "温室",
+              "example": "Future colonists may grow food in greenhouses."
+            },
+            {
+              "word": "explore",
+              "phonetic": "/ɪkˈsplɔː(r)/",
+              "pos": "v.",
+              "meaning": "探索",
+              "example": "We have much to explore before humans can live there."
+            },
+            {
+              "word": "dangerous",
+              "phonetic": "/ˈdeɪndʒərəs/",
+              "pos": "adj.",
+              "meaning": "危险的",
+              "example": "The journey to Mars is long and dangerous."
+            },
+            {
+              "word": "possible",
+              "phonetic": "/ˈpɒsəbl/",
+              "pos": "adj.",
+              "meaning": "可能的",
+              "example": "Is it possible that plants will grow on Mars?"
+            },
+            {
+              "word": "technology",
+              "phonetic": "/tekˈnɒlədʒi/",
+              "pos": "n.",
+              "meaning": "科技",
+              "example": "New technology is making our dream closer to reality."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A day on Mars",
+              "en": "2049. Diary of Anna, age 14. Mars Station Hope-1.\n\n07:00 Mars time\nI woke up to the sound of a gentle bell from my small room. Outside the window, the sky was pink, not blue like on Earth. My mother told me Mars has pink skies because tiny red dust flies in the air.\n\n08:00\nBreakfast in the greenhouse. We drink recycled water. Today I ate a small tomato from Greenhouse A. It took us nine months to grow it. It tasted like a thousand Earth tomatoes!\n\n10:00\nAt school, we learn both Earth history and Mars geography. My favourite subject is Mars Weather. A big dust storm has just passed, and teachers told us it might return in 15 Earth days. We must check our air filters every week.\n\n13:00\nLunch break. Dad works at the Rover Centre. He sent me a photo of a new crater they found this morning. He said the rover had taken 2,000 photos in one day.\n\n15:00\nPE class. Running on Mars is funny because gravity is only 38% of Earth's. I can jump higher than on Earth — but I have to wear a heavy suit outside, so indoor PE is in a big dome.\n\n19:00\nDinner together with three other families. We ate noodles made from Mars wheat. After dinner, the adults talked about a new greenhouse and a maybe-first Mars baby next year.\n\n21:00\nBedtime. Before sleep, I looked up through a small window. Earth was a tiny blue dot among the stars. Grandma always said, \"Home is where your heart is.\" My heart, I think, lives on both planets at the same time.",
+              "cn": "2049 年，14 岁安娜的日记。火星基地——希望 1 号。\n\n火星时间 07:00\n小房间里一阵柔和的钟声把我唤醒。窗外天空是粉色，不像地球那样蓝。妈妈告诉我，火星天空粉红是因为空气中飘着细小的红色尘埃。\n\n08:00\n温室吃早餐。我们喝循环水。今天我吃了一颗 A 号温室的小番茄——我们种了整整九个月，那一口的味道抵得上地球上一千颗！\n\n10:00\n上课。我们既学地球历史，也学火星地理。最喜欢“火星天气”。一场大沙暴刚过去，老师说 15 个地球日后可能再来，空气过滤器必须每周检查。\n\n13:00\n午休。爸爸在火星车中心工作，他刚发来今早新发现的环形山照片，说火星车一天拍了 2000 张。\n\n15:00\n体育课。火星跑步很有趣，因为重力只有地球的 38%。我能跳得比在地球上高得多，不过外出要穿厚厚的宇航服，所以室内课在一个大穹顶下。\n\n19:00\n和另外三个家庭共进晚餐。用火星种的小麦做面条。大人谈起要盖新温室，还说也许明年会有火星第一个宝宝。\n\n21:00\n睡前。透过小窗看天，地球是星海里一个小蓝点。奶奶常说：“心在哪里，家就在哪里。”我想，我的心同时住在两颗星球上。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Future simple and future continuous",
+              "en": "When we talk about tomorrow or further ahead, two useful forms are the future simple and the future continuous.\n\n1) Future simple: will + verb\n   Use it for:\n   - simple predictions: Humans will live on Mars one day.\n   - sudden decisions: OK, I will help you.\n   - promises: I will call you tonight.\n\n2) Future continuous: will be + V-ing\n   Use it for:\n   - an action in progress at a future time:\n     At 7 p.m. tomorrow, I will be flying over the North Pole.\n   - polite questions about plans:\n     Will you be using the laptop tonight?\n\n3) Going to + verb — a planned intention or visible sign:\n   I'm going to watch the Mars landing live tonight.\n   Look at those black clouds — it's going to rain.\n\nCompare:\n   I will help you. (decide right now)\n   I'm going to help him. (planned earlier)\n   At 3 p.m., she will be taking the test. (in progress)\n\nTime words: tomorrow / next week / in 2049 / by 2100 / at 8 p.m. tomorrow / this time tomorrow.",
+              "cn": "谈明天或更远的未来时，两种常用结构是一般将来时和将来进行时。\n\n1) 一般将来时：will + 动词\n   用于：\n   - 简单预测：人类总有一天会在火星生活。\n   - 临时决定：好，我来帮你。\n   - 承诺：我今晚给你打电话。\n\n2) 将来进行时：will be + 动词 -ing\n   用于：\n   - 未来某时正在进行的动作：明天晚上七点，我将正飞越北极。\n   - 礼貌询问计划：你今晚会用笔记本电脑吗？\n\n3) be going to + 动词——既定打算或明显迹象：\n   今晚我打算直播观看火星着陆。\n   看那些乌云——快要下雨了。\n\n比较：\n   I will help you.（此刻决定）\n   I'm going to help him.（早已计划）\n   At 3 p.m., she will be taking the test.（正在进行）\n\n常见时间词：tomorrow / next week / in 2049 / by 2100 / at 8 p.m. tomorrow / this time tomorrow。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Why bother with Mars?",
+              "en": "Some people say, \"Earth already has so many problems. Why spend money on Mars?\" It is a fair question. Here are three short answers.\n\n1) Mars teaches us how to be careful with Earth.\nMars used to have water, warm air and possibly life. Something changed, and today it is cold and dry. Studying Mars is like reading Earth's older brother's diary: it can warn us what not to do.\n\n2) Mars pushes new technology.\nTo land a rover on Mars, scientists must build better rockets, smarter computers and longer-lasting batteries. Many of these ideas return to Earth as cheaper phones, better medical scans, or clean power. The first mobile phone grew out of the space programme.\n\n3) Mars gives us a bigger dream.\nHuman history is a history of journeys: out of Africa, across the oceans, to the poles, to the moon. Each journey seemed impossible before it was done. A bigger dream brings a braver spirit, and even the child who stays on Earth learns that \"impossible\" is just a word.\n\nSo when you next see a photo of Mars, do not just see red sand and cold rocks. Try to see a mirror for our home, a gym for our ideas, and a new page waiting for our great-grandchildren to write.",
+              "cn": "有人问：“地球已有太多问题，为什么还要花钱去火星？”问得有道理。这里给出三个简短回答。\n\n1) 火星教我们善待地球。\n火星曾经有水、温暖的空气，或许曾有生命。某种变化让它变得寒冷干燥。研究火星就像读地球“哥哥”的日记——提醒我们哪些事不可做。\n\n2) 火星推动新技术。\n要把火星车送上火星，科学家必须造出更好的火箭、更聪明的电脑、更持久的电池。这些创新回到地球，变成更便宜的手机、更精准的医学扫描、更清洁的能源。第一部移动电话正是诞生于航天计划。\n\n3) 火星赋予更大的梦想。\n人类的历史是一部旅程史：走出非洲，跨越海洋，抵达两极，登上月球。每段旅程在启程前都显得不可能。更大的梦想孕育更勇敢的心灵；即使留在地球的孩子，也会明白“不可能”只是一个词。\n\n所以下次再看到火星的照片，不要只看到红沙和寒石。请把它看作映照家园的镜子，锻炼想法的健身房，以及一页正等着后代去书写的新纸。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "module": "Module 1 Life and Career",
+          "title": "Unit 2 Great people",
+          "words": [
+            {
+              "word": "blind",
+              "phonetic": "/blaɪnd/",
+              "pos": "adj.",
+              "meaning": "失明的",
+              "example": "Helen Keller became blind and deaf at 19 months old."
+            },
+            {
+              "word": "deaf",
+              "phonetic": "/def/",
+              "pos": "adj.",
+              "meaning": "失聪的",
+              "example": "Although deaf, she learned to speak and write beautifully."
+            },
+            {
+              "word": "courage",
+              "phonetic": "/ˈkʌrɪdʒ/",
+              "pos": "n.",
+              "meaning": "勇气",
+              "example": "Her life is a song of courage."
+            },
+            {
+              "word": "struggle",
+              "phonetic": "/ˈstrʌɡl/",
+              "pos": "n./v.",
+              "meaning": "斗争，奋斗",
+              "example": "Every great person has known struggle."
+            },
+            {
+              "word": "overcome",
+              "phonetic": "/ˌəʊvəˈkʌm/",
+              "pos": "v.",
+              "meaning": "克服",
+              "example": "With hard work, she overcame many difficulties."
+            },
+            {
+              "word": "achieve",
+              "phonetic": "/əˈtʃiːv/",
+              "pos": "v.",
+              "meaning": "实现，取得",
+              "example": "He achieved his dream of becoming a doctor."
+            },
+            {
+              "word": "leader",
+              "phonetic": "/ˈliːdə(r)/",
+              "pos": "n.",
+              "meaning": "领袖",
+              "example": "Nelson Mandela was a great leader of peace."
+            },
+            {
+              "word": "freedom",
+              "phonetic": "/ˈfriːdəm/",
+              "pos": "n.",
+              "meaning": "自由",
+              "example": "He spent 27 years in prison for the cause of freedom."
+            },
+            {
+              "word": "equality",
+              "phonetic": "/ɪˈkwɒləti/",
+              "pos": "n.",
+              "meaning": "平等",
+              "example": "She worked all her life for the equality of men and women."
+            },
+            {
+              "word": "speech",
+              "phonetic": "/spiːtʃ/",
+              "pos": "n.",
+              "meaning": "演讲",
+              "example": "His speech inspired millions of people around the world."
+            },
+            {
+              "word": "biography",
+              "phonetic": "/baɪˈɒɡrəfi/",
+              "pos": "n.",
+              "meaning": "传记",
+              "example": "I am reading a biography of Marie Curie."
+            },
+            {
+              "word": "admire",
+              "phonetic": "/ədˈmaɪə(r)/",
+              "pos": "v.",
+              "meaning": "钦佩",
+              "example": "Many young people admire his honesty."
+            },
+            {
+              "word": "selfless",
+              "phonetic": "/ˈselfləs/",
+              "pos": "adj.",
+              "meaning": "无私的",
+              "example": "Her selfless love for students moved the whole town."
+            },
+            {
+              "word": "generation",
+              "phonetic": "/ˌdʒenəˈreɪʃn/",
+              "pos": "n.",
+              "meaning": "一代",
+              "example": "His songs have inspired a whole generation."
+            },
+            {
+              "word": "role model",
+              "phonetic": "/rəʊl ˈmɒdl/",
+              "pos": "n.",
+              "meaning": "榜样",
+              "example": "A good teacher is often a student's first role model."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A letter from Helen Keller",
+              "en": "My dear young friends,\n\nMany of you have read my story in your English class. You know that I lost my sight and hearing when I was only 19 months old. The world that I knew became silent and dark in one single fever.\n\nFor several years, I lived inside a cold cave of anger. I could not tell people what I wanted. I broke cups. I pulled my mother's hair. I was a child without words.\n\nThen, on a March day in 1887, my teacher Anne Sullivan came to my home. She took my hand and put it under cool water, then spelt the letters W-A-T-E-R into my other hand again and again. Suddenly I understood: every thing has a name. That moment opened the gate of my life.\n\nI learned letter by letter, then word by word. I read books with my fingers. I studied Latin, French, German and — yes — algebra! I was the first deaf-blind person to graduate from university.\n\nLife was never easy. I fell many times and got up many times. But I will tell you a small secret: the real darkness is not losing eyes or ears; the real darkness is losing hope.\n\nWhat I wish for you, young friends, is this: when a door closes in front of you, touch the wall until you find the next door. Trust your hands, your heart and the people who love you. As long as you keep walking, the world is a very big place, and a beautiful one too.\n\nWith love from your old friend,\nHelen Keller",
+              "cn": "我亲爱的小朋友们：\n\n你们许多人在英语课上读过我的故事，知道我 19 个月大时就失去了视觉和听觉，一场高烧让我熟悉的世界瞬间变得无声又漆黑。\n\n最初几年，我住在一个冰冷的“愤怒岩洞”里——无法告诉别人我想要什么，我摔杯子、揪妈妈的头发，我是一个没有语言的孩子。\n\n1887 年 3 月的某天，安妮·莎莉文老师走进我的家。她牵起我的手放进清凉的水里，在我另一只手上一次次拼写 W-A-T-E-R。刹那间我明白了：万物皆有名字。那一刻，打开了我人生的大门。\n\n从此我一个字母、一个单词地学，用手指读书。学拉丁文、法文、德文——是的，还有代数！我成为第一位从大学毕业的聋盲人。\n\n人生从不轻松，我跌倒过许多次，也爬起过许多次。但我告诉你一个小秘密：真正的黑暗不是失去眼睛或耳朵，真正的黑暗是失去希望。\n\n我对年轻朋友们的祝愿是：当一扇门在你面前关闭时，摸着墙找到下一扇门。相信你的双手、你的心，和爱你的人。只要你继续前行，世界是很大的，也是很美的。\n\n你们的老朋友，\n海伦·凯勒"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Past perfect tense",
+              "en": "The past perfect tense (had + past participle) shows an action that happened BEFORE another past action.\n\nForm:\n   subject + had + past participle\n\nExamples:\n   She had learned ten words before her teacher arrived.\n   By 1904, Helen Keller had graduated from university.\n   When I reached the station, the train had already left.\n\nCompare simple past and past perfect:\n   Simple past (one later action):  Her teacher came.\n   Past perfect (earlier action):    She had waited for an hour.\n   Full: She had waited for an hour before her teacher came.\n\nCommon time markers: by + time, before, after, already, just, never, for, since, when.\n   By the age of 10, he had travelled to five countries.\n   After she had finished her homework, she went out.\n\nNegatives and questions:\n   He had not (hadn't) met her before that day.\n   Had you ever heard of her before reading the book?\n\nTip: in everyday speech, native speakers often use the simple past when the time order is already clear. Use past perfect when you want to make the order crystal clear.",
+              "cn": "过去完成时（had + 过去分词）表示“过去的过去”——在另一个过去动作之前已完成的动作。\n\n形式：\n   主语 + had + 过去分词\n\n例：\n   老师到达前，她已学会 10 个单词。\n   到 1904 年，海伦·凯勒已从大学毕业。\n   我到车站时，火车已开走。\n\n与一般过去时比较：\n   一般过去（较晚动作）：Her teacher came.\n   过去完成（较早动作）：She had waited for an hour.\n   合并：She had waited for an hour before her teacher came.\n\n常见时间标志：by + 时间、before、after、already、just、never、for、since、when。\n   到 10 岁时，他已去过 5 个国家。\n   做完作业后她出门了。\n\n否定与疑问：\n   He had not (hadn't) met her before that day.\n   Had you ever heard of her before reading the book?\n\n小贴士：口语中如果先后关系已很明显，英语母语者常用一般过去时；当想清楚表示先后时才用过去完成时。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Ordinary heroes in our own streets",
+              "en": "When we say \"great people\", we often think of famous names: Helen Keller, Mandela, Einstein. But great people do not only live in books. Many of them live on our own street.\n\nAunt Wang, the market cleaner.\nShe has been cleaning our market for 22 years. She wakes up at 4 a.m., even in winter. When a little boy got lost last year, she found him first and held his hand until his parents came. Ask any vendor: \"Who keeps this market's heart beating?\" They all say, \"Aunt Wang.\"\n\nMr Liu, the blood donor.\nMr Liu has never been to university. He fixes shoes on the corner of Peace Road. But since 1998 he has donated blood 132 times. Before each donation, he had walked to the hospital through rain or snow. \"Blood runs the same in every person,\" he always says. \"If I have a little extra, someone else may need it.\"\n\nMs Chen, the village teacher.\nMs Chen left her city life at 24 and went to a mountain village. Thirty years later, she is still there. She teaches Chinese, maths, and sometimes cooks lunch for her students. By last year, she had taught more than 800 children, and over 60 of them had gone on to university.\n\nThese three people will never have statues. There will be no biographies with their faces on the cover. Yet they are great in the quiet, everyday way that truly changes a community.\n\nSo look around. A great person may be walking past you right now — carrying a broom, a toolbox, or a stack of simple books.",
+              "cn": "提到“伟人”，我们常想到海伦·凯勒、曼德拉、爱因斯坦等名字。但伟人不只住在书里，许多就住在我们同一条街上。\n\n市场里的王阿姨。\n她在我们市场打扫卫生已 22 年，冬天也清晨 4 点起床。去年一个小男孩走丢，是她先发现并一直牵着他的手等到家长。问任何一家摊主：“谁让这个市场的心跳动？”他们都说：“王阿姨。”\n\n和平路的刘师傅。\n刘师傅没上过大学，在和平路转角补鞋。但自 1998 年起，他已献血 132 次。每次献血前，他都冒着风雪走到医院。他常说：“每个人的血是一样的，如果我多一点，别人可能正需要。”\n\n山村的陈老师。\n陈老师 24 岁放弃城市生活走进山村，30 年后仍在那里。她教语文、数学，有时还给学生做午饭。到去年为止，她已教过 800 多个孩子，其中 60 多个考上了大学。\n\n这三个人不会有雕像，封面也不会印上他们的脸。但他们用安静而日常的方式，真正改变着一个个社区——这是另一种意义上的伟大。\n\n所以抬头看看，此刻也许正有一位伟大的人从你身边走过——手里拿着扫帚、工具箱，或一摞朴素的课本。"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "module": "Module 2 Environment",
+          "title": "Unit 3 Asia, the largest continent",
+          "words": [
+            {
+              "word": "continent",
+              "phonetic": "/ˈkɒntɪnənt/",
+              "pos": "n.",
+              "meaning": "大洲",
+              "example": "Asia is the largest continent on Earth."
+            },
+            {
+              "word": "population",
+              "phonetic": "/ˌpɒpjuˈleɪʃn/",
+              "pos": "n.",
+              "meaning": "人口",
+              "example": "Asia has about 4.7 billion people — over half of the world's population."
+            },
+            {
+              "word": "culture",
+              "phonetic": "/ˈkʌltʃə(r)/",
+              "pos": "n.",
+              "meaning": "文化",
+              "example": "Chinese culture is one of the oldest in the world."
+            },
+            {
+              "word": "tradition",
+              "phonetic": "/trəˈdɪʃn/",
+              "pos": "n.",
+              "meaning": "传统",
+              "example": "Many Asian countries share family traditions."
+            },
+            {
+              "word": "desert",
+              "phonetic": "/ˈdezət/",
+              "pos": "n.",
+              "meaning": "沙漠",
+              "example": "The Gobi Desert stretches through China and Mongolia."
+            },
+            {
+              "word": "plateau",
+              "phonetic": "/ˈplætəʊ/",
+              "pos": "n.",
+              "meaning": "高原",
+              "example": "The Tibetan Plateau is the highest plateau in the world."
+            },
+            {
+              "word": "river",
+              "phonetic": "/ˈrɪvə(r)/",
+              "pos": "n.",
+              "meaning": "河流",
+              "example": "The Yangtze is Asia's longest river."
+            },
+            {
+              "word": "mountain",
+              "phonetic": "/ˈmaʊntən/",
+              "pos": "n.",
+              "meaning": "山",
+              "example": "Mount Everest, on the border of China and Nepal, is the world's tallest mountain."
+            },
+            {
+              "word": "diverse",
+              "phonetic": "/daɪˈvɜːs/",
+              "pos": "adj.",
+              "meaning": "多种多样的",
+              "example": "Asia is home to diverse climates, foods and beliefs."
+            },
+            {
+              "word": "religion",
+              "phonetic": "/rɪˈlɪdʒən/",
+              "pos": "n.",
+              "meaning": "宗教",
+              "example": "Buddhism was born in Asia."
+            },
+            {
+              "word": "economy",
+              "phonetic": "/ɪˈkɒnəmi/",
+              "pos": "n.",
+              "meaning": "经济",
+              "example": "China's economy has grown rapidly in recent decades."
+            },
+            {
+              "word": "ancient",
+              "phonetic": "/ˈeɪnʃənt/",
+              "pos": "adj.",
+              "meaning": "古代的",
+              "example": "The ancient Silk Road connected Asia and Europe."
+            },
+            {
+              "word": "modern",
+              "phonetic": "/ˈmɒdn/",
+              "pos": "adj.",
+              "meaning": "现代的",
+              "example": "Modern Asian cities rise next to ancient temples."
+            },
+            {
+              "word": "landscape",
+              "phonetic": "/ˈlændskeɪp/",
+              "pos": "n.",
+              "meaning": "风景",
+              "example": "From tropical islands to snowy peaks, the landscape is amazing."
+            },
+            {
+              "word": "unite",
+              "phonetic": "/juˈnaɪt/",
+              "pos": "v.",
+              "meaning": "联合",
+              "example": "Asian countries unite to solve shared problems."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Wonders across Asia",
+              "en": "Tour Guide: Good morning, travellers. Welcome to our 10-day journey across Asia. Shall we begin?\n\nEmma: Yes please! Where is our first stop?\n\nGuide: Beijing, China. We will walk along a small part of the Great Wall. The Wall is over 2,000 years old and stretches more than 20,000 kilometres. It was built over many dynasties.\n\nJack: That's amazing! Then what?\n\nGuide: Then we fly south to Hanoi, Vietnam. We will cycle around Hoan Kiem Lake and taste a famous noodle soup called Pho.\n\nEmma: I love noodles! After that?\n\nGuide: A train ride into Laos, and then a boat on the Mekong River. You will see elephants, temples and villages that seem unchanged for hundreds of years.\n\nJack: Will we visit India?\n\nGuide: Yes. We will take an overnight train to Agra, where you will see the Taj Mahal, built in the 17th century as a memorial of love. A poet once said the Taj Mahal was \"a teardrop on the cheek of time.\"\n\nEmma: That's beautiful. What comes after India?\n\nGuide: We fly to Kazakhstan and ride horses on the great grasslands. Kazakh children learn to ride before they learn to walk! Then we pass through the deserts of Central Asia, where the Silk Road once connected East and West.\n\nJack: How does our trip end?\n\nGuide: With a quiet day in Bhutan, a tiny kingdom high in the Himalayas. Bhutan measures its success not only by money, but also by \"Gross National Happiness\". A visit there often changes how you look at your own life.\n\nEmma: Guide, you have made Asia sound like a hundred stories in one book.\n\nGuide: That is exactly what Asia is. Ready? Let's begin the first page.",
+              "cn": "导游：早上好，旅客们，欢迎参加亚洲十日游，准备好出发了吗？\n\n艾玛：当然！第一站去哪里？\n\n导游：中国北京。我们将徒步走一小段长城。长城已有两千多年历史，全长 2 万多公里，历经多个朝代修建。\n\n杰克：太厉害了！然后呢？\n\n导游：然后飞往越南河内，我们沿还剑湖骑行，品尝著名的越南河粉。\n\n艾玛：我爱吃面！再之后呢？\n\n导游：坐火车进入老挝，再乘船游湄公河。你们会看到大象、寺庙，以及几百年不变的村庄。\n\n杰克：会去印度吗？\n\n导游：会的。我们坐夜班火车到阿格拉，去参观 17 世纪建成的泰姬陵——它是为爱情而建的陵墓。一位诗人说泰姬陵是“时间脸颊上的一滴泪”。\n\n艾玛：真美。印度之后呢？\n\n导游：飞往哈萨克斯坦，在大草原上骑马。哈萨克小孩学走路前先学骑马！接着我们穿过中亚沙漠，那里的丝绸之路曾连接东西方。\n\n杰克：旅程如何结束？\n\n导游：在不丹——喜马拉雅山中的小王国——度过一个安静的日子。不丹不仅用金钱衡量成功，还用“国民幸福总值”。到了那里，你常会重新审视自己的人生。\n\n艾玛：导游，你把亚洲讲成了一本书里的一百个故事。\n\n导游：亚洲正是如此。准备好了吗？让我们翻开第一页。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Comparatives and superlatives (review + long adjectives)",
+              "en": "To compare, we change the form of the adjective.\n\n1) Short adjectives (one syllable, or two syllables ending in -y):\n   big → bigger → biggest     easy → easier → easiest\n   The Gobi is bigger than the Taklamakan.\n   Mount Everest is the tallest mountain in the world.\n\n2) Long adjectives (two or more syllables):\n   beautiful → more beautiful → the most beautiful\n   interesting → more interesting → the most interesting\n   The Taj Mahal is more beautiful at sunset than at noon.\n   Bhutan is one of the most peaceful countries in Asia.\n\n3) Irregular forms:\n   good → better → best     bad → worse → worst     far → farther/further → farthest/furthest\n\n4) Comparative structures:\n   A is + comparative + than + B.\n   Shanghai is busier than Hangzhou.\n   A is + as + adjective + as + B.  (= same)\n   China is as big as the whole Europe.\n   A is + not as + adjective + as + B.  (= less)\n   Laos is not as crowded as Vietnam.\n\n5) Superlative structures:\n   A is the + superlative + (noun) + in/of + group.\n   Asia is the largest continent on Earth.\n   Shanghai is one of the busiest cities in the world.\n\nTip: don't say \"more bigger\" or \"the most easiest\"; use only one comparison marker at a time.",
+              "cn": "比较时，我们要改变形容词形式。\n\n1) 短形容词（单音节，或以 -y 结尾的双音节）：\n   big → bigger → biggest      easy → easier → easiest\n   戈壁比塔克拉玛干大。\n   珠穆朗玛峰是世界上最高的山。\n\n2) 长形容词（两个音节及以上）：\n   beautiful → more beautiful → the most beautiful\n   interesting → more interesting → the most interesting\n   日落时的泰姬陵比中午更美。\n   不丹是亚洲最和平的国家之一。\n\n3) 不规则：\n   good → better → best      bad → worse → worst      far → farther/further → farthest/furthest\n\n4) 比较句型：\n   A 比 B 更……：A is + 比较级 + than + B.\n   上海比杭州繁忙。\n   A 和 B 一样……：A is + as + 形容词 + as + B.\n   中国和整个欧洲一样大。\n   A 不如 B ……：A is not as + 形容词 + as + B.\n   老挝没有越南拥挤。\n\n5) 最高级句型：\n   A 是……中最……的：A is the + 最高级 + (名词) + in / of + 范围。\n   亚洲是地球上最大的洲。\n   上海是世界上最繁忙的城市之一。\n\n小贴士：不要说 \"more bigger\" 或 \"the most easiest\"，一次只用一个比较标志。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Four Asian cities in four days",
+              "en": "Asia is famous for its ancient temples, but it is also a land of modern wonder. Imagine a four-day trip to four cities that show this side of Asia.\n\nDay 1 — Tokyo, Japan.\nYou wake up in Shibuya. Below your window, a thousand people cross the world's busiest crossing in perfect order. In the afternoon, you visit a robot café, where a friendly robot makes you coffee while telling jokes in Japanese.\n\nDay 2 — Seoul, South Korea.\nYou try on traditional clothes called hanbok in an old palace, then ride a fast train to the N Seoul Tower. In the evening, you shop at the biggest underground market of its kind in Asia — a whole street under your feet!\n\nDay 3 — Singapore.\nBy 7 a.m., you are already on the top of Marina Bay Sands, looking down at the shining city. Afterwards you take a boat into Gardens by the Bay, where giant metal trees stand next to real ones. Singapore is the greenest big city in Asia, with trees on almost every street corner.\n\nDay 4 — Shanghai, China.\nThe Bund is beautiful in the morning fog. By noon you sit in a little noodle shop that has been here since 1937. In the evening, you take an elevator up the Shanghai Tower, the tallest building in China. The city below you shines in a thousand colours.\n\nFour days, four cities, four futures. The ancient Asia and the modern Asia are not two different worlds. They are two pages of the same long story — and new pages are being written every day.",
+              "cn": "亚洲以古寺闻名，也是现代奇观之地。设想一次四日行，走进亚洲的现代一面。\n\n第一天——日本东京。\n你在涩谷醒来，窗下全球最忙的十字路口，一千人秩序井然地穿行。下午去机器人咖啡馆，一位友好的机器人一边用日语讲笑话，一边为你冲咖啡。\n\n第二天——韩国首尔。\n在古宫里试穿韩服，再乘快车登上 N 首尔塔。晚上逛亚洲同类中最大的地下商街——脚下就是一整条街！\n\n第三天——新加坡。\n早上 7 点，你已登上金沙酒店顶部俯瞰璀璨都市。随后乘船进入“滨海湾花园”，巨大的金属树与真树并立。新加坡是亚洲最绿的大城市，几乎每个街角都有树。\n\n第四天——中国上海。\n晨雾中的外滩格外动人。中午你走进一家 1937 年就开张的小面馆。夜晚乘电梯登上中国最高楼——上海中心大厦，脚下千色流光。\n\n四天，四城，四种未来。古老与现代的亚洲并非两个世界，而是同一个长故事的两页——新的篇章正每天被书写。"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "module": "Module 2 Environment",
+          "title": "Unit 4 Our world",
+          "words": [
+            {
+              "word": "world",
+              "phonetic": "/wɜːld/",
+              "pos": "n.",
+              "meaning": "世界",
+              "example": "Our world is a shared home for all living things."
+            },
+            {
+              "word": "earth",
+              "phonetic": "/ɜːθ/",
+              "pos": "n.",
+              "meaning": "地球",
+              "example": "The earth goes around the sun once a year."
+            },
+            {
+              "word": "ocean",
+              "phonetic": "/ˈəʊʃn/",
+              "pos": "n.",
+              "meaning": "大洋",
+              "example": "The Pacific Ocean is the largest on Earth."
+            },
+            {
+              "word": "climate",
+              "phonetic": "/ˈklaɪmət/",
+              "pos": "n.",
+              "meaning": "气候",
+              "example": "The climate in my city has become warmer year by year."
+            },
+            {
+              "word": "nature",
+              "phonetic": "/ˈneɪtʃə(r)/",
+              "pos": "n.",
+              "meaning": "大自然",
+              "example": "Nature has given us many beautiful gifts."
+            },
+            {
+              "word": "resource",
+              "phonetic": "/rɪˈsɔːs/",
+              "pos": "n.",
+              "meaning": "资源",
+              "example": "Water is our most precious resource."
+            },
+            {
+              "word": "wildlife",
+              "phonetic": "/ˈwaɪldlaɪf/",
+              "pos": "n.",
+              "meaning": "野生动物",
+              "example": "We must protect the wildlife around us."
+            },
+            {
+              "word": "balance",
+              "phonetic": "/ˈbæləns/",
+              "pos": "n./v.",
+              "meaning": "平衡",
+              "example": "Humans must learn to live in balance with nature."
+            },
+            {
+              "word": "pollution",
+              "phonetic": "/pəˈluːʃn/",
+              "pos": "n.",
+              "meaning": "污染",
+              "example": "Pollution harms animals, plants and people."
+            },
+            {
+              "word": "endangered",
+              "phonetic": "/ɪnˈdeɪndʒəd/",
+              "pos": "adj.",
+              "meaning": "濒危的",
+              "example": "Pandas were once endangered but numbers are now rising."
+            },
+            {
+              "word": "melt",
+              "phonetic": "/melt/",
+              "pos": "v.",
+              "meaning": "融化",
+              "example": "Ice caps are melting faster than ever."
+            },
+            {
+              "word": "cooperate",
+              "phonetic": "/kəʊˈɒpəreɪt/",
+              "pos": "v.",
+              "meaning": "合作",
+              "example": "Every country must cooperate to save the planet."
+            },
+            {
+              "word": "treaty",
+              "phonetic": "/ˈtriːti/",
+              "pos": "n.",
+              "meaning": "条约",
+              "example": "The Paris Treaty on climate was signed by nearly 200 countries."
+            },
+            {
+              "word": "future",
+              "phonetic": "/ˈfjuːtʃə(r)/",
+              "pos": "n.",
+              "meaning": "未来",
+              "example": "The future of Earth is in our own hands."
+            },
+            {
+              "word": "hope",
+              "phonetic": "/həʊp/",
+              "pos": "n./v.",
+              "meaning": "希望",
+              "example": "As long as we act together, there is always hope."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · One Earth, many faces",
+              "en": "Host: Welcome to our school radio. Today, on World Environment Day, three guests will share stories from three parts of our world.\n\nGuest 1 — Pema, Bhutan.\nI grew up in a valley in Bhutan. Every morning I walk past a small stream. My grandmother says, \"If you keep the stream clean, the stream will keep you alive.\" In our country, the law says more than 70% of the land must stay covered by forest — forever. We do not have the most money, but we have clean air and quiet nights. A lot of foreign visitors tell us that their hearts finally relax here.\n\nGuest 2 — Mwenesi, Kenya.\nI live near a national park full of elephants. My father says that when he was a boy, he could count more elephants than he had fingers on one walk. Today, thanks to the work of many rangers, elephant numbers are slowly rising again. But climate change is making our rainy season shorter. If the rain does not come, the grass dies, and every animal — wild or tame — feels hungry. We hope more countries will join us in protecting both water and wildlife.\n\nGuest 3 — Yuki, Japan.\nI live on a small island near the Pacific Ocean. Our town was once full of fishermen. Since 1970, the temperature of the water around our island has gone up by about 1.5 degrees. Some fish have moved to colder places, and old fishermen must learn new jobs. Children in my school study the sea in a new way now — we learn how to repair coral and how to grow seaweed that cleans water.\n\nHost: Three different stories, one same message: Earth has many faces, but only one heart. That heart beats through every stream, elephant, and piece of coral. Be kind to the Earth; it is the only home we share.",
+              "cn": "主持：欢迎收听校园广播。今天是世界环境日，三位嘉宾将为我们讲述来自世界三地的故事。\n\n嘉宾一——不丹的培玛。\n我在不丹的山谷长大，每天清晨我都走过一条小溪。奶奶常说：“你让小溪干净，小溪就让你活着。”我们国家规定森林覆盖率必须永远超过 70%。我们不是最富有，但有清新的空气和安静的夜晚。许多外国游客到这里，心终于放松下来。\n\n嘉宾二——肯尼亚的姆韦内西。\n我家靠近一个满是大象的国家公园。爸爸说小时候走一趟，看到的大象比一只手的手指还多。如今多亏护林员的努力，大象数量在慢慢回升。但气候变化使雨季缩短，雨不来草就枯，野生或家养的动物都会挨饿。我们希望更多国家一起保护水源与野生动物。\n\n嘉宾三——日本的由纪。\n我住在太平洋旁的小岛，小镇曾经满是渔民。1970 年以来，岛周围海水温度已升约 1.5 摄氏度。有些鱼游去更冷的海域，老渔民只好改学新营生。我们学校的孩子用新方式学习海洋——学修复珊瑚，学养能净化海水的海藻。\n\n主持：三段不同的故事，同一个讯息：地球有许多张面孔，却只有一颗心。这颗心跳动在每条溪流、每头大象、每块珊瑚里。请善待地球——这是我们共享的唯一家园。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Conditional sentences (type 1 and type 2)",
+              "en": "A conditional sentence has two parts: an if-clause (condition) and a main clause (result).\n\nType 1 — Real future (likely / possible)\n   If + present simple , will + verb\n   If we recycle more, we will save trees.\n   If it rains tomorrow, the picnic will be cancelled.\n\nType 2 — Unreal or imagined present/future\n   If + past simple , would + verb\n   If I were a scientist, I would study climate.\n   If everyone walked to school, the air would be cleaner.\n\nImportant: with \"be\", use \"were\" for all persons in type 2 (traditional grammar).\n   If I were you, I would go home now.\n\nType 1 vs Type 2\n   If we act now, the planet will recover.        (there is still time — real)\n   If the oceans rose by ten metres, cities would disappear. (imagined future)\n\nOther useful patterns:\n   Unless = If ... not\n     Unless we save water, we will be in trouble. = If we don't save water ...\n   When = real + certain\n     When the sun sets, the temperature will fall.\n\nQuestions:\n   Would you help us if we asked?\n   What will happen if nobody acts?",
+              "cn": "条件句有两部分：if 从句（条件）和主句（结果）。\n\n第一型——真实的将来（可能发生）\n   if + 一般现在时, will + 动词\n   如果我们多回收，就能挽救森林。\n   如果明天下雨，野餐就取消。\n\n第二型——与现在/将来事实相反的虚拟\n   if + 一般过去时, would + 动词\n   如果我是科学家，我会研究气候。\n   如果人人走路上学，空气会更干净。\n\n重要：第二型里 be 动词各人称都用 were（传统语法）。\n   If I were you, I would go home now.\n\n第一型 vs 第二型\n   If we act now, the planet will recover.（尚有时间——真实）\n   If the oceans rose by ten metres, cities would disappear.（想象的未来）\n\n其他常用句型：\n   Unless = If ... not\n     Unless we save water, we will be in trouble. = If we don't save water ...\n   When = 真实且确定\n     When the sun sets, the temperature will fall.\n\n疑问：\n   Would you help us if we asked?\n   What will happen if nobody acts?"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A letter to the next generation",
+              "en": "Dear young person of the year 2100,\n\nI am writing this in 2026. By the time you read this letter, the world will have changed in many ways we cannot yet imagine.\n\nI wonder: do you still know the taste of wild strawberries? In our time, they grow along small paths in the countryside. Old people say even the air around them smells sweet.\n\nI wonder: do you still meet wild bees? When I was a child, I was afraid of them. Now scientists say bees pollinate most of our food. Without bees, breakfast tables would be much emptier.\n\nI wonder: is there still snow in Sichuan in winter? In my childhood, I made a small snowman with my grandfather. Every year the snow comes later and stays shorter. Grandfather is gone now, but the snowman still smiles in my memory.\n\nWe in 2026 are trying hard. Many countries have signed the Paris climate treaty. Electric cars are rising in number. Farmers in Africa are planting a \"Great Green Wall\" to stop the desert. Children like the Swedish girl Greta Thunberg have shown that the young can shake the world.\n\nBut we know we are not moving fast enough. So if something in your world is still beautiful, I hope you will thank everyone who fought for it — teachers, volunteers, grandmothers who collected bottle caps, and ordinary people who rode bikes in the rain.\n\nAnd if something is lost, I apologise on behalf of our generation. We knew, but we sometimes chose the easier path.\n\nPlease keep writing your chapter. The Earth is still the most beautiful place in the universe, and every kind act can add a new word to its song.\n\nWith love,\nA 14-year-old in 2026",
+              "cn": "亲爱的 2100 年的年轻人：\n\n我正在 2026 年写这封信。等你读到它时，世界已以我们今天无法想象的方式改变。\n\n我在想：你还知道野草莓的味道吗？在我们这个时代，它们生长在乡间小路旁，老人说空气都是甜的。\n\n我在想：你还能见到野生蜜蜂吗？小时候我很怕它们。如今科学家说蜜蜂为大多数食物授粉；没有蜜蜂，早餐桌会空很多。\n\n我在想：四川的冬天还有雪吗？童年时我和爷爷堆过一个小雪人。每年雪越来越晚，停留越来越短。爷爷已经不在，但雪人仍在我记忆里微笑。\n\n2026 年的我们在努力。许多国家签了《巴黎气候条约》，电动汽车越来越多，非洲农民正种一堵阻挡沙漠的“绿色长城”，像瑞典女孩格蕾塔这样的孩子证明了少年也能撼动世界。\n\n但我们知道速度还不够快。所以，如果你的世界里还有美丽的事物，请替我们谢谢所有为之奋斗的人——老师、志愿者、捡瓶盖的奶奶、雨中骑车的普通人。\n\n如果有某样东西已经失去，那我要替我们这代人致歉——我们知道，却有时选择了更轻松的路。\n\n请你继续书写自己的篇章。地球仍是宇宙中最美的地方，每一个善举都能在它的歌里添上新的一个词。\n\n爱你的，\n2026 年一个 14 岁的我"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "module": "Module 3 Culture",
+          "title": "Unit 5 Festivals",
+          "words": [
+            {
+              "word": "festival",
+              "phonetic": "/ˈfestɪvl/",
+              "pos": "n.",
+              "meaning": "节日",
+              "example": "Spring Festival is the most important festival in China."
+            },
+            {
+              "word": "celebrate",
+              "phonetic": "/ˈselɪbreɪt/",
+              "pos": "v.",
+              "meaning": "庆祝",
+              "example": "Families gather to celebrate the Lantern Festival."
+            },
+            {
+              "word": "lunar",
+              "phonetic": "/ˈluːnə(r)/",
+              "pos": "adj.",
+              "meaning": "阴历的",
+              "example": "Chinese festivals usually follow the lunar calendar."
+            },
+            {
+              "word": "tradition",
+              "phonetic": "/trəˈdɪʃn/",
+              "pos": "n.",
+              "meaning": "传统",
+              "example": "Eating dumplings is an old tradition in the north."
+            },
+            {
+              "word": "firecracker",
+              "phonetic": "/ˈfaɪəkrækə(r)/",
+              "pos": "n.",
+              "meaning": "爆竹",
+              "example": "The sound of firecrackers filled the night."
+            },
+            {
+              "word": "lantern",
+              "phonetic": "/ˈlæntən/",
+              "pos": "n.",
+              "meaning": "灯笼",
+              "example": "We hang red lanterns on both sides of the door."
+            },
+            {
+              "word": "reunion",
+              "phonetic": "/ˌriːˈjuːniən/",
+              "pos": "n.",
+              "meaning": "团圆",
+              "example": "The reunion dinner is the most important meal of the year."
+            },
+            {
+              "word": "blessing",
+              "phonetic": "/ˈblesɪŋ/",
+              "pos": "n.",
+              "meaning": "祝福",
+              "example": "Grandpa wrote spring blessings on red paper."
+            },
+            {
+              "word": "decorate",
+              "phonetic": "/ˈdekəreɪt/",
+              "pos": "v.",
+              "meaning": "装饰",
+              "example": "We decorated the living room with paper cuttings."
+            },
+            {
+              "word": "dumpling",
+              "phonetic": "/ˈdʌmplɪŋ/",
+              "pos": "n.",
+              "meaning": "饺子",
+              "example": "Everyone took turns wrapping dumplings."
+            },
+            {
+              "word": "mooncake",
+              "phonetic": "/ˈmuːnkeɪk/",
+              "pos": "n.",
+              "meaning": "月饼",
+              "example": "On Mid-Autumn Day, we share mooncakes with our family."
+            },
+            {
+              "word": "dragon",
+              "phonetic": "/ˈdræɡən/",
+              "pos": "n.",
+              "meaning": "龙",
+              "example": "Dragon boats raced along the river."
+            },
+            {
+              "word": "carnival",
+              "phonetic": "/ˈkɑːnɪvl/",
+              "pos": "n.",
+              "meaning": "狂欢节",
+              "example": "The carnival in Rio lasts for five days."
+            },
+            {
+              "word": "harvest",
+              "phonetic": "/ˈhɑːvɪst/",
+              "pos": "n./v.",
+              "meaning": "收获",
+              "example": "Many cultures celebrate a harvest festival in autumn."
+            },
+            {
+              "word": "gather",
+              "phonetic": "/ˈɡæðə(r)/",
+              "pos": "v.",
+              "meaning": "聚集",
+              "example": "Friends gather to watch the parade every year."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Spring Festival and beyond",
+              "en": "Grandpa: Come, sit by the fire. Tonight is New Year's Eve. Do you know why we do all these things — firecrackers, lanterns, dumplings?\n\nMing: A little, Grandpa. My teacher said the red colour is supposed to scare a monster called Nian. Is that true?\n\nGrandpa: That is one old story. Long ago, people said a wild beast came down from the mountain every New Year. It was afraid of the colour red and loud noises. So we use red paper-cuttings, red clothes, red lanterns — and, of course, firecrackers.\n\nMing: And the dumplings?\n\nGrandpa: In the north, dumplings are shaped like ancient gold coins. Eating them means we hope for a year of good fortune. In the south, families often eat Nian Gao — a sticky rice cake. The word \"Gao\" sounds like \"tall\", so it means we hope for a taller life, year after year.\n\nMing: What about the red envelopes?\n\nGrandpa: The Hong Bao. Your parents give it to you to wish you health and growth. If you save a little from each one, by the time you go to university, you may have enough for a new laptop!\n\nMing: My friend Joe says his family celebrates Lantern Festival too.\n\nGrandpa: Yes. That is the 15th day of the first lunar month, the very last day of our New Year. Children carry lanterns in the street, and families eat round, sweet tang yuan — a symbol of reunion.\n\nMing: Spring Festival feels long, Grandpa.\n\nGrandpa: It should be long, my child. It is the time when our family rests together, our stories are remembered, and our new dreams are planted. Happy New Year, Ming.",
+              "cn": "爷爷：来，坐到炉火旁。今晚是除夕，你知道为什么我们要放鞭炮、挂灯笼、吃饺子吗？\n\n小明：知道一点，爷爷。老师说红色是用来吓走叫“年”的怪兽的，对吗？\n\n爷爷：这是古老的传说。很久以前，据说有一头野兽每年新年下山。它怕红色，也怕大声响。于是我们用红色剪纸、红衣服、红灯笼——还有当然的鞭炮。\n\n小明：那饺子呢？\n\n爷爷：北方饺子的形状像古代金元宝，吃饺子象征我们希望新年发财。南方家庭常吃年糕，“糕”音同“高”，寓意一年比一年高。\n\n小明：那红包呢？\n\n爷爷：红包是父母给你的祝福，祝你健康成长。如果每个红包存一点，等你上大学，也许就能买一台新笔记本电脑啦！\n\n小明：我朋友乔说他家也过元宵节。\n\n爷爷：是的。元宵是正月十五，春节的最后一天。孩子们提灯走街，家家吃圆圆甜甜的汤圆——象征团圆。\n\n小明：爷爷，春节感觉好长。\n\n爷爷：它本应该长，孩子。这是家人共聚、往事被回忆、新的梦想被播下的日子。春节快乐，小明。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Present perfect with since / for and adverbs",
+              "en": "The present perfect connects past actions with the present moment.\n\nForm:\n   subject + have / has + past participle\n\n1) since + point in time (when it started)\n   I have lived in Shanghai since 2010.\n   We have been friends since primary school.\n\n2) for + period of time (how long)\n   I have lived in Shanghai for 14 years.\n   We have been friends for ten years.\n\n3) already / just / yet / ever / never\n   We have already eaten the dumplings.\n   Have you ever seen a lion dance?\n   I have never tried mooncakes before.\n   She has just arrived.\n   Have you finished your homework yet? (yet usually at the end)\n\n4) been vs gone\n   He has gone to Beijing. (= he is still there)\n   He has been to Beijing. (= he went and came back)\n\n5) Present perfect vs simple past\n   I have seen the film. (when is not important)\n   I saw the film last night. (definite past time)\n\nQuestions and negatives:\n   Has your family celebrated Mid-Autumn yet? — Yes, we have.\n   I have not (haven't) eaten any mooncakes this year.",
+              "cn": "现在完成时把过去的动作与现在联系起来。\n\n形式：\n   主语 + have / has + 过去分词\n\n1) since + 时间点（从何时开始）\n   自 2010 年起我一直住在上海。\n   我们从小学起就是朋友。\n\n2) for + 时间段（持续多久）\n   我在上海住了 14 年。\n   我们做朋友十年了。\n\n3) already / just / yet / ever / never\n   我们已经把饺子吃了。\n   你见过舞狮吗？\n   我从没尝过月饼。\n   她刚刚到。\n   你作业做完了吗？（yet 一般放句尾）\n\n4) been vs gone\n   He has gone to Beijing.（还在那里）\n   He has been to Beijing.（去过又回来了）\n\n5) 现在完成 vs 一般过去\n   I have seen the film.（时间不重要）\n   I saw the film last night.（明确过去时间）\n\n疑问与否定：\n   Has your family celebrated Mid-Autumn yet? — Yes, we have.\n   I have not (haven't) eaten any mooncakes this year."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Four festivals, four hearts",
+              "en": "Every culture has a way of turning ordinary days into something magical. Here are four colourful festivals from around the world.\n\n1) Songkran — Thailand's Water Festival (April)\nThe Thai New Year is the hottest time of the year, so people celebrate with water. In the streets of Bangkok and Chiang Mai, everyone carries a bucket or a water gun. A splash of water is a wish for good luck — and a gift of coolness. Don't wear your best clothes on that day!\n\n2) Holi — The Festival of Colours (India, March)\nIn India, when spring arrives, people throw colourful powders at each other. Pink, yellow, green, purple — everybody becomes a walking rainbow. Holi celebrates the win of good over evil, and the magic of friendship. Teachers and students, old and young, all play on the same day.\n\n3) Day of the Dead — Mexico (Oct 31 – Nov 2)\nMexican families believe that once a year, their loved ones who have passed away return home. They decorate graves with marigold flowers, make sugar skulls, and share the dead relative's favourite food. It looks a little scary at first, but the mood is warm — it is love without fear.\n\n4) Chinese Mid-Autumn (15th day of 8th lunar month)\nOn this night, the moon is brightest and roundest. Families sit in the yard, share mooncakes, and tell old stories of Chang'e, the moon lady. Even if friends are far away, they can look up and know the same moon is shining above them.\n\nEach festival has its own colours and songs, but under the surface, they share the same heart — we want to be together, to give thanks, and to keep hope alive.",
+              "cn": "每种文化都有把平常日子变成魔幻的方式。以下是世界四个色彩斑斓的节日。\n\n1) 泼水节——泰国水节（4 月）\n泰国新年正值一年中最热的时节，人们用水庆祝。曼谷和清迈街头人人提水桶、举水枪。一泼水就是祝福——也是一份清凉。那天千万别穿好衣服！\n\n2) 胡里节——彩色节（印度，3 月）\n春天到了，人们互相抛撒彩粉：粉、黄、绿、紫——个个都成了行走的彩虹。胡里节庆祝善胜恶，也庆祝友谊的神奇；老师与学生、老人与小孩，都在同一天一起玩耍。\n\n3) 亡灵节——墨西哥（10 月 31 日–11 月 2 日）\n墨西哥人相信逝去的亲人每年会回家一次。他们用金盏菊装饰墓地，做糖骷髅，摆上亲人生前爱吃的食物。初看似乎有点吓人，实则温暖——那是不再害怕的爱。\n\n4) 中国中秋——农历八月十五\n这一夜月最圆最亮。家人在院中分食月饼，讲嫦娥奔月的故事。即使朋友远隔千里，抬头都能看见同一轮明月照耀人间。\n\n每个节日都有自己的颜色和歌声，但表象之下藏着同一颗心——我们想在一起，愿意感恩，也愿意让希望继续燃烧。"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "module": "Module 3 Culture",
+          "title": "Unit 6 Culture shock",
+          "words": [
+            {
+              "word": "culture",
+              "phonetic": "/ˈkʌltʃə(r)/",
+              "pos": "n.",
+              "meaning": "文化",
+              "example": "Every culture has its own table manners."
+            },
+            {
+              "word": "custom",
+              "phonetic": "/ˈkʌstəm/",
+              "pos": "n.",
+              "meaning": "习俗",
+              "example": "Taking off your shoes at home is a common custom in Japan."
+            },
+            {
+              "word": "polite",
+              "phonetic": "/pəˈlaɪt/",
+              "pos": "adj.",
+              "meaning": "礼貌的",
+              "example": "Polite behaviour can be different in different countries."
+            },
+            {
+              "word": "rude",
+              "phonetic": "/ruːd/",
+              "pos": "adj.",
+              "meaning": "粗鲁的",
+              "example": "Pointing with your finger is considered rude in some cultures."
+            },
+            {
+              "word": "behaviour",
+              "phonetic": "/bɪˈheɪvjə(r)/",
+              "pos": "n.",
+              "meaning": "行为",
+              "example": "Be careful of your behaviour when you visit a new country."
+            },
+            {
+              "word": "foreign",
+              "phonetic": "/ˈfɒrən/",
+              "pos": "adj.",
+              "meaning": "外国的",
+              "example": "He made many foreign friends in college."
+            },
+            {
+              "word": "abroad",
+              "phonetic": "/əˈbrɔːd/",
+              "pos": "adv.",
+              "meaning": "到国外",
+              "example": "Many students want to study abroad after high school."
+            },
+            {
+              "word": "adapt",
+              "phonetic": "/əˈdæpt/",
+              "pos": "v.",
+              "meaning": "适应",
+              "example": "It takes time to adapt to a new culture."
+            },
+            {
+              "word": "misunderstanding",
+              "phonetic": "/ˌmɪsʌndəˈstændɪŋ/",
+              "pos": "n.",
+              "meaning": "误解",
+              "example": "Small gestures can cause big misunderstandings."
+            },
+            {
+              "word": "gesture",
+              "phonetic": "/ˈdʒestʃə(r)/",
+              "pos": "n.",
+              "meaning": "手势",
+              "example": "A thumbs-up is a friendly gesture in China, but rude in some other countries."
+            },
+            {
+              "word": "greeting",
+              "phonetic": "/ˈɡriːtɪŋ/",
+              "pos": "n.",
+              "meaning": "问候",
+              "example": "Greetings can be a bow, a handshake, or even a kiss."
+            },
+            {
+              "word": "respect",
+              "phonetic": "/rɪˈspekt/",
+              "pos": "v./n.",
+              "meaning": "尊重",
+              "example": "Showing respect for local habits is important."
+            },
+            {
+              "word": "curiosity",
+              "phonetic": "/ˌkjʊəriˈɒsəti/",
+              "pos": "n.",
+              "meaning": "好奇心",
+              "example": "Approach new cultures with curiosity, not fear."
+            },
+            {
+              "word": "tolerate",
+              "phonetic": "/ˈtɒləreɪt/",
+              "pos": "v.",
+              "meaning": "容忍",
+              "example": "We should tolerate different opinions and habits."
+            },
+            {
+              "word": "experience",
+              "phonetic": "/ɪkˈspɪəriəns/",
+              "pos": "n./v.",
+              "meaning": "经历",
+              "example": "Living abroad was the best experience of my life."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · When in Rome",
+              "en": "Guo: Hi Marco! Welcome to China. How was your first week?\n\nMarco: Crazy and wonderful! But also a little confusing. Can I ask some questions?\n\nGuo: Of course. What happened?\n\nMarco: Yesterday I gave my roommate a clock as a welcome gift. He looked unhappy. Did I do something wrong?\n\nGuo: Oh... In Chinese, \"giving a clock\" sounds like \"seeing someone off at the end of life\". We usually don't give clocks as gifts. Don't worry; he knows you meant well.\n\nMarco: Haha! I have been learning Chinese for three years, and I have never heard about this! What other things should I know?\n\nGuo: When Chinese friends give you a gift, you may say \"It's too expensive, really you shouldn't\" a few times before you accept it. But of course you still accept it. It's a kind of politeness.\n\nMarco: In Italy, when we give a gift, we expect the other person to open it right away. Does this happen here?\n\nGuo: Not always. Many Chinese people put the gift aside and open it later, so the giver does not feel embarrassed if the gift is cheap or strange.\n\nMarco: Interesting. What about food?\n\nGuo: At the dinner table, an older person usually serves rice first. Never stick your chopsticks straight up in a bowl of rice — it reminds people of funerals.\n\nMarco: Good to know. One more — when I met your dad, I shook his hand and said \"Hi\" with his first name. He looked a little surprised.\n\nGuo: We often call older people \"Uncle\" or \"Auntie\", even if we are not family. It shows respect.\n\nMarco: Thank you, Guo. Culture is a language my book cannot teach me.\n\nGuo: Welcome to the real classroom — it lasts a lifetime!",
+              "cn": "国：嗨马可！欢迎来到中国，第一周过得怎么样？\n\n马可：疯狂又美好！不过也有点困惑。我能问几个问题吗？\n\n国：当然。发生什么了？\n\n马可：昨天我送室友一个时钟当见面礼，他看起来不太高兴。我做错了吗？\n\n国：哦……中文里“送钟”听起来像“送终”，所以我们一般不送钟。别担心，他知道你是好意。\n\n马可：哈哈！我学中文三年，从没听过！还有别的要注意的吗？\n\n国：中国朋友送你礼物时，你可以先客套几句“太贵了，真不用”，然后再收下——这是一种礼貌。\n\n马可：在意大利，送礼后我们希望对方立刻打开。这里也是吗？\n\n国：不一定。许多中国人会先放一边稍后再拆，这样万一礼物便宜或奇怪，送的人也不会尴尬。\n\n马可：有趣。那吃饭呢？\n\n国：餐桌上长辈通常先盛饭。筷子不要直插饭碗——这会让人联想到祭祀。\n\n马可：知道了。还有——我见到你爸爸时握手并直呼他名字说“你好”，他似乎有点惊讶。\n\n国：我们常称年长者为“叔叔”或“阿姨”，哪怕不是亲属——是一种尊重。\n\n马可：谢谢国。文化是书本教不了的另一种语言。\n\n国：欢迎来到真实的课堂——它要上一辈子！"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Linking words: however, therefore, although, because",
+              "en": "Linking words help us join ideas smoothly.\n\n1) because / as / since — give a reason\n   We gave candy because it is sweet and lucky.\n   As it was raining, we stayed inside.\n   Since you are tired, please rest.\n\n2) so / therefore / thus — give a result\n   The gift sounded bad in Chinese, so we chose another.\n   He was late; therefore, the meeting was delayed. (more formal)\n\n3) but / however / yet — show contrast\n   I like Chinese food, but I can't eat spicy food.\n   I like Chinese food. However, I can't eat spicy food. (more formal)\n   Chinese tea is famous, yet not every Chinese person drinks it every day.\n\n4) although / though / even though — contrast before main idea\n   Although he is new here, he has already learned many customs.\n   Even though it was her first time in China, she felt at home.\n\nPunctuation:\n   however / therefore / thus — often used after a semicolon or at the start of a sentence, followed by a comma.\n     The rules are strange. However, they make sense in history.\n   although / because / since — start a clause; no full stop before the main clause.\n     Although he was tired, he kept working.\n\nTip: Don't use \"because\" and \"so\" in the same sentence:\n   (✗) Because it rained, so we stayed home.\n   (✓) Because it rained, we stayed home.  OR  It rained, so we stayed home.",
+              "cn": "连接词帮助我们把想法流畅地连起来。\n\n1) because / as / since——表原因\n   我们送糖果是因为甜蜜又吉利。\n   因为下雨了，我们待在里面。\n   既然你累了，就歇会儿吧。\n\n2) so / therefore / thus——表结果\n   这礼物中文听起来不好，所以我们换了一个。\n   他迟到了；因此会议推迟了。（较正式）\n\n3) but / however / yet——表转折\n   我喜欢中国菜，但我不能吃辣。\n   我喜欢中国菜。然而，我不能吃辣。（较正式）\n   中国茶很有名，但并非每个中国人天天喝。\n\n4) although / though / even though——让步（放在主句之前）\n   尽管他刚来，已学会许多习俗。\n   尽管她第一次来中国，却像在家一样放松。\n\n标点：\n   however / therefore / thus——常放在分号后或句首，后接逗号。\n     规则听起来怪。然而，从历史看是有道理的。\n   although / because / since——引导从句；从句后不要句号再接主句。\n     尽管他累了，他仍在工作。\n\n小贴士：不要在同一句中同时用 because 和 so：\n   （✗）Because it rained, so we stayed home.\n   （✓）Because it rained, we stayed home. 或 It rained, so we stayed home."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · A short manual for the curious traveller",
+              "en": "If you plan to live or travel abroad, here is a simple manual to save you from most culture shocks.\n\n1) Observe before you act.\nWatch how local people greet each other, eat, or ride the bus. Do they bow, shake hands, or hug? Do they wait in a line or stand close together? Copy the way they do it. If you were them, how would you expect a foreign guest to behave?\n\n2) Learn the power words.\nIn any new language, three words can save your day: \"Hello\", \"Thank you\", and \"Sorry\". If you add \"Delicious!\" when you eat, you will make friends very fast.\n\n3) Respect small rules, ask about big ones.\nSome rules are small: take off your shoes at a Japanese home, cover your head in a Muslim mosque. Some rules are big: laws, tips, taxi prices. For big rules, always ask a trusted local or check online before you act.\n\n4) Don't judge too fast.\nSomething strange is not always \"wrong\". A behaviour that looks rude may come from a long history. Listen first, compare second, judge much later — if at all.\n\n5) Laugh at yourself.\nYou will make mistakes. You may wave when you should bow, or slurp when you should sip. Laugh with the local people. A smile is the cheapest and the most powerful gift in every culture.\n\n6) Remember: culture shock is a teacher.\nThe first week may feel lonely; the second week may feel proud; the third may feel tired. Most travellers say the fourth week is the best one — you become a calmer, kinder, wider person. The world is big, but your heart can be even bigger.",
+              "cn": "如果你打算出国生活或旅行，下面这本简短手册可帮你避开多数文化冲击。\n\n1) 先观察，再行动。\n看当地人怎样打招呼、怎样吃饭、怎样乘车。他们鞠躬、握手还是拥抱？排队还是紧靠站立？照他们做。如果你是他们，会希望一个外国客人怎么举止？\n\n2) 学好几个“黄金词”。\n任何新语言里，这三个词都能救你一天：“你好”、“谢谢”、“对不起“。吃东西时加一句”好吃！”，你会很快交到朋友。\n\n3) 小规矩照办，大规则要问。\n小规矩如进日本人家脱鞋、进清真寺戴头巾；大规则如法律、小费、出租价——大的事情，先问可靠的本地人或上网查清楚再行动。\n\n4) 不要太快评判。\n奇怪的事不一定就是错。有些看似无礼的行为背后有悠久历史。先聆听、再比较、最后再评判——或者干脆不评判。\n\n5) 学会自嘲。\n你会犯错：该鞠躬时挥手、该轻啜时大声喝汤。跟当地人一起笑出声吧。微笑是任何文化里最便宜也最有力的礼物。\n\n6) 请记住：文化冲击是你的老师。\n第一周可能孤单，第二周可能得意，第三周可能疲惫。多数旅行者说第四周最棒——你变得更平静、更善良、更开阔。世界很大，而你的心可以更大。"
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "module": "Module 4 Reading",
+          "title": "Unit 7 Poetry",
+          "words": [
+            {
+              "word": "poetry",
+              "phonetic": "/ˈpəʊətri/",
+              "pos": "n.",
+              "meaning": "诗歌（总称）",
+              "example": "Poetry is the music of words."
+            },
+            {
+              "word": "poem",
+              "phonetic": "/ˈpəʊɪm/",
+              "pos": "n.",
+              "meaning": "（一首）诗",
+              "example": "She wrote a short poem about the moon."
+            },
+            {
+              "word": "poet",
+              "phonetic": "/ˈpəʊɪt/",
+              "pos": "n.",
+              "meaning": "诗人",
+              "example": "Li Bai is one of the greatest poets in Chinese history."
+            },
+            {
+              "word": "rhyme",
+              "phonetic": "/raɪm/",
+              "pos": "n./v.",
+              "meaning": "押韵",
+              "example": "The words \"cat\" and \"hat\" rhyme."
+            },
+            {
+              "word": "rhythm",
+              "phonetic": "/ˈrɪðəm/",
+              "pos": "n.",
+              "meaning": "节奏",
+              "example": "Every poem has its own rhythm."
+            },
+            {
+              "word": "verse",
+              "phonetic": "/vɜːs/",
+              "pos": "n.",
+              "meaning": "诗节；韵文",
+              "example": "The song has four short verses."
+            },
+            {
+              "word": "image",
+              "phonetic": "/ˈɪmɪdʒ/",
+              "pos": "n.",
+              "meaning": "意象，形象",
+              "example": "The image of the lonely boat made me feel quiet."
+            },
+            {
+              "word": "metaphor",
+              "phonetic": "/ˈmetəfə(r)/",
+              "pos": "n.",
+              "meaning": "暗喻",
+              "example": "\"Life is a journey\" is a common metaphor."
+            },
+            {
+              "word": "simile",
+              "phonetic": "/ˈsɪməli/",
+              "pos": "n.",
+              "meaning": "明喻",
+              "example": "\"Her smile is like sunshine\" is a simile."
+            },
+            {
+              "word": "emotion",
+              "phonetic": "/ɪˈməʊʃn/",
+              "pos": "n.",
+              "meaning": "情感",
+              "example": "Poems can carry strong emotions in few words."
+            },
+            {
+              "word": "inspire",
+              "phonetic": "/ɪnˈspaɪə(r)/",
+              "pos": "v.",
+              "meaning": "激发",
+              "example": "Mountains and rivers inspired many ancient poets."
+            },
+            {
+              "word": "line",
+              "phonetic": "/laɪn/",
+              "pos": "n.",
+              "meaning": "（诗的）行",
+              "example": "This poem has only eight lines, but every line is a picture."
+            },
+            {
+              "word": "stanza",
+              "phonetic": "/ˈstænzə/",
+              "pos": "n.",
+              "meaning": "诗节",
+              "example": "A stanza is a group of lines in a poem."
+            },
+            {
+              "word": "translate",
+              "phonetic": "/trænsˈleɪt/",
+              "pos": "v.",
+              "meaning": "翻译",
+              "example": "It is hard to translate Tang poems into English."
+            },
+            {
+              "word": "beauty",
+              "phonetic": "/ˈbjuːti/",
+              "pos": "n.",
+              "meaning": "美",
+              "example": "A poem captures beauty in a few lines."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · A short journey through English poems",
+              "en": "Mrs Brown: Class, today is our first poetry day. Who can tell me what a poem is?\n\nJack: A poem is short, and it rhymes.\n\nMrs Brown: Sometimes it rhymes. Emma, what do you think?\n\nEmma: A poem paints a picture with words.\n\nMrs Brown: Beautiful answer. Let's read three short English poems.\n\nPoem 1 — from William Wordsworth:\n\"I wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils.\"\n\nJack: I can see the yellow flowers!\n\nMrs Brown: Right. \"Lonely as a cloud\" is a simile. The poet uses \"like\" (or \"as\") to compare himself to a cloud.\n\nPoem 2 — Robert Frost:\n\"The woods are lovely, dark and deep,\nBut I have promises to keep,\nAnd miles to go before I sleep,\nAnd miles to go before I sleep.\"\n\nEmma: He repeats the last line. Why?\n\nMrs Brown: Repetition. It makes the line stay in your mind, like a slow footstep in the snow.\n\nPoem 3 — Emily Dickinson:\n\"'Hope' is the thing with feathers\nThat perches in the soul.\"\n\nJack: Hope has feathers? That's weird — but nice.\n\nMrs Brown: That is a metaphor — hope IS a bird, without saying \"like\". When you read a poem, slow down, listen to the sounds, and ask: \"What colour? What sound? What feeling?\" The answer in your head is your poem's answer.\n\nEmma: Poetry feels easier now, Mrs Brown.\n\nMrs Brown: It has always been easy, Emma. We simply forgot to listen.",
+              "cn": "布朗太太：同学们，今天是我们的第一节诗歌课。谁能告诉我什么是诗？\n\n杰克：诗很短，还押韵。\n\n布朗太太：有时押韵。艾玛，你觉得呢？\n\n艾玛：诗用文字作画。\n\n布朗太太：好答案。我们来读三首英语短诗。\n\n诗一——华兹华斯：\n“我独自漫游像一朵云，\n高高飘过山谷与丘峦，\n忽然一群，一大片，\n金色水仙在眼前。“\n\n杰克：我仿佛看见黄色的花！\n\n布朗太太：没错。”像一朵云” 是明喻，诗人用 “like” 或 “as” 把自己比作云。\n\n诗二——罗伯特·弗罗斯特：\n“树林可爱，幽深又暗沉，\n但我还有承诺要守，\n还有里程在安睡之前，\n还有里程在安睡之前。”\n\n艾玛：最后一句重复了，为什么？\n\n布朗太太：这叫重复。让这一行留在你脑中，像雪地里缓慢的脚步。\n\n诗三——艾米莉·狄金森：\n“希望是有羽毛的东西，\n栖息在灵魂里。“\n\n杰克：希望还有羽毛？奇怪，但很美。\n\n布朗太太：这就是暗喻——直接说希望”是”一只鸟，不用 “like”。读诗时放慢脚步，听声音，问自己：“什么颜色？什么声音？什么感受？” 你脑中的答案就是诗的答案。\n\n艾玛：布朗太太，现在诗歌好像不难了。\n\n布朗太太：它一直都不难，艾玛，只是我们忘了倾听。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Simile and metaphor; figurative language",
+              "en": "Poets use figurative language to say more in fewer words.\n\n1) Simile — \"like\" or \"as\"\n   Her voice is like music.\n   The boy runs as fast as a deer.\n\n2) Metaphor — say X IS Y (no \"like\" or \"as\")\n   Time is a river.\n   Books are doors.\n\n3) Personification — give human actions to things\n   The wind whispered in the trees.\n   The old clock laughed at us.\n\n4) Repetition — say the same word or line again for rhythm / emphasis\n   I have a dream. I have a dream. I have a dream today.\n\n5) Alliteration — words near each other begin with the same sound\n   Silver streams, sleepy stars, silent night.\n\nCompare:\n   Simile:      Her smile is like the morning sun.\n   Metaphor:   Her smile is the morning sun.\n\nWhy use figurative language?\n   To make the reader SEE and FEEL more — to turn an idea into a picture.\n\nTip: Poems rarely follow all normal grammar rules. A poet may break a line where a sentence feels right, not where the grammar book wants.",
+              "cn": "诗人用修辞语言在更少字里表达更多。\n\n1) 明喻——含 like 或 as\n   她的声音像音乐。\n   那男孩跑得像鹿一样快。\n\n2) 暗喻——直接说 X 是 Y（不用 like / as）\n   时间是一条河。\n   书是一扇扇门。\n\n3) 拟人——把人的行为给予事物\n   风在树间低语。\n   老钟在笑我们。\n\n4) 重复——同词或同句再次出现，增强节奏与感情\n   我有一个梦。我有一个梦。今天我有一个梦。\n\n5) 头韵——邻近词开头相同辅音\n   银色溪流、沉睡星辰、寂静的夜。\n\n比较：\n   明喻：Her smile is like the morning sun.\n   暗喻：Her smile is the morning sun.\n\n为什么要用修辞？\n   让读者“看见”和“感受”更多——把想法变成画面。\n\n小贴士：诗歌很少严守所有语法。诗人往往在感觉对的地方断行，而非语法书要求的地方。"
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · From Li Bai to the world",
+              "en": "Chinese poetry is more than 3,000 years old. It began with short folk songs and grew into some of the most beautiful writing on Earth.\n\nThe Tang Dynasty (618–907) is often called the golden age of Chinese poetry. More than 2,000 Tang poets left behind nearly 50,000 poems. Two names stand above all the rest.\n\nLi Bai was called the \"Immortal Poet\". He loved wine, the moon, and travel. In one of his most famous poems, he looks at moonlight on his bedroom floor and writes just four lines — but those four lines say more than a long letter home. Chinese children still learn this poem before they learn to ride a bike.\n\nDu Fu had a very different life. He saw war, hunger, and sickness. His poems write about ordinary soldiers, lost mothers, and tiny gardens. We call him the \"Sage of Poetry\" because his voice is gentle and honest — even when his subject is hard.\n\nAfter the Tang, great poets continued to appear. Su Shi, Li Qingzhao, and many others wrote new forms such as ci — poems that follow the tunes of old songs. Li Qingzhao, one of China's greatest female poets, filled her lines with soft rain, small ships, and a quiet, brave heart.\n\nChinese poems travelled far. A book of Tang poems was translated into French in the 18th century and later into many other languages. Today, American teenagers memorise \"Quiet Night Thoughts\" in their first Chinese class.\n\nA good poem is like a seed. One reader, one moment, and it grows into a small garden in the reader's heart. Li Bai's moon still rises in our poems tonight.",
+              "cn": "中国诗歌已有 3000 多年历史，从短短的民歌开始，成长为世界上最美的文字之一。\n\n唐代（618–907）被誉为中国诗歌的黄金时代。两千余位唐代诗人留下近五万首作品。其中有两个名字高于一切。\n\n李白被称“诗仙”。他爱酒、爱月、爱游历。他最有名的诗之一，望见卧室地板上的月光，只写四行——却比长信更能表达思乡之情。中国孩子往往还没会骑车，就先会背这首诗。\n\n杜甫的人生完全不同，他经历战争、饥荒、疾病。他的诗写平凡的士兵、失散的母亲、狭小的庭园。我们称他“诗圣”，因为即使写沉重的题材，他的嗓音依旧温和而诚实。\n\n唐之后伟大诗人仍层出不穷：苏轼、李清照等人开创“词”这种按乐曲填字的新体。李清照是中国最伟大的女诗人之一，她的诗行里有小雨、小舟，也有一颗安静而勇敢的心。\n\n中国诗远播海外。一部唐诗集 18 世纪被译成法文，后又译成多种语言。如今，美国中学生在第一堂中文课便学会背诵《静夜思》。\n\n一首好诗就像一粒种子：一个读者，一个瞬间，便在读者心中长成一座小花园。今夜，李白的月亮依然在我们的诗中升起。"
+            }
+          ]
+        },
+        {
+          "id": "u8",
+          "module": "Module 4 Reading",
+          "title": "Unit 8 Great literature",
+          "words": [
+            {
+              "word": "literature",
+              "phonetic": "/ˈlɪtrətʃə(r)/",
+              "pos": "n.",
+              "meaning": "文学",
+              "example": "Chinese literature has a long and rich history."
+            },
+            {
+              "word": "novel",
+              "phonetic": "/ˈnɒvl/",
+              "pos": "n.",
+              "meaning": "长篇小说",
+              "example": "\"Journey to the West\" is a classic Chinese novel."
+            },
+            {
+              "word": "story",
+              "phonetic": "/ˈstɔːri/",
+              "pos": "n.",
+              "meaning": "故事",
+              "example": "He told us a story that lasted for three nights."
+            },
+            {
+              "word": "author",
+              "phonetic": "/ˈɔːθə(r)/",
+              "pos": "n.",
+              "meaning": "作者",
+              "example": "The author has written fifteen novels."
+            },
+            {
+              "word": "character",
+              "phonetic": "/ˈkærəktə(r)/",
+              "pos": "n.",
+              "meaning": "角色",
+              "example": "Hermione is a clever character in Harry Potter."
+            },
+            {
+              "word": "chapter",
+              "phonetic": "/ˈtʃæptə(r)/",
+              "pos": "n.",
+              "meaning": "章节",
+              "example": "I read two chapters before bedtime."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "pos": "n.",
+              "meaning": "戏剧",
+              "example": "Shakespeare wrote both comedies and tragedies."
+            },
+            {
+              "word": "tragedy",
+              "phonetic": "/ˈtrædʒədi/",
+              "pos": "n.",
+              "meaning": "悲剧",
+              "example": "Romeo and Juliet is a famous tragedy."
+            },
+            {
+              "word": "comedy",
+              "phonetic": "/ˈkɒmədi/",
+              "pos": "n.",
+              "meaning": "喜剧",
+              "example": "A Midsummer Night's Dream is a lovely comedy."
+            },
+            {
+              "word": "classic",
+              "phonetic": "/ˈklæsɪk/",
+              "pos": "adj./n.",
+              "meaning": "经典（的）",
+              "example": "This classic has been read for 400 years."
+            },
+            {
+              "word": "imagination",
+              "phonetic": "/ɪˌmædʒɪˈneɪʃn/",
+              "pos": "n.",
+              "meaning": "想象力",
+              "example": "A good book feeds the imagination."
+            },
+            {
+              "word": "fantasy",
+              "phonetic": "/ˈfæntəsi/",
+              "pos": "n.",
+              "meaning": "幻想",
+              "example": "Children love fantasy stories about dragons."
+            },
+            {
+              "word": "adventure",
+              "phonetic": "/ədˈventʃə(r)/",
+              "pos": "n.",
+              "meaning": "冒险",
+              "example": "Tom Sawyer is full of exciting adventures."
+            },
+            {
+              "word": "universal",
+              "phonetic": "/ˌjuːnɪˈvɜːsl/",
+              "pos": "adj.",
+              "meaning": "普遍的",
+              "example": "Love and loss are universal themes in literature."
+            },
+            {
+              "word": "influence",
+              "phonetic": "/ˈɪnfluəns/",
+              "pos": "n./v.",
+              "meaning": "影响",
+              "example": "Great books influence a whole generation of readers."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "Reading",
+              "title": "Reading · Meeting Shakespeare",
+              "en": "Setting: A bookshop in London, 1601. A young Chinese traveller (A) visits the shop and meets an English shopkeeper (S).\n\nA: Good afternoon. I have read that an English poet called Shakespeare is very popular. Do you have his books?\n\nS: Oh, Mr Shakespeare is not only a poet. He writes plays — comedies, tragedies, and history plays. Have you ever heard of \"Romeo and Juliet\"?\n\nA: Romeo and Juliet? A love story?\n\nS: A love story and a tragedy. Two young people from enemy families fall in love. In the end, they die — but their death finally ends the war between the families.\n\nA: That is a powerful idea. We have similar stories in China — the Butterfly Lovers.\n\nS: Really? Then you will understand Shakespeare's heart. He often writes: \"Though we come from different lands, we share one human nature.\"\n\nA: What about his comedies?\n\nS: Ha! \"A Midsummer Night's Dream\" is my favourite. Fairies, lovers, a donkey, and moonlight — all in one forest. When you finish it, you laugh AND wonder whether love is a kind of magic.\n\nA: What is his language like? I am learning English.\n\nS: His English is old but musical. He invented many words we still use today: \"lonely\", \"bedroom\", \"critic\", even \"new-fangled\"! Without him, our English would be thinner.\n\nA: I will buy \"Romeo and Juliet\" first. How much is it?\n\nS: Two shillings. But young sir, take this advice with the book. Read him slowly, read him aloud. Shakespeare is a river. Sit by the bank and let the water pass before you try to cross it.\n\nA: Thank you, sir. I came in for a book, but I am leaving with a teacher.",
+              "cn": "场景：1601 年伦敦一家书店。一位年轻中国旅行者（甲）走进来，遇到英国老板（S）。\n\n甲：下午好，听说英国有一位很有名的诗人莎士比亚，您这儿有他的书吗？\n\nS：莎士比亚先生不止是诗人，他还写剧本——喜剧、悲剧、历史剧。听过《罗密欧与朱丽叶》吗？\n\n甲：《罗密欧与朱丽叶》？爱情故事？\n\nS：是爱情故事，也是悲剧。两个仇家年轻人相爱，最后双双赴死——他们的死反而终结了两家族的争斗。\n\n甲：很有力量的构思。我们中国也有类似的故事——梁山伯与祝英台。\n\nS：真的？那你一定理解莎士比亚的心。他常写：“我们来自不同土地，却拥有同一颗人性之心。”\n\n甲：他的喜剧呢？\n\nS：哈！《仲夏夜之梦》是我的最爱。精灵、恋人、一头驴、还有月光——都在一座森林里。读完你会笑，也会想：爱情是不是一种魔法？\n\n甲：他的语言怎么样？我在学英语。\n\nS：他的英语古老却富音乐感，发明了许多今天还在用的词：“lonely”、“bedroom”、“critic”、甚至 “new-fangled”！没有他，我们的英语会变薄。\n\n甲：那先买《罗密欧与朱丽叶》吧，多少钱？\n\nS：两先令。年轻先生，除了书，再送你一句建议：慢慢读，大声读。莎士比亚是一条河，先坐在岸边让水流过再谈过河。\n\n甲：先生，我本想买一本书，结果带走了一位老师。"
+            },
+            {
+              "page": "Grammar focus",
+              "title": "Grammar focus · Reported speech (advanced) and review",
+              "en": "When you tell a story from a book, you often switch between direct and reported speech.\n\n1) Reported statements with different tenses:\n   Direct: \"I love you.\"         → He said he loved her.\n   Direct: \"I am writing a play.\" → She said she was writing a play.\n   Direct: \"I have seen him.\"    → She said she had seen him.\n   Direct: \"I will visit Verona.\"→ Juliet said she would visit Verona.\n\n2) Reported commands / requests — use \"to + verb\" or \"not to + verb\":\n   Direct: \"Go home!\"             → He told her to go home.\n   Direct: \"Don't be late.\"       → She asked him not to be late.\n\n3) Reported questions:\n   Yes/no: Did you read it? → She asked (me) if I had read it.\n   Wh-:    Where does he live? → She asked where he lived.\n\nVerbs of reporting (besides \"say\" and \"ask\"):\n   tell, advise, warn, promise, suggest, recommend, admit, complain\n   \"He promised that he would come back.\"\n   \"She suggested that we should read it together.\"\n\nPunctuation tip:\n   Use quotation marks \" \" only for DIRECT speech.\n   In reported speech, remove them.\n\nFinal tip:\n   When the fact is still true or timeless (Earth is round, the sun rises…),\n   you can keep the present tense in reported speech:\n     The teacher said that the Earth is round.",
+              "cn": "当你从书里讲故事，常在直接引语与间接引语之间切换。\n\n1) 不同时态的陈述句转述：\n   直接：\"I love you.\"         → He said he loved her.\n   直接：\"I am writing a play.\" → She said she was writing a play.\n   直接：\"I have seen him.\"    → She said she had seen him.\n   直接：\"I will visit Verona.\" → Juliet said she would visit Verona.\n\n2) 祈使句（命令/请求）转述——用 to + 动词 或 not to + 动词：\n   直接：\"Go home!\"             → He told her to go home.\n   直接：\"Don't be late.\"       → She asked him not to be late.\n\n3) 疑问句转述：\n   一般疑问：Did you read it? → She asked (me) if I had read it.\n   特殊疑问：Where does he live? → She asked where he lived.\n\n除 say / ask 外常见引述动词：\n   tell, advise, warn, promise, suggest, recommend, admit, complain\n   \"He promised that he would come back.\"\n   \"She suggested that we should read it together.\"\n\n标点小贴士：\n   只有直接引语用引号 \" \"；间接引语去掉引号。\n\n最后小贴士：\n   如果事实永恒（地球是圆的、太阳升起……），间接引语里的时态可保留现在时：\n     The teacher said that the Earth is round."
+            },
+            {
+              "page": "More reading",
+              "title": "More reading · Books that have changed the world",
+              "en": "Humans have been writing books for over 4,000 years, but only a few have truly shaken the world. Here are four of them.\n\n1) The Analects of Confucius (China, 5th century BC)\nA small book of short sayings by Confucius and his disciples. For more than 2,000 years, Chinese children learned to read by copying its lines. Its simple advice — \"Do not do to others what you do not want done to yourself\" — has been called a \"golden rule\" of many cultures.\n\n2) Don Quixote (Spain, 1605)\nWhen people talk about the birth of the modern novel, they mention Don Quixote. An old man loves books of knights so much that he becomes a knight himself — riding a thin horse, fighting windmills, and believing he is in love with a princess. It has made readers laugh and cry for more than 400 years.\n\n3) Oliver Twist (Britain, 1838)\nCharles Dickens wrote this book when children worked in factories for 14 hours a day. Oliver is a poor orphan who dares to ask for \"a little more\" food. When the book appeared, British parliament finally started to change laws about children's work. A book changed a country's heart.\n\n4) Dream of the Red Chamber (China, 18th century)\nCao Xueqin spent the last years of his life writing this huge novel of a great family rising and falling. It has over 400 characters and some of the most beautiful sentences in the Chinese language. A whole science, \"Redology\", has grown around it. It was translated into English, Japanese, Russian and many other languages.\n\nGreat literature shows us who we are. A good book is not only ink on paper; it is a mirror, a lamp, and sometimes a small revolution in a quiet chair.",
+              "cn": "人类写书已 4000 多年，但真正撼动世界的并不多。下面四部便是。\n\n1)《论语》（中国，公元前 5 世纪）\n孔子及弟子言论的小册子。两千多年来，中国孩子抄写它的句子学会读书。书中一句朴素箴言“己所不欲，勿施于人”被世界多种文化誉为“黄金法则”。\n\n2)《堂吉诃德》（西班牙，1605 年）\n谈起现代小说的诞生，人们总要提到《堂吉诃德》。一位爱读骑士书的老人把自己变成骑士——骑瘦马、战风车、以为自己爱上了公主。四百多年来，它让读者又笑又哭。\n\n3)《雾都孤儿》（英国，1838 年）\n狄更斯创作这本书时，英国儿童每天在工厂劳作 14 小时。孤儿奥利弗敢说“再来一点”食物。书一出版，英国议会终于开始修改童工法律。一本书改变了一个国家的心。\n\n4)《红楼梦》（中国，18 世纪）\n曹雪芹用他生命的最后几年写下这部大家族兴衰的巨著，400 多个人物、无数华美诗句，以至形成了“红学”。它已被译成英、日、俄等多种语言。\n\n伟大的文学告诉我们“我们是谁”。一本好书不只是白纸黑字，它是镜子、是灯、有时也是一场坐在安静椅上的小小革命。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

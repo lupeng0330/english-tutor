@@ -1,0 +1,42 @@
+{
+  "tourist": [
+    { "en": "A tourist.", "cn": "游客。", "level": 1 },
+    { "en": "Many tourists come.", "cn": "很多游客来。", "level": 2 },
+    { "en": "Tourists from around the world visit the Great Wall.", "cn": "世界各地的游客都来参观长城。", "level": 3 }
+  ],
+  "spot": [
+    { "en": "A nice spot.", "cn": "一个好地方。", "level": 1 },
+    { "en": "A famous spot.", "cn": "一个著名景点。", "level": 2 },
+    { "en": "The lake is a popular spot for taking photos.", "cn": "这个湖是拍照的热门地点。", "level": 3 }
+  ],
+  "city": [
+    { "en": "A big city.", "cn": "一座大城市。", "level": 1 },
+    { "en": "I live in a city.", "cn": "我住在城市。", "level": 2 },
+    { "en": "Beijing is one of the most beautiful cities in China.", "cn": "北京是中国最美的城市之一。", "level": 3 }
+  ],
+  "country": [
+    { "en": "Our country.", "cn": "我们国家。", "level": 1 },
+    { "en": "Visit a country.", "cn": "去一个国家。", "level": 2 },
+    { "en": "Each country has its own special places and stories.", "cn": "每个国家都有自己独特的地方和故事。", "level": 3 }
+  ],
+  "Great Wall": [
+    { "en": "The Great Wall.", "cn": "长城。", "level": 1 },
+    { "en": "Climb the Great Wall.", "cn": "爬长城。", "level": 2 },
+    { "en": "The Great Wall is over two thousand years old.", "cn": "长城已经两千多年历史。", "level": 3 }
+  ],
+  "park": [
+    { "en": "A park.", "cn": "公园。", "level": 1 },
+    { "en": "A theme park.", "cn": "一个主题公园。", "level": 2 },
+    { "en": "The new theme park has many exciting rides.", "cn": "新主题公园有许多刺激的游乐项目。", "level": 3 }
+  ],
+  "museum": [
+    { "en": "A museum.", "cn": "一座博物馆。", "level": 1 },
+    { "en": "Visit the museum.", "cn": "参观博物馆。", "level": 2 },
+    { "en": "The science museum has interactive exhibits for kids.", "cn": "科技馆有适合孩子的互动展品。", "level": 3 }
+  ],
+  "famous": [
+    { "en": "It's famous.", "cn": "它很有名。", "level": 1 },
+    { "en": "A famous place.", "cn": "一个著名地方。", "level": 2 },
+    { "en": "She is famous for her amazing English songs.", "cn": "她因精彩的英文歌而闻名。", "level": 3 }
+  ]
+}

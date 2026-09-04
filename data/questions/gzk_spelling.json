@@ -1,0 +1,2442 @@
+[
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S01",
+    "q": "你好 /həˈləʊ/ 首字母 H·共 5 个字母",
+    "answer": "hello",
+    "hint": "h____",
+    "difficulty": 1,
+    "explain": "例句：Hello! I'm Andy."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S02",
+    "q": "嗨；你好 /haɪ/ 首字母 H·共 2 个字母",
+    "answer": "hi",
+    "hint": "h_",
+    "difficulty": 1,
+    "explain": "例句：Hi! I'm Lily."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S03",
+    "q": "我 /aɪ/ 首字母 I·共 1 个字母",
+    "answer": "i",
+    "hint": "I",
+    "difficulty": 1,
+    "explain": "例句：I am a pupil."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S04",
+    "q": "是 /æm/ 首字母 A·共 2 个字母",
+    "answer": "am",
+    "hint": "a_",
+    "difficulty": 1,
+    "explain": "例句：I am Andy."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S05",
+    "q": "名字 /neɪm/ 首字母 N·共 4 个字母",
+    "answer": "name",
+    "hint": "n___",
+    "difficulty": 1,
+    "explain": "例句：My name is Lily."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S06",
+    "q": "再见 /ˌɡʊdˈbaɪ/ 首字母 G·共 7 个字母",
+    "answer": "goodbye",
+    "hint": "g______",
+    "difficulty": 1,
+    "explain": "例句：Goodbye, Miss Li!"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S07",
+    "q": "拜拜 /baɪ/ 首字母 B·共 3 个字母",
+    "answer": "bye",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：Bye! See you."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S08",
+    "q": "老师 /ˈtiːtʃə(r)/ 首字母 T·共 7 个字母",
+    "answer": "teacher",
+    "hint": "t______",
+    "difficulty": 1,
+    "explain": "例句：She is my teacher."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S09",
+    "q": "朋友 /frend/ 首字母 F·共 6 个字母",
+    "answer": "friend",
+    "hint": "f_____",
+    "difficulty": 1,
+    "explain": "例句：You are my friend."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S10",
+    "q": "男孩 /bɔɪ/ 首字母 B·共 3 个字母",
+    "answer": "boy",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：Andy is a boy."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S11",
+    "q": "女孩 /ɡɜːl/ 首字母 G·共 4 个字母",
+    "answer": "girl",
+    "hint": "g___",
+    "difficulty": 1,
+    "explain": "例句：Lily is a girl."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1_S12",
+    "q": "见面 /miːt/ 首字母 M·共 4 个字母",
+    "answer": "meet",
+    "hint": "m___",
+    "difficulty": 1,
+    "explain": "例句：Nice to meet you."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S01",
+    "q": "书包 /bæɡ/ 首字母 B·共 3 个字母",
+    "answer": "bag",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：I have a new bag."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S02",
+    "q": "钢笔 /pen/ 首字母 P·共 3 个字母",
+    "answer": "pen",
+    "hint": "p__",
+    "difficulty": 1,
+    "explain": "例句：This is my pen."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S03",
+    "q": "铅笔 /ˈpensl/ 首字母 P·共 6 个字母",
+    "answer": "pencil",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：Here is a pencil."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S04",
+    "q": "书 /bʊk/ 首字母 B·共 4 个字母",
+    "answer": "book",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：Open your book, please."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S05",
+    "q": "尺子 /ˈruːlə(r)/ 首字母 R·共 5 个字母",
+    "answer": "ruler",
+    "hint": "r____",
+    "difficulty": 1,
+    "explain": "例句：I have a long ruler."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S06",
+    "q": "橡皮 /ɪˈreɪzə(r)/ 首字母 E·共 6 个字母",
+    "answer": "eraser",
+    "hint": "e_____",
+    "difficulty": 1,
+    "explain": "例句：Where is my eraser?"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S07",
+    "q": "文具盒 /ˈpensl keɪs/ 首字母 P·共 11 个字母",
+    "answer": "pencil-case",
+    "hint": "p__________",
+    "difficulty": 1,
+    "explain": "例句：My pencil-case is red."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S08",
+    "q": "蜡笔 /ˈkreɪən/ 首字母 C·共 6 个字母",
+    "answer": "crayon",
+    "hint": "c_____",
+    "difficulty": 1,
+    "explain": "例句：I have six crayons."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S09",
+    "q": "新的 /njuː/ 首字母 N·共 3 个字母",
+    "answer": "new",
+    "hint": "n__",
+    "difficulty": 1,
+    "explain": "例句：It is a new bag."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S10",
+    "q": "有 /hæv/ 首字母 H·共 4 个字母",
+    "answer": "have",
+    "hint": "h___",
+    "difficulty": 1,
+    "explain": "例句：I have a pen."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S11",
+    "q": "学校 /skuːl/ 首字母 S·共 6 个字母",
+    "answer": "school",
+    "hint": "s_____",
+    "difficulty": 1,
+    "explain": "例句：I go to school."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2_S12",
+    "q": "这个 /ðɪs/ 首字母 T·共 4 个字母",
+    "answer": "this",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：This is my book."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S01",
+    "q": "一 /wʌn/ 首字母 O·共 3 个字母",
+    "answer": "one",
+    "hint": "o__",
+    "difficulty": 1,
+    "explain": "例句：I have one bag."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S02",
+    "q": "二 /tuː/ 首字母 T·共 3 个字母",
+    "answer": "two",
+    "hint": "t__",
+    "difficulty": 1,
+    "explain": "例句：Two pens, please."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S03",
+    "q": "三 /θriː/ 首字母 T·共 5 个字母",
+    "answer": "three",
+    "hint": "t____",
+    "difficulty": 1,
+    "explain": "例句：I see three birds."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S04",
+    "q": "四 /fɔː(r)/ 首字母 F·共 4 个字母",
+    "answer": "four",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：Four cats are here."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S05",
+    "q": "五 /faɪv/ 首字母 F·共 4 个字母",
+    "answer": "five",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：Give me five!"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S06",
+    "q": "六 /sɪks/ 首字母 S·共 3 个字母",
+    "answer": "six",
+    "hint": "s__",
+    "difficulty": 1,
+    "explain": "例句：I am six."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S07",
+    "q": "七 /ˈsevn/ 首字母 S·共 5 个字母",
+    "answer": "seven",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：Seven days a week."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S08",
+    "q": "八 /eɪt/ 首字母 E·共 5 个字母",
+    "answer": "eight",
+    "hint": "e____",
+    "difficulty": 1,
+    "explain": "例句：Eight balls."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S09",
+    "q": "九 /naɪn/ 首字母 N·共 4 个字母",
+    "answer": "nine",
+    "hint": "n___",
+    "difficulty": 1,
+    "explain": "例句：Nine pencils."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S10",
+    "q": "十 /ten/ 首字母 T·共 3 个字母",
+    "answer": "ten",
+    "hint": "t__",
+    "difficulty": 1,
+    "explain": "例句：Ten little fingers."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S11",
+    "q": "数数 /kaʊnt/ 首字母 C·共 5 个字母",
+    "answer": "count",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：Let's count together."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U3_S12",
+    "q": "多少 /haʊ ˈmeni/ 首字母 H·共 8 个字母",
+    "answer": "how many",
+    "hint": "h_______",
+    "difficulty": 1,
+    "explain": "例句：How many pens?"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S01",
+    "q": "绿色 /ɡriːn/ 首字母 G·共 5 个字母",
+    "answer": "green",
+    "hint": "g____",
+    "difficulty": 1,
+    "explain": "例句：I like green."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S02",
+    "q": "红色 /red/ 首字母 R·共 3 个字母",
+    "answer": "red",
+    "hint": "r__",
+    "difficulty": 1,
+    "explain": "例句：The apple is red."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S03",
+    "q": "蓝色 /bluː/ 首字母 B·共 4 个字母",
+    "answer": "blue",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：The sky is blue."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S04",
+    "q": "黄色 /ˈjeləʊ/ 首字母 Y·共 6 个字母",
+    "answer": "yellow",
+    "hint": "y_____",
+    "difficulty": 1,
+    "explain": "例句：The sun is yellow."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S05",
+    "q": "橙色 /ˈɒrɪndʒ/ 首字母 O·共 6 个字母",
+    "answer": "orange",
+    "hint": "o_____",
+    "difficulty": 1,
+    "explain": "例句：I have an orange crayon."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S06",
+    "q": "紫色 /ˈpɜːpl/ 首字母 P·共 6 个字母",
+    "answer": "purple",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：Her dress is purple."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S07",
+    "q": "粉色 /pɪŋk/ 首字母 P·共 4 个字母",
+    "answer": "pink",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：Pink is nice."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S08",
+    "q": "黑色 /blæk/ 首字母 B·共 5 个字母",
+    "answer": "black",
+    "hint": "b____",
+    "difficulty": 1,
+    "explain": "例句：A black cat."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S09",
+    "q": "白色 /waɪt/ 首字母 W·共 5 个字母",
+    "answer": "white",
+    "hint": "w____",
+    "difficulty": 1,
+    "explain": "例句：White clouds."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S10",
+    "q": "颜色 /ˈkʌlə(r)/ 首字母 C·共 6 个字母",
+    "answer": "colour",
+    "hint": "c_____",
+    "difficulty": 1,
+    "explain": "例句：What colour is it?"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S11",
+    "q": "喜欢 /laɪk/ 首字母 L·共 4 个字母",
+    "answer": "like",
+    "hint": "l___",
+    "difficulty": 1,
+    "explain": "例句：I like blue."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U4_S12",
+    "q": "最喜欢的 /ˈfeɪvərɪt/ 首字母 F·共 9 个字母",
+    "answer": "favourite",
+    "hint": "f________",
+    "difficulty": 1,
+    "explain": "例句：Green is my favourite colour."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S01",
+    "q": "滑板车 /ˈskuːtə(r)/ 首字母 S·共 7 个字母",
+    "answer": "scooter",
+    "hint": "s______",
+    "difficulty": 1,
+    "explain": "例句：Here's my scooter."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S02",
+    "q": "自行车 /baɪk/ 首字母 B·共 4 个字母",
+    "answer": "bike",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：I can ride a bike."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S03",
+    "q": "球 /bɔːl/ 首字母 B·共 4 个字母",
+    "answer": "ball",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：Throw the ball."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S04",
+    "q": "风筝 /kaɪt/ 首字母 K·共 4 个字母",
+    "answer": "kite",
+    "hint": "k___",
+    "difficulty": 1,
+    "explain": "例句：Look at my kite."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S05",
+    "q": "小汽车 /kɑː(r)/ 首字母 C·共 3 个字母",
+    "answer": "car",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：A toy car."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S06",
+    "q": "洋娃娃 /dɒl/ 首字母 D·共 4 个字母",
+    "answer": "doll",
+    "hint": "d___",
+    "difficulty": 1,
+    "explain": "例句：She has a doll."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S07",
+    "q": "机器人 /ˈrəʊbɒt/ 首字母 R·共 5 个字母",
+    "answer": "robot",
+    "hint": "r____",
+    "difficulty": 1,
+    "explain": "例句：My robot can walk."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S08",
+    "q": "飞机 /pleɪn/ 首字母 P·共 5 个字母",
+    "answer": "plane",
+    "hint": "p____",
+    "difficulty": 1,
+    "explain": "例句：A toy plane flies high."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S09",
+    "q": "火车 /treɪn/ 首字母 T·共 5 个字母",
+    "answer": "train",
+    "hint": "t____",
+    "difficulty": 1,
+    "explain": "例句：A long train."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S10",
+    "q": "玩具 /tɔɪ/ 首字母 T·共 3 个字母",
+    "answer": "toy",
+    "hint": "t__",
+    "difficulty": 1,
+    "explain": "例句：I love my toys."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S11",
+    "q": "这里；在这儿 /hɪə(r)/ 首字母 H·共 4 个字母",
+    "answer": "here",
+    "hint": "h___",
+    "difficulty": 1,
+    "explain": "例句：Here you are."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U5_S12",
+    "q": "酷；很棒 /kuːl/ 首字母 C·共 4 个字母",
+    "answer": "cool",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：It's cool!"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S01",
+    "q": "跳 /dʒʌmp/ 首字母 J·共 4 个字母",
+    "answer": "jump",
+    "hint": "j___",
+    "difficulty": 1,
+    "explain": "例句：I can jump high."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S02",
+    "q": "跑 /rʌn/ 首字母 R·共 3 个字母",
+    "answer": "run",
+    "hint": "r__",
+    "difficulty": 1,
+    "explain": "例句：I can run fast."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S03",
+    "q": "游泳 /swɪm/ 首字母 S·共 4 个字母",
+    "answer": "swim",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：I can swim."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S04",
+    "q": "跳舞 /dɑːns/ 首字母 D·共 5 个字母",
+    "answer": "dance",
+    "hint": "d____",
+    "difficulty": 1,
+    "explain": "例句：Can you dance?"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S05",
+    "q": "唱歌 /sɪŋ/ 首字母 S·共 4 个字母",
+    "answer": "sing",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：I like to sing."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S06",
+    "q": "飞 /flaɪ/ 首字母 F·共 3 个字母",
+    "answer": "fly",
+    "hint": "f__",
+    "difficulty": 1,
+    "explain": "例句：Birds can fly."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S07",
+    "q": "走 /wɔːk/ 首字母 W·共 4 个字母",
+    "answer": "walk",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：Let's walk to school."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S08",
+    "q": "爬 /klaɪm/ 首字母 C·共 5 个字母",
+    "answer": "climb",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：I can climb a tree."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S09",
+    "q": "能；会 /kæn/ 首字母 C·共 3 个字母",
+    "answer": "can",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：I can jump."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S10",
+    "q": "不能；不会 /kɑːnt/ 首字母 C·共 5 个字母",
+    "answer": "can't",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：I can't swim."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S11",
+    "q": "玩；做（运动） /pleɪ/ 首字母 P·共 4 个字母",
+    "answer": "play",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：Let's play ball."
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U6_S12",
+    "q": "棒极了 /ɡreɪt/ 首字母 G·共 5 个字母",
+    "answer": "great",
+    "hint": "g____",
+    "difficulty": 1,
+    "explain": "例句：You're great!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S01",
+    "q": "家庭 /ˈfæməli/ 首字母 F·共 6 个字母",
+    "answer": "family",
+    "hint": "f_____",
+    "difficulty": 1,
+    "explain": "例句：I love my family."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S02",
+    "q": "爸爸 /dæd/ 首字母 D·共 3 个字母",
+    "answer": "dad",
+    "hint": "d__",
+    "difficulty": 1,
+    "explain": "例句：This is my dad."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S03",
+    "q": "妈妈 /mʌm/ 首字母 M·共 3 个字母",
+    "answer": "mum",
+    "hint": "m__",
+    "difficulty": 1,
+    "explain": "例句：My mum is kind."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S04",
+    "q": "哥哥；弟弟 /ˈbrʌðə(r)/ 首字母 B·共 7 个字母",
+    "answer": "brother",
+    "hint": "b______",
+    "difficulty": 1,
+    "explain": "例句：I have a brother."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S05",
+    "q": "姐姐；妹妹 /ˈsɪstə(r)/ 首字母 S·共 6 个字母",
+    "answer": "sister",
+    "hint": "s_____",
+    "difficulty": 1,
+    "explain": "例句：She is my sister."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S06",
+    "q": "爷爷；外公 /ˈɡrænpɑː/ 首字母 G·共 7 个字母",
+    "answer": "grandpa",
+    "hint": "g______",
+    "difficulty": 1,
+    "explain": "例句：Grandpa is old."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S07",
+    "q": "奶奶；外婆 /ˈɡrænmɑː/ 首字母 G·共 7 个字母",
+    "answer": "grandma",
+    "hint": "g______",
+    "difficulty": 1,
+    "explain": "例句：I love grandma."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S08",
+    "q": "婴儿 /ˈbeɪbi/ 首字母 B·共 4 个字母",
+    "answer": "baby",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：The baby is cute."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S09",
+    "q": "爱 /lʌv/ 首字母 L·共 4 个字母",
+    "answer": "love",
+    "hint": "l___",
+    "difficulty": 1,
+    "explain": "例句：I love you."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1_S10",
+    "q": "开心的 /ˈhæpi/ 首字母 H·共 5 个字母",
+    "answer": "happy",
+    "hint": "h____",
+    "difficulty": 1,
+    "explain": "例句：We are happy."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S01",
+    "q": "房子 /haʊs/ 首字母 H·共 5 个字母",
+    "answer": "house",
+    "hint": "h____",
+    "difficulty": 1,
+    "explain": "例句：Come to my house."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S02",
+    "q": "家 /həʊm/ 首字母 H·共 4 个字母",
+    "answer": "home",
+    "hint": "h___",
+    "difficulty": 1,
+    "explain": "例句：Welcome to my home."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S03",
+    "q": "门 /dɔː(r)/ 首字母 D·共 4 个字母",
+    "answer": "door",
+    "hint": "d___",
+    "difficulty": 1,
+    "explain": "例句：Open the door."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S04",
+    "q": "窗户 /ˈwɪndəʊ/ 首字母 W·共 6 个字母",
+    "answer": "window",
+    "hint": "w_____",
+    "difficulty": 1,
+    "explain": "例句：Close the window."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S05",
+    "q": "来 /kʌm/ 首字母 C·共 4 个字母",
+    "answer": "come",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：Come in, please."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S06",
+    "q": "欢迎 /ˈwelkəm/ 首字母 W·共 7 个字母",
+    "answer": "welcome",
+    "hint": "w______",
+    "difficulty": 1,
+    "explain": "例句：Welcome!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S07",
+    "q": "沙发 /ˈsəʊfə/ 首字母 S·共 4 个字母",
+    "answer": "sofa",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：Sit on the sofa."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S08",
+    "q": "进；在……里 /ɪn/ 首字母 I·共 2 个字母",
+    "answer": "in",
+    "hint": "i_",
+    "difficulty": 1,
+    "explain": "例句：Come in."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S09",
+    "q": "请 /pliːz/ 首字母 P·共 6 个字母",
+    "answer": "please",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：Sit down, please."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2_S10",
+    "q": "大的 /bɪɡ/ 首字母 B·共 3 个字母",
+    "answer": "big",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：It's a big house."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S01",
+    "q": "房间 /ruːm/ 首字母 R·共 4 个字母",
+    "answer": "room",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "例句：This is my room."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S02",
+    "q": "床 /bed/ 首字母 B·共 3 个字母",
+    "answer": "bed",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：The bed is soft."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S03",
+    "q": "书桌 /desk/ 首字母 D·共 4 个字母",
+    "answer": "desk",
+    "hint": "d___",
+    "difficulty": 1,
+    "explain": "例句：My desk is white."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S04",
+    "q": "椅子 /tʃeə(r)/ 首字母 C·共 5 个字母",
+    "answer": "chair",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：Sit on the chair."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S05",
+    "q": "台灯 /læmp/ 首字母 L·共 4 个字母",
+    "answer": "lamp",
+    "hint": "l___",
+    "difficulty": 1,
+    "explain": "例句：Turn on the lamp."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S06",
+    "q": "钟 /klɒk/ 首字母 C·共 5 个字母",
+    "answer": "clock",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：The clock is round."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S07",
+    "q": "盒子；箱子 /bɒks/ 首字母 B·共 3 个字母",
+    "answer": "box",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：My toy box."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S08",
+    "q": "在……上 /ɒn/ 首字母 O·共 2 个字母",
+    "answer": "on",
+    "hint": "o_",
+    "difficulty": 1,
+    "explain": "例句：The book is on the desk."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S09",
+    "q": "我的 /maɪ/ 首字母 M·共 2 个字母",
+    "answer": "my",
+    "hint": "m_",
+    "difficulty": 1,
+    "explain": "例句：This is my room."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U3_S10",
+    "q": "整洁的 /ˈtaɪdi/ 首字母 T·共 4 个字母",
+    "answer": "tidy",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：My room is tidy."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S01",
+    "q": "看见 /siː/ 首字母 S·共 3 个字母",
+    "answer": "see",
+    "hint": "s__",
+    "difficulty": 1,
+    "explain": "例句：What do you see?"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S02",
+    "q": "鸟 /bɜːd/ 首字母 B·共 4 个字母",
+    "answer": "bird",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：I see a bird."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S03",
+    "q": "树 /triː/ 首字母 T·共 4 个字母",
+    "answer": "tree",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：A big tree."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S04",
+    "q": "花 /ˈflaʊə(r)/ 首字母 F·共 6 个字母",
+    "answer": "flower",
+    "hint": "f_____",
+    "difficulty": 1,
+    "explain": "例句：Pretty flowers."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S05",
+    "q": "太阳 /sʌn/ 首字母 S·共 3 个字母",
+    "answer": "sun",
+    "hint": "s__",
+    "difficulty": 1,
+    "explain": "例句：The sun is bright."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S06",
+    "q": "云 /klaʊd/ 首字母 C·共 5 个字母",
+    "answer": "cloud",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：White clouds."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S07",
+    "q": "鱼 /fɪʃ/ 首字母 F·共 4 个字母",
+    "answer": "fish",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：Fish in the water."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S08",
+    "q": "看 /lʊk/ 首字母 L·共 4 个字母",
+    "answer": "look",
+    "hint": "l___",
+    "difficulty": 1,
+    "explain": "例句：Look at the bird!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S09",
+    "q": "什么 /wɒt/ 首字母 W·共 4 个字母",
+    "answer": "what",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：What do you see?"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U4_S10",
+    "q": "漂亮的 /ˈprɪti/ 首字母 P·共 6 个字母",
+    "answer": "pretty",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：Pretty flowers!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S01",
+    "q": "宠物 /pet/ 首字母 P·共 3 个字母",
+    "answer": "pet",
+    "hint": "p__",
+    "difficulty": 1,
+    "explain": "例句：I want a pet."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S02",
+    "q": "狗 /dɒɡ/ 首字母 D·共 3 个字母",
+    "answer": "dog",
+    "hint": "d__",
+    "difficulty": 1,
+    "explain": "例句：The dog is friendly."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S03",
+    "q": "猫 /kæt/ 首字母 C·共 3 个字母",
+    "answer": "cat",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：My cat is white."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S04",
+    "q": "兔子 /ˈræbɪt/ 首字母 R·共 6 个字母",
+    "answer": "rabbit",
+    "hint": "r_____",
+    "difficulty": 1,
+    "explain": "例句：The rabbit hops."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S05",
+    "q": "鱼 /fɪʃ/ 首字母 F·共 4 个字母",
+    "answer": "fish",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：A gold fish."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S06",
+    "q": "乌龟 /ˈtɜːtl/ 首字母 T·共 6 个字母",
+    "answer": "turtle",
+    "hint": "t_____",
+    "difficulty": 1,
+    "explain": "例句：The turtle is slow."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S07",
+    "q": "想要 /wɒnt/ 首字母 W·共 4 个字母",
+    "answer": "want",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：I want a dog."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S08",
+    "q": "可爱的 /kjuːt/ 首字母 C·共 4 个字母",
+    "answer": "cute",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：So cute!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S09",
+    "q": "小的 /ˈlɪtl/ 首字母 L·共 6 个字母",
+    "answer": "little",
+    "hint": "l_____",
+    "difficulty": 1,
+    "explain": "例句：A little cat."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U5_S10",
+    "q": "可以 /kæn/ 首字母 C·共 3 个字母",
+    "answer": "can",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：Can I have a pet?"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S01",
+    "q": "冰淇淋 /ˈaɪs kriːm/ 首字母 I·共 9 个字母",
+    "answer": "ice-cream",
+    "hint": "i________",
+    "difficulty": 1,
+    "explain": "例句：I want ice-cream!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S02",
+    "q": "蛋糕 /keɪk/ 首字母 C·共 4 个字母",
+    "answer": "cake",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：A birthday cake."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S03",
+    "q": "糖果 /ˈkændi/ 首字母 C·共 5 个字母",
+    "answer": "candy",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：Sweet candy."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S04",
+    "q": "果汁 /dʒuːs/ 首字母 J·共 5 个字母",
+    "answer": "juice",
+    "hint": "j____",
+    "difficulty": 1,
+    "explain": "例句：Orange juice, please."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S05",
+    "q": "牛奶 /mɪlk/ 首字母 M·共 4 个字母",
+    "answer": "milk",
+    "hint": "m___",
+    "difficulty": 1,
+    "explain": "例句：Drink milk."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S06",
+    "q": "面包 /bred/ 首字母 B·共 5 个字母",
+    "answer": "bread",
+    "hint": "b____",
+    "difficulty": 1,
+    "explain": "例句：I eat bread."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S07",
+    "q": "苹果 /ˈæpl/ 首字母 A·共 5 个字母",
+    "answer": "apple",
+    "hint": "a____",
+    "difficulty": 1,
+    "explain": "例句：A red apple."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S08",
+    "q": "水 /ˈwɔːtə(r)/ 首字母 W·共 5 个字母",
+    "answer": "water",
+    "hint": "w____",
+    "difficulty": 1,
+    "explain": "例句：Some water, please."
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S09",
+    "q": "好吃的 /ˈjʌmi/ 首字母 Y·共 5 个字母",
+    "answer": "yummy",
+    "hint": "y____",
+    "difficulty": 1,
+    "explain": "例句：Yummy!"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U6_S10",
+    "q": "想要 /wɒnt/ 首字母 W·共 4 个字母",
+    "answer": "want",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：I want some cake."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S01",
+    "q": "能；会 /kæn/ 首字母 C·共 3 个字母",
+    "answer": "can",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：What can you do?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S02",
+    "q": "唱歌 /sɪŋ/ 首字母 S·共 4 个字母",
+    "answer": "sing",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：I can sing."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S03",
+    "q": "跳舞 /dɑːns/ 首字母 D·共 5 个字母",
+    "answer": "dance",
+    "hint": "d____",
+    "difficulty": 1,
+    "explain": "例句：She can dance."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S04",
+    "q": "画画 /drɔː/ 首字母 D·共 4 个字母",
+    "answer": "draw",
+    "hint": "d___",
+    "difficulty": 1,
+    "explain": "例句：I can draw a cat."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S05",
+    "q": "游泳 /swɪm/ 首字母 S·共 4 个字母",
+    "answer": "swim",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：Can you swim?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S06",
+    "q": "滑冰 /skeɪt/ 首字母 S·共 5 个字母",
+    "answer": "skate",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：He can skate."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S07",
+    "q": "骑 /raɪd/ 首字母 R·共 4 个字母",
+    "answer": "ride",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "例句：I can ride a bike."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S08",
+    "q": "玩；演奏 /pleɪ/ 首字母 P·共 4 个字母",
+    "answer": "play",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：I can play the piano."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S09",
+    "q": "好地 /wel/ 首字母 W·共 4 个字母",
+    "answer": "well",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：She sings well."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1_S10",
+    "q": "也 /tuː/ 首字母 T·共 3 个字母",
+    "answer": "too",
+    "hint": "t__",
+    "difficulty": 1,
+    "explain": "例句：Me too!"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S01",
+    "q": "晚饭 /ˈdɪnə(r)/ 首字母 D·共 6 个字母",
+    "answer": "dinner",
+    "hint": "d_____",
+    "difficulty": 1,
+    "explain": "例句：What's for dinner?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S02",
+    "q": "米饭 /raɪs/ 首字母 R·共 4 个字母",
+    "answer": "rice",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "例句：I eat rice."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S03",
+    "q": "面条 /ˈnuːdlz/ 首字母 N·共 7 个字母",
+    "answer": "noodles",
+    "hint": "n______",
+    "difficulty": 1,
+    "explain": "例句：Hot noodles."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S04",
+    "q": "汤 /suːp/ 首字母 S·共 4 个字母",
+    "answer": "soup",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：Egg soup."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S05",
+    "q": "鱼 /fɪʃ/ 首字母 F·共 4 个字母",
+    "answer": "fish",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：Fish is yummy."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S06",
+    "q": "鸡肉 /ˈtʃɪkɪn/ 首字母 C·共 7 个字母",
+    "answer": "chicken",
+    "hint": "c______",
+    "difficulty": 1,
+    "explain": "例句：I like chicken."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S07",
+    "q": "鸡蛋 /eɡ/ 首字母 E·共 3 个字母",
+    "answer": "egg",
+    "hint": "e__",
+    "difficulty": 1,
+    "explain": "例句：Two eggs."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S08",
+    "q": "蔬菜 /ˈvedʒtəbl/ 首字母 V·共 9 个字母",
+    "answer": "vegetable",
+    "hint": "v________",
+    "difficulty": 1,
+    "explain": "例句：Eat your vegetables."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S09",
+    "q": "饿的 /ˈhʌŋɡri/ 首字母 H·共 6 个字母",
+    "answer": "hungry",
+    "hint": "h_____",
+    "difficulty": 1,
+    "explain": "例句：I'm hungry."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2_S10",
+    "q": "吃 /iːt/ 首字母 E·共 3 个字母",
+    "answer": "eat",
+    "hint": "e__",
+    "difficulty": 1,
+    "explain": "例句：Let's eat!"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S01",
+    "q": "动物园 /zuː/ 首字母 Z·共 3 个字母",
+    "answer": "zoo",
+    "hint": "z__",
+    "difficulty": 1,
+    "explain": "例句：Let's go to the zoo."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S02",
+    "q": "动物 /ˈænɪml/ 首字母 A·共 6 个字母",
+    "answer": "animal",
+    "hint": "a_____",
+    "difficulty": 1,
+    "explain": "例句：I like animals."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S03",
+    "q": "狮子 /ˈlaɪən/ 首字母 L·共 4 个字母",
+    "answer": "lion",
+    "hint": "l___",
+    "difficulty": 1,
+    "explain": "例句：The lion is strong."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S04",
+    "q": "老虎 /ˈtaɪɡə(r)/ 首字母 T·共 5 个字母",
+    "answer": "tiger",
+    "hint": "t____",
+    "difficulty": 1,
+    "explain": "例句：A big tiger."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S05",
+    "q": "猴子 /ˈmʌŋki/ 首字母 M·共 6 个字母",
+    "answer": "monkey",
+    "hint": "m_____",
+    "difficulty": 1,
+    "explain": "例句：The monkey jumps."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S06",
+    "q": "大象 /ˈelɪfənt/ 首字母 E·共 8 个字母",
+    "answer": "elephant",
+    "hint": "e_______",
+    "difficulty": 1,
+    "explain": "例句：The elephant is big."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S07",
+    "q": "熊猫 /ˈpændə/ 首字母 P·共 5 个字母",
+    "answer": "panda",
+    "hint": "p____",
+    "difficulty": 1,
+    "explain": "例句：Pandas are cute."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S08",
+    "q": "熊 /beə(r)/ 首字母 B·共 4 个字母",
+    "answer": "bear",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：A brown bear."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S09",
+    "q": "大的 /bɪɡ/ 首字母 B·共 3 个字母",
+    "answer": "big",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：A big elephant."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U3_S10",
+    "q": "看 /siː/ 首字母 S·共 3 个字母",
+    "answer": "see",
+    "hint": "s__",
+    "difficulty": 1,
+    "explain": "例句：I can see a panda."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S01",
+    "q": "时间 /taɪm/ 首字母 T·共 4 个字母",
+    "answer": "time",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：What time is it?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S02",
+    "q": "钟 /klɒk/ 首字母 C·共 5 个字母",
+    "answer": "clock",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：Look at the clock."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S03",
+    "q": "……点钟 /əˈklɒk/ 首字母 O·共 7 个字母",
+    "answer": "o'clock",
+    "hint": "o______",
+    "difficulty": 1,
+    "explain": "例句：It's seven o'clock."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S04",
+    "q": "早晨 /ˈmɔːnɪŋ/ 首字母 M·共 7 个字母",
+    "answer": "morning",
+    "hint": "m______",
+    "difficulty": 1,
+    "explain": "例句：Good morning!"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S05",
+    "q": "中午 /nuːn/ 首字母 N·共 4 个字母",
+    "answer": "noon",
+    "hint": "n___",
+    "difficulty": 1,
+    "explain": "例句：It's noon."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S06",
+    "q": "下午 /ˌɑːftəˈnuːn/ 首字母 A·共 9 个字母",
+    "answer": "afternoon",
+    "hint": "a________",
+    "difficulty": 1,
+    "explain": "例句：Good afternoon."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S07",
+    "q": "傍晚 /ˈiːvnɪŋ/ 首字母 E·共 7 个字母",
+    "answer": "evening",
+    "hint": "e______",
+    "difficulty": 1,
+    "explain": "例句：In the evening."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S08",
+    "q": "夜晚 /naɪt/ 首字母 N·共 5 个字母",
+    "answer": "night",
+    "hint": "n____",
+    "difficulty": 1,
+    "explain": "例句：Good night!"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S09",
+    "q": "起床 /ɡet ʌp/ 首字母 G·共 6 个字母",
+    "answer": "get up",
+    "hint": "g_____",
+    "difficulty": 1,
+    "explain": "例句：I get up at seven."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U4_S10",
+    "q": "现在 /naʊ/ 首字母 N·共 3 个字母",
+    "answer": "now",
+    "hint": "n__",
+    "difficulty": 1,
+    "explain": "例句：What time is it now?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S01",
+    "q": "滑冰 /skeɪt/ 首字母 S·共 5 个字母",
+    "answer": "skate",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：I'm skating."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S02",
+    "q": "跑 /rʌn/ 首字母 R·共 3 个字母",
+    "answer": "run",
+    "hint": "r__",
+    "difficulty": 1,
+    "explain": "例句：He is running."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S03",
+    "q": "跳 /dʒʌmp/ 首字母 J·共 4 个字母",
+    "answer": "jump",
+    "hint": "j___",
+    "difficulty": 1,
+    "explain": "例句：She is jumping."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S04",
+    "q": "游泳 /swɪm/ 首字母 S·共 4 个字母",
+    "answer": "swim",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：They are swimming."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S05",
+    "q": "骑 /raɪd/ 首字母 R·共 4 个字母",
+    "answer": "ride",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "例句：I'm riding a bike."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S06",
+    "q": "玩 /pleɪ/ 首字母 P·共 4 个字母",
+    "answer": "play",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：We are playing."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S07",
+    "q": "球 /bɔːl/ 首字母 B·共 4 个字母",
+    "answer": "ball",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：Play with a ball."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S08",
+    "q": "公园 /pɑːk/ 首字母 P·共 4 个字母",
+    "answer": "park",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：In the park."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S09",
+    "q": "现在 /naʊ/ 首字母 N·共 3 个字母",
+    "answer": "now",
+    "hint": "n__",
+    "difficulty": 1,
+    "explain": "例句：I'm skating now."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U5_S10",
+    "q": "有趣 /fʌn/ 首字母 F·共 3 个字母",
+    "answer": "fun",
+    "hint": "f__",
+    "difficulty": 1,
+    "explain": "例句：It's fun!"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S01",
+    "q": "洗 /wɒʃ/ 首字母 W·共 4 个字母",
+    "answer": "wash",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：Mum's washing up."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S02",
+    "q": "做饭 /kʊk/ 首字母 C·共 4 个字母",
+    "answer": "cook",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：Dad is cooking."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S03",
+    "q": "打扫 /kliːn/ 首字母 C·共 5 个字母",
+    "answer": "clean",
+    "hint": "c____",
+    "difficulty": 1,
+    "explain": "例句：Clean the room."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S04",
+    "q": "读 /riːd/ 首字母 R·共 4 个字母",
+    "answer": "read",
+    "hint": "r___",
+    "difficulty": 1,
+    "explain": "例句：I'm reading a book."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S05",
+    "q": "写 /raɪt/ 首字母 W·共 5 个字母",
+    "answer": "write",
+    "hint": "w____",
+    "difficulty": 1,
+    "explain": "例句：She is writing."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S06",
+    "q": "看 /wɒtʃ/ 首字母 W·共 5 个字母",
+    "answer": "watch",
+    "hint": "w____",
+    "difficulty": 1,
+    "explain": "例句：Watch TV."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S07",
+    "q": "帮助 /help/ 首字母 H·共 4 个字母",
+    "answer": "help",
+    "hint": "h___",
+    "difficulty": 1,
+    "explain": "例句：Can I help you?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S08",
+    "q": "忙碌的 /ˈbɪzi/ 首字母 B·共 4 个字母",
+    "answer": "busy",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：Mum is busy."
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S09",
+    "q": "做 /duː/ 首字母 D·共 2 个字母",
+    "answer": "do",
+    "hint": "d_",
+    "difficulty": 1,
+    "explain": "例句：What are you doing?"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U6_S10",
+    "q": "现在 /naʊ/ 首字母 N·共 3 个字母",
+    "answer": "now",
+    "hint": "n__",
+    "difficulty": 1,
+    "explain": "例句：She is cooking now."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S01",
+    "q": "T 恤衫 /ˈtiː ʃɜːt/ 首字母 T·共 7 个字母",
+    "answer": "T-shirt",
+    "hint": "T______",
+    "difficulty": 1,
+    "explain": "例句：Here is my T-shirt. It's purple."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S02",
+    "q": "连衣裙 /dres/ 首字母 D·共 5 个字母",
+    "answer": "dress",
+    "hint": "d____",
+    "difficulty": 1,
+    "explain": "例句：She's wearing a yellow dress."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S03",
+    "q": "毛衣 /ˈswetə/ 首字母 S·共 7 个字母",
+    "answer": "sweater",
+    "hint": "s______",
+    "difficulty": 1,
+    "explain": "例句：Here is my sweater. It is blue."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S04",
+    "q": "短裤 /ʃɔːts/ 首字母 S·共 6 个字母",
+    "answer": "shorts",
+    "hint": "s_____",
+    "difficulty": 1,
+    "explain": "例句：I like my blue shorts."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S05",
+    "q": "鞋子 /ʃuːz/ 首字母 S·共 5 个字母",
+    "answer": "shoes",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：Blue shoes, nice shoes."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S06",
+    "q": "短裙 /skɜːt/ 首字母 S·共 5 个字母",
+    "answer": "skirt",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：A red skirt on the bed."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S07",
+    "q": "衬衫 /ʃɜːt/ 首字母 S·共 5 个字母",
+    "answer": "shirt",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：Look at the white shirt."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S08",
+    "q": "牛仔裤 /dʒiːnz/ 首字母 J·共 5 个字母",
+    "answer": "jeans",
+    "hint": "j____",
+    "difficulty": 1,
+    "explain": "例句：My jeans are new."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S09",
+    "q": "袜子 /sɒks/ 首字母 S·共 5 个字母",
+    "answer": "socks",
+    "hint": "s____",
+    "difficulty": 1,
+    "explain": "例句：Socks, socks, everywhere."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S10",
+    "q": "夹克衫 /ˈdʒækɪt/ 首字母 J·共 6 个字母",
+    "answer": "jacket",
+    "hint": "j_____",
+    "difficulty": 1,
+    "explain": "例句：Here is my jacket. It's yellow."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S11",
+    "q": "男孩 /bɔɪ/ 首字母 B·共 3 个字母",
+    "answer": "boy",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：Boy 2 is my friend."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1_S12",
+    "q": "女孩 /ɡɜːl/ 首字母 G·共 4 个字母",
+    "answer": "girl",
+    "hint": "g___",
+    "difficulty": 1,
+    "explain": "例句：Who's she? — Girl 2."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S01",
+    "q": "公交车 /bʌs/ 首字母 B·共 3 个字母",
+    "answer": "bus",
+    "hint": "b__",
+    "difficulty": 1,
+    "explain": "例句：I go to school by bus."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S02",
+    "q": "小汽车 /kɑː(r)/ 首字母 C·共 3 个字母",
+    "answer": "car",
+    "hint": "c__",
+    "difficulty": 1,
+    "explain": "例句：Dad's car is red."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S03",
+    "q": "自行车 /baɪk/ 首字母 B·共 4 个字母",
+    "answer": "bike",
+    "hint": "b___",
+    "difficulty": 1,
+    "explain": "例句：I ride a bike."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S04",
+    "q": "出租车 /ˈtæksi/ 首字母 T·共 4 个字母",
+    "answer": "taxi",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：Take a taxi."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S05",
+    "q": "火车 /treɪn/ 首字母 T·共 5 个字母",
+    "answer": "train",
+    "hint": "t____",
+    "difficulty": 1,
+    "explain": "例句：A fast train."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S06",
+    "q": "步行 /ɒn fʊt/ 首字母 O·共 7 个字母",
+    "answer": "on foot",
+    "hint": "o______",
+    "difficulty": 1,
+    "explain": "例句：I go on foot."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S07",
+    "q": "乘（交通工具） /baɪ/ 首字母 B·共 2 个字母",
+    "answer": "by",
+    "hint": "b_",
+    "difficulty": 1,
+    "explain": "例句：by bus"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S08",
+    "q": "去 /ɡəʊ/ 首字母 G·共 2 个字母",
+    "answer": "go",
+    "hint": "g_",
+    "difficulty": 1,
+    "explain": "例句：I go to school."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S09",
+    "q": "快的 /fɑːst/ 首字母 F·共 4 个字母",
+    "answer": "fast",
+    "hint": "f___",
+    "difficulty": 1,
+    "explain": "例句：The train is fast."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2_S10",
+    "q": "学校 /skuːl/ 首字母 S·共 6 个字母",
+    "answer": "school",
+    "hint": "s_____",
+    "difficulty": 1,
+    "explain": "例句：Go to school."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S01",
+    "q": "老师 /ˈtiːtʃə(r)/ 首字母 T·共 7 个字母",
+    "answer": "teacher",
+    "hint": "t______",
+    "difficulty": 1,
+    "explain": "例句：I want to be a teacher."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S02",
+    "q": "医生 /ˈdɒktə(r)/ 首字母 D·共 6 个字母",
+    "answer": "doctor",
+    "hint": "d_____",
+    "difficulty": 1,
+    "explain": "例句：She is a doctor."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S03",
+    "q": "护士 /nɜːs/ 首字母 N·共 5 个字母",
+    "answer": "nurse",
+    "hint": "n____",
+    "difficulty": 1,
+    "explain": "例句：A kind nurse."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S04",
+    "q": "厨师 /kʊk/ 首字母 C·共 4 个字母",
+    "answer": "cook",
+    "hint": "c___",
+    "difficulty": 1,
+    "explain": "例句：He is a cook."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S05",
+    "q": "司机 /ˈdraɪvə(r)/ 首字母 D·共 6 个字母",
+    "answer": "driver",
+    "hint": "d_____",
+    "difficulty": 1,
+    "explain": "例句：A bus driver."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S06",
+    "q": "农民 /ˈfɑːmə(r)/ 首字母 F·共 6 个字母",
+    "answer": "farmer",
+    "hint": "f_____",
+    "difficulty": 1,
+    "explain": "例句：The farmer works hard."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S07",
+    "q": "警察 /pəˈliːs/ 首字母 P·共 6 个字母",
+    "answer": "police",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：A police officer."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S08",
+    "q": "想要 /wɒnt/ 首字母 W·共 4 个字母",
+    "answer": "want",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：I want to be a doctor."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S09",
+    "q": "成为 /biː/ 首字母 B·共 2 个字母",
+    "answer": "be",
+    "hint": "b_",
+    "difficulty": 1,
+    "explain": "例句：be a teacher"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U3_S10",
+    "q": "工作 /dʒɒb/ 首字母 J·共 3 个字母",
+    "answer": "job",
+    "hint": "j__",
+    "difficulty": 1,
+    "explain": "例句：A good job."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S01",
+    "q": "公园 /pɑːk/ 首字母 P·共 4 个字母",
+    "answer": "park",
+    "hint": "p___",
+    "difficulty": 1,
+    "explain": "例句：Take me to the park."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S02",
+    "q": "动物园 /zuː/ 首字母 Z·共 3 个字母",
+    "answer": "zoo",
+    "hint": "z__",
+    "difficulty": 1,
+    "explain": "例句：Go to the zoo."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S03",
+    "q": "商店 /ʃɒp/ 首字母 S·共 4 个字母",
+    "answer": "shop",
+    "hint": "s___",
+    "difficulty": 1,
+    "explain": "例句：A toy shop."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S04",
+    "q": "图书馆 /ˈlaɪbrəri/ 首字母 L·共 7 个字母",
+    "answer": "library",
+    "hint": "l______",
+    "difficulty": 1,
+    "explain": "例句：Read in the library."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S05",
+    "q": "学校 /skuːl/ 首字母 S·共 6 个字母",
+    "answer": "school",
+    "hint": "s_____",
+    "difficulty": 1,
+    "explain": "例句：Go to school."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S06",
+    "q": "请 /pliːz/ 首字母 P·共 6 个字母",
+    "answer": "please",
+    "hint": "p_____",
+    "difficulty": 1,
+    "explain": "例句：Take me, please."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S07",
+    "q": "带；送 /teɪk/ 首字母 T·共 4 个字母",
+    "answer": "take",
+    "hint": "t___",
+    "difficulty": 1,
+    "explain": "例句：Take me to the park."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S08",
+    "q": "去 /ɡəʊ/ 首字母 G·共 2 个字母",
+    "answer": "go",
+    "hint": "g_",
+    "difficulty": 1,
+    "explain": "例句：Let's go!"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S09",
+    "q": "哪里 /weə(r)/ 首字母 W·共 5 个字母",
+    "answer": "where",
+    "hint": "w____",
+    "difficulty": 1,
+    "explain": "例句：Where do you go?"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U4_S10",
+    "q": "开心的 /ˈhæpi/ 首字母 H·共 5 个字母",
+    "answer": "happy",
+    "hint": "h____",
+    "difficulty": 1,
+    "explain": "例句：I'm so happy!"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S01",
+    "q": "星期一 /ˈmʌndeɪ/ 首字母 M·共 6 个字母",
+    "answer": "monday",
+    "hint": "M_____",
+    "difficulty": 1,
+    "explain": "例句：My favourite day is Monday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S02",
+    "q": "星期二 /ˈtjuːzdeɪ/ 首字母 T·共 7 个字母",
+    "answer": "tuesday",
+    "hint": "T______",
+    "difficulty": 1,
+    "explain": "例句：See you on Tuesday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S03",
+    "q": "星期三 /ˈwenzdeɪ/ 首字母 W·共 9 个字母",
+    "answer": "wednesday",
+    "hint": "W________",
+    "difficulty": 1,
+    "explain": "例句：It's Wednesday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S04",
+    "q": "星期四 /ˈθɜːzdeɪ/ 首字母 T·共 8 个字母",
+    "answer": "thursday",
+    "hint": "T_______",
+    "difficulty": 1,
+    "explain": "例句：On Thursday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S05",
+    "q": "星期五 /ˈfraɪdeɪ/ 首字母 F·共 6 个字母",
+    "answer": "friday",
+    "hint": "F_____",
+    "difficulty": 1,
+    "explain": "例句：Happy Friday!"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S06",
+    "q": "星期六 /ˈsætədeɪ/ 首字母 S·共 8 个字母",
+    "answer": "saturday",
+    "hint": "S_______",
+    "difficulty": 1,
+    "explain": "例句：Play on Saturday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S07",
+    "q": "星期日 /ˈsʌndeɪ/ 首字母 S·共 6 个字母",
+    "answer": "sunday",
+    "hint": "S_____",
+    "difficulty": 1,
+    "explain": "例句：Rest on Sunday."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S08",
+    "q": "天 /deɪ/ 首字母 D·共 3 个字母",
+    "answer": "day",
+    "hint": "d__",
+    "difficulty": 1,
+    "explain": "例句：What day is it?"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S09",
+    "q": "星期 /wiːk/ 首字母 W·共 4 个字母",
+    "answer": "week",
+    "hint": "w___",
+    "difficulty": 1,
+    "explain": "例句：Seven days a week."
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U5_S10",
+    "q": "最喜欢的 /ˈfeɪvərɪt/ 首字母 F·共 9 个字母",
+    "answer": "favourite",
+    "hint": "f________",
+    "difficulty": 1,
+    "explain": "例句：My favourite day."
+  }
+]

@@ -1,0 +1,1066 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Welcome back",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What grade are Anna and Ben in now?",
+            "选项": [
+              "Grade 5",
+              "Grade 4",
+              "Grade 6"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How does Anna feel about the new school year?",
+            "选项": [
+              "Excited",
+              "Bored",
+              "Afraid"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Anna suggest they do for the new students?",
+            "选项": [
+              "Introduce themselves",
+              "Give them books",
+              "Show the schedule"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Welcome back",
+        "data": [
+          {
+            "问题": "How was Anna's summer?",
+            "答案": "Great."
+          },
+          {
+            "问题": "What new things do they have in Grade 5?",
+            "答案": "New classmates and new teachers."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My fifth-grade plan",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What grade is the writer in this year?",
+            "选项": [
+              "Grade 5",
+              "Grade 4",
+              "Grade 6"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where is the new schedule?",
+            "选项": [
+              "On the wall",
+              "On the desk",
+              "In the book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How many English books does the writer hope to read?",
+            "选项": [
+              "Fifty",
+              "Fifteen",
+              "Five"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | My fifth-grade plan",
+        "data": [
+          {
+            "问题": "What subjects are on the new schedule?",
+            "答案": "English, Maths, music and PE."
+          },
+          {
+            "问题": "What is the writer's biggest hope this term?",
+            "答案": "To read fifty English books before the term ends."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I am excited about + noun",
+            "例句": "I am excited about the new school year.",
+            "提示": "表达对某事感到兴奋"
+          },
+          {
+            "句型": "I want to + verb",
+            "例句": "I want to read more books.",
+            "提示": "表达愿望"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What's your favourite?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What are Anna's favourite subjects?",
+            "选项": [
+              "English and art",
+              "Science and PE",
+              "Maths and music"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Which subject is a little difficult for Ben?",
+            "选项": [
+              "Maths",
+              "Science",
+              "PE"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Anna suggest to help Ben?",
+            "选项": [
+              "Study together",
+              "Skip the class",
+              "Ask the teacher"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | What's your favourite?",
+        "data": [
+          {
+            "问题": "Why are English and art easy for Anna?",
+            "答案": "Because they are her favourite subjects."
+          },
+          {
+            "问题": "How will Anna help Ben with Maths?",
+            "答案": "They can study together."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Subjects in Grade 5",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Maths train?",
+            "选项": [
+              "Our minds to think",
+              "Our bodies",
+              "Our voices"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does science show us?",
+            "选项": [
+              "How the world works",
+              "How to sing",
+              "How to draw"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What keeps our bodies strong?",
+            "选项": [
+              "PE",
+              "Art",
+              "Maths"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Subjects in Grade 5",
+        "data": [
+          {
+            "问题": "What does English help us do?",
+            "答案": "It helps us talk with people from other countries."
+          },
+          {
+            "问题": "What do art and music make us?",
+            "答案": "They make us creative."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What's your favourite subject?",
+            "例句": "My favourite subject is English.",
+            "提示": "问最喜欢的科目"
+          },
+          {
+            "句型": "I am good at + noun/v-ing",
+            "例句": "I am good at Maths.",
+            "提示": "表达擅长某事"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Show your talent",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Anna's talent?",
+            "选项": [
+              "Singing songs in English",
+              "Dancing",
+              "Drawing"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How many languages can Ben speak?",
+            "选项": [
+              "Three",
+              "Two",
+              "Four"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where do they want to show their talents?",
+            "选项": [
+              "On the school stage",
+              "At home",
+              "In the library"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Show your talent",
+        "data": [
+          {
+            "问题": "What can Anna do in English?",
+            "答案": "She can sing songs in English."
+          },
+          {
+            "问题": "Where do they want to show their talents?",
+            "答案": "On the school stage."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Everyone has a talent",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How many talents does everyone have at least?",
+            "选项": [
+              "One",
+              "Two",
+              "Three"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "In front of how many people can Tom speak without fear?",
+            "选项": [
+              "Three hundred",
+              "Thirty",
+              "Thirteen"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who will be proud of you when you share your talent?",
+            "选项": [
+              "Your family",
+              "Your teacher",
+              "Strangers"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Everyone has a talent",
+        "data": [
+          {
+            "问题": "What can the writer's friend Tom do?",
+            "答案": "He can speak in front of three hundred people without fear."
+          },
+          {
+            "问题": "What does Lily do well?",
+            "答案": "She writes funny stories."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I am good at + v-ing",
+            "例句": "I am good at singing.",
+            "提示": "表达擅长做某事"
+          },
+          {
+            "句型": "I want to learn to + verb",
+            "例句": "I want to learn to dance.",
+            "提示": "表达想学某技能"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | At the library",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to borrow?",
+            "选项": [
+              "A story book",
+              "A magazine",
+              "A dictionary"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where is the book?",
+            "选项": [
+              "On the shelf by the window",
+              "On the teacher's desk",
+              "Under the table"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "When should Anna return the book?",
+            "选项": [
+              "Within two weeks",
+              "Within one week",
+              "Within one month"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | At the library",
+        "data": [
+          {
+            "问题": "What does Anna want to borrow?",
+            "答案": "A story book."
+          },
+          {
+            "问题": "When should Anna return the book?",
+            "答案": "Within two weeks."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | The school library",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the school library have thousands of?",
+            "选项": [
+              "Books and magazines",
+              "Chairs",
+              "Computers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should we NOT do in the library?",
+            "选项": [
+              "Shout or run",
+              "Read books",
+              "Borrow books"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How long does Mrs Lee take to find the right book?",
+            "选项": [
+              "Just a minute",
+              "An hour",
+              "A day"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | The school library",
+        "data": [
+          {
+            "问题": "How many books can students borrow with their card?",
+            "答案": "Up to three books."
+          },
+          {
+            "问题": "Who is the kind librarian?",
+            "答案": "Mrs Lee."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I want to borrow + noun",
+            "例句": "I want to borrow a storybook.",
+            "提示": "图书馆借书表达"
+          },
+          {
+            "句型": "We should + verb",
+            "例句": "We should keep quiet in the library.",
+            "提示": "should表规则/建议"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Cheer for our team",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What race will Anna run?",
+            "选项": [
+              "The 100-meter race",
+              "The relay race",
+              "The long jump"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What event will Ben join?",
+            "选项": [
+              "The long jump",
+              "The 100-meter race",
+              "Throwing the ball"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do they decide to do whether they win or lose?",
+            "选项": [
+              "Cheer for their team",
+              "Go home",
+              "Stop playing"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Cheer for our team",
+        "data": [
+          {
+            "问题": "What race will Anna run?",
+            "答案": "The 100-meter race."
+          },
+          {
+            "问题": "What will they do whether they win or lose?",
+            "答案": "Cheer for their team."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A wonderful Sports Day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What was the playground full of?",
+            "选项": [
+              "Cheering students",
+              "Empty chairs",
+              "Teachers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What race did the writer join?",
+            "选项": [
+              "The relay race",
+              "The long jump",
+              "The 100-meter race"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What did the friends do even when they lost?",
+            "选项": [
+              "Smiled and tried again",
+              "Cried",
+              "Went home"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A wonderful Sports Day",
+        "data": [
+          {
+            "问题": "What place did the writer's team win in the relay race?",
+            "答案": "Second place."
+          },
+          {
+            "问题": "What do sports teach us?",
+            "答案": "Teamwork and never giving up."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What will you + verb?",
+            "例句": "What will you run? — The 100-metre race.",
+            "提示": "将来时问将做什么"
+          },
+          {
+            "句型": "I won + noun",
+            "例句": "I won a gold medal.",
+            "提示": "过去时描述获奖"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Festivals we love",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Ben eat at Mid-Autumn Festival?",
+            "选项": [
+              "Moon cakes",
+              "Turkey",
+              "Dumplings"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do Western kids wear at Halloween?",
+            "选项": [
+              "Masks",
+              "Hats",
+              "Gloves"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What festival does Ben's pen pal in the US love?",
+            "选项": [
+              "Thanksgiving",
+              "Halloween",
+              "Christmas"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Festivals we love",
+        "data": [
+          {
+            "问题": "What does Ben eat at Mid-Autumn Festival?",
+            "答案": "Moon cakes."
+          },
+          {
+            "问题": "What festival does Ben's pen pal in the US love?",
+            "答案": "Thanksgiving."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | One world, many festivals",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What festivals do families gather for in China?",
+            "选项": [
+              "Spring Festival and Mid-Autumn Festival",
+              "Halloween",
+              "Thanksgiving"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where do people enjoy Thanksgiving dinner with turkey?",
+            "选项": [
+              "The United States",
+              "China",
+              "Mexico"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do festivals remind us?",
+            "选项": [
+              "We are one big family on this planet",
+              "We should travel",
+              "We should study"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | One world, many festivals",
+        "data": [
+          {
+            "问题": "What do people in the United States enjoy at Thanksgiving?",
+            "答案": "Thanksgiving dinner with turkey."
+          },
+          {
+            "问题": "What do children in Mexico break at parties?",
+            "答案": "Colourful piñatas."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do people do at + festival?",
+            "例句": "People decorate trees at Christmas.",
+            "提示": "问节日的活动"
+          },
+          {
+            "句型": "We can learn about + noun",
+            "例句": "We can learn about different cultures.",
+            "提示": "can表达能学到什么"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Which club?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Which club does Anna want to join?",
+            "选项": [
+              "The photo club",
+              "The robot club",
+              "The chess club"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will Ben's club build?",
+            "选项": [
+              "A small robot",
+              "A photo album",
+              "A chessboard"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Which club did Anna's sister join last year?",
+            "选项": [
+              "The chess club",
+              "The photo club",
+              "The robot club"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Which club?",
+        "data": [
+          {
+            "问题": "Which club does Anna want to join?",
+            "答案": "The photo club."
+          },
+          {
+            "问题": "What will Ben's robot club build?",
+            "答案": "A small robot."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Our school clubs",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How often does the photo club take a class trip?",
+            "选项": [
+              "Every month",
+              "Every week",
+              "Every day"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the chess club teach?",
+            "选项": [
+              "Careful thinking",
+              "Singing",
+              "Drawing"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do clubs make school life?",
+            "选项": [
+              "Rich and colourful",
+              "Long and hard",
+              "Quiet and boring"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Our school clubs",
+        "data": [
+          {
+            "问题": "When does the drama club meet?",
+            "答案": "Every Tuesday after school."
+          },
+          {
+            "问题": "What does the robot club build?",
+            "答案": "Small machines that move and talk."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I join + club name",
+            "例句": "I join the Art Club.",
+            "提示": "表达加入社团"
+          },
+          {
+            "句型": "... are good for + noun",
+            "例句": "Clubs are good for students.",
+            "提示": "be good for表示\"对...有益\""
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A helping hand",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who looks sad today?",
+            "选项": [
+              "The elderly man next door",
+              "Anna's brother",
+              "The teacher"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How do they decide to help him?",
+            "选项": [
+              "Carry his bags",
+              "Give him money",
+              "Cook for him"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben's mum call the shortest helping hand?",
+            "选项": [
+              "A smile",
+              "A gift",
+              "A word"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | A helping hand",
+        "data": [
+          {
+            "问题": "Who looks sad today?",
+            "答案": "The elderly man next door."
+          },
+          {
+            "问题": "How do they decide to help him?",
+            "答案": "Carry his bags."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Small acts, big love",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where did the class volunteer last weekend?",
+            "选项": [
+              "The city park",
+              "The library",
+              "The school"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did some kids share with strangers?",
+            "选项": [
+              "Bread and warm drinks",
+              "Books",
+              "Toys"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can small acts of kindness build?",
+            "选项": [
+              "A great world",
+              "A big house",
+              "A tall tree"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Small acts, big love",
+        "data": [
+          {
+            "问题": "What did the class do at the city park?",
+            "答案": "Picked up rubbish, planted flowers, and helped elderly people walk to the bus stop."
+          },
+          {
+            "问题": "What did a grandma teach the children?",
+            "答案": "How to fold paper birds."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I help + person + verb",
+            "例句": "I help an old woman carry the bags.",
+            "提示": "help sb do sth"
+          },
+          {
+            "句型": "... makes us feel + adj",
+            "例句": "Helping others makes us feel happy.",
+            "提示": "动名词作主语 + makes sb feel"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Time to shine",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When is the school show?",
+            "选项": [
+              "Tomorrow",
+              "Next week",
+              "Today"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will Ben do in the show?",
+            "选项": [
+              "Sing and act",
+              "Dance only",
+              "Play chess"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben tell Anna not to forget?",
+            "选项": [
+              "To smile",
+              "To bring props",
+              "To be early"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Time to shine",
+        "data": [
+          {
+            "问题": "When is the school show?",
+            "答案": "Tomorrow."
+          },
+          {
+            "问题": "What will Ben do in the show?",
+            "答案": "Sing and act."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A show to remember",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When did the school have the big Show Time?",
+            "选项": [
+              "Last Friday",
+              "Last Monday",
+              "Last Sunday"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did they sing in?",
+            "选项": [
+              "English",
+              "Chinese",
+              "French"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How did the writer feel when the audience clapped?",
+            "选项": [
+              "Heart jumped with joy",
+              "Very tired",
+              "A little sad"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A show to remember",
+        "data": [
+          {
+            "问题": "What did each class prepare for Show Time?",
+            "答案": "One act."
+          },
+          {
+            "问题": "What was the short play about?",
+            "答案": "Friendship."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What will you perform?",
+            "例句": "I will perform a dance.",
+            "提示": "将来时问表演什么"
+          },
+          {
+            "句型": "The show is about + noun",
+            "例句": "The show is about their talents.",
+            "提示": "描述表演内容"
+          }
+        ]
+      }
+    ]
+  }
+}

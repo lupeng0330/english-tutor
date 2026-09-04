@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 Save Our Earth",
+  "words": [
+    { "word": "Earth", "phonetic": "/ɜːθ/", "meaning": "[n.] 地球", "example": "Protect the Earth." },
+    { "word": "pollution", "phonetic": "/pəˈluːʃn/", "meaning": "[n.] 污染", "example": "Air pollution." },
+    { "word": "recycle", "phonetic": "/ˌriːˈsaɪkl/", "meaning": "[v.] 回收利用", "example": "Recycle paper." },
+    { "word": "plastic", "phonetic": "/ˈplæstɪk/", "meaning": "[n.] 塑料", "example": "Plastic bag." },
+    { "word": "tree", "phonetic": "/triː/", "meaning": "[n.] 树", "example": "Plant a tree." },
+    { "word": "river", "phonetic": "/ˈrɪvə(r)/", "meaning": "[n.] 河流", "example": "Keep the river clean." },
+    { "word": "protect", "phonetic": "/prəˈtekt/", "meaning": "[v.] 保护", "example": "Protect animals." },
+    { "word": "save", "phonetic": "/seɪv/", "meaning": "[v.] 节约；拯救", "example": "Save water." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Save our Earth",
+      "en": "Anna: Ben, pollution is so bad now. We must do something.\nBen: Let's start small — recycle paper, plastic and glass.\nAnna: We can plant a tree on Earth Day.\nBen: And save water at home. The river near us is too dirty.\nAnna: Right. Every small action protects our Earth.",
+      "cn": "安娜：本，污染太严重了，得做点什么。\n本：从小事做起——回收纸、塑料、玻璃。\n安娜：地球日我们种棵树。\n本：在家节约用水。我们附近的河太脏了。\n安娜：对，每件小事都在保护地球。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Our only home",
+      "en": "Earth is our only home. Air and river pollution hurt people, animals and plants. Plastic stays in the soil for hundreds of years. We must recycle, save water, and turn off lights when leaving a room. Plant a tree every spring. Choose a bike instead of a car for short trips. A clean Earth needs the help of every person, every day.",
+      "cn": "地球是我们唯一的家。空气和河流污染伤害人、动物和植物。塑料在土里几百年不分解。我们要回收、节水、出门关灯。每年春天种棵树。短途骑车不开车。干净的地球需要每个人每天的努力。"
+    }
+  ]
+}

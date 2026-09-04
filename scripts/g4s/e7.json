@@ -1,0 +1,42 @@
+{
+  "weekend": [
+    { "en": "Have a nice weekend!", "cn": "周末愉快！", "level": 1 },
+    { "en": "I rest on the weekend.", "cn": "我周末休息。", "level": 2 },
+    { "en": "Our family always goes for a walk together on the weekend.", "cn": "我们一家周末总是一起散步。", "level": 3 }
+  ],
+  "Saturday": [
+    { "en": "It's Saturday.", "cn": "今天是星期六。", "level": 1 },
+    { "en": "We play on Saturday.", "cn": "我们星期六玩。", "level": 2 },
+    { "en": "Every Saturday morning I have a piano lesson.", "cn": "每周六上午我有钢琴课。", "level": 3 }
+  ],
+  "Sunday": [
+    { "en": "It's Sunday.", "cn": "今天是星期天。", "level": 1 },
+    { "en": "I rest on Sunday.", "cn": "我周日休息。", "level": 2 },
+    { "en": "On Sunday afternoon we visit Grandma and Grandpa.", "cn": "周日下午我们去看爷爷奶奶。", "level": 3 }
+  ],
+  "park": [
+    { "en": "Go to the park.", "cn": "去公园。", "level": 1 },
+    { "en": "The park is big.", "cn": "公园很大。", "level": 2 },
+    { "en": "In the park there are tall trees and a small lake.", "cn": "公园里有高高的树和一个小湖。", "level": 3 }
+  ],
+  "shop": [
+    { "en": "Mum shops.", "cn": "妈妈购物。", "level": 1 },
+    { "en": "We shop on Saturday.", "cn": "我们周六购物。", "level": 2 },
+    { "en": "Mum and I shop for fruit at the market every Sunday.", "cn": "每周日我和妈妈去市场买水果。", "level": 3 }
+  ],
+  "movie": [
+    { "en": "A good movie.", "cn": "一部好电影。", "level": 1 },
+    { "en": "We see a movie.", "cn": "我们看电影。", "level": 2 },
+    { "en": "The new movie about space is really exciting.", "cn": "那部关于太空的新电影真精彩。", "level": 3 }
+  ],
+  "picnic": [
+    { "en": "A picnic.", "cn": "野餐。", "level": 1 },
+    { "en": "We have a picnic.", "cn": "我们野餐。", "level": 2 },
+    { "en": "We had a picnic by the lake last Saturday afternoon.", "cn": "上周六下午我们在湖边野餐。", "level": 3 }
+  ],
+  "fun": [
+    { "en": "It's fun.", "cn": "好玩。", "level": 1 },
+    { "en": "We have fun together.", "cn": "我们一起玩得开心。", "level": 2 },
+    { "en": "Spending time with friends and family is great fun.", "cn": "和朋友家人在一起最开心了。", "level": 3 }
+  ]
+}

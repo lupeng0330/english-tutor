@@ -1,0 +1,2117 @@
+{
+  "meta": {
+    "id": "gzk",
+    "name": "广州出版社·英语口语",
+    "fullName": "Success with English（广州市教育研究院编）",
+    "version": "2025 复审版",
+    "coverage": "小学一年级、二年级（共 4 册）",
+    "publisher": "广州出版社 / 福建教育出版社",
+    "note": "每册 5 个 Unit（第四册目录实测）；其它册单元数待核对"
+  },
+  "grades": {
+    "grade1": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 Hello, I'm Andy",
+          "words": [
+            {
+              "word": "hello",
+              "phonetic": "/həˈləʊ/",
+              "meaning": "你好",
+              "example": "Hello! I'm Andy."
+            },
+            {
+              "word": "hi",
+              "phonetic": "/haɪ/",
+              "meaning": "嗨；你好",
+              "example": "Hi! I'm Lily."
+            },
+            {
+              "word": "I",
+              "phonetic": "/aɪ/",
+              "meaning": "我",
+              "example": "I am a pupil."
+            },
+            {
+              "word": "am",
+              "phonetic": "/æm/",
+              "meaning": "是",
+              "example": "I am Andy."
+            },
+            {
+              "word": "name",
+              "phonetic": "/neɪm/",
+              "meaning": "名字",
+              "example": "My name is Lily."
+            },
+            {
+              "word": "goodbye",
+              "phonetic": "/ˌɡʊdˈbaɪ/",
+              "meaning": "再见",
+              "example": "Goodbye, Miss Li!"
+            },
+            {
+              "word": "bye",
+              "phonetic": "/baɪ/",
+              "meaning": "拜拜",
+              "example": "Bye! See you."
+            },
+            {
+              "word": "teacher",
+              "phonetic": "/ˈtiːtʃə(r)/",
+              "meaning": "老师",
+              "example": "She is my teacher."
+            },
+            {
+              "word": "friend",
+              "phonetic": "/frend/",
+              "meaning": "朋友",
+              "example": "You are my friend."
+            },
+            {
+              "word": "boy",
+              "phonetic": "/bɔɪ/",
+              "meaning": "男孩",
+              "example": "Andy is a boy."
+            },
+            {
+              "word": "girl",
+              "phonetic": "/ɡɜːl/",
+              "meaning": "女孩",
+              "example": "Lily is a girl."
+            },
+            {
+              "word": "meet",
+              "phonetic": "/miːt/",
+              "meaning": "见面",
+              "example": "Nice to meet you."
+            }
+          ],
+          "pageRange": "P1-P10",
+          "lessons": [
+            {
+              "page": "P2",
+              "title": "Let's Learn",
+              "en": "hello    hi    goodbye    bye\nI'm Andy.    My name is Lily.",
+              "cn": "你好  嗨  再见  拜拜\n我是安迪。  我叫莉莉。"
+            },
+            {
+              "page": "P4",
+              "title": "Let's Talk",
+              "en": "Andy: Hello! I'm Andy.\nLily: Hi, Andy! I'm Lily.\nAndy: Nice to meet you.\nLily: Nice to meet you, too.\nMiss Li: Hello, children!\nAndy: Hello, Miss Li!",
+              "cn": "安迪：你好！我是安迪。\n莉莉：嗨，安迪！我是莉莉。\n安迪：很高兴认识你。\n莉莉：我也很高兴认识你。\n李老师：同学们好！\n安迪：李老师好！"
+            },
+            {
+              "page": "P6",
+              "title": "Let's Chant — Hello",
+              "en": "Hello, hello, hello to you!\nHi, hi, hi, my name is Sue.\nGoodbye, goodbye, see you soon!\nBye-bye, bye-bye, this afternoon.",
+              "cn": "你好，你好，向你问好！\n嗨，嗨，嗨，我叫苏。\n再见，再见，回头见！\n拜拜，拜拜，下午见。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 I Have a New Bag",
+          "words": [
+            {
+              "word": "bag",
+              "phonetic": "/bæɡ/",
+              "meaning": "书包",
+              "example": "I have a new bag."
+            },
+            {
+              "word": "pen",
+              "phonetic": "/pen/",
+              "meaning": "钢笔",
+              "example": "This is my pen."
+            },
+            {
+              "word": "pencil",
+              "phonetic": "/ˈpensl/",
+              "meaning": "铅笔",
+              "example": "Here is a pencil."
+            },
+            {
+              "word": "book",
+              "phonetic": "/bʊk/",
+              "meaning": "书",
+              "example": "Open your book, please."
+            },
+            {
+              "word": "ruler",
+              "phonetic": "/ˈruːlə(r)/",
+              "meaning": "尺子",
+              "example": "I have a long ruler."
+            },
+            {
+              "word": "eraser",
+              "phonetic": "/ɪˈreɪzə(r)/",
+              "meaning": "橡皮",
+              "example": "Where is my eraser?"
+            },
+            {
+              "word": "pencil-case",
+              "phonetic": "/ˈpensl keɪs/",
+              "meaning": "文具盒",
+              "example": "My pencil-case is red."
+            },
+            {
+              "word": "crayon",
+              "phonetic": "/ˈkreɪən/",
+              "meaning": "蜡笔",
+              "example": "I have six crayons."
+            },
+            {
+              "word": "new",
+              "phonetic": "/njuː/",
+              "meaning": "新的",
+              "example": "It is a new bag."
+            },
+            {
+              "word": "have",
+              "phonetic": "/hæv/",
+              "meaning": "有",
+              "example": "I have a pen."
+            },
+            {
+              "word": "school",
+              "phonetic": "/skuːl/",
+              "meaning": "学校",
+              "example": "I go to school."
+            },
+            {
+              "word": "this",
+              "phonetic": "/ðɪs/",
+              "meaning": "这个",
+              "example": "This is my book."
+            }
+          ],
+          "pageRange": "P11-P20",
+          "lessons": [
+            {
+              "page": "P12",
+              "title": "Let's Learn",
+              "en": "a bag    a pen    a pencil    a book\na ruler    an eraser    a pencil-case",
+              "cn": "一个书包  一支钢笔  一支铅笔  一本书\n一把尺子  一块橡皮  一个文具盒"
+            },
+            {
+              "page": "P14",
+              "title": "Let's Talk",
+              "en": "Andy: I have a new bag.\nLily: Wow! It's nice.\nAndy: This is my pen, and this is my pencil.\nLily: Show me your book, please.\nAndy: Here you are.\nLily: Thank you!",
+              "cn": "安迪：我有一个新书包。\n莉莉：哇！真好看。\n安迪：这是我的钢笔，这是我的铅笔。\n莉莉：请把你的书给我看看。\n安迪：给你。\n莉莉：谢谢！"
+            },
+            {
+              "page": "P16",
+              "title": "Let's Chant — My Bag",
+              "en": "Bag, bag, a brand-new bag,\nPen, pen, a little red pen.\nBook, book, open the book,\nPencil, pencil, write again!",
+              "cn": "书包，书包，崭新的书包，\n钢笔，钢笔，小小的红钢笔。\n书本，书本，把书翻开，\n铅笔，铅笔，再写一遍！"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 Count from One to Ten",
+          "words": [
+            {
+              "word": "one",
+              "phonetic": "/wʌn/",
+              "meaning": "一",
+              "example": "I have one bag."
+            },
+            {
+              "word": "two",
+              "phonetic": "/tuː/",
+              "meaning": "二",
+              "example": "Two pens, please."
+            },
+            {
+              "word": "three",
+              "phonetic": "/θriː/",
+              "meaning": "三",
+              "example": "I see three birds."
+            },
+            {
+              "word": "four",
+              "phonetic": "/fɔː(r)/",
+              "meaning": "四",
+              "example": "Four cats are here."
+            },
+            {
+              "word": "five",
+              "phonetic": "/faɪv/",
+              "meaning": "五",
+              "example": "Give me five!"
+            },
+            {
+              "word": "six",
+              "phonetic": "/sɪks/",
+              "meaning": "六",
+              "example": "I am six."
+            },
+            {
+              "word": "seven",
+              "phonetic": "/ˈsevn/",
+              "meaning": "七",
+              "example": "Seven days a week."
+            },
+            {
+              "word": "eight",
+              "phonetic": "/eɪt/",
+              "meaning": "八",
+              "example": "Eight balls."
+            },
+            {
+              "word": "nine",
+              "phonetic": "/naɪn/",
+              "meaning": "九",
+              "example": "Nine pencils."
+            },
+            {
+              "word": "ten",
+              "phonetic": "/ten/",
+              "meaning": "十",
+              "example": "Ten little fingers."
+            },
+            {
+              "word": "count",
+              "phonetic": "/kaʊnt/",
+              "meaning": "数数",
+              "example": "Let's count together."
+            },
+            {
+              "word": "how many",
+              "phonetic": "/haʊ ˈmeni/",
+              "meaning": "多少",
+              "example": "How many pens?"
+            }
+          ],
+          "pageRange": "P21-P30",
+          "lessons": [
+            {
+              "page": "P22",
+              "title": "Let's Learn",
+              "en": "one    two    three    four    five\nsix    seven    eight    nine    ten",
+              "cn": "一  二  三  四  五\n六  七  八  九  十"
+            },
+            {
+              "page": "P24",
+              "title": "Let's Talk",
+              "en": "Teacher: Let's count! One, two, three.\nAndy: Four, five, six.\nLily: Seven, eight, nine, ten!\nTeacher: How many pens, Andy?\nAndy: Three pens.\nTeacher: Good job!",
+              "cn": "老师：我们来数数！一、二、三。\n安迪：四、五、六。\n莉莉：七、八、九、十！\n老师：安迪，有几支钢笔？\n安迪：三支钢笔。\n老师：做得好！"
+            },
+            {
+              "page": "P26",
+              "title": "Let's Chant — Count with Me",
+              "en": "One, two, three, clap with me!\nFour, five, six, pick up sticks!\nSeven, eight, nine, you are fine!\nTen, ten, ten, let's count again!",
+              "cn": "一、二、三，和我一起拍手！\n四、五、六，把小棒捡起来！\n七、八、九，你真棒！\n十、十、十，我们再数一遍！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 I Like Green",
+          "words": [
+            {
+              "word": "green",
+              "phonetic": "/ɡriːn/",
+              "meaning": "绿色",
+              "example": "I like green."
+            },
+            {
+              "word": "red",
+              "phonetic": "/red/",
+              "meaning": "红色",
+              "example": "The apple is red."
+            },
+            {
+              "word": "blue",
+              "phonetic": "/bluː/",
+              "meaning": "蓝色",
+              "example": "The sky is blue."
+            },
+            {
+              "word": "yellow",
+              "phonetic": "/ˈjeləʊ/",
+              "meaning": "黄色",
+              "example": "The sun is yellow."
+            },
+            {
+              "word": "orange",
+              "phonetic": "/ˈɒrɪndʒ/",
+              "meaning": "橙色",
+              "example": "I have an orange crayon."
+            },
+            {
+              "word": "purple",
+              "phonetic": "/ˈpɜːpl/",
+              "meaning": "紫色",
+              "example": "Her dress is purple."
+            },
+            {
+              "word": "pink",
+              "phonetic": "/pɪŋk/",
+              "meaning": "粉色",
+              "example": "Pink is nice."
+            },
+            {
+              "word": "black",
+              "phonetic": "/blæk/",
+              "meaning": "黑色",
+              "example": "A black cat."
+            },
+            {
+              "word": "white",
+              "phonetic": "/waɪt/",
+              "meaning": "白色",
+              "example": "White clouds."
+            },
+            {
+              "word": "colour",
+              "phonetic": "/ˈkʌlə(r)/",
+              "meaning": "颜色",
+              "example": "What colour is it?"
+            },
+            {
+              "word": "like",
+              "phonetic": "/laɪk/",
+              "meaning": "喜欢",
+              "example": "I like blue."
+            },
+            {
+              "word": "favourite",
+              "phonetic": "/ˈfeɪvərɪt/",
+              "meaning": "最喜欢的",
+              "example": "Green is my favourite colour."
+            }
+          ],
+          "pageRange": "P31-P40",
+          "lessons": [
+            {
+              "page": "P32",
+              "title": "Let's Learn",
+              "en": "green    red    blue    yellow\norange    purple    pink    black    white",
+              "cn": "绿色  红色  蓝色  黄色\n橙色  紫色  粉色  黑色  白色"
+            },
+            {
+              "page": "P34",
+              "title": "Let's Talk",
+              "en": "Andy: I like green. Green is my favourite colour.\nLily: I like red and pink.\nAndy: What colour is your bag?\nLily: It's blue.\nAndy: Blue is nice, too!",
+              "cn": "安迪：我喜欢绿色。绿色是我最喜欢的颜色。\n莉莉：我喜欢红色和粉色。\n安迪：你的书包是什么颜色？\n莉莉：是蓝色的。\n安迪：蓝色也很好看！"
+            },
+            {
+              "page": "P36",
+              "title": "Let's Chant — Colours",
+              "en": "Green, green, the grass is green.\nRed, red, the apple's red.\nBlue, blue, the sky is blue.\nI like colours — how about you?",
+              "cn": "绿色，绿色，草儿绿。\n红色，红色，苹果红。\n蓝色，蓝色，天空蓝。\n我喜欢颜色——你呢？"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 Here's My Scooter",
+          "words": [
+            {
+              "word": "scooter",
+              "phonetic": "/ˈskuːtə(r)/",
+              "meaning": "滑板车",
+              "example": "Here's my scooter."
+            },
+            {
+              "word": "bike",
+              "phonetic": "/baɪk/",
+              "meaning": "自行车",
+              "example": "I can ride a bike."
+            },
+            {
+              "word": "ball",
+              "phonetic": "/bɔːl/",
+              "meaning": "球",
+              "example": "Throw the ball."
+            },
+            {
+              "word": "kite",
+              "phonetic": "/kaɪt/",
+              "meaning": "风筝",
+              "example": "Look at my kite."
+            },
+            {
+              "word": "car",
+              "phonetic": "/kɑː(r)/",
+              "meaning": "小汽车",
+              "example": "A toy car."
+            },
+            {
+              "word": "doll",
+              "phonetic": "/dɒl/",
+              "meaning": "洋娃娃",
+              "example": "She has a doll."
+            },
+            {
+              "word": "robot",
+              "phonetic": "/ˈrəʊbɒt/",
+              "meaning": "机器人",
+              "example": "My robot can walk."
+            },
+            {
+              "word": "plane",
+              "phonetic": "/pleɪn/",
+              "meaning": "飞机",
+              "example": "A toy plane flies high."
+            },
+            {
+              "word": "train",
+              "phonetic": "/treɪn/",
+              "meaning": "火车",
+              "example": "A long train."
+            },
+            {
+              "word": "toy",
+              "phonetic": "/tɔɪ/",
+              "meaning": "玩具",
+              "example": "I love my toys."
+            },
+            {
+              "word": "here",
+              "phonetic": "/hɪə(r)/",
+              "meaning": "这里；在这儿",
+              "example": "Here you are."
+            },
+            {
+              "word": "cool",
+              "phonetic": "/kuːl/",
+              "meaning": "酷；很棒",
+              "example": "It's cool!"
+            }
+          ],
+          "pageRange": "P41-P50",
+          "lessons": [
+            {
+              "page": "P42",
+              "title": "Let's Learn",
+              "en": "a scooter    a bike    a ball    a kite\na car    a doll    a robot    a train",
+              "cn": "一辆滑板车  一辆自行车  一个球  一只风筝\n一辆小汽车  一个洋娃娃  一个机器人  一列火车"
+            },
+            {
+              "page": "P44",
+              "title": "Let's Talk",
+              "en": "Andy: Here's my scooter. It's cool!\nLily: I have a kite. Look!\nAndy: Wow! Let's play.\nBen: Can I play, too?\nAndy: Sure! Here you are.\nBen: Thank you, Andy!",
+              "cn": "安迪：这是我的滑板车。它很酷！\n莉莉：我有一只风筝。看！\n安迪：哇！我们一起玩吧。\n本：我也能一起玩吗？\n安迪：当然！给你。\n本：谢谢你，安迪！"
+            },
+            {
+              "page": "P46",
+              "title": "Let's Chant — My Toys",
+              "en": "Scooter, scooter, go, go, go!\nKite, kite, up you fly!\nBall, ball, throw it high!\nToys, toys, let's all play!",
+              "cn": "滑板车，滑板车，冲冲冲！\n风筝，风筝，飞上天！\n皮球，皮球，抛得高！\n玩具，玩具，一起玩！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I Can Jump",
+          "words": [
+            {
+              "word": "jump",
+              "phonetic": "/dʒʌmp/",
+              "meaning": "跳",
+              "example": "I can jump high."
+            },
+            {
+              "word": "run",
+              "phonetic": "/rʌn/",
+              "meaning": "跑",
+              "example": "I can run fast."
+            },
+            {
+              "word": "swim",
+              "phonetic": "/swɪm/",
+              "meaning": "游泳",
+              "example": "I can swim."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "meaning": "跳舞",
+              "example": "Can you dance?"
+            },
+            {
+              "word": "sing",
+              "phonetic": "/sɪŋ/",
+              "meaning": "唱歌",
+              "example": "I like to sing."
+            },
+            {
+              "word": "fly",
+              "phonetic": "/flaɪ/",
+              "meaning": "飞",
+              "example": "Birds can fly."
+            },
+            {
+              "word": "walk",
+              "phonetic": "/wɔːk/",
+              "meaning": "走",
+              "example": "Let's walk to school."
+            },
+            {
+              "word": "climb",
+              "phonetic": "/klaɪm/",
+              "meaning": "爬",
+              "example": "I can climb a tree."
+            },
+            {
+              "word": "can",
+              "phonetic": "/kæn/",
+              "meaning": "能；会",
+              "example": "I can jump."
+            },
+            {
+              "word": "can't",
+              "phonetic": "/kɑːnt/",
+              "meaning": "不能；不会",
+              "example": "I can't swim."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "meaning": "玩；做（运动）",
+              "example": "Let's play ball."
+            },
+            {
+              "word": "great",
+              "phonetic": "/ɡreɪt/",
+              "meaning": "棒极了",
+              "example": "You're great!"
+            }
+          ],
+          "pageRange": "P51-P60",
+          "lessons": [
+            {
+              "page": "P52",
+              "title": "Let's Learn",
+              "en": "jump    run    swim    dance\nsing    fly    walk    climb",
+              "cn": "跳  跑  游泳  跳舞\n唱歌  飞  走  爬"
+            },
+            {
+              "page": "P54",
+              "title": "Let's Talk",
+              "en": "Andy: I can jump. Look at me!\nLily: I can dance. Can you dance?\nAndy: Yes, I can. But I can't swim.\nBen: I can swim and run.\nLily: Wow! You're great.",
+              "cn": "安迪：我会跳。看我！\n莉莉：我会跳舞。你会跳舞吗？\n安迪：会的。但我不会游泳。\n本：我会游泳，也会跑步。\n莉莉：哇！你真棒。"
+            },
+            {
+              "page": "P56",
+              "title": "Let's Chant — I Can",
+              "en": "Jump, jump, I can jump!\nRun, run, run with fun!\nSwim, swim, in we go!\nSing and dance — here we go!",
+              "cn": "跳，跳，我会跳！\n跑，跑，开心地跑！\n游，游，下水喽！\n又唱又跳——出发啦！"
+            }
+          ]
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 I Love My Family",
+          "words": [
+            {
+              "word": "family",
+              "phonetic": "/ˈfæməli/",
+              "meaning": "家庭",
+              "example": "I love my family."
+            },
+            {
+              "word": "dad",
+              "phonetic": "/dæd/",
+              "meaning": "爸爸",
+              "example": "This is my dad."
+            },
+            {
+              "word": "mum",
+              "phonetic": "/mʌm/",
+              "meaning": "妈妈",
+              "example": "My mum is kind."
+            },
+            {
+              "word": "brother",
+              "phonetic": "/ˈbrʌðə(r)/",
+              "meaning": "哥哥；弟弟",
+              "example": "I have a brother."
+            },
+            {
+              "word": "sister",
+              "phonetic": "/ˈsɪstə(r)/",
+              "meaning": "姐姐；妹妹",
+              "example": "She is my sister."
+            },
+            {
+              "word": "grandpa",
+              "phonetic": "/ˈɡrænpɑː/",
+              "meaning": "爷爷；外公",
+              "example": "Grandpa is old."
+            },
+            {
+              "word": "grandma",
+              "phonetic": "/ˈɡrænmɑː/",
+              "meaning": "奶奶；外婆",
+              "example": "I love grandma."
+            },
+            {
+              "word": "baby",
+              "phonetic": "/ˈbeɪbi/",
+              "meaning": "婴儿",
+              "example": "The baby is cute."
+            },
+            {
+              "word": "love",
+              "phonetic": "/lʌv/",
+              "meaning": "爱",
+              "example": "I love you."
+            },
+            {
+              "word": "happy",
+              "phonetic": "/ˈhæpi/",
+              "meaning": "开心的",
+              "example": "We are happy."
+            }
+          ],
+          "pageRange": "P1-P10",
+          "lessons": [
+            {
+              "page": "P2",
+              "title": "Let's Learn",
+              "en": "dad    mum    brother    sister\ngrandpa    grandma    baby",
+              "cn": "爸爸  妈妈  哥哥/弟弟  姐姐/妹妹\n爷爷  奶奶  婴儿"
+            },
+            {
+              "page": "P4",
+              "title": "Let's Talk",
+              "en": "Andy: This is my family.\nLily: Who is he?\nAndy: He is my dad. And she is my mum.\nLily: Is this your sister?\nAndy: Yes. And this is my baby brother.\nLily: What a happy family!",
+              "cn": "安迪：这是我的家庭。\n莉莉：他是谁？\n安迪：他是我爸爸，她是我妈妈。\n莉莉：这是你姐姐吗？\n安迪：是的。这是我的小弟弟。\n莉莉：多幸福的一家人！"
+            },
+            {
+              "page": "P6",
+              "title": "Let's Chant — My Family",
+              "en": "Daddy, mummy, I love you,\nGrandpa, grandma, love you too.\nSister, brother, baby small,\nOne big family — love them all!",
+              "cn": "爸爸，妈妈，我爱你，\n爷爷，奶奶，也爱你。\n姐姐，弟弟，小宝宝，\n一个大家——都爱你！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 Come to My House",
+          "words": [
+            {
+              "word": "house",
+              "phonetic": "/haʊs/",
+              "meaning": "房子",
+              "example": "Come to my house."
+            },
+            {
+              "word": "home",
+              "phonetic": "/həʊm/",
+              "meaning": "家",
+              "example": "Welcome to my home."
+            },
+            {
+              "word": "door",
+              "phonetic": "/dɔː(r)/",
+              "meaning": "门",
+              "example": "Open the door."
+            },
+            {
+              "word": "window",
+              "phonetic": "/ˈwɪndəʊ/",
+              "meaning": "窗户",
+              "example": "Close the window."
+            },
+            {
+              "word": "come",
+              "phonetic": "/kʌm/",
+              "meaning": "来",
+              "example": "Come in, please."
+            },
+            {
+              "word": "welcome",
+              "phonetic": "/ˈwelkəm/",
+              "meaning": "欢迎",
+              "example": "Welcome!"
+            },
+            {
+              "word": "sofa",
+              "phonetic": "/ˈsəʊfə/",
+              "meaning": "沙发",
+              "example": "Sit on the sofa."
+            },
+            {
+              "word": "in",
+              "phonetic": "/ɪn/",
+              "meaning": "进；在……里",
+              "example": "Come in."
+            },
+            {
+              "word": "please",
+              "phonetic": "/pliːz/",
+              "meaning": "请",
+              "example": "Sit down, please."
+            },
+            {
+              "word": "big",
+              "phonetic": "/bɪɡ/",
+              "meaning": "大的",
+              "example": "It's a big house."
+            }
+          ],
+          "pageRange": "P11-P20",
+          "lessons": [
+            {
+              "page": "P12",
+              "title": "Let's Learn",
+              "en": "house    home    door    window\ncome in    welcome    sofa",
+              "cn": "房子  家  门  窗户\n进来  欢迎  沙发"
+            },
+            {
+              "page": "P14",
+              "title": "Let's Talk",
+              "en": "Andy: Come to my house, Lily.\nLily: Wow, it's a big house!\nAndy: Come in, please.\nLily: Thank you.\nAndy: Sit on the sofa.\nLily: Your home is so nice!",
+              "cn": "安迪：来我家吧，莉莉。\n莉莉：哇，好大的房子！\n安迪：请进。\n莉莉：谢谢。\n安迪：坐在沙发上吧。\n莉莉：你家真漂亮！"
+            },
+            {
+              "page": "P16",
+              "title": "Let's Chant — Come In",
+              "en": "Knock, knock, open the door,\nWelcome, welcome, come on in!\nSit, sit, on the sofa,\nMy sweet home — let's begin!",
+              "cn": "咚，咚，把门打开，\n欢迎，欢迎，快进来！\n坐，坐，沙发上坐，\n我的家——开始啦！"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 This Is My Room",
+          "words": [
+            {
+              "word": "room",
+              "phonetic": "/ruːm/",
+              "meaning": "房间",
+              "example": "This is my room."
+            },
+            {
+              "word": "bed",
+              "phonetic": "/bed/",
+              "meaning": "床",
+              "example": "The bed is soft."
+            },
+            {
+              "word": "desk",
+              "phonetic": "/desk/",
+              "meaning": "书桌",
+              "example": "My desk is white."
+            },
+            {
+              "word": "chair",
+              "phonetic": "/tʃeə(r)/",
+              "meaning": "椅子",
+              "example": "Sit on the chair."
+            },
+            {
+              "word": "lamp",
+              "phonetic": "/læmp/",
+              "meaning": "台灯",
+              "example": "Turn on the lamp."
+            },
+            {
+              "word": "clock",
+              "phonetic": "/klɒk/",
+              "meaning": "钟",
+              "example": "The clock is round."
+            },
+            {
+              "word": "box",
+              "phonetic": "/bɒks/",
+              "meaning": "盒子；箱子",
+              "example": "My toy box."
+            },
+            {
+              "word": "on",
+              "phonetic": "/ɒn/",
+              "meaning": "在……上",
+              "example": "The book is on the desk."
+            },
+            {
+              "word": "my",
+              "phonetic": "/maɪ/",
+              "meaning": "我的",
+              "example": "This is my room."
+            },
+            {
+              "word": "tidy",
+              "phonetic": "/ˈtaɪdi/",
+              "meaning": "整洁的",
+              "example": "My room is tidy."
+            }
+          ],
+          "pageRange": "P21-P30",
+          "lessons": [
+            {
+              "page": "P22",
+              "title": "Let's Learn",
+              "en": "room    bed    desk    chair\nlamp    clock    toy box",
+              "cn": "房间  床  书桌  椅子\n台灯  钟  玩具箱"
+            },
+            {
+              "page": "P24",
+              "title": "Let's Talk",
+              "en": "Lily: This is my room.\nAndy: It's so tidy!\nLily: My bed is here. My desk is there.\nAndy: What's on the desk?\nLily: A lamp and a clock.\nAndy: I like your room!",
+              "cn": "莉莉：这是我的房间。\n安迪：真整洁！\n莉莉：我的床在这儿，书桌在那儿。\n安迪：书桌上有什么？\n莉莉：一盏台灯和一个钟。\n安迪：我喜欢你的房间！"
+            },
+            {
+              "page": "P26",
+              "title": "Let's Chant — My Room",
+              "en": "Bed, bed, time for bed,\nDesk, desk, books are read.\nLamp, lamp, shining bright,\nMy tidy room — good night!",
+              "cn": "床，床，睡觉啦，\n桌，桌，读读书。\n灯，灯，亮晶晶，\n整洁房间——晚安喽！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 What Do You See?",
+          "words": [
+            {
+              "word": "see",
+              "phonetic": "/siː/",
+              "meaning": "看见",
+              "example": "What do you see?"
+            },
+            {
+              "word": "bird",
+              "phonetic": "/bɜːd/",
+              "meaning": "鸟",
+              "example": "I see a bird."
+            },
+            {
+              "word": "tree",
+              "phonetic": "/triː/",
+              "meaning": "树",
+              "example": "A big tree."
+            },
+            {
+              "word": "flower",
+              "phonetic": "/ˈflaʊə(r)/",
+              "meaning": "花",
+              "example": "Pretty flowers."
+            },
+            {
+              "word": "sun",
+              "phonetic": "/sʌn/",
+              "meaning": "太阳",
+              "example": "The sun is bright."
+            },
+            {
+              "word": "cloud",
+              "phonetic": "/klaʊd/",
+              "meaning": "云",
+              "example": "White clouds."
+            },
+            {
+              "word": "fish",
+              "phonetic": "/fɪʃ/",
+              "meaning": "鱼",
+              "example": "Fish in the water."
+            },
+            {
+              "word": "look",
+              "phonetic": "/lʊk/",
+              "meaning": "看",
+              "example": "Look at the bird!"
+            },
+            {
+              "word": "what",
+              "phonetic": "/wɒt/",
+              "meaning": "什么",
+              "example": "What do you see?"
+            },
+            {
+              "word": "pretty",
+              "phonetic": "/ˈprɪti/",
+              "meaning": "漂亮的",
+              "example": "Pretty flowers!"
+            }
+          ],
+          "pageRange": "P31-P40",
+          "lessons": [
+            {
+              "page": "P32",
+              "title": "Let's Learn",
+              "en": "bird    tree    flower    fish\nsun    cloud",
+              "cn": "鸟  树  花  鱼\n太阳  云"
+            },
+            {
+              "page": "P34",
+              "title": "Let's Talk",
+              "en": "Andy: Look! What do you see?\nLily: I see a bird in the tree.\nAndy: I see pretty flowers.\nLily: I see the sun and white clouds.\nAndy: What a beautiful day!",
+              "cn": "安迪：看！你看见了什么？\n莉莉：我看见树上有一只鸟。\n安迪：我看见漂亮的花。\n莉莉：我看见太阳和白云。\n安迪：多美的一天！"
+            },
+            {
+              "page": "P36",
+              "title": "Let's Chant — I Can See",
+              "en": "Look, look, what do you see?\nA little bird in the tree!\nLook, look, up in the sky,\nThe sun, the clouds, way up high!",
+              "cn": "看，看，你看见啥？\n树上一只小小鸟！\n看，看，天上瞧，\n太阳白云高又高！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 I Want a Pet",
+          "words": [
+            {
+              "word": "pet",
+              "phonetic": "/pet/",
+              "meaning": "宠物",
+              "example": "I want a pet."
+            },
+            {
+              "word": "dog",
+              "phonetic": "/dɒɡ/",
+              "meaning": "狗",
+              "example": "The dog is friendly."
+            },
+            {
+              "word": "cat",
+              "phonetic": "/kæt/",
+              "meaning": "猫",
+              "example": "My cat is white."
+            },
+            {
+              "word": "rabbit",
+              "phonetic": "/ˈræbɪt/",
+              "meaning": "兔子",
+              "example": "The rabbit hops."
+            },
+            {
+              "word": "fish",
+              "phonetic": "/fɪʃ/",
+              "meaning": "鱼",
+              "example": "A gold fish."
+            },
+            {
+              "word": "turtle",
+              "phonetic": "/ˈtɜːtl/",
+              "meaning": "乌龟",
+              "example": "The turtle is slow."
+            },
+            {
+              "word": "want",
+              "phonetic": "/wɒnt/",
+              "meaning": "想要",
+              "example": "I want a dog."
+            },
+            {
+              "word": "cute",
+              "phonetic": "/kjuːt/",
+              "meaning": "可爱的",
+              "example": "So cute!"
+            },
+            {
+              "word": "little",
+              "phonetic": "/ˈlɪtl/",
+              "meaning": "小的",
+              "example": "A little cat."
+            },
+            {
+              "word": "can",
+              "phonetic": "/kæn/",
+              "meaning": "可以",
+              "example": "Can I have a pet?"
+            }
+          ],
+          "pageRange": "P41-P50",
+          "lessons": [
+            {
+              "page": "P42",
+              "title": "Let's Learn",
+              "en": "pet    dog    cat    rabbit\nfish    turtle",
+              "cn": "宠物  狗  猫  兔子\n鱼  乌龟"
+            },
+            {
+              "page": "P44",
+              "title": "Let's Talk",
+              "en": "Lily: I want a pet.\nMum: What pet do you want?\nLily: I want a little rabbit. It's so cute.\nMum: OK. Let's take care of it.\nLily: Thank you, mum!",
+              "cn": "莉莉：我想要一只宠物。\n妈妈：你想要什么宠物？\n莉莉：我想要一只小兔子，太可爱了。\n妈妈：好的，我们一起照顾它。\n莉莉：谢谢妈妈！"
+            },
+            {
+              "page": "P46",
+              "title": "Let's Chant — My Pet",
+              "en": "Dog, dog, woof woof woof,\nCat, cat, on the roof.\nRabbit, rabbit, hop hop hop,\nI love pets — they never stop!",
+              "cn": "狗，狗，汪汪汪，\n猫，猫，房顶上。\n兔，兔，蹦蹦跳，\n我爱宠物——停不了！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 I Want Ice-cream!",
+          "words": [
+            {
+              "word": "ice-cream",
+              "phonetic": "/ˈaɪs kriːm/",
+              "meaning": "冰淇淋",
+              "example": "I want ice-cream!"
+            },
+            {
+              "word": "cake",
+              "phonetic": "/keɪk/",
+              "meaning": "蛋糕",
+              "example": "A birthday cake."
+            },
+            {
+              "word": "candy",
+              "phonetic": "/ˈkændi/",
+              "meaning": "糖果",
+              "example": "Sweet candy."
+            },
+            {
+              "word": "juice",
+              "phonetic": "/dʒuːs/",
+              "meaning": "果汁",
+              "example": "Orange juice, please."
+            },
+            {
+              "word": "milk",
+              "phonetic": "/mɪlk/",
+              "meaning": "牛奶",
+              "example": "Drink milk."
+            },
+            {
+              "word": "bread",
+              "phonetic": "/bred/",
+              "meaning": "面包",
+              "example": "I eat bread."
+            },
+            {
+              "word": "apple",
+              "phonetic": "/ˈæpl/",
+              "meaning": "苹果",
+              "example": "A red apple."
+            },
+            {
+              "word": "water",
+              "phonetic": "/ˈwɔːtə(r)/",
+              "meaning": "水",
+              "example": "Some water, please."
+            },
+            {
+              "word": "yummy",
+              "phonetic": "/ˈjʌmi/",
+              "meaning": "好吃的",
+              "example": "Yummy!"
+            },
+            {
+              "word": "want",
+              "phonetic": "/wɒnt/",
+              "meaning": "想要",
+              "example": "I want some cake."
+            }
+          ],
+          "pageRange": "P51-P60",
+          "lessons": [
+            {
+              "page": "P52",
+              "title": "Let's Learn",
+              "en": "ice-cream    cake    candy    juice\nmilk    bread    apple",
+              "cn": "冰淇淋  蛋糕  糖果  果汁\n牛奶  面包  苹果"
+            },
+            {
+              "page": "P54",
+              "title": "Let's Talk",
+              "en": "Andy: I want ice-cream!\nMum: Here you are.\nAndy: Yummy! Can I have some cake?\nMum: Sure. And drink some milk.\nAndy: Thank you, mum. It's yummy!",
+              "cn": "安迪：我想要冰淇淋！\n妈妈：给你。\n安迪：好吃！我能吃点蛋糕吗？\n妈妈：当然，再喝点牛奶。\n安迪：谢谢妈妈，真好吃！"
+            },
+            {
+              "page": "P56",
+              "title": "Let's Chant — Yummy Food",
+              "en": "Ice-cream, ice-cream, cold and sweet,\nCake and candy, what a treat!\nMilk and juice, yummy, yum,\nClap your hands and rub your tum!",
+              "cn": "冰淇淋，冰淇淋，又凉又甜，\n蛋糕糖果，真过瘾！\n牛奶果汁，香又甜，\n拍拍手来摸摸肚！"
+            }
+          ]
+        }
+      ]
+    },
+    "grade2": {
+      "上": [
+        {
+          "id": "u1",
+          "title": "Unit 1 What Can You Do?",
+          "words": [
+            {
+              "word": "can",
+              "phonetic": "/kæn/",
+              "meaning": "能；会",
+              "example": "What can you do?"
+            },
+            {
+              "word": "sing",
+              "phonetic": "/sɪŋ/",
+              "meaning": "唱歌",
+              "example": "I can sing."
+            },
+            {
+              "word": "dance",
+              "phonetic": "/dɑːns/",
+              "meaning": "跳舞",
+              "example": "She can dance."
+            },
+            {
+              "word": "draw",
+              "phonetic": "/drɔː/",
+              "meaning": "画画",
+              "example": "I can draw a cat."
+            },
+            {
+              "word": "swim",
+              "phonetic": "/swɪm/",
+              "meaning": "游泳",
+              "example": "Can you swim?"
+            },
+            {
+              "word": "skate",
+              "phonetic": "/skeɪt/",
+              "meaning": "滑冰",
+              "example": "He can skate."
+            },
+            {
+              "word": "ride",
+              "phonetic": "/raɪd/",
+              "meaning": "骑",
+              "example": "I can ride a bike."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "meaning": "玩；演奏",
+              "example": "I can play the piano."
+            },
+            {
+              "word": "well",
+              "phonetic": "/wel/",
+              "meaning": "好地",
+              "example": "She sings well."
+            },
+            {
+              "word": "too",
+              "phonetic": "/tuː/",
+              "meaning": "也",
+              "example": "Me too!"
+            }
+          ],
+          "pageRange": "P1-P10",
+          "lessons": [
+            {
+              "page": "P2",
+              "title": "Let's Learn",
+              "en": "sing    dance    draw    swim\nskate    ride    play",
+              "cn": "唱歌  跳舞  画画  游泳\n滑冰  骑  玩/演奏"
+            },
+            {
+              "page": "P4",
+              "title": "Let's Talk",
+              "en": "Andy: What can you do, Lily?\nLily: I can dance and draw. What about you?\nAndy: I can swim and ride a bike.\nBen: I can play football!\nLily: Wow, we can do many things!",
+              "cn": "安迪：你会做什么，莉莉？\n莉莉：我会跳舞和画画。你呢？\n安迪：我会游泳和骑车。\n本：我会踢足球！\n莉莉：哇，我们会做好多事！"
+            },
+            {
+              "page": "P6",
+              "title": "Let's Chant — I Can",
+              "en": "I can sing, I can dance,\nI can draw, give me a chance!\nI can swim, I can ride,\nLook at me — I try with pride!",
+              "cn": "我会唱，我会跳，\n我会画，给我机会瞧！\n我会游，我会骑，\n看看我——真神气！"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 What's for Dinner?",
+          "words": [
+            {
+              "word": "dinner",
+              "phonetic": "/ˈdɪnə(r)/",
+              "meaning": "晚饭",
+              "example": "What's for dinner?"
+            },
+            {
+              "word": "rice",
+              "phonetic": "/raɪs/",
+              "meaning": "米饭",
+              "example": "I eat rice."
+            },
+            {
+              "word": "noodles",
+              "phonetic": "/ˈnuːdlz/",
+              "meaning": "面条",
+              "example": "Hot noodles."
+            },
+            {
+              "word": "soup",
+              "phonetic": "/suːp/",
+              "meaning": "汤",
+              "example": "Egg soup."
+            },
+            {
+              "word": "fish",
+              "phonetic": "/fɪʃ/",
+              "meaning": "鱼",
+              "example": "Fish is yummy."
+            },
+            {
+              "word": "chicken",
+              "phonetic": "/ˈtʃɪkɪn/",
+              "meaning": "鸡肉",
+              "example": "I like chicken."
+            },
+            {
+              "word": "egg",
+              "phonetic": "/eɡ/",
+              "meaning": "鸡蛋",
+              "example": "Two eggs."
+            },
+            {
+              "word": "vegetable",
+              "phonetic": "/ˈvedʒtəbl/",
+              "meaning": "蔬菜",
+              "example": "Eat your vegetables."
+            },
+            {
+              "word": "hungry",
+              "phonetic": "/ˈhʌŋɡri/",
+              "meaning": "饿的",
+              "example": "I'm hungry."
+            },
+            {
+              "word": "eat",
+              "phonetic": "/iːt/",
+              "meaning": "吃",
+              "example": "Let's eat!"
+            }
+          ],
+          "pageRange": "P11-P20",
+          "lessons": [
+            {
+              "page": "P12",
+              "title": "Let's Learn",
+              "en": "rice    noodles    soup    fish\nchicken    egg    vegetable",
+              "cn": "米饭  面条  汤  鱼\n鸡肉  鸡蛋  蔬菜"
+            },
+            {
+              "page": "P14",
+              "title": "Let's Talk",
+              "en": "Andy: Mum, I'm hungry. What's for dinner?\nMum: Rice, fish and vegetables.\nAndy: Yummy! I like fish.\nMum: Eat your vegetables, too.\nAndy: OK. Let's eat!",
+              "cn": "安迪：妈妈，我饿了。晚饭吃什么？\n妈妈：米饭、鱼和蔬菜。\n安迪：好吃！我喜欢鱼。\n妈妈：也要吃蔬菜哦。\n安迪：好的，开吃！"
+            },
+            {
+              "page": "P16",
+              "title": "Let's Chant — Dinner Time",
+              "en": "Rice and fish, on my dish,\nSoup and noodles, what a wish!\nVegetables green, good for you,\nDinner time — yummy, too!",
+              "cn": "米饭和鱼，盘中餐，\n汤和面条，多美满！\n绿色蔬菜，身体好，\n晚饭时间——真叫妙！"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 At the Zoo（待核对）",
+          "words": [
+            {
+              "word": "zoo",
+              "phonetic": "/zuː/",
+              "meaning": "动物园",
+              "example": "Let's go to the zoo."
+            },
+            {
+              "word": "animal",
+              "phonetic": "/ˈænɪml/",
+              "meaning": "动物",
+              "example": "I like animals."
+            },
+            {
+              "word": "lion",
+              "phonetic": "/ˈlaɪən/",
+              "meaning": "狮子",
+              "example": "The lion is strong."
+            },
+            {
+              "word": "tiger",
+              "phonetic": "/ˈtaɪɡə(r)/",
+              "meaning": "老虎",
+              "example": "A big tiger."
+            },
+            {
+              "word": "monkey",
+              "phonetic": "/ˈmʌŋki/",
+              "meaning": "猴子",
+              "example": "The monkey jumps."
+            },
+            {
+              "word": "elephant",
+              "phonetic": "/ˈelɪfənt/",
+              "meaning": "大象",
+              "example": "The elephant is big."
+            },
+            {
+              "word": "panda",
+              "phonetic": "/ˈpændə/",
+              "meaning": "熊猫",
+              "example": "Pandas are cute."
+            },
+            {
+              "word": "bear",
+              "phonetic": "/beə(r)/",
+              "meaning": "熊",
+              "example": "A brown bear."
+            },
+            {
+              "word": "big",
+              "phonetic": "/bɪɡ/",
+              "meaning": "大的",
+              "example": "A big elephant."
+            },
+            {
+              "word": "see",
+              "phonetic": "/siː/",
+              "meaning": "看",
+              "example": "I can see a panda."
+            }
+          ],
+          "note": "原抓取为 It's a Nice T-shirt，但该主题实为第四册 Unit 1，本单元标题待核对",
+          "pageRange": "P21-P30",
+          "lessons": [
+            {
+              "page": "P22",
+              "title": "Let's Learn",
+              "en": "lion    tiger    monkey    elephant\npanda    bear",
+              "cn": "狮子  老虎  猴子  大象\n熊猫  熊"
+            },
+            {
+              "page": "P24",
+              "title": "Let's Talk",
+              "en": "Andy: Let's go to the zoo!\nLily: Great! Look, a big elephant.\nAndy: I can see two pandas. They're cute.\nBen: Look at the monkey. It jumps!\nLily: I love the zoo!",
+              "cn": "安迪：我们去动物园吧！\n莉莉：太好了！看，一头大象。\n安迪：我看见两只熊猫，好可爱。\n本：看那只猴子，它在跳！\n莉莉：我爱动物园！"
+            },
+            {
+              "page": "P26",
+              "title": "Let's Chant — At the Zoo",
+              "en": "Lion, lion, big and strong,\nMonkey, monkey, jump along.\nPanda, panda, black and white,\nAt the zoo — what a sight!",
+              "cn": "狮子，狮子，强又壮，\n猴子，猴子，蹦蹦跳。\n熊猫，熊猫，黑又白，\n动物园里——真好看！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 What Time Is It?",
+          "words": [
+            {
+              "word": "time",
+              "phonetic": "/taɪm/",
+              "meaning": "时间",
+              "example": "What time is it?"
+            },
+            {
+              "word": "clock",
+              "phonetic": "/klɒk/",
+              "meaning": "钟",
+              "example": "Look at the clock."
+            },
+            {
+              "word": "o'clock",
+              "phonetic": "/əˈklɒk/",
+              "meaning": "……点钟",
+              "example": "It's seven o'clock."
+            },
+            {
+              "word": "morning",
+              "phonetic": "/ˈmɔːnɪŋ/",
+              "meaning": "早晨",
+              "example": "Good morning!"
+            },
+            {
+              "word": "noon",
+              "phonetic": "/nuːn/",
+              "meaning": "中午",
+              "example": "It's noon."
+            },
+            {
+              "word": "afternoon",
+              "phonetic": "/ˌɑːftəˈnuːn/",
+              "meaning": "下午",
+              "example": "Good afternoon."
+            },
+            {
+              "word": "evening",
+              "phonetic": "/ˈiːvnɪŋ/",
+              "meaning": "傍晚",
+              "example": "In the evening."
+            },
+            {
+              "word": "night",
+              "phonetic": "/naɪt/",
+              "meaning": "夜晚",
+              "example": "Good night!"
+            },
+            {
+              "word": "get up",
+              "phonetic": "/ɡet ʌp/",
+              "meaning": "起床",
+              "example": "I get up at seven."
+            },
+            {
+              "word": "now",
+              "phonetic": "/naʊ/",
+              "meaning": "现在",
+              "example": "What time is it now?"
+            }
+          ],
+          "pageRange": "P31-P40",
+          "lessons": [
+            {
+              "page": "P32",
+              "title": "Let's Learn",
+              "en": "morning    noon    afternoon\nevening    night    o'clock",
+              "cn": "早晨  中午  下午\n傍晚  夜晚  ……点钟"
+            },
+            {
+              "page": "P34",
+              "title": "Let's Talk",
+              "en": "Andy: What time is it now?\nLily: It's seven o'clock.\nAndy: Time to get up!\nLily: It's twelve o'clock. Time for lunch.\nAndy: It's nine o'clock at night. Good night!",
+              "cn": "安迪：现在几点了？\n莉莉：七点钟。\n安迪：该起床啦！\n莉莉：十二点了，该吃午饭。\n安迪：晚上九点了，晚安！"
+            },
+            {
+              "page": "P36",
+              "title": "Let's Chant — What Time",
+              "en": "Tick-tock, tick-tock, what time now?\nSeven o'clock, get up — wow!\nTwelve o'clock, time to eat,\nNine at night, sleep so sweet!",
+              "cn": "滴答，滴答，几点啦？\n七点钟，快起床——哇！\n十二点，吃饭喽，\n夜里九点，睡好觉！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 I'm Skating",
+          "words": [
+            {
+              "word": "skate",
+              "phonetic": "/skeɪt/",
+              "meaning": "滑冰",
+              "example": "I'm skating."
+            },
+            {
+              "word": "run",
+              "phonetic": "/rʌn/",
+              "meaning": "跑",
+              "example": "He is running."
+            },
+            {
+              "word": "jump",
+              "phonetic": "/dʒʌmp/",
+              "meaning": "跳",
+              "example": "She is jumping."
+            },
+            {
+              "word": "swim",
+              "phonetic": "/swɪm/",
+              "meaning": "游泳",
+              "example": "They are swimming."
+            },
+            {
+              "word": "ride",
+              "phonetic": "/raɪd/",
+              "meaning": "骑",
+              "example": "I'm riding a bike."
+            },
+            {
+              "word": "play",
+              "phonetic": "/pleɪ/",
+              "meaning": "玩",
+              "example": "We are playing."
+            },
+            {
+              "word": "ball",
+              "phonetic": "/bɔːl/",
+              "meaning": "球",
+              "example": "Play with a ball."
+            },
+            {
+              "word": "park",
+              "phonetic": "/pɑːk/",
+              "meaning": "公园",
+              "example": "In the park."
+            },
+            {
+              "word": "now",
+              "phonetic": "/naʊ/",
+              "meaning": "现在",
+              "example": "I'm skating now."
+            },
+            {
+              "word": "fun",
+              "phonetic": "/fʌn/",
+              "meaning": "有趣",
+              "example": "It's fun!"
+            }
+          ],
+          "pageRange": "P41-P50",
+          "lessons": [
+            {
+              "page": "P42",
+              "title": "Let's Learn",
+              "en": "skating    running    jumping\nswimming    riding    playing",
+              "cn": "滑冰  跑步  跳\n游泳  骑车  玩"
+            },
+            {
+              "page": "P44",
+              "title": "Let's Talk",
+              "en": "Lily: Where are you, Andy?\nAndy: I'm in the park. I'm skating!\nLily: That's fun! Ben is running.\nAndy: Look, the girls are jumping.\nLily: Let's play together!",
+              "cn": "莉莉：你在哪儿，安迪？\n安迪：我在公园，我在滑冰！\n莉莉：真好玩！本在跑步。\n安迪：看，女孩们在跳。\n莉莉：我们一起玩吧！"
+            },
+            {
+              "page": "P46",
+              "title": "Let's Chant — In the Park",
+              "en": "Skating, skating, round we go,\nRunning, running, fast not slow.\nJumping, jumping, high and free,\nIn the park — come play with me!",
+              "cn": "滑冰，滑冰，转圈圈，\n跑步，跑步，快如箭。\n跳跃，跳跃，又高又欢，\n公园里——来玩耍！"
+            }
+          ]
+        },
+        {
+          "id": "u6",
+          "title": "Unit 6 Mum's Washing Up",
+          "words": [
+            {
+              "word": "wash",
+              "phonetic": "/wɒʃ/",
+              "meaning": "洗",
+              "example": "Mum's washing up."
+            },
+            {
+              "word": "cook",
+              "phonetic": "/kʊk/",
+              "meaning": "做饭",
+              "example": "Dad is cooking."
+            },
+            {
+              "word": "clean",
+              "phonetic": "/kliːn/",
+              "meaning": "打扫",
+              "example": "Clean the room."
+            },
+            {
+              "word": "read",
+              "phonetic": "/riːd/",
+              "meaning": "读",
+              "example": "I'm reading a book."
+            },
+            {
+              "word": "write",
+              "phonetic": "/raɪt/",
+              "meaning": "写",
+              "example": "She is writing."
+            },
+            {
+              "word": "watch",
+              "phonetic": "/wɒtʃ/",
+              "meaning": "看",
+              "example": "Watch TV."
+            },
+            {
+              "word": "help",
+              "phonetic": "/help/",
+              "meaning": "帮助",
+              "example": "Can I help you?"
+            },
+            {
+              "word": "busy",
+              "phonetic": "/ˈbɪzi/",
+              "meaning": "忙碌的",
+              "example": "Mum is busy."
+            },
+            {
+              "word": "do",
+              "phonetic": "/duː/",
+              "meaning": "做",
+              "example": "What are you doing?"
+            },
+            {
+              "word": "now",
+              "phonetic": "/naʊ/",
+              "meaning": "现在",
+              "example": "She is cooking now."
+            }
+          ],
+          "pageRange": "P51-P60",
+          "lessons": [
+            {
+              "page": "P52",
+              "title": "Let's Learn",
+              "en": "washing    cooking    cleaning\nreading    writing    watching TV",
+              "cn": "洗  做饭  打扫\n读书  写字  看电视"
+            },
+            {
+              "page": "P54",
+              "title": "Let's Talk",
+              "en": "Andy: What are you doing, mum?\nMum: I'm washing up. Dad is cooking.\nAndy: Can I help you?\nMum: Yes! Please clean the table.\nAndy: OK, mum. We're a busy family!",
+              "cn": "安迪：妈妈，你在做什么？\n妈妈：我在洗碗，爸爸在做饭。\n安迪：我能帮忙吗？\n妈妈：好呀！请擦擦桌子。\n安迪：好的妈妈，我们一家真忙！"
+            },
+            {
+              "page": "P56",
+              "title": "Let's Chant — Busy Day",
+              "en": "Mum is washing, dad can cook,\nSister's reading a big book.\nClean and help, one, two, three,\nA busy family — you and me!",
+              "cn": "妈妈洗碗，爸爸做饭，\n姐姐读着大书本。\n打扫帮忙，一二三，\n忙碌一家——你和我！"
+            }
+          ]
+        }
+      ],
+      "下": [
+        {
+          "id": "u1",
+          "title": "Unit 1 It's a Nice T-shirt",
+          "pageRange": "P1-P12",
+          "words": [
+            {
+              "word": "T-shirt",
+              "phonetic": "/ˈtiː ʃɜːt/",
+              "meaning": "T 恤衫",
+              "example": "Here is my T-shirt. It's purple."
+            },
+            {
+              "word": "dress",
+              "phonetic": "/dres/",
+              "meaning": "连衣裙",
+              "example": "She's wearing a yellow dress."
+            },
+            {
+              "word": "sweater",
+              "phonetic": "/ˈswetə/",
+              "meaning": "毛衣",
+              "example": "Here is my sweater. It is blue."
+            },
+            {
+              "word": "shorts",
+              "phonetic": "/ʃɔːts/",
+              "meaning": "短裤",
+              "example": "I like my blue shorts."
+            },
+            {
+              "word": "shoes",
+              "phonetic": "/ʃuːz/",
+              "meaning": "鞋子",
+              "example": "Blue shoes, nice shoes."
+            },
+            {
+              "word": "skirt",
+              "phonetic": "/skɜːt/",
+              "meaning": "短裙",
+              "example": "A red skirt on the bed."
+            },
+            {
+              "word": "shirt",
+              "phonetic": "/ʃɜːt/",
+              "meaning": "衬衫",
+              "example": "Look at the white shirt."
+            },
+            {
+              "word": "jeans",
+              "phonetic": "/dʒiːnz/",
+              "meaning": "牛仔裤",
+              "example": "My jeans are new."
+            },
+            {
+              "word": "socks",
+              "phonetic": "/sɒks/",
+              "meaning": "袜子",
+              "example": "Socks, socks, everywhere."
+            },
+            {
+              "word": "jacket",
+              "phonetic": "/ˈdʒækɪt/",
+              "meaning": "夹克衫",
+              "example": "Here is my jacket. It's yellow."
+            },
+            {
+              "word": "boy",
+              "phonetic": "/bɔɪ/",
+              "meaning": "男孩",
+              "example": "Boy 2 is my friend."
+            },
+            {
+              "word": "girl",
+              "phonetic": "/ɡɜːl/",
+              "meaning": "女孩",
+              "example": "Who's she? — Girl 2."
+            }
+          ],
+          "lessons": [
+            {
+              "page": "P2",
+              "title": "Let's Learn",
+              "en": "a T-shirt    a dress    a skirt    a shirt\na sweater    socks    shoes    jeans    shorts",
+              "cn": "一件 T 恤衫    一条连衣裙    一条短裙    一件衬衫\n一件毛衣    袜子    鞋子    牛仔裤    短裤"
+            },
+            {
+              "page": "P3",
+              "title": "Let's Sing — MY CLOTHES",
+              "en": "Here is my T-shirt.\nIt's purple.\nHere is my sweater.\nIt is blue.\nHere is my jacket.\nIt's yellow.\nIt is yellow. It is new.",
+              "cn": "这是我的 T 恤衫，\n它是紫色的。\n这是我的毛衣，\n它是蓝色的。\n这是我的夹克衫，\n它是黄色的。\n它是黄色的，是新的。"
+            },
+            {
+              "page": "P4",
+              "title": "Let's Chant — Socks",
+              "en": "Socks purple, socks red,\nSocks yellow on the bed.\n\nSocks, socks, everywhere,\nOn the table, under the chair.\n\nSocks here, socks there,\nSocks, socks, everywhere.",
+              "cn": "紫色的袜子，红色的袜子，\n黄色的袜子在床上。\n\n袜子，袜子，到处都是袜子，\n桌子上，椅子下。\n\n这里有袜子，那里也有袜子，\n袜子，袜子，到处都是。"
+            },
+            {
+              "page": "P5",
+              "title": "Let's Play — Choose, say and guess",
+              "en": "— She's wearing a yellow dress and blue shoes. Who's she?\n— Girl 2.",
+              "cn": "—— 她穿着一条黄色的连衣裙和一双蓝色的鞋子，她是谁？\n—— 2 号女孩。"
+            }
+          ]
+        },
+        {
+          "id": "u2",
+          "title": "Unit 2 I Go to School by Bus",
+          "words": [
+            {
+              "word": "bus",
+              "phonetic": "/bʌs/",
+              "meaning": "公交车",
+              "example": "I go to school by bus."
+            },
+            {
+              "word": "car",
+              "phonetic": "/kɑː(r)/",
+              "meaning": "小汽车",
+              "example": "Dad's car is red."
+            },
+            {
+              "word": "bike",
+              "phonetic": "/baɪk/",
+              "meaning": "自行车",
+              "example": "I ride a bike."
+            },
+            {
+              "word": "taxi",
+              "phonetic": "/ˈtæksi/",
+              "meaning": "出租车",
+              "example": "Take a taxi."
+            },
+            {
+              "word": "train",
+              "phonetic": "/treɪn/",
+              "meaning": "火车",
+              "example": "A fast train."
+            },
+            {
+              "word": "on foot",
+              "phonetic": "/ɒn fʊt/",
+              "meaning": "步行",
+              "example": "I go on foot."
+            },
+            {
+              "word": "by",
+              "phonetic": "/baɪ/",
+              "meaning": "乘（交通工具）",
+              "example": "by bus"
+            },
+            {
+              "word": "go",
+              "phonetic": "/ɡəʊ/",
+              "meaning": "去",
+              "example": "I go to school."
+            },
+            {
+              "word": "fast",
+              "phonetic": "/fɑːst/",
+              "meaning": "快的",
+              "example": "The train is fast."
+            },
+            {
+              "word": "school",
+              "phonetic": "/skuːl/",
+              "meaning": "学校",
+              "example": "Go to school."
+            }
+          ],
+          "pageRange": "P13-P24",
+          "lessons": [
+            {
+              "page": "P14",
+              "title": "Let's Learn",
+              "en": "bus    car    bike    taxi\ntrain    on foot",
+              "cn": "公交车  小汽车  自行车  出租车\n火车  步行"
+            },
+            {
+              "page": "P16",
+              "title": "Let's Talk",
+              "en": "Andy: How do you go to school?\nLily: I go to school by bus. And you?\nAndy: I go by bike. It's fast.\nBen: I go on foot. My home is near.\nLily: Cool!",
+              "cn": "安迪：你怎么去上学？\n莉莉：我坐公交车上学。你呢？\n安迪：我骑自行车，很快。\n本：我走路，我家很近。\n莉莉：真棒！"
+            },
+            {
+              "page": "P18",
+              "title": "Let's Chant — Go to School",
+              "en": "Bus, bus, beep beep beep,\nBike, bike, fast not slow.\nTrain, train, choo choo choo,\nGo to school — off we go!",
+              "cn": "公交，公交，嘀嘀嘀，\n单车，单车，快快骑。\n火车，火车，呜呜呜，\n去上学——出发咯！"
+            }
+          ]
+        },
+        {
+          "id": "u3",
+          "title": "Unit 3 I Want to Be a Teacher",
+          "words": [
+            {
+              "word": "teacher",
+              "phonetic": "/ˈtiːtʃə(r)/",
+              "meaning": "老师",
+              "example": "I want to be a teacher."
+            },
+            {
+              "word": "doctor",
+              "phonetic": "/ˈdɒktə(r)/",
+              "meaning": "医生",
+              "example": "She is a doctor."
+            },
+            {
+              "word": "nurse",
+              "phonetic": "/nɜːs/",
+              "meaning": "护士",
+              "example": "A kind nurse."
+            },
+            {
+              "word": "cook",
+              "phonetic": "/kʊk/",
+              "meaning": "厨师",
+              "example": "He is a cook."
+            },
+            {
+              "word": "driver",
+              "phonetic": "/ˈdraɪvə(r)/",
+              "meaning": "司机",
+              "example": "A bus driver."
+            },
+            {
+              "word": "farmer",
+              "phonetic": "/ˈfɑːmə(r)/",
+              "meaning": "农民",
+              "example": "The farmer works hard."
+            },
+            {
+              "word": "police",
+              "phonetic": "/pəˈliːs/",
+              "meaning": "警察",
+              "example": "A police officer."
+            },
+            {
+              "word": "want",
+              "phonetic": "/wɒnt/",
+              "meaning": "想要",
+              "example": "I want to be a doctor."
+            },
+            {
+              "word": "be",
+              "phonetic": "/biː/",
+              "meaning": "成为",
+              "example": "be a teacher"
+            },
+            {
+              "word": "job",
+              "phonetic": "/dʒɒb/",
+              "meaning": "工作",
+              "example": "A good job."
+            }
+          ],
+          "pageRange": "P25-P36",
+          "lessons": [
+            {
+              "page": "P26",
+              "title": "Let's Learn",
+              "en": "teacher    doctor    nurse\ncook    driver    farmer    police",
+              "cn": "老师  医生  护士\n厨师  司机  农民  警察"
+            },
+            {
+              "page": "P28",
+              "title": "Let's Talk",
+              "en": "Andy: What do you want to be, Lily?\nLily: I want to be a teacher. And you?\nAndy: I want to be a doctor. I can help people.\nBen: I want to be a driver!\nLily: Great jobs!",
+              "cn": "安迪：你想成为什么，莉莉？\n莉莉：我想当老师。你呢？\n安迪：我想当医生，可以帮助别人。\n本：我想当司机！\n莉莉：都是好工作！"
+            },
+            {
+              "page": "P30",
+              "title": "Let's Chant — My Dream",
+              "en": "Teacher, doctor, nurse and cook,\nFarmer, driver, take a look!\nWhat do you want to be one day?\nA happy job — hip hip hooray!",
+              "cn": "老师，医生，护士，厨师，\n农民，司机，快来看！\n将来你想做什么？\n快乐工作——耶耶耶！"
+            }
+          ]
+        },
+        {
+          "id": "u4",
+          "title": "Unit 4 Please Take Me to the Park",
+          "words": [
+            {
+              "word": "park",
+              "phonetic": "/pɑːk/",
+              "meaning": "公园",
+              "example": "Take me to the park."
+            },
+            {
+              "word": "zoo",
+              "phonetic": "/zuː/",
+              "meaning": "动物园",
+              "example": "Go to the zoo."
+            },
+            {
+              "word": "shop",
+              "phonetic": "/ʃɒp/",
+              "meaning": "商店",
+              "example": "A toy shop."
+            },
+            {
+              "word": "library",
+              "phonetic": "/ˈlaɪbrəri/",
+              "meaning": "图书馆",
+              "example": "Read in the library."
+            },
+            {
+              "word": "school",
+              "phonetic": "/skuːl/",
+              "meaning": "学校",
+              "example": "Go to school."
+            },
+            {
+              "word": "please",
+              "phonetic": "/pliːz/",
+              "meaning": "请",
+              "example": "Take me, please."
+            },
+            {
+              "word": "take",
+              "phonetic": "/teɪk/",
+              "meaning": "带；送",
+              "example": "Take me to the park."
+            },
+            {
+              "word": "go",
+              "phonetic": "/ɡəʊ/",
+              "meaning": "去",
+              "example": "Let's go!"
+            },
+            {
+              "word": "where",
+              "phonetic": "/weə(r)/",
+              "meaning": "哪里",
+              "example": "Where do you go?"
+            },
+            {
+              "word": "happy",
+              "phonetic": "/ˈhæpi/",
+              "meaning": "开心的",
+              "example": "I'm so happy!"
+            }
+          ],
+          "pageRange": "P37-P48",
+          "lessons": [
+            {
+              "page": "P38",
+              "title": "Let's Learn",
+              "en": "park    zoo    shop\nlibrary    school",
+              "cn": "公园  动物园  商店\n图书馆  学校"
+            },
+            {
+              "page": "P40",
+              "title": "Let's Talk",
+              "en": "Lily: Dad, please take me to the park.\nDad: OK. Let's go now.\nLily: Can we go to the zoo, too?\nDad: Sure. There are pandas.\nLily: Yeah! I'm so happy!",
+              "cn": "莉莉：爸爸，请带我去公园。\n爸爸：好的，我们现在就去。\n莉莉：我们也能去动物园吗？\n爸爸：当然，那里有熊猫。\n莉莉：耶！我太开心了！"
+            },
+            {
+              "page": "P42",
+              "title": "Let's Chant — Let's Go",
+              "en": "To the park, to the zoo,\nTo the shop, me and you!\nTake me, take me, off we go,\nHappy, happy — yo ho ho!",
+              "cn": "去公园，去动物园，\n去商店，你和我！\n带我去，带我去，出发啦，\n开心，开心——哟嗬嗬！"
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "title": "Unit 5 My Favourite Day Is Monday",
+          "words": [
+            {
+              "word": "Monday",
+              "phonetic": "/ˈmʌndeɪ/",
+              "meaning": "星期一",
+              "example": "My favourite day is Monday."
+            },
+            {
+              "word": "Tuesday",
+              "phonetic": "/ˈtjuːzdeɪ/",
+              "meaning": "星期二",
+              "example": "See you on Tuesday."
+            },
+            {
+              "word": "Wednesday",
+              "phonetic": "/ˈwenzdeɪ/",
+              "meaning": "星期三",
+              "example": "It's Wednesday."
+            },
+            {
+              "word": "Thursday",
+              "phonetic": "/ˈθɜːzdeɪ/",
+              "meaning": "星期四",
+              "example": "On Thursday."
+            },
+            {
+              "word": "Friday",
+              "phonetic": "/ˈfraɪdeɪ/",
+              "meaning": "星期五",
+              "example": "Happy Friday!"
+            },
+            {
+              "word": "Saturday",
+              "phonetic": "/ˈsætədeɪ/",
+              "meaning": "星期六",
+              "example": "Play on Saturday."
+            },
+            {
+              "word": "Sunday",
+              "phonetic": "/ˈsʌndeɪ/",
+              "meaning": "星期日",
+              "example": "Rest on Sunday."
+            },
+            {
+              "word": "day",
+              "phonetic": "/deɪ/",
+              "meaning": "天",
+              "example": "What day is it?"
+            },
+            {
+              "word": "week",
+              "phonetic": "/wiːk/",
+              "meaning": "星期",
+              "example": "Seven days a week."
+            },
+            {
+              "word": "favourite",
+              "phonetic": "/ˈfeɪvərɪt/",
+              "meaning": "最喜欢的",
+              "example": "My favourite day."
+            }
+          ],
+          "pageRange": "P49-P60",
+          "lessons": [
+            {
+              "page": "P50",
+              "title": "Let's Learn",
+              "en": "Monday    Tuesday    Wednesday\nThursday    Friday    Saturday    Sunday",
+              "cn": "星期一  星期二  星期三\n星期四  星期五  星期六  星期日"
+            },
+            {
+              "page": "P52",
+              "title": "Let's Talk",
+              "en": "Andy: What day is it today?\nLily: It's Monday. My favourite day!\nAndy: Why Monday?\nLily: We have music and art.\nAndy: I like Saturday. I can play all day!",
+              "cn": "安迪：今天星期几？\n莉莉：星期一，我最喜欢的一天！\n安迪：为什么是星期一？\n莉莉：我们有音乐课和美术课。\n安迪：我喜欢星期六，可以玩一整天！"
+            },
+            {
+              "page": "P54",
+              "title": "Let's Chant — Days of the Week",
+              "en": "Monday, Tuesday, off we go,\nWednesday, Thursday, in a row.\nFriday, Saturday, Sunday fun,\nSeven days — and then we're done!",
+              "cn": "星期一，星期二，走起来，\n星期三，星期四，排排排。\n星期五，星期六，星期日玩，\n七天过——一周满！"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "appId": "com.yxyy.englishtutor",
+  "appName": "乐学英语",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https",
+    "iosScheme": "capacitor"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "ios": {
+    "contentInset": "always"
+  }
+}

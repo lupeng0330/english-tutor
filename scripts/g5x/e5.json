@@ -1,0 +1,42 @@
+{
+  "souvenir": [
+    { "en": "A souvenir.", "cn": "纪念品。", "level": 1 },
+    { "en": "Buy a souvenir.", "cn": "买个纪念品。", "level": 2 },
+    { "en": "I keep souvenirs from every city I visit.", "cn": "我留下每个去过城市的纪念品。", "level": 3 }
+  ],
+  "shop": [
+    { "en": "A small shop.", "cn": "一家小店。", "level": 1 },
+    { "en": "Go to the gift shop.", "cn": "去礼品店。", "level": 2 },
+    { "en": "The shop near the museum sells many beautiful gifts.", "cn": "博物馆附近的店卖很多漂亮礼物。", "level": 3 }
+  ],
+  "gift": [
+    { "en": "A nice gift.", "cn": "一份好礼物。", "level": 1 },
+    { "en": "A gift for Mum.", "cn": "送妈妈的礼物。", "level": 2 },
+    { "en": "I picked a small handmade gift for my best friend.", "cn": "我给好朋友挑了一份手工小礼物。", "level": 3 }
+  ],
+  "size": [
+    { "en": "The right size.", "cn": "合适的尺寸。", "level": 1 },
+    { "en": "What size?", "cn": "什么码？", "level": 2 },
+    { "en": "These shoes are not the right size for me.", "cn": "这双鞋码数不合适。", "level": 3 }
+  ],
+  "colour": [
+    { "en": "What colour?", "cn": "什么颜色？", "level": 1 },
+    { "en": "Blue is my colour.", "cn": "蓝色是我的颜色。", "level": 2 },
+    { "en": "Which colour scarf do you like better, red or green?", "cn": "你更喜欢哪条围巾，红色还是绿色？", "level": 3 }
+  ],
+  "try on": [
+    { "en": "Try it on.", "cn": "试一下。", "level": 1 },
+    { "en": "Try on this hat.", "cn": "试戴这顶帽子。", "level": 2 },
+    { "en": "Can I try on this jacket in a smaller size?", "cn": "我能试一下这件小一号的夹克吗？", "level": 3 }
+  ],
+  "pay": [
+    { "en": "Pay for it.", "cn": "付钱。", "level": 1 },
+    { "en": "I'll pay now.", "cn": "我现在付。", "level": 2 },
+    { "en": "You can pay with cash or by phone here.", "cn": "这里可以付现金或手机支付。", "level": 3 }
+  ],
+  "receipt": [
+    { "en": "A receipt.", "cn": "一张收据。", "level": 1 },
+    { "en": "Keep the receipt.", "cn": "留着收据。", "level": 2 },
+    { "en": "Always keep the receipt in case you need to return things.", "cn": "留好收据以防退货。", "level": 3 }
+  ]
+}

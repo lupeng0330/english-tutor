@@ -1,0 +1,82 @@
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+.AppleDouble
+.LSOverride
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时文件
+*.tmp
+*.log
+*.bak
+*.bak.*
+
+# 备份 zip
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Node (如果以后用到)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+package-lock.json
+
+# Electron 桌面壳构建产物
+release/
+dist/
+out/
+
+# Capacitor 移动壳：webDir 构建产物(由 copy-web-assets.js 生成) + 原生构建缓存
+mobile/www/
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/ios/App/Pods/
+mobile/ios/App/build/
+
+# 后端 API 构建产物 / 本地开发数据库 / 环境变量
+apps/api/dist/
+apps/api/prisma/dev.db
+apps/api/prisma/dev.db-journal
+# 数据迁移快照（含用户数据，敏感，绝不入仓；已同样排除出部署包 pack-scf.js）
+apps/api/scripts/backups/
+**/*.db-journal
+apps/api/.env
+**/prisma/migrations/**/migration.lock
+.env
+
+# 临时二维码页（仅本地调试用）
+qrcode*.html
+_parse_tmp.py
+
+# 后台进程 stderr 空日志
+*.err
+
+# edge-tts 生成过程中的临时分片（中途崩溃可能残留）。
+# 注意：audio/.manifest.json 是增量校验元数据，需要被 commit，不要忽略。
+audio/_tmp/
+# 🆕 句级增量的持久化句缓存（本地构建缓存，最终合成的整篇 mp3 才入仓）
+audio/_sent/
+
+# CodeBuddy / Cursor 等 AI IDE 本地状态（plan / 缓存等，不应入仓）
+.codebuddy/
+.cursor/
+
+data/questions/.backups/
+data/textbooks/.backups/
+data/examples/.backups/
+data/exams/.backups/
+audio/_tmp_jk_listen/
+
+# playwright-cli 浏览器自动化测试本地缓存（会话/profile/截图等，不入仓）
+.playwright-cli/

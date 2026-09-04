@@ -1,0 +1,580 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "I am a student.",
+    "target": "改为否定句",
+    "answer": "I am not a student.",
+    "answers": [
+      "I am not a student."
+    ],
+    "explain": "be 动词后加 not"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "She is my friend.",
+    "target": "改为否定句",
+    "answer": "She is not my friend.",
+    "answers": [
+      "She is not my friend.",
+      "She isn't my friend."
+    ],
+    "explain": "is 后加 not，可缩写 isn't"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "He is tall.",
+    "target": "改为一般疑问句",
+    "answer": "Is he tall?",
+    "answers": [
+      "Is he tall?"
+    ],
+    "explain": "be 动词 is 提到句首，句末用问号"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "They are happy.",
+    "target": "改为一般疑问句",
+    "answer": "Are they happy?",
+    "answers": [
+      "Are they happy?"
+    ],
+    "explain": "are 提到句首"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "This is a book.",
+    "target": "改为复数句",
+    "answer": "These are books.",
+    "answers": [
+      "These are books."
+    ],
+    "explain": "this→these, is→are, 名词变复数"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "I can swim.",
+    "target": "改为否定句",
+    "answer": "I can not swim.",
+    "answers": [
+      "I can not swim.",
+      "I cannot swim.",
+      "I can't swim."
+    ],
+    "explain": "情态动词 can 后加 not"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "You like apples.",
+    "target": "改为一般疑问句",
+    "answer": "Do you like apples?",
+    "answers": [
+      "Do you like apples?"
+    ],
+    "explain": "实义动词句用 Do 提问"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "It is a cat.",
+    "target": "改为一般疑问句",
+    "answer": "Is it a cat?",
+    "answers": [
+      "Is it a cat?"
+    ],
+    "explain": "is 提到句首"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "We are in China.",
+    "target": "改为否定句",
+    "answer": "We are not in China.",
+    "answers": [
+      "We are not in China.",
+      "We aren't in China."
+    ],
+    "explain": "are 后加 not"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5",
+    "type": "sentence_transform",
+    "difficulty": 1,
+    "original": "She has a pen.",
+    "target": "改为否定句",
+    "answer": "She does not have a pen.",
+    "answers": [
+      "She does not have a pen.",
+      "She doesn't have a pen."
+    ],
+    "explain": "第三人称否定用 does not + 动词原形"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "I have a nice bag.",
+    "target": "改为一般疑问句",
+    "answer": "Do you have a nice bag?",
+    "answers": [
+      "Do you have a nice bag?"
+    ],
+    "explain": "have 用 Do 提问，I 变 you"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "There is a park.",
+    "target": "改为否定句",
+    "answer": "There is not a park.",
+    "answers": [
+      "There is not a park.",
+      "There isn't a park."
+    ],
+    "explain": "There be 句否定在 be 后加 not"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "He goes to school.",
+    "target": "改为否定句",
+    "answer": "He does not go to school.",
+    "answers": [
+      "He does not go to school.",
+      "He doesn't go to school."
+    ],
+    "explain": "第三人称否定 does not + 动词原形"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "The apples are red.",
+    "target": "对画线部分提问(red)",
+    "answer": "What colour are the apples?",
+    "answers": [
+      "What colour are the apples?",
+      "What color are the apples?"
+    ],
+    "explain": "问颜色用 What colour"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "My mother is a teacher.",
+    "target": "改为一般疑问句",
+    "answer": "Is your mother a teacher?",
+    "answers": [
+      "Is your mother a teacher?"
+    ],
+    "explain": "is 提前，my 变 your"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "I want to be a doctor.",
+    "target": "改为一般疑问句",
+    "answer": "Do you want to be a doctor?",
+    "answers": [
+      "Do you want to be a doctor?"
+    ],
+    "explain": "want 用 Do 提问"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "She likes reading books.",
+    "target": "改为否定句",
+    "answer": "She does not like reading books.",
+    "answers": [
+      "She does not like reading books.",
+      "She doesn't like reading books."
+    ],
+    "explain": "第三人称否定 does not + 原形"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "They play football on Sunday.",
+    "target": "对画线部分提问(on Sunday)",
+    "answer": "When do they play football?",
+    "answers": [
+      "When do they play football?"
+    ],
+    "explain": "问时间用 When"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "It is my ruler.",
+    "target": "改为复数句",
+    "answer": "They are my rulers.",
+    "answers": [
+      "They are my rulers."
+    ],
+    "explain": "it→they, is→are, 名词变复数"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "We have English on Monday.",
+    "target": "改为一般疑问句",
+    "answer": "Do you have English on Monday?",
+    "answers": [
+      "Do you have English on Monday?"
+    ],
+    "explain": "have 用 Do 提问"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "Lily is watching TV.",
+    "target": "改为否定句",
+    "answer": "Lily is not watching TV.",
+    "answers": [
+      "Lily is not watching TV.",
+      "Lily isn't watching TV."
+    ],
+    "explain": "现在进行时否定在 be 后加 not"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "They are playing games.",
+    "target": "改为一般疑问句",
+    "answer": "Are they playing games?",
+    "answers": [
+      "Are they playing games?"
+    ],
+    "explain": "现在进行时 be 提前"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "He can play the piano.",
+    "target": "改为否定句",
+    "answer": "He cannot play the piano.",
+    "answers": [
+      "He cannot play the piano.",
+      "He can not play the piano.",
+      "He can't play the piano."
+    ],
+    "explain": "can 后加 not"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "I get up at six.",
+    "target": "对画线部分提问(at six)",
+    "answer": "What time do you get up?",
+    "answers": [
+      "What time do you get up?",
+      "When do you get up?"
+    ],
+    "explain": "问时间用 What time/When"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "There are five books.",
+    "target": "对画线部分提问(five)",
+    "answer": "How many books are there?",
+    "answers": [
+      "How many books are there?"
+    ],
+    "explain": "问数量用 How many + 复数名词"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "She went to Beijing last week.",
+    "target": "改为一般疑问句",
+    "answer": "Did she go to Beijing last week?",
+    "answers": [
+      "Did she go to Beijing last week?"
+    ],
+    "explain": "一般过去时用 Did 提问，动词还原"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "I visited my grandpa yesterday.",
+    "target": "改为否定句",
+    "answer": "I did not visit my grandpa yesterday.",
+    "answers": [
+      "I did not visit my grandpa yesterday.",
+      "I didn't visit my grandpa yesterday."
+    ],
+    "explain": "过去时否定用 did not + 原形"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "He is taller than me.",
+    "target": "改为一般疑问句",
+    "answer": "Is he taller than me?",
+    "answers": [
+      "Is he taller than me?"
+    ],
+    "explain": "is 提前"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "They will go hiking tomorrow.",
+    "target": "改为否定句",
+    "answer": "They will not go hiking tomorrow.",
+    "answers": [
+      "They will not go hiking tomorrow.",
+      "They won't go hiking tomorrow."
+    ],
+    "explain": "一般将来时否定 will not/won't"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U5",
+    "type": "sentence_transform",
+    "difficulty": 2,
+    "original": "We saw pandas in the zoo.",
+    "target": "对画线部分提问(pandas)",
+    "answer": "What did you see in the zoo?",
+    "answers": [
+      "What did you see in the zoo?"
+    ],
+    "explain": "问事物用 What，过去时用 did"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "Yang Liwei is a great hero.",
+    "target": "改为一般疑问句",
+    "answer": "Is Yang Liwei a great hero?",
+    "answers": [
+      "Is Yang Liwei a great hero?"
+    ],
+    "explain": "is 提前（介绍中国航天英雄杨利伟）"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "I am going to Guangzhou.",
+    "target": "改为一般疑问句",
+    "answer": "Are you going to Guangzhou?",
+    "answers": [
+      "Are you going to Guangzhou?"
+    ],
+    "explain": "现在进行时/将来 be 提前，I 变 you"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "She teaches us English.",
+    "target": "改为否定句",
+    "answer": "She does not teach us English.",
+    "answers": [
+      "She does not teach us English.",
+      "She doesn't teach us English."
+    ],
+    "explain": "第三人称否定 does not + 原形"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "He runs fastest in his class.",
+    "target": "改为一般疑问句",
+    "answer": "Does he run fastest in his class?",
+    "answers": [
+      "Does he run fastest in his class?"
+    ],
+    "explain": "第三人称用 Does 提问，动词还原"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U5",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "The Great Wall is very long.",
+    "target": "改为感叹句",
+    "answer": "How long the Great Wall is!",
+    "answers": [
+      "How long the Great Wall is!"
+    ],
+    "explain": "How + 形容词 + 主语 + 谓语（长城）"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U1",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "Zhong Nanshan helped many people.",
+    "target": "改为一般疑问句",
+    "answer": "Did Zhong Nanshan help many people?",
+    "answers": [
+      "Did Zhong Nanshan help many people?"
+    ],
+    "explain": "过去时用 Did 提问（钟南山）"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U2",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "I will study harder next term.",
+    "target": "改为否定句",
+    "answer": "I will not study harder next term.",
+    "answers": [
+      "I will not study harder next term.",
+      "I won't study harder next term."
+    ],
+    "explain": "将来时否定 will not/won't"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U3",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "They are cleaning the classroom.",
+    "target": "改为否定句",
+    "answer": "They are not cleaning the classroom.",
+    "answers": [
+      "They are not cleaning the classroom.",
+      "They aren't cleaning the classroom."
+    ],
+    "explain": "进行时否定 be 后加 not"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U4",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "Yuan Longping grew rice.",
+    "target": "改为一般疑问句",
+    "answer": "Did Yuan Longping grow rice?",
+    "answers": [
+      "Did Yuan Longping grow rice?"
+    ],
+    "explain": "过去时用 Did，动词还原（袁隆平）"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U5",
+    "type": "sentence_transform",
+    "difficulty": 3,
+    "original": "This book is more interesting.",
+    "target": "改为一般疑问句",
+    "answer": "Is this book more interesting?",
+    "answers": [
+      "Is this book more interesting?"
+    ],
+    "explain": "is 提前"
+  }
+]

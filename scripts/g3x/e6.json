@@ -1,0 +1,42 @@
+{
+  "duty": [
+    { "en": "It's my duty.", "cn": "这是我的职责。", "level": 1 },
+    { "en": "I'm on duty today.", "cn": "我今天值日。", "level": 2 },
+    { "en": "It's our duty to keep the classroom clean.", "cn": "保持教室干净是我们的职责。", "level": 3 }
+  ],
+  "water": [
+    { "en": "Drink water.", "cn": "喝水。", "level": 1 },
+    { "en": "I water the plants.", "cn": "我给植物浇水。", "level": 2 },
+    { "en": "Don't forget to water the flowers every day.", "cn": "不要忘了每天给花浇水。", "level": 3 }
+  ],
+  "plant": [
+    { "en": "A green plant.", "cn": "一棵绿色的植物。", "level": 1 },
+    { "en": "I have a small plant.", "cn": "我有一棵小植物。", "level": 2 },
+    { "en": "Plants need water and sunlight to grow.", "cn": "植物需要水和阳光才能生长。", "level": 3 }
+  ],
+  "wipe": [
+    { "en": "Wipe the desk.", "cn": "擦课桌。", "level": 1 },
+    { "en": "Please wipe your hands.", "cn": "请把手擦干。", "level": 2 },
+    { "en": "I wipe the windows until they shine.", "cn": "我把窗户擦得闪闪发亮。", "level": 3 }
+  ],
+  "window": [
+    { "en": "Open the window.", "cn": "开窗。", "level": 1 },
+    { "en": "Look out of the window.", "cn": "看窗外。", "level": 2 },
+    { "en": "The bird is singing outside the window.", "cn": "鸟儿在窗外唱歌。", "level": 3 }
+  ],
+  "sweep": [
+    { "en": "Sweep the floor.", "cn": "扫地。", "level": 1 },
+    { "en": "Ben sweeps the room.", "cn": "本打扫房间。", "level": 2 },
+    { "en": "We sweep the classroom after class every day.", "cn": "我们每天下课后扫教室。", "level": 3 }
+  ],
+  "floor": [
+    { "en": "The floor is wet.", "cn": "地板是湿的。", "level": 1 },
+    { "en": "Don't run on the wet floor.", "cn": "不要在湿地板上跑。", "level": 2 },
+    { "en": "We sit on the floor to read stories together.", "cn": "我们坐在地板上一起读故事。", "level": 3 }
+  ],
+  "help": [
+    { "en": "Help me, please.", "cn": "请帮帮我。", "level": 1 },
+    { "en": "I help my mum at home.", "cn": "我在家帮妈妈。", "level": 2 },
+    { "en": "Helping others makes me feel happy.", "cn": "帮助别人让我感到快乐。", "level": 3 }
+  ]
+}

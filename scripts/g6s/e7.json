@@ -1,0 +1,42 @@
+{
+  "invention": [
+    { "en": "An invention.", "cn": "一项发明。", "level": 1 },
+    { "en": "A great invention.", "cn": "一项伟大发明。", "level": 2 },
+    { "en": "Paper is one of the most important inventions in history.", "cn": "纸是历史上最重要的发明之一。", "level": 3 }
+  ],
+  "invent": [
+    { "en": "Invent it.", "cn": "发明它。", "level": 1 },
+    { "en": "Who invented this?", "cn": "谁发明的？", "level": 2 },
+    { "en": "Edison invented the light bulb over a hundred years ago.", "cn": "爱迪生一百多年前发明了灯泡。", "level": 3 }
+  ],
+  "phone": [
+    { "en": "A phone.", "cn": "一部电话。", "level": 1 },
+    { "en": "A smart phone.", "cn": "一部智能手机。", "level": 2 },
+    { "en": "A phone keeps me connected with friends and family.", "cn": "手机让我和亲友保持联系。", "level": 3 }
+  ],
+  "computer": [
+    { "en": "A computer.", "cn": "一台电脑。", "level": 1 },
+    { "en": "Use a computer.", "cn": "用电脑。", "level": 2 },
+    { "en": "Computers help us learn, work and play.", "cn": "电脑帮我们学习、工作和娱乐。", "level": 3 }
+  ],
+  "internet": [
+    { "en": "The internet.", "cn": "互联网。", "level": 1 },
+    { "en": "Search on the internet.", "cn": "网上搜索。", "level": 2 },
+    { "en": "The internet brings the whole world to our screens.", "cn": "互联网把世界带到我们屏幕上。", "level": 3 }
+  ],
+  "robot": [
+    { "en": "A robot.", "cn": "一个机器人。", "level": 1 },
+    { "en": "A helpful robot.", "cn": "有用的机器人。", "level": 2 },
+    { "en": "Some robots can help doctors do small surgeries.", "cn": "有的机器人能帮医生做小手术。", "level": 3 }
+  ],
+  "change": [
+    { "en": "Big change.", "cn": "大变化。", "level": 1 },
+    { "en": "Inventions change life.", "cn": "发明改变生活。", "level": 2 },
+    { "en": "New inventions change the way we live and work.", "cn": "新发明改变我们生活和工作的方式。", "level": 3 }
+  ],
+  "future": [
+    { "en": "The future.", "cn": "未来。", "level": 1 },
+    { "en": "Future cars.", "cn": "未来的车。", "level": 2 },
+    { "en": "In the future, cars may drive themselves to school.", "cn": "未来汽车也许会自己开去学校。", "level": 3 }
+  ]
+}

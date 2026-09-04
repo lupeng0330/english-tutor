@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Welcome to my home",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Whose home does Ben visit?",
+            "选项": [
+              "Anna's home",
+              "Ben's home",
+              "the teacher's home"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben think of the house?",
+            "选项": [
+              "It is beautiful.",
+              "It is old.",
+              "It is small."
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What room does Anna want to show Ben upstairs?",
+            "选项": [
+              "Her bedroom",
+              "The kitchen",
+              "The living room"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My new home",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the writer's new home like?",
+            "选项": [
+              "Small but very beautiful",
+              "Big and old",
+              "Dark and dirty"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is in the living room?",
+            "选项": [
+              "A soft sofa",
+              "A big bed",
+              "A white desk"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer like to do in the bedroom?",
+            "选项": [
+              "Read books",
+              "Cook food",
+              "Watch TV"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Welcome to + place",
+            "例句": "Welcome to my home!",
+            "提示": "欢迎别人来某地"
+          },
+          {
+            "句型": "This is + room",
+            "例句": "This is our living room.",
+            "提示": "介绍房间用This is..."
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Meet my family",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who is the man with glasses in the photo?",
+            "选项": [
+              "Anna's father",
+              "Anna's brother",
+              "Anna's grandpa"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is Anna's mother like?",
+            "选项": [
+              "Kind",
+              "Tall",
+              "Young"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who else lives with Anna's family?",
+            "选项": [
+              "Grandpa and Grandma",
+              "Her friends",
+              "Her teacher"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A loving family",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How many people are there in the writer's family?",
+            "选项": [
+              "Six",
+              "Four",
+              "Five"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is the writer's mother's job?",
+            "选项": [
+              "A teacher",
+              "A doctor",
+              "A nurse"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the family do after dinner?",
+            "选项": [
+              "Sit together and talk",
+              "Watch a movie",
+              "Go to bed"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Who is the + person?",
+            "例句": "Who is the man with glasses?",
+            "提示": "用Who提问人物"
+          },
+          {
+            "句型": "He/She is my + relation",
+            "例句": "He is my father.",
+            "提示": "介绍家庭成员"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Show me your house",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna show Ben first?",
+            "选项": [
+              "The kitchen",
+              "The garden",
+              "The bedroom"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where is Anna's bedroom?",
+            "选项": [
+              "Upstairs",
+              "Downstairs",
+              "Near the garden"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben find outside the house?",
+            "选项": [
+              "A small garden",
+              "A big car",
+              "A dog"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My favourite room",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the writer's favourite room?",
+            "选项": [
+              "The bedroom",
+              "The study",
+              "The kitchen"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the writer do at the desk?",
+            "选项": [
+              "Homework",
+              "Cooking",
+              "Drawing"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer do in bed at night?",
+            "选项": [
+              "Read storybooks",
+              "Play games",
+              "Sing songs"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Where is + place?",
+            "例句": "Where is your bedroom?",
+            "提示": "问地点用Where"
+          },
+          {
+            "句型": "It's + location",
+            "例句": "It's upstairs.",
+            "提示": "回答位置"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What do you do at home?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna do at home?",
+            "选项": [
+              "Read books and draw pictures",
+              "Play the piano",
+              "Cook dinner"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "When does Anna watch TV?",
+            "选项": [
+              "Only on weekends",
+              "Every day",
+              "Never"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben do every day?",
+            "选项": [
+              "Write a diary",
+              "Watch TV",
+              "Draw pictures"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My daily things",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer do in the morning?",
+            "选项": [
+              "Go to school and study",
+              "Watch TV",
+              "Draw pictures"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where does the writer do homework?",
+            "选项": [
+              "At the study desk",
+              "In bed",
+              "In the garden"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer do after dinner?",
+            "选项": [
+              "Watch a short TV show with family",
+              "Read a story",
+              "Draw a picture"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do you do + time?",
+            "例句": "What do you do at home?",
+            "提示": "问对方在某时做某事"
+          },
+          {
+            "句型": "I + verb + every day",
+            "例句": "I write a diary every day.",
+            "提示": "描述日常习惯"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What's your hobby?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Ben's hobby?",
+            "选项": [
+              "Music",
+              "Dance",
+              "Cooking"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What can Anna do besides dance?",
+            "选项": [
+              "Swim",
+              "Cook",
+              "Play the piano"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is Ben's sister's hobby?",
+            "选项": [
+              "Cooking many things",
+              "Dancing",
+              "Swimming"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Hobbies in my class",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Tom play?",
+            "选项": [
+              "The guitar",
+              "The piano",
+              "Football"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who loves swimming?",
+            "选项": [
+              "Anna",
+              "Lily",
+              "Ben"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the writer's favourite hobby?",
+            "选项": [
+              "Reading storybooks",
+              "Cooking",
+              "Dancing"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do you like + v-ing?",
+            "例句": "What do you like doing?",
+            "提示": "问对方喜欢做什么"
+          },
+          {
+            "句型": "I like + v-ing",
+            "例句": "I like reading books.",
+            "提示": "表达喜好，like + 动名词"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | At the zoo",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What animals do Anna and Ben see first?",
+            "选项": [
+              "Pandas",
+              "Tigers",
+              "Birds"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna like about the pandas?",
+            "选项": [
+              "Their black and white fur",
+              "Their big eyes",
+              "Their long tails"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is Anna's favourite animal at the zoo?",
+            "选项": [
+              "The little fish in the pond",
+              "The rabbits",
+              "The tiger"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My favourite animal",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where do pandas live?",
+            "选项": [
+              "In the mountains of China",
+              "In the sea",
+              "In the desert"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do pandas eat all day?",
+            "选项": [
+              "Bamboo",
+              "Fish",
+              "Carrots"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can pandas do very fast?",
+            "选项": [
+              "Climb trees",
+              "Swim",
+              "Run"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What animal do you like?",
+            "例句": "What animal do you like? — I like cats.",
+            "提示": "问对方喜欢什么动物"
+          },
+          {
+            "句型": "We should be kind to + noun",
+            "例句": "We should be kind to animals.",
+            "提示": "should表示\"应该\""
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Plans for the weekend",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will Anna's family do on Saturday?",
+            "选项": [
+              "Have a picnic in the park",
+              "See a movie",
+              "Go shopping"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will Anna and Mum do on Sunday morning?",
+            "选项": [
+              "Shop",
+              "Have a picnic",
+              "Do homework"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What will they do after shopping on Sunday?",
+            "选项": [
+              "See a movie",
+              "Visit grandparents",
+              "Go to the zoo"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My happy weekend",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where does the writer usually go on Saturday?",
+            "选项": [
+              "The park",
+              "The zoo",
+              "The cinema"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the writer do on Sunday morning?",
+            "选项": [
+              "Homework",
+              "A picnic",
+              "Shopping"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer do on Sunday afternoon?",
+            "选项": [
+              "See a fun movie with friends",
+              "Have a picnic",
+              "Visit the park"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What do you do on weekends?",
+            "例句": "I visit grandparents on weekends.",
+            "提示": "问周末活动"
+          },
+          {
+            "句型": "On Saturday/Sunday, I + verb",
+            "例句": "On Saturday, I play football.",
+            "提示": "描述具体某天做的事"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A merry Christmas",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What are Anna and Ben looking at?",
+            "选项": [
+              "Their Christmas tree",
+              "A big cake",
+              "A snowman"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is under the Christmas tree?",
+            "选项": [
+              "Many gifts",
+              "Some books",
+              "A dog"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What did Anna make for Mum and Dad?",
+            "选项": [
+              "A card",
+              "A gift",
+              "A cake"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Festivals in my family",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the family eat at Spring Festival?",
+            "选项": [
+              "Dumplings",
+              "Cakes",
+              "Sandwiches"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do they do at Christmas?",
+            "选项": [
+              "Put up a tree and sing songs",
+              "Eat dumplings",
+              "Get red envelopes"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do festivals do for the family?",
+            "选项": [
+              "Bring the family closer",
+              "Make them tired",
+              "Cost much money"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "My favourite festival is + name",
+            "例句": "My favourite festival is Spring Festival.",
+            "提示": "表达最喜欢的节日"
+          },
+          {
+            "句型": "People eat + food at + festival",
+            "例句": "People eat dumplings at Spring Festival.",
+            "提示": "描述节日饮食"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Happy New Year!",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What do Anna and Ben say to each other?",
+            "选项": [
+              "Happy New Year",
+              "Merry Christmas",
+              "Good morning"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is Anna's wish this year?",
+            "选项": [
+              "Learn more English and make new friends",
+              "Travel around the world",
+              "Buy a new bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How do they start the new year together?",
+            "选项": [
+              "Share a smile",
+              "Give gifts",
+              "Sing a song"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A new year, new me",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer wish to do with study?",
+            "选项": [
+              "Study hard and read more storybooks",
+              "Play more games",
+              "Watch more TV"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Whom does the writer wish to help at home?",
+            "选项": [
+              "Mum",
+              "Dad",
+              "Grandma"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer wish for family and friends?",
+            "选项": [
+              "A year full of smiles",
+              "A lot of money",
+              "A big house"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Happy New Year!",
+            "例句": "Happy New Year! — Happy New Year!",
+            "提示": "新年问候语"
+          },
+          {
+            "句型": "I want to + verb",
+            "例句": "I want to learn to swim.",
+            "提示": "表达新年愿望"
+          }
+        ]
+      }
+    ]
+  }
+}

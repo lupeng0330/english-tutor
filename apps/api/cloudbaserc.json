@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "happyenglish-d1gda90e97d02a8c6",
+  "functionRoot": "./",
+  "functions": [
+    {
+      "name": "yxyy-api",
+      "type": "HTTP",
+      "timeout": 60,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "installDependency": false,
+      "description": "乐学英语后端 API（Express+Prisma SQLite，云函数Web版）",
+      "envVariables": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

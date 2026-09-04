@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 What Do You Do?",
+  "words": [
+    { "word": "do", "phonetic": "/duː/", "meaning": "[v.] 做", "example": "What do you do at school?" },
+    { "word": "read", "phonetic": "/riːd/", "meaning": "[v.] 读", "example": "I read a book." },
+    { "word": "write", "phonetic": "/raɪt/", "meaning": "[v.] 写", "example": "Write your name here." },
+    { "word": "study", "phonetic": "/ˈstʌdi/", "meaning": "[v.] 学习", "example": "I study English." },
+    { "word": "draw", "phonetic": "/drɔː/", "meaning": "[v.] 画画", "example": "I can draw a cat." },
+    { "word": "watch", "phonetic": "/wɒtʃ/", "meaning": "[v.] 看（电视/比赛）", "example": "We watch TV at night." },
+    { "word": "TV", "phonetic": "/ˌtiːˈviː/", "meaning": "[n.] 电视", "example": "Turn off the TV." },
+    { "word": "every day", "phonetic": "/ˈevri deɪ/", "meaning": "[phr.] 每天", "example": "I read every day." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What do you do at home?",
+      "en": "Ben: Anna, what do you do at home?\nAnna: I read books and draw pictures.\nBen: Do you watch TV?\nAnna: Yes, but only on weekends.\nBen: I write a diary every day. It's fun!",
+      "cn": "本：安娜，你在家做什么？\n安娜：我看书、画画。\n本：你看电视吗？\n安娜：看，但只在周末。\n本：我每天写日记，很有趣！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My daily things",
+      "en": "Every day I do many things. In the morning, I go to school and study with my friends. After school, I do my homework at the study desk. Then I read a story or draw a picture. After dinner, I watch a short TV show with my family. A full day, a happy day!",
+      "cn": "我每天做很多事。早上我去上学，和朋友一起学习。放学后我在书桌前做作业。然后看一个故事或画一幅画。晚饭后和家人一起看会儿电视。充实的一天，快乐的一天！"
+    }
+  ]
+}

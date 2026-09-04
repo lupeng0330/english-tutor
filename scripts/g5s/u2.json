@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 My Subjects",
+  "words": [
+    { "word": "subject", "phonetic": "/ˈsʌbdʒɪkt/", "meaning": "[n.] 科目", "example": "Maths is my subject." },
+    { "word": "English", "phonetic": "/ˈɪŋɡlɪʃ/", "meaning": "[n.] 英语", "example": "I love English." },
+    { "word": "Maths", "phonetic": "/mæθs/", "meaning": "[n.] 数学", "example": "Maths is fun." },
+    { "word": "science", "phonetic": "/ˈsaɪəns/", "meaning": "[n.] 科学", "example": "Science is cool." },
+    { "word": "PE", "phonetic": "/ˌpiː ˈiː/", "meaning": "[n.] 体育课", "example": "We have PE on Tuesday." },
+    { "word": "art", "phonetic": "/ɑːt/", "meaning": "[n.] 美术", "example": "Art class is fun." },
+    { "word": "difficult", "phonetic": "/ˈdɪfɪkəlt/", "meaning": "[adj.] 困难的", "example": "Maths is difficult." },
+    { "word": "easy", "phonetic": "/ˈiːzi/", "meaning": "[adj.] 容易的", "example": "English is easy for me." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "What's your favourite?",
+      "en": "Ben: Anna, what's your favourite subject?\nAnna: I love English and art. They are easy for me.\nBen: I like science and PE. Maths is a little difficult.\nAnna: Don't worry. We can study together.\nBen: Thanks, Anna. You are a great friend!",
+      "cn": "本：安娜，你最喜欢什么科目？\n安娜：英语和美术，对我很容易。\n本：我喜欢科学和体育。数学有点难。\n安娜：别担心，我们一起学。\n本：谢谢安娜，你真好！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Subjects in Grade 5",
+      "en": "Grade 5 has many subjects. English helps us talk with people from other countries. Maths trains our minds to think. Science shows us how the world works. Art and music make us creative. PE keeps our bodies strong. Every subject is a small door to a bigger world.",
+      "cn": "五年级有很多科目。英语帮我们与外国人交流。数学训练我们思考。科学让我们了解世界如何运作。美术和音乐让我们更有创造力。体育让我们身体强壮。每门课都是通往更大世界的一扇小门。"
+    }
+  ]
+}

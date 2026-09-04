@@ -1,0 +1,42 @@
+{
+  "trip": [
+    { "en": "A short trip.", "cn": "一次短途旅行。", "level": 1 },
+    { "en": "Have a nice trip!", "cn": "旅途愉快！", "level": 2 },
+    { "en": "Our family is planning a trip to the seaside this summer.", "cn": "我们家计划今年夏天去海边旅行。", "level": 3 }
+  ],
+  "plan": [
+    { "en": "A trip plan.", "cn": "旅行计划。", "level": 1 },
+    { "en": "Plan our weekend.", "cn": "计划周末。", "level": 2 },
+    { "en": "Let's sit down and plan the whole holiday together.", "cn": "我们坐下来一起计划整个假期。", "level": 3 }
+  ],
+  "summer": [
+    { "en": "Summer is here.", "cn": "夏天到了。", "level": 1 },
+    { "en": "I love summer.", "cn": "我喜欢夏天。", "level": 2 },
+    { "en": "Summer is the best time to enjoy ice cream and swimming.", "cn": "夏天最适合吃冰淇淋和游泳。", "level": 3 }
+  ],
+  "holiday": [
+    { "en": "Happy holiday!", "cn": "假期愉快！", "level": 1 },
+    { "en": "Summer holiday is long.", "cn": "暑假很长。", "level": 2 },
+    { "en": "I'm going to read ten books during the holiday.", "cn": "我打算假期里读十本书。", "level": 3 }
+  ],
+  "beach": [
+    { "en": "At the beach.", "cn": "在海滩。", "level": 1 },
+    { "en": "I love the beach.", "cn": "我爱海滩。", "level": 2 },
+    { "en": "We built a sand castle on the beach last summer.", "cn": "去年夏天我们在海滩上堆了一座沙堡。", "level": 3 }
+  ],
+  "mountain": [
+    { "en": "A big mountain.", "cn": "一座大山。", "level": 1 },
+    { "en": "Climb the mountain.", "cn": "爬山。", "level": 2 },
+    { "en": "From the top of the mountain we saw the whole city.", "cn": "从山顶我们看到了整座城市。", "level": 3 }
+  ],
+  "discuss": [
+    { "en": "Let's discuss.", "cn": "我们讨论一下。", "level": 1 },
+    { "en": "We discuss the plan.", "cn": "我们讨论计划。", "level": 2 },
+    { "en": "Tonight we'll discuss our trip with Mum and Dad.", "cn": "今晚我们和爸妈讨论旅行。", "level": 3 }
+  ],
+  "idea": [
+    { "en": "Good idea!", "cn": "好主意！", "level": 1 },
+    { "en": "I have an idea.", "cn": "我有个主意。", "level": 2 },
+    { "en": "Sharing ideas with friends makes plans better.", "cn": "和朋友分享主意能让计划更好。", "level": 3 }
+  ]
+}

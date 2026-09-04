@@ -1,0 +1,28 @@
+{
+  "id": "u3",
+  "title": "Unit 3 Asking the Way",
+  "words": [
+    { "word": "way", "phonetic": "/weɪ/", "meaning": "[n.] 路；方向", "example": "Show me the way." },
+    { "word": "turn", "phonetic": "/tɜːn/", "meaning": "[v.] 转弯", "example": "Turn left." },
+    { "word": "left", "phonetic": "/left/", "meaning": "[adj./adv.] 左", "example": "On the left." },
+    { "word": "right", "phonetic": "/raɪt/", "meaning": "[adj./adv.] 右", "example": "On the right." },
+    { "word": "straight", "phonetic": "/streɪt/", "meaning": "[adv.] 直；笔直地", "example": "Go straight." },
+    { "word": "crossroads", "phonetic": "/ˈkrɒsrəʊdz/", "meaning": "[n.] 十字路口", "example": "Wait at the crossroads." },
+    { "word": "map", "phonetic": "/mæp/", "meaning": "[n.] 地图", "example": "Read the map." },
+    { "word": "lost", "phonetic": "/lɒst/", "meaning": "[adj.] 迷路的", "example": "We got lost." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Excuse me, where is...?",
+      "en": "Tourist: Excuse me, can you show me the way to the museum?\nAnna: Sure. Go straight for two blocks, then turn left at the crossroads.\nTourist: Is it on the right?\nAnna: Yes, you can't miss it. There is a big sign.\nTourist: Thank you so much!",
+      "cn": "游客：打扰一下，请问博物馆怎么走？\n安娜：直走两个街区，到十字路口左转。\n游客：在右边吗？\n安娜：对，错不了，有个大招牌。\n游客：太感谢了！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Reading the map",
+      "en": "When we travel, knowing how to ask the way is very useful. We can also read a map on our phone. If you turn left and then right, you may reach the small park. If you go straight, you may find the train station. Even if you get lost, kind people will help you find the way. Don't be afraid to ask!",
+      "cn": "旅行时会问路非常有用。也可以看手机地图。先左转再右转可能到小公园。一直直走能到火车站。即使迷路，好心人会帮你找路。别怕开口问！"
+    }
+  ]
+}

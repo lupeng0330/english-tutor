@@ -1,0 +1,42 @@
+{
+  "number": [
+    { "en": "A number.", "cn": "一个数字。", "level": 1 },
+    { "en": "Read the number.", "cn": "读出数字。", "level": 2 },
+    { "en": "Please tell me the number of students in your class.", "cn": "请告诉我你们班的学生人数。", "level": 3 }
+  ],
+  "twenty": [
+    { "en": "Twenty.", "cn": "二十。", "level": 1 },
+    { "en": "Twenty boys are here.", "cn": "这里有二十个男孩。", "level": 2 },
+    { "en": "There are twenty students in our English class today.", "cn": "今天我们英语课有二十个学生。", "level": 3 }
+  ],
+  "thirty": [
+    { "en": "Thirty.", "cn": "三十。", "level": 1 },
+    { "en": "Thirty yuan, please.", "cn": "三十元。", "level": 2 },
+    { "en": "My dad is thirty years old this year.", "cn": "我爸爸今年三十岁。", "level": 3 }
+  ],
+  "fifty": [
+    { "en": "Fifty.", "cn": "五十。", "level": 1 },
+    { "en": "Fifty yuan in total.", "cn": "一共五十元。", "level": 2 },
+    { "en": "Fifty new books arrived at our school library today.", "cn": "今天我们学校图书馆来了五十本新书。", "level": 3 }
+  ],
+  "hundred": [
+    { "en": "One hundred.", "cn": "一百。", "level": 1 },
+    { "en": "A hundred years.", "cn": "一百年。", "level": 2 },
+    { "en": "Grandma is almost one hundred years old.", "cn": "奶奶快一百岁了。", "level": 3 }
+  ],
+  "how much": [
+    { "en": "How much?", "cn": "多少钱？", "level": 1 },
+    { "en": "How much is it?", "cn": "这个多少钱？", "level": 2 },
+    { "en": "How much do these three apples cost in total?", "cn": "这三个苹果一共多少钱？", "level": 3 }
+  ],
+  "count": [
+    { "en": "Count to ten.", "cn": "数到十。", "level": 1 },
+    { "en": "Count the apples.", "cn": "数数苹果。", "level": 2 },
+    { "en": "Can you count from one to one hundred in English?", "cn": "你能用英语从 1 数到 100 吗？", "level": 3 }
+  ],
+  "total": [
+    { "en": "The total.", "cn": "总数。", "level": 1 },
+    { "en": "What's the total?", "cn": "总共多少？", "level": 2 },
+    { "en": "Add the prices and tell me the total amount, please.", "cn": "把价格加起来告诉我总数。", "level": 3 }
+  ]
+}

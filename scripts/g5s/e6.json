@@ -1,0 +1,42 @@
+{
+  "festival": [
+    { "en": "A festival.", "cn": "一个节日。", "level": 1 },
+    { "en": "I love festivals.", "cn": "我喜欢节日。", "level": 2 },
+    { "en": "Festivals bring different cultures together.", "cn": "节日让不同文化聚到一起。", "level": 3 }
+  ],
+  "world": [
+    { "en": "The world.", "cn": "世界。", "level": 1 },
+    { "en": "Around the world.", "cn": "全世界。", "level": 2 },
+    { "en": "People around the world celebrate the New Year in different ways.", "cn": "世界各地的人用不同方式过新年。", "level": 3 }
+  ],
+  "Halloween": [
+    { "en": "Happy Halloween!", "cn": "万圣节快乐！", "level": 1 },
+    { "en": "Halloween is in October.", "cn": "万圣节在十月。", "level": 2 },
+    { "en": "On Halloween, children dress up and ask for sweets.", "cn": "万圣节孩子化装去要糖果。", "level": 3 }
+  ],
+  "Thanksgiving": [
+    { "en": "Thanksgiving Day.", "cn": "感恩节。", "level": 1 },
+    { "en": "We say thanks today.", "cn": "今天我们道谢。", "level": 2 },
+    { "en": "Families gather for a big turkey dinner on Thanksgiving.", "cn": "感恩节家人聚在一起吃火鸡大餐。", "level": 3 }
+  ],
+  "Mid-Autumn": [
+    { "en": "Mid-Autumn.", "cn": "中秋。", "level": 1 },
+    { "en": "Happy Mid-Autumn Festival.", "cn": "中秋节快乐。", "level": 2 },
+    { "en": "On Mid-Autumn night, we look at the round bright moon.", "cn": "中秋夜我们抬头看圆圆的明月。", "level": 3 }
+  ],
+  "moon cake": [
+    { "en": "Moon cake.", "cn": "月饼。", "level": 1 },
+    { "en": "I eat a moon cake.", "cn": "我吃月饼。", "level": 2 },
+    { "en": "Grandma makes moon cakes with red bean filling.", "cn": "奶奶做红豆馅月饼。", "level": 3 }
+  ],
+  "tradition": [
+    { "en": "A tradition.", "cn": "传统。", "level": 1 },
+    { "en": "It's our tradition.", "cn": "这是我们的传统。", "level": 2 },
+    { "en": "Eating dumplings is an important tradition at Spring Festival.", "cn": "春节吃饺子是重要的传统。", "level": 3 }
+  ],
+  "celebrate": [
+    { "en": "Let's celebrate!", "cn": "庆祝一下！", "level": 1 },
+    { "en": "We celebrate her birthday.", "cn": "我们庆祝她生日。", "level": 2 },
+    { "en": "Different countries celebrate the same festival in different ways.", "cn": "不同国家用不同方式庆祝同一个节日。", "level": 3 }
+  ]
+}

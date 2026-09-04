@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 Buying Souvenirs",
+  "words": [
+    { "word": "souvenir", "phonetic": "/ˌsuːvəˈnɪə(r)/", "meaning": "[n.] 纪念品", "example": "Buy a souvenir." },
+    { "word": "shop", "phonetic": "/ʃɒp/", "meaning": "[n./v.] 商店；购物", "example": "Go shopping." },
+    { "word": "gift", "phonetic": "/ɡɪft/", "meaning": "[n.] 礼物", "example": "A small gift." },
+    { "word": "size", "phonetic": "/saɪz/", "meaning": "[n.] 尺寸", "example": "What size?" },
+    { "word": "colour", "phonetic": "/ˈkʌlə(r)/", "meaning": "[n.] 颜色", "example": "Your favourite colour." },
+    { "word": "try on", "phonetic": "/traɪ ɒn/", "meaning": "[phr.] 试穿", "example": "Try on this hat." },
+    { "word": "pay", "phonetic": "/peɪ/", "meaning": "[v.] 付钱", "example": "Pay for it." },
+    { "word": "receipt", "phonetic": "/rɪˈsiːt/", "meaning": "[n.] 收据", "example": "Keep the receipt." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "At the gift shop",
+      "en": "Anna: This silk scarf is so beautiful! What colour do you prefer?\nBen: I'll take the red one. May I try on this hat too?\nShopkeeper: Sure. The size looks perfect.\nBen: How much is everything?\nShopkeeper: Two hundred yuan. Here is your receipt.",
+      "cn": "安娜：这条丝巾真漂亮！你喜欢什么颜色？\n本：我要红色。也可以试戴这顶帽子吗？\n店主：当然，尺寸正好。\n本：一共多少钱？\n店主：两百元，这是您的收据。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A good souvenir",
+      "en": "A souvenir is a small gift that helps us remember a trip. When I went to Hangzhou, I bought a paper fan with a flower picture. When Dad went to Yunnan, he brought back a small silver hat for me. Choose a souvenir you really like — its size, colour and meaning all matter. Years later, it will still remind you of a happy day.",
+      "cn": "纪念品是帮我们记住旅行的小礼物。我去杭州买了一把画花的纸扇。爸爸从云南带回一顶小银帽给我。挑你真正喜欢的纪念品——尺寸、颜色、意义都重要。多年后它仍能让你想起开心的日子。"
+    }
+  ]
+}

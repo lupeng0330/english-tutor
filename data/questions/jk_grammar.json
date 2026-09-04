@@ -1,0 +1,3513 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "— ____ is the weather like? — It's sunny.",
+    "options": [
+      "How",
+      "What",
+      "Which"
+    ],
+    "answer": 1,
+    "explain": "询问天气用 What is the weather like",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "She is good ____ English.",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "be good at sth=擅长",
+    "difficulty": 3
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "We ____ our environment since 2000.",
+    "options": [
+      "protect",
+      "protected",
+      "have protected"
+    ],
+    "answer": 2,
+    "explain": "since 用现在完成时",
+    "difficulty": 4
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "Computers ____ widely used today.",
+    "options": [
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": 1,
+    "explain": "Computers 复数用 are",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "You'd better ____ some medicine.",
+    "options": [
+      "take",
+      "takes",
+      "taking"
+    ],
+    "answer": 0,
+    "explain": "had better do sth",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "I have a headache. I ____ see a doctor.",
+    "options": [
+      "should",
+      "can",
+      "may"
+    ],
+    "answer": 0,
+    "explain": "should=应该，表建议",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "Reading makes us ____.",
+    "options": [
+      "smart",
+      "smarter",
+      "smartly"
+    ],
+    "answer": 0,
+    "explain": "make sb + 形容词",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "If you help others, you will feel ____.",
+    "options": [
+      "happy",
+      "happily",
+      "happiness"
+    ],
+    "answer": 0,
+    "explain": "feel + 形容词",
+    "difficulty": 3
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "The food in my hometown ____ delicious.",
+    "options": [
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": 0,
+    "explain": "food 不可数名词用 is",
+    "difficulty": 3
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "The Great Wall ____ about 21196 kilometers long.",
+    "options": [
+      "is",
+      "was",
+      "has"
+    ],
+    "answer": 0,
+    "explain": "描述客观事实用现在时 is",
+    "difficulty": 3
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "This ancient temple ____ 800 years ago.",
+    "options": [
+      "built",
+      "was built",
+      "is built"
+    ],
+    "answer": 1,
+    "explain": "过去式被动语态 was built",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "The light bulb ____ by Edison.",
+    "options": [
+      "invented",
+      "was invented",
+      "invents"
+    ],
+    "answer": 1,
+    "explain": "被动语态：由...发明",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "If I ____ hard, I will succeed.",
+    "options": [
+      "work",
+      "worked",
+      "will work"
+    ],
+    "answer": 0,
+    "explain": "if 引导的真实条件句，主将从现",
+    "difficulty": 4
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "Education is ____ than money.",
+    "options": [
+      "important",
+      "more important",
+      "most important"
+    ],
+    "answer": 1,
+    "explain": "than 前用比较级",
+    "difficulty": 3
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G01",
+    "q": "The hare ____ too proud and took a rest.",
+    "options": [
+      "was",
+      "is",
+      "were"
+    ],
+    "answer": 0,
+    "explain": "一般过去时，单数主语用 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G02",
+    "q": "Slow and steady ____ the race.",
+    "options": [
+      "win",
+      "wins",
+      "winning"
+    ],
+    "answer": 1,
+    "explain": "谚语：主语 \"Slow and steady\" 作第三人称单数，动词加 s。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u1",
+    "code": "6B_U1_G03",
+    "q": "Jiamin tried to ____ all the books.",
+    "options": [
+      "carries",
+      "carrying",
+      "carry"
+    ],
+    "answer": 2,
+    "explain": "try to + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G01",
+    "q": "A hare crashed into the tree and ____.",
+    "options": [
+      "dies",
+      "died",
+      "dying"
+    ],
+    "answer": 1,
+    "explain": "一般过去时的不规则动词 die → died。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G02",
+    "q": "____ then on, the farmer stopped working.",
+    "options": [
+      "From",
+      "Since",
+      "On"
+    ],
+    "answer": 0,
+    "explain": "固定短语 from then on \"从那时起\"。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u2",
+    "code": "6B_U2_G03",
+    "q": "All his vegetables ____ because he stopped working.",
+    "options": [
+      "dies",
+      "died",
+      "are dead"
+    ],
+    "answer": 1,
+    "explain": "一般过去时：vegetables (复数) + died。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G01",
+    "q": "A kangaroo has two strong back legs and ____ jump far.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "\"能够\" 用 can。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G02",
+    "q": "It looks like a star and it ____ in the ocean.",
+    "options": [
+      "live",
+      "lives",
+      "lived"
+    ],
+    "answer": 1,
+    "explain": "一般现在时第三人称单数：it + lives。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u3",
+    "code": "6B_U3_G03",
+    "q": "A lion is also ____ the \"King of the Animals\".",
+    "options": [
+      "call",
+      "called",
+      "calling"
+    ],
+    "answer": 1,
+    "explain": "被动结构 be called。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G01",
+    "q": "Many animals are ____ danger.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 1,
+    "explain": "固定短语 in danger。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G02",
+    "q": "If we don't do something, they may ____ disappear.",
+    "options": [
+      "all",
+      "any",
+      "every"
+    ],
+    "answer": 0,
+    "explain": "may all disappear = 可能都消失。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u4",
+    "code": "6B_U4_G03",
+    "q": "Don't buy things ____ from animal fur.",
+    "options": [
+      "make",
+      "made",
+      "making"
+    ],
+    "answer": 1,
+    "explain": "过去分词作定语：things made from...。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G01",
+    "q": "When ____ Dr Sun Yatsen born?",
+    "options": [
+      "is",
+      "was",
+      "were"
+    ],
+    "answer": 1,
+    "explain": "\"出生\" 用过去时 was born。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G02",
+    "q": "Today many roads and schools ____ his name.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "主语 roads and schools 复数 + have。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u5",
+    "code": "6B_U5_G03",
+    "q": "Helen Keller ____ a famous person in history.",
+    "options": [
+      "is",
+      "was",
+      "were"
+    ],
+    "answer": 1,
+    "explain": "已故人物用过去时 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G01",
+    "q": "Deng Jiaxian ____ born in Anhui in 1924.",
+    "options": [
+      "was",
+      "were",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "单数主语 + was born。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G02",
+    "q": "He ____ a PhD in only two years.",
+    "options": [
+      "get",
+      "gets",
+      "got"
+    ],
+    "answer": 2,
+    "explain": "一般过去时 get → got。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u6",
+    "code": "6B_U6_G03",
+    "q": "Mozart began to ____ music when he was five.",
+    "options": [
+      "write",
+      "wrote",
+      "writes"
+    ],
+    "answer": 0,
+    "explain": "begin to + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G01",
+    "q": "We ____ always give our seat to people in need.",
+    "options": [
+      "shouldn't",
+      "should",
+      "mustn't"
+    ],
+    "answer": 1,
+    "explain": "should 表示 \"应该\"。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G02",
+    "q": "Don't ____ in line. It's impolite.",
+    "options": [
+      "push",
+      "pushing",
+      "pushes"
+    ],
+    "answer": 0,
+    "explain": "祈使句否定：Don't + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u7",
+    "code": "6B_U7_G03",
+    "q": "You ____ wait for your turn patiently.",
+    "options": [
+      "shouldn't",
+      "should",
+      "can't"
+    ],
+    "answer": 1,
+    "explain": "should 建议语气。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G01",
+    "q": "Can you help me ____ the book, please?",
+    "options": [
+      "pass",
+      "passes",
+      "passing"
+    ],
+    "answer": 0,
+    "explain": "help sb (to) do：后跟动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G02",
+    "q": "\"Please\" and \"Thank you\" ____ magic words.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 1,
+    "explain": "主语并列视为复数，用 are。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u8",
+    "code": "6B_U8_G03",
+    "q": "I ____ busy yesterday, so I didn't reply.",
+    "options": [
+      "was",
+      "were",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "一般过去时 I 用 was。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G01",
+    "q": "Where ____ you go, Ben?",
+    "options": [
+      "do",
+      "will",
+      "are"
+    ],
+    "answer": 1,
+    "explain": "一般将来时 Where will you go?",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G02",
+    "q": "I will ____ to South Africa to see the nature.",
+    "options": [
+      "go",
+      "going",
+      "went"
+    ],
+    "answer": 0,
+    "explain": "will + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u9",
+    "code": "6B_U9_G03",
+    "q": "Jiamin ____ France if he can travel abroad.",
+    "options": [
+      "chooses",
+      "will choose",
+      "chose"
+    ],
+    "answer": 1,
+    "explain": "if + 条件，主将从现：主句用 will。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G01",
+    "q": "I can't wait ____ see you!",
+    "options": [
+      "for",
+      "to",
+      "at"
+    ],
+    "answer": 1,
+    "explain": "固定短语 can't wait to do。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G02",
+    "q": "I ____ my passport last week.",
+    "options": [
+      "got",
+      "get",
+      "will get"
+    ],
+    "answer": 0,
+    "explain": "一般过去时 get → got。",
+    "difficulty": 2
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "unit": "u10",
+    "code": "6B_U10_G03",
+    "q": "The plane ____ at 1:00 p.m. next month.",
+    "options": [
+      "lands",
+      "landed",
+      "will land"
+    ],
+    "answer": 2,
+    "explain": "将来时 \"下个月\" 用 will + 动词原形。",
+    "difficulty": 2
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "There ____ letters on the sign.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 letters 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "q": "I can see a big ____ B.",
+    "options": [
+      "letter",
+      "letters",
+      "the letter"
+    ],
+    "answer": 0,
+    "explain": "a 后面跟单数名词 letter",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "English words ____ be different from Chinese words.",
+    "options": [
+      "can",
+      "cans",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "can 后面跟动词原形 be",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "We say \"hello\" ____ English.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "用某种语言说用 in",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "\"Book\" and \"look\" ____ the same.",
+    "options": [
+      "sound",
+      "sounds",
+      "sounding"
+    ],
+    "answer": 0,
+    "explain": "复数主语用 sound",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "q": "____ colour is your English book?",
+    "options": [
+      "What",
+      "Where",
+      "Who"
+    ],
+    "answer": 0,
+    "explain": "问颜色用 What colour",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "q": "Who ____ he? He ____ my friend.",
+    "options": [
+      "is / is",
+      "is / am",
+      "are / is"
+    ],
+    "answer": 0,
+    "explain": "第三人称单数 he 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "q": "____ is she? She is Lily.",
+    "options": [
+      "Who",
+      "What",
+      "How"
+    ],
+    "answer": 0,
+    "explain": "问人用 Who",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "q": "What colour ____ this key? It ____ blue.",
+    "options": [
+      "is / is",
+      "are / is",
+      "is / are"
+    ],
+    "answer": 0,
+    "explain": "单数 key 用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "q": "Colour ____ red, please.",
+    "options": [
+      "it",
+      "they",
+      "he"
+    ],
+    "answer": 0,
+    "explain": "指代单数物品用 it",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "q": "How many ____ do we need?",
+    "options": [
+      "numbers",
+      "number",
+      "a number"
+    ],
+    "answer": 0,
+    "explain": "How many 后用可数名词复数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "q": "Don't tell your password ____ others.",
+    "options": [
+      "to",
+      "for",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "tell... to 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "q": "I ____ draw a picture.",
+    "options": [
+      "can",
+      "cans",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形，不随人称变化",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "q": "Can you ____ it?",
+    "options": [
+      "paint",
+      "paints",
+      "painting"
+    ],
+    "answer": 0,
+    "explain": "Can 后面动词用原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "q": "Please ____ quiet.",
+    "options": [
+      "be",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "祈使句 Please 后用动词原形 be",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "q": "Be a good ____, and you have more friends.",
+    "options": [
+      "listener",
+      "listen",
+      "listening"
+    ],
+    "answer": 0,
+    "explain": "good 后接名词 listener",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "q": "It's time ____ exercise!",
+    "options": [
+      "to",
+      "for",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "It's time to + 动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "q": "Sport ____ us healthy.",
+    "options": [
+      "makes",
+      "make",
+      "making"
+    ],
+    "answer": 0,
+    "explain": "Sport 是第三人称单数，动词加 -s",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "q": "Let's ____ a music show.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U9",
+    "q": "I can ____ an English song.",
+    "options": [
+      "sing",
+      "sings",
+      "singing"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "It's time to ____ up.",
+    "options": [
+      "get",
+      "gets",
+      "getting"
+    ],
+    "answer": 0,
+    "explain": "It's time to 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1",
+    "q": "I brush my ____ every morning.",
+    "options": [
+      "teeth",
+      "tooth",
+      "tooths"
+    ],
+    "answer": 0,
+    "explain": "tooth 的复数是 teeth",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "How ____ your day?",
+    "options": [
+      "was",
+      "is",
+      "were"
+    ],
+    "answer": 0,
+    "explain": "问已经过去的一天用过去式 was",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "We ____ games at school.",
+    "options": [
+      "played",
+      "play",
+      "plays"
+    ],
+    "answer": 0,
+    "explain": "已经发生的事用过去式 played",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "I ____ very happy today.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "I 后用 am",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2",
+    "q": "I like ____ school.",
+    "options": [
+      "my",
+      "me",
+      "I"
+    ],
+    "answer": 0,
+    "explain": "my + 名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "q": "____ I read a book, ____ I play.",
+    "options": [
+      "First / then",
+      "Then / first",
+      "Next / first"
+    ],
+    "answer": 0,
+    "explain": "顺序词 First...then... 表示先后",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3",
+    "q": "I will ____ my homework after school.",
+    "options": [
+      "finish",
+      "finishes",
+      "finishing"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4",
+    "q": "Come and ____ us!",
+    "options": [
+      "join",
+      "joins",
+      "joining"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4",
+    "q": "We'll ____ games and sing songs.",
+    "options": [
+      "play",
+      "plays",
+      "played"
+    ],
+    "answer": 0,
+    "explain": "We'll = We will，后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5",
+    "q": "There ____ a big poster on the wall.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "There be 句型中单数 poster 用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5",
+    "q": "Our classroom ____ small but warm.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数 classroom 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6",
+    "q": "I ____ on duty today.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "I 后用 am",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6",
+    "q": "Ben helps me ____ the windows.",
+    "options": [
+      "clean",
+      "cleans",
+      "cleaning"
+    ],
+    "answer": 0,
+    "explain": "help someone + 动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7",
+    "q": "____ run in the hall.",
+    "options": [
+      "Don't",
+      "Not",
+      "No"
+    ],
+    "answer": 0,
+    "explain": "祈使句否定用 Don't + 动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7",
+    "q": "You ____ walk, not run.",
+    "options": [
+      "should",
+      "shoulds",
+      "shoulding"
+    ],
+    "answer": 0,
+    "explain": "should 后跟动词原形，表示建议",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8",
+    "q": "Excuse ____, may I borrow your pen?",
+    "options": [
+      "me",
+      "I",
+      "my"
+    ],
+    "answer": 0,
+    "explain": "Excuse me 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8",
+    "q": "A polite person ____ many friends.",
+    "options": [
+      "has",
+      "have",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "第三人称单数 person 后用 has",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U9",
+    "q": "Red light means ____.",
+    "options": [
+      "stop",
+      "go",
+      "run"
+    ],
+    "answer": 0,
+    "explain": "红灯停是交通规则",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U9",
+    "q": "Be ____ on the road.",
+    "options": [
+      "safe",
+      "safely",
+      "safety"
+    ],
+    "answer": 0,
+    "explain": "Be + 形容词，safe 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "Welcome ____ my home!",
+    "options": [
+      "to",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "Welcome to 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1",
+    "q": "There ____ a soft sofa in the living room.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "There be 句型中单数 sofa 用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "Who ____ the man with glasses?",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数 the man 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "There ____ six people in my family.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 six people 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "My ____ is a teacher.",
+    "options": [
+      "mother",
+      "fathers",
+      "mothers"
+    ],
+    "answer": 0,
+    "explain": "mother 单数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2",
+    "q": "I ____ a big family.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3",
+    "q": "My bedroom is ____.",
+    "options": [
+      "upstairs",
+      "downstairs",
+      "outside"
+    ],
+    "answer": 0,
+    "explain": "课文说卧室在楼上",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3",
+    "q": "I do my homework at the ____.",
+    "options": [
+      "desk",
+      "bed",
+      "sofa"
+    ],
+    "answer": 0,
+    "explain": "在书桌前做作业",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4",
+    "q": "What ____ you do at home?",
+    "options": [
+      "do",
+      "does",
+      "doing"
+    ],
+    "answer": 0,
+    "explain": "What do you... 问对方日常活动",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4",
+    "q": "I write a diary ____ day.",
+    "options": [
+      "every",
+      "one",
+      "some"
+    ],
+    "answer": 0,
+    "explain": "every day 表示每天",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5",
+    "q": "What's ____ hobby?",
+    "options": [
+      "your",
+      "you",
+      "yours"
+    ],
+    "answer": 0,
+    "explain": "your 是形容词性物主代词，后接名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5",
+    "q": "My hobby ____ music.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数 hobby 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6",
+    "q": "Pandas ____ black and white.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 Pandas 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6",
+    "q": "There ____ many animals in the zoo.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 animals 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7",
+    "q": "What ____ you do this weekend?",
+    "options": [
+      "will",
+      "do",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "将来时用 will + 动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7",
+    "q": "We'll have a picnic ____ the park.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "在公园里用 in the park",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8",
+    "q": "Merry ____!",
+    "options": [
+      "Christmas",
+      "Happy",
+      "New"
+    ],
+    "answer": 0,
+    "explain": "圣诞祝福语 Merry Christmas",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8",
+    "q": "At Spring Festival, we ____ dumplings.",
+    "options": [
+      "eat",
+      "eats",
+      "eating"
+    ],
+    "answer": 0,
+    "explain": "一般现在时 we 后用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U9",
+    "q": "Happy ____ Year!",
+    "options": [
+      "New",
+      "Old",
+      "Good"
+    ],
+    "answer": 0,
+    "explain": "新年快乐是 Happy New Year",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U9",
+    "q": "I wish ____ learn more English.",
+    "options": [
+      "to",
+      "for",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "wish to do 表示愿望",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "Spring ____ here. It's so warm.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "Spring 是单数，用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1",
+    "q": "The trees ____ green again.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 trees 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "What will you ____ to the party?",
+    "options": [
+      "wear",
+      "wears",
+      "wearing"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "I'll wear a white ____ and blue trousers.",
+    "options": [
+      "shirt",
+      "skirt",
+      "hat"
+    ],
+    "answer": 0,
+    "explain": "shirt 搭配 trousers 更常见",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "These shoes ____ very nice.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 shoes 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2",
+    "q": "____ T-shirt is red.",
+    "options": [
+      "My",
+      "Me",
+      "I"
+    ],
+    "answer": 0,
+    "explain": "My + 名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3",
+    "q": "How ____ is this T-shirt?",
+    "options": [
+      "much",
+      "many",
+      "old"
+    ],
+    "answer": 0,
+    "explain": "问价格用 How much",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3",
+    "q": "It's only twenty ____.",
+    "options": [
+      "yuan",
+      "yuans",
+      "dollar"
+    ],
+    "answer": 0,
+    "explain": "人民币单位 yuan 不加 s",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4",
+    "q": "How much is the ____?",
+    "options": [
+      "total",
+      "totals",
+      "totalling"
+    ],
+    "answer": 0,
+    "explain": "total 在这里是名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4",
+    "q": "The book is thirty yuan ____ the pen is twenty.",
+    "options": [
+      "and",
+      "but",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "并列表述用 and",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5",
+    "q": "What's ____ favourite food?",
+    "options": [
+      "your",
+      "you",
+      "yours"
+    ],
+    "answer": 0,
+    "explain": "your + 名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5",
+    "q": "I love noodles ____ dumplings.",
+    "options": [
+      "and",
+      "but",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "并列用 and",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6",
+    "q": "Please ____ the fruit first.",
+    "options": [
+      "wash",
+      "washes",
+      "washing"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6",
+    "q": "We eat with a ____ and a spoon.",
+    "options": [
+      "fork",
+      "knife",
+      "plate"
+    ],
+    "answer": 0,
+    "explain": "fork and spoon 是常见搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7",
+    "q": "I ____ healthy habits.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7",
+    "q": "We should drink more ____.",
+    "options": [
+      "water",
+      "waters",
+      "sweets"
+    ],
+    "answer": 0,
+    "explain": "water 不可数，后不加 s",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8",
+    "q": "Let's ____ a picnic by the lake.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8",
+    "q": "What a ____ day for a picnic!",
+    "options": [
+      "sunny",
+      "rain",
+      "wind"
+    ],
+    "answer": 0,
+    "explain": "晴朗的日子适合野餐",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U9",
+    "q": "This spring was so ____.",
+    "options": [
+      "lovely",
+      "lovelys",
+      "love"
+    ],
+    "answer": 0,
+    "explain": "lovely 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U9",
+    "q": "I will ____ this spring forever.",
+    "options": [
+      "remember",
+      "remembers",
+      "remembering"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "I'm so ____ for the new term.",
+    "options": [
+      "excited",
+      "exciting",
+      "excite"
+    ],
+    "answer": 0,
+    "explain": "人作主语用 excited",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U1",
+    "q": "Let me ____ my new classmate.",
+    "options": [
+      "introduce",
+      "introduces",
+      "introducing"
+    ],
+    "answer": 0,
+    "explain": "Let me 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "What's ____ favourite subject?",
+    "options": [
+      "your",
+      "you",
+      "yours"
+    ],
+    "answer": 0,
+    "explain": "your + 名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "Maths is difficult ____ English is easy.",
+    "options": [
+      "but",
+      "and",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "转折用 but",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "____ is your English teacher?",
+    "options": [
+      "Who",
+      "What",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "问人用 Who",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U2",
+    "q": "We have English ____ Monday and Friday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3",
+    "q": "I can ____ songs in English.",
+    "options": [
+      "sing",
+      "sings",
+      "singing"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U3",
+    "q": "My parents are ____ of me.",
+    "options": [
+      "proud",
+      "pride",
+      "prouds"
+    ],
+    "answer": 0,
+    "explain": "be proud of 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4",
+    "q": "Please be ____ in the library.",
+    "options": [
+      "quiet",
+      "loud",
+      "fast"
+    ],
+    "answer": 0,
+    "explain": "图书馆需要安静",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U4",
+    "q": "You can ____ books with a library card.",
+    "options": [
+      "borrow",
+      "borrows",
+      "borrowing"
+    ],
+    "answer": 0,
+    "explain": "can 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5",
+    "q": "Our team will ____ the race!",
+    "options": [
+      "win",
+      "wins",
+      "won"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U5",
+    "q": "Let's ____ for our team!",
+    "options": [
+      "cheer",
+      "cheers",
+      "cheering"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U6",
+    "q": "People ____ Mid-Autumn Festival with moon cakes.",
+    "options": [
+      "celebrate",
+      "celebrates",
+      "celebrating"
+    ],
+    "answer": 0,
+    "explain": "People 是复数，动词用原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U6",
+    "q": "Thanksgiving is a ____ in America.",
+    "options": [
+      "tradition",
+      "traditional",
+      "traditionally"
+    ],
+    "answer": 0,
+    "explain": "tradition 是名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U7",
+    "q": "Which club will you ____ this year?",
+    "options": [
+      "join",
+      "joins",
+      "joining"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U7",
+    "q": "I have a strong ____ in taking photos.",
+    "options": [
+      "interest",
+      "interests",
+      "interesting"
+    ],
+    "answer": 0,
+    "explain": "interest 是名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U8",
+    "q": "A small act of ____ can bring big love.",
+    "options": [
+      "kindness",
+      "kind",
+      "kindly"
+    ],
+    "answer": 0,
+    "explain": "of 后接名词 kindness",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U8",
+    "q": "We should help ____ elderly neighbours.",
+    "options": [
+      "our",
+      "us",
+      "we"
+    ],
+    "answer": 0,
+    "explain": "our 是形容词性物主代词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U9",
+    "q": "I have ____ for weeks for the show.",
+    "options": [
+      "prepared",
+      "prepare",
+      "prepares"
+    ],
+    "answer": 0,
+    "explain": "have + 过去分词表示完成",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "上",
+    "code": "5A_U9",
+    "q": "The ____ clapped loudly.",
+    "options": [
+      "audience",
+      "audiences",
+      "audiencing"
+    ],
+    "answer": 0,
+    "explain": "audience 是名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "Summer holiday ____ coming!",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数 holiday 后用 is",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U1",
+    "q": "How ____ going to the beach?",
+    "options": [
+      "about",
+      "much",
+      "many"
+    ],
+    "answer": 0,
+    "explain": "How about 表示提议",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "How shall we ____ to Beijing?",
+    "options": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": 0,
+    "explain": "shall 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "By plane is ____, but the train is cheaper.",
+    "options": [
+      "fast",
+      "fastly",
+      "fasting"
+    ],
+    "answer": 0,
+    "explain": "fast 本身就是副词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "The train ____ at 8 o'clock.",
+    "options": [
+      "leaves",
+      "leave",
+      "leaving"
+    ],
+    "answer": 0,
+    "explain": "单数 the train 后用 leaves",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U2",
+    "q": "It ____ about two hours to get there.",
+    "options": [
+      "takes",
+      "take",
+      "taking"
+    ],
+    "answer": 0,
+    "explain": "It takes... 表示花费时间",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3",
+    "q": "Turn ____ at the crossroads.",
+    "options": [
+      "left",
+      "the left",
+      "to left"
+    ],
+    "answer": 0,
+    "explain": "Turn left 是固定表达",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U3",
+    "q": "Go ____ and you'll see it.",
+    "options": [
+      "straight",
+      "straightly",
+      "the straight"
+    ],
+    "answer": 0,
+    "explain": "go straight 表示直走",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4",
+    "q": "The Great Wall is very ____.",
+    "options": [
+      "famous",
+      "famously",
+      "fame"
+    ],
+    "answer": 0,
+    "explain": "famous 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U4",
+    "q": "Which tourist ____ do you want to see?",
+    "options": [
+      "spot",
+      "spots",
+      "spotting"
+    ],
+    "answer": 0,
+    "explain": "which 后接单数名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U5",
+    "q": "Can I ____ this scarf on?",
+    "options": [
+      "try",
+      "tries",
+      "trying"
+    ],
+    "answer": 0,
+    "explain": "Can I 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U5",
+    "q": "What ____ do you prefer?",
+    "options": [
+      "colour",
+      "colours",
+      "colouring"
+    ],
+    "answer": 0,
+    "explain": "What colour 问颜色",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U6",
+    "q": "I got a postcard ____ Beijing.",
+    "options": [
+      "from",
+      "to",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "from 表示来源",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U6",
+    "q": "Don't forget to put a ____ on the postcard.",
+    "options": [
+      "stamp",
+      "stamps",
+      "stamping"
+    ],
+    "answer": 0,
+    "explain": "一张邮票用单数 stamp",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U7",
+    "q": "Different countries have different ____.",
+    "options": [
+      "cultures",
+      "culture",
+      "cultural"
+    ],
+    "answer": 0,
+    "explain": "different 后接复数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U7",
+    "q": "We should ____ each other's culture.",
+    "options": [
+      "respect",
+      "respects",
+      "respecting"
+    ],
+    "answer": 0,
+    "explain": "should 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U8",
+    "q": "Always ____ the safety rules.",
+    "options": [
+      "follow",
+      "follows",
+      "following"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U8",
+    "q": "Be ____ when you cross the road.",
+    "options": [
+      "careful",
+      "carefully",
+      "care"
+    ],
+    "answer": 0,
+    "explain": "Be + 形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U9",
+    "q": "This journey was ____!",
+    "options": [
+      "wonderful",
+      "wonderfully",
+      "wonder"
+    ],
+    "answer": 0,
+    "explain": "wonderful 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 5,
+    "term": "下",
+    "code": "5B_U9",
+    "q": "Let's ____ our memories with friends.",
+    "options": [
+      "share",
+      "shares",
+      "sharing"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "Soon we'll ____ from primary school.",
+    "options": [
+      "graduate",
+      "graduates",
+      "graduating"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U1",
+    "q": "Six years ____ so fast.",
+    "options": [
+      "pass",
+      "passes",
+      "passed"
+    ],
+    "answer": 0,
+    "explain": "复数 years 后用动词原形 pass",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "I want to ____ a doctor.",
+    "options": [
+      "be",
+      "am",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "want to 后跟动词原形 be",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "If you ____ hard, your dream will come true.",
+    "options": [
+      "work",
+      "works",
+      "working"
+    ],
+    "answer": 0,
+    "explain": "条件状语从句用一般现在时",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "She ____ to be a writer.",
+    "options": [
+      "wants",
+      "want",
+      "wanting"
+    ],
+    "answer": 0,
+    "explain": "She 后用 wants",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U2",
+    "q": "I will ____ hard for my dream.",
+    "options": [
+      "study",
+      "studies",
+      "studying"
+    ],
+    "answer": 0,
+    "explain": "will 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "My grandpa is a ____ man.",
+    "options": [
+      "brave",
+      "bravely",
+      "bravery"
+    ],
+    "answer": 0,
+    "explain": "brave 是形容词修饰名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U3",
+    "q": "He saved a child ____ a fire.",
+    "options": [
+      "from",
+      "to",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "save...from 表示从...中救出",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4",
+    "q": "Are you ready ____ the football match?",
+    "options": [
+      "for",
+      "to",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "be ready for 是固定搭配",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U4",
+    "q": "Sport gives us ____ and health.",
+    "options": [
+      "energy",
+      "energies",
+      "energetic"
+    ],
+    "answer": 0,
+    "explain": "energy 是不可数名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U5",
+    "q": "Fresh vegetables have many ____.",
+    "options": [
+      "vitamins",
+      "vitamin",
+      "fat"
+    ],
+    "answer": 0,
+    "explain": "many 后接可数名词复数",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U5",
+    "q": "You are ____ you eat.",
+    "options": [
+      "what",
+      "who",
+      "how"
+    ],
+    "answer": 0,
+    "explain": "You are what you eat 是谚语",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U6",
+    "q": "We must ____ our Earth.",
+    "options": [
+      "protect",
+      "protects",
+      "protecting"
+    ],
+    "answer": 0,
+    "explain": "must 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U6",
+    "q": "Let's start ____ small.",
+    "options": [
+      "from",
+      "to",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "start from 表示从...开始",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U7",
+    "q": "What ____ do you love most?",
+    "options": [
+      "invention",
+      "inventions",
+      "inventing"
+    ],
+    "answer": 0,
+    "explain": "Which 后接单数名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U7",
+    "q": "Inventions ____ our world.",
+    "options": [
+      "change",
+      "changes",
+      "changing"
+    ],
+    "answer": 0,
+    "explain": "复数 Inventions 后用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U8",
+    "q": "True friendship lasts ____.",
+    "options": [
+      "forever",
+      "forevers",
+      "foreverly"
+    ],
+    "answer": 0,
+    "explain": "forever 是副词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U8",
+    "q": "A true friend is someone you can ____.",
+    "options": [
+      "trust",
+      "trusts",
+      "trusting"
+    ],
+    "answer": 0,
+    "explain": "情态动词 can 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U9",
+    "q": "The future is ____.",
+    "options": [
+      "bright",
+      "brightly",
+      "brightness"
+    ],
+    "answer": 0,
+    "explain": "bright 是形容词，作表语",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 6,
+    "term": "上",
+    "code": "6A_U9",
+    "q": "____ you, primary school!",
+    "options": [
+      "Thank",
+      "Thanks",
+      "Thanking"
+    ],
+    "answer": 0,
+    "explain": "感叹句型 Thank you 的简化",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "Hello! I ____ Tom.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "I 后用 am",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U1",
+    "q": "What's ____ name?",
+    "options": [
+      "your",
+      "you",
+      "yours"
+    ],
+    "answer": 0,
+    "explain": "your + 名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "I have ____ fingers on one hand.",
+    "options": [
+      "five",
+      "four",
+      "three"
+    ],
+    "answer": 0,
+    "explain": "一只手有五根手指",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "上",
+    "code": "1A_U2",
+    "q": "Let's ____ together!",
+    "options": [
+      "count",
+      "counts",
+      "counting"
+    ],
+    "answer": 0,
+    "explain": "Let's 后跟动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "I like ____.",
+    "options": [
+      "green",
+      "greens",
+      "greening"
+    ],
+    "answer": 0,
+    "explain": "颜色词是名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U1",
+    "q": "What colour ____ you like?",
+    "options": [
+      "do",
+      "does",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "问你喜欢什么颜色用 do",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "This is ____ mum.",
+    "options": [
+      "my",
+      "I",
+      "me"
+    ],
+    "answer": 0,
+    "explain": "my 是形容词性物主代词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 1,
+    "term": "下",
+    "code": "1B_U2",
+    "q": "I ____ my family.",
+    "options": [
+      "love",
+      "loves",
+      "loving"
+    ],
+    "answer": 0,
+    "explain": "I 后用动词原形",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "I have a ____ and a dog.",
+    "options": [
+      "cat",
+      "cats",
+      "the cat"
+    ],
+    "answer": 0,
+    "explain": "a 后接单数名词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U1",
+    "q": "They ____ my good friends.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "复数 They 后用 are",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "I have two ____.",
+    "options": [
+      "eyes",
+      "eye",
+      "head"
+    ],
+    "answer": 0,
+    "explain": "two 后接复数 eyes",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "上",
+    "code": "2A_U2",
+    "q": "I see with my ____.",
+    "options": [
+      "eyes",
+      "ears",
+      "hands"
+    ],
+    "answer": 0,
+    "explain": "用眼睛看",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "I like apples ____ bananas.",
+    "options": [
+      "and",
+      "but",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "并列用 and",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U1",
+    "q": "Fruit is ____ and healthy.",
+    "options": [
+      "sweet",
+      "sweetly",
+      "sweets"
+    ],
+    "answer": 0,
+    "explain": "sweet 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "Today is ____. I am happy.",
+    "options": [
+      "sunny",
+      "rain",
+      "wind"
+    ],
+    "answer": 0,
+    "explain": "sunny 是形容词描述天气",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 2,
+    "term": "下",
+    "code": "2B_U2",
+    "q": "Yesterday was ____ and cold.",
+    "options": [
+      "rainy",
+      "rain",
+      "raining"
+    ],
+    "answer": 0,
+    "explain": "rainy 是形容词",
+    "difficulty": 1,
+    "source": "ai_jk_v2"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 1,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_G01",
+    "q": "I ____ a new bag.",
+    "options": [
+      "have",
+      "has",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "I 后用 have。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_G02",
+    "q": "This ____ my friend.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "This is ...",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_G03",
+    "q": "____ colour is it?",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问颜色用 What colour。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_G04",
+    "q": "There ____ two books on the desk.",
+    "options": [
+      "are",
+      "is",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "two books 是复数。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_G05",
+    "q": "Can you swim? — Yes, I ____.",
+    "options": [
+      "can",
+      "do",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "can 问 can 答。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_G06",
+    "q": "She ____ apples.",
+    "options": [
+      "likes",
+      "like",
+      "liking"
+    ],
+    "answer": 0,
+    "explain": "三单 she 后用 likes。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_G07",
+    "q": "We go to school ____ Monday.",
+    "options": [
+      "on",
+      "in",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "星期前用 on。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_G08",
+    "q": "The cat is ____ the chair.",
+    "options": [
+      "under",
+      "yes",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "under the chair 在椅子下面。",
+    "difficulty": 2,
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G01",
+    "q": "Deng Jiaxian ____ a great Chinese scientist.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "were"
+    ],
+    "answer": 2,
+    "difficulty": 1,
+    "explain": "过去式·人物描述"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G02",
+    "q": "Tu Youyou ____ the Nobel Prize for her work.",
+    "options": [
+      "win",
+      "wins",
+      "winning",
+      "won"
+    ],
+    "answer": 3,
+    "difficulty": 2,
+    "explain": "一般过去时·成就"
+  },
+  {
+    "grade": 6,
+    "term": "下",
+    "code": "6B_U11_G03",
+    "q": "If you visit Guangzhou, you ____ try dim sum.",
+    "options": [
+      "should",
+      "shall",
+      "will",
+      "can"
+    ],
+    "answer": 0,
+    "difficulty": 2,
+    "explain": "情态动词·建议"
+  }
+]

@@ -1,0 +1,2384 @@
+{
+  "words": {
+    "help": [
+      {
+        "en": "Can you help me?",
+        "cn": "你能帮我吗？",
+        "level": 1,
+        "audioFile": "ex_788c38ffeb.mp3"
+      },
+      {
+        "en": "We help old people in our community.",
+        "cn": "我们帮助社区里的老人。",
+        "level": 2,
+        "audioFile": "ex_428bf0a203.mp3"
+      },
+      {
+        "en": "Even a small act of kindness can help those in need.",
+        "cn": "即使是小小的善举也能帮助有需要的人。",
+        "level": 3,
+        "audioFile": "ex_0fa1eb2610.mp3"
+      }
+    ],
+    "charity": [
+      {
+        "en": "I gave money to a charity.",
+        "cn": "我给了一家慈善机构钱。",
+        "level": 1,
+        "audioFile": "ex_f193107e3b.mp3"
+      },
+      {
+        "en": "The charity helps children who have no home.",
+        "cn": "这家慈善机构帮助没有家的孩子。",
+        "level": 2,
+        "audioFile": "ex_43947c3251.mp3"
+      },
+      {
+        "en": "She set up a charity to support disabled people in poor areas.",
+        "cn": "她创办了一家慈善机构来支持贫困地区的残疾人。",
+        "level": 3,
+        "audioFile": "ex_63f062d5ee.mp3"
+      }
+    ],
+    "donate": [
+      {
+        "en": "Please donate some books.",
+        "cn": "请捐一些书。",
+        "level": 1,
+        "audioFile": "ex_8d7bd72cfc.mp3"
+      },
+      {
+        "en": "Many people donate clothes to the orphans.",
+        "cn": "许多人把衣服捐给孤儿。",
+        "level": 2,
+        "audioFile": "ex_c09dfdda34.mp3"
+      },
+      {
+        "en": "If everyone donates a little, we can make a big difference together.",
+        "cn": "如果每个人都捐一点，我们就能一起带来巨大的改变。",
+        "level": 3,
+        "audioFile": "ex_d4ce4802ea.mp3"
+      }
+    ],
+    "volunteer": [
+      {
+        "en": "I am a volunteer.",
+        "cn": "我是一名志愿者。",
+        "level": 1,
+        "audioFile": "ex_50558dab64.mp3"
+      },
+      {
+        "en": "The volunteers help clean the old people's homes.",
+        "cn": "志愿者们帮忙打扫老人的家。",
+        "level": 2,
+        "audioFile": "ex_4337fe8784.mp3"
+      },
+      {
+        "en": "As a volunteer, she spends every weekend caring for elderly people.",
+        "cn": "作为一名志愿者，她每个周末都照顾年长的人。",
+        "level": 3,
+        "audioFile": "ex_60e06e9a5b.mp3"
+      }
+    ],
+    "community": [
+      {
+        "en": "I live in a small community.",
+        "cn": "我住在一个小社区里。",
+        "level": 1,
+        "audioFile": "ex_1cff3256fc.mp3"
+      },
+      {
+        "en": "Our community holds a charity show every year.",
+        "cn": "我们社区每年举办一场慈善义演。",
+        "level": 2,
+        "audioFile": "ex_da117807bd.mp3"
+      },
+      {
+        "en": "A caring community always supports its weakest members.",
+        "cn": "一个有爱的社区总会支持它最弱小的成员。",
+        "level": 3,
+        "audioFile": "ex_97b7753482.mp3"
+      }
+    ],
+    "elderly": [
+      {
+        "en": "The elderly man walks slowly.",
+        "cn": "这位年长的男士走得很慢。",
+        "level": 1,
+        "audioFile": "ex_6108b9c5db.mp3"
+      },
+      {
+        "en": "We visit the elderly people in the nursing home.",
+        "cn": "我们去看望养老院里年长的人。",
+        "level": 2,
+        "audioFile": "ex_11e07442e6.mp3"
+      },
+      {
+        "en": "Volunteers offer warm company to the elderly who live alone.",
+        "cn": "志愿者为独居的老人提供温暖的陪伴。",
+        "level": 3,
+        "audioFile": "ex_692a9e5271.mp3"
+      }
+    ],
+    "disabled": [
+      {
+        "en": "He is disabled but very brave.",
+        "cn": "他身有残疾，但非常勇敢。",
+        "level": 1,
+        "audioFile": "ex_46a471c1fd.mp3"
+      },
+      {
+        "en": "The school has special seats for disabled students.",
+        "cn": "学校为残疾学生设有专座。",
+        "level": 2,
+        "audioFile": "ex_d2cbc32f76.mp3"
+      },
+      {
+        "en": "With proper support, disabled people can live a full and active life.",
+        "cn": "有了适当的支持，残疾人也能过上充实而积极的生活。",
+        "level": 3,
+        "audioFile": "ex_9e3dd497a5.mp3"
+      }
+    ],
+    "orphan": [
+      {
+        "en": "The orphan has no parents.",
+        "cn": "这个孤儿没有父母。",
+        "level": 1,
+        "audioFile": "ex_9fca675b73.mp3"
+      },
+      {
+        "en": "The charity finds new homes for orphans.",
+        "cn": "这家慈善机构为孤儿寻找新家。",
+        "level": 2,
+        "audioFile": "ex_0a45fa8948.mp3"
+      },
+      {
+        "en": "Many kind families are willing to adopt orphans and give them love.",
+        "cn": "许多善良的家庭愿意收养孤儿并给予他们爱。",
+        "level": 3,
+        "audioFile": "ex_1757efaa3c.mp3"
+      }
+    ],
+    "poverty": [
+      {
+        "en": "They live in poverty.",
+        "cn": "他们生活贫困。",
+        "level": 1,
+        "audioFile": "ex_99cbc09c5f.mp3"
+      },
+      {
+        "en": "Education can help people escape poverty.",
+        "cn": "教育能帮助人们摆脱贫困。",
+        "level": 2,
+        "audioFile": "ex_8c9df6f46a.mp3"
+      },
+      {
+        "en": "The charity works hard to end poverty in faraway villages.",
+        "cn": "这家慈善机构努力消除偏远村庄的贫困。",
+        "level": 3,
+        "audioFile": "ex_b06551d64b.mp3"
+      }
+    ],
+    "support": [
+      {
+        "en": "Thank you for your support.",
+        "cn": "谢谢你的支持。",
+        "level": 1,
+        "audioFile": "ex_0beec4e0e0.mp3"
+      },
+      {
+        "en": "We support each other when life is hard.",
+        "cn": "生活艰难时我们彼此支持。",
+        "level": 2,
+        "audioFile": "ex_335a973255.mp3"
+      },
+      {
+        "en": "Your donation will support hundreds of families in need.",
+        "cn": "你的捐款将支持数百个有需要的家庭。",
+        "level": 3,
+        "audioFile": "ex_e9220b0f75.mp3"
+      }
+    ],
+    "kind": [
+      {
+        "en": "She is a kind girl.",
+        "cn": "她是个善良的女孩。",
+        "level": 1,
+        "audioFile": "ex_01b2077a4b.mp3"
+      },
+      {
+        "en": "It is kind of you to help the blind man.",
+        "cn": "你帮助那位盲人真是太好了。",
+        "level": 2,
+        "audioFile": "ex_77e7a2a019.mp3"
+      },
+      {
+        "en": "A kind heart is the greatest gift one can give to others.",
+        "cn": "一颗善良的心是一个人能给予他人的最好礼物。",
+        "level": 3,
+        "audioFile": "ex_5abe8028c8.mp3"
+      }
+    ],
+    "caring": [
+      {
+        "en": "She is a caring nurse.",
+        "cn": "她是个有爱心的护士。",
+        "level": 1,
+        "audioFile": "ex_b51546d277.mp3"
+      },
+      {
+        "en": "Caring people often volunteer to help others.",
+        "cn": "有爱心的人常常自愿帮助他人。",
+        "level": 2,
+        "audioFile": "ex_a4219e1a61.mp3"
+      },
+      {
+        "en": "A caring teacher pays attention to every student's needs.",
+        "cn": "一位有爱心的老师会关注每个学生的需要。",
+        "level": 3,
+        "audioFile": "ex_12ed952cec.mp3"
+      }
+    ],
+    "blind": [
+      {
+        "en": "The blind man uses a stick.",
+        "cn": "这位盲人用一根拐杖。",
+        "level": 1,
+        "audioFile": "ex_cd1c8ffaa9.mp3"
+      },
+      {
+        "en": "A guide dog helps the blind woman cross the road.",
+        "cn": "一只导盲犬帮助这位盲人女士过马路。",
+        "level": 2,
+        "audioFile": "ex_08bc7cf938.mp3"
+      },
+      {
+        "en": "Although he is blind, he can read with his fingers.",
+        "cn": "尽管他失明，他能用手指阅读。",
+        "level": 3,
+        "audioFile": "ex_6ad29964f8.mp3"
+      }
+    ],
+    "deaf": [
+      {
+        "en": "The deaf boy cannot hear.",
+        "cn": "这个聋哑男孩听不见。",
+        "level": 1,
+        "audioFile": "ex_5f52d980b1.mp3"
+      },
+      {
+        "en": "Deaf people use sign language to talk.",
+        "cn": "失聪的人用手语交流。",
+        "level": 2,
+        "audioFile": "ex_97a46dce15.mp3"
+      },
+      {
+        "en": "We learned a few signs so we could chat with our deaf friend.",
+        "cn": "我们学了几个手势，这样就能和失聪的朋友聊天了。",
+        "level": 3,
+        "audioFile": "ex_475ad36880.mp3"
+      }
+    ],
+    "difference": [
+      {
+        "en": "What's the difference?",
+        "cn": "有什么区别？",
+        "level": 1,
+        "audioFile": "ex_1c081e242e.mp3"
+      },
+      {
+        "en": "Your help can make a big difference.",
+        "cn": "你的帮助能带来很大的改变。",
+        "level": 2,
+        "audioFile": "ex_af3f0fcda9.mp3"
+      },
+      {
+        "en": "One person's kindness can make a real difference in someone's life.",
+        "cn": "一个人的善意能给别人的生活带来真正的改变。",
+        "level": 3,
+        "audioFile": "ex_6042daf455.mp3"
+      }
+    ],
+    "gesture": [
+      {
+        "en": "He made a gesture with his hand.",
+        "cn": "他用手做了个手势。",
+        "level": 1,
+        "audioFile": "ex_f9f2b37021.mp3"
+      },
+      {
+        "en": "A friendly gesture can welcome a stranger.",
+        "cn": "一个友好的手势可以欢迎陌生人。",
+        "level": 2,
+        "audioFile": "ex_d9a3f1e710.mp3"
+      },
+      {
+        "en": "The same gesture may have different meanings in different cultures.",
+        "cn": "同样的手势在不同文化里可能有不同的含义。",
+        "level": 3,
+        "audioFile": "ex_6c690a1801.mp3"
+      }
+    ],
+    "signal": [
+      {
+        "en": "The red light is a signal to stop.",
+        "cn": "红灯是停车的信号。",
+        "level": 1,
+        "audioFile": "ex_9887b07c59.mp3"
+      },
+      {
+        "en": "She gave a signal for us to be quiet.",
+        "cn": "她给了个让我们安静的信号。",
+        "level": 2,
+        "audioFile": "ex_b8b1d30928.mp3"
+      },
+      {
+        "en": "Body language often sends signals that words cannot express.",
+        "cn": "肢体语言常常传递出言语无法表达的信号。",
+        "level": 3,
+        "audioFile": "ex_f61eda60a8.mp3"
+      }
+    ],
+    "smile": [
+      {
+        "en": "She has a sweet smile.",
+        "cn": "她有甜美的微笑。",
+        "level": 1,
+        "audioFile": "ex_97a9981712.mp3"
+      },
+      {
+        "en": "A smile can make people feel welcome.",
+        "cn": "微笑能让人感到受欢迎。",
+        "level": 2,
+        "audioFile": "ex_0c4363ccc5.mp3"
+      },
+      {
+        "en": "A warm smile is understood as friendliness all over the world.",
+        "cn": "温暖的微笑在世界各地都被理解为友好。",
+        "level": 3,
+        "audioFile": "ex_b4f2dfa5b6.mp3"
+      }
+    ],
+    "frown": [
+      {
+        "en": "Don't frown at me.",
+        "cn": "别对我皱眉。",
+        "level": 1,
+        "audioFile": "ex_3332a2647d.mp3"
+      },
+      {
+        "en": "He frowned because he was confused.",
+        "cn": "他皱起眉头，因为他困惑了。",
+        "level": 2,
+        "audioFile": "ex_6f4fb74596.mp3"
+      },
+      {
+        "en": "A frown often shows that someone is worried or unhappy.",
+        "cn": "皱眉常常表示某人担忧或不开心。",
+        "level": 3,
+        "audioFile": "ex_cc559de35d.mp3"
+      }
+    ],
+    "nod": [
+      {
+        "en": "She gave a quick nod.",
+        "cn": "她快速地点了点头。",
+        "level": 1,
+        "audioFile": "ex_6575562007.mp3"
+      },
+      {
+        "en": "He nodded to show he agreed.",
+        "cn": "他点头表示同意。",
+        "level": 2,
+        "audioFile": "ex_ec7bd17c18.mp3"
+      },
+      {
+        "en": "In many countries a nod means \"yes\", but not everywhere.",
+        "cn": "在很多国家点头表示“是”，但并非处处如此。",
+        "level": 3,
+        "audioFile": "ex_edf76d241b.mp3"
+      }
+    ],
+    "shake": [
+      {
+        "en": "Shake your hands.",
+        "cn": "摇摇你的手。",
+        "level": 1,
+        "audioFile": "ex_96439a5bc2.mp3"
+      },
+      {
+        "en": "He shook his head to say no.",
+        "cn": "他摇头表示不。",
+        "level": 2,
+        "audioFile": "ex_2ae31c8cac.mp3"
+      },
+      {
+        "en": "People shake hands to greet each other in many cultures.",
+        "cn": "在很多文化里人们握手互相问候。",
+        "level": 3,
+        "audioFile": "ex_f762132b13.mp3"
+      }
+    ],
+    "wave": [
+      {
+        "en": "She waved to me.",
+        "cn": "她向我挥手。",
+        "level": 1,
+        "audioFile": "ex_35a8a8f95a.mp3"
+      },
+      {
+        "en": "We waved goodbye at the station.",
+        "cn": "我们在车站挥手告别。",
+        "level": 2,
+        "audioFile": "ex_ce5cc17ae7.mp3"
+      },
+      {
+        "en": "A friendly wave is a simple way to say hello from far away.",
+        "cn": "友好地挥挥手是远远打招呼的简单方式。",
+        "level": 3,
+        "audioFile": "ex_866d7685c5.mp3"
+      }
+    ],
+    "bow": [
+      {
+        "en": "The actor took a bow.",
+        "cn": "演员鞠了一躬。",
+        "level": 1,
+        "audioFile": "ex_6d0540e2e6.mp3"
+      },
+      {
+        "en": "In Japan people bow to show respect.",
+        "cn": "在日本人们鞠躬以示尊敬。",
+        "level": 2,
+        "audioFile": "ex_3dbc7de893.mp3"
+      },
+      {
+        "en": "A deep bow can express thanks more strongly than words.",
+        "cn": "深深的一躬比言语更能强烈地表达感谢。",
+        "level": 3,
+        "audioFile": "ex_41c4101be1.mp3"
+      }
+    ],
+    "hug": [
+      {
+        "en": "Give me a hug.",
+        "cn": "抱抱我。",
+        "level": 1,
+        "audioFile": "ex_9a9c011341.mp3"
+      },
+      {
+        "en": "She gave her friend a warm hug.",
+        "cn": "她给了朋友一个温暖的拥抱。",
+        "level": 2,
+        "audioFile": "ex_c3f60e365a.mp3"
+      },
+      {
+        "en": "A hug can comfort someone better than any words.",
+        "cn": "拥抱比任何话语更能安慰一个人。",
+        "level": 3,
+        "audioFile": "ex_3271c7f33d.mp3"
+      }
+    ],
+    "handshake": [
+      {
+        "en": "They had a friendly handshake.",
+        "cn": "他们友好地握了握手。",
+        "level": 1,
+        "audioFile": "ex_e5d799cfb4.mp3"
+      },
+      {
+        "en": "A firm handshake shows confidence.",
+        "cn": "有力的握手显示出自信。",
+        "level": 2,
+        "audioFile": "ex_d3d30ebcf5.mp3"
+      },
+      {
+        "en": "In business, a handshake is often the first form of greeting.",
+        "cn": "在商务场合，握手常常是第一种问候方式。",
+        "level": 3,
+        "audioFile": "ex_635150c5fc.mp3"
+      }
+    ],
+    "express": [
+      {
+        "en": "I can't express my thanks.",
+        "cn": "我无法表达我的感谢。",
+        "level": 1,
+        "audioFile": "ex_2bb66dc46a.mp3"
+      },
+      {
+        "en": "We express feelings with our faces and hands.",
+        "cn": "我们用面部和双手表达情感。",
+        "level": 2,
+        "audioFile": "ex_313efce2cb.mp3"
+      },
+      {
+        "en": "Body language helps us express what is hard to put into words.",
+        "cn": "肢体语言帮助我们表达难以言说的东西。",
+        "level": 3,
+        "audioFile": "ex_3d7a3dd1c2.mp3"
+      }
+    ],
+    "feeling": [
+      {
+        "en": "I have a good feeling.",
+        "cn": "我有种好的感觉。",
+        "level": 1,
+        "audioFile": "ex_40b571faa3.mp3"
+      },
+      {
+        "en": "Her smile showed her happy feelings.",
+        "cn": "她的微笑流露出快乐的心情。",
+        "level": 2,
+        "audioFile": "ex_de23f1645b.mp3"
+      },
+      {
+        "en": "Sometimes a gesture shows our true feelings more clearly than words.",
+        "cn": "有时一个手势比言语更清楚地显示我们真实的感受。",
+        "level": 3,
+        "audioFile": "ex_92d81c7e32.mp3"
+      }
+    ],
+    "polite": [
+      {
+        "en": "Be polite to others.",
+        "cn": "对别人要有礼貌。",
+        "level": 1,
+        "audioFile": "ex_e546fc2d4e.mp3"
+      },
+      {
+        "en": "It is polite to say thank you.",
+        "cn": "说谢谢是有礼貌的。",
+        "level": 2,
+        "audioFile": "ex_6857714606.mp3"
+      },
+      {
+        "en": "A polite smile and a nod can make a good first impression.",
+        "cn": "礼貌的微笑和点头能留下好的第一印象。",
+        "level": 3,
+        "audioFile": "ex_0e4ec67052.mp3"
+      }
+    ],
+    "rude": [
+      {
+        "en": "Don't be rude.",
+        "cn": "别没礼貌。",
+        "level": 1,
+        "audioFile": "ex_b321d674b5.mp3"
+      },
+      {
+        "en": "Pointing at people is rude in some cultures.",
+        "cn": "在某些文化里指着别人是不礼貌的。",
+        "level": 2,
+        "audioFile": "ex_4198313733.mp3"
+      },
+      {
+        "en": "A gesture that is polite in one country may be rude in another.",
+        "cn": "在一个国家礼貌的手势在另一个国家可能很无礼。",
+        "level": 3,
+        "audioFile": "ex_c9b7b05af9.mp3"
+      }
+    ],
+    "meaning": [
+      {
+        "en": "What's the meaning of this word?",
+        "cn": "这个词是什么意思？",
+        "level": 1,
+        "audioFile": "ex_f2a1929b63.mp3"
+      },
+      {
+        "en": "The same sign can have different meanings.",
+        "cn": "同样的手势可以有不同的含义。",
+        "level": 2,
+        "audioFile": "ex_f605230127.mp3"
+      },
+      {
+        "en": "Understanding the meaning of body language helps avoid misunderstandings.",
+        "cn": "理解肢体语言的含义有助于避免误解。",
+        "level": 3,
+        "audioFile": "ex_c9c783be82.mp3"
+      }
+    ],
+    "traditional": [
+      {
+        "en": "This is a traditional dish.",
+        "cn": "这是一道传统菜肴。",
+        "level": 1,
+        "audioFile": "ex_02c48ddbb4.mp3"
+      },
+      {
+        "en": "Paper-cutting is a traditional Chinese skill.",
+        "cn": "剪纸是一门传统的中国技艺。",
+        "level": 2,
+        "audioFile": "ex_06f2bba07c.mp3"
+      },
+      {
+        "en": "Many traditional skills are passed down from generation to generation.",
+        "cn": "许多传统技艺代代相传。",
+        "level": 3,
+        "audioFile": "ex_a38dd1ab4a.mp3"
+      }
+    ],
+    "skill": [
+      {
+        "en": "Cooking is a useful skill.",
+        "cn": "烹饪是一项有用的技能。",
+        "level": 1,
+        "audioFile": "ex_83351b07ca.mp3"
+      },
+      {
+        "en": "It takes years to learn this skill.",
+        "cn": "学会这项技能需要很多年。",
+        "level": 2,
+        "audioFile": "ex_e521ed30df.mp3"
+      },
+      {
+        "en": "Traditional skills like embroidery require great patience and practice.",
+        "cn": "像刺绣这样的传统技艺需要极大的耐心和练习。",
+        "level": 3,
+        "audioFile": "ex_06106ae959.mp3"
+      }
+    ],
+    "craft": [
+      {
+        "en": "She loves arts and crafts.",
+        "cn": "她喜爱手工艺。",
+        "level": 1,
+        "audioFile": "ex_f69603ddf8.mp3"
+      },
+      {
+        "en": "This craft has a long history.",
+        "cn": "这门手工艺历史悠久。",
+        "level": 2,
+        "audioFile": "ex_d9a4dc492d.mp3"
+      },
+      {
+        "en": "The old craft is in danger of disappearing without young learners.",
+        "cn": "没有年轻学徒，这门古老手艺有消失的危险。",
+        "level": 3,
+        "audioFile": "ex_0da4334dca.mp3"
+      }
+    ],
+    "handmade": [
+      {
+        "en": "This is a handmade card.",
+        "cn": "这是一张手工卡片。",
+        "level": 1,
+        "audioFile": "ex_2a34d4c017.mp3"
+      },
+      {
+        "en": "Handmade gifts are full of love.",
+        "cn": "手工礼物充满爱意。",
+        "level": 2,
+        "audioFile": "ex_84c0883ab2.mp3"
+      },
+      {
+        "en": "Handmade crafts are often more valuable than machine-made ones.",
+        "cn": "手工制品往往比机器制造的更有价值。",
+        "level": 3,
+        "audioFile": "ex_456eab2c00.mp3"
+      }
+    ],
+    "culture": [
+      {
+        "en": "I love Chinese culture.",
+        "cn": "我喜爱中国文化。",
+        "level": 1,
+        "audioFile": "ex_57fcc05e28.mp3"
+      },
+      {
+        "en": "Festivals are an important part of our culture.",
+        "cn": "节日是我们文化的重要部分。",
+        "level": 2,
+        "audioFile": "ex_132c7230fe.mp3"
+      },
+      {
+        "en": "Traditional skills carry the culture of a country from the past.",
+        "cn": "传统技艺承载着一个国家流传至今的文化。",
+        "level": 3,
+        "audioFile": "ex_4b6d1ea102.mp3"
+      }
+    ],
+    "heritage": [
+      {
+        "en": "This temple is our heritage.",
+        "cn": "这座庙宇是我们的遗产。",
+        "level": 1,
+        "audioFile": "ex_849f4b69e7.mp3"
+      },
+      {
+        "en": "We must protect our cultural heritage.",
+        "cn": "我们必须保护我们的文化遗产。",
+        "level": 2,
+        "audioFile": "ex_84140504e6.mp3"
+      },
+      {
+        "en": "Calligraphy is a precious part of China's cultural heritage.",
+        "cn": "书法是中国文化遗产中珍贵的一部分。",
+        "level": 3,
+        "audioFile": "ex_575e319ba6.mp3"
+      }
+    ],
+    "generation": [
+      {
+        "en": "My grandfather is from an older generation.",
+        "cn": "我祖父来自更老的一代。",
+        "level": 1,
+        "audioFile": "ex_63cc1081d4.mp3"
+      },
+      {
+        "en": "This skill has lasted for many generations.",
+        "cn": "这门技艺延续了好几代人。",
+        "level": 2,
+        "audioFile": "ex_cf46c32a35.mp3"
+      },
+      {
+        "en": "Each generation has a duty to pass down its traditions.",
+        "cn": "每一代人都有责任传承自己的传统。",
+        "level": 3,
+        "audioFile": "ex_dac2d4f886.mp3"
+      }
+    ],
+    "master": [
+      {
+        "en": "He is a kung fu master.",
+        "cn": "他是一位功夫大师。",
+        "level": 1,
+        "audioFile": "ex_4c6bdc299a.mp3"
+      },
+      {
+        "en": "The master taught his apprentice carefully.",
+        "cn": "师傅细心地教导徒弟。",
+        "level": 2,
+        "audioFile": "ex_98885c254a.mp3"
+      },
+      {
+        "en": "It takes decades to become a master of traditional embroidery.",
+        "cn": "成为传统刺绣大师需要数十年时间。",
+        "level": 3,
+        "audioFile": "ex_9c432de579.mp3"
+      }
+    ],
+    "apprentice": [
+      {
+        "en": "He is a young apprentice.",
+        "cn": "他是个年轻的学徒。",
+        "level": 1,
+        "audioFile": "ex_382a2574ed.mp3"
+      },
+      {
+        "en": "The apprentice learns from the master every day.",
+        "cn": "学徒每天向师傅学习。",
+        "level": 2,
+        "audioFile": "ex_2c82afedd2.mp3"
+      },
+      {
+        "en": "A good apprentice will one day keep the craft alive.",
+        "cn": "一个好学徒终有一天会让这门手艺延续下去。",
+        "level": 3,
+        "audioFile": "ex_a3ac82c2bc.mp3"
+      }
+    ],
+    "knot": [
+      {
+        "en": "Tie a knot here.",
+        "cn": "在这里打个结。",
+        "level": 1,
+        "audioFile": "ex_f348cf1c96.mp3"
+      },
+      {
+        "en": "The Chinese knot is red and beautiful.",
+        "cn": "中国结又红又漂亮。",
+        "level": 2,
+        "audioFile": "ex_686d96dcab.mp3"
+      },
+      {
+        "en": "Making a Chinese knot is a traditional skill that needs careful hands.",
+        "cn": "编中国结是一门需要灵巧双手的传统技艺。",
+        "level": 3,
+        "audioFile": "ex_6e3ea40d20.mp3"
+      }
+    ],
+    "embroidery": [
+      {
+        "en": "The embroidery is lovely.",
+        "cn": "这刺绣很可爱。",
+        "level": 1,
+        "audioFile": "ex_3bf6e8c1be.mp3"
+      },
+      {
+        "en": "She learned embroidery from her grandmother.",
+        "cn": "她跟祖母学了刺绣。",
+        "level": 2,
+        "audioFile": "ex_b8490547eb.mp3"
+      },
+      {
+        "en": "Su embroidery is famous around the world for its fine detail.",
+        "cn": "苏绣以其精细的细节闻名世界。",
+        "level": 3,
+        "audioFile": "ex_9842c7c5f3.mp3"
+      }
+    ],
+    "paper-cutting": [
+      {
+        "en": "I like paper-cutting.",
+        "cn": "我喜欢剪纸。",
+        "level": 1,
+        "audioFile": "ex_68bf10bf96.mp3"
+      },
+      {
+        "en": "Paper-cutting decorates our windows at Spring Festival.",
+        "cn": "春节时剪纸装点着我们的窗户。",
+        "level": 2,
+        "audioFile": "ex_29f1a85952.mp3"
+      },
+      {
+        "en": "Paper-cutting is a folk art that has been passed down for centuries.",
+        "cn": "剪纸是一门流传了几百年的民间艺术。",
+        "level": 3,
+        "audioFile": "ex_e656b39d51.mp3"
+      }
+    ],
+    "calligraphy": [
+      {
+        "en": "His calligraphy is beautiful.",
+        "cn": "他的书法很漂亮。",
+        "level": 1,
+        "audioFile": "ex_2275e44df4.mp3"
+      },
+      {
+        "en": "We practice calligraphy with a brush.",
+        "cn": "我们用毛笔练习书法。",
+        "level": 2,
+        "audioFile": "ex_3963888f6b.mp3"
+      },
+      {
+        "en": "Chinese calligraphy combines art and the beauty of written words.",
+        "cn": "中国书法把艺术与文字之美融为一体。",
+        "level": 3,
+        "audioFile": "ex_e5a3d623b0.mp3"
+      }
+    ],
+    "disappear": [
+      {
+        "en": "The sun disappeared.",
+        "cn": "太阳消失了。",
+        "level": 1,
+        "audioFile": "ex_7923e709ba.mp3"
+      },
+      {
+        "en": "Some old crafts are slowly disappearing.",
+        "cn": "一些古老的手艺正在慢慢消失。",
+        "level": 2,
+        "audioFile": "ex_9a2f88b56c.mp3"
+      },
+      {
+        "en": "Without young learners, traditional skills may disappear forever.",
+        "cn": "没有年轻的学习者，传统技艺可能会永远消失。",
+        "level": 3,
+        "audioFile": "ex_801d0f1c5e.mp3"
+      }
+    ],
+    "pass down": [
+      {
+        "en": "We pass down the story.",
+        "cn": "我们把故事传下去。",
+        "level": 1,
+        "audioFile": "ex_7498eb5ce8.mp3"
+      },
+      {
+        "en": "Parents pass down skills to their children.",
+        "cn": "父母把技艺传给孩子。",
+        "level": 2,
+        "audioFile": "ex_0dfe14dd28.mp3"
+      },
+      {
+        "en": "These crafts have been passed down through many generations.",
+        "cn": "这些手艺已经传承了许多代。",
+        "level": 3,
+        "audioFile": "ex_68b9ecda41.mp3"
+      }
+    ],
+    "robot": [
+      {
+        "en": "The robot can walk.",
+        "cn": "这个机器人会走路。",
+        "level": 1,
+        "audioFile": "ex_c360abe0e8.mp3"
+      },
+      {
+        "en": "The robot helps us clean the floor.",
+        "cn": "机器人帮我们打扫地板。",
+        "level": 2,
+        "audioFile": "ex_e5b8399ccb.mp3"
+      },
+      {
+        "en": "In the future, robots may do many of the jobs people do now.",
+        "cn": "未来，机器人也许会做许多现在人类做的工作。",
+        "level": 3,
+        "audioFile": "ex_4db0597fdc.mp3"
+      }
+    ],
+    "AI": [
+      {
+        "en": "AI is very smart.",
+        "cn": "人工智能非常聪明。",
+        "level": 1,
+        "audioFile": "ex_be1ccc175c.mp3"
+      },
+      {
+        "en": "AI can answer our questions quickly.",
+        "cn": "人工智能能快速回答我们的问题。",
+        "level": 2,
+        "audioFile": "ex_bf45f07a2e.mp3"
+      },
+      {
+        "en": "AI is changing the way we live, learn and work.",
+        "cn": "人工智能正在改变我们生活、学习和工作的方式。",
+        "level": 3,
+        "audioFile": "ex_8dd6e876c5.mp3"
+      }
+    ],
+    "intelligent": [
+      {
+        "en": "Dolphins are intelligent.",
+        "cn": "海豚很聪明。",
+        "level": 1,
+        "audioFile": "ex_63219152b5.mp3"
+      },
+      {
+        "en": "This intelligent robot can learn by itself.",
+        "cn": "这个智能机器人能自己学习。",
+        "level": 2,
+        "audioFile": "ex_d9c49e0f0a.mp3"
+      },
+      {
+        "en": "Intelligent machines can make decisions without human help.",
+        "cn": "智能机器可以在没有人类帮助的情况下做决定。",
+        "level": 3,
+        "audioFile": "ex_d4d165d358.mp3"
+      }
+    ],
+    "control": [
+      {
+        "en": "I can control the car.",
+        "cn": "我能控制这辆车。",
+        "level": 1,
+        "audioFile": "ex_4bfbbe922d.mp3"
+      },
+      {
+        "en": "We control the robot with a phone.",
+        "cn": "我们用手机控制机器人。",
+        "level": 2,
+        "audioFile": "ex_37a8d97bfa.mp3"
+      },
+      {
+        "en": "Scientists make sure humans can always control the machines they build.",
+        "cn": "科学家确保人类始终能控制他们制造的机器。",
+        "level": 3,
+        "audioFile": "ex_e0ebee7613.mp3"
+      }
+    ],
+    "program": [
+      {
+        "en": "I can program a game.",
+        "cn": "我能编一个游戏程序。",
+        "level": 1,
+        "audioFile": "ex_b21865b12a.mp3"
+      },
+      {
+        "en": "He programs the robot to dance.",
+        "cn": "他给机器人编程让它跳舞。",
+        "level": 2,
+        "audioFile": "ex_0844a1d594.mp3"
+      },
+      {
+        "en": "Engineers program robots to complete difficult and dangerous tasks.",
+        "cn": "工程师为机器人编程，让它们完成困难而危险的任务。",
+        "level": 3,
+        "audioFile": "ex_6ae73442c9.mp3"
+      }
+    ],
+    "sensor": [
+      {
+        "en": "The sensor sees light.",
+        "cn": "传感器能感知光线。",
+        "level": 1,
+        "audioFile": "ex_11b36a629e.mp3"
+      },
+      {
+        "en": "The robot uses sensors to avoid walls.",
+        "cn": "机器人用传感器避开墙壁。",
+        "level": 2,
+        "audioFile": "ex_2008d4f9f2.mp3"
+      },
+      {
+        "en": "Sensors help robots understand the world around them.",
+        "cn": "传感器帮助机器人理解周围的世界。",
+        "level": 3,
+        "audioFile": "ex_4bada123b2.mp3"
+      }
+    ],
+    "task": [
+      {
+        "en": "I have a task to do.",
+        "cn": "我有个任务要做。",
+        "level": 1,
+        "audioFile": "ex_e04827d5e0.mp3"
+      },
+      {
+        "en": "The robot finished the task quickly.",
+        "cn": "机器人很快完成了任务。",
+        "level": 2,
+        "audioFile": "ex_7ee897e5ef.mp3"
+      },
+      {
+        "en": "Robots can repeat the same task without ever getting tired.",
+        "cn": "机器人能重复同样的任务而永不疲倦。",
+        "level": 3,
+        "audioFile": "ex_03ccd76c77.mp3"
+      }
+    ],
+    "factory": [
+      {
+        "en": "He works in a factory.",
+        "cn": "他在一家工厂工作。",
+        "level": 1,
+        "audioFile": "ex_b4d08d5138.mp3"
+      },
+      {
+        "en": "Robots work in this car factory.",
+        "cn": "机器人在这家汽车工厂工作。",
+        "level": 2,
+        "audioFile": "ex_4ea9178b0e.mp3"
+      },
+      {
+        "en": "Modern factories use robot arms to build products faster.",
+        "cn": "现代工厂用机械臂更快地制造产品。",
+        "level": 3,
+        "audioFile": "ex_2e454e2282.mp3"
+      }
+    ],
+    "arm": [
+      {
+        "en": "Lift your arm.",
+        "cn": "抬起你的手臂。",
+        "level": 1,
+        "audioFile": "ex_55e70516a8.mp3"
+      },
+      {
+        "en": "The robot arm picks up the box.",
+        "cn": "机械臂把箱子拿起来。",
+        "level": 2,
+        "audioFile": "ex_a81373348b.mp3"
+      },
+      {
+        "en": "A robot arm can lift heavy objects that no human could move.",
+        "cn": "机械臂能举起人类无法搬动的重物。",
+        "level": 3,
+        "audioFile": "ex_453f87b856.mp3"
+      }
+    ],
+    "industry": [
+      {
+        "en": "Cars are made in industry.",
+        "cn": "汽车是工业制造的。",
+        "level": 1,
+        "audioFile": "ex_c44f6c897d.mp3"
+      },
+      {
+        "en": "Robots are widely used in industry.",
+        "cn": "机器人在工业中被广泛使用。",
+        "level": 2,
+        "audioFile": "ex_e79ad65c95.mp3"
+      },
+      {
+        "en": "AI is bringing huge changes to almost every industry.",
+        "cn": "人工智能正给几乎每个行业带来巨大变化。",
+        "level": 3,
+        "audioFile": "ex_d5b3a2f7e6.mp3"
+      }
+    ],
+    "battery": [
+      {
+        "en": "The battery is dead.",
+        "cn": "电池没电了。",
+        "level": 1,
+        "audioFile": "ex_51ffd229fb.mp3"
+      },
+      {
+        "en": "The robot needs a new battery.",
+        "cn": "机器人需要一块新电池。",
+        "level": 2,
+        "audioFile": "ex_121825264c.mp3"
+      },
+      {
+        "en": "A longer-lasting battery lets the robot work all day.",
+        "cn": "更耐用的电池让机器人能工作一整天。",
+        "level": 3,
+        "audioFile": "ex_5ff0695eac.mp3"
+      }
+    ],
+    "human": [
+      {
+        "en": "I am a human.",
+        "cn": "我是人类。",
+        "level": 1,
+        "audioFile": "ex_a024a05358.mp3"
+      },
+      {
+        "en": "Robots are made to help humans.",
+        "cn": "机器人被制造出来帮助人类。",
+        "level": 2,
+        "audioFile": "ex_d758d1030f.mp3"
+      },
+      {
+        "en": "No matter how smart robots become, humans must stay in charge.",
+        "cn": "无论机器人变得多聪明，人类都必须掌握主导权。",
+        "level": 3,
+        "audioFile": "ex_fdaf80390f.mp3"
+      }
+    ],
+    "replace": [
+      {
+        "en": "Replace the old part.",
+        "cn": "更换旧零件。",
+        "level": 1,
+        "audioFile": "ex_67af5ea9f5.mp3"
+      },
+      {
+        "en": "Robots may replace people in dangerous jobs.",
+        "cn": "机器人也许会在危险工作中取代人。",
+        "level": 2,
+        "audioFile": "ex_95bbfd3abd.mp3"
+      },
+      {
+        "en": "Some people worry that robots will replace human workers one day.",
+        "cn": "有些人担心机器人有一天会取代人类工人。",
+        "level": 3,
+        "audioFile": "ex_2617bd344f.mp3"
+      }
+    ],
+    "dream": [
+      {
+        "en": "I have a dream.",
+        "cn": "我有一个梦想。",
+        "level": 1,
+        "audioFile": "ex_384205d4eb.mp3"
+      },
+      {
+        "en": "His dream is to build a smart robot.",
+        "cn": "他的梦想是造一个智能机器人。",
+        "level": 2,
+        "audioFile": "ex_66a4f69e2d.mp3"
+      },
+      {
+        "en": "With hard work, a dream about the future can come true.",
+        "cn": "只要努力，关于未来的梦想就能成真。",
+        "level": 3,
+        "audioFile": "ex_6bbfd2e1dc.mp3"
+      }
+    ],
+    "future": [
+      {
+        "en": "Think about the future.",
+        "cn": "想想未来。",
+        "level": 1,
+        "audioFile": "ex_bad7100403.mp3"
+      },
+      {
+        "en": "Robots will be common in the future.",
+        "cn": "未来机器人会很常见。",
+        "level": 2,
+        "audioFile": "ex_20ff503fb0.mp3"
+      },
+      {
+        "en": "In the future, machines and people may work side by side.",
+        "cn": "未来，机器和人也许会并肩工作。",
+        "level": 3,
+        "audioFile": "ex_4a28456255.mp3"
+      }
+    ],
+    "endangered": [
+      {
+        "en": "Pandas are endangered.",
+        "cn": "熊猫是濒危动物。",
+        "level": 1,
+        "audioFile": "ex_767e6d6238.mp3"
+      },
+      {
+        "en": "We must protect endangered animals.",
+        "cn": "我们必须保护濒危动物。",
+        "level": 2,
+        "audioFile": "ex_7096ff6c65.mp3"
+      },
+      {
+        "en": "Many endangered species will be lost unless we act now.",
+        "cn": "除非我们现在行动，许多濒危物种将会消失。",
+        "level": 3,
+        "audioFile": "ex_5ee83e5334.mp3"
+      }
+    ],
+    "extinct": [
+      {
+        "en": "Dinosaurs are extinct.",
+        "cn": "恐龙已经灭绝了。",
+        "level": 1,
+        "audioFile": "ex_d5784963ab.mp3"
+      },
+      {
+        "en": "Some animals became extinct long ago.",
+        "cn": "有些动物很久以前就灭绝了。",
+        "level": 2,
+        "audioFile": "ex_9fc1958692.mp3"
+      },
+      {
+        "en": "If we do nothing, the tiger may become extinct in the wild.",
+        "cn": "如果我们什么都不做，老虎也许会在野外灭绝。",
+        "level": 3,
+        "audioFile": "ex_7add02838b.mp3"
+      }
+    ],
+    "tiger": [
+      {
+        "en": "The tiger is strong.",
+        "cn": "老虎很强壮。",
+        "level": 1,
+        "audioFile": "ex_70a1c7563f.mp3"
+      },
+      {
+        "en": "Tigers are losing their homes.",
+        "cn": "老虎正在失去它们的家园。",
+        "level": 2,
+        "audioFile": "ex_7cc3f54628.mp3"
+      },
+      {
+        "en": "Fewer than four thousand wild tigers are left on Earth.",
+        "cn": "地球上仅剩不到四千只野生老虎。",
+        "level": 3,
+        "audioFile": "ex_b197fbee6f.mp3"
+      }
+    ],
+    "elephant": [
+      {
+        "en": "The elephant is big.",
+        "cn": "大象很大。",
+        "level": 1,
+        "audioFile": "ex_e5fb254f1f.mp3"
+      },
+      {
+        "en": "Elephants are hunted for their ivory.",
+        "cn": "大象因象牙被猎杀。",
+        "level": 2,
+        "audioFile": "ex_ebdd5ac120.mp3"
+      },
+      {
+        "en": "We must stop the hunting that threatens elephants with extinction.",
+        "cn": "我们必须制止使大象濒临灭绝的猎杀。",
+        "level": 3,
+        "audioFile": "ex_423f269d1b.mp3"
+      }
+    ],
+    "whale": [
+      {
+        "en": "The whale is huge.",
+        "cn": "鲸鱼很巨大。",
+        "level": 1,
+        "audioFile": "ex_ebbcb1c93f.mp3"
+      },
+      {
+        "en": "Whales live in the deep sea.",
+        "cn": "鲸生活在深海里。",
+        "level": 2,
+        "audioFile": "ex_29e338504d.mp3"
+      },
+      {
+        "en": "Pollution in the ocean puts many whales in great danger.",
+        "cn": "海洋污染让许多鲸面临巨大危险。",
+        "level": 3,
+        "audioFile": "ex_959c11329c.mp3"
+      }
+    ],
+    "habitat": [
+      {
+        "en": "The forest is their habitat.",
+        "cn": "森林是它们的栖息地。",
+        "level": 1,
+        "audioFile": "ex_d913c07cf9.mp3"
+      },
+      {
+        "en": "Animals lose their habitat when forests are cut down.",
+        "cn": "森林被砍伐时动物失去栖息地。",
+        "level": 2,
+        "audioFile": "ex_6073eca7e3.mp3"
+      },
+      {
+        "en": "Protecting habitats is the best way to save endangered animals.",
+        "cn": "保护栖息地是拯救濒危动物的最好办法。",
+        "level": 3,
+        "audioFile": "ex_3a4e53ee76.mp3"
+      }
+    ],
+    "reserve": [
+      {
+        "en": "This is a nature reserve.",
+        "cn": "这是一个自然保护区。",
+        "level": 1,
+        "audioFile": "ex_27d4d8abeb.mp3"
+      },
+      {
+        "en": "Pandas are safe in the reserve.",
+        "cn": "熊猫在保护区里很安全。",
+        "level": 2,
+        "audioFile": "ex_8e6f9b6ecd.mp3"
+      },
+      {
+        "en": "Nature reserves give wild animals a safe place to live.",
+        "cn": "自然保护区给野生动物一个安全的生活之所。",
+        "level": 3,
+        "audioFile": "ex_d0ee75b4e7.mp3"
+      }
+    ],
+    "hunting": [
+      {
+        "en": "Hunting is dangerous for animals.",
+        "cn": "捕猎对动物很危险。",
+        "level": 1,
+        "audioFile": "ex_739f7da088.mp3"
+      },
+      {
+        "en": "Illegal hunting must be stopped.",
+        "cn": "非法狩猎必须被制止。",
+        "level": 2,
+        "audioFile": "ex_c965043636.mp3"
+      },
+      {
+        "en": "Hunting for fur and ivory has made many animals endangered.",
+        "cn": "为获取毛皮和象牙的猎杀使许多动物濒危。",
+        "level": 3,
+        "audioFile": "ex_d0b1846788.mp3"
+      }
+    ],
+    "poacher": [
+      {
+        "en": "The poacher was caught.",
+        "cn": "偷猎者被抓住了。",
+        "level": 1,
+        "audioFile": "ex_3b6d746733.mp3"
+      },
+      {
+        "en": "Poachers kill animals for money.",
+        "cn": "偷猎者为钱杀害动物。",
+        "level": 2,
+        "audioFile": "ex_50aef4680d.mp3"
+      },
+      {
+        "en": "Rangers work day and night to stop poachers in the reserve.",
+        "cn": "护林员日夜工作以阻止保护区里的偷猎者。",
+        "level": 3,
+        "audioFile": "ex_8448adafa5.mp3"
+      }
+    ],
+    "ivory": [
+      {
+        "en": "Ivory comes from elephants.",
+        "cn": "象牙来自大象。",
+        "level": 1,
+        "audioFile": "ex_d6cfacb2fe.mp3"
+      },
+      {
+        "en": "Buying ivory is against the law.",
+        "cn": "购买象牙是违法的。",
+        "level": 2,
+        "audioFile": "ex_678207a058.mp3"
+      },
+      {
+        "en": "If no one buys ivory, poachers will stop killing elephants.",
+        "cn": "如果没人买象牙，偷猎者就会停止猎杀大象。",
+        "level": 3,
+        "audioFile": "ex_3e0107806e.mp3"
+      }
+    ],
+    "research": [
+      {
+        "en": "She does animal research.",
+        "cn": "她做动物研究。",
+        "level": 1,
+        "audioFile": "ex_c1cd8d5a81.mp3"
+      },
+      {
+        "en": "Research helps us understand wild animals.",
+        "cn": "研究帮助我们了解野生动物。",
+        "level": 2,
+        "audioFile": "ex_35e3bd3cb0.mp3"
+      },
+      {
+        "en": "Scientists' research shows how to protect endangered species better.",
+        "cn": "科学家的研究告诉我们如何更好地保护濒危物种。",
+        "level": 3,
+        "audioFile": "ex_55a39901ba.mp3"
+      }
+    ],
+    "donation": [
+      {
+        "en": "We made a donation.",
+        "cn": "我们捐了款。",
+        "level": 1,
+        "audioFile": "ex_bc4cb9492d.mp3"
+      },
+      {
+        "en": "Donations help save endangered animals.",
+        "cn": "捐款帮助拯救濒危动物。",
+        "level": 2,
+        "audioFile": "ex_e50615bb76.mp3"
+      },
+      {
+        "en": "Your donation pays for food and care in the animal reserve.",
+        "cn": "你的捐款支付了动物保护区里的食物和照料。",
+        "level": 3,
+        "audioFile": "ex_771ce88e26.mp3"
+      }
+    ],
+    "survive": [
+      {
+        "en": "Fish can't survive without water.",
+        "cn": "鱼没有水无法存活。",
+        "level": 1,
+        "audioFile": "ex_f475a8b786.mp3"
+      },
+      {
+        "en": "Few baby turtles survive in the wild.",
+        "cn": "野外很少有小海龟能存活。",
+        "level": 2,
+        "audioFile": "ex_6a5fec56c8.mp3"
+      },
+      {
+        "en": "Without our help, these animals cannot survive much longer.",
+        "cn": "没有我们的帮助，这些动物活不了多久。",
+        "level": 3,
+        "audioFile": "ex_040158348a.mp3"
+      }
+    ],
+    "population": [
+      {
+        "en": "The population is small.",
+        "cn": "数量很少。",
+        "level": 1,
+        "audioFile": "ex_caa182d413.mp3"
+      },
+      {
+        "en": "The tiger population is falling.",
+        "cn": "老虎的数量正在下降。",
+        "level": 2,
+        "audioFile": "ex_8ab8c79340.mp3"
+      },
+      {
+        "en": "Thanks to protection, the panda population is slowly growing again.",
+        "cn": "得益于保护，熊猫的数量正在慢慢回升。",
+        "level": 3,
+        "audioFile": "ex_1370709108.mp3"
+      }
+    ],
+    "awareness": [
+      {
+        "en": "We need more awareness.",
+        "cn": "我们需要更多意识。",
+        "level": 1,
+        "audioFile": "ex_a19bcaffb2.mp3"
+      },
+      {
+        "en": "The poster raises awareness about animals.",
+        "cn": "这张海报提高了人们对动物的意识。",
+        "level": 2,
+        "audioFile": "ex_2cf740d921.mp3"
+      },
+      {
+        "en": "Raising awareness is the first step to saving endangered animals.",
+        "cn": "提高意识是拯救濒危动物的第一步。",
+        "level": 3,
+        "audioFile": "ex_cc38efdfe9.mp3"
+      }
+    ],
+    "plant": [
+      {
+        "en": "I plant a tree.",
+        "cn": "我种一棵树。",
+        "level": 1,
+        "audioFile": "ex_a4b5b75764.mp3"
+      },
+      {
+        "en": "Green plants give us fresh air.",
+        "cn": "绿色植物给我们新鲜空气。",
+        "level": 2,
+        "audioFile": "ex_12cd2cdffe.mp3"
+      },
+      {
+        "en": "Plants turn sunlight into the energy that all life depends on.",
+        "cn": "植物把阳光变成所有生命赖以生存的能量。",
+        "level": 3,
+        "audioFile": "ex_5649b127ff.mp3"
+      }
+    ],
+    "seed": [
+      {
+        "en": "Plant the seed in the soil.",
+        "cn": "把种子种到土里。",
+        "level": 1,
+        "audioFile": "ex_b5d285bac9.mp3"
+      },
+      {
+        "en": "The seed grows into a small plant.",
+        "cn": "种子长成一棵小植物。",
+        "level": 2,
+        "audioFile": "ex_232f4d0ee7.mp3"
+      },
+      {
+        "en": "A tiny seed can one day grow into a tall tree.",
+        "cn": "一粒小小的种子有一天能长成参天大树。",
+        "level": 3,
+        "audioFile": "ex_8f36900c04.mp3"
+      }
+    ],
+    "soil": [
+      {
+        "en": "The soil is wet.",
+        "cn": "土壤是湿的。",
+        "level": 1,
+        "audioFile": "ex_d2aa83142e.mp3"
+      },
+      {
+        "en": "Plants need good soil to grow.",
+        "cn": "植物需要好的土壤才能生长。",
+        "level": 2,
+        "audioFile": "ex_081413a641.mp3"
+      },
+      {
+        "en": "Rich soil gives plants the food they need to grow strong.",
+        "cn": "肥沃的土壤给植物生长壮大所需的养分。",
+        "level": 3,
+        "audioFile": "ex_e589fdac05.mp3"
+      }
+    ],
+    "sunlight": [
+      {
+        "en": "Plants need sunlight.",
+        "cn": "植物需要阳光。",
+        "level": 1,
+        "audioFile": "ex_a957dbf439.mp3"
+      },
+      {
+        "en": "The flowers turn towards the sunlight.",
+        "cn": "花朵朝向阳光。",
+        "level": 2,
+        "audioFile": "ex_a5721eb7ce.mp3"
+      },
+      {
+        "en": "Without enough sunlight, most plants cannot make their food.",
+        "cn": "没有足够的阳光，大多数植物无法制造养分。",
+        "level": 3,
+        "audioFile": "ex_99305a8745.mp3"
+      }
+    ],
+    "grow": [
+      {
+        "en": "The tree grows fast.",
+        "cn": "这棵树长得快。",
+        "level": 1,
+        "audioFile": "ex_3d4c199833.mp3"
+      },
+      {
+        "en": "Plants grow well in spring.",
+        "cn": "植物在春天长得好。",
+        "level": 2,
+        "audioFile": "ex_ee8a58ba23.mp3"
+      },
+      {
+        "en": "With water and sunlight, the seed will grow into a healthy plant.",
+        "cn": "有了水和阳光，种子会长成一株健康的植物。",
+        "level": 3,
+        "audioFile": "ex_708b8bcdfa.mp3"
+      }
+    ],
+    "bloom": [
+      {
+        "en": "The flowers bloom.",
+        "cn": "花朵开放。",
+        "level": 1,
+        "audioFile": "ex_1d8f5fd108.mp3"
+      },
+      {
+        "en": "Roses bloom in summer.",
+        "cn": "玫瑰在夏天开花。",
+        "level": 2,
+        "audioFile": "ex_254cb17563.mp3"
+      },
+      {
+        "en": "When the warm days come, the whole garden begins to bloom.",
+        "cn": "温暖的日子来临时，整个花园开始绽放。",
+        "level": 3,
+        "audioFile": "ex_afc9fc5a41.mp3"
+      }
+    ],
+    "root": [
+      {
+        "en": "The root is in the soil.",
+        "cn": "根在土里。",
+        "level": 1,
+        "audioFile": "ex_5dc2694f07.mp3"
+      },
+      {
+        "en": "Roots take in water for the plant.",
+        "cn": "根为植物吸收水分。",
+        "level": 2,
+        "audioFile": "ex_fe4a2d63ea.mp3"
+      },
+      {
+        "en": "Strong roots hold the plant firmly in the ground.",
+        "cn": "强壮的根把植物牢牢固定在地里。",
+        "level": 3,
+        "audioFile": "ex_b3c8a3e797.mp3"
+      }
+    ],
+    "stem": [
+      {
+        "en": "The stem is green.",
+        "cn": "茎是绿色的。",
+        "level": 1,
+        "audioFile": "ex_79418fbf4e.mp3"
+      },
+      {
+        "en": "Water moves up through the stem.",
+        "cn": "水通过茎向上流动。",
+        "level": 2,
+        "audioFile": "ex_b805a61c0e.mp3"
+      },
+      {
+        "en": "The stem carries water and food between the roots and leaves.",
+        "cn": "茎在根和叶之间运送水分和养分。",
+        "level": 3,
+        "audioFile": "ex_84a4f16317.mp3"
+      }
+    ],
+    "species": [
+      {
+        "en": "This is a new species.",
+        "cn": "这是一个新物种。",
+        "level": 1,
+        "audioFile": "ex_95965af2dc.mp3"
+      },
+      {
+        "en": "There are many plant species in the forest.",
+        "cn": "森林里有许多植物物种。",
+        "level": 2,
+        "audioFile": "ex_537a18b7b4.mp3"
+      },
+      {
+        "en": "Some rare plant species grow only in one part of the world.",
+        "cn": "一些稀有植物物种只生长在世界的某一处。",
+        "level": 3,
+        "audioFile": "ex_03457d4f31.mp3"
+      }
+    ],
+    "rare": [
+      {
+        "en": "This flower is rare.",
+        "cn": "这种花很稀有。",
+        "level": 1,
+        "audioFile": "ex_a5a3343677.mp3"
+      },
+      {
+        "en": "Rare plants are protected by law.",
+        "cn": "稀有植物受法律保护。",
+        "level": 2,
+        "audioFile": "ex_885194c3e8.mp3"
+      },
+      {
+        "en": "Botanists travel far to study rare plants in the mountains.",
+        "cn": "植物学家长途跋涉去研究山中的稀有植物。",
+        "level": 3,
+        "audioFile": "ex_66aba0998b.mp3"
+      }
+    ],
+    "botanist": [
+      {
+        "en": "A botanist studies plants.",
+        "cn": "植物学家研究植物。",
+        "level": 1,
+        "audioFile": "ex_043f8605e4.mp3"
+      },
+      {
+        "en": "The botanist found a new flower.",
+        "cn": "这位植物学家发现了一种新花。",
+        "level": 2,
+        "audioFile": "ex_84a1bc0d65.mp3"
+      },
+      {
+        "en": "Botanists work hard to protect plants that may disappear.",
+        "cn": "植物学家努力保护可能消失的植物。",
+        "level": 3,
+        "audioFile": "ex_46dc96c462.mp3"
+      }
+    ],
+    "medicine": [
+      {
+        "en": "I take medicine when I'm ill.",
+        "cn": "我生病时吃药。",
+        "level": 1,
+        "audioFile": "ex_039538db0c.mp3"
+      },
+      {
+        "en": "Some plants are used to make medicine.",
+        "cn": "有些植物被用来制药。",
+        "level": 2,
+        "audioFile": "ex_902684eadb.mp3"
+      },
+      {
+        "en": "Many modern medicines come from plants found in the rainforest.",
+        "cn": "许多现代药物来自雨林中发现的植物。",
+        "level": 3,
+        "audioFile": "ex_4e41e47372.mp3"
+      }
+    ],
+    "garden": [
+      {
+        "en": "We have a small garden.",
+        "cn": "我们有个小花园。",
+        "level": 1,
+        "audioFile": "ex_d4b6d0dcbd.mp3"
+      },
+      {
+        "en": "She grows roses in her garden.",
+        "cn": "她在花园里种玫瑰。",
+        "level": 2,
+        "audioFile": "ex_92f8a094db.mp3"
+      },
+      {
+        "en": "A botanical garden keeps thousands of different plant species.",
+        "cn": "植物园里养着成千上万种不同的植物。",
+        "level": 3,
+        "audioFile": "ex_8f17da5282.mp3"
+      }
+    ],
+    "ecosystem": [
+      {
+        "en": "A forest is an ecosystem.",
+        "cn": "森林是一个生态系统。",
+        "level": 1,
+        "audioFile": "ex_6d33954f58.mp3"
+      },
+      {
+        "en": "Plants are important to the ecosystem.",
+        "cn": "植物对生态系统很重要。",
+        "level": 2,
+        "audioFile": "ex_e523e80b6d.mp3"
+      },
+      {
+        "en": "Losing one species can harm the whole ecosystem.",
+        "cn": "失去一个物种可能危害整个生态系统。",
+        "level": 3,
+        "audioFile": "ex_1747cebda9.mp3"
+      }
+    ],
+    "oxygen": [
+      {
+        "en": "We breathe oxygen.",
+        "cn": "我们呼吸氧气。",
+        "level": 1,
+        "audioFile": "ex_50b96c896e.mp3"
+      },
+      {
+        "en": "Plants give off oxygen.",
+        "cn": "植物释放氧气。",
+        "level": 2,
+        "audioFile": "ex_b75cb77ac2.mp3"
+      },
+      {
+        "en": "Forests produce much of the oxygen that living things need.",
+        "cn": "森林产生了生物所需的大部分氧气。",
+        "level": 3,
+        "audioFile": "ex_70a0a5c354.mp3"
+      }
+    ],
+    "moon": [
+      {
+        "en": "The moon is bright tonight.",
+        "cn": "今晚月亮很亮。",
+        "level": 1,
+        "audioFile": "ex_b2e26f1a8a.mp3"
+      },
+      {
+        "en": "The moon goes around the Earth.",
+        "cn": "月球围绕地球转。",
+        "level": 2,
+        "audioFile": "ex_0468a1bc5e.mp3"
+      },
+      {
+        "en": "Humans first walked on the moon in 1969.",
+        "cn": "人类于1969年首次登上月球。",
+        "level": 3,
+        "audioFile": "ex_4861d33605.mp3"
+      }
+    ],
+    "Earth": [
+      {
+        "en": "We live on the Earth.",
+        "cn": "我们生活在地球上。",
+        "level": 1,
+        "audioFile": "ex_a9a3aa51f2.mp3"
+      },
+      {
+        "en": "The Earth travels around the sun.",
+        "cn": "地球围绕太阳运行。",
+        "level": 2,
+        "audioFile": "ex_5849218d60.mp3"
+      },
+      {
+        "en": "From space, the Earth looks like a beautiful blue ball.",
+        "cn": "从太空看，地球像一个美丽的蓝色球体。",
+        "level": 3,
+        "audioFile": "ex_28b54a0c56.mp3"
+      }
+    ],
+    "orbit": [
+      {
+        "en": "The moon is in orbit.",
+        "cn": "月球在轨道上。",
+        "level": 1,
+        "audioFile": "ex_688a3af38d.mp3"
+      },
+      {
+        "en": "The spacecraft entered the moon's orbit.",
+        "cn": "航天器进入了月球轨道。",
+        "level": 2,
+        "audioFile": "ex_4ea6111998.mp3"
+      },
+      {
+        "en": "The satellite stays in orbit while it circles the Earth.",
+        "cn": "卫星在绕地球运行时保持在轨道上。",
+        "level": 3,
+        "audioFile": "ex_3d39500c3d.mp3"
+      }
+    ],
+    "gravity": [
+      {
+        "en": "Gravity pulls things down.",
+        "cn": "引力把东西往下拉。",
+        "level": 1,
+        "audioFile": "ex_74ce0cd48d.mp3"
+      },
+      {
+        "en": "The moon has less gravity than the Earth.",
+        "cn": "月球的引力比地球小。",
+        "level": 2,
+        "audioFile": "ex_97f97ab79d.mp3"
+      },
+      {
+        "en": "Because of low gravity, astronauts can jump very high on the moon.",
+        "cn": "由于引力小，宇航员在月球上能跳得很高。",
+        "level": 3,
+        "audioFile": "ex_0c8625ebde.mp3"
+      }
+    ],
+    "rocket": [
+      {
+        "en": "The rocket is tall.",
+        "cn": "火箭很高。",
+        "level": 1,
+        "audioFile": "ex_247520d4b0.mp3"
+      },
+      {
+        "en": "The rocket flew into the sky.",
+        "cn": "火箭飞向天空。",
+        "level": 2,
+        "audioFile": "ex_ce9b0def81.mp3"
+      },
+      {
+        "en": "A powerful rocket is needed to carry a spacecraft into space.",
+        "cn": "需要强大的火箭才能把航天器送入太空。",
+        "level": 3,
+        "audioFile": "ex_dd58ac8902.mp3"
+      }
+    ],
+    "astronaut": [
+      {
+        "en": "The astronaut is brave.",
+        "cn": "宇航员很勇敢。",
+        "level": 1,
+        "audioFile": "ex_6e7e800e80.mp3"
+      },
+      {
+        "en": "The astronaut walked on the moon.",
+        "cn": "宇航员在月球上行走。",
+        "level": 2,
+        "audioFile": "ex_119fa3501d.mp3"
+      },
+      {
+        "en": "Astronauts train for years before they fly into space.",
+        "cn": "宇航员要训练多年才能飞入太空。",
+        "level": 3,
+        "audioFile": "ex_480da5aef1.mp3"
+      }
+    ],
+    "spacecraft": [
+      {
+        "en": "The spacecraft is fast.",
+        "cn": "航天器很快。",
+        "level": 1,
+        "audioFile": "ex_8810ad4980.mp3"
+      },
+      {
+        "en": "The spacecraft landed on the moon.",
+        "cn": "航天器在月球上着陆。",
+        "level": 2,
+        "audioFile": "ex_3d02d6f940.mp3"
+      },
+      {
+        "en": "The spacecraft sent back amazing pictures of the moon's surface.",
+        "cn": "航天器传回了月球表面的惊人照片。",
+        "level": 3,
+        "audioFile": "ex_feb39bbaa9.mp3"
+      }
+    ],
+    "surface": [
+      {
+        "en": "The surface is cold.",
+        "cn": "表面很冷。",
+        "level": 1,
+        "audioFile": "ex_710c106f7e.mp3"
+      },
+      {
+        "en": "The moon's surface is covered with dust.",
+        "cn": "月球表面覆盖着尘土。",
+        "level": 2,
+        "audioFile": "ex_f593452409.mp3"
+      },
+      {
+        "en": "There are many craters on the rocky surface of the moon.",
+        "cn": "月球岩石表面有许多陨石坑。",
+        "level": 3,
+        "audioFile": "ex_f2a71a9436.mp3"
+      }
+    ],
+    "crater": [
+      {
+        "en": "There is a big crater.",
+        "cn": "有一个大坑。",
+        "level": 1,
+        "audioFile": "ex_cf1c0e80eb.mp3"
+      },
+      {
+        "en": "The moon has many craters.",
+        "cn": "月球上有许多陨石坑。",
+        "level": 2,
+        "audioFile": "ex_505b8d42c9.mp3"
+      },
+      {
+        "en": "Each crater was made by a rock crashing into the moon.",
+        "cn": "每个陨石坑都是岩石撞击月球形成的。",
+        "level": 3,
+        "audioFile": "ex_89138df8df.mp3"
+      }
+    ],
+    "dark side": [
+      {
+        "en": "We can't see the dark side.",
+        "cn": "我们看不到月球背面。",
+        "level": 1,
+        "audioFile": "ex_e093d649f4.mp3"
+      },
+      {
+        "en": "The dark side of the moon always faces away from us.",
+        "cn": "月球背面总是背对着我们。",
+        "level": 2,
+        "audioFile": "ex_725032ddc2.mp3"
+      },
+      {
+        "en": "China's spacecraft was the first to land on the dark side of the moon.",
+        "cn": "中国的航天器是首个登陆月球背面的。",
+        "level": 3,
+        "audioFile": "ex_411da40708.mp3"
+      }
+    ],
+    "launch": [
+      {
+        "en": "They launch the rocket.",
+        "cn": "他们发射火箭。",
+        "level": 1,
+        "audioFile": "ex_b3babb5265.mp3"
+      },
+      {
+        "en": "The rocket was launched at night.",
+        "cn": "火箭在夜里发射。",
+        "level": 2,
+        "audioFile": "ex_3eee1b6a5b.mp3"
+      },
+      {
+        "en": "Thousands of people watched the launch of the moon mission.",
+        "cn": "成千上万的人观看了登月任务的发射。",
+        "level": 3,
+        "audioFile": "ex_a98bba98d1.mp3"
+      }
+    ],
+    "explore": [
+      {
+        "en": "Let's explore the cave.",
+        "cn": "我们来探索这个洞穴。",
+        "level": 1,
+        "audioFile": "ex_47b04c1703.mp3"
+      },
+      {
+        "en": "Scientists explore the moon with robots.",
+        "cn": "科学家用机器人探索月球。",
+        "level": 2,
+        "audioFile": "ex_e7898dd90f.mp3"
+      },
+      {
+        "en": "People have always dreamed of exploring distant planets.",
+        "cn": "人类一直梦想着探索遥远的行星。",
+        "level": 3,
+        "audioFile": "ex_f3cba53674.mp3"
+      }
+    ],
+    "mission": [
+      {
+        "en": "The mission was a success.",
+        "cn": "任务成功了。",
+        "level": 1,
+        "audioFile": "ex_def2ca9392.mp3"
+      },
+      {
+        "en": "The space mission lasted many days.",
+        "cn": "这次太空任务持续了很多天。",
+        "level": 2,
+        "audioFile": "ex_4d8477c812.mp3"
+      },
+      {
+        "en": "The mission's goal was to bring moon rocks back to Earth.",
+        "cn": "这次任务的目标是把月球岩石带回地球。",
+        "level": 3,
+        "audioFile": "ex_f28d67edd9.mp3"
+      }
+    ],
+    "Chang'e": [
+      {
+        "en": "Chang'e is a moon probe.",
+        "cn": "嫦娥是一个月球探测器。",
+        "level": 1,
+        "audioFile": "ex_a1b17f28ef.mp3"
+      },
+      {
+        "en": "Chang'e landed safely on the moon.",
+        "cn": "嫦娥安全地降落在月球上。",
+        "level": 2,
+        "audioFile": "ex_4a3f2fee2c.mp3"
+      },
+      {
+        "en": "The Chang'e probe brought moon soil back to China.",
+        "cn": "嫦娥探测器把月壤带回了中国。",
+        "level": 3,
+        "audioFile": "ex_37b4c5fb16.mp3"
+      }
+    ],
+    "green": [
+      {
+        "en": "I like green.",
+        "cn": "我喜欢绿色。",
+        "level": 1,
+        "audioFile": "ex_319fcd7f73.mp3"
+      },
+      {
+        "en": "We should live a green life.",
+        "cn": "我们应该过环保的生活。",
+        "level": 2,
+        "audioFile": "ex_bd817e2426.mp3"
+      },
+      {
+        "en": "Going green means protecting the environment in our daily life.",
+        "cn": "践行环保意味着在日常生活中保护环境。",
+        "level": 3,
+        "audioFile": "ex_47900a70b6.mp3"
+      }
+    ],
+    "environment": [
+      {
+        "en": "Protect the environment.",
+        "cn": "保护环境。",
+        "level": 1,
+        "audioFile": "ex_1e138d750b.mp3"
+      },
+      {
+        "en": "A clean environment makes us healthy.",
+        "cn": "干净的环境使我们健康。",
+        "level": 2,
+        "audioFile": "ex_6191c4ca68.mp3"
+      },
+      {
+        "en": "Everyone has a duty to keep the environment clean and safe.",
+        "cn": "每个人都有责任让环境保持洁净与安全。",
+        "level": 3,
+        "audioFile": "ex_9ab9ea2632.mp3"
+      }
+    ],
+    "pollution": [
+      {
+        "en": "Pollution is bad.",
+        "cn": "污染是有害的。",
+        "level": 1,
+        "audioFile": "ex_5aab6aa48c.mp3"
+      },
+      {
+        "en": "Cars cause air pollution.",
+        "cn": "汽车造成空气污染。",
+        "level": 2,
+        "audioFile": "ex_fbf7dba002.mp3"
+      },
+      {
+        "en": "We can reduce pollution by using buses and bikes more often.",
+        "cn": "我们可以多乘公交、多骑车来减少污染。",
+        "level": 3,
+        "audioFile": "ex_57701a5f21.mp3"
+      }
+    ],
+    "climate": [
+      {
+        "en": "The climate is warm here.",
+        "cn": "这里气候温暖。",
+        "level": 1,
+        "audioFile": "ex_647bf2fd94.mp3"
+      },
+      {
+        "en": "Climate change worries scientists.",
+        "cn": "气候变化让科学家担忧。",
+        "level": 2,
+        "audioFile": "ex_2d903cbd94.mp3"
+      },
+      {
+        "en": "Cutting carbon helps slow down dangerous climate change.",
+        "cn": "减少碳排放有助于减缓危险的气候变化。",
+        "level": 3,
+        "audioFile": "ex_0c7a9c4b3f.mp3"
+      }
+    ],
+    "warming": [
+      {
+        "en": "Global warming is real.",
+        "cn": "全球变暖是真实存在的。",
+        "level": 1,
+        "audioFile": "ex_7f7b4b4d62.mp3"
+      },
+      {
+        "en": "Global warming melts the ice.",
+        "cn": "全球变暖使冰川融化。",
+        "level": 2,
+        "audioFile": "ex_907b42dde4.mp3"
+      },
+      {
+        "en": "Global warming is caused mainly by burning too much coal and oil.",
+        "cn": "全球变暖主要是由燃烧过多的煤和石油造成的。",
+        "level": 3,
+        "audioFile": "ex_4a7a279a01.mp3"
+      }
+    ],
+    "recycle": [
+      {
+        "en": "We recycle paper.",
+        "cn": "我们回收纸张。",
+        "level": 1,
+        "audioFile": "ex_a779efc66e.mp3"
+      },
+      {
+        "en": "Please recycle your bottles.",
+        "cn": "请回收你的瓶子。",
+        "level": 2,
+        "audioFile": "ex_70dd7a2e0b.mp3"
+      },
+      {
+        "en": "Recycling waste saves energy and protects natural resources.",
+        "cn": "回收废物节约能源并保护自然资源。",
+        "level": 3,
+        "audioFile": "ex_e9ed9ed6a3.mp3"
+      }
+    ],
+    "reuse": [
+      {
+        "en": "Reuse the bag.",
+        "cn": "重复使用这个袋子。",
+        "level": 1,
+        "audioFile": "ex_208bdb4266.mp3"
+      },
+      {
+        "en": "We can reuse old bottles for water.",
+        "cn": "我们可以重复使用旧瓶子装水。",
+        "level": 2,
+        "audioFile": "ex_73c0b3826e.mp3"
+      },
+      {
+        "en": "Reusing things instead of throwing them away cuts down on rubbish.",
+        "cn": "重复使用物品而非丢弃可以减少垃圾。",
+        "level": 3,
+        "audioFile": "ex_2581b72591.mp3"
+      }
+    ],
+    "reduce": [
+      {
+        "en": "Reduce the waste.",
+        "cn": "减少浪费。",
+        "level": 1,
+        "audioFile": "ex_cc85216c2c.mp3"
+      },
+      {
+        "en": "We should reduce the use of plastic.",
+        "cn": "我们应该减少塑料的使用。",
+        "level": 2,
+        "audioFile": "ex_9e7fc5ccaf.mp3"
+      },
+      {
+        "en": "Reduce, reuse and recycle are the three keys to a green life.",
+        "cn": "减少、重复使用和回收是环保生活的三大要点。",
+        "level": 3,
+        "audioFile": "ex_9a8a6f4622.mp3"
+      }
+    ],
+    "plastic": [
+      {
+        "en": "This bag is plastic.",
+        "cn": "这个袋子是塑料的。",
+        "level": 1,
+        "audioFile": "ex_5e51712482.mp3"
+      },
+      {
+        "en": "Plastic harms sea animals.",
+        "cn": "塑料伤害海洋动物。",
+        "level": 2,
+        "audioFile": "ex_f55b7e36f8.mp3"
+      },
+      {
+        "en": "We should say no to plastic bags and carry cloth ones instead.",
+        "cn": "我们应该拒绝塑料袋，改用布袋。",
+        "level": 3,
+        "audioFile": "ex_63c55d28fe.mp3"
+      }
+    ],
+    "rubbish": [
+      {
+        "en": "Pick up the rubbish.",
+        "cn": "把垃圾捡起来。",
+        "level": 1,
+        "audioFile": "ex_91e8d71a1f.mp3"
+      },
+      {
+        "en": "Don't throw rubbish on the ground.",
+        "cn": "别把垃圾扔在地上。",
+        "level": 2,
+        "audioFile": "ex_f2c35ea5c8.mp3"
+      },
+      {
+        "en": "Sorting rubbish makes it easier to recycle and reuse.",
+        "cn": "垃圾分类让回收和再利用更容易。",
+        "level": 3,
+        "audioFile": "ex_e77eb08b11.mp3"
+      }
+    ],
+    "sort": [
+      {
+        "en": "Sort the books.",
+        "cn": "把书分类。",
+        "level": 1,
+        "audioFile": "ex_e4632c2868.mp3"
+      },
+      {
+        "en": "We sort rubbish into different bins.",
+        "cn": "我们把垃圾分到不同的桶里。",
+        "level": 2,
+        "audioFile": "ex_7690da5964.mp3"
+      },
+      {
+        "en": "Learning to sort waste correctly is good for the environment.",
+        "cn": "学会正确地给垃圾分类有益于环境。",
+        "level": 3,
+        "audioFile": "ex_c551fdb118.mp3"
+      }
+    ],
+    "carbon": [
+      {
+        "en": "Cars produce carbon.",
+        "cn": "汽车产生碳。",
+        "level": 1,
+        "audioFile": "ex_65349555dd.mp3"
+      },
+      {
+        "en": "We should cut carbon to protect the air.",
+        "cn": "我们应该减碳以保护空气。",
+        "level": 2,
+        "audioFile": "ex_1ddb1c5836.mp3"
+      },
+      {
+        "en": "Using clean energy helps lower the amount of carbon we produce.",
+        "cn": "使用清洁能源有助于降低我们产生的碳量。",
+        "level": 3,
+        "audioFile": "ex_21094d3bbf.mp3"
+      }
+    ],
+    "footprint": [
+      {
+        "en": "Leave no footprint.",
+        "cn": "不留足迹。",
+        "level": 1,
+        "audioFile": "ex_5bbe2396f7.mp3"
+      },
+      {
+        "en": "We can lower our carbon footprint.",
+        "cn": "我们可以降低碳足迹。",
+        "level": 2,
+        "audioFile": "ex_0bc203c01d.mp3"
+      },
+      {
+        "en": "Walking instead of driving reduces your carbon footprint.",
+        "cn": "步行代替开车能减少你的碳足迹。",
+        "level": 3,
+        "audioFile": "ex_43eb92a640.mp3"
+      }
+    ],
+    "renewable": [
+      {
+        "en": "Wind is renewable.",
+        "cn": "风能是可再生的。",
+        "level": 1,
+        "audioFile": "ex_71a211b12f.mp3"
+      },
+      {
+        "en": "Solar power is renewable energy.",
+        "cn": "太阳能是可再生能源。",
+        "level": 2,
+        "audioFile": "ex_8e0dd8b9f6.mp3"
+      },
+      {
+        "en": "Renewable energy from the sun and wind will never run out.",
+        "cn": "来自太阳和风的可再生能源永不枯竭。",
+        "level": 3,
+        "audioFile": "ex_eaaefa9840.mp3"
+      }
+    ],
+    "responsibility": [
+      {
+        "en": "It is my responsibility.",
+        "cn": "这是我的责任。",
+        "level": 1,
+        "audioFile": "ex_9fc88ce22e.mp3"
+      },
+      {
+        "en": "Protecting nature is everyone's responsibility.",
+        "cn": "保护自然是每个人的责任。",
+        "level": 2,
+        "audioFile": "ex_de08c4bb81.mp3"
+      },
+      {
+        "en": "We all share the responsibility of building a greener world.",
+        "cn": "我们都肩负着建设更绿色世界的责任。",
+        "level": 3,
+        "audioFile": "ex_fcb308aa4b.mp3"
+      }
+    ]
+  }
+}

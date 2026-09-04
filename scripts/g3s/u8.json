@@ -1,0 +1,29 @@
+{
+  "id": "u8",
+  "title": "Unit 8 It's Time to Exercise!",
+  "module": "",
+  "words": [
+    { "word": "exercise", "phonetic": "/ˈeksəsaɪz/", "meaning": "[n./v.] 锻炼", "example": "Let's exercise now." },
+    { "word": "time", "phonetic": "/taɪm/", "meaning": "[n.] 时间", "example": "It's time to run." },
+    { "word": "run", "phonetic": "/rʌn/", "meaning": "[v.] 跑", "example": "I run in the park." },
+    { "word": "jump", "phonetic": "/dʒʌmp/", "meaning": "[v.] 跳", "example": "Can you jump high?" },
+    { "word": "swim", "phonetic": "/swɪm/", "meaning": "[v.] 游泳", "example": "We swim in summer." },
+    { "word": "play", "phonetic": "/pleɪ/", "meaning": "[v.] 玩；做（运动）", "example": "Let's play ball." },
+    { "word": "sport", "phonetic": "/spɔːt/", "meaning": "[n.] 运动", "example": "My sport is running." },
+    { "word": "healthy", "phonetic": "/ˈhelθi/", "meaning": "[adj.] 健康的", "example": "Exercise keeps us healthy." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Time to exercise",
+      "en": "Coach: It's time to exercise, everyone!\nNina: What can we do today?\nCoach: We can run, jump and play ball.\nNina: Can we swim too?\nCoach: Yes, on Friday. Sport makes us healthy.\nNina: I love exercise. Let's start!",
+      "cn": "教练：大家，该锻炼啦！\n妮娜：我们今天能做什么？\n教练：我们可以跑步、跳跃和打球。\n妮娜：我们也能游泳吗？\n教练：能，周五。运动让我们健康。\n妮娜：我爱锻炼。我们开始吧！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Let's be healthy",
+      "en": "Exercise is good for us every day.\nIn the morning, I run and jump.\nIn summer, I like to swim.\nAfter school, my friends and I play ball.\nWe do sports and stay healthy and happy!",
+      "cn": "锻炼每天都对我们有好处。\n早上，我跑步和跳跃。\n夏天，我喜欢游泳。\n放学后，我和朋友们打球。\n我们做运动，保持健康和快乐！"
+    }
+  ]
+}

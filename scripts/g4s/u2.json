@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 My Family",
+  "words": [
+    { "word": "family", "phonetic": "/ˈfæməli/", "meaning": "[n.] 家庭", "example": "I love my family." },
+    { "word": "father", "phonetic": "/ˈfɑːðə(r)/", "meaning": "[n.] 父亲", "example": "My father is tall." },
+    { "word": "mother", "phonetic": "/ˈmʌðə(r)/", "meaning": "[n.] 母亲", "example": "My mother is kind." },
+    { "word": "brother", "phonetic": "/ˈbrʌðə(r)/", "meaning": "[n.] 兄弟", "example": "I have one brother." },
+    { "word": "sister", "phonetic": "/ˈsɪstə(r)/", "meaning": "[n.] 姐妹", "example": "My sister is six." },
+    { "word": "grandpa", "phonetic": "/ˈɡrænpɑː/", "meaning": "[n.] 爷爷", "example": "Grandpa likes tea." },
+    { "word": "grandma", "phonetic": "/ˈɡrænmɑː/", "meaning": "[n.] 奶奶", "example": "Grandma cooks well." },
+    { "word": "love", "phonetic": "/lʌv/", "meaning": "[v./n.] 爱", "example": "I love my mum." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Meet my family",
+      "en": "Anna: Look, Ben. This is my family photo.\nBen: Who is the man with glasses?\nAnna: He's my father. The kind lady is my mother.\nBen: And the little boy?\nAnna: That's my brother. Grandpa and Grandma live with us, too.",
+      "cn": "安娜：看，本。这是我的家庭照。\n本：戴眼镜的男人是谁？\n安娜：他是我父亲，旁边温柔的女士是我母亲。\n本：那小男孩呢？\n安娜：是我弟弟。爷爷奶奶也和我们住在一起。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A loving family",
+      "en": "There are six people in my family. My father is a doctor. My mother is a teacher. I have one brother and one sister. Grandpa and Grandma live with us, too. After dinner, we sit together and talk. We love each other very much. A loving family is the best gift!",
+      "cn": "我家有六口人。爸爸是医生。妈妈是老师。我有一个弟弟和一个妹妹。爷爷奶奶也和我们住在一起。晚饭后我们一起聊天。我们彼此非常相爱。有爱的家庭就是最棒的礼物！"
+    }
+  ]
+}

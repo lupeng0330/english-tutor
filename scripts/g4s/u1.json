@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Come on In!",
+  "words": [
+    { "word": "welcome", "phonetic": "/ˈwelkəm/", "meaning": "[v./adj.] 欢迎", "example": "Welcome to my home!" },
+    { "word": "come in", "phonetic": "/kʌm ɪn/", "meaning": "[phr.] 进来", "example": "Please come in." },
+    { "word": "house", "phonetic": "/haʊs/", "meaning": "[n.] 房子", "example": "This is my house." },
+    { "word": "living room", "phonetic": "/ˈlɪvɪŋ ruːm/", "meaning": "[n.] 客厅", "example": "We watch TV in the living room." },
+    { "word": "kitchen", "phonetic": "/ˈkɪtʃɪn/", "meaning": "[n.] 厨房", "example": "Mum is in the kitchen." },
+    { "word": "bedroom", "phonetic": "/ˈbedruːm/", "meaning": "[n.] 卧室", "example": "My bedroom is small." },
+    { "word": "sofa", "phonetic": "/ˈsəʊfə/", "meaning": "[n.] 沙发", "example": "Sit on the sofa." },
+    { "word": "beautiful", "phonetic": "/ˈbjuːtɪfl/", "meaning": "[adj.] 漂亮的", "example": "What a beautiful room!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Welcome to my home",
+      "en": "Anna: Hi, Ben! Welcome to my home.\nBen: Wow, what a beautiful house!\nAnna: Come in, please. This is our living room.\nBen: It's so big! Is that the kitchen?\nAnna: Yes. Let me show you my bedroom upstairs.",
+      "cn": "安娜：嗨，本！欢迎来我家。\n本：哇，多漂亮的房子！\n安娜：请进。这是我们的客厅。\n本：好大啊！那是厨房吗？\n安娜：是的。我带你看看楼上的卧室。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My new home",
+      "en": "I have a new home. It is small but very beautiful. There is a soft sofa in the living room. The kitchen is white and clean. My bedroom has a small bed and a desk. I like to read books here. Welcome to my home — come in and have a look!",
+      "cn": "我有一个新家。它不大但很漂亮。客厅里有一张柔软的沙发。厨房又白又干净。我的卧室里有一张小床和一张书桌。我喜欢在这里看书。欢迎来我家——快进来看看吧！"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Letters in Our Life",
+  "module": "",
+  "words": [
+    { "word": "letter", "phonetic": "/ˈletə(r)/", "meaning": "[n.] 字母；信", "example": "A is the first letter." },
+    { "word": "big letter", "phonetic": "/bɪɡ ˈletə(r)/", "meaning": "[n.] 大写字母", "example": "A big letter starts a name." },
+    { "word": "small letter", "phonetic": "/smɔːl ˈletə(r)/", "meaning": "[n.] 小写字母", "example": "Write a small letter here." },
+    { "word": "alphabet", "phonetic": "/ˈælfəbet/", "meaning": "[n.] 字母表", "example": "The alphabet has 26 letters." },
+    { "word": "sign", "phonetic": "/saɪn/", "meaning": "[n.] 标志；招牌", "example": "I can read the bus sign." },
+    { "word": "bus", "phonetic": "/bʌs/", "meaning": "[n.] 公共汽车", "example": "The bus is at the stop." },
+    { "word": "name", "phonetic": "/neɪm/", "meaning": "[n.] 名字", "example": "My name is Anna." },
+    { "word": "life", "phonetic": "/laɪf/", "meaning": "[n.] 生活", "example": "Letters are in our daily life." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Letters around us",
+      "en": "Anna: Look! There are letters on the sign.\nBen: Yes! I can see a big letter B and a small letter s.\nAnna: This is the bus sign. B-U-S, bus!\nBen: Letters are everywhere in our life.\nAnna: Let's find more letters on the way to school.",
+      "cn": "安娜：看！招牌上有字母。\n本：是的！我看到一个大写字母 B 和一个小写字母 s。\n安娜：这是公交车标志。B-U-S，bus！\n本：字母在我们生活中无处不在。\n安娜：我们去上学的路上再找找更多字母吧。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "The ABC song",
+      "en": "We have 26 letters in the alphabet.\nSome letters are big, and some are small.\nWe see them on signs, on a bus, and in books.\nWe use letters to write our names.\nLetters help us read the world. How nice!",
+      "cn": "字母表里有 26 个字母。\n有些字母是大写的，有些是小写的。\n我们在招牌上、公交车上、书里看到它们。\n我们用字母写自己的名字。\n字母帮助我们读懂世界。多棒呀！"
+    }
+  ]
+}

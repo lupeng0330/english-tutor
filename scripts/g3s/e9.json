@@ -1,0 +1,32 @@
+{
+  "music": [
+    { "en": "I like music.", "cn": "我喜欢音乐。", "level": 1 },
+    { "en": "Music makes me happy.", "cn": "音乐让我开心。", "level": 2 },
+    { "en": "We listen to music at the music show.", "cn": "我们在音乐表演上听音乐。", "level": 3 }
+  ],
+  "show": [
+    { "en": "It is a show.", "cn": "这是一场表演。", "level": 1 },
+    { "en": "We will have a music show.", "cn": "我们要举办一场音乐表演。", "level": 2 },
+    { "en": "The students put on a wonderful show for parents.", "cn": "学生们为家长们献上一场精彩的表演。", "level": 3 }
+  ],
+  "sing": [
+    { "en": "I can sing.", "cn": "我会唱歌。", "level": 1 },
+    { "en": "Let's sing the ABC song.", "cn": "我们一起唱字母歌吧。", "level": 2 },
+    { "en": "She likes to sing English songs on the stage.", "cn": "她喜欢在舞台上唱英语歌。", "level": 3 }
+  ],
+  "song": [
+    { "en": "This is a song.", "cn": "这是一首歌。", "level": 1 },
+    { "en": "I know many English songs.", "cn": "我会很多英语歌。", "level": 2 },
+    { "en": "My favourite song is about a happy little bird.", "cn": "我最喜欢的歌是关于一只快乐的小鸟。", "level": 3 }
+  ],
+  "dance": [
+    { "en": "Let's dance!", "cn": "我们跳舞吧！", "level": 1 },
+    { "en": "She can dance very well.", "cn": "她跳舞跳得很好。", "level": 2 },
+    { "en": "The girls dance to the music on the stage.", "cn": "女孩们在舞台上随着音乐跳舞。", "level": 3 }
+  ],
+  "stage": [
+    { "en": "Look at the stage.", "cn": "看舞台。", "level": 1 },
+    { "en": "Many children stand on the stage.", "cn": "许多孩子站在舞台上。", "level": 2 },
+    { "en": "He sings a beautiful song on the big stage.", "cn": "他在大舞台上唱了一首美丽的歌。", "level": 3 }
+  ]
+}

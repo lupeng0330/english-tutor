@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 Welcome to Junior",
+  "words": [
+    { "word": "junior", "phonetic": "/ˈdʒuːniə(r)/", "meaning": "[adj./n.] 初级的；初中", "example": "Junior high school." },
+    { "word": "graduate", "phonetic": "/ˈɡrædʒueɪt/", "meaning": "[v.] 毕业", "example": "We will graduate." },
+    { "word": "primary", "phonetic": "/ˈpraɪməri/", "meaning": "[adj.] 小学的", "example": "Primary school." },
+    { "word": "memory", "phonetic": "/ˈmeməri/", "meaning": "[n.] 回忆", "example": "Sweet memories." },
+    { "word": "future", "phonetic": "/ˈfjuːtʃə(r)/", "meaning": "[n.] 未来", "example": "Bright future." },
+    { "word": "challenge", "phonetic": "/ˈtʃælɪndʒ/", "meaning": "[n.] 挑战", "example": "A new challenge." },
+    { "word": "ready", "phonetic": "/ˈredi/", "meaning": "[adj.] 准备好的", "example": "I am ready." },
+    { "word": "confident", "phonetic": "/ˈkɒnfɪdənt/", "meaning": "[adj.] 自信的", "example": "Be confident!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Goodbye, primary school",
+      "en": "Anna: Ben, soon we'll graduate from primary school.\nBen: I know. Six years pass so fast. So many memories!\nAnna: Junior high will bring new challenges.\nBen: But I feel confident — we have great teachers and friends.\nAnna: Yes, the future looks bright!",
+      "cn": "安娜：本，我们快小学毕业了。\n本：是啊，六年过得真快，那么多回忆！\n安娜：初中会有新挑战。\n本：但我很自信——我们有好老师和好朋友。\n安娜：是的，未来很光明！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Ready for junior",
+      "en": "Six years in primary school will soon end. We learned to read English, do Maths, and care for each other. Junior high will bring more subjects and harder tests. But we are ready. With good study habits and a strong heart, every challenge is a chance to grow. Goodbye primary, hello junior — welcome, future!",
+      "cn": "小学六年即将结束。我们学会了读英语、做数学、彼此关心。初中将带来更多科目和更难的考试。但我们准备好了。带着良好的学习习惯和坚强的心，每个挑战都是成长的机会。再见小学，你好初中——欢迎，未来！"
+    }
+  ]
+}

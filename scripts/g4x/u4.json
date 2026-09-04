@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 Numbers and Prices",
+  "words": [
+    { "word": "number", "phonetic": "/ˈnʌmbə(r)/", "meaning": "[n.] 数字", "example": "Read the number." },
+    { "word": "twenty", "phonetic": "/ˈtwenti/", "meaning": "[num.] 二十", "example": "I have twenty cards." },
+    { "word": "thirty", "phonetic": "/ˈθɜːti/", "meaning": "[num.] 三十", "example": "Thirty boys are here." },
+    { "word": "fifty", "phonetic": "/ˈfɪfti/", "meaning": "[num.] 五十", "example": "Fifty yuan, please." },
+    { "word": "hundred", "phonetic": "/ˈhʌndrəd/", "meaning": "[num.] 一百", "example": "One hundred years." },
+    { "word": "how much", "phonetic": "/haʊ mʌtʃ/", "meaning": "[phr.] 多少（钱）", "example": "How much is it?" },
+    { "word": "count", "phonetic": "/kaʊnt/", "meaning": "[v.] 数；计算", "example": "Count from one to ten." },
+    { "word": "total", "phonetic": "/ˈtəʊtl/", "meaning": "[n.] 总数", "example": "What's the total?" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "How much in total?",
+      "en": "Anna: I want to buy a book and a pen.\nShopkeeper: The book is thirty yuan, the pen is twenty yuan.\nAnna: How much in total?\nShopkeeper: Fifty yuan, please.\nAnna: Here you are. Thank you.",
+      "cn": "安娜：我想买一本书和一支笔。\n店主：书 30 元，笔 20 元。\n安娜：一共多少钱？\n店主：50 元。\n安娜：给您。谢谢。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Count and pay",
+      "en": "Numbers help us in many ways. We count money, count days, and count the steps we walk. At the store, we add up the prices to know the total. Twenty plus thirty makes fifty. A hundred yuan can buy quite a few things. Learn the numbers, and you can pay by yourself!",
+      "cn": "数字在很多方面帮助我们。我们数钱、数日子、数走过的步数。在商店里，我们把价格加起来算出总数。20 加 30 等于 50。一百块钱能买不少东西。学会数字，你就能自己付钱了！"
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_DC01",
+    "title": "First Day at School",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hi! I'm new here. My ___1___ is David."
+      },
+      {
+        "speaker": "B",
+        "text": "Nice to meet you, David. I'm Amy. Where are you ___2___?"
+      },
+      {
+        "speaker": "A",
+        "text": "I'm from Shanghai. My family ___3___ here last month."
+      },
+      {
+        "speaker": "B",
+        "text": "Welcome to Guangzhou! Do you like it ___4___?"
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, I do. People here are very ___5___."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "name",
+        "options": [
+          "name",
+          "friend",
+          "school",
+          "class"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "from",
+        "options": [
+          "from",
+          "come",
+          "going",
+          "live"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "moved",
+        "options": [
+          "moved",
+          "came",
+          "went",
+          "arrived"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "here",
+        "options": [
+          "here",
+          "there",
+          "well",
+          "now"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "friendly",
+        "options": [
+          "friendly",
+          "kind",
+          "nice",
+          "good"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_DC02",
+    "title": "Daily Life",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you usually get to ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "I ___2___ the bus. It takes about twenty minutes."
+      },
+      {
+        "speaker": "A",
+        "text": "That's not bad. I ___3___ to school every day."
+      },
+      {
+        "speaker": "B",
+        "text": "Really? How long does it ___4___ you?"
+      },
+      {
+        "speaker": "A",
+        "text": "About fifteen ___5___. It's good exercise."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "school",
+        "options": [
+          "school",
+          "home",
+          "work",
+          "there"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "take",
+        "options": [
+          "take",
+          "ride",
+          "drive",
+          "by"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "walk",
+        "options": [
+          "walk",
+          "run",
+          "go",
+          "ride"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "take",
+        "options": [
+          "take",
+          "spend",
+          "cost",
+          "need"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "minutes",
+        "options": [
+          "minutes",
+          "hours",
+          "seconds",
+          "days"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_DC01",
+    "title": "At the Restaurant",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready to ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes. I'd ___2___ some noodles, please."
+      },
+      {
+        "speaker": "A",
+        "text": "Anything to ___3___?"
+      },
+      {
+        "speaker": "B",
+        "text": "A glass of orange juice, please. How ___4___ is it?"
+      },
+      {
+        "speaker": "A",
+        "text": "That'll be 25 yuan in ___5___."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "order",
+        "options": [
+          "order",
+          "eat",
+          "have",
+          "drink"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "like",
+        "options": [
+          "like",
+          "want",
+          "have",
+          "order"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "drink",
+        "options": [
+          "drink",
+          "eat",
+          "have",
+          "take"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "much",
+        "options": [
+          "much",
+          "many",
+          "about",
+          "long"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "total",
+        "options": [
+          "total",
+          "all",
+          "together",
+          "cash"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_DC02",
+    "title": "Weekend Activities",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What ___1___ you do last weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "I ___2___ to a concert with my friends."
+      },
+      {
+        "speaker": "A",
+        "text": "That sounds ___3___! What kind of music?"
+      },
+      {
+        "speaker": "B",
+        "text": "Pop music. We danced and sang ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "I should ___5___ to concerts more often."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "did",
+        "options": [
+          "did",
+          "do",
+          "were",
+          "are"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "went",
+        "options": [
+          "went",
+          "go",
+          "goed",
+          "was"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "fun",
+        "options": [
+          "fun",
+          "great",
+          "nice",
+          "well"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "along",
+        "options": [
+          "along",
+          "together",
+          "too",
+          "also"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "go",
+        "options": [
+          "go",
+          "come",
+          "listen",
+          "join"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_DC01",
+    "title": "Making Plans",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you ___1___ your summer holiday?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not ___2___. I'm thinking about going to Yunnan."
+      },
+      {
+        "speaker": "A",
+        "text": "I've ___3___ there before. It's beautiful!"
+      },
+      {
+        "speaker": "B",
+        "text": "Can you give me some ___4___?"
+      },
+      {
+        "speaker": "A",
+        "text": "Sure. You should ___5___ Lijiang and Dali."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "planned",
+        "options": [
+          "planned",
+          "made",
+          "thought",
+          "decided"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "yet",
+        "options": [
+          "yet",
+          "already",
+          "still",
+          "either"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "been",
+        "options": [
+          "been",
+          "gone",
+          "went",
+          "came"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "advice",
+        "options": [
+          "advice",
+          "help",
+          "ideas",
+          "tips"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "visit",
+        "options": [
+          "visit",
+          "go",
+          "see",
+          "travel"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_DC01",
+    "title": "Health Advice",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "You don't look well. What's the ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a bad headache. I ___2___ I'm getting a cold."
+      },
+      {
+        "speaker": "A",
+        "text": "You should ___3___ plenty of water and get some rest."
+      },
+      {
+        "speaker": "B",
+        "text": "I've ___4___ taken some medicine."
+      },
+      {
+        "speaker": "A",
+        "text": "If you don't feel better, you had ___5___ see a doctor."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "matter",
+        "options": [
+          "matter",
+          "problem",
+          "wrong",
+          "ill"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "think",
+        "options": [
+          "think",
+          "feel",
+          "guess",
+          "know"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "drink",
+        "options": [
+          "drink",
+          "eat",
+          "take",
+          "have"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "already",
+        "options": [
+          "already",
+          "yet",
+          "just",
+          "ever"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "better",
+        "options": [
+          "better",
+          "should",
+          "must",
+          "need"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_DC01",
+    "title": "Future Plans",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you going to do after ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "I plan to go to a senior high school that has a strong science ___2___."
+      },
+      {
+        "speaker": "A",
+        "text": "Sounds like you have a clear ___3___."
+      },
+      {
+        "speaker": "B",
+        "text": "I want to become a scientist like Deng Jiaxian in the ___4___."
+      },
+      {
+        "speaker": "A",
+        "text": "That's a great dream! I'm ___5___ you can make it."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "graduation",
+        "options": [
+          "graduation",
+          "school",
+          "class",
+          "study"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "program",
+        "options": [
+          "program",
+          "class",
+          "team",
+          "group"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "goal",
+        "options": [
+          "goal",
+          "idea",
+          "plan",
+          "dream"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "future",
+        "options": [
+          "future",
+          "end",
+          "past",
+          "present"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "sure",
+        "options": [
+          "sure",
+          "certain",
+          "believe",
+          "think"
+        ]
+      }
+    ]
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_DC01",
+    "title": "Environmental Protection",
+    "dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you noticed how much the weather has ___1___?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's getting ___2___ every year. We must do something."
+      },
+      {
+        "speaker": "A",
+        "text": "I agree. We should reduce our ___3___ footprint."
+      },
+      {
+        "speaker": "B",
+        "text": "Starting from small things, like using ___4___ bags instead of plastic ones."
+      },
+      {
+        "speaker": "A",
+        "text": "And everyone can ___5___ a difference."
+      }
+    ],
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "changed",
+        "options": [
+          "changed",
+          "turned",
+          "become",
+          "got"
+        ]
+      },
+      {
+        "pos": 2,
+        "answer": "warmer",
+        "options": [
+          "warmer",
+          "colder",
+          "better",
+          "worse"
+        ]
+      },
+      {
+        "pos": 3,
+        "answer": "carbon",
+        "options": [
+          "carbon",
+          "water",
+          "air",
+          "earth"
+        ]
+      },
+      {
+        "pos": 4,
+        "answer": "reusable",
+        "options": [
+          "reusable",
+          "paper",
+          "cloth",
+          "shopping"
+        ]
+      },
+      {
+        "pos": 5,
+        "answer": "make",
+        "options": [
+          "make",
+          "do",
+          "take",
+          "have"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review Bright Future",
+  "words": [
+    { "word": "future", "phonetic": "/ˈfjuːtʃə(r)/", "meaning": "[n.] 未来", "example": "Bright future." },
+    { "word": "bright", "phonetic": "/braɪt/", "meaning": "[adj.] 明亮的；光明的", "example": "A bright sky." },
+    { "word": "goal", "phonetic": "/ɡəʊl/", "meaning": "[n.] 目标", "example": "Set a goal." },
+    { "word": "believe", "phonetic": "/bɪˈliːv/", "meaning": "[v.] 相信", "example": "Believe in yourself." },
+    { "word": "thank", "phonetic": "/θæŋk/", "meaning": "[v.] 感谢", "example": "Thank everyone." },
+    { "word": "goodbye", "phonetic": "/ˌɡʊdˈbaɪ/", "meaning": "[int.] 再见", "example": "Goodbye, friends." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Goodbye and hello",
+      "en": "Anna: Ben, six years are over. It's time to say goodbye.\nBen: Goodbye to primary, hello to junior!\nAnna: Let's set a goal: read 20 English books this summer.\nBen: I believe we can do it.\nAnna: Thank you, friends and teachers. The future is bright!",
+      "cn": "安娜：本，六年结束了，要说再见了。\n本：再见小学，你好初中！\n安娜：定个目标：暑假读 20 本英文书。\n本：我相信我们能做到。\n安娜：谢谢朋友和老师，未来一片光明！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A bright future",
+      "en": "Today we say goodbye to primary school. Six years gave us knowledge, courage and good friends. Believe in yourself — set goals, work hard, and treat people with kindness. Thank our parents, teachers and classmates for the love and support. A new chapter begins in junior high. The future is bright when we walk towards it with a smile.",
+      "cn": "今天我们告别小学。六年给了我们知识、勇气和好朋友。相信自己——立目标，努力，善待他人。感谢父母、老师和同学的关爱与支持。新的篇章在初中开启。带着微笑走向未来，未来必定光明！"
+    }
+  ]
+}

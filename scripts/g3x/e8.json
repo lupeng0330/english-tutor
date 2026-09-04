@@ -1,0 +1,42 @@
+{
+  "polite": [
+    { "en": "Be polite.", "cn": "有礼貌。", "level": 1 },
+    { "en": "She is a polite girl.", "cn": "她是个有礼貌的女孩。", "level": 2 },
+    { "en": "A polite child is loved by everyone.", "cn": "有礼貌的孩子人人喜爱。", "level": 3 }
+  ],
+  "please": [
+    { "en": "Please.", "cn": "请。", "level": 1 },
+    { "en": "Please open the door.", "cn": "请把门打开。", "level": 2 },
+    { "en": "Could you please pass me the salt?", "cn": "请你把盐递给我好吗？", "level": 3 }
+  ],
+  "thanks": [
+    { "en": "Thanks!", "cn": "谢谢！", "level": 1 },
+    { "en": "Thanks a lot, Ben.", "cn": "非常感谢，本。", "level": 2 },
+    { "en": "Many thanks for helping me with my homework.", "cn": "非常感谢你帮我做作业。", "level": 3 }
+  ],
+  "sorry": [
+    { "en": "Sorry!", "cn": "对不起！", "level": 1 },
+    { "en": "I'm sorry I'm late.", "cn": "对不起我迟到了。", "level": 2 },
+    { "en": "I'm sorry for breaking your pencil.", "cn": "对不起，我把你的铅笔弄断了。", "level": 3 }
+  ],
+  "excuse": [
+    { "en": "Excuse me.", "cn": "打扰一下。", "level": 1 },
+    { "en": "Excuse me, may I come in?", "cn": "打扰了，我可以进来吗？", "level": 2 },
+    { "en": "Excuse me, where is the school library?", "cn": "请问，学校图书馆在哪里？", "level": 3 }
+  ],
+  "greet": [
+    { "en": "Greet your friend.", "cn": "问候你的朋友。", "level": 1 },
+    { "en": "We greet our teacher every morning.", "cn": "我们每天早上向老师问好。", "level": 2 },
+    { "en": "It's nice to greet people with a warm smile.", "cn": "用温暖的微笑问候别人真好。", "level": 3 }
+  ],
+  "smile": [
+    { "en": "A big smile.", "cn": "一个大大的微笑。", "level": 1 },
+    { "en": "She gives me a smile.", "cn": "她给了我一个微笑。", "level": 2 },
+    { "en": "A friendly smile can make someone's day better.", "cn": "一个友好的微笑能让别人的一天更美好。", "level": 3 }
+  ],
+  "kind": [
+    { "en": "Be kind.", "cn": "要友善。", "level": 1 },
+    { "en": "He is kind to animals.", "cn": "他对动物很友善。", "level": 2 },
+    { "en": "Kind words and kind smiles cost nothing.", "cn": "友善的话语和微笑不花一分钱。", "level": 3 }
+  ]
+}

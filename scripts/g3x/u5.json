@@ -1,0 +1,28 @@
+{
+  "id": "u5",
+  "title": "Unit 5 Our Classroom, Our Call",
+  "words": [
+    { "word": "classroom", "phonetic": "/ˈklɑːsruːm/", "meaning": "[n.] 教室", "example": "Our classroom is big." },
+    { "word": "desk", "phonetic": "/desk/", "meaning": "[n.] 课桌", "example": "I sit at my desk." },
+    { "word": "chair", "phonetic": "/tʃeə(r)/", "meaning": "[n.] 椅子", "example": "This is my chair." },
+    { "word": "clean", "phonetic": "/kliːn/", "meaning": "[adj./v.] 干净的；打扫", "example": "Let's clean the room." },
+    { "word": "tidy", "phonetic": "/ˈtaɪdi/", "meaning": "[adj.] 整洁的", "example": "Keep your desk tidy." },
+    { "word": "poster", "phonetic": "/ˈpəʊstə(r)/", "meaning": "[n.] 海报", "example": "Look at this poster." },
+    { "word": "rule", "phonetic": "/ruːl/", "meaning": "[n.] 规则", "example": "We follow the class rules." },
+    { "word": "call", "phonetic": "/kɔːl/", "meaning": "[n./v.] 呼唤；号召", "example": "This is our class call!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Our classroom",
+      "en": "Ben: Look at our new classroom!\nAnna: Wow, it's so clean and tidy.\nBen: There is a big poster on the wall.\nAnna: It says, \"Be kind, be brave!\" That's our class call.\nBen: I love our classroom!",
+      "cn": "本：看我们的新教室！\n安娜：哇，又干净又整洁。\n本：墙上有一张大海报。\n安娜：上面写着\"善良、勇敢\"，那是我们班的口号。\n本：我喜欢我们的教室！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Our class rules",
+      "en": "Our classroom is small but warm. Each desk and chair has a name on it. We have three class rules: keep clean, keep tidy, and help each other. Our class call is \"One team, one dream!\" We say it loudly every morning. We love our class!",
+      "cn": "我们的教室不大但很温暖。每张课桌椅上都有名字。我们有三条班规：保持干净、保持整洁、互相帮助。我们的班级口号是\"一个团队，一个梦想！\"每天早上我们都大声喊出它。我们爱我们的班级！"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "talent": [
+    { "en": "Her talent.", "cn": "她的才能。", "level": 1 },
+    { "en": "She has a great talent.", "cn": "她有很棒的才能。", "level": 2 },
+    { "en": "Everyone has at least one hidden talent.", "cn": "每个人都至少有一项隐藏才能。", "level": 3 }
+  ],
+  "sing": [
+    { "en": "I sing.", "cn": "我唱歌。", "level": 1 },
+    { "en": "I can sing songs.", "cn": "我会唱歌。", "level": 2 },
+    { "en": "She can sing high notes very clearly.", "cn": "她能把高音唱得非常清亮。", "level": 3 }
+  ],
+  "dance": [
+    { "en": "I dance.", "cn": "我跳舞。", "level": 1 },
+    { "en": "She dances well.", "cn": "她跳得很好。", "level": 2 },
+    { "en": "He dances on the stage every Friday night.", "cn": "他每周五晚在舞台上跳舞。", "level": 3 }
+  ],
+  "draw": [
+    { "en": "I draw.", "cn": "我画画。", "level": 1 },
+    { "en": "I draw a cat.", "cn": "我画一只猫。", "level": 2 },
+    { "en": "He can draw a horse in less than a minute.", "cn": "他不到一分钟就能画出一匹马。", "level": 3 }
+  ],
+  "speak": [
+    { "en": "I speak.", "cn": "我说。", "level": 1 },
+    { "en": "I speak English.", "cn": "我说英语。", "level": 2 },
+    { "en": "My friend can speak three languages fluently.", "cn": "我朋友能流利说三种语言。", "level": 3 }
+  ],
+  "story": [
+    { "en": "A story.", "cn": "一个故事。", "level": 1 },
+    { "en": "Tell me a story.", "cn": "讲个故事。", "level": 2 },
+    { "en": "Grandma always tells the funniest bedtime stories.", "cn": "奶奶总能讲最有趣的睡前故事。", "level": 3 }
+  ],
+  "stage": [
+    { "en": "On the stage.", "cn": "在舞台上。", "level": 1 },
+    { "en": "She sings on the stage.", "cn": "她在舞台上唱歌。", "level": 2 },
+    { "en": "Stepping onto the stage made my heart beat fast.", "cn": "走上舞台让我心跳加速。", "level": 3 }
+  ],
+  "proud": [
+    { "en": "I'm proud!", "cn": "我自豪！", "level": 1 },
+    { "en": "Mum is proud of me.", "cn": "妈妈为我骄傲。", "level": 2 },
+    { "en": "I'm proud of my classmates for their great show.", "cn": "我为同学们出色的表演感到骄傲。", "level": 3 }
+  ]
+}

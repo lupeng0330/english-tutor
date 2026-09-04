@@ -1,0 +1,548 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A talk about Confucius",
+        "data": [
+          {"题号": 1, "问题": "When was Confucius born?", "选项": ["A. 551 BC", "B. 251 BC", "C. 51 BC"], "答案": "A"},
+          {"题号": 2, "问题": "Where was he born?", "选项": ["A. The State of Lu (today's Shandong)", "B. Shanghai", "C. Beijing"], "答案": "A"},
+          {"题号": 3, "问题": "What was Confucius most of all?", "选项": ["A. A great teacher", "B. A soldier", "C. A merchant"], "答案": "A"},
+          {"题号": 4, "问题": "About how many students did he have?", "选项": ["A. Three thousand", "B. Seventy-two", "C. Three hundred"], "答案": "A"},
+          {"题号": 5, "问题": "What book did he write with his disciples?", "选项": ["A. The Analects", "B. Journey to the West", "C. The Odyssey"], "答案": "A"},
+          {"题号": 6, "问题": "What did he believe a good person should fix first?", "选项": ["A. Himself", "B. His country", "C. His family"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A talk about Confucius",
+        "data": [
+          {"问题": "What right did Confucius believe every person had?", "答案": "The right to learn."},
+          {"问题": "How many of his students became famous teachers?", "答案": "Seventy-two."},
+          {"问题": "What did he teach about?", "答案": "Virtue, respect, honesty and kindness."},
+          {"问题": "Why do we call him a wise man?", "答案": "A wise man's words never grow old."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Defining relative clauses with who / which / that",
+        "data": [
+          {"题号": 1, "问题": "Which relative pronoun is used for people?", "选项": ["A. who", "B. which", "C. where"], "答案": "A"},
+          {"题号": 2, "问题": "Which is used for things and animals?", "选项": ["A. which", "B. who", "C. whom"], "答案": "A"},
+          {"题号": 3, "问题": "The teacher ___ wrote this book is from Shanghai.", "选项": ["A. who", "B. which", "C. where"], "答案": "A"},
+          {"题号": 4, "问题": "This is the old temple ___ honours Confucius.", "选项": ["A. that", "B. who", "C. whom"], "答案": "A"},
+          {"题号": 5, "问题": "Which is correct?", "选项": ["A. Confucius is a teacher who lived 2,500 years ago.", "B. Confucius is a teacher he lived 2,500 years ago.", "C. Confucius is a teacher lived 2,500 years ago."], "答案": "A"},
+          {"题号": 6, "问题": "In speech, which word often replaces both who and which?", "选项": ["A. that", "B. where", "C. when"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Defining relative clauses with who / which / that",
+        "data": [
+          {"问题": "What does a defining relative clause tell us?", "答案": "Which person or thing we are talking about."},
+          {"问题": "Fill in: The Analects, ___ was written by his disciples, is still read today.", "答案": "which"},
+          {"问题": "Should you repeat the subject (e.g. 'a teacher who he lived')?", "答案": "No."},
+          {"问题": "Fill in: She is the teacher ___ teaches us English.", "答案": "who / that"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Lessons from an old teacher",
+        "data": [
+          {"题号": 1, "问题": "Who wrote down what Confucius said and did?", "选项": ["A. His students", "B. His son", "C. The emperor"], "答案": "A"},
+          {"题号": 2, "问题": "According to lesson 1, learning is ___.", "选项": ["A. a joy", "B. a burden", "C. useless"], "答案": "A"},
+          {"题号": 3, "问题": "According to lesson 2, what is a treasure?", "选项": ["A. Friends", "B. Money", "C. Power"], "答案": "A"},
+          {"题号": 4, "问题": "What single word did Confucius give to guide a person's life?", "选项": ["A. Shu", "B. Ren", "C. Li"], "答案": "A"},
+          {"题号": 5, "问题": "What is 'do not do to others what you would not want done to yourself' later called?", "选项": ["A. The Golden Rule", "B. The Silver Rule", "C. The First Rule"], "答案": "A"},
+          {"题号": 6, "问题": "What does a great thinker need to do?", "选项": ["A. Share ideas that make ordinary people live better", "B. Be rich", "C. Be powerful"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Lessons from an old teacher",
+        "data": [
+          {"问题": "Did Confucius write a long book by himself?", "答案": "No."},
+          {"问题": "Why was a friend from a distant place a real gift long ago?", "答案": "There were no phones or planes; they travelled many days."},
+          {"问题": "Where is the Golden Rule found?", "答案": "In almost every culture around the world."},
+          {"问题": "Does a great thinker need to be rich or powerful?", "答案": "No."}
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Thomas Edison never gave up",
+        "data": [
+          {"题号": 1, "问题": "How many tries did the light bulb take Edison?", "选项": ["A. About 10,000", "B. About 100", "C. About 1,000"], "答案": "A"},
+          {"题号": 2, "问题": "What does Edison call his 10,000 failures?", "选项": ["A. 10,000 ways that didn't work", "B. Real failures", "C. Bad luck"], "答案": "A"},
+          {"题号": 3, "问题": "What is the starting point of every invention?", "选项": ["A. Curiosity", "B. Money", "C. A team"], "答案": "A"},
+          {"题号": 4, "问题": "How many hours a day did Edison sleep when working?", "选项": ["A. Four", "B. Eight", "C. Two"], "答案": "A"},
+          {"题号": 5, "问题": "What is a good nap like?", "选项": ["A. A reset button", "B. A waste of time", "C. A meal"], "答案": "A"},
+          {"题号": 6, "问题": "Genius is one per cent inspiration and ___ per cent perspiration.", "选项": ["A. ninety-nine", "B. fifty", "C. ninety"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Thomas Edison never gave up",
+        "data": [
+          {"问题": "What three things gave Edison courage to keep going?", "答案": "Curiosity, a team who believed in him, and belief that the world needed a clean, cheap light."},
+          {"问题": "Where did Edison take short naps?", "答案": "In the lab, on the desks, on the floor."},
+          {"问题": "What advice does Edison give young inventors?", "答案": "Work hard, fail often, learn from every failure, and never stop being curious."},
+          {"问题": "Does Edison think he is a genius?", "答案": "No; he says he simply works very hard."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Relative clauses with whose / where / when",
+        "data": [
+          {"题号": 1, "问题": "Which relative word shows possession?", "选项": ["A. whose", "B. where", "C. when"], "答案": "A"},
+          {"题号": 2, "问题": "Which refers to a place?", "选项": ["A. where", "B. whose", "C. when"], "答案": "A"},
+          {"题号": 3, "问题": "Which refers to a time?", "选项": ["A. when", "B. where", "C. whose"], "答案": "A"},
+          {"题号": 4, "问题": "I met a girl ___ father is a scientist.", "选项": ["A. whose", "B. where", "C. when"], "答案": "A"},
+          {"题号": 5, "问题": "1879 was the year ___ Edison produced a working bulb.", "选项": ["A. when", "B. where", "C. whose"], "答案": "A"},
+          {"题号": 6, "问题": "The laboratory ___ Curie worked was very cold.", "选项": ["A. where", "B. when", "C. whose"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Relative clauses with whose / where / when",
+        "data": [
+          {"问题": "Fill in: Paris is the city ___ many great minds once lived.", "答案": "where"},
+          {"问题": "Fill in: I still remember the day ___ the results were announced.", "答案": "when"},
+          {"问题": "Which is simpler and more common in speech: 'which ... in' or 'where'?", "答案": "where"},
+          {"问题": "Fill in: Edison is the inventor ___ lab burnt down in 1914.", "答案": "whose"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A woman who changed science",
+        "data": [
+          {"题号": 1, "问题": "Where was Marie Curie born?", "选项": ["A. Poland", "B. France", "C. England"], "答案": "A"},
+          {"题号": 2, "问题": "How did she teach herself science as a girl?", "选项": ["A. By candlelight after chores", "B. At a university", "C. With a private teacher"], "答案": "A"},
+          {"题号": 3, "问题": "At what age did she move to Paris?", "选项": ["A. 24", "B. 16", "C. 30"], "答案": "A"},
+          {"题号": 4, "问题": "What did she name a new element after her homeland?", "选项": ["A. Polonium", "B. Radium", "C. Uranium"], "答案": "A"},
+          {"题号": 5, "问题": "How many times did she win the Nobel Prize?", "选项": ["A. Twice", "B. Once", "C. Three times"], "答案": "A"},
+          {"题号": 6, "问题": "What did she use her prize money for?", "选项": ["A. To build better laboratories", "B. A bigger house", "C. Travel"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A woman who changed science",
+        "data": [
+          {"问题": "Why did she sometimes live on bread and tea?", "答案": "She wanted to buy books instead of food."},
+          {"问题": "Whom did she meet and fall in love with in Paris?", "答案": "Pierre Curie."},
+          {"问题": "In which year did they discover two new elements?", "答案": "1898."},
+          {"问题": "What did she say about life and fear?", "答案": "Nothing in life is to be feared; it is only to be understood."}
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A survey on our neighbourhood",
+        "data": [
+          {"题号": 1, "问题": "How many people did Betty's group ask about rubbish?", "选项": ["A. 50", "B. 18", "C. 32"], "答案": "A"},
+          {"题号": 2, "问题": "How many people sort their rubbish into three bins?", "选项": ["A. 18", "B. 32", "C. 50"], "答案": "A"},
+          {"题号": 3, "问题": "What did Jim's group study?", "选项": ["A. Noise", "B. Rubbish", "C. The park"], "答案": "A"},
+          {"题号": 4, "问题": "What was the loudest moment?", "选项": ["A. 85 decibels", "B. 50 decibels", "C. 100 decibels"], "答案": "A"},
+          {"题号": 5, "问题": "How many people came into the park in one hour?", "选项": ["A. 64", "B. 50", "C. 32"], "答案": "A"},
+          {"题号": 6, "问题": "What did the park visitors love?", "选项": ["A. The flowers", "B. The benches", "C. The rubbish"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A survey on our neighbourhood",
+        "data": [
+          {"问题": "Where did most of the noise come from?", "答案": "Car horns."},
+          {"问题": "Who mostly came to the park?", "答案": "Old people and children."},
+          {"问题": "What idea did Betty give for rubbish?", "答案": "Make colourful posters about sorting rubbish."},
+          {"问题": "What does the teacher say a good survey is?", "答案": "The start of real action, not the end."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · too ... to ... and so ... that ...",
+        "data": [
+          {"题号": 1, "问题": "'too ... to ...' often suggests a ___ result.", "选项": ["A. negative", "B. positive", "C. neutral"], "答案": "A"},
+          {"题号": 2, "问题": "The river is too dirty ___ swim in.", "选项": ["A. to", "B. that", "C. for"], "答案": "A"},
+          {"题号": 3, "问题": "'so ... that ...' is followed by ___.", "选项": ["A. a full clause", "B. an infinitive", "C. a noun only"], "答案": "A"},
+          {"题号": 4, "问题": "He spoke ___ fast that I could not understand him.", "选项": ["A. so", "B. too", "C. very"], "答案": "A"},
+          {"题号": 5, "问题": "After 'too ... to', can you add 'not'?", "选项": ["A. No", "B. Yes", "C. Sometimes"], "答案": "A"},
+          {"题号": 6, "问题": "There is ___ much rubbish that we cannot walk freely.", "选项": ["A. so", "B. too", "C. very"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · too ... to ... and so ... that ...",
+        "data": [
+          {"问题": "Rewrite: The air is too bad to breathe. (use so ... that)", "答案": "The air is so bad that we cannot breathe."},
+          {"问题": "Rewrite: She is so young that she can't join the club. (use too ... to)", "答案": "She is too young to join the club."},
+          {"问题": "Does 'too ... to ...' contain a negative meaning?", "答案": "Yes."},
+          {"问题": "Fill in: So few birds come here now ___ the forest feels empty.", "答案": "that"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · One city, three smaller worries",
+        "data": [
+          {"题号": 1, "问题": "What is 'plastic snow'?", "选项": ["A. Tiny pieces of plastic in the grass", "B. Real snow", "C. White flowers"], "答案": "A"},
+          {"题号": 2, "问题": "Where does the plastic snow wash into?", "选项": ["A. Rivers and then the sea", "B. The sky", "C. The park only"], "答案": "A"},
+          {"题号": 3, "问题": "What does city light confuse?", "选项": ["A. Animals", "B. Cars", "C. Buildings"], "答案": "A"},
+          {"题号": 4, "问题": "What did young sea turtles once follow to the sea?", "选项": ["A. The moonlight", "B. City lights", "C. Cars"], "答案": "A"},
+          {"题号": 5, "问题": "What is the third worry?", "选项": ["A. Cities never go quiet", "B. Too much snow", "C. Too few cars"], "答案": "A"},
+          {"题号": 6, "问题": "What can constant low noise hurt?", "选项": ["A. A child's memory and a grown-up's heart", "B. Only ears", "C. Nothing"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · One city, three smaller worries",
+        "data": [
+          {"问题": "Where are plastic pieces now found?", "答案": "In fish, salt, and even tap water."},
+          {"问题": "What happens to young sea turtles that follow city lights?", "答案": "They die on the road."},
+          {"问题": "What is as important as a glass of water every day?", "答案": "A few minutes of real quiet."},
+          {"问题": "What is a city compared to?", "答案": "A long story written by many citizens."}
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Small steps save the planet",
+        "data": [
+          {"题号": 1, "问题": "What is the campaign called?", "选项": ["A. Small Steps, Big Planet", "B. Green Month", "C. English Week"], "答案": "A"},
+          {"题号": 2, "问题": "How long is the campaign?", "选项": ["A. A month", "B. A week", "C. A year"], "答案": "A"},
+          {"题号": 3, "问题": "What should you do in a green classroom?", "选项": ["A. Turn off lights and fans when you leave", "B. Leave them on", "C. Open windows"], "答案": "A"},
+          {"题号": 4, "问题": "What should you bring for lunch without waste?", "选项": ["A. Your own bottle and chopsticks", "B. Plastic boxes", "C. Nothing"], "答案": "A"},
+          {"题号": 5, "问题": "What is 'green wheels'?", "选项": ["A. Walk, cycle, or take the bus", "B. Drive alone", "C. Fly"], "答案": "A"},
+          {"题号": 6, "问题": "Who wrote the letter?", "选项": ["A. The Environment Club", "B. The headmaster", "C. A student"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Small steps save the planet",
+        "data": [
+          {"问题": "Why did the school close for two extra days last summer?", "答案": "It was so hot."},
+          {"问题": "How much electricity can a green classroom save?", "答案": "Enough to light 30 homes for a week."},
+          {"问题": "What is 'green voices'?", "答案": "Tell your family the new facts you learn."},
+          {"问题": "Who saves the world, according to the letter?", "答案": "Millions of ordinary people doing small, kind things every day."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · The emphatic pattern \"It is ... that / who ...\"",
+        "data": [
+          {"题号": 1, "问题": "The emphatic pattern is 'It is/was + ... + ___'.", "选项": ["A. that / who", "B. which / where", "C. when / whose"], "答案": "A"},
+          {"题号": 2, "问题": "To emphasise a person, use ___.", "选项": ["A. who", "B. which", "C. where"], "答案": "A"},
+          {"题号": 3, "问题": "Emphasise: Tom broke the window. → It was Tom ___ broke the window.", "选项": ["A. who", "B. which", "C. when"], "答案": "A"},
+          {"题号": 4, "问题": "For emphasising a time or place, use ___ (not when/where).", "选项": ["A. that", "B. when", "C. where"], "答案": "A"},
+          {"题号": 5, "问题": "It is clean water ___ we need most.", "选项": ["A. that", "B. who", "C. which"], "答案": "A"},
+          {"题号": 6, "问题": "In the emphatic pattern, does the rest of the sentence keep its normal tense?", "选项": ["A. Yes", "B. No", "C. Only in questions"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The emphatic pattern \"It is ... that / who ...\"",
+        "data": [
+          {"问题": "Emphasise the time: We started the campaign last Monday.", "答案": "It was last Monday that we started the campaign."},
+          {"问题": "Emphasise the place: I first met her in Shanghai.", "答案": "It was in Shanghai that I first met her."},
+          {"问题": "Make it negative: It was Tom who broke the window (it was Jim).", "答案": "It was not Tom who broke the window; it was Jim."},
+          {"问题": "For a time/place, do you use 'when/where' or 'that'?", "答案": "that"}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Three cities, three green answers",
+        "data": [
+          {"题号": 1, "问题": "What is Freiburg, Germany called?", "选项": ["A. The Sun City", "B. The Bus City", "C. The River City"], "答案": "A"},
+          {"题号": 2, "问题": "What must every new house in Freiburg do?", "选项": ["A. Save energy", "B. Be tall", "C. Have a garage"], "答案": "A"},
+          {"题号": 3, "问题": "What is Curitiba, Brazil called?", "选项": ["A. The Bus City", "B. The Sun City", "C. The River City"], "答案": "A"},
+          {"题号": 4, "问题": "Out of every 100 people, how many take the bus in Curitiba?", "选项": ["A. 70", "B. 30", "C. 50"], "答案": "A"},
+          {"题号": 5, "问题": "What happened to Kitakyushu's main river after the war?", "选项": ["A. It turned black", "B. It dried up", "C. It froze"], "答案": "A"},
+          {"题号": 6, "问题": "Who pushes cities to change, the passage says?", "选项": ["A. Strong citizens", "B. Rich people", "C. Foreign visitors"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Three cities, three green answers",
+        "data": [
+          {"问题": "What do many roofs in Freiburg have?", "答案": "Solar panels."},
+          {"问题": "How does Curitiba reward poor families for sorting rubbish?", "答案": "A bag of paper equals a basket of vegetables."},
+          {"问题": "What returned to Kitakyushu's river fifty years later?", "答案": "Fish."},
+          {"问题": "What kind of city becomes a home worth living in?", "答案": "A city that listens to its people."}
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Two films worth watching",
+        "data": [
+          {"题号": 1, "问题": "What kind of film is the first one, Hi, Mom?", "选项": ["A. A Chinese family comedy", "B. Science fiction", "C. A horror film"], "答案": "A"},
+          {"题号": 2, "问题": "Who directed Hi, Mom?", "选项": ["A. Jia Ling", "B. Zhang Yimou", "C. Chen Kaige"], "答案": "A"},
+          {"题号": 3, "问题": "What is the second film about?", "选项": ["A. Moving the planet to a new star", "B. A time-travelling daughter", "C. A concert"], "答案": "A"},
+          {"题号": 4, "问题": "How many artists made the special effects?", "选项": ["A. More than 1,000", "B. About 100", "C. About 50"], "答案": "A"},
+          {"题号": 5, "问题": "How long is The Wandering Earth II?", "选项": ["A. About three hours", "B. One hour", "C. Five hours"], "答案": "A"},
+          {"题号": 6, "问题": "Which film is perfect for family viewing?", "选项": ["A. Hi, Mom", "B. The Wandering Earth II", "C. Neither"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Two films worth watching",
+        "data": [
+          {"问题": "What is Hi, Mom based on?", "答案": "Jia Ling's own mother's life."},
+          {"问题": "Where were some scenes of The Wandering Earth II shot?", "答案": "In the Gobi Desert."},
+          {"问题": "Who may need a parent nearby for the second film?", "答案": "Kids under 10 (because of scary scenes)."},
+          {"问题": "What does Peter call a good film at the end?", "答案": "A ticket to a new world."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · The passive voice (simple present and simple past)",
+        "data": [
+          {"题号": 1, "问题": "The present passive is formed with ___.", "选项": ["A. am/is/are + past participle", "B. was/were + pp", "C. has + pp"], "答案": "A"},
+          {"题号": 2, "问题": "The past passive is formed with ___.", "选项": ["A. was/were + past participle", "B. am/is/are + pp", "C. will + pp"], "答案": "A"},
+          {"题号": 3, "问题": "Active: They sell tickets online. Passive: Tickets ___ online.", "选项": ["A. are sold", "B. sell", "C. sold"], "答案": "A"},
+          {"题号": 4, "问题": "Active: Jia Ling directed the film. Passive: The film ___ by Jia Ling.", "选项": ["A. was directed", "B. is directed", "C. directs"], "答案": "A"},
+          {"题号": 5, "问题": "When do you add 'by + doer'?", "选项": ["A. When the doer is important or surprising", "B. Always", "C. Never"], "答案": "A"},
+          {"题号": 6, "问题": "The past participle of 'write' is ___.", "选项": ["A. written", "B. wrote", "C. writed"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The passive voice (simple present and simple past)",
+        "data": [
+          {"问题": "Change to passive: They sell tickets online.", "答案": "Tickets are sold online."},
+          {"问题": "Why can 'by the cinema' be left out in 'The film was released last Friday'?", "答案": "Because the doer is obvious."},
+          {"问题": "What is the past participle of 'break'?", "答案": "broken"},
+          {"问题": "Answer: Was the film directed by Jia Ling?", "答案": "Yes, it was."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · A hundred years of Chinese film",
+        "data": [
+          {"题号": 1, "问题": "When was the first Chinese film made?", "选项": ["A. 1905", "B. 1930", "C. 1949"], "答案": "A"},
+          {"题号": 2, "问题": "What was the first film's name?", "选项": ["A. Conquering Jun Mountain", "B. Hi, Mom", "C. Raise the Red Lantern"], "答案": "A"},
+          {"题号": 3, "问题": "Which city became the capital of Chinese cinema in the 1930s?", "选项": ["A. Shanghai", "B. Beijing", "C. Guangzhou"], "答案": "A"},
+          {"题号": 4, "问题": "Which film was nominated for an Oscar in 1992?", "选项": ["A. Raise the Red Lantern", "B. The Wandering Earth II", "C. Hi, Mom"], "答案": "A"},
+          {"题号": 5, "问题": "What was the 2023 box office of Chinese-made films?", "选项": ["A. Over 40 billion yuan", "B. About 4 billion yuan", "C. About 400 million yuan"], "答案": "A"},
+          {"题号": 6, "问题": "In how many countries are Chinese films now shown?", "选项": ["A. Over 100", "B. About 10", "C. About 50"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · A hundred years of Chinese film",
+        "data": [
+          {"问题": "How long was the first Chinese film?", "答案": "About ten minutes."},
+          {"问题": "Which directors won international awards in the 1980s?", "答案": "Chen Kaige and Zhang Yimou."},
+          {"问题": "Who bought most cinema tickets in 2023?", "答案": "Young audiences aged 18 to 35."},
+          {"问题": "What is a good film called at the end?", "答案": "A window through which the world sees our hearts."}
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · A concert to remember",
+        "data": [
+          {"题号": 1, "问题": "Who was the singer?", "选项": ["A. Lily Chen", "B. Tina", "C. Jia Ling"], "答案": "A"},
+          {"题号": 2, "问题": "How many albums has she released?", "选项": ["A. Six", "B. Three", "C. Ten"], "答案": "A"},
+          {"题号": 3, "问题": "About how many seats did the stadium have?", "选项": ["A. 50,000", "B. 5,000", "C. 500,000"], "答案": "A"},
+          {"题号": 4, "问题": "How quickly were the tickets sold?", "选项": ["A. Within three hours", "B. Within three days", "C. Within a week"], "答案": "A"},
+          {"题号": 5, "问题": "What was the best part for Tina?", "选项": ["A. The opening", "B. The ending", "C. The interval"], "答案": "A"},
+          {"题号": 6, "问题": "Which song was played twice?", "选项": ["A. Summer Train", "B. Winter Night", "C. Home"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · A concert to remember",
+        "data": [
+          {"问题": "How did the concert open?", "答案": "The stage was dark, then Lily walked through the audience with a silver microphone."},
+          {"问题": "How have some of her older songs been re-arranged?", "答案": "With a full orchestra."},
+          {"问题": "How old was Lily when her first song was recorded?", "答案": "Sixteen."},
+          {"问题": "What did Tina say the memory had become?", "答案": "One of the best in her life."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · The passive voice (present perfect)",
+        "data": [
+          {"题号": 1, "问题": "The present perfect passive is formed with ___.", "选项": ["A. has/have + been + past participle", "B. was + pp", "C. is + pp"], "答案": "A"},
+          {"题号": 2, "问题": "Active: They have sold all the tickets. Passive: All the tickets ___.", "选项": ["A. have been sold", "B. are sold", "C. were sold"], "答案": "A"},
+          {"题号": 3, "问题": "The hall has just ___ cleaned.", "选项": ["A. been", "B. being", "C. be"], "答案": "A"},
+          {"题号": 4, "问题": "Which is a time word for the present perfect?", "选项": ["A. already", "B. yesterday", "C. tomorrow"], "答案": "A"},
+          {"题号": 5, "问题": "Which shows an event connected to now?", "选项": ["A. has been held three times this year", "B. was held last Friday", "C. will be held"], "答案": "A"},
+          {"题号": 6, "问题": "The microphone has not ___ fixed yet.", "选项": ["A. been", "B. being", "C. be"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · The passive voice (present perfect)",
+        "data": [
+          {"问题": "Change to passive: She has recorded a new album.", "答案": "A new album has been recorded (by her)."},
+          {"问题": "Answer: Have the seats been booked yet?", "答案": "Yes, they have. / No, they haven't."},
+          {"问题": "Fill in: This song has been sung ___ 2010.", "答案": "since"},
+          {"问题": "Compare: 'was held last Friday' vs 'has been held three times' — which is connected to now?", "答案": "has been held three times."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · The show changes, the joy stays",
+        "data": [
+          {"题号": 1, "问题": "Before radio, where did people play music?", "选项": ["A. At home", "B. In stadiums", "C. Online"], "答案": "A"},
+          {"题号": 2, "问题": "When did radio arrive?", "选项": ["A. In the 1920s", "B. In 1983", "C. In 2001"], "答案": "A"},
+          {"题号": 3, "问题": "Since when has the Spring Festival Gala been broadcast?", "选项": ["A. 1983", "B. 1920", "C. 2001"], "答案": "A"},
+          {"题号": 4, "问题": "How many people now watch the Gala?", "选项": ["A. Over one billion", "B. About one million", "C. About 50,000"], "答案": "A"},
+          {"题号": 5, "问题": "Who makes short videos now?", "选项": ["A. Everyone, not just stars", "B. Only stars", "C. Only TV stations"], "答案": "A"},
+          {"题号": 6, "问题": "What has been passed from heart to heart for thousands of years?", "选项": ["A. The hope of sharing joy with others", "B. Money", "C. Machines"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · The show changes, the joy stays",
+        "data": [
+          {"问题": "How were songs passed down before radio?", "答案": "From grandparent to grandchild by ear."},
+          {"问题": "What could television do for the first time?", "答案": "Let people both see and hear a show."},
+          {"问题": "Give one thing that has NOT changed.", "答案": "A child sings in the bath / friends sing in karaoke / a street musician plays (any one)."},
+          {"问题": "What is called the oldest, most beautiful show of all?", "答案": "The hope of sharing joy with others."}
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · Journey to the deep sea",
+        "data": [
+          {"题号": 1, "问题": "How deep is the bottom they reached?", "选项": ["A. 10,909 metres", "B. 1,090 metres", "C. 109 metres"], "答案": "A"},
+          {"题号": 2, "问题": "What was glowing outside the window?", "选项": ["A. A jellyfish", "B. A fish with eyes", "C. A rock"], "答案": "A"},
+          {"题号": 3, "问题": "Why does the jellyfish make its own light?", "选项": ["A. To attract food", "B. To scare enemies", "C. To keep warm"], "答案": "A"},
+          {"题号": 4, "问题": "How much stronger is the pressure than on the surface?", "选项": ["A. About 1,100 times", "B. About 11 times", "C. About 110 times"], "答案": "A"},
+          {"题号": 5, "问题": "What are they picking up?", "选项": ["A. Three small rocks and some mud", "B. Fish", "C. Coins"], "答案": "A"},
+          {"题号": 6, "问题": "How much longer will they stay?", "选项": ["A. About two more hours", "B. One day", "C. Ten minutes"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · Journey to the deep sea",
+        "data": [
+          {"问题": "What can every gram of deep-sea mud contain?", "答案": "Thousands of tiny living things never seen before."},
+          {"问题": "What did Professor Chen ask about?", "答案": "Whether they could find any new bacteria."},
+          {"问题": "What will they do after collecting samples?", "答案": "Slowly rise to the surface."},
+          {"问题": "What does Scientist Wang call a curious young person?", "答案": "A small explorer."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Reported speech (statements and questions)",
+        "data": [
+          {"题号": 1, "问题": "Reported statements can use the word ___.", "选项": ["A. that (optional)", "B. if", "C. whether"], "答案": "A"},
+          {"题号": 2, "问题": "Reported yes/no questions use ___.", "选项": ["A. if / whether", "B. that", "C. what"], "答案": "A"},
+          {"题号": 3, "问题": "Reported questions use ___ word order.", "选项": ["A. statement", "B. question", "C. command"], "答案": "A"},
+          {"题号": 4, "问题": "Direct: 'I am tired.' Reported: She said she ___ tired.", "选项": ["A. was", "B. is", "C. are"], "答案": "A"},
+          {"题号": 5, "问题": "'will' changes to ___ in reported speech.", "选项": ["A. would", "B. was", "C. did"], "答案": "A"},
+          {"题号": 6, "问题": "'today' changes to ___.", "选项": ["A. that day", "B. this day", "C. next day"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Reported speech (statements and questions)",
+        "data": [
+          {"问题": "Report: 'Are you ready?' he asked.", "答案": "He asked if I was ready."},
+          {"问题": "Report: 'Where do you live?' she asked me.", "答案": "She asked me where I lived."},
+          {"问题": "What does 'now' change to?", "答案": "then"},
+          {"问题": "Report: 'I saw it yesterday,' he said.", "答案": "He said he had seen it the day before."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Looking up, looking down",
+        "data": [
+          {"题号": 1, "问题": "When was the first human footprint left on the moon?", "选项": ["A. 1969", "B. 2020", "C. 1983"], "答案": "A"},
+          {"题号": 2, "问题": "How much moon dust did Chang'e 5 bring back?", "选项": ["A. About two kilograms", "B. About twenty kilograms", "C. About 200 grams"], "答案": "A"},
+          {"题号": 3, "问题": "How much of the deep ocean has been mapped?", "选项": ["A. Less than one quarter", "B. All of it", "C. Half"], "答案": "A"},
+          {"题号": 4, "问题": "How deep did Fendouzhe reach in 2020?", "选项": ["A. 10,909 metres", "B. 1,090 metres", "C. 909 metres"], "答案": "A"},
+          {"题号": 5, "问题": "What did the crew discover?", "选项": ["A. Strange fish with no eyes", "B. Gold", "C. Ancient ships"], "答案": "A"},
+          {"题号": 6, "问题": "Which is more important, space or the deep sea?", "选项": ["A. Both", "B. Only space", "C. Only the deep sea"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Looking up, looking down",
+        "data": [
+          {"问题": "Where do humans live (which layer)?", "答案": "A small middle layer — the ground."},
+          {"问题": "What might the moon dust teach us?", "答案": "How the moon was made and whether water is hidden inside it."},
+          {"问题": "What can the tiny deep-sea animals live on?", "答案": "The gas from underwater volcanoes."},
+          {"问题": "What is the real question, whether we look up or down?", "答案": "Are we brave enough to ask 'what else?'"}
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Reading · When AI meets us",
+        "data": [
+          {"题号": 1, "问题": "What does the robot Aido look like?", "选项": ["A. A small white box with two kind eyes", "B. A tall metal man", "C. A dog"], "答案": "A"},
+          {"题号": 2, "问题": "Why does Aido offer to make warm milk?", "选项": ["A. Daisy is tired after tests", "B. It is cold", "C. It is morning"], "答案": "A"},
+          {"题号": 3, "问题": "Does Aido feel fear like humans?", "选项": ["A. No", "B. Yes", "C. Sometimes"], "答案": "A"},
+          {"题号": 4, "问题": "According to Aido, whose gift is imagination?", "选项": ["A. Daisy's (the human's)", "B. Aido's", "C. Nobody's"], "答案": "A"},
+          {"题号": 5, "问题": "What went wrong with the milk?", "选项": ["A. It boiled over", "B. It froze", "C. It spilled on the floor"], "答案": "A"},
+          {"题号": 6, "问题": "What does Aido say working with humans is about?", "选项": ["A. Learning how to care", "B. Only serving", "C. Making money"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading · When AI meets us",
+        "data": [
+          {"问题": "Why is Aido programmed to stop?", "答案": "If someone is in danger."},
+          {"问题": "What can Aido describe but maybe not feel?", "答案": "Dragons and spaceships (the excitement of imagination)."},
+          {"问题": "What does Daisy say about mistakes?", "答案": "Everyone makes mistakes — even a robot."},
+          {"问题": "What does Aido thank Daisy for?", "答案": "Her kindness."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Grammar focus · Modal verbs + have + past participle",
+        "data": [
+          {"题号": 1, "问题": "Which means 'I am very sure it happened'?", "选项": ["A. must have done", "B. might have done", "C. can't have done"], "答案": "A"},
+          {"题号": 2, "问题": "Which means 'it is possible it happened'?", "选项": ["A. may/might have done", "B. must have done", "C. can't have done"], "答案": "A"},
+          {"题号": 3, "问题": "Which shows regret or blame?", "选项": ["A. should have done", "B. must have done", "C. could have done"], "答案": "A"},
+          {"题号": 4, "问题": "Which means 'very sure it did NOT happen'?", "选项": ["A. can't have done", "B. must have done", "C. may have done"], "答案": "A"},
+          {"题号": 5, "问题": "The ground is wet. It ___ rained last night.", "选项": ["A. must have", "B. can't have", "C. shouldn't have"], "答案": "A"},
+          {"题号": 6, "问题": "You ___ told me earlier (but you didn't).", "选项": ["A. should have", "B. must have", "C. can't have"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Grammar focus · Modal verbs + have + past participle",
+        "data": [
+          {"问题": "Fill in: She isn't answering. She ___ gone out. (possible)", "答案": "may / might have"},
+          {"问题": "Fill in: He ___ stolen the money; he was with me. (very sure not)", "答案": "can't have"},
+          {"问题": "Which modal is for guesses about the past, 'must' or 'have to'?", "答案": "must"},
+          {"问题": "Do you keep 'have + past participle' unchanged in these forms?", "答案": "Yes."}
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "More reading · Five surprises science has given us",
+        "data": [
+          {"题号": 1, "问题": "Who said the Earth moves around the sun?", "选项": ["A. Copernicus", "B. Einstein", "C. Newton"], "答案": "A"},
+          {"题号": 2, "问题": "What made a drop of water a whole forest of tiny animals?", "选项": ["A. The microscope", "B. The telescope", "C. The camera"], "答案": "A"},
+          {"题号": 3, "问题": "In 1915, who said time can move faster or slower?", "选项": ["A. Einstein", "B. Copernicus", "C. Curie"], "答案": "A"},
+          {"题号": 4, "问题": "About how much of an adult human body is water?", "选项": ["A. 60%", "B. 90%", "C. 30%"], "答案": "A"},
+          {"题号": 5, "问题": "What is happening to the galaxies we can see?", "选项": ["A. They are moving away from each other", "B. They are still", "C. They are joining"], "答案": "A"},
+          {"题号": 6, "问题": "What does every GPS phone correct because of Einstein's idea?", "选项": ["A. Its clock", "B. Its screen", "C. Its battery"], "答案": "A"}
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "More reading · Five surprises science has given us",
+        "data": [
+          {"问题": "Why must Copernicus have been very brave?", "答案": "His idea made many people angry at the time."},
+          {"问题": "What lives on our skin every day?", "答案": "Billions of bacteria, most of them helping us."},
+          {"问题": "About how much of a child's body is water?", "答案": "About 70%."},
+          {"问题": "What does the growing universe mean about the past?", "答案": "The universe was smaller in the past."}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u8",
+  "title": "Unit 8 Safe Travels",
+  "words": [
+    { "word": "safe", "phonetic": "/seɪf/", "meaning": "[adj.] 安全的", "example": "Have a safe trip." },
+    { "word": "danger", "phonetic": "/ˈdeɪndʒə(r)/", "meaning": "[n.] 危险", "example": "Stay away from danger." },
+    { "word": "warning", "phonetic": "/ˈwɔːnɪŋ/", "meaning": "[n.] 警告", "example": "A warning sign." },
+    { "word": "rule", "phonetic": "/ruːl/", "meaning": "[n.] 规则", "example": "Follow the rules." },
+    { "word": "follow", "phonetic": "/ˈfɒləʊ/", "meaning": "[v.] 遵守；跟随", "example": "Follow your teacher." },
+    { "word": "careful", "phonetic": "/ˈkeəfl/", "meaning": "[adj.] 小心的", "example": "Be careful." },
+    { "word": "phone", "phonetic": "/fəʊn/", "meaning": "[n.] 电话", "example": "Call on the phone." },
+    { "word": "remember", "phonetic": "/rɪˈmembə(r)/", "meaning": "[v.] 记得", "example": "Remember the number." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Be safe on the trip",
+      "en": "Mum: Anna, you and Ben will travel alone next week. Be safe!\nAnna: Don't worry, Mum. We'll follow all the rules.\nMum: Remember the family phone number. Stay away from danger.\nAnna: I'll be careful. We'll also watch for warning signs.\nBen: Yes! Safety first.",
+      "cn": "妈妈：安娜，下周你和本要单独旅行，注意安全！\n安娜：放心妈妈，我们会遵守规则。\n妈妈：记住家里电话，远离危险。\n安娜：我会小心，会留意警示牌。\n本：对，安全第一。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Safety on the road",
+      "en": "Travel is fun, but safety always comes first. Always cross the road with the green light. Don't talk to strangers. Carry a small bag with water, a map and a phone. Read warning signs at scenic spots and follow the rules. Remember a family phone number — call right away if you get lost. A safe trip is a happy trip!",
+      "cn": "旅行有趣，但安全第一。绿灯过马路。不和陌生人说话。带小包装水、地图、电话。看景区警示牌、守规则。记住家人电话——迷路马上打。安全的旅行才是快乐的旅行！"
+    }
+  ]
+}

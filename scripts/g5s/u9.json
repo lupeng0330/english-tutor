@@ -1,0 +1,26 @@
+{
+  "id": "u9",
+  "title": "Review Show Time",
+  "words": [
+    { "word": "show", "phonetic": "/ʃəʊ/", "meaning": "[n./v.] 表演；展示", "example": "A big show!" },
+    { "word": "prepare", "phonetic": "/prɪˈpeə(r)/", "meaning": "[v.] 准备", "example": "Prepare for the show." },
+    { "word": "act", "phonetic": "/ækt/", "meaning": "[v.] 演", "example": "She acts on stage." },
+    { "word": "audience", "phonetic": "/ˈɔːdiəns/", "meaning": "[n.] 观众", "example": "The audience cheers." },
+    { "word": "clap", "phonetic": "/klæp/", "meaning": "[v.] 鼓掌", "example": "Everyone claps." },
+    { "word": "remember", "phonetic": "/rɪˈmembə(r)/", "meaning": "[v.] 记得", "example": "Remember this day." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Time to shine",
+      "en": "Anna: Ben, our school show is tomorrow! Are you ready?\nBen: Yes, I've prepared for weeks. I'll sing and act.\nAnna: I'll join the drama club piece.\nBen: The audience will love it. Don't forget to smile!\nAnna: We'll remember this show for a long time.",
+      "cn": "安娜：本，明天就学校汇演了！你准备好了吗？\n本：好了，我准备好几周了，要唱要演。\n安娜：我加戏剧社的节目。\n本：观众一定喜欢，别忘了笑。\n安娜：这场演出我们会记很久。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A show to remember",
+      "en": "Last Friday our school had a big Show Time. Each class prepared one act. We sang songs in English, danced to popular music, and even put on a short play about friendship. When the audience clapped after our performance, my heart jumped with joy. I will remember this show for many years. A new school year, a great new start!",
+      "cn": "上周五我们学校举办了大型汇演。每个班准备一个节目。我们唱英文歌、跳流行舞，甚至演了一出关于友谊的小话剧。表演结束观众鼓掌时，我心里乐开了花。这场演出我会记很多年。新学年，新开始！"
+    }
+  ]
+}

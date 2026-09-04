@@ -1,0 +1,42 @@
+{
+  "shopping": [
+    { "en": "Go shopping.", "cn": "去购物。", "level": 1 },
+    { "en": "I love shopping.", "cn": "我喜欢购物。", "level": 2 },
+    { "en": "Mum and I went shopping for fruit yesterday.", "cn": "妈妈和我昨天去买水果了。", "level": 3 }
+  ],
+  "buy": [
+    { "en": "I buy a pen.", "cn": "我买一支笔。", "level": 1 },
+    { "en": "She buys some milk.", "cn": "她买了一些牛奶。", "level": 2 },
+    { "en": "I want to buy a new bag for my brother's birthday.", "cn": "我想买个新书包给弟弟做生日礼物。", "level": 3 }
+  ],
+  "store": [
+    { "en": "A big store.", "cn": "一家大商店。", "level": 1 },
+    { "en": "Go to the store.", "cn": "去商店。", "level": 2 },
+    { "en": "There is a new clothes store near our school.", "cn": "学校附近有家新开的服装店。", "level": 3 }
+  ],
+  "money": [
+    { "en": "Some money.", "cn": "一些钱。", "level": 1 },
+    { "en": "I have ten yuan.", "cn": "我有十元钱。", "level": 2 },
+    { "en": "Save your money for things you really need.", "cn": "把钱存起来买真正需要的东西。", "level": 3 }
+  ],
+  "price": [
+    { "en": "Good price.", "cn": "价格不错。", "level": 1 },
+    { "en": "What's the price?", "cn": "什么价？", "level": 2 },
+    { "en": "The price of this bike is too high for me.", "cn": "这辆自行车的价格对我来说太高了。", "level": 3 }
+  ],
+  "cheap": [
+    { "en": "Cheap and good.", "cn": "便宜又好。", "level": 1 },
+    { "en": "This bag is cheap.", "cn": "这个包很便宜。", "level": 2 },
+    { "en": "We found some very cheap apples at the market.", "cn": "我们在市场上找到了非常便宜的苹果。", "level": 3 }
+  ],
+  "expensive": [
+    { "en": "It's expensive.", "cn": "它很贵。", "level": 1 },
+    { "en": "This pen is expensive.", "cn": "这支笔贵。", "level": 2 },
+    { "en": "I love this jacket, but it's too expensive.", "cn": "我喜欢这件夹克，但太贵了。", "level": 3 }
+  ],
+  "yuan": [
+    { "en": "Ten yuan.", "cn": "十元。", "level": 1 },
+    { "en": "It costs five yuan.", "cn": "它五元。", "level": 2 },
+    { "en": "I bought three books for sixty yuan in total.", "cn": "我一共花六十元买了三本书。", "level": 3 }
+  ]
+}

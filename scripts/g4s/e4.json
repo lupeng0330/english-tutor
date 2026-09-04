@@ -1,0 +1,42 @@
+{
+  "do": [
+    { "en": "What do you do?", "cn": "你做什么？", "level": 1 },
+    { "en": "I do my homework.", "cn": "我做作业。", "level": 2 },
+    { "en": "We do many fun things together at school every day.", "cn": "我们每天在学校一起做很多有趣的事。", "level": 3 }
+  ],
+  "read": [
+    { "en": "I read a book.", "cn": "我看书。", "level": 1 },
+    { "en": "She reads English every day.", "cn": "她每天读英语。", "level": 2 },
+    { "en": "I read storybooks for half an hour before bed.", "cn": "睡前我看故事书半小时。", "level": 3 }
+  ],
+  "write": [
+    { "en": "Write here.", "cn": "在这里写。", "level": 1 },
+    { "en": "Write your name, please.", "cn": "请写你的名字。", "level": 2 },
+    { "en": "I write a letter to my grandma every month.", "cn": "我每月给奶奶写一封信。", "level": 3 }
+  ],
+  "study": [
+    { "en": "I study hard.", "cn": "我努力学习。", "level": 1 },
+    { "en": "We study English at school.", "cn": "我们在学校学英语。", "level": 2 },
+    { "en": "If you study a little every day, you will be great.", "cn": "如果你每天学一点，你会很棒。", "level": 3 }
+  ],
+  "draw": [
+    { "en": "I draw a cat.", "cn": "我画一只猫。", "level": 1 },
+    { "en": "She likes to draw.", "cn": "她喜欢画画。", "level": 2 },
+    { "en": "He can draw the school in just a few minutes.", "cn": "他几分钟就能画出学校。", "level": 3 }
+  ],
+  "watch": [
+    { "en": "I watch TV.", "cn": "我看电视。", "level": 1 },
+    { "en": "We watch the football match.", "cn": "我们看足球比赛。", "level": 2 },
+    { "en": "On Friday night we watch a movie at home.", "cn": "周五晚我们在家看电影。", "level": 3 }
+  ],
+  "TV": [
+    { "en": "Turn on the TV.", "cn": "打开电视。", "level": 1 },
+    { "en": "I watch TV after dinner.", "cn": "我晚饭后看电视。", "level": 2 },
+    { "en": "Don't watch too much TV — it's not good for your eyes.", "cn": "不要看太久电视，对眼睛不好。", "level": 3 }
+  ],
+  "every day": [
+    { "en": "I read every day.", "cn": "我每天看书。", "level": 1 },
+    { "en": "I drink milk every day.", "cn": "我每天喝牛奶。", "level": 2 },
+    { "en": "I practise the piano for thirty minutes every day.", "cn": "我每天练琴三十分钟。", "level": 3 }
+  ]
+}

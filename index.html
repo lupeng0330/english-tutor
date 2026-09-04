@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="theme-color" content="#3b82f6" />
+<meta name="format-detection" content="telephone=no" />
+<!-- 🆕 PWA: Web App Manifest + iOS 主屏图标（v01.14） -->
+<link rel="manifest" href="./manifest.json" />
+<link rel="apple-touch-icon" href="./icon-192.png" />
+<link rel="icon" type="image/svg+xml" href="./icon.svg" />
+<title>乐学英语 · 广州教科版同步辅导 (Demo)</title>
+<!-- Tailwind 本地静态编译产物（替代运行时 CDN，离线/弱网样式 100% 可用；
+     重新生成见 tailwind.config.js 顶部注释）。render-blocking 引入避免首屏闪烁。 -->
+<link rel="stylesheet" href="./tailwind.css" />
+<!-- 🆕 styles.css 改为 render-blocking 静态引入（原为 version.txt 回来后动态注入，一旦该链路异常会丢失全部 CSS 变量导致"白底"）。
+     静态引入保证关键样式与主题变量首屏必达；缓存破坏改由下方内联脚本给它追加 ?v= 参数或依赖 SW。 -->
+<link rel="stylesheet" href="./styles.css" id="appStylesLink" />
+<!-- 🆕 主题预应用（防 FOUC）：按当前激活档案读取主题（Phase3 起主题按档案隔离），回退旧全局 key -->
+<script>
+  (function(){
+    try {
+      var pid = 'default';
+      var rawActive = localStorage.getItem('yxyy_active_profile_v1');
+      if (rawActive) { var p = JSON.parse(rawActive); if (p) pid = p; }
+      var t = localStorage.getItem('yxyy_theme_v1:' + pid) || localStorage.getItem('yxyy_theme_v1');
+      // Phase3 信封格式 {v:'rouge',t:...} 取 v；旧裸串/双重编码自愈
+      if (t && t.charAt(0) === '{') { try { var o = JSON.parse(t); if (o && typeof o.v === 'string') t = o.v; } catch(e){} }
+      if (t && t.length > 1 && t.charAt(0) === '"') { try { var p2 = JSON.parse(t); if (typeof p2 === 'string') t = p2; } catch(e){} }
+      var VALID = ['sunny','vermilion','celadon','ink','navy','rouge'];
+      if (t && VALID.indexOf(t) >= 0) document.documentElement.setAttribute('data-theme', t);
+    } catch(e){}
+  })();
+</script>
+<!-- 🆕 v01.17：Chart.js 本地化（原 CDN），配合 sw.js 预缓存保证离线报告页图表可用 -->
+<script src="./js/vendor/chart.umd.min.js"></script>
+<!-- 🆕 云端后端地址（CloudBase 云函数）：仅线上环境注入；本地/局域网开发不注入，走 api-client.js 的本地 127.0.0.1:4000 默认 -->
+<script>
+  (function () {
+    try {
+      var h = (location && location.hostname) || '';
+      var isLocal = (h === 'localhost' || h === '127.0.0.1' || h === '' ||
+        /^192\.168\./.test(h) || /^10\./.test(h) || /^172\.(1[6-9]|2\d|3[01])\./.test(h));
+      if (!isLocal) {
+        window.__API_BASE = 'https://happyenglish-d1gda90e97d02a8c6.service.tcloudbase.com/yxyy-api';
+      }
+    } catch (e) {}
+  })();
+</script>
+<!-- 🆕 缓存破坏：优先级 URL?v= > version.txt(commit hash) > 当日小时戳。手机/PC 拿到同一版本号，推送后立即更新。 -->
+<script>
+  window.__APP_VERSION = 'loading';
+  window.__versionReady = (function () {
+    // 暴露工具函数（即使版本号未就绪也可调用，值会随 __APP_VERSION 变化）
+    window.__withVer = function(url){
+      if (!url) return url;
+      return url + (url.indexOf('?')<0 ? '?' : '&') + 'v=' + encodeURIComponent(window.__APP_VERSION || '');
+    };
+
+    function fallbackVersion() {
+      var d = new Date();
+      return d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0')
+           + '-' + String(d.getHours()).padStart(2,'0');
+    }
+
+    // 0) Electron/移动壳环境：无 version.txt，直接用原生应用版本号，
+    //    避免 fetch('./version.txt') 在壳内走 fallback（不影响线上静态版逻辑）。
+    // 0a) 桌面 Electron：preload 暴露 desktopBridge.getAppVersion()
+    try {
+      if (window.desktopBridge && typeof window.desktopBridge.getAppVersion === 'function') {
+        return window.desktopBridge.getAppVersion()
+          .then(function(v){ return v ? ('app-' + v) : fallbackVersion(); })
+          .catch(function(){ return fallbackVersion(); });
+      }
+    } catch(e){}
+    // 0b) 移动 Capacitor：@capacitor/app 的 App.getInfo() 提供原生版本
+    try {
+      if (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()) {
+        var CapApp = (window.Capacitor.Plugins && window.Capacitor.Plugins.App) || null;
+        if (CapApp && typeof CapApp.getInfo === 'function') {
+          return CapApp.getInfo()
+            .then(function(info){ return (info && info.version) ? ('app-' + info.version) : fallbackVersion(); })
+            .catch(function(){ return fallbackVersion(); });
+        }
+        // 原生平台但拿不到插件信息也不应去 fetch version.txt
+        return Promise.resolve(fallbackVersion());
+      }
+    } catch(e){}
+
+    // 1) URL ?v=xxx 优先级最高（用于强制回到特定版本）
+    try {
+      var u = new URL(window.location.href);
+      var urlV = u.searchParams.get('v');
+      if (urlV) return Promise.resolve(urlV);
+    } catch(e){}
+
+    // 2) 否则读 version.txt（由 dev-push.ps1 写入；首行 = 完整版本号字符串）
+    //    文件必须每次请求都拿最新；对这一个小文件强制 no-cache
+    return fetch('./version.txt?_=' + Date.now(), { cache: 'no-store' })
+      .then(function(r){ return r.ok ? r.text() : ''; })
+      .then(function(txt){
+        // 首行就是完整版本号，如 "20260505V01.01"
+        var firstLine = (txt || '').split(/\r?\n/)[0].trim();
+        return firstLine || fallbackVersion();
+      })
+      .catch(function(){ return fallbackVersion(); });
+  })().then(function(v){
+    window.__APP_VERSION = v;
+    // styles.css 已在 <head> 静态引入（见上），此处仅为其追加版本号做缓存破坏（不影响首屏，已加载的样式不会因改 href 丢失）
+    try {
+      var sl = document.getElementById('appStylesLink');
+      if (sl) sl.href = window.__withVer('./styles.css');
+    } catch(e){}
+    // 更新左下角版本号角标
+    var el = document.getElementById('appVersionBadge');
+    if (el) el.textContent = 'v' + v;
+    return v;
+  });
+</script>
+</head>
+<body>
+
+<!-- 顶部导航栏 -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center text-white text-xl font-bold">乐</div>
+      <div>
+        <div class="font-bold text-slate-800 text-lg">乐学英语</div>
+        <div class="text-xs text-slate-500">小学+初中英语同步辅导</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <!-- 👤 v01.20 多用户档案切换 -->
+      <button id="profileBadgeBtn" type="button"
+        class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 hover:bg-blue-100 transition"
+        title="切换学习档案">
+        <span class="text-base">👤</span>
+        <span id="profileBadgeName" class="text-sm font-bold text-blue-700 max-w-[6em] truncate">默认档案</span>
+        <span class="text-xs text-blue-500">▾</span>
+      </button>
+      <!-- 🔥 连续学习徽标（真实数据） -->
+      <div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-50 border border-orange-200" title="连续学习天数">
+        <span class="text-lg">🔥</span>
+        <span class="text-sm font-bold text-orange-700"><span id="headerStreak">0</span> 天</span>
+      </div>
+    </div>
+  </div>
+  <!-- 👤 v01.20 档案切换下拉面板（默认隐藏，由 app.js bindProfileUI 控制） -->
+  <div id="profilePanel" class="hide profile-panel"></div>
+</header>
+
+<!-- 全局学习上下文切换条（粘性，所有页面可见）-->
+<div id="contextBar" class="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border-b border-blue-100 sticky top-[60px] md:top-[68px] z-40">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 md:py-3 flex items-center gap-2 md:gap-4 overflow-x-auto">
+    <div class="flex items-center gap-1 text-slate-500 text-xs md:text-sm flex-shrink-0">
+      <span>📚</span><span class="hidden md:inline">当前学习:</span>
+    </div>
+    <div class="flex items-center gap-2 flex-shrink-0">
+      <select id="ctxTextbook" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="jk">广州教科版 (3-6年级)</option>
+        <option value="gzk">广州口语 (1-2年级)</option>
+        <option value="hj">广州沪教版 (初中)</option>
+        <option value="rj" disabled>人教版 (待上线)</option>
+        <option value="wy" disabled>外研版 (待上线)</option>
+      </select>
+      <select id="ctxGrade" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="1">一年级</option>
+        <option value="2">二年级</option>
+        <option value="3">三年级</option>
+        <option value="4">四年级</option>
+        <option value="5">五年级</option>
+        <option value="6">六年级</option>
+        <option value="7">初一</option>
+        <option value="8">初二</option>
+        <option value="9">初三</option>
+      </select>
+      <select id="ctxTerm" class="bg-white rounded-lg px-2 md:px-3 py-1.5 text-xs md:text-sm font-semibold text-blue-700 border border-blue-200 outline-none cursor-pointer">
+        <option value="上">上册</option>
+        <option value="下">下册</option>
+      </select>
+    </div>
+    <div class="flex-1 text-right text-xs md:text-sm text-slate-600 whitespace-nowrap flex-shrink-0">
+      <span id="ctxSummary">三年级 · 上册 · 广州教科版</span>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-6 py-6 flex gap-6">
+  <!-- 侧边栏 -->
+  <aside class="w-56 flex-shrink-0">
+    <nav class="card p-3 sticky top-24">
+      <div class="nav-item active" data-page="home"><span class="nav-ico">🏠</span><span class="nav-lbl-full">首页</span><span class="nav-lbl-mb">首页</span></div>
+      <div class="nav-item" data-page="textbook"><span class="nav-ico">📖</span><span class="nav-lbl-full">课本学习</span><span class="nav-lbl-mb">课本</span></div>
+      <div class="nav-item" data-page="practice"><span class="nav-ico">✏️</span><span class="nav-lbl-full">练习测试</span><span class="nav-lbl-mb">练习</span></div>
+      <div class="nav-item" data-page="exam"><span class="nav-ico">📋</span><span class="nav-lbl-full">模拟考试</span><span class="nav-lbl-mb">考试</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="grammar"><span class="nav-ico">📝</span><span class="nav-lbl-full">语法讲解</span><span class="nav-lbl-mb">语法</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="chat"><span class="nav-ico">💬</span><span class="nav-lbl-full">AI对话</span><span class="nav-lbl-mb">对话</span></div>
+      <div class="nav-item" data-page="wrongbook"><span class="nav-ico">🩹</span><span class="nav-lbl-full">错题本</span><span class="nav-lbl-mb">错题</span></div>
+      <div class="nav-item" data-page="report"><span class="nav-ico">📊</span><span class="nav-lbl-full">学习报告</span><span class="nav-lbl-mb">报告</span></div>
+      <div class="nav-item nav-item--deskonly" data-page="member"><span class="nav-ico">👑</span><span class="nav-lbl-full">会员中心</span><span class="nav-lbl-mb">会员</span></div>
+    </nav>
+  </aside>
+
+  <main class="flex-1 min-w-0">
+
+    <!-- ============ 首页 · 极简版 ============ -->
+    <section id="page-home" class="page">
+      <!-- 顶栏：简洁标题 -->
+      <div class="mb-4">
+        <h1 class="text-lg font-bold text-slate-800">📚 乐学英语</h1>
+      </div>
+
+      <!-- 欢迎 + 继续学习 CTA -->
+      <div class="card p-5 mb-4 bg-gradient-to-br from-blue-500 to-indigo-600 text-white border-0 rounded-2xl shadow">
+        <div class="mb-1 text-sm opacity-90" id="homeGreeting">Good morning 👋</div>
+        <h1 class="text-xl md:text-2xl font-bold mb-3" id="homeTitle">开始今天的英语学习吧</h1>
+        <div class="mb-4 text-sm opacity-90" id="homeNextHint">接下来：三年级 · 上册 · Unit 1 Hello</div>
+        <button onclick="continueLearning()" class="w-full bg-white text-blue-600 py-2.5 rounded-xl font-bold text-base shadow-sm hover:shadow-md active:scale-95 transition">
+          ▶ 继续学习
+        </button>
+      </div>
+
+      <!-- 真实数据看板（2列小卡，PC端4列） -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-blue-600"><span id="statTotalTime">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">累计分钟</div>
+        </div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-indigo-600"><span id="statKnownWords">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">掌握单词</div>
+        </div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-purple-600"><span id="statReadingOk">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">阅读答对</div>
+        </div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-purple-500"><span id="statReadingPct">—</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">阅读正确率</div>
+        </div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-green-600"><span id="statAccuracy">—</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">本周正确</div>
+        </div>
+        <div class="card p-3 text-center">
+          <div class="text-xl font-bold text-orange-500"><span id="statStreak">0</span></div>
+          <div class="text-xs text-slate-500 mt-0.5">连续天数</div>
+        </div>
+      </div>
+
+      <!-- 四大主入口 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('textbook')">
+          <div class="text-3xl md:text-4xl mb-2">📖</div>
+          <div class="font-semibold text-slate-800 text-sm md:text-base">课本学习</div>
+        </div>
+        <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('practice')">
+          <div class="text-3xl md:text-4xl mb-2">✏️</div>
+          <div class="font-semibold text-slate-800 text-sm md:text-base">练习测试</div>
+        </div>
+        <div class="card p-4 md:p-5 text-center cursor-pointer border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-indigo-50" onclick="switchPage('exam')">
+          <div class="text-3xl md:text-4xl mb-2">📋</div>
+          <div class="font-semibold text-slate-800 text-sm md:text-base">模拟考试</div>
+          <div class="text-xs text-blue-500 mt-0.5" id="homeExamHint">真题·模拟·单元测试</div>
+        </div>
+        <div class="card p-4 md:p-5 text-center cursor-pointer" onclick="switchPage('report')">
+          <div class="text-3xl md:text-4xl mb-2">📊</div>
+          <div class="font-semibold text-slate-800 text-sm md:text-base">学习报告</div>
+        </div>
+      </div>
+
+      <!-- 语法 / AI对话 快捷入口：移动端底栏已精简为 5 项，这两项移到首页保证可达（桌面端在侧栏已有，故 md:hidden） -->
+      <div class="grid grid-cols-2 gap-3 mt-3 md:hidden">
+        <div class="card p-4 text-center cursor-pointer" onclick="switchPage('grammar')">
+          <div class="text-3xl mb-2">📝</div>
+          <div class="font-semibold text-slate-800 text-sm">语法讲解</div>
+        </div>
+        <div class="card p-4 text-center cursor-pointer" onclick="switchPage('chat')">
+          <div class="text-3xl mb-2">💬</div>
+          <div class="font-semibold text-slate-800 text-sm">AI对话</div>
+        </div>
+      </div>
+
+      <!-- 🧠 智能推荐练习入口（v01.18） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-emerald-200 bg-gradient-to-br from-emerald-50 to-teal-50" onclick="startSmartPractice()">
+        <div class="text-3xl md:text-4xl flex-shrink-0">🧠</div>
+        <div class="flex-1">
+          <div class="font-bold text-slate-800">智能推荐练习</div>
+          <div class="text-sm text-slate-500">按你的错题、薄弱项和新题，跨题型智能组卷</div>
+        </div>
+        <div class="text-emerald-500 text-xl font-bold">→</div>
+      </div>
+
+      <!-- 🆕 今日复习入口卡片（v02.x · 单词记忆曲线 SRS） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-sky-200 bg-gradient-to-br from-sky-50 to-cyan-50" onclick="switchPage('review')">
+        <div class="text-3xl md:text-4xl flex-shrink-0">📅</div>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-slate-800 text-sm md:text-base">今日复习 · 记忆曲线</div>
+          <div class="text-xs text-slate-500 mt-0.5">按遗忘规律重现到期单词，越记越牢</div>
+        </div>
+        <span class="badge bg-sky-100 text-sky-700 flex-shrink-0" id="homeReviewCount">0 词</span>
+      </div>
+
+      <!-- 🆕 错题本入口卡片（v01.16） -->
+      <div class="card p-4 md:p-5 mt-3 cursor-pointer flex items-center gap-4 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="switchPage('wrongbook')">
+        <div class="text-3xl md:text-4xl flex-shrink-0">🩹</div>
+        <div class="flex-1 min-w-0">
+          <div class="font-semibold text-slate-800 text-sm md:text-base">错题本 · 专攻薄弱点</div>
+          <div class="text-xs text-slate-500 mt-0.5">逐题回顾答错的题，巩固后自动移除</div>
+        </div>
+        <span class="badge bg-orange-100 text-orange-700 flex-shrink-0" id="homeWrongCount">0 题</span>
+      </div>
+
+      <!-- 🆕 页脚：版本号 + 检查更新按钮（居中放置） -->
+      <div class="mt-8 mb-4 flex flex-col items-center gap-2 text-slate-400">
+        <button id="btnForceUpdate" onclick="forceCheckUpdate()" title="强制刷新到最新版本" class="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-xs text-slate-500 shadow-sm hover:text-blue-600 hover:border-blue-300 hover:shadow transition">
+          <span id="forceUpdateIcon">🔄</span>
+          <span id="forceUpdateLabel">检查更新</span>
+        </button>
+        <p class="text-xs">v<span id="homeVersionTag">—</span></p>
+      </div>
+    </section>
+
+    <!-- ============ 课本学习 ============ -->
+    <section id="page-textbook" class="page hide">
+      <div id="unitListView">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">📖 单元列表 <span class="text-sm font-normal text-slate-500" id="textbookCtxBadge">（三年级 · 上册）</span></h2>
+        <div id="unitList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+
+      <div id="unitDetailView" class="hide">
+        <button onclick="backToUnits()" class="mb-4 text-blue-600 font-semibold flex items-center gap-1">← 返回单元列表</button>
+        <div id="unitSwitcher" class="card p-6 mb-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-0 relative select-none">
+          <div class="flex items-center gap-3">
+            <button id="unitPrevBtn" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/25 hover:bg-white/35 backdrop-blur flex-shrink-0 flex items-center justify-center text-xl font-bold transition" title="上一单元">‹</button>
+            <div class="flex-1 text-center cursor-grab" id="unitSwipeArea">
+              <h2 class="text-xl md:text-2xl font-bold" id="unitDetailTitle">Unit 3</h2>
+              <p class="opacity-90 text-sm mt-0.5" id="unitDetailSub">主题课文</p>
+              <div class="mt-1.5 text-xs opacity-75" id="unitDetailPager">第 1 / 2 单元</div>
+            </div>
+            <button id="unitNextBtn" class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/25 hover:bg-white/35 backdrop-blur flex-shrink-0 flex items-center justify-center text-xl font-bold transition" title="下一单元">›</button>
+          </div>
+          <div class="hidden md:block text-center mt-2 text-xs opacity-60">💡 可左右滑动或使用 ← → 方向键快速切换</div>
+        </div>
+
+        <!-- 📖 单元学习卡（单词 / 课文 两 Tab 合并） -->
+        <div class="card p-4 md:p-6 mb-6">
+          <!-- 🆕 学习进度条（词汇蓝 + 阅读紫 双轨） -->
+          <div class="mb-3">
+            <div class="flex justify-between text-xs text-slate-500 mb-1.5">
+              <span id="unitProgressLabel">加载中…</span>
+              <span id="unitProgressPct">0%</span>
+            </div>
+            <!-- 双轨进度条 -->
+            <div class="h-2.5 bg-slate-100 rounded-full overflow-hidden flex mb-1">
+              <div id="unitWordBar"    class="h-full bg-gradient-to-r from-blue-500 to-blue-400 transition-all" style="width:0%"></div>
+              <div id="unitReadBar"    class="h-full bg-gradient-to-r from-purple-500 to-purple-400 transition-all" style="width:0%"></div>
+            </div>
+            <!-- 图例 + 详细数据 -->
+            <div class="flex justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1"><span class="inline-block w-2 h-2 rounded-sm bg-blue-500"></span>词汇</span>
+              <span id="unitWordDetail" class="text-blue-500"></span>
+              <span class="mx-2 text-slate-200">|</span>
+              <span class="flex items-center gap-1"><span class="inline-block w-2 h-2 rounded-sm bg-purple-500"></span>阅读</span>
+              <span id="unitReadDetail" class="text-purple-500"></span>
+            </div>
+            <!-- 🆕 阅读答题历史（尝试次数 / 历史最高） -->
+            <div id="unitReadHistory" class="hide mt-2 text-xs text-slate-400 flex gap-4">
+              <span id="unitReadAttempts"></span>
+              <span id="unitReadBest"></span>
+            </div>
+          </div>
+
+          <!-- Tab 切换 -->
+          <div class="flex items-center gap-2 mb-4 border-b border-slate-200">
+            <button id="tabWords"   class="unit-tab active px-4 py-2 font-semibold border-b-2" onclick="switchUnitTab('words')">📝 单词</button>
+            <button id="tabLesson"  class="unit-tab px-4 py-2 font-semibold border-b-2 border-transparent text-slate-500" onclick="switchUnitTab('lesson')">🎙️ 课文</button>
+            <div class="flex-1 text-right text-sm text-slate-500">
+              <span id="wordCounter"><span id="wordIndex">1</span> / <span id="wordTotal">10</span></span>
+            </div>
+          </div>
+
+          <!-- Tab A: 单词卡片 -->
+          <div id="unitTabWords" class="unit-tab-panel">
+            <div class="max-w-md mx-auto">
+              <!-- 🆕 模块徽章（可选显示）-->
+              <div id="unitModuleBadge" class="hide text-center mb-2">
+                <span class="inline-block text-xs font-semibold px-2.5 py-1 rounded-full bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 border border-indigo-200"></span>
+              </div>
+              <!-- 卡片舞台：承载两侧悬浮翻页圆钮（方案B） -->
+              <div class="word-card-stage">
+              <button class="word-nav-arrow word-nav-prev" onclick="prevWord()" aria-label="上一个">←</button>
+              <div class="word-card" id="wordCard" onclick="flipCard()">
+                <div class="word-card-inner">
+                  <div class="word-face word-front">
+                    <div class="text-4xl font-bold mb-1" id="wordText">apple</div>
+                    <!-- 🆕 词性标签 -->
+                    <div class="mb-2"><span id="wordPos" class="hide text-xs font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 border border-blue-200"></span></div>
+                    <div class="text-lg text-blue-700" id="wordPhonetic">/ˈæpl/</div>
+                    <button class="mt-4 px-4 py-2 bg-white rounded-full shadow text-sm" onclick="event.stopPropagation(); playWord()">🔊 发音</button>
+                    <div class="text-xs text-blue-600 mt-3 opacity-70">点击卡片查看释义</div>
+                  </div>
+                  <div class="word-face word-back">
+                    <div class="text-3xl font-bold mb-2" id="wordMeaning">苹果</div>
+                    <div class="text-sm text-amber-700 text-center" id="wordExample">I like to eat apples.</div>
+                  </div>
+                </div>
+              </div>
+              <button class="word-nav-arrow word-nav-next" onclick="nextWord()" aria-label="下一个">→</button>
+              </div>
+              <!-- 主操作：✗ 不认识 / ✓ 认识（浅红/浅绿，翻页移至两侧圆钮） -->
+              <div class="word-act-row">
+                <button class="word-act word-act-unknown" onclick="markUnknown()">✗ 不认识</button>
+                <button class="word-act word-act-known" onclick="markKnown()">✓ 认识</button>
+              </div>
+
+              <!-- 🆕 例句阶梯（从易到难 3~4 句） -->
+              <div id="wordExamplesWrap" class="mt-4 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-xl p-3 md:p-4 hide">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="text-sm font-semibold text-amber-800">📖 例句阶梯</div>
+                  <button type="button" id="wordExamplesToggle" class="text-xs px-2 py-0.5 rounded-full bg-white border border-amber-200 text-amber-700 hover:bg-amber-100 active:scale-95 transition" onclick="toggleWordExamples()">收起</button>
+                </div>
+                <div id="wordExamplesList" class="space-y-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab B: 课文朗读 + AI 跟读 -->
+          <div id="unitTabLesson" class="unit-tab-panel hide">
+            <div class="bg-slate-50 rounded-xl p-4 md:p-5 mb-4">
+              <div class="flex items-center justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <button id="lessonPlayBtn" class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center text-lg" onclick="playLesson()">▶</button>
+                  <div class="text-sm text-slate-600" id="lessonPlayStatus">点击播放真人朗读</div>
+                </div>
+                <button type="button" id="lessonFlipBtn"
+                        class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition"
+                        onclick="flipLesson()" title="点击切换中英文">
+                  🔄 <span id="lessonFlipLabel">看译文</span>
+                </button>
+              </div>
+
+              <!-- 课文分篇导航条 -->
+              <div id="lessonNav" class="flex items-center justify-between gap-2 mb-2 hide">
+                <button type="button" id="lessonPrevBtn" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition text-sm" onclick="prevLesson()">←</button>
+                <div class="flex-1 text-center">
+                  <div class="text-sm font-semibold text-slate-700" id="lessonPageTitle">P2 · Let's Learn</div>
+                  <div class="text-xs text-slate-400 mt-0.5" id="lessonPageIndex">第 1 / 4 篇</div>
+                </div>
+                <button type="button" id="lessonNextBtn" class="px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 hover:text-blue-600 active:scale-95 transition text-sm" onclick="nextLesson()">→</button>
+              </div>
+
+              <!-- 翻转卡片容器：点击也可翻转 -->
+              <div class="lesson-flip" id="lessonFlipCard" onclick="flipLesson()">
+                <div class="lesson-flip-inner">
+                  <p class="lesson-face lesson-en text-slate-800 leading-relaxed text-base md:text-lg whitespace-pre-line" id="lessonText">Hello! I'm Tom. This is my family.</p>
+                  <p class="lesson-face lesson-cn text-slate-700 leading-relaxed text-base md:text-lg whitespace-pre-line" id="lessonTranslation">（暂无翻译）</p>
+                </div>
+              </div>
+
+              <!-- 指示器（圆点） -->
+              <div id="lessonDots" class="flex items-center justify-center gap-1.5 mt-3 hide"></div>
+
+              <div class="text-xs text-slate-400 mt-2 text-center">💡 点击文字切换中英文 · 左右滑动或按箭头切换课文</div>
+            </div>
+
+            <!-- 🆕 阅读理解练习区块 -->
+            <div id="readingExWrap" class="hide bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-3 md:p-4 mb-4">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-sm font-semibold text-indigo-800">📝 理解自测</div>
+                <div class="flex gap-2">
+                  <div class="text-xs text-slate-500" id="readingExBadge">0 / 0</div>
+                  <button type="button" id="readingExToggle" class="text-xs px-2 py-0.5 rounded-full bg-white border border-indigo-200 text-indigo-700 hover:bg-indigo-100 active:scale-95 transition" onclick="toggleReadingEx()">收起</button>
+                </div>
+              </div>
+              <div id="readingExList" class="space-y-2"></div>
+              <div class="mt-3 flex gap-2">
+                <button type="button" class="flex-1 text-xs py-1.5 rounded-lg bg-white border border-indigo-200 text-indigo-700 hover:bg-indigo-100 active:scale-95 transition" onclick="submitReadingEx()">✓ 提交自测</button>
+                <button type="button" class="flex-1 text-xs py-1.5 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-100 active:scale-95 transition" onclick="resetReadingEx()">↺ 重做</button>
+              </div>
+              <div id="readingExResult" class="hide mt-3 text-sm"></div>
+            </div>
+            <div class="flex flex-col items-center gap-3">
+              <button id="recordBtn" class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-red-500 text-white flex items-center justify-center text-2xl md:text-3xl shadow-lg" onclick="toggleRecord()">🎤</button>
+              <div class="text-sm text-slate-600" id="recordHint">点击开始录音跟读（Demo）</div>
+              <div id="recordResult" class="hide w-full">
+                <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-xl p-4">
+                  <div class="flex items-center justify-between mb-3">
+                    <span class="font-semibold text-slate-800">🤖 AI评测结果 (Mock)</span>
+                    <span class="text-2xl font-bold text-green-600" id="scoreDisplay">92 分</span>
+                  </div>
+                  <div class="space-y-2 text-sm">
+                    <div class="flex justify-between"><span class="text-slate-600">发音准确度</span><span class="font-semibold">95%</span></div>
+                    <div class="flex justify-between"><span class="text-slate-600">流利度</span><span class="font-semibold">88%</span></div>
+                    <div class="flex justify-between"><span class="text-slate-600">语调</span><span class="font-semibold">93%</span></div>
+                    <div class="mt-2 p-3 bg-white rounded-lg text-slate-700 text-xs">💡 真实 ASR 评测待接入云端（A2）</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 练习测试 ============ -->
+    <section id="page-practice" class="page hide">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">✏️ 练习测试</h2>
+
+      <!-- 筛选器（精简：去除重复学段徽章，只留真正会调的两个开关） -->
+      <div id="practiceFilterView" class="card p-4 mb-4">
+        <div class="flex flex-wrap items-center gap-3 text-sm">
+          <label class="flex items-center gap-2 text-slate-700 cursor-pointer select-none">
+            <input type="checkbox" id="filterAllGrades" class="w-4 h-4 accent-blue-500">
+            <span>跨年级刷题</span>
+          </label>
+          <div class="flex items-center gap-2">
+            <span class="text-slate-500">单元</span>
+            <select id="filterUnit" class="bg-slate-50 rounded-lg px-3 py-1.5 outline-none font-semibold text-sm min-w-[140px]">
+              <option value="all">全部单元</option>
+            </select>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-slate-500">难度</span>
+            <select id="filterDifficulty" class="bg-slate-50 rounded-lg px-3 py-1.5 outline-none font-semibold text-sm">
+              <option value="0">全部</option>
+              <option value="1">★ 基础</option>
+              <option value="2">★★ 中等</option>
+              <option value="3">★★★ 较难</option>
+              <option value="4">★★★★ 挑战</option>
+            </select>
+          </div>
+          <div class="flex-1 text-right text-slate-500 text-xs md:text-sm min-w-[160px]">
+            <span id="filterCount">-</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🧠 智能推题开关（v01.18，持久化偏好） -->
+      <div id="smartPickCard" class="card p-3 mb-4 flex items-center justify-between">
+        <div>
+          <div class="font-semibold text-slate-700 text-sm">🧠 智能推题</div>
+          <div class="text-xs text-slate-400" id="smartPickHint">按错题/薄弱/新题智能排序出题</div>
+        </div>
+        <button id="smartPickToggle" type="button" onclick="toggleSmartPick()" aria-label="智能推题开关"
+                class="smartpick-toggle is-on">
+          <span id="smartPickKnob"></span>
+        </button>
+      </div>
+
+      <div id="practiceTypeView" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card p-6 cursor-pointer" onclick="startPractice('spelling')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📝</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countSpelling">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">单词拼写</h3>
+          <p class="text-slate-500 text-sm mt-1">根据释义和提示拼写单词</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('listening')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">👂</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countListening">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">听力选择</h3>
+          <p class="text-slate-500 text-sm mt-1">听音频选择正确答案</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('grammar')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🔤</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countGrammar">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">语法练习</h3>
+          <p class="text-slate-500 text-sm mt-1">时态、词性、句型专项训练</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('reading')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📖</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countReading">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">阅读理解</h3>
+          <p class="text-slate-500 text-sm mt-1">短文阅读理解训练</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('cloze')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📝</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countCloze">0 篇</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">完形填空</h3>
+          <p class="text-slate-500 text-sm mt-1">短文挖空选词，篇章式答题</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('dialog_complete')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">💬</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countDialogComplete">0 组</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">补全对话</h3>
+          <p class="text-slate-500 text-sm mt-1">完整的对话</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('sentence_transform')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🔄</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countSentenceTransform">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">句型转换</h3>
+          <p class="text-slate-500 text-sm mt-1">按要求改写句子</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('matching')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🔗</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countMatching">0 组</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">匹配题</h3>
+          <p class="text-slate-500 text-sm mt-1">问句与答句配对</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div class="card p-6 cursor-pointer" onclick="startPractice('cloze_passage')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">📄</div>
+            <span class="badge bg-blue-100 text-blue-700" id="countClozePassage">0 篇</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">补全短文</h3>
+          <p class="text-slate-500 text-sm mt-1">选词填空补全短文</p>
+          <div class="mt-3 text-blue-600 font-semibold text-sm">开始练习 →</div>
+        </div>
+        <div id="practiceCardWrongbook" class="card p-6 cursor-pointer md:col-span-2 border-2 border-orange-200 bg-gradient-to-br from-orange-50 to-amber-50" onclick="startPractice('wrongbook')">
+          <div class="flex items-start justify-between">
+            <div class="text-5xl mb-3">🩹</div>
+            <span class="badge bg-orange-100 text-orange-700" id="countWrongbook">0 题</span>
+          </div>
+          <h3 class="font-bold text-lg text-slate-800">错题本 · 专攻薄弱点</h3>
+          <!-- 🆕 错题本子 Tab：全部 / 阅读理解 -->
+          <div class="mt-2 flex gap-2" onclick="event.stopPropagation()">
+            <button id="tabWrongbookAll"    class="px-2 py-0.5 rounded text-xs bg-orange-200 text-orange-800 font-semibold" onclick="switchWrongbookTab('all')">全部</button>
+            <button id="tabWrongbookRead"  class="px-2 py-0.5 rounded text-xs bg-white text-orange-600 border border-orange-200"          onclick="switchWrongbookTab('reading_qa')">课文自测</button>
+          </div>
+          <p class="text-slate-500 text-sm mt-1">只练你答错过的题，连续答对 2 次自动移除</p>
+          <div class="mt-3 flex items-center justify-between">
+            <span class="text-orange-600 font-semibold text-sm">开始重练 →</span>
+            <button type="button" class="text-xs px-3 py-1 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100"
+                    onclick="event.stopPropagation(); if(confirm('确定清空错题本？此操作不可撤销。')){ clearWrongbook(); refreshPracticeCounts(); }">
+              🗑 全部清空
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="practiceQuizView" class="hide">
+        <!-- 切换学段时的刷新提示 -->
+        <div id="quizRefreshToast" class="hide mb-3 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm font-semibold text-center shadow-md">
+          ✅ 已切换到 <span id="quizRefreshCtx">三年级上</span>，自动加载新题
+        </div>
+        <!-- 🧠 本次推题构成摘要（v01.18 智能推题） -->
+        <div id="quizPickSummary" class="hide mb-3 px-4 py-2.5 rounded-xl bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 text-sm text-slate-700 shadow-sm"></div>
+        <div class="card p-6 mb-4">
+          <div class="flex justify-between items-center mb-4 flex-wrap gap-2">
+            <div class="flex items-center gap-2 flex-1 min-w-0">
+              <button type="button" onclick="backToPracticeList()" title="返回练习列表"
+                      class="flex-shrink-0 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center text-lg transition active:scale-95">&larr;</button>
+              <span class="badge bg-blue-100 text-blue-700 flex-shrink-0" id="quizType">语法练习</span>
+              <span class="badge bg-purple-100 text-purple-700 text-xs flex-shrink-0" id="quizMeta">三年级 · ★</span>
+            </div>
+            <span class="text-sm text-slate-500 flex-shrink-0">题目 <span id="quizIndex">1</span> / <span id="quizTotal">5</span></span>
+          </div>
+          <div class="h-2 bg-slate-100 rounded-full overflow-hidden mb-3">
+            <div id="quizProgress" class="h-full bg-gradient-to-r from-blue-500 to-indigo-500" style="width: 20%"></div>
+          </div>
+          <!-- 🧠 为什么推这题（v01.18 智能推题可解释提示） -->
+          <div id="quizWhy" class="hide mb-4 text-xs text-slate-500 bg-slate-50 rounded-lg px-3 py-2 border border-slate-100"></div>
+
+          <!-- 听力原文（仅听力题显示） -->
+          <div id="quizAudioBox" class="hide mb-4 p-5 bg-gradient-to-br from-blue-50 to-purple-100 rounded-xl">
+            <div class="flex flex-col items-center gap-3">
+              <button type="button" class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center text-3xl shadow-lg active:scale-95 transition" onclick="playAudioText()">🔊</button>
+              <div class="text-sm font-semibold text-slate-700">👆 点击播放听力</div>
+              <div class="text-xs text-slate-500" id="playAudioHint">播放后才能作答</div>
+              <button type="button" id="quizAudioTextToggle" class="text-xs px-3 py-1.5 bg-white rounded-lg text-slate-600 shadow-sm transition" onclick="toggleAudioText()">显示/隐藏原文</button>
+            </div>
+            <div id="quizAudioText" class="hide text-sm text-slate-700 italic mt-3 p-3 bg-white rounded-lg"></div>
+          </div>
+
+          <!-- 阅读文章（仅阅读题显示） -->
+          <div id="quizPassageBox" class="hide mb-4 p-4 bg-amber-50 rounded-xl">
+            <div class="text-xs text-amber-700 font-semibold mb-2">📄 阅读短文</div>
+            <div id="quizPassage" class="text-sm text-slate-800 leading-relaxed"></div>
+          </div>
+
+          <h3 class="text-lg font-semibold text-slate-800 mb-4" id="quizQuestion">Choose the correct answer:</h3>
+          <div id="quizOptions" class="space-y-2"></div>
+
+          <!-- 单词拼写填空区（仅拼写题显示） -->
+          <div id="quizSpellBox" class="hide">
+            <!-- 字母格子填空区（放最上，手机键盘弹起时永远保留可视） -->
+            <div id="quizSpellCells"
+                 class="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-3 px-2"></div>
+
+            <!-- 小提示 -->
+            <div class="text-center text-xs text-slate-400 mb-3" id="quizSpellTip">
+              ✏️ 在横线上填写缺失的字母，填完自动判定
+            </div>
+
+            <!-- 发音按钮（缩小、放下方） -->
+            <div class="flex items-center justify-center gap-2">
+              <button type="button" id="quizSpellSpeakBtn"
+                      class="w-12 h-12 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl shadow active:scale-95 transition"
+                      onclick="speakSpellWord()" title="听发音">🔊</button>
+              <span class="text-xs text-slate-500" id="quizSpellSpeakHint">点击听发音</span>
+            </div>
+          </div>
+
+          <div id="quizFeedback" class="hide mt-4 p-4 rounded-xl"></div>
+          <button id="quizNextBtn" class="hide mt-4 gradient-btn w-full" onclick="nextQuiz()">下一题 →</button>
+        </div>
+      </div>
+
+      <div id="practiceResultView" class="hide">
+        <div class="card p-8 text-center">
+          <div class="text-6xl mb-3" id="resultEmoji">🎉</div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">练习完成！</h2>
+          <div class="text-5xl font-bold text-blue-600 my-4"><span id="resultScore">85</span> 分</div>
+          <div class="text-slate-600 mb-6" id="resultMessage">表现不错，继续努力！</div>
+          <div class="grid grid-cols-3 gap-4 max-w-md mx-auto mb-6">
+            <div class="bg-green-50 rounded-xl p-3"><div class="text-2xl font-bold text-green-600" id="resultCorrect">4</div><div class="text-xs text-slate-500">正确</div></div>
+            <div class="bg-red-50 rounded-xl p-3"><div class="text-2xl font-bold text-red-500" id="resultWrong">1</div><div class="text-xs text-slate-500">错误</div></div>
+            <div class="bg-blue-50 rounded-xl p-3"><div class="text-2xl font-bold text-blue-600" id="resultTime">2'30"</div><div class="text-xs text-slate-500">用时</div></div>
+          </div>
+          <button class="gradient-btn px-8" onclick="restartPractice()">再练一次</button>
+          <button class="ml-3 px-8 py-2 rounded-xl bg-slate-100 font-semibold" onclick="backToPracticeList()">返回列表</button>
+          <div id="resultWrongbookHint" class="hide mt-4 text-sm text-slate-600">
+            💡 本次错题已加入错题本，
+            <button type="button" class="text-orange-600 font-semibold underline" onclick="startPractice('wrongbook')">立即去错题本重练 →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 模拟考试 ============ -->
+    <section id="page-exam" class="page hide">
+      <div id="examView"></div>
+    </section>
+
+    <!-- ============ 语法 ============ -->
+    <section id="page-grammar" class="page hide">
+      <h2 class="text-xl font-bold text-slate-800 mb-4">📝 语法知识点</h2>
+
+      <!-- 🆕 不规则动词表卡片 -->
+      <div class="card p-4 md:p-5 mb-4 bg-gradient-to-br from-violet-50 to-pink-50">
+        <div class="flex items-center justify-between mb-3">
+          <div>
+            <div class="font-bold text-slate-800 text-base md:text-lg">🔀 不规则动词表</div>
+            <div class="text-xs text-slate-500 mt-0.5" id="irregVerbSubtitle">六年级下册 · 三年级起点 · 共 0 条</div>
+          </div>
+          <div class="flex gap-2">
+            <button class="text-xs px-3 py-1.5 rounded-full bg-white border border-violet-200 text-violet-700 hover:bg-violet-100 active:scale-95 transition" onclick="startIrregPractice('en_to_past')">⚡ 练：原形→过去式</button>
+            <button class="text-xs px-3 py-1.5 rounded-full bg-white border border-pink-200 text-pink-700 hover:bg-pink-100 active:scale-95 transition" onclick="startIrregPractice('past_to_en')">⚡ 练：过去式→原形</button>
+            <button class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 active:scale-95 transition" onclick="startIrregPractice('mixed')">⚡ 混合</button>
+          </div>
+        </div>
+        <!-- 查看模式：3 列表格 -->
+        <div id="irregVerbTable" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1.5 text-sm"></div>
+        <!-- 练习模式：卡片 -->
+        <div id="irregPracticeWrap" class="hide bg-white rounded-xl p-4 md:p-5">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-sm text-slate-500" id="irregPracticeBadge">第 1 / 10 题</div>
+            <button class="text-xs px-3 py-1 rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 active:scale-95 transition" onclick="exitIrregPractice()">✕ 退出</button>
+          </div>
+          <div class="text-center my-6">
+            <div class="text-xs text-slate-400 mb-2" id="irregPromptLabel">请给出过去式</div>
+            <div class="text-4xl font-bold text-violet-700" id="irregPromptText">go</div>
+          </div>
+          <input type="text" id="irregAnswerInput" class="w-full text-center text-lg py-3 border-2 border-slate-200 rounded-xl focus:outline-none focus:border-violet-400 font-mono" placeholder="输入答案，回车提交" autocomplete="off" autocapitalize="off" spellcheck="false">
+          <div id="irregFeedback" class="mt-3 text-sm text-center"></div>
+          <div class="flex gap-2 mt-3">
+            <button class="flex-1 py-2 rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 active:scale-95 transition text-sm" onclick="irregShowHint()">💡 提示首字母</button>
+            <button class="flex-1 py-2 rounded-lg bg-violet-500 text-white hover:bg-violet-600 active:scale-95 transition text-sm" onclick="irregSubmit()">提交 (Enter)</button>
+            <button class="flex-1 py-2 rounded-lg bg-white border border-slate-200 text-slate-600 hover:bg-slate-50 active:scale-95 transition text-sm" onclick="irregSkip()">跳过</button>
+          </div>
+          <div id="irregProgress" class="mt-4 text-xs text-slate-500 text-center"></div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div class="card p-4 lg:col-span-1">
+          <div class="font-bold text-slate-800 mb-3">知识点目录</div>
+          <div id="grammarNav" class="space-y-2"></div>
+        </div>
+        <div class="card p-6 lg:col-span-3" id="grammarContent"></div>
+      </div>
+    </section>
+
+    <!-- ============ AI 对话 ============ -->
+    <section id="page-chat" class="page hide">
+      <div class="card flex flex-col h-[70vh]">
+        <div class="p-4 border-b flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl">🤖</div>
+          <div>
+            <div class="font-bold text-slate-800">AI英语口语助手</div>
+            <div class="text-xs text-green-500">● 在线 · 耐心陪练</div>
+          </div>
+        </div>
+        <div id="chatMessages" class="flex-1 overflow-y-auto p-4 space-y-3">
+          <div class="flex gap-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white text-sm flex-shrink-0">🤖</div>
+            <div class="chat-bubble-ai">Hi! I'm your English buddy. 👋<br>Let's practice English together! 我可以陪你练习口语。<br>Try saying "Hello"!</div>
+          </div>
+        </div>
+        <div class="p-4 border-t">
+          <div class="flex gap-2 mb-2 flex-wrap">
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Hello! How are you?')">👋 打招呼</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Can you teach me new words?')">📚 学单词</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('How is the weather?')">☀️ 聊天气</button>
+            <button class="text-xs px-3 py-1 bg-blue-50 text-blue-700 rounded-full hover:bg-blue-100" onclick="quickChat('Tell me a short story.')">📖 讲故事</button>
+          </div>
+          <div class="flex gap-2">
+            <input id="chatInput" type="text" placeholder="输入中文或英文..." class="flex-1 bg-slate-50 rounded-xl px-4 py-3 outline-none" onkeypress="if(event.key==='Enter') sendChat()" />
+            <button class="w-12 h-12 rounded-xl bg-red-500 text-white" title="语音输入">🎤</button>
+            <button class="gradient-btn" onclick="sendChat()">发送</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 报告 ============ -->
+    <section id="page-report" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">📊 学习报告</h2>
+        <select class="bg-white rounded-lg px-4 py-2 shadow-sm outline-none">
+          <option>本周</option><option>本月</option><option>全部时间</option>
+        </select>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div class="card p-4"><div class="text-xs text-slate-500">总学习时长</div><div class="text-2xl font-bold text-blue-600 mt-1" id="reportTotalTime">0</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">练习题数</div><div class="text-2xl font-bold text-indigo-600 mt-1" id="reportTotalAnswers">0</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">平均正确率</div><div class="text-2xl font-bold text-green-600 mt-1" id="reportAvgScore">—</div></div>
+        <div class="card p-4"><div class="text-xs text-slate-500">掌握单词</div><div class="text-2xl font-bold text-orange-500 mt-1" id="reportKnownWords">0</div></div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div class="card p-6"><h3 class="font-bold text-slate-800 mb-4">📈 每日学习时长 (分钟)</h3><canvas id="studyTimeChart" height="180"></canvas></div>
+        <div class="card p-6"><h3 class="font-bold text-slate-800 mb-4">🎯 练习得分趋势</h3><canvas id="scoreChart" height="180"></canvas></div>
+      </div>
+      <div class="card p-6 mb-6">
+        <h3 class="font-bold text-slate-800 mb-4">📊 各题型正确率分布</h3>
+        <div id="unitMastery" class="space-y-3"></div>
+      </div>
+      <div class="card p-6">
+        <h3 class="font-bold text-slate-800 mb-4">💡 弱项分析 & 学习建议</h3>
+        <div id="weakAnalysis" class="space-y-3"></div>
+      </div>
+    </section>
+
+    <!-- ============ 错题本（v01.16 独立页） ============ -->
+    <section id="page-wrongbook" class="page hide">
+      <div class="flex items-center justify-between mb-4 flex-wrap gap-2">
+        <h2 class="text-xl font-bold text-slate-800">🩹 错题本 <span class="badge bg-orange-100 text-orange-700 align-middle ml-1" id="wbTotalBadge">0 题</span></h2>
+        <button type="button" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition"
+                onclick="if(confirm('确定清空错题本？此操作不可撤销。')){ clearWrongbook(); renderWrongbookPage(); }">
+          🗑 全部清空
+        </button>
+      </div>
+
+      <!-- 题型筛选 Tab -->
+      <div id="wbFilterTabs" class="flex flex-wrap gap-2 mb-4">
+        <button class="wb-filter-tab" data-filter="all" onclick="setWrongbookFilter('all')">全部</button>
+        <button class="wb-filter-tab" data-filter="spelling" onclick="setWrongbookFilter('spelling')">单词</button>
+        <button class="wb-filter-tab" data-filter="listening" onclick="setWrongbookFilter('listening')">听力</button>
+        <button class="wb-filter-tab" data-filter="grammar" onclick="setWrongbookFilter('grammar')">语法</button>
+        <button class="wb-filter-tab" data-filter="reading" onclick="setWrongbookFilter('reading')">阅读理解</button>
+        <button class="wb-filter-tab" data-filter="cloze" onclick="setWrongbookFilter('cloze')">完形填空</button>
+        <button class="wb-filter-tab" data-filter="reading_qa" onclick="setWrongbookFilter('reading_qa')">课文自测</button>
+      </div>
+
+      <!-- 错题列表 -->
+      <div id="wrongbookList" class="space-y-3"></div>
+
+      <!-- 空状态 -->
+      <div id="wrongbookEmpty" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">🎉</div>
+        <div class="font-bold text-slate-700 text-lg">错题本是空的</div>
+        <p class="text-slate-500 text-sm mt-2">去练习一下吧，答错的题会自动收进这里方便复习</p>
+        <button onclick="switchPage('practice')" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">去练习 →</button>
+      </div>
+
+      <!-- 底部一键重练 -->
+      <div id="wrongbookActions" class="hide mt-5">
+        <button onclick="startPractice('wrongbook')" class="w-full gradient-btn py-3 rounded-xl font-bold text-white text-base shadow active:scale-95 transition">
+          🔁 一键重练全部错题
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 今日复习（单词记忆曲线 SRS） ============ -->
+    <section id="page-review" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">📅 今日复习</h2>
+        <button onclick="exitReview()" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition">← 返回</button>
+      </div>
+
+      <!-- 空状态：今日无到期 -->
+      <div id="reviewEmpty" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">🎉</div>
+        <div class="font-bold text-slate-700 text-lg">今天没有要复习的单词</div>
+        <p class="text-slate-500 text-sm mt-2">在课本单词卡点「✓ 认识 / ✗ 不认识」，系统会按遗忘规律安排复习</p>
+        <button onclick="switchPage('textbook')" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">去背单词 →</button>
+      </div>
+
+      <!-- 完成态 -->
+      <div id="reviewDoneView" class="hide card p-10 text-center">
+        <div class="text-5xl mb-3">✅</div>
+        <div class="font-bold text-slate-700 text-lg">复习完成！</div>
+        <p class="text-slate-500 text-sm mt-2">本次复习 <span id="reviewDoneCount" class="font-bold text-sky-600">0</span> 个单词，继续保持～</p>
+        <button onclick="exitReview()" class="mt-4 gradient-btn px-6 py-2.5 rounded-xl font-bold text-white">返回首页</button>
+      </div>
+
+      <!-- 复习卡 -->
+      <div id="reviewCardWrap" class="hide max-w-md mx-auto">
+        <div class="text-center text-xs text-slate-400 mb-2"><span id="reviewProgress">0 / 0</span></div>
+        <div class="card p-8 text-center">
+          <div class="text-4xl font-bold text-slate-800 mb-1" id="reviewWord">word</div>
+          <div class="text-lg text-blue-700 mb-3" id="reviewPhonetic"></div>
+          <button class="px-4 py-2 bg-white border border-slate-200 rounded-full shadow text-sm" onclick="reviewPlay()">🔊 发音</button>
+          <!-- 释义（默认遮住，先回忆） -->
+          <div id="reviewBack" class="hide mt-5 pt-4 border-t border-slate-100">
+            <div class="text-2xl font-bold text-slate-800 mb-2" id="reviewMeaning"></div>
+            <div class="text-sm text-amber-700" id="reviewExample"></div>
+          </div>
+        </div>
+        <button id="reviewRevealBtn" onclick="reviewReveal()" class="w-full mt-4 gradient-btn py-3 rounded-xl font-bold text-white text-base active:scale-95 transition">想好了，看释义 👀</button>
+        <div id="reviewAssess" class="hide grid grid-cols-2 gap-3 mt-4">
+          <button onclick="reviewAssess(false)" class="py-3 bg-rose-100 text-rose-700 rounded-xl font-bold hover:bg-rose-200 active:scale-95 transition">✗ 没记住</button>
+          <button onclick="reviewAssess(true)" class="py-3 bg-green-100 text-green-700 rounded-xl font-bold hover:bg-green-200 active:scale-95 transition">✓ 记住了</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 会员中心（会员状态 / 我的权益 / 套餐订购 / 我的订单） ============ -->
+    <section id="page-member" class="page hide">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-xl font-bold text-slate-800">👑 会员中心</h2>
+        <button id="memberRefreshBtn" class="text-xs px-3 py-1.5 rounded-lg bg-white text-slate-500 border border-slate-200 hover:bg-slate-100 transition">↻ 刷新</button>
+      </div>
+      <div id="memberBody">
+        <div class="card p-10 text-center text-slate-400 text-sm">正在加载会员信息…</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- 🆕 动态注入 js 模块 / questionBank.js / app.js：等 version.txt 拿到真实版本号后再加载，彻底绕过浏览器/CDN 缓存 -->
+<script>
+  (function () {
+    function addScript(src) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = window.__withVer ? window.__withVer(src) : src;
+        s.onload = resolve;
+        s.onerror = function(){ reject(new Error('核心脚本加载失败：' + src)); };
+        document.body.appendChild(s);
+      });
+    }
+    function showLoadError(err) {
+      console.error('[启动失败]', err);
+      var box = document.createElement('div');
+      box.style.cssText = 'position:fixed;inset:auto 16px 16px;z-index:10001;padding:14px 16px;border-radius:12px;background:#fff1f2;color:#9f1239;border:1px solid #fecdd3;box-shadow:0 10px 30px rgba(15,23,42,.18);font-size:13px;';
+      box.textContent = '应用资源加载不完整，请联网后刷新页面。';
+      document.body.appendChild(box);
+    }
+    // 等拿到真实版本号再 load；即便 fetch version.txt 失败，fallback 也会 resolve
+    (window.__versionReady || Promise.resolve()).then(function(){
+      // 顺序严格（v01.21 框架优化：app.js 已按功能域拆分）：
+      //   1) 基础模块：textbook.js / state.js / profile.js / player.js （它们彼此无依赖）
+      //      - profile.js 提供 window.ProfileManager（多用户档案数据层，IIFE 零副作用）
+      //   2) 功能域分片（被依赖者在前）：
+      //      core → wrongbook → mastery → smartpick → stats → home → lesson → practice
+      //      （均为经典脚本，顶层 function 全局可用；跨域调用在运行时解析）
+      //   3) 题库加载器：questionBank.js
+      //   4) 入口编排：app.js（switchPage/applyContextChange/bootstrap/Profile UI，依赖以上全部）
+      addScript('./js/textbook.js')
+        .then(function(){ return addScript('./js/state.js'); })
+        .then(function(){ return addScript('./js/profile.js'); })
+        .then(function(){ return addScript('./js/storage.js'); }) // v01.32 P2-1 Storage 抽象层：必须在 profile 之后（依赖 ProfileManager）、core 之前（core._pkey 委托到 YXStorage.keyOf）
+        .then(function(){ return addScript('./js/theme.js'); })
+        .then(function(){ return addScript('./js/player.js'); })
+        .then(function(){ return addScript('./js/core.js'); })
+        .then(function(){ return addScript('./js/api-client.js'); })
+        .then(function(){ return addScript('./js/entitlement.js'); }) // Phase 5 学生端权益门控
+        .then(function(){ return addScript('./js/wrongbook.js'); })
+        .then(function(){ return addScript('./js/mastery.js'); })
+        .then(function(){ return addScript('./js/smartpick.js'); })
+        .then(function(){ return addScript('./js/stats.js'); })
+        .then(function(){ return addScript('./js/sync-client.js'); })
+        .then(function(){ return addScript('./js/offline-audio.js'); })
+        .then(function(){ return addScript('./js/srs.js'); })
+        .then(function(){ return addScript('./js/home.js'); })
+        .then(function(){ return addScript('./js/lesson.js'); })
+        .then(function(){ return addScript('./js/practice.js'); })
+        .then(function(){ return addScript('./questionBank.js'); })
+        .then(function(){ return addScript('./js/exam.js'); })
+        .then(function(){ return addScript('./js/grammar.js'); })
+        .then(function(){ return addScript('./js/member.js'); }) // Phase 5 会员中心 / 套餐订购
+        .then(function(){ return addScript('./app.js'); })
+        .catch(showLoadError);
+    });
+  })();
+</script>
+
+<!-- 🆕 版本号角标（左下角小字，双击隐藏）。值在 __versionReady 完成后回填 -->
+<div id="appVersionBadge" style="position:fixed;left:6px;bottom:4px;z-index:9999;font-size:10px;color:#94a3b8;font-family:monospace;opacity:0.55;pointer-events:auto;user-select:none;" ondblclick="this.style.display='none'" title="双击隐藏。传入 ?v=xxx 可强制破缓存">v…</div>
+
+<!-- 🆕 PWA Service Worker 注册（v01.14）。放在 load 事件后，避免与首屏资源抢带宽；
+     所有逻辑包裹在 'serviceWorker' in navigator 守卫内，失败只 warn，不影响主 app。 -->
+<script>
+  // 仅线上 GitHub Pages（*.github.io）启用 Service Worker 做 PWA 离线缓存；
+  // 本地开发 / 局域网预览一律禁用 SW 并清理版本化应用壳缓存（保留用户离线语音包），
+  // 从根源杜绝「本地验证时被 SW 旧缓存拽回旧版本」的问题。
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var host = location.hostname || '';
+    var isProd = /\.github\.io$/i.test(host);   // 线上环境
+
+    if (isProd) {
+      window.addEventListener('load', function () {
+        // 把应用版本写入 SW 脚本 URL；即使 sw.js 源码未变，每次发布也会触发浏览器更新检查与新壳安装。
+        Promise.resolve(window.__versionReady).then(function () {
+          return navigator.serviceWorker.register('./sw.js?v=' + encodeURIComponent(window.__APP_VERSION || ''));
+        }).then(function (reg) {
+          console.log('[SW] 已注册，scope =', reg.scope);
+          if (reg && reg.update) { try { reg.update(); } catch (_) {} }
+        }).catch(function (err) { console.warn('[SW] 注册失败', err); });
+      });
+    } else {
+      // 本地断网重载时不动现有控制器/缓存，便于验证离线应用壳；恢复联网后下次刷新会照常清理。
+      if (navigator.onLine === false) {
+        console.log('[SW] 开发环境当前离线，暂不清理缓存');
+        return;
+      }
+      // 开发/预览环境：注销 SW 并仅清理应用壳版本缓存；保留用户主动下载的
+      // lexue-audio-offline-v1 / lexue-data-offline-v1，且不触碰其它 Cache Storage。
+      try {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (r) { r.unregister(); });
+          if (regs.length) console.log('[SW] 开发环境已注销', regs.length, '个 Service Worker');
+        });
+      } catch (_) {}
+      try {
+        if (window.caches && caches.keys) {
+          caches.keys().then(function (keys) {
+            var stale = keys.filter(function (k) { return /^lexue-(?:static|runtime)-/.test(k); });
+            stale.forEach(function (k) { caches.delete(k); });
+            if (stale.length) console.log('[SW] 开发环境已清理应用壳缓存', stale);
+          });
+        }
+      } catch (_) {}
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "postcard": [
+    { "en": "A postcard.", "cn": "一张明信片。", "level": 1 },
+    { "en": "Send a postcard.", "cn": "寄明信片。", "level": 2 },
+    { "en": "I collected ten postcards from different cities.", "cn": "我收集了十张不同城市的明信片。", "level": 3 }
+  ],
+  "send": [
+    { "en": "Send it.", "cn": "寄出去。", "level": 1 },
+    { "en": "Send me a card.", "cn": "给我寄张卡。", "level": 2 },
+    { "en": "I sent a long letter to my grandma last week.", "cn": "上周我给奶奶寄了一封长信。", "level": 3 }
+  ],
+  "write": [
+    { "en": "Write soon.", "cn": "尽快写。", "level": 1 },
+    { "en": "Write the address.", "cn": "写地址。", "level": 2 },
+    { "en": "Don't forget to write the name and address clearly.", "cn": "别忘把名字地址写清楚。", "level": 3 }
+  ],
+  "address": [
+    { "en": "My address.", "cn": "我的地址。", "level": 1 },
+    { "en": "What's your address?", "cn": "你地址是？", "level": 2 },
+    { "en": "Please write your home address on this card.", "cn": "请把家庭地址写在这张卡片上。", "level": 3 }
+  ],
+  "stamp": [
+    { "en": "A stamp.", "cn": "一张邮票。", "level": 1 },
+    { "en": "Put on a stamp.", "cn": "贴邮票。", "level": 2 },
+    { "en": "I collect stamps from many different countries.", "cn": "我收集很多国家的邮票。", "level": 3 }
+  ],
+  "miss": [
+    { "en": "I miss you.", "cn": "我想你。", "level": 1 },
+    { "en": "I miss my friends.", "cn": "我想念我的朋友们。", "level": 2 },
+    { "en": "I really miss my hometown when I'm far away.", "cn": "远在他乡时我特别想念家乡。", "level": 3 }
+  ],
+  "weather": [
+    { "en": "Nice weather.", "cn": "好天气。", "level": 1 },
+    { "en": "What's the weather?", "cn": "天气怎么样？", "level": 2 },
+    { "en": "The weather here changes every few hours.", "cn": "这里的天气几小时就变一次。", "level": 3 }
+  ],
+  "wish": [
+    { "en": "Best wishes.", "cn": "祝福。", "level": 1 },
+    { "en": "I wish you happy.", "cn": "祝你开心。", "level": 2 },
+    { "en": "Send my warmest wishes to everyone at home.", "cn": "请把我最真挚的祝福带给家里每个人。", "level": 3 }
+  ]
+}

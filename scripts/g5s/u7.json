@@ -1,0 +1,28 @@
+{
+  "id": "u7",
+  "title": "Unit 7 My Hobby Club",
+  "words": [
+    { "word": "club", "phonetic": "/klʌb/", "meaning": "[n.] 俱乐部", "example": "Join the music club." },
+    { "word": "join", "phonetic": "/dʒɔɪn/", "meaning": "[v.] 加入", "example": "I join the dance club." },
+    { "word": "robot", "phonetic": "/ˈrəʊbɒt/", "meaning": "[n.] 机器人", "example": "We build robots." },
+    { "word": "chess", "phonetic": "/tʃes/", "meaning": "[n.] 国际象棋", "example": "He plays chess well." },
+    { "word": "photo", "phonetic": "/ˈfəʊtəʊ/", "meaning": "[n.] 照片", "example": "Take a photo." },
+    { "word": "drama", "phonetic": "/ˈdrɑːmə/", "meaning": "[n.] 戏剧", "example": "We have a drama club." },
+    { "word": "meet", "phonetic": "/miːt/", "meaning": "[v.] 集合；见面", "example": "We meet on Friday." },
+    { "word": "interest", "phonetic": "/ˈɪntrəst/", "meaning": "[n.] 兴趣", "example": "Find your interest." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Which club?",
+      "en": "Ben: Anna, which school club will you join this year?\nAnna: I want to join the photo club. I love taking pictures.\nBen: I'll join the robot club. We will build a small robot.\nAnna: My sister joined the chess club last year.\nBen: Clubs help us find our true interests.",
+      "cn": "本：安娜，今年你想加入哪个社团？\n安娜：摄影社，我喜欢拍照。\n本：我加机器人社，我们要造小机器人。\n安娜：我姐姐去年加了国际象棋社。\n本：社团帮我们找到真正的兴趣。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Our school clubs",
+      "en": "Our school has many wonderful clubs. The drama club meets every Tuesday after school. The photo club takes a class trip every month to capture city life. The robot club builds small machines that move and talk. The chess club teaches careful thinking. Find a club you love and meet new friends — clubs make school life rich and colourful.",
+      "cn": "我们学校有很多社团。戏剧社每周二放学后活动。摄影社每月外出一次，记录城市生活。机器人社制作能动会说话的小机器。国际象棋社教我们仔细思考。找到喜欢的社团，结识新朋友——社团让校园生活丰富多彩。"
+    }
+  ]
+}

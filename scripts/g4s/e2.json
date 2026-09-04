@@ -1,0 +1,42 @@
+{
+  "family": [
+    { "en": "My family.", "cn": "我的家庭。", "level": 1 },
+    { "en": "I love my family.", "cn": "我爱我的家庭。", "level": 2 },
+    { "en": "There are five people in my family — Mum, Dad, my brother and me, plus a dog.", "cn": "我家有五口人——妈妈、爸爸、弟弟、我，还有一只狗。", "level": 3 }
+  ],
+  "father": [
+    { "en": "My father.", "cn": "我的父亲。", "level": 1 },
+    { "en": "My father is tall.", "cn": "我父亲个子高。", "level": 2 },
+    { "en": "My father works as a doctor at the city hospital.", "cn": "我父亲在市医院做医生。", "level": 3 }
+  ],
+  "mother": [
+    { "en": "My mother.", "cn": "我的母亲。", "level": 1 },
+    { "en": "My mother is kind.", "cn": "我母亲很善良。", "level": 2 },
+    { "en": "My mother always smiles even when she is very busy.", "cn": "我母亲就算很忙也总是笑着。", "level": 3 }
+  ],
+  "brother": [
+    { "en": "My brother.", "cn": "我的兄弟。", "level": 1 },
+    { "en": "My brother is six.", "cn": "我弟弟六岁。", "level": 2 },
+    { "en": "My older brother teaches me how to ride a bike.", "cn": "我哥哥教我骑自行车。", "level": 3 }
+  ],
+  "sister": [
+    { "en": "My sister.", "cn": "我的姐妹。", "level": 1 },
+    { "en": "My sister can sing.", "cn": "我姐姐会唱歌。", "level": 2 },
+    { "en": "My little sister and I share the same bedroom.", "cn": "我和小妹妹住同一间卧室。", "level": 3 }
+  ],
+  "grandpa": [
+    { "en": "Hi, Grandpa!", "cn": "嗨，爷爷！", "level": 1 },
+    { "en": "Grandpa likes tea.", "cn": "爷爷喜欢喝茶。", "level": 2 },
+    { "en": "Grandpa tells me old stories every evening.", "cn": "爷爷每天晚上给我讲老故事。", "level": 3 }
+  ],
+  "grandma": [
+    { "en": "Hi, Grandma!", "cn": "嗨，奶奶！", "level": 1 },
+    { "en": "Grandma cooks well.", "cn": "奶奶做饭好吃。", "level": 2 },
+    { "en": "Grandma always makes my favourite dumplings on weekends.", "cn": "奶奶周末总会做我最爱吃的饺子。", "level": 3 }
+  ],
+  "love": [
+    { "en": "I love you.", "cn": "我爱你。", "level": 1 },
+    { "en": "I love my family.", "cn": "我爱我的家。", "level": 2 },
+    { "en": "Love makes our family strong and happy.", "cn": "爱让我们的家庭坚强又快乐。", "level": 3 }
+  ]
+}

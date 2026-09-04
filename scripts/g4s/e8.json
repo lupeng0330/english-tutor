@@ -1,0 +1,42 @@
+{
+  "festival": [
+    { "en": "A festival.", "cn": "一个节日。", "level": 1 },
+    { "en": "I love festivals.", "cn": "我喜欢节日。", "level": 2 },
+    { "en": "Festivals bring our family together every year.", "cn": "节日每年把我们家人聚在一起。", "level": 3 }
+  ],
+  "Christmas": [
+    { "en": "Merry Christmas!", "cn": "圣诞快乐！", "level": 1 },
+    { "en": "Christmas is in December.", "cn": "圣诞节在十二月。", "level": 2 },
+    { "en": "On Christmas morning, children open gifts under the tree.", "cn": "圣诞节早上，孩子们在树下拆礼物。", "level": 3 }
+  ],
+  "Spring Festival": [
+    { "en": "Spring Festival.", "cn": "春节。", "level": 1 },
+    { "en": "We eat dumplings at Spring Festival.", "cn": "我们春节吃饺子。", "level": 2 },
+    { "en": "At Spring Festival, we visit our relatives and get red envelopes.", "cn": "春节时我们走亲戚、收红包。", "level": 3 }
+  ],
+  "gift": [
+    { "en": "A gift.", "cn": "一份礼物。", "level": 1 },
+    { "en": "Here is a gift for you.", "cn": "这是给你的礼物。", "level": 2 },
+    { "en": "Mum loves the small gift I made for her birthday.", "cn": "妈妈很喜欢我为她生日做的小礼物。", "level": 3 }
+  ],
+  "tree": [
+    { "en": "A big tree.", "cn": "一棵大树。", "level": 1 },
+    { "en": "Look at the Christmas tree!", "cn": "看圣诞树！", "level": 2 },
+    { "en": "We put colourful lights on the Christmas tree every year.", "cn": "我们每年在圣诞树上挂彩灯。", "level": 3 }
+  ],
+  "card": [
+    { "en": "A card.", "cn": "一张卡片。", "level": 1 },
+    { "en": "I send a card to her.", "cn": "我寄一张卡片给她。", "level": 2 },
+    { "en": "My friend made a beautiful card for me on my birthday.", "cn": "我朋友在我生日时给我做了张漂亮的卡片。", "level": 3 }
+  ],
+  "dinner": [
+    { "en": "Time for dinner.", "cn": "吃晚饭啦。", "level": 1 },
+    { "en": "We have a big dinner.", "cn": "我们吃一顿大餐。", "level": 2 },
+    { "en": "On Christmas Eve we have a big dinner with all the family.", "cn": "平安夜我们和所有家人一起吃大餐。", "level": 3 }
+  ],
+  "happy": [
+    { "en": "I am happy.", "cn": "我很开心。", "level": 1 },
+    { "en": "Happy birthday!", "cn": "生日快乐！", "level": 2 },
+    { "en": "Festivals make every member of our family very happy.", "cn": "节日让我们家每个人都很开心。", "level": 3 }
+  ]
+}

@@ -1,0 +1,5477 @@
+{
+  "version": 1,
+  "note": "仿真真题（方案A）：按广东各地区真实卷题型结构组卷，题目来自本项目题库，固定不变、可重复对答案。",
+  "regions": [
+    "广州·天河区",
+    "广州·越秀区",
+    "广州·番禺区",
+    "广州·增城区",
+    "广州·从化区",
+    "清远市",
+    "深圳市",
+    "东莞市",
+    "佛山市",
+    "广州·海珠区",
+    "广州·白云区",
+    "广州·荔湾区",
+    "广州·黄埔区"
+  ],
+  "papers": [
+    {
+      "id": "gz_th_g7_b_final",
+      "region": "广州·天河区",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·天河区 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3119635517,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Daily Life' 为题，写一篇不少于60词的短文。内容包括：1. 你每天的时间安排；2. 你最喜欢的科目或活动；3. 你对日常生活的感受。"
+          ],
+          "modelAnswers": [
+            "I usually get up at 6:30 in the morning. After breakfast, I go to school by bus. My favourite subject is English because it is interesting. In the afternoon, I play sports with my classmates. I go to bed at 9:30. I enjoy my daily life very much."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_th_g8_b_final",
+      "region": "广州·天河区",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·天河区 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1715999724,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Hobby' 为题，写一篇不少于80词的短文。内容包括：1. 你的爱好是什么；2. 你是如何发展这个爱好的；3. 这个爱好给你带来了什么。"
+          ],
+          "modelAnswers": [
+            "My hobby is playing the piano. I started learning it when I was seven years old. At first, it was difficult, but I kept practising every day. Now I can play many beautiful songs. Playing the piano makes me feel relaxed and happy. I also made many friends through music. I will never give up this hobby."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_th_g9_a_final",
+      "region": "广州·天河区",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·天河区 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1088101682,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_th_zhongkao",
+      "region": "广州·天河区",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 广州·天河区 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3460193934,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_yx_g7_b_final",
+      "region": "广州·越秀区",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·越秀区 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 4073017791,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Protecting the Environment' 为题，写一篇不少于60词的短文，谈谈我们能为保护环境做些什么。"
+          ],
+          "modelAnswers": [
+            "We should protect our environment. First, we can plant more trees. Second, we should not throw rubbish everywhere. Third, we can save water and electricity. If everyone does something, our Earth will be more beautiful."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_yx_g8_b_final",
+      "region": "广州·越秀区",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·越秀区 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 763141742,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Volunteering' 为题，写一篇不少于80词的短文，谈谈你对志愿服务的看法或经历。"
+          ],
+          "modelAnswers": [
+            "Volunteering is a meaningful activity. Last month, I volunteered at a local library. I helped organise books and taught children to read. It was tiring but rewarding. I learned that helping others makes me feel happy. I plan to do more volunteer work in the future."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_yx_g9_a_final",
+      "region": "广州·越秀区",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·越秀区 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 200249520,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'The Power of Dreams' 为题，写一篇不少于100词的短文。内容包括：1. 你的梦想是什么；2. 你将如何实现它；3. 梦想对你的意义。"
+          ],
+          "modelAnswers": [
+            "Everyone has dreams. My dream is to become a doctor. I want to help sick people and save lives. To achieve this dream, I study very hard at school, especially science subjects. I also read books about medicine in my free time. Dreams give me motivation and direction. I believe that with hard work and determination, my dream will come true one day."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_yx_zhongkao",
+      "region": "广州·越秀区",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 广州·越秀区 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 570724961,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_py_g7_b_final",
+      "region": "广州·番禺区",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·番禺区 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 4009039672,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Best Friend' 为题，写一篇不少于60词的短文。内容包括：1. 朋友的外貌和性格；2. 你们的共同爱好；3. 为什么他/她是你最好的朋友。"
+          ],
+          "modelAnswers": [
+            "My best friend is Li Ming. He is tall and thin with short black hair. He is friendly and helpful. We both like playing basketball and reading books. After school, we often play together. He always helps me with my homework. I think he is the best friend because he is kind and honest."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_py_g8_b_final",
+      "region": "广州·番禺区",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·番禺区 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 827119849,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'An Unforgettable Experience' 为题，写一篇不少于80词的短文，描述一次难忘的经历。"
+          ],
+          "modelAnswers": [
+            "Last year, I took part in an English speech competition. I was very nervous at first. But my teacher encouraged me a lot. I practised every evening for two weeks. On the competition day, I did my best and won second prize. It was an unforgettable experience because I learned that hard work pays off."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_py_g9_a_final",
+      "region": "广州·番禺区",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·番禺区 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 400545335,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Being a Responsible Teenager' 为题，写一篇不少于100词的短文，谈谈青少年应如何承担责任。"
+          ],
+          "modelAnswers": [
+            "As teenagers, we have responsibilities to ourselves, our families, and society. First, we should study hard to prepare for our future. Second, we should help our parents with housework and show respect to them. Third, we should care about our community. For example, we can volunteer or help those in need. Being responsible helps us grow into better people."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_py_zhongkao",
+      "region": "广州·番禺区",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 广州·番禺区 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3062613978,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_zc_g7_b_final",
+      "region": "广州·增城区",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·增城区 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 847606915,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Protecting the Environment' 为题，写一篇不少于60词的短文，谈谈我们能为保护环境做些什么。"
+          ],
+          "modelAnswers": [
+            "We should protect our environment. First, we can plant more trees. Second, we should not throw rubbish everywhere. Third, we can save water and electricity. If everyone does something, our Earth will be more beautiful."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_zc_g8_b_final",
+      "region": "广州·增城区",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·增城区 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3980180306,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Volunteering' 为题，写一篇不少于80词的短文，谈谈你对志愿服务的看法或经历。"
+          ],
+          "modelAnswers": [
+            "Volunteering is a meaningful activity. Last month, I volunteered at a local library. I helped organise books and taught children to read. It was tiring but rewarding. I learned that helping others makes me feel happy. I plan to do more volunteer work in the future."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_zc_g9_a_final",
+      "region": "广州·增城区",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·增城区 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3417290124,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'The Power of Dreams' 为题，写一篇不少于100词的短文。内容包括：1. 你的梦想是什么；2. 你将如何实现它；3. 梦想对你的意义。"
+          ],
+          "modelAnswers": [
+            "Everyone has dreams. My dream is to become a doctor. I want to help sick people and save lives. To achieve this dream, I study very hard at school, especially science subjects. I also read books about medicine in my free time. Dreams give me motivation and direction. I believe that with hard work and determination, my dream will come true one day."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_zc_zhongkao",
+      "region": "广州·增城区",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 广州·增城区 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1688768127,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Being a Responsible Teenager' 为题，写一篇不少于100词的短文，谈谈青少年应如何承担责任。"
+          ],
+          "modelAnswers": [
+            "As teenagers, we have responsibilities to ourselves, our families, and society. First, we should study hard to prepare for our future. Second, we should help our parents with housework and show respect to them. Third, we should care about our community. For example, we can volunteer or help those in need. Being responsible helps us grow into better people."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_ch_g7_b_final",
+      "region": "广州·从化区",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·从化区 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1887796415,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Protecting the Environment' 为题，写一篇不少于60词的短文，谈谈我们能为保护环境做些什么。"
+          ],
+          "modelAnswers": [
+            "We should protect our environment. First, we can plant more trees. Second, we should not throw rubbish everywhere. Third, we can save water and electricity. If everyone does something, our Earth will be more beautiful."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_ch_g8_b_final",
+      "region": "广州·从化区",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·从化区 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 2939990894,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Volunteering' 为题，写一篇不少于80词的短文，谈谈你对志愿服务的看法或经历。"
+          ],
+          "modelAnswers": [
+            "Volunteering is a meaningful activity. Last month, I volunteered at a local library. I helped organise books and taught children to read. It was tiring but rewarding. I learned that helping others makes me feel happy. I plan to do more volunteer work in the future."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_ch_g9_a_final",
+      "region": "广州·从化区",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 广州·从化区 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 2309995952,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'The Power of Dreams' 为题，写一篇不少于100词的短文。内容包括：1. 你的梦想是什么；2. 你将如何实现它；3. 梦想对你的意义。"
+          ],
+          "modelAnswers": [
+            "Everyone has dreams. My dream is to become a doctor. I want to help sick people and save lives. To achieve this dream, I study very hard at school, especially science subjects. I also read books about medicine in my free time. Dreams give me motivation and direction. I believe that with hard work and determination, my dream will come true one day."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "gz_ch_zhongkao",
+      "region": "广州·从化区",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 广州·从化区 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1240698822,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "qy_g7_b_final",
+      "region": "清远市",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 清远市 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 81292873,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Daily Life' 为题，写一篇不少于60词的短文。内容包括：1. 你每天的时间安排；2. 你最喜欢的科目或活动；3. 你对日常生活的感受。"
+          ],
+          "modelAnswers": [
+            "I usually get up at 6:30 in the morning. After breakfast, I go to school by bus. My favourite subject is English because it is interesting. In the afternoon, I play sports with my classmates. I go to bed at 9:30. I enjoy my daily life very much."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "qy_g8_b_final",
+      "region": "清远市",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 清远市 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3680608664,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Hobby' 为题，写一篇不少于80词的短文。内容包括：1. 你的爱好是什么；2. 你是如何发展这个爱好的；3. 这个爱好给你带来了什么。"
+          ],
+          "modelAnswers": [
+            "My hobby is playing the piano. I started learning it when I was seven years old. At first, it was difficult, but I kept practising every day. Now I can play many beautiful songs. Playing the piano makes me feel relaxed and happy. I also made many friends through music. I will never give up this hobby."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "qy_g9_a_final",
+      "region": "清远市",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 清远市 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 4260540230,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "qy_zhongkao",
+      "region": "清远市",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 清远市 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3933022727,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Being a Responsible Teenager' 为题，写一篇不少于100词的短文，谈谈青少年应如何承担责任。"
+          ],
+          "modelAnswers": [
+            "As teenagers, we have responsibilities to ourselves, our families, and society. First, we should study hard to prepare for our future. Second, we should help our parents with housework and show respect to them. Third, we should care about our community. For example, we can volunteer or help those in need. Being responsible helps us grow into better people."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "sz_g7_b_final",
+      "region": "深圳市",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 深圳市 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 320473586,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My School' 为题，写一篇不少于70词的短文。内容包括：1. 学校的基本情况；2. 你最喜欢的老师和科目；3. 你在学校的感受。"
+          ],
+          "modelAnswers": [
+            "My school is big and beautiful. There are many trees and flowers. My favourite teacher is Miss Wang because she is patient and kind. I like English very much. I have many good friends at school. We study and play together. I love my school."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "sz_g8_b_final",
+      "region": "深圳市",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 深圳市 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3433285155,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Good Habits' 为题，写一篇不少于80词的短文。内容包括：1. 你有哪些好习惯；2. 这些习惯给你带来了什么好处。"
+          ],
+          "modelAnswers": [
+            "Good habits are very important in our life. I get up early every day and do morning exercises. I read books for at least 30 minutes before going to bed. I also keep a diary in English. These habits help me stay healthy and improve my English. I believe good habits lead to a better life."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "sz_g9_a_final",
+      "region": "深圳市",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 深圳市 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3929065725,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "sz_zhongkao",
+      "region": "深圳市",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 深圳市 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1496721605,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "dg_g7_b_final",
+      "region": "东莞市",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 东莞市 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 1222198626,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My School' 为题，写一篇不少于70词的短文。内容包括：1. 学校的基本情况；2. 你最喜欢的老师和科目；3. 你在学校的感受。"
+          ],
+          "modelAnswers": [
+            "My school is big and beautiful. There are many trees and flowers. My favourite teacher is Miss Wang because she is patient and kind. I like English very much. I have many good friends at school. We study and play together. I love my school."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "dg_g8_b_final",
+      "region": "东莞市",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 东莞市 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 2539686579,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Good Habits' 为题，写一篇不少于80词的短文。内容包括：1. 你有哪些好习惯；2. 这些习惯给你带来了什么好处。"
+          ],
+          "modelAnswers": [
+            "Good habits are very important in our life. I get up early every day and do morning exercises. I read books for at least 30 minutes before going to bed. I also keep a diary in English. These habits help me stay healthy and improve my English. I believe good habits lead to a better life."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "dg_g9_a_final",
+      "region": "东莞市",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 东莞市 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 2985526381,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "dg_zhongkao",
+      "region": "东莞市",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 东莞市 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 212595669,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "fs_g7_b_final",
+      "region": "佛山市",
+      "grade": 7,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 佛山市 初一下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 664479402,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My School' 为题，写一篇不少于70词的短文。内容包括：1. 学校的基本情况；2. 你最喜欢的老师和科目；3. 你在学校的感受。"
+          ],
+          "modelAnswers": [
+            "My school is big and beautiful. There are many trees and flowers. My favourite teacher is Miss Wang because she is patient and kind. I like English very much. I have many good friends at school. We study and play together. I love my school."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "fs_g8_b_final",
+      "region": "佛山市",
+      "grade": 8,
+      "term": "下",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 佛山市 初二下学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 4163037563,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Good Habits' 为题，写一篇不少于80词的短文。内容包括：1. 你有哪些好习惯；2. 这些习惯给你带来了什么好处。"
+          ],
+          "modelAnswers": [
+            "Good habits are very important in our life. I get up early every day and do morning exercises. I read books for at least 30 minutes before going to bed. I also keep a diary in English. These habits help me stay healthy and improve my English. I believe good habits lead to a better life."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "fs_g9_a_final",
+      "region": "佛山市",
+      "grade": 9,
+      "term": "上",
+      "year": 2024,
+      "kind": "final",
+      "name": "2024 佛山市 初三上学期期末（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 3736201125,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'Online Learning' 为题，写一篇不少于100词的短文，谈谈你对在线学习的看法。"
+          ],
+          "modelAnswers": [
+            "Online learning has become very popular. It has both advantages and disadvantages. On the one hand, it is convenient because we can learn anytime and anywhere. On the other hand, it requires strong self-discipline. In my opinion, the best way is to combine online and offline learning. We can use the Internet to find useful materials, but we also need face-to-face communication with teachers and classmates."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "fs_zhongkao",
+      "region": "佛山市",
+      "grade": 9,
+      "term": "下",
+      "year": 2024,
+      "kind": "zhongkao",
+      "name": "2024 佛山市 中考英语（仿真）",
+      "time": 100,
+      "unitRange": [
+        1,
+        8
+      ],
+      "seed": 2055367558,
+      "fixed": true,
+      "sections": [
+        {
+          "type": "listening",
+          "title": "一、听力理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "grammar",
+          "title": "二、语法选择",
+          "count": 15,
+          "points": 1,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "cloze",
+          "title": "三、完形填空",
+          "count": 10,
+          "points": 1.5,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "reading",
+          "title": "四、阅读理解",
+          "count": 15,
+          "points": 2,
+          "unitRange": [
+            1,
+            8
+          ]
+        },
+        {
+          "type": "writing",
+          "title": "五、书面表达",
+          "count": 1,
+          "points": 30,
+          "unitRange": [
+            1,
+            8
+          ],
+          "prompts": [
+            "请以 'My Junior High School Life' 为题，写一篇不少于100词的短文，回顾你的初中生活。"
+          ],
+          "modelAnswers": [
+            "My junior high school life is coming to an end. Looking back, I have many wonderful memories. I made good friends who always supported me. My teachers taught me not only knowledge but also how to be a good person. I worked hard and improved a lot. Though there were difficult times, I never gave up. I will always remember these three years."
+          ]
+        }
+      ],
+      "totalPoints": 120,
+      "autoPoints": 90
+    },
+    {
+      "id": "b2_gd_primary_gz_th_g3_a_final",
+      "region": "广州·天河区",
+      "grade": 3,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学3年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1834560741,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g3_a_final",
+      "region": "广州·越秀区",
+      "grade": 3,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学3年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 644718951,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g3_a_final",
+      "region": "广州·海珠区",
+      "grade": 3,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学3年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 2747744423,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g3_a_final",
+      "region": "广州·番禺区",
+      "grade": 3,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学3年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 979232736,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g3_b_final",
+      "region": "广州·天河区",
+      "grade": 3,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学3年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1555117688,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g3_b_final",
+      "region": "广州·越秀区",
+      "grade": 3,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学3年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 394640378,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g3_b_final",
+      "region": "广州·海珠区",
+      "grade": 3,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学3年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 2452576826,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g3_b_final",
+      "region": "广州·番禺区",
+      "grade": 3,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学3年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 196476285,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g4_a_final",
+      "region": "广州·天河区",
+      "grade": 4,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学4年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 154681644,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g4_a_final",
+      "region": "广州·越秀区",
+      "grade": 4,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学4年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1108135086,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g4_a_final",
+      "region": "广州·海珠区",
+      "grade": 4,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学4年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 3349556590,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g4_a_final",
+      "region": "广州·番禺区",
+      "grade": 4,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学4年级上学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1581025833,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g4_b_final",
+      "region": "广州·天河区",
+      "grade": 4,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学4年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 953179057,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g4_b_final",
+      "region": "广州·越秀区",
+      "grade": 4,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学4年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1944376883,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g4_b_final",
+      "region": "广州·海珠区",
+      "grade": 4,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学4年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 4132321267,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g4_b_final",
+      "region": "广州·番禺区",
+      "grade": 4,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学4年级下学期期末（仿真）",
+      "time": 50,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1876201652,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listen_pic",
+                  "title": "一、听音选图",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_judge",
+                  "title": "二、听音判断",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "listen_fill",
+                  "title": "三、听音选答",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "四、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "五、情景选择",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "sentence_order",
+                  "title": "六、连词成句",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "blank_fill",
+                  "title": "七、完成句子",
+                  "count": 5,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "八、短文阅读",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g5_a_final",
+      "region": "广州·天河区",
+      "grade": 5,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学5年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 507729263,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g5_a_final",
+      "region": "广州·越秀区",
+      "grade": 5,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学5年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1433917677,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g5_a_final",
+      "region": "广州·海珠区",
+      "grade": 5,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学5年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 3504159021,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g5_a_final",
+      "region": "广州·番禺区",
+      "grade": 5,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学5年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1229430378,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g5_b_final",
+      "region": "广州·天河区",
+      "grade": 5,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学5年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 799756274,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g5_b_final",
+      "region": "广州·越秀区",
+      "grade": 5,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学5年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1688191600,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g5_b_final",
+      "region": "广州·海珠区",
+      "grade": 5,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学5年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 3778356144,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g5_b_final",
+      "region": "广州·番禺区",
+      "grade": 5,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学5年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 2024768759,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g6_a_final",
+      "region": "广州·天河区",
+      "grade": 6,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学6年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 667838890,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g6_a_final",
+      "region": "广州·越秀区",
+      "grade": 6,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学6年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1828381736,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g6_a_final",
+      "region": "广州·海珠区",
+      "grade": 6,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学6年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 3914335720,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g6_a_final",
+      "region": "广州·番禺区",
+      "grade": 6,
+      "term": "上",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学6年级上学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1892328111,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_th_g6_b_final",
+      "region": "广州·天河区",
+      "grade": 6,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·天河区 小学6年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 371618615,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_yx_g6_b_final",
+      "region": "广州·越秀区",
+      "grade": 6,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·越秀区 小学6年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1561525941,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_hz_g6_b_final",
+      "region": "广州·海珠区",
+      "grade": 6,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·海珠区 小学6年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 3635945333,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+},
+    {
+      "id": "b2_gd_primary_gz_py_g6_b_final",
+      "region": "广州·番禺区",
+      "grade": 6,
+      "term": "下",
+      "year": 2025,
+      "kind": "final",
+      "name": "2025 广州·番禺区 小学6年级下学期期末（仿真）",
+      "time": 60,
+      "unitRange": [
+            1,
+            8
+      ],
+      "seed": 1092794418,
+      "fixed": true,
+      "sections": [
+            {
+                  "type": "listening",
+                  "title": "一、听力理解",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "spelling",
+                  "title": "二、单词拼写",
+                  "count": 10,
+                  "points": 2,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "grammar",
+                  "title": "三、语法选择",
+                  "count": 10,
+                  "points": 1.5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "cloze",
+                  "title": "四、完形填空",
+                  "count": 4,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            },
+            {
+                  "type": "reading",
+                  "title": "五、阅读理解",
+                  "count": 5,
+                  "points": 5,
+                  "unitRange": [
+                        1,
+                        8
+                  ]
+            }
+      ],
+      "totalPoints": 100,
+      "autoPoints": 100
+}
+  ]
+}

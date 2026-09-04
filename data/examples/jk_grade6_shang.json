@@ -1,0 +1,1304 @@
+{
+  "words": {
+    "junior": [
+      {
+        "en": "Junior high.",
+        "cn": "初中。",
+        "level": 1,
+        "audioFile": "ex_bc1b7742df.mp3"
+      },
+      {
+        "en": "We start junior next year.",
+        "cn": "明年我们上初中。",
+        "level": 2,
+        "audioFile": "ex_a505786fce.mp3"
+      },
+      {
+        "en": "Junior high school will bring many new subjects.",
+        "cn": "初中会有许多新科目。",
+        "level": 3,
+        "audioFile": "ex_6d1ab0f461.mp3"
+      }
+    ],
+    "graduate": [
+      {
+        "en": "Graduate soon.",
+        "cn": "快毕业了。",
+        "level": 1,
+        "audioFile": "ex_4b6795c764.mp3"
+      },
+      {
+        "en": "We will graduate in June.",
+        "cn": "我们六月毕业。",
+        "level": 2,
+        "audioFile": "ex_745c526f15.mp3"
+      },
+      {
+        "en": "After we graduate, we'll go to different junior high schools.",
+        "cn": "毕业后我们会去不同的初中。",
+        "level": 3,
+        "audioFile": "ex_63aab7ba13.mp3"
+      }
+    ],
+    "primary": [
+      {
+        "en": "Primary school.",
+        "cn": "小学。",
+        "level": 1,
+        "audioFile": "ex_5dfcb62a54.mp3"
+      },
+      {
+        "en": "I love my primary school.",
+        "cn": "我爱我的小学。",
+        "level": 2,
+        "audioFile": "ex_fa74f56b2f.mp3"
+      },
+      {
+        "en": "Six years of primary school taught me many things.",
+        "cn": "六年小学教会我很多事。",
+        "level": 3,
+        "audioFile": "ex_aaa92d6dc3.mp3"
+      }
+    ],
+    "memory": [
+      {
+        "en": "Sweet memory.",
+        "cn": "甜蜜回忆。",
+        "level": 1,
+        "audioFile": "ex_c87b8f9931.mp3"
+      },
+      {
+        "en": "Happy memories.",
+        "cn": "快乐的回忆。",
+        "level": 2,
+        "audioFile": "ex_9a1bcfbba7.mp3"
+      },
+      {
+        "en": "I'll keep the wonderful memories of primary school forever.",
+        "cn": "我会永远珍藏小学的美好回忆。",
+        "level": 3,
+        "audioFile": "ex_ef81a5e4dc.mp3"
+      }
+    ],
+    "future": [
+      {
+        "en": "Bright future.",
+        "cn": "光明未来。",
+        "level": 1,
+        "audioFile": "ex_0f053141e6.mp3"
+      },
+      {
+        "en": "Look to the future.",
+        "cn": "展望未来。",
+        "level": 2,
+        "audioFile": "ex_2ecece8528.mp3"
+      },
+      {
+        "en": "The future belongs to those who keep on dreaming.",
+        "cn": "未来属于那些不停做梦的人。",
+        "level": 3,
+        "audioFile": "ex_61a4625e84.mp3"
+      }
+    ],
+    "challenge": [
+      {
+        "en": "A challenge.",
+        "cn": "一个挑战。",
+        "level": 1,
+        "audioFile": "ex_29495058e9.mp3"
+      },
+      {
+        "en": "Face the challenge.",
+        "cn": "面对挑战。",
+        "level": 2,
+        "audioFile": "ex_2f4f7200c2.mp3"
+      },
+      {
+        "en": "Every challenge is a chance to grow stronger.",
+        "cn": "每个挑战都是变强的机会。",
+        "level": 3,
+        "audioFile": "ex_60701f5d79.mp3"
+      }
+    ],
+    "ready": [
+      {
+        "en": "I'm ready.",
+        "cn": "我准备好了。",
+        "level": 1,
+        "audioFile": "ex_b8026efe8e.mp3"
+      },
+      {
+        "en": "Are you ready?",
+        "cn": "你准备好了吗？",
+        "level": 2,
+        "audioFile": "ex_4ea32befc2.mp3"
+      },
+      {
+        "en": "We are all ready for the new chapter ahead.",
+        "cn": "我们都为接下来的新篇章准备好了。",
+        "level": 3,
+        "audioFile": "ex_20e290a016.mp3"
+      }
+    ],
+    "confident": [
+      {
+        "en": "Be confident.",
+        "cn": "要自信。",
+        "level": 1,
+        "audioFile": "ex_aa3aec91cb.mp3"
+      },
+      {
+        "en": "I feel confident.",
+        "cn": "我有信心。",
+        "level": 2,
+        "audioFile": "ex_985876dac7.mp3"
+      },
+      {
+        "en": "Walk into junior high with a confident smile.",
+        "cn": "带着自信的微笑走进初中。",
+        "level": 3,
+        "audioFile": "ex_79ee1c8679.mp3"
+      }
+    ],
+    "dream": [
+      {
+        "en": "My dream.",
+        "cn": "我的梦想。",
+        "level": 1,
+        "audioFile": "ex_19e61d2146.mp3"
+      },
+      {
+        "en": "Follow your dream.",
+        "cn": "追逐梦想。",
+        "level": 2,
+        "audioFile": "ex_cb7cf20102.mp3"
+      },
+      {
+        "en": "Hold on to your dream — it shines on dark days.",
+        "cn": "守住梦想——它在黑暗的日子里闪光。",
+        "level": 3,
+        "audioFile": "ex_006a2e9b2f.mp3"
+      }
+    ],
+    "job": [
+      {
+        "en": "A good job.",
+        "cn": "一份好工作。",
+        "level": 1,
+        "audioFile": "ex_480301378a.mp3"
+      },
+      {
+        "en": "My dad's job.",
+        "cn": "爸爸的工作。",
+        "level": 2,
+        "audioFile": "ex_28dd3e1e6c.mp3"
+      },
+      {
+        "en": "Choose a job that you really love.",
+        "cn": "选一份你真正热爱的工作。",
+        "level": 3,
+        "audioFile": "ex_2c2dcb4d96.mp3"
+      }
+    ],
+    "doctor": [
+      {
+        "en": "A doctor.",
+        "cn": "医生。",
+        "level": 1,
+        "audioFile": "ex_e6352d0a46.mp3"
+      },
+      {
+        "en": "My mum is a doctor.",
+        "cn": "我妈是医生。",
+        "level": 2,
+        "audioFile": "ex_bc93df4f1e.mp3"
+      },
+      {
+        "en": "A good doctor saves many lives every year.",
+        "cn": "好医生每年挽救许多生命。",
+        "level": 3,
+        "audioFile": "ex_cccdf04980.mp3"
+      }
+    ],
+    "teacher": [
+      {
+        "en": "My teacher.",
+        "cn": "我的老师。",
+        "level": 1,
+        "audioFile": "ex_d25d095b60.mp3"
+      },
+      {
+        "en": "A great teacher.",
+        "cn": "一位好老师。",
+        "level": 2,
+        "audioFile": "ex_0acc648882.mp3"
+      },
+      {
+        "en": "Teachers light the way for the young generation.",
+        "cn": "老师为年轻一代点亮道路。",
+        "level": 3,
+        "audioFile": "ex_55557b2e06.mp3"
+      }
+    ],
+    "engineer": [
+      {
+        "en": "An engineer.",
+        "cn": "一位工程师。",
+        "level": 1,
+        "audioFile": "ex_5a35cedf6b.mp3"
+      },
+      {
+        "en": "An engineer builds bridges.",
+        "cn": "工程师建桥。",
+        "level": 2,
+        "audioFile": "ex_9dfc2041d2.mp3"
+      },
+      {
+        "en": "Engineers design the tall buildings we live in.",
+        "cn": "工程师设计我们居住的高楼。",
+        "level": 3,
+        "audioFile": "ex_7ba668f4f5.mp3"
+      }
+    ],
+    "scientist": [
+      {
+        "en": "A scientist.",
+        "cn": "一位科学家。",
+        "level": 1,
+        "audioFile": "ex_0ad480c7b4.mp3"
+      },
+      {
+        "en": "A famous scientist.",
+        "cn": "一位著名科学家。",
+        "level": 2,
+        "audioFile": "ex_5aeabaa103.mp3"
+      },
+      {
+        "en": "Scientists try to find answers to the big questions.",
+        "cn": "科学家努力寻找重大问题的答案。",
+        "level": 3,
+        "audioFile": "ex_5dc62f7411.mp3"
+      }
+    ],
+    "writer": [
+      {
+        "en": "A writer.",
+        "cn": "一位作家。",
+        "level": 1,
+        "audioFile": "ex_c1deaea724.mp3"
+      },
+      {
+        "en": "She is a writer.",
+        "cn": "她是作家。",
+        "level": 2,
+        "audioFile": "ex_07d52fde19.mp3"
+      },
+      {
+        "en": "A writer can take readers to other worlds.",
+        "cn": "作家能把读者带去别的世界。",
+        "level": 3,
+        "audioFile": "ex_e4a203f76d.mp3"
+      }
+    ],
+    "work hard": [
+      {
+        "en": "Work hard.",
+        "cn": "努力。",
+        "level": 1,
+        "audioFile": "ex_5e9af66111.mp3"
+      },
+      {
+        "en": "Work hard for it.",
+        "cn": "为它努力。",
+        "level": 2,
+        "audioFile": "ex_b1b2d4c18a.mp3"
+      },
+      {
+        "en": "If you work hard, your dream will come true one day.",
+        "cn": "努力下去，梦想终有一天会实现。",
+        "level": 3,
+        "audioFile": "ex_46d86665f8.mp3"
+      }
+    ],
+    "hero": [
+      {
+        "en": "My hero.",
+        "cn": "我的英雄。",
+        "level": 1,
+        "audioFile": "ex_85a97903ed.mp3"
+      },
+      {
+        "en": "He is a real hero.",
+        "cn": "他是真正的英雄。",
+        "level": 2,
+        "audioFile": "ex_28ffb82b94.mp3"
+      },
+      {
+        "en": "Real heroes do brave things without expecting praise.",
+        "cn": "真正的英雄不求赞美就做勇敢的事。",
+        "level": 3,
+        "audioFile": "ex_d13d104fc8.mp3"
+      }
+    ],
+    "brave": [
+      {
+        "en": "Be brave.",
+        "cn": "勇敢。",
+        "level": 1,
+        "audioFile": "ex_dcd77a351a.mp3"
+      },
+      {
+        "en": "A brave girl.",
+        "cn": "一个勇敢的女孩。",
+        "level": 2,
+        "audioFile": "ex_4224f6655e.mp3"
+      },
+      {
+        "en": "It takes a brave heart to help a stranger in trouble.",
+        "cn": "帮助困境中的陌生人需要勇敢的心。",
+        "level": 3,
+        "audioFile": "ex_de0541339f.mp3"
+      }
+    ],
+    "save": [
+      {
+        "en": "Save water.",
+        "cn": "节约用水。",
+        "level": 1,
+        "audioFile": "ex_4ed3f15345.mp3"
+      },
+      {
+        "en": "Save energy.",
+        "cn": "节约能源。",
+        "level": 2,
+        "audioFile": "ex_743d941b60.mp3"
+      },
+      {
+        "en": "Turning off lights helps save a lot of electricity.",
+        "cn": "关灯能节约很多电。",
+        "level": 3,
+        "audioFile": "ex_7b5a2944bf.mp3"
+      }
+    ],
+    "help": [
+      {
+        "en": "Help, please.",
+        "cn": "请帮帮。",
+        "level": 1,
+        "audioFile": "ex_43a463d45c.mp3"
+      },
+      {
+        "en": "Help each other.",
+        "cn": "互相帮助。",
+        "level": 2,
+        "audioFile": "ex_66a6d38c6a.mp3"
+      },
+      {
+        "en": "True friends help each other when things get hard.",
+        "cn": "真朋友在困难时彼此帮助。",
+        "level": 3,
+        "audioFile": "ex_780f032440.mp3"
+      }
+    ],
+    "fire": [
+      {
+        "en": "A big fire.",
+        "cn": "一场大火。",
+        "level": 1,
+        "audioFile": "ex_a7f7f02ff9.mp3"
+      },
+      {
+        "en": "Put out the fire.",
+        "cn": "灭火。",
+        "level": 2,
+        "audioFile": "ex_6bc721daeb.mp3"
+      },
+      {
+        "en": "Stay low and crawl out when there is a fire.",
+        "cn": "着火时低姿势爬出来。",
+        "level": 3,
+        "audioFile": "ex_93a3941e79.mp3"
+      }
+    ],
+    "fighter": [
+      {
+        "en": "A firefighter.",
+        "cn": "一名消防员。",
+        "level": 1,
+        "audioFile": "ex_1beaa7ba41.mp3"
+      },
+      {
+        "en": "Firefighters are brave.",
+        "cn": "消防员勇敢。",
+        "level": 2,
+        "audioFile": "ex_745320a6f7.mp3"
+      },
+      {
+        "en": "Firefighters train hard so they can save lives quickly.",
+        "cn": "消防员刻苦训练才能快速救人。",
+        "level": 3,
+        "audioFile": "ex_012519322b.mp3"
+      }
+    ],
+    "police": [
+      {
+        "en": "The police.",
+        "cn": "警察。",
+        "level": 1,
+        "audioFile": "ex_33ae04b3fb.mp3"
+      },
+      {
+        "en": "Call the police.",
+        "cn": "叫警察。",
+        "level": 2,
+        "audioFile": "ex_411214e14e.mp3"
+      },
+      {
+        "en": "The police officer helped the lost child find his way home.",
+        "cn": "警察叔叔帮迷路的孩子回家。",
+        "level": 3,
+        "audioFile": "ex_b7ad484823.mp3"
+      }
+    ],
+    "great": [
+      {
+        "en": "Great hero.",
+        "cn": "伟大的英雄。",
+        "level": 1,
+        "audioFile": "ex_df5b6aa1fe.mp3"
+      },
+      {
+        "en": "A great teacher.",
+        "cn": "一位伟大的老师。",
+        "level": 2,
+        "audioFile": "ex_0acc648882.mp3"
+      },
+      {
+        "en": "Great heroes are usually quiet, kind everyday people.",
+        "cn": "伟大的英雄通常是安静善良的普通人。",
+        "level": 3,
+        "audioFile": "ex_452bc43458.mp3"
+      }
+    ],
+    "sport": [
+      {
+        "en": "I love sport.",
+        "cn": "我爱运动。",
+        "level": 1,
+        "audioFile": "ex_3322201939.mp3"
+      },
+      {
+        "en": "Sport is fun.",
+        "cn": "运动有趣。",
+        "level": 2,
+        "audioFile": "ex_fd81e58ab2.mp3"
+      },
+      {
+        "en": "Doing sport regularly makes us healthier and happier.",
+        "cn": "经常运动让我们更健康快乐。",
+        "level": 3,
+        "audioFile": "ex_f95e9acfbe.mp3"
+      }
+    ],
+    "football": [
+      {
+        "en": "Play football.",
+        "cn": "踢足球。",
+        "level": 1,
+        "audioFile": "ex_3fc4f8f9f4.mp3"
+      },
+      {
+        "en": "Football is popular.",
+        "cn": "足球很流行。",
+        "level": 2,
+        "audioFile": "ex_29c4a119c2.mp3"
+      },
+      {
+        "en": "He has played football since he was four years old.",
+        "cn": "他从四岁就开始踢足球。",
+        "level": 3,
+        "audioFile": "ex_022503caea.mp3"
+      }
+    ],
+    "basketball": [
+      {
+        "en": "Play basketball.",
+        "cn": "打篮球。",
+        "level": 1,
+        "audioFile": "ex_e2d056a571.mp3"
+      },
+      {
+        "en": "Basketball is fast.",
+        "cn": "篮球节奏快。",
+        "level": 2,
+        "audioFile": "ex_3e24044f06.mp3"
+      },
+      {
+        "en": "Our basketball team practises every Tuesday and Thursday.",
+        "cn": "我们篮球队每周二周四训练。",
+        "level": 3,
+        "audioFile": "ex_fe6aea0327.mp3"
+      }
+    ],
+    "swimming": [
+      {
+        "en": "Swimming.",
+        "cn": "游泳。",
+        "level": 1,
+        "audioFile": "ex_68a1b6f6f9.mp3"
+      },
+      {
+        "en": "I love swimming.",
+        "cn": "我爱游泳。",
+        "level": 2,
+        "audioFile": "ex_f637a11f01.mp3"
+      },
+      {
+        "en": "Swimming is one of the best whole-body exercises.",
+        "cn": "游泳是最好的全身运动之一。",
+        "level": 3,
+        "audioFile": "ex_4ce5c4b2ff.mp3"
+      }
+    ],
+    "running": [
+      {
+        "en": "Running.",
+        "cn": "跑步。",
+        "level": 1,
+        "audioFile": "ex_dbc87ec801.mp3"
+      },
+      {
+        "en": "Running is healthy.",
+        "cn": "跑步健康。",
+        "level": 2,
+        "audioFile": "ex_cd4f083364.mp3"
+      },
+      {
+        "en": "I go running for thirty minutes every morning.",
+        "cn": "我每天早上跑步三十分钟。",
+        "level": 3,
+        "audioFile": "ex_affed4fe9c.mp3"
+      }
+    ],
+    "match": [
+      {
+        "en": "A match.",
+        "cn": "一场比赛。",
+        "level": 1,
+        "audioFile": "ex_d5f567d905.mp3"
+      },
+      {
+        "en": "We have a match.",
+        "cn": "我们有场比赛。",
+        "level": 2,
+        "audioFile": "ex_50c89e78ac.mp3"
+      },
+      {
+        "en": "Our team won the match three goals to one.",
+        "cn": "我们队 3 比 1 赢得了比赛。",
+        "level": 3,
+        "audioFile": "ex_169eda2b5b.mp3"
+      }
+    ],
+    "champion": [
+      {
+        "en": "A champion.",
+        "cn": "一位冠军。",
+        "level": 1,
+        "audioFile": "ex_5ccc666907.mp3"
+      },
+      {
+        "en": "He is a champion.",
+        "cn": "他是冠军。",
+        "level": 2,
+        "audioFile": "ex_948edbcd16.mp3"
+      },
+      {
+        "en": "She became the youngest champion in school history.",
+        "cn": "她成为学校历史上最年轻的冠军。",
+        "level": 3,
+        "audioFile": "ex_48e227f00c.mp3"
+      }
+    ],
+    "energy": [
+      {
+        "en": "Need energy.",
+        "cn": "需要能量。",
+        "level": 1,
+        "audioFile": "ex_c1d6f27ae3.mp3"
+      },
+      {
+        "en": "Food gives us energy.",
+        "cn": "食物给我们能量。",
+        "level": 2,
+        "audioFile": "ex_453a0d8588.mp3"
+      },
+      {
+        "en": "Whole grains give us long-lasting energy.",
+        "cn": "全谷物给我们持久的能量。",
+        "level": 3,
+        "audioFile": "ex_8b85a6a01c.mp3"
+      }
+    ],
+    "eat": [
+      {
+        "en": "Eat slowly.",
+        "cn": "慢点吃。",
+        "level": 1,
+        "audioFile": "ex_501f466dbb.mp3"
+      },
+      {
+        "en": "I eat fruit.",
+        "cn": "我吃水果。",
+        "level": 2,
+        "audioFile": "ex_74ea85ac0b.mp3"
+      },
+      {
+        "en": "We should eat a variety of foods every day.",
+        "cn": "我们每天应当吃多种食物。",
+        "level": 3,
+        "audioFile": "ex_4d957f3e55.mp3"
+      }
+    ],
+    "healthy": [
+      {
+        "en": "Be healthy.",
+        "cn": "要健康。",
+        "level": 1,
+        "audioFile": "ex_eb83c6e27d.mp3"
+      },
+      {
+        "en": "Healthy food.",
+        "cn": "健康食物。",
+        "level": 2,
+        "audioFile": "ex_6aae355939.mp3"
+      },
+      {
+        "en": "A healthy lifestyle includes good food and exercise.",
+        "cn": "健康的生活方式包括好食物和运动。",
+        "level": 3,
+        "audioFile": "ex_706618b033.mp3"
+      }
+    ],
+    "vegetable": [
+      {
+        "en": "Eat vegetables.",
+        "cn": "吃蔬菜。",
+        "level": 1,
+        "audioFile": "ex_f70310d2be.mp3"
+      },
+      {
+        "en": "Fresh vegetables.",
+        "cn": "新鲜蔬菜。",
+        "level": 2,
+        "audioFile": "ex_a80ce3fc36.mp3"
+      },
+      {
+        "en": "Green vegetables are full of vitamins and minerals.",
+        "cn": "绿色蔬菜富含维生素和矿物质。",
+        "level": 3,
+        "audioFile": "ex_11810b6c6b.mp3"
+      }
+    ],
+    "junk food": [
+      {
+        "en": "Junk food.",
+        "cn": "垃圾食品。",
+        "level": 1,
+        "audioFile": "ex_09e364b795.mp3"
+      },
+      {
+        "en": "Less junk food.",
+        "cn": "少吃垃圾食品。",
+        "level": 2,
+        "audioFile": "ex_9a9941e05a.mp3"
+      },
+      {
+        "en": "Too much junk food makes us feel tired and weak.",
+        "cn": "垃圾食品吃太多让人疲惫无力。",
+        "level": 3,
+        "audioFile": "ex_d646cf44c8.mp3"
+      }
+    ],
+    "vitamin": [
+      {
+        "en": "Vitamins.",
+        "cn": "维生素。",
+        "level": 1,
+        "audioFile": "ex_4ef538d735.mp3"
+      },
+      {
+        "en": "Vitamin C.",
+        "cn": "维生素 C。",
+        "level": 2,
+        "audioFile": "ex_287da2bd53.mp3"
+      },
+      {
+        "en": "Oranges and lemons are rich in vitamin C.",
+        "cn": "橘子和柠檬富含维生素 C。",
+        "level": 3,
+        "audioFile": "ex_ee650028d7.mp3"
+      }
+    ],
+    "fat": [
+      {
+        "en": "Less fat.",
+        "cn": "少油。",
+        "level": 1,
+        "audioFile": "ex_00a1412583.mp3"
+      },
+      {
+        "en": "Too much fat.",
+        "cn": "脂肪太多。",
+        "level": 2,
+        "audioFile": "ex_4a923d00e6.mp3"
+      },
+      {
+        "en": "Try to avoid food with too much sugar and fat.",
+        "cn": "尽量少吃糖和脂肪太多的食物。",
+        "level": 3,
+        "audioFile": "ex_1b20488809.mp3"
+      }
+    ],
+    "balance": [
+      {
+        "en": "Balance.",
+        "cn": "平衡。",
+        "level": 1,
+        "audioFile": "ex_abcf163df7.mp3"
+      },
+      {
+        "en": "Balance your diet.",
+        "cn": "饮食要均衡。",
+        "level": 2,
+        "audioFile": "ex_ec8b3e717b.mp3"
+      },
+      {
+        "en": "Balance work, rest and play to stay happy.",
+        "cn": "平衡工作、休息和娱乐才能开心。",
+        "level": 3,
+        "audioFile": "ex_6f95591cb7.mp3"
+      }
+    ],
+    "Earth": [
+      {
+        "en": "Our Earth.",
+        "cn": "我们的地球。",
+        "level": 1,
+        "audioFile": "ex_f2572bec95.mp3"
+      },
+      {
+        "en": "Protect the Earth.",
+        "cn": "保护地球。",
+        "level": 2,
+        "audioFile": "ex_8d992d5a82.mp3"
+      },
+      {
+        "en": "The Earth is our only home in the whole universe.",
+        "cn": "地球是我们在整个宇宙中唯一的家。",
+        "level": 3,
+        "audioFile": "ex_098bebfdf1.mp3"
+      }
+    ],
+    "pollution": [
+      {
+        "en": "Air pollution.",
+        "cn": "空气污染。",
+        "level": 1,
+        "audioFile": "ex_2998c463ec.mp3"
+      },
+      {
+        "en": "Stop pollution.",
+        "cn": "停止污染。",
+        "level": 2,
+        "audioFile": "ex_b18468e747.mp3"
+      },
+      {
+        "en": "Cars and factories cause a lot of air pollution.",
+        "cn": "汽车和工厂造成大量空气污染。",
+        "level": 3,
+        "audioFile": "ex_1ff84841f1.mp3"
+      }
+    ],
+    "recycle": [
+      {
+        "en": "Please recycle.",
+        "cn": "请回收。",
+        "level": 1,
+        "audioFile": "ex_ec3df7f330.mp3"
+      },
+      {
+        "en": "Recycle paper.",
+        "cn": "回收纸张。",
+        "level": 2,
+        "audioFile": "ex_22cea87d2c.mp3"
+      },
+      {
+        "en": "We recycle plastic, glass and metal at our school.",
+        "cn": "我们学校回收塑料、玻璃和金属。",
+        "level": 3,
+        "audioFile": "ex_c90a564ea2.mp3"
+      }
+    ],
+    "plastic": [
+      {
+        "en": "Plastic bag.",
+        "cn": "塑料袋。",
+        "level": 1,
+        "audioFile": "ex_d19fd2d0d6.mp3"
+      },
+      {
+        "en": "Less plastic.",
+        "cn": "少用塑料。",
+        "level": 2,
+        "audioFile": "ex_b188173059.mp3"
+      },
+      {
+        "en": "Plastic takes hundreds of years to break down.",
+        "cn": "塑料需要几百年才能分解。",
+        "level": 3,
+        "audioFile": "ex_c79b43e712.mp3"
+      }
+    ],
+    "tree": [
+      {
+        "en": "Plant a tree.",
+        "cn": "种棵树。",
+        "level": 1,
+        "audioFile": "ex_884ff0914a.mp3"
+      },
+      {
+        "en": "Big trees.",
+        "cn": "大树。",
+        "level": 2,
+        "audioFile": "ex_4e28db57a4.mp3"
+      },
+      {
+        "en": "On Earth Day, we plant new trees in the park.",
+        "cn": "地球日我们在公园种新树。",
+        "level": 3,
+        "audioFile": "ex_2428f57d2d.mp3"
+      }
+    ],
+    "river": [
+      {
+        "en": "A clean river.",
+        "cn": "干净的河。",
+        "level": 1,
+        "audioFile": "ex_500d36a4ef.mp3"
+      },
+      {
+        "en": "Don't pollute the river.",
+        "cn": "别污染河。",
+        "level": 2,
+        "audioFile": "ex_5198240e74.mp3"
+      },
+      {
+        "en": "The river near our school is much cleaner now.",
+        "cn": "学校附近的河现在干净多了。",
+        "level": 3,
+        "audioFile": "ex_6079253d45.mp3"
+      }
+    ],
+    "protect": [
+      {
+        "en": "Protect animals.",
+        "cn": "保护动物。",
+        "level": 1,
+        "audioFile": "ex_748306dee5.mp3"
+      },
+      {
+        "en": "Protect our home.",
+        "cn": "保护家园。",
+        "level": 2,
+        "audioFile": "ex_65a6aac0a3.mp3"
+      },
+      {
+        "en": "We must protect the Earth for future generations.",
+        "cn": "我们必须为后代保护地球。",
+        "level": 3,
+        "audioFile": "ex_609b729dee.mp3"
+      }
+    ],
+    "invention": [
+      {
+        "en": "An invention.",
+        "cn": "一项发明。",
+        "level": 1,
+        "audioFile": "ex_257a7955a4.mp3"
+      },
+      {
+        "en": "A great invention.",
+        "cn": "一项伟大发明。",
+        "level": 2,
+        "audioFile": "ex_8cb69c834a.mp3"
+      },
+      {
+        "en": "Paper is one of the most important inventions in history.",
+        "cn": "纸是历史上最重要的发明之一。",
+        "level": 3,
+        "audioFile": "ex_aa5d9dfee6.mp3"
+      }
+    ],
+    "invent": [
+      {
+        "en": "Invent it.",
+        "cn": "发明它。",
+        "level": 1,
+        "audioFile": "ex_cc4a2384f0.mp3"
+      },
+      {
+        "en": "Who invented this?",
+        "cn": "谁发明的？",
+        "level": 2,
+        "audioFile": "ex_f933f92e63.mp3"
+      },
+      {
+        "en": "Edison invented the light bulb over a hundred years ago.",
+        "cn": "爱迪生一百多年前发明了灯泡。",
+        "level": 3,
+        "audioFile": "ex_6654239f99.mp3"
+      }
+    ],
+    "phone": [
+      {
+        "en": "A phone.",
+        "cn": "一部电话。",
+        "level": 1,
+        "audioFile": "ex_ecae4c9da6.mp3"
+      },
+      {
+        "en": "A smart phone.",
+        "cn": "一部智能手机。",
+        "level": 2,
+        "audioFile": "ex_2471f224b5.mp3"
+      },
+      {
+        "en": "A phone keeps me connected with friends and family.",
+        "cn": "手机让我和亲友保持联系。",
+        "level": 3,
+        "audioFile": "ex_fe410b40d2.mp3"
+      }
+    ],
+    "computer": [
+      {
+        "en": "A computer.",
+        "cn": "一台电脑。",
+        "level": 1,
+        "audioFile": "ex_f043571dc7.mp3"
+      },
+      {
+        "en": "Use a computer.",
+        "cn": "用电脑。",
+        "level": 2,
+        "audioFile": "ex_c217e310d1.mp3"
+      },
+      {
+        "en": "Computers help us learn, work and play.",
+        "cn": "电脑帮我们学习、工作和娱乐。",
+        "level": 3,
+        "audioFile": "ex_2942af1c31.mp3"
+      }
+    ],
+    "internet": [
+      {
+        "en": "The internet.",
+        "cn": "互联网。",
+        "level": 1,
+        "audioFile": "ex_7144d1f15c.mp3"
+      },
+      {
+        "en": "Search on the internet.",
+        "cn": "网上搜索。",
+        "level": 2,
+        "audioFile": "ex_60aa2f3e04.mp3"
+      },
+      {
+        "en": "The internet brings the whole world to our screens.",
+        "cn": "互联网把世界带到我们屏幕上。",
+        "level": 3,
+        "audioFile": "ex_58fd06d561.mp3"
+      }
+    ],
+    "robot": [
+      {
+        "en": "A robot.",
+        "cn": "一个机器人。",
+        "level": 1,
+        "audioFile": "ex_34587852cb.mp3"
+      },
+      {
+        "en": "A helpful robot.",
+        "cn": "有用的机器人。",
+        "level": 2,
+        "audioFile": "ex_ea5af611ff.mp3"
+      },
+      {
+        "en": "Some robots can help doctors do small surgeries.",
+        "cn": "有的机器人能帮医生做小手术。",
+        "level": 3,
+        "audioFile": "ex_50dc9b6798.mp3"
+      }
+    ],
+    "change": [
+      {
+        "en": "Big change.",
+        "cn": "大变化。",
+        "level": 1,
+        "audioFile": "ex_af951f3343.mp3"
+      },
+      {
+        "en": "Inventions change life.",
+        "cn": "发明改变生活。",
+        "level": 2,
+        "audioFile": "ex_e4c6524c66.mp3"
+      },
+      {
+        "en": "New inventions change the way we live and work.",
+        "cn": "新发明改变我们生活和工作的方式。",
+        "level": 3,
+        "audioFile": "ex_0c7101d92f.mp3"
+      }
+    ],
+    "friendship": [
+      {
+        "en": "Long friendship.",
+        "cn": "长久的友谊。",
+        "level": 1,
+        "audioFile": "ex_da1cb43cee.mp3"
+      },
+      {
+        "en": "Friendship is precious.",
+        "cn": "友谊珍贵。",
+        "level": 2,
+        "audioFile": "ex_ff19cc8789.mp3"
+      },
+      {
+        "en": "True friendship grows stronger through time and trust.",
+        "cn": "真正的友谊在时间与信任中愈发坚固。",
+        "level": 3,
+        "audioFile": "ex_294f8232c2.mp3"
+      }
+    ],
+    "trust": [
+      {
+        "en": "Trust me.",
+        "cn": "相信我。",
+        "level": 1,
+        "audioFile": "ex_262a01b3fb.mp3"
+      },
+      {
+        "en": "I trust my friend.",
+        "cn": "我相信朋友。",
+        "level": 2,
+        "audioFile": "ex_5a8189231e.mp3"
+      },
+      {
+        "en": "Trust is the most important part of any friendship.",
+        "cn": "信任是友谊中最重要的部分。",
+        "level": 3,
+        "audioFile": "ex_ee59173cbd.mp3"
+      }
+    ],
+    "kind": [
+      {
+        "en": "Be kind.",
+        "cn": "要友善。",
+        "level": 1,
+        "audioFile": "ex_aad4c51eae.mp3"
+      },
+      {
+        "en": "Kind words.",
+        "cn": "友善的话。",
+        "level": 2,
+        "audioFile": "ex_09f98e96de.mp3"
+      },
+      {
+        "en": "Kind people make the world a much better place.",
+        "cn": "善良的人让世界变得更好。",
+        "level": 3,
+        "audioFile": "ex_5818262972.mp3"
+      }
+    ],
+    "share": [
+      {
+        "en": "Share, please.",
+        "cn": "请分享。",
+        "level": 1,
+        "audioFile": "ex_9e7f2eb8ad.mp3"
+      },
+      {
+        "en": "Share happiness.",
+        "cn": "分享快乐。",
+        "level": 2,
+        "audioFile": "ex_c844fe777a.mp3"
+      },
+      {
+        "en": "We share our joys and sorrows with close friends.",
+        "cn": "我们与好友分享喜怒哀乐。",
+        "level": 3,
+        "audioFile": "ex_a8b208e54d.mp3"
+      }
+    ],
+    "forgive": [
+      {
+        "en": "Please forgive.",
+        "cn": "请原谅。",
+        "level": 1,
+        "audioFile": "ex_3bd5b2c9f4.mp3"
+      },
+      {
+        "en": "Forgive my friend.",
+        "cn": "原谅朋友。",
+        "level": 2,
+        "audioFile": "ex_2d173bf96e.mp3"
+      },
+      {
+        "en": "Sometimes we should forgive and move on together.",
+        "cn": "有时我们要学会原谅，一起向前。",
+        "level": 3,
+        "audioFile": "ex_9dd985234c.mp3"
+      }
+    ],
+    "miss": [
+      {
+        "en": "I miss you.",
+        "cn": "我想你。",
+        "level": 1,
+        "audioFile": "ex_e961d2b53a.mp3"
+      },
+      {
+        "en": "Miss my old friends.",
+        "cn": "想念老朋友。",
+        "level": 2,
+        "audioFile": "ex_3b4441a084.mp3"
+      },
+      {
+        "en": "I really miss my classmates from primary school.",
+        "cn": "我很想念小学的同学们。",
+        "level": 3,
+        "audioFile": "ex_7addf36634.mp3"
+      }
+    ],
+    "forever": [
+      {
+        "en": "Forever.",
+        "cn": "永远。",
+        "level": 1,
+        "audioFile": "ex_201026febd.mp3"
+      },
+      {
+        "en": "Friends forever.",
+        "cn": "永远的朋友。",
+        "level": 2,
+        "audioFile": "ex_2bb9af40ea.mp3"
+      },
+      {
+        "en": "Some friendships truly last forever, no matter the distance.",
+        "cn": "有些友谊跨越距离，真的长存。",
+        "level": 3,
+        "audioFile": "ex_1b0f401402.mp3"
+      }
+    ],
+    "bright": [
+      {
+        "en": "Bright!",
+        "cn": "明亮！",
+        "level": 1,
+        "audioFile": "ex_af8a40e115.mp3"
+      },
+      {
+        "en": "A bright sky.",
+        "cn": "明亮的天空。",
+        "level": 2,
+        "audioFile": "ex_e0aee0d048.mp3"
+      },
+      {
+        "en": "With courage and effort, our future will be bright.",
+        "cn": "凭借勇气与努力，我们的未来必定光明。",
+        "level": 3,
+        "audioFile": "ex_38daaed7a8.mp3"
+      }
+    ],
+    "goal": [
+      {
+        "en": "My goal.",
+        "cn": "我的目标。",
+        "level": 1,
+        "audioFile": "ex_0163a05ad3.mp3"
+      },
+      {
+        "en": "Set a goal.",
+        "cn": "定个目标。",
+        "level": 2,
+        "audioFile": "ex_ba32280156.mp3"
+      },
+      {
+        "en": "Write down your goals and check them every week.",
+        "cn": "把目标写下来，每周检查。",
+        "level": 3,
+        "audioFile": "ex_23e0138e4d.mp3"
+      }
+    ],
+    "believe": [
+      {
+        "en": "Believe me.",
+        "cn": "相信我。",
+        "level": 1,
+        "audioFile": "ex_0305884374.mp3"
+      },
+      {
+        "en": "Believe in yourself.",
+        "cn": "相信自己。",
+        "level": 2,
+        "audioFile": "ex_b63b84a472.mp3"
+      },
+      {
+        "en": "Believe in yourself even when others doubt you.",
+        "cn": "即使别人怀疑，也要相信自己。",
+        "level": 3,
+        "audioFile": "ex_1c40ba21bc.mp3"
+      }
+    ],
+    "thank": [
+      {
+        "en": "Thanks!",
+        "cn": "谢谢！",
+        "level": 1,
+        "audioFile": "ex_38f5c24717.mp3"
+      },
+      {
+        "en": "Thank everyone.",
+        "cn": "感谢大家。",
+        "level": 2,
+        "audioFile": "ex_573b61fcba.mp3"
+      },
+      {
+        "en": "Thank everyone who walked this journey with us.",
+        "cn": "感谢一路同行的每一个人。",
+        "level": 3,
+        "audioFile": "ex_362f0877a5.mp3"
+      }
+    ],
+    "goodbye": [
+      {
+        "en": "Goodbye!",
+        "cn": "再见！",
+        "level": 1,
+        "audioFile": "ex_1f3f6dc2b2.mp3"
+      },
+      {
+        "en": "Say goodbye.",
+        "cn": "道别。",
+        "level": 2,
+        "audioFile": "ex_4aa048d15a.mp3"
+      },
+      {
+        "en": "Goodbye is not an end, but a brand-new beginning.",
+        "cn": "再见不是结束，而是全新开始。",
+        "level": 3,
+        "audioFile": "ex_5b6316a508.mp3"
+      }
+    ]
+  }
+}

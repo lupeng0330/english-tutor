@@ -1,0 +1,42 @@
+{
+  "Earth": [
+    { "en": "Our Earth.", "cn": "我们的地球。", "level": 1 },
+    { "en": "Protect the Earth.", "cn": "保护地球。", "level": 2 },
+    { "en": "The Earth is our only home in the whole universe.", "cn": "地球是我们在整个宇宙中唯一的家。", "level": 3 }
+  ],
+  "pollution": [
+    { "en": "Air pollution.", "cn": "空气污染。", "level": 1 },
+    { "en": "Stop pollution.", "cn": "停止污染。", "level": 2 },
+    { "en": "Cars and factories cause a lot of air pollution.", "cn": "汽车和工厂造成大量空气污染。", "level": 3 }
+  ],
+  "recycle": [
+    { "en": "Please recycle.", "cn": "请回收。", "level": 1 },
+    { "en": "Recycle paper.", "cn": "回收纸张。", "level": 2 },
+    { "en": "We recycle plastic, glass and metal at our school.", "cn": "我们学校回收塑料、玻璃和金属。", "level": 3 }
+  ],
+  "plastic": [
+    { "en": "Plastic bag.", "cn": "塑料袋。", "level": 1 },
+    { "en": "Less plastic.", "cn": "少用塑料。", "level": 2 },
+    { "en": "Plastic takes hundreds of years to break down.", "cn": "塑料需要几百年才能分解。", "level": 3 }
+  ],
+  "tree": [
+    { "en": "Plant a tree.", "cn": "种棵树。", "level": 1 },
+    { "en": "Big trees.", "cn": "大树。", "level": 2 },
+    { "en": "On Earth Day, we plant new trees in the park.", "cn": "地球日我们在公园种新树。", "level": 3 }
+  ],
+  "river": [
+    { "en": "A clean river.", "cn": "干净的河。", "level": 1 },
+    { "en": "Don't pollute the river.", "cn": "别污染河。", "level": 2 },
+    { "en": "The river near our school is much cleaner now.", "cn": "学校附近的河现在干净多了。", "level": 3 }
+  ],
+  "protect": [
+    { "en": "Protect animals.", "cn": "保护动物。", "level": 1 },
+    { "en": "Protect our home.", "cn": "保护家园。", "level": 2 },
+    { "en": "We must protect the Earth for future generations.", "cn": "我们必须为后代保护地球。", "level": 3 }
+  ],
+  "save": [
+    { "en": "Save water.", "cn": "节约用水。", "level": 1 },
+    { "en": "Save energy.", "cn": "节约能源。", "level": 2 },
+    { "en": "Turning off lights helps save a lot of electricity.", "cn": "关灯能节约很多电。", "level": 3 }
+  ]
+}

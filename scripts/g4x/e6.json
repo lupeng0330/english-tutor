@@ -1,0 +1,42 @@
+{
+  "cook": [
+    { "en": "Mum cooks.", "cn": "妈妈做饭。", "level": 1 },
+    { "en": "Dad cooks dinner.", "cn": "爸爸做晚饭。", "level": 2 },
+    { "en": "I'm learning to cook a few simple dishes from Grandma.", "cn": "我正跟奶奶学几道简单菜。", "level": 3 }
+  ],
+  "egg": [
+    { "en": "An egg.", "cn": "一个鸡蛋。", "level": 1 },
+    { "en": "I eat two eggs.", "cn": "我吃两个鸡蛋。", "level": 2 },
+    { "en": "Break the eggs into the bowl carefully.", "cn": "小心地把鸡蛋打进碗里。", "level": 3 }
+  ],
+  "milk": [
+    { "en": "Drink milk.", "cn": "喝牛奶。", "level": 1 },
+    { "en": "I drink milk every day.", "cn": "我每天喝牛奶。", "level": 2 },
+    { "en": "A glass of warm milk before bed helps me sleep.", "cn": "睡前一杯温牛奶帮我入睡。", "level": 3 }
+  ],
+  "fruit": [
+    { "en": "Fresh fruit.", "cn": "新鲜水果。", "level": 1 },
+    { "en": "Apples are fruit.", "cn": "苹果是水果。", "level": 2 },
+    { "en": "Eating fruit every day is good for your health.", "cn": "每天吃水果对健康好。", "level": 3 }
+  ],
+  "knife": [
+    { "en": "A small knife.", "cn": "一把小刀。", "level": 1 },
+    { "en": "Use the knife carefully.", "cn": "小心用刀。", "level": 2 },
+    { "en": "Mum uses a sharp knife to cut the apples.", "cn": "妈妈用锋利的刀切苹果。", "level": 3 }
+  ],
+  "fork": [
+    { "en": "A fork.", "cn": "一把叉子。", "level": 1 },
+    { "en": "Hold the fork.", "cn": "拿住叉子。", "level": 2 },
+    { "en": "I eat the noodles with a fork at school.", "cn": "我在学校用叉子吃面条。", "level": 3 }
+  ],
+  "spoon": [
+    { "en": "A spoon.", "cn": "一把勺子。", "level": 1 },
+    { "en": "Eat with a spoon.", "cn": "用勺子吃。", "level": 2 },
+    { "en": "Use a big spoon to mix the soup well.", "cn": "用大勺子把汤拌匀。", "level": 3 }
+  ],
+  "wash": [
+    { "en": "Wash the apple.", "cn": "洗苹果。", "level": 1 },
+    { "en": "Wash your hands.", "cn": "洗手。", "level": 2 },
+    { "en": "Please wash the vegetables in cold water before cooking.", "cn": "做菜前请用凉水洗一下蔬菜。", "level": 3 }
+  ]
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>乐学英语 · 手机预览</title>
+  <!-- mobile.html 是开发预览工具：通过 iframe 嵌入 index.html，手机端缓存机制由 index.html 内部处理，此文件无需同步 version.txt / __withVer 等逻辑 -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #e5e7eb;
+      overflow: auto;
+    }
+    .wrap {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 16px 12px 24px;
+      gap: 12px;
+    }
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      background: #1f2937;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .bar b { color: #f3f4f6; font-weight: 600; }
+    .bar a { color: #60a5fa; text-decoration: none; }
+    .bar a:hover { color: #93c5fd; text-decoration: underline; }
+    .btn {
+      background: #374151;
+      color: #e5e7eb;
+      border: none;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn.active { background: #2563eb; color: #fff; }
+    .btn.primary { background: #10b981; color: #fff; }
+    .btn.primary:hover { background: #059669; }
+
+    .stage {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .phone {
+      position: relative;
+      width: 390px;
+      height: 844px;
+      background: #000;
+      border-radius: 44px;
+      padding: 12px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.5), 0 0 0 2px #374151;
+      transition: width .2s, height .2s;
+      flex: 0 0 auto;
+    }
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 14px; left: 50%;
+      transform: translateX(-50%);
+      width: 110px; height: 28px;
+      background: #000;
+      border-radius: 18px;
+      z-index: 2;
+    }
+    .screen {
+      width: 100%; height: 100%;
+      border-radius: 32px;
+      overflow: hidden;
+      background: #fff;
+    }
+    iframe {
+      width: 100%; height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* 二维码侧栏 */
+    .qr-panel {
+      width: 240px;
+      background: #1f2937;
+      border: 1px solid #374151;
+      border-radius: 18px;
+      padding: 14px;
+      color: #e5e7eb;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      text-align: center;
+    }
+    .qr-panel.hide { display: none; }
+    .qr-panel h3 {
+      font-size: 13px;
+      color: #f3f4f6;
+      font-weight: 600;
+      margin: 0;
+    }
+    .qr-img {
+      width: 200px; height: 200px;
+      background: #fff;
+      border-radius: 8px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qr-img img { width: 100%; height: 100%; display: block; }
+    .qr-url {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 10px;
+      color: #9ca3af;
+      word-break: break-all;
+      line-height: 1.4;
+      padding: 6px 8px;
+      background: #111827;
+      border-radius: 6px;
+      width: 100%;
+    }
+    .qr-hint { color: #9ca3af; line-height: 1.5; font-size: 11px; }
+    .qr-actions { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="bar">
+      <b>📱 手机预览</b>
+      <span>·</span>
+      <span id="sizeLabel">iPhone 14 · 390×844</span>
+      <span>·</span>
+      <button class="btn sizebtn active" data-w="390" data-h="844">iPhone 14</button>
+      <button class="btn sizebtn" data-w="360" data-h="780">Huawei</button>
+      <button class="btn sizebtn" data-w="414" data-h="896">iPhone 11 Pro Max</button>
+      <span>·</span>
+      <button class="btn primary" id="qrToggle" title="显示/隐藏手机扫码区">📷 扫码</button>
+      <button class="btn" id="refreshBtn" title="刷新预览">🔄 刷新</button>
+      <a href="index.html" target="_blank">在完整窗口打开</a>
+    </div>
+
+    <div class="stage">
+      <div class="phone" id="phone">
+        <div class="screen">
+          <iframe id="ifr" allow="autoplay; microphone; clipboard-read; clipboard-write"></iframe>
+        </div>
+      </div>
+
+      <aside class="qr-panel" id="qrPanel">
+        <h3>📱 手机扫码</h3>
+        <div class="qr-tabs" style="display:flex;gap:6px;width:100%;">
+          <button class="btn qr-mode active" data-mode="lan" style="flex:1;">🏠 局域网（本地代码）</button>
+          <button class="btn qr-mode" data-mode="online" style="flex:1;">📡 线上（GitHub Pages）</button>
+        </div>
+        <div class="qr-img"><img id="qrImg" alt="QR code" /></div>
+        <div class="qr-url" id="qrUrl">loading...</div>
+        <div class="qr-hint" id="qrHint">
+          用手机相机或微信扫一扫<br>
+          <span style="color:#fbbf24;">⚠️ 手机必须连同一 Wi-Fi；Windows 防火墙可能弹出"允许访问"授权</span>
+        </div>
+        <div class="qr-actions">
+          <button class="btn" id="copyUrlBtn">📋 复制链接</button>
+          <button class="btn" id="openPageBtn">🚀 PC 直接打开</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+<script>
+  // ============ 基本设置 ============
+  // 如果你换了仓库名或用户名，改这里即可
+  const GITHUB_PAGES_BASE = 'https://lupeng0330.github.io/english-tutor/';
+
+  // ============ 手机预览 iframe ============
+  const ifr = document.getElementById('ifr');
+  const phone = document.getElementById('phone');
+  const label = document.getElementById('sizeLabel');
+
+  // 🆕 透传本页 URL 的 ?v= 到内嵌 index.html：mobile.html?v=xxx → index.html?v=xxx
+  //    使手机预览也能带版本号强制绕过 ServiceWorker 旧缓存（拿到最新 exam_config.json 等）。
+  const PAGE_V = (function () {
+    try { return new URL(location.href).searchParams.get('v') || ''; } catch (e) { return ''; }
+  })();
+  const V_SUFFIX = PAGE_V ? ('&v=' + encodeURIComponent(PAGE_V)) : '';
+
+  function loadIframe() {
+    ifr.src = 'index.html?ts=' + Date.now() + V_SUFFIX;
+  }
+  loadIframe();
+
+  document.querySelectorAll('.sizebtn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const w = btn.dataset.w, h = btn.dataset.h;
+      phone.style.width = w + 'px';
+      phone.style.height = h + 'px';
+      label.textContent = btn.textContent.trim() + ' · ' + w + '×' + h;
+      document.querySelectorAll('.sizebtn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      loadIframe();
+    });
+  });
+
+  document.getElementById('refreshBtn').addEventListener('click', loadIframe);
+
+  // ============ 二维码 ============
+  const qrPanel = document.getElementById('qrPanel');
+  const qrImg   = document.getElementById('qrImg');
+  const qrUrlEl = document.getElementById('qrUrl');
+  const qrHintEl= document.getElementById('qrHint');
+
+  // 两种目标：lan（局域网本地代码） / online（GitHub Pages 线上）
+  // 局域网 URL：通过 window.location.hostname 拿当前 PC 的访问地址
+  //   - 如果你用 http://192.168.x.x:8765/mobile.html 打开，hostname 就是那个 IP，直接可用
+  //   - 如果你是 localhost/127.0.0.1 打开，二维码生成的就是 localhost，手机扫不到 → 会显示红色提示
+  const lanHost = window.location.hostname || 'localhost';
+  const lanPort = window.location.port || '8765';
+  const lanUrl  = 'http://' + lanHost + ':' + lanPort + '/index.html?ts=' + Date.now().toString(36) + V_SUFFIX;
+  const onlineUrlFresh = GITHUB_PAGES_BASE + '?v=' + Date.now().toString(36);
+
+  let currentMode = 'lan';
+  let currentUrl  = lanUrl;
+
+  function refreshQr() {
+    currentUrl = (currentMode === 'lan') ? lanUrl : onlineUrlFresh;
+    qrImg.src  = 'https://api.qrserver.com/v1/create-qr-code/?size=240x240&margin=6&data=' + encodeURIComponent(currentUrl);
+    qrUrlEl.textContent = currentUrl;
+
+    if (currentMode === 'lan') {
+      const isLocalOnly = /^(localhost|127\.0\.0\.1)$/i.test(lanHost);
+      if (isLocalOnly) {
+        qrHintEl.innerHTML =
+          '<span style="color:#ef4444;">⚠️ 当前 URL 是 <b>' + lanHost + '</b>，手机扫码无法访问！</span><br>' +
+          '请改用 <b style="color:#fbbf24;">http://192.168.x.x:8765/mobile.html</b> 打开本页（x.x 换成本机局域网 IP），<br>' +
+          '再扫码即可让手机访问"本地未 push 的代码"。';
+      } else {
+        qrHintEl.innerHTML =
+          '用手机相机或微信扫一扫<br>' +
+          '<span style="color:#34d399;">✅ 手机连同一 Wi-Fi 即可访问本地代码</span><br>' +
+          '<span style="color:#fbbf24;">⚠️ 首次访问可能弹防火墙授权；PWA/ServiceWorker 在 http 非 localhost 下有限制</span>';
+      }
+    } else {
+      qrHintEl.innerHTML =
+        '用手机相机或微信扫一扫<br>' +
+        '打开 GitHub Pages 线上版本<br>' +
+        '<span style="color:#fbbf24;">⚠️ 刚 push 的话需等 1-2 分钟 Pages 部署</span>';
+    }
+  }
+  refreshQr();
+
+  document.querySelectorAll('.qr-mode').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.qr-mode').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.dataset.mode;
+      refreshQr();
+    });
+  });
+
+  // 默认显示扫码面板（本地化记忆用户选择）
+  const QR_KEY = 'yxyy_mobile_qr_visible';
+  const saved = localStorage.getItem(QR_KEY);
+  if (saved === '0') qrPanel.classList.add('hide');
+
+  document.getElementById('qrToggle').addEventListener('click', () => {
+    qrPanel.classList.toggle('hide');
+    localStorage.setItem(QR_KEY, qrPanel.classList.contains('hide') ? '0' : '1');
+  });
+
+  document.getElementById('copyUrlBtn').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(currentUrl);
+      const btn = document.getElementById('copyUrlBtn');
+      const prev = btn.textContent;
+      btn.textContent = '✅ 已复制';
+      setTimeout(() => { btn.textContent = prev; }, 1200);
+    } catch (e) {
+      prompt('复制这个链接给手机：', currentUrl);
+    }
+  });
+
+  document.getElementById('openPageBtn').addEventListener('click', () => {
+    window.open(currentUrl, '_blank');
+  });
+</script>
+</body>
+</html>

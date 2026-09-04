@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Spring is here",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna see on the trees?",
+            "选项": [
+              "They are green again",
+              "They are yellow",
+              "They lose leaves"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How is the weather in spring?",
+            "选项": [
+              "Warm",
+              "Cold",
+              "Hot"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben want to do in the wind?",
+            "选项": [
+              "Fly a kite",
+              "Pick flowers",
+              "Run on the grass"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A warm day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What colour are the flowers on the grass?",
+            "选项": [
+              "Pink and yellow",
+              "Red and blue",
+              "White and purple"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What appears in the sky after a short rain?",
+            "选项": [
+              "A small rainbow",
+              "A big cloud",
+              "The moon"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How does the writer describe spring?",
+            "选项": [
+              "The most lovely time of the year",
+              "The coldest time",
+              "The busiest time"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What season is it?",
+            "例句": "It is spring.",
+            "提示": "问季节"
+          },
+          {
+            "句型": "What colour are...?",
+            "例句": "The leaves are green.",
+            "提示": "问颜色"
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What do I wear?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will Ben wear to the party?",
+            "选项": [
+              "A white shirt and blue trousers",
+              "A red T-shirt",
+              "A black coat"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna want to wear?",
+            "选项": [
+              "Her pink skirt",
+              "A blue dress",
+              "A green hat"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben tell Anna not to forget?",
+            "选项": [
+              "Her hat",
+              "Her bag",
+              "Her shoes"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My favourite clothes",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer wear in summer?",
+            "选项": [
+              "T-shirts and shorts",
+              "Coats and gloves",
+              "Sweaters"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Mum tell the writer to wear on rainy days?",
+            "选项": [
+              "Yellow boots",
+              "Blue shoes",
+              "Red sandals"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do clothes do for us?",
+            "选项": [
+              "Keep us warm and make us smile",
+              "Make us sad",
+              "Cost much money"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What are you wearing?",
+            "例句": "I am wearing a new dress.",
+            "提示": "现在进行时描述穿着"
+          },
+          {
+            "句型": "We wear + clothes in + season",
+            "例句": "We wear coats in winter.",
+            "提示": "描述不同季节的穿着"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | How much is it?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna look at in the store?",
+            "选项": [
+              "A red T-shirt",
+              "A blue skirt",
+              "A pair of shoes"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How much is the red T-shirt?",
+            "选项": [
+              "Twenty yuan",
+              "Fifty yuan",
+              "Ten yuan"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Why don't they buy the fifty-yuan one?",
+            "选项": [
+              "It is too expensive",
+              "It is too small",
+              "It is broken"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Shopping with Mum",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When did Mum and the writer go shopping?",
+            "选项": [
+              "On Saturday",
+              "On Sunday",
+              "On Monday"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How much did the white shoes cost?",
+            "选项": [
+              "Two hundred yuan",
+              "Twenty yuan",
+              "Fifty yuan"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What did they do in the end?",
+            "选项": [
+              "Bought cheap things and saved money",
+              "Bought the expensive shoes",
+              "Bought nothing"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Let's go + v-ing",
+            "例句": "Let's go shopping.",
+            "提示": "提议去做某事"
+          },
+          {
+            "句型": "I want to buy + noun",
+            "例句": "I want to buy a new bag.",
+            "提示": "表达想买的东西"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | How much in total?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does Anna want to buy?",
+            "选项": [
+              "A book and a pen",
+              "A bag and a hat",
+              "A toy and a card"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How much is the book?",
+            "选项": [
+              "Thirty yuan",
+              "Twenty yuan",
+              "Fifty yuan"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "How much in total?",
+            "选项": [
+              "Fifty yuan",
+              "Thirty yuan",
+              "Twenty yuan"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Count and pay",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What do we do with prices at the store?",
+            "选项": [
+              "Add them up to know the total",
+              "Forget them",
+              "Write them down"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does twenty plus thirty make?",
+            "选项": [
+              "Fifty",
+              "Forty",
+              "Sixty"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can you do when you learn the numbers?",
+            "选项": [
+              "Pay by yourself",
+              "Cook a meal",
+              "Fly a kite"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How much is/are...?",
+            "例句": "How much is the book? — Ten yuan.",
+            "提示": "问价格"
+          },
+          {
+            "句型": "It is + price",
+            "例句": "It is ten yuan.",
+            "提示": "回答价格"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What's your favourite?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What food does Anna love?",
+            "选项": [
+              "Noodles and dumplings",
+              "Rice and meat",
+              "Bread and milk"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben prefer?",
+            "选项": [
+              "Rice and meat",
+              "Noodles",
+              "Vegetables"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Why are vegetables important, Mum says?",
+            "选项": [
+              "They make us strong",
+              "They are sweet",
+              "They are cheap"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A tasty meal",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who is a great cook in the family?",
+            "选项": [
+              "Grandma",
+              "Mum",
+              "Dad"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What soup is famous in the family?",
+            "选项": [
+              "Vegetable soup",
+              "Fish soup",
+              "Egg soup"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Grandma give after a meal?",
+            "选项": [
+              "A small sweet — fruit or cake",
+              "A cup of tea",
+              "Some bread"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What's your favourite food?",
+            "例句": "My favourite food is noodles.",
+            "提示": "问最喜欢的食物"
+          },
+          {
+            "句型": "... taste(s) + adj",
+            "例句": "Dumplings taste delicious.",
+            "提示": "描述食物味道"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Help Mum cook",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where does Mum ask Anna to help?",
+            "选项": [
+              "In the kitchen",
+              "In the garden",
+              "In the bedroom"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Mum ask Anna to do?",
+            "选项": [
+              "Wash the fruit and break two eggs",
+              "Cook the rice",
+              "Clean the table"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where is the spoon?",
+            "选项": [
+              "Beside the knife and fork",
+              "In the bowl",
+              "On the chair"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A small chef",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer do first as a small chef?",
+            "选项": [
+              "Wash hands and put on an apron",
+              "Break the eggs",
+              "Cut the bread"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the writer add to the eggs?",
+            "选项": [
+              "Some milk",
+              "Some water",
+              "Some juice"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Mum let the writer cut?",
+            "选项": [
+              "The bread with a small knife",
+              "The fruit",
+              "The vegetables"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Where are you?",
+            "例句": "I am in the kitchen.",
+            "提示": "问在哪里"
+          },
+          {
+            "句型": "What are you doing?",
+            "例句": "I am washing vegetables.",
+            "提示": "现在进行时描述正在做的事"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Good habits",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why is Anna so strong?",
+            "选项": [
+              "She has healthy habits",
+              "She eats sweets",
+              "She sleeps late"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "When does Anna exercise?",
+            "选项": [
+              "Every morning",
+              "Every night",
+              "On weekends"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Anna do besides eating fruit and drinking water?",
+            "选项": [
+              "Sleep early",
+              "Watch TV",
+              "Eat sweets"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A healthy day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How does a healthy day start?",
+            "选项": [
+              "With a good breakfast",
+              "With a long sleep",
+              "With some sweets"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should we not eat too many of?",
+            "选项": [
+              "Sweets",
+              "Fruit",
+              "Vegetables"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Why should we sleep early at night?",
+            "选项": [
+              "So we can wake up fresh",
+              "So we can play more",
+              "So we can eat more"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "We should + verb",
+            "例句": "We should brush our teeth every morning.",
+            "提示": "should表示\"应该\"的建议"
+          },
+          {
+            "句型": "We should eat more + noun",
+            "例句": "We should eat more vegetables and fruit.",
+            "提示": "建议多吃健康食物"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | By the lake",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the weather like on Saturday?",
+            "选项": [
+              "Sunny",
+              "Rainy",
+              "Windy"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will Ben bring to the picnic?",
+            "选项": [
+              "Sandwiches and juice",
+              "Fruit and cake",
+              "A big basket"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Whom do they invite to share the picnic?",
+            "选项": [
+              "Tom and Lily",
+              "Mum and Dad",
+              "Grandma"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Picnic by the lake",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "When did they have the picnic?",
+            "选项": [
+              "Last Sunday",
+              "Last Saturday",
+              "Yesterday"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What was in their baskets?",
+            "选项": [
+              "Sandwiches, fruit, juice and cookies",
+              "Only sandwiches",
+              "Rice and meat"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer think is the best part of spring?",
+            "选项": [
+              "A picnic with friends",
+              "Flying kites",
+              "Shopping"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Let's have a picnic!",
+            "例句": "Let's have a picnic in the park.",
+            "提示": "提议野餐"
+          },
+          {
+            "句型": "We will bring + food",
+            "例句": "We will bring sandwiches and fruit.",
+            "提示": "将来时描述要带的东西"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | A lovely spring",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What fun things did they do this spring?",
+            "选项": [
+              "Flew kites, had a picnic and went shopping",
+              "Went swimming",
+              "Made a snowman"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where does Anna want to write all of this?",
+            "选项": [
+              "In her diary",
+              "On a card",
+              "In a book"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben remind Anna not to forget?",
+            "选项": [
+              "To thank their friends",
+              "To bring a kite",
+              "To buy food"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My spring diary",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did the writer write about in the diary?",
+            "选项": [
+              "Every weekend",
+              "Every school day",
+              "Every festival"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did the writer learn to do with Mum?",
+            "选项": [
+              "Cook",
+              "Fly kites",
+              "Swim"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer remember about spring?",
+            "选项": [
+              "The warm sun, green grass and friends' smiles",
+              "The cold rain",
+              "The busy streets"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What did you learn this term?",
+            "例句": "I learned about plants and animals.",
+            "提示": "过去时问这学期学了什么"
+          },
+          {
+            "句型": "I want to + verb in summer",
+            "例句": "I want to swim in summer.",
+            "提示": "表达暑假计划"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u2",
+  "title": "Unit 2 How Do We Travel?",
+  "words": [
+    { "word": "travel", "phonetic": "/ˈtrævl/", "meaning": "[v./n.] 旅行", "example": "I love to travel." },
+    { "word": "train", "phonetic": "/treɪn/", "meaning": "[n.] 火车", "example": "Take the train." },
+    { "word": "plane", "phonetic": "/pleɪn/", "meaning": "[n.] 飞机", "example": "A fast plane." },
+    { "word": "bus", "phonetic": "/bʌs/", "meaning": "[n.] 公共汽车", "example": "Catch the bus." },
+    { "word": "subway", "phonetic": "/ˈsʌbweɪ/", "meaning": "[n.] 地铁", "example": "Take the subway." },
+    { "word": "bike", "phonetic": "/baɪk/", "meaning": "[n.] 自行车", "example": "Ride a bike." },
+    { "word": "ticket", "phonetic": "/ˈtɪkɪt/", "meaning": "[n.] 票", "example": "Buy a ticket." },
+    { "word": "fast", "phonetic": "/fɑːst/", "meaning": "[adj.] 快的", "example": "It's fast." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "By plane or by train?",
+      "en": "Ben: Anna, how shall we go to Beijing?\nAnna: By plane is fast, but the train is more interesting.\nBen: I agree. We can see the fields and rivers from the train window.\nAnna: Tickets are also cheaper.\nBen: Then let's buy two train tickets tomorrow.",
+      "cn": "本：安娜，我们怎么去北京？\n安娜：坐飞机快，但火车更有趣。\n本：同意，火车窗外能看到田野和河流。\n安娜：车票也更便宜。\n本：那明天买两张火车票。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Ways to travel",
+      "en": "There are many ways to travel. Planes are the fastest. Trains take longer but show us beautiful scenery. In a city, we use the subway and the bus. For short trips around the neighbourhood, a bike is perfect. Each way has its own fun. The best part of travel is the journey itself.",
+      "cn": "出行方式有很多。飞机最快。火车较慢但能看到美丽风景。在城市里我们坐地铁和公交。短距离骑自行车正好。每种方式都有乐趣。旅行最棒的部分是旅程本身。"
+    }
+  ]
+}

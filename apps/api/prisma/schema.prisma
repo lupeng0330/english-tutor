@@ -1,0 +1,286 @@
+// 乐学英语 后端数据模型
+// 本文件 = 生产轨（PostgreSQL，Supabase 免费档）；本地开发用 schema.sqlite.prisma
+// （npm run prisma:generate:sqlite）。字段设计双库兼容：不用特有类型，枚举以
+// String + 常量约束表达，JSON 一律存 String。
+//
+// 模块分区：
+//   1) 账号与权限（RBAC）
+//   2) 班级（教师-学生关系）
+//   3) 会员与收费（订阅 + 买断 + 单项，可配置权益系统）
+//   4) 审计日志
+
+generator client {
+  provider      = "prisma-client-js"
+  // native=本地开发(Windows)；debian-openssl-3.0.x=容器(Debian)；rhel-openssl-1.1.x=腾讯云函数SCF(RHEL+OpenSSL1.1)
+  binaryTargets = ["native", "debian-openssl-3.0.x", "rhel-openssl-1.1.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============ 1) 账号与权限 ============
+
+// 角色：admin(管理员) / teacher(教师) / student(学生)
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  email        String?  @unique
+  passwordHash String
+  role         String   @default("student") // admin | teacher | student
+  displayName  String?
+  status       String   @default("active") // active | disabled
+  lastLoginAt  DateTime?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // 关系
+  refreshTokens     RefreshToken[]
+  subscriptions     Subscription[]
+  userEntitlements  UserEntitlement[]
+  itemPurchases     ItemPurchase[]
+  orders            Order[]
+  auditLogs         AuditLog[]        @relation("actor")
+  // 班级：作为学生所属 / 作为教师任教
+  studentOf         ClassMember[]
+  teachingClasses   Class[]           @relation("classTeacher")
+  syncBlobs         SyncBlob[]
+}
+
+// 学习数据云同步 blob：按 (user, profileId, key) 存一份 JSON + 版本号。
+// key 如 yxyy_wrongbook_v1 / yxyy_stats_v1；profileId 对应前端本地档案。
+// 冲突策略：服务端 version 单调递增 + 客户端 updatedAt 辅助判断（Phase3 首批用
+// last-write-wins：客户端推送带上本地 version，服务端更新版本并返回新版本）。
+model SyncBlob {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  profileId  String   @default("default")
+  key        String   // base key，如 yxyy_wrongbook_v1
+  data       String   // JSON 字符串
+  version    Int      @default(1)
+  updatedAt  DateTime @updatedAt
+  createdAt  DateTime @default(now())
+
+  @@unique([userId, profileId, key])
+  @@index([userId])
+}
+
+// Refresh Token（支持登出/失效）
+model RefreshToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+// ============ 2) 班级 ============
+
+model Class {
+  id        String   @id @default(cuid())
+  name      String
+  teacherId String
+  teacher   User     @relation("classTeacher", fields: [teacherId], references: [id])
+  createdAt DateTime @default(now())
+
+  members ClassMember[]
+
+  @@index([teacherId])
+}
+
+model ClassMember {
+  id        String   @id @default(cuid())
+  classId   String
+  class     Class    @relation(fields: [classId], references: [id], onDelete: Cascade)
+  studentId String
+  student   User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  joinedAt  DateTime @default(now())
+
+  @@unique([classId, studentId])
+  @@index([studentId])
+}
+
+// ============ 3) 会员与收费 ============
+
+// 套餐：subscription(订阅) | lifetime(买断) | item(单项，如单册教材)
+model MembershipPlan {
+  id          String   @id @default(cuid())
+  code        String   @unique // 如 monthly / yearly / lifetime / grade3
+  name        String
+  type        String   // subscription | lifetime | item
+  durationDays Int?    // 订阅时长（天）；lifetime/item 可为 null
+  priceCents  Int      @default(0) // 价格（分），首期手动开通可为参考价
+  status      String   @default("active") // active | archived
+  remark      String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  planEntitlements PlanEntitlement[]
+  subscriptions    Subscription[]
+  itemPurchases    ItemPurchase[]
+  orders           Order[]
+}
+
+// 权益点定义（可配置）：如 unlock_grade / unlock_textbook / ai_chat /
+// ai_speaking / ai_essay / export_report / print_wrongbook / offline_audio
+model Entitlement {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  category  String   // content | ai | feature
+  remark    String?
+  createdAt DateTime @default(now())
+
+  planEntitlements PlanEntitlement[]
+  userEntitlements  UserEntitlement[]
+}
+
+// 套餐 ↔ 权益点 多对多映射（含范围/额度参数，如具体年级/教材、每日次数）
+model PlanEntitlement {
+  id            String   @id @default(cuid())
+  planId        String
+  plan          MembershipPlan @relation(fields: [planId], references: [id], onDelete: Cascade)
+  entitlementId String
+  entitlement   Entitlement    @relation(fields: [entitlementId], references: [id], onDelete: Cascade)
+  scope         String?  // JSON 字符串：如 {"grades":["3","4"]} 或 {"dailyLimit":10}
+  createdAt     DateTime @default(now())
+
+  @@unique([planId, entitlementId])
+}
+
+// 用户订阅（订阅制：有到期；买断：expiresAt 为 null 表示永久）
+model Subscription {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  planId         String
+  plan           MembershipPlan @relation(fields: [planId], references: [id])
+  startAt        DateTime @default(now())
+  expiresAt      DateTime? // null = 永久（lifetime）
+  status         String   @default("active") // active | expired | canceled
+  autoRenew      Boolean  @default(false)
+  source         String   @default("manual") // manual | wechat | alipay | apple_iap | google_play
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([userId])
+}
+
+// 用户实际拥有的权益（来源=套餐展开/单项/后台手动授予；用于快速合并计算）
+model UserEntitlement {
+  id            String   @id @default(cuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  entitlementId String
+  entitlement   Entitlement @relation(fields: [entitlementId], references: [id])
+  scope         String?  // JSON：范围/额度
+  source        String   @default("manual") // subscription | item | manual
+  grantedAt     DateTime @default(now())
+  expiresAt     DateTime? // null = 不过期
+  createdAt     DateTime @default(now())
+
+  @@index([userId])
+}
+
+// 单项购买（绑定具体教材/年级）
+model ItemPurchase {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  planId    String
+  plan      MembershipPlan @relation(fields: [planId], references: [id])
+  itemRef   String   // 绑定内容标识，如 "grade:3" 或 "textbook:jk_grade3_shang"
+  orderId   String?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+// 订单（首期为手动开通生成的内部订单；渠道 manual）
+model Order {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+  planId       String?
+  plan         MembershipPlan? @relation(fields: [planId], references: [id])
+  amountCents  Int      @default(0)
+  channel      String   @default("manual") // manual | wechat | alipay | apple_iap | google_play
+  status       String   @default("paid")   // pending | paid | refunded | canceled
+  externalTxnId String? // 第三方交易号（未来支付用）
+  remark       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  paymentLogs PaymentLog[]
+
+  @@index([userId])
+}
+
+// 支付回调流水（首期预留，用于未来对账/防重放）
+model PaymentLog {
+  id         String   @id @default(cuid())
+  orderId    String
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  channel    String
+  rawPayload String   // 原始回调 JSON
+  status     String
+  createdAt  DateTime @default(now())
+
+  @@index([orderId])
+}
+
+// ============ 4) 审计日志 ============
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  actor     User?    @relation("actor", fields: [actorId], references: [id])
+  action    String   // 如 membership.grant / membership.revoke / plan.update / login
+  target    String?  // 操作对象标识
+  detail    String?  // JSON 详情
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([actorId])
+  @@index([action])
+}
+
+// ============ 5) 内容管理与系统设置 ============
+
+// 静态 JSON 的数据库版本；payload 使用 JSON 字符串以同时兼容 SQLite/PostgreSQL。
+model ContentDocument {
+  id          String    @id @default(cuid())
+  path        String    @unique // 仓库根目录相对路径，如 data/questions/jk_grammar.json
+  kind        String    // questions | exams | textbooks | examples | extras | grammar | other
+  version     Int       @default(1)
+  status      String    @default("draft") // draft | published
+  checksum    String
+  itemCount   Int       @default(0)
+  payload     String
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([kind])
+  @@index([status])
+}
+
+// AI 与通用系统配置；value 使用 JSON 字符串，避免绑定数据库 JSON 类型。
+model SystemSetting {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  category    String   @default("system") // system | ai
+  value       String
+  isSecret    Boolean  @default(false)
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([category])
+}

@@ -1,0 +1,2364 @@
+{
+  "words": {
+    "Mars": [
+      {
+        "en": "Mars is a red planet.",
+        "cn": "火星是一颗红色的行星。",
+        "level": 1,
+        "audioFile": "ex_0de5bbb6c6.mp3"
+      },
+      {
+        "en": "Scientists want to send people to Mars.",
+        "cn": "科学家想把人类送上火星。",
+        "level": 2,
+        "audioFile": "ex_56651ccc09.mp3"
+      },
+      {
+        "en": "Living on Mars would mean facing thin air and freezing nights.",
+        "cn": "在火星上生活意味着要面对稀薄的空气和严寒的夜晚。",
+        "level": 3,
+        "audioFile": "ex_7cdb2ceacd.mp3"
+      }
+    ],
+    "landing": [
+      {
+        "en": "The landing was safe.",
+        "cn": "着陆很安全。",
+        "level": 1,
+        "audioFile": "ex_4161ab8e8a.mp3"
+      },
+      {
+        "en": "The spacecraft made a soft landing on the surface.",
+        "cn": "宇宙飞船在表面平稳着陆。",
+        "level": 2,
+        "audioFile": "ex_4341d67504.mp3"
+      },
+      {
+        "en": "A successful landing on Mars requires perfect timing and control.",
+        "cn": "成功登陆火星需要完美的时机和控制。",
+        "level": 3,
+        "audioFile": "ex_5d71c485a8.mp3"
+      }
+    ],
+    "surface": [
+      {
+        "en": "The surface is dry.",
+        "cn": "表面很干燥。",
+        "level": 1,
+        "audioFile": "ex_0bafdad4cd.mp3"
+      },
+      {
+        "en": "The surface of Mars is covered with red dust.",
+        "cn": "火星的表面覆盖着红色的尘土。",
+        "level": 2,
+        "audioFile": "ex_25bf2b28c9.mp3"
+      },
+      {
+        "en": "Rovers study the rocky surface to look for signs of water.",
+        "cn": "探测车研究多岩的表面以寻找水的痕迹。",
+        "level": 3,
+        "audioFile": "ex_6ab99608a5.mp3"
+      }
+    ],
+    "dust": [
+      {
+        "en": "There is dust on the table.",
+        "cn": "桌上有灰尘。",
+        "level": 1,
+        "audioFile": "ex_9f54d22f05.mp3"
+      },
+      {
+        "en": "Strong winds blow red dust across Mars.",
+        "cn": "强风把红色的尘土吹遍火星。",
+        "level": 2,
+        "audioFile": "ex_4c1c2f1db7.mp3"
+      },
+      {
+        "en": "Huge dust storms can cover the whole planet for weeks.",
+        "cn": "巨大的沙尘暴能笼罩整个星球数周之久。",
+        "level": 3,
+        "audioFile": "ex_b89c24839c.mp3"
+      }
+    ],
+    "colony": [
+      {
+        "en": "They built a colony.",
+        "cn": "他们建立了一个移居地。",
+        "level": 1,
+        "audioFile": "ex_dd12abacc5.mp3"
+      },
+      {
+        "en": "People dream of building a colony on Mars.",
+        "cn": "人们梦想在火星上建立移居地。",
+        "level": 2,
+        "audioFile": "ex_d845372bbf.mp3"
+      },
+      {
+        "en": "A Mars colony would need to grow its own food and make its own air.",
+        "cn": "火星移居地需要自己种植食物并制造空气。",
+        "level": 3,
+        "audioFile": "ex_e5c91e6440.mp3"
+      }
+    ],
+    "oxygen": [
+      {
+        "en": "We need oxygen to live.",
+        "cn": "我们需要氧气才能生存。",
+        "level": 1,
+        "audioFile": "ex_c06dfffa31.mp3"
+      },
+      {
+        "en": "There is very little oxygen on Mars.",
+        "cn": "火星上的氧气非常稀少。",
+        "level": 2,
+        "audioFile": "ex_62959030a1.mp3"
+      },
+      {
+        "en": "Scientists are testing machines that can make oxygen from Martian air.",
+        "cn": "科学家正在测试能从火星空气中制造氧气的机器。",
+        "level": 3,
+        "audioFile": "ex_cdca8c49d1.mp3"
+      }
+    ],
+    "gravity": [
+      {
+        "en": "Gravity pulls things down.",
+        "cn": "重力把物体往下拉。",
+        "level": 1,
+        "audioFile": "ex_74ce0cd48d.mp3"
+      },
+      {
+        "en": "The gravity on Mars is weaker than on Earth.",
+        "cn": "火星上的重力比地球上的弱。",
+        "level": 2,
+        "audioFile": "ex_7d878cf7b0.mp3"
+      },
+      {
+        "en": "Low gravity could make human bones weaker over time.",
+        "cn": "低重力可能会让人的骨骼随时间变得更弱。",
+        "level": 3,
+        "audioFile": "ex_c3f82b37a0.mp3"
+      }
+    ],
+    "rover": [
+      {
+        "en": "A rover moves slowly.",
+        "cn": "火星车移动得很慢。",
+        "level": 1,
+        "audioFile": "ex_521540afc8.mp3"
+      },
+      {
+        "en": "The rover sent photos back to Earth.",
+        "cn": "火星车把照片传回了地球。",
+        "level": 2,
+        "audioFile": "ex_2a78fdeb50.mp3"
+      },
+      {
+        "en": "The rover drilled into rocks to search for ancient life.",
+        "cn": "火星车钻入岩石以寻找古老的生命迹象。",
+        "level": 3,
+        "audioFile": "ex_5a4a4c4f28.mp3"
+      }
+    ],
+    "crater": [
+      {
+        "en": "The crater is deep.",
+        "cn": "这个环形山很深。",
+        "level": 1,
+        "audioFile": "ex_1281ef1f15.mp3"
+      },
+      {
+        "en": "A large crater was formed by a falling rock.",
+        "cn": "一块坠落的岩石形成了一个巨大的环形山。",
+        "level": 2,
+        "audioFile": "ex_2c0ef59260.mp3"
+      },
+      {
+        "en": "Scientists believe some craters once held lakes of water.",
+        "cn": "科学家认为有些环形山曾经存有湖水。",
+        "level": 3,
+        "audioFile": "ex_18850814a4.mp3"
+      }
+    ],
+    "temperature": [
+      {
+        "en": "The temperature is low.",
+        "cn": "温度很低。",
+        "level": 1,
+        "audioFile": "ex_fe913ad995.mp3"
+      },
+      {
+        "en": "The temperature on Mars can drop far below zero.",
+        "cn": "火星上的温度会降到远低于零度。",
+        "level": 2,
+        "audioFile": "ex_a2f8a8a271.mp3"
+      },
+      {
+        "en": "The huge change in temperature between day and night makes survival hard.",
+        "cn": "昼夜间巨大的温度变化使生存变得艰难。",
+        "level": 3,
+        "audioFile": "ex_1f8722ae11.mp3"
+      }
+    ],
+    "greenhouse": [
+      {
+        "en": "Plants grow in a greenhouse.",
+        "cn": "植物在温室里生长。",
+        "level": 1,
+        "audioFile": "ex_7beaf8a663.mp3"
+      },
+      {
+        "en": "A greenhouse could help grow food on Mars.",
+        "cn": "温室能帮助在火星上种植食物。",
+        "level": 2,
+        "audioFile": "ex_3234ba2759.mp3"
+      },
+      {
+        "en": "Inside a sealed greenhouse, settlers might grow vegetables in red soil.",
+        "cn": "在密封的温室里，定居者也许能在红色土壤中种菜。",
+        "level": 3,
+        "audioFile": "ex_ef585b3567.mp3"
+      }
+    ],
+    "explore": [
+      {
+        "en": "Let's explore the cave.",
+        "cn": "我们去探索这个洞穴吧。",
+        "level": 1,
+        "audioFile": "ex_47b04c1703.mp3"
+      },
+      {
+        "en": "Humans have always wanted to explore space.",
+        "cn": "人类一直渴望探索太空。",
+        "level": 2,
+        "audioFile": "ex_9aa555e3fb.mp3"
+      },
+      {
+        "en": "Robots explore distant planets that are too dangerous for people.",
+        "cn": "机器人探索那些对人类来说太危险的遥远星球。",
+        "level": 3,
+        "audioFile": "ex_a44c7a35c3.mp3"
+      }
+    ],
+    "dangerous": [
+      {
+        "en": "Fire is dangerous.",
+        "cn": "火很危险。",
+        "level": 1,
+        "audioFile": "ex_b476c64f0f.mp3"
+      },
+      {
+        "en": "Travelling to Mars is dangerous and difficult.",
+        "cn": "前往火星既危险又困难。",
+        "level": 2,
+        "audioFile": "ex_15c11128b0.mp3"
+      },
+      {
+        "en": "Space radiation makes long journeys extremely dangerous for astronauts.",
+        "cn": "太空辐射使长途旅行对宇航员极为危险。",
+        "level": 3,
+        "audioFile": "ex_59fdaa53c6.mp3"
+      }
+    ],
+    "possible": [
+      {
+        "en": "It is possible to win.",
+        "cn": "获胜是有可能的。",
+        "level": 1,
+        "audioFile": "ex_fa564b0ccb.mp3"
+      },
+      {
+        "en": "New technology makes space travel possible.",
+        "cn": "新科技使太空旅行成为可能。",
+        "level": 2,
+        "audioFile": "ex_ace8876256.mp3"
+      },
+      {
+        "en": "Scientists believe it may one day be possible for humans to live on Mars.",
+        "cn": "科学家相信有朝一日人类或许能在火星上生活。",
+        "level": 3,
+        "audioFile": "ex_784b8ad765.mp3"
+      }
+    ],
+    "technology": [
+      {
+        "en": "I like new technology.",
+        "cn": "我喜欢新科技。",
+        "level": 1,
+        "audioFile": "ex_3cfdce3e92.mp3"
+      },
+      {
+        "en": "Modern technology has changed our daily lives.",
+        "cn": "现代科技改变了我们的日常生活。",
+        "level": 2,
+        "audioFile": "ex_56078d20dc.mp3"
+      },
+      {
+        "en": "Advanced technology allows us to explore worlds far beyond Earth.",
+        "cn": "先进的科技让我们能探索远在地球之外的世界。",
+        "level": 3,
+        "audioFile": "ex_84fdbd3c29.mp3"
+      }
+    ],
+    "blind": [
+      {
+        "en": "The blind man uses a stick.",
+        "cn": "这位盲人用拐杖。",
+        "level": 1,
+        "audioFile": "ex_cd1c8ffaa9.mp3"
+      },
+      {
+        "en": "She became blind when she was very young.",
+        "cn": "她在很小的时候就失明了。",
+        "level": 2,
+        "audioFile": "ex_e88a634d8f.mp3"
+      },
+      {
+        "en": "Though blind, she learned to read with her fingers and never gave up.",
+        "cn": "尽管失明，她仍学会用手指阅读，从不放弃。",
+        "level": 3,
+        "audioFile": "ex_2f33c52de0.mp3"
+      }
+    ],
+    "deaf": [
+      {
+        "en": "He is deaf in one ear.",
+        "cn": "他一只耳朵失聪。",
+        "level": 1,
+        "audioFile": "ex_88b4407a64.mp3"
+      },
+      {
+        "en": "The deaf girl learned to speak with great effort.",
+        "cn": "这个失聪的女孩费尽努力学会了说话。",
+        "level": 2,
+        "audioFile": "ex_824b3784ba.mp3"
+      },
+      {
+        "en": "Being both deaf and blind, she still became a famous writer.",
+        "cn": "尽管又聋又盲，她仍成为了著名作家。",
+        "level": 3,
+        "audioFile": "ex_0c29a5097a.mp3"
+      }
+    ],
+    "courage": [
+      {
+        "en": "She has courage.",
+        "cn": "她很有勇气。",
+        "level": 1,
+        "audioFile": "ex_ed64b393b5.mp3"
+      },
+      {
+        "en": "It takes courage to speak the truth.",
+        "cn": "说出真相需要勇气。",
+        "level": 2,
+        "audioFile": "ex_f6fa12f1d4.mp3"
+      },
+      {
+        "en": "Great leaders show courage even when everyone else is afraid.",
+        "cn": "伟大的领袖即使在众人恐惧时也展现勇气。",
+        "level": 3,
+        "audioFile": "ex_df1978cdee.mp3"
+      }
+    ],
+    "struggle": [
+      {
+        "en": "Life is a struggle.",
+        "cn": "生活是一场奋斗。",
+        "level": 1,
+        "audioFile": "ex_d0875db43c.mp3"
+      },
+      {
+        "en": "They had to struggle against poverty.",
+        "cn": "他们不得不与贫困抗争。",
+        "level": 2,
+        "audioFile": "ex_c7e3b0de79.mp3"
+      },
+      {
+        "en": "Her long struggle for equal rights inspired millions of people.",
+        "cn": "她为平等权利的长期奋斗激励了千百万人。",
+        "level": 3,
+        "audioFile": "ex_62f8952aef.mp3"
+      }
+    ],
+    "overcome": [
+      {
+        "en": "We can overcome it.",
+        "cn": "我们能克服它。",
+        "level": 1,
+        "audioFile": "ex_26d1484a73.mp3"
+      },
+      {
+        "en": "She worked hard to overcome her difficulties.",
+        "cn": "她努力克服自己的困难。",
+        "level": 2,
+        "audioFile": "ex_1896f0575e.mp3"
+      },
+      {
+        "en": "He overcame his fear and disability to achieve his dream.",
+        "cn": "他克服了恐惧和残疾，实现了梦想。",
+        "level": 3,
+        "audioFile": "ex_7904b87fe7.mp3"
+      }
+    ],
+    "achieve": [
+      {
+        "en": "You can achieve it.",
+        "cn": "你能做到。",
+        "level": 1,
+        "audioFile": "ex_92c4bdb9b7.mp3"
+      },
+      {
+        "en": "She worked hard to achieve her goal.",
+        "cn": "她努力工作以实现目标。",
+        "level": 2,
+        "audioFile": "ex_cc58aa060b.mp3"
+      },
+      {
+        "en": "Great people achieve success through years of effort and courage.",
+        "cn": "伟人通过多年的努力和勇气取得成功。",
+        "level": 3,
+        "audioFile": "ex_356c9259ce.mp3"
+      }
+    ],
+    "leader": [
+      {
+        "en": "He is our leader.",
+        "cn": "他是我们的领袖。",
+        "level": 1,
+        "audioFile": "ex_29d5bcf6ff.mp3"
+      },
+      {
+        "en": "A good leader cares about his people.",
+        "cn": "好的领袖关心他的人民。",
+        "level": 2,
+        "audioFile": "ex_4b7d3ba82d.mp3"
+      },
+      {
+        "en": "A true leader guides others with both wisdom and kindness.",
+        "cn": "真正的领袖以智慧和善良引领他人。",
+        "level": 3,
+        "audioFile": "ex_b1623c86a2.mp3"
+      }
+    ],
+    "freedom": [
+      {
+        "en": "We love freedom.",
+        "cn": "我们热爱自由。",
+        "level": 1,
+        "audioFile": "ex_d8137c276a.mp3"
+      },
+      {
+        "en": "Many people fought for their freedom.",
+        "cn": "许多人为自由而战。",
+        "level": 2,
+        "audioFile": "ex_2841bcd2a0.mp3"
+      },
+      {
+        "en": "He spent his whole life fighting for the freedom of his people.",
+        "cn": "他一生都在为人民的自由而奋斗。",
+        "level": 3,
+        "audioFile": "ex_1c476446c9.mp3"
+      }
+    ],
+    "equality": [
+      {
+        "en": "We want equality.",
+        "cn": "我们想要平等。",
+        "level": 1,
+        "audioFile": "ex_5891d9a5ae.mp3"
+      },
+      {
+        "en": "He believed in equality for all people.",
+        "cn": "他相信人人平等。",
+        "level": 2,
+        "audioFile": "ex_b6a2fc2bde.mp3"
+      },
+      {
+        "en": "Her speech called for equality between people of every race.",
+        "cn": "她的演讲呼吁各种族人民之间的平等。",
+        "level": 3,
+        "audioFile": "ex_5f2a2f76c8.mp3"
+      }
+    ],
+    "speech": [
+      {
+        "en": "He gave a speech.",
+        "cn": "他做了一次演讲。",
+        "level": 1,
+        "audioFile": "ex_93b7eebb28.mp3"
+      },
+      {
+        "en": "Her speech moved the whole audience.",
+        "cn": "她的演讲打动了全场观众。",
+        "level": 2,
+        "audioFile": "ex_ef69d0fb04.mp3"
+      },
+      {
+        "en": "His famous speech about a dream changed the course of history.",
+        "cn": "他那篇关于梦想的著名演讲改变了历史的进程。",
+        "level": 3,
+        "audioFile": "ex_6bb76f4614.mp3"
+      }
+    ],
+    "biography": [
+      {
+        "en": "I read a biography.",
+        "cn": "我读了一本传记。",
+        "level": 1,
+        "audioFile": "ex_8150f40047.mp3"
+      },
+      {
+        "en": "The biography tells the story of his life.",
+        "cn": "这本传记讲述了他一生的故事。",
+        "level": 2,
+        "audioFile": "ex_1a833d9e8f.mp3"
+      },
+      {
+        "en": "Reading the biography of a great leader can teach us many lessons.",
+        "cn": "阅读一位伟大领袖的传记能让我们学到许多道理。",
+        "level": 3,
+        "audioFile": "ex_487058dead.mp3"
+      }
+    ],
+    "admire": [
+      {
+        "en": "I admire her.",
+        "cn": "我钦佩她。",
+        "level": 1,
+        "audioFile": "ex_8a9a03cd3e.mp3"
+      },
+      {
+        "en": "People admire him for his courage.",
+        "cn": "人们因他的勇气而钦佩他。",
+        "level": 2,
+        "audioFile": "ex_d461afdace.mp3"
+      },
+      {
+        "en": "We admire those who fight for others without thinking of themselves.",
+        "cn": "我们钦佩那些为他人奋斗而不考虑自己的人。",
+        "level": 3,
+        "audioFile": "ex_f861ffa9b5.mp3"
+      }
+    ],
+    "selfless": [
+      {
+        "en": "She is selfless.",
+        "cn": "她很无私。",
+        "level": 1,
+        "audioFile": "ex_5e6099a1c2.mp3"
+      },
+      {
+        "en": "His selfless work helped many poor people.",
+        "cn": "他无私的工作帮助了许多穷人。",
+        "level": 2,
+        "audioFile": "ex_bc8b2c5005.mp3"
+      },
+      {
+        "en": "Her selfless devotion to others made her a true hero.",
+        "cn": "她对他人无私的奉献使她成为真正的英雄。",
+        "level": 3,
+        "audioFile": "ex_392b8a040d.mp3"
+      }
+    ],
+    "generation": [
+      {
+        "en": "My generation loves music.",
+        "cn": "我这一代人喜欢音乐。",
+        "level": 1,
+        "audioFile": "ex_6a72f4e8dc.mp3"
+      },
+      {
+        "en": "Each generation learns from the one before it.",
+        "cn": "每一代人都从前一代人身上学习。",
+        "level": 2,
+        "audioFile": "ex_59c7a2a2bc.mp3"
+      },
+      {
+        "en": "His brave deeds have inspired generation after generation.",
+        "cn": "他的英勇事迹激励了一代又一代人。",
+        "level": 3,
+        "audioFile": "ex_c88db081c7.mp3"
+      }
+    ],
+    "role model": [
+      {
+        "en": "He is my role model.",
+        "cn": "他是我的榜样。",
+        "level": 1,
+        "audioFile": "ex_4d591b6cd7.mp3"
+      },
+      {
+        "en": "A good teacher can be a role model for students.",
+        "cn": "一位好老师可以成为学生的榜样。",
+        "level": 2,
+        "audioFile": "ex_3b2a6e18d0.mp3"
+      },
+      {
+        "en": "Great leaders become role models who inspire us to be better people.",
+        "cn": "伟大的领袖成为激励我们成为更好的人的榜样。",
+        "level": 3,
+        "audioFile": "ex_dcc3cc2303.mp3"
+      }
+    ],
+    "continent": [
+      {
+        "en": "Asia is a continent.",
+        "cn": "亚洲是一个大洲。",
+        "level": 1,
+        "audioFile": "ex_df24713b00.mp3"
+      },
+      {
+        "en": "Asia is the largest continent in the world.",
+        "cn": "亚洲是世界上最大的大洲。",
+        "level": 2,
+        "audioFile": "ex_e8181a260c.mp3"
+      },
+      {
+        "en": "The continent of Asia is home to many different peoples and cultures.",
+        "cn": "亚洲大陆是众多不同民族和文化的家园。",
+        "level": 3,
+        "audioFile": "ex_c12424f641.mp3"
+      }
+    ],
+    "population": [
+      {
+        "en": "The population is large.",
+        "cn": "人口很多。",
+        "level": 1,
+        "audioFile": "ex_9fa6240250.mp3"
+      },
+      {
+        "en": "Asia has the largest population of any continent.",
+        "cn": "亚洲是人口最多的大洲。",
+        "level": 2,
+        "audioFile": "ex_8f01264d03.mp3"
+      },
+      {
+        "en": "A growing population brings both opportunities and challenges to a country.",
+        "cn": "不断增长的人口给一个国家带来机遇与挑战。",
+        "level": 3,
+        "audioFile": "ex_981068b014.mp3"
+      }
+    ],
+    "culture": [
+      {
+        "en": "I love Chinese culture.",
+        "cn": "我热爱中国文化。",
+        "level": 1,
+        "audioFile": "ex_57fcc05e28.mp3"
+      },
+      {
+        "en": "Asia is rich in different cultures.",
+        "cn": "亚洲拥有丰富多样的文化。",
+        "level": 2,
+        "audioFile": "ex_5960140069.mp3"
+      },
+      {
+        "en": "Each country in Asia has its own unique culture and history.",
+        "cn": "亚洲的每个国家都有自己独特的文化和历史。",
+        "level": 3,
+        "audioFile": "ex_d5c4bc5c0c.mp3"
+      }
+    ],
+    "tradition": [
+      {
+        "en": "It is an old tradition.",
+        "cn": "这是一个古老的传统。",
+        "level": 1,
+        "audioFile": "ex_b28989db1a.mp3"
+      },
+      {
+        "en": "Many Asian families keep their old traditions.",
+        "cn": "许多亚洲家庭保留着古老的传统。",
+        "level": 2,
+        "audioFile": "ex_7c7ac537de.mp3"
+      },
+      {
+        "en": "Ancient traditions are passed down from one generation to the next.",
+        "cn": "古老的传统一代代地传承下来。",
+        "level": 3,
+        "audioFile": "ex_e5f906db99.mp3"
+      }
+    ],
+    "desert": [
+      {
+        "en": "The desert is hot.",
+        "cn": "沙漠很热。",
+        "level": 1,
+        "audioFile": "ex_c382770105.mp3"
+      },
+      {
+        "en": "There are large deserts in central Asia.",
+        "cn": "亚洲中部有大片沙漠。",
+        "level": 2,
+        "audioFile": "ex_5fe94a5d7d.mp3"
+      },
+      {
+        "en": "Few plants can survive in the dry, sandy desert.",
+        "cn": "很少有植物能在干燥多沙的沙漠中存活。",
+        "level": 3,
+        "audioFile": "ex_06d7573680.mp3"
+      }
+    ],
+    "plateau": [
+      {
+        "en": "The plateau is high.",
+        "cn": "高原很高。",
+        "level": 1,
+        "audioFile": "ex_77a338be26.mp3"
+      },
+      {
+        "en": "Tibet lies on a high plateau.",
+        "cn": "西藏位于一片高原之上。",
+        "level": 2,
+        "audioFile": "ex_4d9d0fc4d7.mp3"
+      },
+      {
+        "en": "The plateau is so high that the air there is thin and cold.",
+        "cn": "这片高原如此之高，那里的空气稀薄而寒冷。",
+        "level": 3,
+        "audioFile": "ex_339af93708.mp3"
+      }
+    ],
+    "river": [
+      {
+        "en": "The river is long.",
+        "cn": "这条河很长。",
+        "level": 1,
+        "audioFile": "ex_a6268e77a4.mp3"
+      },
+      {
+        "en": "The Yangtze is the longest river in Asia.",
+        "cn": "长江是亚洲最长的河流。",
+        "level": 2,
+        "audioFile": "ex_f6d7c78479.mp3"
+      },
+      {
+        "en": "Great rivers have given life to ancient cities along their banks.",
+        "cn": "大河为沿岸的古老城市带来了生命。",
+        "level": 3,
+        "audioFile": "ex_aa666e366b.mp3"
+      }
+    ],
+    "mountain": [
+      {
+        "en": "The mountain is high.",
+        "cn": "这座山很高。",
+        "level": 1,
+        "audioFile": "ex_85370668ed.mp3"
+      },
+      {
+        "en": "Mount Everest is the highest mountain on Earth.",
+        "cn": "珠穆朗玛峰是地球上最高的山。",
+        "level": 2,
+        "audioFile": "ex_5dae296447.mp3"
+      },
+      {
+        "en": "Climbers from all over the world come to challenge this mountain.",
+        "cn": "来自世界各地的登山者前来挑战这座山。",
+        "level": 3,
+        "audioFile": "ex_0a61295d41.mp3"
+      }
+    ],
+    "diverse": [
+      {
+        "en": "Asia is diverse.",
+        "cn": "亚洲是多种多样的。",
+        "level": 1,
+        "audioFile": "ex_5470b4a85a.mp3"
+      },
+      {
+        "en": "Asia has a diverse mix of people and languages.",
+        "cn": "亚洲有多种多样的民族和语言。",
+        "level": 2,
+        "audioFile": "ex_4669406f6b.mp3"
+      },
+      {
+        "en": "Its diverse cultures make Asia one of the most fascinating continents.",
+        "cn": "多样的文化使亚洲成为最迷人的大洲之一。",
+        "level": 3,
+        "audioFile": "ex_29c6c5da60.mp3"
+      }
+    ],
+    "religion": [
+      {
+        "en": "Religion is important here.",
+        "cn": "宗教在这里很重要。",
+        "level": 1,
+        "audioFile": "ex_93674d31b3.mp3"
+      },
+      {
+        "en": "Many great religions began in Asia.",
+        "cn": "许多伟大的宗教都起源于亚洲。",
+        "level": 2,
+        "audioFile": "ex_5db87a3e3c.mp3"
+      },
+      {
+        "en": "People of different religions have lived together here for centuries.",
+        "cn": "不同宗教的人们在这里共同生活了数百年。",
+        "level": 3,
+        "audioFile": "ex_8dea4331da.mp3"
+      }
+    ],
+    "economy": [
+      {
+        "en": "The economy is growing.",
+        "cn": "经济在增长。",
+        "level": 1,
+        "audioFile": "ex_5e721f1d61.mp3"
+      },
+      {
+        "en": "Asia's economy is developing very fast.",
+        "cn": "亚洲的经济发展得非常快。",
+        "level": 2,
+        "audioFile": "ex_4f387d2258.mp3"
+      },
+      {
+        "en": "A strong economy can lift millions of people out of poverty.",
+        "cn": "强劲的经济能让数百万人摆脱贫困。",
+        "level": 3,
+        "audioFile": "ex_45e7ece680.mp3"
+      }
+    ],
+    "ancient": [
+      {
+        "en": "It is an ancient city.",
+        "cn": "这是一座古城。",
+        "level": 1,
+        "audioFile": "ex_f291e70438.mp3"
+      },
+      {
+        "en": "China has an ancient and rich history.",
+        "cn": "中国有着悠久而丰富的历史。",
+        "level": 2,
+        "audioFile": "ex_68488e89e3.mp3"
+      },
+      {
+        "en": "Ancient Asian civilizations gave the world paper, silk and gunpowder.",
+        "cn": "古代亚洲文明给世界带来了纸张、丝绸和火药。",
+        "level": 3,
+        "audioFile": "ex_f26673fb16.mp3"
+      }
+    ],
+    "modern": [
+      {
+        "en": "This is a modern city.",
+        "cn": "这是一座现代城市。",
+        "level": 1,
+        "audioFile": "ex_49e834b044.mp3"
+      },
+      {
+        "en": "Modern Asia is full of busy, growing cities.",
+        "cn": "现代亚洲遍布繁忙而发展中的城市。",
+        "level": 2,
+        "audioFile": "ex_0f4eca1784.mp3"
+      },
+      {
+        "en": "Modern Asia mixes old traditions with new technology.",
+        "cn": "现代亚洲将古老传统与新科技融合在一起。",
+        "level": 3,
+        "audioFile": "ex_8fa218ec8b.mp3"
+      }
+    ],
+    "landscape": [
+      {
+        "en": "The landscape is beautiful.",
+        "cn": "风景很美。",
+        "level": 1,
+        "audioFile": "ex_acf91b99a4.mp3"
+      },
+      {
+        "en": "Asia has many kinds of landscape.",
+        "cn": "亚洲有多种多样的风景。",
+        "level": 2,
+        "audioFile": "ex_9de666574f.mp3"
+      },
+      {
+        "en": "From snowy mountains to green forests, Asia's landscape is amazing.",
+        "cn": "从雪山到绿林，亚洲的风景令人惊叹。",
+        "level": 3,
+        "audioFile": "ex_56c1920abb.mp3"
+      }
+    ],
+    "unite": [
+      {
+        "en": "We must unite.",
+        "cn": "我们必须团结。",
+        "level": 1,
+        "audioFile": "ex_2dcb2da31a.mp3"
+      },
+      {
+        "en": "The two groups decided to unite.",
+        "cn": "这两个团体决定联合起来。",
+        "level": 2,
+        "audioFile": "ex_891d8e9eaa.mp3"
+      },
+      {
+        "en": "Many nations chose to unite to solve their common problems.",
+        "cn": "许多国家选择联合起来以解决共同的问题。",
+        "level": 3,
+        "audioFile": "ex_cf41a6a79e.mp3"
+      }
+    ],
+    "world": [
+      {
+        "en": "The world is big.",
+        "cn": "世界很大。",
+        "level": 1,
+        "audioFile": "ex_fe3c1c0765.mp3"
+      },
+      {
+        "en": "People all over the world share one Earth.",
+        "cn": "全世界的人共享一个地球。",
+        "level": 2,
+        "audioFile": "ex_41dcbd064a.mp3"
+      },
+      {
+        "en": "We must work together to make the world a better place.",
+        "cn": "我们必须共同努力，让世界变得更美好。",
+        "level": 3,
+        "audioFile": "ex_538f7fb43e.mp3"
+      }
+    ],
+    "earth": [
+      {
+        "en": "The Earth is round.",
+        "cn": "地球是圆的。",
+        "level": 1,
+        "audioFile": "ex_0e329e646e.mp3"
+      },
+      {
+        "en": "The Earth is our only home.",
+        "cn": "地球是我们唯一的家园。",
+        "level": 2,
+        "audioFile": "ex_fed35f6322.mp3"
+      },
+      {
+        "en": "We must protect the Earth for future generations.",
+        "cn": "我们必须为子孙后代保护地球。",
+        "level": 3,
+        "audioFile": "ex_609b729dee.mp3"
+      }
+    ],
+    "ocean": [
+      {
+        "en": "The ocean is deep.",
+        "cn": "海洋很深。",
+        "level": 1,
+        "audioFile": "ex_5db8ba643e.mp3"
+      },
+      {
+        "en": "The ocean covers most of the Earth.",
+        "cn": "海洋覆盖了地球的大部分。",
+        "level": 2,
+        "audioFile": "ex_79aa0373a3.mp3"
+      },
+      {
+        "en": "Pollution is harming the fish and plants that live in the ocean.",
+        "cn": "污染正在伤害生活在海洋中的鱼类和植物。",
+        "level": 3,
+        "audioFile": "ex_619f8707c8.mp3"
+      }
+    ],
+    "climate": [
+      {
+        "en": "The climate is warm.",
+        "cn": "气候很温暖。",
+        "level": 1,
+        "audioFile": "ex_e89a7463fb.mp3"
+      },
+      {
+        "en": "Climate change is a serious problem.",
+        "cn": "气候变化是一个严重的问题。",
+        "level": 2,
+        "audioFile": "ex_bbee8f1623.mp3"
+      },
+      {
+        "en": "Rising temperatures are changing the climate all over the world.",
+        "cn": "不断上升的气温正在改变全世界的气候。",
+        "level": 3,
+        "audioFile": "ex_0cd4343e37.mp3"
+      }
+    ],
+    "nature": [
+      {
+        "en": "I love nature.",
+        "cn": "我热爱大自然。",
+        "level": 1,
+        "audioFile": "ex_7207ce4171.mp3"
+      },
+      {
+        "en": "We should live in harmony with nature.",
+        "cn": "我们应该与大自然和谐相处。",
+        "level": 2,
+        "audioFile": "ex_7e4a01f4f2.mp3"
+      },
+      {
+        "en": "Protecting nature is the duty of every person on Earth.",
+        "cn": "保护大自然是地球上每个人的责任。",
+        "level": 3,
+        "audioFile": "ex_bc56859a39.mp3"
+      }
+    ],
+    "resource": [
+      {
+        "en": "Water is a resource.",
+        "cn": "水是一种资源。",
+        "level": 1,
+        "audioFile": "ex_0b9bf7a963.mp3"
+      },
+      {
+        "en": "We should not waste natural resources.",
+        "cn": "我们不应浪费自然资源。",
+        "level": 2,
+        "audioFile": "ex_99dba5e1be.mp3"
+      },
+      {
+        "en": "The Earth's resources are limited, so we must use them wisely.",
+        "cn": "地球的资源是有限的，因此我们必须明智地利用它们。",
+        "level": 3,
+        "audioFile": "ex_24017cf655.mp3"
+      }
+    ],
+    "wildlife": [
+      {
+        "en": "I love wildlife.",
+        "cn": "我喜欢野生动物。",
+        "level": 1,
+        "audioFile": "ex_b47747a68b.mp3"
+      },
+      {
+        "en": "We must protect wildlife in the forests.",
+        "cn": "我们必须保护森林中的野生动物。",
+        "level": 2,
+        "audioFile": "ex_9ce06d28e5.mp3"
+      },
+      {
+        "en": "Cutting down forests destroys the homes of much wildlife.",
+        "cn": "砍伐森林会摧毁许多野生动物的家园。",
+        "level": 3,
+        "audioFile": "ex_8a52806327.mp3"
+      }
+    ],
+    "balance": [
+      {
+        "en": "Keep your balance.",
+        "cn": "保持平衡。",
+        "level": 1,
+        "audioFile": "ex_9d994c1d3f.mp3"
+      },
+      {
+        "en": "Nature has its own balance.",
+        "cn": "大自然有它自己的平衡。",
+        "level": 2,
+        "audioFile": "ex_ce2a9b8b23.mp3"
+      },
+      {
+        "en": "Human activities can easily upset the balance of nature.",
+        "cn": "人类活动很容易打破大自然的平衡。",
+        "level": 3,
+        "audioFile": "ex_6caa72cfec.mp3"
+      }
+    ],
+    "pollution": [
+      {
+        "en": "Pollution is bad.",
+        "cn": "污染是有害的。",
+        "level": 1,
+        "audioFile": "ex_5aab6aa48c.mp3"
+      },
+      {
+        "en": "Air pollution makes people sick.",
+        "cn": "空气污染使人生病。",
+        "level": 2,
+        "audioFile": "ex_1e24a3e6fb.mp3"
+      },
+      {
+        "en": "We must reduce pollution to protect our health and our planet.",
+        "cn": "我们必须减少污染以保护健康和我们的星球。",
+        "level": 3,
+        "audioFile": "ex_6f62cff21f.mp3"
+      }
+    ],
+    "endangered": [
+      {
+        "en": "Pandas are endangered.",
+        "cn": "熊猫是濒危动物。",
+        "level": 1,
+        "audioFile": "ex_767e6d6238.mp3"
+      },
+      {
+        "en": "Many endangered animals need our protection.",
+        "cn": "许多濒危动物需要我们的保护。",
+        "level": 2,
+        "audioFile": "ex_33f1c74c25.mp3"
+      },
+      {
+        "en": "If we do nothing, endangered species may disappear forever.",
+        "cn": "如果我们无所作为，濒危物种可能会永远消失。",
+        "level": 3,
+        "audioFile": "ex_3792aea2d5.mp3"
+      }
+    ],
+    "melt": [
+      {
+        "en": "Ice can melt.",
+        "cn": "冰会融化。",
+        "level": 1,
+        "audioFile": "ex_832a51c79a.mp3"
+      },
+      {
+        "en": "The ice is melting because of global warming.",
+        "cn": "由于全球变暖，冰正在融化。",
+        "level": 2,
+        "audioFile": "ex_06d66038c7.mp3"
+      },
+      {
+        "en": "As the ice melts, sea levels rise and threaten coastal cities.",
+        "cn": "随着冰融化，海平面上升并威胁沿海城市。",
+        "level": 3,
+        "audioFile": "ex_46cdb7bfbc.mp3"
+      }
+    ],
+    "cooperate": [
+      {
+        "en": "Let's cooperate.",
+        "cn": "让我们合作吧。",
+        "level": 1,
+        "audioFile": "ex_7ec8c253c7.mp3"
+      },
+      {
+        "en": "Countries must cooperate to protect the Earth.",
+        "cn": "各国必须合作以保护地球。",
+        "level": 2,
+        "audioFile": "ex_ee9465dd32.mp3"
+      },
+      {
+        "en": "Only when nations cooperate can we solve global problems.",
+        "cn": "只有当各国合作，我们才能解决全球性问题。",
+        "level": 3,
+        "audioFile": "ex_15a5881e66.mp3"
+      }
+    ],
+    "treaty": [
+      {
+        "en": "They signed a treaty.",
+        "cn": "他们签署了一项条约。",
+        "level": 1,
+        "audioFile": "ex_3ab924aa81.mp3"
+      },
+      {
+        "en": "Many countries signed the treaty to protect nature.",
+        "cn": "许多国家签署了保护自然的条约。",
+        "level": 2,
+        "audioFile": "ex_d851aac190.mp3"
+      },
+      {
+        "en": "An international treaty asks every nation to cut its pollution.",
+        "cn": "一项国际条约要求每个国家减少污染。",
+        "level": 3,
+        "audioFile": "ex_354e1365a1.mp3"
+      }
+    ],
+    "future": [
+      {
+        "en": "Think about the future.",
+        "cn": "想想未来。",
+        "level": 1,
+        "audioFile": "ex_bad7100403.mp3"
+      },
+      {
+        "en": "Our choices today shape the future.",
+        "cn": "我们今天的选择塑造未来。",
+        "level": 2,
+        "audioFile": "ex_969a13a3dc.mp3"
+      },
+      {
+        "en": "We must act now to protect the future of our planet.",
+        "cn": "我们必须现在就行动，以保护我们星球的未来。",
+        "level": 3,
+        "audioFile": "ex_39bf6e2c88.mp3"
+      }
+    ],
+    "hope": [
+      {
+        "en": "I hope so.",
+        "cn": "我希望如此。",
+        "level": 1,
+        "audioFile": "ex_a63ce35754.mp3"
+      },
+      {
+        "en": "There is still hope for our planet.",
+        "cn": "我们的星球仍有希望。",
+        "level": 2,
+        "audioFile": "ex_5457526a37.mp3"
+      },
+      {
+        "en": "If we all work together, there is hope for a greener world.",
+        "cn": "如果我们共同努力，绿色世界就有希望。",
+        "level": 3,
+        "audioFile": "ex_1d6c895ef1.mp3"
+      }
+    ],
+    "festival": [
+      {
+        "en": "I like this festival.",
+        "cn": "我喜欢这个节日。",
+        "level": 1,
+        "audioFile": "ex_231a901377.mp3"
+      },
+      {
+        "en": "The Spring Festival is the most important festival in China.",
+        "cn": "春节是中国最重要的节日。",
+        "level": 2,
+        "audioFile": "ex_1a60a68790.mp3"
+      },
+      {
+        "en": "During the festival, families travel home to be together.",
+        "cn": "节日期间，家人们都会赶回家团聚。",
+        "level": 3,
+        "audioFile": "ex_e672a6ba36.mp3"
+      }
+    ],
+    "celebrate": [
+      {
+        "en": "We celebrate today.",
+        "cn": "我们今天庆祝。",
+        "level": 1,
+        "audioFile": "ex_cc1805cbb5.mp3"
+      },
+      {
+        "en": "People celebrate the New Year with their families.",
+        "cn": "人们和家人一起庆祝新年。",
+        "level": 2,
+        "audioFile": "ex_cd818c00e5.mp3"
+      },
+      {
+        "en": "Communities celebrate the harvest with music, food and dancing.",
+        "cn": "社区用音乐、美食和舞蹈来庆祝丰收。",
+        "level": 3,
+        "audioFile": "ex_36155cd537.mp3"
+      }
+    ],
+    "lunar": [
+      {
+        "en": "It is a lunar month.",
+        "cn": "这是一个农历月份。",
+        "level": 1,
+        "audioFile": "ex_ff3459cf63.mp3"
+      },
+      {
+        "en": "The Chinese New Year follows the lunar calendar.",
+        "cn": "中国新年依照农历。",
+        "level": 2,
+        "audioFile": "ex_914d1a7cba.mp3"
+      },
+      {
+        "en": "The date of the festival changes each year because it is lunar.",
+        "cn": "由于按阴历计算，这个节日的日期每年都不同。",
+        "level": 3,
+        "audioFile": "ex_da03434ac7.mp3"
+      }
+    ],
+    "firecracker": [
+      {
+        "en": "I hear firecrackers.",
+        "cn": "我听到了爆竹声。",
+        "level": 1,
+        "audioFile": "ex_696b92db0f.mp3"
+      },
+      {
+        "en": "People set off firecrackers at New Year.",
+        "cn": "人们在新年燃放爆竹。",
+        "level": 2,
+        "audioFile": "ex_d1584e3a91.mp3"
+      },
+      {
+        "en": "The loud firecrackers are said to drive away bad luck.",
+        "cn": "据说响亮的爆竹能驱走霉运。",
+        "level": 3,
+        "audioFile": "ex_f7a15d10d5.mp3"
+      }
+    ],
+    "lantern": [
+      {
+        "en": "The lantern is red.",
+        "cn": "这盏灯笼是红色的。",
+        "level": 1,
+        "audioFile": "ex_062c3522df.mp3"
+      },
+      {
+        "en": "People hang red lanterns during the festival.",
+        "cn": "人们在节日期间挂红灯笼。",
+        "level": 2,
+        "audioFile": "ex_37336a40af.mp3"
+      },
+      {
+        "en": "On Lantern Festival night, the whole street glows with bright lanterns.",
+        "cn": "元宵节之夜，整条街都被明亮的灯笼照亮。",
+        "level": 3,
+        "audioFile": "ex_6dc7669c81.mp3"
+      }
+    ],
+    "reunion": [
+      {
+        "en": "It is a family reunion.",
+        "cn": "这是一次家庭团圆。",
+        "level": 1,
+        "audioFile": "ex_9ac55aed14.mp3"
+      },
+      {
+        "en": "The festival is a time for family reunion.",
+        "cn": "这个节日是家人团圆的时刻。",
+        "level": 2,
+        "audioFile": "ex_0f3750399c.mp3"
+      },
+      {
+        "en": "No matter how far away, people travel home for the reunion dinner.",
+        "cn": "无论多远，人们都会赶回家吃团圆饭。",
+        "level": 3,
+        "audioFile": "ex_402dd23191.mp3"
+      }
+    ],
+    "blessing": [
+      {
+        "en": "Best blessings to you.",
+        "cn": "向你致以最好的祝福。",
+        "level": 1,
+        "audioFile": "ex_cf5ed294cd.mp3"
+      },
+      {
+        "en": "Older people give blessings to children.",
+        "cn": "长辈给孩子们送上祝福。",
+        "level": 2,
+        "audioFile": "ex_84eb5987c7.mp3"
+      },
+      {
+        "en": "During the festival, people send blessings of health and happiness.",
+        "cn": "节日期间，人们送上健康和幸福的祝福。",
+        "level": 3,
+        "audioFile": "ex_b6382d9688.mp3"
+      }
+    ],
+    "decorate": [
+      {
+        "en": "We decorate the room.",
+        "cn": "我们装饰房间。",
+        "level": 1,
+        "audioFile": "ex_fa06c5e946.mp3"
+      },
+      {
+        "en": "People decorate their homes for the festival.",
+        "cn": "人们为节日装饰家园。",
+        "level": 2,
+        "audioFile": "ex_26f24f63a5.mp3"
+      },
+      {
+        "en": "Families decorate their doors with red couplets for good luck.",
+        "cn": "家家户户在门上贴红对联以求好运。",
+        "level": 3,
+        "audioFile": "ex_819323677a.mp3"
+      }
+    ],
+    "dumpling": [
+      {
+        "en": "I like dumplings.",
+        "cn": "我喜欢饺子。",
+        "level": 1,
+        "audioFile": "ex_4b579e0053.mp3"
+      },
+      {
+        "en": "We eat dumplings on New Year's Eve.",
+        "cn": "我们在除夕吃饺子。",
+        "level": 2,
+        "audioFile": "ex_c45e77fbe7.mp3"
+      },
+      {
+        "en": "Making dumplings together is a happy part of the family reunion.",
+        "cn": "一起包饺子是家庭团聚中快乐的一部分。",
+        "level": 3,
+        "audioFile": "ex_df87991480.mp3"
+      }
+    ],
+    "mooncake": [
+      {
+        "en": "I eat a mooncake.",
+        "cn": "我吃月饼。",
+        "level": 1,
+        "audioFile": "ex_649a09c44a.mp3"
+      },
+      {
+        "en": "People eat mooncakes at the Mid-Autumn Festival.",
+        "cn": "人们在中秋节吃月饼。",
+        "level": 2,
+        "audioFile": "ex_b57871d166.mp3"
+      },
+      {
+        "en": "The round mooncake stands for family togetherness and the full moon.",
+        "cn": "圆圆的月饼象征着家人团圆和满月。",
+        "level": 3,
+        "audioFile": "ex_2b95a789b0.mp3"
+      }
+    ],
+    "dragon": [
+      {
+        "en": "The dragon is big.",
+        "cn": "这条龙很大。",
+        "level": 1,
+        "audioFile": "ex_8d4168f66d.mp3"
+      },
+      {
+        "en": "People perform the dragon dance at festivals.",
+        "cn": "人们在节日里表演舞龙。",
+        "level": 2,
+        "audioFile": "ex_9dbad6fb51.mp3"
+      },
+      {
+        "en": "In Chinese culture, the dragon is a symbol of power and good luck.",
+        "cn": "在中国文化中，龙是力量和好运的象征。",
+        "level": 3,
+        "audioFile": "ex_2b5cbb0da4.mp3"
+      }
+    ],
+    "carnival": [
+      {
+        "en": "I love the carnival.",
+        "cn": "我喜欢狂欢节。",
+        "level": 1,
+        "audioFile": "ex_1fd80e861f.mp3"
+      },
+      {
+        "en": "The carnival is full of music and colour.",
+        "cn": "狂欢节充满了音乐和色彩。",
+        "level": 2,
+        "audioFile": "ex_3c1a53bc37.mp3"
+      },
+      {
+        "en": "During the carnival, people dance through the streets in bright costumes.",
+        "cn": "狂欢节期间，人们身着鲜艳服装在街头舞蹈。",
+        "level": 3,
+        "audioFile": "ex_c06948dc16.mp3"
+      }
+    ],
+    "harvest": [
+      {
+        "en": "It is harvest time.",
+        "cn": "现在是收获的季节。",
+        "level": 1,
+        "audioFile": "ex_63345c3343.mp3"
+      },
+      {
+        "en": "Farmers celebrate the autumn harvest.",
+        "cn": "农民们庆祝秋季的丰收。",
+        "level": 2,
+        "audioFile": "ex_09882ac07f.mp3"
+      },
+      {
+        "en": "The festival began as a way to give thanks for a good harvest.",
+        "cn": "这个节日起初是为了感谢丰收。",
+        "level": 3,
+        "audioFile": "ex_3fd18660a5.mp3"
+      }
+    ],
+    "gather": [
+      {
+        "en": "We gather here.",
+        "cn": "我们在这里聚集。",
+        "level": 1,
+        "audioFile": "ex_0c16619751.mp3"
+      },
+      {
+        "en": "The whole family gathers for the festival.",
+        "cn": "全家人为节日团聚。",
+        "level": 2,
+        "audioFile": "ex_ac160e76ec.mp3"
+      },
+      {
+        "en": "People gather under the full moon to share food and stories.",
+        "cn": "人们在满月下相聚，分享食物和故事。",
+        "level": 3,
+        "audioFile": "ex_7039087ea6.mp3"
+      }
+    ],
+    "custom": [
+      {
+        "en": "It is a local custom.",
+        "cn": "这是当地的习俗。",
+        "level": 1,
+        "audioFile": "ex_d27628191a.mp3"
+      },
+      {
+        "en": "Every country has its own customs.",
+        "cn": "每个国家都有自己的习俗。",
+        "level": 2,
+        "audioFile": "ex_d400bbc945.mp3"
+      },
+      {
+        "en": "Learning local customs helps visitors avoid awkward mistakes.",
+        "cn": "了解当地习俗能帮助游客避免尴尬的错误。",
+        "level": 3,
+        "audioFile": "ex_6ff9833cbc.mp3"
+      }
+    ],
+    "polite": [
+      {
+        "en": "Be polite.",
+        "cn": "要有礼貌。",
+        "level": 1,
+        "audioFile": "ex_a770400e90.mp3"
+      },
+      {
+        "en": "It is polite to say thank you.",
+        "cn": "说谢谢是有礼貌的。",
+        "level": 2,
+        "audioFile": "ex_6857714606.mp3"
+      },
+      {
+        "en": "What is polite in one country may be rude in another.",
+        "cn": "在一个国家有礼貌的事在另一个国家可能很无礼。",
+        "level": 3,
+        "audioFile": "ex_fd93d90754.mp3"
+      }
+    ],
+    "rude": [
+      {
+        "en": "Don't be rude.",
+        "cn": "别没礼貌。",
+        "level": 1,
+        "audioFile": "ex_b321d674b5.mp3"
+      },
+      {
+        "en": "It is rude to point at people.",
+        "cn": "用手指着别人是不礼貌的。",
+        "level": 2,
+        "audioFile": "ex_e1881f5490.mp3"
+      },
+      {
+        "en": "A gesture that seems friendly here may look rude somewhere else.",
+        "cn": "在这里看似友好的手势在别处可能显得无礼。",
+        "level": 3,
+        "audioFile": "ex_3dc15fbcb8.mp3"
+      }
+    ],
+    "behaviour": [
+      {
+        "en": "Good behaviour matters.",
+        "cn": "良好的行为很重要。",
+        "level": 1,
+        "audioFile": "ex_0ae5dd5804.mp3"
+      },
+      {
+        "en": "His behaviour surprised the foreign guests.",
+        "cn": "他的行为让外国客人感到惊讶。",
+        "level": 2,
+        "audioFile": "ex_d138113898.mp3"
+      },
+      {
+        "en": "Acceptable behaviour can be very different from culture to culture.",
+        "cn": "可接受的行为在不同文化间可能大相径庭。",
+        "level": 3,
+        "audioFile": "ex_9ebf0e8f13.mp3"
+      }
+    ],
+    "foreign": [
+      {
+        "en": "He is a foreign student.",
+        "cn": "他是个外国学生。",
+        "level": 1,
+        "audioFile": "ex_39874489e9.mp3"
+      },
+      {
+        "en": "She is learning a foreign language.",
+        "cn": "她在学一门外语。",
+        "level": 2,
+        "audioFile": "ex_855e794ab4.mp3"
+      },
+      {
+        "en": "Living in a foreign country teaches you to respect new ways of life.",
+        "cn": "在外国生活会教会你尊重新的生活方式。",
+        "level": 3,
+        "audioFile": "ex_28716beda6.mp3"
+      }
+    ],
+    "abroad": [
+      {
+        "en": "He went abroad.",
+        "cn": "他出国了。",
+        "level": 1,
+        "audioFile": "ex_375650dcae.mp3"
+      },
+      {
+        "en": "Many students want to study abroad.",
+        "cn": "许多学生想出国留学。",
+        "level": 2,
+        "audioFile": "ex_a7c1d309d5.mp3"
+      },
+      {
+        "en": "Travelling abroad opens your eyes to different cultures and ideas.",
+        "cn": "出国旅行让你看到不同的文化与观念。",
+        "level": 3,
+        "audioFile": "ex_e02dd1730d.mp3"
+      }
+    ],
+    "adapt": [
+      {
+        "en": "We must adapt.",
+        "cn": "我们必须适应。",
+        "level": 1,
+        "audioFile": "ex_eae70e622c.mp3"
+      },
+      {
+        "en": "It takes time to adapt to a new country.",
+        "cn": "适应一个新国家需要时间。",
+        "level": 2,
+        "audioFile": "ex_b2d37816dc.mp3"
+      },
+      {
+        "en": "Those who adapt quickly enjoy life abroad far more.",
+        "cn": "适应得快的人在国外的生活会愉快得多。",
+        "level": 3,
+        "audioFile": "ex_7b2aa9e5e4.mp3"
+      }
+    ],
+    "misunderstanding": [
+      {
+        "en": "It was a misunderstanding.",
+        "cn": "这是一场误解。",
+        "level": 1,
+        "audioFile": "ex_0e241f36b2.mp3"
+      },
+      {
+        "en": "A small misunderstanding can cause big trouble.",
+        "cn": "一个小误解可能引起大麻烦。",
+        "level": 2,
+        "audioFile": "ex_dbf1866198.mp3"
+      },
+      {
+        "en": "Cultural differences often lead to misunderstandings between people.",
+        "cn": "文化差异常常导致人们之间的误解。",
+        "level": 3,
+        "audioFile": "ex_32b73f8758.mp3"
+      }
+    ],
+    "gesture": [
+      {
+        "en": "He made a gesture.",
+        "cn": "他做了个手势。",
+        "level": 1,
+        "audioFile": "ex_b32fa8bd5c.mp3"
+      },
+      {
+        "en": "The same gesture can mean different things.",
+        "cn": "同样的手势可能有不同的含义。",
+        "level": 2,
+        "audioFile": "ex_ccaed9e9fb.mp3"
+      },
+      {
+        "en": "A friendly gesture in one culture may offend people in another.",
+        "cn": "在一种文化中友好的手势在另一种文化中可能冒犯他人。",
+        "level": 3,
+        "audioFile": "ex_a427368b91.mp3"
+      }
+    ],
+    "greeting": [
+      {
+        "en": "Say a greeting.",
+        "cn": "打个招呼。",
+        "level": 1,
+        "audioFile": "ex_17f4844094.mp3"
+      },
+      {
+        "en": "People use different greetings around the world.",
+        "cn": "世界各地的人用不同的方式问候。",
+        "level": 2,
+        "audioFile": "ex_26266f6f4c.mp3"
+      },
+      {
+        "en": "In some countries a bow is the proper greeting, not a handshake.",
+        "cn": "在有些国家，鞠躬而非握手才是恰当的问候方式。",
+        "level": 3,
+        "audioFile": "ex_cc64af18d1.mp3"
+      }
+    ],
+    "respect": [
+      {
+        "en": "I respect you.",
+        "cn": "我尊重你。",
+        "level": 1,
+        "audioFile": "ex_be3a6a0729.mp3"
+      },
+      {
+        "en": "We should respect other cultures.",
+        "cn": "我们应该尊重其他文化。",
+        "level": 2,
+        "audioFile": "ex_879e8f0497.mp3"
+      },
+      {
+        "en": "Showing respect for local customs makes you a welcome guest.",
+        "cn": "尊重当地习俗会让你成为受欢迎的客人。",
+        "level": 3,
+        "audioFile": "ex_6e2608b867.mp3"
+      }
+    ],
+    "curiosity": [
+      {
+        "en": "She has great curiosity.",
+        "cn": "她有强烈的好奇心。",
+        "level": 1,
+        "audioFile": "ex_b17393a473.mp3"
+      },
+      {
+        "en": "Curiosity makes us want to learn about other cultures.",
+        "cn": "好奇心使我们想要了解其他文化。",
+        "level": 2,
+        "audioFile": "ex_a064c2e392.mp3"
+      },
+      {
+        "en": "A healthy curiosity helps travellers understand a new place.",
+        "cn": "健康的好奇心能帮助旅行者理解一个新地方。",
+        "level": 3,
+        "audioFile": "ex_0d0a4a58c7.mp3"
+      }
+    ],
+    "tolerate": [
+      {
+        "en": "I can't tolerate it.",
+        "cn": "我无法容忍它。",
+        "level": 1,
+        "audioFile": "ex_c433f1a37b.mp3"
+      },
+      {
+        "en": "We should tolerate different opinions.",
+        "cn": "我们应该容忍不同的观点。",
+        "level": 2,
+        "audioFile": "ex_f18d62d204.mp3"
+      },
+      {
+        "en": "Learning to tolerate differences is the key to living in peace.",
+        "cn": "学会容忍差异是和平共处的关键。",
+        "level": 3,
+        "audioFile": "ex_9f0ed69dd7.mp3"
+      }
+    ],
+    "experience": [
+      {
+        "en": "It was a great experience.",
+        "cn": "那是一次很棒的经历。",
+        "level": 1,
+        "audioFile": "ex_3e319c8422.mp3"
+      },
+      {
+        "en": "Living abroad was a valuable experience for her.",
+        "cn": "在国外生活对她来说是一次宝贵的经历。",
+        "level": 2,
+        "audioFile": "ex_c29d36c41e.mp3"
+      },
+      {
+        "en": "The experience of another culture changed the way he saw the world.",
+        "cn": "异国文化的经历改变了他看待世界的方式。",
+        "level": 3,
+        "audioFile": "ex_d716a2a158.mp3"
+      }
+    ],
+    "poetry": [
+      {
+        "en": "I love poetry.",
+        "cn": "我喜欢诗歌。",
+        "level": 1,
+        "audioFile": "ex_ac2497107f.mp3"
+      },
+      {
+        "en": "Chinese poetry has a long history.",
+        "cn": "中国诗歌有着悠久的历史。",
+        "level": 2,
+        "audioFile": "ex_821d69311e.mp3"
+      },
+      {
+        "en": "Good poetry can express deep feelings in just a few words.",
+        "cn": "好的诗歌能用寥寥数语表达深刻的情感。",
+        "level": 3,
+        "audioFile": "ex_5683c679f8.mp3"
+      }
+    ],
+    "poem": [
+      {
+        "en": "I wrote a poem.",
+        "cn": "我写了一首诗。",
+        "level": 1,
+        "audioFile": "ex_fa6bfba630.mp3"
+      },
+      {
+        "en": "She read a beautiful poem aloud.",
+        "cn": "她大声朗读了一首优美的诗。",
+        "level": 2,
+        "audioFile": "ex_58291d97c4.mp3"
+      },
+      {
+        "en": "This famous poem describes the beauty of a moonlit night.",
+        "cn": "这首著名的诗描绘了月夜的美。",
+        "level": 3,
+        "audioFile": "ex_fc63637aca.mp3"
+      }
+    ],
+    "poet": [
+      {
+        "en": "He is a poet.",
+        "cn": "他是位诗人。",
+        "level": 1,
+        "audioFile": "ex_a3d079dc7a.mp3"
+      },
+      {
+        "en": "Li Bai was a great Chinese poet.",
+        "cn": "李白是一位伟大的中国诗人。",
+        "level": 2,
+        "audioFile": "ex_2859cbc582.mp3"
+      },
+      {
+        "en": "A skilled poet can turn ordinary scenes into beautiful images.",
+        "cn": "技艺高超的诗人能把平凡的景象化为优美的意象。",
+        "level": 3,
+        "audioFile": "ex_b83699801b.mp3"
+      }
+    ],
+    "rhyme": [
+      {
+        "en": "These words rhyme.",
+        "cn": "这些词押韵。",
+        "level": 1,
+        "audioFile": "ex_cca38c7332.mp3"
+      },
+      {
+        "en": "The two lines rhyme with each other.",
+        "cn": "这两行相互押韵。",
+        "level": 2,
+        "audioFile": "ex_a7c2098d69.mp3"
+      },
+      {
+        "en": "The poet used rhyme to make the poem pleasant to read aloud.",
+        "cn": "诗人运用押韵使这首诗朗读起来悦耳动听。",
+        "level": 3,
+        "audioFile": "ex_1ad86f3547.mp3"
+      }
+    ],
+    "rhythm": [
+      {
+        "en": "The song has rhythm.",
+        "cn": "这首歌有节奏。",
+        "level": 1,
+        "audioFile": "ex_6ded82ece9.mp3"
+      },
+      {
+        "en": "The poem has a strong rhythm.",
+        "cn": "这首诗有强烈的节奏。",
+        "level": 2,
+        "audioFile": "ex_7a32c8db41.mp3"
+      },
+      {
+        "en": "The rhythm of the words makes the poem feel like music.",
+        "cn": "词语的节奏使这首诗听起来像音乐。",
+        "level": 3,
+        "audioFile": "ex_e6e4b7e1d3.mp3"
+      }
+    ],
+    "verse": [
+      {
+        "en": "I read a verse.",
+        "cn": "我读了一节诗。",
+        "level": 1,
+        "audioFile": "ex_16a6ab11be.mp3"
+      },
+      {
+        "en": "She learned the first verse by heart.",
+        "cn": "她把第一节诗背了下来。",
+        "level": 2,
+        "audioFile": "ex_c48a449883.mp3"
+      },
+      {
+        "en": "Each verse of the poem tells a part of the story.",
+        "cn": "诗的每一节都讲述故事的一部分。",
+        "level": 3,
+        "audioFile": "ex_52ecccec0a.mp3"
+      }
+    ],
+    "image": [
+      {
+        "en": "It is a clear image.",
+        "cn": "这是一个清晰的意象。",
+        "level": 1,
+        "audioFile": "ex_6af2be4fc7.mp3"
+      },
+      {
+        "en": "The poem creates a beautiful image of spring.",
+        "cn": "这首诗创造了一幅美丽的春天意象。",
+        "level": 2,
+        "audioFile": "ex_820e23f72c.mp3"
+      },
+      {
+        "en": "Poets use vivid images to help readers see and feel the scene.",
+        "cn": "诗人用生动的意象帮助读者看到并感受场景。",
+        "level": 3,
+        "audioFile": "ex_a53b2aad70.mp3"
+      }
+    ],
+    "metaphor": [
+      {
+        "en": "It is a metaphor.",
+        "cn": "这是一个暗喻。",
+        "level": 1,
+        "audioFile": "ex_2c53270c4d.mp3"
+      },
+      {
+        "en": "He used a metaphor to describe time.",
+        "cn": "他用暗喻来描述时间。",
+        "level": 2,
+        "audioFile": "ex_71444fc110.mp3"
+      },
+      {
+        "en": "The metaphor compares life to a long and winding road.",
+        "cn": "这个暗喻把人生比作一条漫长曲折的道路。",
+        "level": 3,
+        "audioFile": "ex_e1c1cddcce.mp3"
+      }
+    ],
+    "simile": [
+      {
+        "en": "It is a simile.",
+        "cn": "这是一个明喻。",
+        "level": 1,
+        "audioFile": "ex_6e2750b03f.mp3"
+      },
+      {
+        "en": "\"As brave as a lion\" is a simile.",
+        "cn": "“像狮子一样勇敢”是一个明喻。",
+        "level": 2,
+        "audioFile": "ex_a9cb10c15b.mp3"
+      },
+      {
+        "en": "A simile uses \"like\" or \"as\" to compare two different things.",
+        "cn": "明喻用“像”或“如”来比较两个不同的事物。",
+        "level": 3,
+        "audioFile": "ex_14c1da8b5b.mp3"
+      }
+    ],
+    "emotion": [
+      {
+        "en": "I feel strong emotion.",
+        "cn": "我感到强烈的情感。",
+        "level": 1,
+        "audioFile": "ex_3d74eb58d5.mp3"
+      },
+      {
+        "en": "The poem is full of emotion.",
+        "cn": "这首诗充满了情感。",
+        "level": 2,
+        "audioFile": "ex_bc7a7c1289.mp3"
+      },
+      {
+        "en": "Poetry helps us share emotions that are hard to put into words.",
+        "cn": "诗歌帮助我们分享难以用言语表达的情感。",
+        "level": 3,
+        "audioFile": "ex_cb80fcff4a.mp3"
+      }
+    ],
+    "inspire": [
+      {
+        "en": "You inspire me.",
+        "cn": "你激励了我。",
+        "level": 1,
+        "audioFile": "ex_486d01e0f3.mp3"
+      },
+      {
+        "en": "The poem inspired many young writers.",
+        "cn": "这首诗激励了许多年轻作家。",
+        "level": 2,
+        "audioFile": "ex_f38f1d0b4b.mp3"
+      },
+      {
+        "en": "Great poetry can inspire people to dream and to act.",
+        "cn": "伟大的诗歌能激励人们去梦想、去行动。",
+        "level": 3,
+        "audioFile": "ex_043bc59ff7.mp3"
+      }
+    ],
+    "line": [
+      {
+        "en": "Read this line.",
+        "cn": "读这一行。",
+        "level": 1,
+        "audioFile": "ex_78d8d92a40.mp3"
+      },
+      {
+        "en": "The first line of the poem is famous.",
+        "cn": "这首诗的第一行很有名。",
+        "level": 2,
+        "audioFile": "ex_20bac5c3f3.mp3"
+      },
+      {
+        "en": "Each line of the poem carries a deep and hidden meaning.",
+        "cn": "诗的每一行都蕴含着深刻而隐秘的意义。",
+        "level": 3,
+        "audioFile": "ex_7a03bf74c6.mp3"
+      }
+    ],
+    "stanza": [
+      {
+        "en": "This is one stanza.",
+        "cn": "这是一个诗节。",
+        "level": 1,
+        "audioFile": "ex_fff005a9f7.mp3"
+      },
+      {
+        "en": "The poem has four stanzas.",
+        "cn": "这首诗有四个诗节。",
+        "level": 2,
+        "audioFile": "ex_8b72579f55.mp3"
+      },
+      {
+        "en": "The last stanza gives the poem a surprising ending.",
+        "cn": "最后一个诗节给这首诗一个出人意料的结尾。",
+        "level": 3,
+        "audioFile": "ex_3ee9fab5af.mp3"
+      }
+    ],
+    "translate": [
+      {
+        "en": "Please translate this.",
+        "cn": "请翻译这个。",
+        "level": 1,
+        "audioFile": "ex_758a28371f.mp3"
+      },
+      {
+        "en": "It is hard to translate poetry.",
+        "cn": "翻译诗歌很难。",
+        "level": 2,
+        "audioFile": "ex_1ca5af4da9.mp3"
+      },
+      {
+        "en": "When you translate a poem, some of its beauty is often lost.",
+        "cn": "翻译一首诗时，它的部分美感常常会丢失。",
+        "level": 3,
+        "audioFile": "ex_5ea0247cf2.mp3"
+      }
+    ],
+    "beauty": [
+      {
+        "en": "I see the beauty.",
+        "cn": "我看到了美。",
+        "level": 1,
+        "audioFile": "ex_a3bfa0aeaa.mp3"
+      },
+      {
+        "en": "The poem describes the beauty of nature.",
+        "cn": "这首诗描绘了大自然的美。",
+        "level": 2,
+        "audioFile": "ex_d61f582530.mp3"
+      },
+      {
+        "en": "True beauty in poetry comes from both sound and meaning.",
+        "cn": "诗歌中真正的美来自声音与意义。",
+        "level": 3,
+        "audioFile": "ex_2bf76ab975.mp3"
+      }
+    ],
+    "literature": [
+      {
+        "en": "I study literature.",
+        "cn": "我学习文学。",
+        "level": 1,
+        "audioFile": "ex_a9964e244a.mp3"
+      },
+      {
+        "en": "English literature is rich and varied.",
+        "cn": "英国文学丰富多样。",
+        "level": 2,
+        "audioFile": "ex_4584c5b0c5.mp3"
+      },
+      {
+        "en": "Great literature helps us understand people from other times and places.",
+        "cn": "伟大的文学帮助我们理解其他时代和地方的人。",
+        "level": 3,
+        "audioFile": "ex_dc40ed3b25.mp3"
+      }
+    ],
+    "novel": [
+      {
+        "en": "I read a novel.",
+        "cn": "我读了一本小说。",
+        "level": 1,
+        "audioFile": "ex_b92611cd17.mp3"
+      },
+      {
+        "en": "This novel tells an exciting story.",
+        "cn": "这本小说讲了一个激动人心的故事。",
+        "level": 2,
+        "audioFile": "ex_23cdba5767.mp3"
+      },
+      {
+        "en": "The novel explores how a poor boy grows into a brave man.",
+        "cn": "这部小说探讨了一个穷孩子如何成长为勇敢的人。",
+        "level": 3,
+        "audioFile": "ex_ebdbc6fddd.mp3"
+      }
+    ],
+    "story": [
+      {
+        "en": "Tell me a story.",
+        "cn": "给我讲个故事。",
+        "level": 1,
+        "audioFile": "ex_e77551fff0.mp3"
+      },
+      {
+        "en": "The story has a happy ending.",
+        "cn": "这个故事有个圆满的结局。",
+        "level": 2,
+        "audioFile": "ex_a0aee1d6e1.mp3"
+      },
+      {
+        "en": "A good story can teach us important lessons about life.",
+        "cn": "一个好故事能教给我们重要的人生道理。",
+        "level": 3,
+        "audioFile": "ex_00f46981a5.mp3"
+      }
+    ],
+    "author": [
+      {
+        "en": "Who is the author?",
+        "cn": "作者是谁？",
+        "level": 1,
+        "audioFile": "ex_c81029d719.mp3"
+      },
+      {
+        "en": "The author wrote many famous books.",
+        "cn": "这位作者写了许多著名的书。",
+        "level": 2,
+        "audioFile": "ex_38186d9cc5.mp3"
+      },
+      {
+        "en": "The author based the story on her own childhood.",
+        "cn": "这位作者以自己的童年为蓝本写了这个故事。",
+        "level": 3,
+        "audioFile": "ex_9a8661c41a.mp3"
+      }
+    ],
+    "character": [
+      {
+        "en": "I like this character.",
+        "cn": "我喜欢这个角色。",
+        "level": 1,
+        "audioFile": "ex_17f71c45be.mp3"
+      },
+      {
+        "en": "The main character is brave and kind.",
+        "cn": "主角既勇敢又善良。",
+        "level": 2,
+        "audioFile": "ex_5bea732b6d.mp3"
+      },
+      {
+        "en": "A well-written character feels as real as a living person.",
+        "cn": "刻画得好的角色感觉就像活生生的人一样真实。",
+        "level": 3,
+        "audioFile": "ex_fc9fd06bd4.mp3"
+      }
+    ],
+    "chapter": [
+      {
+        "en": "Read the first chapter.",
+        "cn": "读第一章。",
+        "level": 1,
+        "audioFile": "ex_c9aa4268f7.mp3"
+      },
+      {
+        "en": "The last chapter is the most exciting.",
+        "cn": "最后一章是最激动人心的。",
+        "level": 2,
+        "audioFile": "ex_cc7c628368.mp3"
+      },
+      {
+        "en": "Each chapter ends in a way that makes you want to read on.",
+        "cn": "每一章的结尾都让你想继续读下去。",
+        "level": 3,
+        "audioFile": "ex_6f85599b4e.mp3"
+      }
+    ],
+    "play": [
+      {
+        "en": "We saw a play.",
+        "cn": "我们看了一场戏剧。",
+        "level": 1,
+        "audioFile": "ex_7905ecd42d.mp3"
+      },
+      {
+        "en": "Shakespeare wrote many famous plays.",
+        "cn": "莎士比亚写了许多著名的戏剧。",
+        "level": 2,
+        "audioFile": "ex_c7a97d4f38.mp3"
+      },
+      {
+        "en": "The play shows the struggle between love and duty.",
+        "cn": "这出戏展现了爱情与责任之间的冲突。",
+        "level": 3,
+        "audioFile": "ex_9a2d3472e1.mp3"
+      }
+    ],
+    "tragedy": [
+      {
+        "en": "It is a tragedy.",
+        "cn": "这是一出悲剧。",
+        "level": 1,
+        "audioFile": "ex_f089b893dc.mp3"
+      },
+      {
+        "en": "The play is a famous tragedy.",
+        "cn": "这部戏是一出著名的悲剧。",
+        "level": 2,
+        "audioFile": "ex_be925472c7.mp3"
+      },
+      {
+        "en": "In a tragedy, the hero often falls because of one fatal mistake.",
+        "cn": "在悲剧中，主人公常因一个致命的错误而走向毁灭。",
+        "level": 3,
+        "audioFile": "ex_8f8c2134ff.mp3"
+      }
+    ],
+    "comedy": [
+      {
+        "en": "I love comedy.",
+        "cn": "我喜欢喜剧。",
+        "level": 1,
+        "audioFile": "ex_59f8dafb4c.mp3"
+      },
+      {
+        "en": "The comedy made everyone laugh.",
+        "cn": "这部喜剧让每个人都笑了。",
+        "level": 2,
+        "audioFile": "ex_adc249ec75.mp3"
+      },
+      {
+        "en": "A good comedy uses humour to show the truth about life.",
+        "cn": "好的喜剧用幽默来揭示生活的真相。",
+        "level": 3,
+        "audioFile": "ex_6082de729f.mp3"
+      }
+    ],
+    "classic": [
+      {
+        "en": "It is a classic.",
+        "cn": "这是一部经典。",
+        "level": 1,
+        "audioFile": "ex_1863689624.mp3"
+      },
+      {
+        "en": "This book is a classic of world literature.",
+        "cn": "这本书是世界文学的经典。",
+        "level": 2,
+        "audioFile": "ex_b5c0be2b4d.mp3"
+      },
+      {
+        "en": "A classic is a book that people keep reading for many years.",
+        "cn": "经典就是人们多年来不断阅读的书。",
+        "level": 3,
+        "audioFile": "ex_90b1eafbbc.mp3"
+      }
+    ],
+    "imagination": [
+      {
+        "en": "Use your imagination.",
+        "cn": "发挥你的想象力。",
+        "level": 1,
+        "audioFile": "ex_efe6146d60.mp3"
+      },
+      {
+        "en": "Writers need a rich imagination.",
+        "cn": "作家需要丰富的想象力。",
+        "level": 2,
+        "audioFile": "ex_9dd34b796a.mp3"
+      },
+      {
+        "en": "A great story can carry our imagination to faraway worlds.",
+        "cn": "一个好故事能把我们的想象力带到遥远的世界。",
+        "level": 3,
+        "audioFile": "ex_00f08f9c02.mp3"
+      }
+    ],
+    "fantasy": [
+      {
+        "en": "I like fantasy.",
+        "cn": "我喜欢幻想作品。",
+        "level": 1,
+        "audioFile": "ex_a1924cff34.mp3"
+      },
+      {
+        "en": "The fantasy story is full of magic.",
+        "cn": "这个幻想故事充满了魔法。",
+        "level": 2,
+        "audioFile": "ex_eea10169c4.mp3"
+      },
+      {
+        "en": "In a fantasy world, anything the writer imagines can come true.",
+        "cn": "在幻想世界里，作家想象的任何事都能成真。",
+        "level": 3,
+        "audioFile": "ex_2c83410b98.mp3"
+      }
+    ],
+    "adventure": [
+      {
+        "en": "It was an adventure.",
+        "cn": "那是一次冒险。",
+        "level": 1,
+        "audioFile": "ex_31a090f1c0.mp3"
+      },
+      {
+        "en": "The book tells a story of adventure at sea.",
+        "cn": "这本书讲述了一个海上冒险的故事。",
+        "level": 2,
+        "audioFile": "ex_2442e363ab.mp3"
+      },
+      {
+        "en": "The young hero sets off on a dangerous adventure to save his friends.",
+        "cn": "年轻的主人公踏上危险的冒险去拯救他的朋友。",
+        "level": 3,
+        "audioFile": "ex_3effe77f02.mp3"
+      }
+    ],
+    "universal": [
+      {
+        "en": "Love is universal.",
+        "cn": "爱是普遍的。",
+        "level": 1,
+        "audioFile": "ex_7aa26f5deb.mp3"
+      },
+      {
+        "en": "The story explores universal feelings.",
+        "cn": "这个故事探讨了普遍的情感。",
+        "level": 2,
+        "audioFile": "ex_588d73f318.mp3"
+      },
+      {
+        "en": "Great literature deals with universal themes that everyone understands.",
+        "cn": "伟大的文学探讨人人都能理解的普遍主题。",
+        "level": 3,
+        "audioFile": "ex_292c188d4f.mp3"
+      }
+    ],
+    "influence": [
+      {
+        "en": "He has great influence.",
+        "cn": "他有很大的影响力。",
+        "level": 1,
+        "audioFile": "ex_1b2775c953.mp3"
+      },
+      {
+        "en": "This writer had a big influence on others.",
+        "cn": "这位作家对他人有很大的影响。",
+        "level": 2,
+        "audioFile": "ex_fc8c9ae128.mp3"
+      },
+      {
+        "en": "The influence of these classic books can still be felt today.",
+        "cn": "这些经典著作的影响至今仍能感受到。",
+        "level": 3,
+        "audioFile": "ex_cb5e25a9db.mp3"
+      }
+    ]
+  }
+}

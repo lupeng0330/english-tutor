@@ -1,0 +1,28 @@
+{
+  "id": "u1",
+  "title": "Unit 1 A New School Year",
+  "words": [
+    { "word": "new", "phonetic": "/njuː/", "meaning": "[adj.] 新的", "example": "A new school year." },
+    { "word": "term", "phonetic": "/tɜːm/", "meaning": "[n.] 学期", "example": "This term is fun." },
+    { "word": "classmate", "phonetic": "/ˈklɑːsmeɪt/", "meaning": "[n.] 同学", "example": "He is my classmate." },
+    { "word": "introduce", "phonetic": "/ˌɪntrəˈdjuːs/", "meaning": "[v.] 介绍", "example": "Introduce yourself." },
+    { "word": "hope", "phonetic": "/həʊp/", "meaning": "[v./n.] 希望", "example": "I hope to learn a lot." },
+    { "word": "grade", "phonetic": "/ɡreɪd/", "meaning": "[n.] 年级", "example": "I am in Grade 5." },
+    { "word": "schedule", "phonetic": "/ˈʃedjuːl/", "meaning": "[n.] 课程表", "example": "Look at the schedule." },
+    { "word": "exciting", "phonetic": "/ɪkˈsaɪtɪŋ/", "meaning": "[adj.] 令人兴奋的", "example": "An exciting day!" }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Welcome back",
+      "en": "Ben: Anna, welcome back! How was your summer?\nAnna: Great! I'm so excited for the new school year.\nBen: We are in Grade 5 now. New classmates, new teachers!\nAnna: Let's introduce ourselves to the new students.\nBen: Sure. I hope this term will be exciting.",
+      "cn": "本：安娜，欢迎回来！暑假怎么样？\n安娜：很棒！我对新学年好激动。\n本：我们现在五年级了，新同学新老师！\n安娜：我们去给新同学介绍自己吧。\n本：好。希望这学期会很精彩。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "My fifth-grade plan",
+      "en": "I am in Grade 5 this year. The new schedule on the wall has many subjects: English, Maths, music and PE. I hope to make new friends and learn many new things. My biggest hope is to read fifty English books before the term ends. A new year, a new me!",
+      "cn": "今年我五年级。墙上的新课表有很多课：英语、数学、音乐、体育。我希望交新朋友，学很多新东西。我最大的愿望是这学期结束前读完五十本英文书。新的一年，新的我！"
+    }
+  ]
+}

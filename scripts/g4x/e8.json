@@ -1,0 +1,42 @@
+{
+  "picnic": [
+    { "en": "A picnic.", "cn": "野餐。", "level": 1 },
+    { "en": "We have a picnic.", "cn": "我们野餐。", "level": 2 },
+    { "en": "A picnic by the lake is the best part of spring.", "cn": "湖边野餐是春天最棒的事。", "level": 3 }
+  ],
+  "basket": [
+    { "en": "A basket.", "cn": "一个篮子。", "level": 1 },
+    { "en": "Bring the basket.", "cn": "把篮子拿来。", "level": 2 },
+    { "en": "Mum filled the basket with sandwiches and fruit.", "cn": "妈妈把篮子装满了三明治和水果。", "level": 3 }
+  ],
+  "sandwich": [
+    { "en": "A sandwich.", "cn": "一个三明治。", "level": 1 },
+    { "en": "I eat a sandwich.", "cn": "我吃个三明治。", "level": 2 },
+    { "en": "I made cheese sandwiches for our picnic.", "cn": "我做了奶酪三明治带去野餐。", "level": 3 }
+  ],
+  "juice": [
+    { "en": "Apple juice.", "cn": "苹果汁。", "level": 1 },
+    { "en": "I want some juice.", "cn": "我想喝果汁。", "level": 2 },
+    { "en": "Fresh orange juice tastes much better than soda.", "cn": "鲜橙汁比汽水好喝多了。", "level": 3 }
+  ],
+  "lake": [
+    { "en": "A big lake.", "cn": "一个大湖。", "level": 1 },
+    { "en": "The lake is blue.", "cn": "湖水很蓝。", "level": 2 },
+    { "en": "We can see many ducks swimming on the lake.", "cn": "我们能看到湖上有很多鸭子在游。", "level": 3 }
+  ],
+  "sunny": [
+    { "en": "A sunny day.", "cn": "晴天。", "level": 1 },
+    { "en": "It's sunny today.", "cn": "今天有阳光。", "level": 2 },
+    { "en": "On a sunny Saturday, our family always goes for a walk.", "cn": "阳光明媚的周六，我们家总会出去散步。", "level": 3 }
+  ],
+  "share": [
+    { "en": "Share, please.", "cn": "请分享。", "level": 1 },
+    { "en": "Share with me.", "cn": "和我分享。", "level": 2 },
+    { "en": "We share our food and stories at the picnic.", "cn": "我们在野餐时分享食物和故事。", "level": 3 }
+  ],
+  "enjoy": [
+    { "en": "Enjoy!", "cn": "好好享受！", "level": 1 },
+    { "en": "Enjoy your meal.", "cn": "用餐愉快。", "level": 2 },
+    { "en": "I really enjoy spending time with friends in nature.", "cn": "我很享受和朋友在大自然里的时光。", "level": 3 }
+  ]
+}

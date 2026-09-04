@@ -1,0 +1,42 @@
+{
+  "listen": [
+    { "en": "Listen to me.", "cn": "听我说。", "level": 1 },
+    { "en": "Please listen to the teacher.", "cn": "请听老师讲。", "level": 2 },
+    { "en": "I love to listen to music in the evening.", "cn": "我喜欢在晚上听音乐。", "level": 3 }
+  ],
+  "listener": [
+    { "en": "Be a good listener.", "cn": "做个好的倾听者。", "level": 1 },
+    { "en": "My friend is a great listener.", "cn": "我的朋友是个很好的倾听者。", "level": 2 },
+    { "en": "A good listener never breaks in when others speak.", "cn": "好的倾听者从不打断别人说话。", "level": 3 }
+  ],
+  "hear": [
+    { "en": "I can hear you.", "cn": "我能听见你。", "level": 1 },
+    { "en": "Do you hear the bird singing?", "cn": "你听到鸟在唱歌吗？", "level": 2 },
+    { "en": "I can hear the rain on the window at night.", "cn": "夜里我能听到雨打窗户的声音。", "level": 3 }
+  ],
+  "ear": [
+    { "en": "This is my ear.", "cn": "这是我的耳朵。", "level": 1 },
+    { "en": "We have two ears to listen.", "cn": "我们有两只耳朵来听。", "level": 2 },
+    { "en": "Cover your ears when the noise is too loud.", "cn": "噪音太大时请捂住耳朵。", "level": 3 }
+  ],
+  "quiet": [
+    { "en": "Be quiet, please.", "cn": "请安静。", "level": 1 },
+    { "en": "The library is very quiet.", "cn": "图书馆里很安静。", "level": 2 },
+    { "en": "Please keep quiet when the teacher is talking.", "cn": "老师讲话时请保持安静。", "level": 3 }
+  ],
+  "good": [
+    { "en": "Good job!", "cn": "干得好！", "level": 1 },
+    { "en": "He is a good boy.", "cn": "他是个好男孩。", "level": 2 },
+    { "en": "It is good to listen carefully in class.", "cn": "上课认真听讲是好的。", "level": 3 }
+  ],
+  "careful": [
+    { "en": "Be careful!", "cn": "小心！", "level": 1 },
+    { "en": "Please be careful with the glass.", "cn": "请小心拿玻璃。", "level": 2 },
+    { "en": "A careful listener can hear every word.", "cn": "仔细的听众能听清每一个词。", "level": 3 }
+  ],
+  "please": [
+    { "en": "Please sit down.", "cn": "请坐。", "level": 1 },
+    { "en": "Please pass me the book.", "cn": "请把书递给我。", "level": 2 },
+    { "en": "Please listen to me first, then ask questions.", "cn": "请先听我说，再提问题。", "level": 3 }
+  ]
+}

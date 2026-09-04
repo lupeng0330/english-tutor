@@ -1,0 +1,42 @@
+{
+  "friendship": [
+    { "en": "Long friendship.", "cn": "长久的友谊。", "level": 1 },
+    { "en": "Friendship is precious.", "cn": "友谊珍贵。", "level": 2 },
+    { "en": "True friendship grows stronger through time and trust.", "cn": "真正的友谊在时间与信任中愈发坚固。", "level": 3 }
+  ],
+  "trust": [
+    { "en": "Trust me.", "cn": "相信我。", "level": 1 },
+    { "en": "I trust my friend.", "cn": "我相信朋友。", "level": 2 },
+    { "en": "Trust is the most important part of any friendship.", "cn": "信任是友谊中最重要的部分。", "level": 3 }
+  ],
+  "kind": [
+    { "en": "Be kind.", "cn": "要友善。", "level": 1 },
+    { "en": "Kind words.", "cn": "友善的话。", "level": 2 },
+    { "en": "Kind people make the world a much better place.", "cn": "善良的人让世界变得更好。", "level": 3 }
+  ],
+  "help": [
+    { "en": "Help, please.", "cn": "请帮帮。", "level": 1 },
+    { "en": "Help each other.", "cn": "互相帮助。", "level": 2 },
+    { "en": "True friends help each other when things get hard.", "cn": "真朋友在困难时彼此帮助。", "level": 3 }
+  ],
+  "share": [
+    { "en": "Share, please.", "cn": "请分享。", "level": 1 },
+    { "en": "Share happiness.", "cn": "分享快乐。", "level": 2 },
+    { "en": "We share our joys and sorrows with close friends.", "cn": "我们与好友分享喜怒哀乐。", "level": 3 }
+  ],
+  "forgive": [
+    { "en": "Please forgive.", "cn": "请原谅。", "level": 1 },
+    { "en": "Forgive my friend.", "cn": "原谅朋友。", "level": 2 },
+    { "en": "Sometimes we should forgive and move on together.", "cn": "有时我们要学会原谅，一起向前。", "level": 3 }
+  ],
+  "miss": [
+    { "en": "I miss you.", "cn": "我想你。", "level": 1 },
+    { "en": "Miss my old friends.", "cn": "想念老朋友。", "level": 2 },
+    { "en": "I really miss my classmates from primary school.", "cn": "我很想念小学的同学们。", "level": 3 }
+  ],
+  "forever": [
+    { "en": "Forever.", "cn": "永远。", "level": 1 },
+    { "en": "Friends forever.", "cn": "永远的朋友。", "level": 2 },
+    { "en": "Some friendships truly last forever, no matter the distance.", "cn": "有些友谊跨越距离，真的长存。", "level": 3 }
+  ]
+}

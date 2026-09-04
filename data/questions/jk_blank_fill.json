@@ -1,0 +1,1383 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "这是一个大写字母。",
+    "passage": "This is a big ____.",
+    "blanks": [
+      { "pos": 1, "answer": "letter", "options": ["letter", "bus", "sign"] }
+    ],
+    "explain": "big letter 大写字母"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "这辆公共汽车是红色的。",
+    "passage": "The ____ is red.",
+    "blanks": [
+      { "pos": 1, "answer": "bus", "options": ["bus", "name", "letter"] }
+    ],
+    "explain": "名词：公共汽车"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我的名字叫汤姆。",
+    "passage": "My ____ is Tom.",
+    "blanks": [
+      { "pos": 1, "answer": "name", "options": ["name", "bus", "sign"] }
+    ],
+    "explain": "名词：名字"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我会读英语。",
+    "passage": "I can ____ English.",
+    "blanks": [
+      { "pos": 1, "answer": "read", "options": ["read", "say", "mean"] }
+    ],
+    "explain": "动词：读"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "这个单词是中文。",
+    "passage": "This ____ is Chinese.",
+    "blanks": [
+      { "pos": 1, "answer": "word", "options": ["word", "name", "sign"] }
+    ],
+    "explain": "名词：单词"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "它们是一样的。",
+    "passage": "They are the ____.",
+    "blanks": [
+      { "pos": 1, "answer": "same", "options": ["same", "different", "word"] }
+    ],
+    "explain": "形容词：相同的"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "他是我的朋友。",
+    "passage": "____ is my friend.",
+    "blanks": [
+      { "pos": 1, "answer": "He", "options": ["He", "She", "Who"] }
+    ],
+    "explain": "人称代词：他"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "她是一名老师。",
+    "passage": "She is a ____.",
+    "blanks": [
+      { "pos": 1, "answer": "teacher", "options": ["teacher", "boy", "friend"] }
+    ],
+    "explain": "名词：老师"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "那个男孩是谁？",
+    "passage": "Who is that ____?",
+    "blanks": [
+      { "pos": 1, "answer": "boy", "options": ["boy", "girl", "friend"] }
+    ],
+    "explain": "名词：男孩"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "这把钥匙是蓝色的。",
+    "passage": "The key is ____.",
+    "blanks": [
+      { "pos": 1, "answer": "blue", "options": ["blue", "red", "green"] }
+    ],
+    "explain": "颜色：蓝色"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "点击那把绿色的钥匙。",
+    "passage": "____ the green key.",
+    "blanks": [
+      { "pos": 1, "answer": "Click", "options": ["Click", "Draw", "Read"] }
+    ],
+    "explain": "动词：点击"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我喜欢黄色。",
+    "passage": "I like the ____ colour.",
+    "blanks": [
+      { "pos": 1, "answer": "yellow", "options": ["yellow", "blue", "green"] }
+    ],
+    "explain": "颜色：黄色"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "请记住密码。",
+    "passage": "Please ____ the password.",
+    "blanks": [
+      { "pos": 1, "answer": "remember", "options": ["remember", "set", "type"] }
+    ],
+    "explain": "动词：记住"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "密码是一个秘密。",
+    "passage": "The password is a ____.",
+    "blanks": [
+      { "pos": 1, "answer": "secret", "options": ["secret", "word", "name"] }
+    ],
+    "explain": "名词：秘密"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "设置一个安全的密码。",
+    "passage": "Set a ____ password.",
+    "blanks": [
+      { "pos": 1, "answer": "safe", "options": ["safe", "secret", "big"] }
+    ],
+    "explain": "形容词：安全的"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我会画一个圆。",
+    "passage": "I can ____ a circle.",
+    "blanks": [
+      { "pos": 1, "answer": "draw", "options": ["draw", "paint", "play"] }
+    ],
+    "explain": "动词：画"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "画一幅漂亮的画。",
+    "passage": "Draw a ____ picture.",
+    "blanks": [
+      { "pos": 1, "answer": "nice", "options": ["nice", "big", "red"] }
+    ],
+    "explain": "形容词：漂亮的"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "她会画一条线。",
+    "passage": "She can ____ a line.",
+    "blanks": [
+      { "pos": 1, "answer": "draw", "options": ["draw", "paint", "play"] }
+    ],
+    "explain": "动词：画"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "请保持安静。",
+    "passage": "Please be ____.",
+    "blanks": [
+      { "pos": 1, "answer": "quiet", "options": ["quiet", "good", "careful"] }
+    ],
+    "explain": "形容词：安静的"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我是一个好的倾听者。",
+    "passage": "I am a good ____.",
+    "blanks": [
+      { "pos": 1, "answer": "listener", "options": ["listener", "teacher", "friend"] }
+    ],
+    "explain": "名词：倾听者"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "该锻炼了。",
+    "passage": "It is ____ to exercise.",
+    "blanks": [
+      { "pos": 1, "answer": "time", "options": ["time", "run", "sport"] }
+    ],
+    "explain": "It is time to... 该做…了"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我会跑和跳。",
+    "passage": "I can ____ and jump.",
+    "blanks": [
+      { "pos": 1, "answer": "run", "options": ["run", "swim", "play"] }
+    ],
+    "explain": "动词：跑"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "运动使我健康。",
+    "passage": "Sport keeps me ____.",
+    "blanks": [
+      { "pos": 1, "answer": "healthy", "options": ["healthy", "happy", "big"] }
+    ],
+    "explain": "形容词：健康的"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我喜欢游泳。",
+    "passage": "I like to ____.",
+    "blanks": [
+      { "pos": 1, "answer": "swim", "options": ["swim", "run", "jump"] }
+    ],
+    "explain": "动词：游泳"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_REV",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "我会唱一首歌。",
+    "passage": "I can ____ a song.",
+    "blanks": [
+      { "pos": 1, "answer": "sing", "options": ["sing", "dance", "show"] }
+    ],
+    "explain": "动词：唱（复习）"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_01",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "书包",
+    "passage": "This is my school ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "bag",
+        "options": [
+          "bag",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 bag。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_02",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "红色铅笔",
+    "passage": "The ____ is red.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "pencil",
+        "options": [
+          "pencil",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 pencil。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_03",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "大家庭",
+    "passage": "I have a big ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "family",
+        "options": [
+          "family",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 family。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_04",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "黄色小鸭",
+    "passage": "The ____ is yellow.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "duck",
+        "options": [
+          "duck",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 duck。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_05",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "玩具汽车",
+    "passage": "I like the toy ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "car",
+        "options": [
+          "car",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 car。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_06",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "两只手",
+    "passage": "I have two ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "hands",
+        "options": [
+          "hands",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 hands。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_07",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "一个苹果",
+    "passage": "I want an ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "apple",
+        "options": [
+          "apple",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 apple。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_08",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "晴天",
+    "passage": "It is a sunny ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "day",
+        "options": [
+          "day",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 day。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5_B2_09",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "蓝色尺子",
+    "passage": "My ____ is blue.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "ruler",
+        "options": [
+          "ruler",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 ruler。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_B2_10",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "小鸟",
+    "passage": "A little ____ can sing.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "bird",
+        "options": [
+          "bird",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 bird。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_B2_11",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "绿树",
+    "passage": "The ____ is green.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "tree",
+        "options": [
+          "tree",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 tree。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_B2_12",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "开心的男孩",
+    "passage": "The ____ is happy.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "boy",
+        "options": [
+          "boy",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 boy。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_01",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "白兔",
+    "passage": "I see a white ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "rabbit",
+        "options": [
+          "rabbit",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 rabbit。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_02",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "新T恤",
+    "passage": "This is my new ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "T-shirt",
+        "options": [
+          "T-shirt",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 T-shirt。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_03",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "三本书",
+    "passage": "I have three ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "books",
+        "options": [
+          "books",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 books。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_04",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "干净的书桌",
+    "passage": "My ____ is clean.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "desk",
+        "options": [
+          "desk",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 desk。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_05",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "跑得快",
+    "passage": "I can run ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "fast",
+        "options": [
+          "fast",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 fast。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_06",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "橙汁",
+    "passage": "I like orange ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "juice",
+        "options": [
+          "juice",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 juice。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_07",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "公园门口",
+    "passage": "The park ____ is big.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "gate",
+        "options": [
+          "gate",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 gate。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_08",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "小房子",
+    "passage": "This is a small ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "house",
+        "options": [
+          "house",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 house。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_B2_09",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "棕色小狗",
+    "passage": "The ____ is brown.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "dog",
+        "options": [
+          "dog",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 dog。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6_B2_10",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "粉色连衣裙",
+    "passage": "Her ____ is pink.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "dress",
+        "options": [
+          "dress",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 dress。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_B2_11",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "十颗星",
+    "passage": "I can count ten ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "stars",
+        "options": [
+          "stars",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 stars。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8_B2_12",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "打开的门",
+    "passage": "Please open the ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "door",
+        "options": [
+          "door",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 door。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_01",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "英语课",
+    "passage": "We have English today.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "class",
+        "options": [
+          "class",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 class。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_02",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "音乐教室",
+    "passage": "The music ____ is clean.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "room",
+        "options": [
+          "room",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_03",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "周一早晨",
+    "passage": "It is Monday ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "morning",
+        "options": [
+          "morning",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 morning。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_04",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "医生",
+    "passage": "My aunt is a ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "doctor",
+        "options": [
+          "doctor",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 doctor。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_05",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "客厅",
+    "passage": "Dad is in the living ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "room",
+        "options": [
+          "room",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_06",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "凉爽秋天",
+    "passage": "Autumn is cool.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "autumn",
+        "options": [
+          "autumn",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 autumn。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_07",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "校车",
+    "passage": "I go to school by ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "bus",
+        "options": [
+          "bus",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 bus。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_08",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "小商店",
+    "passage": "There is a small ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "shop",
+        "options": [
+          "shop",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 shop。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_B2_09",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "数学书",
+    "passage": "This is my math ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "book",
+        "options": [
+          "book",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 book。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_B2_10",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "下棋",
+    "passage": "They play ____ after school.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "chess",
+        "options": [
+          "chess",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 chess。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_B2_11",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "周五聚会",
+    "passage": "We have a ____ on Friday.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "party",
+        "options": [
+          "party",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 party。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_B2_12",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "火车站",
+    "passage": "The train ____ is near.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "station",
+        "options": [
+          "station",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 station。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_01",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "温水",
+    "passage": "Drink some warm ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "water",
+        "options": [
+          "water",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 water。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_02",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "向左转",
+    "passage": "Turn ____ at the shop.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "left",
+        "options": [
+          "left",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 left。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_03",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "龙舟",
+    "passage": "We watch a dragon ____ race.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "boat",
+        "options": [
+          "boat",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 boat。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_04",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "城市图书馆",
+    "passage": "The ____ is in the city.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "library",
+        "options": [
+          "library",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 library。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_05",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "洗衣服",
+    "passage": "I wash ____ on Sunday.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "clothes",
+        "options": [
+          "clothes",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 clothes。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_06",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "家庭野餐",
+    "passage": "We have a family ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "picnic",
+        "options": [
+          "picnic",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 picnic。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_07",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "足球比赛",
+    "passage": "The football ____ is fun.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "game",
+        "options": [
+          "game",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 game。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_08",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "读故事",
+    "passage": "I read a ____ in the library.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "story",
+        "options": [
+          "story",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 story。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_B2_09",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "健康食物",
+    "passage": "Vegetables are healthy ____.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "food",
+        "options": [
+          "food",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 food。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6_B2_10",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "直走",
+    "passage": "Go ____ and you can see it.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "straight",
+        "options": [
+          "straight",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 straight。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_B2_11",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "春节",
+    "passage": "Spring Festival is happy.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "festival",
+        "options": [
+          "festival",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 festival。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_B2_12",
+    "type": "blank_fill",
+    "difficulty": 1,
+    "cn": "打扫房间",
+    "passage": "I clean my ____ every week.",
+    "blanks": [
+      {
+        "pos": 1,
+        "answer": "room",
+        "options": [
+          "room",
+          "banana",
+          "desk"
+        ]
+      }
+    ],
+    "explain": "句意对应 room。",
+    "source": "b2_primary_v01"
+  }
+]

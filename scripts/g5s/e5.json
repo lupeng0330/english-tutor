@@ -1,0 +1,42 @@
+{
+  "sport": [
+    { "en": "A sport.", "cn": "一项运动。", "level": 1 },
+    { "en": "Football is a sport.", "cn": "足球是运动。", "level": 2 },
+    { "en": "Doing sports is good for our body and mind.", "cn": "运动对身心都好。", "level": 3 }
+  ],
+  "race": [
+    { "en": "A race.", "cn": "一场比赛。", "level": 1 },
+    { "en": "Run the race.", "cn": "跑这场比赛。", "level": 2 },
+    { "en": "Tom won first place in the hundred-meter race.", "cn": "汤姆百米赛跑得了第一。", "level": 3 }
+  ],
+  "team": [
+    { "en": "A team.", "cn": "一个队。", "level": 1 },
+    { "en": "We are a team.", "cn": "我们是一队。", "level": 2 },
+    { "en": "Our team works together and helps each other win.", "cn": "我们队合作互助才能赢。", "level": 3 }
+  ],
+  "win": [
+    { "en": "We win!", "cn": "我们赢了！", "level": 1 },
+    { "en": "I want to win.", "cn": "我想赢。", "level": 2 },
+    { "en": "If we practise harder, we will win the next match.", "cn": "再努力训练，下场比赛我们会赢。", "level": 3 }
+  ],
+  "lose": [
+    { "en": "Don't lose hope.", "cn": "别失去希望。", "level": 1 },
+    { "en": "We lost the game.", "cn": "我们输了。", "level": 2 },
+    { "en": "Even when you lose, you still learn something important.", "cn": "就算输了，你也学到了重要的东西。", "level": 3 }
+  ],
+  "jump": [
+    { "en": "Jump high!", "cn": "跳高！", "level": 1 },
+    { "en": "I can jump far.", "cn": "我跳得远。", "level": 2 },
+    { "en": "He jumped over two meters in the long jump.", "cn": "他跳远跳过了两米。", "level": 3 }
+  ],
+  "throw": [
+    { "en": "Throw it.", "cn": "扔过来。", "level": 1 },
+    { "en": "Throw the ball.", "cn": "扔球。", "level": 2 },
+    { "en": "He threw the small ball more than thirty meters.", "cn": "他把小球扔出三十多米。", "level": 3 }
+  ],
+  "cheer": [
+    { "en": "Cheer!", "cn": "加油！", "level": 1 },
+    { "en": "Cheer for our team.", "cn": "为我们队加油。", "level": 2 },
+    { "en": "All the parents cheered loudly from the side of the field.", "cn": "所有家长在场边大声加油。", "level": 3 }
+  ]
+}

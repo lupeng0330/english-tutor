@@ -1,0 +1,42 @@
+{
+  "dream": [
+    { "en": "My dream.", "cn": "我的梦想。", "level": 1 },
+    { "en": "Follow your dream.", "cn": "追逐梦想。", "level": 2 },
+    { "en": "Hold on to your dream — it shines on dark days.", "cn": "守住梦想——它在黑暗的日子里闪光。", "level": 3 }
+  ],
+  "job": [
+    { "en": "A good job.", "cn": "一份好工作。", "level": 1 },
+    { "en": "My dad's job.", "cn": "爸爸的工作。", "level": 2 },
+    { "en": "Choose a job that you really love.", "cn": "选一份你真正热爱的工作。", "level": 3 }
+  ],
+  "doctor": [
+    { "en": "A doctor.", "cn": "医生。", "level": 1 },
+    { "en": "My mum is a doctor.", "cn": "我妈是医生。", "level": 2 },
+    { "en": "A good doctor saves many lives every year.", "cn": "好医生每年挽救许多生命。", "level": 3 }
+  ],
+  "teacher": [
+    { "en": "My teacher.", "cn": "我的老师。", "level": 1 },
+    { "en": "A great teacher.", "cn": "一位好老师。", "level": 2 },
+    { "en": "Teachers light the way for the young generation.", "cn": "老师为年轻一代点亮道路。", "level": 3 }
+  ],
+  "engineer": [
+    { "en": "An engineer.", "cn": "一位工程师。", "level": 1 },
+    { "en": "An engineer builds bridges.", "cn": "工程师建桥。", "level": 2 },
+    { "en": "Engineers design the tall buildings we live in.", "cn": "工程师设计我们居住的高楼。", "level": 3 }
+  ],
+  "scientist": [
+    { "en": "A scientist.", "cn": "一位科学家。", "level": 1 },
+    { "en": "A famous scientist.", "cn": "一位著名科学家。", "level": 2 },
+    { "en": "Scientists try to find answers to the big questions.", "cn": "科学家努力寻找重大问题的答案。", "level": 3 }
+  ],
+  "writer": [
+    { "en": "A writer.", "cn": "一位作家。", "level": 1 },
+    { "en": "She is a writer.", "cn": "她是作家。", "level": 2 },
+    { "en": "A writer can take readers to other worlds.", "cn": "作家能把读者带去别的世界。", "level": 3 }
+  ],
+  "work hard": [
+    { "en": "Work hard.", "cn": "努力。", "level": 1 },
+    { "en": "Work hard for it.", "cn": "为它努力。", "level": 2 },
+    { "en": "If you work hard, your dream will come true one day.", "cn": "努力下去，梦想终有一天会实现。", "level": 3 }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 Sports for Life",
+  "words": [
+    { "word": "sport", "phonetic": "/spɔːt/", "meaning": "[n.] 运动", "example": "Sport is fun." },
+    { "word": "football", "phonetic": "/ˈfʊtbɔːl/", "meaning": "[n.] 足球", "example": "Play football." },
+    { "word": "basketball", "phonetic": "/ˈbɑːskɪtbɔːl/", "meaning": "[n.] 篮球", "example": "He likes basketball." },
+    { "word": "swimming", "phonetic": "/ˈswɪmɪŋ/", "meaning": "[n.] 游泳", "example": "Swimming is healthy." },
+    { "word": "running", "phonetic": "/ˈrʌnɪŋ/", "meaning": "[n.] 跑步", "example": "Running every day." },
+    { "word": "match", "phonetic": "/mætʃ/", "meaning": "[n.] 比赛", "example": "A football match." },
+    { "word": "champion", "phonetic": "/ˈtʃæmpiən/", "meaning": "[n.] 冠军", "example": "She is a champion." },
+    { "word": "energy", "phonetic": "/ˈenədʒi/", "meaning": "[n.] 能量", "example": "Full of energy." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Match day",
+      "en": "Anna: Ben, are you ready for the football match today?\nBen: Of course! Our team has practised for two weeks.\nAnna: I'll cheer for you. Last year you were the champion.\nBen: Sport gives me energy and friends.\nAnna: I love running too. Let's keep doing sports for life.",
+      "cn": "安娜：本，今天足球比赛准备好了吗？\n本：当然！我们队练了两周。\n安娜：我给你加油，你去年是冠军呢。\n本：运动让我有活力，有朋友。\n安娜：我也爱跑步，一辈子坚持运动！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Sports for life",
+      "en": "Sport is more than a game. Football and basketball teach us teamwork. Swimming and running build a strong body. Win or lose, every match makes us better. Champions are not born — they practise every day. Start a sport early and you'll stay healthy, full of energy, and friends, for your whole life.",
+      "cn": "运动不只是游戏。足球篮球教我们团队精神。游泳跑步强健体魄。无论输赢，每场比赛都让我们更好。冠军不是天生的——他们每天练。早开始一项运动，你一辈子都会健康、有活力、有朋友。"
+    }
+  ]
+}

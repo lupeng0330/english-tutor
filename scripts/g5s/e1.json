@@ -1,0 +1,42 @@
+{
+  "new": [
+    { "en": "A new year.", "cn": "新一年。", "level": 1 },
+    { "en": "I have a new bag.", "cn": "我有个新书包。", "level": 2 },
+    { "en": "Starting a new school year always feels exciting.", "cn": "开始新学年总是让人激动。", "level": 3 }
+  ],
+  "term": [
+    { "en": "A new term.", "cn": "新学期。", "level": 1 },
+    { "en": "This term is busy.", "cn": "这学期很忙。", "level": 2 },
+    { "en": "We have many group projects this term.", "cn": "这学期我们有很多小组项目。", "level": 3 }
+  ],
+  "classmate": [
+    { "en": "My classmate.", "cn": "我的同学。", "level": 1 },
+    { "en": "He sits next to me.", "cn": "他坐我旁边。", "level": 2 },
+    { "en": "I have made three new classmates this week.", "cn": "这周我交了三个新同学。", "level": 3 }
+  ],
+  "introduce": [
+    { "en": "Introduce yourself.", "cn": "做个自我介绍。", "level": 1 },
+    { "en": "Let me introduce my friend.", "cn": "我介绍下我朋友。", "level": 2 },
+    { "en": "Please introduce yourself to the class with a smile.", "cn": "请微笑着向全班做自我介绍。", "level": 3 }
+  ],
+  "hope": [
+    { "en": "I hope so.", "cn": "我希望如此。", "level": 1 },
+    { "en": "I hope to learn a lot.", "cn": "我希望学到很多。", "level": 2 },
+    { "en": "I hope my classmates and I become close friends.", "cn": "希望我和同学们成为亲密的朋友。", "level": 3 }
+  ],
+  "grade": [
+    { "en": "Grade five.", "cn": "五年级。", "level": 1 },
+    { "en": "I am in Grade 5.", "cn": "我五年级。", "level": 2 },
+    { "en": "Students in Grade 5 study many new subjects.", "cn": "五年级的学生要学很多新科目。", "level": 3 }
+  ],
+  "schedule": [
+    { "en": "The schedule.", "cn": "课程表。", "level": 1 },
+    { "en": "Look at the schedule.", "cn": "看课程表。", "level": 2 },
+    { "en": "Our new schedule has English class every morning.", "cn": "新课表每天早上都有英语课。", "level": 3 }
+  ],
+  "exciting": [
+    { "en": "How exciting!", "cn": "好激动！", "level": 1 },
+    { "en": "It's an exciting day.", "cn": "这是激动人心的一天。", "level": 2 },
+    { "en": "Starting Grade 5 is the most exciting moment of the year.", "cn": "升入五年级是一年中最激动的时刻。", "level": 3 }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u4",
+  "title": "Unit 4 Tourist Spots",
+  "words": [
+    { "word": "tourist", "phonetic": "/ˈtʊərɪst/", "meaning": "[n.] 游客", "example": "Many tourists come here." },
+    { "word": "spot", "phonetic": "/spɒt/", "meaning": "[n.] 地点", "example": "A famous spot." },
+    { "word": "city", "phonetic": "/ˈsɪti/", "meaning": "[n.] 城市", "example": "A big city." },
+    { "word": "country", "phonetic": "/ˈkʌntri/", "meaning": "[n.] 国家", "example": "Visit another country." },
+    { "word": "Great Wall", "phonetic": "/ɡreɪt wɔːl/", "meaning": "[n.] 长城", "example": "The Great Wall is amazing." },
+    { "word": "park", "phonetic": "/pɑːk/", "meaning": "[n.] 公园", "example": "A theme park." },
+    { "word": "museum", "phonetic": "/mjuˈziːəm/", "meaning": "[n.] 博物馆", "example": "Visit the museum." },
+    { "word": "famous", "phonetic": "/ˈfeɪməs/", "meaning": "[adj.] 著名的", "example": "A famous place." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Where will you go?",
+      "en": "Ben: Anna, which tourist spot do you want to see most?\nAnna: I want to visit the Great Wall and the Forbidden City.\nBen: Cool! I want to see a science museum in Shanghai.\nAnna: There are so many famous spots in our country.\nBen: A trip is the best way to learn about a city.",
+      "cn": "本：安娜，你最想去哪个景点？\n安娜：长城和故宫。\n本：酷！我想去上海的科技馆。\n安娜：我们国家有那么多名胜。\n本：旅行是了解一座城市最好的方式。"
+    },
+    {
+      "page": "Reading Room",
+      "title": "Famous spots in China",
+      "en": "China has many famous tourist spots. The Great Wall is over two thousand years old. The Forbidden City in Beijing has more than nine thousand rooms. In Xi'an, you can see the amazing Terracotta Army. In Shanghai, the modern science museum surprises every visitor. Every city has its own special place — go and explore them all!",
+      "cn": "中国有很多著名景点。长城已有两千多年历史。北京故宫有九千多间房。在西安能看到神奇的兵马俑。上海现代科技馆让每个游客惊叹。每座城市都有自己的特别之处——去探索吧！"
+    }
+  ]
+}

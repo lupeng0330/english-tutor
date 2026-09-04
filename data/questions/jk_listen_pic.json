@@ -1,0 +1,892 @@
+[
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片",
+    "audioText": "M: It's sunny today.",
+    "audioFile": "listen_pic_01.mp3",
+    "options": ["☀️", "🌧️", "☁️"],
+    "answer": 0,
+    "explain": "音频说 sunny，对应太阳"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片",
+    "audioText": "W: I like cats.",
+    "audioFile": "listen_pic_02.mp3",
+    "options": ["🐱", "🐶", "🐦"],
+    "answer": 0,
+    "explain": "音频说 cats，对应猫"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_01",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: This is my school bag.",
+    "audioFile": "",
+    "options": [
+      "🎒",
+      "📚",
+      "✏️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 school bag。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U1_B2_02",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The pencil is red.",
+    "audioFile": "",
+    "options": [
+      "✏️",
+      "📘",
+      "🖊️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 red pencil。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_03",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I have a big family.",
+    "audioFile": "",
+    "options": [
+      "👨‍👩‍👧",
+      "🏫",
+      "🐶"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 big family。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U2_B2_04",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The duck is yellow.",
+    "audioFile": "",
+    "options": [
+      "🦆",
+      "🐱",
+      "🐟"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 yellow duck。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_05",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I like the toy car.",
+    "audioFile": "",
+    "options": [
+      "🚗",
+      "🚌",
+      "🚲"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 toy car。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U3_B2_06",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I have two hands.",
+    "audioFile": "",
+    "options": [
+      "👐",
+      "👂",
+      "👃"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 two hands。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_07",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I want an apple.",
+    "audioFile": "",
+    "options": [
+      "🍎",
+      "🍌",
+      "🍐"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 an apple。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U4_B2_08",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: It is a sunny day.",
+    "audioFile": "",
+    "options": [
+      "☀️",
+      "🌧️",
+      "☁️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 sunny day。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U5_B2_09",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: My ruler is blue.",
+    "audioFile": "",
+    "options": [
+      "📏",
+      "✂️",
+      "🧃"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 blue ruler。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U6_B2_10",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: A little bird can sing.",
+    "audioFile": "",
+    "options": [
+      "🐦",
+      "🐸",
+      "🐰"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 little bird。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U7_B2_11",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The tree is green.",
+    "audioFile": "",
+    "options": [
+      "🌳",
+      "🌸",
+      "🏠"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 green tree。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "上",
+    "code": "3A_U8_B2_12",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The boy is happy.",
+    "audioFile": "",
+    "options": [
+      "🙂",
+      "😢",
+      "😴"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 happy boy。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_01",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I see a white rabbit.",
+    "audioFile": "",
+    "options": [
+      "🐰",
+      "🐢",
+      "🐱"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 white rabbit。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U1_B2_02",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: This is my new T-shirt.",
+    "audioFile": "",
+    "options": [
+      "👕",
+      "👟",
+      "🎒"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 new T-shirt。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_03",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I have three books.",
+    "audioFile": "",
+    "options": [
+      "📚",
+      "✏️",
+      "🧸"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 three books。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U2_B2_04",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: My desk is clean.",
+    "audioFile": "",
+    "options": [
+      "🪑",
+      "🚪",
+      "🪟"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 clean desk。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_05",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I can run fast.",
+    "audioFile": "",
+    "options": [
+      "🏃",
+      "🚶",
+      "🛌"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 run fast。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U3_B2_06",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I like orange juice.",
+    "audioFile": "",
+    "options": [
+      "🧃",
+      "🥛",
+      "☕"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 orange juice。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_07",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The park gate is big.",
+    "audioFile": "",
+    "options": [
+      "🏞️",
+      "🏫",
+      "🏥"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 park gate。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U4_B2_08",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: This is a small house.",
+    "audioFile": "",
+    "options": [
+      "🏠",
+      "🏬",
+      "🏰"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 small house。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U5_B2_09",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The dog is brown.",
+    "audioFile": "",
+    "options": [
+      "🐶",
+      "🐱",
+      "🐭"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 brown dog。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U6_B2_10",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Her dress is pink.",
+    "audioFile": "",
+    "options": [
+      "👗",
+      "🧢",
+      "🧤"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 pink dress。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U7_B2_11",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I can count ten stars.",
+    "audioFile": "",
+    "options": [
+      "⭐",
+      "🌙",
+      "☀️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 ten stars。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 3,
+    "term": "下",
+    "code": "3B_U8_B2_12",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Please open the door.",
+    "audioFile": "",
+    "options": [
+      "🚪",
+      "🪟",
+      "🧱"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 open door。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_01",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: We have English today.",
+    "audioFile": "",
+    "options": [
+      "🇬🇧",
+      "➗",
+      "🎨"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 English class。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U1_B2_02",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The music room is clean.",
+    "audioFile": "",
+    "options": [
+      "🎵",
+      "⚽",
+      "📖"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 music room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_03",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: It is Monday morning.",
+    "audioFile": "",
+    "options": [
+      "📅",
+      "🌙",
+      "⭐"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 Monday morning。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U2_B2_04",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: My aunt is a doctor.",
+    "audioFile": "",
+    "options": [
+      "👩‍⚕️",
+      "👨‍🍳",
+      "👮"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 a doctor。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_05",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Dad is in the living room.",
+    "audioFile": "",
+    "options": [
+      "🛋️",
+      "🛏️",
+      "🚿"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 living room。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U3_B2_06",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Autumn is cool.",
+    "audioFile": "",
+    "options": [
+      "🍂",
+      "❄️",
+      "🌸"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 cool autumn。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_07",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I go to school by bus.",
+    "audioFile": "",
+    "options": [
+      "🚌",
+      "🚲",
+      "🚢"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 school bus。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U4_B2_08",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: There is a small shop.",
+    "audioFile": "",
+    "options": [
+      "🏪",
+      "🏥",
+      "🏫"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 small shop。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U5_B2_09",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: This is my math book.",
+    "audioFile": "",
+    "options": [
+      "📘",
+      "🎾",
+      "🥣"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 math book。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U6_B2_10",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: They play chess after school.",
+    "audioFile": "",
+    "options": [
+      "♟️",
+      "🎤",
+      "🖌️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 play chess。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U7_B2_11",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: We have a party on Friday.",
+    "audioFile": "",
+    "options": [
+      "🎉",
+      "📚",
+      "🧹"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 Friday party。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "上",
+    "code": "4A_U8_B2_12",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The train station is near.",
+    "audioFile": "",
+    "options": [
+      "🚉",
+      "🏖️",
+      "🌳"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 train station。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_01",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Drink some warm water.",
+    "audioFile": "",
+    "options": [
+      "🥤",
+      "🍦",
+      "🍰"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 warm water。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U1_B2_02",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Turn left at the shop.",
+    "audioFile": "",
+    "options": [
+      "⬅️",
+      "➡️",
+      "⬆️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 turn left。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_03",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: We watch a dragon boat race.",
+    "audioFile": "",
+    "options": [
+      "🚣",
+      "🎄",
+      "🎃"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 dragon boat。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U2_B2_04",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The library is in the city.",
+    "audioFile": "",
+    "options": [
+      "🏛️",
+      "🏝️",
+      "⛺"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 city library。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_05",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I wash clothes on Sunday.",
+    "audioFile": "",
+    "options": [
+      "🧺",
+      "🍳",
+      "🛒"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 wash clothes。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U3_B2_06",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: We have a family picnic.",
+    "audioFile": "",
+    "options": [
+      "🧺",
+      "🚌",
+      "🏥"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 family picnic。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_07",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: The football game is fun.",
+    "audioFile": "",
+    "options": [
+      "⚽",
+      "🏀",
+      "🏓"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 football game。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U4_B2_08",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I read a story in the library.",
+    "audioFile": "",
+    "options": [
+      "📖",
+      "🎮",
+      "🎧"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 read a story。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U5_B2_09",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Vegetables are healthy food.",
+    "audioFile": "",
+    "options": [
+      "🥗",
+      "🍟",
+      "🍬"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 healthy food。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U6_B2_10",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Go straight and you can see it.",
+    "audioFile": "",
+    "options": [
+      "⬆️",
+      "⬅️",
+      "➡️"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 go straight。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U7_B2_11",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: Spring Festival is happy.",
+    "audioFile": "",
+    "options": [
+      "🧧",
+      "🎂",
+      "🪁"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 spring festival。",
+    "source": "b2_primary_v01"
+  },
+  {
+    "grade": 4,
+    "term": "下",
+    "code": "4B_U8_B2_12",
+    "type": "listen_pic",
+    "difficulty": 1,
+    "q": "请听录音，选择正确的图片。",
+    "audioText": "W: I clean my room every week.",
+    "audioFile": "",
+    "options": [
+      "🧹",
+      "🛌",
+      "🧸"
+    ],
+    "answer": 0,
+    "explain": "录音关键词为 clean room。",
+    "source": "b2_primary_v01"
+  }
+]

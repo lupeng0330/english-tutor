@@ -1,0 +1,2364 @@
+{
+  "words": {
+    "genius": [
+      {
+        "en": "He is a genius.",
+        "cn": "他是个天才。",
+        "level": 1,
+        "audioFile": "ex_b7e53533db.mp3"
+      },
+      {
+        "en": "Einstein was a genius in science.",
+        "cn": "爱因斯坦是科学界的天才。",
+        "level": 2,
+        "audioFile": "ex_6cea29e4a8.mp3"
+      },
+      {
+        "en": "True genius often comes from hard work, not just talent.",
+        "cn": "真正的天才往往源于努力，而不仅是天赋。",
+        "level": 3,
+        "audioFile": "ex_7b9612a117.mp3"
+      }
+    ],
+    "philosopher": [
+      {
+        "en": "Confucius was a philosopher.",
+        "cn": "孔子是一位哲学家。",
+        "level": 1,
+        "audioFile": "ex_b6367cca73.mp3"
+      },
+      {
+        "en": "The philosopher taught people how to live well.",
+        "cn": "这位哲学家教导人们如何好好生活。",
+        "level": 2,
+        "audioFile": "ex_360c7b410a.mp3"
+      },
+      {
+        "en": "Ancient philosophers asked deep questions about life and the world.",
+        "cn": "古代哲学家提出了关于人生和世界的深刻问题。",
+        "level": 3,
+        "audioFile": "ex_0214b6129a.mp3"
+      }
+    ],
+    "influence": [
+      {
+        "en": "He has great influence.",
+        "cn": "他有很大的影响力。",
+        "level": 1,
+        "audioFile": "ex_1b2775c953.mp3"
+      },
+      {
+        "en": "His ideas still influence us today.",
+        "cn": "他的思想至今仍影响着我们。",
+        "level": 2,
+        "audioFile": "ex_717fe69111.mp3"
+      },
+      {
+        "en": "The wise man's influence has lasted for thousands of years.",
+        "cn": "这位智者的影响力延续了数千年。",
+        "level": 3,
+        "audioFile": "ex_cadae8460a.mp3"
+      }
+    ],
+    "virtue": [
+      {
+        "en": "Honesty is a virtue.",
+        "cn": "诚实是一种美德。",
+        "level": 1,
+        "audioFile": "ex_7ff673e8e3.mp3"
+      },
+      {
+        "en": "Kindness is an important virtue.",
+        "cn": "善良是一种重要的美德。",
+        "level": 2,
+        "audioFile": "ex_855bd439f0.mp3"
+      },
+      {
+        "en": "Ancient thinkers believed virtue was more valuable than wealth.",
+        "cn": "古代思想家认为美德比财富更可贵。",
+        "level": 3,
+        "audioFile": "ex_a4d9a754e8.mp3"
+      }
+    ],
+    "respect": [
+      {
+        "en": "I respect my teacher.",
+        "cn": "我尊敬我的老师。",
+        "level": 1,
+        "audioFile": "ex_384d9632a3.mp3"
+      },
+      {
+        "en": "We should respect older people.",
+        "cn": "我们应该尊敬长者。",
+        "level": 2,
+        "audioFile": "ex_9ed370d2e9.mp3"
+      },
+      {
+        "en": "A humble scholar earns respect through his wisdom, not his power.",
+        "cn": "谦逊的学者靠智慧而非权力赢得尊敬。",
+        "level": 3,
+        "audioFile": "ex_1c68552b35.mp3"
+      }
+    ],
+    "wisdom": [
+      {
+        "en": "He has great wisdom.",
+        "cn": "他很有智慧。",
+        "level": 1,
+        "audioFile": "ex_cfd3cead9d.mp3"
+      },
+      {
+        "en": "We can learn wisdom from old stories.",
+        "cn": "我们能从古老的故事中学到智慧。",
+        "level": 2,
+        "audioFile": "ex_74f90e9fe7.mp3"
+      },
+      {
+        "en": "The wisdom of ancient thinkers still guides us today.",
+        "cn": "古代思想家的智慧至今仍指引着我们。",
+        "level": 3,
+        "audioFile": "ex_d0baa5e9c4.mp3"
+      }
+    ],
+    "disciple": [
+      {
+        "en": "He is a disciple of the master.",
+        "cn": "他是这位大师的弟子。",
+        "level": 1,
+        "audioFile": "ex_5a3289f2be.mp3"
+      },
+      {
+        "en": "Confucius had many disciples.",
+        "cn": "孔子有许多弟子。",
+        "level": 2,
+        "audioFile": "ex_2805567f07.mp3"
+      },
+      {
+        "en": "The disciples wrote down their teacher's wise words.",
+        "cn": "弟子们记下了老师的智慧之言。",
+        "level": 3,
+        "audioFile": "ex_4429b3ce32.mp3"
+      }
+    ],
+    "scholar": [
+      {
+        "en": "She is a famous scholar.",
+        "cn": "她是位著名的学者。",
+        "level": 1,
+        "audioFile": "ex_dd2c015e66.mp3"
+      },
+      {
+        "en": "The scholar studied ancient books for years.",
+        "cn": "这位学者钻研古书多年。",
+        "level": 2,
+        "audioFile": "ex_2febe34695.mp3"
+      },
+      {
+        "en": "A respected scholar shares his knowledge with the whole world.",
+        "cn": "一位受人尊敬的学者会把知识分享给全世界。",
+        "level": 3,
+        "audioFile": "ex_fdf9fe8ba6.mp3"
+      }
+    ],
+    "humble": [
+      {
+        "en": "He is a humble man.",
+        "cn": "他是个谦虚的人。",
+        "level": 1,
+        "audioFile": "ex_53543d5ea6.mp3"
+      },
+      {
+        "en": "A wise person stays humble.",
+        "cn": "聪明的人保持谦逊。",
+        "level": 2,
+        "audioFile": "ex_a5637f72c6.mp3"
+      },
+      {
+        "en": "Even with great knowledge, the scholar remained humble all his life.",
+        "cn": "尽管学识渊博，这位学者一生都保持谦逊。",
+        "level": 3,
+        "audioFile": "ex_8720b33bb6.mp3"
+      }
+    ],
+    "quote": [
+      {
+        "en": "I like this quote.",
+        "cn": "我喜欢这句名言。",
+        "level": 1,
+        "audioFile": "ex_4798e930fe.mp3"
+      },
+      {
+        "en": "He often quotes Confucius.",
+        "cn": "他常引用孔子的话。",
+        "level": 2,
+        "audioFile": "ex_9bfac0473d.mp3"
+      },
+      {
+        "en": "This famous quote teaches us to learn from our mistakes.",
+        "cn": "这句名言教导我们从错误中学习。",
+        "level": 3,
+        "audioFile": "ex_2e333806dd.mp3"
+      }
+    ],
+    "ancient": [
+      {
+        "en": "This is an ancient city.",
+        "cn": "这是一座古城。",
+        "level": 1,
+        "audioFile": "ex_cd985579f8.mp3"
+      },
+      {
+        "en": "Ancient people were very wise.",
+        "cn": "古代人非常有智慧。",
+        "level": 2,
+        "audioFile": "ex_b2eefbba61.mp3"
+      },
+      {
+        "en": "Ancient thinkers left us a great legacy of wisdom.",
+        "cn": "古代思想家给我们留下了宝贵的智慧遗产。",
+        "level": 3,
+        "audioFile": "ex_3e8c70ecc6.mp3"
+      }
+    ],
+    "dynasty": [
+      {
+        "en": "The Tang Dynasty was great.",
+        "cn": "唐朝很伟大。",
+        "level": 1,
+        "audioFile": "ex_3693596e86.mp3"
+      },
+      {
+        "en": "Many wise men lived in the Han Dynasty.",
+        "cn": "许多智者生活在汉朝。",
+        "level": 2,
+        "audioFile": "ex_35f9ced630.mp3"
+      },
+      {
+        "en": "Each dynasty in history produced its own famous thinkers.",
+        "cn": "历史上每个朝代都产生了自己著名的思想家。",
+        "level": 3,
+        "audioFile": "ex_ca2aa6ec6a.mp3"
+      }
+    ],
+    "thinker": [
+      {
+        "en": "He is a deep thinker.",
+        "cn": "他是个善于思考的人。",
+        "level": 1,
+        "audioFile": "ex_faa1ec92ba.mp3"
+      },
+      {
+        "en": "Great thinkers change the world.",
+        "cn": "伟大的思想家改变世界。",
+        "level": 2,
+        "audioFile": "ex_7b00e58e96.mp3"
+      },
+      {
+        "en": "The ideas of great thinkers still influence how we live.",
+        "cn": "伟大思想家的理念至今仍影响着我们的生活方式。",
+        "level": 3,
+        "audioFile": "ex_7c46f89d61.mp3"
+      }
+    ],
+    "knowledge": [
+      {
+        "en": "Knowledge is power.",
+        "cn": "知识就是力量。",
+        "level": 1,
+        "audioFile": "ex_dd17f420c0.mp3"
+      },
+      {
+        "en": "We gain knowledge by reading.",
+        "cn": "我们通过阅读获取知识。",
+        "level": 2,
+        "audioFile": "ex_976a7d41a1.mp3"
+      },
+      {
+        "en": "A true scholar shares his knowledge to help others grow.",
+        "cn": "真正的学者会分享知识以帮助他人成长。",
+        "level": 3,
+        "audioFile": "ex_e90129ee70.mp3"
+      }
+    ],
+    "legacy": [
+      {
+        "en": "He left a great legacy.",
+        "cn": "他留下了宝贵的遗产。",
+        "level": 1,
+        "audioFile": "ex_06fde0ea37.mp3"
+      },
+      {
+        "en": "Their wisdom is a legacy for us.",
+        "cn": "他们的智慧是留给我们的遗产。",
+        "level": 2,
+        "audioFile": "ex_72eaee5b6b.mp3"
+      },
+      {
+        "en": "The legacy of ancient thinkers lives on in our culture today.",
+        "cn": "古代思想家的传承至今仍存活于我们的文化中。",
+        "level": 3,
+        "audioFile": "ex_9e77a13702.mp3"
+      }
+    ],
+    "invention": [
+      {
+        "en": "The phone is a great invention.",
+        "cn": "电话是伟大的发明。",
+        "level": 1,
+        "audioFile": "ex_1b22697de6.mp3"
+      },
+      {
+        "en": "His invention changed people's lives.",
+        "cn": "他的发明改变了人们的生活。",
+        "level": 2,
+        "audioFile": "ex_83077bf588.mp3"
+      },
+      {
+        "en": "Many famous inventions came after years of failed experiments.",
+        "cn": "许多著名的发明都是在多年失败的实验后才诞生的。",
+        "level": 3,
+        "audioFile": "ex_57c0b7850f.mp3"
+      }
+    ],
+    "discover": [
+      {
+        "en": "I want to discover new things.",
+        "cn": "我想发现新事物。",
+        "level": 1,
+        "audioFile": "ex_68aa97f047.mp3"
+      },
+      {
+        "en": "Scientists discovered a new planet.",
+        "cn": "科学家发现了一颗新行星。",
+        "level": 2,
+        "audioFile": "ex_47ecde1725.mp3"
+      },
+      {
+        "en": "Curious minds often discover what others have missed.",
+        "cn": "好奇的头脑常常发现别人忽略的东西。",
+        "level": 3,
+        "audioFile": "ex_6aac0af1ff.mp3"
+      }
+    ],
+    "experiment": [
+      {
+        "en": "We did an experiment.",
+        "cn": "我们做了一个实验。",
+        "level": 1,
+        "audioFile": "ex_f5938040f3.mp3"
+      },
+      {
+        "en": "The experiment was a success.",
+        "cn": "这个实验成功了。",
+        "level": 2,
+        "audioFile": "ex_5ea2644b17.mp3"
+      },
+      {
+        "en": "After many experiments, she finally proved her theory.",
+        "cn": "经过许多次实验，她终于证明了自己的理论。",
+        "level": 3,
+        "audioFile": "ex_e622e53712.mp3"
+      }
+    ],
+    "curious": [
+      {
+        "en": "Cats are curious.",
+        "cn": "猫很好奇。",
+        "level": 1,
+        "audioFile": "ex_1d051fd830.mp3"
+      },
+      {
+        "en": "A curious child asks many questions.",
+        "cn": "好奇的孩子会问很多问题。",
+        "level": 2,
+        "audioFile": "ex_cfdafbd9b3.mp3"
+      },
+      {
+        "en": "Great scientists are curious about everything around them.",
+        "cn": "伟大的科学家对周围的一切都充满好奇。",
+        "level": 3,
+        "audioFile": "ex_75b155e487.mp3"
+      }
+    ],
+    "laboratory": [
+      {
+        "en": "She works in a laboratory.",
+        "cn": "她在实验室工作。",
+        "level": 1,
+        "audioFile": "ex_57b4cb6123.mp3"
+      },
+      {
+        "en": "The scientist spends all day in the laboratory.",
+        "cn": "这位科学家整天待在实验室里。",
+        "level": 2,
+        "audioFile": "ex_947737be8e.mp3"
+      },
+      {
+        "en": "Many great discoveries were made in a quiet laboratory.",
+        "cn": "许多伟大的发现都是在安静的实验室里诞生的。",
+        "level": 3,
+        "audioFile": "ex_6c25af650e.mp3"
+      }
+    ],
+    "patient": [
+      {
+        "en": "Be patient, please.",
+        "cn": "请耐心一点。",
+        "level": 1,
+        "audioFile": "ex_23c1e5b62a.mp3"
+      },
+      {
+        "en": "A good scientist must be patient.",
+        "cn": "一名好科学家必须有耐心。",
+        "level": 2,
+        "audioFile": "ex_28ee3a8d08.mp3"
+      },
+      {
+        "en": "She was patient enough to repeat the experiment a hundred times.",
+        "cn": "她有足够的耐心把实验重复了一百次。",
+        "level": 3,
+        "audioFile": "ex_d2b3878bd0.mp3"
+      }
+    ],
+    "failure": [
+      {
+        "en": "Failure is normal.",
+        "cn": "失败是正常的。",
+        "level": 1,
+        "audioFile": "ex_357cd029a0.mp3"
+      },
+      {
+        "en": "Failure is the mother of success.",
+        "cn": "失败是成功之母。",
+        "level": 2,
+        "audioFile": "ex_25f58c1302.mp3"
+      },
+      {
+        "en": "Every failure taught the inventor something new and useful.",
+        "cn": "每一次失败都教给这位发明家一些新的、有用的东西。",
+        "level": 3,
+        "audioFile": "ex_7fbeaee0b7.mp3"
+      }
+    ],
+    "succeed": [
+      {
+        "en": "I want to succeed.",
+        "cn": "我想成功。",
+        "level": 1,
+        "audioFile": "ex_74ab9635ad.mp3"
+      },
+      {
+        "en": "He worked hard and succeeded.",
+        "cn": "他努力工作并取得了成功。",
+        "level": 2,
+        "audioFile": "ex_0678c6f0bb.mp3"
+      },
+      {
+        "en": "Those who never give up will succeed in the end.",
+        "cn": "永不放弃的人最终会成功。",
+        "level": 3,
+        "audioFile": "ex_e0d3912166.mp3"
+      }
+    ],
+    "theory": [
+      {
+        "en": "This is a new theory.",
+        "cn": "这是一个新理论。",
+        "level": 1,
+        "audioFile": "ex_3bd0871021.mp3"
+      },
+      {
+        "en": "Einstein's theory changed science.",
+        "cn": "爱因斯坦的理论改变了科学。",
+        "level": 2,
+        "audioFile": "ex_4e37861194.mp3"
+      },
+      {
+        "en": "A good theory must be proved by careful experiments.",
+        "cn": "好的理论必须通过细致的实验来证明。",
+        "level": 3,
+        "audioFile": "ex_cadd007595.mp3"
+      }
+    ],
+    "achievement": [
+      {
+        "en": "It is a great achievement.",
+        "cn": "这是一项伟大的成就。",
+        "level": 1,
+        "audioFile": "ex_3829e74e3e.mp3"
+      },
+      {
+        "en": "Landing on the moon was a huge achievement.",
+        "cn": "登上月球是一项巨大的成就。",
+        "level": 2,
+        "audioFile": "ex_33d690f47a.mp3"
+      },
+      {
+        "en": "Her greatest achievement was inspiring young scientists.",
+        "cn": "她最大的成就是激励了年轻的科学家。",
+        "level": 3,
+        "audioFile": "ex_ef40b3ff44.mp3"
+      }
+    ],
+    "talent": [
+      {
+        "en": "She has a talent for music.",
+        "cn": "她有音乐天赋。",
+        "level": 1,
+        "audioFile": "ex_c9dfc29116.mp3"
+      },
+      {
+        "en": "His talent showed at an early age.",
+        "cn": "他的天赋在很小的时候就显现了。",
+        "level": 2,
+        "audioFile": "ex_0ec0255b93.mp3"
+      },
+      {
+        "en": "Talent without hard work seldom leads to great achievement.",
+        "cn": "没有努力的天赋很少能带来伟大的成就。",
+        "level": 3,
+        "audioFile": "ex_60f4fbc591.mp3"
+      }
+    ],
+    "determined": [
+      {
+        "en": "He is determined to win.",
+        "cn": "他决心要赢。",
+        "level": 1,
+        "audioFile": "ex_1ecd92f79b.mp3"
+      },
+      {
+        "en": "She was determined to finish the work.",
+        "cn": "她决心完成这项工作。",
+        "level": 2,
+        "audioFile": "ex_d0e5578a5e.mp3"
+      },
+      {
+        "en": "A determined mind can overcome almost any difficulty.",
+        "cn": "坚定的意志几乎能战胜任何困难。",
+        "level": 3,
+        "audioFile": "ex_385db2e57e.mp3"
+      }
+    ],
+    "prize": [
+      {
+        "en": "She won a prize.",
+        "cn": "她赢得了一个奖。",
+        "level": 1,
+        "audioFile": "ex_79ff58b44e.mp3"
+      },
+      {
+        "en": "He got a prize for his invention.",
+        "cn": "他因发明获得了奖金。",
+        "level": 2,
+        "audioFile": "ex_88682905f5.mp3"
+      },
+      {
+        "en": "The Nobel Prize is given for great contributions to humankind.",
+        "cn": "诺贝尔奖颁给为人类做出巨大贡献的人。",
+        "level": 3,
+        "audioFile": "ex_9c14e107dc.mp3"
+      }
+    ],
+    "inspire": [
+      {
+        "en": "You inspire me.",
+        "cn": "你激励了我。",
+        "level": 1,
+        "audioFile": "ex_486d01e0f3.mp3"
+      },
+      {
+        "en": "Her story inspires young people.",
+        "cn": "她的故事激励着年轻人。",
+        "level": 2,
+        "audioFile": "ex_6582467c5d.mp3"
+      },
+      {
+        "en": "Great scientists inspire others to keep asking questions.",
+        "cn": "伟大的科学家激励他人不断追问。",
+        "level": 3,
+        "audioFile": "ex_b99516a5c9.mp3"
+      }
+    ],
+    "contribution": [
+      {
+        "en": "He made a contribution.",
+        "cn": "他做出了贡献。",
+        "level": 1,
+        "audioFile": "ex_963c73d51d.mp3"
+      },
+      {
+        "en": "She made a great contribution to science.",
+        "cn": "她对科学做出了巨大贡献。",
+        "level": 2,
+        "audioFile": "ex_100bff49a8.mp3"
+      },
+      {
+        "en": "His contributions to medicine saved millions of lives.",
+        "cn": "他对医学的贡献拯救了数百万人的生命。",
+        "level": 3,
+        "audioFile": "ex_c5568cf3a9.mp3"
+      }
+    ],
+    "environment": [
+      {
+        "en": "Protect the environment.",
+        "cn": "保护环境。",
+        "level": 1,
+        "audioFile": "ex_1e138d750b.mp3"
+      },
+      {
+        "en": "A clean environment keeps us healthy.",
+        "cn": "干净的环境让我们健康。",
+        "level": 2,
+        "audioFile": "ex_36690fc99b.mp3"
+      },
+      {
+        "en": "Everyone should help protect the environment from pollution.",
+        "cn": "每个人都应该帮助保护环境免受污染。",
+        "level": 3,
+        "audioFile": "ex_c8666779e8.mp3"
+      }
+    ],
+    "pollution": [
+      {
+        "en": "Pollution is harmful.",
+        "cn": "污染是有害的。",
+        "level": 1,
+        "audioFile": "ex_1ad1241f32.mp3"
+      },
+      {
+        "en": "Factories cause water pollution.",
+        "cn": "工厂造成水污染。",
+        "level": 2,
+        "audioFile": "ex_b7efe21e00.mp3"
+      },
+      {
+        "en": "We must reduce pollution to protect our neighbourhood.",
+        "cn": "我们必须减少污染来保护我们的社区。",
+        "level": 3,
+        "audioFile": "ex_21232e5a74.mp3"
+      }
+    ],
+    "damage": [
+      {
+        "en": "The storm caused damage.",
+        "cn": "暴风雨造成了破坏。",
+        "level": 1,
+        "audioFile": "ex_0f22b49231.mp3"
+      },
+      {
+        "en": "Waste can damage the environment.",
+        "cn": "垃圾会破坏环境。",
+        "level": 2,
+        "audioFile": "ex_cac067f5da.mp3"
+      },
+      {
+        "en": "Air pollution does serious damage to people's health.",
+        "cn": "空气污染对人们的健康造成严重损害。",
+        "level": 3,
+        "audioFile": "ex_b0bdbcbab7.mp3"
+      }
+    ],
+    "waste": [
+      {
+        "en": "Don't waste water.",
+        "cn": "不要浪费水。",
+        "level": 1,
+        "audioFile": "ex_2beb619ce8.mp3"
+      },
+      {
+        "en": "We should not throw waste into rivers.",
+        "cn": "我们不应把垃圾扔进河里。",
+        "level": 2,
+        "audioFile": "ex_1bff29e41c.mp3"
+      },
+      {
+        "en": "Sorting waste makes it easier to recycle and reduce pollution.",
+        "cn": "垃圾分类让回收和减少污染更容易。",
+        "level": 3,
+        "audioFile": "ex_86aa66afee.mp3"
+      }
+    ],
+    "reduce": [
+      {
+        "en": "Reduce the waste.",
+        "cn": "减少垃圾。",
+        "level": 1,
+        "audioFile": "ex_cc85216c2c.mp3"
+      },
+      {
+        "en": "We should reduce the use of plastic.",
+        "cn": "我们应该减少塑料的使用。",
+        "level": 2,
+        "audioFile": "ex_9e7fc5ccaf.mp3"
+      },
+      {
+        "en": "Riding a bike can reduce both pollution and traffic.",
+        "cn": "骑自行车既能减少污染也能减少交通拥堵。",
+        "level": 3,
+        "audioFile": "ex_6b0cd974ac.mp3"
+      }
+    ],
+    "recycle": [
+      {
+        "en": "We recycle paper.",
+        "cn": "我们回收纸张。",
+        "level": 1,
+        "audioFile": "ex_a779efc66e.mp3"
+      },
+      {
+        "en": "Please recycle these bottles.",
+        "cn": "请回收这些瓶子。",
+        "level": 2,
+        "audioFile": "ex_377966c6c5.mp3"
+      },
+      {
+        "en": "Recycling rubbish saves energy and protects the environment.",
+        "cn": "回收垃圾节约能源并保护环境。",
+        "level": 3,
+        "audioFile": "ex_09449e2aaa.mp3"
+      }
+    ],
+    "survey": [
+      {
+        "en": "We did a survey.",
+        "cn": "我们做了一次调查。",
+        "level": 1,
+        "audioFile": "ex_ec0232b894.mp3"
+      },
+      {
+        "en": "The survey was about recycling.",
+        "cn": "这次调查是关于回收的。",
+        "level": 2,
+        "audioFile": "ex_d7bd123f08.mp3"
+      },
+      {
+        "en": "Our survey showed that most citizens care about the environment.",
+        "cn": "我们的调查显示大多数公民关心环境。",
+        "level": 3,
+        "audioFile": "ex_b2f64c90c6.mp3"
+      }
+    ],
+    "questionnaire": [
+      {
+        "en": "Fill in the questionnaire.",
+        "cn": "填写这份问卷。",
+        "level": 1,
+        "audioFile": "ex_1806f18cf6.mp3"
+      },
+      {
+        "en": "We sent a questionnaire to every family.",
+        "cn": "我们给每个家庭发了一份问卷。",
+        "level": 2,
+        "audioFile": "ex_932a59e6a8.mp3"
+      },
+      {
+        "en": "The questionnaire asked people how they sort their rubbish.",
+        "cn": "这份问卷询问人们如何给垃圾分类。",
+        "level": 3,
+        "audioFile": "ex_8e3dd11a59.mp3"
+      }
+    ],
+    "neighbourhood": [
+      {
+        "en": "I live in a quiet neighbourhood.",
+        "cn": "我住在一个安静的街区。",
+        "level": 1,
+        "audioFile": "ex_5c5d5f2af0.mp3"
+      },
+      {
+        "en": "Our neighbourhood is clean and green.",
+        "cn": "我们的社区干净又绿色。",
+        "level": 2,
+        "audioFile": "ex_0ed25b4c98.mp3"
+      },
+      {
+        "en": "The citizens worked together to keep their neighbourhood clean.",
+        "cn": "居民们齐心协力保持社区整洁。",
+        "level": 3,
+        "audioFile": "ex_3a4fafb523.mp3"
+      }
+    ],
+    "rubbish": [
+      {
+        "en": "Pick up the rubbish.",
+        "cn": "把垃圾捡起来。",
+        "level": 1,
+        "audioFile": "ex_91e8d71a1f.mp3"
+      },
+      {
+        "en": "Put the rubbish in the bin.",
+        "cn": "把垃圾扔进垃圾箱。",
+        "level": 2,
+        "audioFile": "ex_713218ba89.mp3"
+      },
+      {
+        "en": "If everyone sorts their rubbish, recycling becomes much easier.",
+        "cn": "如果每个人都给垃圾分类，回收就会容易得多。",
+        "level": 3,
+        "audioFile": "ex_d69d209e60.mp3"
+      }
+    ],
+    "bin": [
+      {
+        "en": "Throw it in the bin.",
+        "cn": "把它扔进垃圾箱。",
+        "level": 1,
+        "audioFile": "ex_a2deed7b06.mp3"
+      },
+      {
+        "en": "There are three bins for sorting.",
+        "cn": "有三个分类垃圾箱。",
+        "level": 2,
+        "audioFile": "ex_1f57b74d68.mp3"
+      },
+      {
+        "en": "Different bins help us separate paper, plastic and food waste.",
+        "cn": "不同的垃圾箱帮助我们分开纸、塑料和厨余垃圾。",
+        "level": 3,
+        "audioFile": "ex_63033f1fa5.mp3"
+      }
+    ],
+    "citizen": [
+      {
+        "en": "I am a good citizen.",
+        "cn": "我是个好公民。",
+        "level": 1,
+        "audioFile": "ex_2d83532593.mp3"
+      },
+      {
+        "en": "Every citizen should protect nature.",
+        "cn": "每个公民都应该保护自然。",
+        "level": 2,
+        "audioFile": "ex_a44c9ee859.mp3"
+      },
+      {
+        "en": "Good citizens take responsibility for their public environment.",
+        "cn": "好公民对公共环境负起责任。",
+        "level": 3,
+        "audioFile": "ex_971b928edc.mp3"
+      }
+    ],
+    "public": [
+      {
+        "en": "This is a public park.",
+        "cn": "这是一个公共公园。",
+        "level": 1,
+        "audioFile": "ex_2652224607.mp3"
+      },
+      {
+        "en": "Keep the public places clean.",
+        "cn": "保持公共场所整洁。",
+        "level": 2,
+        "audioFile": "ex_8c9b393753.mp3"
+      },
+      {
+        "en": "Protecting public spaces is the duty of every citizen.",
+        "cn": "保护公共空间是每个公民的责任。",
+        "level": 3,
+        "audioFile": "ex_ee37239bdb.mp3"
+      }
+    ],
+    "destroy": [
+      {
+        "en": "Fire can destroy a forest.",
+        "cn": "火能毁掉一片森林。",
+        "level": 1,
+        "audioFile": "ex_994e9e786e.mp3"
+      },
+      {
+        "en": "Pollution destroys the environment.",
+        "cn": "污染破坏环境。",
+        "level": 2,
+        "audioFile": "ex_b351f0817a.mp3"
+      },
+      {
+        "en": "Cutting down trees destroys the homes of wild animals.",
+        "cn": "砍伐树木毁掉了野生动物的家园。",
+        "level": 3,
+        "audioFile": "ex_f4da05d0b9.mp3"
+      }
+    ],
+    "protect": [
+      {
+        "en": "Protect the trees.",
+        "cn": "保护树木。",
+        "level": 1,
+        "audioFile": "ex_44456e230b.mp3"
+      },
+      {
+        "en": "We must protect our rivers.",
+        "cn": "我们必须保护我们的河流。",
+        "level": 2,
+        "audioFile": "ex_55484ce3d3.mp3"
+      },
+      {
+        "en": "It is our duty to protect the environment for future generations.",
+        "cn": "保护环境、造福后代是我们的责任。",
+        "level": 3,
+        "audioFile": "ex_e084ff44ea.mp3"
+      }
+    ],
+    "solution": [
+      {
+        "en": "I found a solution.",
+        "cn": "我找到了解决办法。",
+        "level": 1,
+        "audioFile": "ex_f544e991dc.mp3"
+      },
+      {
+        "en": "There is a solution to every problem.",
+        "cn": "每个问题都有解决办法。",
+        "level": 2,
+        "audioFile": "ex_13bfa5a83b.mp3"
+      },
+      {
+        "en": "Clean energy is one solution to global warming.",
+        "cn": "清洁能源是应对全球变暖的一个办法。",
+        "level": 3,
+        "audioFile": "ex_0da9f5af96.mp3"
+      }
+    ],
+    "global": [
+      {
+        "en": "This is a global problem.",
+        "cn": "这是一个全球性问题。",
+        "level": 1,
+        "audioFile": "ex_d30f689321.mp3"
+      },
+      {
+        "en": "Global warming is getting worse.",
+        "cn": "全球变暖正在加剧。",
+        "level": 2,
+        "audioFile": "ex_5567561f85.mp3"
+      },
+      {
+        "en": "Global problems need every country to work together.",
+        "cn": "全球性问题需要每个国家共同努力。",
+        "level": 3,
+        "audioFile": "ex_18464a6dab.mp3"
+      }
+    ],
+    "warming": [
+      {
+        "en": "Global warming is real.",
+        "cn": "全球变暖是真实的。",
+        "level": 1,
+        "audioFile": "ex_7f7b4b4d62.mp3"
+      },
+      {
+        "en": "Global warming melts the ice.",
+        "cn": "全球变暖使冰川融化。",
+        "level": 2,
+        "audioFile": "ex_907b42dde4.mp3"
+      },
+      {
+        "en": "Global warming is caused mainly by burning coal and oil.",
+        "cn": "全球变暖主要由燃烧煤和石油造成。",
+        "level": 3,
+        "audioFile": "ex_4dab28433c.mp3"
+      }
+    ],
+    "carbon": [
+      {
+        "en": "Cars produce carbon.",
+        "cn": "汽车产生碳。",
+        "level": 1,
+        "audioFile": "ex_65349555dd.mp3"
+      },
+      {
+        "en": "We should cut carbon emissions.",
+        "cn": "我们应该减少碳排放。",
+        "level": 2,
+        "audioFile": "ex_864bbae6bb.mp3"
+      },
+      {
+        "en": "Using clean energy lowers the carbon we put into the air.",
+        "cn": "使用清洁能源能降低我们排入空气中的碳。",
+        "level": 3,
+        "audioFile": "ex_70656e5ff4.mp3"
+      }
+    ],
+    "emission": [
+      {
+        "en": "Cars cause emissions.",
+        "cn": "汽车造成排放。",
+        "level": 1,
+        "audioFile": "ex_74f4eae040.mp3"
+      },
+      {
+        "en": "We must reduce carbon emissions.",
+        "cn": "我们必须减少碳排放。",
+        "level": 2,
+        "audioFile": "ex_321724470a.mp3"
+      },
+      {
+        "en": "Lower emissions can slow down global warming.",
+        "cn": "降低排放能减缓全球变暖。",
+        "level": 3,
+        "audioFile": "ex_c4b478a9a6.mp3"
+      }
+    ],
+    "energy": [
+      {
+        "en": "Save energy.",
+        "cn": "节约能源。",
+        "level": 1,
+        "audioFile": "ex_743d941b60.mp3"
+      },
+      {
+        "en": "Solar power is clean energy.",
+        "cn": "太阳能是清洁能源。",
+        "level": 2,
+        "audioFile": "ex_3e87c6627b.mp3"
+      },
+      {
+        "en": "Renewable energy helps us protect the environment.",
+        "cn": "可再生能源帮助我们保护环境。",
+        "level": 3,
+        "audioFile": "ex_110fcf58a2.mp3"
+      }
+    ],
+    "renewable": [
+      {
+        "en": "Wind is renewable.",
+        "cn": "风能是可再生的。",
+        "level": 1,
+        "audioFile": "ex_71a211b12f.mp3"
+      },
+      {
+        "en": "Solar power is renewable energy.",
+        "cn": "太阳能是可再生能源。",
+        "level": 2,
+        "audioFile": "ex_8e0dd8b9f6.mp3"
+      },
+      {
+        "en": "Renewable energy from the sun and wind will never run out.",
+        "cn": "来自太阳和风的可再生能源永不枯竭。",
+        "level": 3,
+        "audioFile": "ex_eaaefa9840.mp3"
+      }
+    ],
+    "solar": [
+      {
+        "en": "Solar energy is clean.",
+        "cn": "太阳能很清洁。",
+        "level": 1,
+        "audioFile": "ex_9bf3aa641a.mp3"
+      },
+      {
+        "en": "Solar panels turn sunlight into power.",
+        "cn": "太阳能板把阳光变成电力。",
+        "level": 2,
+        "audioFile": "ex_80e72b7f74.mp3"
+      },
+      {
+        "en": "Many homes now use solar power instead of coal.",
+        "cn": "如今许多家庭用太阳能而非煤炭发电。",
+        "level": 3,
+        "audioFile": "ex_79aa7b714c.mp3"
+      }
+    ],
+    "electric": [
+      {
+        "en": "This is an electric car.",
+        "cn": "这是一辆电动车。",
+        "level": 1,
+        "audioFile": "ex_9797d70b05.mp3"
+      },
+      {
+        "en": "Electric cars produce less pollution.",
+        "cn": "电动车产生的污染更少。",
+        "level": 2,
+        "audioFile": "ex_ee144dd4d2.mp3"
+      },
+      {
+        "en": "Electric buses are a clean solution for busy cities.",
+        "cn": "电动公交车是繁忙城市的清洁解决方案。",
+        "level": 3,
+        "audioFile": "ex_c708237289.mp3"
+      }
+    ],
+    "forest": [
+      {
+        "en": "The forest is green.",
+        "cn": "森林是绿色的。",
+        "level": 1,
+        "audioFile": "ex_14bf92fc46.mp3"
+      },
+      {
+        "en": "Forests give us fresh air.",
+        "cn": "森林给我们新鲜空气。",
+        "level": 2,
+        "audioFile": "ex_4b28416cc0.mp3"
+      },
+      {
+        "en": "Protecting forests helps many species survive.",
+        "cn": "保护森林有助于许多物种生存。",
+        "level": 3,
+        "audioFile": "ex_e729dff497.mp3"
+      }
+    ],
+    "species": [
+      {
+        "en": "This is a rare species.",
+        "cn": "这是一个稀有物种。",
+        "level": 1,
+        "audioFile": "ex_112579c709.mp3"
+      },
+      {
+        "en": "Many species are in danger.",
+        "cn": "许多物种处于危险之中。",
+        "level": 2,
+        "audioFile": "ex_02384fbe95.mp3"
+      },
+      {
+        "en": "When forests disappear, whole species can become extinct.",
+        "cn": "森林消失时，整个物种都可能灭绝。",
+        "level": 3,
+        "audioFile": "ex_c311d77819.mp3"
+      }
+    ],
+    "extinct": [
+      {
+        "en": "Dinosaurs are extinct.",
+        "cn": "恐龙已经灭绝了。",
+        "level": 1,
+        "audioFile": "ex_d5784963ab.mp3"
+      },
+      {
+        "en": "Some animals became extinct long ago.",
+        "cn": "有些动物很久以前就灭绝了。",
+        "level": 2,
+        "audioFile": "ex_9fc1958692.mp3"
+      },
+      {
+        "en": "Without protection, many species may soon become extinct.",
+        "cn": "没有保护，许多物种可能很快灭绝。",
+        "level": 3,
+        "audioFile": "ex_97f69a14fc.mp3"
+      }
+    ],
+    "landfill": [
+      {
+        "en": "Rubbish goes to a landfill.",
+        "cn": "垃圾被运往填埋场。",
+        "level": 1,
+        "audioFile": "ex_4bed45916b.mp3"
+      },
+      {
+        "en": "Landfills are full of waste.",
+        "cn": "垃圾填埋场堆满了废物。",
+        "level": 2,
+        "audioFile": "ex_29fc1a9503.mp3"
+      },
+      {
+        "en": "Recycling more rubbish means we need fewer landfills.",
+        "cn": "回收更多垃圾意味着我们需要更少的填埋场。",
+        "level": 3,
+        "audioFile": "ex_faaad33e53.mp3"
+      }
+    ],
+    "campaign": [
+      {
+        "en": "We started a campaign.",
+        "cn": "我们发起了一项运动。",
+        "level": 1,
+        "audioFile": "ex_ce7d2a6c90.mp3"
+      },
+      {
+        "en": "The campaign asks people to save water.",
+        "cn": "这场运动呼吁人们节约用水。",
+        "level": 2,
+        "audioFile": "ex_00be5dde67.mp3"
+      },
+      {
+        "en": "The green campaign encouraged everyone to plant trees.",
+        "cn": "这场环保运动鼓励每个人种树。",
+        "level": 3,
+        "audioFile": "ex_8aeecb5572.mp3"
+      }
+    ],
+    "volunteer": [
+      {
+        "en": "I am a volunteer.",
+        "cn": "我是一名志愿者。",
+        "level": 1,
+        "audioFile": "ex_50558dab64.mp3"
+      },
+      {
+        "en": "Volunteers clean up the river.",
+        "cn": "志愿者们清理河流。",
+        "level": 2,
+        "audioFile": "ex_1c51f03e36.mp3"
+      },
+      {
+        "en": "Many volunteers joined the campaign to protect the environment.",
+        "cn": "许多志愿者加入了保护环境的运动。",
+        "level": 3,
+        "audioFile": "ex_972db4b469.mp3"
+      }
+    ],
+    "film": [
+      {
+        "en": "I watched a film.",
+        "cn": "我看了一部电影。",
+        "level": 1,
+        "audioFile": "ex_67f8704cbb.mp3"
+      },
+      {
+        "en": "This film is very exciting.",
+        "cn": "这部电影非常精彩。",
+        "level": 2,
+        "audioFile": "ex_a59c4659ce.mp3"
+      },
+      {
+        "en": "The film won an award for its touching story.",
+        "cn": "这部电影因感人的故事获奖。",
+        "level": 3,
+        "audioFile": "ex_9f4293a34b.mp3"
+      }
+    ],
+    "director": [
+      {
+        "en": "He is a film director.",
+        "cn": "他是一名电影导演。",
+        "level": 1,
+        "audioFile": "ex_5361f4f611.mp3"
+      },
+      {
+        "en": "The director made many great films.",
+        "cn": "这位导演拍了许多优秀的电影。",
+        "level": 2,
+        "audioFile": "ex_7ce7f8cca2.mp3"
+      },
+      {
+        "en": "A talented director can turn a simple story into a great film.",
+        "cn": "一位有才华的导演能把简单的故事拍成佳片。",
+        "level": 3,
+        "audioFile": "ex_e966b40655.mp3"
+      }
+    ],
+    "actor": [
+      {
+        "en": "He is a famous actor.",
+        "cn": "他是个著名演员。",
+        "level": 1,
+        "audioFile": "ex_116ca4e5e9.mp3"
+      },
+      {
+        "en": "The actor played the hero well.",
+        "cn": "这位演员把英雄演得很好。",
+        "level": 2,
+        "audioFile": "ex_5e0f09c862.mp3"
+      },
+      {
+        "en": "A good actor makes the audience believe the character is real.",
+        "cn": "好演员能让观众相信角色是真实的。",
+        "level": 3,
+        "audioFile": "ex_f04f3ac558.mp3"
+      }
+    ],
+    "actress": [
+      {
+        "en": "She is a young actress.",
+        "cn": "她是位年轻女演员。",
+        "level": 1,
+        "audioFile": "ex_f3b37447fb.mp3"
+      },
+      {
+        "en": "The actress won an award.",
+        "cn": "这位女演员获了奖。",
+        "level": 2,
+        "audioFile": "ex_6ce21c5ee9.mp3"
+      },
+      {
+        "en": "The talented actress moved the whole audience to tears.",
+        "cn": "这位有才华的女演员让全场观众落泪。",
+        "level": 3,
+        "audioFile": "ex_da5121cc93.mp3"
+      }
+    ],
+    "character": [
+      {
+        "en": "I like this character.",
+        "cn": "我喜欢这个角色。",
+        "level": 1,
+        "audioFile": "ex_17f71c45be.mp3"
+      },
+      {
+        "en": "The main character is very brave.",
+        "cn": "主角非常勇敢。",
+        "level": 2,
+        "audioFile": "ex_4eed917a02.mp3"
+      },
+      {
+        "en": "A good film has characters that feel like real people.",
+        "cn": "好电影里的角色让人感觉像真实的人。",
+        "level": 3,
+        "audioFile": "ex_91a92a399f.mp3"
+      }
+    ],
+    "scene": [
+      {
+        "en": "This scene is beautiful.",
+        "cn": "这个场景很美。",
+        "level": 1,
+        "audioFile": "ex_d4baf6d26e.mp3"
+      },
+      {
+        "en": "The fighting scene was exciting.",
+        "cn": "打斗场景很精彩。",
+        "level": 2,
+        "audioFile": "ex_b9902a10e9.mp3"
+      },
+      {
+        "en": "The final scene of the film made everyone cry.",
+        "cn": "电影的最后一幕让所有人都哭了。",
+        "level": 3,
+        "audioFile": "ex_abe2a31384.mp3"
+      }
+    ],
+    "plot": [
+      {
+        "en": "The plot is interesting.",
+        "cn": "情节很有趣。",
+        "level": 1,
+        "audioFile": "ex_7afe8ed4aa.mp3"
+      },
+      {
+        "en": "The film has an exciting plot.",
+        "cn": "这部电影情节精彩。",
+        "level": 2,
+        "audioFile": "ex_d24ed281e2.mp3"
+      },
+      {
+        "en": "A clever plot keeps the audience guessing until the end.",
+        "cn": "巧妙的情节让观众一直猜到最后。",
+        "level": 3,
+        "audioFile": "ex_b78d2ebff1.mp3"
+      }
+    ],
+    "review": [
+      {
+        "en": "I wrote a review.",
+        "cn": "我写了一篇影评。",
+        "level": 1,
+        "audioFile": "ex_770d4f4ff9.mp3"
+      },
+      {
+        "en": "The film got good reviews.",
+        "cn": "这部电影获得了好评。",
+        "level": 2,
+        "audioFile": "ex_0d4cbaa267.mp3"
+      },
+      {
+        "en": "Critics' reviews can help people decide which film to watch.",
+        "cn": "影评人的评论能帮人们决定看哪部电影。",
+        "level": 3,
+        "audioFile": "ex_827d767159.mp3"
+      }
+    ],
+    "produce": [
+      {
+        "en": "They produce films.",
+        "cn": "他们制作电影。",
+        "level": 1,
+        "audioFile": "ex_3b0ec52969.mp3"
+      },
+      {
+        "en": "It took a year to produce this film.",
+        "cn": "制作这部电影花了一年时间。",
+        "level": 2,
+        "audioFile": "ex_cf2b31d6e2.mp3"
+      },
+      {
+        "en": "It costs a lot of money to produce a big action film.",
+        "cn": "制作一部大型动作片需要花很多钱。",
+        "level": 3,
+        "audioFile": "ex_a52dfccaf8.mp3"
+      }
+    ],
+    "release": [
+      {
+        "en": "The film will be released soon.",
+        "cn": "这部电影即将上映。",
+        "level": 1,
+        "audioFile": "ex_7709d13432.mp3"
+      },
+      {
+        "en": "The new film was released last week.",
+        "cn": "这部新电影上周上映了。",
+        "level": 2,
+        "audioFile": "ex_0a9a4a458a.mp3"
+      },
+      {
+        "en": "The film was released around the world on the same day.",
+        "cn": "这部电影在全球同日上映。",
+        "level": 3,
+        "audioFile": "ex_3bc8d737ac.mp3"
+      }
+    ],
+    "cinema": [
+      {
+        "en": "Let's go to the cinema.",
+        "cn": "我们去电影院吧。",
+        "level": 1,
+        "audioFile": "ex_094ed289b9.mp3"
+      },
+      {
+        "en": "The cinema was full last night.",
+        "cn": "昨晚电影院满座了。",
+        "level": 2,
+        "audioFile": "ex_dfc519089e.mp3"
+      },
+      {
+        "en": "We went to the cinema to watch the newly released film.",
+        "cn": "我们去电影院看新上映的电影。",
+        "level": 3,
+        "audioFile": "ex_28896300f5.mp3"
+      }
+    ],
+    "audience": [
+      {
+        "en": "The audience clapped.",
+        "cn": "观众鼓掌了。",
+        "level": 1,
+        "audioFile": "ex_7b1c39462f.mp3"
+      },
+      {
+        "en": "The audience loved the film.",
+        "cn": "观众喜欢这部电影。",
+        "level": 2,
+        "audioFile": "ex_12589e3b9b.mp3"
+      },
+      {
+        "en": "The touching ending made the whole audience cry.",
+        "cn": "感人的结局让全场观众落泪。",
+        "level": 3,
+        "audioFile": "ex_b3a23af7cd.mp3"
+      }
+    ],
+    "award": [
+      {
+        "en": "She won an award.",
+        "cn": "她获得了一个奖项。",
+        "level": 1,
+        "audioFile": "ex_de8d653ee3.mp3"
+      },
+      {
+        "en": "The film won many awards.",
+        "cn": "这部电影获得了许多奖项。",
+        "level": 2,
+        "audioFile": "ex_ceb6a6d779.mp3"
+      },
+      {
+        "en": "The director received an award for his best film ever.",
+        "cn": "这位导演凭他最好的作品获得了一个奖项。",
+        "level": 3,
+        "audioFile": "ex_ddf9497680.mp3"
+      }
+    ],
+    "talented": [
+      {
+        "en": "She is talented.",
+        "cn": "她很有才华。",
+        "level": 1,
+        "audioFile": "ex_7912dc5657.mp3"
+      },
+      {
+        "en": "He is a talented actor.",
+        "cn": "他是个有才华的演员。",
+        "level": 2,
+        "audioFile": "ex_5f719c6d57.mp3"
+      },
+      {
+        "en": "The talented young director surprised the whole film world.",
+        "cn": "这位有才华的年轻导演震惊了整个电影界。",
+        "level": 3,
+        "audioFile": "ex_ac6aae3c00.mp3"
+      }
+    ],
+    "touching": [
+      {
+        "en": "It is a touching story.",
+        "cn": "这是个感人的故事。",
+        "level": 1,
+        "audioFile": "ex_8ba0249f16.mp3"
+      },
+      {
+        "en": "The film has a touching ending.",
+        "cn": "这部电影有个感人的结局。",
+        "level": 2,
+        "audioFile": "ex_837776fe6b.mp3"
+      },
+      {
+        "en": "The touching scene stayed in the audience's mind for a long time.",
+        "cn": "这感人的一幕久久留在观众心中。",
+        "level": 3,
+        "audioFile": "ex_07f7568b00.mp3"
+      }
+    ],
+    "entertainment": [
+      {
+        "en": "Music is good entertainment.",
+        "cn": "音乐是很好的娱乐。",
+        "level": 1,
+        "audioFile": "ex_6ce8863fdb.mp3"
+      },
+      {
+        "en": "A concert is a kind of entertainment.",
+        "cn": "音乐会是一种娱乐。",
+        "level": 2,
+        "audioFile": "ex_f1ddff9c6a.mp3"
+      },
+      {
+        "en": "Live entertainment brings people together for a night of fun.",
+        "cn": "现场娱乐让人们相聚共度欢乐之夜。",
+        "level": 3,
+        "audioFile": "ex_4cac36dec4.mp3"
+      }
+    ],
+    "concert": [
+      {
+        "en": "I went to a concert.",
+        "cn": "我去看了一场音乐会。",
+        "level": 1,
+        "audioFile": "ex_7265568672.mp3"
+      },
+      {
+        "en": "The concert was wonderful.",
+        "cn": "这场音乐会棒极了。",
+        "level": 2,
+        "audioFile": "ex_32ea217920.mp3"
+      },
+      {
+        "en": "Thousands of fans came to the band's concert at the stadium.",
+        "cn": "成千上万的粉丝来到体育场看乐队的演唱会。",
+        "level": 3,
+        "audioFile": "ex_5096a55a87.mp3"
+      }
+    ],
+    "singer": [
+      {
+        "en": "She is a great singer.",
+        "cn": "她是位出色的歌手。",
+        "level": 1,
+        "audioFile": "ex_3b9d2a8bf3.mp3"
+      },
+      {
+        "en": "The singer has a lovely voice.",
+        "cn": "这位歌手嗓音动听。",
+        "level": 2,
+        "audioFile": "ex_95702756b0.mp3"
+      },
+      {
+        "en": "The famous singer sang her best song on stage.",
+        "cn": "这位著名歌手在舞台上唱了她最好的歌。",
+        "level": 3,
+        "audioFile": "ex_9f0308ed6d.mp3"
+      }
+    ],
+    "band": [
+      {
+        "en": "I love this band.",
+        "cn": "我喜欢这支乐队。",
+        "level": 1,
+        "audioFile": "ex_e52d62fc8a.mp3"
+      },
+      {
+        "en": "The band played all night.",
+        "cn": "乐队演奏了一整晚。",
+        "level": 2,
+        "audioFile": "ex_ed9390f0ab.mp3"
+      },
+      {
+        "en": "The band's performance got loud applause from the audience.",
+        "cn": "乐队的表演赢得了观众热烈的掌声。",
+        "level": 3,
+        "audioFile": "ex_00d26537ae.mp3"
+      }
+    ],
+    "stage": [
+      {
+        "en": "She stood on the stage.",
+        "cn": "她站在舞台上。",
+        "level": 1,
+        "audioFile": "ex_4d3ba1c743.mp3"
+      },
+      {
+        "en": "The singer walked onto the stage.",
+        "cn": "歌手走上了舞台。",
+        "level": 2,
+        "audioFile": "ex_e781f6ccd1.mp3"
+      },
+      {
+        "en": "When the lights came up, the band appeared on the stage.",
+        "cn": "灯光亮起时，乐队出现在舞台上。",
+        "level": 3,
+        "audioFile": "ex_a391008b1f.mp3"
+      }
+    ],
+    "perform": [
+      {
+        "en": "They perform on stage.",
+        "cn": "他们在舞台上表演。",
+        "level": 1,
+        "audioFile": "ex_c8a67f2f26.mp3"
+      },
+      {
+        "en": "The band performed their new song.",
+        "cn": "乐队表演了他们的新歌。",
+        "level": 2,
+        "audioFile": "ex_f61ad4f849.mp3"
+      },
+      {
+        "en": "The singer performed beautifully in front of thousands of fans.",
+        "cn": "歌手在数千名粉丝面前精彩地表演。",
+        "level": 3,
+        "audioFile": "ex_1bec5b4be0.mp3"
+      }
+    ],
+    "performance": [
+      {
+        "en": "The performance was great.",
+        "cn": "演出很棒。",
+        "level": 1,
+        "audioFile": "ex_1bad8d2f20.mp3"
+      },
+      {
+        "en": "Her performance won loud applause.",
+        "cn": "她的表演赢得了热烈的掌声。",
+        "level": 2,
+        "audioFile": "ex_1689e3327b.mp3"
+      },
+      {
+        "en": "The band's performance was the best part of the whole show.",
+        "cn": "乐队的表演是整场演出最精彩的部分。",
+        "level": 3,
+        "audioFile": "ex_92d5fa2ad0.mp3"
+      }
+    ],
+    "ticket": [
+      {
+        "en": "I bought a ticket.",
+        "cn": "我买了一张票。",
+        "level": 1,
+        "audioFile": "ex_0786bcd07b.mp3"
+      },
+      {
+        "en": "The concert tickets sold out fast.",
+        "cn": "演唱会的票很快售罄。",
+        "level": 2,
+        "audioFile": "ex_c5ca2a5256.mp3"
+      },
+      {
+        "en": "Fans waited all night to buy tickets for the concert.",
+        "cn": "粉丝们彻夜等候购买演唱会的门票。",
+        "level": 3,
+        "audioFile": "ex_16857a0f92.mp3"
+      }
+    ],
+    "microphone": [
+      {
+        "en": "He held a microphone.",
+        "cn": "他拿着一个麦克风。",
+        "level": 1,
+        "audioFile": "ex_3aa197563a.mp3"
+      },
+      {
+        "en": "The singer spoke into the microphone.",
+        "cn": "歌手对着麦克风讲话。",
+        "level": 2,
+        "audioFile": "ex_b9151f7ad7.mp3"
+      },
+      {
+        "en": "Her voice filled the stadium through the microphone.",
+        "cn": "她的声音通过麦克风响彻整个体育场。",
+        "level": 3,
+        "audioFile": "ex_ea646a768d.mp3"
+      }
+    ],
+    "lyrics": [
+      {
+        "en": "I like the lyrics.",
+        "cn": "我喜欢这歌词。",
+        "level": 1,
+        "audioFile": "ex_9aa37acdcd.mp3"
+      },
+      {
+        "en": "The lyrics tell a sad story.",
+        "cn": "这歌词讲了一个悲伤的故事。",
+        "level": 2,
+        "audioFile": "ex_d767728aca.mp3"
+      },
+      {
+        "en": "The beautiful lyrics made the whole audience sing along.",
+        "cn": "优美的歌词让全场观众跟着唱起来。",
+        "level": 3,
+        "audioFile": "ex_e14f3feebb.mp3"
+      }
+    ],
+    "melody": [
+      {
+        "en": "What a nice melody!",
+        "cn": "多美的旋律啊！",
+        "level": 1,
+        "audioFile": "ex_4f670efb16.mp3"
+      },
+      {
+        "en": "The song has a lovely melody.",
+        "cn": "这首歌有动听的旋律。",
+        "level": 2,
+        "audioFile": "ex_28401da14d.mp3"
+      },
+      {
+        "en": "A simple melody can stay in your heart for years.",
+        "cn": "简单的旋律能在你心中留存多年。",
+        "level": 3,
+        "audioFile": "ex_352a8ca512.mp3"
+      }
+    ],
+    "stadium": [
+      {
+        "en": "The stadium is huge.",
+        "cn": "这个体育场很大。",
+        "level": 1,
+        "audioFile": "ex_328d57b006.mp3"
+      },
+      {
+        "en": "The concert was held in a stadium.",
+        "cn": "演唱会在体育场举行。",
+        "level": 2,
+        "audioFile": "ex_436474d606.mp3"
+      },
+      {
+        "en": "The stadium was filled with fans cheering for the band.",
+        "cn": "体育场里挤满了为乐队欢呼的粉丝。",
+        "level": 3,
+        "audioFile": "ex_97cc0e5a17.mp3"
+      }
+    ],
+    "record": [
+      {
+        "en": "They will record a song.",
+        "cn": "他们要录一首歌。",
+        "level": 1,
+        "audioFile": "ex_7fdd5032af.mp3"
+      },
+      {
+        "en": "The band recorded a new album.",
+        "cn": "乐队录制了一张新专辑。",
+        "level": 2,
+        "audioFile": "ex_b65e9b54c6.mp3"
+      },
+      {
+        "en": "The singer spent a month recording her latest songs.",
+        "cn": "这位歌手花了一个月录制她最新的歌曲。",
+        "level": 3,
+        "audioFile": "ex_451892cd3a.mp3"
+      }
+    ],
+    "applaud": [
+      {
+        "en": "The fans applaud.",
+        "cn": "粉丝们鼓掌。",
+        "level": 1,
+        "audioFile": "ex_8f4d38ae90.mp3"
+      },
+      {
+        "en": "The audience applauded loudly.",
+        "cn": "观众热烈鼓掌。",
+        "level": 2,
+        "audioFile": "ex_c507f19997.mp3"
+      },
+      {
+        "en": "Everyone stood up to applaud the wonderful performance.",
+        "cn": "所有人都起立为精彩的表演鼓掌。",
+        "level": 3,
+        "audioFile": "ex_c60aa080c6.mp3"
+      }
+    ],
+    "explore": [
+      {
+        "en": "Let's explore the cave.",
+        "cn": "我们来探索这个洞穴。",
+        "level": 1,
+        "audioFile": "ex_47b04c1703.mp3"
+      },
+      {
+        "en": "They explore the deep sea.",
+        "cn": "他们探索深海。",
+        "level": 2,
+        "audioFile": "ex_da77553ae5.mp3"
+      },
+      {
+        "en": "Brave explorers travel far to explore the unknown world.",
+        "cn": "勇敢的探险家远行去探索未知的世界。",
+        "level": 3,
+        "audioFile": "ex_f21476a960.mp3"
+      }
+    ],
+    "explorer": [
+      {
+        "en": "He is a famous explorer.",
+        "cn": "他是位著名探险家。",
+        "level": 1,
+        "audioFile": "ex_5bfe386ff7.mp3"
+      },
+      {
+        "en": "The explorer reached the South Pole.",
+        "cn": "这位探险家抵达了南极。",
+        "level": 2,
+        "audioFile": "ex_702a8b6734.mp3"
+      },
+      {
+        "en": "The brave explorer searched the ocean depths for new species.",
+        "cn": "这位勇敢的探险家在深海中搜寻新物种。",
+        "level": 3,
+        "audioFile": "ex_f712e2ddf9.mp3"
+      }
+    ],
+    "discovery": [
+      {
+        "en": "It was a great discovery.",
+        "cn": "这是一项伟大的发现。",
+        "level": 1,
+        "audioFile": "ex_0f7f8773eb.mp3"
+      },
+      {
+        "en": "The discovery surprised the world.",
+        "cn": "这个发现震惊了世界。",
+        "level": 2,
+        "audioFile": "ex_f3db448dd3.mp3"
+      },
+      {
+        "en": "Their discovery helped us understand the deep ocean better.",
+        "cn": "他们的发现帮助我们更好地了解深海。",
+        "level": 3,
+        "audioFile": "ex_4771e1484c.mp3"
+      }
+    ],
+    "submarine": [
+      {
+        "en": "The submarine goes deep.",
+        "cn": "潜水艇下潜得很深。",
+        "level": 1,
+        "audioFile": "ex_10a1a0a1d9.mp3"
+      },
+      {
+        "en": "A submarine can travel under the sea.",
+        "cn": "潜水艇能在海底航行。",
+        "level": 2,
+        "audioFile": "ex_9b10328182.mp3"
+      },
+      {
+        "en": "The submarine took the crew to the bottom of the ocean.",
+        "cn": "潜水艇把全体船员带到了海底。",
+        "level": 3,
+        "audioFile": "ex_5ba60f4d84.mp3"
+      }
+    ],
+    "crew": [
+      {
+        "en": "The crew is ready.",
+        "cn": "船员们准备好了。",
+        "level": 1,
+        "audioFile": "ex_17d594ccc0.mp3"
+      },
+      {
+        "en": "The whole crew worked together.",
+        "cn": "全体船员齐心协力。",
+        "level": 2,
+        "audioFile": "ex_cfe6b61b46.mp3"
+      },
+      {
+        "en": "The brave crew faced great danger during the mission.",
+        "cn": "勇敢的船员们在任务中面对巨大的危险。",
+        "level": 3,
+        "audioFile": "ex_bc55c36f0d.mp3"
+      }
+    ],
+    "mission": [
+      {
+        "en": "The mission was a success.",
+        "cn": "任务成功了。",
+        "level": 1,
+        "audioFile": "ex_def2ca9392.mp3"
+      },
+      {
+        "en": "Their mission was to explore the deep sea.",
+        "cn": "他们的任务是探索深海。",
+        "level": 2,
+        "audioFile": "ex_1a598fb27d.mp3"
+      },
+      {
+        "en": "The dangerous mission required courage and careful planning.",
+        "cn": "这项危险的任务需要勇气和周密的计划。",
+        "level": 3,
+        "audioFile": "ex_a7e3f84950.mp3"
+      }
+    ],
+    "depth": [
+      {
+        "en": "The depth is great.",
+        "cn": "深度很深。",
+        "level": 1,
+        "audioFile": "ex_e102a2b9af.mp3"
+      },
+      {
+        "en": "Few people reach such depths.",
+        "cn": "很少有人能到达这样的深度。",
+        "level": 2,
+        "audioFile": "ex_b84656cefd.mp3"
+      },
+      {
+        "en": "At great depths, the water pressure is very strong.",
+        "cn": "在很深的地方，水压非常强。",
+        "level": 3,
+        "audioFile": "ex_97a9c9d8ca.mp3"
+      }
+    ],
+    "pressure": [
+      {
+        "en": "The pressure is high.",
+        "cn": "压力很大。",
+        "level": 1,
+        "audioFile": "ex_be5837e4f9.mp3"
+      },
+      {
+        "en": "Deep water has great pressure.",
+        "cn": "深水有巨大的压力。",
+        "level": 2,
+        "audioFile": "ex_0f45238a6e.mp3"
+      },
+      {
+        "en": "The submarine must be strong to stand the deep-sea pressure.",
+        "cn": "潜水艇必须坚固才能承受深海的压力。",
+        "level": 3,
+        "audioFile": "ex_b14fe67227.mp3"
+      }
+    ],
+    "unknown": [
+      {
+        "en": "The future is unknown.",
+        "cn": "未来是未知的。",
+        "level": 1,
+        "audioFile": "ex_8631b16059.mp3"
+      },
+      {
+        "en": "They explored the unknown world.",
+        "cn": "他们探索未知的世界。",
+        "level": 2,
+        "audioFile": "ex_17a16c7684.mp3"
+      },
+      {
+        "en": "Brave people are always ready to face the unknown.",
+        "cn": "勇敢的人总是准备好面对未知。",
+        "level": 3,
+        "audioFile": "ex_eaa3d15086.mp3"
+      }
+    ],
+    "equipment": [
+      {
+        "en": "We need good equipment.",
+        "cn": "我们需要好的设备。",
+        "level": 1,
+        "audioFile": "ex_9d3f34cbb3.mp3"
+      },
+      {
+        "en": "Divers use special equipment.",
+        "cn": "潜水员使用特殊设备。",
+        "level": 2,
+        "audioFile": "ex_84dd0f2156.mp3"
+      },
+      {
+        "en": "Modern equipment helps explorers search the deep ocean safely.",
+        "cn": "现代设备帮助探险家安全地搜寻深海。",
+        "level": 3,
+        "audioFile": "ex_292fce8de0.mp3"
+      }
+    ],
+    "signal": [
+      {
+        "en": "We got a signal.",
+        "cn": "我们收到了信号。",
+        "level": 1,
+        "audioFile": "ex_9429677cfc.mp3"
+      },
+      {
+        "en": "The submarine sent a signal.",
+        "cn": "潜水艇发出了一个信号。",
+        "level": 2,
+        "audioFile": "ex_136988f5e3.mp3"
+      },
+      {
+        "en": "The crew lost the signal deep under the sea.",
+        "cn": "船员们在深海中失去了信号。",
+        "level": 3,
+        "audioFile": "ex_d8684cbc51.mp3"
+      }
+    ],
+    "search": [
+      {
+        "en": "We search for it.",
+        "cn": "我们寻找它。",
+        "level": 1,
+        "audioFile": "ex_39511c630d.mp3"
+      },
+      {
+        "en": "They searched the deep sea.",
+        "cn": "他们搜寻深海。",
+        "level": 2,
+        "audioFile": "ex_0f48a6bb5e.mp3"
+      },
+      {
+        "en": "The team searched for days before finding the lost ship.",
+        "cn": "团队搜寻了好几天才找到失踪的船。",
+        "level": 3,
+        "audioFile": "ex_055650fcf6.mp3"
+      }
+    ],
+    "mystery": [
+      {
+        "en": "It is a mystery.",
+        "cn": "这是个谜。",
+        "level": 1,
+        "audioFile": "ex_90200e6549.mp3"
+      },
+      {
+        "en": "The deep sea is full of mysteries.",
+        "cn": "深海充满了谜团。",
+        "level": 2,
+        "audioFile": "ex_ca2e896597.mp3"
+      },
+      {
+        "en": "Explorers hope to solve the mysteries of the unknown world.",
+        "cn": "探险家希望解开未知世界的谜团。",
+        "level": 3,
+        "audioFile": "ex_534c61d53b.mp3"
+      }
+    ],
+    "brave": [
+      {
+        "en": "He is very brave.",
+        "cn": "他非常勇敢。",
+        "level": 1,
+        "audioFile": "ex_5c02940451.mp3"
+      },
+      {
+        "en": "It is brave to explore the deep sea.",
+        "cn": "探索深海是很勇敢的。",
+        "level": 2,
+        "audioFile": "ex_b3f146fc45.mp3"
+      },
+      {
+        "en": "Only brave explorers dare to enter the unknown world.",
+        "cn": "只有勇敢的探险家才敢进入未知的世界。",
+        "level": 3,
+        "audioFile": "ex_373877520f.mp3"
+      }
+    ],
+    "universe": [
+      {
+        "en": "The universe is huge.",
+        "cn": "宇宙很大。",
+        "level": 1,
+        "audioFile": "ex_c79680bf98.mp3"
+      },
+      {
+        "en": "The universe has many stars.",
+        "cn": "宇宙有许多星星。",
+        "level": 2,
+        "audioFile": "ex_e6c4eae7cc.mp3"
+      },
+      {
+        "en": "Scientists believe the universe is still growing larger.",
+        "cn": "科学家相信宇宙仍在不断变大。",
+        "level": 3,
+        "audioFile": "ex_2bcf85b1f1.mp3"
+      }
+    ],
+    "galaxy": [
+      {
+        "en": "Our galaxy is big.",
+        "cn": "我们的星系很大。",
+        "level": 1,
+        "audioFile": "ex_9e98e36f25.mp3"
+      },
+      {
+        "en": "There are billions of galaxies.",
+        "cn": "宇宙中有数十亿个星系。",
+        "level": 2,
+        "audioFile": "ex_2088378474.mp3"
+      },
+      {
+        "en": "Our Earth is just a tiny part of one huge galaxy.",
+        "cn": "我们的地球只是一个巨大星系中的小小一部分。",
+        "level": 3,
+        "audioFile": "ex_f3f8387c5b.mp3"
+      }
+    ],
+    "planet": [
+      {
+        "en": "Earth is a planet.",
+        "cn": "地球是一颗行星。",
+        "level": 1,
+        "audioFile": "ex_bd754063de.mp3"
+      },
+      {
+        "en": "Mars is a red planet.",
+        "cn": "火星是一颗红色的行星。",
+        "level": 2,
+        "audioFile": "ex_0de5bbb6c6.mp3"
+      },
+      {
+        "en": "Scientists search for planets that might support life.",
+        "cn": "科学家寻找可能支持生命的行星。",
+        "level": 3,
+        "audioFile": "ex_2af8f7608b.mp3"
+      }
+    ],
+    "asteroid": [
+      {
+        "en": "An asteroid is a space rock.",
+        "cn": "小行星是太空中的岩石。",
+        "level": 1,
+        "audioFile": "ex_a4febdb805.mp3"
+      },
+      {
+        "en": "An asteroid flew past the Earth.",
+        "cn": "一颗小行星掠过地球。",
+        "level": 2,
+        "audioFile": "ex_0cfd3993b5.mp3"
+      },
+      {
+        "en": "Scientists watch asteroids that come close to our planet.",
+        "cn": "科学家监测靠近我们星球的小行星。",
+        "level": 3,
+        "audioFile": "ex_7e8dbe0d43.mp3"
+      }
+    ],
+    "telescope": [
+      {
+        "en": "I have a telescope.",
+        "cn": "我有一架望远镜。",
+        "level": 1,
+        "audioFile": "ex_9e3759a1f6.mp3"
+      },
+      {
+        "en": "We look at stars through a telescope.",
+        "cn": "我们用望远镜看星星。",
+        "level": 2,
+        "audioFile": "ex_4189d010d2.mp3"
+      },
+      {
+        "en": "A powerful telescope lets us see far into the universe.",
+        "cn": "强大的望远镜让我们能看到宇宙深处。",
+        "level": 3,
+        "audioFile": "ex_fb85af1d32.mp3"
+      }
+    ],
+    "astronaut": [
+      {
+        "en": "The astronaut is brave.",
+        "cn": "宇航员很勇敢。",
+        "level": 1,
+        "audioFile": "ex_6e7e800e80.mp3"
+      },
+      {
+        "en": "The astronaut flew into space.",
+        "cn": "宇航员飞入了太空。",
+        "level": 2,
+        "audioFile": "ex_15fa25f18c.mp3"
+      },
+      {
+        "en": "Astronauts train for years to explore the universe safely.",
+        "cn": "宇航员训练多年才能安全地探索宇宙。",
+        "level": 3,
+        "audioFile": "ex_8ca3dc25a9.mp3"
+      }
+    ],
+    "spacecraft": [
+      {
+        "en": "The spacecraft is fast.",
+        "cn": "航天器很快。",
+        "level": 1,
+        "audioFile": "ex_8810ad4980.mp3"
+      },
+      {
+        "en": "The spacecraft reached Mars.",
+        "cn": "航天器到达了火星。",
+        "level": 2,
+        "audioFile": "ex_c737f4b5ba.mp3"
+      },
+      {
+        "en": "The spacecraft sent amazing pictures back from deep space.",
+        "cn": "航天器从深空传回了惊人的照片。",
+        "level": 3,
+        "audioFile": "ex_8a5f0ded39.mp3"
+      }
+    ],
+    "artificial": [
+      {
+        "en": "This is an artificial flower.",
+        "cn": "这是一朵人造花。",
+        "level": 1,
+        "audioFile": "ex_e586e82299.mp3"
+      },
+      {
+        "en": "Artificial light helps plants grow.",
+        "cn": "人造光帮助植物生长。",
+        "level": 2,
+        "audioFile": "ex_412b10b36b.mp3"
+      },
+      {
+        "en": "Artificial intelligence may one day explore space for us.",
+        "cn": "人工智能也许有一天会替我们探索太空。",
+        "level": 3,
+        "audioFile": "ex_c2bfda0110.mp3"
+      }
+    ],
+    "intelligence": [
+      {
+        "en": "She shows great intelligence.",
+        "cn": "她展现出非凡的才智。",
+        "level": 1,
+        "audioFile": "ex_e2ac60c300.mp3"
+      },
+      {
+        "en": "Robots use artificial intelligence.",
+        "cn": "机器人使用人工智能。",
+        "level": 2,
+        "audioFile": "ex_ec5eb34cf4.mp3"
+      },
+      {
+        "en": "Artificial intelligence is changing the way we explore the universe.",
+        "cn": "人工智能正在改变我们探索宇宙的方式。",
+        "level": 3,
+        "audioFile": "ex_046dff5576.mp3"
+      }
+    ],
+    "robot": [
+      {
+        "en": "The robot can move.",
+        "cn": "机器人会移动。",
+        "level": 1,
+        "audioFile": "ex_362ce7ba51.mp3"
+      },
+      {
+        "en": "A robot was sent to Mars.",
+        "cn": "一个机器人被送往火星。",
+        "level": 2,
+        "audioFile": "ex_b6c1b6db2b.mp3"
+      },
+      {
+        "en": "Robots can explore places that are too dangerous for humans.",
+        "cn": "机器人能探索对人类来说太危险的地方。",
+        "level": 3,
+        "audioFile": "ex_1ce19848db.mp3"
+      }
+    ],
+    "imagine": [
+      {
+        "en": "Imagine a new world.",
+        "cn": "想象一个新世界。",
+        "level": 1,
+        "audioFile": "ex_644c5edb38.mp3"
+      },
+      {
+        "en": "Can you imagine life on Mars?",
+        "cn": "你能想象火星上的生活吗？",
+        "level": 2,
+        "audioFile": "ex_6ee2d267ea.mp3"
+      },
+      {
+        "en": "It is hard to imagine just how big the universe really is.",
+        "cn": "很难想象宇宙究竟有多大。",
+        "level": 3,
+        "audioFile": "ex_a4392589f1.mp3"
+      }
+    ],
+    "impossible": [
+      {
+        "en": "Nothing is impossible.",
+        "cn": "没有什么是不可能的。",
+        "level": 1,
+        "audioFile": "ex_58a7131309.mp3"
+      },
+      {
+        "en": "Space travel once seemed impossible.",
+        "cn": "太空旅行曾经看似不可能。",
+        "level": 2,
+        "audioFile": "ex_bb89503816.mp3"
+      },
+      {
+        "en": "What seems impossible today may become possible tomorrow.",
+        "cn": "今天看似不可能的事明天也许会变成可能。",
+        "level": 3,
+        "audioFile": "ex_220d965b2b.mp3"
+      }
+    ],
+    "surprise": [
+      {
+        "en": "What a surprise!",
+        "cn": "真是个惊喜！",
+        "level": 1,
+        "audioFile": "ex_f44acdf8e8.mp3"
+      },
+      {
+        "en": "The universe is full of surprises.",
+        "cn": "宇宙充满了惊喜。",
+        "level": 2,
+        "audioFile": "ex_ab972621a5.mp3"
+      },
+      {
+        "en": "Every new discovery in space brings another surprise.",
+        "cn": "太空中每一个新发现都带来又一个惊喜。",
+        "level": 3,
+        "audioFile": "ex_f7e720896f.mp3"
+      }
+    ],
+    "possibility": [
+      {
+        "en": "There is a possibility.",
+        "cn": "有一种可能性。",
+        "level": 1,
+        "audioFile": "ex_9ec335f3c6.mp3"
+      },
+      {
+        "en": "Life on other planets is a possibility.",
+        "cn": "其他行星上有生命是有可能的。",
+        "level": 2,
+        "audioFile": "ex_dea7deaeb6.mp3"
+      },
+      {
+        "en": "Scientists study the possibility of finding life in space.",
+        "cn": "科学家研究在太空中找到生命的可能性。",
+        "level": 3,
+        "audioFile": "ex_23f05f2a8d.mp3"
+      }
+    ],
+    "human": [
+      {
+        "en": "I am a human.",
+        "cn": "我是人类。",
+        "level": 1,
+        "audioFile": "ex_a024a05358.mp3"
+      },
+      {
+        "en": "Humans want to explore space.",
+        "cn": "人类想探索太空。",
+        "level": 2,
+        "audioFile": "ex_cf3f32ad96.mp3"
+      },
+      {
+        "en": "One day humans may travel to faraway planets.",
+        "cn": "有一天人类也许会前往遥远的行星。",
+        "level": 3,
+        "audioFile": "ex_eaafb7159a.mp3"
+      }
+    ]
+  }
+}

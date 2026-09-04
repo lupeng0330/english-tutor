@@ -1,0 +1,1066 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Goodbye, primary school",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will Anna and Ben do soon?",
+            "选项": [
+              "Graduate from primary school",
+              "Start primary school",
+              "Take a trip"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will junior high bring?",
+            "选项": [
+              "New challenges",
+              "Fewer subjects",
+              "Longer holidays"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Why does Ben feel confident?",
+            "选项": [
+              "They have great teachers and friends",
+              "The tests are easy",
+              "School is close"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Goodbye, primary school",
+        "data": [
+          {
+            "问题": "What will Anna and Ben do soon?",
+            "答案": "Graduate from primary school."
+          },
+          {
+            "问题": "Why does Ben feel confident?",
+            "答案": "They have great teachers and friends."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Ready for junior",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What will soon end?",
+            "选项": [
+              "Six years in primary school",
+              "The summer holiday",
+              "The music show"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What will junior high bring?",
+            "选项": [
+              "More subjects and harder tests",
+              "Fewer subjects",
+              "Longer holidays"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do they need to face every challenge?",
+            "选项": [
+              "Good study habits and a strong heart",
+              "New books",
+              "A new school"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Ready for junior",
+        "data": [
+          {
+            "问题": "What did they learn in primary school?",
+            "答案": "To read English, do Maths, and care for each other."
+          },
+          {
+            "问题": "What is every challenge a chance to do?",
+            "答案": "To grow."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I am excited about + noun",
+            "例句": "I am excited about junior high school.",
+            "提示": "表达对某事兴奋"
+          },
+          {
+            "句型": "I need to + verb",
+            "例句": "I need to buy new books.",
+            "提示": "need to表示\"需要做\""
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | What's your dream?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Ben's dream job?",
+            "选项": [
+              "A doctor",
+              "A writer",
+              "An engineer"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna want to be?",
+            "选项": [
+              "A writer",
+              "A doctor",
+              "A teacher"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben's brother want to be?",
+            "选项": [
+              "An engineer",
+              "A scientist",
+              "A doctor"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | What's your dream?",
+        "data": [
+          {
+            "问题": "What is Ben's dream job?",
+            "答案": "A doctor."
+          },
+          {
+            "问题": "What does Anna want to be?",
+            "答案": "A writer."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Dreams shape our future",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What do some children dream of being to save lives?",
+            "选项": [
+              "Doctors",
+              "Teachers",
+              "Writers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do engineers build?",
+            "选项": [
+              "Bridges and roads",
+              "Stories",
+              "Hospitals"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do writers tell?",
+            "选项": [
+              "Stories that touch our hearts",
+              "The news",
+              "The time"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Dreams shape our future",
+        "data": [
+          {
+            "问题": "What do scientists explore?",
+            "答案": "The secrets of the universe."
+          },
+          {
+            "问题": "What should you do to make your dream come true?",
+            "答案": "Work hard."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I want to be + job",
+            "例句": "I want to be a teacher.",
+            "提示": "表达梦想职业"
+          },
+          {
+            "句型": "I must + verb",
+            "例句": "I must study hard and never give up.",
+            "提示": "must表示\"必须\""
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | My hero",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who is Ben's hero?",
+            "选项": [
+              "His grandpa",
+              "His father",
+              "His teacher"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What did Ben's grandpa do when he was young?",
+            "选项": [
+              "Saved a child from a fire",
+              "Won a race",
+              "Built a bridge"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "According to Ben, who else are heroes?",
+            "选项": [
+              "Police, firefighters and doctors",
+              "Only film stars",
+              "Only teachers"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | My hero",
+        "data": [
+          {
+            "问题": "Who is Ben's hero?",
+            "答案": "His grandpa."
+          },
+          {
+            "问题": "What did Ben's grandpa do when he was young?",
+            "答案": "Saved a child from a fire."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Heroes around us",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where are real heroes?",
+            "选项": [
+              "All around us",
+              "Only in films",
+              "Only in books"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does a teacher do to help slow learners?",
+            "选项": [
+              "Works late",
+              "Runs into a fire",
+              "Stays awake all night"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does a kid share with a hungry friend?",
+            "选项": [
+              "His lunch",
+              "His toys",
+              "His books"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Heroes around us",
+        "data": [
+          {
+            "问题": "What does a firefighter do to save a stranger?",
+            "答案": "Runs into a burning building."
+          },
+          {
+            "问题": "Can we all be heroes?",
+            "答案": "Yes, we can all be heroes in our own way."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Who is a hero?",
+            "例句": "Firefighters are heroes.",
+            "提示": "讨论谁是英雄"
+          },
+          {
+            "句型": "... makes someone a hero",
+            "例句": "Helping others makes someone a hero.",
+            "提示": "动名词作主语"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Match day",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What match is on today?",
+            "选项": [
+              "A football match",
+              "A basketball match",
+              "A swimming race"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How long has Ben's team practised?",
+            "选项": [
+              "Two weeks",
+              "One week",
+              "One month"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What was Ben last year?",
+            "选项": [
+              "The champion",
+              "The captain",
+              "The coach"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Match day",
+        "data": [
+          {
+            "问题": "What match is on today?",
+            "答案": "A football match."
+          },
+          {
+            "问题": "What was Ben last year?",
+            "答案": "The champion."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Sports for life",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What builds a strong body?",
+            "选项": [
+              "Swimming and running",
+              "Watching TV",
+              "Eating sweets"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How are champions made?",
+            "选项": [
+              "They practise every day",
+              "They are born",
+              "They are lucky"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What will you stay if you start a sport early?",
+            "选项": [
+              "Healthy and full of energy",
+              "Tired",
+              "Weak"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Sports for life",
+        "data": [
+          {
+            "问题": "What do football and basketball teach us?",
+            "答案": "Teamwork."
+          },
+          {
+            "问题": "How do champions become champions?",
+            "答案": "They practise every day."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How often do you + verb?",
+            "例句": "How often do you exercise? — Every day.",
+            "提示": "问频率"
+          },
+          {
+            "句型": "... teaches us to + verb",
+            "例句": "Sport teaches us to never give up.",
+            "提示": "teach sb to do sth"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | You are what you eat",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why does Mum tell Anna to eat more vegetables?",
+            "选项": [
+              "They have vitamins",
+              "They are sweet",
+              "They are cheap"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Mum say about junk food?",
+            "选项": [
+              "A little is OK, but too much fat is bad",
+              "It is very healthy",
+              "You can eat it every day"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Mum say is the key?",
+            "选项": [
+              "Balance",
+              "Money",
+              "Speed"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | You are what you eat",
+        "data": [
+          {
+            "问题": "Why does Mum tell Anna to eat more vegetables?",
+            "答案": "They have vitamins."
+          },
+          {
+            "问题": "What does Mum say is the key?",
+            "答案": "Balance."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Balance your plate",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What do doctors say?",
+            "选项": [
+              "You are what you eat",
+              "Eat more sweets",
+              "Sleep more"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What give us vitamins, calcium and energy?",
+            "选项": [
+              "Fresh vegetables, fruit, milk and meat",
+              "Junk food",
+              "Sweet drinks"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What should we drink?",
+            "选项": [
+              "Water, not just sweet drinks",
+              "Only juice",
+              "Only milk"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Balance your plate",
+        "data": [
+          {
+            "问题": "What happens if we eat too much junk food?",
+            "答案": "We get tired and weak."
+          },
+          {
+            "问题": "What colours does a balanced plate have?",
+            "答案": "Green, red, yellow, brown."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "You are what you eat.",
+            "例句": "You are what you eat.",
+            "提示": "谚语：饮食决定健康"
+          },
+          {
+            "句型": "We should eat less + noun",
+            "例句": "We should eat less fast food.",
+            "提示": "should eat less建议少吃"
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Save our Earth",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What small things does Ben suggest to start with?",
+            "选项": [
+              "Recycle paper, plastic and glass",
+              "Buy new things",
+              "Move to a new city"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Anna want to do on Earth Day?",
+            "选项": [
+              "Plant a tree",
+              "Clean the house",
+              "Ride a bike"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What is the river near them like?",
+            "选项": [
+              "Too dirty",
+              "Very clean",
+              "Dried up"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Save our Earth",
+        "data": [
+          {
+            "问题": "What small things does Ben suggest to start with?",
+            "答案": "Recycle paper, plastic and glass."
+          },
+          {
+            "问题": "What does Anna want to do on Earth Day?",
+            "答案": "Plant a tree."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Our only home",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is our only home?",
+            "选项": [
+              "Earth",
+              "The city",
+              "The school"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should we choose for short trips?",
+            "选项": [
+              "A bike instead of a car",
+              "A plane",
+              "A train"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who needs to help keep Earth clean?",
+            "选项": [
+              "Every person, every day",
+              "Only adults",
+              "Only children"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Our only home",
+        "data": [
+          {
+            "问题": "How long does plastic stay in the soil?",
+            "答案": "Hundreds of years."
+          },
+          {
+            "问题": "What should we do when leaving a room?",
+            "答案": "Turn off the lights."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "We should + verb",
+            "例句": "We should plant trees.",
+            "提示": "should表环保建议"
+          },
+          {
+            "句型": "We should not + verb",
+            "例句": "We should not waste water.",
+            "提示": "should not表禁止"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Amazing inventions",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Why does Anna love the phone most?",
+            "选项": [
+              "She can talk to Grandma far away",
+              "It is small",
+              "It is cheap"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Why does Ben love the internet?",
+            "选项": [
+              "He can learn anything online",
+              "It is free",
+              "It is fast to buy things"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where can robots help, Anna says?",
+            "选项": [
+              "In hospitals and homes",
+              "In schools only",
+              "In shops only"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Amazing inventions",
+        "data": [
+          {
+            "问题": "Why does Anna love the phone most?",
+            "答案": "She can talk to Grandma far away."
+          },
+          {
+            "问题": "Why does Ben love the internet?",
+            "答案": "He can learn anything online."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Inventions that changed the world",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did paper help do?",
+            "选项": [
+              "Knowledge travel far",
+              "Nights turn bright",
+              "People fly"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What brought people from across the world together?",
+            "选项": [
+              "The computer and the internet",
+              "The light bulb",
+              "Paper"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What keeps the world growing?",
+            "选项": [
+              "Inventors keep dreaming",
+              "People stop working",
+              "Machines stop"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | Inventions that changed the world",
+        "data": [
+          {
+            "问题": "What did the light bulb do?",
+            "答案": "It turned dark nights bright."
+          },
+          {
+            "问题": "What do robots help doctors do today?",
+            "答案": "Do small surgery."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "... can help in + place",
+            "例句": "Robots can help in hospitals.",
+            "提示": "can表达能力"
+          },
+          {
+            "句型": "... changed the world",
+            "例句": "The light bulb changed the world.",
+            "提示": "过去时描述发明的影响"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Friends forever",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How long have Anna and Ben been friends?",
+            "选项": [
+              "Six years",
+              "Three years",
+              "Ten years"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How can they still share stories in junior high?",
+            "选项": [
+              "On the phone",
+              "By letter",
+              "In class"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What keeps their friendship strong?",
+            "选项": [
+              "Trust and kindness",
+              "Money and gifts",
+              "Games and food"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Friends forever",
+        "data": [
+          {
+            "问题": "How long have Anna and Ben been friends?",
+            "答案": "Six years."
+          },
+          {
+            "问题": "What keeps their friendship strong?",
+            "答案": "Trust and kindness."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | What makes a true friend",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is the first thing that makes a true friend?",
+            "选项": [
+              "Trust",
+              "Money",
+              "Games"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does a kind friend do?",
+            "选项": [
+              "Smiles and listens",
+              "Shouts",
+              "Runs away"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What lasts through the years?",
+            "选项": [
+              "True friendship",
+              "A new toy",
+              "A big house"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | What makes a true friend",
+        "data": [
+          {
+            "问题": "What does a friend do when we are sad?",
+            "答案": "Stands beside us."
+          },
+          {
+            "问题": "What do friends do after making mistakes?",
+            "答案": "They say sorry and move on."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "We have been friends for + time",
+            "例句": "We have been friends for six years.",
+            "提示": "现在完成时描述持续的时间"
+          },
+          {
+            "句型": "... keep(s) + noun + adj",
+            "例句": "Trust and kindness keep friendship strong.",
+            "提示": "keep + 宾语 + 形容词"
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Goodbye and hello",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What goal do Anna and Ben set?",
+            "选项": [
+              "Read 20 English books this summer",
+              "Watch 20 films",
+              "Visit 20 cities"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Ben believe?",
+            "选项": [
+              "They can do it",
+              "It is too hard",
+              "They have no time"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Whom does Anna thank?",
+            "选项": [
+              "Friends and teachers",
+              "Only her parents",
+              "Only her classmates"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Get started | Goodbye and hello",
+        "data": [
+          {
+            "问题": "What goal do Anna and Ben set?",
+            "答案": "Read 20 English books this summer."
+          },
+          {
+            "问题": "Whom does Anna thank?",
+            "答案": "Friends and teachers."
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A bright future",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What do they say goodbye to today?",
+            "选项": [
+              "Primary school",
+              "Junior high",
+              "Their friends"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How should we treat people?",
+            "选项": [
+              "With kindness",
+              "With anger",
+              "With fear"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Where does a new chapter begin?",
+            "选项": [
+              "In junior high",
+              "In primary school",
+              "At home"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "reading_qa",
+        "title": "Reading Room | A bright future",
+        "data": [
+          {
+            "问题": "What did six years give them?",
+            "答案": "Knowledge, courage and good friends."
+          },
+          {
+            "问题": "When is the future bright?",
+            "答案": "When we walk towards it with a smile."
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "It's time to say goodbye to + noun",
+            "例句": "It's time to say goodbye to primary school.",
+            "提示": "It's time to + 动词原形"
+          },
+          {
+            "句型": "Believe in + pronoun",
+            "例句": "Believe in yourself.",
+            "提示": "believe in表示\"相信自己\""
+          }
+        ]
+      }
+    ]
+  }
+}

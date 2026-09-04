@@ -1,0 +1,28 @@
+{
+  "id": "u6",
+  "title": "Unit 6 In the Kitchen",
+  "words": [
+    { "word": "cook", "phonetic": "/kʊk/", "meaning": "[v.] 烹饪", "example": "Mum cooks for us." },
+    { "word": "egg", "phonetic": "/eɡ/", "meaning": "[n.] 鸡蛋", "example": "I eat one egg." },
+    { "word": "milk", "phonetic": "/mɪlk/", "meaning": "[n.] 牛奶", "example": "Drink some milk." },
+    { "word": "fruit", "phonetic": "/fruːt/", "meaning": "[n.] 水果", "example": "Apples are fruit." },
+    { "word": "knife", "phonetic": "/naɪf/", "meaning": "[n.] 刀", "example": "Use the knife carefully." },
+    { "word": "fork", "phonetic": "/fɔːk/", "meaning": "[n.] 叉子", "example": "Hold the fork." },
+    { "word": "spoon", "phonetic": "/spuːn/", "meaning": "[n.] 勺子", "example": "Eat with a spoon." },
+    { "word": "wash", "phonetic": "/wɒʃ/", "meaning": "[v.] 洗", "example": "Wash the vegetables." }
+  ],
+  "lessons": [
+    {
+      "page": "Get started",
+      "title": "Help Mum cook",
+      "en": "Mum: Anna, will you help me in the kitchen?\nAnna: Sure, Mum. What can I do?\nMum: Please wash the fruit and break two eggs.\nAnna: OK. Where is the spoon?\nMum: Beside the knife and fork. Thanks, dear!",
+      "cn": "妈妈：安娜，能在厨房帮我吗？\n安娜：好的，妈妈。我能做什么？\n妈妈：请洗一下水果，再打两个鸡蛋。\n安娜：好。勺子在哪？\n妈妈：在刀叉旁边。谢谢宝贝！"
+    },
+    {
+      "page": "Reading Room",
+      "title": "A small chef",
+      "en": "Today I am a small chef. First, I wash my hands and put on an apron. Then I break two eggs into a bowl and add some milk. Mum lets me cut the bread with a small knife. The kitchen smells warm and sweet. Cooking is a wonderful skill to learn!",
+      "cn": "今天我是小厨师。首先洗手戴围裙。然后打两个鸡蛋到碗里加点牛奶。妈妈让我用小刀切面包。厨房闻起来又暖又香。烹饪是一项很棒的技能！"
+    }
+  ]
+}

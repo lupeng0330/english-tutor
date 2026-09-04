@@ -1,0 +1,32 @@
+{
+  "show": [
+    { "en": "A big show!", "cn": "一场大表演！", "level": 1 },
+    { "en": "We have a show today.", "cn": "今天有表演。", "level": 2 },
+    { "en": "The school show happens once at the end of every term.", "cn": "学校汇演每学期末举行一次。", "level": 3 }
+  ],
+  "prepare": [
+    { "en": "Prepare!", "cn": "准备！", "level": 1 },
+    { "en": "Prepare for the show.", "cn": "为演出做准备。", "level": 2 },
+    { "en": "We have been preparing for this show for three weeks.", "cn": "我们为这次演出准备了三周。", "level": 3 }
+  ],
+  "act": [
+    { "en": "Act it out.", "cn": "演出来。", "level": 1 },
+    { "en": "She acts on stage.", "cn": "她在舞台演。", "level": 2 },
+    { "en": "He acts as the kind king in our school play.", "cn": "他在校园剧中扮演善良的国王。", "level": 3 }
+  ],
+  "audience": [
+    { "en": "The audience.", "cn": "观众。", "level": 1 },
+    { "en": "The audience claps.", "cn": "观众鼓掌。", "level": 2 },
+    { "en": "The audience filled every seat in the school hall.", "cn": "观众坐满了学校礼堂的每个座位。", "level": 3 }
+  ],
+  "clap": [
+    { "en": "Clap!", "cn": "鼓掌！", "level": 1 },
+    { "en": "Everyone claps.", "cn": "大家都鼓掌。", "level": 2 },
+    { "en": "Parents stood up and clapped for a long time.", "cn": "家长们站起来鼓了很久的掌。", "level": 3 }
+  ],
+  "remember": [
+    { "en": "Remember!", "cn": "记住！", "level": 1 },
+    { "en": "I remember this day.", "cn": "我记得这天。", "level": 2 },
+    { "en": "I will remember this school show for many years.", "cn": "这场校园汇演我会记很多年。", "level": 3 }
+  ]
+}

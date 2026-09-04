@@ -1,0 +1,42 @@
+{
+  "welcome": [
+    { "en": "Welcome!", "cn": "欢迎！", "level": 1 },
+    { "en": "Welcome to my home.", "cn": "欢迎来我家。", "level": 2 },
+    { "en": "Welcome to our school — we are very happy to see you.", "cn": "欢迎来我们学校——见到你我们非常开心。", "level": 3 }
+  ],
+  "come in": [
+    { "en": "Come in.", "cn": "进来。", "level": 1 },
+    { "en": "Please come in.", "cn": "请进。", "level": 2 },
+    { "en": "Come in and sit down by the warm fire.", "cn": "进来吧，坐到暖暖的炉火旁。", "level": 3 }
+  ],
+  "house": [
+    { "en": "A new house.", "cn": "一栋新房子。", "level": 1 },
+    { "en": "This is my house.", "cn": "这是我的房子。", "level": 2 },
+    { "en": "Their house is at the end of the street.", "cn": "他们的房子在街道的尽头。", "level": 3 }
+  ],
+  "living room": [
+    { "en": "Our living room.", "cn": "我们的客厅。", "level": 1 },
+    { "en": "The TV is in the living room.", "cn": "电视在客厅里。", "level": 2 },
+    { "en": "We watch movies together in the living room every Saturday.", "cn": "我们每周六在客厅一起看电影。", "level": 3 }
+  ],
+  "kitchen": [
+    { "en": "It's the kitchen.", "cn": "这是厨房。", "level": 1 },
+    { "en": "Mum is cooking in the kitchen.", "cn": "妈妈在厨房做饭。", "level": 2 },
+    { "en": "The kitchen smells nice when Mum is baking bread.", "cn": "妈妈烤面包时，厨房闻起来香喷喷的。", "level": 3 }
+  ],
+  "bedroom": [
+    { "en": "My bedroom.", "cn": "我的卧室。", "level": 1 },
+    { "en": "My bedroom is small.", "cn": "我的卧室不大。", "level": 2 },
+    { "en": "I keep my bedroom tidy with all the toys on the shelf.", "cn": "我把卧室收拾整齐，所有玩具都放在架子上。", "level": 3 }
+  ],
+  "sofa": [
+    { "en": "A soft sofa.", "cn": "一张软沙发。", "level": 1 },
+    { "en": "Sit on the sofa.", "cn": "坐在沙发上。", "level": 2 },
+    { "en": "The cat is sleeping happily on the sofa.", "cn": "猫咪正在沙发上开心地睡觉。", "level": 3 }
+  ],
+  "beautiful": [
+    { "en": "Beautiful!", "cn": "真美！", "level": 1 },
+    { "en": "She has a beautiful smile.", "cn": "她笑容很美。", "level": 2 },
+    { "en": "The garden is full of beautiful flowers in spring.", "cn": "春天花园里开满了美丽的花。", "level": 3 }
+  ]
+}

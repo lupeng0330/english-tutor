@@ -1,0 +1,814 @@
+{
+  "exercises": {
+    "u1": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Letters around us",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What letters can Ben see on the sign?",
+            "选项": [
+              "A big letter B and a small letter s",
+              "Two big letters",
+              "Numbers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What sign are they looking at?",
+            "选项": [
+              "The bus sign",
+              "A shop sign",
+              "A road sign"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Ben say about letters?",
+            "选项": [
+              "They are everywhere in our life",
+              "They are hard to read",
+              "They are only in books"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | The ABC song",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How many letters are there in the alphabet?",
+            "选项": [
+              "26",
+              "24",
+              "28"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Where do we see the letters?",
+            "选项": [
+              "On signs, on a bus, and in books",
+              "Only on TV",
+              "Only at school"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do we use letters to write?",
+            "选项": [
+              "Our names",
+              "Numbers",
+              "Pictures"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "This is + noun",
+            "例句": "This is the bus sign.",
+            "提示": "用This is...来指近处的东西或人"
+          },
+          {
+            "句型": "I can see + noun",
+            "例句": "I can see a big letter B.",
+            "提示": "can see表示\"能看见\""
+          }
+        ]
+      }
+    ],
+    "u2": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Two languages",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What two languages do they have in class?",
+            "选项": [
+              "English and Chinese",
+              "English and French",
+              "Chinese and Japanese"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How do you say \"book\" in Chinese?",
+            "选项": [
+              "shu",
+              "hao",
+              "ni"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Lily notice about English and Chinese words?",
+            "选项": [
+              "They can be different but mean the same",
+              "They are always the same",
+              "They are always different"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Same and different",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How do we say hello in Chinese?",
+            "选项": [
+              "ni hao",
+              "shu",
+              "hello"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do \"hello\" and \"ni hao\" mean?",
+            "选项": [
+              "The same friendly hello",
+              "Different things",
+              "Goodbye"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer think is fun?",
+            "选项": [
+              "Reading and saying words in two languages",
+              "Writing numbers",
+              "Singing songs"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How do you say ... in Chinese?",
+            "例句": "How do you say \"book\" in Chinese?",
+            "提示": "问某词中文怎么说"
+          },
+          {
+            "句型": "I can read/speak + language",
+            "例句": "I can read English.",
+            "提示": "can + 动词原形，表能力"
+          }
+        ]
+      }
+    ],
+    "u3": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Who is he?",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Who is Tom?",
+            "选项": [
+              "Sam's friend",
+              "Sam's teacher",
+              "Sam's brother"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Who is Lily?",
+            "选项": [
+              "Sam's classmate",
+              "Sam's sister",
+              "Sam's teacher"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who is their teacher?",
+            "选项": [
+              "Miss Wang",
+              "Lily",
+              "Tom"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My friends",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is Tom like?",
+            "选项": [
+              "A happy boy",
+              "A sad boy",
+              "A shy boy"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What is Lily like?",
+            "选项": [
+              "A kind girl",
+              "A tall girl",
+              "A quiet girl"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who make the writer's school day warm?",
+            "选项": [
+              "A friend, a classmate, a teacher",
+              "Only the teacher",
+              "Only the friends"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Who is he/she?",
+            "例句": "Who is he? He is my friend.",
+            "提示": "Who是用来问\"谁\"的疑问词"
+          },
+          {
+            "句型": "He/She is + noun/adj",
+            "例句": "She is a kind girl.",
+            "提示": "用is连接主语和描述"
+          }
+        ]
+      }
+    ],
+    "u4": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Colour the keys",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What are they going to colour today?",
+            "选项": [
+              "The keyboard",
+              "A picture",
+              "A box"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What colour is the first key?",
+            "选项": [
+              "Red",
+              "Blue",
+              "Green"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Which key does the teacher ask Mike to click?",
+            "选项": [
+              "The green key",
+              "The red key",
+              "The blue key"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A colourful keyboard",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "How many colours does the writer use?",
+            "选项": [
+              "Four",
+              "Two",
+              "Three"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What colour is \"that key\"?",
+            "选项": [
+              "Blue",
+              "Red",
+              "Yellow"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does the writer type with the keys?",
+            "选项": [
+              "My name",
+              "A number",
+              "A word"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "What colour is ...?",
+            "例句": "What colour is this key?",
+            "提示": "问颜色用What colour"
+          },
+          {
+            "句型": "Colour it + colour",
+            "例句": "Colour it red.",
+            "提示": "祈使句：动词开头的指令句"
+          }
+        ]
+      }
+    ],
+    "u5": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Set a password",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What are Dad and Emma setting a password for?",
+            "选项": [
+              "The tablet",
+              "The phone",
+              "The door"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "How many numbers does Emma pick?",
+            "选项": [
+              "Four",
+              "Three",
+              "Five"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does Dad tell Emma to do with the password?",
+            "选项": [
+              "Remember it and keep it safe",
+              "Tell her friends",
+              "Write it on the tablet"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Keep it secret",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is a password made of?",
+            "选项": [
+              "Numbers",
+              "Letters",
+              "Colours"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "Why do we type the password?",
+            "选项": [
+              "To keep things safe",
+              "To play a game",
+              "To draw a picture"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "Who should you NOT tell your password to?",
+            "选项": [
+              "Others",
+              "Your dad",
+              "Yourself"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "How many ... do we need?",
+            "例句": "How many numbers do we need?",
+            "提示": "问数量用How many"
+          },
+          {
+            "句型": "It is made of + noun",
+            "例句": "It is made of numbers.",
+            "提示": "made of表示\"由...组成\""
+          }
+        ]
+      }
+    ],
+    "u6": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | I can draw",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What can Lucy draw for the sun?",
+            "选项": [
+              "A circle",
+              "A line",
+              "A box"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does Lucy draw for the road?",
+            "选项": [
+              "A line",
+              "A circle",
+              "A dot"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What colour does Lucy paint the sun?",
+            "选项": [
+              "Yellow",
+              "Red",
+              "Green"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | My picture",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer draw first?",
+            "选项": [
+              "A circle",
+              "Two lines",
+              "The road"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do the two lines stand for?",
+            "选项": [
+              "The road",
+              "The sun",
+              "A tree"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What colours does the writer paint the picture with?",
+            "选项": [
+              "Red and green",
+              "Blue and yellow",
+              "Black and white"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I can draw + noun",
+            "例句": "I can draw a picture.",
+            "提示": "can表示能力，\"我能...\""
+          },
+          {
+            "句型": "First ... Then ...",
+            "例句": "First, I draw a circle. Then I draw two lines.",
+            "提示": "用First/Then描述做事的顺序"
+          }
+        ]
+      }
+    ],
+    "u7": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Listen well",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the teacher ask the class to be?",
+            "选项": [
+              "Quiet",
+              "Fast",
+              "Loud"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What should Jack use to listen?",
+            "选项": [
+              "His ears",
+              "His mouth",
+              "His hands"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does a good listener do, the teacher says?",
+            "选项": [
+              "Learns a lot",
+              "Talks a lot",
+              "Runs a lot"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | A good listener",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What is a good listener like?",
+            "选项": [
+              "Quiet and careful",
+              "Loud and fast",
+              "Busy and tired"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What do we listen with?",
+            "选项": [
+              "Our ears",
+              "Our mouths",
+              "Our eyes"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do you get if you are a good listener?",
+            "选项": [
+              "More friends",
+              "More toys",
+              "More books"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "Please be + adj",
+            "例句": "Please be quiet.",
+            "提示": "please + 动词 / be，表示礼貌请求"
+          },
+          {
+            "句型": "We listen with + noun",
+            "例句": "We listen with our ears.",
+            "提示": "用with表示\"用...\"（工具/器官）"
+          }
+        ]
+      }
+    ],
+    "u8": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Time to exercise",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What can they do today, the coach says?",
+            "选项": [
+              "Run, jump and play ball",
+              "Only run",
+              "Only swim"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "When can they swim?",
+            "选项": [
+              "On Friday",
+              "On Monday",
+              "Every day"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What does sport do for us?",
+            "选项": [
+              "Makes us healthy",
+              "Makes us tired",
+              "Makes us hungry"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Reading Room | Let's be healthy",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What does the writer do in the morning?",
+            "选项": [
+              "Run and jump",
+              "Swim",
+              "Play ball"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What does the writer like to do in summer?",
+            "选项": [
+              "Swim",
+              "Run",
+              "Jump"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do they do after school?",
+            "选项": [
+              "Play ball with friends",
+              "Go swimming",
+              "Sleep"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "It's time to + verb",
+            "例句": "It's time to exercise.",
+            "提示": "表示\"该做某事的时间到了\""
+          },
+          {
+            "句型": "I like to + verb",
+            "例句": "I like to swim in summer.",
+            "提示": "like to do表示\"喜欢做某事\""
+          }
+        ]
+      }
+    ],
+    "u9": [
+      {
+        "kind": "choice_qa",
+        "title": "Get started | Our music show",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "Where will they have the music show?",
+            "选项": [
+              "On the stage",
+              "In the classroom",
+              "At home"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What can Tom do?",
+            "选项": [
+              "Sing an English song",
+              "Dance",
+              "Read numbers only"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What can Lily do?",
+            "选项": [
+              "Dance with her friends",
+              "Sing a song",
+              "Read letters"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "choice_qa",
+        "title": "Wonderland | We can do it!",
+        "data": [
+          {
+            "题号": 1,
+            "问题": "What did they learn this term?",
+            "选项": [
+              "Letters, words, colours and numbers",
+              "Only letters",
+              "Only numbers"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 2,
+            "问题": "What can they do?",
+            "选项": [
+              "Draw, listen, exercise and play",
+              "Only draw",
+              "Only play"
+            ],
+            "答案": "A"
+          },
+          {
+            "题号": 3,
+            "问题": "What do they do in the music show?",
+            "选项": [
+              "Sing and dance",
+              "Read books",
+              "Run and jump"
+            ],
+            "答案": "A"
+          }
+        ]
+      },
+      {
+        "kind": "grammar_table",
+        "title": "Language focus",
+        "data": [
+          {
+            "句型": "I can + verb (review)",
+            "例句": "I can sing an English song.",
+            "提示": "复习：can表示能力"
+          },
+          {
+            "句型": "We can + verb (review)",
+            "例句": "We can draw, listen, exercise and play.",
+            "提示": "复习：can表示我们能做到的事"
+          }
+        ]
+      }
+    ]
+  }
+}

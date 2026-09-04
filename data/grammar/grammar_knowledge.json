@@ -1,0 +1,4014 @@
+[
+  {
+    "id": "g001",
+    "title": "名词：可数/不可数",
+    "titleEn": "Countable & Uncountable Nouns",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U1",
+        "3A_U2"
+      ],
+      "hj": [
+        "7A_U1",
+        "7A_U3"
+      ]
+    },
+    "definition": "可数名词有单复数形式；不可数名词没有复数。",
+    "rules": [
+      {
+        "rule": "可数复数+s/es",
+        "note": "book→books"
+      },
+      {
+        "rule": "不可数用some/much",
+        "note": "some water"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have an apple.",
+        "cn": "我有一个苹果。"
+      },
+      {
+        "en": "There is some water.",
+        "cn": "有一些水。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "two waters",
+        "correct": "two bottles of water",
+        "note": "water不可数"
+      }
+    ],
+    "keywords": [
+      "名词",
+      "可数",
+      "不可数",
+      "a/an",
+      "复数"
+    ],
+    "tips": "不可数配量词最合适"
+  },
+  {
+    "id": "g002",
+    "title": "名词：复数规则",
+    "titleEn": "Plural Nouns",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U3"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "英语名词复数的六条规则。",
+    "rules": [
+      {
+        "rule": "一般+s",
+        "note": "book→books"
+      },
+      {
+        "rule": "s/x/sh/ch+es",
+        "note": "box→boxes"
+      },
+      {
+        "rule": "辅音+y变i+es",
+        "note": "baby→babies"
+      },
+      {
+        "rule": "f/fe变v+es",
+        "note": "knife→knives"
+      },
+      {
+        "rule": "o有生命+es",
+        "note": "tomato→tomatoes"
+      },
+      {
+        "rule": "不规则",
+        "note": "child→children"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Two cats.",
+        "cn": "两只猫。"
+      },
+      {
+        "en": "The children.",
+        "cn": "孩子们。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "two childs",
+        "correct": "two children",
+        "note": "child不规则"
+      }
+    ],
+    "keywords": [
+      "名词",
+      "复数",
+      "规则",
+      "不规则"
+    ],
+    "tips": "s/x/sh/ch配es最常见"
+  },
+  {
+    "id": "g003",
+    "title": "名词：所有格",
+    "titleEn": "Possessive Nouns",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U2"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "用's或of表示所属。",
+    "rules": [
+      {
+        "rule": "单数名词+'s",
+        "note": "Tom's book"
+      },
+      {
+        "rule": "复数+'",
+        "note": "students' books"
+      },
+      {
+        "rule": "无生命of",
+        "note": "the door of the room"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Lily's bag.",
+        "cn": "莉莉的包。"
+      },
+      {
+        "en": "The name of the book.",
+        "cn": "书名。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "Tom book",
+        "correct": "Tom's book",
+        "note": "漏了's"
+      }
+    ],
+    "keywords": [
+      "名词",
+      "所有格",
+      "'s",
+      "of"
+    ],
+    "tips": "有生命's, 无生命of"
+  },
+  {
+    "id": "g004",
+    "title": "人称代词",
+    "titleEn": "Personal Pronouns",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U2"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "主格作主语, 宾格作宾语。",
+    "rules": [
+      {
+        "rule": "主格I/you/he/she/it/we/they",
+        "note": "作主语"
+      },
+      {
+        "rule": "宾格me/you/him/her/it/us/them",
+        "note": "作宾语"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I like her.",
+        "cn": "我喜欢她。"
+      },
+      {
+        "en": "He gives me a pen.",
+        "cn": "他给我笔。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "Me like apples.",
+        "correct": "I like apples.",
+        "note": "主语用I"
+      }
+    ],
+    "keywords": [
+      "代词",
+      "主格",
+      "宾格"
+    ],
+    "tips": "主语主格宾语宾格"
+  },
+  {
+    "id": "g005",
+    "title": "物主代词",
+    "titleEn": "Possessive Pronouns",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U7"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "形物代后接名词, 名物代独立用。",
+    "rules": [
+      {
+        "rule": "形物代my/your/his/her/its/our/their",
+        "note": "后跟名词"
+      },
+      {
+        "rule": "名物代mine/yours/his/hers/ours/theirs",
+        "note": "独立使用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "This is my book.",
+        "cn": "我的书。"
+      },
+      {
+        "en": "This book is mine.",
+        "cn": "这书是我的。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "mine book",
+        "correct": "my book",
+        "note": "my跟名词"
+      }
+    ],
+    "keywords": [
+      "代词",
+      "物主",
+      "my",
+      "mine"
+    ],
+    "tips": "形物+名词, 名物独立站"
+  },
+  {
+    "id": "g006",
+    "title": "反身代词",
+    "titleEn": "Reflexive Pronouns",
+    "category": "parts_of_speech",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U1"
+      ],
+      "hj": [
+        "7B_U4"
+      ]
+    },
+    "definition": "表示某人自己。",
+    "rules": [
+      {
+        "rule": "单数-self",
+        "note": "myself/yourself/himself/herself/itself"
+      },
+      {
+        "rule": "复数-selves",
+        "note": "ourselves/yourselves/themselves"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I did it myself.",
+        "cn": "我自己做的。"
+      },
+      {
+        "en": "Help yourself.",
+        "cn": "请自便。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "hisself",
+        "correct": "himself",
+        "note": "不是hisself"
+      }
+    ],
+    "keywords": [
+      "代词",
+      "反身",
+      "self"
+    ],
+    "tips": "单self复selves"
+  },
+  {
+    "id": "g007",
+    "title": "指示代词",
+    "titleEn": "Demonstratives",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U4"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "this/these近指, that/those远指。",
+    "rules": [
+      {
+        "rule": "单数this/that",
+        "note": "this is"
+      },
+      {
+        "rule": "复数these/those",
+        "note": "those are"
+      }
+    ],
+    "examples": [
+      {
+        "en": "This is a cat.",
+        "cn": "这是猫。"
+      },
+      {
+        "en": "Those are dogs.",
+        "cn": "那些是狗。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "This are...",
+        "correct": "These are...",
+        "note": "复数用these"
+      }
+    ],
+    "keywords": [
+      "代词",
+      "this",
+      "that",
+      "these"
+    ],
+    "tips": "近this远that"
+  },
+  {
+    "id": "g008",
+    "title": "不定代词",
+    "titleEn": "Indefinite Pronouns",
+    "category": "parts_of_speech",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U3"
+      ],
+      "hj": [
+        "7B_U3"
+      ]
+    },
+    "definition": "some/any/no/every复合词。",
+    "rules": [
+      {
+        "rule": "some肯定, any否/疑",
+        "note": "some apples"
+      },
+      {
+        "rule": "-one人, -thing物",
+        "note": "someone, something"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Someone is here.",
+        "cn": "有人。"
+      },
+      {
+        "en": "Anything else?",
+        "cn": "还有吗?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I don't have some.",
+        "correct": "I don't have any.",
+        "note": "否定用any"
+      }
+    ],
+    "keywords": [
+      "代词",
+      "不定",
+      "some",
+      "any"
+    ],
+    "tips": "some肯定any否"
+  },
+  {
+    "id": "g009",
+    "title": "冠词：定冠词 the",
+    "titleEn": "Definite Article",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U1"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "特指某人某物。独一、序数、最高、乐器前。",
+    "rules": [
+      {
+        "rule": "特指上文",
+        "note": "I saw a dog. The dog..."
+      },
+      {
+        "rule": "独一事物",
+        "note": "the sun, the moon"
+      },
+      {
+        "rule": "序数/最高/乐器",
+        "note": "the first, the best"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The sun rises.",
+        "cn": "太阳升起。"
+      },
+      {
+        "en": "He is the tallest.",
+        "cn": "他是最高的。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "Sun is bright.",
+        "correct": "The sun...",
+        "note": "独一加the"
+      }
+    ],
+    "keywords": [
+      "冠词",
+      "the",
+      "定冠词"
+    ],
+    "tips": "特指用the"
+  },
+  {
+    "id": "g010",
+    "title": "冠词：不定冠词 a/an",
+    "titleEn": "Indefinite Article",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U1"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "单数可数名词泛指。",
+    "rules": [
+      {
+        "rule": "辅音开头→a",
+        "note": "a book, a university"
+      },
+      {
+        "rule": "元音开头→an",
+        "note": "an apple, an hour"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have a pen.",
+        "cn": "我有笔。"
+      },
+      {
+        "en": "An orange.",
+        "cn": "一个橙子。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "a apple",
+        "correct": "an apple",
+        "note": "元音用an"
+      }
+    ],
+    "keywords": [
+      "冠词",
+      "a",
+      "an"
+    ],
+    "tips": "a辅an元看音标"
+  },
+  {
+    "id": "g011",
+    "title": "数词：基数词",
+    "titleEn": "Cardinal Numbers",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U6"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "1-100数字表达。",
+    "rules": [
+      {
+        "rule": "1-12单独记忆",
+        "note": "one→twelve"
+      },
+      {
+        "rule": "13-19加teen",
+        "note": "thirteen"
+      },
+      {
+        "rule": "20-90加ty",
+        "note": "twenty, forty"
+      }
+    ],
+    "examples": [
+      {
+        "en": "twenty-five",
+        "cn": "25"
+      },
+      {
+        "en": "forty-two",
+        "cn": "42"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "fourty",
+        "correct": "forty",
+        "note": "没有u"
+      }
+    ],
+    "keywords": [
+      "数词",
+      "基数",
+      "数字"
+    ],
+    "tips": "1-12硬记"
+  },
+  {
+    "id": "g012",
+    "title": "数词：序数词",
+    "titleEn": "Ordinal Numbers",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U2"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "表顺序: first, second...",
+    "rules": [
+      {
+        "rule": "基数+th",
+        "note": "four→fourth"
+      },
+      {
+        "rule": "特殊:第一二三",
+        "note": "first, second, third"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I am first.",
+        "cn": "我第一。"
+      },
+      {
+        "en": "Third floor.",
+        "cn": "三楼。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "twoth",
+        "correct": "second",
+        "note": "二是second"
+      }
+    ],
+    "keywords": [
+      "数词",
+      "序数",
+      "first"
+    ],
+    "tips": "一二三特殊记"
+  },
+  {
+    "id": "g013",
+    "title": "形容词：用法与位置",
+    "titleEn": "Adjectives",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U5"
+      ],
+      "hj": [
+        "7A_U3"
+      ]
+    },
+    "definition": "描述名词。名前或be后。",
+    "rules": [
+      {
+        "rule": "名词前",
+        "note": "a beautiful flower"
+      },
+      {
+        "rule": "be动词后",
+        "note": "The flower is beautiful."
+      }
+    ],
+    "examples": [
+      {
+        "en": "A smart girl.",
+        "cn": "聪明女孩。"
+      },
+      {
+        "en": "The weather is nice.",
+        "cn": "天气好。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "a red big apple",
+        "correct": "a big red apple",
+        "note": "大小先于颜色"
+      }
+    ],
+    "keywords": [
+      "形容词",
+      "描述",
+      "beautiful"
+    ],
+    "tips": "名前表语后"
+  },
+  {
+    "id": "g014",
+    "title": "副词：方式副词",
+    "titleEn": "Adverbs of Manner",
+    "category": "parts_of_speech",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U4"
+      ],
+      "hj": [
+        "7B_U5"
+      ]
+    },
+    "definition": "修饰动词, 常ly结尾。",
+    "rules": [
+      {
+        "rule": "adj+ly=adv",
+        "note": "quick→quickly"
+      },
+      {
+        "rule": "特殊:well, fast, hard",
+        "note": "good→well"
+      }
+    ],
+    "examples": [
+      {
+        "en": "She runs quickly.",
+        "cn": "她跑得快。"
+      },
+      {
+        "en": "He speaks well.",
+        "cn": "他说得好。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He runs quick.",
+        "correct": "He runs quickly.",
+        "note": "动词用副词"
+      }
+    ],
+    "keywords": [
+      "副词",
+      "ly",
+      "quickly"
+    ],
+    "tips": "动作用副词"
+  },
+  {
+    "id": "g015",
+    "title": "副词：频度副词",
+    "titleEn": "Adverbs of Frequency",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U4"
+      ],
+      "hj": [
+        "7A_U4"
+      ]
+    },
+    "definition": "发生频率: always→never。",
+    "rules": [
+      {
+        "rule": "always>usually>often>sometimes>never",
+        "note": "频率递减"
+      },
+      {
+        "rule": "be/助/情后,实义动词前",
+        "note": "He is always late."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I often swim.",
+        "cn": "我经常游泳。"
+      },
+      {
+        "en": "She never eats junk.",
+        "cn": "她从不吃垃圾食品。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I go always.",
+        "correct": "I always go.",
+        "note": "副词放动词前"
+      }
+    ],
+    "keywords": [
+      "副词",
+      "always",
+      "often",
+      "never"
+    ],
+    "tips": "频度在实义动词前"
+  },
+  {
+    "id": "g016",
+    "title": "介词：时间介词",
+    "titleEn": "Prepositions of Time",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4B_U3"
+      ],
+      "hj": [
+        "7A_U4"
+      ]
+    },
+    "definition": "at时刻, on天, in月年。",
+    "rules": [
+      {
+        "rule": "at+时刻",
+        "note": "at 7:00, at noon"
+      },
+      {
+        "rule": "on+某天",
+        "note": "on Monday"
+      },
+      {
+        "rule": "in+月/年/季节",
+        "note": "in May, in summer"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I get up at 7.",
+        "cn": "7点起。"
+      },
+      {
+        "en": "We go on weekdays.",
+        "cn": "工作日去。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "on 2010",
+        "correct": "in 2010",
+        "note": "年用in"
+      }
+    ],
+    "keywords": [
+      "介词",
+      "时间",
+      "at",
+      "on",
+      "in"
+    ],
+    "tips": "at时刻on天in月年"
+  },
+  {
+    "id": "g017",
+    "title": "介词：地点介词",
+    "titleEn": "Prepositions of Place",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3B_U2"
+      ],
+      "hj": [
+        "7A_U3"
+      ]
+    },
+    "definition": "位置关系: in里on上under下。",
+    "rules": [
+      {
+        "rule": "in里on上under下",
+        "note": "in the box"
+      },
+      {
+        "rule": "behind后between之间next to旁",
+        "note": "between A and B"
+      }
+    ],
+    "examples": [
+      {
+        "en": "The cat is under the chair.",
+        "cn": "猫在椅子下。"
+      },
+      {
+        "en": "School next to park.",
+        "cn": "学校在公园旁。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "The book is in the desk.",
+        "correct": "on the desk",
+        "note": "桌面上用on"
+      }
+    ],
+    "keywords": [
+      "介词",
+      "地点",
+      "in",
+      "on",
+      "under"
+    ],
+    "tips": "in里on上under下"
+  },
+  {
+    "id": "g018",
+    "title": "连词",
+    "titleEn": "Conjunctions",
+    "category": "parts_of_speech",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U6"
+      ],
+      "hj": [
+        "7B_U6"
+      ]
+    },
+    "definition": "连接词/短语/句子。",
+    "rules": [
+      {
+        "rule": "and/but/or",
+        "note": "并列"
+      },
+      {
+        "rule": "because/so",
+        "note": "因果不同时"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I like apples and bananas.",
+        "cn": "我喜欢苹果和香蕉。"
+      },
+      {
+        "en": "He was late because he missed the bus.",
+        "cn": "迟了因错过车。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "Because ... so ...",
+        "correct": "Because ... , ...",
+        "note": "because和so不同用"
+      }
+    ],
+    "keywords": [
+      "连词",
+      "and",
+      "but",
+      "because"
+    ],
+    "tips": "because和so不共存"
+  },
+  {
+    "id": "g019",
+    "title": "感叹词",
+    "titleEn": "Interjections",
+    "category": "parts_of_speech",
+    "level": "basic",
+    "grades": [
+      "G3"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U8"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "Oh, Wow, Oops等。",
+    "rules": [
+      {
+        "rule": "表达强烈感情",
+        "note": "Wow! Oops! Hooray!"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Wow! Amazing!",
+        "cn": "哇! 太棒了!"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "感叹词",
+      "oh",
+      "wow"
+    ],
+    "tips": "口语表达最常用"
+  },
+  {
+    "id": "g020",
+    "title": "量词",
+    "titleEn": "Quantifiers",
+    "category": "parts_of_speech",
+    "level": "intermediate",
+    "grades": [
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5B_U3"
+      ],
+      "hj": [
+        "7A_U5"
+      ]
+    },
+    "definition": "不可数名词用量词。",
+    "rules": [
+      {
+        "rule": "a cup/glass/bottle of",
+        "note": "液体"
+      },
+      {
+        "rule": "a piece/pair/loaf of",
+        "note": "常用"
+      }
+    ],
+    "examples": [
+      {
+        "en": "A glass of water.",
+        "cn": "一杯水。"
+      },
+      {
+        "en": "A pair of shoes.",
+        "cn": "一双鞋。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "two bread",
+        "correct": "two pieces of bread",
+        "note": "bread不可数"
+      }
+    ],
+    "keywords": [
+      "量词",
+      "cup",
+      "piece"
+    ],
+    "tips": "不可数配量词"
+  },
+  {
+    "id": "g021",
+    "title": "一般现在时",
+    "titleEn": "Simple Present",
+    "category": "tenses",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U5",
+        "4A_U3"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "经常性动作或习惯。",
+    "rules": [
+      {
+        "rule": "主语+动词原形(s/es)",
+        "note": "三单加s"
+      },
+      {
+        "rule": "否定: don't/doesn't+原形",
+        "note": "I don't know"
+      },
+      {
+        "rule": "疑问: Do/Does...",
+        "note": "Do you like?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I go to school every day.",
+        "cn": "我每天上学。"
+      },
+      {
+        "en": "She likes apples.",
+        "cn": "她喜欢苹果。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "She like apples.",
+        "correct": "She likes apples.",
+        "note": "三单加s"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "一般现在时",
+      "三单"
+    ],
+    "tips": "I/You/We/They原形,He/She/It加s"
+  },
+  {
+    "id": "g022",
+    "title": "现在进行时",
+    "titleEn": "Present Continuous",
+    "category": "tenses",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U6"
+      ],
+      "hj": [
+        "7A_U5"
+      ]
+    },
+    "definition": "此刻正在进行的动作。",
+    "rules": [
+      {
+        "rule": "am/is/are+动词ing",
+        "note": "I am reading"
+      },
+      {
+        "rule": "否定: am/is/are+not+ing",
+        "note": "He is not sleeping"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I am reading.",
+        "cn": "我正在读书。"
+      },
+      {
+        "en": "They are playing.",
+        "cn": "他们在玩。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He is read.",
+        "correct": "He is reading.",
+        "note": "进行时加ing"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "进行时",
+      "ing"
+    ],
+    "tips": "be+doing正进行"
+  },
+  {
+    "id": "g023",
+    "title": "一般过去时(规则)",
+    "titleEn": "Simple Past Regular",
+    "category": "tenses",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U2"
+      ],
+      "hj": [
+        "7B_U1"
+      ]
+    },
+    "definition": "规则动词加ed。",
+    "rules": [
+      {
+        "rule": "一般+ed",
+        "note": "play→played"
+      },
+      {
+        "rule": "e结尾+d",
+        "note": "live→lived"
+      },
+      {
+        "rule": "辅y变i+ed",
+        "note": "study→studied"
+      },
+      {
+        "rule": "重读闭音节双写+ed",
+        "note": "stop→stopped"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I played football.",
+        "cn": "我踢了足球。"
+      },
+      {
+        "en": "She studied English.",
+        "cn": "她学了英语。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "studyed",
+        "correct": "studied",
+        "note": "y变i+ed"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "过去时",
+      "ed"
+    ],
+    "tips": "一般ed, e加d, 辅y变i加ed"
+  },
+  {
+    "id": "g024",
+    "title": "一般过去时(不规则)",
+    "titleEn": "Simple Past Irregular",
+    "category": "tenses",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U2"
+      ],
+      "hj": [
+        "7B_U1"
+      ]
+    },
+    "definition": "不规则动词过去式。",
+    "rules": [
+      {
+        "rule": "常见: go→went, see→saw, eat→ate",
+        "note": "需单独记忆"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I went to the park.",
+        "cn": "我去了公园。"
+      },
+      {
+        "en": "She bought a dress.",
+        "cn": "她买了裙子。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I goed.",
+        "correct": "I went.",
+        "note": "go→went"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "过去时",
+      "不规则"
+    ],
+    "tips": "不规则需死记"
+  },
+  {
+    "id": "g025",
+    "title": "过去进行时",
+    "titleEn": "Past Continuous",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "7B_U3"
+      ],
+      "hj": [
+        "8A_U3"
+      ]
+    },
+    "definition": "过去某一时刻正在进行的动作。",
+    "rules": [
+      {
+        "rule": "was/were+动词ing",
+        "note": "I was reading at 8pm."
+      },
+      {
+        "rule": "while连接",
+        "note": "While I was reading..."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I was watching TV at 7pm.",
+        "cn": "7点我在看电视。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I was watch.",
+        "correct": "I was watching.",
+        "note": "was后加ing"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "过去进行",
+      "was/were"
+    ],
+    "tips": "was/were+doing"
+  },
+  {
+    "id": "g026",
+    "title": "一般将来时 will",
+    "titleEn": "Future will",
+    "category": "tenses",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5B_U1"
+      ],
+      "hj": [
+        "7B_U2"
+      ]
+    },
+    "definition": "will+动词原形。",
+    "rules": [
+      {
+        "rule": "主语+will+原形",
+        "note": "I will go"
+      },
+      {
+        "rule": "否定won't",
+        "note": "He won't come"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I will visit Beijing.",
+        "cn": "我将去北京。"
+      },
+      {
+        "en": "It will rain tomorrow.",
+        "cn": "明天会下雨。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I will to go.",
+        "correct": "I will go.",
+        "note": "will后原形"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "将来",
+      "will"
+    ],
+    "tips": "will跟原形"
+  },
+  {
+    "id": "g027",
+    "title": "一般将来时 be going to",
+    "titleEn": "Future be going to",
+    "category": "tenses",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U1"
+      ],
+      "hj": [
+        "7B_U2"
+      ]
+    },
+    "definition": "be going to+原形, 表打算或预测。",
+    "rules": [
+      {
+        "rule": "am/is/are going to+原形",
+        "note": "I am going to play"
+      },
+      {
+        "rule": "will临时/going to计划",
+        "note": "I will help you. vs I am going to study."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I am going to study hard.",
+        "cn": "我打算努力学习。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I going to sleep.",
+        "correct": "I am going to sleep.",
+        "note": "be动词不能丢"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "be going to",
+      "打算"
+    ],
+    "tips": "be going to表计划"
+  },
+  {
+    "id": "g028",
+    "title": "现在完成时(1)",
+    "titleEn": "Present Perfect 1",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U2"
+      ],
+      "hj": [
+        "8B_U2"
+      ]
+    },
+    "definition": "have/has+过去分词。过去对现在的影响。",
+    "rules": [
+      {
+        "rule": "have/has+过去分词",
+        "note": "I have finished"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have finished homework.",
+        "cn": "作业已完成。"
+      },
+      {
+        "en": "She has lived here 5 years.",
+        "cn": "她住这5年了。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I have finish.",
+        "correct": "I have finished.",
+        "note": "have后用过去分词"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "完成时",
+      "have",
+      "has"
+    ],
+    "tips": "have/has+过分词"
+  },
+  {
+    "id": "g029",
+    "title": "现在完成时(2): since/for",
+    "titleEn": "Present Perfect 2",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G8",
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U2"
+      ],
+      "hj": [
+        "8B_U2"
+      ]
+    },
+    "definition": "since+时间点, for+时间段。",
+    "rules": [
+      {
+        "rule": "since+过去点",
+        "note": "since 2020"
+      },
+      {
+        "rule": "for+一段",
+        "note": "for 5 years"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have known him since 2018.",
+        "cn": "从2018年认识。"
+      },
+      {
+        "en": "I have studied for 6 years.",
+        "cn": "学了6年。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "since 5 years",
+        "correct": "for 5 years",
+        "note": "since接时间点"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "since",
+      "for"
+    ],
+    "tips": "since点for段"
+  },
+  {
+    "id": "g030",
+    "title": "现在完成时(3): already/yet",
+    "titleEn": "Present Perfect 3",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U1"
+      ],
+      "hj": [
+        "9A_U1"
+      ]
+    },
+    "definition": "already(已/肯定), yet(还/否疑)。",
+    "rules": [
+      {
+        "rule": "already肯定句",
+        "note": "I have already done it."
+      },
+      {
+        "rule": "yet否定/疑问",
+        "note": "Have you done it yet?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have already eaten.",
+        "cn": "我已吃过。"
+      },
+      {
+        "en": "Have you finished yet?",
+        "cn": "做完了吗?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I have yet done.",
+        "correct": "I have already done.",
+        "note": "肯定用already"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "already",
+      "yet"
+    ],
+    "tips": "already肯定yet否疑"
+  },
+  {
+    "id": "g031",
+    "title": "过去完成时",
+    "titleEn": "Past Perfect",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U3"
+      ],
+      "hj": [
+        "9B_U3"
+      ]
+    },
+    "definition": "had+过去分词。过去的过去。",
+    "rules": [
+      {
+        "rule": "had+过去分词",
+        "note": "I had finished before he arrived."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The movie had started.",
+        "cn": "电影已开始。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I had went.",
+        "correct": "I had gone.",
+        "note": "had后过分词"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "过去完成",
+      "had"
+    ],
+    "tips": "had+过分表过去的过去"
+  },
+  {
+    "id": "g032",
+    "title": "过去将来时",
+    "titleEn": "Past Future",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U5"
+      ],
+      "hj": [
+        "9B_U5"
+      ]
+    },
+    "definition": "would+原形。从过去看将来。",
+    "rules": [
+      {
+        "rule": "would+原形",
+        "note": "He said he would come."
+      }
+    ],
+    "examples": [
+      {
+        "en": "He said he would call.",
+        "cn": "他说会来电。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He said he will.",
+        "correct": "He said he would.",
+        "note": "主过从过"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "过去将来",
+      "would"
+    ],
+    "tips": "would跟原形"
+  },
+  {
+    "id": "g033",
+    "title": "现在完成进行时",
+    "titleEn": "Present Perfect Continuous",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U6"
+      ],
+      "hj": [
+        "9B_U6"
+      ]
+    },
+    "definition": "have been doing 从过去持续到现在。",
+    "rules": [
+      {
+        "rule": "have/has been+doing",
+        "note": "I have been waiting."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have been studying 3 hours.",
+        "cn": "已学3小时。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "时态",
+      "完成进行",
+      "been doing"
+    ],
+    "tips": "have been doing持续中"
+  },
+  {
+    "id": "g034",
+    "title": "过去时 vs 完成时",
+    "titleEn": "Past vs Perfect",
+    "category": "tenses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U1"
+      ],
+      "hj": [
+        "9A_U1"
+      ]
+    },
+    "definition": "有具体时间用过去, 无时间影响现在用完成。",
+    "rules": [
+      {
+        "rule": "过去: 具体时间",
+        "note": "yesterday, last week"
+      },
+      {
+        "rule": "完成: 无时间或持续",
+        "note": "already, ever, never"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I went yesterday.",
+        "cn": "昨天去了。"
+      },
+      {
+        "en": "I have been there.",
+        "cn": "我去过。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I have gone yesterday.",
+        "correct": "I went yesterday.",
+        "note": "有具体时间用过去"
+      }
+    ],
+    "keywords": [
+      "时态",
+      "对比"
+    ],
+    "tips": "有具体时间=过去时"
+  },
+  {
+    "id": "g035",
+    "title": "be动词时态",
+    "titleEn": "Be Verb Tenses",
+    "category": "tenses",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U2"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "am/is/are→was/were→will be。",
+    "rules": [
+      {
+        "rule": "现在am/is/are",
+        "note": "I am, You are"
+      },
+      {
+        "rule": "过去was/were",
+        "note": "I was, They were"
+      },
+      {
+        "rule": "将来will be",
+        "note": "I will be"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I am a student.",
+        "cn": "我是学生。"
+      },
+      {
+        "en": "They were late.",
+        "cn": "他们迟到过。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "They was...",
+        "correct": "They were...",
+        "note": "复数were"
+      }
+    ],
+    "keywords": [
+      "be动词",
+      "am",
+      "is",
+      "are",
+      "was"
+    ],
+    "tips": "am/is/are现在, was/were过去"
+  },
+  {
+    "id": "g036",
+    "title": "have/has got",
+    "titleEn": "Have Got",
+    "category": "tenses",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3B_U1"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "表示拥有的口语句型。",
+    "rules": [
+      {
+        "rule": "I/You/We/They have got",
+        "note": "I've got a pen"
+      },
+      {
+        "rule": "He/She/It has got",
+        "note": "She's got a cat"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I have got a bike.",
+        "cn": "我有自行车。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I have get...",
+        "correct": "I have got...",
+        "note": "have后got"
+      }
+    ],
+    "keywords": [
+      "have got",
+      "has got",
+      "拥有"
+    ],
+    "tips": "口语表拥有"
+  },
+  {
+    "id": "g037",
+    "title": "情态动词 can/can't",
+    "titleEn": "Modal Can",
+    "category": "verb_forms",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U6",
+        "4A_U6"
+      ],
+      "hj": [
+        "7A_U5"
+      ]
+    },
+    "definition": "can+原形。表能力/许可。",
+    "rules": [
+      {
+        "rule": "can+原形",
+        "note": "I can swim."
+      },
+      {
+        "rule": "can't=不能",
+        "note": "He can't fly."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I can swim.",
+        "cn": "我会游泳。"
+      },
+      {
+        "en": "Can you help me?",
+        "cn": "能帮我吗?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I can to swim.",
+        "correct": "I can swim.",
+        "note": "can后原形"
+      }
+    ],
+    "keywords": [
+      "情态动词",
+      "can",
+      "can't",
+      "能力"
+    ],
+    "tips": "can后跟原形"
+  },
+  {
+    "id": "g038",
+    "title": "情态动词 must/have to",
+    "titleEn": "Modal Must",
+    "category": "verb_forms",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U7"
+      ],
+      "hj": [
+        "7B_U4"
+      ]
+    },
+    "definition": "must主观(必须), have to客观(不得不)。",
+    "rules": [
+      {
+        "rule": "must+原形",
+        "note": "I must go now."
+      },
+      {
+        "rule": "don't have to=不必",
+        "note": "You don't have to come."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I must finish this.",
+        "cn": "我必须完成。"
+      },
+      {
+        "en": "I have to get up early.",
+        "cn": "不得不早起。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I must to go.",
+        "correct": "I must go.",
+        "note": "must后原形"
+      }
+    ],
+    "keywords": [
+      "情态动词",
+      "must",
+      "have to"
+    ],
+    "tips": "must主观, have to客观"
+  },
+  {
+    "id": "g039",
+    "title": "情态动词 should",
+    "titleEn": "Modal Should",
+    "category": "verb_forms",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6B_U7"
+      ],
+      "hj": [
+        "7B_U7"
+      ]
+    },
+    "definition": "should+原形 表建议/应该。",
+    "rules": [
+      {
+        "rule": "should/shouldn't+原形",
+        "note": "You should sleep."
+      }
+    ],
+    "examples": [
+      {
+        "en": "You should drink water.",
+        "cn": "你该多喝水。"
+      },
+      {
+        "en": "You shouldn't smoke.",
+        "cn": "不该抽烟。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "情态动词",
+      "should",
+      "建议"
+    ],
+    "tips": "should建议, 人人平等"
+  },
+  {
+    "id": "g040",
+    "title": "情态动词 may/might",
+    "titleEn": "Modal May",
+    "category": "verb_forms",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U4"
+      ],
+      "hj": [
+        "8A_U1"
+      ]
+    },
+    "definition": "may表许可/可能, might更不确定。",
+    "rules": [
+      {
+        "rule": "may+原形",
+        "note": "May I come in?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "May I use your pen?",
+        "cn": "能用你的笔吗?"
+      },
+      {
+        "en": "It might rain.",
+        "cn": "可能要下雨。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "情态动词",
+      "may",
+      "might"
+    ],
+    "tips": "May I... 问许可, might表可能"
+  },
+  {
+    "id": "g041",
+    "title": "情态动词 would/could",
+    "titleEn": "Modal Would",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8A_U4"
+      ],
+      "hj": [
+        "8A_U4"
+      ]
+    },
+    "definition": "would委婉请求, could礼貌询问。",
+    "rules": [
+      {
+        "rule": "Would you like...",
+        "note": "委婉"
+      },
+      {
+        "rule": "Could you please...",
+        "note": "礼貌"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Would you like some tea?",
+        "cn": "要来点茶吗?"
+      },
+      {
+        "en": "Could you help me?",
+        "cn": "能帮我吗?"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "情态动词",
+      "would",
+      "could",
+      "委婉"
+    ],
+    "tips": "would/could更礼貌"
+  },
+  {
+    "id": "g042",
+    "title": "情态动词 need/dare",
+    "titleEn": "Modal Need",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U3"
+      ],
+      "hj": [
+        "9A_U3"
+      ]
+    },
+    "definition": "need可作情态/实义动词。",
+    "rules": [
+      {
+        "rule": "need+原形(情态)",
+        "note": "You need not go."
+      },
+      {
+        "rule": "need to do(实义)",
+        "note": "You need to go."
+      },
+      {
+        "rule": "dare+原形",
+        "note": "How dare you!"
+      }
+    ],
+    "examples": [
+      {
+        "en": "You needn't worry.",
+        "cn": "不必担心。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "情态动词",
+      "need",
+      "dare"
+    ],
+    "tips": "need情态原形, 实义to"
+  },
+  {
+    "id": "g043",
+    "title": "不定式 to do",
+    "titleEn": "Infinitive",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8A_U5"
+      ],
+      "hj": [
+        "8A_U5"
+      ]
+    },
+    "definition": "to+原形作目的状语或宾语。",
+    "rules": [
+      {
+        "rule": "目的状语",
+        "note": "I go to school to study."
+      },
+      {
+        "rule": "作宾语",
+        "note": "I want to go."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I came to see you.",
+        "cn": "我来见你。"
+      },
+      {
+        "en": "He wants to be a doctor.",
+        "cn": "他想当医生。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I want go.",
+        "correct": "I want to go.",
+        "note": "want后接to do"
+      }
+    ],
+    "keywords": [
+      "不定式",
+      "to",
+      "目的"
+    ],
+    "tips": "want/hope/decide+to do"
+  },
+  {
+    "id": "g044",
+    "title": "动名词 doing",
+    "titleEn": "Gerund",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U4"
+      ],
+      "hj": [
+        "8B_U4"
+      ]
+    },
+    "definition": "动词ing作名词用。",
+    "rules": [
+      {
+        "rule": "作主语",
+        "note": "Swimming is fun."
+      },
+      {
+        "rule": "作宾语",
+        "note": "I enjoy swimming."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Running is good for health.",
+        "cn": "跑步有益健康。"
+      },
+      {
+        "en": "I like reading.",
+        "cn": "我喜欢阅读。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "动名词",
+      "doing",
+      "ing"
+    ],
+    "tips": "动词ing当名词"
+  },
+  {
+    "id": "g045",
+    "title": "使役动词",
+    "titleEn": "Causative Verbs",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U4"
+      ],
+      "hj": [
+        "9A_U4"
+      ]
+    },
+    "definition": "make/let/have+宾+原形。",
+    "rules": [
+      {
+        "rule": "make sb do",
+        "note": "He made me laugh."
+      },
+      {
+        "rule": "let sb do",
+        "note": "Let me help you."
+      },
+      {
+        "rule": "have sb do",
+        "note": "I had him fix it."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The joke made me laugh.",
+        "cn": "笑话让我笑了。"
+      },
+      {
+        "en": "Let me try.",
+        "cn": "让我试试。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He made me to laugh.",
+        "correct": "He made me laugh.",
+        "note": "make后原形"
+      }
+    ],
+    "keywords": [
+      "使役",
+      "make",
+      "let"
+    ],
+    "tips": "make/let/have+sb+原形"
+  },
+  {
+    "id": "g046",
+    "title": "感官动词",
+    "titleEn": "Sensory Verbs",
+    "category": "verb_forms",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U2"
+      ],
+      "hj": [
+        "9B_U2"
+      ]
+    },
+    "definition": "see/hear/watch+宾+do/doing。",
+    "rules": [
+      {
+        "rule": "see sb do(全过程)",
+        "note": "I saw him cross the road."
+      },
+      {
+        "rule": "see sb doing(正在)",
+        "note": "I saw him crossing the road."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I heard her sing.",
+        "cn": "我听她唱歌了。"
+      },
+      {
+        "en": "I saw him running.",
+        "cn": "我看见他在跑。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "感官",
+      "see",
+      "hear",
+      "watch"
+    ],
+    "tips": "do全过程, doing正在进行"
+  },
+  {
+    "id": "g047",
+    "title": "陈述句",
+    "titleEn": "Statement",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G3"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U1"
+      ],
+      "hj": [
+        "7A_U1"
+      ]
+    },
+    "definition": "肯定句:主语+谓语。否定句:主语+don't/doesn't/didn't+谓语。",
+    "rules": [
+      {
+        "rule": "肯定: S+V",
+        "note": "I am a student."
+      },
+      {
+        "rule": "否定: S+助动词not+V",
+        "note": "I don't like it."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I am happy.",
+        "cn": "我开心。"
+      },
+      {
+        "en": "I don't like snakes.",
+        "cn": "我不喜欢蛇。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句子",
+      "陈述",
+      "肯定",
+      "否定"
+    ],
+    "tips": "肯定正常说, 否定加not"
+  },
+  {
+    "id": "g048",
+    "title": "一般疑问句",
+    "titleEn": "Yes/No Questions",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3A_U4"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "将be/助/情态动词提前。Yes/No回答。",
+    "rules": [
+      {
+        "rule": "be提前",
+        "note": "Are you a student?"
+      },
+      {
+        "rule": "do/does/did提前",
+        "note": "Do you like apples?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Are you OK? Yes, I am.",
+        "cn": "你好吗?"
+      },
+      {
+        "en": "Do you like music? No, I don't.",
+        "cn": "喜欢音乐吗?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "You are happy?",
+        "correct": "Are you happy?",
+        "note": "主语和be交换"
+      }
+    ],
+    "keywords": [
+      "句子",
+      "疑问",
+      "一般疑问"
+    ],
+    "tips": "be/助/情提前, Yes/No来答"
+  },
+  {
+    "id": "g049",
+    "title": "特殊疑问句",
+    "titleEn": "Wh-Questions",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U1"
+      ],
+      "hj": [
+        "7A_U2"
+      ]
+    },
+    "definition": "What, Who, Where, When, Why, How提问。",
+    "rules": [
+      {
+        "rule": "Wh词+一般疑问句",
+        "note": "What do you like?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "What is your name?",
+        "cn": "你叫什么?"
+      },
+      {
+        "en": "Where do you live?",
+        "cn": "你住哪?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "What you like?",
+        "correct": "What do you like?",
+        "note": "Wh后+疑问语序"
+      }
+    ],
+    "keywords": [
+      "句子",
+      "疑问",
+      "Wh",
+      "What"
+    ],
+    "tips": "Wh疑问词打头阵"
+  },
+  {
+    "id": "g050",
+    "title": "选择疑问句",
+    "titleEn": "Or-Questions",
+    "category": "sentence",
+    "level": "intermediate",
+    "grades": [
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U5"
+      ],
+      "hj": [
+        "7B_U3"
+      ]
+    },
+    "definition": "用or连接两个选项。",
+    "rules": [
+      {
+        "rule": "... A or B?",
+        "note": "Do you like tea or coffee?"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Is he tall or short?",
+        "cn": "他高还是矮?"
+      },
+      {
+        "en": "Tea or coffee?",
+        "cn": "茶还是咖啡?"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句子",
+      "选择",
+      "or"
+    ],
+    "tips": "or表选择"
+  },
+  {
+    "id": "g051",
+    "title": "反意疑问句",
+    "titleEn": "Tag Questions",
+    "category": "sentence",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U5"
+      ],
+      "hj": [
+        "8B_U5"
+      ]
+    },
+    "definition": "前肯后否, 前否后肯。",
+    "rules": [
+      {
+        "rule": "肯+否: It's nice, isn't it?",
+        "note": ""
+      },
+      {
+        "rule": "否+肯: You don't like it, do you?",
+        "note": ""
+      }
+    ],
+    "examples": [
+      {
+        "en": "It's a nice day, isn't it?",
+        "cn": "好天, 不是吗?"
+      },
+      {
+        "en": "You can swim, can't you?",
+        "cn": "会游泳, 对吧?"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "You are a student, isn't you?",
+        "correct": "You are a student, aren't you?",
+        "note": "代词和助动词要对"
+      }
+    ],
+    "keywords": [
+      "句子",
+      "反意疑问",
+      "tag"
+    ],
+    "tips": "前肯后否, 代词对应"
+  },
+  {
+    "id": "g052",
+    "title": "祈使句",
+    "titleEn": "Imperative",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3B_U7"
+      ],
+      "hj": [
+        "7A_U3"
+      ]
+    },
+    "definition": "动词原形开头, 无主语。否定: Don't+原形。",
+    "rules": [
+      {
+        "rule": "肯定: 动词原形",
+        "note": "Open the door."
+      },
+      {
+        "rule": "否定: Don't+原形",
+        "note": "Don't run."
+      },
+      {
+        "rule": "Let's+原形",
+        "note": "Let's go!"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Sit down, please.",
+        "cn": "请坐。"
+      },
+      {
+        "en": "Don't be late.",
+        "cn": "别迟到。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句子",
+      "祈使",
+      "Don't",
+      "Let's"
+    ],
+    "tips": "原形开头下命令, Don't否定拦路"
+  },
+  {
+    "id": "g053",
+    "title": "感叹句 What/How",
+    "titleEn": "Exclamatory",
+    "category": "sentence",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U8"
+      ],
+      "hj": [
+        "8A_U2"
+      ]
+    },
+    "definition": "What(+a/an)+名词! How+形容词/副词!",
+    "rules": [
+      {
+        "rule": "What a nice day!",
+        "note": "What+(a/an)+名"
+      },
+      {
+        "rule": "How beautiful!",
+        "note": "How+形/副"
+      }
+    ],
+    "examples": [
+      {
+        "en": "What a beautiful flower!",
+        "cn": "多美的花!"
+      },
+      {
+        "en": "How fast he runs!",
+        "cn": "他跑得好快!"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "How a nice day!",
+        "correct": "What a nice day!",
+        "note": "有名词用What"
+      }
+    ],
+    "keywords": [
+      "句子",
+      "感叹",
+      "What",
+      "How"
+    ],
+    "tips": "What接名How接形, 感叹句中有区别"
+  },
+  {
+    "id": "g054",
+    "title": "There be 句型(1)",
+    "titleEn": "There Be 1",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G3",
+      "G4"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "3B_U2"
+      ],
+      "hj": [
+        "7A_U3"
+      ]
+    },
+    "definition": "There is/are+物+地点。存在有。",
+    "rules": [
+      {
+        "rule": "There is+单数/不可数",
+        "note": "There is a book."
+      },
+      {
+        "rule": "There are+复数",
+        "note": "There are two books."
+      }
+    ],
+    "examples": [
+      {
+        "en": "There is a cat on the chair.",
+        "cn": "椅子上有只猫。"
+      },
+      {
+        "en": "There are many students.",
+        "cn": "有很多学生。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "There have a book.",
+        "correct": "There is a book.",
+        "note": "不是have"
+      }
+    ],
+    "keywords": [
+      "There be",
+      "存在"
+    ],
+    "tips": "There is/are表存在"
+  },
+  {
+    "id": "g055",
+    "title": "There be 句型(2)",
+    "titleEn": "There Be 2",
+    "category": "sentence",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U1"
+      ],
+      "hj": [
+        "7B_U4"
+      ]
+    },
+    "definition": "There be的过去时和将来时。",
+    "rules": [
+      {
+        "rule": "过去: There was/were",
+        "note": "There was a party."
+      },
+      {
+        "rule": "将来: There will be",
+        "note": "There will be a show."
+      }
+    ],
+    "examples": [
+      {
+        "en": "There was a storm yesterday.",
+        "cn": "昨天有暴风雨。"
+      },
+      {
+        "en": "There will be a test.",
+        "cn": "将有一次测验。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "There be",
+      "过去",
+      "将来"
+    ],
+    "tips": "过去was/were, 将来will be"
+  },
+  {
+    "id": "g056",
+    "title": "主谓一致(1)",
+    "titleEn": "Subject-Verb 1",
+    "category": "sentence",
+    "level": "basic",
+    "grades": [
+      "G4",
+      "G5"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "4A_U3"
+      ],
+      "hj": [
+        "7A_U3"
+      ]
+    },
+    "definition": "主语和谓语在人称和数上一致。",
+    "rules": [
+      {
+        "rule": "单数主语+单数谓语",
+        "note": "He is/He likes"
+      },
+      {
+        "rule": "复数主语+复数谓语",
+        "note": "They are/They like"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He likes apples.",
+        "cn": "他喜欢苹果。"
+      },
+      {
+        "en": "They like apples.",
+        "cn": "他们喜欢苹果。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He like apples.",
+        "correct": "He likes apples.",
+        "note": "三单忘加s"
+      }
+    ],
+    "keywords": [
+      "主谓一致",
+      "三单"
+    ],
+    "tips": "I/You/We/They原形, He/She/It加s"
+  },
+  {
+    "id": "g057",
+    "title": "主谓一致(2)",
+    "titleEn": "Subject-Verb 2",
+    "category": "sentence",
+    "level": "intermediate",
+    "grades": [
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U3"
+      ],
+      "hj": [
+        "8A_U5"
+      ]
+    },
+    "definition": "特殊主语的主谓一致。",
+    "rules": [
+      {
+        "rule": "Everyone/Someone+单数",
+        "note": "Everyone is here."
+      },
+      {
+        "rule": "Neither/Either...or+就近",
+        "note": "Neither he nor I am..."
+      },
+      {
+        "rule": "A number of+复数",
+        "note": "A number of students are..."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Everyone is here.",
+        "cn": "所有人都在。"
+      },
+      {
+        "en": "Either you or he is wrong.",
+        "cn": "你或他有一个错了。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "主谓一致",
+      "特殊"
+    ],
+    "tips": "Everyone单数, 就近原则记"
+  },
+  {
+    "id": "g058",
+    "title": "倒装句",
+    "titleEn": "Inversion",
+    "category": "sentence",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U5"
+      ],
+      "hj": [
+        "9A_U5"
+      ]
+    },
+    "definition": "so/neither/nor放句首倒装。",
+    "rules": [
+      {
+        "rule": "So+助/be/情+主",
+        "note": "So do I."
+      },
+      {
+        "rule": "Neither/Nor+助/be/情+主",
+        "note": "Neither can I."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I like music. So does she.",
+        "cn": "我喜欢音乐, 她也一样。"
+      },
+      {
+        "en": "I can't swim. Neither can he.",
+        "cn": "我不会游, 他也不会。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "倒装",
+      "so",
+      "neither"
+    ],
+    "tips": "So/Neither+助动+主, 倒装呼应"
+  },
+  {
+    "id": "g059",
+    "title": "强调句",
+    "titleEn": "Emphatic",
+    "category": "sentence",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U4"
+      ],
+      "hj": [
+        "9B_U4"
+      ]
+    },
+    "definition": "It is/was...that/who...强调结构。",
+    "rules": [
+      {
+        "rule": "It is/was+被强调部分+that/who...",
+        "note": "It was Tom who broke it."
+      }
+    ],
+    "examples": [
+      {
+        "en": "It was yesterday that I met him.",
+        "cn": "是昨天我遇见他的。"
+      },
+      {
+        "en": "It is she who helps me.",
+        "cn": "是她帮我。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "强调",
+      "It is that"
+    ],
+    "tips": "It is...that/who框架"
+  },
+  {
+    "id": "g060",
+    "title": "并列句",
+    "titleEn": "Compound Sentence",
+    "category": "sentence",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "5A_U6"
+      ],
+      "hj": [
+        "8A_U3"
+      ]
+    },
+    "definition": "两个简单句用并列连词连接。",
+    "rules": [
+      {
+        "rule": "and/but/or/so连接",
+        "note": "I like apples, and she likes bananas."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I was tired, so I went to bed.",
+        "cn": "我累了, 所以睡了。"
+      },
+      {
+        "en": "I called, but nobody answered.",
+        "cn": "我打了, 但没人接。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句子",
+      "并列",
+      "and",
+      "but",
+      "so"
+    ],
+    "tips": "连词连句表关系"
+  },
+  {
+    "id": "g061",
+    "title": "复合句概述",
+    "titleEn": "Complex Sentence",
+    "category": "sentence",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8A_U6"
+      ],
+      "hj": [
+        "8A_U6"
+      ]
+    },
+    "definition": "主句+从句。从句有主语+谓语。",
+    "rules": [
+      {
+        "rule": "主句+连词+从句",
+        "note": "I know that he is right."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I think that she is smart.",
+        "cn": "我觉得她很聪明。"
+      },
+      {
+        "en": "When it rains, I stay home.",
+        "cn": "下雨时我待在家。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "复合句",
+      "从句"
+    ],
+    "tips": "主句统领, 从句补充"
+  },
+  {
+    "id": "g062",
+    "title": "宾语从句(1): that",
+    "titleEn": "Object Clause 1",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U6"
+      ],
+      "hj": [
+        "8B_U6"
+      ]
+    },
+    "definition": "that引导, that可省略。",
+    "rules": [
+      {
+        "rule": "主+动+that+从句",
+        "note": "I think (that) he is right."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I know (that) you are honest.",
+        "cn": "我知道你诚实。"
+      },
+      {
+        "en": "She said that she was tired.",
+        "cn": "她说她累了。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "从句",
+      "宾语",
+      "that"
+    ],
+    "tips": "that可省略, 从句正常语序"
+  },
+  {
+    "id": "g063",
+    "title": "宾语从句(2): if/whether",
+    "titleEn": "Object Clause 2",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U2"
+      ],
+      "hj": [
+        "9A_U2"
+      ]
+    },
+    "definition": "if/whether表是否。",
+    "rules": [
+      {
+        "rule": "I wonder if/whether...",
+        "note": "I wonder if he will come."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I don't know if she likes it.",
+        "cn": "我不知道她是否喜欢。"
+      },
+      {
+        "en": "He asked whether I could swim.",
+        "cn": "他问我是否会游泳。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I don't know that if he comes.",
+        "correct": "I don't know if he comes.",
+        "note": "不要that+if"
+      }
+    ],
+    "keywords": [
+      "从句",
+      "宾语",
+      "if",
+      "whether"
+    ],
+    "tips": "if/whether表是否"
+  },
+  {
+    "id": "g064",
+    "title": "宾语从句(3): wh-词",
+    "titleEn": "Object Clause 3",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U2"
+      ],
+      "hj": [
+        "9A_U2"
+      ]
+    },
+    "definition": "what/where/when/why/how引导。",
+    "rules": [
+      {
+        "rule": "疑问词+主+谓(陈述语序)",
+        "note": "I know what you want."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Tell me what you did.",
+        "cn": "告诉我你做了什么。"
+      },
+      {
+        "en": "I wonder where he lives.",
+        "cn": "我想知道他住哪。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I know what do you want.",
+        "correct": "I know what you want.",
+        "note": "从句陈述语序"
+      }
+    ],
+    "keywords": [
+      "从句",
+      "宾语",
+      "wh-",
+      "语序"
+    ],
+    "tips": "从句语序: 疑问词+主+谓"
+  },
+  {
+    "id": "g065",
+    "title": "定语从句(1): 关系代词",
+    "titleEn": "Relative Clause 1",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U6"
+      ],
+      "hj": [
+        "9A_U6"
+      ]
+    },
+    "definition": "who(人)/which(物)/that(通用)。",
+    "rules": [
+      {
+        "rule": "who指人",
+        "note": "The man who is talking..."
+      },
+      {
+        "rule": "which指物",
+        "note": "The book which I bought..."
+      },
+      {
+        "rule": "that通用",
+        "note": "The car that is red..."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The girl who is singing is my sister.",
+        "cn": "唱歌的女孩是我妹妹。"
+      },
+      {
+        "en": "The book which I read was great.",
+        "cn": "我读的书很棒。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "从句",
+      "定语",
+      "who",
+      "which",
+      "that"
+    ],
+    "tips": "who人which物that通用"
+  },
+  {
+    "id": "g066",
+    "title": "定语从句(2): 关系副词",
+    "titleEn": "Relative Clause 2",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U1"
+      ],
+      "hj": [
+        "9B_U1"
+      ]
+    },
+    "definition": "when(时间)/where(地点)/why(原因)。",
+    "rules": [
+      {
+        "rule": "when=in/on which",
+        "note": "the day when we met"
+      },
+      {
+        "rule": "where=in/at which",
+        "note": "the place where I was born"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I remember the day when we first met.",
+        "cn": "我记得我们初见的那天。"
+      },
+      {
+        "en": "This is the school where I studied.",
+        "cn": "这是我上过的学校。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "从句",
+      "定语",
+      "when",
+      "where",
+      "why"
+    ],
+    "tips": "when时间where地点why原因"
+  },
+  {
+    "id": "g067",
+    "title": "状语从句: 时间",
+    "titleEn": "Adverbial: Time",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8A_U6"
+      ],
+      "hj": [
+        "8A_U6"
+      ]
+    },
+    "definition": "when/while/as/before/after/until。",
+    "rules": [
+      {
+        "rule": "when某刻/while持续",
+        "note": "When I arrived... / While I was..."
+      },
+      {
+        "rule": "until直到",
+        "note": "I will wait until you come."
+      }
+    ],
+    "examples": [
+      {
+        "en": "When it rains, I stay home.",
+        "cn": "下雨时我待在家。"
+      },
+      {
+        "en": "I studied before the exam.",
+        "cn": "考前我学习了。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "从句",
+      "状语",
+      "when",
+      "while",
+      "until"
+    ],
+    "tips": "时间状语: 动作的钟表"
+  },
+  {
+    "id": "g068",
+    "title": "状语从句: 条件",
+    "titleEn": "Adverbial: Condition",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U3"
+      ],
+      "hj": [
+        "8B_U3"
+      ]
+    },
+    "definition": "if(如果)/unless(除非)。主将从现!",
+    "rules": [
+      {
+        "rule": "if+一般现在, 主句will",
+        "note": "If it rains, I will stay."
+      },
+      {
+        "rule": "unless=if not",
+        "note": "Unless you hurry, you will be late."
+      }
+    ],
+    "examples": [
+      {
+        "en": "If you study hard, you will pass.",
+        "cn": "努力学就会过。"
+      },
+      {
+        "en": "Unless it rains, we will go.",
+        "cn": "除非下雨, 我们会去。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "If it will rain, I will stay.",
+        "correct": "If it rains, I will stay.",
+        "note": "条件从句用现在时"
+      }
+    ],
+    "keywords": [
+      "从句",
+      "状语",
+      "条件",
+      "if",
+      "unless"
+    ],
+    "tips": "主将从现: if后用现在时"
+  },
+  {
+    "id": "g069",
+    "title": "状语从句: 原因/目的/结果",
+    "titleEn": "Adverbial: Others",
+    "category": "clauses",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U7"
+      ],
+      "hj": [
+        "9B_U7"
+      ]
+    },
+    "definition": "because原因, so that目的, so...that结果。",
+    "rules": [
+      {
+        "rule": "because+原因",
+        "note": "because it rained"
+      },
+      {
+        "rule": "so that+目的",
+        "note": "so that I can pass"
+      },
+      {
+        "rule": "so...that结果",
+        "note": "so tired that I fell asleep"
+      }
+    ],
+    "examples": [
+      {
+        "en": "I stayed home because it rained.",
+        "cn": "因为下雨我待在家。"
+      },
+      {
+        "en": "He is so tired that he can't walk.",
+        "cn": "太累了走不动。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "从句",
+      "状语",
+      "because",
+      "so that"
+    ],
+    "tips": "because原因so that目的"
+  },
+  {
+    "id": "g070",
+    "title": "被动语态(1): 一般现在/过去",
+    "titleEn": "Passive Voice 1",
+    "category": "voice",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U7"
+      ],
+      "hj": [
+        "8B_U7"
+      ]
+    },
+    "definition": "be+过去分词。主语是动作承受者。",
+    "rules": [
+      {
+        "rule": "一般现在: am/is/are+过分",
+        "note": "The book is read by many."
+      },
+      {
+        "rule": "一般过去: was/were+过分",
+        "note": "The book was read."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The classroom is cleaned every day.",
+        "cn": "教室每天被清扫。"
+      },
+      {
+        "en": "The letter was written by Tom.",
+        "cn": "信是Tom写的。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "语态",
+      "被动",
+      "be+过分"
+    ],
+    "tips": "被动: be+过分, by引出施动者"
+  },
+  {
+    "id": "g071",
+    "title": "被动语态(2): 含情态动词",
+    "titleEn": "Passive Voice 2",
+    "category": "voice",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U7"
+      ],
+      "hj": [
+        "9A_U7"
+      ]
+    },
+    "definition": "情态动词+be+过去分词。",
+    "rules": [
+      {
+        "rule": "can/must/should+be+过分",
+        "note": "The work must be done."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The work should be finished today.",
+        "cn": "工作该今天完成。"
+      },
+      {
+        "en": "Books can be borrowed.",
+        "cn": "书可以被借。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "语态",
+      "被动",
+      "情态"
+    ],
+    "tips": "情动+be+过分"
+  },
+  {
+    "id": "g072",
+    "title": "被动语态(3): 完成/将来",
+    "titleEn": "Passive Voice 3",
+    "category": "voice",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U8"
+      ],
+      "hj": [
+        "9B_U8"
+      ]
+    },
+    "definition": "不同时态的被动语态。",
+    "rules": [
+      {
+        "rule": "现在完成: have/has been done",
+        "note": "The work has been done."
+      },
+      {
+        "rule": "将来: will be done",
+        "note": "The work will be done."
+      }
+    ],
+    "examples": [
+      {
+        "en": "The homework has been finished.",
+        "cn": "作业已被完成。"
+      },
+      {
+        "en": "The meeting will be held tomorrow.",
+        "cn": "会议将于明天举行。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "语态",
+      "被动",
+      "完成",
+      "将来"
+    ],
+    "tips": "时态变在前, 被动结构跟在后"
+  },
+  {
+    "id": "g073",
+    "title": "主动 vs 被动",
+    "titleEn": "Active vs Passive",
+    "category": "voice",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U7"
+      ],
+      "hj": [
+        "8B_U7"
+      ]
+    },
+    "definition": "主动强调施动者, 被动强调承受者。",
+    "rules": [
+      {
+        "rule": "主动→被动: 宾变主, 加be+过分",
+        "note": "Tom wrote the letter → The letter was written by Tom."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Tom wrote the letter. (主动)",
+        "cn": "Tom写了信。"
+      },
+      {
+        "en": "The letter was written by Tom. (被动)",
+        "cn": "信是Tom写的。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "语态",
+      "主动",
+      "被动",
+      "对比"
+    ],
+    "tips": "主动强调谁做的, 被动强调被怎样"
+  },
+  {
+    "id": "g074",
+    "title": "used to do",
+    "titleEn": "Used To",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U4"
+      ],
+      "hj": [
+        "8B_U4"
+      ]
+    },
+    "definition": "used to do过去常常。be used to doing习惯于。",
+    "rules": [
+      {
+        "rule": "used to+原形",
+        "note": "I used to swim."
+      },
+      {
+        "rule": "be used to+doing",
+        "note": "I am used to getting up early."
+      }
+    ],
+    "examples": [
+      {
+        "en": "I used to live in Beijing.",
+        "cn": "我曾在京住。"
+      },
+      {
+        "en": "I am used to the weather.",
+        "cn": "我已习惯这天气。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "I used to swimming.",
+        "correct": "I used to swim.",
+        "note": "used to+原形"
+      }
+    ],
+    "keywords": [
+      "used to",
+      "be used to",
+      "习惯"
+    ],
+    "tips": "used to do过去常, be used to doing习惯"
+  },
+  {
+    "id": "g075",
+    "title": "It is + adj + to do",
+    "titleEn": "It is adj to do",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8A_U5"
+      ],
+      "hj": [
+        "8A_U5"
+      ]
+    },
+    "definition": "It is+形容词+(for/of sb)+to do。",
+    "rules": [
+      {
+        "rule": "It is+adj+for sb+to do",
+        "note": "It is important for you to study."
+      },
+      {
+        "rule": "It is+adj+of sb+to do(polite/kind)",
+        "note": "It is kind of you to help."
+      }
+    ],
+    "examples": [
+      {
+        "en": "It is important to learn English.",
+        "cn": "学英语很重要。"
+      },
+      {
+        "en": "It is kind of you to say so.",
+        "cn": "你这样说真好。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句型",
+      "It is",
+      "to do"
+    ],
+    "tips": "It + is + adj + to do, 形式主语开头站"
+  },
+  {
+    "id": "g076",
+    "title": "so...that / such...that",
+    "titleEn": "So That",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U8"
+      ],
+      "hj": [
+        "9A_U8"
+      ]
+    },
+    "definition": "如此...以至于...",
+    "rules": [
+      {
+        "rule": "so+形/副+that",
+        "note": "so tired that I slept"
+      },
+      {
+        "rule": "such+名+that",
+        "note": "such a nice day that"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He is so tall that he can reach it.",
+        "cn": "他太高了能够到。"
+      },
+      {
+        "en": "It is such a good book that I read it twice.",
+        "cn": "书太好了我读了两遍。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句型",
+      "so that",
+      "such that"
+    ],
+    "tips": "so接形副, such接名词"
+  },
+  {
+    "id": "g077",
+    "title": "比较级和最高级",
+    "titleEn": "Comparative & Superlative",
+    "category": "structures",
+    "level": "intermediate",
+    "grades": [
+      "G5",
+      "G6"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "6A_U5"
+      ],
+      "hj": [
+        "7B_U6"
+      ]
+    },
+    "definition": "比较级: -er/more。最高级: -est/most。",
+    "rules": [
+      {
+        "rule": "单音节-er/-est",
+        "note": "tall→taller→tallest"
+      },
+      {
+        "rule": "多音节more/most",
+        "note": "beautiful→more beautiful→most beautiful"
+      },
+      {
+        "rule": "不规则",
+        "note": "good→better→best, bad→worse→worst"
+      }
+    ],
+    "examples": [
+      {
+        "en": "Tom is taller than Jerry.",
+        "cn": "Tom比Jerry高。"
+      },
+      {
+        "en": "She is the best student.",
+        "cn": "她是最好的学生。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "比较级",
+      "最高级",
+      "-er",
+      "-est"
+    ],
+    "tips": "短词-er/-est, 长词more/most"
+  },
+  {
+    "id": "g078",
+    "title": "直接引语→间接引语",
+    "titleEn": "Reported Speech",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9A_U1"
+      ],
+      "hj": [
+        "9A_U1"
+      ]
+    },
+    "definition": "转述别人的话, 时态向后退一步。",
+    "rules": [
+      {
+        "rule": "时态后退",
+        "note": "am→was, will→would"
+      },
+      {
+        "rule": "人称/时间/地点变化",
+        "note": "now→then, today→that day"
+      }
+    ],
+    "examples": [
+      {
+        "en": "He said, 'I am happy.' → He said he was happy.",
+        "cn": "他说他很开心。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "He said he is happy.",
+        "correct": "He said he was happy.",
+        "note": "主句过去, 从句时态后退"
+      }
+    ],
+    "keywords": [
+      "间接引语",
+      "转述"
+    ],
+    "tips": "时态后退, 人称相应变"
+  },
+  {
+    "id": "g079",
+    "title": "条件句: if+现在, will",
+    "titleEn": "Conditional 1",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G8"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "8B_U3"
+      ],
+      "hj": [
+        "8B_U3"
+      ]
+    },
+    "definition": "真实条件: if+一般现在, 主句will+原形。",
+    "rules": [
+      {
+        "rule": "If it rains, I will stay.",
+        "note": "条件从句永远用现在时"
+      }
+    ],
+    "examples": [
+      {
+        "en": "If it is sunny, we will go to the park.",
+        "cn": "如果天晴我们就去公园。"
+      }
+    ],
+    "commonErrors": [
+      {
+        "wrong": "If it will rain, I will stay.",
+        "correct": "If it rains, I will stay.",
+        "note": "if从句不用will"
+      }
+    ],
+    "keywords": [
+      "条件",
+      "if",
+      "主将从现"
+    ],
+    "tips": "主将从现: if从句永远现在时"
+  },
+  {
+    "id": "g080",
+    "title": "祈使句+and/or",
+    "titleEn": "Imperative+and/or",
+    "category": "structures",
+    "level": "advanced",
+    "grades": [
+      "G9"
+    ],
+    "relatedUnits": {
+      "jk": [
+        "9B_U7"
+      ],
+      "hj": [
+        "9B_U7"
+      ]
+    },
+    "definition": "祈使句+and/or+陈述句(表条件结果)。",
+    "rules": [
+      {
+        "rule": "Do...and you will...",
+        "note": "Work hard and you will succeed."
+      },
+      {
+        "rule": "Do...or you will...",
+        "note": "Hurry up or you will be late."
+      }
+    ],
+    "examples": [
+      {
+        "en": "Study hard and you will pass.",
+        "cn": "努力学习你就会过。"
+      },
+      {
+        "en": "Hurry up or you will be late.",
+        "cn": "快点否则会迟到。"
+      }
+    ],
+    "commonErrors": [],
+    "keywords": [
+      "句型",
+      "祈使",
+      "and",
+      "or"
+    ],
+    "tips": "and则成功, or否则失败"
+  }
+]

@@ -1,0 +1,7122 @@
+[
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Hello! I ____ Li Hua. I'm 13 years old.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "第一人称单数 I 用 am",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Anna ____ from Germany.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数 she/he/Anna 用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "My parents ____ engineers.",
+    "options": [
+      "am",
+      "is",
+      "are"
+    ],
+    "answer": 2,
+    "explain": "复数主语用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "— ____ you a student? — Yes, I am.",
+    "options": [
+      "Am",
+      "Is",
+      "Are"
+    ],
+    "answer": 2,
+    "explain": "第二人称 you 用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "My brother ____ short hair.",
+    "options": [
+      "have",
+      "has",
+      "is"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数 have 变 has",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "We ____ a big family.",
+    "options": [
+      "have",
+      "has",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "复数主语用 have",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "This is ____ book. ____ name is on it.",
+    "options": [
+      "my; My",
+      "I; I",
+      "me; Me"
+    ],
+    "answer": 0,
+    "explain": "形容词性物主代词 my + My",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Anna loves hiking in the mountains. ____ is very patient.",
+    "options": [
+      "He",
+      "She",
+      "It"
+    ],
+    "answer": 1,
+    "explain": "Anna 是女性，用 She",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "— Where does Anna come ____? — From Germany.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "come from 来自",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U1",
+    "q": "Tom is confident. He likes making friends ____.",
+    "options": [
+      "online",
+      "on line",
+      "in line"
+    ],
+    "answer": 0,
+    "explain": "online 一个词，表示'在线'",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "I ____ get up at 6:30 a.m.",
+    "options": [
+      "am",
+      "is",
+      "usually"
+    ],
+    "answer": 2,
+    "explain": "频度副词 usually + 实义动词原形",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "She ____ to school on foot.",
+    "options": [
+      "go",
+      "goes",
+      "going"
+    ],
+    "answer": 1,
+    "explain": "第三人称单数动词加 -s/-es",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "We ____ four lessons in the morning.",
+    "options": [
+      "have",
+      "has",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "we 用 have",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "My dad ____ his bike to work every day.",
+    "options": [
+      "ride",
+      "rides",
+      "rided"
+    ],
+    "answer": 1,
+    "explain": "he/she 加 -s，ride → rides",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "She ____ watches TV on school days.",
+    "options": [
+      "seldom",
+      "usually always",
+      "is seldom"
+    ],
+    "answer": 0,
+    "explain": "seldom 位置在实义动词前",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "— Do you often ride your bike? — Yes, I ____.",
+    "options": [
+      "am",
+      "do",
+      "does"
+    ],
+    "answer": 1,
+    "explain": "do 开头的一般疑问句用 do 回答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "School starts ____ 8 a.m.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 2,
+    "explain": "具体时刻用 at",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "Mum is never ____ for class.",
+    "options": [
+      "late",
+      "later",
+      "lately"
+    ],
+    "answer": 0,
+    "explain": "be late 搭配",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "Put the frequency adverbs from high to low:",
+    "options": [
+      "always > usually > often",
+      "often > usually > always",
+      "never > seldom > always"
+    ],
+    "answer": 0,
+    "explain": "always 100%，usually 80%，often 60%",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U2",
+    "q": "I ____ go home late after school.",
+    "options": [
+      "always",
+      "never",
+      "often"
+    ],
+    "answer": 1,
+    "explain": "结合语境：我从不晚回家",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ many forests and oceans on the Earth.",
+    "options": [
+      "is",
+      "are",
+      "be"
+    ],
+    "answer": 1,
+    "explain": "复数名词用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ a bridge over the river.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "单数名词用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "— ____ there any big trees in the forest? — Yes, there are.",
+    "options": [
+      "Is",
+      "Are",
+      "Have"
+    ],
+    "answer": 1,
+    "explain": "trees 复数用 Are",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "The cat is ____ the table.",
+    "options": [
+      "in",
+      "under",
+      "between"
+    ],
+    "answer": 1,
+    "explain": "under 在……下方",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "The bank is ____ the hotel ____ the shop.",
+    "options": [
+      "between; and",
+      "in; on",
+      "at; from"
+    ],
+    "answer": 0,
+    "explain": "between A and B 在两者之间",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "We ____ protect our home.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 1,
+    "explain": "must 表示'必须'（强约束）",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "There ____ any waste on the ground.",
+    "options": [
+      "isn't",
+      "not is",
+      "have no"
+    ],
+    "answer": 0,
+    "explain": "不可数名词 waste 用 isn't",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "Please ____ the tap when you brush your teeth.",
+    "options": [
+      "turn off",
+      "turn on",
+      "turn up"
+    ],
+    "answer": 0,
+    "explain": "turn off 关掉",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "People cut ____ trees in the forest.",
+    "options": [
+      "down",
+      "up",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "cut down 砍倒",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U3",
+    "q": "We should ____ old paper.",
+    "options": [
+      "recycle",
+      "pollute",
+      "waste"
+    ],
+    "answer": 0,
+    "explain": "recycle 回收",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Look! It ____ outside.",
+    "options": [
+      "rains",
+      "is raining",
+      "rain"
+    ],
+    "answer": 1,
+    "explain": "Look 提示现在进行时",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "The children ____ a kite now.",
+    "options": [
+      "are flying",
+      "fly",
+      "is flying"
+    ],
+    "answer": 0,
+    "explain": "children 复数，用 are + V-ing",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "I ____ a warm scarf because it is snowy.",
+    "options": [
+      "am wearing",
+      "wear",
+      "wears"
+    ],
+    "answer": 0,
+    "explain": "此刻穿着 → 现在进行时",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "We aren't ____ today — it is too cold.",
+    "options": [
+      "swim",
+      "swimming",
+      "swam"
+    ],
+    "answer": 1,
+    "explain": "aren't 后用 V-ing",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "In spring, it is warm ____ windy.",
+    "options": [
+      "and",
+      "but",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "并列 and",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "In summer, it is ____. We can swim.",
+    "options": [
+      "cold",
+      "cool",
+      "hot"
+    ],
+    "answer": 2,
+    "explain": "夏天热",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Leaves ____ yellow in autumn.",
+    "options": [
+      "turn",
+      "turns",
+      "turning"
+    ],
+    "answer": 0,
+    "explain": "Leaves 复数，动词用原形",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "— Is it snowing in Beijing now? — Yes, ____.",
+    "options": [
+      "it is",
+      "it does",
+      "it's"
+    ],
+    "answer": 0,
+    "explain": "现在进行时的一般疑问回答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "Winter is the ____ season of the year.",
+    "options": [
+      "cold",
+      "coldest",
+      "colder"
+    ],
+    "answer": 1,
+    "explain": "最高级 coldest",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U4",
+    "q": "It is ____ in Guangzhou in winter.",
+    "options": [
+      "seldom snowy",
+      "snowy seldom",
+      "never to snow"
+    ],
+    "answer": 0,
+    "explain": "频度副词 seldom 修饰形容词 snowy",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "One day, we ____ travel to the Moon by rocket.",
+    "options": [
+      "will",
+      "are",
+      "did"
+    ],
+    "answer": 0,
+    "explain": "一般将来时 will + 动词原形",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "— ____ you be an astronaut? — Yes, I will.",
+    "options": [
+      "Will",
+      "Are",
+      "Do"
+    ],
+    "answer": 0,
+    "explain": "Will 引导的一般疑问句",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We ____ wear spacesuits on the Moon.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 1,
+    "explain": "必须 → must",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "I ____ see the Earth from the space hotel.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "能够 → can",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "You ____ learn more about science.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 2,
+    "explain": "建议 → should",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "The Moon is about 384,000 kilometres ____ the Earth.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "be far from 距离",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "There ____ no air on the Moon.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "air 不可数，用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We ____ visit a space hotel next week.",
+    "options": [
+      "are going to",
+      "will to",
+      "go to"
+    ],
+    "answer": 0,
+    "explain": "be going to 计划",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "We won't go alone. 'won't' = ____",
+    "options": [
+      "will not",
+      "want not",
+      "was not"
+    ],
+    "answer": 0,
+    "explain": "won't = will not",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U5",
+    "q": "On the Moon, our body feels ____ because gravity is weak.",
+    "options": [
+      "heavy",
+      "light",
+      "weak"
+    ],
+    "answer": 1,
+    "explain": "引力弱 → 感觉轻",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Beijing ____ the capital of China.",
+    "options": [
+      "is",
+      "are",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "单数事实用 is",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "There ____ many countries in Asia.",
+    "options": [
+      "is",
+      "are",
+      "have"
+    ],
+    "answer": 1,
+    "explain": "复数主语用 are",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Bangkok is ____ Thailand.",
+    "options": [
+      "in",
+      "on",
+      "at"
+    ],
+    "answer": 0,
+    "explain": "国家前用 in",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Trains arrive ____ the station at 8 a.m.",
+    "options": [
+      "on",
+      "at",
+      "in"
+    ],
+    "answer": 1,
+    "explain": "arrive at + 小地方",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Tourists come ____ all over the world.",
+    "options": [
+      "from",
+      "to",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "come from 来自",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "We travel ____ Beijing next month.",
+    "options": [
+      "to",
+      "at",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "travel to + 目的地",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Tokyo is ____ very modern city.",
+    "options": [
+      "a",
+      "an",
+      "the"
+    ],
+    "answer": 0,
+    "explain": "t 辅音开头的单数可数名词用 a",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "There are many ____ (palace) in Bangkok.",
+    "options": [
+      "palaces",
+      "palacies",
+      "palace"
+    ],
+    "answer": 0,
+    "explain": "palace → palaces",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Xi'an ____ the largest city in the world long ago.",
+    "options": [
+      "was",
+      "is",
+      "are"
+    ],
+    "answer": 0,
+    "explain": "long ago 过去时，was",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U6",
+    "q": "Each Terracotta soldier has ____ face.",
+    "options": [
+      "the same",
+      "a different",
+      "any"
+    ],
+    "answer": 1,
+    "explain": "课文信息：各不相同",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "I ____ play the guitar, but I ____ play the piano.",
+    "options": [
+      "can; can't",
+      "can't; can",
+      "do; don't"
+    ],
+    "answer": 0,
+    "explain": "先会后不会",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Can you draw cartoons? — Yes, ____.",
+    "options": [
+      "I can",
+      "I am",
+      "I do"
+    ],
+    "answer": 0,
+    "explain": "can 引导的疑问用 can 答",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "She plays ____ piano very well.",
+    "options": [
+      "the",
+      "a",
+      "/"
+    ],
+    "answer": 0,
+    "explain": "play + the + 乐器",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "We play ____ chess after school.",
+    "options": [
+      "the",
+      "a",
+      "/"
+    ],
+    "answer": 2,
+    "explain": "play + 棋类/球类 不加 the",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Would you like ____ the Art Club?",
+    "options": [
+      "to join",
+      "join",
+      "joining"
+    ],
+    "answer": 0,
+    "explain": "would like + to do",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "— Would you like some tea? — ____",
+    "options": [
+      "Yes, please.",
+      "Sure, I would like.",
+      "I am OK."
+    ],
+    "answer": 0,
+    "explain": "礼貌回答常用 Yes, please.",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "He is good ____ grammar.",
+    "options": [
+      "at",
+      "in",
+      "on"
+    ],
+    "answer": 0,
+    "explain": "be good at",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Every Friday afternoon we ____ join different clubs.",
+    "options": [
+      "can",
+      "must",
+      "should"
+    ],
+    "answer": 0,
+    "explain": "表示'可以'",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "There are many ____ in our school.",
+    "options": [
+      "clubs",
+      "club",
+      "clubes"
+    ],
+    "answer": 0,
+    "explain": "普通复数加 s",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U7",
+    "q": "Would you like to ____ at the school show?",
+    "options": [
+      "play the violin",
+      "play violin",
+      "playing violin"
+    ],
+    "answer": 0,
+    "explain": "play + the + 乐器",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'box' is ____.",
+    "options": [
+      "boxs",
+      "boxes",
+      "box"
+    ],
+    "answer": 1,
+    "explain": "-x 结尾加 -es",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'knife' is ____.",
+    "options": [
+      "knifes",
+      "knives",
+      "knife"
+    ],
+    "answer": 1,
+    "explain": "f/fe 结尾变 -ves",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "The plural of 'child' is ____.",
+    "options": [
+      "childs",
+      "children",
+      "childes"
+    ],
+    "answer": 1,
+    "explain": "特殊变化",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "This bag is too ____; the other one is cheap.",
+    "options": [
+      "cheap",
+      "expensive",
+      "small"
+    ],
+    "answer": 1,
+    "explain": "与 cheap 相反",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "My favourite stamp is very ____.",
+    "options": [
+      "valuable",
+      "expensive quickly",
+      "cheap"
+    ],
+    "answer": 0,
+    "explain": "valuable 贵重的",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "I ____ collected stamps for five years.",
+    "options": [
+      "have",
+      "has",
+      "had"
+    ],
+    "answer": 0,
+    "explain": "现在完成时 have + V-ed",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "She ____ kept that old coin since 2020.",
+    "options": [
+      "has",
+      "have",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "she 用 has",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "I like to share my collection ____ my friends.",
+    "options": [
+      "to",
+      "with",
+      "for"
+    ],
+    "answer": 1,
+    "explain": "share sth with sb",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "All my stamps come from ____ of letters.",
+    "options": [
+      "the envelopes",
+      "the envelope",
+      "envelope"
+    ],
+    "answer": 0,
+    "explain": "可数名词复数 + the",
+    "difficulty": 2
+  },
+  {
+    "grade": 7,
+    "term": "上",
+    "code": "7A_U8",
+    "q": "Some stamps are ____, but they are also beautiful.",
+    "options": [
+      "cheap",
+      "big",
+      "valuable"
+    ],
+    "answer": 0,
+    "explain": "与 expensive 相反，cheap 便宜的",
+    "difficulty": 1
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "I ____ Amy since we were six years old.",
+    "options": [
+      "have known",
+      "knew",
+      "know"
+    ],
+    "answer": 0,
+    "explain": "since 引导一段延续到现在的时间，用现在完成时 have known",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "Amy ____ my best friend since childhood.",
+    "options": [
+      "has been",
+      "was",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "since childhood 表示从过去持续至今，用 has been",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "We ____ many happy moments together.",
+    "options": [
+      "have shared",
+      "shared",
+      "share"
+    ],
+    "answer": 0,
+    "explain": "强调过去到现在的经历，用现在完成时 have shared",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "____ he finished his homework yet?",
+    "options": [
+      "Has",
+      "Have",
+      "Did"
+    ],
+    "answer": 0,
+    "explain": "主语 he 用 Has，yet 常与现在完成时连用",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "We have ____ quarrelled in all these years.",
+    "options": [
+      "never",
+      "ever",
+      "yet"
+    ],
+    "answer": 0,
+    "explain": "never 表示“从未”，常用于现在完成时肯定句",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "Have you ever ____ an online friend in real life?",
+    "options": [
+      "met",
+      "meet",
+      "meeting"
+    ],
+    "answer": 0,
+    "explain": "现在完成时用过去分词 met",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "I have ____ forgiven him, so don't worry.",
+    "options": [
+      "already",
+      "yet",
+      "ago"
+    ],
+    "answer": 0,
+    "explain": "already 用于现在完成时肯定句，表示“已经”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "She ____ visited her grandma for a long time.",
+    "options": [
+      "hasn't",
+      "didn't",
+      "isn't"
+    ],
+    "answer": 0,
+    "explain": "for a long time 与现在完成时连用，否定用 hasn't",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "Look! Amy ____ her new photos online.",
+    "options": [
+      "has just posted",
+      "just posted",
+      "just posts"
+    ],
+    "answer": 0,
+    "explain": "just 表示“刚刚”，用现在完成时 has just posted",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U1",
+    "q": "We have been good friends ____ ten years.",
+    "options": [
+      "for",
+      "since",
+      "in"
+    ],
+    "answer": 0,
+    "explain": "for + 一段时间（ten years），since + 时间点",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "I ____ London last summer.",
+    "options": [
+      "visited",
+      "have visited",
+      "visit"
+    ],
+    "answer": 0,
+    "explain": "last summer 是明确的过去时间，用一般过去时 visited",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "We ____ from Guangzhou to London.",
+    "options": [
+      "flew",
+      "have flown",
+      "fly"
+    ],
+    "answer": 0,
+    "explain": "叙述过去发生的旅程，用一般过去时 flew",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "____ you ever tried fish and chips?",
+    "options": [
+      "Have",
+      "Did",
+      "Are"
+    ],
+    "answer": 0,
+    "explain": "ever 强调至今的经历，用现在完成时 Have you tried",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "She has just ____ a plane ticket.",
+    "options": [
+      "bought",
+      "buy",
+      "buys"
+    ],
+    "answer": 0,
+    "explain": "现在完成时用过去分词 bought",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "He ____ packing his suitcase yet.",
+    "options": [
+      "hasn't finished",
+      "didn't finish",
+      "doesn't finish"
+    ],
+    "answer": 0,
+    "explain": "yet 用于现在完成时否定句，hasn't finished",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "I ____ to Beijing three times.",
+    "options": [
+      "have been",
+      "went",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "“截至现在去过几次”用现在完成时 have been",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "We ____ the British Museum two days ago.",
+    "options": [
+      "visited",
+      "have visited",
+      "visit"
+    ],
+    "answer": 0,
+    "explain": "ago 表示明确过去时间，用一般过去时 visited",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "“I have been to London.” 这句话的意思是：",
+    "options": [
+      "我去过伦敦（现已回来）",
+      "我现在在伦敦",
+      "我将要去伦敦"
+    ],
+    "answer": 0,
+    "explain": "have been to 表示“曾去过某地（人已回来）”",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "They ____ to a new city in 2023.",
+    "options": [
+      "moved",
+      "have moved",
+      "move"
+    ],
+    "answer": 0,
+    "explain": "in 2023 是过去时间点，用一般过去时 moved",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U2",
+    "q": "Have you ____ a great time since you arrived?",
+    "options": [
+      "had",
+      "have",
+      "having"
+    ],
+    "answer": 0,
+    "explain": "since 引导现在完成时，用过去分词 had",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "Many animals ____ by law.",
+    "options": [
+      "are protected",
+      "protect",
+      "protects"
+    ],
+    "answer": 0,
+    "explain": "被动语态 be + 过去分词，are protected",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "Pandas ____ by people all over the world.",
+    "options": [
+      "are loved",
+      "love",
+      "loves"
+    ],
+    "answer": 0,
+    "explain": "熊猫“被喜爱”，用被动语态 are loved",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "The little dog ____ on the street.",
+    "options": [
+      "was found",
+      "found",
+      "finds"
+    ],
+    "answer": 0,
+    "explain": "过去的被动语态 was + 过去分词 found",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "Food ____ to the pets every morning.",
+    "options": [
+      "is given",
+      "gives",
+      "give"
+    ],
+    "answer": 0,
+    "explain": "食物“被给予”，用被动 is given",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "主动句 “People protect pandas.” 改为被动：Pandas ____ by people.",
+    "options": [
+      "are protected",
+      "protect",
+      "protected"
+    ],
+    "answer": 0,
+    "explain": "被动语态 are + 过去分词 protected",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "Forests ____ every day.",
+    "options": [
+      "are being destroyed",
+      "destroy",
+      "destroyed"
+    ],
+    "answer": 0,
+    "explain": "现在进行时的被动：are being + 过去分词",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "This rare species ____ at last.",
+    "options": [
+      "has been saved",
+      "has saved",
+      "saves"
+    ],
+    "answer": 0,
+    "explain": "现在完成时的被动：has been + 过去分词",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "被动语态的结构是 ____ + 过去分词。",
+    "options": [
+      "be",
+      "have",
+      "do"
+    ],
+    "answer": 0,
+    "explain": "被动语态 = be + 过去分词",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "The window ____ by Tom yesterday.",
+    "options": [
+      "was broken",
+      "broke",
+      "breaks"
+    ],
+    "answer": 0,
+    "explain": "yesterday 表过去，被动用 was broken",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U3",
+    "q": "English ____ in many countries.",
+    "options": [
+      "is spoken",
+      "speaks",
+      "spoke"
+    ],
+    "answer": 0,
+    "explain": "英语“被说”，用被动 is spoken",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If we plant more trees, the air ____ cleaner.",
+    "options": [
+      "will be",
+      "is",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "第一条件句：if + 一般现在时，主句 will + 动词原形",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If you cut down forests, deserts ____ bigger.",
+    "options": [
+      "will grow",
+      "grow",
+      "grew"
+    ],
+    "answer": 0,
+    "explain": "真实未来条件，主句用 will grow",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If I ____ a tree, I would live for a thousand years.",
+    "options": [
+      "were",
+      "am",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "第二条件句（非真实）if 从句所有人称都用 were",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If there ____ no trees, many animals would die.",
+    "options": [
+      "were",
+      "are",
+      "will be"
+    ],
+    "answer": 0,
+    "explain": "虚拟非真实条件，be 动词用 were",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "第一条件句主句结构：If + 一般现在时, ____ + 动词原形。",
+    "options": [
+      "will",
+      "would",
+      "can"
+    ],
+    "answer": 0,
+    "explain": "真实未来条件主句用 will + 动词原形",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "在第一条件句的 if 从句里不能用 ____。",
+    "options": [
+      "will",
+      "一般现在时",
+      "逗号"
+    ],
+    "answer": 0,
+    "explain": "if 从句用一般现在时表将来，不用 will",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If it ____ tomorrow, we won't plant trees.",
+    "options": [
+      "rains",
+      "will rain",
+      "rained"
+    ],
+    "answer": 0,
+    "explain": "if 从句用一般现在时 rains 表将来",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "We will have cleaner air if everyone ____ a tree.",
+    "options": [
+      "plants",
+      "plant",
+      "will plant"
+    ],
+    "answer": 0,
+    "explain": "everyone 是第三人称单数，从句用 plants",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "If I were you, I ____ recycle the old books.",
+    "options": [
+      "would",
+      "will",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "第二条件句主句用 would + 动词原形",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U4",
+    "q": "下列哪句是非真实（第二）条件句？",
+    "options": [
+      "If I had wings, I would fly.",
+      "If it rains, I will stay.",
+      "If you study, you will pass."
+    ],
+    "answer": 0,
+    "explain": "if + 过去时 + would 是非真实条件句",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "We ____ turn off the tap when brushing our teeth.",
+    "options": [
+      "should",
+      "mustn't",
+      "don't"
+    ],
+    "answer": 0,
+    "explain": "should 表建议“应该”",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "You ____ boil the water before drinking it.",
+    "options": [
+      "must",
+      "mustn't",
+      "shouldn't"
+    ],
+    "answer": 0,
+    "explain": "must 表必须（必要性）",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "We ____ throw rubbish into the river.",
+    "options": [
+      "mustn't",
+      "should",
+      "must"
+    ],
+    "answer": 0,
+    "explain": "mustn't 表禁止“不准”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "should 表示：",
+    "options": [
+      "建议（好主意）",
+      "禁止",
+      "可能"
+    ],
+    "answer": 0,
+    "explain": "should = 给建议，表示“这样做更好”",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "mustn't 表示：",
+    "options": [
+      "禁止",
+      "好主意",
+      "也许"
+    ],
+    "answer": 0,
+    "explain": "mustn't = 禁止，不允许",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "You ____ waste water, even one drop.",
+    "options": [
+      "mustn't",
+      "should",
+      "may"
+    ],
+    "answer": 0,
+    "explain": "不准浪费水，用 mustn't 表禁止",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "We ____ protect our rivers from pollution.",
+    "options": [
+      "must",
+      "mustn't",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "must 表必须保护河流",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "You ____ drink at least six glasses of water every day.",
+    "options": [
+      "should",
+      "mustn't",
+      "can't"
+    ],
+    "answer": 0,
+    "explain": "给健康建议用 should",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "must 表示：",
+    "options": [
+      "必须（必要性）",
+      "只是建议",
+      "一个愿望"
+    ],
+    "answer": 0,
+    "explain": "must = 必须，表示必要性",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U5",
+    "q": "下列哪句表示“禁止”？",
+    "options": [
+      "You mustn't swim here.",
+      "You should rest.",
+      "You must try."
+    ],
+    "answer": 0,
+    "explain": "mustn't 表禁止",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "I ____ TV when the power went out.",
+    "options": [
+      "was watching",
+      "watched",
+      "watch"
+    ],
+    "answer": 0,
+    "explain": "过去某刻正在进行的动作用过去进行时 was watching",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "They ____ dinner when the lights came back.",
+    "options": [
+      "were having",
+      "had",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "主语 they 用 were + V-ing",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "At 8 p.m. last night, I ____ my homework.",
+    "options": [
+      "was doing",
+      "did",
+      "do"
+    ],
+    "answer": 0,
+    "explain": "过去具体时刻正在进行，用过去进行时",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "While Dad ____ candles, Mum was telling stories.",
+    "options": [
+      "was lighting",
+      "lit",
+      "lights"
+    ],
+    "answer": 0,
+    "explain": "while 引导两个同时进行的动作，用过去进行时",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "When I ____ my phone, the power cut off.",
+    "options": [
+      "was charging",
+      "charged",
+      "charge"
+    ],
+    "answer": 0,
+    "explain": "“正在充电时”用过去进行时 was charging",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "过去进行时的结构是 ____ + 动词-ing。",
+    "options": [
+      "was/were",
+      "is/are",
+      "has/have"
+    ],
+    "answer": 0,
+    "explain": "过去进行时 = was/were + V-ing",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "____ you reading at 9 p.m. last night?",
+    "options": [
+      "Were",
+      "Was",
+      "Did"
+    ],
+    "answer": 0,
+    "explain": "主语 you 用 Were",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "I ____ sleeping; I was still studying.",
+    "options": [
+      "wasn't",
+      "didn't",
+      "am not"
+    ],
+    "answer": 0,
+    "explain": "过去进行时否定用 wasn't + V-ing",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "The children ____ in the garden at that time.",
+    "options": [
+      "were playing",
+      "played",
+      "play"
+    ],
+    "answer": 0,
+    "explain": "at that time 表过去某刻，用过去进行时",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U6",
+    "q": "过去进行时常和哪些词搭配？",
+    "options": [
+      "when 和 while 都可以",
+      "只有 when",
+      "只有 while"
+    ],
+    "answer": 0,
+    "explain": "过去进行时常与 when / while 连用",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "The poet ____ wrote this poem is Li Bai.",
+    "options": [
+      "who",
+      "which",
+      "where"
+    ],
+    "answer": 0,
+    "explain": "先行词是人（poet），关系词用 who",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "The poem ____ I like most is Quiet Night Thoughts.",
+    "options": [
+      "which",
+      "who",
+      "whose"
+    ],
+    "answer": 0,
+    "explain": "先行词是物（poem），关系词用 which",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "The girl ____ sits next to me loves poems.",
+    "options": [
+      "that",
+      "which",
+      "what"
+    ],
+    "answer": 0,
+    "explain": "指人可用 that，作主语",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "This is the book ____ Mum gave me.",
+    "options": [
+      "that",
+      "who",
+      "where"
+    ],
+    "answer": 0,
+    "explain": "先行词是物且作宾语，用 that（可省略）",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "定语从句中指“人”通常用 ____。",
+    "options": [
+      "who",
+      "which",
+      "what"
+    ],
+    "answer": 0,
+    "explain": "who 用于指人",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "定语从句中指“物”通常用 ____。",
+    "options": [
+      "which",
+      "who",
+      "whom"
+    ],
+    "answer": 0,
+    "explain": "which 用于指物",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "The song ____ we heard last night made me cry.",
+    "options": [
+      "that",
+      "who",
+      "where"
+    ],
+    "answer": 0,
+    "explain": "指物作宾语用 that（可省略）",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "关系词 that 通常可以代替 ____。",
+    "options": [
+      "who 和 which",
+      "what 和 how",
+      "why 和 when"
+    ],
+    "answer": 0,
+    "explain": "that 在多数情况下可代替 who 和 which",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "The man ____ is reading over there is my teacher.",
+    "options": [
+      "who",
+      "which",
+      "where"
+    ],
+    "answer": 0,
+    "explain": "先行词是人作主语，用 who",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U7",
+    "q": "下列哪句定语从句正确？",
+    "options": [
+      "The poem that I read was nice.",
+      "The poem who I read was nice.",
+      "The poem where I read was nice."
+    ],
+    "answer": 0,
+    "explain": "指物用 that，who/where 在此都不对",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "____ is his favourite hobby.",
+    "options": [
+      "Cooking",
+      "Cook",
+      "To cooking"
+    ],
+    "answer": 0,
+    "explain": "动名词 Cooking 作主语",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "He wants ____ a chef one day.",
+    "options": [
+      "to be",
+      "being",
+      "be"
+    ],
+    "answer": 0,
+    "explain": "want 后接动词不定式 to be",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "I enjoy ____ poems in my free time.",
+    "options": [
+      "reading",
+      "to read",
+      "read"
+    ],
+    "answer": 0,
+    "explain": "enjoy 后接动名词 reading",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "She finished ____ her homework before dinner.",
+    "options": [
+      "doing",
+      "to do",
+      "do"
+    ],
+    "answer": 0,
+    "explain": "finish 后接动名词 doing",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "I hope ____ London some day.",
+    "options": [
+      "to visit",
+      "visiting",
+      "visit"
+    ],
+    "answer": 0,
+    "explain": "hope 后接动词不定式 to visit",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "They decided ____ the old man.",
+    "options": [
+      "to help",
+      "helping",
+      "help"
+    ],
+    "answer": 0,
+    "explain": "decide 后接动词不定式 to help",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "动词 enjoy / finish / practise 后面接 ____。",
+    "options": [
+      "动名词",
+      "不定式",
+      "过去式"
+    ],
+    "answer": 0,
+    "explain": "这些动词后接动名词（V-ing）",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "动词 want / hope / plan 后面接 ____。",
+    "options": [
+      "不定式",
+      "动名词",
+      "过去分词"
+    ],
+    "answer": 0,
+    "explain": "这些动词后接动词不定式（to + 动词）",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "It is fun ____ new skills.",
+    "options": [
+      "to learn",
+      "learning",
+      "learn"
+    ],
+    "answer": 0,
+    "explain": "It is + 形容词 + to do 结构，用不定式",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 7,
+    "term": "下",
+    "code": "7B_U8",
+    "q": "“I stopped ____.”（意为“我不再吃了”）",
+    "options": [
+      "eating",
+      "to eat",
+      "eat"
+    ],
+    "answer": 0,
+    "explain": "stop doing 表示停止正在做的事",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ is an encyclopaedia? — It is a book about many subjects.",
+    "options": [
+      "What",
+      "Who",
+      "Where"
+    ],
+    "answer": 0,
+    "explain": "询问事物用 What",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ writes the articles in an encyclopaedia? — Experts.",
+    "options": [
+      "Who",
+      "What",
+      "When"
+    ],
+    "answer": 0,
+    "explain": "询问人用 Who",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ can we find the word list? — In the index.",
+    "options": [
+      "Where",
+      "When",
+      "Why"
+    ],
+    "answer": 0,
+    "explain": "询问地点用 Where",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ was the first encyclopaedia published? — About 2,000 years ago.",
+    "options": [
+      "When",
+      "Where",
+      "Who"
+    ],
+    "answer": 0,
+    "explain": "询问时间用 When",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ do students read encyclopaedias? — Because they want quick information.",
+    "options": [
+      "Why",
+      "How",
+      "What"
+    ],
+    "answer": 0,
+    "explain": "用 Why 提问，答语用 Because",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ do you search for a topic? — Look up the key word in the index.",
+    "options": [
+      "How",
+      "Who",
+      "When"
+    ],
+    "answer": 0,
+    "explain": "询问方式方法用 How",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ books are there on the shelf? — Twenty.",
+    "options": [
+      "How many",
+      "How much",
+      "What"
+    ],
+    "answer": 0,
+    "explain": "可数名词数量用 How many",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ encyclopaedia is this, yours or mine?",
+    "options": [
+      "Whose",
+      "Who's",
+      "Who"
+    ],
+    "answer": 0,
+    "explain": "询问所属用 Whose",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ is the encyclopaedia? — It's on the shelf.",
+    "options": [
+      "Where",
+      "What",
+      "When"
+    ],
+    "answer": 0,
+    "explain": "问位置用 Where",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U1",
+    "q": "____ is the book about? — It's about animals.",
+    "options": [
+      "What",
+      "Which",
+      "Who"
+    ],
+    "answer": 0,
+    "explain": "问内容用 What ... about",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "1,000,000 in English is ____.",
+    "options": [
+      "one million",
+      "one thousand",
+      "one billion"
+    ],
+    "answer": 0,
+    "explain": "1,000,000 = one million",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "1,000,000,000 is ____.",
+    "options": [
+      "one billion",
+      "one million",
+      "ten thousand"
+    ],
+    "answer": 0,
+    "explain": "1,000,000,000 = one billion",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "386 is read as ____.",
+    "options": [
+      "three hundred and eighty-six",
+      "three hundred eighty six hundred",
+      "thirty-eight six"
+    ],
+    "answer": 0,
+    "explain": "英式英语 hundred 后加 and：three hundred and eighty-six",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "After a number, the word 'hundred' takes ____.",
+    "options": [
+      "no -s (two hundred)",
+      "-s (two hundreds)",
+      "-es"
+    ],
+    "answer": 0,
+    "explain": "具体数字后 hundred 不加 s：two hundred",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "With 'of', we say ____.",
+    "options": [
+      "thousands of people",
+      "thousand of people",
+      "thousands people"
+    ],
+    "answer": 0,
+    "explain": "与 of 连用要加 s：thousands of people",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "10,000 is ____.",
+    "options": [
+      "ten thousand",
+      "one hundred thousand",
+      "a thousand"
+    ],
+    "answer": 0,
+    "explain": "10,000 = ten thousand",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "2,500 is ____.",
+    "options": [
+      "two thousand five hundred",
+      "two hundred fifty",
+      "twenty-five hundred thousand"
+    ],
+    "answer": 0,
+    "explain": "2,500 = two thousand five hundred",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "There are ____ students. (100)",
+    "options": [
+      "a hundred",
+      "a hundreds",
+      "hundred of"
+    ],
+    "answer": 0,
+    "explain": "100 = a hundred / one hundred",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "In British English, 306 = three hundred ____ six.",
+    "options": [
+      "and",
+      "or",
+      "with"
+    ],
+    "answer": 0,
+    "explain": "hundred 后加 and：three hundred and six",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U2",
+    "q": "one point four million = ____.",
+    "options": [
+      "1,400,000",
+      "14,000",
+      "140,000"
+    ],
+    "answer": 0,
+    "explain": "one point four million = 1.4 百万 = 1,400,000",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "____ on the computer. (开机)",
+    "options": [
+      "Turn",
+      "Turning",
+      "Turns"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形 Turn",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "____ your password.",
+    "options": [
+      "Type",
+      "Types",
+      "To type"
+    ],
+    "answer": 0,
+    "explain": "祈使句动词原形开头 Type",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "To tell someone NOT to do something, use ____.",
+    "options": [
+      "Don't + verb",
+      "Not + verb",
+      "No + verb"
+    ],
+    "answer": 0,
+    "explain": "否定祈使句用 Don't + 动词原形",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "____ share your password with others.",
+    "options": [
+      "Don't",
+      "Doesn't",
+      "Not"
+    ],
+    "answer": 0,
+    "explain": "否定祈使句用 Don't",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "To be polite, add ____ before the instruction.",
+    "options": [
+      "please",
+      "very",
+      "the"
+    ],
+    "answer": 0,
+    "explain": "礼貌用 please",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "Steps often follow: first, then, next, ____.",
+    "options": [
+      "finally",
+      "because",
+      "so"
+    ],
+    "answer": 0,
+    "explain": "步骤顺序：first / then / next / finally",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "____ the file before you close it.",
+    "options": [
+      "Save",
+      "Saved",
+      "Saving"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形 Save",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "An imperative (instruction) sentence usually has ____.",
+    "options": [
+      "no subject",
+      "two subjects",
+      "a past verb"
+    ],
+    "answer": 0,
+    "explain": "祈使句省略主语，动词原形开头",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "____ the mouse to open the file.",
+    "options": [
+      "Click",
+      "Clicks",
+      "Clicking"
+    ],
+    "answer": 0,
+    "explain": "祈使句用动词原形 Click",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U3",
+    "q": "Please ____ here.",
+    "options": [
+      "click",
+      "clicks",
+      "clicking"
+    ],
+    "answer": 0,
+    "explain": "please 后接动词原形 click",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "Paper ____ by the Chinese.",
+    "options": [
+      "was invented",
+      "invented",
+      "invents"
+    ],
+    "answer": 0,
+    "explain": "被动语态 was + 过去分词 invented",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "The light bulb ____ by Edison.",
+    "options": [
+      "was invented",
+      "invented",
+      "is inventing"
+    ],
+    "answer": 0,
+    "explain": "过去被动 was invented",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "Passive voice is formed with ____ + past participle.",
+    "options": [
+      "be",
+      "have",
+      "do"
+    ],
+    "answer": 0,
+    "explain": "被动语态 = be + 过去分词",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "'by' in passive voice shows ____.",
+    "options": [
+      "who does the action",
+      "the time",
+      "the place"
+    ],
+    "answer": 0,
+    "explain": "by 引出动作的执行者",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "The books ____ by machines now.",
+    "options": [
+      "are printed",
+      "print",
+      "printed"
+    ],
+    "answer": 0,
+    "explain": "现在被动 are + 过去分词 printed",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "When was the compass invented? — It ____ more than 2,000 years ago.",
+    "options": [
+      "was invented",
+      "invented",
+      "invents"
+    ],
+    "answer": 0,
+    "explain": "过去被动 was invented",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "The new computer ____ next year.",
+    "options": [
+      "will be sold",
+      "will sell",
+      "sells"
+    ],
+    "answer": 0,
+    "explain": "将来被动 will be + 过去分词",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "Active: People protect pandas. Passive: Pandas ____ by people.",
+    "options": [
+      "are protected",
+      "protect",
+      "protected"
+    ],
+    "answer": 0,
+    "explain": "被动 are + 过去分词 protected",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "We can omit 'by ...' when ____.",
+    "options": [
+      "the doer is unknown or not important",
+      "the action is past",
+      "the verb is short"
+    ],
+    "answer": 0,
+    "explain": "动作执行者未知或不重要时省略 by",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U4",
+    "q": "The letter ____ by hand.",
+    "options": [
+      "is written",
+      "writes",
+      "write"
+    ],
+    "answer": 0,
+    "explain": "被动 is + 过去分词 written",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "I am ____ tired after the long trip.",
+    "options": [
+      "very",
+      "a",
+      "the"
+    ],
+    "answer": 0,
+    "explain": "very 修饰形容词表程度强",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "The homework is ____ difficult — I can't finish it.",
+    "options": [
+      "too",
+      "enough",
+      "very much"
+    ],
+    "answer": 0,
+    "explain": "too 表示“太过”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "I am old ____ to read this book.",
+    "options": [
+      "enough",
+      "too",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "enough 放形容词后：old enough",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "____ goes AFTER the adjective: 'old enough', not 'enough old'.",
+    "options": [
+      "enough",
+      "very",
+      "too"
+    ],
+    "answer": 0,
+    "explain": "enough 修饰形容词时后置",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "Please speak ____ louder.",
+    "options": [
+      "a little",
+      "very",
+      "too"
+    ],
+    "answer": 0,
+    "explain": "a little 表“一点点”修饰比较级",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "This book is ____ interesting.",
+    "options": [
+      "really",
+      "a bit too",
+      "enough"
+    ],
+    "answer": 0,
+    "explain": "really 表程度强",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "'too' means ____.",
+    "options": [
+      "more than needed",
+      "just right",
+      "a little"
+    ],
+    "answer": 0,
+    "explain": "too 表示“超过所需”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "Her memory is ____ good.",
+    "options": [
+      "quite",
+      "too",
+      "a bit"
+    ],
+    "answer": 0,
+    "explain": "quite 表“相当”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "She runs ____ fast.",
+    "options": [
+      "very",
+      "too much",
+      "enough"
+    ],
+    "answer": 0,
+    "explain": "very 修饰副词 fast",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U5",
+    "q": "I am ____ tired today.",
+    "options": [
+      "a bit",
+      "very much",
+      "too very"
+    ],
+    "answer": 0,
+    "explain": "a bit 表“有点”",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "When the soldiers arrived, the Emperor ____ already left.",
+    "options": [
+      "had",
+      "has",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "过去完成时 had + 过去分词",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "Past perfect is formed with ____ + past participle.",
+    "options": [
+      "had",
+      "have",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "过去完成时 = had + 过去分词",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "By the time we got there, the film ____.",
+    "options": [
+      "had started",
+      "started",
+      "starts"
+    ],
+    "answer": 0,
+    "explain": "过去某动作之前已发生，用过去完成时 had started",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "She ____ never seen the sea before she was ten.",
+    "options": [
+      "had",
+      "has",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "过去完成时 had never seen",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "I got home at 7. I ____ my homework at 6.",
+    "options": [
+      "had finished",
+      "finish",
+      "finishes"
+    ],
+    "answer": 0,
+    "explain": "先发生用过去完成时 had finished",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "Which word often goes with the past perfect?",
+    "options": [
+      "before",
+      "now",
+      "tomorrow"
+    ],
+    "answer": 0,
+    "explain": "before / after / by the time 常与过去完成时连用",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "____ you met him before that day?",
+    "options": [
+      "Had",
+      "Have",
+      "Did"
+    ],
+    "answer": 0,
+    "explain": "过去完成时疑问句用 Had",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "They ____ read the story before the teacher told it.",
+    "options": [
+      "hadn't",
+      "don't",
+      "didn't"
+    ],
+    "answer": 0,
+    "explain": "过去完成时否定 hadn't read",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "The past perfect shows an action that happened ____ another past action.",
+    "options": [
+      "before",
+      "after",
+      "during"
+    ],
+    "answer": 0,
+    "explain": "过去完成时表“过去的过去”",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U6",
+    "q": "By 2010 he ____ three books.",
+    "options": [
+      "had written",
+      "wrote",
+      "writes"
+    ],
+    "answer": 0,
+    "explain": "by + 过去时间点，用过去完成时 had written",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "Winter in Harbin is ____ than in Guangzhou.",
+    "options": [
+      "colder",
+      "cold",
+      "coldest"
+    ],
+    "answer": 0,
+    "explain": "两者比较用比较级 colder + than",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "Harbin has the ____ winter in China.",
+    "options": [
+      "coldest",
+      "colder",
+      "cold"
+    ],
+    "answer": 0,
+    "explain": "三者以上用最高级 the coldest",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "good → ____ → the best.",
+    "options": [
+      "better",
+      "gooder",
+      "more good"
+    ],
+    "answer": 0,
+    "explain": "good 的比较级是 better（不规则）",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "Typhoons are ____ than summer rain.",
+    "options": [
+      "more dangerous",
+      "dangerous",
+      "most dangerous"
+    ],
+    "answer": 0,
+    "explain": "多音节形容词比较级用 more + 形容词",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "This is the ____ interesting season of the year.",
+    "options": [
+      "most",
+      "more",
+      "much"
+    ],
+    "answer": 0,
+    "explain": "多音节最高级用 the most",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "bad → ____ → the worst.",
+    "options": [
+      "worse",
+      "badder",
+      "more bad"
+    ],
+    "answer": 0,
+    "explain": "bad 的比较级是 worse（不规则）",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "Guangzhou is ____ Shanghai in size. (一样大)",
+    "options": [
+      "as big as",
+      "bigger as",
+      "the biggest as"
+    ],
+    "answer": 0,
+    "explain": "同级比较用 as + 形容词 + as",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "Today is ____ yesterday. (不如…热)",
+    "options": [
+      "not as hot as",
+      "not hotter as",
+      "not the hottest"
+    ],
+    "answer": 0,
+    "explain": "否定同级比较 not as + 形容词 + as",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "The colder, ____ better.",
+    "options": [
+      "the",
+      "a",
+      "very"
+    ],
+    "answer": 0,
+    "explain": "the + 比较级, the + 比较级“越…越…”",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U7",
+    "q": "August is the ____ month here.",
+    "options": [
+      "hottest",
+      "hotter",
+      "hot"
+    ],
+    "answer": 0,
+    "explain": "最高级 the hottest（重读闭音节双写 t）",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: He says, “I am nervous.” Reported: He says that he ____ nervous.",
+    "options": [
+      "is",
+      "was",
+      "be"
+    ],
+    "answer": 0,
+    "explain": "主句 says 是现在时，从句时态不变 is",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: She said, “I am tired.” Reported: She said that she ____ tired.",
+    "options": [
+      "was",
+      "is",
+      "be"
+    ],
+    "answer": 0,
+    "explain": "主句过去时，从句退一步用 was",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: “I will help you,” he said. Reported: He said he ____ help me.",
+    "options": [
+      "would",
+      "will",
+      "shall"
+    ],
+    "answer": 0,
+    "explain": "will 在间接引语中变 would",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: “I have won,” she said. Reported: She said she ____ won.",
+    "options": [
+      "had",
+      "has",
+      "have"
+    ],
+    "answer": 0,
+    "explain": "现在完成时变为过去完成时 had won",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Reported questions use ____ word order.",
+    "options": [
+      "statement",
+      "question",
+      "no"
+    ],
+    "answer": 0,
+    "explain": "间接问句用陈述语序",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: “Where is the stage?” Reported: He asked where the stage ____.",
+    "options": [
+      "was",
+      "is",
+      "were"
+    ],
+    "answer": 0,
+    "explain": "间接引语时态后移，用 was 并用陈述语序",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "Direct: “Do you like English?” Reported: She asked ____ I liked English.",
+    "options": [
+      "if",
+      "that",
+      "what"
+    ],
+    "answer": 0,
+    "explain": "一般疑问句变间接引语用 if / whether",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "In reported speech, 'today' changes to ____.",
+    "options": [
+      "that day",
+      "this day",
+      "the day"
+    ],
+    "answer": 0,
+    "explain": "today → that day",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "'tomorrow' changes to ____.",
+    "options": [
+      "the next day",
+      "next day",
+      "that day"
+    ],
+    "answer": 0,
+    "explain": "tomorrow → the next day",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "上",
+    "code": "8A_U8",
+    "q": "'here' changes to ____.",
+    "options": [
+      "there",
+      "here",
+      "where"
+    ],
+    "answer": 0,
+    "explain": "here → there",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "We went to the Sunshine Home ____ the old people.",
+    "options": [
+      "help",
+      "to help",
+      "helping"
+    ],
+    "answer": 1,
+    "explain": "动词不定式 to help 作目的状语，表示“为了帮助”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "They visited the home ____ time with the elderly.",
+    "options": [
+      "to spend",
+      "spend",
+      "spent"
+    ],
+    "answer": 0,
+    "explain": "to spend time 作目的状语，说明前往的目的。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "She brought some flowers ____ the room more beautiful.",
+    "options": [
+      "make",
+      "to make",
+      "makes"
+    ],
+    "answer": 1,
+    "explain": "不定式 to make 表示目的：为了让房间更漂亮。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "The students sang songs ____ the old people happy.",
+    "options": [
+      "to make",
+      "making",
+      "made"
+    ],
+    "answer": 0,
+    "explain": "to make sb happy 作目的状语。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "We get up early ____ the first bus.",
+    "options": [
+      "catching",
+      "catch",
+      "to catch"
+    ],
+    "answer": 2,
+    "explain": "to catch the bus 表示早起的目的。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "He saved money ____ a gift for his grandmother.",
+    "options": [
+      "to buy",
+      "buy",
+      "buys"
+    ],
+    "answer": 0,
+    "explain": "to buy a gift 作目的状语。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "They went there ____ the old people's life better.",
+    "options": [
+      "make",
+      "to make",
+      "making"
+    ],
+    "answer": 1,
+    "explain": "动词不定式表目的：为了使老人生活更好。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "I called you ____ you about the visit.",
+    "options": [
+      "to tell",
+      "telling",
+      "tell"
+    ],
+    "answer": 0,
+    "explain": "to tell you 表示打电话的目的。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "In order ____ on time, we left home early.",
+    "options": [
+      "arrive",
+      "to arrive",
+      "arriving"
+    ],
+    "answer": 1,
+    "explain": "in order to do 是“为了……”的固定结构。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U1",
+    "q": "They cleaned the rooms ____ the elderly a comfortable place.",
+    "options": [
+      "to give",
+      "give",
+      "giving"
+    ],
+    "answer": 0,
+    "explain": "to give… 作目的状语，表示打扫的目的。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "It was raining, ____ we stayed at home.",
+    "options": [
+      "because",
+      "so",
+      "but"
+    ],
+    "answer": 1,
+    "explain": "so 表示结果：因为下雨，所以待在家。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "He couldn't speak, ____ he wrote his feelings down.",
+    "options": [
+      "so",
+      "because",
+      "or"
+    ],
+    "answer": 0,
+    "explain": "so 连接因果，表示“于是”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "I like the book ____ it is very interesting.",
+    "options": [
+      "so",
+      "but",
+      "because"
+    ],
+    "answer": 2,
+    "explain": "because 引导原因状语从句。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "She wanted to help, ____ she didn't know how.",
+    "options": [
+      "but",
+      "so",
+      "because"
+    ],
+    "answer": 0,
+    "explain": "but 表示转折：想帮忙，但不知怎么帮。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "Words are not enough, ____ actions can show love.",
+    "options": [
+      "because",
+      "but",
+      "so"
+    ],
+    "answer": 1,
+    "explain": "but 表示转折对比。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "He was tired, ____ he finished the work first.",
+    "options": [
+      "but",
+      "so",
+      "because"
+    ],
+    "answer": 0,
+    "explain": "but 表转折：虽然累，但还是先完成工作。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "We missed the bus ____ we got up late.",
+    "options": [
+      "so",
+      "but",
+      "because"
+    ],
+    "answer": 2,
+    "explain": "because 引导原因从句，说明错过公交的原因。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "____ he was ill, he didn't go to school.",
+    "options": [
+      "But",
+      "So",
+      "Because"
+    ],
+    "answer": 2,
+    "explain": "Because 引导原因从句置于句首。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "The sign uses pictures ____ everyone can understand it.",
+    "options": [
+      "so that",
+      "because",
+      "but"
+    ],
+    "answer": 0,
+    "explain": "so that 引导目的状语从句：以便……。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U2",
+    "q": "Sometimes a smile says more ____ words.",
+    "options": [
+      "so",
+      "but",
+      "than"
+    ],
+    "answer": 2,
+    "explain": "more than 表示“比……更多”，此处比较。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "My grandma ____ make beautiful paper-cuts when she was young.",
+    "options": [
+      "used to",
+      "is used to",
+      "uses to"
+    ],
+    "answer": 0,
+    "explain": "used to do 表示过去经常做某事，现在不做了。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "I ____ getting up early now.",
+    "options": [
+      "used to",
+      "am used to",
+      "use to"
+    ],
+    "answer": 1,
+    "explain": "be used to doing 表示“习惯于做某事”。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "There ____ be a small shop here, but it's gone now.",
+    "options": [
+      "used to",
+      "is used to",
+      "uses to"
+    ],
+    "answer": 0,
+    "explain": "used to be 表示过去存在、现在不存在。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "She ____ live in the countryside, but now she lives in the city.",
+    "options": [
+      "is used to",
+      "used to",
+      "uses to"
+    ],
+    "answer": 1,
+    "explain": "used to live 表示过去的习惯或状态。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "After years of practice, he ____ the cold weather.",
+    "options": [
+      "used to",
+      "is used to",
+      "use to"
+    ],
+    "answer": 1,
+    "explain": "be used to + 名词，表示习惯于。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "Did your grandma ____ tell you old stories?",
+    "options": [
+      "used to",
+      "use to",
+      "is used to"
+    ],
+    "answer": 1,
+    "explain": "疑问句中助动词 did 后用动词原形 use to。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "Paper-cutting ____ be a common skill in the past.",
+    "options": [
+      "used to",
+      "is used to",
+      "uses to"
+    ],
+    "answer": 0,
+    "explain": "used to be 表示过去的普遍状态。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "I'm not ____ such hot weather yet.",
+    "options": [
+      "used to",
+      "use to",
+      "used"
+    ],
+    "answer": 0,
+    "explain": "be used to 的否定：not used to + 名词/动名词。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "He ____ working late, so he doesn't feel tired.",
+    "options": [
+      "used to",
+      "is used to",
+      "use to"
+    ],
+    "answer": 1,
+    "explain": "be used to doing：已经习惯了熬夜工作。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U3",
+    "q": "They ____ play together every day, but now they are busy.",
+    "options": [
+      "are used to",
+      "used to",
+      "use to"
+    ],
+    "answer": 1,
+    "explain": "used to play 表示过去经常做、现已不做。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "If you press this button, the robot ____ working.",
+    "options": [
+      "start",
+      "will start",
+      "started"
+    ],
+    "answer": 1,
+    "explain": "第一条件句：if + 一般现在时，主句用 will + 动词原形。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "The robot will help you if you ____ it to.",
+    "options": [
+      "ask",
+      "will ask",
+      "asked"
+    ],
+    "answer": 0,
+    "explain": "if 从句用一般现在时表将来。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "If it ____ tomorrow, we will stay at home.",
+    "options": [
+      "will rain",
+      "rains",
+      "rained"
+    ],
+    "answer": 1,
+    "explain": "条件句从句中用一般现在时 rains。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "You will be tired if you ____ enough sleep.",
+    "options": [
+      "don't get",
+      "won't get",
+      "didn't get"
+    ],
+    "answer": 0,
+    "explain": "if 从句用一般现在时的否定 don't get。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "If the robot ____ down, what will you do?",
+    "options": [
+      "will break",
+      "breaks",
+      "broke"
+    ],
+    "answer": 1,
+    "explain": "条件从句用一般现在时 breaks。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "We ____ late if we don't hurry.",
+    "options": [
+      "are",
+      "will be",
+      "were"
+    ],
+    "answer": 1,
+    "explain": "主句用 will be 表将来结果。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "If you ____ hard, you will pass the exam.",
+    "options": [
+      "study",
+      "will study",
+      "studied"
+    ],
+    "answer": 0,
+    "explain": "if + 一般现在时 study。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "The machine won't work if you ____ the wrong button.",
+    "options": [
+      "press",
+      "will press",
+      "pressed"
+    ],
+    "answer": 0,
+    "explain": "if 从句用一般现在时 press。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "If everyone helps, the work ____ easier.",
+    "options": [
+      "become",
+      "will become",
+      "became"
+    ],
+    "answer": 1,
+    "explain": "主句用 will become 表将来。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U4",
+    "q": "What will happen if the battery ____ out?",
+    "options": [
+      "runs",
+      "will run",
+      "ran"
+    ],
+    "answer": 0,
+    "explain": "条件从句用一般现在时 runs out。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "I ____ in Shanghai since 2019.",
+    "options": [
+      "live",
+      "have lived",
+      "lived"
+    ],
+    "answer": 1,
+    "explain": "since 引导时间点，主句用现在完成时 have lived。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "We ____ here for three years.",
+    "options": [
+      "have stayed",
+      "stayed",
+      "stay"
+    ],
+    "answer": 0,
+    "explain": "for + 时间段，常与现在完成时连用。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "Sanjiangyuan ____ a protected area since 2000.",
+    "options": [
+      "is",
+      "has been",
+      "was"
+    ],
+    "answer": 1,
+    "explain": "since + 时间点用现在完成时 has been。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "They ____ each other for ten years.",
+    "options": [
+      "know",
+      "have known",
+      "knew"
+    ],
+    "answer": 1,
+    "explain": "for ten years 与现在完成时 have known 连用。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "How long ____ you ____ in this school?",
+    "options": [
+      "did / study",
+      "have / studied",
+      "do / study"
+    ],
+    "answer": 1,
+    "explain": "How long 提问持续时间，用现在完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "The animals ____ there since the area was protected.",
+    "options": [
+      "lived",
+      "have lived",
+      "live"
+    ],
+    "answer": 1,
+    "explain": "since 从句配合主句现在完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "I haven't seen him ____ last month.",
+    "options": [
+      "for",
+      "since",
+      "in"
+    ],
+    "answer": 1,
+    "explain": "since + 过去时间点 last month。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "She has worked here ____ five years.",
+    "options": [
+      "since",
+      "for",
+      "at"
+    ],
+    "answer": 1,
+    "explain": "for + 时间段 five years。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "We ____ never ____ such a beautiful place before.",
+    "options": [
+      "have / visited",
+      "did / visit",
+      "have / visit"
+    ],
+    "answer": 0,
+    "explain": "现在完成时 have visited，never 表示“从未”。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U5",
+    "q": "The river ____ cleaner since people started to protect it.",
+    "options": [
+      "becomes",
+      "has become",
+      "became"
+    ],
+    "answer": 1,
+    "explain": "since 从句配合主句现在完成时 has become。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "The little gardener planted the flowers ____.",
+    "options": [
+      "himself",
+      "him",
+      "his"
+    ],
+    "answer": 0,
+    "explain": "himself 反身代词，表示“他自己”亲自做。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "Be careful! Don't hurt ____.",
+    "options": [
+      "you",
+      "yourself",
+      "your"
+    ],
+    "answer": 1,
+    "explain": "yourself 反身代词，作动词宾语。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "The children enjoyed ____ in the garden.",
+    "options": [
+      "them",
+      "themselves",
+      "they"
+    ],
+    "answer": 1,
+    "explain": "enjoy oneself 表示“玩得开心”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "I made this cake by ____.",
+    "options": [
+      "me",
+      "myself",
+      "my"
+    ],
+    "answer": 1,
+    "explain": "by oneself 表示“独自、亲自”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "She taught ____ to grow vegetables.",
+    "options": [
+      "her",
+      "herself",
+      "hers"
+    ],
+    "answer": 1,
+    "explain": "teach oneself 表示“自学”。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "We should look after ____ during the trip.",
+    "options": [
+      "us",
+      "ourselves",
+      "our"
+    ],
+    "answer": 1,
+    "explain": "ourselves 反身代词，主语为 we。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "The robot can clean the room by ____.",
+    "options": [
+      "it",
+      "itself",
+      "its"
+    ],
+    "answer": 1,
+    "explain": "by itself 表示“自动、独自”。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "Help ____ to some fruit, children.",
+    "options": [
+      "you",
+      "yourselves",
+      "your"
+    ],
+    "answer": 1,
+    "explain": "主语 children 为复数，用 yourselves。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "He fixed the bike ____ without any help.",
+    "options": [
+      "him",
+      "himself",
+      "his"
+    ],
+    "answer": 1,
+    "explain": "himself 作同位语，强调“他亲自”。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U6",
+    "q": "The flowers don't water ____; we must water them.",
+    "options": [
+      "them",
+      "themselves",
+      "they"
+    ],
+    "answer": 1,
+    "explain": "themselves 反身代词，主语为 flowers（复数）。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "Look at the dark clouds. It ____ rain soon.",
+    "options": [
+      "may",
+      "must",
+      "can't"
+    ],
+    "answer": 0,
+    "explain": "may 表示可能性：可能要下雨了。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "He ____ be at home; the lights are on.",
+    "options": [
+      "must",
+      "can't",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "must 表示有把握的推测：一定在家。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "She ____ be tired; she has just had a good rest.",
+    "options": [
+      "must",
+      "can't",
+      "may"
+    ],
+    "answer": 1,
+    "explain": "can't 表示否定推测：不可能累。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "They ____ arrive late because of the heavy traffic.",
+    "options": [
+      "might",
+      "mustn't",
+      "can't"
+    ],
+    "answer": 0,
+    "explain": "might 表示较小的可能性。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "The story ____ be true; nobody believes it.",
+    "options": [
+      "must",
+      "can't",
+      "may"
+    ],
+    "answer": 1,
+    "explain": "can't 表示“不可能”的否定推测。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "We ____ reach the moon one day in the future.",
+    "options": [
+      "could",
+      "mustn't",
+      "can't"
+    ],
+    "answer": 0,
+    "explain": "could 表示将来的可能性。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "Whose book is this? It ____ be Tom's; his name is on it.",
+    "options": [
+      "must",
+      "can't",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "must 表示有把握的肯定推测。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "He ____ know the answer, but I'm not sure.",
+    "options": [
+      "may",
+      "must",
+      "can't"
+    ],
+    "answer": 0,
+    "explain": "may 表示不确定的可能性。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "This ____ be the right way; I'm not certain.",
+    "options": [
+      "must",
+      "might",
+      "can't"
+    ],
+    "answer": 1,
+    "explain": "might 表示较弱、不确定的可能。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U7",
+    "q": "She didn't answer the phone. She ____ be sleeping.",
+    "options": [
+      "could",
+      "can't",
+      "mustn't"
+    ],
+    "answer": 0,
+    "explain": "could 表示一种可能：可能在睡觉。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "We ____ save water to protect the environment.",
+    "options": [
+      "should",
+      "shouldn't",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "should 表示“应该”，给出建议。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "You ____ waste paper; trees are precious.",
+    "options": [
+      "should",
+      "shouldn't",
+      "had better"
+    ],
+    "answer": 1,
+    "explain": "shouldn't 表示“不应该”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "You ____ turn off the lights when you leave.",
+    "options": [
+      "had better",
+      "should not",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "had better do 表示“最好做某事”。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "We ____ to recycle bottles and cans.",
+    "options": [
+      "ought",
+      "should",
+      "had better"
+    ],
+    "answer": 0,
+    "explain": "ought to do 表示“应该”。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "You'd better ____ a coat; it's cold outside.",
+    "options": [
+      "wear",
+      "to wear",
+      "wearing"
+    ],
+    "answer": 0,
+    "explain": "had better 后接动词原形 wear。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "Students ____ plant more trees on Tree Planting Day.",
+    "options": [
+      "should",
+      "shouldn't",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "should 给出积极建议。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "We ____ to keep our school clean and green.",
+    "options": [
+      "ought",
+      "should",
+      "had better"
+    ],
+    "answer": 0,
+    "explain": "ought to 表示义务、应该。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "You ____ throw rubbish on the ground.",
+    "options": [
+      "should",
+      "ought to",
+      "shouldn't"
+    ],
+    "answer": 2,
+    "explain": "shouldn't 表示“不应该”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "It's raining. We'd better ____ now.",
+    "options": [
+      "not go",
+      "not to go",
+      "don't go"
+    ],
+    "answer": 0,
+    "explain": "had better 的否定：had better not + 动词原形。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 8,
+    "term": "下",
+    "code": "8B_U8",
+    "q": "To have a green month, everyone ____ do their part.",
+    "options": [
+      "ought to",
+      "should not",
+      "needn't"
+    ],
+    "answer": 0,
+    "explain": "ought to 表示“理应”，强调每个人的责任。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "Confucius is the philosopher ___ believed in lifelong learning.",
+    "options": [
+      "who",
+      "which",
+      "whose"
+    ],
+    "answer": 0,
+    "explain": "先行词 philosopher 指人，定语从句作主语用 who。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "The Analects, ___ was written by his disciples, is still read today.",
+    "options": [
+      "who",
+      "which",
+      "where"
+    ],
+    "answer": 1,
+    "explain": "先行词 The Analects 指物，用 which 引导定语从句。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "This is the old temple ___ honours Confucius.",
+    "options": [
+      "who",
+      "that",
+      "whose"
+    ],
+    "answer": 1,
+    "explain": "指物的定语从句，口语中常用 that。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "Which sentence is correct?",
+    "options": [
+      "Confucius is a teacher he lived 2,500 years ago.",
+      "Confucius is a teacher who lived 2,500 years ago.",
+      "Confucius is a teacher which lived 2,500 years ago."
+    ],
+    "answer": 1,
+    "explain": "指人用 who，且不能重复主语 he（避免双主语）。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "The teacher ___ wrote this book is from Shanghai.",
+    "options": [
+      "which",
+      "who",
+      "where"
+    ],
+    "answer": 1,
+    "explain": "先行词 teacher 指人作主语，用 who。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "I have a cat ___ can open the door by itself.",
+    "options": [
+      "who",
+      "which",
+      "whose"
+    ],
+    "answer": 1,
+    "explain": "指动物用 which（也可用 that）。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "She is the teacher ___ teaches us English. （口语中最常用）",
+    "options": [
+      "that",
+      "which",
+      "whose"
+    ],
+    "answer": 0,
+    "explain": "口语中 that 可代替 who/which，尤其信息不可省时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "定语从句通常紧跟在什么之后？",
+    "options": [
+      "动词",
+      "名词",
+      "介词"
+    ],
+    "answer": 1,
+    "explain": "定语从句告诉我们说的是哪个人或物，通常紧跟在名词之后。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "指物或动物时，下列哪个关系词不能用？",
+    "options": [
+      "which",
+      "that",
+      "who"
+    ],
+    "answer": 2,
+    "explain": "who 只指人；指物/动物用 which 或 that。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U1",
+    "q": "The book ___ I borrowed yesterday is very interesting.",
+    "options": [
+      "who",
+      "that",
+      "where"
+    ],
+    "answer": 1,
+    "explain": "先行词 book 指物，作宾语用 that（或 which）。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "Edison is the inventor ___ lab burnt down in 1914.",
+    "options": [
+      "who",
+      "whose",
+      "where"
+    ],
+    "answer": 1,
+    "explain": "表所属关系（发明家的实验室）用 whose。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "The laboratory ___ Curie worked was very cold in winter.",
+    "options": [
+      "which",
+      "where",
+      "when"
+    ],
+    "answer": 1,
+    "explain": "先行词是地点 laboratory，从句中作地点状语用 where。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "1879 was the year ___ Edison produced a working light bulb.",
+    "options": [
+      "where",
+      "when",
+      "which"
+    ],
+    "answer": 1,
+    "explain": "先行词是时间 year，用 when 引导。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "I met a girl ___ father is a scientist.",
+    "options": [
+      "who",
+      "whose",
+      "which"
+    ],
+    "answer": 1,
+    "explain": "表“女孩的父亲”所属关系，用 whose。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "Paris is the city ___ many great minds once lived.",
+    "options": [
+      "which",
+      "where",
+      "whose"
+    ],
+    "answer": 1,
+    "explain": "先行词是地点 city，从句中表“在该城市”，用 where。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "I still remember the day ___ the results were announced.",
+    "options": [
+      "where",
+      "when",
+      "who"
+    ],
+    "answer": 1,
+    "explain": "先行词是时间 day，用 when。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "\"The house where Newton was born\" 等于 \"The house ___ Newton was born in\"。",
+    "options": [
+      "which",
+      "when",
+      "whose"
+    ],
+    "answer": 0,
+    "explain": "where = in/at which，故可改为 which + 介词 in。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "whose 用来表示什么？",
+    "options": [
+      "地点",
+      "时间",
+      "所属（的）"
+    ],
+    "answer": 2,
+    "explain": "whose 表示所属关系，可指人、动物甚至物。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "This is the village ___ I spent my childhood.",
+    "options": [
+      "which",
+      "where",
+      "who"
+    ],
+    "answer": 1,
+    "explain": "先行词是地点 village，从句中作地点状语用 where。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U2",
+    "q": "Summer is the season ___ many people go travelling.",
+    "options": [
+      "where",
+      "when",
+      "whose"
+    ],
+    "answer": 1,
+    "explain": "先行词是时间 season，用 when。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "The river is ___ dirty ___ swim in.",
+    "options": [
+      "too / to",
+      "so / that",
+      "such / that"
+    ],
+    "answer": 0,
+    "explain": "too + 形容词 + to + 动词，表“太脏以至于不能游泳”。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "He spoke ___ fast ___ I could not understand him.",
+    "options": [
+      "too / to",
+      "so / that",
+      "enough / to"
+    ],
+    "answer": 1,
+    "explain": "so + 副词 + that + 从句结构。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "\"The air is too bad to breathe.\" 改写为 so...that 结构正确的是：",
+    "options": [
+      "The air is so bad that we cannot breathe.",
+      "The air is so bad that we can breathe.",
+      "The air is so badly that we cannot breathe."
+    ],
+    "answer": 0,
+    "explain": "too...to 含否定义，改 so...that 时从句要加 cannot。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "There is ___ rubbish on the beach that we cannot walk freely.",
+    "options": [
+      "so much",
+      "so many",
+      "too much"
+    ],
+    "answer": 0,
+    "explain": "rubbish 不可数，用 so much...that。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "\"She is so young that she can't join the club.\" 改为 too...to 结构：",
+    "options": [
+      "She is too young to join the club.",
+      "She is too young not to join the club.",
+      "She is so young to join the club."
+    ],
+    "answer": 0,
+    "explain": "so young that can't = too young to；to 后不能再加 not。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "关于 too...to...，下列说法正确的是：",
+    "options": [
+      "它本身含肯定义",
+      "它本身含否定义，to 后不加 not",
+      "必须接 that 从句"
+    ],
+    "answer": 1,
+    "explain": "too...to 已含“不能”之意，不可在 to 后再加 not。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "___ few birds come here now that the forest feels empty.",
+    "options": [
+      "So",
+      "Too",
+      "Very"
+    ],
+    "answer": 0,
+    "explain": "so few + 名词 + that 结构，表“鸟太少以至于……”。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "The box is too heavy ___.",
+    "options": [
+      "to carry",
+      "to carry it",
+      "carrying"
+    ],
+    "answer": 0,
+    "explain": "too...to + 动词原形；宾语 it 不再重复（box 已是逻辑宾语）。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "He was ___ tired ___ he fell asleep at once.",
+    "options": [
+      "too / to",
+      "so / that",
+      "such / that"
+    ],
+    "answer": 1,
+    "explain": "so + 形容词 + that + 从句。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U3",
+    "q": "The water is too cold ___ in.",
+    "options": [
+      "to swim",
+      "swimming",
+      "to swimming"
+    ],
+    "answer": 0,
+    "explain": "too + adj. + to + 动词原形。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "强调句的基本结构是：",
+    "options": [
+      "It is/was + 强调部分 + that/who + 其余",
+      "There is + 强调部分 + that",
+      "It has + 强调部分 + which"
+    ],
+    "answer": 0,
+    "explain": "强调句型为 It is/was + 强调部分 + that/who + 句子其余部分。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "强调 \"Tom broke the window\" 的主语，正确的是：",
+    "options": [
+      "It was Tom who broke the window.",
+      "It was Tom which broke the window.",
+      "It was Tom whom broke the window."
+    ],
+    "answer": 0,
+    "explain": "强调主语且指人，用 who（或 that）。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "It is plastic ___ pollutes the sea.",
+    "options": [
+      "who",
+      "that",
+      "where"
+    ],
+    "answer": 1,
+    "explain": "强调部分 plastic 指物，用 that。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "强调时间状语 \"last Monday\" 应该用：",
+    "options": [
+      "when",
+      "that",
+      "which"
+    ],
+    "answer": 1,
+    "explain": "强调句中无论强调时间或地点，一律用 that，不用 when/where。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "It was in Shanghai ___ I first met her.",
+    "options": [
+      "where",
+      "that",
+      "which"
+    ],
+    "answer": 1,
+    "explain": "强调地点状语 in Shanghai，强调句中一律用 that。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "强调宾语 \"We need clean water most\" 的正确改写：",
+    "options": [
+      "It is clean water that we need most.",
+      "It is clean water who we need most.",
+      "There is clean water that we need most."
+    ],
+    "answer": 0,
+    "explain": "强调宾语 clean water（指物）用 that。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "强调句改成否定，正确的是：",
+    "options": [
+      "It was not Tom who broke the window; it was Jim.",
+      "It was no Tom who broke the window.",
+      "It wasn't Tom broke the window."
+    ],
+    "answer": 0,
+    "explain": "否定强调句：It was not + 强调部分 + who/that...。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "关于强调句中其余部分的时态，正确的说法是：",
+    "options": [
+      "要改成 is",
+      "保持原时态不变",
+      "一律用过去时"
+    ],
+    "answer": 1,
+    "explain": "强调句其余部分保留原时态，不要把第二个动词改成 is。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "对主语提问的强调句疑问形式：",
+    "options": [
+      "Who was it that broke the window?",
+      "Who it was broke the window?",
+      "Who that broke the window was it?"
+    ],
+    "answer": 0,
+    "explain": "疑问强调句：Who was it that...？",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U4",
+    "q": "It was last Friday ___ we started the campaign.",
+    "options": [
+      "when",
+      "that",
+      "which"
+    ],
+    "answer": 1,
+    "explain": "强调时间 last Friday，用 that。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "主动句 \"They sell tickets online\" 的被动语态是：",
+    "options": [
+      "Tickets are sold online.",
+      "Tickets sell online.",
+      "Tickets are selling online."
+    ],
+    "answer": 0,
+    "explain": "一般现在时被动：am/is/are + 过去分词，sell 的过去分词 sold。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "\"Jia Ling directed the film.\" 的被动语态是：",
+    "options": [
+      "The film was directed by Jia Ling.",
+      "The film is directed by Jia Ling.",
+      "The film directed by Jia Ling."
+    ],
+    "answer": 0,
+    "explain": "一般过去时被动：was/were + 过去分词；direct 过去分词 directed。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "被动语态中 by + 动作执行者通常在什么时候使用？",
+    "options": [
+      "任何时候都必须用",
+      "当执行者重要或令人意外时",
+      "从不使用"
+    ],
+    "answer": 1,
+    "explain": "只有在执行者重要或令人意外时才加 by；显而易见或不明时可省。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "write 的过去分词是：",
+    "options": [
+      "wrote",
+      "written",
+      "writed"
+    ],
+    "answer": 1,
+    "explain": "write 为不规则动词，过去分词是 written。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "The building ___ in 1925.",
+    "options": [
+      "was built",
+      "is built",
+      "built"
+    ],
+    "answer": 0,
+    "explain": "过去某年用一般过去时被动 was built。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "\"Was the film directed by Jia Ling?\" 的正确简短回答：",
+    "options": [
+      "Yes, it was.",
+      "Yes, it did.",
+      "Yes, it is."
+    ],
+    "answer": 0,
+    "explain": "被动语态疑问由 be 动词构成，回答用 was。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "The story ___ in a hurry.（否定）",
+    "options": [
+      "was not written",
+      "did not write",
+      "was not write"
+    ],
+    "answer": 0,
+    "explain": "被动否定：was not + 过去分词 written。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "break 的过去分词是：",
+    "options": [
+      "broke",
+      "broken",
+      "breaked"
+    ],
+    "answer": 1,
+    "explain": "break 不规则，过去分词为 broken。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "\"Thousands of fans loved the hero.\" 的被动语态是：",
+    "options": [
+      "The hero was loved by thousands of fans.",
+      "The hero is loved thousands of fans.",
+      "The hero loved by thousands of fans."
+    ],
+    "answer": 0,
+    "explain": "过去时被动 was loved，执行者重要故保留 by。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U5",
+    "q": "被动语态强调的是：",
+    "options": [
+      "动作的执行者",
+      "承受动作的人或物",
+      "动作发生的地点"
+    ],
+    "answer": 1,
+    "explain": "被动语态聚焦承受动作的对象，而非执行者。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "现在完成时被动语态的结构是：",
+    "options": [
+      "have/has + been + 过去分词",
+      "have/has + 过去分词",
+      "be + being + 过去分词"
+    ],
+    "answer": 0,
+    "explain": "现在完成时被动：have/has + been + 过去分词。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "\"They have sold all the tickets.\" 的被动语态是：",
+    "options": [
+      "All the tickets have been sold.",
+      "All the tickets are sold.",
+      "All the tickets have sold."
+    ],
+    "answer": 0,
+    "explain": "现在完成被动 have been sold。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "The hall ___ just ___.",
+    "options": [
+      "has / been cleaned",
+      "has / cleaned",
+      "is / cleaned"
+    ],
+    "answer": 0,
+    "explain": "现在完成被动：has been cleaned，just 放中间。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "___ the seats ___ yet?",
+    "options": [
+      "Have / been booked",
+      "Has / booked",
+      "Are / booked"
+    ],
+    "answer": 0,
+    "explain": "现在完成被动疑问：Have the seats been booked yet?",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "The song ___ since 2010.",
+    "options": [
+      "has been sung",
+      "was sung",
+      "is sung"
+    ],
+    "answer": 0,
+    "explain": "since 2010 表延续到现在，用现在完成被动 has been sung。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "区分：\"The concert was held last Friday\" 与 \"The concert has been held three times this year\"，后者用现在完成是因为：",
+    "options": [
+      "与现在相关（今年至今）",
+      "已彻底结束",
+      "表将来"
+    ],
+    "answer": 0,
+    "explain": "this year 表与现在相关的时间段，故用现在完成时。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "The microphone ___ yet.（否定，现在完成被动）",
+    "options": [
+      "has not been fixed",
+      "was not fixed",
+      "is not fixed"
+    ],
+    "answer": 0,
+    "explain": "yet 多与现在完成连用，否定为 has not been fixed。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "A new album ___ by her.",
+    "options": [
+      "has been recorded",
+      "has recorded",
+      "is recording"
+    ],
+    "answer": 0,
+    "explain": "现在完成被动 has been recorded。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "下列哪个时间词常与现在完成时连用？",
+    "options": [
+      "yesterday",
+      "already",
+      "last week"
+    ],
+    "answer": 1,
+    "explain": "already/just/yet/ever/never/since/for 常与现在完成连用。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U6",
+    "q": "\"Has your song been played on the radio?\" 是什么时态语态？",
+    "options": [
+      "一般过去时被动",
+      "现在完成时被动",
+      "现在进行时被动"
+    ],
+    "answer": 1,
+    "explain": "have/has + been + 过去分词为现在完成时被动。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "转述陈述句 \"I am tired,\" she said. 正确的是：",
+    "options": [
+      "She said that she was tired.",
+      "She said that she is tired.",
+      "She said that I was tired."
+    ],
+    "answer": 0,
+    "explain": "引述动词为过去时，从句时态后退 am→was，人称 I→she。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "转述一般疑问句要用哪个连接词？",
+    "options": [
+      "that",
+      "if / whether",
+      "what"
+    ],
+    "answer": 1,
+    "explain": "转述一般疑问句用 if 或 whether，并改为陈述句语序。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "\"Are you ready?\" he asked. 的间接引语是：",
+    "options": [
+      "He asked if I was ready.",
+      "He asked if was I ready.",
+      "He asked that I was ready."
+    ],
+    "answer": 0,
+    "explain": "用 if + 陈述句语序，was 后退时态。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "\"Where do you live?\" she asked me. 转述为：",
+    "options": [
+      "She asked me where I lived.",
+      "She asked me where did I live.",
+      "She asked me where do I live."
+    ],
+    "answer": 0,
+    "explain": "特殊疑问句保留疑问词，改陈述语序，do you live→I lived。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "转述时 will 变成：",
+    "options": [
+      "would",
+      "was",
+      "did"
+    ],
+    "answer": 0,
+    "explain": "间接引语中 will→would。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "\"I saw it yesterday.\" 转述为：",
+    "options": [
+      "He said he had seen it the day before.",
+      "He said he saw it yesterday.",
+      "He said he has seen it yesterday."
+    ],
+    "answer": 0,
+    "explain": "saw→had seen，yesterday→the day before。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "间接引语中 now 通常变为：",
+    "options": [
+      "then",
+      "today",
+      "here"
+    ],
+    "answer": 0,
+    "explain": "now→then，today→that day，here→there。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "转述时 can 变成：",
+    "options": [
+      "could",
+      "can",
+      "would"
+    ],
+    "answer": 0,
+    "explain": "间接引语中 can→could。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "\"Will you help me now?\" 转述为：",
+    "options": [
+      "She asked if I would help her then.",
+      "She asked if I will help her now.",
+      "She asked that I would help her then."
+    ],
+    "answer": 0,
+    "explain": "will→would，me→her，now→then，用 if 引导。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U7",
+    "q": "转述疑问句时，语序应改为：",
+    "options": [
+      "疑问句语序",
+      "陈述句语序",
+      "感叹句语序"
+    ],
+    "answer": 1,
+    "explain": "间接疑问句一律用陈述句语序。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "对过去行为做猜测/判断的结构是：",
+    "options": [
+      "情态动词 + have + 过去分词",
+      "情态动词 + 动词原形",
+      "be + 过去分词"
+    ],
+    "answer": 0,
+    "explain": "modal + have + 过去分词用于推测过去。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "The ground is wet. It ___ last night.",
+    "options": [
+      "must have rained",
+      "must rain",
+      "may rain"
+    ],
+    "answer": 0,
+    "explain": "对过去很肯定的推测用 must have done。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "She isn't answering. She ___ out.",
+    "options": [
+      "may have gone",
+      "must go",
+      "can't have gone"
+    ],
+    "answer": 0,
+    "explain": "对过去的可能推测用 may have gone。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "\"should have done\" 通常表达：",
+    "options": [
+      "很肯定发生了",
+      "本该做却没做（后悔/责备）",
+      "完全没可能"
+    ],
+    "answer": 1,
+    "explain": "should have done 表本应发生却未发生，含后悔或责备。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "He ___ the money; he was with me all day.",
+    "options": [
+      "can't have stolen",
+      "must have stolen",
+      "should have stolen"
+    ],
+    "answer": 0,
+    "explain": "非常肯定没发生用 can't / couldn't have done。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "I ___ harder for the test.（含后悔）",
+    "options": [
+      "should have studied",
+      "must have studied",
+      "can't have studied"
+    ],
+    "answer": 0,
+    "explain": "表后悔“本该更努力”用 should have studied。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "They ___ yet; the flight left only an hour ago.",
+    "options": [
+      "couldn't have arrived",
+      "must have arrived",
+      "should have arrived"
+    ],
+    "answer": 0,
+    "explain": "很肯定还没到用 couldn't have arrived。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "He looks happy. He ___ the test.",
+    "options": [
+      "must have passed",
+      "can't have passed",
+      "should have passed"
+    ],
+    "answer": 0,
+    "explain": "由结果很肯定推测过去用 must have passed。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "\"could have done\" 还可以表示：",
+    "options": [
+      "错过的可能/机会",
+      "必然发生",
+      "正在发生"
+    ],
+    "answer": 0,
+    "explain": "could have done 可表“本来可能/本可以（但没做）”。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "上",
+    "code": "9A_U8",
+    "q": "这些结构中的“have + 过去分词”部分会随时态变化吗？",
+    "options": [
+      "会，随主语变化",
+      "不会，保持不变",
+      "只在疑问句变化"
+    ],
+    "answer": 1,
+    "explain": "猜测体现在情态动词上，have + 过去分词保持不变。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "Humans ___ on Mars one day, scientists believe.",
+    "options": [
+      "will live",
+      "are living",
+      "lived"
+    ],
+    "answer": 0,
+    "explain": "对未来的简单预测用一般将来时 will + 动词原形。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "At 7 p.m. tomorrow, I ___ over the North Pole.",
+    "options": [
+      "will fly",
+      "will be flying",
+      "fly"
+    ],
+    "answer": 1,
+    "explain": "将来某一时刻正在进行的动作用将来进行时 will be + V-ing。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "Look at those black clouds — it ___ rain.",
+    "options": [
+      "is going to",
+      "will be",
+      "was"
+    ],
+    "answer": 0,
+    "explain": "有明显迹象的预测用 be going to。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "\"The bag is heavy.\" \"OK, I ___ help you.\"",
+    "options": [
+      "am going to",
+      "will",
+      "will be"
+    ],
+    "answer": 1,
+    "explain": "说话当下临时做出的决定用 will。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "This time tomorrow, the astronauts ___ experiments in the greenhouse.",
+    "options": [
+      "will be doing",
+      "will do",
+      "do"
+    ],
+    "answer": 0,
+    "explain": "This time tomorrow 表将来某刻正进行，用将来进行时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "___ you ___ the laptop tonight? I'd like to borrow it.",
+    "options": [
+      "Will / be using",
+      "Are / use",
+      "Do / use"
+    ],
+    "answer": 0,
+    "explain": "用将来进行时礼貌询问对方的计划。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "I've already decided: I ___ watch the Mars landing live tonight.",
+    "options": [
+      "am going to",
+      "will",
+      "would"
+    ],
+    "answer": 0,
+    "explain": "早已计划好的打算用 be going to。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "By 2100, people ___ in space cities, some scientists predict.",
+    "options": [
+      "will live",
+      "are living",
+      "have lived"
+    ],
+    "answer": 0,
+    "explain": "对遥远未来的预测用一般将来时 will。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "Don't call her at three — she ___ the test then.",
+    "options": [
+      "will be taking",
+      "will take",
+      "takes"
+    ],
+    "answer": 0,
+    "explain": "将来某时正在进行的动作用将来进行时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U1",
+    "q": "I promise I ___ you tonight after the show.",
+    "options": [
+      "will call",
+      "am calling",
+      "called"
+    ],
+    "answer": 0,
+    "explain": "承诺用 will。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "By 1904, Helen Keller ___ from university.",
+    "options": [
+      "had graduated",
+      "graduated",
+      "has graduated"
+    ],
+    "answer": 0,
+    "explain": "\"到1904年\"之前已完成的动作用过去完成时 had + 过去分词。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "When I reached the station, the train ___ already ___.",
+    "options": [
+      "had / left",
+      "has / left",
+      "did / leave"
+    ],
+    "answer": 0,
+    "explain": "过去时间点之前已发生用过去完成时 had + 过去分词。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "She ___ ten new words before her teacher arrived.",
+    "options": [
+      "had learned",
+      "learned",
+      "has learned"
+    ],
+    "answer": 0,
+    "explain": "在另一个过去动作(arrived)之前完成，用过去完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "After she ___ her homework, she went out to play.",
+    "options": [
+      "had finished",
+      "finishes",
+      "has finished"
+    ],
+    "answer": 0,
+    "explain": "after 引导的较早动作用过去完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "He ___ never ___ of her before he read the book.",
+    "options": [
+      "had / heard",
+      "has / heard",
+      "did / hear"
+    ],
+    "answer": 0,
+    "explain": "before 之前的经历，用过去完成时 had + 过去分词。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "By the age of 10, he ___ to five countries.",
+    "options": [
+      "had travelled",
+      "travelled",
+      "has travelled"
+    ],
+    "answer": 0,
+    "explain": "\"到10岁时\"之前累计完成，用过去完成时。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "Choose the sentence that correctly shows the earlier action with the past perfect.",
+    "options": [
+      "She had waited for an hour before her teacher came.",
+      "She waited for an hour before her teacher had come.",
+      "She has waited before her teacher came."
+    ],
+    "answer": 0,
+    "explain": "较早动作(waited)用过去完成，较晚动作(came)用一般过去。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "___ you ever ___ of Helen Keller before reading her letter?",
+    "options": [
+      "Had / heard",
+      "Have / heard",
+      "Did / hear"
+    ],
+    "answer": 0,
+    "explain": "以过去某点(reading)为参照的之前经历，用过去完成时疑问 Had ... heard。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "The room was empty; everyone ___ home.",
+    "options": [
+      "had gone",
+      "has gone",
+      "goes"
+    ],
+    "answer": 0,
+    "explain": "在过去(was empty)之前已发生，用过去完成时。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U2",
+    "q": "When we got to the cinema, the film ___.",
+    "options": [
+      "had started",
+      "starts",
+      "has started"
+    ],
+    "answer": 0,
+    "explain": "到达之前电影已开演，用过去完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Mount Everest is ___ mountain in the world.",
+    "options": [
+      "the tallest",
+      "the most tall",
+      "taller"
+    ],
+    "answer": 0,
+    "explain": "单音节形容词 tall 最高级为 the tallest。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "The Taj Mahal is ___ at sunset than at noon.",
+    "options": [
+      "more beautiful",
+      "beautifuler",
+      "most beautiful"
+    ],
+    "answer": 0,
+    "explain": "多音节形容词 beautiful 比较级为 more beautiful。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Asia is ___ continent on Earth.",
+    "options": [
+      "the largest",
+      "larger",
+      "the most large"
+    ],
+    "answer": 0,
+    "explain": "large 最高级为 the largest。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Shanghai is one of ___ cities in the world.",
+    "options": [
+      "the busiest",
+      "busier",
+      "the most busy"
+    ],
+    "answer": 0,
+    "explain": "busy 以辅音+y结尾，最高级为 the busiest。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Laos is ___ Vietnam.",
+    "options": [
+      "not as crowded as",
+      "not as crowded than",
+      "not crowded as"
+    ],
+    "answer": 0,
+    "explain": "\"不如……\"用 not as + 形容词原级 + as。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "This is ___ film I have ever seen.",
+    "options": [
+      "the most interesting",
+      "the interestingest",
+      "more interesting"
+    ],
+    "answer": 0,
+    "explain": "interesting 最高级为 the most interesting。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Which sentence is correct?",
+    "options": [
+      "The Gobi is bigger than the Taklamakan.",
+      "The Gobi is more bigger than the Taklamakan.",
+      "The Gobi is biggest than the Taklamakan."
+    ],
+    "answer": 0,
+    "explain": "一次只用一个比较标志，big 比较级为 bigger，不能说 more bigger。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "My English is ___ than before, but still not good enough.",
+    "options": [
+      "better",
+      "gooder",
+      "best"
+    ],
+    "answer": 0,
+    "explain": "good 的比较级是不规则形式 better。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "China is almost ___ the whole of Europe.",
+    "options": [
+      "as big as",
+      "as bigger as",
+      "so big as"
+    ],
+    "answer": 0,
+    "explain": "\"和……一样大\"用 as + 原级 + as。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U3",
+    "q": "Of all the students, Tom runs ___.",
+    "options": [
+      "the fastest",
+      "the most fast",
+      "faster"
+    ],
+    "answer": 0,
+    "explain": "fast 最高级为 the fastest。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If we recycle more, we ___ trees.",
+    "options": [
+      "will save",
+      "saved",
+      "would save"
+    ],
+    "answer": 0,
+    "explain": "第一型条件句：if + 一般现在, will + 动词原形。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If it ___ tomorrow, the picnic will be cancelled.",
+    "options": [
+      "rains",
+      "will rain",
+      "rained"
+    ],
+    "answer": 0,
+    "explain": "第一型条件句的 if 从句用一般现在时。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If I ___ a scientist, I would study climate change.",
+    "options": [
+      "were",
+      "am",
+      "will be"
+    ],
+    "answer": 0,
+    "explain": "第二型(与现在相反)：if + 过去时(be 用 were), would + 动词。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If everyone walked to school, the air ___ cleaner.",
+    "options": [
+      "would be",
+      "will be",
+      "is"
+    ],
+    "answer": 0,
+    "explain": "第二型条件句主句用 would + 动词原形。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If I ___ you, I would go home now.",
+    "options": [
+      "were",
+      "was",
+      "am"
+    ],
+    "answer": 0,
+    "explain": "第二型条件句中 be 动词各人称都用 were。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "___ we save water, we will be in trouble.",
+    "options": [
+      "Unless",
+      "If",
+      "Because"
+    ],
+    "answer": 0,
+    "explain": "Unless = If ... not，\"除非我们节水，否则会有麻烦\"。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "If the oceans ___ by ten metres, many cities would disappear.",
+    "options": [
+      "rose",
+      "rise",
+      "will rise"
+    ],
+    "answer": 0,
+    "explain": "想象的未来(第二型)，if 从句用一般过去时 rose。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "___ you help us if we asked?",
+    "options": [
+      "Would",
+      "Will",
+      "Do"
+    ],
+    "answer": 0,
+    "explain": "第二型条件句的疑问主句用 would。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "What ___ if nobody acts?",
+    "options": [
+      "will happen",
+      "happens",
+      "would happen"
+    ],
+    "answer": 0,
+    "explain": "对真实可能的将来发问，用第一型 will happen。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U4",
+    "q": "When the sun ___, the temperature will fall.",
+    "options": [
+      "sets",
+      "will set",
+      "set"
+    ],
+    "answer": 0,
+    "explain": "when 引导真实且确定的时间状语从句，用一般现在时表将来。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "I ___ in Shanghai since 2010.",
+    "options": [
+      "have lived",
+      "lived",
+      "live"
+    ],
+    "answer": 0,
+    "explain": "since + 时间点，用现在完成时 have + 过去分词。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "We ___ friends for ten years.",
+    "options": [
+      "have been",
+      "are",
+      "were"
+    ],
+    "answer": 0,
+    "explain": "for + 时间段，用现在完成时。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "___ you ever ___ a lion dance?",
+    "options": [
+      "Have / seen",
+      "Did / see",
+      "Have / saw"
+    ],
+    "answer": 0,
+    "explain": "ever 与现在完成时连用：Have you ever seen...?",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "I have ___ tried mooncakes before.",
+    "options": [
+      "never",
+      "ever",
+      "yet"
+    ],
+    "answer": 0,
+    "explain": "\"从没\"用 never 与现在完成时连用。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "He has ___ to Beijing — he is still there now.",
+    "options": [
+      "gone",
+      "been",
+      "goes"
+    ],
+    "answer": 0,
+    "explain": "has gone to 表示\"去了还没回\"。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "He has ___ to Beijing twice; he loves the city.",
+    "options": [
+      "been",
+      "gone",
+      "went"
+    ],
+    "answer": 0,
+    "explain": "has been to 表示\"去过(已回来)\"的经历。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "Have you finished your homework ___?",
+    "options": [
+      "yet",
+      "already",
+      "since"
+    ],
+    "answer": 0,
+    "explain": "yet 用于疑问句末，表示\"还(没)\"。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "Which uses the simple past correctly with a definite past time?",
+    "options": [
+      "I saw the film last night.",
+      "I have seen the film last night.",
+      "I see the film last night."
+    ],
+    "answer": 0,
+    "explain": "有明确过去时间(last night)用一般过去时，不用现在完成时。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "She has ___ arrived, so she is still putting down her bags.",
+    "options": [
+      "just",
+      "yet",
+      "ago"
+    ],
+    "answer": 0,
+    "explain": "just 与现在完成时连用，表\"刚刚\"。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U5",
+    "q": "We ___ each other since primary school.",
+    "options": [
+      "have known",
+      "knew",
+      "know"
+    ],
+    "answer": 0,
+    "explain": "since + 时间点，用现在完成时 have known。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "We stayed inside ___ it was raining.",
+    "options": [
+      "because",
+      "so",
+      "however"
+    ],
+    "answer": 0,
+    "explain": "because 引导原因状语从句。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "The gift sounded bad in Chinese, ___ we chose another one.",
+    "options": [
+      "so",
+      "because",
+      "although"
+    ],
+    "answer": 0,
+    "explain": "so 表结果，\"所以\"。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "I like Chinese food. ___, I can't eat spicy food.",
+    "options": [
+      "However",
+      "Therefore",
+      "Because"
+    ],
+    "answer": 0,
+    "explain": "However 表转折，较正式，位于句首后接逗号。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "___ he is new here, he has already learned many customs.",
+    "options": [
+      "Although",
+      "Because",
+      "So"
+    ],
+    "answer": 0,
+    "explain": "Although 引导让步状语从句，\"尽管\"。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "He was late; ___, the meeting was delayed.",
+    "options": [
+      "therefore",
+      "although",
+      "because"
+    ],
+    "answer": 0,
+    "explain": "therefore 表结果，较正式，常用于分号后。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "Which sentence is correct?",
+    "options": [
+      "Because it rained, we stayed home.",
+      "Because it rained, so we stayed home.",
+      "So it rained, because we stayed home."
+    ],
+    "answer": 0,
+    "explain": "because 和 so 不能在同一句中同时使用。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "___ it was her first time in China, she felt at home.",
+    "options": [
+      "Even though",
+      "So",
+      "Therefore"
+    ],
+    "answer": 0,
+    "explain": "Even though 表让步，\"即使/尽管\"。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "Chinese tea is famous, ___ not every Chinese person drinks it every day.",
+    "options": [
+      "yet",
+      "because",
+      "so"
+    ],
+    "answer": 0,
+    "explain": "yet 表转折，相当于 but。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "___ you are tired, please rest for a while.",
+    "options": [
+      "Since",
+      "However",
+      "Therefore"
+    ],
+    "answer": 0,
+    "explain": "Since 在此表原因，\"既然\"。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U6",
+    "q": "We gave candy ___ it is sweet and lucky.",
+    "options": [
+      "because",
+      "however",
+      "therefore"
+    ],
+    "answer": 0,
+    "explain": "because 引导原因。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"I wandered lonely as a cloud\" uses which device?",
+    "options": [
+      "Simile",
+      "Metaphor",
+      "Repetition"
+    ],
+    "answer": 0,
+    "explain": "含 as 把人比作云，是明喻(simile)。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"Time is a river.\" This sentence is a ___.",
+    "options": [
+      "metaphor",
+      "simile",
+      "alliteration"
+    ],
+    "answer": 0,
+    "explain": "直接说 X 是 Y，不用 like/as，是暗喻(metaphor)。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"The wind whispered in the trees.\" This is an example of ___.",
+    "options": [
+      "personification",
+      "simile",
+      "rhyme"
+    ],
+    "answer": 0,
+    "explain": "把人的动作(whisper)赋予风，是拟人(personification)。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"I have a dream. I have a dream. I have a dream today.\" This uses ___.",
+    "options": [
+      "repetition",
+      "metaphor",
+      "simile"
+    ],
+    "answer": 0,
+    "explain": "同一句反复出现以增强节奏与情感，是重复(repetition)。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"Silver streams, sleepy stars, silent night\" is an example of ___.",
+    "options": [
+      "alliteration",
+      "metaphor",
+      "personification"
+    ],
+    "answer": 0,
+    "explain": "邻近词开头相同辅音 /s/，是头韵(alliteration)。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "Which one is a simile?",
+    "options": [
+      "Her voice is like music.",
+      "Her voice is music.",
+      "Music sang to us."
+    ],
+    "answer": 0,
+    "explain": "含 like 的比较是明喻。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "Which one is a metaphor?",
+    "options": [
+      "Books are doors.",
+      "Books are like doors.",
+      "The book fell down."
+    ],
+    "answer": 0,
+    "explain": "直接说\"书是门\"、不用 like/as，是暗喻。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"The boy runs as fast as a deer.\" The device is ___.",
+    "options": [
+      "simile",
+      "metaphor",
+      "repetition"
+    ],
+    "answer": 0,
+    "explain": "as...as 结构作比较，是明喻。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "\"'Hope' is the thing with feathers\" treats hope as a bird without 'like'. This is ___.",
+    "options": [
+      "a metaphor",
+      "a simile",
+      "alliteration"
+    ],
+    "answer": 0,
+    "explain": "不用 like/as 直接把希望当作鸟，是暗喻。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U7",
+    "q": "Why do poets use figurative language?",
+    "options": [
+      "To make readers see and feel more",
+      "To make poems longer",
+      "To follow grammar rules strictly"
+    ],
+    "answer": 0,
+    "explain": "修辞把想法变成画面，让读者\"看见\"与\"感受\"更多。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"I love you.\" Reported: He said he ___ her.",
+    "options": [
+      "loved",
+      "loves",
+      "had loved"
+    ],
+    "answer": 0,
+    "explain": "引述动词为过去时，现在时 love 变为过去时 loved。",
+    "difficulty": 1,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"I am writing a play.\" Reported: She said she ___ a play.",
+    "options": [
+      "was writing",
+      "is writing",
+      "had written"
+    ],
+    "answer": 0,
+    "explain": "现在进行时 am writing 在间接引语中变为 was writing。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"I have seen him.\" Reported: She said she ___ him.",
+    "options": [
+      "had seen",
+      "has seen",
+      "saw"
+    ],
+    "answer": 0,
+    "explain": "现在完成时 have seen 变为过去完成时 had seen。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"I will visit Verona.\" Reported: Juliet said she ___ Verona.",
+    "options": [
+      "would visit",
+      "will visit",
+      "visited"
+    ],
+    "answer": 0,
+    "explain": "will 在间接引语中变为 would。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"Go home!\" Reported: He told her ___ home.",
+    "options": [
+      "to go",
+      "go",
+      "going"
+    ],
+    "answer": 0,
+    "explain": "祈使句(命令)转述用 tell sb. to + 动词原形。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"Don't be late.\" Reported: She asked him ___ late.",
+    "options": [
+      "not to be",
+      "to not be",
+      "don't be"
+    ],
+    "answer": 0,
+    "explain": "否定祈使句转述用 ask sb. not to + 动词原形。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"Did you read it?\" Reported: She asked me ___ it.",
+    "options": [
+      "if I had read",
+      "if I read",
+      "did I read"
+    ],
+    "answer": 0,
+    "explain": "一般疑问句转述用 if，时态后移为过去完成时。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "Direct: \"Where does he live?\" Reported: She asked where he ___.",
+    "options": [
+      "lived",
+      "lives",
+      "did live"
+    ],
+    "answer": 0,
+    "explain": "特殊疑问句转述保留疑问词、改陈述语序、时态后移为 lived。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "He ___ that he would come back soon.",
+    "options": [
+      "promised",
+      "asked",
+      "told"
+    ],
+    "answer": 0,
+    "explain": "promise(承诺)后接 that 从句，符合语境。",
+    "difficulty": 2,
+    "source": "ai_v01_12"
+  },
+  {
+    "grade": 9,
+    "term": "下",
+    "code": "9B_U8",
+    "q": "The teacher said that the Earth ___ round.",
+    "options": [
+      "is",
+      "was",
+      "had been"
+    ],
+    "answer": 0,
+    "explain": "客观真理在间接引语中时态可保留现在时。",
+    "difficulty": 3,
+    "source": "ai_v01_12"
+  }
+]
